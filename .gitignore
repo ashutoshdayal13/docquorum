@@ -13,3 +13,6 @@ __pycache__/
 docs/*.aux
 docs/*.log
 docs/*.out
+
+# machine-specific settings (copy configs/example.env)
+configs/local.env
