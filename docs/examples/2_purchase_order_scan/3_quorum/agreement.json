@@ -1,8 +1,0 @@
-{
- "agreement (recall-weighted F-score, beta=2, of each reading against the others)": {
-  "reading_A_agent_on_page_image": 0.9348,
-  "reading_B_agent_on_parse": 0.9348,
-  "reading_C_one_shot": 0.9565
- },
- "kept": "reading_C_one_shot"
-}

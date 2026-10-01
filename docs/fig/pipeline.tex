@@ -1,0 +1,46 @@
+\begin{tikzpicture}[x=1cm,y=1cm,
+ box/.style={draw=ink!25,rounded corners=3pt,fill=wash,align=flush left,inner sep=9pt,font=\small\sffamily,text=ink},
+ stage/.style={box,text width=14.4cm},
+ lane/.style={box,text width=3.05cm,minimum height=4.1cm,anchor=north,font=\footnotesize\sffamily,inner sep=7pt},
+ flow/.style={-{Latex[length=2.2mm]},draw=ink!65,line width=.8pt},
+ tag/.style={font=\scriptsize\bfseries,text=ink!70,fill=white,inner sep=3pt}]
+\node[stage] (input) at (0,0) {\textbf{INPUT}\quad PDF or image + JSON Schema / template + optional task};
+\node[stage,below=5mm of input] (prep) {\textbf{1\quad Prepare the evidence}\quad Normalize to PDF; count pages; inspect text.\\
+For a document without sufficient text, request a MinerU parse if available.\\
+\textcolor{ink!65}{Artifacts: PDF, page count $n$, text-layer flag, page text, cached parse.}};
+\node[stage,below=5mm of prep,fill=amber!12] (route) {\textbf{2\quad Choose the route}\quad Test specialized layout first.\\
+If no layout is selected, branch on text availability and page count.};
+\draw[flow] (input)--(prep); \draw[flow] (prep)--(route);
+\coordinate (split) at ($(route.south)+(0,-.35)$);
+\draw (route.south)--(split);
+\node[lane,fill=teal!9] (layout) at ($(route.south)+(-5.7,-1.05)$) {\textbf{3A\quad Layout}\\[5pt]
+Columns of records:\\column crops $\to$ LLM.\\[5pt]
+Ruled scan:\\row bands $\to$ LLM.\\[5pt]
+\textbf{One layout reading}};
+\node[lane,fill=blue!6] (text) at ($(route.south)+(-1.9,-1.05)$) {\textbf{3B\quad Text present}\\[5pt]
+Reader agent on text;\\page images included\\when the plan allows.\\[12pt]
+\textbf{Primary reading}};
+\node[lane,fill=blue!6] (short) at ($(route.south)+(1.9,-1.05)$) {\textbf{3C\quad Short scan}\\No text; $n\leq12$\\[5pt]
+Reader on page images.\\Reader on cached parse.*\\One-shot reader.\\[12pt]
+\textbf{Up to three readings}};
+\node[lane,fill=blue!6] (long) at ($(route.south)+(5.7,-1.05)$) {\textbf{3D\quad Long scan}\\No text; $n>12$\\[5pt]
+Run primary reader;\\then parse reader.*\\Prefer successful parse.\\[12pt]
+\textbf{Primary as fallback}};
+\foreach \b in {layout,text,short,long} {\draw[flow] (split)-|(\b.north);}
+\node[tag] at ($(route.south)+(-5.7,-.68)$) {layout selected};
+\node[tag] at ($(route.south)+(1.9,-.68)$) {otherwise: one of 3B--3D};
+\node[stage,anchor=north] (checks) at ($(layout.south)+(5.7,-.65)$) {\textbf{4\quad Check each reading separately}\quad Deterministic; no LLM.\\
+Apply the chain for its source: primary, parse, one-shot, or layout.\\
+\textcolor{ink!65}{Each chain uses the schema and document text; output: checked candidate JSON.}};
+\foreach \b in {layout,text,short,long} {\draw[flow] (\b.south)--(\b.south |- checks.north);}
+\node[stage,below=6mm of checks,fill=amber!12] (choose) {\textbf{5\quad Select the result}\\
+\textbf{Layout:} return its checked reading.\quad \textbf{Long scan:} return checked parse if successful.\\
+\textbf{Otherwise:} one candidate $\to$ return it; multiple $\to$ quorum; none $\to$ error.\\
+Quorum compares candidates pairwise and keeps one complete reading.};
+\draw[flow] (checks)--(choose);
+\node[stage,below=6mm of choose,fill=teal!9] (out) {\textbf{6\quad Format and return}\quad Refill original template if supplied.\\
+\textbf{OUTPUT}\quad Extracted JSON + routing / selection report};
+\draw[flow] (choose)--(out);
+\node[align=left,text width=14.5cm,font=\footnotesize\sffamily,text=ink!70,below=5mm of out] {* A parse reading requires cached pages. The reader uses them only when cache coverage reaches 90\% of the extracted page-text count. A cached parse is machine-read evidence, not extracted task JSON.\\[4pt]
+Blue/teal reader boxes call the extraction model; amber boxes make code-side decisions. Arrows carry evidence or JSON. Checks run before selection; the four lanes are alternatives, not four mandatory stages.};
+\end{tikzpicture}

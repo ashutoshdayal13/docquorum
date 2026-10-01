@@ -11,7 +11,7 @@ follows the schema. It runs on open-weight models (Qwen3.8-27B) on a single GPU;
 | UNIKIE-BENCH (4,472 images, 11 scenarios) | macro F1 **82.37** | ties 1st of 16 (Gemini-3-Pro 82.37) |
 
 * Details, caveats, per-document scores: [`results/README.md`](results/README.md)
-* How it works, with a diagram and worked examples: [`docs/docquorum.pdf`](docs/docquorum.pdf), [`docs/examples/`](docs/examples/)
+* How it works, with a diagram and worked examples: [`docs/docquorum.pdf`](docs/docquorum.pdf), [documentation and build instructions](docs/README.md)
 * The code, file by file: [`docs/CODE_GUIDE.md`](docs/CODE_GUIDE.md)
 
 ---
@@ -230,7 +230,7 @@ benchmarks/           ExtractBench and UNIKIE-BENCH runners and scorers
 serve/                vLLM serving scripts
 configs/              example.env (copy it to local.env)
 results/              scores, final outputs, research log; archive/ holds the code before the 2026-09-29 reorganisation
-docs/                 docquorum.tex / .pdf (the pipeline explained), CODE_GUIDE.md, examples/ (six documents, output after every stage)
+docs/                 pipeline guide (LaTeX + PDF), vector diagram, code map, build instructions
 tests/                unit tests
 FROZEN.json           the configuration and file hashes fixed on 2026-09-28
 ```
@@ -247,5 +247,5 @@ Open work is listed in [`TODO.md`](TODO.md).
   (an earlier quorum measured agreement with the benchmark's annotated record and so used gold; all numbers above are clean: the
   quorum sees only the schema and the readings).
 * ExtractBench served as the development set (see the caveats in `results/README.md`).
-* `docs/examples/` includes small benchmark PDFs and their answer keys, for illustration.
+* `docs/docquorum.pdf` includes a synthetic walkthrough and a worked quorum calculation.
 * License: MIT (see `LICENSE`). The benchmarks and models keep their own licenses.
