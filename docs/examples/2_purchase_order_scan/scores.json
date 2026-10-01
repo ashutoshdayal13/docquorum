@@ -1,0 +1,192 @@
+[
+ {
+  "file": "2_reading_A_agent_on_page_image/00_reading.json",
+  "what happened": "the stored reading A agent on page image output",
+  "value F1": 82.61
+ },
+ {
+  "file": "2_reading_A_agent_on_page_image/01_after_carry_down.json",
+  "what happened": "repair: a value printed once carried down to the rows it governs (where the schema says so) -- no change",
+  "value F1": 82.61
+ },
+ {
+  "file": "2_reading_A_agent_on_page_image/02_after_page_index.json",
+  "what happened": "repair: the model's page as an integer; the printed page number where the schema asks for it -- no change",
+  "value F1": 82.61
+ },
+ {
+  "file": "2_reading_A_agent_on_page_image/03_after_dedupe.json",
+  "what happened": "repair: one row per key where the list's description says each entry appears once -- no change",
+  "value F1": 82.61
+ },
+ {
+  "file": "2_reading_A_agent_on_page_image/04_after_stacked_rows.json",
+  "what happened": "repair: a record printed over several stacked lines joined back into one row -- no change",
+  "value F1": 82.61
+ },
+ {
+  "file": "2_reading_A_agent_on_page_image/05_after_conform.json",
+  "what happened": "check: every schema field present (null where allowed); output valid against the schema -- no change",
+  "value F1": 82.61
+ },
+ {
+  "file": "2_reading_A_agent_on_page_image/06_after_blank_boxes.json",
+  "what happened": "check: a blank tick box is false where the field's description says so -- no change",
+  "value F1": 82.61
+ },
+ {
+  "file": "2_reading_A_agent_on_page_image/07_after_template_rows.json",
+  "what happened": "check: template rows (only the printed label filled) and blank pre-printed lines dropped -- no change",
+  "value F1": 82.61
+ },
+ {
+  "file": "2_reading_A_agent_on_page_image/08_after_copied_rows.json",
+  "what happened": "check: rows copied from one list into another dropped -- no change",
+  "value F1": 82.61
+ },
+ {
+  "file": "2_reading_A_agent_on_page_image/09_after_record_counts.json",
+  "what happened": "check: identical records capped at the number of times the page prints them -- no change",
+  "value F1": 82.61
+ },
+ {
+  "file": "2_reading_A_agent_on_page_image/10_after_printed_pages.json",
+  "what happened": "check: each row's page located from its words; the printed page number reported -- no change",
+  "value F1": 82.61
+ },
+ {
+  "file": "2_reading_A_agent_on_page_image/11_after_printed_quotes.json",
+  "what happened": "check: quote characters as the page prints them -- no change",
+  "value F1": 82.61
+ },
+ {
+  "file": "2_reading_A_agent_on_page_image/12_after_printed_numbers.json",
+  "what happened": "check: a rounded or rescaled number replaced by the one printed number it restates -- no change",
+  "value F1": 82.61
+ },
+ {
+  "file": "2_reading_B_agent_on_parse/00_reading.json",
+  "what happened": "the stored reading B agent on parse output",
+  "value F1": 75.56
+ },
+ {
+  "file": "2_reading_B_agent_on_parse/01_after_spacing.json",
+  "what happened": "repair: a parsed string snapped to the text layer's spacing (only where the PDF has a text layer) -- no change",
+  "value F1": 75.56
+ },
+ {
+  "file": "2_reading_B_agent_on_parse/02_after_carry_down.json",
+  "what happened": "repair: a value printed once carried down to the rows it governs (where the schema says so) -- no change",
+  "value F1": 75.56
+ },
+ {
+  "file": "2_reading_B_agent_on_parse/03_after_page_index.json",
+  "what happened": "repair: the model's page as an integer; the printed page number where the schema asks for it -- no change",
+  "value F1": 75.56
+ },
+ {
+  "file": "2_reading_B_agent_on_parse/04_after_dedupe.json",
+  "what happened": "repair: one row per key where the list's description says each entry appears once -- no change",
+  "value F1": 75.56
+ },
+ {
+  "file": "2_reading_B_agent_on_parse/05_after_stacked_rows.json",
+  "what happened": "repair: a record printed over several stacked lines joined back into one row -- no change",
+  "value F1": 75.56
+ },
+ {
+  "file": "2_reading_B_agent_on_parse/06_after_conform.json",
+  "what happened": "check: every schema field present (null where allowed); output valid against the schema -- 1 value(s) changed: requisition_number: \"<absent>\" -> null",
+  "value F1": 73.91
+ },
+ {
+  "file": "2_reading_B_agent_on_parse/07_after_blank_boxes.json",
+  "what happened": "check: a blank tick box is false where the field's description says so -- no change",
+  "value F1": 73.91
+ },
+ {
+  "file": "2_reading_B_agent_on_parse/08_after_template_rows.json",
+  "what happened": "check: template rows (only the printed label filled) and blank pre-printed lines dropped -- no change",
+  "value F1": 73.91
+ },
+ {
+  "file": "2_reading_B_agent_on_parse/09_after_copied_rows.json",
+  "what happened": "check: rows copied from one list into another dropped -- no change",
+  "value F1": 73.91
+ },
+ {
+  "file": "2_reading_B_agent_on_parse/10_after_record_counts.json",
+  "what happened": "check: identical records capped at the number of times the page prints them -- no change",
+  "value F1": 73.91
+ },
+ {
+  "file": "2_reading_B_agent_on_parse/11_after_printed_pages.json",
+  "what happened": "check: each row's page located from its words; the printed page number reported -- no change",
+  "value F1": 73.91
+ },
+ {
+  "file": "2_reading_B_agent_on_parse/12_after_printed_quotes.json",
+  "what happened": "check: quote characters as the page prints them -- no change",
+  "value F1": 73.91
+ },
+ {
+  "file": "2_reading_B_agent_on_parse/13_after_printed_numbers.json",
+  "what happened": "check: a rounded or rescaled number replaced by the one printed number it restates -- no change",
+  "value F1": 73.91
+ },
+ {
+  "file": "2_reading_C_one_shot/00_reading.json",
+  "what happened": "the stored reading C one shot output",
+  "value F1": 78.26
+ },
+ {
+  "file": "2_reading_C_one_shot/01_after_conform.json",
+  "what happened": "check: every schema field present (null where allowed); output valid against the schema -- no change",
+  "value F1": 78.26
+ },
+ {
+  "file": "2_reading_C_one_shot/02_after_blank_boxes.json",
+  "what happened": "check: a blank tick box is false where the field's description says so -- no change",
+  "value F1": 78.26
+ },
+ {
+  "file": "2_reading_C_one_shot/03_after_template_rows.json",
+  "what happened": "check: template rows (only the printed label filled) and blank pre-printed lines dropped -- no change",
+  "value F1": 78.26
+ },
+ {
+  "file": "2_reading_C_one_shot/04_after_copied_rows.json",
+  "what happened": "check: rows copied from one list into another dropped -- no change",
+  "value F1": 78.26
+ },
+ {
+  "file": "2_reading_C_one_shot/05_after_record_counts.json",
+  "what happened": "check: identical records capped at the number of times the page prints them -- no change",
+  "value F1": 78.26
+ },
+ {
+  "file": "2_reading_C_one_shot/06_after_printed_pages.json",
+  "what happened": "check: each row's page located from its words; the printed page number reported -- no change",
+  "value F1": 78.26
+ },
+ {
+  "file": "2_reading_C_one_shot/07_after_printed_quotes.json",
+  "what happened": "check: quote characters as the page prints them -- no change",
+  "value F1": 78.26
+ },
+ {
+  "file": "2_reading_C_one_shot/08_after_printed_numbers.json",
+  "what happened": "check: a rounded or rescaled number replaced by the one printed number it restates -- no change",
+  "value F1": 78.26
+ },
+ {
+  "file": "3_quorum/agreement.json",
+  "what happened": "quorum: agreement {'reading_A_agent_on_page_image': 0.9348, 'reading_B_agent_on_parse': 0.9348, 'reading_C_one_shot': 0.9565}; keeps reading_C_one_shot",
+  "value F1": 78.26
+ },
+ {
+  "file": "final.json",
+  "what happened": "the output -- identical to the stored final result",
+  "value F1": 78.26
+ }
+]

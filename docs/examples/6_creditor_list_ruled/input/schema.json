@@ -1,0 +1,110 @@
+{
+ "type": "object",
+ "title": "Real-content FTX creditor matrix extraction schema",
+ "description": "Extract the case header and every creditor row from the FTX Consolidated List of Creditors. Rows are a fully-ruled nine-column table with a gold header band; many cells are blank and many rows are redacted to 'NAME ON FILE' / 'ADDRESS ON FILE'. Return creditors in document (alphabetical) order; preserve the redaction tokens verbatim; use null for any blank cell.",
+ "required": [
+  "report_title",
+  "case_number",
+  "debtor",
+  "creditors"
+ ],
+ "properties": {
+  "report_title": {
+   "type": "string",
+   "description": "Document title printed on each content page, e.g. 'Consolidated List of Creditors'."
+  },
+  "case_number": {
+   "type": "string",
+   "description": "Bankruptcy case number from the ECF filing stamp, e.g. '22-11068-JTD'."
+  },
+  "debtor": {
+   "type": "string",
+   "description": "Debtor named in the caption, e.g. 'FTX Trading Ltd., et al.'."
+  },
+  "creditors": {
+   "type": "array",
+   "description": "Every creditor row in document order. Preserve 'NAME ON FILE' / 'ADDRESS ON FILE' verbatim; use null for blank cells.",
+   "items": {
+    "type": "object",
+    "required": [
+     "name",
+     "address_1",
+     "address_2",
+     "address_3",
+     "address_4",
+     "city",
+     "state",
+     "postal_code",
+     "country",
+     "source_page"
+    ],
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Creditor name (first column); may be 'NAME ON FILE'."
+     },
+     "address_1": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "First address line (or 'ADDRESS ON FILE'), else null."
+     },
+     "address_2": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Second address line, else null."
+     },
+     "address_3": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Third address line, else null."
+     },
+     "address_4": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Fourth address line, else null."
+     },
+     "city": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "City, else null."
+     },
+     "state": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "State/province code, else null."
+     },
+     "postal_code": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Postal/ZIP code, else null."
+     },
+     "country": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Country (blank for domestic US rows), else null."
+     },
+     "source_page": {
+      "type": "integer",
+      "description": "One-indexed PDF page where the row is printed."
+     }
+    }
+   }
+  }
+ }
+}

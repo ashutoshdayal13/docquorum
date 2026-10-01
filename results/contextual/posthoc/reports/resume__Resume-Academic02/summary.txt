@@ -1,0 +1,92 @@
+================================================================================
+EVALUATION REPORT: resume__Resume-Academic02
+Timestamp: 2026-09-28T06:30:39.535992
+================================================================================
+
+OVERALL RESULTS
+----------------------------------------
+  Overall Score:  0.877  (item-weighted)
+  Field Score:    0.867  (flat average)
+  Pass Rate: 84.6%
+  Evaluated: 13 fields (11 passed, 2 failed)
+
+SCHEMA STATISTICS
+----------------------------------------
+  Total Nodes: 67
+  Required Keys: 3
+  Optional Keys: 35
+  By Type: anyof: 7, array: 11, boolean: 1, integer: 4, null: 5, object: 9, string: 30
+
+COVERAGE
+----------------------------------------
+  Present in Both: 26
+  Missing in Extracted: 1
+  Spurious in Extracted: 4
+  Required Missing: 0
+
+PASS RATE BY METRIC
+----------------------------------------
+  array_llm: 81.8% (9/11)
+  string_semantic: 100.0% (2/2)
+
+LLM METRICS
+----------------------------------------
+  Calls: 13
+  Avg Score: 0.867
+  Median Score: 1.000
+
+  Top Lowest-Scoring Fields:
+    - skills (array_llm): 0.000
+    - workExperience (array_llm): 0.571
+      Reason: The evaluation compares 7 gold work experience items against 7 predicted items. 
+
+1. **KAIST Profess...
+    - publications (array_llm): 0.867
+      Reason: The predicted array contains 15 items, and the gold array contains 15 items. I evaluated each gold i...
+    - other (array_llm): 0.889
+      Reason: The predicted array contains 8 items, while the gold array contains 9 items. I evaluated each gold i...
+    - certificationsAndAwards (array_llm): 0.944
+      Reason: The predicted array contains 18 items, while the gold array contains 18 items. I evaluated each gold...
+
+ERROR BREAKDOWN
+----------------------------------------
+  By Reason:
+    gold_absent: 1
+    semantic_mismatch: 1
+  By Path Prefix:
+    skills: 1
+    workExperience: 1
+
+ARRAY BREAKDOWN
+----------------------------------------
+  languages [PASS] score=1.000
+    Items: 3 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  media [PASS] score=1.000
+    Items: 4 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  education [PASS] score=1.000
+    Items: 3 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  other [PASS] score=0.889
+    Items: 8 matched, 1 missed, 0 spurious
+    P=1.000  R=0.889  F1=0.941
+  workExperience [FAIL] score=0.571
+    Items: 4 matched, 3 missed, 3 spurious
+    P=0.571  R=0.571  F1=0.571
+  publications [PASS] score=0.867
+    Items: 13 matched, 2 missed, 2 spurious
+    P=0.867  R=0.867  F1=0.867
+  certificationsAndAwards [PASS] score=0.944
+    Items: 17 matched, 1 missed, 1 spurious
+    P=0.944  R=0.944  F1=0.944
+
+FAILED FIELDS (first 10)
+----------------------------------------
+  skills
+    Metric: array_llm, Score: 0.000
+    Reason: gold_null
+  workExperience
+    Metric: array_llm, Score: 0.571
+
+================================================================================

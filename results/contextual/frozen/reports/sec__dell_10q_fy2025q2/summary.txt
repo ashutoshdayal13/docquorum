@@ -1,0 +1,90 @@
+================================================================================
+EVALUATION REPORT: sec__dell_10q_fy2025q2
+Timestamp: 2026-09-28T04:41:44.085724
+================================================================================
+
+OVERALL RESULTS
+----------------------------------------
+  Overall Score:  0.055  (item-weighted)
+  Field Score:    0.055  (flat average)
+  Pass Rate: 5.5%
+  Evaluated: 55 fields (3 passed, 52 failed)
+
+SCHEMA STATISTICS
+----------------------------------------
+  Total Nodes: 739
+  Required Keys: 269
+  Optional Keys: 157
+  By Type: anyof: 104, array: 52, integer: 52, null: 104, number: 52, object: 58, string: 317
+
+COVERAGE
+----------------------------------------
+  Present in Both: 3
+  Missing in Extracted: 359
+  Spurious in Extracted: 52
+  Required Missing: 259
+
+PASS RATE BY METRIC
+----------------------------------------
+  array_llm: 1.9% (1/52)
+  string_exact: 50.0% (1/2)
+  string_semantic: 100.0% (1/1)
+
+LLM METRICS
+----------------------------------------
+  Calls: 53
+  Avg Score: 0.038
+  Median Score: 0.000
+
+  Top Lowest-Scoring Fields:
+    - balance_sheet.cash (array_llm): 0.000
+    - balance_sheet.dividends_payable (array_llm): 0.000
+    - balance_sheet.goodwill (array_llm): 0.000
+    - balance_sheet.total_debt (array_llm): 0.000
+    - balance_sheet.inventories (array_llm): 0.000
+
+ERROR BREAKDOWN
+----------------------------------------
+  By Reason:
+    semantic_mismatch: 51
+    value_mismatch: 1
+  By Path Prefix:
+    balance_sheet: 22
+    income_statement: 17
+    cash_flow_statement: 8
+    other_disclosures: 4
+    meta: 1
+
+FAILED FIELDS (first 10)
+----------------------------------------
+  meta.report_period
+    Metric: string_exact, Score: 0.000
+  balance_sheet.cash
+    Metric: array_llm, Score: 0.000
+    Reason: extracted_empty_array
+  balance_sheet.dividends_payable
+    Metric: array_llm, Score: 0.000
+    Reason: extracted_empty_array
+  balance_sheet.goodwill
+    Metric: array_llm, Score: 0.000
+    Reason: extracted_empty_array
+  balance_sheet.total_debt
+    Metric: array_llm, Score: 0.000
+    Reason: extracted_empty_array
+  balance_sheet.inventories
+    Metric: array_llm, Score: 0.000
+    Reason: extracted_empty_array
+  balance_sheet.total_assets
+    Metric: array_llm, Score: 0.000
+    Reason: extracted_empty_array
+  balance_sheet.current_assets
+    Metric: array_llm, Score: 0.000
+    Reason: extracted_empty_array
+  balance_sheet.long_term_debt
+    Metric: array_llm, Score: 0.000
+    Reason: extracted_empty_array
+  balance_sheet.short_term_debt
+    Metric: array_llm, Score: 0.000
+    Reason: extracted_empty_array
+
+================================================================================

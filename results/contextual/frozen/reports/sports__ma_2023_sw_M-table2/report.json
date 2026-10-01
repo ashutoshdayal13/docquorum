@@ -1,0 +1,573 @@
+{
+  "output_name": "sports__ma_2023_sw_M-table2",
+  "timestamp": "2026-09-28T04:40:26.700008",
+  "schema_hash": "6f556390",
+  "gold_hash": "dfaac05e",
+  "extracted_hash": "f6de771a",
+  "schema_stats": {
+    "total_nodes": 24,
+    "counts_by_type": {
+      "object": 5,
+      "string": 11,
+      "array": 3,
+      "anyof": 2,
+      "integer": 2,
+      "null": 1
+    },
+    "required_keys_count": 0,
+    "optional_keys_count": 16,
+    "required_by_type": {},
+    "optional_by_type": {
+      "string": 9,
+      "object": 2,
+      "array": 2,
+      "anyof": 2,
+      "integer": 1
+    }
+  },
+  "gold_stats": {
+    "label": "gold",
+    "total_keys": 82,
+    "counts_by_type": {
+      "string": 50,
+      "object": 11,
+      "array": 4,
+      "integer": 17
+    },
+    "array_stats": {
+      "array_field_count": 4,
+      "total_items": 13,
+      "min_length": 1,
+      "median_length": 2.5,
+      "max_length": 7
+    },
+    "null_count": 0,
+    "missing_count": 0
+  },
+  "extracted_stats": {
+    "label": "extracted",
+    "total_keys": 92,
+    "counts_by_type": {
+      "string": 50,
+      "object": 11,
+      "array": 4,
+      "integer": 17,
+      "null": 10
+    },
+    "array_stats": {
+      "array_field_count": 4,
+      "total_items": 13,
+      "min_length": 1,
+      "median_length": 2.5,
+      "max_length": 7
+    },
+    "null_count": 10,
+    "missing_count": 0
+  },
+  "coverage": {
+    "present_in_both": 11,
+    "missing_in_extracted": 0,
+    "spurious_in_extracted": 1,
+    "required_missing": 0,
+    "missing_paths": [],
+    "spurious_paths": [
+      "age_groups.results.records"
+    ]
+  },
+  "outcomes": {
+    "total_evaluated": 5,
+    "total_passed": 5,
+    "total_failed": 0,
+    "pass_rate": 1.0,
+    "pass_by_metric": {
+      "string_fuzzy": {
+        "passed": 1,
+        "failed": 0
+      },
+      "string_case_insensitive": {
+        "passed": 1,
+        "failed": 0
+      },
+      "string_exact": {
+        "passed": 2,
+        "failed": 0
+      },
+      "array_llm": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "pass_by_type": {
+      "string": {
+        "passed": 4,
+        "failed": 0
+      },
+      "array": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "pass_by_required": {
+      "optional": {
+        "passed": 5,
+        "failed": 0
+      }
+    },
+    "confusion": {
+      "true_positive": 5,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_negative": 0
+    },
+    "llm_stats": {
+      "call_count": 1,
+      "avg_score": 1.0,
+      "median_score": 1.0,
+      "score_distribution": {
+        "0.8-1.0": 1
+      },
+      "top_lowest_fields": [
+        {
+          "path": "age_groups",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": "The predicted array matches the gold array perfectly in terms of structure and content. All three age groups ('95-99', '90-94', '85-89') are present in both arrays. Within each age group, the list of ..."
+        }
+      ]
+    },
+    "error_breakdown": null
+  },
+  "field_outcomes": [
+    {
+      "path": "$.properties.championship",
+      "normalized_path": "championship",
+      "metric_id": "string_fuzzy",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "world aquatics masters championships kyushu 2023",
+      "extracted_value": "world aquatics masters championships kyushu 2023",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.event_details.properties.sex",
+      "normalized_path": "event_details.sex",
+      "metric_id": "string_case_insensitive",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "MEN",
+      "extracted_value": "MEN",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.event_details.properties.length",
+      "normalized_path": "event_details.length",
+      "metric_id": "string_exact",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "50m",
+      "extracted_value": "50m",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.event_details.properties.category",
+      "normalized_path": "event_details.category",
+      "metric_id": "string_exact",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "Backstroke",
+      "extracted_value": "Backstroke",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.age_groups",
+      "normalized_path": "age_groups",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "age_group": "95-99",
+          "results": [
+            {
+              "rank": 1,
+              "athlete_details": {
+                "athlete": "Kazuo YASUIKE",
+                "country": "JPN",
+                "year_birth": 1928,
+                "team": "OISO MSC"
+              },
+              "time": "1:12.15"
+            }
+          ]
+        },
+        {
+          "age_group": "90-94",
+          "results": [
+            {
+              "rank": 1,
+              "athlete_details": {
+                "athlete": "Fritz ILGEN",
+                "country": "GER",
+                "year_birth": 1933,
+                "team": "TSV Lindau"
+              },
+              "time": "51.78"
+            },
+            {
+              "rank": 2,
+              "athlete_details": {
+                "athlete": "Fusao TAKAHASHI",
+                "country": "JPN",
+                "year_birth": 1933,
+                "team": "JUMP"
+              },
+              "time": "55.97"
+            },
+            {
+              "rank": 3,
+              "athlete_details": {
+                "athlete": "Chen-I LIN",
+                "country": "TPE",
+                "year_birth": 1933,
+                "team": "Chinese Taipei Master Swim"
+              },
+              "time": "1:05.93"
+            },
+            {
+              "rank": 4,
+              "athlete_details": {
+                "athlete": "Adelson LEITE JULIAO",
+                "country": "BRA",
+                "year_birth": 1933,
+                "team": "CIRCULO MILITAR DE FORTALEZA"
+              },
+              "time": "1:15.23"
+            },
+            {
+              "rank": "NA",
+              "athlete_details": {
+                "athlete": "Itaru YANAGAWA",
+                "country": "JPN",
+                "year_birth": 1930,
+                "team": "ITOMAN NAGAZUMI"
+              },
+              "time": "DSQ"
+            },
+            {
+              "rank": "NA",
+              "athlete_details": {
+                "athlete": "Carlos SALAZAR FLORES",
+                "country": "MEX",
+                "year_birth": 1933,
+                "team": "CLUB BANCARIO DE GUADALAJARRA"
+              },
+              "time": "DNS"
+            },
+            {
+              "rank": "NA",
+              "athlete_details": {
+                "athlete": "Takashi MASAMURA",
+                "country": "JPN",
+                "year_birth": 1931,
+                "team": "TAC"
+              },
+              "time": "DNS"
+            }
+          ]
+        },
+        {
+          "age_group": "85-89",
+          "results": [
+            {
+              "rank": 1,
+              "athlete_details": {
+                "athlete": "Tatsuro ONO",
+                "country": "JPN",
+                "year_birth": 1937,
+                "team": "JAPAN SS"
+              },
+              "time": "56.14"
+            },
+            {
+              "rank": 2,
+              "athlete_details": {
+                "athlete": "Yoshinobu OKADA",
+                "country": "JPN",
+                "year_birth": 1937,
+                "team": "PAL OTA"
+              },
+              "time": "1:02.01"
+            }
+          ]
+        }
+      ],
+      "extracted_value": [
+        {
+          "age_group": "95-99",
+          "results": [
+            {
+              "rank": 1,
+              "time": "1:12.15",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Kazuo YASUIKE",
+                "country": "JPN",
+                "year_birth": 1928,
+                "team": "OISO MSC"
+              }
+            }
+          ]
+        },
+        {
+          "age_group": "90-94",
+          "results": [
+            {
+              "rank": 1,
+              "time": "51.78",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Fritz ILGEN",
+                "country": "GER",
+                "year_birth": 1933,
+                "team": "TSV Lindau"
+              }
+            },
+            {
+              "rank": 2,
+              "time": "55.97",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Fusao TAKAHASHI",
+                "country": "JPN",
+                "year_birth": 1933,
+                "team": "JUMP"
+              }
+            },
+            {
+              "rank": 3,
+              "time": "1:05.93",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Chen-I LIN",
+                "country": "TPE",
+                "year_birth": 1933,
+                "team": "Chinese Taipei Master Swim"
+              }
+            },
+            {
+              "rank": 4,
+              "time": "1:15.23",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Adelson LEITE JULIAO",
+                "country": "BRA",
+                "year_birth": 1933,
+                "team": "CIRCULO MILITAR DE FORTALEZA"
+              }
+            },
+            {
+              "rank": "NA",
+              "time": "DSQ",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Itaru YANAGAWA",
+                "country": "JPN",
+                "year_birth": 1930,
+                "team": "ITOMAN NAGAZUMI"
+              }
+            },
+            {
+              "rank": "NA",
+              "time": "DNS",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Carlos SALAZAR FLORES",
+                "country": "MEX",
+                "year_birth": 1933,
+                "team": "CLUB BANCARIO DE GUADALAJARA"
+              }
+            },
+            {
+              "rank": "NA",
+              "time": "DNS",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Takashi MASAMURA",
+                "country": "JPN",
+                "year_birth": 1931,
+                "team": "TAC"
+              }
+            }
+          ]
+        },
+        {
+          "age_group": "85-89",
+          "results": [
+            {
+              "rank": 1,
+              "time": "56.14",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Tatsuro ONO",
+                "country": "JPN",
+                "year_birth": 1937,
+                "team": "JAPAN SS"
+              }
+            },
+            {
+              "rank": 2,
+              "time": "1:02.01",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Yoshinobu OKADA",
+                "country": "JPN",
+                "year_birth": 1937,
+                "team": "PAL OTA"
+              }
+            }
+          ]
+        }
+      ],
+      "reasoning": "The predicted array matches the gold array perfectly in terms of structure and content. All three age groups ('95-99', '90-94', '85-89') are present in both arrays. Within each age group, the list of ...",
+      "array_breakdown": {
+        "matched": 3,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "age_group": "95-99",
+            "results": [
+              {
+                "rank": 1,
+                "athlete_details": {
+                  "athlete": "Kazuo YASUIKE",
+                  "country": "JPN",
+                  "year_birth": 1928,
+                  "team": "OISO MSC"
+                },
+                "time": "1:12.15"
+              }
+            ]
+          },
+          {
+            "age_group": "90-94",
+            "results": [
+              {
+                "rank": 1,
+                "athlete_details": {
+                  "athlete": "Fritz ILGEN",
+                  "country": "GER",
+                  "year_birth": 1933,
+                  "team": "TSV Lindau"
+                },
+                "time": "51.78"
+              },
+              {
+                "rank": 2,
+                "athlete_details": {
+                  "athlete": "Fusao TAKAHASHI",
+                  "country": "JPN",
+                  "year_birth": 1933,
+                  "team": "JUMP"
+                },
+                "time": "55.97"
+              },
+              {
+                "rank": 3,
+                "athlete_details": {
+                  "athlete": "Chen-I LIN",
+                  "country": "TPE",
+                  "year_birth": 1933,
+                  "team": "Chinese Taipei Master Swim"
+                },
+                "time": "1:05.93"
+              },
+              {
+                "rank": 4,
+                "athlete_details": {
+                  "athlete": "Adelson LEITE JULIAO",
+                  "country": "BRA",
+                  "year_birth": 1933,
+                  "team": "CIRCULO MILITAR DE FORTALEZA"
+                },
+                "time": "1:15.23"
+              },
+              {
+                "rank": "NA",
+                "athlete_details": {
+                  "athlete": "Itaru YANAGAWA",
+                  "country": "JPN",
+                  "year_birth": 1930,
+                  "team": "ITOMAN NAGAZUMI"
+                },
+                "time": "DSQ"
+              },
+              {
+                "rank": "NA",
+                "athlete_details": {
+                  "athlete": "Carlos SALAZAR FLORES",
+                  "country": "MEX",
+                  "year_birth": 1933,
+                  "team": "CLUB BANCARIO DE GUADALAJARA"
+                },
+                "time": "DNS"
+              },
+              {
+                "rank": "NA",
+                "athlete_details": {
+                  "athlete": "Takashi MASAMURA",
+                  "country": "JPN",
+                  "year_birth": 1931,
+                  "team": "TAC"
+                },
+                "time": "DNS"
+              }
+            ]
+          },
+          {
+            "age_group": "85-89",
+            "results": [
+              {
+                "rank": 1,
+                "athlete_details": {
+                  "athlete": "Tatsuro ONO",
+                  "country": "JPN",
+                  "year_birth": 1937,
+                  "team": "JAPAN SS"
+                },
+                "time": "56.14"
+              },
+              {
+                "rank": 2,
+                "athlete_details": {
+                  "athlete": "Yoshinobu OKADA",
+                  "country": "JPN",
+                  "year_birth": 1937,
+                  "team": "PAL OTA"
+                },
+                "time": "1:02.01"
+              }
+            ]
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    }
+  ],
+  "overall_score": 1.0,
+  "field_score": 1.0,
+  "overall_pass_rate": 1.0
+}

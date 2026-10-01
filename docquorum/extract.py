@@ -1,0 +1,117 @@
+"""
+DocQuorum on one document.
+
+    python -m docquorum.extract DOC --schema SCHEMA.json [--task "..."] [-o OUT.json]
+
+DOC is a PDF or an image. SCHEMA is a JSON Schema, or a JSON template whose leaves are empty
+("" / [] / {}): the result then follows the template, with "" for anything absent.
+
+The rule of the benchmark runs (benchmarks/extractbench/run.sh), on one document:
+  * a layout reader when the page geometry selects one (agents/layout.py): pages printed as
+    equal-width columns of records -> the column reader; a scan whose parsed tables map onto
+    the schema -> the ruled-table reader;
+  * otherwise, a PDF with a text layer -> one reading, by the reader agent;
+  * a PDF without one -> the reader agent on the page images and on the MinerU parse; up to
+    12 pages also the one-shot reader, and the quorum keeps the reading the others agree
+    with most; a longer scan is read through its parse.
+Every reading passes its chain of checks (docquorum/checks) before the quorum.
+"""
+import argparse
+import hashlib
+import json
+import sys
+import tempfile
+from pathlib import Path
+
+from docquorum import checks, quorum
+from docquorum.agents import column_reader, layout, oneshot, ruled_reader
+from docquorum.agents.reader import read_document
+from docquorum.tools import llm, parser, pdf as PDF
+from docquorum.tools.schema import fill_template, is_template, template_to_schema
+
+
+def as_pdf(doc, folder):
+    doc, dst = Path(doc), Path(folder) / "doc.pdf"
+    if doc.suffix.lower() == ".pdf":
+        dst.write_bytes(doc.read_bytes())
+    else:
+        from PIL import Image
+        Image.open(doc).convert("RGB").save(dst, "PDF", resolution=150)
+    return dst
+
+
+def extract(doc, schema, task=None, workers=8, log=print):
+    """Returns (result, report). `schema` is a JSON Schema or a JSON template (dict)."""
+    template = schema if is_template(schema) else None
+    schema = template_to_schema(template) if template is not None else dict(schema)
+    if task:
+        schema["description"] = task
+    name = "doc_" + hashlib.sha1(Path(doc).read_bytes()).hexdigest()[:12]   # the parse cache key
+    with tempfile.TemporaryDirectory() as td:
+        pdf = as_pdf(doc, td)
+        n = PDF.npages(pdf)
+        text = PDF.pdf_has_text(pdf, n)
+        if not text and parser.available():
+            parser.parse_pages(pdf, list(range(1, n + 1)), cache_key=name)
+        ev = layout.decide(schema, pdf, name)
+        log(f"[docquorum] {Path(doc).name}: {n} page(s); {'text layer' if text else 'no text layer'}; "
+            f"reader: {ev['reader']}")
+        cl, d = llm.client(), checks.Doc(schema, pdf, name)
+        if ev["reader"] != "route":
+            reader = column_reader if ev["reader"] == "colflow" else ruled_reader
+            got = reader.read(cl, schema, pdf, workers=4, log=log)
+            return _finish(checks.run("layout", got, d), template), {"readings": [ev["reader"]]}
+
+        readings = {}
+
+        def reading(kind, got):
+            readings[kind] = checks.run(kind, got, d)
+
+        res, stat, _ = read_document(cl, schema, pdf, name, workers)
+        if not stat.get("errors"):
+            reading("primary", res)
+        if not text and parser.cached_pages(name):
+            res, stat, _ = read_document(cl, schema, pdf, name, workers, use_parsed=True)
+            if not stat.get("errors"):
+                reading("parse", res)
+            if n > 12 and "parse" in readings:                  # a long scan: its parse reading
+                return _finish(readings["parse"], template), {"readings": ["parse"]}
+        if not text and n <= 12:
+            try:
+                reading("oneshot", oneshot.read(pdf, schema))
+            except Exception as e:                                # the document does not fit
+                log(f"[docquorum] one-shot reading failed: {type(e).__name__}: {str(e)[:120]}")
+        if not readings:
+            raise RuntimeError("no reading succeeded")
+        if len(readings) == 1:
+            return _finish(next(iter(readings.values())), template), {"readings": list(readings)}
+        rec = {"id": f"doc/{name}", "pdf": str(pdf), "category": "doc", "tags": [], "data_schema": schema}
+        best, agreement, _ = quorum.pick(rec, readings)
+        return _finish(readings[best], template), {"readings": list(readings), "picked": best,
+                                                   "agreement": {k: round(v, 4) for k, v in agreement.items()}}
+
+
+def _finish(result, template):
+    return fill_template(result, template) if template is not None else result
+
+
+def main():
+    ap = argparse.ArgumentParser(description="DocQuorum: schema-guided document extraction")
+    ap.add_argument("doc", help="PDF or image")
+    ap.add_argument("--schema", required=True, help="JSON Schema or JSON template file")
+    ap.add_argument("--task", default=None, help="optional task description (what to extract, and how)")
+    ap.add_argument("-o", "--out", default=None, help="write the result here (default: stdout)")
+    ap.add_argument("--workers", type=int, default=8)
+    a = ap.parse_args()
+    result, report = extract(a.doc, json.loads(Path(a.schema).read_text()), a.task, a.workers,
+                             log=lambda m: print(m, file=sys.stderr))
+    print(f"[docquorum] {report}", file=sys.stderr)
+    out = json.dumps(result, indent=2, ensure_ascii=False)
+    if a.out:
+        Path(a.out).write_text(out)
+    else:
+        print(out)
+
+
+if __name__ == "__main__":
+    main()

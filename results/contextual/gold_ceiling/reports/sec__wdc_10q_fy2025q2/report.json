@@ -1,0 +1,6365 @@
+{
+  "output_name": "sec__wdc_10q_fy2025q2",
+  "timestamp": "2026-09-28T03:41:46.108950",
+  "schema_hash": "2ca2c921",
+  "gold_hash": "38ca2ac0",
+  "extracted_hash": "38ca2ac0",
+  "schema_stats": {
+    "total_nodes": 739,
+    "counts_by_type": {
+      "object": 58,
+      "string": 317,
+      "array": 52,
+      "anyof": 104,
+      "null": 104,
+      "integer": 52,
+      "number": 52
+    },
+    "required_keys_count": 269,
+    "optional_keys_count": 157,
+    "required_by_type": {
+      "object": 5,
+      "string": 160,
+      "anyof": 104
+    },
+    "optional_by_type": {
+      "string": 105,
+      "array": 52
+    }
+  },
+  "gold_stats": {
+    "label": "gold",
+    "total_keys": 1447,
+    "counts_by_type": {
+      "object": 5,
+      "string": 997,
+      "array": 53,
+      "integer": 333,
+      "number": 27,
+      "null": 32
+    },
+    "array_stats": {
+      "array_field_count": 53,
+      "total_items": 196,
+      "min_length": 0,
+      "median_length": 2,
+      "max_length": 36
+    },
+    "null_count": 32,
+    "missing_count": 0
+  },
+  "extracted_stats": {
+    "label": "extracted",
+    "total_keys": 1447,
+    "counts_by_type": {
+      "object": 5,
+      "string": 997,
+      "array": 53,
+      "integer": 333,
+      "number": 27,
+      "null": 32
+    },
+    "array_stats": {
+      "array_field_count": 53,
+      "total_items": 196,
+      "min_length": 0,
+      "median_length": 2,
+      "max_length": 36
+    },
+    "null_count": 32,
+    "missing_count": 0
+  },
+  "coverage": {
+    "present_in_both": 363,
+    "missing_in_extracted": 0,
+    "spurious_in_extracted": 0,
+    "required_missing": 0,
+    "missing_paths": [],
+    "spurious_paths": []
+  },
+  "outcomes": {
+    "total_evaluated": 55,
+    "total_passed": 55,
+    "total_failed": 0,
+    "pass_rate": 1.0,
+    "pass_by_metric": {
+      "string_exact": {
+        "passed": 2,
+        "failed": 0
+      },
+      "array_llm": {
+        "passed": 52,
+        "failed": 0
+      },
+      "string_semantic": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "pass_by_type": {
+      "string": {
+        "passed": 3,
+        "failed": 0
+      },
+      "array": {
+        "passed": 52,
+        "failed": 0
+      }
+    },
+    "pass_by_required": {
+      "optional": {
+        "passed": 55,
+        "failed": 0
+      }
+    },
+    "confusion": {
+      "true_positive": 54,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_negative": 1
+    },
+    "llm_stats": {
+      "call_count": 53,
+      "avg_score": 1.0,
+      "median_score": 1.0,
+      "score_distribution": {
+        "0.8-1.0": 53
+      },
+      "top_lowest_fields": [
+        {
+          "path": "cash_flow_statement.commercial_paper_issuance",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": ""
+        },
+        {
+          "path": "meta.company",
+          "metric_id": "string_semantic",
+          "score": 1.0,
+          "reasoning": "The predicted string is identical to the gold string."
+        },
+        {
+          "path": "balance_sheet.cash",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1 (FY2025 Q2, value 2291) matches Predicted item 1. All fields (data_period, metric_type, segm..."
+        },
+        {
+          "path": "balance_sheet.commercial_paper_outstanding",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": "The gold array contains one item representing a null value for commercial paper issuance in FY2025 Q2. The predicted array contains an identical item. Comparing field by field: 'data_period', 'metric_..."
+        },
+        {
+          "path": "balance_sheet.dividends_payable",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": "The gold array contains one item representing a null value for declared cash dividends for FY2025 Q2. The predicted array contains an identical item. Comparing field by field: 'data_period' matches ex..."
+        }
+      ]
+    },
+    "error_breakdown": null
+  },
+  "field_outcomes": [
+    {
+      "path": "$.properties.meta.properties.report_period",
+      "normalized_path": "meta.report_period",
+      "metric_id": "string_exact",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "FY2025 Q2",
+      "extracted_value": "FY2025 Q2",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.meta.properties.report_period_end_date",
+      "normalized_path": "meta.report_period_end_date",
+      "metric_id": "string_exact",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "2024-12-27",
+      "extracted_value": "2024-12-27",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.cash_flow_statement.properties.commercial_paper_issuance",
+      "normalized_path": "cash_flow_statement.commercial_paper_issuance",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": "both_empty_array",
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.meta.properties.company",
+      "normalized_path": "meta.company",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "Western Digital",
+      "extracted_value": "Western Digital",
+      "reasoning": "The predicted string is identical to the gold string.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.cash",
+      "normalized_path": "balance_sheet.cash",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2291
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1879
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2291
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1879
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1 (FY2025 Q2, value 2291) matches Predicted item 1. All fields (data_period, metric_type, segm...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 2291
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 1879
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.commercial_paper_outstanding",
+      "normalized_path": "balance_sheet.commercial_paper_outstanding",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "reasoning": "The gold array contains one item representing a null value for commercial paper issuance in FY2025 Q2. The predicted array contains an identical item. Comparing field by field: 'data_period', 'metric_...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "NA",
+            "scale": null,
+            "value": null
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.dividends_payable",
+      "normalized_path": "balance_sheet.dividends_payable",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "reasoning": "The gold array contains one item representing a null value for declared cash dividends for FY2025 Q2. The predicted array contains an identical item. Comparing field by field: 'data_period' matches ex...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "NA",
+            "scale": null,
+            "value": null
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.total_debt",
+      "normalized_path": "balance_sheet.total_debt",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 7413
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 7488
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 7413
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 7488
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1 (FY2025 Q2, value 7413) matches Predicted item 1. All fields (data_period, metric_type, segm...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 7413
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 7488
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.total_assets",
+      "normalized_path": "balance_sheet.total_assets",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 25456
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 24188
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 25456
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 24188
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1 (FY2025 Q2, value 25456) matches Predicted item 1. All fields (data_period, metric_type, seg...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 25456
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 24188
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.current_assets",
+      "normalized_path": "balance_sheet.current_assets",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 9372
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 8060
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 9372
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 8060
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1 (FY2025 Q2, value 9372) matches Predicted item 1. All fields (data_period, metric_type, segm...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 9372
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 8060
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.inventories",
+      "normalized_path": "balance_sheet.inventories",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3420
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3342
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3420
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3342
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1 (FY2025 Q2, actual, company, NA, USD, 1000000, 3420) matches Predicted item 1 exactly across...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 3420
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 3342
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.long_term_debt",
+      "normalized_path": "balance_sheet.long_term_debt",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 7216
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 5684
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 7216
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 5684
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1: {\"data_period\": \"FY2025 Q2\", \"metric_type\": \"actual\", \"segment_type\": \"company\", \"segment_n...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 7216
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 5684
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.short_term_debt",
+      "normalized_path": "balance_sheet.short_term_debt",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 150
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1750
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 150
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1750
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1 (FY2025 Q2, value 150) matches Predicted item 1. All fields (data_period, metric_type, segme...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 150
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 1750
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.goodwill",
+      "normalized_path": "balance_sheet.goodwill",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 9729
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4319
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 5410
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4319
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 5713
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 10032
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 9729
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4319
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 5410
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4319
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 5713
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 10032
+        }
+      ],
+      "reasoning": "The predicted array contains 6 items, and the gold array contains 6 items. Comparing each item field-by-field: \n1. Gold item 1 (FY2025 Q2, company, NA, 9729) matches Predicted item 1 exactly.\n2. Gold ...",
+      "array_breakdown": {
+        "matched": 6,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 9729
+          },
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "HDD",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 4319
+          },
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Flash",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 5410
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "HDD",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 4319
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Flash",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 5713
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 10032
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.retained_earnings",
+      "normalized_path": "balance_sheet.retained_earnings",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 7862
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 6775
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 7862
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 6775
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1 (FY2025 H1, value 7862) matches Predicted item 1. All fields (data_period, metric_type, segm...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 7862
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 6775
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.total_liabilities",
+      "normalized_path": "balance_sheet.total_liabilities",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 13110
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 13141
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 13110
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 13141
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1 (FY2025 Q2, value 13110) matches Predicted item 1. All fields (data_period, metric_type, seg...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 13110
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 13141
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.total_receivables",
+      "normalized_path": "balance_sheet.total_receivables",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "reasoning": "The gold array contains one item representing 'Total receivables' for 'FY2025 Q2' with a null value. The predicted array contains one item that is identical to the gold item in all fields: 'data_perio...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "NA",
+            "scale": null,
+            "value": null
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.accounts_payable",
+      "normalized_path": "balance_sheet.accounts_payable",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1627
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1411
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1627
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1411
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1: {\"data_period\": \"FY2025 Q2\", \"metric_type\": \"actual\", \"segment_type\": \"company\", \"segment_n...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 1627
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 1411
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.money_market_funds",
+      "normalized_path": "balance_sheet.money_market_funds",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 745
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 416
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 745
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 416
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1: {\"data_period\": \"FY2025 Q2\", \"metric_type\": \"actual\", \"segment_type\": \"company\", \"segment_n...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 745
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 416
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.marketable_securities",
+      "normalized_path": "balance_sheet.marketable_securities",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "reasoning": "The gold array contains one item representing 'Marketable securities' for 'FY2025 Q2' with a null value. The predicted array contains an identical item. Comparing field by field: 'data_period' matches...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "NA",
+            "scale": null,
+            "value": null
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.current_liabilities",
+      "normalized_path": "balance_sheet.current_liabilities",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4706
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 6087
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4706
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 6087
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1 (FY2025 Q2, value 4706) matches Predicted item 1. All fields (data_period, metric_type, segm...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 4706
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 6087
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.cash_st_investments",
+      "normalized_path": "balance_sheet.cash_st_investments",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1: {\"data_period\": \"FY2025 Q2\", \"metric_type\": \"actual\", \"segment_type\": \"company\", \"segment_n...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "NA",
+            "scale": null,
+            "value": null
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "NA",
+            "scale": null,
+            "value": null
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.accounts_receivable",
+      "normalized_path": "balance_sheet.accounts_receivable",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2597
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2166
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2597
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2166
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1: {\"data_period\": \"FY2025 Q2\", \"metric_type\": \"actual\", \"segment_type\": \"company\", \"segment_n...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 2597
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 2166
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.shareholders_equity",
+      "normalized_path": "balance_sheet.shareholders_equity",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 12117
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 10818
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 12117
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 10818
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1 (FY2025 Q2, value 12117) matches Predicted item 1. All fields (data_period, metric_type, seg...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 12117
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 10818
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.short_term_investments",
+      "normalized_path": "balance_sheet.short_term_investments",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "reasoning": "The gold array contains one item representing a short-term investment metric for FY2025 Q2 with null values. The predicted array contains one item that is identical to the gold item in all fields: dat...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "NA",
+            "scale": null,
+            "value": null
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.gross_margin",
+      "normalized_path": "income_statement.gross_margin",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 35.4
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 16.2
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 36.6
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 10.2
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "%",
+          "scale": 1,
+          "value": 38.6
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "%",
+          "scale": 1,
+          "value": 32.5
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "%",
+          "scale": 1,
+          "value": 35.4
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "%",
+          "scale": 1,
+          "value": 38.4
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "%",
+          "scale": 1,
+          "value": 35.7
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "%",
+          "scale": 1,
+          "value": 36.6
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "%",
+          "scale": 1,
+          "value": 24.8
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "%",
+          "scale": 1,
+          "value": 7.9
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "%",
+          "scale": 1,
+          "value": 16.2
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "%",
+          "scale": 1,
+          "value": 23.9
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "%",
+          "scale": 1,
+          "value": -0.9
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "%",
+          "scale": 1,
+          "value": 10.2
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 35.4
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 16.2
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 36.6
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 10.2
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "%",
+          "scale": 1,
+          "value": 38.6
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "%",
+          "scale": 1,
+          "value": 32.5
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "%",
+          "scale": 1,
+          "value": 35.4
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "%",
+          "scale": 1,
+          "value": 38.4
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "%",
+          "scale": 1,
+          "value": 35.7
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "%",
+          "scale": 1,
+          "value": 36.6
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "%",
+          "scale": 1,
+          "value": 24.8
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "%",
+          "scale": 1,
+          "value": 7.9
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "%",
+          "scale": 1,
+          "value": 16.2
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "%",
+          "scale": 1,
+          "value": 23.9
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "%",
+          "scale": 1,
+          "value": -0.9
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "%",
+          "scale": 1,
+          "value": 10.2
+        }
+      ],
+      "reasoning": "The predicted array is identical to the gold array. All 16 items match exactly across all fields (data_period, metric_type, segment_type, segment_name, unit, scale, and value). No items were missed an...",
+      "array_breakdown": {
+        "matched": 16,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": null,
+        "missed_gold_items": null,
+        "spurious_pred_items": null
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.additional_paid_in_capital",
+      "normalized_path": "balance_sheet.additional_paid_in_capital",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4885
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4752
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4885
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4752
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1 (FY2025 Q2, value 4885) matches Predicted item 1. All fields (data_period, metric_type, segm...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 4885
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 4752
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.balance_sheet.properties.property_plant_and_equipment",
+      "normalized_path": "balance_sheet.property_plant_and_equipment",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2930
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3167
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2930
+        },
+        {
+          "data_period": "FY2024",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3167
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1 (FY2025 Q2, value 2930) matches Predicted item 1. All fields (data_period, metric_type, segm...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 2930
+          },
+          {
+            "data_period": "FY2024",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 3167
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.net_income",
+      "normalized_path": "income_statement.net_income",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 594
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1087
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": -287
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": -972
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 594
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1087
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": -287
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": -972
+        }
+      ],
+      "reasoning": "The predicted array contains 4 items, and the gold array contains 4 items. Each item in the predicted array is an exact match to a corresponding item in the gold array based on all fields: data_period...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 594
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 1087
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": -287
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": -972
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.diluted_eps",
+      "normalized_path": "income_statement.diluted_eps",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": 1.63
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": 2.98
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": -0.93
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": -3.09
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": 1.63
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": 2.98
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": -0.93
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": -3.09
+        }
+      ],
+      "reasoning": "The predicted array contains 4 items, and the gold array contains 4 items. Each item in the predicted array is an exact match to a corresponding item in the gold array based on all fields: 'data_perio...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1,
+            "value": 1.63
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1,
+            "value": 2.98
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1,
+            "value": -0.93
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1,
+            "value": -3.09
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.basic_eps",
+      "normalized_path": "income_statement.basic_eps",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": 1.68
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": 3.08
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": -0.93
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": -3.09
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": 1.68
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": 3.08
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": -0.93
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1,
+          "value": -3.09
+        }
+      ],
+      "reasoning": "The predicted array contains 4 items, and the gold array contains 4 items. Comparing each item field by field: \n1. Gold item 1 (FY2025 Q2, value 1.68) matches Predicted item 1 exactly.\n2. Gold item 2 ...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1,
+            "value": 1.68
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1,
+            "value": 3.08
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1,
+            "value": -0.93
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1,
+            "value": -3.09
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.cost_of_revenue",
+      "normalized_path": "income_statement.cost_of_revenue",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2769
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 5313
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2540
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 5191
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2769
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 5313
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2540
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 5191
+        }
+      ],
+      "reasoning": "The predicted array contains 4 items, and the gold array contains 4 items. Each item in the predicted array is an exact match to a corresponding item in the gold array based on all fields: data_period...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 2769
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 5313
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 2540
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 5191
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.interest_expense",
+      "normalized_path": "income_statement.interest_expense",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 95
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 194
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 108
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 206
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 95
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 194
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 108
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 206
+        }
+      ],
+      "reasoning": "The predicted array contains 4 items, and the gold array contains 4 items. Each item in the predicted array is an exact match to a corresponding item in the gold array based on all fields: data_period...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 95
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 194
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 108
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 206
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.revenue",
+      "normalized_path": "income_statement.revenue",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4285
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2409
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1876
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Cloud",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2346
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Client",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1168
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consumer",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 771
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Asia",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1995
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Americas",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1428
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Europe, Middle East and Africa",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 862
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 8380
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4620
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3760
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Cloud",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4554
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Client",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2377
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consumer",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1449
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Asia",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3832
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Americas",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3118
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Europe, Middle East and Africa",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1430
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3032
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1367
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1665
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Cloud",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1071
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Client",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1122
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consumer",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 839
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Asia",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1699
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Americas",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 804
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Europe, Middle East and Africa",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 529
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 5782
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2561
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3221
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Cloud",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1943
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Client",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2269
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consumer",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1570
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Asia",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3250
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Americas",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1466
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Europe, Middle East and Africa",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1066
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4285
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2409
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1876
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Cloud",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2346
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Client",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1168
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consumer",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 771
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Asia",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1995
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Americas",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1428
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Europe, Middle East and Africa",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 862
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 8380
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4620
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3760
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Cloud",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4554
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Client",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2377
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consumer",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1449
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Asia",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3832
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Americas",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3118
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Europe, Middle East and Africa",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1430
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3032
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1367
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1665
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Cloud",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1071
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Client",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1122
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consumer",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 839
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Asia",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1699
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Americas",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 804
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Europe, Middle East and Africa",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 529
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 5782
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2561
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3221
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Cloud",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1943
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Client",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2269
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consumer",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1570
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Asia",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3250
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Americas",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1466
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "geographic_segment",
+          "segment_name": "Europe, Middle East and Africa",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1066
+        }
+      ],
+      "reasoning": "The predicted array contains exactly the same 35 items as the gold array. Each item in the predicted array matches a corresponding item in the gold array across all fields: data_period, metric_type, s...",
+      "array_breakdown": {
+        "matched": 35,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "FY2025 Q2 company NA 4285",
+          "FY2025 Q2 business_segment HDD 2409",
+          "FY2025 Q2 business_segment Flash 1876",
+          "FY2025 Q2 business_segment Cloud 2346",
+          "FY2025 Q2 business_segment Client 1168",
+          "FY2025 Q2 business_segment Consumer 771",
+          "FY2025 Q2 geographic_segment Asia 1995",
+          "FY2025 Q2 geographic_segment Americas 1428",
+          "FY2025 Q2 geographic_segment Europe, Middle East and Africa 862",
+          "FY2025 H1 company NA 8380",
+          "FY2025 H1 business_segment HDD 4620",
+          "FY2025 H1 business_segment Flash 3760",
+          "FY2025 H1 business_segment Cloud 4554",
+          "FY2025 H1 business_segment Client 2377",
+          "FY2025 H1 business_segment Consumer 1449",
+          "FY2025 H1 geographic_segment Asia 3832",
+          "FY2025 H1 geographic_segment Americas 3118",
+          "FY2025 H1 geographic_segment Europe, Middle East and Africa 1430",
+          "FY2024 Q2 company NA 3032",
+          "FY2024 Q2 business_segment HDD 1367",
+          "FY2024 Q2 business_segment Flash 1665",
+          "FY2024 Q2 business_segment Cloud 1071",
+          "FY2024 Q2 business_segment Client 1122",
+          "FY2024 Q2 business_segment Consumer 839",
+          "FY2024 Q2 geographic_segment Asia 1699",
+          "FY2024 Q2 geographic_segment Americas 804",
+          "FY2024 Q2 geographic_segment Europe, Middle East and Africa 529",
+          "FY2024 H1 company NA 5782",
+          "FY2024 H1 business_segment HDD 2561",
+          "FY2024 H1 business_segment Flash 3221",
+          "FY2024 H1 business_segment Cloud 1943",
+          "FY2024 H1 business_segment Client 2269",
+          "FY2024 H1 business_segment Consumer 1570",
+          "FY2024 H1 geographic_segment Asia 3250",
+          "FY2024 H1 geographic_segment Americas 1466",
+          "FY2024 H1 geographic_segment Europe, Middle East and Africa 1066"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.net_income_growth",
+      "normalized_path": "income_statement.net_income_growth",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 307,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 212,
+          "comparison_type": "Yoy"
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 307,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 212,
+          "comparison_type": "Yoy"
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1 (FY2025 Q2, value 307) matches Predicted item 1. All fields (data_period, metric_type, segme...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "%",
+            "scale": 1,
+            "value": 307,
+            "comparison_type": "Yoy"
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "%",
+            "scale": 1,
+            "value": 212,
+            "comparison_type": "Yoy"
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.operating_income",
+      "normalized_path": "income_statement.operating_income",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 852
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1594
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": -210
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": -806
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 852
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1594
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": -210
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": -806
+        }
+      ],
+      "reasoning": "The predicted array contains 4 items, and the gold array contains 4 items. Each item in the predicted array is an exact match to a corresponding item in the gold array based on all fields: data_period...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 852
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 1594
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": -210
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": -806
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.operating_margin",
+      "normalized_path": "income_statement.operating_margin",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 19.9
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 19
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": -6.9
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": -13.9
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 19.9
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 19
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": -6.9
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": -13.9
+        }
+      ],
+      "reasoning": "The predicted array contains 4 items, and the gold array contains 4 items. Comparing each item field by field: \n1. Gold item 1 (FY2025 Q2, value 19.9) matches Predicted item 1 exactly.\n2. Gold item 2 ...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "%",
+            "scale": 1,
+            "value": 19.9
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "%",
+            "scale": 1,
+            "value": 19
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "%",
+            "scale": 1,
+            "value": -6.9
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "%",
+            "scale": 1,
+            "value": -13.9
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.revenue_growth",
+      "normalized_path": "income_statement.revenue_growth",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 41,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "%",
+          "scale": 1,
+          "value": 76,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "%",
+          "scale": 1,
+          "value": 13,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Cloud",
+          "unit": "%",
+          "scale": 1,
+          "value": 119,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Client",
+          "unit": "%",
+          "scale": 1,
+          "value": 4,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consumer",
+          "unit": "%",
+          "scale": 1,
+          "value": -8,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 45,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "%",
+          "scale": 1,
+          "value": 80,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "%",
+          "scale": 1,
+          "value": 17,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Cloud",
+          "unit": "%",
+          "scale": 1,
+          "value": 134,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Client",
+          "unit": "%",
+          "scale": 1,
+          "value": 5,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consumer",
+          "unit": "%",
+          "scale": 1,
+          "value": -8,
+          "comparison_type": "Yoy"
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 41,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "%",
+          "scale": 1,
+          "value": 76,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "%",
+          "scale": 1,
+          "value": 13,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Cloud",
+          "unit": "%",
+          "scale": 1,
+          "value": 119,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Client",
+          "unit": "%",
+          "scale": 1,
+          "value": 4,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consumer",
+          "unit": "%",
+          "scale": 1,
+          "value": -8,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 45,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "%",
+          "scale": 1,
+          "value": 80,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "%",
+          "scale": 1,
+          "value": 17,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Cloud",
+          "unit": "%",
+          "scale": 1,
+          "value": 134,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Client",
+          "unit": "%",
+          "scale": 1,
+          "value": 5,
+          "comparison_type": "Yoy"
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consumer",
+          "unit": "%",
+          "scale": 1,
+          "value": -8,
+          "comparison_type": "Yoy"
+        }
+      ],
+      "reasoning": "The predicted array contains 12 items, and the gold array contains 12 items. Each item in the predicted array is an exact match to a corresponding item in the gold array based on all fields: data_peri...",
+      "array_breakdown": {
+        "matched": 12,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "%",
+            "scale": 1,
+            "value": 41,
+            "comparison_type": "Yoy"
+          },
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "HDD",
+            "unit": "%",
+            "scale": 1,
+            "value": 76,
+            "comparison_type": "Yoy"
+          },
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Flash",
+            "unit": "%",
+            "scale": 1,
+            "value": 13,
+            "comparison_type": "Yoy"
+          },
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Cloud",
+            "unit": "%",
+            "scale": 1,
+            "value": 119,
+            "comparison_type": "Yoy"
+          },
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Client",
+            "unit": "%",
+            "scale": 1,
+            "value": 4,
+            "comparison_type": "Yoy"
+          },
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Consumer",
+            "unit": "%",
+            "scale": 1,
+            "value": -8,
+            "comparison_type": "Yoy"
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "%",
+            "scale": 1,
+            "value": 45,
+            "comparison_type": "Yoy"
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "HDD",
+            "unit": "%",
+            "scale": 1,
+            "value": 80,
+            "comparison_type": "Yoy"
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Flash",
+            "unit": "%",
+            "scale": 1,
+            "value": 17,
+            "comparison_type": "Yoy"
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Cloud",
+            "unit": "%",
+            "scale": 1,
+            "value": 134,
+            "comparison_type": "Yoy"
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Client",
+            "unit": "%",
+            "scale": 1,
+            "value": 5,
+            "comparison_type": "Yoy"
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Consumer",
+            "unit": "%",
+            "scale": 1,
+            "value": -8,
+            "comparison_type": "Yoy"
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.income_tax_expense",
+      "normalized_path": "income_statement.income_tax_expense",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 147
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 282
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 28
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 31
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 147
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 282
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 28
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 31
+        }
+      ],
+      "reasoning": "The predicted array contains 4 items, and the gold array contains 4 items. Each item in the predicted array is an exact match to a corresponding item in the gold array based on all fields: data_period...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 147
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 282
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 28
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 31
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.other_disclosures.properties.employees",
+      "normalized_path": "other_disclosures.employees",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "reasoning": "The gold array contains one item representing a null value for 'Number of employees' in FY2025 Q2. The predicted array contains an identical item. Comparing field by field: 'data_period', 'metric_type...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "NA",
+            "scale": null,
+            "value": null
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.effective_tax_rate",
+      "normalized_path": "income_statement.effective_tax_rate",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 20
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 21
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": -11
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": -3
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 20
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": 21
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": -11
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "%",
+          "scale": 1,
+          "value": -3
+        }
+      ],
+      "reasoning": "The predicted array contains 4 items, and the gold array contains 4 items. Comparing each gold item to the predicted items: \n1. Gold item 1 (FY2025 Q2, value 20) matches Predicted item 1 exactly on al...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "%",
+            "scale": 1,
+            "value": 20
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "%",
+            "scale": 1,
+            "value": 21
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "%",
+            "scale": 1,
+            "value": -11
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "%",
+            "scale": 1,
+            "value": -3
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.operating_expenses",
+      "normalized_path": "income_statement.operating_expenses",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 664
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1473
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 702
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1397
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 664
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1473
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 702
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1397
+        }
+      ],
+      "reasoning": "The predicted array contains 4 items, and the gold array contains 4 items. Each item in the predicted array is an exact match to a corresponding item in the gold array based on all fields: data_period...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 664
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 1473
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 702
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 1397
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.restructuring_charge",
+      "normalized_path": "income_statement.restructuring_charge",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 44
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 87
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 36
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 36
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 44
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 87
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 36
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 36
+        }
+      ],
+      "reasoning": "The predicted array contains 4 items, and the gold array contains 4 items. Each item in the predicted array is an exact match to a corresponding item in the gold array based on all fields: data_period...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 44
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 87
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 36
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 36
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.stock_based_compensation",
+      "normalized_path": "income_statement.stock_based_compensation",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 77
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 161
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 72
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 149
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 77
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 161
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 72
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 149
+        }
+      ],
+      "reasoning": "The predicted array contains 4 items, and the gold array contains 4 items. Each item in the predicted array is an exact match to a corresponding item in the gold array based on all fields: data_period...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 77
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 161
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 72
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 149
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.income_statement.properties.gross_profit",
+      "normalized_path": "income_statement.gross_profit",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1516
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 492
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3067
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 591
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 929
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 609
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1516
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1772
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1341
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3067
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 339
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 131
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 492
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 612
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": -30
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 591
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1516
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 492
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3067
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 591
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 929
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 609
+        },
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1516
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1772
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1341
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 3067
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 339
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 131
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 492
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "HDD",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 612
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Flash",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": -30
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "business_segment",
+          "segment_name": "Consolidated",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 591
+        }
+      ],
+      "reasoning": "The predicted array contains 16 items, and the gold array contains 16 items. A direct comparison shows that every item in the predicted array matches a corresponding item in the gold array exactly acr...",
+      "array_breakdown": {
+        "matched": 16,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 1516
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 492
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 3067
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 591
+          },
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "HDD",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 929
+          },
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Flash",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 609
+          },
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Consolidated",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 1516
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "HDD",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 1772
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Flash",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 1341
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Consolidated",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 3067
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "HDD",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 339
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Flash",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 131
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Consolidated",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 492
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "HDD",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 612
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Flash",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": -30
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "business_segment",
+            "segment_name": "Consolidated",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 591
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.other_disclosures.properties.notional_swaps_value",
+      "normalized_path": "other_disclosures.notional_swaps_value",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "reasoning": "The gold array contains one item representing a notional swap value for FY2025 Q2 with a null value. The predicted array contains an identical item. Comparing field by field: 'data_period', 'metric_ty...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "NA",
+            "scale": null,
+            "value": null
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.other_disclosures.properties.notional_options_value",
+      "normalized_path": "other_disclosures.notional_options_value",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "reasoning": "The gold array contains one item representing a notional options value for FY2025 Q2 with all fields set to 'NA' or null. The predicted array contains an identical item. Comparing field by field: 'dat...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "NA",
+            "scale": null,
+            "value": null
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.other_disclosures.properties.notional_forwards_value",
+      "normalized_path": "other_disclosures.notional_forwards_value",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "reasoning": "The gold array contains one item representing a notional forwards value for FY2025 Q2 with a null value. The predicted array contains an identical item. All fields (data_period, metric_type, segment_t...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "NA",
+            "scale": null,
+            "value": null
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.cash_flow_statement.properties.share_repurchases",
+      "normalized_path": "cash_flow_statement.share_repurchases",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "reasoning": "The gold array contains one item representing 'Share repurchases' for 'FY2025 Q2' with a null value. The predicted array contains an identical item. Comparing field by field: 'data_period' matches exa...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "NA",
+            "scale": null,
+            "value": null
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.cash_flow_statement.properties.shares_repurchased",
+      "normalized_path": "cash_flow_statement.shares_repurchased",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "reasoning": "The gold array contains one item representing a null value for 'Shares repurchased' in FY2025 Q2. The predicted array contains an identical item. Comparing field by field: 'data_period', 'metric_type'...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "NA",
+            "scale": null,
+            "value": null
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.cash_flow_statement.properties.shares_issued",
+      "normalized_path": "cash_flow_statement.shares_issued",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 2
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "NA",
+          "scale": null,
+          "value": null
+        }
+      ],
+      "reasoning": "The predicted array contains 4 items that exactly match the 4 items in the gold array. Each item was evaluated field-by-field: 'data_period', 'metric_type', 'segment_type', 'segment_name', 'unit', 'sc...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 2
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 2
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "NA",
+            "scale": null,
+            "value": null
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "NA",
+            "scale": null,
+            "value": null
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.cash_flow_statement.properties.capex",
+      "normalized_path": "cash_flow_statement.capex",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 212
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 274
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 212
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 274
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1: {\"data_period\": \"FY2025 H1\", \"metric_type\": \"actual\", \"segment_type\": \"company\", \"segment_n...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 212
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 274
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.cash_flow_statement.properties.dividends_paid",
+      "normalized_path": "cash_flow_statement.dividends_paid",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 8
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 14
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 29
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 4
+        },
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 8
+        },
+        {
+          "data_period": "FY2024 Q2",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 14
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 29
+        }
+      ],
+      "reasoning": "The predicted array contains 4 items, and the gold array contains 4 items. Comparing each item field by field: \n1. Gold item 1 (FY2025 Q2, value 4) matches Predicted item 1 exactly.\n2. Gold item 2 (FY...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 4
+          },
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 8
+          },
+          {
+            "data_period": "FY2024 Q2",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 14
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 29
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.cash_flow_statement.properties.financing_cash_flow",
+      "normalized_path": "cash_flow_statement.financing_cash_flow",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": -103
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1151
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": -103
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 1151
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1: {\"data_period\": \"FY2025 H1\", \"metric_type\": \"actual\", \"segment_type\": \"company\", \"segment_n...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": -103
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 1151
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.cash_flow_statement.properties.operating_cash_flow",
+      "normalized_path": "cash_flow_statement.operating_cash_flow",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 437
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": -718
+        }
+      ],
+      "extracted_value": [
+        {
+          "data_period": "FY2025 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": 437
+        },
+        {
+          "data_period": "FY2024 H1",
+          "metric_type": "actual",
+          "segment_type": "company",
+          "segment_name": "NA",
+          "unit": "USD",
+          "scale": 1000000,
+          "value": -718
+        }
+      ],
+      "reasoning": "The predicted array contains two items that exactly match the two items in the gold array. \n\n1. Gold item 1: {\"data_period\": \"FY2025 H1\", \"metric_type\": \"actual\", \"segment_type\": \"company\", \"segment_n...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "data_period": "FY2025 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": 437
+          },
+          {
+            "data_period": "FY2024 H1",
+            "metric_type": "actual",
+            "segment_type": "company",
+            "segment_name": "NA",
+            "unit": "USD",
+            "scale": 1000000,
+            "value": -718
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    }
+  ],
+  "overall_score": 1.0,
+  "field_score": 1.0,
+  "overall_pass_rate": 1.0
+}

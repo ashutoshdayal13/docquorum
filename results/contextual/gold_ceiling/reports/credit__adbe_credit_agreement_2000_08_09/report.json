@@ -1,0 +1,399 @@
+{
+  "output_name": "credit__adbe_credit_agreement_2000_08_09",
+  "timestamp": "2026-09-28T03:09:35.286054",
+  "schema_hash": "e2a608f3",
+  "gold_hash": "e8534777",
+  "extracted_hash": "e8534777",
+  "schema_stats": {
+    "total_nodes": 41,
+    "counts_by_type": {
+      "object": 4,
+      "array": 2,
+      "string": 11,
+      "anyof": 11,
+      "null": 11,
+      "boolean": 1,
+      "number": 1
+    },
+    "required_keys_count": 2,
+    "optional_keys_count": 14,
+    "required_by_type": {
+      "anyof": 2
+    },
+    "optional_by_type": {
+      "object": 3,
+      "array": 1,
+      "anyof": 9,
+      "string": 1
+    }
+  },
+  "gold_stats": {
+    "label": "gold",
+    "total_keys": 16,
+    "counts_by_type": {
+      "object": 3,
+      "string": 9,
+      "null": 1,
+      "array": 1,
+      "number": 1,
+      "boolean": 1
+    },
+    "array_stats": {
+      "array_field_count": 1,
+      "total_items": 14,
+      "min_length": 14,
+      "median_length": 14,
+      "max_length": 14
+    },
+    "null_count": 1,
+    "missing_count": 0
+  },
+  "extracted_stats": {
+    "label": "extracted",
+    "total_keys": 16,
+    "counts_by_type": {
+      "object": 3,
+      "string": 9,
+      "null": 1,
+      "array": 1,
+      "number": 1,
+      "boolean": 1
+    },
+    "array_stats": {
+      "array_field_count": 1,
+      "total_items": 14,
+      "min_length": 14,
+      "median_length": 14,
+      "max_length": 14
+    },
+    "null_count": 1,
+    "missing_count": 0
+  },
+  "coverage": {
+    "present_in_both": 13,
+    "missing_in_extracted": 0,
+    "spurious_in_extracted": 0,
+    "required_missing": 0,
+    "missing_paths": [],
+    "spurious_paths": []
+  },
+  "outcomes": {
+    "total_evaluated": 13,
+    "total_passed": 13,
+    "total_failed": 0,
+    "pass_rate": 1.0,
+    "pass_by_metric": {
+      "string_fuzzy": {
+        "passed": 2,
+        "failed": 0
+      },
+      "array_llm": {
+        "passed": 2,
+        "failed": 0
+      },
+      "boolean_exact": {
+        "passed": 1,
+        "failed": 0
+      },
+      "number_exact": {
+        "passed": 1,
+        "failed": 0
+      },
+      "string_case_insensitive": {
+        "passed": 1,
+        "failed": 0
+      },
+      "string_semantic": {
+        "passed": 6,
+        "failed": 0
+      }
+    },
+    "pass_by_type": {
+      "string": {
+        "passed": 9,
+        "failed": 0
+      },
+      "array": {
+        "passed": 2,
+        "failed": 0
+      },
+      "boolean": {
+        "passed": 1,
+        "failed": 0
+      },
+      "number": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "pass_by_required": {
+      "optional": {
+        "passed": 13,
+        "failed": 0
+      }
+    },
+    "confusion": {
+      "true_positive": 12,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_negative": 1
+    },
+    "llm_stats": {
+      "call_count": 8,
+      "avg_score": 1.0,
+      "median_score": 1.0,
+      "score_distribution": {
+        "0.8-1.0": 8
+      },
+      "top_lowest_fields": [
+        {
+          "path": "parties.lead_arranger",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": ""
+        },
+        {
+          "path": "terms.authorized_officer_definition",
+          "metric_id": "string_semantic",
+          "score": 1.0,
+          "reasoning": "The predicted string is identical to the gold string."
+        },
+        {
+          "path": "terms.governing_law",
+          "metric_id": "string_semantic",
+          "score": 1.0,
+          "reasoning": "The predicted string is identical to the gold string."
+        },
+        {
+          "path": "terms.maturity_date",
+          "metric_id": "string_semantic",
+          "score": 1.0,
+          "reasoning": "The predicted string is identical to the gold string, matching the required YYYY-MM-DD format exactly."
+        },
+        {
+          "path": "terms.agreement_date",
+          "metric_id": "string_semantic",
+          "score": 1.0,
+          "reasoning": "The predicted string is identical to the gold string, matching the required YYYY-MM-DD format exactly."
+        }
+      ]
+    },
+    "error_breakdown": null
+  },
+  "field_outcomes": [
+    {
+      "path": "$.properties.parties.properties.administrative_agent",
+      "normalized_path": "parties.administrative_agent",
+      "metric_id": "string_fuzzy",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "abn amro bank n.v.,",
+      "extracted_value": "abn amro bank n.v.,",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.parties.properties.borrower",
+      "normalized_path": "parties.borrower",
+      "metric_id": "string_fuzzy",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "adobe systems incorporated",
+      "extracted_value": "adobe systems incorporated",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.parties.properties.lead_arranger",
+      "normalized_path": "parties.lead_arranger",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": "both_null",
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.beneficial_ownership_certification_required",
+      "normalized_path": "terms.beneficial_ownership_certification_required",
+      "metric_id": "boolean_exact",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": false,
+      "extracted_value": false,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.loan_commitment.properties.amount",
+      "normalized_path": "terms.loan_commitment.amount",
+      "metric_id": "number_exact",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": 91532846.72,
+      "extracted_value": 91532846.72,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.loan_commitment.properties.currency",
+      "normalized_path": "terms.loan_commitment.currency",
+      "metric_id": "string_case_insensitive",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "USD",
+      "extracted_value": "USD",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.authorized_officer_definition",
+      "normalized_path": "terms.authorized_officer_definition",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "NOT_FOUND",
+      "extracted_value": "NOT_FOUND",
+      "reasoning": "The predicted string is identical to the gold string.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.governing_law",
+      "normalized_path": "terms.governing_law",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "State of California",
+      "extracted_value": "State of California",
+      "reasoning": "The predicted string is identical to the gold string.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.maturity_date",
+      "normalized_path": "terms.maturity_date",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "2003-08-08",
+      "extracted_value": "2003-08-08",
+      "reasoning": "The predicted string is identical to the gold string, matching the required YYYY-MM-DD format exactly.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.agreement_date",
+      "normalized_path": "terms.agreement_date",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "2000-08-09",
+      "extracted_value": "2000-08-09",
+      "reasoning": "The predicted string is identical to the gold string, matching the required YYYY-MM-DD format exactly.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.use_of_proceeds",
+      "normalized_path": "terms.use_of_proceeds",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "Borrower shall use the proceeds of the Loans only for the respective purposes setforth in Paragraph 2.05 . Borrower shall not use any part of the proceeds of any Loan, directly or indirectly,for the purpose of purchasing or carrying any Margin Stock or for the purpose of purchasing or  arrying ortrading in any securities under such circumstances as to involve Borrower, any Lender or AdministrativeAgent in a violation of Regulations T, U or X issued by the Federal Reserve Board.",
+      "extracted_value": "Borrower shall use the proceeds of the Loans only for the respective purposes setforth in Paragraph 2.05 . Borrower shall not use any part of the proceeds of any Loan, directly or indirectly,for the purpose of purchasing or carrying any Margin Stock or for the purpose of purchasing or  arrying ortrading in any securities under such circumstances as to involve Borrower, any Lender or AdministrativeAgent in a violation of Regulations T, U or X issued by the Federal Reserve Board.",
+      "reasoning": "The predicted string is identical to the gold string, including all specific legal terminology, references to regulations, and formatting quirks (such as the spacing in 'setforth' and 'arrying ortradi...",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.borrowing_request",
+      "normalized_path": "terms.borrowing_request",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "Borrower shall give each Notice of Revolving Loan Borrowing to Administrative Agent at least three (3)Business Days before the date of the requested Revolving Loan Borrowing in the case of a Revolving LoanBorrowing consisting of LIBOR Loans and at least one (1) Business Day before the date of the requestedRevolving Loan Borrowing in the case of a Revolving Loan Borrowing consisting of Base Rate Loans.",
+      "extracted_value": "Borrower shall give each Notice of Revolving Loan Borrowing to Administrative Agent at least three (3)Business Days before the date of the requested Revolving Loan Borrowing in the case of a Revolving LoanBorrowing consisting of LIBOR Loans and at least one (1) Business Day before the date of the requestedRevolving Loan Borrowing in the case of a Revolving Loan Borrowing consisting of Base Rate Loans.",
+      "reasoning": "The predicted string is identical to the gold string, including all specific notice periods (3 business days for LIBOR Loans, 1 business day for Base Rate Loans) and submission methods (Notice to Admi...",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.parties.properties.lenders",
+      "normalized_path": "parties.lenders",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        "ABN AMRO Bank N.V.",
+        "Bank of Montreal",
+        "First Union National Bank",
+        "KeyBank National Association",
+        "Fleet National Bank",
+        "The Sumitomo Bank, Limited",
+        "The Northern Trust Company",
+        "Bank of America, N.A.",
+        "BNP Paribas",
+        "The Industrial Bank of Japan, Limited",
+        "Mellon Bank, N.A.",
+        "The Royal Bank of Scotland plc",
+        "UBS AG (Stamford Branch)",
+        "Bank Hapoalim B.M."
+      ],
+      "extracted_value": [
+        "ABN AMRO Bank N.V.",
+        "Bank of Montreal",
+        "First Union National Bank",
+        "KeyBank National Association",
+        "Fleet National Bank",
+        "The Sumitomo Bank, Limited",
+        "The Northern Trust Company",
+        "Bank of America, N.A.",
+        "BNP Paribas",
+        "The Industrial Bank of Japan, Limited",
+        "Mellon Bank, N.A.",
+        "The Royal Bank of Scotland plc",
+        "UBS AG (Stamford Branch)",
+        "Bank Hapoalim B.M."
+      ],
+      "reasoning": "The predicted array contains exactly the same 14 legal entities as the gold array. Each item in the gold array has a direct, exact string match in the predicted array. There are no missing items and n...",
+      "array_breakdown": {
+        "matched": 14,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "ABN AMRO Bank N.V.",
+          "Bank of Montreal",
+          "First Union National Bank",
+          "KeyBank National Association",
+          "Fleet National Bank",
+          "The Sumitomo Bank, Limited",
+          "The Northern Trust Company",
+          "Bank of America, N.A.",
+          "BNP Paribas",
+          "The Industrial Bank of Japan, Limited",
+          "Mellon Bank, N.A.",
+          "The Royal Bank of Scotland plc",
+          "UBS AG (Stamford Branch)",
+          "Bank Hapoalim B.M."
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    }
+  ],
+  "overall_score": 1.0,
+  "field_score": 1.0,
+  "overall_pass_rate": 1.0
+}

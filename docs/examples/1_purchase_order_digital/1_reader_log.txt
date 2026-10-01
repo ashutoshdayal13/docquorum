@@ -1,0 +1,6 @@
+The reader's log for this document. plan: whole = one whole-document call; partitioned = schema groups x page windows; chunked = page chunks. For the layout readers, one line per page (columns found / records read, or ruled bands / rows counted / rows returned).
+
+short_primary_hr.log: plan=whole model_calls=1 cut_off_replies=0 pages_asked_again=0 seconds=32
+short_primary_hr.log: plan=whole model_calls=1 cut_off_replies=0 pages_asked_again=0 seconds=69
+short_primary_hr_req.log: plan=whole model_calls=1 cut_off_replies=0 pages_asked_again=0 seconds=93
+short_primary_hr_req.log: plan=whole model_calls=1 cut_off_replies=0 pages_asked_again=0 seconds=393

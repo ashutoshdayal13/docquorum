@@ -1,0 +1,63 @@
+================================================================================
+EVALUATION REPORT: credit__trmb_credit-agreement_2022-03-24
+Timestamp: 2026-09-28T03:10:15.210012
+================================================================================
+
+OVERALL RESULTS
+----------------------------------------
+  Overall Score:  1.000  (item-weighted)
+  Field Score:    1.000  (flat average)
+  Pass Rate: 100.0%
+  Evaluated: 13 fields (13 passed, 0 failed)
+
+SCHEMA STATISTICS
+----------------------------------------
+  Total Nodes: 41
+  Required Keys: 2
+  Optional Keys: 14
+  By Type: anyof: 11, array: 2, boolean: 1, null: 11, number: 1, object: 4, string: 11
+
+COVERAGE
+----------------------------------------
+  Present in Both: 13
+  Missing in Extracted: 0
+  Spurious in Extracted: 0
+  Required Missing: 0
+
+PASS RATE BY METRIC
+----------------------------------------
+  array_llm: 100.0% (2/2)
+  boolean_exact: 100.0% (1/1)
+  number_exact: 100.0% (1/1)
+  string_case_insensitive: 100.0% (1/1)
+  string_fuzzy: 100.0% (2/2)
+  string_semantic: 100.0% (6/6)
+
+LLM METRICS
+----------------------------------------
+  Calls: 8
+  Avg Score: 1.000
+  Median Score: 1.000
+
+  Top Lowest-Scoring Fields:
+    - terms.agreement_date (string_semantic): 1.000
+      Reason: The predicted string is identical to the gold string, matching the required YYYY-MM-DD format exactl...
+    - terms.governing_law (string_semantic): 1.000
+      Reason: The predicted string is identical to the gold string.
+    - terms.maturity_date (string_semantic): 1.000
+      Reason: The predicted string is identical to the gold string, matching the required YYYY-MM-DD format exactl...
+    - terms.use_of_proceeds (string_semantic): 1.000
+      Reason: The predicted string is identical to the gold string, including all punctuation, casing, and line br...
+    - terms.authorized_officer_definition (string_semantic): 1.000
+      Reason: The predicted string is identical to the gold string, matching all roles and titles exactly.
+
+ARRAY BREAKDOWN
+----------------------------------------
+  parties.lead_arranger [PASS] score=1.000
+    Items: 5 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  parties.lenders [PASS] score=1.000
+    Items: 12 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+
+================================================================================

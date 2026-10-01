@@ -1,0 +1,288 @@
+{
+ "type": "object",
+ "title": "PurchaseOrder",
+ "required": [
+  "po_number",
+  "po_date",
+  "buyer",
+  "vendor",
+  "line_items",
+  "total_amount"
+ ],
+ "properties": {
+  "po_number": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "description": "The purchase order's own unique identifier, taken ONLY from a field explicitly labeled with a PO-number alias. Label aliases: 'PO Number', 'Purchase Order Number', 'P.O. #', 'PO#', 'PO Number (*Purchasing)'. Verbatim including any leading zeros and internal hyphens (e.g. '303-0-0317'). Do NOT confuse with: the requisition_number, the contract/bid number (e.g. '25-206'), the event number, the vendor number, a quote number, or any stand-alone control/document code printed in a header corner (e.g. 'C-25-0908' on the Lancaster requisition is NOT a PO number). Location: PO header block, usually top-left/top-right beside a 'Purchase Order' title or in a labeled 'PO Number' cell. Return null when the PO-number field is present but BLANK/empty (a requisition not yet assigned a PO number leaves the 'PO Number (*Purchasing)' cell empty) or when no PO-number-labeled field exists at all."
+  },
+  "requisition_number": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "description": "The requisition / requisition-event identifier explicitly labeled as such. Label aliases: 'Requisition Number', 'Requisition Purchase Order', 'Req #'. Verbatim (e.g. '303-0-00473'). Do NOT confuse with po_number (the PO's own id), the contract/bid number, the bid 'Event Number', or a header-corner control code like 'C-25-0908'. Location: header, often directly under the PO number. Return null if no field is explicitly labeled as a requisition number (do NOT substitute a contract/bid number or a corner control code)."
+  },
+  "po_date": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "description": "The date the purchase order was issued/ordered, normalized to YYYY-MM-DD. Label aliases (in priority order): 'Order Date', 'Purchase Order Date', 'Issue Date', 'Date Prepared'. Do NOT confuse with: 'Date Requested', 'Date Revised', a delivery date, an approval/signature date at the bottom of the form, line-item Start/End dates, or a bid Close Date. Location: PO header (usually top-right). On the Lancaster requisition use 'Date Prepared' (10/29/2025 -> 2025-10-29), NOT the signature 'Date' (11/19/2025). Return null if no issue/order/prepared date is printed."
+  },
+  "buyer": {
+   "type": "object",
+   "description": "The purchasing organization / issuing government agency that authorizes and pays for the PO. On these government POs this is the county/commission named in the title block, NOT the vendor and NOT the ship-to recipient.",
+   "properties": {
+    "name": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "description": "Name of the buying organization / issuing agency exactly as printed in the title block (e.g. 'LANCASTER COUNTY, NEBRASKA', 'TEXAS FACILITIES COMMISSION'). Do NOT confuse with the vendor name, the bid-event organization (e.g. 'Lincoln Purchasing'), or a sub-department."
+    },
+    "department": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "description": "Sub-department/division within the buyer, taken ONLY from an explicitly labeled field in the document body such as 'Division', 'Department', or 'Agency'. Use that field's value verbatim (e.g. the Texas PO 'Division' field -> 'Facilities Design and Construction'). Do NOT prepend or repeat buyer.name, and do NOT reconstruct a department from a logo/letterhead graphic (e.g. the word 'ENGINEERING' inside the Lancaster county logo is NOT a labeled field). Return null whenever no labeled department/division/agency field exists in the body (so the Lancaster requisition -> null)."
+    }
+   }
+  },
+  "requisitioner": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "description": "Name of the person who requested/originated the requisition. Label aliases: 'Name ... of Person Requisitioning', 'Requisitioner', 'Requested by'. Return the person name only, without the email/phone that follows it (e.g. 'Kurtis Hunt'). Do NOT confuse with the buyer-side PO contact person, the approver/signer, the purchaser, the buyer org name, or the vendor contact. Return null if no requisitioner person is named."
+  },
+  "buyer_contact": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "description": "Name of the buyer-side contact person for this PO (point of contact handling the order), when listed separately from the requisitioner. Label aliases: 'Contact Person for PO', 'TFC Contact', 'Buyer'. Return the person name only, without email/phone (e.g. 'Ron Bohaty', 'Leandra Contreras'). Do NOT confuse with the requisitioner, the purchaser/approver, or the vendor contact. Return null if no separate buyer-side contact is named."
+  },
+  "vendor": {
+   "type": "object",
+   "description": "The supplier the order is placed with (the entity being paid). Do NOT confuse with the buyer/issuing agency, the bid-event organization, or the ship-to recipient. On the Lancaster requisition use the single 'Proposed Vendor(s)' (Husker Steel Inc); do NOT pull competing suppliers from the bid-tabulation pages.",
+   "properties": {
+    "name": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "description": "Vendor / supplier company name (e.g. 'Husker Steel Inc', 'SHELTON-KELLER GROUP INC'). Label aliases: 'Vendor', 'Proposed Vendor(s)', 'Referenced Source or Vendor', 'Supplier'. Verbatim, excluding the vendor number or contact line. Do NOT use a per-line manufacturer name (e.g. 'Allseating', 'SAFCO Products Company') as the vendor."
+    },
+    "address": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "description": "Vendor mailing address as a single string: include every printed street/city/state/zip line of the vendor block that sits below the vendor name and above the contact person, in printed order, joined by a single space. PRESERVE every printed comma/punctuation verbatim; only do not ADD separators that are not printed. Do NOT include the vendor name, vendor number, or the contact-person/phone/email lines, and do NOT use the delivery/ship-to address. (Texas PO -> '200 EAST CESAR CHAVEZ ST STE 190 AUSTIN, TX 787014004'.) Return null if not printed."
+    },
+    "vendor_number": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "description": "Buyer's internal vendor/supplier id code printed in the vendor block (e.g. the '17526176577' shown atop the 'Referenced Source or Vendor' box). Verbatim. Do NOT confuse with the po_number, requisition number, or a tax id. Return null if no vendor id is present."
+    },
+    "contact": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "description": "Vendor-side contact lines as printed at the bottom of the vendor block: include the contact person AND every phone/fax/email line, in printed order, joined by a single space, verbatim including any 'Phone:'/'Fax:' labels even when a value is blank (Texas PO -> 'Megan Williams Phone:512-592-5214, Fax: mwilliams@skgtexas.com'). Do NOT drop the email or the 'Fax:' label, and do NOT confuse with the buyer-side contact. Return null if no vendor contact lines are present."
+    }
+   }
+  },
+  "ship_to": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "description": "Delivery / ship-to address (where goods are delivered) as a single string. Label aliases: 'Delivery Location', 'Ship To', 'Agency & Delivery Address'. Include EVERY printed line of the delivery block (location/building name, street, any 'ATTN:' recipient line, city/state/zip), in printed order, joined by a single space. PRESERVE every comma and punctuation mark that IS printed verbatim (do NOT strip printed commas); only do not ADD separators that are not printed. Do NOT drop the 'ATTN:' line. EXCLUDE non-address instruction lines such as 'Show numbers on all papers and packages'. (Texas PO -> 'Parking Garage R, Warehouse 1706 San Jacinto Blvd. ATTN: Leandra Contreras Austin, TX 78701'; a single-line printed address keeps its printed commas, e.g. 'Lancaster County Engineer, 444 Cherrycreek Rd, Building B, Lincoln, NE 68528'.) Do NOT confuse with the bill-to/invoice address or the vendor address. Return null if not stated."
+  },
+  "bill_to": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "description": "Billing / invoice-to address (where the invoice should be sent) as a single string. Label aliases: 'MAIL INVOICE TO AGENCY BELOW', 'Mail Invoice To', 'Bill To', 'Agency & Billing Address'. Include EVERY printed line of the billing block (org name, sub-unit, PO box/street, city/state/zip), in printed order, joined by a single space. PRESERVE every comma and punctuation mark that IS printed verbatim (do NOT strip printed commas); only do not ADD separators that are not printed. STOP at the address itself: EXCLUDE trailing alternate-submission lines such as 'OR' and 'email to: ...'. (Texas PO -> 'TEXAS FACILITIES COMMISSION FISCAL MANAGEMENT / ACCOUNTS PAYABLE P.O. BOX 13047 Austin, Texas 78711-3047'; a single-line printed address keeps its printed commas, e.g. 'Lancaster County Engineer, 444 Cherrycreek Rd, Building B, Lincoln, NE 68528'.) Do NOT confuse with the ship-to/delivery address or the vendor address. Return null if not stated."
+  },
+  "line_items": {
+   "type": "array",
+   "description": "Every ordered/requisitioned line item from THIS purchase order's OWN line-item table (the buyer's table whose columns are item/line #, DESCRIPTION, QTY, UNIT/UOM, UNIT PRICE, optional Start/End Date, EXT./Total). Each printed product or service line is exactly one entry. INCLUDE service/fee lines (e.g. 'Labor to install 4 chairs'). EXCLUDE, and never emit as a line item: (a) empty filler rows that show '$0.00' with no description/quantity; (b) subtotal/Total/Grand Total rows; (c) on a requisition that prints a multi-supplier BID TABULATION on later pages, ALL of that comparison table's content — its per-supplier Unit/Extended columns and every 'N ALT1' alternate row (e.g. '1 ALT1 Ace/Eaton Manufactured Sheetpile') belong to the bid tabulation, NOT to this PO. Extract only the requisition's own DESCRIPTION/QTY/UNIT/UNIT PRICE/EXT PRICE rows from page 1.",
+   "items": {
+    "type": "object",
+    "properties": {
+     "line_no": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "description": "Sequential line number of the item within this PO's line-item table, 1-based. If the table prints explicit line numbers, use them; otherwise assign 1,2,3... strictly top-to-bottom in printed order. This is the identity key (one entry per ordered line). Do NOT use a GL/Fund code (e.g. '63630', '022'), an NIGP class/item, an Object Class, or a catalog/part/manufacturer number as line_no."
+     },
+     "description": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "description": "Full item description/specification text for THIS line only. Capture the entire description cell, including a multi-line configuration/option block when it is part of the same line cell (e.g. the chair model code plus its 'FC1:Black Frame / B17:... / E3:...' option lines). Do NOT merge in the next line's description, and do NOT append trailing metadata rows (NIGP Class/Item, Object Class, Reimbursement Type, Notes) that sit below the priced line. When a long product/configuration code is soft-wrapped across display lines (e.g. '...FABRIC-~-FG3-COVERCLOTH...' wrapping after a hyphen, or 'F-OBAY' splitting), reconstruct it as the single continuous code with NO added space at the wrap point (treat a soft wrap as no separator), preserving every printed hyphen."
+     },
+     "quantity": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "description": "Quantity ordered for this line, as a number (strip thousands separators; '1.0000' -> 1). Label aliases: 'QTY', 'Qty'. Do NOT confuse with unit_price, total, or a bid-tabulation alternate quantity."
+     },
+     "unit_of_measure": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "description": "Unit of measure for the quantity, verbatim as printed (e.g. 'Each', 'EACH', 'EA', 'FEE'). Label aliases: 'UNIT', 'Unit', 'UOM'. Do NOT confuse with unit_price."
+     },
+     "unit_price": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "description": "Price per single unit for this line, as a number (strip currency symbol and thousands separators; '$128.00' -> 128.0). Label aliases: 'UNIT PRICE', 'Unit Price', 'Unit'. Do NOT confuse with the line total/extended_price or the quantity. On the bid tabulation the 'Unit' columns belong to suppliers and are out of scope."
+     },
+     "start_date": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "description": "Per-line service/delivery start date, normalized to YYYY-MM-DD, ONLY when the line-item table prints a 'Start Date' column (e.g. Texas PO: '11/7/2019' -> '2019-11-07'). Do NOT use the PO header order date. Return null if the line table has no Start Date column (e.g. the Lancaster requisition)."
+     },
+     "end_date": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "description": "Per-line service/delivery end date, normalized to YYYY-MM-DD, ONLY when the line-item table prints an 'End Date' column (e.g. Texas PO: '12/6/2019' -> '2019-12-06'). Do NOT use the PO header order date or a signature date. Return null if the line table has no End Date column (e.g. the Lancaster requisition)."
+     },
+     "extended_price": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "description": "Extended / line total for this line (= quantity x unit_price), as a number (strip currency symbol and separators; '$9,600.00' -> 9600.0). Label aliases: 'EXT. PRICE', 'Extended Price', 'Extended', 'Total' (the per-line Total column). Do NOT confuse with unit_price, with a per-supplier bid-tabulation Extended value, or with the document grand total."
+     }
+    }
+   }
+  },
+  "total_amount": {
+   "anyOf": [
+    {
+     "type": "number"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "description": "Grand total of THIS purchase order (sum of all line extended prices, plus any tax/shipping if shown), as a number (strip currency symbol and thousands separators; '$39,360.00' -> 39360.0, '$2,211.00' -> 2211.0). Label aliases: 'Total Price', 'Grand Total', 'Purchase Order Total', 'Total'. Do NOT confuse with a single line's extended_price or with any per-supplier 'Total Price' / 'Response Total' in the bid tabulation. Location: bottom of the PO line-item table."
+  },
+  "currency": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "description": "ISO 4217 currency code of the amounts (e.g. 'USD'). If the document shows '$' with no other currency indicator on a US government PO, use 'USD'. Return null only if genuinely indeterminate."
+  }
+ }
+}

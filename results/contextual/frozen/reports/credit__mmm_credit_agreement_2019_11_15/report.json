@@ -1,0 +1,436 @@
+{
+  "output_name": "credit__mmm_credit_agreement_2019_11_15",
+  "timestamp": "2026-09-28T04:36:30.916410",
+  "schema_hash": "e2a608f3",
+  "gold_hash": "0233b9cb",
+  "extracted_hash": "d24043f3",
+  "schema_stats": {
+    "total_nodes": 41,
+    "counts_by_type": {
+      "object": 4,
+      "array": 2,
+      "string": 11,
+      "anyof": 11,
+      "null": 11,
+      "boolean": 1,
+      "number": 1
+    },
+    "required_keys_count": 2,
+    "optional_keys_count": 14,
+    "required_by_type": {
+      "anyof": 2
+    },
+    "optional_by_type": {
+      "object": 3,
+      "array": 1,
+      "anyof": 9,
+      "string": 1
+    }
+  },
+  "gold_stats": {
+    "label": "gold",
+    "total_keys": 16,
+    "counts_by_type": {
+      "object": 3,
+      "string": 8,
+      "array": 2,
+      "integer": 1,
+      "null": 1,
+      "boolean": 1
+    },
+    "array_stats": {
+      "array_field_count": 2,
+      "total_items": 13,
+      "min_length": 3,
+      "median_length": 6.5,
+      "max_length": 10
+    },
+    "null_count": 1,
+    "missing_count": 0
+  },
+  "extracted_stats": {
+    "label": "extracted",
+    "total_keys": 16,
+    "counts_by_type": {
+      "object": 3,
+      "array": 2,
+      "string": 9,
+      "boolean": 1,
+      "integer": 1
+    },
+    "array_stats": {
+      "array_field_count": 2,
+      "total_items": 14,
+      "min_length": 4,
+      "median_length": 7.0,
+      "max_length": 10
+    },
+    "null_count": 0,
+    "missing_count": 0
+  },
+  "coverage": {
+    "present_in_both": 13,
+    "missing_in_extracted": 0,
+    "spurious_in_extracted": 0,
+    "required_missing": 0,
+    "missing_paths": [],
+    "spurious_paths": []
+  },
+  "outcomes": {
+    "total_evaluated": 13,
+    "total_passed": 11,
+    "total_failed": 2,
+    "pass_rate": 0.8461538461538461,
+    "pass_by_metric": {
+      "string_fuzzy": {
+        "passed": 2,
+        "failed": 0
+      },
+      "boolean_exact": {
+        "passed": 1,
+        "failed": 0
+      },
+      "string_semantic": {
+        "passed": 4,
+        "failed": 2
+      },
+      "number_exact": {
+        "passed": 1,
+        "failed": 0
+      },
+      "string_case_insensitive": {
+        "passed": 1,
+        "failed": 0
+      },
+      "array_llm": {
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "pass_by_type": {
+      "string": {
+        "passed": 7,
+        "failed": 2
+      },
+      "boolean": {
+        "passed": 1,
+        "failed": 0
+      },
+      "number": {
+        "passed": 1,
+        "failed": 0
+      },
+      "array": {
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "pass_by_required": {
+      "optional": {
+        "passed": 11,
+        "failed": 2
+      }
+    },
+    "confusion": {
+      "true_positive": 11,
+      "false_positive": 1,
+      "false_negative": 1,
+      "true_negative": 0
+    },
+    "llm_stats": {
+      "call_count": 8,
+      "avg_score": 0.75625,
+      "median_score": 1.0,
+      "score_distribution": {
+        "0.0-0.2": 1,
+        "0.8-1.0": 6,
+        "0.2-0.4": 1
+      },
+      "top_lowest_fields": [
+        {
+          "path": "terms.authorized_officer_definition",
+          "metric_id": "string_semantic",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "terms.use_of_proceeds",
+          "metric_id": "string_semantic",
+          "score": 0.2,
+          "reasoning": "The predicted string captures the primary permitted purpose ('general corporate purposes') but completely omits the extensive list of prohibited uses and negative covenants (anti-corruption, sanctions..."
+        },
+        {
+          "path": "terms.borrowing_request",
+          "metric_id": "string_semantic",
+          "score": 0.85,
+          "reasoning": "The predicted string captures the core timing requirements and recipients for the different borrowing types (Floating Rate, LIBO Rate in Dollars, LIBO Rate in Committed Currencies) accurately. It corr..."
+        },
+        {
+          "path": "terms.governing_law",
+          "metric_id": "string_semantic",
+          "score": 1.0,
+          "reasoning": "The predicted string is identical to the gold string."
+        },
+        {
+          "path": "terms.maturity_date",
+          "metric_id": "string_semantic",
+          "score": 1.0,
+          "reasoning": "The predicted string is identical to the gold string, matching the required YYYY-MM-DD format exactly."
+        }
+      ]
+    },
+    "error_breakdown": {
+      "by_path_prefix": {
+        "terms": 2
+      },
+      "by_metric_type": {
+        "string_semantic": 2
+      },
+      "by_reason": {
+        "gold_absent": 1,
+        "semantic_mismatch": 1
+      },
+      "details": [
+        {
+          "category": "gold_absent",
+          "count": 1,
+          "paths": []
+        },
+        {
+          "category": "semantic_mismatch",
+          "count": 1,
+          "paths": []
+        }
+      ]
+    }
+  },
+  "field_outcomes": [
+    {
+      "path": "$.properties.parties.properties.administrative_agent",
+      "normalized_path": "parties.administrative_agent",
+      "metric_id": "string_fuzzy",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "jpmorgan chase bank, n.a.",
+      "extracted_value": "jpmorgan chase bank, n.a.",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.parties.properties.borrower",
+      "normalized_path": "parties.borrower",
+      "metric_id": "string_fuzzy",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "3m company",
+      "extracted_value": "3m company",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.beneficial_ownership_certification_required",
+      "normalized_path": "terms.beneficial_ownership_certification_required",
+      "metric_id": "boolean_exact",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": true,
+      "extracted_value": true,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.authorized_officer_definition",
+      "normalized_path": "terms.authorized_officer_definition",
+      "metric_id": "string_semantic",
+      "score": 0.0,
+      "passed": false,
+      "reason": "gold_null",
+      "gold_value": null,
+      "extracted_value": "officer of or other authorized representative for the Borrower",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.loan_commitment.properties.amount",
+      "normalized_path": "terms.loan_commitment.amount",
+      "metric_id": "number_exact",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": 1250000000.0,
+      "extracted_value": 1250000000.0,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.loan_commitment.properties.currency",
+      "normalized_path": "terms.loan_commitment.currency",
+      "metric_id": "string_case_insensitive",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "USD",
+      "extracted_value": "USD",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.governing_law",
+      "normalized_path": "terms.governing_law",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "State of New York",
+      "extracted_value": "State of New York",
+      "reasoning": "The predicted string is identical to the gold string.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.maturity_date",
+      "normalized_path": "terms.maturity_date",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "2021-11-13",
+      "extracted_value": "2021-11-13",
+      "reasoning": "The predicted string is identical to the gold string, matching the required YYYY-MM-DD format exactly.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.agreement_date",
+      "normalized_path": "terms.agreement_date",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "2019-11-15",
+      "extracted_value": "2019-11-15",
+      "reasoning": "The predicted string is identical to the gold string, matching the required YYYY-MM-DD format exactly.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.use_of_proceeds",
+      "normalized_path": "terms.use_of_proceeds",
+      "metric_id": "string_semantic",
+      "score": 0.2,
+      "passed": false,
+      "reason": null,
+      "gold_value": "Use the proceeds of the Advances solely for the Borrower’s general corporate purposes; provided, however, the proceeds of the Advances shall not be used by the Borrower (i) in connection with any acquisition by the Borrower of other businesses, whether through merger, consolidation, acquisition of assets, acquisition of stock or other ownership interests or otherwise; or (ii) in connection with or preparation for any case or proceeding contemplated by Section 10.1(j) hereof; and (y) not request any Borrowing, and not knowingly use, and use commercially reasonable efforts to procure that its Subsidiaries and its or their respective directors, officers, employees and agents shall not knowingly use, the proceeds of any Borrowing (A) in furtherance of a corrupt offer, payment, promise to pay, or authorization of the payment or giving of money, or anything else of value, to any Person in a manner which constitutes (1) a violation of the FCPA, (2) a violation of the Bribery Act, or (3) a material violation of any other AntiCorruption Laws, (B) for the purpose of funding, financing or facilitating any activities, business or transaction of or with any Sanctioned Person, or in any Sanctioned Country, except to the extent licensed by the Office of Foreign Assets Control of the U.S. Department of the Treasury or the U.S. Department of State or otherwise authorized under the U.S. law, or (C) in any manner that would result in the violation of any Sanctions applicable to any party hereto.",
+      "extracted_value": "general corporate purposes",
+      "reasoning": "The predicted string captures the primary permitted purpose ('general corporate purposes') but completely omits the extensive list of prohibited uses and negative covenants (anti-corruption, sanctions...",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.borrowing_request",
+      "normalized_path": "terms.borrowing_request",
+      "metric_id": "string_semantic",
+      "score": 0.85,
+      "passed": true,
+      "reason": null,
+      "gold_value": " A request for a Borrowing must be received by the Agent (and in the case of a LIBO Rate Advance denominated in a Committed Currency, to the London Sub-Agent) (i) not later than 1:00 P.M. on the day that such Borrowing is to be made in the case of a Borrowing that is to bear interest initially at the Floating Rate or (ii) not later than 11:00 A.M. on the day three Business Days before the Business Day which is the first day of the applicable Interest Period for such Borrowing in the case of a Borrowing denominated in Dollars that is to bear interest initially (in whole or in part) at a LIBO Rate, (y) 2:00 P.M. (London time) on the day three Business Days before the Business Day which is the first day of the applicable Interest Period for such Borrowing in the case of a Borrowing denominated in any Committed Currency.",
+      "extracted_value": "Written or telephonic request (confirmed immediately in writing) to the Agent; for Floating Rate, not later than 1:00 P.M. on the day of Borrowing; for LIBO Rate in Dollars, not later than 11:00 A.M. three Business Days before the first day of the Interest Period; for LIBO Rate in Committed Currencies, not later than 2:00 P.M. (London time) three Business Days before the first day of the Interest Period",
+      "reasoning": "The predicted string captures the core timing requirements and recipients for the different borrowing types (Floating Rate, LIBO Rate in Dollars, LIBO Rate in Committed Currencies) accurately. It corr...",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.parties.properties.lenders",
+      "normalized_path": "parties.lenders",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        "JPMorgan Chase Bank, N.A.",
+        "Citibank, N.A.",
+        "Deutsche Bank AG New York Branch",
+        "Bank of America, N.A.",
+        "Barclays Bank PLC",
+        "BNP Paribas",
+        "Credit Suisse AG, Cayman Islands Branch",
+        "Goldman Sachs Bank USA",
+        "Morgan Stanley Bank, N.A.",
+        "Wells Fargo Bank, National Association"
+      ],
+      "extracted_value": [
+        "JPMorgan Chase Bank, N.A.",
+        "Citibank, N.A.",
+        "Deutsche Bank AG New York Branch",
+        "Bank of America, N.A.",
+        "Barclays Bank PLC",
+        "BNP Paribas",
+        "Credit Suisse AG, Cayman Islands Branch",
+        "Goldman Sachs Bank USA",
+        "Morgan Stanley Bank, N.A.",
+        "Wells Fargo Bank, National Association"
+      ],
+      "reasoning": "The predicted array contains exactly the same 10 legal entities as the gold array. Each item in the gold array has a direct, exact string match in the predicted array. There are no missing items and n...",
+      "array_breakdown": {
+        "matched": 10,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "JPMorgan Chase Bank, N.A.",
+          "Citibank, N.A.",
+          "Deutsche Bank AG New York Branch",
+          "Bank of America, N.A.",
+          "Barclays Bank PLC",
+          "BNP Paribas",
+          "Credit Suisse AG, Cayman Islands Branch",
+          "Goldman Sachs Bank USA",
+          "Morgan Stanley Bank, N.A.",
+          "Wells Fargo Bank, National Association"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.parties.properties.lead_arranger",
+      "normalized_path": "parties.lead_arranger",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        "JPMORGAN CHASE BANK, N.A.",
+        "CITIBANK, N.A.",
+        "DEUTSCHE BANK SECURITIES INC."
+      ],
+      "extracted_value": [
+        "JPMorgan Chase Bank, N.A.",
+        "Citibank, N.A.",
+        "Deutsche Bank Securities Inc.",
+        "BofA Securities, Inc."
+      ],
+      "reasoning": "The evaluation compares the gold array of financial institutions against the predicted array using semantic matching. \n\n1. 'JPMORGAN CHASE BANK, N.A.' (Gold) matches 'JPMorgan Chase Bank, N.A.' (Predi...",
+      "array_breakdown": {
+        "matched": 3,
+        "missed_gold": 0,
+        "spurious_pred": 1,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "matched_items": [
+          "JPMORGAN CHASE BANK, N.A.",
+          "CITIBANK, N.A.",
+          "DEUTSCHE BANK SECURITIES INC."
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": [
+          "BofA Securities, Inc."
+        ]
+      }
+    }
+  ],
+  "overall_score": 0.9187499999999998,
+  "field_score": 0.8500000000000001,
+  "overall_pass_rate": 0.8461538461538461
+}

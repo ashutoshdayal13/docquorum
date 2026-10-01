@@ -1,0 +1,1855 @@
+{
+ "short": {
+  "00581-2011-p0050": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "00581-2011-p0052": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "00581-2011-p0098": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "00581-2011-p0102": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "02-10121 H-12 7-2-2024 F-22628": {
+   "kind": "no text layer",
+   "reading": "quorum -> parse reading (220 dpi, OCR-labelled)",
+   "agreement": {
+    "image": 0.961538462,
+    "parse": 0.967948718,
+    "oneshot": 0.942307692
+   }
+  },
+  "07021-2016-p0014": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "07021-2016-p0016": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "07021-2016-p0018": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "07021-2016-p0026": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "07021-2016-p0029": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "07021-2016-p0032": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "07021-2016-p0038": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "07021-2016-p0039": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "07021-2016-p0040": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "07021-2016-p0051": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "07021-2016-p0052": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "07021-2016-p0053": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "07021-2016-p0074": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "07021-2016-p0078": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "07021-2016-p0082": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "08-15427 H-12 1-21-2003 F-01341": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.967948718,
+    "parse": 0.967948718,
+    "oneshot": 0.935897436
+   }
+  },
+  "08-20813 H-12 10-17-2008 F-01094A": {
+   "kind": "no text layer",
+   "reading": "quorum -> parse reading (220 dpi, OCR-labelled)",
+   "agreement": {
+    "image": 0.955128205,
+    "parse": 0.961538462,
+    "oneshot": 0.929487179
+   }
+  },
+  "08-37943 H-12 09-25-2014 F-01249": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.967948718,
+    "parse": 0.967948718,
+    "oneshot": 0.935897436
+   }
+  },
+  "08-43259 H-12 3-18-2024 F-22737": {
+   "kind": "no text layer",
+   "reading": "quorum -> parse reading (220 dpi, OCR-labelled)",
+   "agreement": {
+    "image": 0.974358974,
+    "parse": 0.980769231,
+    "oneshot": 0.967948718
+   }
+  },
+  "08-51344 H-12 10-2-2023 F-22666": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.955128205,
+    "parse": 0.935897436,
+    "oneshot": 0.929487179
+   }
+  },
+  "13f__audent_global_2025q4": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "13f__dedeker_financial_llc": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "13f__radnor_capital_management_llc": {
+   "kind": "born-digital",
+   "reading": "primary reading (text-only chunks; resolution does not apply)"
+  },
+  "13f__sl_advisors_llc": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "2A-27-103150_116454": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "2A-9-136008_97695": {
+   "kind": "no text layer",
+   "reading": "quorum -> parse reading (220 dpi, OCR-labelled)",
+   "agreement": {
+    "image": 0.934210526,
+    "parse": 0.940789474,
+    "oneshot": 0.888157895
+   }
+  },
+  "2A-9-156032_107792": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.94047619,
+    "parse": 0.928571429,
+    "oneshot": 0.928571429
+   }
+  },
+  "2A-9-160248_109904": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.976190476,
+    "parse": 0.970238095,
+    "oneshot": 0.958333333
+   }
+  },
+  "2A-9-160258_109909": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.971342661,
+    "parse": 0.964899362,
+    "oneshot": 0.904126214
+   }
+  },
+  "2A-9-160266_109913": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.93452381,
+    "parse": 0.898809524,
+    "oneshot": 0.928571429
+   }
+  },
+  "2A-9-160268_109914": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.958333333,
+    "parse": 0.952380952,
+    "oneshot": 0.93452381
+   }
+  },
+  "2A-9-160282_109921": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.964285714,
+    "parse": 0.952380952,
+    "oneshot": 0.964285714
+   }
+  },
+  "2A-9-160294_109927": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.822368421,
+    "parse": 0.822368421,
+    "oneshot": 0.657894737
+   }
+  },
+  "2A-9-160298_109929": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.60407462,
+    "parse": 0.60407462,
+    "oneshot": 0.218446602
+   }
+  },
+  "2A-9-160318_109939": {
+   "kind": "no text layer",
+   "reading": "quorum -> parse reading (220 dpi, OCR-labelled)",
+   "agreement": {
+    "image": 0.952380952,
+    "parse": 0.958333333,
+    "oneshot": 0.946428571
+   }
+  },
+  "3N1AB7AP8FY283932_professional_valuation": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.990566038,
+    "parse": 0.981132075,
+    "oneshot": 0.990566038
+   }
+  },
+  "3N1AB7AP8FY283932_professional_valuation_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.98427673,
+    "parse": 0.977987421,
+    "oneshot": 0.974842767
+   }
+  },
+  "593338187_200912_990PF-p0023": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "593338187_200912_990PF-p0024": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "593338187_200912_990PF-p0025": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "593338187_200912_990PF-p0026": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "593338187_200912_990PF-p0027": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "593338187_200912_990PF-p0030": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "593338187_200912_990PF-p0031": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "593338187_200912_990PF-p0032": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "593338187_200912_990PF-p0033": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "593338187_200912_990PF-p0034": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "593338187_200912_990PF-p0035": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "593338187_200912_990PF-p0036": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "593338187_200912_990PF-p0037": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "593338187_200912_990PF-p0038": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "7C-02014 H-12 5-20-2013 F-01083": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.961538462,
+    "parse": 0.961538462,
+    "oneshot": 0.948717949
+   }
+  },
+  "7C-04947 H-12 12-7-2009 F-01079": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.935897436,
+    "parse": 0.903846154,
+    "oneshot": 0.929487179
+   }
+  },
+  "H9-53-1621_1656": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.956896552,
+    "parse": 0.939655172,
+    "oneshot": 0.948275862
+   }
+  },
+  "H9-53-2119_2144": {
+   "kind": "no text layer",
+   "reading": "quorum -> parse reading (220 dpi, OCR-labelled)",
+   "agreement": {
+    "image": 0.896551724,
+    "parse": 0.939655172,
+    "oneshot": 0.939655172
+   }
+  },
+  "H9-53-23_23": {
+   "kind": "no text layer",
+   "reading": "quorum -> one-shot reading",
+   "agreement": {
+    "image": 0.905172414,
+    "parse": 0.931034483,
+    "oneshot": 0.939655172
+   }
+  },
+  "H9-53-24_24": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.948275862,
+    "parse": 0.948275862,
+    "oneshot": 0.913793103
+   }
+  },
+  "H9-53-30_30": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.931034483,
+    "parse": 0.931034483,
+    "oneshot": 0.931034483
+   }
+  },
+  "H9-53-319_311": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.948275862,
+    "parse": 0.939655172,
+    "oneshot": 0.939655172
+   }
+  },
+  "H9-53-31_31": {
+   "kind": "no text layer",
+   "reading": "quorum -> parse reading (220 dpi, OCR-labelled)",
+   "agreement": {
+    "image": 0.948275862,
+    "parse": 0.956896552,
+    "oneshot": 0.922413793
+   }
+  },
+  "H9-53-32_32": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.922413793,
+    "parse": 0.922413793,
+    "oneshot": 0.862068966
+   }
+  },
+  "H9-53-514_1043": {
+   "kind": "no text layer",
+   "reading": "quorum -> one-shot reading",
+   "agreement": {
+    "image": 0.977272727,
+    "parse": 0.977272727,
+    "oneshot": 0.984848485
+   }
+  },
+  "H9-53-59_60": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.948275862,
+    "parse": 0.948275862,
+    "oneshot": 0.896551724
+   }
+  },
+  "H9-53-7226_7240": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.519254971,
+    "parse": 0.519254971,
+    "oneshot": 0.06993007
+   }
+  },
+  "H9-53-7234_7248": {
+   "kind": "no text layer",
+   "reading": "quorum -> parse reading (220 dpi, OCR-labelled)",
+   "agreement": {
+    "image": 0.528379059,
+    "parse": 0.537503146,
+    "oneshot": 0.096153846
+   }
+  },
+  "H9-53-7239_7253": {
+   "kind": "no text layer",
+   "reading": "quorum -> parse reading (220 dpi, OCR-labelled)",
+   "agreement": {
+    "image": 0.948275862,
+    "parse": 0.956896552,
+    "oneshot": 0.922413793
+   }
+  },
+  "H9-53-9349_9509": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.99137931,
+    "parse": 0.99137931,
+    "oneshot": 0.982758621
+   }
+  },
+  "H9-53-9386_9545": {
+   "kind": "no text layer",
+   "reading": "quorum -> parse reading (220 dpi, OCR-labelled)",
+   "agreement": {
+    "image": 0.874183007,
+    "parse": 0.951119157,
+    "oneshot": 0.942615756
+   }
+  },
+  "P18-28-1547": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.956521739,
+    "parse": 0.949275362,
+    "oneshot": 0.920289855
+   }
+  },
+  "P18-28-21_77": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.958333333,
+    "parse": 0.958333333,
+    "oneshot": 0.930555556
+   }
+  },
+  "P18-28-35_39": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.946235039,
+    "parse": 0.914179104,
+    "oneshot": 0.92715107
+   }
+  },
+  "P18-28-43_44": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.927536232,
+    "parse": 0.913043478,
+    "oneshot": 0.898550725
+   }
+  },
+  "P18-28-44_45": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "P18-28-50_51": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.933333333,
+    "parse": 0.92,
+    "oneshot": 0.92
+   }
+  },
+  "P18-28-52_53": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.99382716,
+    "parse": 0.987654321,
+    "oneshot": 0.99382716
+   }
+  },
+  "P18-28-54_55": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.97826087,
+    "parse": 0.956521739,
+    "oneshot": 0.97826087
+   }
+  },
+  "P18-28-55_56": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.898550725,
+    "parse": 0.884057971,
+    "oneshot": 0.869565217
+   }
+  },
+  "P18-28-56_57": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.97826087,
+    "parse": 0.97826087,
+    "oneshot": 0.971014493
+   }
+  },
+  "P18-28-62_62": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.971014493,
+    "parse": 0.956521739,
+    "oneshot": 0.971014493
+   }
+  },
+  "P4-27-51022_74198": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-27-51094_74234": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-27-51220_74625": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-27-51300_74665": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-27-51318_74674": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-83-199_29": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-83-201_30": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-83-211_35": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-83-433_147": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-83-443_152": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-83-449_155": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-83-457_159": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-83-631_246": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-83-693_277": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-Historical Single Signature83-10963_5480": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-Historical Single Signature83-223_41": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "P4-Historical Single Signature83-257_58": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "REDACTED_2007_NISSAN_MURANO_professional_valuation": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "ROGER-WINFIELD-SCOTT-FOUNDATION-INC-2009-580655183-p0023": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "ROGER-WINFIELD-SCOTT-FOUNDATION-INC-2009-580655183-p0024": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "ROGER-WINFIELD-SCOTT-FOUNDATION-INC-2009-580655183-p0025": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W-1-9-258_260": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W-1-9-260_262": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W-1-9-261_263": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W14-2nd Sub 53269 Revised W14": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W14-2nd Sub 55975 Revised W14 ADMIN REVIEWED": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W14-52342_W14": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.934895833,
+    "parse": 0.934895833,
+    "oneshot": 0.90625
+   }
+  },
+  "W14-53632_W14 ADMIN REVIEWED": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W14-54500_W14 admin reviewed": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W14-55311_W14 reviewed": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W14-55711_W14 ADMIN REVIEWED": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W14-57077_W14": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W14-57728_W14_REVISED": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, re-read with every schema key required"
+  },
+  "W14-58025_W14 Admin Reviewed": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W14-58509_W14 2nd sub revised": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi, re-read with every schema key required"
+  },
+  "W14-58549_W14": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W14-Atascosa SWD Well No. 4 - W-14 (Updated 01.22.2025)": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W2-27-216874_212740": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W2-27-217184_213122": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W2-27-217314_213200": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "W2-27-217884_213729": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "WVWJK73C19P047779_professional_valuation": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "WVWJK73C19P047779_professional_valuation_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.958100559,
+    "parse": 0.938547486,
+    "oneshot": 0.958100559
+   }
+  },
+  "YV4952BL2C1140915_professional_valuation": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "YV4952BL2C1140915_professional_valuation_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.932000427,
+    "parse": 0.932000427,
+    "oneshot": 0.826709062
+   }
+  },
+  "aclu_cdwg_invoice": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.931818182,
+    "parse": 0.909090909,
+    "oneshot": 0.931818182
+   }
+  },
+  "arif-2021": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.972593113,
+    "parse": 0.972593113,
+    "oneshot": 0.93924581
+   }
+  },
+  "arif-2022": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.961516185,
+    "parse": 0.961516185,
+    "oneshot": 0.915505538
+   }
+  },
+  "arif-2024": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.951549478,
+    "parse": 0.951549478,
+    "oneshot": 0.892173913
+   }
+  },
+  "bianco-2024": {
+   "kind": "no text layer",
+   "reading": "quorum -> parse reading (220 dpi, OCR-labelled)",
+   "agreement": {
+    "image": 0.940741664,
+    "parse": 0.941624901,
+    "oneshot": 0.878995434
+   }
+  },
+  "brand_price_list_lifescience_2024": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "brand_price_list_lifescience_2024_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.97650514,
+    "parse": 0.954478708,
+    "oneshot": 0.97650514
+   }
+  },
+  "budget_appendix_doe": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "budget_appendix_legis": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "ca_rad_crossover_inpatient_p5": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "ca_rad_crossover_inpatient_p5_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.921686747,
+    "parse": 0.921686747,
+    "oneshot": 0.843373494
+   }
+  },
+  "ca_rad_crossover_outpatient_p5": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "ca_rad_crossover_outpatient_p5_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.891566265,
+    "parse": 0.855421687,
+    "oneshot": 0.891566265
+   }
+  },
+  "caterpillar_spec_sheet_312c_excavator": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi, re-read with every schema key required"
+  },
+  "caterpillar_spec_sheet_312c_excavator_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.992248062,
+    "parse": 0.992248062,
+    "oneshot": 0.992248062
+   }
+  },
+  "caterpillar_spec_sheet_330_excavator": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi, re-read with every schema key required"
+  },
+  "caterpillar_spec_sheet_330_excavator_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.964095745,
+    "parse": 0.929521277,
+    "oneshot": 0.962765957
+   }
+  },
+  "cbp_7501_continuation_0001": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "cbp_7501_continuation_0002": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "cbp_7501_continuation_0007": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "cbp_7501_continuation_0016": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "cbp_7501_continuation_0018": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "ccc_online_0005_american_family_chevrolet_sonic": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "ccc_online_0005_american_family_chevrolet_sonic_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "ccc_online_0006_esurance_toyota_rav4": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "ccc_online_0006_esurance_toyota_rav4_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "census_statab": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "census_statab_12s0035": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "census_statab_12s0711": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "census_statab_employment": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "census_statab_income_by_state": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "cfpb_closing-disclosure_H25E": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "cfpb_closing-disclosure_H25E_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.514050901,
+    "parse": 0.514050901,
+    "oneshot": 0.014619883
+   }
+  },
+  "cfpb_closing-disclosure_H25F": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "cfpb_closing-disclosure_H25F_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "cfpb_closing-disclosure_filled-sample": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "cfpb_closing-disclosure_filled-sample_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.998427673,
+    "parse": 0.998427673,
+    "oneshot": 0.996855346
+   }
+  },
+  "dc-pepco-residential-bill": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "dd1155_schedule_continuation_0002": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "dd1155_schedule_continuation_0008": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "fidelity_0002_sample": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "fort_bend_operativeiq_invoice": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.989795918,
+    "parse": 0.989795918,
+    "oneshot": 0.979591837
+   }
+  },
+  "golden_corral_receipt_refugio_county_auditor": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "grafton_isotrope_invoice_19503": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "gsa_mas_it_labor_0004": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "gsa_mas_it_labor_0020": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "h5Filing-45659-1": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "h5Filing-45884-1": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "h5Filing-45887-1": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "h5Filing-45919-1": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "h5Filing-46302-1": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "h5Filing-46383-1": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "h5Filing-46384-1": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "h5Filing-46780-1": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "h5Filing-47175-1": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "h5Filing-48982-1": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "h5Filing-49070-1": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "h5Filing-50745-2": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "h5Filing-66006-1": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "hingham-grainger-invoice": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "hingham-wbmason-invoice": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "hingham_lowes_receipt": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "lancaster_county_ne_requisition_po_husker_steel": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi, re-read with every schema key required"
+  },
+  "lancaster_county_ne_requisition_po_husker_steel_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "mcdonalds_receipt_chicago_documentcloud": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.990740741,
+    "parse": 0.981481481,
+    "oneshot": 0.990740741
+   }
+  },
+  "mission-tx-tyler-invoice": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "ms_medicaid_ra_adjustments": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "ms_medicaid_ra_adjustments_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.974137931,
+    "parse": 0.974137931,
+    "oneshot": 0.948275862
+   }
+  },
+  "ms_medicaid_ra_paid_denied_claims": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "ms_medicaid_ra_paid_denied_claims_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.482517483,
+    "parse": 0.482517483,
+    "oneshot": 0.0
+   }
+  },
+  "nport__bullfinch_fund_inc": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "nport__gabelli_growth_fund_2025q4": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "nport__oak_associates_funds": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "oklahoma_county_purchase_order_avl_systems": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi, re-read with every schema key required"
+  },
+  "oklahoma_county_purchase_order_avl_systems_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> one-shot reading",
+   "agreement": {
+    "image": 0.934782609,
+    "parse": 0.934782609,
+    "oneshot": 0.956521739
+   }
+  },
+  "passcoag-2020-w2-p0002-r1": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.947309291,
+    "parse": 0.892018779,
+    "oneshot": 0.947309291
+   }
+  },
+  "passcoag-2020-w2-p0002-r2": {
+   "kind": "no text layer",
+   "reading": "quorum -> parse reading (220 dpi, OCR-labelled)",
+   "agreement": {
+    "image": 0.974358974,
+    "parse": 0.987179487,
+    "oneshot": 0.987179487
+   }
+  },
+  "passcoag-2020-w2-p0002-r3": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.988372093,
+    "parse": 0.988372093,
+    "oneshot": 0.976744186
+   }
+  },
+  "passcoag-2020-w2-p0002-r4": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "passcoag-2020-w2-p0003-r1": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "passcoag-2020-w2-p0003-r2": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "passcoag-2020-w2-p0003-r3": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "passcoag-2020-w2-p0003-r4": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "passcoag-2020-w2-p0004-r1": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.988372093,
+    "parse": 0.988372093,
+    "oneshot": 0.976744186
+   }
+  },
+  "passcoag-2020-w2-p0004-r2": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.988372093,
+    "parse": 0.976744186,
+    "oneshot": 0.988372093
+   }
+  },
+  "passcoag-2020-w2-p0004-r3": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.976744186,
+    "parse": 0.976744186,
+    "oneshot": 0.953488372
+   }
+  },
+  "passcoag-2020-w2-p0004-r4": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "passcoag-2020-w2-p0005-r1": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "passcoag-2020-w2-p0005-r2": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "passcoag-2020-w2-p0005-r3": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "passcoag-2020-w2-p0005-r4": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "passcoag-2020-w2-p0006-r1": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "passcoag-2020-w2-p0006-r2": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "passcoag-2020-w2-p0006-r3": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "passcoag-2020-w2-p0006-r4": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.976744186,
+    "parse": 0.976744186,
+    "oneshot": 0.953488372
+   }
+  },
+  "pershing_0001": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "ppl-two-bill-example": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  },
+  "real_clinton_property_25_11073": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "real_clinton_property_25_11073_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.984848485,
+    "parse": 0.976190476,
+    "oneshot": 0.982683983
+   }
+  },
+  "real_franklin_aug_2025": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "real_franklin_nov_2025": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "real_wyo_Goshen_2024": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "real_wyo_Niobrara_2024": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "real_wyo_Weston_2024": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "sched_i__after_violence_project_ty2024": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "sched_i__idaho_humanities_council_inc_ty2023": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "sched_i__rotary_club_ty2024": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "sched_i__the_women_s_foundation_of_colorado_inc_ty2024": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "sec_13f_0009_coatue_management": {
+   "kind": "born-digital",
+   "reading": "primary reading (text-only chunks; resolution does not apply)"
+  },
+  "sec_13f_0019_soros_fund_management": {
+   "kind": "born-digital",
+   "reading": "primary reading (text-only chunks; resolution does not apply)"
+  },
+  "southampton-ny-york-env-invoice": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "stephenville-axon-invoice": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "texas_facilities_commission_purchase_order_shelton-keller": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi, re-read with every schema key required"
+  },
+  "texas_facilities_commission_purchase_order_shelton-keller_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.989361702,
+    "parse": 0.978723404,
+    "oneshot": 0.989361702
+   }
+  },
+  "ti_spec_sheet_ne555_timer": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "ti_spec_sheet_ne555_timer_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   }
+  },
+  "uillinois_rate_card_carpool_2024": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "uillinois_rate_card_carpool_2024_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.964912281,
+    "parse": 0.929824561,
+    "oneshot": 0.964912281
+   }
+  },
+  "utah_fleet_rate_schedule_fy2024": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "utah_fleet_rate_schedule_fy2024_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.989010989,
+    "parse": 0.978021978,
+    "oneshot": 0.989010989
+   }
+  },
+  "viega_price_list_propress_2026": {
+   "kind": "born-digital",
+   "reading": "primary reading, 220 dpi"
+  },
+  "viega_price_list_propress_2026_corrupted": {
+   "kind": "no text layer",
+   "reading": "quorum -> image reading (primary, 220 dpi)",
+   "agreement": {
+    "image": 0.971562275,
+    "parse": 0.950683945,
+    "oneshot": 0.968322534
+   }
+  },
+  "we-energies-sample-bill": {
+   "kind": "ocr-layer",
+   "reading": "primary reading, 220 dpi, OCR layer labelled as OCR"
+  }
+ },
+ "medium": {
+  "13f__leonteq_securities_2025q4": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "13f__nalls_sherbakoff_2025q4": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "1G1PC5SB6E7111015_professional_valuation": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "1G1PC5SB6E7111015_professional_valuation_corrupted": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "arif-2023": {
+   "reading": "parse reading, schema split, page images in windows of <= 8 pages (220 dpi)"
+  },
+  "baker_hughes_earnings_deck_q4fy25": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "bar-lev-2021": {
+   "reading": "parse reading, schema split, page images in windows of <= 8 pages (220 dpi)"
+  },
+  "bar-lev-2022": {
+   "reading": "parse reading, schema split, page images in windows of <= 8 pages (220 dpi)"
+  },
+  "bar-lev-2023": {
+   "reading": "parse reading, schema split, page images in windows of <= 8 pages (220 dpi)"
+  },
+  "bar-lev-2024": {
+   "reading": "parse reading, schema split, page images in windows of <= 8 pages (220 dpi)"
+  },
+  "becerra-2021": {
+   "reading": "parse reading, schema split, page images in windows of <= 8 pages (220 dpi)"
+  },
+  "becerra-2022": {
+   "reading": "parse reading, schema split, page images in windows of <= 8 pages (220 dpi)"
+  },
+  "becerra-2023": {
+   "reading": "parse reading, schema split, page images in windows of <= 8 pages (220 dpi)"
+  },
+  "becerra-2024": {
+   "reading": "parse reading, schema split, page images in windows of <= 8 pages (220 dpi)"
+  },
+  "bianco-2021": {
+   "reading": "parse reading, schema split, page images in windows of <= 8 pages (220 dpi)"
+  },
+  "bianco-2022": {
+   "reading": "parse reading, schema split, page images in windows of <= 8 pages (220 dpi)"
+  },
+  "byline_bancorp_investor_deck_q2_2023": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "cabrera-2021": {
+   "reading": "parse reading, schema split, page images in windows of <= 8 pages (220 dpi)"
+  },
+  "cabrera-2022": {
+   "reading": "parse reading, schema split, page images in windows of <= 8 pages (220 dpi)"
+  },
+  "cabrera-2023": {
+   "reading": "parse reading, schema split, page images in windows of <= 8 pages (220 dpi)"
+  },
+  "ccc_online_0003_geico_ford_crown_victoria": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "ccc_online_0003_geico_ford_crown_victoria_corrupted": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "ccc_online_0004_liberty_dodge_journey": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "ccc_online_0004_liberty_dodge_journey_corrupted": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "ccc_online_0008_state_farm_genesis_gv80": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "ccc_online_0008_state_farm_genesis_gv80_corrupted": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "ccc_online_0009_travelers_ford_f150": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "ccc_online_0009_travelers_ford_f150_corrupted": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "ccc_online_0010_travelers_ford_explorer": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "ccc_online_0010_travelers_ford_explorer_corrupted": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "ccc_online_0011_infinity_toyota_tacoma": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "ccc_online_0011_infinity_toyota_tacoma_corrupted": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "ccc_online_0012_chubb_dodge_durango": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "ccc_online_0012_chubb_dodge_durango_corrupted": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "coreweave_earnings_deck_q4fy25": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "crh_results_deck_q4fy25": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "dd1155_schedule_continuation_0007": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "erie_county_2017_single_audit": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "gov_clin_schedule_0033": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "gov_clin_schedule_0035": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "gov_clin_schedule_0038": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "gsa_mas_it_labor_0003": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "gsa_mas_it_labor_0005": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "gsa_mas_it_labor_0006": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "gsa_mas_it_labor_0007": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "gsa_mas_it_labor_0008": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "gsa_mas_it_labor_0010": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "gsa_mas_it_labor_0011": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "gsa_mas_it_labor_0014": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "gsa_mas_it_labor_0016": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "gsa_mas_it_labor_0018": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "gsa_mas_it_labor_0019": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "hpe_earnings_deck_q4fy25": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "jackson_college_2024_federal_awards_audit": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "nport__advisors_inner_circle_fund": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "nport__dunham_funds": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "nport__sei_etf_2025q4": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "q4-2025-earnings-press-release": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_bbb_service_list": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_bbb_service_list_corrupted": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_blackrock_muni_bmn": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_blackrock_schedule_full": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_cooke_co_tx_2024": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_dcd_sumf_full": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_dcd_sumf_full_corrupted": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_enotes_deviations": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_enotes_deviations_corrupted": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_fidelity_northstar": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_franklin_sep_2025": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_penn_hills_pa_2023": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_pueblo_oct_2025": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_sm0801_dispositions_full": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_sm0801_dispositions_full_corrupted": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_vg_divappr_full": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_vg_divgrowth_full": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_vg_equity_income_full": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_vg_esg_full": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_vg_gcc_full": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_vg_healthcare_full": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_vg_megacap_full": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_vg_primecap_full": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_vg_reit2_full": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_vg_reit_full": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "real_wright_co_mn": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "sched_i__akron_community_foundation_ty2024": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "sched_i__united_way_worldwide_ty2024": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "schwab_dana_jones_2012": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "sec_13f_0031_loomis_sayles": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "sf1449_supplies_services_0003": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "sf1449_supplies_services_0046": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "sf1449_supplies_services_0047": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "smfg-kessan-tanshin-2024-ja": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "sunoco_investor_deck_march_2026": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "synchrony_investor_deck_q1_2026": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "sysco_earnings_deck_q2fy26": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "transunion_earnings_deck_q4fy25": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "united_way_san_antonio_fy23_single_audit": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  },
+  "veralto_earnings_deck_q4fy25": {
+   "reading": "previous final (primary; parse view for scans, tiled for 13-24 pages) + numbers as printed + declared default for empty lists"
+  }
+ },
+ "long": {
+  "dd1155_schedule_continuation_0011": {
+   "reading": "primary reading"
+  },
+  "dd1155_schedule_continuation_0012": {
+   "reading": "primary reading"
+  },
+  "gov_clin_schedule_0005": {
+   "reading": "primary reading"
+  },
+  "gov_clin_schedule_0031": {
+   "reading": "primary reading"
+  },
+  "real_credit_strategies_full": {
+   "reading": "primary reading"
+  },
+  "real_freer_register_full": {
+   "reading": "primary reading"
+  },
+  "real_ftx_full": {
+   "reading": "primary reading"
+  },
+  "real_ftx_full_corrupted": {
+   "reading": "ruled-table reader (27B), selected by the page geometry"
+  },
+  "real_imedia_full": {
+   "reading": "primary reading"
+  },
+  "real_imedia_full_corrupted": {
+   "reading": "ruled-table reader (27B), selected by the page geometry"
+  },
+  "real_ishares_iboxx_bond_etfs": {
+   "reading": "primary reading"
+  },
+  "real_ofac_ssi_full": {
+   "reading": "column-flow reader (27B), selected by the page geometry"
+  },
+  "real_oklahoma_unclaimed_2024": {
+   "reading": "column-flow reader (27B), selected by the page geometry"
+  },
+  "real_sm0801_ae_full": {
+   "reading": "primary reading"
+  },
+  "real_sm0801_eco_full": {
+   "reading": "primary reading"
+  },
+  "real_sm0801_eco_full_corrupted": {
+   "reading": "parse reading (scan without a text layer; no layout reader selected)"
+  },
+  "sec_13f_0010_renaissance_technologies": {
+   "reading": "primary reading"
+  },
+  "sec_13f_0026_brown_brothers_harriman": {
+   "reading": "primary reading"
+  },
+  "sf1449_supplies_services_0042": {
+   "reading": "primary reading"
+  },
+  "sf1449_supplies_services_0059": {
+   "reading": "primary reading"
+  }
+ }
+}

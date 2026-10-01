@@ -1,0 +1,456 @@
+{
+  "output_name": "credit__trmb_credit-agreement_2022-03-24",
+  "timestamp": "2026-09-28T04:36:57.852644",
+  "schema_hash": "e2a608f3",
+  "gold_hash": "f801a035",
+  "extracted_hash": "fc9c6163",
+  "schema_stats": {
+    "total_nodes": 41,
+    "counts_by_type": {
+      "object": 4,
+      "array": 2,
+      "string": 11,
+      "anyof": 11,
+      "null": 11,
+      "boolean": 1,
+      "number": 1
+    },
+    "required_keys_count": 2,
+    "optional_keys_count": 14,
+    "required_by_type": {
+      "anyof": 2
+    },
+    "optional_by_type": {
+      "object": 3,
+      "array": 1,
+      "anyof": 9,
+      "string": 1
+    }
+  },
+  "gold_stats": {
+    "label": "gold",
+    "total_keys": 16,
+    "counts_by_type": {
+      "object": 3,
+      "string": 9,
+      "array": 2,
+      "integer": 1,
+      "boolean": 1
+    },
+    "array_stats": {
+      "array_field_count": 2,
+      "total_items": 17,
+      "min_length": 5,
+      "median_length": 8.5,
+      "max_length": 12
+    },
+    "null_count": 0,
+    "missing_count": 0
+  },
+  "extracted_stats": {
+    "label": "extracted",
+    "total_keys": 16,
+    "counts_by_type": {
+      "object": 3,
+      "array": 2,
+      "string": 3,
+      "null": 8
+    },
+    "array_stats": {
+      "array_field_count": 2,
+      "total_items": 15,
+      "min_length": 4,
+      "median_length": 7.5,
+      "max_length": 11
+    },
+    "null_count": 8,
+    "missing_count": 0
+  },
+  "coverage": {
+    "present_in_both": 13,
+    "missing_in_extracted": 0,
+    "spurious_in_extracted": 0,
+    "required_missing": 0,
+    "missing_paths": [],
+    "spurious_paths": []
+  },
+  "outcomes": {
+    "total_evaluated": 13,
+    "total_passed": 3,
+    "total_failed": 10,
+    "pass_rate": 0.23076923076923078,
+    "pass_by_metric": {
+      "string_fuzzy": {
+        "passed": 2,
+        "failed": 0
+      },
+      "string_semantic": {
+        "passed": 1,
+        "failed": 5
+      },
+      "boolean_exact": {
+        "passed": 0,
+        "failed": 1
+      },
+      "number_exact": {
+        "passed": 0,
+        "failed": 1
+      },
+      "string_case_insensitive": {
+        "passed": 0,
+        "failed": 1
+      },
+      "array_llm": {
+        "passed": 0,
+        "failed": 2
+      }
+    },
+    "pass_by_type": {
+      "string": {
+        "passed": 3,
+        "failed": 6
+      },
+      "boolean": {
+        "passed": 0,
+        "failed": 1
+      },
+      "number": {
+        "passed": 0,
+        "failed": 1
+      },
+      "array": {
+        "passed": 0,
+        "failed": 2
+      }
+    },
+    "pass_by_required": {
+      "optional": {
+        "passed": 3,
+        "failed": 10
+      }
+    },
+    "confusion": {
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 10,
+      "true_negative": 0
+    },
+    "llm_stats": {
+      "call_count": 8,
+      "avg_score": 0.2583333333333333,
+      "median_score": 0.0,
+      "score_distribution": {
+        "0.0-0.2": 5,
+        "0.8-1.0": 1,
+        "0.4-0.6": 1,
+        "0.6-0.8": 1
+      },
+      "top_lowest_fields": [
+        {
+          "path": "terms.maturity_date",
+          "metric_id": "string_semantic",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "terms.governing_law",
+          "metric_id": "string_semantic",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "terms.use_of_proceeds",
+          "metric_id": "string_semantic",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "terms.borrowing_request",
+          "metric_id": "string_semantic",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "terms.authorized_officer_definition",
+          "metric_id": "string_semantic",
+          "score": 0.0,
+          "reasoning": ""
+        }
+      ]
+    },
+    "error_breakdown": {
+      "by_path_prefix": {
+        "terms": 8,
+        "parties": 2
+      },
+      "by_metric_type": {
+        "string_semantic": 5,
+        "boolean_exact": 1,
+        "number_exact": 1,
+        "string_case_insensitive": 1,
+        "array_llm": 2
+      },
+      "by_reason": {
+        "extracted_absent": 8,
+        "semantic_mismatch": 2
+      },
+      "details": [
+        {
+          "category": "extracted_absent",
+          "count": 8,
+          "paths": []
+        },
+        {
+          "category": "semantic_mismatch",
+          "count": 2,
+          "paths": []
+        }
+      ]
+    }
+  },
+  "field_outcomes": [
+    {
+      "path": "$.properties.parties.properties.administrative_agent",
+      "normalized_path": "parties.administrative_agent",
+      "metric_id": "string_fuzzy",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "bank of america, n.a.",
+      "extracted_value": "bank of america, n.a.",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.parties.properties.borrower",
+      "normalized_path": "parties.borrower",
+      "metric_id": "string_fuzzy",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "trimble inc.",
+      "extracted_value": "trimble inc.",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.maturity_date",
+      "normalized_path": "terms.maturity_date",
+      "metric_id": "string_semantic",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_null",
+      "gold_value": "2027-03-24",
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.beneficial_ownership_certification_required",
+      "normalized_path": "terms.beneficial_ownership_certification_required",
+      "metric_id": "boolean_exact",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_null",
+      "gold_value": true,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.governing_law",
+      "normalized_path": "terms.governing_law",
+      "metric_id": "string_semantic",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_null",
+      "gold_value": "State of New York",
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.use_of_proceeds",
+      "normalized_path": "terms.use_of_proceeds",
+      "metric_id": "string_semantic",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_null",
+      "gold_value": "The proceeds of the Revolving Loans will be used solely for, and\nLetters of Credit will be issued only to support, working capital needs and other general corporate purposes\nof the Company and its Subsidiaries, including, without limitation, the financing of Acquisitions.",
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.borrowing_request",
+      "normalized_path": "terms.borrowing_request",
+      "metric_id": "string_semantic",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_null",
+      "gold_value": "To request a Revolving Borrowing, the applicable Borrower (or the Company on its behalf) shall submit a Borrowing Request, signed by its Authorized Officer, to the Administrative Agent (a) in the case of a Term SOFR Borrowing denominated in US Dollars, not later than 11:00 a.m., Local Time, two Business Days before the date of the proposed Borrowing, (b) in the case of SONIA Borrowing, a EURIBOR Borrowing or any other Borrowing denominated in an Alternative Currency, not later than 11:00 a.m., Local Time, four Business Days before the date of the proposed Borrowing or (c) in the case of an ABR Borrowing, not later than 11:00 a.m., Local Time, on the day of the proposed Borrowing (or, in the case of any ABR Term Borrowing, such later time on such day as may be agreed to in writing by the Administrative Agent).",
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.authorized_officer_definition",
+      "normalized_path": "terms.authorized_officer_definition",
+      "metric_id": "string_semantic",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_null",
+      "gold_value": "the Chairman of the Board, the Chief Executive Officer, the President, the Treasurer, Assistant Treasurer, any Vice President or the Chief Financial Officer of the Company",
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.loan_commitment.properties.amount",
+      "normalized_path": "terms.loan_commitment.amount",
+      "metric_id": "number_exact",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_null",
+      "gold_value": 1250000000,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.loan_commitment.properties.currency",
+      "normalized_path": "terms.loan_commitment.currency",
+      "metric_id": "string_case_insensitive",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_null",
+      "gold_value": "USD",
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.agreement_date",
+      "normalized_path": "terms.agreement_date",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "2022-03-24",
+      "extracted_value": "2022-03-24",
+      "reasoning": "The predicted string is identical to the gold string, matching the required YYYY-MM-DD format exactly.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.parties.properties.lead_arranger",
+      "normalized_path": "parties.lead_arranger",
+      "metric_id": "array_llm",
+      "score": 0.4,
+      "passed": false,
+      "reason": null,
+      "gold_value": [
+        "BofA Securities Inc.",
+        "Goldman Sachs Bank USA",
+        "TD Securities (USA) LLC",
+        "Wells Fargo Securities LLC",
+        "Sumitomo Mitsui Banking Corporation"
+      ],
+      "extracted_value": [
+        "SUMITOMO MITSUI BANKING CORPORATION",
+        "GOLDMAN SACHS BANK USA",
+        "TD BANK, N.A.",
+        "WELLS FARGO BANK, NATIONAL ASSOCIATION"
+      ],
+      "reasoning": "The evaluation compares the gold array of financial institutions against the predicted array using semantic matching. \n\n1. 'BofA Securities Inc.' (Gold) has no corresponding match in the predicted arr...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 3,
+        "spurious_pred": 2,
+        "precision": 0.5,
+        "recall": 0.4,
+        "f1": 0.4444444444444445,
+        "matched_items": [
+          "Goldman Sachs Bank USA",
+          "Sumitomo Mitsui Banking Corporation"
+        ],
+        "missed_gold_items": [
+          "BofA Securities Inc.",
+          "TD Securities (USA) LLC",
+          "Wells Fargo Securities LLC"
+        ],
+        "spurious_pred_items": [
+          "TD BANK, N.A.",
+          "WELLS FARGO BANK, NATIONAL ASSOCIATION"
+        ]
+      }
+    },
+    {
+      "path": "$.properties.parties.properties.lenders",
+      "normalized_path": "parties.lenders",
+      "metric_id": "array_llm",
+      "score": 0.6666666666666666,
+      "passed": false,
+      "reason": null,
+      "gold_value": [
+        "Bank of America, N.A.",
+        "Goldman Sachs Bank USA",
+        "Wells Fargo Bank, National Association",
+        "TD Bank, N.A.",
+        "Sumitomo Mitsui Banking Corporation",
+        "The Bank of Nova Scotia",
+        "PNC Bank, National Association",
+        "U.S. Bank National Association",
+        "JPMorgan Chase Bank, N.A.",
+        "HSBC Bank USA, N.A.",
+        "Nordea Bank Abp, New York Branch",
+        "KBC Bank N.V., New York Branch"
+      ],
+      "extracted_value": [
+        "BANK OF AMERICA, N.A.",
+        "BOFA SECURITIES, INC.",
+        "GOLDMAN SACHS BANK USA",
+        "TD SECURITIES (USA) LLC",
+        "WELLS FARGO SECURITIES, LLC",
+        "SUMITOMO MITSUI BANKING CORPORATION",
+        "TD BANK, N.A.",
+        "WELLS FARGO BANK, NATIONAL ASSOCIATION",
+        "THE BANK OF NOVA SCOTIA",
+        "PNC BANK, NATIONAL ASSOCIATION",
+        "U.S. BANK NATIONAL ASSOCIATION"
+      ],
+      "reasoning": "The evaluation compares the gold list of credit facility providers against the predicted list using semantic matching. \n\n1. **Matches (8 items):**\n   - 'Bank of America, N.A.' matches 'BANK OF AMERICA...",
+      "array_breakdown": {
+        "matched": 8,
+        "missed_gold": 4,
+        "spurious_pred": 3,
+        "precision": 0.7272727272727273,
+        "recall": 0.6666666666666666,
+        "f1": 0.6956521739130435,
+        "matched_items": [
+          "Bank of America, N.A.",
+          "Goldman Sachs Bank USA",
+          "Wells Fargo Bank, National Association",
+          "TD Bank, N.A.",
+          "Sumitomo Mitsui Banking Corporation",
+          "The Bank of Nova Scotia",
+          "PNC Bank, National Association",
+          "U.S. Bank National Association"
+        ],
+        "missed_gold_items": [
+          "JPMorgan Chase Bank, N.A.",
+          "HSBC Bank USA, N.A.",
+          "Nordea Bank Abp, New York Branch",
+          "KBC Bank N.V., New York Branch"
+        ],
+        "spurious_pred_items": [
+          "BOFA SECURITIES, INC.",
+          "TD SECURITIES (USA) LLC",
+          "WELLS FARGO SECURITIES, LLC"
+        ]
+      }
+    }
+  ],
+  "overall_score": 0.4642857142857143,
+  "field_score": 0.3128205128205128,
+  "overall_pass_rate": 0.23076923076923078
+}

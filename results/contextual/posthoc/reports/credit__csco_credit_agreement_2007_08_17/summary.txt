@@ -1,0 +1,82 @@
+================================================================================
+EVALUATION REPORT: credit__csco_credit_agreement_2007_08_17
+Timestamp: 2026-09-28T06:28:40.876829
+================================================================================
+
+OVERALL RESULTS
+----------------------------------------
+  Overall Score:  0.910  (item-weighted)
+  Field Score:    0.798  (flat average)
+  Pass Rate: 76.9%
+  Evaluated: 13 fields (10 passed, 3 failed)
+
+SCHEMA STATISTICS
+----------------------------------------
+  Total Nodes: 41
+  Required Keys: 2
+  Optional Keys: 14
+  By Type: anyof: 11, array: 2, boolean: 1, null: 11, number: 1, object: 4, string: 11
+
+COVERAGE
+----------------------------------------
+  Present in Both: 13
+  Missing in Extracted: 0
+  Spurious in Extracted: 0
+  Required Missing: 0
+
+PASS RATE BY METRIC
+----------------------------------------
+  array_llm: 50.0% (1/2)
+  boolean_exact: 0.0% (0/1)
+  number_exact: 100.0% (1/1)
+  string_case_insensitive: 100.0% (1/1)
+  string_fuzzy: 100.0% (2/2)
+  string_semantic: 83.3% (5/6)
+
+LLM METRICS
+----------------------------------------
+  Calls: 8
+  Avg Score: 0.800
+  Median Score: 0.975
+
+  Top Lowest-Scoring Fields:
+    - parties.lead_arranger (array_llm): 0.000
+      Reason: The gold array contains a single string representing two financial institutions: 'BANC OF AMERICA SE...
+    - terms.authorized_officer_definition (string_semantic): 0.600
+      Reason: The predicted string correctly identifies the specific roles (CEO, CFO, Treasurer, Assistant Treasur...
+    - terms.borrowing_request (string_semantic): 0.850
+      Reason: The predicted string captures the core notice period requirements and submission method (irrevocable...
+    - terms.use_of_proceeds (string_semantic): 0.950
+      Reason: The predicted string captures all the substantive legal constraints and purposes listed in the gold ...
+    - terms.agreement_date (string_semantic): 1.000
+      Reason: The predicted string is identical to the gold string, matching the required YYYY-MM-DD format exactl...
+
+ERROR BREAKDOWN
+----------------------------------------
+  By Reason:
+    semantic_mismatch: 2
+    extracted_absent: 1
+  By Path Prefix:
+    terms: 2
+    parties: 1
+
+ARRAY BREAKDOWN
+----------------------------------------
+  parties.lenders [PASS] score=1.000
+    Items: 17 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  parties.lead_arranger [FAIL] score=0.000
+    Items: 0 matched, 1 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+
+FAILED FIELDS (first 10)
+----------------------------------------
+  terms.beneficial_ownership_certification_required
+    Metric: boolean_exact, Score: 0.000
+    Reason: extracted_null
+  terms.authorized_officer_definition
+    Metric: string_semantic, Score: 0.600
+  parties.lead_arranger
+    Metric: array_llm, Score: 0.000
+
+================================================================================

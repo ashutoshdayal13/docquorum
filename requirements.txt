@@ -1,0 +1,12 @@
+# DocQuorum pipeline (Python >= 3.10)
+openai>=1.40
+requests
+numpy
+scipy
+pillow
+lxml
+json_repair
+rapidfuzz
+mineru-vl-utils          # client for the MinerU2.5 parser (optional: scans, images)
+# plus ExtractBench's package (scorer + reference one-shot reader), Apache-2.0:
+#   pip install llama-extract-bench      (github.com/run-llama/ExtractBench)

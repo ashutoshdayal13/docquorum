@@ -1,0 +1,77 @@
+[
+ {
+  "file": "2_stages/00_reading.json",
+  "what happened": "the stored reader agent on parse output",
+  "value F1": 98.24
+ },
+ {
+  "file": "2_stages/01_after_spacing.json",
+  "what happened": "repair: a parsed string snapped to the text layer's spacing (only where the PDF has a text layer) -- no change",
+  "value F1": 98.24
+ },
+ {
+  "file": "2_stages/02_after_carry_down.json",
+  "what happened": "repair: a value printed once carried down to the rows it governs (where the schema says so) -- no change",
+  "value F1": 98.24
+ },
+ {
+  "file": "2_stages/03_after_page_index.json",
+  "what happened": "repair: the model's page as an integer; the printed page number where the schema asks for it -- no change",
+  "value F1": 98.24
+ },
+ {
+  "file": "2_stages/04_after_dedupe.json",
+  "what happened": "repair: one row per key where the list's description says each entry appears once -- no change",
+  "value F1": 98.24
+ },
+ {
+  "file": "2_stages/05_after_stacked_rows.json",
+  "what happened": "repair: a record printed over several stacked lines joined back into one row -- no change",
+  "value F1": 98.24
+ },
+ {
+  "file": "2_stages/06_after_conform.json",
+  "what happened": "check: every schema field present (null where allowed); output valid against the schema -- no change",
+  "value F1": 98.24
+ },
+ {
+  "file": "2_stages/07_after_blank_boxes.json",
+  "what happened": "check: a blank tick box is false where the field's description says so -- no change",
+  "value F1": 98.24
+ },
+ {
+  "file": "2_stages/08_after_template_rows.json",
+  "what happened": "check: template rows (only the printed label filled) and blank pre-printed lines dropped -- no change",
+  "value F1": 98.24
+ },
+ {
+  "file": "2_stages/09_after_copied_rows.json",
+  "what happened": "check: rows copied from one list into another dropped -- no change",
+  "value F1": 98.24
+ },
+ {
+  "file": "2_stages/10_after_record_counts.json",
+  "what happened": "check: identical records capped at the number of times the page prints them -- no change",
+  "value F1": 98.24
+ },
+ {
+  "file": "2_stages/11_after_printed_pages.json",
+  "what happened": "check: each row's page located from its words; the printed page number reported -- no change",
+  "value F1": 98.24
+ },
+ {
+  "file": "2_stages/12_after_printed_quotes.json",
+  "what happened": "check: quote characters as the page prints them -- no change",
+  "value F1": 98.24
+ },
+ {
+  "file": "2_stages/13_after_printed_numbers.json",
+  "what happened": "check: a rounded or rescaled number replaced by the one printed number it restates -- no change",
+  "value F1": 98.24
+ },
+ {
+  "file": "final.json",
+  "what happened": "the output -- identical to the stored final result",
+  "value F1": 98.24
+ }
+]

@@ -1,0 +1,657 @@
+{
+  "output_name": "sports__ma_2023_sw_M-table1",
+  "timestamp": "2026-09-28T06:31:47.508689",
+  "schema_hash": "6f556390",
+  "gold_hash": "84b14b30",
+  "extracted_hash": "e80bf451",
+  "schema_stats": {
+    "total_nodes": 24,
+    "counts_by_type": {
+      "object": 5,
+      "string": 11,
+      "array": 3,
+      "anyof": 2,
+      "integer": 2,
+      "null": 1
+    },
+    "required_keys_count": 0,
+    "optional_keys_count": 16,
+    "required_by_type": {},
+    "optional_by_type": {
+      "string": 9,
+      "object": 2,
+      "array": 2,
+      "anyof": 2,
+      "integer": 1
+    }
+  },
+  "gold_stats": {
+    "label": "gold",
+    "total_keys": 154,
+    "counts_by_type": {
+      "string": 81,
+      "object": 19,
+      "array": 4,
+      "integer": 33,
+      "null": 17
+    },
+    "array_stats": {
+      "array_field_count": 4,
+      "total_items": 22,
+      "min_length": 2,
+      "median_length": 5.0,
+      "max_length": 10
+    },
+    "null_count": 17,
+    "missing_count": 0
+  },
+  "extracted_stats": {
+    "label": "extracted",
+    "total_keys": 154,
+    "counts_by_type": {
+      "string": 81,
+      "object": 19,
+      "array": 4,
+      "integer": 33,
+      "null": 17
+    },
+    "array_stats": {
+      "array_field_count": 4,
+      "total_items": 22,
+      "min_length": 2,
+      "median_length": 5.0,
+      "max_length": 10
+    },
+    "null_count": 17,
+    "missing_count": 0
+  },
+  "coverage": {
+    "present_in_both": 12,
+    "missing_in_extracted": 0,
+    "spurious_in_extracted": 0,
+    "required_missing": 0,
+    "missing_paths": [],
+    "spurious_paths": []
+  },
+  "outcomes": {
+    "total_evaluated": 5,
+    "total_passed": 5,
+    "total_failed": 0,
+    "pass_rate": 1.0,
+    "pass_by_metric": {
+      "string_fuzzy": {
+        "passed": 1,
+        "failed": 0
+      },
+      "string_case_insensitive": {
+        "passed": 1,
+        "failed": 0
+      },
+      "string_exact": {
+        "passed": 2,
+        "failed": 0
+      },
+      "array_llm": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "pass_by_type": {
+      "string": {
+        "passed": 4,
+        "failed": 0
+      },
+      "array": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "pass_by_required": {
+      "optional": {
+        "passed": 5,
+        "failed": 0
+      }
+    },
+    "confusion": {
+      "true_positive": 5,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_negative": 0
+    },
+    "llm_stats": {
+      "call_count": 1,
+      "avg_score": 1.0,
+      "median_score": 1.0,
+      "score_distribution": {
+        "0.8-1.0": 1
+      },
+      "top_lowest_fields": [
+        {
+          "path": "age_groups",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": "The predicted array matches the gold array in structure and content for both age groups ('90-94' and '85-89'). All 18 individual result entries (8 in '90-94' and 10 in '85-89') are present in the pred..."
+        }
+      ]
+    },
+    "error_breakdown": null
+  },
+  "field_outcomes": [
+    {
+      "path": "$.properties.championship",
+      "normalized_path": "championship",
+      "metric_id": "string_fuzzy",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "world aquatics masters championships kyushu 2023",
+      "extracted_value": "world aquatics masters championships kyushu 2023",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.event_details.properties.sex",
+      "normalized_path": "event_details.sex",
+      "metric_id": "string_case_insensitive",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "MEN",
+      "extracted_value": "MEN",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.event_details.properties.length",
+      "normalized_path": "event_details.length",
+      "metric_id": "string_exact",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "50m",
+      "extracted_value": "50m",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.event_details.properties.category",
+      "normalized_path": "event_details.category",
+      "metric_id": "string_exact",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "Freestyle",
+      "extracted_value": "Freestyle",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.age_groups",
+      "normalized_path": "age_groups",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "age_group": "90-94",
+          "results": [
+            {
+              "rank": 1,
+              "athlete_details": {
+                "athlete": "Fusao TAKAHASHI",
+                "country": "JPN",
+                "year_birth": 1933,
+                "team": "JUMP"
+              },
+              "time": "44.01",
+              "records": null
+            },
+            {
+              "rank": 2,
+              "athlete_details": {
+                "athlete": "Mitsunobu YOSHIZAWA",
+                "country": "JPN",
+                "year_birth": 1932,
+                "team": "JSS TATEISHI"
+              },
+              "time": "46.80",
+              "records": null
+            },
+            {
+              "rank": 3,
+              "athlete_details": {
+                "athlete": "Kazuyuki FUKUDA",
+                "country": "JPN",
+                "year_birth": 1932,
+                "team": "RYOGOKU KINGYO"
+              },
+              "time": "55.77",
+              "records": null
+            },
+            {
+              "rank": 4,
+              "athlete_details": {
+                "athlete": "Toshiyasu MINAMI",
+                "country": "JPN",
+                "year_birth": 1933,
+                "team": "FUKUOKA MOON CLUB"
+              },
+              "time": "59.63",
+              "records": null
+            },
+            {
+              "rank": 5,
+              "athlete_details": {
+                "athlete": "Jose PENALOZA",
+                "country": "PER",
+                "year_birth": 1932,
+                "team": "PERU MASTER - Swim"
+              },
+              "time": "59.84",
+              "records": null
+            },
+            {
+              "rank": 6,
+              "athlete_details": {
+                "athlete": "Itaru YANAGAWA",
+                "country": "JPN",
+                "year_birth": 1930,
+                "team": "ITOMAN NAGAZUMI"
+              },
+              "time": "1:03.28",
+              "records": null
+            },
+            {
+              "rank": 7,
+              "athlete_details": {
+                "athlete": "Adelson LEITE JULIAO",
+                "country": "BRA",
+                "year_birth": 1933,
+                "team": "CIRCULO MILITAR DE FORTALEZA"
+              },
+              "time": "1:04.81",
+              "records": null
+            },
+            {
+              "rank": "NA",
+              "athlete_details": {
+                "athlete": "Carlos SALAZAR FLORES",
+                "country": "MEX",
+                "year_birth": 1933,
+                "team": "CLUB BANCARIO DE GUADALAJARA"
+              },
+              "time": "DNS",
+              "records": null
+            }
+          ]
+        },
+        {
+          "age_group": "85-89",
+          "results": [
+            {
+              "rank": 1,
+              "athlete_details": {
+                "athlete": "Tohru FURUKAWA",
+                "country": "JPN",
+                "year_birth": 1938,
+                "team": "KAMOIKE SS"
+              },
+              "time": "33.74",
+              "records": [
+                "WR",
+                "CR"
+              ]
+            },
+            {
+              "rank": 2,
+              "athlete_details": {
+                "athlete": "Hiroshi MATSUMOTO",
+                "country": "JPN",
+                "year_birth": 1936,
+                "team": "TEAM FURINKAZAN"
+              },
+              "time": "37.86",
+              "records": null
+            },
+            {
+              "rank": 3,
+              "athlete_details": {
+                "athlete": "Shigeo OGASAWARA",
+                "country": "JPN",
+                "year_birth": 1935,
+                "team": "EIAI CLUB"
+              },
+              "time": "39.04",
+              "records": null
+            },
+            {
+              "rank": 4,
+              "athlete_details": {
+                "athlete": "Waroku HORIBE",
+                "country": "JPN",
+                "year_birth": 1934,
+                "team": "FUKUOKA MOON CLUB"
+              },
+              "time": "45.22",
+              "records": null
+            },
+            {
+              "rank": 5,
+              "athlete_details": {
+                "athlete": "Haruyoshi NAKAZONO",
+                "country": "JPN",
+                "year_birth": 1937,
+                "team": "RN FUKUOKANISHIJIN"
+              },
+              "time": "45.63",
+              "records": null
+            },
+            {
+              "rank": 6,
+              "athlete_details": {
+                "athlete": "Takanobu SOMA",
+                "country": "JPN",
+                "year_birth": 1938,
+                "team": "KSC SENRI"
+              },
+              "time": "46.57",
+              "records": null
+            },
+            {
+              "rank": 7,
+              "athlete_details": {
+                "athlete": "Anthony REBUCK",
+                "country": "AUS",
+                "year_birth": 1937,
+                "team": "Malvern Marlins"
+              },
+              "time": "53.18",
+              "records": null
+            },
+            {
+              "rank": 8,
+              "athlete_details": {
+                "athlete": "Iuliu EUGEN LEHEL FOLLERT",
+                "country": "ROU",
+                "year_birth": 1938,
+                "team": "Tribeach Brasov"
+              },
+              "time": "1:00.50",
+              "records": null
+            },
+            {
+              "rank": "NA",
+              "athlete_details": {
+                "athlete": "Masakazu MITSUHASHI",
+                "country": "JPN",
+                "year_birth": 1938,
+                "team": "CFC SOGA"
+              },
+              "time": "DNS",
+              "records": null
+            },
+            {
+              "rank": "NA",
+              "athlete_details": {
+                "athlete": "Manfred BUSCH",
+                "country": "GER",
+                "year_birth": 1938,
+                "team": "Berliner TSC"
+              },
+              "time": "DNS",
+              "records": null
+            }
+          ]
+        }
+      ],
+      "extracted_value": [
+        {
+          "age_group": "90-94",
+          "results": [
+            {
+              "rank": 1,
+              "time": "44.01",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Fusao TAKAHASHI",
+                "country": "JPN",
+                "year_birth": 1933,
+                "team": "JUMP"
+              }
+            },
+            {
+              "rank": 2,
+              "time": "46.80",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Mitsunobu YOSHIZAWA",
+                "country": "JPN",
+                "year_birth": 1932,
+                "team": "JSS TATEISHI"
+              }
+            },
+            {
+              "rank": 3,
+              "time": "55.77",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Kazuyuki FUKUDA",
+                "country": "JPN",
+                "year_birth": 1932,
+                "team": "RYOGOKU KINGYO"
+              }
+            },
+            {
+              "rank": 4,
+              "time": "59.63",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Toshiyasu MINAMI",
+                "country": "JPN",
+                "year_birth": 1933,
+                "team": "FUKUOKA MOON CLUB"
+              }
+            },
+            {
+              "rank": 5,
+              "time": "59.84",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Jose PENALOZA",
+                "country": "PER",
+                "year_birth": 1932,
+                "team": "PERU MASTER - Swim"
+              }
+            },
+            {
+              "rank": 6,
+              "time": "1:03.28",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Itaru YANAGAWA",
+                "country": "JPN",
+                "year_birth": 1930,
+                "team": "ITOMAN NAGAZUMI"
+              }
+            },
+            {
+              "rank": 7,
+              "time": "1:04.81",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Adelson LEITE JULIAO",
+                "country": "BRA",
+                "year_birth": 1933,
+                "team": "CIRCULO MILITAR DE FORTALEZA"
+              }
+            },
+            {
+              "rank": "NA",
+              "time": "DNS",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Carlos SALAZAR FLORES",
+                "country": "MEX",
+                "year_birth": 1933,
+                "team": "CLUB BANCARIO DE GUADALAJARA"
+              }
+            }
+          ]
+        },
+        {
+          "age_group": "85-89",
+          "results": [
+            {
+              "rank": 1,
+              "time": "33.74",
+              "records": [
+                "WR",
+                "CR"
+              ],
+              "athlete_details": {
+                "athlete": "Tohru FURUKAWA",
+                "country": "JPN",
+                "year_birth": 1938,
+                "team": "KAMOIKE SS"
+              }
+            },
+            {
+              "rank": 2,
+              "time": "37.86",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Hiroshi MATSUMOTO",
+                "country": "JPN",
+                "year_birth": 1936,
+                "team": "TEAM FURINKAZAN"
+              }
+            },
+            {
+              "rank": 3,
+              "time": "39.04",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Shigeo OGASAWARA",
+                "country": "JPN",
+                "year_birth": 1935,
+                "team": "EIAI CLUB"
+              }
+            },
+            {
+              "rank": 4,
+              "time": "45.22",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Waroku HORIBE",
+                "country": "JPN",
+                "year_birth": 1934,
+                "team": "FUKUOKA MOON CLUB"
+              }
+            },
+            {
+              "rank": 5,
+              "time": "45.63",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Haruyoshi NAKAZONO",
+                "country": "JPN",
+                "year_birth": 1937,
+                "team": "RN FUKUOKANISHIJIN"
+              }
+            },
+            {
+              "rank": 6,
+              "time": "46.57",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Takanobu SOMA",
+                "country": "JPN",
+                "year_birth": 1938,
+                "team": "KSC SENRI"
+              }
+            },
+            {
+              "rank": 7,
+              "time": "53.18",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Anthony REBUCK",
+                "country": "AUS",
+                "year_birth": 1937,
+                "team": "Malvern Marlins"
+              }
+            },
+            {
+              "rank": 8,
+              "time": "1:00.50",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Iuliu Eugen Lehel FOLLERT",
+                "country": "ROU",
+                "year_birth": 1938,
+                "team": "Tribeach Brasov"
+              }
+            },
+            {
+              "rank": "NA",
+              "time": "DNS",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Masakazu MITSUHASHI",
+                "country": "JPN",
+                "year_birth": 1938,
+                "team": "CFC SOGA"
+              }
+            },
+            {
+              "rank": "NA",
+              "time": "DNS",
+              "records": null,
+              "athlete_details": {
+                "athlete": "Manfred BUSCH",
+                "country": "GER",
+                "year_birth": 1938,
+                "team": "Berliner TSC"
+              }
+            }
+          ]
+        }
+      ],
+      "reasoning": "The predicted array matches the gold array in structure and content for both age groups ('90-94' and '85-89'). All 18 individual result entries (8 in '90-94' and 10 in '85-89') are present in the pred...",
+      "array_breakdown": {
+        "matched": 18,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "age_group: 90-94, rank: 1, athlete: Fusao TAKAHASHI",
+          "age_group: 90-94, rank: 2, athlete: Mitsunobu YOSHIZAWA",
+          "age_group: 90-94, rank: 3, athlete: Kazuyuki FUKUDA",
+          "age_group: 90-94, rank: 4, athlete: Toshiyasu MINAMI",
+          "age_group: 90-94, rank: 5, athlete: Jose PENALOZA",
+          "age_group: 90-94, rank: 6, athlete: Itaru YANAGAWA",
+          "age_group: 90-94, rank: 7, athlete: Adelson LEITE JULIAO",
+          "age_group: 90-94, rank: NA, athlete: Carlos SALAZAR FLORES",
+          "age_group: 85-89, rank: 1, athlete: Tohru FURUKAWA",
+          "age_group: 85-89, rank: 2, athlete: Hiroshi MATSUMOTO",
+          "age_group: 85-89, rank: 3, athlete: Shigeo OGASAWARA",
+          "age_group: 85-89, rank: 4, athlete: Waroku HORIBE",
+          "age_group: 85-89, rank: 5, athlete: Haruyoshi NAKAZONO",
+          "age_group: 85-89, rank: 6, athlete: Takanobu SOMA",
+          "age_group: 85-89, rank: 7, athlete: Anthony REBUCK",
+          "age_group: 85-89, rank: 8, athlete: Iuliu EUGEN LEHEL FOLLERT",
+          "age_group: 85-89, rank: NA, athlete: Masakazu MITSUHASHI",
+          "age_group: 85-89, rank: NA, athlete: Manfred BUSCH"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    }
+  ],
+  "overall_score": 1.0,
+  "field_score": 1.0,
+  "overall_pass_rate": 1.0
+}

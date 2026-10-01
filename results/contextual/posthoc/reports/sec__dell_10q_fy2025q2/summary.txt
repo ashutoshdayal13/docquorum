@@ -1,0 +1,227 @@
+================================================================================
+EVALUATION REPORT: sec__dell_10q_fy2025q2
+Timestamp: 2026-09-28T06:37:36.173180
+================================================================================
+
+OVERALL RESULTS
+----------------------------------------
+  Overall Score:  0.374  (item-weighted)
+  Field Score:    0.313  (flat average)
+  Pass Rate: 23.6%
+  Evaluated: 55 fields (13 passed, 42 failed)
+
+SCHEMA STATISTICS
+----------------------------------------
+  Total Nodes: 739
+  Required Keys: 269
+  Optional Keys: 157
+  By Type: anyof: 104, array: 52, integer: 52, null: 104, number: 52, object: 58, string: 317
+
+COVERAGE
+----------------------------------------
+  Present in Both: 232
+  Missing in Extracted: 130
+  Spurious in Extracted: 11
+  Required Missing: 30
+
+PASS RATE BY METRIC
+----------------------------------------
+  array_llm: 21.2% (11/52)
+  string_exact: 50.0% (1/2)
+  string_semantic: 100.0% (1/1)
+
+LLM METRICS
+----------------------------------------
+  Calls: 53
+  Avg Score: 0.306
+  Median Score: 0.000
+
+  Top Lowest-Scoring Fields:
+    - balance_sheet.commercial_paper_outstanding (array_llm): 0.000
+    - balance_sheet.dividends_payable (array_llm): 0.000
+    - balance_sheet.cash_st_investments (array_llm): 0.000
+    - income_statement.restructuring_charge (array_llm): 0.000
+    - other_disclosures.employees (array_llm): 0.000
+
+ERROR BREAKDOWN
+----------------------------------------
+  By Reason:
+    semantic_mismatch: 40
+    value_mismatch: 1
+    gold_absent: 1
+  By Path Prefix:
+    balance_sheet: 21
+    income_statement: 9
+    cash_flow_statement: 7
+    other_disclosures: 4
+    meta: 1
+
+ARRAY BREAKDOWN
+----------------------------------------
+  balance_sheet.total_assets [FAIL] score=0.500
+    Items: 1 matched, 1 missed, 1 spurious
+    P=0.500  R=0.500  F1=0.500
+  balance_sheet.cash [PASS] score=1.000
+    Items: 2 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  balance_sheet.total_debt [FAIL] score=0.000
+    Items: 0 matched, 2 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  balance_sheet.accounts_payable [FAIL] score=0.000
+    Items: 0 matched, 2 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  balance_sheet.current_assets [FAIL] score=0.000
+    Items: 0 matched, 2 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  balance_sheet.short_term_debt [PASS] score=1.000
+    Items: 2 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  balance_sheet.total_receivables [FAIL] score=0.000
+    Items: 0 matched, 1 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  balance_sheet.long_term_debt [FAIL] score=0.000
+    Items: 0 matched, 2 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  balance_sheet.goodwill [FAIL] score=0.000
+    Items: 0 matched, 8 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  balance_sheet.retained_earnings [FAIL] score=0.000
+    Items: 0 matched, 2 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  balance_sheet.marketable_securities [FAIL] score=0.000
+    Items: 0 matched, 1 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  balance_sheet.accounts_receivable [FAIL] score=0.000
+    Items: 0 matched, 2 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  balance_sheet.inventories [FAIL] score=0.000
+    Items: 0 matched, 2 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  balance_sheet.short_term_investments [FAIL] score=0.000
+    Items: 0 matched, 1 missed, 1 spurious
+    P=0.000  R=0.000  F1=0.000
+  income_statement.diluted_eps [PASS] score=1.000
+    Items: 4 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  balance_sheet.additional_paid_in_capital [FAIL] score=0.000
+    Items: 0 matched, 1 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  balance_sheet.property_plant_and_equipment [FAIL] score=0.500
+    Items: 1 matched, 1 missed, 1 spurious
+    P=0.500  R=0.500  F1=0.500
+  balance_sheet.current_liabilities [FAIL] score=0.000
+    Items: 0 matched, 2 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  income_statement.gross_profit [PASS] score=1.000
+    Items: 4 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  income_statement.stock_based_compensation [PASS] score=1.000
+    Items: 4 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  balance_sheet.total_liabilities [FAIL] score=0.000
+    Items: 0 matched, 2 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  income_statement.net_income [FAIL] score=0.000
+    Items: 0 matched, 4 missed, 4 spurious
+    P=0.000  R=0.000  F1=0.000
+  income_statement.cost_of_revenue [FAIL] score=0.000
+    Items: 0 matched, 4 missed, 4 spurious
+    P=0.000  R=0.000  F1=0.000
+  income_statement.operating_expenses [PASS] score=1.000
+    Items: 4 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  income_statement.effective_tax_rate [PASS] score=1.000
+    Items: 4 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  other_disclosures.notional_swaps_value [FAIL] score=0.000
+    Items: 0 matched, 1 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  balance_sheet.shareholders_equity [FAIL] score=0.000
+    Items: 0 matched, 2 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  income_statement.interest_expense [PASS] score=1.000
+    Items: 4 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  other_disclosures.notional_forwards_value [FAIL] score=0.000
+    Items: 0 matched, 1 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  balance_sheet.money_market_funds [FAIL] score=0.500
+    Items: 1 matched, 1 missed, 1 spurious
+    P=0.500  R=0.500  F1=0.500
+  income_statement.basic_eps [PASS] score=1.000
+    Items: 4 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  income_statement.net_income_growth [FAIL] score=0.000
+    Items: 0 matched, 2 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  income_statement.operating_margin [FAIL] score=0.333
+    Items: 4 matched, 8 missed, 0 spurious
+    P=1.000  R=0.333  F1=0.500
+  income_statement.operating_income [FAIL] score=0.333
+    Items: 4 matched, 8 missed, 0 spurious
+    P=1.000  R=0.333  F1=0.500
+  cash_flow_statement.shares_repurchased [FAIL] score=0.000
+    Items: 0 matched, 2 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  income_statement.gross_margin [PASS] score=1.000
+    Items: 4 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  income_statement.revenue [FAIL] score=0.333
+    Items: 4 matched, 8 missed, 0 spurious
+    P=1.000  R=0.333  F1=0.500
+  cash_flow_statement.shares_issued [FAIL] score=0.000
+    Items: 0 matched, 3 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  income_statement.revenue_growth [FAIL] score=0.000
+    Items: 0 matched, 7 missed, 2 spurious
+    P=0.000  R=0.000  F1=0.000
+  cash_flow_statement.operating_cash_flow [FAIL] score=0.667
+    Items: 2 matched, 1 missed, 2 spurious
+    P=0.500  R=0.667  F1=0.571
+  cash_flow_statement.financing_cash_flow [FAIL] score=0.667
+    Items: 2 matched, 1 missed, 0 spurious
+    P=1.000  R=0.667  F1=0.800
+  cash_flow_statement.dividends_paid [FAIL] score=0.400
+    Items: 2 matched, 3 missed, 2 spurious
+    P=0.500  R=0.400  F1=0.444
+  cash_flow_statement.share_repurchases [PASS] score=1.000
+    Items: 2 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  cash_flow_statement.capex [FAIL] score=0.000
+    Items: 0 matched, 2 missed, 4 spurious
+    P=0.000  R=0.000  F1=0.000
+  income_statement.income_tax_expense [FAIL] score=0.000
+    Items: 0 matched, 4 missed, 4 spurious
+    P=0.000  R=0.000  F1=0.000
+
+FAILED FIELDS (first 10)
+----------------------------------------
+  meta.report_period
+    Metric: string_exact, Score: 0.000
+  balance_sheet.commercial_paper_outstanding
+    Metric: array_llm, Score: 0.000
+    Reason: gold_missing
+  balance_sheet.dividends_payable
+    Metric: array_llm, Score: 0.000
+    Reason: extracted_empty_array
+  balance_sheet.cash_st_investments
+    Metric: array_llm, Score: 0.000
+    Reason: extracted_empty_array
+  income_statement.restructuring_charge
+    Metric: array_llm, Score: 0.000
+    Reason: extracted_empty_array
+  other_disclosures.employees
+    Metric: array_llm, Score: 0.000
+    Reason: extracted_empty_array
+  other_disclosures.notional_options_value
+    Metric: array_llm, Score: 0.000
+    Reason: extracted_empty_array
+  cash_flow_statement.commercial_paper_issuance
+    Metric: array_llm, Score: 0.000
+    Reason: extracted_empty_array
+  balance_sheet.total_assets
+    Metric: array_llm, Score: 0.500
+  balance_sheet.total_debt
+    Metric: array_llm, Score: 0.000
+
+================================================================================

@@ -1,0 +1,719 @@
+{
+  "output_name": "resume__Resume-Med",
+  "timestamp": "2026-09-28T06:31:32.871481",
+  "schema_hash": "581f8d7f",
+  "gold_hash": "ef1840ee",
+  "extracted_hash": "dcae26ff",
+  "schema_stats": {
+    "total_nodes": 67,
+    "counts_by_type": {
+      "object": 9,
+      "array": 11,
+      "string": 30,
+      "anyof": 7,
+      "null": 5,
+      "integer": 4,
+      "boolean": 1
+    },
+    "required_keys_count": 3,
+    "optional_keys_count": 35,
+    "required_by_type": {
+      "object": 1,
+      "string": 1,
+      "array": 1
+    },
+    "optional_by_type": {
+      "array": 9,
+      "string": 17,
+      "anyof": 7,
+      "object": 1,
+      "boolean": 1
+    }
+  },
+  "gold_stats": {
+    "label": "gold",
+    "total_keys": 70,
+    "counts_by_type": {
+      "object": 2,
+      "string": 53,
+      "array": 11,
+      "null": 1,
+      "boolean": 3
+    },
+    "array_stats": {
+      "array_field_count": 11,
+      "total_items": 23,
+      "min_length": 0,
+      "median_length": 2,
+      "max_length": 5
+    },
+    "null_count": 1,
+    "missing_count": 0
+  },
+  "extracted_stats": {
+    "label": "extracted",
+    "total_keys": 75,
+    "counts_by_type": {
+      "array": 11,
+      "string": 55,
+      "object": 2,
+      "null": 4,
+      "boolean": 3
+    },
+    "array_stats": {
+      "array_field_count": 11,
+      "total_items": 23,
+      "min_length": 0,
+      "median_length": 2,
+      "max_length": 5
+    },
+    "null_count": 4,
+    "missing_count": 0
+  },
+  "coverage": {
+    "present_in_both": 28,
+    "missing_in_extracted": 0,
+    "spurious_in_extracted": 2,
+    "required_missing": 0,
+    "missing_paths": [],
+    "spurious_paths": [
+      "other.sectionTitle",
+      "workExperience.category"
+    ]
+  },
+  "outcomes": {
+    "total_evaluated": 13,
+    "total_passed": 12,
+    "total_failed": 1,
+    "pass_rate": 0.9230769230769231,
+    "pass_by_metric": {
+      "array_llm": {
+        "passed": 10,
+        "failed": 1
+      },
+      "string_semantic": {
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "pass_by_type": {
+      "array": {
+        "passed": 10,
+        "failed": 1
+      },
+      "string": {
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "pass_by_required": {
+      "optional": {
+        "passed": 12,
+        "failed": 1
+      }
+    },
+    "confusion": {
+      "true_positive": 10,
+      "false_positive": 0,
+      "false_negative": 1,
+      "true_negative": 2
+    },
+    "llm_stats": {
+      "call_count": 13,
+      "avg_score": 0.9230769230769231,
+      "median_score": 1.0,
+      "score_distribution": {
+        "0.8-1.0": 12,
+        "0.0-0.2": 1
+      },
+      "top_lowest_fields": [
+        {
+          "path": "languages",
+          "metric_id": "array_llm",
+          "score": 0.0,
+          "reasoning": "The gold array contains three language names: 'English', 'Spanish', and 'Portuguese'. The predicted array contains three strings that include these language names but also append proficiency levels (e..."
+        },
+        {
+          "path": "media",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": ""
+        },
+        {
+          "path": "socialLinks",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": ""
+        },
+        {
+          "path": "personalInfo.fullName",
+          "metric_id": "string_semantic",
+          "score": 1.0,
+          "reasoning": "The predicted string is identical to the gold string, including the title, name, and credentials."
+        },
+        {
+          "path": "personalInfo.personalStatement",
+          "metric_id": "string_semantic",
+          "score": 1.0,
+          "reasoning": "The predicted string is semantically identical to the gold string. The only difference is the addition of a period at the end of the sentence, which is a minor punctuation normalization and does not a..."
+        }
+      ]
+    },
+    "error_breakdown": {
+      "by_path_prefix": {
+        "languages": 1
+      },
+      "by_metric_type": {
+        "array_llm": 1
+      },
+      "by_reason": {
+        "semantic_mismatch": 1
+      },
+      "details": [
+        {
+          "category": "semantic_mismatch",
+          "count": 1,
+          "paths": []
+        }
+      ]
+    }
+  },
+  "field_outcomes": [
+    {
+      "path": "$.properties.media",
+      "normalized_path": "media",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": "both_empty_array",
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.socialLinks",
+      "normalized_path": "socialLinks",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": "both_empty_array",
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.personalInfo.properties.fullName",
+      "normalized_path": "personalInfo.fullName",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "Dr. Amanda Rodriguez, MD",
+      "extracted_value": "Dr. Amanda Rodriguez, MD",
+      "reasoning": "The predicted string is identical to the gold string, including the title, name, and credentials.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.personalInfo.properties.personalStatement",
+      "normalized_path": "personalInfo.personalStatement",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "Board-certified cardiologist with 16+ years of experience in interventional cardiology, clinical research, and patient care",
+      "extracted_value": "Board-certified cardiologist with 16+ years of experience in interventional cardiology, clinical research, and patient care.",
+      "reasoning": "The predicted string is semantically identical to the gold string. The only difference is the addition of a period at the end of the sentence, which is a minor punctuation normalization and does not a...",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.skills",
+      "normalized_path": "skills",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        "Legal research and analysis",
+        "Contract negotiation and drafting",
+        "Risk assessment and management",
+        "Client relationship development",
+        "Team leadership and mentoring"
+      ],
+      "extracted_value": [
+        "Legal research and analysis",
+        "Contract negotiation and drafting",
+        "Risk assessment and management",
+        "Client relationship development",
+        "Team leadership and mentoring"
+      ],
+      "reasoning": "The predicted array is identical to the gold array. All 5 items match exactly in content and order. There are no missed gold items and no spurious predicted items.",
+      "array_breakdown": {
+        "matched": 5,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "Legal research and analysis",
+          "Contract negotiation and drafting",
+          "Risk assessment and management",
+          "Client relationship development",
+          "Team leadership and mentoring"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.personalInfo.properties.contact.properties.phones",
+      "normalized_path": "personalInfo.contact.phones",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        "(617) 555-0276"
+      ],
+      "extracted_value": [
+        "(617) 555-0276"
+      ],
+      "reasoning": "The gold array contains one phone number: '(617) 555-0276'. The predicted array contains the exact same phone number. Since the items are identical strings, they match perfectly. There are no missed g...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "(617) 555-0276"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.personalInfo.properties.contact.properties.emails",
+      "normalized_path": "personalInfo.contact.emails",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        "a.rodriguez@hospexample.org"
+      ],
+      "extracted_value": [
+        "a.rodriguez@hospexample.org"
+      ],
+      "reasoning": "The gold array contains one email address: 'a.rodriguez@hospexample.org'. The predicted array contains the exact same email address. Since the strings are identical (and thus also match case-insensiti...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "a.rodriguez@hospexample.org"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.other",
+      "normalized_path": "other",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "content": "Principal Investigator: Government-funded study on novel antiplatelet therapy (2020-2024)\nAuthor of 42 peer-reviewed publications in major cardiology journals\nH-index: 28"
+        }
+      ],
+      "extracted_value": [
+        {
+          "content": "Principal Investigator: Government-funded study on novel antiplatelet therapy (2020-2024)\nAuthor of 42 peer-reviewed publications in major cardiology journals\nH-index: 28",
+          "sectionTitle": "RESEARCH & PUBLICATIONS"
+        }
+      ],
+      "reasoning": "The gold array contains one item with a 'content' field. The predicted array contains one item with the exact same 'content' field and an additional 'sectionTitle' field. Since the evaluation criteria...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "content": "Principal Investigator: Government-funded study on novel antiplatelet therapy (2020-2024)\nAuthor of 42 peer-reviewed publications in major cardiology journals\nH-index: 28"
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.publications",
+      "normalized_path": "publications",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "authors": "Rodriguez A, et al.",
+          "title": "Outcomes of TAVR in High-Risk Patients",
+          "publisher": "Journal of Cardiology",
+          "year": "2023"
+        },
+        {
+          "authors": "Rodriguez A, et al.",
+          "title": "Novel Biomarkers in Heart Failure",
+          "publisher": "Cardiovascular Medicine",
+          "year": "2021"
+        }
+      ],
+      "extracted_value": [
+        {
+          "year": "2023",
+          "title": "Outcomes of TAVR in High-Risk Patients",
+          "authors": "Rodriguez A, et al.",
+          "publisher": "Journal of Cardiology"
+        },
+        {
+          "year": "2021",
+          "title": "Novel Biomarkers in Heart Failure",
+          "authors": "Rodriguez A, et al.",
+          "publisher": "Cardiovascular Medicine"
+        }
+      ],
+      "reasoning": "The predicted array contains two items that correspond exactly to the two items in the gold array. \n\n1. Gold item 1: {\"authors\": \"Rodriguez A, et al.\", \"title\": \"Outcomes of TAVR in High-Risk Patients...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "authors": "Rodriguez A, et al.",
+            "title": "Outcomes of TAVR in High-Risk Patients",
+            "publisher": "Journal of Cardiology",
+            "year": "2023"
+          },
+          {
+            "authors": "Rodriguez A, et al.",
+            "title": "Novel Biomarkers in Heart Failure",
+            "publisher": "Cardiovascular Medicine",
+            "year": "2021"
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.education",
+      "normalized_path": "education",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "institution": "Clearwater Medical Institute",
+          "qualificationTitle": "Fellowship – Interventional Cardiology",
+          "startDate": "2011-06-30T22:00:00.000Z",
+          "endDate": "2014-05-31T22:00:00.000Z"
+        },
+        {
+          "institution": "Pinewood General Hospital",
+          "qualificationTitle": "Residency – Internal Medicine",
+          "startDate": "2008-06-30T22:00:00.000Z",
+          "endDate": "2011-05-31T22:00:00.000Z",
+          "description": "Chief Resident (2010-2011)"
+        },
+        {
+          "institution": "Bayshore Medical College",
+          "qualificationTitle": "Doctor of Medicine (MD)  ",
+          "startDate": "2004-07-31T22:00:00.000Z",
+          "endDate": "2008-04-30T22:00:00.000Z",
+          "description": "Honor Society for Medical Excellence"
+        },
+        {
+          "institution": "Springdale University",
+          "qualificationTitle": "BS – Biology ",
+          "startDate": "2000-08-31T22:00:00.000Z",
+          "endDate": "2004-04-30T22:00:00.000Z",
+          "description": "Summa Cum Laude (GPA: 3.98/4.0)"
+        }
+      ],
+      "extracted_value": [
+        {
+          "endDate": "June 2014",
+          "startDate": "July 2011",
+          "institution": "Clearwater Medical Institute",
+          "qualificationTitle": "Fellowship - Interventional Cardiology"
+        },
+        {
+          "endDate": "June 2011",
+          "startDate": "July 2008",
+          "description": "Chief Resident (2010-2011)",
+          "institution": "Pinewood General Hospital",
+          "qualificationTitle": "Residency - Internal Medicine"
+        },
+        {
+          "endDate": "May 2008",
+          "startDate": "August 2004",
+          "description": "Honor Society for Medical Excellence",
+          "institution": "Bayshore Medical College",
+          "qualificationTitle": "Doctor of Medicine (MD)"
+        },
+        {
+          "endDate": "May 2004",
+          "startDate": "September 2000",
+          "description": "Summa Cum Laude (GPA: 3.98/4.0)",
+          "institution": "Springdale University",
+          "qualificationTitle": "BS - Biology"
+        }
+      ],
+      "reasoning": "The predicted array matches the gold array in terms of the number of items and the core content of each education history entry. \n\n1. **Clearwater Medical Institute**: The institution and qualificatio...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "Clearwater Medical Institute",
+          "Pinewood General Hospital",
+          "Bayshore Medical College",
+          "Springdale University"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.workExperience",
+      "normalized_path": "workExperience",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "employer": "Westfield Heart Institute",
+          "jobTitle": "Director of Interventional Cardiology",
+          "startDate": "2019-06-30T22:00:00.000Z",
+          "endDate": null,
+          "isCurrent": true,
+          "description": "Oversee cardiac catheterization laboratory performing 800+ procedures annually; Lead multidisciplinary team of 12 physicians, nurses, and technicians; Perform complex interventional procedures including angioplasty, stent placement, and TAVR; Serve on hospital quality improvement committee reducing post-procedure complications by 23%"
+        },
+        {
+          "employer": "Riverstone Medical Center",
+          "jobTitle": "Attending Physician",
+          "startDate": "2014-07-31T22:00:00.000Z",
+          "endDate": "2019-05-31T22:00:00.000Z",
+          "isCurrent": false,
+          "description": "Provided comprehensive cardiovascular care to 2,000+ patients annually; Performed diagnostic procedures including echocardiograms and stress tests; Supervised cardiology fellows and medical residents during clinical rotations; Participated in on-call rotation for acute cardiac emergencies"
+        },
+        {
+          "employer": "Northbridge University Medical Center",
+          "jobTitle": "Cardiology Fellow",
+          "startDate": "2011-06-30T22:00:00.000Z",
+          "endDate": "2014-05-31T22:00:00.000Z",
+          "isCurrent": false,
+          "description": "Completed advanced training in interventional cardiology and cardiac imaging; Managed inpatient cardiology service and intensive care unit; Participated in multi-center clinical trial for novel anticoagulation therapy; Published 8 peer-reviewed articles in leading cardiology journals"
+        }
+      ],
+      "extracted_value": [
+        {
+          "employer": "Westfield Heart Institute",
+          "endDate": null,
+          "startDate": "July 2019",
+          "category": null,
+          "jobTitle": "Director of Interventional Cardiology",
+          "isCurrent": true,
+          "description": "Oversee cardiac catheterization laboratory performing 800+ procedures annually\nLead multidisciplinary team of 12 physicians, nurses, and technicians\nPerform complex interventional procedures including angioplasty, stent placement, and TAVR\nServe on hospital quality improvement committee reducing post-procedure complications by 23%"
+        },
+        {
+          "employer": "Riverstone Medical Center Cardiology Department",
+          "endDate": "June 2019",
+          "startDate": "August 2014",
+          "category": null,
+          "jobTitle": "Attending Physician",
+          "isCurrent": false,
+          "description": "Provided comprehensive cardiovascular care to 2,000+ patients annually\nPerformed diagnostic procedures including echocardiograms and stress tests\nSupervised cardiology fellows and medical residents during clinical rotations\nParticipated in on-call rotation for acute cardiac emergencies"
+        },
+        {
+          "employer": "Northbridge University Medical Center",
+          "endDate": "June 2014",
+          "startDate": "July 2011",
+          "category": null,
+          "jobTitle": "Cardiology Fellow",
+          "isCurrent": false,
+          "description": "Completed advanced training in interventional cardiology and cardiac imaging\nManaged inpatient cardiology service and intensive care unit\nParticipated in multi-center clinical trial for novel anticoagulation therapy\nPublished 8 peer-reviewed articles in leading cardiology journals"
+        }
+      ],
+      "reasoning": "The predicted array contains 3 items that correspond to the 3 items in the gold array. \n\n1. **Westfield Heart Institute**: The employer, job title, and isCurrent status match exactly. The start date '...",
+      "array_breakdown": {
+        "matched": 3,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "Westfield Heart Institute",
+          "Riverstone Medical Center",
+          "Northbridge University Medical Center"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.languages",
+      "normalized_path": "languages",
+      "metric_id": "array_llm",
+      "score": 0.0,
+      "passed": false,
+      "reason": null,
+      "gold_value": [
+        "English",
+        "Spanish",
+        "Portuguese"
+      ],
+      "extracted_value": [
+        "English (Native)",
+        "Spanish (Native)",
+        "Portuguese (Professional working proficiency)"
+      ],
+      "reasoning": "The gold array contains three language names: 'English', 'Spanish', and 'Portuguese'. The predicted array contains three strings that include these language names but also append proficiency levels (e...",
+      "array_breakdown": {
+        "matched": 0,
+        "missed_gold": 3,
+        "spurious_pred": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_items": [],
+        "missed_gold_items": [
+          "English",
+          "Spanish",
+          "Portuguese"
+        ],
+        "spurious_pred_items": [
+          "English (Native)",
+          "Spanish (Native)",
+          "Portuguese (Professional working proficiency)"
+        ]
+      }
+    },
+    {
+      "path": "$.properties.certificationsAndAwards",
+      "normalized_path": "certificationsAndAwards",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "category": "Board Certifications",
+          "organization": "National Board of Internal Medicine",
+          "description": "Cardiology",
+          "date": "2011"
+        },
+        {
+          "category": "Board Certifications",
+          "organization": "National Board of Internal Medicine",
+          "description": "Interventional Cardiology",
+          "date": "2014"
+        },
+        {
+          "description": "Advanced Cardiac Life Support (ACLS)"
+        }
+      ],
+      "extracted_value": [
+        {
+          "date": "2011",
+          "category": "Certification",
+          "description": "Cardiology",
+          "organization": "National Board of Internal Medicine"
+        },
+        {
+          "date": "2014",
+          "category": "Certification",
+          "description": "Interventional Cardiology",
+          "organization": "National Board of Internal Medicine"
+        },
+        {
+          "category": "Certification",
+          "description": "Advanced Cardiac Life Support (ACLS)"
+        }
+      ],
+      "reasoning": "The predicted array contains 3 items that correspond to the 3 gold items. \n\n1. Gold item 1 (Board Certifications, National Board of Internal Medicine, Cardiology, 2011) matches Predicted item 1. The '...",
+      "array_breakdown": {
+        "matched": 3,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "gold": {
+              "category": "Board Certifications",
+              "organization": "National Board of Internal Medicine",
+              "description": "Cardiology",
+              "date": "2011"
+            },
+            "predicted": {
+              "date": "2011",
+              "category": "Certification",
+              "description": "Cardiology",
+              "organization": "National Board of Internal Medicine"
+            }
+          },
+          {
+            "gold": {
+              "category": "Board Certifications",
+              "organization": "National Board of Internal Medicine",
+              "description": "Interventional Cardiology",
+              "date": "2014"
+            },
+            "predicted": {
+              "date": "2014",
+              "category": "Certification",
+              "description": "Interventional Cardiology",
+              "organization": "National Board of Internal Medicine"
+            }
+          },
+          {
+            "gold": {
+              "description": "Advanced Cardiac Life Support (ACLS)"
+            },
+            "predicted": {
+              "category": "Certification",
+              "description": "Advanced Cardiac Life Support (ACLS)"
+            }
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    }
+  ],
+  "overall_score": 0.8888888888888888,
+  "field_score": 0.9230769230769231,
+  "overall_pass_rate": 0.9230769230769231
+}

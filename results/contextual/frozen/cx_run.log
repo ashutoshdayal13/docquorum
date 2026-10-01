@@ -1,0 +1,789 @@
+2026-09-28 03:01:07 UTC start (restart after the resume-schema adapter fix)
+[cx 1/4] input adapter
+35 documents -> /home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/contextual/cx.jsonl {'research': 6, '10kq': 7, 'credit_agreement': 10, 'resume': 7, 'swimming': 5}
+[cx 2/4] MinerU parse of the documents without a text layer
+parsed 5 documents without a text layer: resume__Resume-Finance, resume__Resume-IT, resume__Resume-Legal, resume__Resume-Marketing, resume__Resume-Med
+[cx 3/4] the frozen runner
+[1/4] primary reading (text layer + page images; page images alone for scans)
+stages: fx -> /home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/runs/contextual/cx_primary_final (35 documents)
+[2/4] parse reading for 5 documents without a text layer
+stages: fx -> /home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/runs/contextual/cx_parse_final (5 documents)
+      one-shot reading and quorum for the 5 that fit one call
+stages: cx_oneshot -> /home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/runs/contextual/cx_oneshot_final (5 documents)
+consensus: 3 readings -> /home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/runs/contextual/cx_quorum (5 documents)
+[3/4] layout readers (column flow / ruled scans) where the layout evidence selects them
+[4/4] score
+MEAN over 35 cases                              0.00    0.00    0.00
+[cx 4/4] the benchmark's evaluator
+  credit__adbe_credit_agreement_2000_08_09                   valid=True  passed=   4/13   overall=0.306 errors=0 3s
+  credit__expel_credit-agreement_2023-04-06                  valid=True  passed=   7/13   overall=0.538 errors=0 4s
+  credit__bkrf_credit-agreement_2020-05-04                   valid=True  passed=   7/13   overall=0.684 errors=0 9s
+  credit__dis_credit-agreement_2022-03-24                    valid=True  passed=   3/13   overall=0.405 errors=0 10s
+  credit__amzn_credit_agreement_2014_09_05                   valid=True  passed=   6/13   overall=0.444 errors=0 11s
+  credit__csco_credit_agreement_2007_08_17                   valid=True  passed=   4/13   overall=0.206 errors=0 17s
+  credit__ba_credit_agreement_2003_11_21                     valid=True  passed=   6/13   overall=0.311 errors=0 23s
+  credit__mmm_credit_agreement_2019_11_15                    valid=True  passed=  11/13   overall=0.919 errors=0 25s
+  credit__ibm_credit_agreement_2019_07_18                    valid=True  passed=   6/13   overall=0.354 errors=0 38s
+  credit__trmb_credit-agreement_2022-03-24                   valid=True  passed=   3/13   overall=0.464 errors=0 45s
+2026-09-28 04:24:04.484 | ERROR    | extract_bench.infra.asyncio_utils:run_asyncio_task_with_retry:49 - Error in task: LLM judge metric 'array_llm' failed for model 'openai/qwen3vl': litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)
+Traceback (most recent call last):
+
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/llms/openai/openai.py", line 946, in acompletion
+    headers, response = await self.make_openai_chat_completion_request(
+    │                         │    └ <function OpenAIChatCompletion.make_openai_chat_completion_request at 0x7e3e75529440>
+    │                         └ <litellm.llms.openai.openai.OpenAIChatCompletion object at 0x7e3e74503b60>
+    └ None
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/litellm_core_utils/logging_utils.py", line 338, in async_wrapper
+    result: Final = await func(*args, **kwargs)
+                          │     │       └ {'openai_aclient': <openai.AsyncOpenAI object at 0x7e3e737e20f0>, 'data': {'model': 'qwen3vl', 'messages': [{'role': 'system'...
+                          │     └ (<litellm.llms.openai.openai.OpenAIChatCompletion object at 0x7e3e74503b60>,)
+                          └ <function OpenAIChatCompletion.make_openai_chat_completion_request at 0x7e3e755293a0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/llms/openai/openai.py", line 479, in make_openai_chat_completion_request
+    raw_response = await openai_aclient.chat.completions.with_raw_response.create(**data, timeout=timeout)
+                         │              │    │           │                 │        │             └ 600.0
+                         │              │    │           │                 │        └ {'model': 'qwen3vl', 'messages': [{'role': 'system', 'content': 'You are an impartial and detail-oriented judge that evaluate...
+                         │              │    │           │                 └ <function AsyncCompletions.create at 0x7e3e737fdbc0>
+                         │              │    │           └ <openai.resources.chat.completions.completions.AsyncCompletionsWithRawResponse object at 0x7e3e5a2f6ed0>
+                         │              │    └ <openai.resources.chat.completions.completions.AsyncCompletions object at 0x7e3e5a30b4a0>
+                         │              └ <openai.resources.chat.chat.AsyncChat object at 0x7e3e7376bfe0>
+                         └ <openai.AsyncOpenAI object at 0x7e3e737e20f0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/openai/_legacy_response.py", line 386, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+           │    │                 │         │     │       └ {'model': 'qwen3vl', 'messages': [{'role': 'system', 'content': 'You are an impartial and detail-oriented judge that evaluate...
+           │    │                 │         │     └ ()
+           │    │                 │         └ <bound method AsyncCompletions.create of <openai.resources.chat.completions.completions.AsyncCompletions object at 0x7e3e5a30...
+           │    │                 └ ~R
+           │    └ <class 'openai._legacy_response.LegacyAPIResponse'>
+           └ <function cast at 0x7e3e7ba16ca0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/openai/resources/chat/completions/completions.py", line 2907, in create
+    return await self._post(
+                 │    └ <bound method AsyncAPIClient.post of <openai.AsyncOpenAI object at 0x7e3e737e20f0>>
+                 └ <openai.resources.chat.completions.completions.AsyncCompletions object at 0x7e3e5a30b4a0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/openai/_base_client.py", line 1992, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+                 │    │       │        │            │                  └ openai.AsyncStream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+                 │    │       │        │            └ False
+                 │    │       │        └ FinalRequestOptions(method='post', url='/chat/completions', params={}, headers={'X-Stainless-Raw-Response': 'true'}, max_retr...
+                 │    │       └ <class 'openai.types.chat.chat_completion.ChatCompletion'>
+                 │    └ <function AsyncAPIClient.request at 0x7e3e79f06b60>
+                 └ <openai.AsyncOpenAI object at 0x7e3e737e20f0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/openai/_base_client.py", line 1777, in request
+    raise self._make_status_error_from_response(err.response) from None
+          │    └ <function BaseClient._make_status_error_from_response at 0x7e3e79ef79c0>
+          └ <openai.AsyncOpenAI object at 0x7e3e737e20f0>
+
+openai.BadRequestError: Error code: 400 - {'error': {'message': "This model's maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/main.py", line 649, in acompletion
+    response = await _resolve_dispatched_chat_response(init_response)
+                     │                                 └ <coroutine object OpenAIChatCompletion.acompletion at 0x7e3e54004ac0>
+                     └ <function _resolve_dispatched_chat_response at 0x7e3e754f7d80>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/main.py", line 714, in _resolve_dispatched_chat_response
+    return await pending
+                 └ <coroutine object OpenAIChatCompletion.acompletion at 0x7e3e54004ac0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/llms/openai/openai.py", line 1006, in acompletion
+    raise OpenAIError(
+          └ <class 'litellm.llms.openai.common_utils.OpenAIError'>
+
+litellm.llms.openai.common_utils.OpenAIError: Error code: 400 - {'error': {'message': "This model's maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/metrics/llm_metrics.py", line 99, in _evaluate_values
+    response = await litellm.acompletion(
+                     │       └ <function setup_judge.<locals>.local at 0x7e3e7b93c360>
+                     └ <module 'litellm' from '/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/...
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/benchmarks/contextual/score.py", line 74, in local
+    return await orig(*a, **kw)
+                 │     │    └ {'model': 'openai/qwen3vl', 'messages': [{'role': 'system', 'content': 'You are an impartial and detail-oriented judge that e...
+                 │     └ ()
+                 └ <function acompletion at 0x7e3e73e67560>
+
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/chat_completions/dispatch.py", line 114, in acompletion
+    return await _ADISPATCH.arun(
+                 │          └ <function PublicDispatch.arun at 0x7e3e73f5e5c0>
+                 └ PublicDispatch(route=<Route.CHAT_COMPLETIONS: 'chat_completions'>, request=<function <lambda> at 0x7e3e73e67420>, context=<fu...
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/rust_bridge/dispatch.py", line 83, in arun
+    return await python(*args, **kwargs)
+                 │       │       └ {'model': 'openai/qwen3vl', 'messages': [{'role': 'system', 'content': 'You are an impartial and detail-oriented judge that e...
+                 │       └ ()
+                 └ <function acompletion at 0x7e3e745a1d00>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/utils.py", line 2160, in wrapper_async
+    raise e
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/utils.py", line 1972, in wrapper_async
+    result = await original_function(*args, **kwargs)
+                   │                  │       └ {'model': 'openai/qwen3vl', 'messages': [{'role': 'system', 'content': 'You are an impartial and detail-oriented judge that e...
+                   │                  └ ()
+                   └ <function acompletion at 0x7e3e745a1bc0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/main.py", line 702, in acompletion
+    raise exception_type(
+          └ <function exception_type at 0x7e3e765919e0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2700, in exception_type
+    raise e  # it's already mapped
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2461, in exception_type
+    _map_openai_exception(
+    └ <function _map_openai_exception at 0x7e3e76590c20>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 313, in _map_openai_exception
+    raise ContextWindowExceededError(
+          └ <class 'litellm.exceptions.ContextWindowExceededError'>
+
+litellm.exceptions.ContextWindowExceededError: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/benchmarks/contextual/score.py", line 221, in <module>
+    main()
+    └ <function main at 0x7e3e7b9132e0>
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/benchmarks/contextual/score.py", line 217, in main
+    asyncio.run(main_async(a))
+    │       │   │          └ Namespace(run='/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/runs/contextual/cx_final', out='/home/krudra_m...
+    │       │   └ <function main_async at 0x7e3e7b913240>
+    │       └ <function run at 0x7e3e7bb89d00>
+    └ <module 'asyncio' from '/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/__init__.py'>
+
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main_async at 0x7e3e7ba65a80>
+           │      └ <function Runner.run at 0x7e3e7ba30fe0>
+           └ <asyncio.runners.Runner object at 0x7e3e7b9388f0>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main_async() running at /home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/ben...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x7e3e7ba2ec00>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x7e3e7b9388f0>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/base_events.py", line 678, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7e3e7ba2eb60>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/base_events.py", line 645, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7e3e7ba309a0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/base_events.py", line 1999, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7e3e7bb8ab60>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/structured_evaluator.py", line 151, in _execute_metric_with_retry
+    return await run_asyncio_task_with_retry(
+                 └ <function run_asyncio_task_with_retry at 0x7e3e73a1c220>
+
+> File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/infra/asyncio_utils.py", line 38, in run_asyncio_task_with_retry
+    response = await asyncio.wait_for(
+                     │       └ <function wait_for at 0x7e3e7ba1f240>
+                     └ <module 'asyncio' from '/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/__init__.py'>
+
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+                 └ <coroutine object execute_metric_async at 0x7e3e7396b060>
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/structured_evaluator.py", line 80, in execute_metric_async
+    result = await metric.evaluate(node, metric_config)
+                   │      │        │     └ MetricConfig(metric_id='array_llm', weight=None, params=None)
+                   │      │        └ ArraySchema(title=None, description='List of works cited by this paper.', default=None, example=None, nullable=None, evaluati...
+                   │      └ <function PolicyAwareMetric.evaluate at 0x7e3e73b9afc0>
+                   └ ArrayLlmJudgeMetric()
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/metrics/policy_metric.py", line 32, in evaluate
+    return await self._evaluate_values(
+                 │    └ <function LlmJudgeMetric._evaluate_values at 0x7e3e73b9b920>
+                 └ ArrayLlmJudgeMetric()
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/metrics/llm_metrics.py", line 106, in _evaluate_values
+    raise RuntimeError(
+
+RuntimeError: LLM judge metric 'array_llm' failed for model 'openai/qwen3vl': litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)
+2026-09-28 04:24:04.514 | INFO     | extract_bench.infra.asyncio_utils:run_asyncio_task_with_retry:52 - Retrying 1 of 3...
+2026-09-28 04:24:04.514 | INFO     | extract_bench.infra.asyncio_utils:run_asyncio_task_with_retry:34 - Sleeping for 3 seconds before retry...
+2026-09-28 04:24:07.857 | ERROR    | extract_bench.infra.asyncio_utils:run_asyncio_task_with_retry:49 - Error in task: LLM judge metric 'array_llm' failed for model 'openai/qwen3vl': litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)
+Traceback (most recent call last):
+
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/llms/openai/openai.py", line 946, in acompletion
+    headers, response = await self.make_openai_chat_completion_request(
+    │                         │    └ <function OpenAIChatCompletion.make_openai_chat_completion_request at 0x7e3e75529440>
+    │                         └ <litellm.llms.openai.openai.OpenAIChatCompletion object at 0x7e3e74503b60>
+    └ None
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/litellm_core_utils/logging_utils.py", line 338, in async_wrapper
+    result: Final = await func(*args, **kwargs)
+                          │     │       └ {'openai_aclient': <openai.AsyncOpenAI object at 0x7e3e737e20f0>, 'data': {'model': 'qwen3vl', 'messages': [{'role': 'system'...
+                          │     └ (<litellm.llms.openai.openai.OpenAIChatCompletion object at 0x7e3e74503b60>,)
+                          └ <function OpenAIChatCompletion.make_openai_chat_completion_request at 0x7e3e755293a0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/llms/openai/openai.py", line 479, in make_openai_chat_completion_request
+    raw_response = await openai_aclient.chat.completions.with_raw_response.create(**data, timeout=timeout)
+                         │              │    │           │                 │        │             └ 600.0
+                         │              │    │           │                 │        └ {'model': 'qwen3vl', 'messages': [{'role': 'system', 'content': 'You are an impartial and detail-oriented judge that evaluate...
+                         │              │    │           │                 └ <function AsyncCompletions.create at 0x7e3e737fdbc0>
+                         │              │    │           └ <openai.resources.chat.completions.completions.AsyncCompletionsWithRawResponse object at 0x7e3e5a2f6ed0>
+                         │              │    └ <openai.resources.chat.completions.completions.AsyncCompletions object at 0x7e3e5a30b4a0>
+                         │              └ <openai.resources.chat.chat.AsyncChat object at 0x7e3e7376bfe0>
+                         └ <openai.AsyncOpenAI object at 0x7e3e737e20f0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/openai/_legacy_response.py", line 386, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+           │    │                 │         │     │       └ {'model': 'qwen3vl', 'messages': [{'role': 'system', 'content': 'You are an impartial and detail-oriented judge that evaluate...
+           │    │                 │         │     └ ()
+           │    │                 │         └ <bound method AsyncCompletions.create of <openai.resources.chat.completions.completions.AsyncCompletions object at 0x7e3e5a30...
+           │    │                 └ ~R
+           │    └ <class 'openai._legacy_response.LegacyAPIResponse'>
+           └ <function cast at 0x7e3e7ba16ca0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/openai/resources/chat/completions/completions.py", line 2907, in create
+    return await self._post(
+                 │    └ <bound method AsyncAPIClient.post of <openai.AsyncOpenAI object at 0x7e3e737e20f0>>
+                 └ <openai.resources.chat.completions.completions.AsyncCompletions object at 0x7e3e5a30b4a0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/openai/_base_client.py", line 1992, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+                 │    │       │        │            │                  └ openai.AsyncStream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+                 │    │       │        │            └ False
+                 │    │       │        └ FinalRequestOptions(method='post', url='/chat/completions', params={}, headers={'X-Stainless-Raw-Response': 'true'}, max_retr...
+                 │    │       └ <class 'openai.types.chat.chat_completion.ChatCompletion'>
+                 │    └ <function AsyncAPIClient.request at 0x7e3e79f06b60>
+                 └ <openai.AsyncOpenAI object at 0x7e3e737e20f0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/openai/_base_client.py", line 1777, in request
+    raise self._make_status_error_from_response(err.response) from None
+          │    └ <function BaseClient._make_status_error_from_response at 0x7e3e79ef79c0>
+          └ <openai.AsyncOpenAI object at 0x7e3e737e20f0>
+
+openai.BadRequestError: Error code: 400 - {'error': {'message': "This model's maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/main.py", line 649, in acompletion
+    response = await _resolve_dispatched_chat_response(init_response)
+                     │                                 └ <coroutine object OpenAIChatCompletion.acompletion at 0x7e3e240052d0>
+                     └ <function _resolve_dispatched_chat_response at 0x7e3e754f7d80>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/main.py", line 714, in _resolve_dispatched_chat_response
+    return await pending
+                 └ <coroutine object OpenAIChatCompletion.acompletion at 0x7e3e240052d0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/llms/openai/openai.py", line 1006, in acompletion
+    raise OpenAIError(
+          └ <class 'litellm.llms.openai.common_utils.OpenAIError'>
+
+litellm.llms.openai.common_utils.OpenAIError: Error code: 400 - {'error': {'message': "This model's maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/metrics/llm_metrics.py", line 99, in _evaluate_values
+    response = await litellm.acompletion(
+                     │       └ <function setup_judge.<locals>.local at 0x7e3e7b93c360>
+                     └ <module 'litellm' from '/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/...
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/benchmarks/contextual/score.py", line 74, in local
+    return await orig(*a, **kw)
+                 │     │    └ {'model': 'openai/qwen3vl', 'messages': [{'role': 'system', 'content': 'You are an impartial and detail-oriented judge that e...
+                 │     └ ()
+                 └ <function acompletion at 0x7e3e73e67560>
+
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/chat_completions/dispatch.py", line 114, in acompletion
+    return await _ADISPATCH.arun(
+                 │          └ <function PublicDispatch.arun at 0x7e3e73f5e5c0>
+                 └ PublicDispatch(route=<Route.CHAT_COMPLETIONS: 'chat_completions'>, request=<function <lambda> at 0x7e3e73e67420>, context=<fu...
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/rust_bridge/dispatch.py", line 83, in arun
+    return await python(*args, **kwargs)
+                 │       │       └ {'model': 'openai/qwen3vl', 'messages': [{'role': 'system', 'content': 'You are an impartial and detail-oriented judge that e...
+                 │       └ ()
+                 └ <function acompletion at 0x7e3e745a1d00>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/utils.py", line 2160, in wrapper_async
+    raise e
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/utils.py", line 1972, in wrapper_async
+    result = await original_function(*args, **kwargs)
+                   │                  │       └ {'model': 'openai/qwen3vl', 'messages': [{'role': 'system', 'content': 'You are an impartial and detail-oriented judge that e...
+                   │                  └ ()
+                   └ <function acompletion at 0x7e3e745a1bc0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/main.py", line 702, in acompletion
+    raise exception_type(
+          └ <function exception_type at 0x7e3e765919e0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2700, in exception_type
+    raise e  # it's already mapped
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2461, in exception_type
+    _map_openai_exception(
+    └ <function _map_openai_exception at 0x7e3e76590c20>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 313, in _map_openai_exception
+    raise ContextWindowExceededError(
+          └ <class 'litellm.exceptions.ContextWindowExceededError'>
+
+litellm.exceptions.ContextWindowExceededError: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/benchmarks/contextual/score.py", line 221, in <module>
+    main()
+    └ <function main at 0x7e3e7b9132e0>
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/benchmarks/contextual/score.py", line 217, in main
+    asyncio.run(main_async(a))
+    │       │   │          └ Namespace(run='/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/runs/contextual/cx_final', out='/home/krudra_m...
+    │       │   └ <function main_async at 0x7e3e7b913240>
+    │       └ <function run at 0x7e3e7bb89d00>
+    └ <module 'asyncio' from '/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/__init__.py'>
+
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main_async at 0x7e3e7ba65a80>
+           │      └ <function Runner.run at 0x7e3e7ba30fe0>
+           └ <asyncio.runners.Runner object at 0x7e3e7b9388f0>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main_async() running at /home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/ben...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x7e3e7ba2ec00>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x7e3e7b9388f0>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/base_events.py", line 678, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7e3e7ba2eb60>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/base_events.py", line 645, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7e3e7ba309a0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/base_events.py", line 1999, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7e3e7bb8ab60>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/structured_evaluator.py", line 151, in _execute_metric_with_retry
+    return await run_asyncio_task_with_retry(
+                 └ <function run_asyncio_task_with_retry at 0x7e3e73a1c220>
+
+> File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/infra/asyncio_utils.py", line 38, in run_asyncio_task_with_retry
+    response = await asyncio.wait_for(
+                     │       └ <function wait_for at 0x7e3e7ba1f240>
+                     └ <module 'asyncio' from '/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/__init__.py'>
+
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+                 └ <coroutine object execute_metric_async at 0x7e3e73aaf140>
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/structured_evaluator.py", line 80, in execute_metric_async
+    result = await metric.evaluate(node, metric_config)
+                   │      │        │     └ MetricConfig(metric_id='array_llm', weight=None, params=None)
+                   │      │        └ ArraySchema(title=None, description='List of works cited by this paper.', default=None, example=None, nullable=None, evaluati...
+                   │      └ <function PolicyAwareMetric.evaluate at 0x7e3e73b9afc0>
+                   └ ArrayLlmJudgeMetric()
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/metrics/policy_metric.py", line 32, in evaluate
+    return await self._evaluate_values(
+                 │    └ <function LlmJudgeMetric._evaluate_values at 0x7e3e73b9b920>
+                 └ ArrayLlmJudgeMetric()
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/metrics/llm_metrics.py", line 106, in _evaluate_values
+    raise RuntimeError(
+
+RuntimeError: LLM judge metric 'array_llm' failed for model 'openai/qwen3vl': litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)
+2026-09-28 04:24:07.892 | INFO     | extract_bench.infra.asyncio_utils:run_asyncio_task_with_retry:52 - Retrying 2 of 3...
+2026-09-28 04:24:07.892 | INFO     | extract_bench.infra.asyncio_utils:run_asyncio_task_with_retry:34 - Sleeping for 6 seconds before retry...
+2026-09-28 04:24:14.251 | ERROR    | extract_bench.infra.asyncio_utils:run_asyncio_task_with_retry:49 - Error in task: LLM judge metric 'array_llm' failed for model 'openai/qwen3vl': litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)
+Traceback (most recent call last):
+
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/llms/openai/openai.py", line 946, in acompletion
+    headers, response = await self.make_openai_chat_completion_request(
+    │                         │    └ <function OpenAIChatCompletion.make_openai_chat_completion_request at 0x7e3e75529440>
+    │                         └ <litellm.llms.openai.openai.OpenAIChatCompletion object at 0x7e3e74503b60>
+    └ None
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/litellm_core_utils/logging_utils.py", line 338, in async_wrapper
+    result: Final = await func(*args, **kwargs)
+                          │     │       └ {'openai_aclient': <openai.AsyncOpenAI object at 0x7e3e737e20f0>, 'data': {'model': 'qwen3vl', 'messages': [{'role': 'system'...
+                          │     └ (<litellm.llms.openai.openai.OpenAIChatCompletion object at 0x7e3e74503b60>,)
+                          └ <function OpenAIChatCompletion.make_openai_chat_completion_request at 0x7e3e755293a0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/llms/openai/openai.py", line 479, in make_openai_chat_completion_request
+    raw_response = await openai_aclient.chat.completions.with_raw_response.create(**data, timeout=timeout)
+                         │              │    │           │                 │        │             └ 600.0
+                         │              │    │           │                 │        └ {'model': 'qwen3vl', 'messages': [{'role': 'system', 'content': 'You are an impartial and detail-oriented judge that evaluate...
+                         │              │    │           │                 └ <function AsyncCompletions.create at 0x7e3e737fdbc0>
+                         │              │    │           └ <openai.resources.chat.completions.completions.AsyncCompletionsWithRawResponse object at 0x7e3e5a2f6ed0>
+                         │              │    └ <openai.resources.chat.completions.completions.AsyncCompletions object at 0x7e3e5a30b4a0>
+                         │              └ <openai.resources.chat.chat.AsyncChat object at 0x7e3e7376bfe0>
+                         └ <openai.AsyncOpenAI object at 0x7e3e737e20f0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/openai/_legacy_response.py", line 386, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+           │    │                 │         │     │       └ {'model': 'qwen3vl', 'messages': [{'role': 'system', 'content': 'You are an impartial and detail-oriented judge that evaluate...
+           │    │                 │         │     └ ()
+           │    │                 │         └ <bound method AsyncCompletions.create of <openai.resources.chat.completions.completions.AsyncCompletions object at 0x7e3e5a30...
+           │    │                 └ ~R
+           │    └ <class 'openai._legacy_response.LegacyAPIResponse'>
+           └ <function cast at 0x7e3e7ba16ca0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/openai/resources/chat/completions/completions.py", line 2907, in create
+    return await self._post(
+                 │    └ <bound method AsyncAPIClient.post of <openai.AsyncOpenAI object at 0x7e3e737e20f0>>
+                 └ <openai.resources.chat.completions.completions.AsyncCompletions object at 0x7e3e5a30b4a0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/openai/_base_client.py", line 1992, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+                 │    │       │        │            │                  └ openai.AsyncStream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+                 │    │       │        │            └ False
+                 │    │       │        └ FinalRequestOptions(method='post', url='/chat/completions', params={}, headers={'X-Stainless-Raw-Response': 'true'}, max_retr...
+                 │    │       └ <class 'openai.types.chat.chat_completion.ChatCompletion'>
+                 │    └ <function AsyncAPIClient.request at 0x7e3e79f06b60>
+                 └ <openai.AsyncOpenAI object at 0x7e3e737e20f0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/openai/_base_client.py", line 1777, in request
+    raise self._make_status_error_from_response(err.response) from None
+          │    └ <function BaseClient._make_status_error_from_response at 0x7e3e79ef79c0>
+          └ <openai.AsyncOpenAI object at 0x7e3e737e20f0>
+
+openai.BadRequestError: Error code: 400 - {'error': {'message': "This model's maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/main.py", line 649, in acompletion
+    response = await _resolve_dispatched_chat_response(init_response)
+                     │                                 └ <coroutine object OpenAIChatCompletion.acompletion at 0x7e3e100046e0>
+                     └ <function _resolve_dispatched_chat_response at 0x7e3e754f7d80>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/main.py", line 714, in _resolve_dispatched_chat_response
+    return await pending
+                 └ <coroutine object OpenAIChatCompletion.acompletion at 0x7e3e100046e0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/llms/openai/openai.py", line 1006, in acompletion
+    raise OpenAIError(
+          └ <class 'litellm.llms.openai.common_utils.OpenAIError'>
+
+litellm.llms.openai.common_utils.OpenAIError: Error code: 400 - {'error': {'message': "This model's maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/metrics/llm_metrics.py", line 99, in _evaluate_values
+    response = await litellm.acompletion(
+                     │       └ <function setup_judge.<locals>.local at 0x7e3e7b93c360>
+                     └ <module 'litellm' from '/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/...
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/benchmarks/contextual/score.py", line 74, in local
+    return await orig(*a, **kw)
+                 │     │    └ {'model': 'openai/qwen3vl', 'messages': [{'role': 'system', 'content': 'You are an impartial and detail-oriented judge that e...
+                 │     └ ()
+                 └ <function acompletion at 0x7e3e73e67560>
+
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/chat_completions/dispatch.py", line 114, in acompletion
+    return await _ADISPATCH.arun(
+                 │          └ <function PublicDispatch.arun at 0x7e3e73f5e5c0>
+                 └ PublicDispatch(route=<Route.CHAT_COMPLETIONS: 'chat_completions'>, request=<function <lambda> at 0x7e3e73e67420>, context=<fu...
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/rust_bridge/dispatch.py", line 83, in arun
+    return await python(*args, **kwargs)
+                 │       │       └ {'model': 'openai/qwen3vl', 'messages': [{'role': 'system', 'content': 'You are an impartial and detail-oriented judge that e...
+                 │       └ ()
+                 └ <function acompletion at 0x7e3e745a1d00>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/utils.py", line 2160, in wrapper_async
+    raise e
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/utils.py", line 1972, in wrapper_async
+    result = await original_function(*args, **kwargs)
+                   │                  │       └ {'model': 'openai/qwen3vl', 'messages': [{'role': 'system', 'content': 'You are an impartial and detail-oriented judge that e...
+                   │                  └ ()
+                   └ <function acompletion at 0x7e3e745a1bc0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/main.py", line 702, in acompletion
+    raise exception_type(
+          └ <function exception_type at 0x7e3e765919e0>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2700, in exception_type
+    raise e  # it's already mapped
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2461, in exception_type
+    _map_openai_exception(
+    └ <function _map_openai_exception at 0x7e3e76590c20>
+  File "/tmp/claude-1059/-home-krudra-mtp-ashutosh/f7fce26b-862f-4fa2-ae8f-9bd32254ac19/scratchpad/cxenv/lib/python3.12/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 313, in _map_openai_exception
+    raise ContextWindowExceededError(
+          └ <class 'litellm.exceptions.ContextWindowExceededError'>
+
+litellm.exceptions.ContextWindowExceededError: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/benchmarks/contextual/score.py", line 221, in <module>
+    main()
+    └ <function main at 0x7e3e7b9132e0>
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/benchmarks/contextual/score.py", line 217, in main
+    asyncio.run(main_async(a))
+    │       │   │          └ Namespace(run='/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/runs/contextual/cx_final', out='/home/krudra_m...
+    │       │   └ <function main_async at 0x7e3e7b913240>
+    │       └ <function run at 0x7e3e7bb89d00>
+    └ <module 'asyncio' from '/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/__init__.py'>
+
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main_async at 0x7e3e7ba65a80>
+           │      └ <function Runner.run at 0x7e3e7ba30fe0>
+           └ <asyncio.runners.Runner object at 0x7e3e7b9388f0>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main_async() running at /home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/ben...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x7e3e7ba2ec00>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x7e3e7b9388f0>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/base_events.py", line 678, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7e3e7ba2eb60>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/base_events.py", line 645, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7e3e7ba309a0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/base_events.py", line 1999, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7e3e7bb8ab60>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/structured_evaluator.py", line 151, in _execute_metric_with_retry
+    return await run_asyncio_task_with_retry(
+                 └ <function run_asyncio_task_with_retry at 0x7e3e73a1c220>
+
+> File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/infra/asyncio_utils.py", line 38, in run_asyncio_task_with_retry
+    response = await asyncio.wait_for(
+                     │       └ <function wait_for at 0x7e3e7ba1f240>
+                     └ <module 'asyncio' from '/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/__init__.py'>
+
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+                 └ <coroutine object execute_metric_async at 0x7e3e739273e0>
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/structured_evaluator.py", line 80, in execute_metric_async
+    result = await metric.evaluate(node, metric_config)
+                   │      │        │     └ MetricConfig(metric_id='array_llm', weight=None, params=None)
+                   │      │        └ ArraySchema(title=None, description='List of works cited by this paper.', default=None, example=None, nullable=None, evaluati...
+                   │      └ <function PolicyAwareMetric.evaluate at 0x7e3e73b9afc0>
+                   └ ArrayLlmJudgeMetric()
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/metrics/policy_metric.py", line 32, in evaluate
+    return await self._evaluate_values(
+                 │    └ <function LlmJudgeMetric._evaluate_values at 0x7e3e73b9b920>
+                 └ ArrayLlmJudgeMetric()
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/metrics/llm_metrics.py", line 106, in _evaluate_values
+    raise RuntimeError(
+
+RuntimeError: LLM judge metric 'array_llm' failed for model 'openai/qwen3vl': litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+  research__NIPS-1989-handwritten-digit-recognition-with-a-b valid=False passed=  10/10   overall=1.000 errors=0 57s
+  research__zhao25_a_survey_of_LLMs                          valid=False passed=   7/10   overall=0.917 errors=1 36s
+  resume__Resume-Academic02                                  valid=False passed=  12/13   overall=0.939 errors=0 67s
+2026-09-28 04:25:53.291 | ERROR    | extract_bench.infra.asyncio_utils:run_asyncio_task_with_retry:49 - Error in task: LLM judge metric expected JSON output but failed to parse.
+Traceback (most recent call last):
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/metrics/llm_metrics.py", line 197, in _parse_structured_output
+    parsed = json.loads(raw_json)
+             │    │     └ '{\n  "reasoning": "The predicted array matches the gold array with high fidelity. All 64 items in the gold array were found ...
+             │    └ <function loads at 0x7e3e7ba7d760>
+             └ <module 'json' from '/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/json/__init__.py'>
+
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           │                │      └ '{\n  "reasoning": "The predicted array matches the gold array with high fidelity. All 64 items in the gold array were found ...
+           │                └ <function JSONDecoder.decode at 0x7e3e7ba7d120>
+           └ <json.decoder.JSONDecoder object at 0x7e3e7ba5a330>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/json/decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               │    │          │      │  └ '{\n  "reasoning": "The predicted array matches the gold array with high fidelity. All 64 items in the gold array were found ...
+               │    │          │      └ <built-in method match of re.Pattern object at 0x7e3e7ba6cba0>
+               │    │          └ '{\n  "reasoning": "The predicted array matches the gold array with high fidelity. All 64 items in the gold array were found ...
+               │    └ <function JSONDecoder.raw_decode at 0x7e3e7ba7d1c0>
+               └ <json.decoder.JSONDecoder object at 0x7e3e7ba5a330>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/json/decoder.py", line 354, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               │    │         │  └ 0
+               │    │         └ '{\n  "reasoning": "The predicted array matches the gold array with high fidelity. All 64 items in the gold array were found ...
+               │    └ <_json.Scanner object at 0x7e3e7ba71a80>
+               └ <json.decoder.JSONDecoder object at 0x7e3e7ba5a330>
+
+json.decoder.JSONDecodeError: Invalid \escape: line 2 column 380 (char 381)
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/benchmarks/contextual/score.py", line 221, in <module>
+    main()
+    └ <function main at 0x7e3e7b9132e0>
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/benchmarks/contextual/score.py", line 217, in main
+    asyncio.run(main_async(a))
+    │       │   │          └ Namespace(run='/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/runs/contextual/cx_final', out='/home/krudra_m...
+    │       │   └ <function main_async at 0x7e3e7b913240>
+    │       └ <function run at 0x7e3e7bb89d00>
+    └ <module 'asyncio' from '/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/__init__.py'>
+
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main_async at 0x7e3e7ba65a80>
+           │      └ <function Runner.run at 0x7e3e7ba30fe0>
+           └ <asyncio.runners.Runner object at 0x7e3e7b9388f0>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main_async() running at /home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/ben...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x7e3e7ba2ec00>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x7e3e7b9388f0>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/base_events.py", line 678, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7e3e7ba2eb60>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/base_events.py", line 645, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7e3e7ba309a0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/base_events.py", line 1999, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7e3e7bb8ab60>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/structured_evaluator.py", line 151, in _execute_metric_with_retry
+    return await run_asyncio_task_with_retry(
+                 └ <function run_asyncio_task_with_retry at 0x7e3e73a1c220>
+
+> File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/infra/asyncio_utils.py", line 38, in run_asyncio_task_with_retry
+    response = await asyncio.wait_for(
+                     │       └ <function wait_for at 0x7e3e7ba1f240>
+                     └ <module 'asyncio' from '/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/__init__.py'>
+
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+                 └ <coroutine object execute_metric_async at 0x7e3e3552a500>
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/structured_evaluator.py", line 80, in execute_metric_async
+    result = await metric.evaluate(node, metric_config)
+                   │      │        │     └ MetricConfig(metric_id='array_llm', weight=None, params=None)
+                   │      │        └ ArraySchema(title=None, description='List of works cited by this paper.', default=None, example=None, nullable=None, evaluati...
+                   │      └ <function PolicyAwareMetric.evaluate at 0x7e3e73b9afc0>
+                   └ ArrayLlmJudgeMetric()
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/metrics/policy_metric.py", line 32, in evaluate
+    return await self._evaluate_values(
+                 │    └ <function LlmJudgeMetric._evaluate_values at 0x7e3e73b9b920>
+                 └ ArrayLlmJudgeMetric()
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/metrics/llm_metrics.py", line 111, in _evaluate_values
+    parsed = self._parse_structured_output(content, structured_schema)
+             │    │                        │        └ {'type': 'object', 'properties': {'reasoning': {'type': 'string'}, 'matched_items': {'type': 'array', 'items': {'anyOf': [{'t...
+             │    │                        └ '```json\n{\n  "reasoning": "The predicted array matches the gold array with high fidelity. All 64 items in the gold array we...
+             │    └ <staticmethod(<function LlmJudgeMetric._parse_structured_output at 0x7e3e73b99d00>)>
+             └ ArrayLlmJudgeMetric()
+
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/metrics/llm_metrics.py", line 199, in _parse_structured_output
+    raise ValueError(
+
+ValueError: LLM judge metric expected JSON output but failed to parse.
+2026-09-28 04:25:53.299 | INFO     | extract_bench.infra.asyncio_utils:run_asyncio_task_with_retry:52 - Retrying 1 of 3...
+2026-09-28 04:25:53.299 | INFO     | extract_bench.infra.asyncio_utils:run_asyncio_task_with_retry:34 - Sleeping for 3 seconds before retry...
+  resume__Resume-Academic01                                  valid=False passed=   8/13   overall=0.550 errors=0 108s
+  resume__Resume-IT                                          valid=False passed=   9/13   overall=0.922 errors=0 21s
+  resume__Resume-Legal                                       valid=False passed=  12/13   overall=0.958 errors=0 20s
+  resume__Resume-Finance                                     valid=True  passed=  12/13   overall=0.875 errors=0 75s
+  resume__Resume-Marketing                                   valid=False passed=   6/13   overall=0.148 errors=0 36s
+  sports__ma_2023_sw_M-table1                                valid=True  passed=   5/5    overall=1.000 errors=0 20s
+  resume__Resume-Med                                         valid=False passed=  11/13   overall=0.815 errors=0 57s
+  research__shah24--flashattention-3                         valid=True  passed=   6/10   overall=0.934 errors=0 258s
+  sports__ma_2023_sw_M-table3                                valid=True  passed=   5/5    overall=1.000 errors=0 11s
+  sports__ma_2023_sw_M-table2                                valid=True  passed=   5/5    overall=1.000 errors=0 34s
+  sports__ma_2023_sw_M-table5                                valid=True  passed=   4/5    overall=0.875 errors=0 18s
+Traceback (most recent call last):
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/benchmarks/contextual/score.py", line 221, in <module>
+    main()
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/benchmarks/contextual/score.py", line 217, in main
+    asyncio.run(main_async(a))
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/krudra_mtp/miniconda3/envs/dae-vllm/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/benchmarks/contextual/score.py", line 185, in main_async
+    rows = await asyncio.gather(*(score_doc(n, index[n], run / f"{n}.json" if run else Path("-"),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/benchmarks/contextual/score.py", line 112, in score_doc
+    report = await builder.build_async(schema, gold, pred if isinstance(pred, dict) else {})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/reporting/report_builder.py", line 83, in build_async
+    eval_result = await evaluator.evaluate_async(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/structured_evaluator.py", line 67, in evaluate_async
+    ).instantiate()
+      ^^^^^^^^^^^^^
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/schema_value_instantiator.py", line 56, in instantiate
+    self._visit_dual(self.schema, self.gold_instance, self.extracted_instance)
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/schema_value_instantiator.py", line 106, in _visit_dual
+    return visitor_method(node, gold_value, extracted_value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/schema_value_instantiator.py", line 112, in _visit_dual_rootschema
+    self._visit_dual_objectschema(node, gold_value, extracted_value)
+  File "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/contextual-extract-bench/src/extract_bench/evaluation/schema_value_instantiator.py", line 136, in _visit_dual_objectschema
+    raise ValueError(
+ValueError: Required property 'income_statement' missing in Extracted instance at $

@@ -1,0 +1,1166 @@
+{
+  "output_name": "resume__Resume-Academic02",
+  "timestamp": "2026-09-28T04:38:49.409832",
+  "schema_hash": "581f8d7f",
+  "gold_hash": "a95e470f",
+  "extracted_hash": "06ff7e89",
+  "schema_stats": {
+    "total_nodes": 67,
+    "counts_by_type": {
+      "object": 9,
+      "array": 11,
+      "string": 30,
+      "anyof": 7,
+      "null": 5,
+      "integer": 4,
+      "boolean": 1
+    },
+    "required_keys_count": 3,
+    "optional_keys_count": 35,
+    "required_by_type": {
+      "object": 1,
+      "string": 1,
+      "array": 1
+    },
+    "optional_by_type": {
+      "array": 9,
+      "string": 17,
+      "anyof": 7,
+      "object": 1,
+      "boolean": 1
+    }
+  },
+  "gold_stats": {
+    "label": "gold",
+    "total_keys": 192,
+    "counts_by_type": {
+      "object": 2,
+      "string": 154,
+      "array": 10,
+      "null": 2,
+      "integer": 17,
+      "boolean": 7
+    },
+    "array_stats": {
+      "array_field_count": 10,
+      "total_items": 59,
+      "min_length": 0,
+      "median_length": 3.5,
+      "max_length": 18
+    },
+    "null_count": 2,
+    "missing_count": 0
+  },
+  "extracted_stats": {
+    "label": "extracted",
+    "total_keys": 243,
+    "counts_by_type": {
+      "array": 11,
+      "string": 191,
+      "object": 3,
+      "null": 31,
+      "boolean": 7
+    },
+    "array_stats": {
+      "array_field_count": 11,
+      "total_items": 66,
+      "min_length": 0,
+      "median_length": 4,
+      "max_length": 18
+    },
+    "null_count": 31,
+    "missing_count": 0
+  },
+  "coverage": {
+    "present_in_both": 26,
+    "missing_in_extracted": 1,
+    "spurious_in_extracted": 5,
+    "required_missing": 0,
+    "missing_paths": [
+      "skills"
+    ],
+    "spurious_paths": [
+      "certificationsAndAwards.category",
+      "publications.link",
+      "skills.Research Interests",
+      "workExperience.category",
+      "workExperience.description"
+    ]
+  },
+  "outcomes": {
+    "total_evaluated": 13,
+    "total_passed": 12,
+    "total_failed": 1,
+    "pass_rate": 0.9230769230769231,
+    "pass_by_metric": {
+      "array_llm": {
+        "passed": 10,
+        "failed": 1
+      },
+      "string_semantic": {
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "pass_by_type": {
+      "array": {
+        "passed": 10,
+        "failed": 1
+      },
+      "string": {
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "pass_by_required": {
+      "optional": {
+        "passed": 12,
+        "failed": 1
+      }
+    },
+    "confusion": {
+      "true_positive": 9,
+      "false_positive": 1,
+      "false_negative": 0,
+      "true_negative": 3
+    },
+    "llm_stats": {
+      "call_count": 13,
+      "avg_score": 0.8992673992673992,
+      "median_score": 1.0,
+      "score_distribution": {
+        "0.0-0.2": 1,
+        "0.8-1.0": 12
+      },
+      "top_lowest_fields": [
+        {
+          "path": "skills",
+          "metric_id": "array_llm",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "workExperience",
+          "metric_id": "array_llm",
+          "score": 0.8571428571428571,
+          "reasoning": "The evaluation compares 7 gold work experience items against 7 predicted items. \n\n1. **KAIST Professor (2020-)**: The predicted item matches the gold item. The employer name is semantically equivalent..."
+        },
+        {
+          "path": "other",
+          "metric_id": "array_llm",
+          "score": 0.8888888888888888,
+          "reasoning": "The predicted array contains 8 items, while the gold array contains 9 items. The predicted items match 8 of the gold items based on the 'sectionTitle' and semantic content of the 'content' field. The ..."
+        },
+        {
+          "path": "certificationsAndAwards",
+          "metric_id": "array_llm",
+          "score": 0.9444444444444444,
+          "reasoning": "The evaluation compares 18 gold items against 18 predicted items. The predicted items include an extra 'category' field which is not present in the gold schema; however, since the task is to match gol..."
+        },
+        {
+          "path": "socialLinks",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": ""
+        }
+      ]
+    },
+    "error_breakdown": {
+      "by_path_prefix": {
+        "skills": 1
+      },
+      "by_metric_type": {
+        "array_llm": 1
+      },
+      "by_reason": {
+        "gold_absent": 1
+      },
+      "details": [
+        {
+          "category": "gold_absent",
+          "count": 1,
+          "paths": []
+        }
+      ]
+    }
+  },
+  "field_outcomes": [
+    {
+      "path": "$.properties.skills",
+      "normalized_path": "skills",
+      "metric_id": "array_llm",
+      "score": 0.0,
+      "passed": false,
+      "reason": "gold_null",
+      "gold_value": null,
+      "extracted_value": {
+        "Research Interests": [
+          "Soft robotics and compliant mechanisms",
+          "Human-robot interaction and collaborative robotics",
+          "Bio-inspired robotics and biomimetic systems",
+          "Robotic manipulation and grasping",
+          "Machine learning for robotics",
+          "Medical robotics and surgical assistance",
+          "Wearable robotic systems and exoskeletons",
+          "Actuator and sensor design for soft robots"
+        ]
+      },
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.socialLinks",
+      "normalized_path": "socialLinks",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": "both_empty_array",
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.personalInfo.properties.contact.properties.emails",
+      "normalized_path": "personalInfo.contact.emails",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": "both_empty_array",
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.personalInfo.properties.contact.properties.phones",
+      "normalized_path": "personalInfo.contact.phones",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": "both_empty_array",
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.personalInfo.properties.fullName",
+      "normalized_path": "personalInfo.fullName",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "Professor Kang Min-jun",
+      "extracted_value": "Professor Kang Min-jun",
+      "reasoning": "The predicted string is identical to the gold string.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.personalInfo.properties.personalStatement",
+      "normalized_path": "personalInfo.personalStatement",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "Internationally recognized robotics researcher with expertise in human-robot interaction, soft robotics, and bio-inspired robotic systems. Over 15 years of research experience with 110+ peer-reviewed publications in top-tier venues including Science Robotics, IEEE Transactions, and major robotics conferences. Multiple best paper awards and patents for novel robotic mechanisms and control algorithms. Strong track record of translating fundamental research into practical applications with several successful technology transfers to industry. Committed to advancing robotics education and fostering next generation of robotics researchers.",
+      "extracted_value": "Internationally recognized robotics researcher with expertise in human-robot interaction, soft robotics, and bio-inspired robotic systems. Over 15 years of research experience with 110+ peer-reviewed publications in top-tier venues including Science Robotics, IEEE Transactions, and major robotics conferences. Multiple best paper awards and patents for novel robotic mechanisms and control algorithms. Strong track record of translating fundamental research into practical applications with several successful technology transfers to industry. Committed to advancing robotics education and fostering next generation of robotics researchers.",
+      "reasoning": "The predicted string is identical to the gold string in terms of content, structure, and meaning. There are no differences in casing, punctuation, or wording.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.languages",
+      "normalized_path": "languages",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        "Korean (Native)",
+        "English (Fluent)",
+        "Japanese (Conversational)"
+      ],
+      "extracted_value": [
+        "Korean (Native)",
+        "English (Fluent)",
+        "Japanese (Conversational)"
+      ],
+      "reasoning": "The predicted array is identical to the gold array. All three items ('Korean (Native)', 'English (Fluent)', 'Japanese (Conversational)') match exactly in both content and order. There are no missed go...",
+      "array_breakdown": {
+        "matched": 3,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "Korean (Native)",
+          "English (Fluent)",
+          "Japanese (Conversational)"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.media",
+      "normalized_path": "media",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        "Featured in MIT Technology Review article on soft robotics advances (2023)",
+        "Interview on Korean national television (KBS) about future of robotics (2022)",
+        "Profile in KAIST Magazine highlighting research impact (2021)",
+        "Multiple articles in Korean media about research breakthroughs"
+      ],
+      "extracted_value": [
+        "Featured in MIT Technology Review article on soft robotics advances (2023)",
+        "Interview on Korean national television (KBS) about future of robotics (2022)",
+        "Profile in KAIST Magazine highlighting research impact (2021)",
+        "Multiple articles in Korean media about research breakthroughs"
+      ],
+      "reasoning": "The predicted array contains exactly the same four string items as the gold array. Each item in the gold array has a direct, exact match in the predicted array. There are no missed gold items and no s...",
+      "array_breakdown": {
+        "matched": 4,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "Featured in MIT Technology Review article on soft robotics advances (2023)",
+          "Interview on Korean national television (KBS) about future of robotics (2022)",
+          "Profile in KAIST Magazine highlighting research impact (2021)",
+          "Multiple articles in Korean media about research breakthroughs"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.other",
+      "normalized_path": "other",
+      "metric_id": "array_llm",
+      "score": 0.8888888888888888,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "sectionTitle": "RESEARCH INTERESTS",
+          "content": "- Soft robotics and compliant mechanisms\n- Human-robot interaction and collaborative robotics\n- Bio-inspired robotics and biomimetic systems\n- Robotic manipulation and grasping\n- Machine learning for robotics\n- Medical robotics and surgical assistance\n- Wearable robotic systems and exoskeletons\n- Actuator and sensor design for soft robots"
+        },
+        {
+          "sectionTitle": "PROFESSIONAL SERVICE",
+          "content": "Editorial Boards:\n- Associate Editor, IEEE Transactions on Robotics (2021-Present)\n- Associate Editor, Soft Robotics (2019-Present)\n- Editorial Board Member, International Journal of Robotics Research (2020-Present)\n- Guest Editor, Special Issue on \"Soft Robotics\" - IEEE Robotics & Automation Magazine (2022)\n\nConference Organization:\n- Program Chair, IEEE International Conference on Soft Robotics (RoboSoft) 2025\n- Area Chair, IEEE ICRA (2020, 2021, 2022, 2023, 2024)\n- Area Chair, IEEE/RSJ IROS (2019, 2020, 2021, 2022, 2023, 2024)\n- Co-organizer, RSS Workshop on Soft Robotics (2019, 2021, 2023)\n- General Chair, Korean Robotics Society Annual Conference (2023)\n\nProfessional Leadership:\n- Vice President, Korean Robotics Society (2022-2024)\n- Member, IEEE RAS Technical Committee on Soft Robotics (2017-Present)\n- Member, IEEE RAS Technical Committee on Human-Robot Interaction (2015-Present)\n\nPeer Review:\nActive reviewer for 30+ journals and conferences including Science Robotics, Nature\nCommunications, IEEE Transactions (Robotics, Automation Science & Engineering), International\nJournal of Robotics Research, and all major robotics conferences. 200+ reviews completed."
+        },
+        {
+          "sectionTitle": "INVITED TALKS",
+          "content": "Over 60 invited talks at universities and research institutions worldwide (2011-2024)\nRecent keynotes:\n- Keynote Speaker, International Conference on Soft Robotics (2024)\n- Plenary Talk, IEEE/RSJ IROS (2023)\n- Keynote, Asian Conference on Robotics and Automation (2022)\n- Distinguished Lecture, IEEE Robotics & Automation Society (2021)\n- Invited seminars at: MIT, Stanford, CMU, UC Berkeley, ETH Zurich, Max Planck Institute,\nUniversity of Tokyo, National University of Singapore (2019-2024)"
+        },
+        {
+          "sectionTitle": "TECHNOLOGY TRANSFER & COMMERCIALIZATION",
+          "content": "- Co-founder and Technical Advisor, SoftRobot Inc. (startup commercializing soft gripper\ntechnology) - 2020\n- Technology licensing agreements with Samsung, Hyundai, and LG for robotic technologies\ndeveloped in lab\n- Consultant for multiple robotics companies in Korea and internationally"
+        },
+        {
+          "sectionTitle": "CONFERENCE PUBLICATIONS",
+          "content": "Over 90 papers published at major robotics conferences including:\r\n- IEEE International Conference on Robotics and Automation (ICRA) - 25+ papers\r\n- IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) - 28+ papers\r\n- Robotics: Science and Systems (RSS) - 12 papers\r\n- ACM/IEEE International Conference on Human-Robot Interaction (HRI) - 15+ papers\r\n- International Conference on Soft Robotics (RoboSoft) - 10+ papers"
+        },
+        {
+          "sectionTitle": "RESEARCH GRANTS",
+          "content": "RESEARCH GRANTS\nAs Principal Investigator:\n- National Research Foundation of Korea (NRF) - Mid-Career Researcher Program: \"Next-\nGeneration Soft Robots for Human-Centric Applications\" (2023-2028) - KRW 1,200,000,000 (~$900,000)\n- Samsung Research Funding: \"AI-Powered Collaborative Robots for Manufacturing\" (2022-\n2025) - KRW 800,000,000 (~$600,000)\n- Ministry of Science and ICT - Leading Research Center Program: \"Center for Intelligent Soft\nRobotics\" (2020-2027) - KRW 3,500,000,000 (~$2.6M) (Director of Center)\n- Hyundai Motor Company: \"Soft Robotic Systems for Vehicle Manufacturing\" (2021-2024) - KRW\n600,000,000\n- NRF - Global Research Laboratory Program (2018-2024) - KRW 2,000,000,000 (~$1.5M)\n- NRF - Basic Science Research Program (2016-2021) - KRW 400,000,000\n- KAIST High-Risk High-Return Project (2015-2018) - KRW 300,000,000\n\nAs Co-Investigator:\n- Multiple collaborative grants with Korean and international partners totaling ~$2M additional\nfunding"
+        },
+        {
+          "sectionTitle": "PATENTS",
+          "content": "1. Kang, M.J., Park, J.H., & Lee, H.W. (2023). \"Soft robotic gripper with embedded tactile sensors.\" US\nPatent 11,789,123\n2. Kang, M.J. & Kim, S.Y. (2022). \"Variable stiffness actuator for collaborative robots.\" US Patent\n11,456,789; Korean Patent 10-2345678\n3. Lee, H.W., Kang, M.J., & Chen, Y. (2021). \"Self-healing soft robotic actuator.\" US Patent Application\n17/123,456 (pending)\n4. Kang, M.J., Zhang, W., & Park, J.H. (2020). \"Bio-inspired adhesive mechanism for climbing robots.\"\nUS Patent 10,987,654; Korean Patent 10-2123456\n5. Kang, M.J. & Lee, H.W. (2019). \"Wearable soft exosuit for gait assistance.\" US Patent 10,654,321\n6. Kim, S.Y., Kang, M.J., & Park, J.H. (2018). \"Origami-inspired morphing robotic structure.\" Korean\nPatent 10-1987654\n7-11. Five additional patents filed 2022-2024 (pending/confidential)"
+        },
+        {
+          "sectionTitle": "TEACHING",
+          "content": "KAIST (2011–Present)\n- Introduction to Robotics (undergraduate, 80-100 students)\n- Advanced Robotics (graduate, 40-50 students)\n- Soft Robotics: Design and Control (graduate seminar, 15-20 students)\n- Human-Robot Interaction (graduate, 25-30 students)\n- Capstone Design Project - Robotics (undergraduate, supervise 8-10 teams annually)\n- PhD Advanced Seminar in Robotics Research\nDeveloped New Courses:\n- Soft Robotics course (first in Korea, 2016)\n- Machine Learning for Robotics (2020)\nShort Courses & Workshops:\n- Tutorial Organizer, \"Soft Robotics: From Design to Control\" at ICRA (2022, 2019)\n- Instructor, International Summer School on Soft Robotics (2018, 2021, 2023)"
+        },
+        {
+          "sectionTitle": "STUDENT SUPERVISION",
+          "content": "PhD Students - Graduated: 18\r\nRecent graduates:\r\n- Dr. Park Ji-Hyun (2018-2023): \"Learning-based control of soft manipulators\" - Now Assistant\r\nProfessor at Yonsei University\r\n- Dr. Lee Hyun-Woo (2017-2022): \"Tactile sensing for soft robotics\" - Now Research Scientist at\r\nSamsung Research\r\n- Dr. Kim Su-Yeon (2016-2021): \"Wearable soft robots for rehabilitation\" - Now Postdoc at\r\nStanford University\r\n- Dr. Chen Yu (2015-2020): \"Bio-inspired climbing robots\" - Now Assistant Professor at Tsinghua\r\nUniversity\r\n- Dr. Zhang Wei (2014-2019): \"Origami robotics\" - Now Senior Researcher at ETH Zurich\r\nPhD Students - Current: 8\r\nMS Students: Supervised 34 MS students (2011-Present)\r\nPostdoctoral Researchers - Current: 4\r\n- Dr. Tanaka Yuki (2023-Present)\r\n- Dr. Sarah Johnson (2022-Present)\r\n- Dr. Ahmed Hassan (2024-Present)\r\n- Dr. Maria Santos (2024-Present)\r\nUndergraduate Researchers: Mentored 40+ undergraduate research projects"
+        }
+      ],
+      "extracted_value": [
+        {
+          "content": "Over 90 papers published at major robotics conferences including: IEEE International Conference on Robotics and Automation (ICRA) - 25+ papers, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) - 28+ papers, Robotics: Science and Systems (RSS) - 12 papers, ACM/IEEE International Conference on Human-Robot Interaction (HRI) - 15+ papers, International Conference on Soft Robotics (RoboSoft) - 10+ papers",
+          "sectionTitle": "CONFERENCE PUBLICATIONS"
+        },
+        {
+          "content": "1. Kang, M.J., Park, J.H., & Lee, H.W. (2023). \"Soft robotic gripper with embedded tactile sensors.\" US Patent 11,789,123; 2. Kang, M.J. & Kim, S.Y. (2022). \"Variable stiffness actuator for collaborative robots.\" US Patent 11,456,789; Korean Patent 10-2345678; 3. Lee, H.W., Kang, M.J., & Chen, Y. (2021). \"Self-healing soft robotic actuator.\" US Patent Application 17/123,456 (pending); 4. Kang, M.J., Zhang, W., & Park, J.H. (2020). \"Bio-inspired adhesive mechanism for climbing robots.\" US Patent 10,987,654; Korean Patent 10-2123456; 5. Kang, M.J. & Lee, H.W. (2019). \"Wearable soft exosuit for gait assistance.\" US Patent 10,654,321; 6. Kim, S.Y., Kang, M.J., & Park, J.H. (2018). \"Origami-inspired morphing robotic structure.\" Korean Patent 10-1987654; 7-11. Five additional patents filed 2022-2024 (pending/confidential)",
+          "sectionTitle": "PATENTS"
+        },
+        {
+          "content": "As Principal Investigator: National Research Foundation of Korea (NRF) - Mid-Career Researcher Program: \"Next-Generation Soft Robots for Human-Centric Applications\" (2023-2028) - KRW 1,200,000,000 (~$900,000); Samsung Research Funding: \"AI-Powered Collaborative Robots for Manufacturing\" (2022-2025) - KRW 800,000,000 (~$600,000); Ministry of Science and ICT - Leading Research Center Program: \"Center for Intelligent Soft Robotics\" (2020-2027) - KRW 3,500,000,000 (~$2.6M) (Director of Center); Hyundai Motor Company: \"Soft Robotic Systems for Vehicle Manufacturing\" (2021-2024) - KRW 600,000,000; NRF - Global Research Laboratory Program (2018-2024) - KRW 2,000,000,000 (~$1.5M); NRF - Basic Science Research Program (2016-2021) - KRW 400,000,000; KAIST High-Risk High-Return Project (2015-2018) - KRW 300,000,000. As Co-Investigator: Multiple collaborative grants with Korean and international partners totaling ~$2M additional funding",
+          "sectionTitle": "RESEARCH GRANTS"
+        },
+        {
+          "content": "KAIST (2011–Present): Introduction to Robotics (undergraduate, 80-100 students), Advanced Robotics (graduate, 40-50 students), Soft Robotics: Design and Control (graduate seminar, 15-20 students), Human-Robot Interaction (graduate, 25-30 students), Capstone Design Project - Robotics (undergraduate, supervise 8-10 teams annually), PhD Advanced Seminar in Robotics Research. Developed New Courses: Soft Robotics course (first in Korea, 2016), Machine Learning for Robotics (2020). Short Courses & Workshops: Tutorial Organizer, \"Soft Robotics: From Design to Control\" at ICRA (2022, 2019), Instructor, International Summer School on Soft Robotics (2018, 2021, 2023)",
+          "sectionTitle": "TEACHING"
+        },
+        {
+          "content": "PhD Students - Graduated: 18. Recent graduates: Dr. Park Ji-Hyun (2018-2023): \"Learning-based control of soft manipulators\" - Now Assistant Professor at Yonsei University; Dr. Lee Hyun-Woo (2017-2022): \"Tactile sensing for soft robotics\" - Now Research Scientist at Samsung Research; Dr. Kim Su-Yeon (2016-2021): \"Wearable soft robots for rehabilitation\" - Now Postdoc at Stanford University; Dr. Chen Yu (2015-2020): \"Bio-inspired climbing robots\" - Now Assistant Professor at Tsinghua University; Dr. Zhang Wei (2014-2019): \"Origami robotics\" - Now Senior Researcher at ETH Zurich. PhD Students - Current: 8. MS Students: Supervised 34 MS students (2011-Present). Postdoctoral Researchers - Current: 4 (Dr. Tanaka Yuki, Dr. Sarah Johnson, Dr. Ahmed Hassan, Dr. Maria Santos). Undergraduate Researchers: Mentored 40+ undergraduate research projects",
+          "sectionTitle": "STUDENT SUPERVISION"
+        },
+        {
+          "content": "Editorial Boards: Associate Editor, IEEE Transactions on Robotics (2021-Present), Associate Editor, Soft Robotics (2019-Present), Editorial Board Member, International Journal of Robotics Research (2020-Present), Guest Editor, Special Issue on \"Soft Robotics\" - IEEE Robotics & Automation Magazine (2022). Conference Organization: Program Chair, IEEE International Conference on Soft Robotics (RoboSoft) 2025, Area Chair, IEEE ICRA (2020, 2021, 2022, 2023, 2024), Area Chair, IEEE/RSJ IROS (2019, 2020, 2021, 2022, 2023, 2024), Co-organizer, RSS Workshop on Soft Robotics (2019, 2021, 2023), General Chair, Korean Robotics Society Annual Conference (2023). Professional Leadership: Vice President, Korean Robotics Society (2022-2024), Member, IEEE RAS Technical Committee on Soft Robotics (2017-Present), Member, IEEE RAS Technical Committee on Human-Robot Interaction (2015-Present). Peer Review: Active reviewer for 30+ journals and conferences including Science Robotics, Nature Communications, IEEE Transactions (Robotics, Automation Science & Engineering), International Journal of Robotics Research, and all major robotics conferences. 200+ reviews completed.",
+          "sectionTitle": "PROFESSIONAL SERVICE"
+        },
+        {
+          "content": "Over 60 invited talks at universities and research institutions worldwide (2011-2024). Recent keynotes: Keynote Speaker, International Conference on Soft Robotics (2024), Plenary Talk, IEEE/RSJ IROS (2023), Keynote, Asian Conference on Robotics and Automation (2022), Distinguished Lecture, IEEE Robotics & Automation Society (2021), Invited seminars at: MIT, Stanford, CMU, UC Berkeley, ETH Zurich, Max Planck Institute, University of Tokyo, National University of Singapore (2019-2024)",
+          "sectionTitle": "INVITED TALKS"
+        },
+        {
+          "content": "Co-founder and Technical Advisor, SoftRobot Inc. (startup commercializing soft gripper technology) - 2020; Technology licensing agreements with Samsung, Hyundai, and LG for robotic technologies developed in lab; Consultant for multiple robotics companies in Korea and internationally",
+          "sectionTitle": "TECHNOLOGY TRANSFER & COMMERCIALIZATION"
+        }
+      ],
+      "reasoning": "The predicted array contains 8 items, while the gold array contains 9 items. The predicted items match 8 of the gold items based on the 'sectionTitle' and semantic content of the 'content' field. The ...",
+      "array_breakdown": {
+        "matched": 8,
+        "missed_gold": 1,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 0.8888888888888888,
+        "f1": 0.9411764705882353,
+        "matched_items": [
+          "PROFESSIONAL SERVICE",
+          "INVITED TALKS",
+          "TECHNOLOGY TRANSFER & COMMERCIALIZATION",
+          "CONFERENCE PUBLICATIONS",
+          "RESEARCH GRANTS",
+          "PATENTS",
+          "TEACHING",
+          "STUDENT SUPERVISION"
+        ],
+        "missed_gold_items": [
+          {
+            "sectionTitle": "RESEARCH INTERESTS",
+            "content": "- Soft robotics and compliant mechanisms\n- Human-robot interaction and collaborative robotics\n- Bio-inspired robotics and biomimetic systems\n- Robotic manipulation and grasping\n- Machine learning for robotics\n- Medical robotics and surgical assistance\n- Wearable robotic systems and exoskeletons\n- Actuator and sensor design for soft robots"
+          }
+        ],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.education",
+      "normalized_path": "education",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "institution": "Massachusetts Institute of Technology (MIT)",
+          "qualificationTitle": "PhD in Mechanical Engineering",
+          "startDate": 2005,
+          "endDate": 2009,
+          "description": "Thesis: \"Design and Control of Compliant Robotic Manipulators for Safe Human-Robot Interaction\"; Advisor: Prof. H. Harry Asada; Awards: MIT EECS Best PhD Thesis Award"
+        },
+        {
+          "institution": "Seoul National University",
+          "qualificationTitle": "Master of Science in Mechanical Engineering",
+          "startDate": 2003,
+          "endDate": 2005,
+          "description": "Thesis on robotic grasping and manipulation"
+        },
+        {
+          "institution": "Seoul National University",
+          "qualificationTitle": "Bachelor of Science in Mechanical Engineering",
+          "startDate": 1999,
+          "endDate": 2003,
+          "description": "Graduated Summa Cum Laude, Valedictorian"
+        }
+      ],
+      "extracted_value": [
+        {
+          "endDate": "2009",
+          "startDate": "2005",
+          "description": "Thesis: \"Design and Control of Compliant Robotic Manipulators for Safe Human-Robot Interaction\". Advisor: Prof. H. Harry Asada. Awards: MIT EECS Best PhD Thesis Award",
+          "institution": "Massachusetts Institute of Technology (MIT)",
+          "qualificationTitle": "PhD in Mechanical Engineering"
+        },
+        {
+          "endDate": "2005",
+          "startDate": "2003",
+          "description": "Thesis on robotic grasping and manipulation",
+          "institution": "Seoul National University",
+          "qualificationTitle": "Master of Science in Mechanical Engineering"
+        },
+        {
+          "endDate": "2003",
+          "startDate": "1999",
+          "description": "Graduated Summa Cum Laude, Valedictorian",
+          "institution": "Seoul National University",
+          "qualificationTitle": "Bachelor of Science in Mechanical Engineering"
+        }
+      ],
+      "reasoning": "The predicted array contains 3 items that correspond to the 3 items in the gold array. \n\n1. **MIT PhD Item**: \n   - `institution`: Exact match.\n   - `qualificationTitle`: Exact match.\n   - `startDate`...",
+      "array_breakdown": {
+        "matched": 3,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "Massachusetts Institute of Technology (MIT) PhD",
+          "Seoul National University Master of Science",
+          "Seoul National University Bachelor of Science"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.publications",
+      "normalized_path": "publications",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "year": "2024",
+          "title": "Self-healing soft robotic actuators with embedded liquid metal circuits.",
+          "authors": "Park, J.H., Kim, S.Y.",
+          "publisher": "Science Robotics"
+        },
+        {
+          "year": "2024",
+          "title": "Machine learning for adaptive control of soft robotic manipulators.",
+          "authors": "Lee, H.W., et al.",
+          "publisher": "IEEE Transactions on Robotics"
+        },
+        {
+          "year": "2023",
+          "title": "Pneumatic soft robots with variable stiffness for safe human collaboration.",
+          "publisher": "Nature Communications",
+          "authors": "Kang, M.J., Chen, Y."
+        },
+        {
+          "year": "2023",
+          "title": "Bio-inspired climbing robots using gecko-like adhesion mechanisms.",
+          "publisher": "Advanced Materials",
+          "authors": "Kang, M.J., Lee, H.W., Kim, S.Y."
+        },
+        {
+          "year": "2023",
+          "title": "Deep reinforcement learning for dexterous manipulation with soft robotic hands.",
+          "publisher": "IEEE Transactions on Automation Science and Engineering",
+          "authors": "Kang, M.J., Lee, H.W., Kim, S.Y."
+        },
+        {
+          "year": "2022",
+          "title": "Soft wearable exosuits for gait assistance and rehabilitation.",
+          "publisher": "Science Translational Medicine",
+          "authors": "Kim, S.Y., Kang, M.J."
+        },
+        {
+          "year": "2022",
+          "title": "Multi-modal sensing in soft robotics: Integration and applications.",
+          "publisher": "IEEE Sensors Journal",
+          "authors": "Kang, M.J., et al."
+        },
+        {
+          "year": "2021",
+          "title": "Origami-inspired soft robots with programmable morphology.",
+          "publisher": "PNAS",
+          "authors": "Zhang, W., Park, J.H., Kang, M.J."
+        },
+        {
+          "year": "2021",
+          "title": "Human-robot physical interaction: Safety, comfort, and performance metrics.",
+          "publisher": "International Journal of Robotics Research",
+          "authors": "Kang, M.J., Lee, H.W., Chen, Y."
+        },
+        {
+          "year": "2020",
+          "title": "Soft robotic grippers with tactile sensing for delicate object manipulation.",
+          "publisher": "Soft Robotics",
+          "authors": "Lee, H.W., Kang, M.J., Kang, M.J."
+        },
+        {
+          "year": "2020",
+          "title": "Design principles for compliant robotic mechanisms.",
+          "publisher": "Mechanism and Machine Theory",
+          "authors": "Kang, M.J., Kim, S.Y., Park, J.H."
+        },
+        {
+          "year": "2019",
+          "title": "Untethered soft robots powered by liquid metal-elastomer conductors.",
+          "publisher": "Advanced Functional Materials",
+          "authors": "Chen, Y., Kang, M.J., et al."
+        },
+        {
+          "year": "2018",
+          "title": "Model-based control of soft robotic manipulators: A survey.",
+          "publisher": "IEEE Robotics & Automation Magazine",
+          "authors": "Kang, M.J., Zhang, W."
+        },
+        {
+          "year": "2017",
+          "title": "Variable stiffness actuators for adaptive robotic systems.",
+          "publisher": "IEEE/ASME Transactions on Mechatronics",
+          "authors": "Park, J.H., Lee, H.W., Kang, M.J."
+        },
+        {
+          "year": "2016",
+          "title": "Pneumatic artificial muscles for soft robotic applications.",
+          "publisher": "Journal of Intelligent Material Systems and Structures",
+          "authors": "Kang, M.J., et al."
+        }
+      ],
+      "extracted_value": [
+        {
+          "link": null,
+          "year": "2024",
+          "title": "Self-healing soft robotic actuators with embedded liquid metal circuits",
+          "authors": "Kang, M.J., Park, J.H., & Kim, S.Y.",
+          "publisher": "Science Robotics"
+        },
+        {
+          "link": null,
+          "year": "2024",
+          "title": "Machine learning for adaptive control of soft robotic manipulators",
+          "authors": "Lee, H.W., Kang, M.J., et al.",
+          "publisher": "IEEE Transactions on Robotics"
+        },
+        {
+          "link": null,
+          "year": "2023",
+          "title": "Pneumatic soft robots with variable stiffness for safe human collaboration",
+          "authors": "Kang, M.J. & Chen, Y.",
+          "publisher": "Nature Communications"
+        },
+        {
+          "link": null,
+          "year": "2023",
+          "title": "Bio-inspired climbing robots using gecko-like adhesion mechanisms",
+          "authors": "Park, J.H., Kang, M.J., & Zhang, W.",
+          "publisher": "Advanced Materials"
+        },
+        {
+          "link": null,
+          "year": "2023",
+          "title": "Deep reinforcement learning for dexterous manipulation with soft robotic hands",
+          "authors": "Kang, M.J., Lee, H.W., & Kim, S.Y.",
+          "publisher": "IEEE Transactions on Automation Science and Engineering"
+        },
+        {
+          "link": null,
+          "year": "2022",
+          "title": "Soft wearable exosuits for gait assistance and rehabilitation",
+          "authors": "Kim, S.Y. & Kang, M.J.",
+          "publisher": "Science Translational Medicine"
+        },
+        {
+          "link": null,
+          "year": "2022",
+          "title": "Multi-modal sensing in soft robotics: Integration and applications",
+          "authors": "Kang, M.J. et al.",
+          "publisher": "IEEE Sensors Journal"
+        },
+        {
+          "link": null,
+          "year": "2021",
+          "title": "Origami-inspired soft robots with programmable morphology",
+          "authors": "Zhang, W., Park, J.H., & Kang, M.J.",
+          "publisher": "PNAS"
+        },
+        {
+          "link": null,
+          "year": "2021",
+          "title": "Human-robot physical interaction: Safety, comfort, and performance metrics",
+          "authors": "Kang, M.J., Lee, H.W., & Chen, Y.",
+          "publisher": "International Journal of Robotics Research"
+        },
+        {
+          "link": null,
+          "year": "2020",
+          "title": "Soft robotic grippers with tactile sensing for delicate object manipulation",
+          "authors": "Lee, H.W. & Kang, M.J.",
+          "publisher": "Soft Robotics"
+        },
+        {
+          "link": null,
+          "year": "2020",
+          "title": "Design principles for compliant robotic mechanisms",
+          "authors": "Kang, M.J., Kim, S.Y., & Park, J.H.",
+          "publisher": "Mechanism and Machine Theory"
+        },
+        {
+          "link": null,
+          "year": "2019",
+          "title": "Untethered soft robots powered by liquid metal-elastomer conductors",
+          "authors": "Chen, Y., Kang, M.J., et al.",
+          "publisher": "Advanced Functional Materials"
+        },
+        {
+          "link": null,
+          "year": "2018",
+          "title": "Model-based control of soft robotic manipulators: A survey",
+          "authors": "Kang, M.J. & Zhang, W.",
+          "publisher": "IEEE Robotics & Automation Magazine"
+        },
+        {
+          "link": null,
+          "year": "2017",
+          "title": "Variable stiffness actuators for adaptive robotic systems",
+          "authors": "Park, J.H., Lee, H.W., & Kang, M.J.",
+          "publisher": "IEEE/ASME Transactions on Mechatronics"
+        },
+        {
+          "link": null,
+          "year": "2016",
+          "title": "Pneumatic artificial muscles for soft robotic applications",
+          "authors": "Kang, M.J. et al.",
+          "publisher": "Journal of Intelligent Material Systems and Structures"
+        }
+      ],
+      "reasoning": "The predicted array contains 15 items corresponding to the 15 items in the gold array. I evaluated each pair based on the fields present in the gold array: 'year', 'title', 'authors', and 'publisher'....",
+      "array_breakdown": {
+        "matched": 15,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "Self-healing soft robotic actuators with embedded liquid metal circuits.",
+          "Machine learning for adaptive control of soft robotic manipulators.",
+          "Pneumatic soft robots with variable stiffness for safe human collaboration.",
+          "Bio-inspired climbing robots using gecko-like adhesion mechanisms.",
+          "Deep reinforcement learning for dexterous manipulation with soft robotic hands.",
+          "Soft wearable exosuits for gait assistance and rehabilitation.",
+          "Multi-modal sensing in soft robotics: Integration and applications.",
+          "Origami-inspired soft robots with programmable morphology.",
+          "Human-robot physical interaction: Safety, comfort, and performance metrics.",
+          "Soft robotic grippers with tactile sensing for delicate object manipulation.",
+          "Design principles for compliant robotic mechanisms.",
+          "Untethered soft robots powered by liquid metal-elastomer conductors.",
+          "Model-based control of soft robotic manipulators: A survey.",
+          "Variable stiffness actuators for adaptive robotic systems.",
+          "Pneumatic artificial muscles for soft robotic applications."
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.workExperience",
+      "normalized_path": "workExperience",
+      "metric_id": "array_llm",
+      "score": 0.8571428571428571,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "employer": "Korea Advanced Institute of Science and Technology (KAIST), School of Mechanical Engineering",
+          "jobTitle": "Professor",
+          "startDate": 2020,
+          "endDate": null,
+          "isCurrent": true
+        },
+        {
+          "employer": "Korea Advanced Institute of Science and Technology (KAIST), School of Mechanical Engineering",
+          "jobTitle": "Associate Professor",
+          "startDate": 2015,
+          "endDate": 2020,
+          "isCurrent": false
+        },
+        {
+          "employer": "Korea Advanced Institute of Science and Technology (KAIST), School of Mechanical Engineering",
+          "jobTitle": "Associate Professor",
+          "startDate": 2011,
+          "endDate": 2015,
+          "isCurrent": false
+        },
+        {
+          "employer": "Massachusetts Institute of Technology, Computer Science and Artificial Intelligence Laboratory (CSAIL)",
+          "jobTitle": "Postdoctoral Research Associate",
+          "startDate": 2009,
+          "endDate": 2011,
+          "isCurrent": false
+        },
+        {
+          "employer": "Stanford University, CHARM Lab",
+          "jobTitle": "Visiting Professor",
+          "startDate": "Summer 2019",
+          "endDate": "Summer 2019",
+          "isCurrent": false
+        },
+        {
+          "employer": "ETH Zurich, Multi-Scale Robotics Lab",
+          "jobTitle": "Visiting Researcher",
+          "startDate": 2017,
+          "endDate": 2017,
+          "isCurrent": false
+        },
+        {
+          "employer": "Carnegie Mellon University, Robotics Institute",
+          "jobTitle": "Visiting Scholar",
+          "startDate": 2014,
+          "endDate": 2014,
+          "isCurrent": false
+        }
+      ],
+      "extracted_value": [
+        {
+          "employer": "Korea Advanced Institute of Science and Technology (KAIST)",
+          "endDate": null,
+          "startDate": "2020",
+          "category": null,
+          "jobTitle": "Professor",
+          "isCurrent": true,
+          "description": "School of Mechanical Engineering"
+        },
+        {
+          "employer": "Korea Advanced Institute of Science and Technology (KAIST)",
+          "endDate": "2020",
+          "startDate": "2015",
+          "category": null,
+          "jobTitle": "Associate Professor",
+          "isCurrent": false,
+          "description": null
+        },
+        {
+          "employer": "Korea Advanced Institute of Science and Technology (KAIST)",
+          "endDate": "2015",
+          "startDate": "2011",
+          "category": null,
+          "jobTitle": "Assistant Professor",
+          "isCurrent": false,
+          "description": null
+        },
+        {
+          "employer": "Massachusetts Institute of Technology, Computer Science and Artificial Intelligence Laboratory (CSAIL)",
+          "endDate": "2011",
+          "startDate": "2009",
+          "category": null,
+          "jobTitle": "Postdoctoral Research Associate",
+          "isCurrent": false,
+          "description": "Advisor: Prof. Daniela Rus"
+        },
+        {
+          "employer": "Stanford University, CHARM Lab",
+          "endDate": "2019",
+          "startDate": "2019",
+          "category": null,
+          "jobTitle": "Visiting Professor",
+          "isCurrent": false,
+          "description": "Summer 2019"
+        },
+        {
+          "employer": "ETH Zurich, Multi-Scale Robotics Lab",
+          "endDate": "2017",
+          "startDate": "2017",
+          "category": null,
+          "jobTitle": "Visiting Researcher",
+          "isCurrent": false,
+          "description": "3 months"
+        },
+        {
+          "employer": "Carnegie Mellon University, Robotics Institute",
+          "endDate": "2014",
+          "startDate": "2014",
+          "category": null,
+          "jobTitle": "Visiting Scholar",
+          "isCurrent": false,
+          "description": null
+        }
+      ],
+      "reasoning": "The evaluation compares 7 gold work experience items against 7 predicted items. \n\n1. **KAIST Professor (2020-)**: The predicted item matches the gold item. The employer name is semantically equivalent...",
+      "array_breakdown": {
+        "matched": 6,
+        "missed_gold": 1,
+        "spurious_pred": 1,
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571,
+        "matched_items": [
+          "KAIST Professor (2020-)",
+          "KAIST Associate Professor (2015-2020)",
+          "MIT Postdoctoral Research Associate (2009-2011)",
+          "Stanford Visiting Professor (2019)",
+          "ETH Zurich Visiting Researcher (2017)",
+          "Carnegie Mellon Visiting Scholar (2014)"
+        ],
+        "missed_gold_items": [
+          {
+            "employer": "Korea Advanced Institute of Science and Technology (KAIST), School of Mechanical Engineering",
+            "jobTitle": "Associate Professor",
+            "startDate": 2011,
+            "endDate": 2015,
+            "isCurrent": false
+          }
+        ],
+        "spurious_pred_items": [
+          {
+            "employer": "Korea Advanced Institute of Science and Technology (KAIST)",
+            "endDate": "2015",
+            "startDate": "2011",
+            "category": null,
+            "jobTitle": "Assistant Professor",
+            "isCurrent": false,
+            "description": null
+          }
+        ]
+      }
+    },
+    {
+      "path": "$.properties.certificationsAndAwards",
+      "normalized_path": "certificationsAndAwards",
+      "metric_id": "array_llm",
+      "score": 0.9444444444444444,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "organization": "IEEE",
+          "description": "IEEE Fellow - \"For contributions to soft robotics and human-robot interaction\"",
+          "date": "2023"
+        },
+        {
+          "organization": "IEEE",
+          "description": "IEEE Robotics and Automation Society Early Career Award",
+          "date": "2021"
+        },
+        {
+          "organization": "Korean Academy of Science and Technology",
+          "description": "Young Scientist Award",
+          "date": "2020"
+        },
+        {
+          "organization": "KAIST",
+          "description": "Outstanding Teaching Award",
+          "date": "2019, 2022"
+        },
+        {
+          "organization": "MIT",
+          "description": "Technology Review Innovators Under 35 - Korea",
+          "date": "2017"
+        },
+        {
+          "organization": "NSF",
+          "description": "NRF Young Researcher Program",
+          "date": "2014"
+        },
+        {
+          "organization": "MIT EECS Department",
+          "description": "Best PhD Thesis Award",
+          "date": "2009"
+        },
+        {
+          "organization": "Samsung",
+          "description": "Scholarship for PhD studies at MIT",
+          "date": "2005-2009"
+        },
+        {
+          "organization": "Korean Government",
+          "description": "Presidential Science Scholarship",
+          "date": "1999-2003"
+        },
+        {
+          "organization": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "description": "Fellow"
+        },
+        {
+          "organization": "IEEE Robotics and Automation Society",
+          "description": "Senior Member"
+        },
+        {
+          "organization": "Korean Academy of Science and Technology",
+          "description": "Member"
+        },
+        {
+          "organization": "Korean Robotics Society",
+          "description": "Member"
+        },
+        {
+          "organization": "Association for Computing Machinery (ACM)",
+          "description": "Member"
+        },
+        {
+          "organization": "IEEE ICRA",
+          "description": "Best Paper Award",
+          "date": "2023"
+        },
+        {
+          "organization": "IEEE/RSJ IROS",
+          "description": "Best Paper Award Finalist",
+          "date": "2021, 2019"
+        },
+        {
+          "organization": "IEEE RO-MAN",
+          "description": "Best Paper in Human-Robot Interaction",
+          "date": "2018"
+        },
+        {
+          "organization": "RSS",
+          "description": "Best Student Paper Award",
+          "date": "2016"
+        }
+      ],
+      "extracted_value": [
+        {
+          "date": "2023",
+          "category": "Award",
+          "description": "For contributions to soft robotics and human-robot interaction",
+          "organization": "IEEE"
+        },
+        {
+          "date": "2021",
+          "category": "Award",
+          "description": "IEEE Robotics and Automation Society Early Career Award",
+          "organization": "IEEE"
+        },
+        {
+          "date": "2020",
+          "category": "Award",
+          "description": "Korean Academy of Science and Technology Young Scientist Award",
+          "organization": "Korean Academy of Science and Technology"
+        },
+        {
+          "date": "2019, 2022",
+          "category": "Award",
+          "description": "KAIST Outstanding Teaching Award",
+          "organization": "KAIST"
+        },
+        {
+          "date": "2017",
+          "category": "Award",
+          "description": "MIT Technology Review Innovators Under 35 - Korea",
+          "organization": "MIT Technology Review"
+        },
+        {
+          "date": "2014",
+          "category": "Award",
+          "description": "NSF CAREER Award equivalent - NRF Young Researcher Program",
+          "organization": "NRF"
+        },
+        {
+          "date": "2009",
+          "category": "Award",
+          "description": "Best PhD Thesis Award, MIT EECS Department",
+          "organization": "MIT"
+        },
+        {
+          "date": "2005-2009",
+          "category": "Award",
+          "description": "Samsung Scholarship for PhD studies at MIT",
+          "organization": "Samsung"
+        },
+        {
+          "date": "1999-2003",
+          "category": "Award",
+          "description": "Presidential Science Scholarship, Korean Government",
+          "organization": "Korean Government"
+        },
+        {
+          "date": "2023",
+          "category": "Award",
+          "description": "Best Paper Award, IEEE ICRA",
+          "organization": "IEEE"
+        },
+        {
+          "date": "2021, 2019",
+          "category": "Award",
+          "description": "Best Paper Award Finalist, IEEE/RSJ IROS",
+          "organization": "IEEE/RSJ"
+        },
+        {
+          "date": "2018",
+          "category": "Award",
+          "description": "Best Paper in Human-Robot Interaction, IEEE RO-MAN",
+          "organization": "IEEE"
+        },
+        {
+          "date": "2016",
+          "category": "Award",
+          "description": "Best Student Paper Award, RSS",
+          "organization": "RSS"
+        },
+        {
+          "date": null,
+          "category": "Membership",
+          "description": "Fellow, Institute of Electrical and Electronics Engineers (IEEE)",
+          "organization": "IEEE"
+        },
+        {
+          "date": null,
+          "category": "Membership",
+          "description": "Senior Member, IEEE Robotics and Automation Society",
+          "organization": "IEEE"
+        },
+        {
+          "date": null,
+          "category": "Membership",
+          "description": "Member, Korean Academy of Science and Technology",
+          "organization": "Korean Academy of Science and Technology"
+        },
+        {
+          "date": null,
+          "category": "Membership",
+          "description": "Member, Korean Robotics Society",
+          "organization": "Korean Robotics Society"
+        },
+        {
+          "date": null,
+          "category": "Membership",
+          "description": "Member, Association for Computing Machinery (ACM)",
+          "organization": "ACM"
+        }
+      ],
+      "reasoning": "The evaluation compares 18 gold items against 18 predicted items. The predicted items include an extra 'category' field which is not present in the gold schema; however, since the task is to match gol...",
+      "array_breakdown": {
+        "matched": 17,
+        "missed_gold": 1,
+        "spurious_pred": 1,
+        "precision": 0.9444444444444444,
+        "recall": 0.9444444444444444,
+        "f1": 0.9444444444444444,
+        "matched_items": [
+          "IEEE Fellow - \"For contributions to soft robotics and human-robot interaction\" (2023)",
+          "IEEE Robotics and Automation Society Early Career Award (2021)",
+          "Young Scientist Award (2020)",
+          "Outstanding Teaching Award (2019, 2022)",
+          "Technology Review Innovators Under 35 - Korea (2017)",
+          "Best PhD Thesis Award (2009)",
+          "Scholarship for PhD studies at MIT (2005-2009)",
+          "Presidential Science Scholarship (1999-2003)",
+          "Best Paper Award (2023)",
+          "Best Paper Award Finalist (2021, 2019)",
+          "Best Paper in Human-Robot Interaction (2018)",
+          "Best Student Paper Award (2016)",
+          "Fellow (IEEE)",
+          "Senior Member (IEEE RAS)",
+          "Member (Korean Academy of Science and Technology)",
+          "Member (Korean Robotics Society)",
+          "Member (ACM)"
+        ],
+        "missed_gold_items": [
+          {
+            "organization": "NSF",
+            "description": "NRF Young Researcher Program",
+            "date": "2014"
+          }
+        ],
+        "spurious_pred_items": [
+          {
+            "date": "2014",
+            "category": "Award",
+            "description": "NSF CAREER Award equivalent - NRF Young Researcher Program",
+            "organization": "NRF"
+          }
+        ]
+      }
+    }
+  ],
+  "overall_score": 0.9384615384615385,
+  "field_score": 0.8992673992673992,
+  "overall_pass_rate": 0.9230769230769231
+}

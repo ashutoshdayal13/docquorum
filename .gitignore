@@ -1,0 +1,15 @@
+# benchmark data and model/parse caches (large, third-party; see README for where to get them)
+data/
+cache/
+# run folders and logs (reproducible with the benchmark runners)
+runs/
+logs/
+# the benchmark papers (third-party)
+ref_papers/
+# Python / LaTeX build files
+__pycache__/
+*.pyc
+.pytest_cache/
+docs/*.aux
+docs/*.log
+docs/*.out

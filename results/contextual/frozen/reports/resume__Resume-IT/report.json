@@ -1,0 +1,678 @@
+{
+  "output_name": "resume__Resume-IT",
+  "timestamp": "2026-09-28T04:39:29.097806",
+  "schema_hash": "581f8d7f",
+  "gold_hash": "8fcabb06",
+  "extracted_hash": "316a1974",
+  "schema_stats": {
+    "total_nodes": 67,
+    "counts_by_type": {
+      "object": 9,
+      "array": 11,
+      "string": 30,
+      "anyof": 7,
+      "null": 5,
+      "integer": 4,
+      "boolean": 1
+    },
+    "required_keys_count": 3,
+    "optional_keys_count": 35,
+    "required_by_type": {
+      "object": 1,
+      "string": 1,
+      "array": 1
+    },
+    "optional_by_type": {
+      "array": 9,
+      "string": 17,
+      "anyof": 7,
+      "object": 1,
+      "boolean": 1
+    }
+  },
+  "gold_stats": {
+    "label": "gold",
+    "total_keys": 44,
+    "counts_by_type": {
+      "array": 14,
+      "string": 23,
+      "object": 3,
+      "null": 1,
+      "boolean": 3
+    },
+    "array_stats": {
+      "array_field_count": 14,
+      "total_items": 47,
+      "min_length": 0,
+      "median_length": 2.0,
+      "max_length": 13
+    },
+    "null_count": 1,
+    "missing_count": 0
+  },
+  "extracted_stats": {
+    "label": "extracted",
+    "total_keys": 62,
+    "counts_by_type": {
+      "object": 1,
+      "string": 45,
+      "array": 9,
+      "null": 4,
+      "boolean": 3
+    },
+    "array_stats": {
+      "array_field_count": 9,
+      "total_items": 22,
+      "min_length": 0,
+      "median_length": 1,
+      "max_length": 13
+    },
+    "null_count": 4,
+    "missing_count": 0
+  },
+  "coverage": {
+    "present_in_both": 18,
+    "missing_in_extracted": 7,
+    "spurious_in_extracted": 5,
+    "required_missing": 0,
+    "missing_paths": [
+      "languages",
+      "personalInfo.contact.emails",
+      "personalInfo.contact.phones",
+      "skills.Databases & Tools",
+      "skills.Frameworks & Libraries",
+      "skills.Methodologies",
+      "skills.Programming Languages"
+    ],
+    "spurious_paths": [
+      "certificationsAndAwards.category",
+      "certificationsAndAwards.date",
+      "certificationsAndAwards.organization",
+      "skills.type",
+      "workExperience.category"
+    ]
+  },
+  "outcomes": {
+    "total_evaluated": 13,
+    "total_passed": 9,
+    "total_failed": 4,
+    "pass_rate": 0.6923076923076923,
+    "pass_by_metric": {
+      "array_llm": {
+        "passed": 8,
+        "failed": 3
+      },
+      "string_semantic": {
+        "passed": 1,
+        "failed": 1
+      }
+    },
+    "pass_by_type": {
+      "array": {
+        "passed": 8,
+        "failed": 3
+      },
+      "string": {
+        "passed": 1,
+        "failed": 1
+      }
+    },
+    "pass_by_required": {
+      "optional": {
+        "passed": 9,
+        "failed": 4
+      }
+    },
+    "confusion": {
+      "true_positive": 6,
+      "false_positive": 0,
+      "false_negative": 4,
+      "true_negative": 3
+    },
+    "llm_stats": {
+      "call_count": 13,
+      "avg_score": 0.6923076923076923,
+      "median_score": 1.0,
+      "score_distribution": {
+        "0.8-1.0": 9,
+        "0.0-0.2": 4
+      },
+      "top_lowest_fields": [
+        {
+          "path": "socialLinks",
+          "metric_id": "array_llm",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "personalInfo.contact.emails",
+          "metric_id": "array_llm",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "personalInfo.contact.phones",
+          "metric_id": "array_llm",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "personalInfo.personalStatement",
+          "metric_id": "string_semantic",
+          "score": 0.0,
+          "reasoning": "The predicted string is a massive repetition of the gold string, followed by a truncated sentence. While the core semantic content is present, the extreme redundancy and the incomplete final sentence ..."
+        },
+        {
+          "path": "media",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": ""
+        }
+      ]
+    },
+    "error_breakdown": {
+      "by_path_prefix": {
+        "socialLinks": 1,
+        "personalInfo": 3
+      },
+      "by_metric_type": {
+        "array_llm": 3,
+        "string_semantic": 1
+      },
+      "by_reason": {
+        "semantic_mismatch": 2,
+        "extracted_absent": 2
+      },
+      "details": [
+        {
+          "category": "semantic_mismatch",
+          "count": 2,
+          "paths": []
+        },
+        {
+          "category": "extracted_absent",
+          "count": 2,
+          "paths": []
+        }
+      ]
+    }
+  },
+  "field_outcomes": [
+    {
+      "path": "$.properties.media",
+      "normalized_path": "media",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": "both_empty_array",
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.other",
+      "normalized_path": "other",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": "both_empty_array",
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.socialLinks",
+      "normalized_path": "socialLinks",
+      "metric_id": "array_llm",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_empty_array",
+      "gold_value": [
+        "http://linkedin.com/in/marcuschen-dev",
+        "https://github.com/marcuschen"
+      ],
+      "extracted_value": [],
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.publications",
+      "normalized_path": "publications",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": "both_empty_array",
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.personalInfo.properties.contact.properties.emails",
+      "normalized_path": "personalInfo.contact.emails",
+      "metric_id": "array_llm",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_missing",
+      "gold_value": [
+        "marcus.chen@devmail.com"
+      ],
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.personalInfo.properties.contact.properties.phones",
+      "normalized_path": "personalInfo.contact.phones",
+      "metric_id": "array_llm",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_missing",
+      "gold_value": [
+        "987123456"
+      ],
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.personalInfo.properties.fullName",
+      "normalized_path": "personalInfo.fullName",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "Marcus Chen",
+      "extracted_value": "Marcus Chen",
+      "reasoning": "The predicted string is identical to the gold string. There are no differences in casing, punctuation, or content.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.personalInfo.properties.personalStatement",
+      "normalized_path": "personalInfo.personalStatement",
+      "metric_id": "string_semantic",
+      "score": 0.0,
+      "passed": false,
+      "reason": null,
+      "gold_value": "Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions.",
+      "extracted_value": "Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and cloud-based solutions. Full-stack software engineer with 8+ years of experience building scalable web applications and",
+      "reasoning": "The predicted string is a massive repetition of the gold string, followed by a truncated sentence. While the core semantic content is present, the extreme redundancy and the incomplete final sentence ...",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.languages",
+      "normalized_path": "languages",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        "English (Native)",
+        "French (Fluent)",
+        "German (Intermediate)"
+      ],
+      "extracted_value": [
+        {
+          "type": "English (Native)"
+        },
+        {
+          "type": "French (Fluent)"
+        },
+        {
+          "type": "German (Intermediate)"
+        }
+      ],
+      "reasoning": "The gold array contains three string items representing languages and proficiency levels. The predicted array contains three objects, each with a 'type' field containing the exact same string values a...",
+      "array_breakdown": {
+        "matched": 3,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "English (Native)",
+          "French (Fluent)",
+          "German (Intermediate)"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.education",
+      "normalized_path": "education",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "endDate": "June 2016",
+          "startDate": "September 2012",
+          "description": "GPA: 3.7/4.0\nRelevant coursework: Algorithms, Database Systems, Machine Learning, Distributed Systems",
+          "institution": "Northbridge Institute of Technology",
+          "qualificationTitle": "BS - Computer Science"
+        }
+      ],
+      "extracted_value": [
+        {
+          "endDate": "June 2016",
+          "startDate": "September 2012",
+          "description": "GPA: 3.7/4.0\nRelevant coursework: Algorithms, Database Systems, Machine Learning, Distributed Systems",
+          "institution": "Northbridge Institute of Technology",
+          "qualificationTitle": "BS - Computer Science"
+        }
+      ],
+      "reasoning": "The gold array contains one education history entry. The predicted array contains one entry that is identical to the gold entry in all fields: 'endDate', 'startDate', 'description', 'institution', and...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "endDate": "June 2016",
+            "startDate": "September 2012",
+            "description": "GPA: 3.7/4.0\nRelevant coursework: Algorithms, Database Systems, Machine Learning, Distributed Systems",
+            "institution": "Northbridge Institute of Technology",
+            "qualificationTitle": "BS - Computer Science"
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.workExperience",
+      "normalized_path": "workExperience",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "employer": "NexaTech Solutions",
+          "endDate": null,
+          "jobTitle": "Senior Software Engineer",
+          "isCurrent": true,
+          "startDate": "January 2021",
+          "description": "Architected and developed microservices platform serving 2M+ daily active users\nLed migration from monolithic architecture to containerized infrastructure\nMentored team of 6 junior developers and conducted code reviews\nReduced API response times by 45% through optimization and caching strategies"
+        },
+        {
+          "employer": "CloudFlow Systems",
+          "endDate": "December 2020",
+          "jobTitle": "Software Developer",
+          "isCurrent": false,
+          "startDate": "March 2018",
+          "description": "Built real-time data processing pipeline handling 500K events per second\nImplemented CI/CD pipelines reducing deployment time by 60%\nDeveloped RESTful APIs and GraphQL endpoints for mobile applications\nCollaborated with product team to define technical requirements and roadmap"
+        },
+        {
+          "employer": "VentureSpace Digital",
+          "endDate": "February 2018",
+          "jobTitle": "Junior Developer",
+          "isCurrent": false,
+          "startDate": "July 2016",
+          "description": "Created responsive web applications using React and Node.js\nIntegrated third-party payment systems into e-commerce platform\nWrote comprehensive unit and integration tests achieving 85% code coverage\nParticipated in agile development process with daily standups and sprint planning"
+        }
+      ],
+      "extracted_value": [
+        {
+          "employer": "NexaTech Solutions",
+          "endDate": null,
+          "startDate": "January 2021",
+          "category": null,
+          "jobTitle": "Senior Software Engineer",
+          "isCurrent": true,
+          "description": "Architected and developed microservices platform serving 2M+ daily active users; Led migration from monolithic architecture to containerized infrastructure; Mentored team of 6 junior developers and conducted code reviews; Reduced API response times by 45% through optimization and caching strategies"
+        },
+        {
+          "employer": "CloudFlow Systems",
+          "endDate": "December 2020",
+          "startDate": "March 2018",
+          "category": null,
+          "jobTitle": "Software Developer",
+          "isCurrent": false,
+          "description": "Built real-time data processing pipeline handling 500K events per second; Implemented CI/CD pipelines reducing deployment time by 60%; Developed RESTful APIs and GraphQL endpoints for mobile applications; Collaborated with product team to define technical requirements and roadmap"
+        },
+        {
+          "employer": "VentureSpace Digital",
+          "endDate": "February 2018",
+          "startDate": "July 2016",
+          "category": null,
+          "jobTitle": "Junior Developer",
+          "isCurrent": false,
+          "description": "Created responsive web applications using React and Node.js; Integrated third-party payment systems into e-commerce platform; Wrote comprehensive unit and integration tests achieving 85% code coverage; Participated in agile development process with daily standups and sprint planning"
+        }
+      ],
+      "reasoning": "The predicted array contains 3 items that correspond to the 3 items in the gold array. \n\n1. **NexaTech Solutions**: \n   - `employer`, `endDate`, `startDate`, `jobTitle`, `isCurrent` all match exactly....",
+      "array_breakdown": {
+        "matched": 3,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "NexaTech Solutions",
+          "CloudFlow Systems",
+          "VentureSpace Digital"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.certificationsAndAwards",
+      "normalized_path": "certificationsAndAwards",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "description": "Cloud Solutions Architect - Professional Level"
+        },
+        {
+          "description": "Database Administrator Certification"
+        }
+      ],
+      "extracted_value": [
+        {
+          "date": "",
+          "category": "Certification",
+          "description": "Cloud Solutions Architect - Professional Level",
+          "organization": ""
+        },
+        {
+          "date": "",
+          "category": "Certification",
+          "description": "Database Administrator Certification",
+          "organization": ""
+        }
+      ],
+      "reasoning": "The gold array contains two items, each with a 'description' field. The predicted array contains two items with 'description', 'date', 'category', and 'organization' fields. \n\n1. Gold item 1: {\"descri...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "gold": {
+              "description": "Cloud Solutions Architect - Professional Level"
+            },
+            "predicted": {
+              "date": "",
+              "category": "Certification",
+              "description": "Cloud Solutions Architect - Professional Level",
+              "organization": ""
+            }
+          },
+          {
+            "gold": {
+              "description": "Database Administrator Certification"
+            },
+            "predicted": {
+              "date": "",
+              "category": "Certification",
+              "description": "Database Administrator Certification",
+              "organization": ""
+            }
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.skills",
+      "normalized_path": "skills",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": {
+        "Programming Languages": [
+          "JavaScript/TypeScript",
+          "Python",
+          "Java",
+          "Go",
+          "HTML5",
+          "CSS3",
+          "SQL"
+        ],
+        "Frameworks & Libraries": [
+          "React",
+          "Next.js",
+          "Vue.js",
+          "Node.js",
+          "Express",
+          "Django",
+          "Flask",
+          "Spring Boot",
+          "TensorFlow",
+          "PyTorch"
+        ],
+        "Databases & Tools": [
+          "PostgreSQL",
+          "MongoDB",
+          "Redis",
+          "Elasticsearch",
+          "Docker",
+          "Kubernetes",
+          "Cloud platforms",
+          "Git",
+          "Jenkins",
+          "CI/CD tools",
+          "Jest",
+          "Pytest",
+          "Selenium"
+        ],
+        "Methodologies": [
+          "Agile/Scrum development",
+          "Test-driven development (TDD)",
+          "Microservices architecture",
+          "RESTful API design"
+        ]
+      },
+      "extracted_value": [
+        {
+          "type": "JavaScript/TypeScript, Python, Java, Go"
+        },
+        {
+          "type": "HTML5, CSS3, SQL"
+        },
+        {
+          "type": "React, Next.js, Vue.js, Node.js, Express"
+        },
+        {
+          "type": "Django, Flask, Spring Boot"
+        },
+        {
+          "type": "TensorFlow, PyTorch"
+        },
+        {
+          "type": "PostgreSQL, MongoDB, Redis, Elasticsearch"
+        },
+        {
+          "type": "Docker, Kubernetes, Cloud platforms"
+        },
+        {
+          "type": "Git, Jenkins, CI/CD tools"
+        },
+        {
+          "type": "Jest, Pytest, Selenium"
+        },
+        {
+          "type": "Agile/Scrum development"
+        },
+        {
+          "type": "Test-driven development (TDD)"
+        },
+        {
+          "type": "Microservices architecture"
+        },
+        {
+          "type": "RESTful API design"
+        }
+      ],
+      "reasoning": "The gold array is a structured object with four categories, each containing a list of specific technologies or methodologies. The predicted array is a flat list of objects where each object has a 'typ...",
+      "array_breakdown": {
+        "matched": 34,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "JavaScript/TypeScript",
+          "Python",
+          "Java",
+          "Go",
+          "HTML5",
+          "CSS3",
+          "SQL",
+          "React",
+          "Next.js",
+          "Vue.js",
+          "Node.js",
+          "Express",
+          "Django",
+          "Flask",
+          "Spring Boot",
+          "TensorFlow",
+          "PyTorch",
+          "PostgreSQL",
+          "MongoDB",
+          "Redis",
+          "Elasticsearch",
+          "Docker",
+          "Kubernetes",
+          "Cloud platforms",
+          "Git",
+          "Jenkins",
+          "CI/CD tools",
+          "Jest",
+          "Pytest",
+          "Selenium",
+          "Agile/Scrum development",
+          "Test-driven development (TDD)",
+          "Microservices architecture",
+          "RESTful API design"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    }
+  ],
+  "overall_score": 0.9215686274509803,
+  "field_score": 0.6923076923076923,
+  "overall_pass_rate": 0.6923076923076923
+}

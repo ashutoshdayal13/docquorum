@@ -1,0 +1,763 @@
+{
+  "output_name": "resume__Resume-Marketing",
+  "timestamp": "2026-09-28T03:20:03.979595",
+  "schema_hash": "581f8d7f",
+  "gold_hash": "82c9aeb9",
+  "extracted_hash": "82c9aeb9",
+  "schema_stats": {
+    "total_nodes": 67,
+    "counts_by_type": {
+      "object": 9,
+      "array": 11,
+      "string": 30,
+      "anyof": 7,
+      "null": 5,
+      "integer": 4,
+      "boolean": 1
+    },
+    "required_keys_count": 3,
+    "optional_keys_count": 35,
+    "required_by_type": {
+      "object": 1,
+      "string": 1,
+      "array": 1
+    },
+    "optional_by_type": {
+      "array": 9,
+      "string": 17,
+      "anyof": 7,
+      "object": 1,
+      "boolean": 1
+    }
+  },
+  "gold_stats": {
+    "label": "gold",
+    "total_keys": 75,
+    "counts_by_type": {
+      "object": 3,
+      "string": 52,
+      "array": 16,
+      "null": 1,
+      "boolean": 3
+    },
+    "array_stats": {
+      "array_field_count": 16,
+      "total_items": 49,
+      "min_length": 0,
+      "median_length": 2.0,
+      "max_length": 12
+    },
+    "null_count": 1,
+    "missing_count": 0
+  },
+  "extracted_stats": {
+    "label": "extracted",
+    "total_keys": 75,
+    "counts_by_type": {
+      "object": 3,
+      "string": 52,
+      "array": 16,
+      "null": 1,
+      "boolean": 3
+    },
+    "array_stats": {
+      "array_field_count": 16,
+      "total_items": 49,
+      "min_length": 0,
+      "median_length": 2.0,
+      "max_length": 12
+    },
+    "null_count": 1,
+    "missing_count": 0
+  },
+  "coverage": {
+    "present_in_both": 29,
+    "missing_in_extracted": 0,
+    "spurious_in_extracted": 0,
+    "required_missing": 0,
+    "missing_paths": [],
+    "spurious_paths": []
+  },
+  "outcomes": {
+    "total_evaluated": 13,
+    "total_passed": 13,
+    "total_failed": 0,
+    "pass_rate": 1.0,
+    "pass_by_metric": {
+      "array_llm": {
+        "passed": 11,
+        "failed": 0
+      },
+      "string_semantic": {
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "pass_by_type": {
+      "array": {
+        "passed": 11,
+        "failed": 0
+      },
+      "string": {
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "pass_by_required": {
+      "optional": {
+        "passed": 13,
+        "failed": 0
+      }
+    },
+    "confusion": {
+      "true_positive": 9,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_negative": 4
+    },
+    "llm_stats": {
+      "call_count": 13,
+      "avg_score": 1.0,
+      "median_score": 1.0,
+      "score_distribution": {
+        "0.8-1.0": 13
+      },
+      "top_lowest_fields": [
+        {
+          "path": "media",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": ""
+        },
+        {
+          "path": "other",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": ""
+        },
+        {
+          "path": "languages",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": ""
+        },
+        {
+          "path": "publications",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": ""
+        },
+        {
+          "path": "education",
+          "metric_id": "array_llm",
+          "score": 1.0,
+          "reasoning": "The predicted array contains exactly one item that matches the single gold item. All fields (institution, qualificationTitle, endDate, Location, description) are identical between the gold and predict..."
+        }
+      ]
+    },
+    "error_breakdown": null
+  },
+  "field_outcomes": [
+    {
+      "path": "$.properties.media",
+      "normalized_path": "media",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": "both_empty_array",
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.other",
+      "normalized_path": "other",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": "both_empty_array",
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.languages",
+      "normalized_path": "languages",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": "both_empty_array",
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.publications",
+      "normalized_path": "publications",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": "both_empty_array",
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.education",
+      "normalized_path": "education",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "institution": "Crestview State University",
+          "qualificationTitle": "Bachelor of Business Administration (BBA) - Marketing",
+          "endDate": "2015-04-30T22:00:00.000Z",
+          "Location": "Crestview, OR",
+          "description": "Crestview, OR, Honors: Dean's List: Fall 2013, Spring 2014, Fall 2014"
+        }
+      ],
+      "extracted_value": [
+        {
+          "institution": "Crestview State University",
+          "qualificationTitle": "Bachelor of Business Administration (BBA) - Marketing",
+          "endDate": "2015-04-30T22:00:00.000Z",
+          "Location": "Crestview, OR",
+          "description": "Crestview, OR, Honors: Dean's List: Fall 2013, Spring 2014, Fall 2014"
+        }
+      ],
+      "reasoning": "The predicted array contains exactly one item that matches the single gold item. All fields (institution, qualificationTitle, endDate, Location, description) are identical between the gold and predict...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "institution": "Crestview State University",
+            "qualificationTitle": "Bachelor of Business Administration (BBA) - Marketing",
+            "endDate": "2015-04-30T22:00:00.000Z",
+            "Location": "Crestview, OR",
+            "description": "Crestview, OR, Honors: Dean's List: Fall 2013, Spring 2014, Fall 2014"
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.socialLinks",
+      "normalized_path": "socialLinks",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        "linkedin.com/in/jenniferwalsh"
+      ],
+      "extracted_value": [
+        "linkedin.com/in/jenniferwalsh"
+      ],
+      "reasoning": "The gold array contains one URL: 'linkedin.com/in/jenniferwalsh'. The predicted array contains the exact same URL. According to the 'string_url' metric definition, URLs are compared after normalizatio...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "linkedin.com/in/jenniferwalsh"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.personalInfo.properties.fullName",
+      "normalized_path": "personalInfo.fullName",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "Jennifer Walsh",
+      "extracted_value": "Jennifer Walsh",
+      "reasoning": "The predicted string is identical to the gold string.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.personalInfo.properties.personalStatement",
+      "normalized_path": "personalInfo.personalStatement",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "Dynamic marketing professional with 7+ years of experience driving brand growth and customer engagement across digital and traditional channels. Proven track record of developing successful campaigns that increase revenue by 30%+ and building high-performing teams. Skilled in strategic planning, content creation, social media management, and data-driven decision making.",
+      "extracted_value": "Dynamic marketing professional with 7+ years of experience driving brand growth and customer engagement across digital and traditional channels. Proven track record of developing successful campaigns that increase revenue by 30%+ and building high-performing teams. Skilled in strategic planning, content creation, social media management, and data-driven decision making.",
+      "reasoning": "The predicted string is identical to the gold string.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.skills",
+      "normalized_path": "skills",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": {
+        "Core Competencies": [
+          "Brand Strategy & Development",
+          "Digital Marketing",
+          "Content Marketing",
+          "Social Media Management",
+          "Campaign Planning & Execution",
+          "Market Research & Analysis ",
+          "Team Leadership",
+          "Budget Management",
+          "SEO/SEM",
+          "Email Marketing",
+          "Analytics & Reporting",
+          "Cross-functional Collaboration"
+        ],
+        "Marketing Platforms": [
+          "HubSpot",
+          "Salesforce Marketing Cloud",
+          "Mailchimp",
+          "Hootsuite",
+          "Buffer"
+        ],
+        "Analytics Tools": [
+          "Google Analytics",
+          "Adobe Analytics",
+          "Tableau",
+          "Data Studio"
+        ],
+        "Design Software": [
+          "Adobe Creative Suite (Photoshop, Illustrator)",
+          "Canva",
+          "Figma"
+        ],
+        "CMS & Web": [
+          "WordPress",
+          "Shopify",
+          "Wix",
+          "HTML/CSS basics"
+        ],
+        "Other": [
+          "Microsoft Office Suite",
+          "Google Workspace",
+          "Asana",
+          "Trello",
+          "Slack"
+        ]
+      },
+      "extracted_value": {
+        "Core Competencies": [
+          "Brand Strategy & Development",
+          "Digital Marketing",
+          "Content Marketing",
+          "Social Media Management",
+          "Campaign Planning & Execution",
+          "Market Research & Analysis ",
+          "Team Leadership",
+          "Budget Management",
+          "SEO/SEM",
+          "Email Marketing",
+          "Analytics & Reporting",
+          "Cross-functional Collaboration"
+        ],
+        "Marketing Platforms": [
+          "HubSpot",
+          "Salesforce Marketing Cloud",
+          "Mailchimp",
+          "Hootsuite",
+          "Buffer"
+        ],
+        "Analytics Tools": [
+          "Google Analytics",
+          "Adobe Analytics",
+          "Tableau",
+          "Data Studio"
+        ],
+        "Design Software": [
+          "Adobe Creative Suite (Photoshop, Illustrator)",
+          "Canva",
+          "Figma"
+        ],
+        "CMS & Web": [
+          "WordPress",
+          "Shopify",
+          "Wix",
+          "HTML/CSS basics"
+        ],
+        "Other": [
+          "Microsoft Office Suite",
+          "Google Workspace",
+          "Asana",
+          "Trello",
+          "Slack"
+        ]
+      },
+      "reasoning": "The predicted array is identical to the gold array across all categories. Each item in the 'Core Competencies', 'Marketing Platforms', 'Analytics Tools', 'Design Software', 'CMS & Web', and 'Other' li...",
+      "array_breakdown": {
+        "matched": 32,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "Brand Strategy & Development",
+          "Digital Marketing",
+          "Content Marketing",
+          "Social Media Management",
+          "Campaign Planning & Execution",
+          "Market Research & Analysis ",
+          "Team Leadership",
+          "Budget Management",
+          "SEO/SEM",
+          "Email Marketing",
+          "Analytics & Reporting",
+          "Cross-functional Collaboration",
+          "HubSpot",
+          "Salesforce Marketing Cloud",
+          "Mailchimp",
+          "Hootsuite",
+          "Buffer",
+          "Google Analytics",
+          "Adobe Analytics",
+          "Tableau",
+          "Data Studio",
+          "Adobe Creative Suite (Photoshop, Illustrator)",
+          "Canva",
+          "Figma",
+          "WordPress",
+          "Shopify",
+          "Wix",
+          "HTML/CSS basics",
+          "Microsoft Office Suite",
+          "Google Workspace",
+          "Asana",
+          "Trello",
+          "Slack"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.workExperience",
+      "normalized_path": "workExperience",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "employer": "Velocity Consumer Brands",
+          "jobTitle": "Marketing Manager",
+          "startDate": "2020-03-31T22:00:00.000Z",
+          "endDate": null,
+          "isCurrent": true,
+          "description": "Lead integrated marketing initiatives for three product lines generating $15M in annual revenue; Manage team of four marketing specialists; Collaborate with sales, product, and creative departments; Developed digital marketing strategy increasing online sales by 42%; Launched social media campaign reaching 3.2M impressions and growing follower base by 85% in six months; Managed annual marketing budget of $800K, consistently delivering projects 10% under budget; Implemented marketing automation platform reducing campaign deployment time by 50%; Spearheaded rebranding initiative that improved brand recognition by 28% in target demographics; Coordinated with external agencies and vendors to produce high-quality content and promotional materials."
+        },
+        {
+          "employer": "Horizon Tech Solutions",
+          "jobTitle": "Digital Marketing Specialist",
+          "startDate": "2017-05-31T22:00:00.000Z",
+          "endDate": "2020-02-29T23:00:00.000Z",
+          "isCurrent": false,
+          "description": "Executed multi-channel digital marketing campaigns for B2B technology company serving interprise clients; Collaborated with sales team to generate qualified leads and support customer aquisition skills; Created and managed content calendar resulting in 150% increase in website traffic over 18 months; Optimized SEO strategy improving organic search ranking for 25+ target keywords to first page results; Designed email marketing campaigns achieving average open rate of 32% and click-through rate of 8%; Conducted A/B testing on landing pages increasing conversion rates by 24%; Analyzed campaign performance using analytics tools and provided actionable insights to leadership; Managed company social media presence across five platforms with conistent engagement growth."
+        },
+        {
+          "employer": "Redwood Retail Group",
+          "jobTitle": "Marketing Coordinator",
+          "startDate": "2015-07-31T22:00:00.000Z",
+          "endDate": "2017-04-30T22:00:00.000Z",
+          "isCurrent": false,
+          "description": "Supported marketing department in excuting promotional campaigns for regional retail chain with 12 locations; Assisted with event planning, content creation, and vendor coordination; Coordinated seasonal marketing campaigns driving foot traffic increases by 20% during promotional periods; Created social media content and managed posting schedule across multiple platforms; Assisted in planning and excuting four major customer appreciation events with 500+ attendees each; Maintained marketing materials inventory and coordinated with print vendors; Tracked campaign metrics and prepared month;y performance reports for management review."
+        }
+      ],
+      "extracted_value": [
+        {
+          "employer": "Velocity Consumer Brands",
+          "jobTitle": "Marketing Manager",
+          "startDate": "2020-03-31T22:00:00.000Z",
+          "endDate": null,
+          "isCurrent": true,
+          "description": "Lead integrated marketing initiatives for three product lines generating $15M in annual revenue; Manage team of four marketing specialists; Collaborate with sales, product, and creative departments; Developed digital marketing strategy increasing online sales by 42%; Launched social media campaign reaching 3.2M impressions and growing follower base by 85% in six months; Managed annual marketing budget of $800K, consistently delivering projects 10% under budget; Implemented marketing automation platform reducing campaign deployment time by 50%; Spearheaded rebranding initiative that improved brand recognition by 28% in target demographics; Coordinated with external agencies and vendors to produce high-quality content and promotional materials."
+        },
+        {
+          "employer": "Horizon Tech Solutions",
+          "jobTitle": "Digital Marketing Specialist",
+          "startDate": "2017-05-31T22:00:00.000Z",
+          "endDate": "2020-02-29T23:00:00.000Z",
+          "isCurrent": false,
+          "description": "Executed multi-channel digital marketing campaigns for B2B technology company serving interprise clients; Collaborated with sales team to generate qualified leads and support customer aquisition skills; Created and managed content calendar resulting in 150% increase in website traffic over 18 months; Optimized SEO strategy improving organic search ranking for 25+ target keywords to first page results; Designed email marketing campaigns achieving average open rate of 32% and click-through rate of 8%; Conducted A/B testing on landing pages increasing conversion rates by 24%; Analyzed campaign performance using analytics tools and provided actionable insights to leadership; Managed company social media presence across five platforms with conistent engagement growth."
+        },
+        {
+          "employer": "Redwood Retail Group",
+          "jobTitle": "Marketing Coordinator",
+          "startDate": "2015-07-31T22:00:00.000Z",
+          "endDate": "2017-04-30T22:00:00.000Z",
+          "isCurrent": false,
+          "description": "Supported marketing department in excuting promotional campaigns for regional retail chain with 12 locations; Assisted with event planning, content creation, and vendor coordination; Coordinated seasonal marketing campaigns driving foot traffic increases by 20% during promotional periods; Created social media content and managed posting schedule across multiple platforms; Assisted in planning and excuting four major customer appreciation events with 500+ attendees each; Maintained marketing materials inventory and coordinated with print vendors; Tracked campaign metrics and prepared month;y performance reports for management review."
+        }
+      ],
+      "reasoning": "The predicted array contains three items that correspond exactly to the three items in the gold array. \n\n1. **Velocity Consumer Brands**: The employer, job title, start date, end date (null), isCurren...",
+      "array_breakdown": {
+        "matched": 3,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "Velocity Consumer Brands",
+          "Horizon Tech Solutions",
+          "Redwood Retail Group"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.personalInfo.properties.contact.properties.emails",
+      "normalized_path": "personalInfo.contact.emails",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        "j.walsh@emailexample.com"
+      ],
+      "extracted_value": [
+        "j.walsh@emailexample.com"
+      ],
+      "reasoning": "The gold array contains one email address: 'j.walsh@emailexample.com'. The predicted array contains the exact same email address. Since the strings are identical (and thus also match case-insensitivel...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "j.walsh@emailexample.com"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.personalInfo.properties.contact.properties.phones",
+      "normalized_path": "personalInfo.contact.phones",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        "(503) 555-0891"
+      ],
+      "extracted_value": [
+        "(503) 555-0891"
+      ],
+      "reasoning": "The gold array contains one phone number: '(503) 555-0891'. The predicted array contains the exact same phone number. Since the items are identical strings, they match perfectly. There are no missed g...",
+      "array_breakdown": {
+        "matched": 1,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "(503) 555-0891"
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.certificationsAndAwards",
+      "normalized_path": "certificationsAndAwards",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        {
+          "category": "Certifications & Training",
+          "organization": "Digital Marketing Institute",
+          "description": "Digital Marketing Certified Professional (DMCP)",
+          "date": "2021"
+        },
+        {
+          "category": "Certifications & Training",
+          "organization": "Content Marketing Academy",
+          "description": "Content Marketing Certification",
+          "date": "2020"
+        },
+        {
+          "category": "Certifications & Training",
+          "organization": "Web Analytics Association",
+          "description": "Analytics Professional Certification",
+          "date": "2019"
+        },
+        {
+          "category": "Achievements & Recognition",
+          "description": "Marketing Excellence Award",
+          "organization": "Velocity Consumer Brands",
+          "date": "2022"
+        },
+        {
+          "category": "Achievements & Recognition",
+          "description": "Campaign featured in Marketing Innovation Magazine as industry best practice",
+          "date": "2021"
+        },
+        {
+          "category": "Achievements & Recognition",
+          "description": "Led team that won company-wide innovation challenge with new customer engagement concept",
+          "date": "2020"
+        },
+        {
+          "category": "Professional Affiliations",
+          "description": "Member",
+          "organization": "American Marketing Association (AMA)"
+        },
+        {
+          "category": "Professional Affiliations",
+          "description": "Member",
+          "organization": "Digital Marketing Association of Portland"
+        },
+        {
+          "category": "Professional Affiliations",
+          "description": "Volunteer",
+          "organization": "Youth Business Mentorship Program"
+        }
+      ],
+      "extracted_value": [
+        {
+          "category": "Certifications & Training",
+          "organization": "Digital Marketing Institute",
+          "description": "Digital Marketing Certified Professional (DMCP)",
+          "date": "2021"
+        },
+        {
+          "category": "Certifications & Training",
+          "organization": "Content Marketing Academy",
+          "description": "Content Marketing Certification",
+          "date": "2020"
+        },
+        {
+          "category": "Certifications & Training",
+          "organization": "Web Analytics Association",
+          "description": "Analytics Professional Certification",
+          "date": "2019"
+        },
+        {
+          "category": "Achievements & Recognition",
+          "description": "Marketing Excellence Award",
+          "organization": "Velocity Consumer Brands",
+          "date": "2022"
+        },
+        {
+          "category": "Achievements & Recognition",
+          "description": "Campaign featured in Marketing Innovation Magazine as industry best practice",
+          "date": "2021"
+        },
+        {
+          "category": "Achievements & Recognition",
+          "description": "Led team that won company-wide innovation challenge with new customer engagement concept",
+          "date": "2020"
+        },
+        {
+          "category": "Professional Affiliations",
+          "description": "Member",
+          "organization": "American Marketing Association (AMA)"
+        },
+        {
+          "category": "Professional Affiliations",
+          "description": "Member",
+          "organization": "Digital Marketing Association of Portland"
+        },
+        {
+          "category": "Professional Affiliations",
+          "description": "Volunteer",
+          "organization": "Youth Business Mentorship Program"
+        }
+      ],
+      "reasoning": "The predicted array is identical to the gold array. All 9 items match exactly across all fields (category, organization, description, date). No items were missed and no spurious items were added.",
+      "array_breakdown": {
+        "matched": 9,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          {
+            "category": "Certifications & Training",
+            "organization": "Digital Marketing Institute",
+            "description": "Digital Marketing Certified Professional (DMCP)",
+            "date": "2021"
+          },
+          {
+            "category": "Certifications & Training",
+            "organization": "Content Marketing Academy",
+            "description": "Content Marketing Certification",
+            "date": "2020"
+          },
+          {
+            "category": "Certifications & Training",
+            "organization": "Web Analytics Association",
+            "description": "Analytics Professional Certification",
+            "date": "2019"
+          },
+          {
+            "category": "Achievements & Recognition",
+            "description": "Marketing Excellence Award",
+            "organization": "Velocity Consumer Brands",
+            "date": "2022"
+          },
+          {
+            "category": "Achievements & Recognition",
+            "description": "Campaign featured in Marketing Innovation Magazine as industry best practice",
+            "date": "2021"
+          },
+          {
+            "category": "Achievements & Recognition",
+            "description": "Led team that won company-wide innovation challenge with new customer engagement concept",
+            "date": "2020"
+          },
+          {
+            "category": "Professional Affiliations",
+            "description": "Member",
+            "organization": "American Marketing Association (AMA)"
+          },
+          {
+            "category": "Professional Affiliations",
+            "description": "Member",
+            "organization": "Digital Marketing Association of Portland"
+          },
+          {
+            "category": "Professional Affiliations",
+            "description": "Volunteer",
+            "organization": "Youth Business Mentorship Program"
+          }
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    }
+  ],
+  "overall_score": 1.0,
+  "field_score": 1.0,
+  "overall_pass_rate": 1.0
+}

@@ -1,0 +1,70 @@
+================================================================================
+EVALUATION REPORT: resume__Resume-Marketing
+Timestamp: 2026-09-28T03:20:03.979595
+================================================================================
+
+OVERALL RESULTS
+----------------------------------------
+  Overall Score:  1.000  (item-weighted)
+  Field Score:    1.000  (flat average)
+  Pass Rate: 100.0%
+  Evaluated: 13 fields (13 passed, 0 failed)
+
+SCHEMA STATISTICS
+----------------------------------------
+  Total Nodes: 67
+  Required Keys: 3
+  Optional Keys: 35
+  By Type: anyof: 7, array: 11, boolean: 1, integer: 4, null: 5, object: 9, string: 30
+
+COVERAGE
+----------------------------------------
+  Present in Both: 29
+  Missing in Extracted: 0
+  Spurious in Extracted: 0
+  Required Missing: 0
+
+PASS RATE BY METRIC
+----------------------------------------
+  array_llm: 100.0% (11/11)
+  string_semantic: 100.0% (2/2)
+
+LLM METRICS
+----------------------------------------
+  Calls: 13
+  Avg Score: 1.000
+  Median Score: 1.000
+
+  Top Lowest-Scoring Fields:
+    - media (array_llm): 1.000
+    - other (array_llm): 1.000
+    - languages (array_llm): 1.000
+    - publications (array_llm): 1.000
+    - education (array_llm): 1.000
+      Reason: The predicted array contains exactly one item that matches the single gold item. All fields (institu...
+
+ARRAY BREAKDOWN
+----------------------------------------
+  education [PASS] score=1.000
+    Items: 1 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  socialLinks [PASS] score=1.000
+    Items: 1 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  skills [PASS] score=1.000
+    Items: 32 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  workExperience [PASS] score=1.000
+    Items: 3 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  personalInfo.contact.emails [PASS] score=1.000
+    Items: 1 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  personalInfo.contact.phones [PASS] score=1.000
+    Items: 1 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  certificationsAndAwards [PASS] score=1.000
+    Items: 9 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+
+================================================================================

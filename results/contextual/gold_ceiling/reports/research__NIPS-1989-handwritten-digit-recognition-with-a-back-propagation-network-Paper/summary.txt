@@ -1,0 +1,58 @@
+================================================================================
+EVALUATION REPORT: research__NIPS-1989-handwritten-digit-recognition-with-a-back-propagation-network-Paper
+Timestamp: 2026-09-28T03:11:03.962783
+================================================================================
+
+OVERALL RESULTS
+----------------------------------------
+  Overall Score:  1.000  (item-weighted)
+  Field Score:    1.000  (flat average)
+  Pass Rate: 100.0%
+  Evaluated: 10 fields (10 passed, 0 failed)
+
+SCHEMA STATISTICS
+----------------------------------------
+  Total Nodes: 23
+  Required Keys: 4
+  Optional Keys: 9
+  By Type: anyof: 3, array: 3, integer: 1, null: 3, object: 2, string: 11
+
+COVERAGE
+----------------------------------------
+  Present in Both: 11
+  Missing in Extracted: 0
+  Spurious in Extracted: 0
+  Required Missing: 0
+
+PASS RATE BY METRIC
+----------------------------------------
+  array_llm: 100.0% (3/3)
+  integer_exact: 100.0% (1/1)
+  string_exact: 100.0% (2/2)
+  string_semantic: 100.0% (4/4)
+
+LLM METRICS
+----------------------------------------
+  Calls: 7
+  Avg Score: 1.000
+  Median Score: 1.000
+
+  Top Lowest-Scoring Fields:
+    - venue (string_semantic): 1.000
+    - keywords (array_llm): 1.000
+    - publication_date (string_semantic): 1.000
+    - title (string_semantic): 1.000
+      Reason: The predicted string is identical to the gold string.
+    - abstract (string_semantic): 1.000
+      Reason: The predicted string is identical to the gold string.
+
+ARRAY BREAKDOWN
+----------------------------------------
+  authors [PASS] score=1.000
+    Items: 7 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  citations [PASS] score=1.000
+    Items: 11 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+
+================================================================================

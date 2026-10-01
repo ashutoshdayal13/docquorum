@@ -1,0 +1,57 @@
+    [layout] split side-by-side panels on 3 pages
+    [layout] split side-by-side panels on 6 pages
+    [layout] split side-by-side panels on 3 pages
+    [layout] split side-by-side panels on 1 pages
+  sec__csco_10q_fy2025q2                   ppc= - rows/pg=   - chunks=   - calls=   1 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0    379s mode=chunked
+    [layout] split side-by-side panels on 9 pages
+    [whole] 11 schema keys skipped -> re-read with every key required (kept)
+  research__NIPS-1989-handwritten-digit-re ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     7 gold=     0    398s mode=whole
+  sec__dell_10q_fy2025q2                   ppc= - rows/pg=   - chunks=   - calls=   1 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0     37s mode=chunked
+    [layout] split side-by-side panels on 1 pages
+  research__survey_of_dimensionality_reduc ppc= - rows/pg=   - chunks=   - calls=   1 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     3 gold=     0    821s mode=whole
+    [layout] split side-by-side panels on 1 pages
+    [whole] 4 schema keys skipped -> re-read with every key required (kept)
+  research__shah24--flashattention-3       ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     6 gold=     0    837s mode=whole
+  sec__adp_10q_fy2025q2                    ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0    978s mode=whole
+  credit__adbe_credit_agreement_2000_08_09 ppc= - rows/pg=   - chunks=   - calls=   1 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0     18s mode=chunked
+  credit__amzn_credit_agreement_2014_09_05 ppc= - rows/pg=   - chunks=   - calls=   1 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0     10s mode=chunked
+  credit__ba_credit_agreement_2003_11_21   ppc= - rows/pg=   - chunks=   - calls=   1 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0     23s mode=chunked
+  credit__bkrf_credit-agreement_2020-05-04 ppc= - rows/pg=   - chunks=   - calls=   1 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0     15s mode=chunked
+  credit__csco_credit_agreement_2007_08_17 ppc= - rows/pg=   - chunks=   - calls=   1 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0     12s mode=chunked
+  credit__dis_credit-agreement_2022-03-24  ppc= - rows/pg=   - chunks=   - calls=   1 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0     25s mode=chunked
+  credit__expel_credit-agreement_2023-04-0 ppc= - rows/pg=   - chunks=   - calls=   1 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0     15s mode=chunked
+  credit__ibm_credit_agreement_2019_07_18  ppc= - rows/pg=   - chunks=   - calls=   1 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0     19s mode=chunked
+  credit__mmm_credit_agreement_2019_11_15  ppc= - rows/pg=   - chunks=   - calls=   1 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0     48s mode=whole
+  credit__trmb_credit-agreement_2022-03-24 ppc= - rows/pg=   - chunks=   - calls=   1 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0     16s mode=chunked
+  sec__mck_10q_fy2025q2                    ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0    806s mode=whole
+  sec__nke_10q_fy2025q2                    ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0    814s mode=whole
+  sec__tho_10q_fy2025q2                    ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0    681s mode=whole
+    [whole] 44 schema keys skipped -> re-read with every key required (kept)
+  resume__Resume-Academic02                ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     7 gold=     0    314s mode=whole
+  sec__wdc_10q_fy2025q2                    ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     0 gold=     0    698s mode=whole
+  research__fan24_rag_survey               ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     8 gold=     0   1602s mode=whole
+    [whole] 20 schema keys skipped -> re-read with every key required (kept)
+  resume__Resume-Med                       ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     3 gold=     0     85s mode=whole
+    ! whole: UnicodeDecodeError: 'utf-8' codec can't decode byte 0x82 in position 195: invalid start byte
+  sports__ma_2023_sw_M-table1              ppc= 2 rows/pg=   1 chunks=   1 calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     2 gold=     0     90s mode=chunked
+    ! whole: UnicodeDecodeError: 'utf-8' codec can't decode byte 0x82 in position 195: invalid start byte
+  research__li25_vlm_survey                ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     6 gold=     0   1788s mode=whole
+    ! whole: UnicodeDecodeError: 'utf-8' codec can't decode byte 0x82 in position 195: invalid start byte
+  sports__ma_2023_sw_M-table2              ppc= 2 rows/pg=   0 chunks=   2 calls=   3 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     3 gold=     0     32s mode=chunked
+    ! whole: UnicodeDecodeError: 'utf-8' codec can't decode byte 0x82 in position 195: invalid start byte
+  sports__ma_2023_sw_M-table3              ppc= 2 rows/pg=   0 chunks=   2 calls=   3 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     3 gold=     0     31s mode=chunked
+    ! whole: UnicodeDecodeError: 'utf-8' codec can't decode byte 0x82 in position 195: invalid start byte
+  sports__ma_2023_sw_M-table4              ppc= 2 rows/pg=   1 chunks=   2 calls=   3 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     3 gold=     0     52s mode=chunked
+  sports__ma_2023_sw_M-table5              ppc= 2 rows/pg=   0 chunks=   2 calls=   3 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     4 gold=     0     83s mode=chunked
+    [whole] fell back (finish=length, parsed=True)
+  resume__Resume-Finance                   ppc= 2 rows/pg=   0 chunks=   1 calls=  12 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     3 gold=     0   1510s mode=chunked
+    [whole] fell back (finish=length, parsed=True)
+    [whole] fell back (finish=length, parsed=True)
+    [whole] fell back (finish=length, parsed=True)
+  resume__Resume-Legal                     ppc= 2 rows/pg=   0 chunks=   1 calls=  12 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     3 gold=     0   1495s mode=chunked
+  resume__Resume-IT                        ppc= 2 rows/pg=   0 chunks=   1 calls=  12 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     3 gold=     0   1514s mode=chunked
+  resume__Resume-Marketing                 ppc= 2 rows/pg=   0 chunks=   2 calls=  21 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     3 gold=     0   1537s mode=chunked
+    [whole] fell back (finish=length, parsed=True)
+  resume__Resume-Academic01                ppc= 2 rows/pg=   2 chunks=   4 calls=  51 trunc=  1 refined=  1 reasked= 10 recovered=  0 rows=    16 gold=     0   2394s mode=chunked
+  research__zhao25_a_survey_of_LLMs        ppc= 2 rows/pg=   2 chunks=  72 calls= 418 trunc= 61 refined= 61 reasked= 79 recovered=  2 rows=    22 gold=     0   4279s mode=chunked
+TOTAL 4279s

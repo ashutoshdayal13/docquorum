@@ -1,0 +1,478 @@
+{
+  "output_name": "credit__ba_credit_agreement_2003_11_21",
+  "timestamp": "2026-09-28T04:36:24.246352",
+  "schema_hash": "e2a608f3",
+  "gold_hash": "90d5303d",
+  "extracted_hash": "08d7cb4f",
+  "schema_stats": {
+    "total_nodes": 41,
+    "counts_by_type": {
+      "object": 4,
+      "array": 2,
+      "string": 11,
+      "anyof": 11,
+      "null": 11,
+      "boolean": 1,
+      "number": 1
+    },
+    "required_keys_count": 2,
+    "optional_keys_count": 14,
+    "required_by_type": {
+      "anyof": 2
+    },
+    "optional_by_type": {
+      "object": 3,
+      "array": 1,
+      "anyof": 9,
+      "string": 1
+    }
+  },
+  "gold_stats": {
+    "label": "gold",
+    "total_keys": 16,
+    "counts_by_type": {
+      "object": 3,
+      "string": 9,
+      "array": 2,
+      "integer": 1,
+      "boolean": 1
+    },
+    "array_stats": {
+      "array_field_count": 2,
+      "total_items": 36,
+      "min_length": 2,
+      "median_length": 18.0,
+      "max_length": 34
+    },
+    "null_count": 0,
+    "missing_count": 0
+  },
+  "extracted_stats": {
+    "label": "extracted",
+    "total_keys": 16,
+    "counts_by_type": {
+      "object": 3,
+      "array": 2,
+      "string": 5,
+      "null": 5,
+      "integer": 1
+    },
+    "array_stats": {
+      "array_field_count": 2,
+      "total_items": 9,
+      "min_length": 2,
+      "median_length": 4.5,
+      "max_length": 7
+    },
+    "null_count": 5,
+    "missing_count": 0
+  },
+  "coverage": {
+    "present_in_both": 13,
+    "missing_in_extracted": 0,
+    "spurious_in_extracted": 0,
+    "required_missing": 0,
+    "missing_paths": [],
+    "spurious_paths": []
+  },
+  "outcomes": {
+    "total_evaluated": 13,
+    "total_passed": 6,
+    "total_failed": 7,
+    "pass_rate": 0.46153846153846156,
+    "pass_by_metric": {
+      "string_fuzzy": {
+        "passed": 2,
+        "failed": 0
+      },
+      "boolean_exact": {
+        "passed": 0,
+        "failed": 1
+      },
+      "string_semantic": {
+        "passed": 1,
+        "failed": 5
+      },
+      "number_exact": {
+        "passed": 1,
+        "failed": 0
+      },
+      "string_case_insensitive": {
+        "passed": 1,
+        "failed": 0
+      },
+      "array_llm": {
+        "passed": 1,
+        "failed": 1
+      }
+    },
+    "pass_by_type": {
+      "string": {
+        "passed": 4,
+        "failed": 5
+      },
+      "boolean": {
+        "passed": 0,
+        "failed": 1
+      },
+      "number": {
+        "passed": 1,
+        "failed": 0
+      },
+      "array": {
+        "passed": 1,
+        "failed": 1
+      }
+    },
+    "pass_by_required": {
+      "optional": {
+        "passed": 6,
+        "failed": 7
+      }
+    },
+    "confusion": {
+      "true_positive": 6,
+      "false_positive": 0,
+      "false_negative": 7,
+      "true_negative": 0
+    },
+    "llm_stats": {
+      "call_count": 8,
+      "avg_score": 0.27734375,
+      "median_score": 0.0,
+      "score_distribution": {
+        "0.0-0.2": 5,
+        "0.8-1.0": 2,
+        "0.2-0.4": 1
+      },
+      "top_lowest_fields": [
+        {
+          "path": "terms.governing_law",
+          "metric_id": "string_semantic",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "terms.use_of_proceeds",
+          "metric_id": "string_semantic",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "terms.borrowing_request",
+          "metric_id": "string_semantic",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "terms.authorized_officer_definition",
+          "metric_id": "string_semantic",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "terms.maturity_date",
+          "metric_id": "string_semantic",
+          "score": 0.0,
+          "reasoning": "The predicted date is one day off from the gold date. In financial contexts, the maturity date is a specific legal deadline, and a one-day difference is a meaningful error that changes the obligation'..."
+        }
+      ]
+    },
+    "error_breakdown": {
+      "by_path_prefix": {
+        "terms": 6,
+        "parties": 1
+      },
+      "by_metric_type": {
+        "boolean_exact": 1,
+        "string_semantic": 5,
+        "array_llm": 1
+      },
+      "by_reason": {
+        "extracted_absent": 5,
+        "semantic_mismatch": 2
+      },
+      "details": [
+        {
+          "category": "extracted_absent",
+          "count": 5,
+          "paths": []
+        },
+        {
+          "category": "semantic_mismatch",
+          "count": 2,
+          "paths": []
+        }
+      ]
+    }
+  },
+  "field_outcomes": [
+    {
+      "path": "$.properties.parties.properties.administrative_agent",
+      "normalized_path": "parties.administrative_agent",
+      "metric_id": "string_fuzzy",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "citibank, n.a.",
+      "extracted_value": "citibank, n.a.",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.parties.properties.borrower",
+      "normalized_path": "parties.borrower",
+      "metric_id": "string_fuzzy",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "the boeing company",
+      "extracted_value": "the boeing company",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.beneficial_ownership_certification_required",
+      "normalized_path": "terms.beneficial_ownership_certification_required",
+      "metric_id": "boolean_exact",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_null",
+      "gold_value": false,
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.governing_law",
+      "normalized_path": "terms.governing_law",
+      "metric_id": "string_semantic",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_null",
+      "gold_value": "State of New York",
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.use_of_proceeds",
+      "normalized_path": "terms.use_of_proceeds",
+      "metric_id": "string_semantic",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_null",
+      "gold_value": "NOT_FOUND",
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.borrowing_request",
+      "normalized_path": "terms.borrowing_request",
+      "metric_id": "string_semantic",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_null",
+      "gold_value": "All communications and notices shall, when mailed, telecopied,or telexed, be effective when deposited in the mail, telecopied, or confirmed by telexanswerback, respectively. Delivery by telecopier of an executed counterpart of anyamendment or waiver of any provision of this Agreement or any Notes or of any Exhibitto be executed and delivered hereunder shall be effective as delivery of a manuallyexecuted counterpart thereof.",
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.authorized_officer_definition",
+      "normalized_path": "terms.authorized_officer_definition",
+      "metric_id": "string_semantic",
+      "score": 0.0,
+      "passed": false,
+      "reason": "extracted_null",
+      "gold_value": "NOT_FOUND",
+      "extracted_value": null,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.loan_commitment.properties.amount",
+      "normalized_path": "terms.loan_commitment.amount",
+      "metric_id": "number_exact",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": 2500000000.0,
+      "extracted_value": 2500000000.0,
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.loan_commitment.properties.currency",
+      "normalized_path": "terms.loan_commitment.currency",
+      "metric_id": "string_case_insensitive",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "USD",
+      "extracted_value": "USD",
+      "reasoning": null,
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.agreement_date",
+      "normalized_path": "terms.agreement_date",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": "2003-11-21",
+      "extracted_value": "2003-11-21",
+      "reasoning": "The predicted string is identical to the gold string, matching the required YYYY-MM-DD format exactly.",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.terms.properties.maturity_date",
+      "normalized_path": "terms.maturity_date",
+      "metric_id": "string_semantic",
+      "score": 0.0,
+      "passed": false,
+      "reason": null,
+      "gold_value": "2004-11-19",
+      "extracted_value": "2004-11-20",
+      "reasoning": "The predicted date is one day off from the gold date. In financial contexts, the maturity date is a specific legal deadline, and a one-day difference is a meaningful error that changes the obligation'...",
+      "array_breakdown": null
+    },
+    {
+      "path": "$.properties.parties.properties.lead_arranger",
+      "normalized_path": "parties.lead_arranger",
+      "metric_id": "array_llm",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": [
+        "CITIGROUP GLOBAL MARKETS INC.",
+        "J.P.MORGAN SECURITIES INC."
+      ],
+      "extracted_value": [
+        "Citigroup Global Markets Inc.",
+        "J.P.Morgan Securities Inc."
+      ],
+      "reasoning": "The predicted array contains two items that semantically match the gold array items. 'Citigroup Global Markets Inc.' matches 'CITIGROUP GLOBAL MARKETS INC.' and 'J.P.Morgan Securities Inc.' matches 'J...",
+      "array_breakdown": {
+        "matched": 2,
+        "missed_gold": 0,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_items": [
+          "CITIGROUP GLOBAL MARKETS INC.",
+          "J.P.MORGAN SECURITIES INC."
+        ],
+        "missed_gold_items": [],
+        "spurious_pred_items": []
+      }
+    },
+    {
+      "path": "$.properties.parties.properties.lenders",
+      "normalized_path": "parties.lenders",
+      "metric_id": "array_llm",
+      "score": 0.21875,
+      "passed": false,
+      "reason": null,
+      "gold_value": [
+        "ABN AmroBank, N.V.",
+        "Australia andNew Zealand",
+        "Banking GroupLimited",
+        "Banco Bilbao Vizcaya Argerntaria",
+        "Bank One, NA",
+        "Bank of America,N.A.",
+        "The Bank ofTokyo-Mitsubishi, Ltd.",
+        "Barclays Bank PLC",
+        "Bayerische Landesbank, Cayman Island Branch",
+        "BMO Nesbitt Burns Financing, Inc.",
+        "BNP Paribas",
+        "Citibank, N.A.",
+        "Credit Lyonnais New YorkBranch",
+        "Credit Suisse First BostonCayman Islands Branch",
+        "Deutsche Bank AG NewYork Branch",
+        "JPMorgan Chase Bank",
+        "KBC Bank, N.V.",
+        "Keybank NationalAssociation",
+        "Lloyds TSB Bank Plc",
+        "Merrill Lynch Bank USA",
+        "Mizuho Corporate Bank,Ltd.",
+        "Morgan Stanley Bank",
+        "The Northern TrustCompany",
+        "PNC Bank, NationalAssociation",
+        "Royal Bank of Scotland",
+        "SANPAOLO IMI S.p.a.",
+        "Societe Generale",
+        "Standard CharteredBank",
+        "Sumitomo Mitsui Banking Corporation",
+        "UBS Loan Finance LLC",
+        "U.S. Bank National Association",
+        "Wachovia Bank, National Association",
+        "Westpac Banking Corporation",
+        "William Street Commitment Corporation"
+      ],
+      "extracted_value": [
+        "Standard Chartered Bank",
+        "Sumitomo Mitsui Banking Corporation",
+        "UBS Loan Finance LLC",
+        "U.S. Bank National Association",
+        "Wachovia Bank, National Association",
+        "Westpac Banking Corporation",
+        "William Street Commitment Corporation"
+      ],
+      "reasoning": "The predicted array contains 7 items, all of which are present in the gold array. The matching is based on semantic equivalence, accounting for minor formatting differences such as spacing and punctua...",
+      "array_breakdown": {
+        "matched": 7,
+        "missed_gold": 25,
+        "spurious_pred": 0,
+        "precision": 1.0,
+        "recall": 0.21875,
+        "f1": 0.358974358974359,
+        "matched_items": [
+          "Standard Chartered Bank",
+          "Sumitomo Mitsui Banking Corporation",
+          "UBS Loan Finance LLC",
+          "U.S. Bank National Association",
+          "Wachovia Bank, National Association",
+          "Westpac Banking Corporation",
+          "William Street Commitment Corporation"
+        ],
+        "missed_gold_items": [
+          "ABN AmroBank, N.V.",
+          "Australia andNew Zealand",
+          "Banking GroupLimited",
+          "Banco Bilbao Vizcaya Argerntaria",
+          "Bank One, NA",
+          "Bank of America,N.A.",
+          "The Bank ofTokyo-Mitsubishi, Ltd.",
+          "Barclays Bank PLC",
+          "Bayerische Landesbank, Cayman Island Branch",
+          "BMO Nesbitt Burns Financing, Inc.",
+          "BNP Paribas",
+          "Citibank, N.A.",
+          "Credit Lyonnais New YorkBranch",
+          "Credit Suisse First BostonCayman Islands Branch",
+          "Deutsche Bank AG NewYork Branch",
+          "JPMorgan Chase Bank",
+          "KBC Bank, N.V.",
+          "Keybank NationalAssociation",
+          "Lloyds TSB Bank Plc",
+          "Merrill Lynch Bank USA",
+          "Mizuho Corporate Bank,Ltd.",
+          "Morgan Stanley Bank",
+          "The Northern TrustCompany",
+          "PNC Bank, NationalAssociation",
+          "Royal Bank of Scotland",
+          "SANPAOLO IMI S.p.a.",
+          "Societe Generale"
+        ],
+        "spurious_pred_items": []
+      }
+    }
+  ],
+  "overall_score": 0.3111111111111111,
+  "field_score": 0.47836538461538464,
+  "overall_pass_rate": 0.46153846153846156
+}

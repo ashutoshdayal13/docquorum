@@ -1,0 +1,52 @@
+[
+ {
+  "file": "2_stages/00_reading.json",
+  "what happened": "the stored column flow reader output",
+  "value F1": 98.23
+ },
+ {
+  "file": "2_stages/01_after_conform.json",
+  "what happened": "check: every schema field present (null where allowed); output valid against the schema -- no change",
+  "value F1": 98.23
+ },
+ {
+  "file": "2_stages/02_after_blank_boxes.json",
+  "what happened": "check: a blank tick box is false where the field's description says so -- no change",
+  "value F1": 98.23
+ },
+ {
+  "file": "2_stages/03_after_template_rows.json",
+  "what happened": "check: template rows (only the printed label filled) and blank pre-printed lines dropped -- no change",
+  "value F1": 98.23
+ },
+ {
+  "file": "2_stages/04_after_copied_rows.json",
+  "what happened": "check: rows copied from one list into another dropped -- no change",
+  "value F1": 98.23
+ },
+ {
+  "file": "2_stages/05_after_record_counts.json",
+  "what happened": "check: identical records capped at the number of times the page prints them -- no change",
+  "value F1": 98.23
+ },
+ {
+  "file": "2_stages/06_after_printed_pages.json",
+  "what happened": "check: each row's page located from its words; the printed page number reported -- no change",
+  "value F1": 98.23
+ },
+ {
+  "file": "2_stages/07_after_printed_quotes.json",
+  "what happened": "check: quote characters as the page prints them -- no change",
+  "value F1": 98.23
+ },
+ {
+  "file": "2_stages/08_after_printed_numbers.json",
+  "what happened": "check: a rounded or rescaled number replaced by the one printed number it restates -- no change",
+  "value F1": 98.23
+ },
+ {
+  "file": "final.json",
+  "what happened": "the output -- identical to the stored final result",
+  "value F1": 98.23
+ }
+]

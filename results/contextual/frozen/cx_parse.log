@@ -1,0 +1,16 @@
+    [parsed] using 1 MinerU pages
+    [parsed] using 1 MinerU pages
+    [parsed] using 1 MinerU pages
+    [parsed] using 1 MinerU pages
+    [parsed] using 3 MinerU pages
+    [whole] 29 schema keys skipped -> re-read with every key required (kept)
+  resume__Resume-Finance                   ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     3 gold=     0     40s mode=whole
+    [whole] 26 schema keys skipped -> re-read with every key required (kept)
+  resume__Resume-Legal                     ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     3 gold=     0     48s mode=whole
+    [whole] 30 schema keys skipped -> re-read with every key required (kept)
+  resume__Resume-Med                       ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     3 gold=     0     51s mode=whole
+    [whole] 17 schema keys skipped -> re-read with every key required (failed)
+  resume__Resume-IT                        ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     1 gold=     0    512s mode=whole
+    [whole] 20 schema keys skipped -> re-read with every key required (failed)
+  resume__Resume-Marketing                 ppc= - rows/pg=   - chunks=   - calls=   2 trunc=  0 refined=  0 reasked=  0 recovered=  0 rows=     3 gold=     0    530s mode=whole
+TOTAL 530s

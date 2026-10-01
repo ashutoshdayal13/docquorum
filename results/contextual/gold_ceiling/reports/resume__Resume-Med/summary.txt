@@ -1,0 +1,78 @@
+================================================================================
+EVALUATION REPORT: resume__Resume-Med
+Timestamp: 2026-09-28T03:20:42.499522
+================================================================================
+
+OVERALL RESULTS
+----------------------------------------
+  Overall Score:  1.000  (item-weighted)
+  Field Score:    1.000  (flat average)
+  Pass Rate: 100.0%
+  Evaluated: 13 fields (13 passed, 0 failed)
+
+SCHEMA STATISTICS
+----------------------------------------
+  Total Nodes: 67
+  Required Keys: 3
+  Optional Keys: 35
+  By Type: anyof: 7, array: 11, boolean: 1, integer: 4, null: 5, object: 9, string: 30
+
+COVERAGE
+----------------------------------------
+  Present in Both: 28
+  Missing in Extracted: 0
+  Spurious in Extracted: 0
+  Required Missing: 0
+
+PASS RATE BY METRIC
+----------------------------------------
+  array_llm: 100.0% (11/11)
+  string_semantic: 100.0% (2/2)
+
+LLM METRICS
+----------------------------------------
+  Calls: 13
+  Avg Score: 1.000
+  Median Score: 1.000
+
+  Top Lowest-Scoring Fields:
+    - media (array_llm): 1.000
+    - socialLinks (array_llm): 1.000
+    - skills (array_llm): 1.000
+      Reason: The predicted array is identical to the gold array. All five items match exactly in content and orde...
+    - languages (array_llm): 1.000
+      Reason: The predicted array contains exactly the same three language strings as the gold array: 'English', '...
+    - other (array_llm): 1.000
+      Reason: The gold array contains one item with a 'content' field describing a Principal Investigator's backgr...
+
+ARRAY BREAKDOWN
+----------------------------------------
+  skills [PASS] score=1.000
+    Items: 5 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  languages [PASS] score=1.000
+    Items: 3 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  other [PASS] score=1.000
+    Items: 1 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  publications [PASS] score=1.000
+    Items: 2 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  certificationsAndAwards [PASS] score=1.000
+    Items: 3 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  personalInfo.contact.emails [PASS] score=1.000
+    Items: 1 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  personalInfo.contact.phones [PASS] score=1.000
+    Items: 1 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  education [PASS] score=1.000
+    Items: 4 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+  workExperience [PASS] score=1.000
+    Items: 3 matched, 0 missed, 0 spurious
+    P=1.000  R=1.000  F1=1.000
+
+================================================================================
