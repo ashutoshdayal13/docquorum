@@ -30,26 +30,7 @@
    "Average": 79.12
   }
  },
- "oneshot_27b_test": {
-  "readings": [
-   "oneshot"
-  ],
-  "macro": 79.9414,
-  "per_scenario": {
-   "Accommodation": 77.25,
-   "Administrative": 84.35,
-   "Advertisement": 78.49,
-   "Catering-Services": 85.2,
-   "Commercial": 50.59,
-   "Education": 86.0,
-   "Medical-Services": 75.94,
-   "Nutrition-Label": 87.86,
-   "Postal-Label": 85.78,
-   "Retail": 87.61,
-   "Tax-Compliant": 80.3
-  }
- },
- "oneshot_27b_full": {
+ "oneshot_27b": {
   "readings": [
    "oneshot"
   ],
@@ -68,73 +49,7 @@
    "Tax-Compliant": 80.27
   }
  },
- "frozen_test": {
-  "readings": [
-   "image",
-   "parse",
-   "oneshot"
-  ],
-  "macro": 80.0056,
-  "per_scenario": {
-   "Accommodation": 76.72,
-   "Administrative": 85.5,
-   "Advertisement": 80.23,
-   "Catering-Services": 78.2,
-   "Commercial": 52.15,
-   "Education": 85.08,
-   "Medical-Services": 76.72,
-   "Nutrition-Label": 88.75,
-   "Postal-Label": 85.78,
-   "Retail": 89.55,
-   "Tax-Compliant": 81.38
-  }
- },
- "frozen_full": {
-  "readings": [
-   "image",
-   "parse",
-   "oneshot"
-  ],
-  "macro": 80.645,
-  "per_scenario": {
-   "Accommodation": 78.93,
-   "Administrative": 85.57,
-   "Advertisement": 83.91,
-   "Catering-Services": 80.7,
-   "Commercial": 51.86,
-   "Education": 84.53,
-   "Medical-Services": 76.56,
-   "Nutrition-Label": 88.83,
-   "Postal-Label": 85.15,
-   "Retail": 89.63,
-   "Tax-Compliant": 81.43
-  }
- },
- "tuned_test": {
-  "readings": [
-   "image",
-   "oneshot_text",
-   "oneshot",
-   "parse",
-   "oneshot32",
-   "oneshot8"
-  ],
-  "macro": 81.8904,
-  "per_scenario": {
-   "Accommodation": 77.78,
-   "Administrative": 86.72,
-   "Advertisement": 83.72,
-   "Catering-Services": 85.75,
-   "Commercial": 53.82,
-   "Education": 86.45,
-   "Medical-Services": 77.5,
-   "Nutrition-Label": 90.5,
-   "Postal-Label": 86.0,
-   "Retail": 90.52,
-   "Tax-Compliant": 82.03
-  }
- },
- "tuned_full": {
+ "docquorum": {
   "readings": [
    "image",
    "oneshot_text",

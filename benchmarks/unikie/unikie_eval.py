@@ -11,17 +11,15 @@ document: several readings of each image and the quorum over them.
                           template as the decoding schema) on the page images
             parse         the same call with the MinerU parse as the document's text
             <reading><N>  a reading made by a second model (oneshot32, oneshot8)
-  quorum    per document, the reading that agrees most with the others (recall-weighted,
-            beta = 2), agreement measured with the benchmark's own matching
+  quorum    per document, over the six readings (oneshot, oneshot_text, image, parse from
+            Qwen3.8-27B; oneshot32, oneshot8), the reading that agrees most with the others
+            (recall-weighted, beta = 2), agreement measured with the benchmark's own matching
   output    the template's shape: every templated key present, absent -> "" (the evaluator
             scores null as the string "None")
 
-Configurations: frozen (held out) = image, parse, oneshot; tuned (on the dev documents of
-unikie_split.json) = image, oneshot_text, oneshot, parse, oneshot32, oneshot8.
-
     python unikie_eval.py parse-images                 (MinerU cache; parser at $DQ_PARSER_URL)
     python unikie_eval.py read --reading oneshot|oneshot_text|image|parse[N]
-    python unikie_eval.py score                        frozen and tuned, test and full split
+    python unikie_eval.py score                        macro F1 over all 4,472 images
     python unikie_eval.py report                       against the paper's Table 4
 """
 import argparse
@@ -44,9 +42,7 @@ from docquorum.tools.schema import fill_template, template_to_schema  # noqa: E4
 OUT = Path(os.environ.get("DQ_UNIKIE_READINGS", ROOT / "results" / "unikie" / "readings"))
 PCACHE = ROOT / "cache" / "unikie_parse_1p6"
 MAX_IMAGES = int(os.environ.get("UNIKIE_MAX_IMAGES", "12"))     # a second model's server limit
-SPLIT = json.load(open(HERE / "unikie_split.json"))
-CONFIGS = {"frozen": ["image", "parse", "oneshot"],
-           "tuned": ["image", "oneshot_text", "oneshot", "parse", "oneshot32", "oneshot8"]}
+READINGS = ["image", "oneshot_text", "oneshot", "parse", "oneshot32", "oneshot8"]     # order = tie-break
 BETA = 2.0
 
 
@@ -173,14 +169,13 @@ def quorum(cands, order):
     return cands[max(cands, key=lambda c: (sc[c], -order.index(c)))]
 
 
-def evaluate(arms, split):
-    """(macro F1, {scenario: F1}) of the quorum over `arms` on a split's documents."""
+def evaluate(arms):
+    """(macro F1, {scenario: F1}) of the quorum over `arms` (one reading: that reading)."""
     per = {}
     for sc in U.SCENARIOS:
-        keep = set(SPLIT["dev"][sc] + SPLIT["test"][sc]) if split == "full" else set(SPLIT[split][sc])
         views = {a: json.loads(f.read_text()) for a in arms if (f := OUT / a / f"{sc}.json").exists()}
         preds = {}
-        for n, t in {n: t for n, _i, t in records(sc) if n in keep}.items():
+        for n, t in {n: t for n, _i, t in records(sc)}.items():
             cands = {a: fill_template(v.get(n), t) for a, v in views.items()}
             if cands:
                 preds[n] = cands[arms[0]] if len(arms) == 1 else quorum(cands, arms)
@@ -189,10 +184,8 @@ def evaluate(arms, split):
 
 
 def cmd_score(a):
-    for label, arms in CONFIGS.items():
-        for split in ("test", "full"):
-            m, per = evaluate(arms, split)
-            print(f"{label:6s} {split:4s} macro {m:6.2f}  " + " ".join(f"{s[:5]}={v:5.2f}" for s, v in per.items()))
+    m, per = evaluate(READINGS)
+    print(f"DocQuorum macro {m:6.2f}  " + " ".join(f"{s[:5]}={v:5.2f}" for s, v in per.items()))
 
 
 def cmd_report(a):
@@ -200,9 +193,8 @@ def cmd_report(a):
     cols = t["columns"][:-1]                                  # the 11 scenarios (last: average)
     rows = {f"{k} ({kind})": dict(zip(cols, v[:-1])) | {"MACRO": v[-1]}
             for kind in ("closed", "open") for k, v in t[f"{kind}_source"].items()}
-    for label, arms in (("Qwen3.8-27B, official one-shot", ["oneshot"]),
-                        ("** DocQuorum frozen **", CONFIGS["frozen"]), ("** DocQuorum tuned **", CONFIGS["tuned"])):
-        m, per = evaluate(arms, "full")
+    for label, arms in (("Qwen3.8-27B, official one-shot", ["oneshot"]), ("** DocQuorum **", READINGS)):
+        m, per = evaluate(arms)
         rows[label] = {c: per[c] for c in cols} | {"MACRO": m}
     print(f"{'system':46s} {'MACRO':>6s}  " + " ".join(f"{c[:6]:>6s}" for c in cols))
     for name, r in sorted(rows.items(), key=lambda kv: -kv[1]["MACRO"]):

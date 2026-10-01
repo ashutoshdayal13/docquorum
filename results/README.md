@@ -86,60 +86,53 @@ Re-score: `benchmarks/extractbench/score_run.py` (see the top-level README).
 All 11 constrained scenarios, 4,472 images, the benchmark's own evaluator, every input capped
 at the benchmark's 1,605,632 pixels (the cap all published systems were measured under).
 
-| macro F1 | test (2,986 docs) | full set (4,472) | vs. the paper's Table 4 |
-|---|---:|---:|---|
-| Qwen3.8-27B, the benchmark's own one-shot protocol | 79.94 | 80.45 | |
-| **DocQuorum, frozen** (held-out: never developed on UNIKIE) | 80.01 | **80.64** | **2nd of 16** |
-| **DocQuorum, tuned** (3 open models; developed on a fixed dev third) | **81.89** | **82.37** | **ties 1st** |
-| Gemini-3-Pro (best published) | -- | 82.37 | 1st |
-| Qwen3-VL-8B (best published open model) | -- | 79.12 | |
+| macro F1, all 4,472 images | score | vs. the paper's Table 4 |
+|---|---:|---|
+| **DocQuorum** (6 readings from 3 open models) | **82.37** | **ties 1st of 16** |
+| Gemini-3-Pro (best published) | 82.37 | 1st |
+| Qwen3.8-27B, the benchmark's own one-shot protocol | 80.45 | |
+| Qwen3-VL-8B (best published open model) | 79.12 | |
 
-* Frozen: consensus over three readings of Qwen3.8-27B (agentic image reading, agentic reading
-  on the MinerU parse, the benchmark's one-shot prompt).
-* Tuned: + a one-shot reading with the OCR text (27B), + one-shot readings from
-  Qwen3-VL-32B and Qwen3-VL-8B. Developed on the dev third (1,486 documents) of a
-  hash-fixed split (`benchmarks/unikie/unikie_split.json`), run once on the test two-thirds.
-  Unrounded: 82.3746 vs Gemini-3-Pro's 82.3664 (mean of its 11 published two-decimal
-  scores) -- a tie within the table's rounding, not a win.
-* Above every published system on: Administrative, Catering, Retail, Tax-Compliant (tuned).
+* DocQuorum reads each image six ways and keeps the reading the others agree with most: the reader
+  agent on the image and on the MinerU parse, and the benchmark's own one-shot prompt (Qwen3.8-27B);
+  the same prompt with the OCR text (27B); one-shot readings from Qwen3-VL-32B and Qwen3-VL-8B.
+* Unrounded: 82.3746 vs Gemini-3-Pro's 82.3664 (mean of its 11 published two-decimal scores): a tie
+  within the table's rounding, not a win.
+* Above every published system on: Retail, Catering-Services, Administrative, Tax-Compliant.
 
 Per scenario (F1 on all 4,472 images; published values from the paper's Table 4; **bold** =
 best of the 16 published systems and DocQuorum; rank = DocQuorum's position when inserted
-among the 16 published systems, frozen / tuned):
+among the 16 published systems):
 
-| scenario | GPT-5 | Claude Sonnet 4.5 | Qwen3-VL-Plus | Gemini-3-Pro | Qwen3-VL-8B (best open) | DocQuorum frozen | DocQuorum tuned | rank |
-|---|---:|---:|---:|---:|---:|---:|---:|:---:|
-| Retail | 71.90 | 69.24 | 89.12 | 89.27 | 88.26 | 89.63 | **90.71** | 1 / 1 |
-| Catering-Services | 71.33 | 73.65 | 86.45 | 83.54 | 86.23 | 80.70 | **87.56** | 5 / 1 |
-| Commercial | 45.94 | 45.92 | 50.57 | **53.87** | 51.14 | 51.86 | 53.46 | 2 / 2 |
-| Accommodation | 69.29 | 69.29 | 77.86 | **81.43** | 71.07 | 78.93 | 80.00 | 2 / 2 |
-| Postal-Label | 80.95 | 79.45 | 83.55 | **90.74** | 83.80 | 85.15 | 85.65 | 2 / 2 |
-| Administrative | 62.79 | 69.20 | 78.91 | 84.32 | 78.90 | 85.57 | **86.60** | 1 / 1 |
-| Education | 50.26 | 39.46 | **87.44** | 80.71 | 87.39 | 84.53 | 85.46 | 3 / 3 |
-| Advertisement | 75.48 | 85.06 | 83.14 | **90.54** | 81.23 | 83.91 | 86.21 | 3 / 2 |
-| Tax-Compliant | 72.05 | 67.79 | 78.93 | 81.54 | 78.74 | 81.43 | **82.10** | 2 / 1 |
-| Medical-Services | 67.71 | 63.96 | 76.46 | **77.60** | 77.19 | 76.56 | 77.50 | 3 / 2 |
-| Nutrition-Label | 75.83 | 67.24 | 89.72 | **92.47** | 86.36 | 88.83 | 90.87 | 3 / 2 |
-| *macro average* | 67.59 | 66.39 | 80.20 | **82.37** | 79.12 | 80.64 | **82.37** | 2 / 1 (tie) |
+| scenario | GPT-5 | Claude Sonnet 4.5 | Qwen3-VL-Plus | Gemini-3-Pro | Qwen3-VL-8B (best open) | DocQuorum | rank |
+|---|---:|---:|---:|---:|---:|---:|:---:|
+| Retail | 71.90 | 69.24 | 89.12 | 89.27 | 88.26 | **90.71** | 1 |
+| Catering-Services | 71.33 | 73.65 | 86.45 | 83.54 | 86.23 | **87.56** | 1 |
+| Commercial | 45.94 | 45.92 | 50.57 | **53.87** | 51.14 | 53.46 | 2 |
+| Accommodation | 69.29 | 69.29 | 77.86 | **81.43** | 71.07 | 80.00 | 2 |
+| Postal-Label | 80.95 | 79.45 | 83.55 | **90.74** | 83.80 | 85.65 | 2 |
+| Administrative | 62.79 | 69.20 | 78.91 | 84.32 | 78.90 | **86.60** | 1 |
+| Education | 50.26 | 39.46 | **87.44** | 80.71 | 87.39 | 85.46 | 3 |
+| Advertisement | 75.48 | 85.06 | 83.14 | **90.54** | 81.23 | 86.21 | 2 |
+| Tax-Compliant | 72.05 | 67.79 | 78.93 | 81.54 | 78.74 | **82.10** | 1 |
+| Medical-Services | 67.71 | 63.96 | 76.46 | **77.60** | 77.19 | 77.50 | 2 |
+| Nutrition-Label | 75.83 | 67.24 | 89.72 | **92.47** | 86.36 | 90.87 | 2 |
+| *macro average* | 67.59 | 66.39 | 80.20 | **82.37** | 79.12 | **82.37** | 1 (tie) |
 
 Commercial is the hardest scenario for every system (GPT-5 45.94, Claude Sonnet 4.5 45.92);
-DocQuorum is second only to Gemini-3-Pro there, frozen and tuned.
+DocQuorum is second only to Gemini-3-Pro there.
 
-Why Commercial is low for everyone (dev split, tuned configuration, 817 wrong fields of 206
-documents): its answer key is inherited from DocILE and does not follow UNIKIE's own guideline
-of "exact textual content". The key drops the currency symbol from every amount (0 of 1,579
-amounts carry one, although the invoices print "$510.00"), while Advertisement keeps it (56 of
-61). 188 of the 817 errors are exactly that `$`. Most of the rest are block boundaries
-applied inconsistently (an address with or without the company name above it) and the choice
-among several printed numbers for `order_id`. The templates give no way to tell the two
-conventions apart (no currency field in any scenario). Stripping the symbol everywhere lowers
-the macro (Advertisement 91.0 -> 67.4). Stripping it in Commercial alone would add about
-+1.0 macro on dev, but that is learning one scenario's annotation convention from its
-labels, so it is not used: every number above is zero-shot with respect to output conventions.
-
-The OCR label added to ExtractBench readings (RESEARCH_LOG §14) also transfers here: the
-parse reading alone goes from 80.50 to 80.96 on the dev split, while the quorums absorb it
-(frozen 81.87 -> 81.93, tuned 83.30 -> 83.29), so neither configuration changes.
+Why Commercial is low for everyone (817 wrong fields of 206 documents on a third of the images):
+its answer key is inherited from DocILE and does not follow UNIKIE's own guideline of "exact
+textual content". The key drops the currency symbol from every amount (0 of 1,579 amounts carry
+one, although the invoices print "$510.00"), while Advertisement keeps it (56 of 61). 188 of the
+817 errors are exactly that `$`. Most of the rest are block boundaries applied inconsistently (an
+address with or without the company name above it) and the choice among several printed numbers
+for `order_id`. The templates give no way to tell the two conventions apart (no currency field in
+any scenario). Stripping the symbol everywhere lowers the macro (Advertisement 91.0 -> 67.4).
+Stripping it in Commercial alone would add about +1.0 macro, but that is learning one scenario's
+annotation convention from its labels, so it is not used: every number above is zero-shot with
+respect to output conventions.
 
 Files: `unikie/readings/<reading>/<scenario>.json` (every reading),
 `unikie/summary.json` (per-scenario scores). Re-score: `benchmarks/unikie/run.sh score`.

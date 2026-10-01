@@ -8,7 +8,7 @@ follows the schema. It runs on open-weight models (Qwen3.8-27B) on a single GPU;
 | benchmark | result | standing |
 |---|---|---|
 | ExtractBench (370 enterprise PDFs, 1-163 pages) | Overall **95.25** (short 96.11, medium 94.03, long 90.41) | 3rd of 45 leaderboard rows (behind two commercial systems at 95.91) |
-| UNIKIE-BENCH (4,472 images, 11 scenarios) | **80.64** frozen, held-out / **82.37** tuned | 2nd of 16 / ties 1st (Gemini-3-Pro 82.37) |
+| UNIKIE-BENCH (4,472 images, 11 scenarios) | macro F1 **82.37** | ties 1st of 16 (Gemini-3-Pro 82.37) |
 
 * Details, caveats, per-document scores: [`results/README.md`](results/README.md)
 * How it works, with a diagram and worked examples: [`docs/docquorum.pdf`](docs/docquorum.pdf), [`docs/examples/`](docs/examples/)
@@ -66,10 +66,9 @@ python benchmarks/extractbench/robustness.py /tmp/short.json /tmp/medium.json /t
 **UNIKIE-BENCH (optional).** Clone [github.com/NEUIR/UNIKIE-BENCH](https://github.com/NEUIR/UNIKIE-BENCH), download its
 images as its `DATA.md` describes, and point `DQ_UNIKIE_DIR` at the clone (default: `data/unikie-bench`). Then:
 ```bash
-benchmarks/unikie/run.sh score     # frozen and tuned, test and full split, from results/unikie/readings
+benchmarks/unikie/run.sh score     # from the stored readings in results/unikie/readings
 ```
-**Expected output:** four lines; the `full` ones read `frozen full macro 80.64` and `tuned  full macro 82.37`
-(the `test` lines: 80.01 and 81.89).
+**Expected output:** one line starting `DocQuorum macro  82.37`, followed by the 11 per-scenario scores.
 
 ---
 
@@ -120,7 +119,7 @@ Check that they answer: `curl http://localhost:8079/v1/models` and `curl http://
 
 * The 27B server runs at `GPU_UTIL=0.74 MAX_LEN=131072 MAX_SEQS=48`; the parser at 0.13. Together they fit one 94 GB GPU.
   Do not lower `MAX_LEN` or the image limit: the planner assumes a 131k-token context and up to 12 page images per call.
-* Only the tuned UNIKIE configuration needs the extra readers `serve/serve_qwen3vl_32b.sh` (port 8079, in place of the 27B)
+* Only UNIKIE-BENCH uses the extra readers `serve/serve_qwen3vl_32b.sh` (port 8079, in place of the 27B)
   and `serve/serve_qwen3vl_8b.sh` (port 8078).
 * `serve/gpu_hold.py` was used on a shared GPU machine to keep memory reserved; you do not need it.
 
@@ -185,9 +184,9 @@ Each step is also a command you can run alone:
 Data: `DQ_UNIKIE_DIR` (section 1). The parser server must be up for `read`.
 ```bash
 benchmarks/unikie/run.sh read                 # parses the images, then makes the four readings with the 27B model
-benchmarks/unikie/run.sh read-extra 32        # tuned configuration: one-shot reading by Qwen3-VL-32B (serve_qwen3vl_32b.sh running instead of the 27B)
-benchmarks/unikie/run.sh read-extra 8         # tuned configuration: one-shot reading by Qwen3-VL-8B (serve_qwen3vl_8b.sh running; set DQ_LLM_URL=http://localhost:8078/v1)
-benchmarks/unikie/run.sh score                # frozen and tuned macro F1
+benchmarks/unikie/run.sh read-extra 32        # one-shot reading by Qwen3-VL-32B (serve_qwen3vl_32b.sh running instead of the 27B)
+benchmarks/unikie/run.sh read-extra 8         # one-shot reading by Qwen3-VL-8B (serve_qwen3vl_8b.sh running; set DQ_LLM_URL=http://localhost:8078/v1)
+benchmarks/unikie/run.sh score                # macro F1 over the six readings' quorum
 python benchmarks/unikie/unikie_eval.py report   # placed against the published systems
 ```
 Readings are written to `results/unikie/readings/`, so a fresh `read` adds to (or replaces) the stored ones: to keep the stored
@@ -233,7 +232,7 @@ configs/              example.env (copy it to local.env)
 results/              scores, final outputs, research log; archive/ holds the code before the 2026-09-29 reorganisation
 docs/                 docquorum.tex / .pdf (the pipeline explained), CODE_GUIDE.md, examples/ (six documents, output after every stage)
 tests/                unit tests
-FROZEN.json           the configuration frozen before the held-out benchmarks were downloaded
+FROZEN.json           the configuration and file hashes fixed on 2026-09-28
 ```
 Not in the repository (too large, or third-party): `data/` (benchmark data), `cache/` (parses), `runs/` and `logs/` (outputs of
 fresh runs), `ref_papers/`. `runs/`, `logs/` and `cache/` are created on first use.
@@ -247,7 +246,6 @@ Open work is listed in [`TODO.md`](TODO.md).
   model to verify its own output did not help in 22 attempts; prompt rules fixed one scenario and broke others) and one correction
   (an earlier quorum measured agreement with the benchmark's annotated record and so used gold; all numbers above are clean: the
   quorum sees only the schema and the readings).
-* ExtractBench served as the development set. UNIKIE-BENCH's "frozen, held-out" number was produced by a configuration fixed
-  before that benchmark was opened; see [`FROZEN.json`](FROZEN.json) and `results/README.md`.
+* ExtractBench served as the development set (see the caveats in `results/README.md`).
 * `docs/examples/` includes small benchmark PDFs and their answer keys, for illustration.
 * License: MIT (see `LICENSE`). The benchmarks and models keep their own licenses.

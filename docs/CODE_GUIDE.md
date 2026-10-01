@@ -109,7 +109,7 @@ Every check is `apply(pred, doc) -> pred`. `doc` gives the schema and the docume
 |---|---|
 | `benchmarks/extractbench/run.sh <split>` | The rule over a split: primary reading → checks → parse reading for scans → one-shot + quorum for scans of 12 pages or fewer → layout readers (not on short) → score. |
 | `benchmarks/extractbench/score_run.py`, `overall.py`, `robustness.py`, `scans.py` | Score a run folder; Overall and rank against the leaderboard; bootstrap intervals; list the scans. |
-| `benchmarks/unikie/unikie_eval.py`, `run.sh` | The four UNIKIE readings (oneshot, oneshot_text, image, parse, plus second-model one-shots). `score` prints frozen 80.64 / tuned 82.37; `report` prints them against the paper's Table 4. `unikie_protocol.py` replicates the benchmark's inference protocol and imports its evaluator. |
+| `benchmarks/unikie/unikie_eval.py`, `run.sh` | The four UNIKIE readings (oneshot, oneshot_text, image, parse, plus second-model one-shots). `score` prints the macro F1 (82.37) of the quorum over the six readings; `report` places it against the paper's Table 4. `unikie_protocol.py` replicates the benchmark's inference protocol and imports its evaluator. |
 | `tests/test_checks.py` | Unit tests; `python -m pytest tests/`. |
 | `docs/examples/make_examples.py` | Rebuilds `docs/examples/`: six documents, the output after every check, each replay identical to the stored final result. |
 
@@ -155,6 +155,6 @@ Also removed:
 * **Quorum, layout decisions, scores.** These matched too:
   * the same picks and agreement values;
   * the same layout decisions for the long split;
-  * the same scores for all 370 ExtractBench documents (Overall 95.25) and UNIKIE (80.64 / 82.37);
+  * the same scores for all 370 ExtractBench documents (Overall 95.25) and UNIKIE (82.37);
   * the six worked examples identical stage by stage;
   * the unit tests pass.

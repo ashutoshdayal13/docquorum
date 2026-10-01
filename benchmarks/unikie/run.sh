@@ -8,8 +8,8 @@
 #   benchmarks/unikie/run.sh read-extra MODEL fresh one-shot readings from a second model served
 #                                             at $DQ_LLM_URL (MODEL = 32 -> oneshot32, 8 -> oneshot8)
 #
-# Frozen configuration (held-out): quorum over image, parse, oneshot   -> 80.64 macro
-# Tuned configuration (dev/test split): + oneshot_text, oneshot32, oneshot8 -> 82.37 macro
+# DocQuorum: quorum over six readings (image, parse, oneshot, oneshot_text from Qwen3.8-27B;
+# oneshot32, oneshot8 from Qwen3-VL-32B / -8B) -> 82.37 macro F1 on all 4,472 images
 set -e
 HERE="$(cd "$(dirname "$0")" && pwd)"
 PY=${DQ_PYTHON:-python}
