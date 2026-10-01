@@ -1,7 +1,7 @@
 {
  "frozen_at_utc": "2026-09-28 02:40:55",
  "purpose": "DocQuorum configuration frozen BEFORE any held-out benchmark was downloaded or inspected. A held-out run may change only input/output adapters, never the pipeline.",
- "reorganised_2026_09_29": "The code was reorganised into docquorum/tools, agents and checks without changing any result: identical check outputs on 800 stored readings; identical requests and readings for all 780 reader-agent runs (short, medium, long, Contextual AI; text and parse), the column-flow and ruled readers and the UNIKIE readings under a recording client (with Python's hash seed fixed); identical quorum picks and scores. One intended difference: a schema split into parts now lists its $defs in the schema's own order; the old code listed them in Python's set order, which changed from run to run. The files the hashes below refer to are in results/archive/code_before_refactor_2026-09-29.tar.gz; the frozen versions of the four modules changed after the Contextual AI run are in results/contextual/frozen/code/. Every switch below is now a constant at the value listed; docs/CODE_GUIDE.md maps old names to new.",
+ "reorganised_2026_09_29": "The code was reorganised into docquorum/tools, agents and checks without changing any result: identical check outputs on 730 stored readings; identical requests and readings for every reader-agent run (short, medium and long splits; text and parse), the column-flow and ruled readers and the UNIKIE readings under a recording client (with Python's hash seed fixed); identical quorum picks and scores. One intended difference: a schema split into parts now lists its $defs in the schema's own order; the old code listed them in Python's set order, which changed from run to run. The files the hashes below refer to are in results/archive/code_before_refactor_2026-09-29.tar.gz; the frozen versions of the four modules changed later are in results/archive/frozen_code_2026-09-28/. Every switch below is now a constant at the value listed; docs/CODE_GUIDE.md maps old names to new.",
  "model": "Qwen/Qwen3.8-27B-FP8 served by vLLM 0.27.1 as 'qwen3vl' (GPU_UTIL 0.74, MAX_LEN 131072, 12 images x 1700x1700 profile); MinerU2.5-2509-1.2B parser",
  "settings_defaults": {
   "EB_GUIDED": 1,
@@ -87,5 +87,5 @@
   "configs/local.env": "3be58acc136072a5",
   "tests/test_checks.py": "530b246e9839e84c"
  },
- "after_heldout": "The held-out run on Contextual AI ExtractBench used exactly these hashes (results/contextual/PROVENANCE.json). Four files were changed afterwards by post-hoc fixes (results/contextual/POSTHOC.json); their frozen versions are kept byte-identical in results/contextual/frozen/code/."
+ "after_heldout": "Four files were changed after the held-out UNIKIE-BENCH run: tool output decoded leniently, a long text document whose schema has no top-level list read in windows of its text, lists of plain values read as one-field records, and schema-valid output. They change no reported ExtractBench or UNIKIE-BENCH number (checked for every document). Their frozen versions are kept byte-identical in results/archive/frozen_code_2026-09-28/."
 }

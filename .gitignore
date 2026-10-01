@@ -16,3 +16,6 @@ docs/*.out
 
 # machine-specific settings (copy configs/example.env)
 configs/local.env
+
+# kept locally, not published
+_withheld/

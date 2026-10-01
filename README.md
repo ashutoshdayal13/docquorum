@@ -9,7 +9,6 @@ follows the schema. It runs on open-weight models (Qwen3.8-27B) on a single GPU;
 |---|---|---|
 | ExtractBench (370 enterprise PDFs, 1-163 pages) | Overall **95.25** (short 96.11, medium 94.03, long 90.41) | 3rd of 45 leaderboard rows (behind two commercial systems at 95.91) |
 | UNIKIE-BENCH (4,472 images, 11 scenarios) | **80.64** frozen, held-out / **82.37** tuned | 2nd of 16 / ties 1st (Gemini-3-Pro 82.37) |
-| Contextual AI ExtractBench (35 PDFs, 2,076 pages, schemas of 12-369 fields) | pass rate **5.8%** frozen, held-out (26/35 valid) / **10.8%** with post-hoc fixes (35/35 valid); gold itself reaches 22.4% | 2nd of 7 / 1st of 7 (Gemini 3 Flash 6.9%) |
 
 * Details, caveats, per-document scores: [`results/README.md`](results/README.md)
 * How it works, with a diagram and worked examples: [`docs/docquorum.pdf`](docs/docquorum.pdf), [`docs/examples/`](docs/examples/)
@@ -37,7 +36,7 @@ This re-scores the final outputs stored in this repository with the benchmark's 
 git clone git@github.com:ashutoshdayal13/docquorum.git && cd docquorum
 python3.12 -m venv .venv && source .venv/bin/activate      # any Python >= 3.12 works
 pip install -r requirements.txt
-pip install llama-extract-bench          # ExtractBench's scorer and reference one-shot reader (Apache-2.0)
+pip install "git+https://github.com/run-llama/ExtractBench.git@123cea5f4940b5d5211677e3a95a6c300ab474f5"   # ExtractBench's scorer + one-shot reader (Apache-2.0; not on PyPI)
 ```
 
 **Step 2. Get the ExtractBench data.** Download the dataset from
@@ -79,7 +78,7 @@ benchmarks/unikie/run.sh score     # frozen and tuned, test and full split, from
 | what | version / note |
 |---|---|
 | Python | 3.12 or newer (the ExtractBench scorer needs it; the pipeline itself runs on 3.10+) |
-| Python packages | `pip install -r requirements.txt` and `pip install llama-extract-bench` |
+| Python packages | `pip install -r requirements.txt`, and ExtractBench from GitHub (the `git+https://...` line in section 1) |
 | Poppler | `pdftotext`, `pdftoppm`, `pdfinfo`, `pdffonts`, `pdfimages`: `sudo apt-get install poppler-utils`, or `conda install -c conda-forge poppler` |
 | GPU (only to run the models) | one 80-96 GB GPU (developed on one 94 GB H100). The 27B model takes 74% of it, the parser (MinerU2.5) another 13% |
 | vLLM (only to run the models) | `vllm==0.27.1`, in its own environment (recommended) |
@@ -194,14 +193,6 @@ python benchmarks/unikie/unikie_eval.py report   # placed against the published 
 Readings are written to `results/unikie/readings/`, so a fresh `read` adds to (or replaces) the stored ones: to keep the stored
 results, run with `DQ_UNIKIE_READINGS=/some/other/folder`.
 
-### Contextual AI ExtractBench (held out)
-Needs the benchmark's repository (`pip install -e <repo>`) and a judge endpoint (by default the same 27B server: no document is sent
-to an external API).
-```bash
-benchmarks/contextual/run.sh                  # adapter -> parse -> pipeline -> the benchmark's evaluator
-```
-See [`results/README.md`](results/README.md) for what the two reported configurations (frozen, post-hoc) mean.
-
 ### Tests
 ```bash
 python -m pytest tests/                        # 15 unit tests; no model, parser or data needed
@@ -216,7 +207,7 @@ python -m pytest tests/                        # 15 unit tests; no model, parser
 | `FileNotFoundError: ... 'pdftotext'` | Poppler is not on `PATH`: install it, or set `DQ_POPPLER_BIN` to its folder |
 | `ModuleNotFoundError: docquorum` | run from the project folder, or `export PYTHONPATH=$PWD` |
 | `openai.APIConnectionError` / connection refused | the model server is not up (section 3), or `DQ_LLM_URL` is wrong. `curl $DQ_LLM_URL/models` must answer |
-| `ModuleNotFoundError: extract_bench`, or a Python-version error | `pip install llama-extract-bench` in a **Python 3.12+** environment, and use that interpreter (`DQ_PYTHON`) |
+| `ModuleNotFoundError: extract_bench`, or a Python-version error | install ExtractBench from GitHub (section 1, step 1) in a **Python 3.12+** environment, and use that interpreter (`DQ_PYTHON`) |
 | a scan gives poor or empty output | the parser is not running (`DQ_PARSER_URL`); scans then fall back to page images only |
 | `FileNotFoundError` for a PDF under `data/extractbench/docs` | the PDFs are missing: the `.jsonl` files alone are enough only for scoring |
 | `kie_evaluator` not found (UNIKIE) | `DQ_UNIKIE_DIR` does not point at a clone of the UNIKIE-BENCH repository |
@@ -236,7 +227,7 @@ docquorum/            the pipeline (file by file: docs/CODE_GUIDE.md)
   tools/                what the agents act with, no decisions: pdf, parser, llm, schema, rows, layout
   agents/               the readers: reader (plan / act / observe), whole, oneshot, layout (+ column_reader, ruled_reader), prompts
   checks/               deterministic repairs and checks, one file each, and their chains
-benchmarks/           ExtractBench, UNIKIE-BENCH and Contextual AI ExtractBench runners and scorers
+benchmarks/           ExtractBench and UNIKIE-BENCH runners and scorers
 serve/                vLLM serving scripts
 configs/              example.env (copy it to local.env)
 results/              scores, final outputs, research log; archive/ holds the code before the 2026-09-29 reorganisation
@@ -249,11 +240,14 @@ fresh runs), `ref_papers/`. `runs/`, `logs/` and `cache/` are created on first u
 
 ## 8. Notes
 
+Open work is listed in [`TODO.md`](TODO.md).
+
+
 * Lessons that shaped the design are in [`results/RESEARCH_LOG.md`](results/RESEARCH_LOG.md), including negative results (asking the
   model to verify its own output did not help in 22 attempts; prompt rules fixed one scenario and broke others) and one correction
   (an earlier quorum measured agreement with the benchmark's annotated record and so used gold; all numbers above are clean: the
   quorum sees only the schema and the readings).
-* ExtractBench served as the development set. The numbers labelled "frozen" or "held-out" were produced by a configuration fixed
-  before those benchmarks were opened; see [`FROZEN.json`](FROZEN.json) and `results/README.md`.
+* ExtractBench served as the development set. UNIKIE-BENCH's "frozen, held-out" number was produced by a configuration fixed
+  before that benchmark was opened; see [`FROZEN.json`](FROZEN.json) and `results/README.md`.
 * `docs/examples/` includes small benchmark PDFs and their answer keys, for illustration.
 * License: MIT (see `LICENSE`). The benchmarks and models keep their own licenses.

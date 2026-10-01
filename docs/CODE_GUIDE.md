@@ -110,7 +110,6 @@ Every check is `apply(pred, doc) -> pred`. `doc` gives the schema and the docume
 | `benchmarks/extractbench/run.sh <split>` | The rule over a split: primary reading → checks → parse reading for scans → one-shot + quorum for scans of 12 pages or fewer → layout readers (not on short) → score. |
 | `benchmarks/extractbench/score_run.py`, `overall.py`, `robustness.py`, `scans.py` | Score a run folder; Overall and rank against the leaderboard; bootstrap intervals; list the scans. |
 | `benchmarks/unikie/unikie_eval.py`, `run.sh` | The four UNIKIE readings (oneshot, oneshot_text, image, parse, plus second-model one-shots). `score` prints frozen 80.64 / tuned 82.37; `report` prints them against the paper's Table 4. `unikie_protocol.py` replicates the benchmark's inference protocol and imports its evaluator. |
-| `benchmarks/contextual/` | Contextual AI ExtractBench: input adapter, the benchmark's evaluator, breakdown. |
 | `tests/test_checks.py` | Unit tests; `python -m pytest tests/`. |
 | `docs/examples/make_examples.py` | Rebuilds `docs/examples/`: six documents, the output after every check, each replay identical to the stored final result. |
 
@@ -150,12 +149,12 @@ Also removed:
 
 ## 6. How "no result changed" was checked
 
-* **Checks.** Each new check was run on the old chain's stored input for that stage and compared byte for byte with the old stage's output. This covered 800 stored readings: short, medium, long and Contextual; primary, parse, one-shot and layout chains. There were 0 differences, and 0 for the whole chains.
-* **Readers.** A recording stand-in for the model client answered every request deterministically from the request's own content. The old and new reader agents then had to send the same requests and return the same readings. This covered 780 runs over every document of the four splits, in text and parse mode, and all four plans; about 9,000 requests. It also covered the column and ruled readers on their four long documents, and 264 UNIKIE reading requests. Every run matched with Python's hash seed fixed.
+* **Checks.** Each new check was run on the old chain's stored input for that stage and compared byte for byte with the old stage's output. This covered 730 stored ExtractBench readings: short, medium and long; primary, parse, one-shot and layout chains. There were 0 differences, and 0 for the whole chains.
+* **Readers.** A recording stand-in for the model client answered every request deterministically from the request's own content. The old and new reader agents then had to send the same requests and return the same readings. This covered 740 runs over every document of the three ExtractBench splits, in text and parse mode, and all four plans; about 8,500 requests. It also covered the column and ruled readers on their four long documents, and 264 UNIKIE reading requests. Every run matched with Python's hash seed fixed.
 * **One intended difference.** The old code listed a schema group's `$defs` in Python's set order, which changes from run to run. They are now in the schema's own order.
 * **Quorum, layout decisions, scores.** These matched too:
   * the same picks and agreement values;
-  * the same layout decisions for the long and Contextual splits;
+  * the same layout decisions for the long split;
   * the same scores for all 370 ExtractBench documents (Overall 95.25) and UNIKIE (80.64 / 82.37);
   * the six worked examples identical stage by stage;
   * the unit tests pass.
