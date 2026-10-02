@@ -3,82 +3,82 @@
   "version": "0.2.0",
   "engine": "DocQuorum8B-bounded-v6",
   "metric": "macro_average_field_accuracy",
-  "score": 1.983530661809352,
+  "score": 74.79359519287742,
   "expected": 72,
-  "attempted": 2,
-  "completed": 2,
+  "attempted": 72,
+  "completed": 71,
   "per_document": [
     {
       "id": "1ZVqiyJZ",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.8755555555555554
     },
     {
       "id": "2Kqu7k2B",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.6829836829836828
     },
     {
       "id": "3VX7OcKR",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.9397394136807817
     },
     {
       "id": "3cS2qu1e",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.6880036133694671
     },
     {
       "id": "45xidifn",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.9063223379629631
     },
     {
       "id": "4kVtTRoL",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.7125435540069687
     },
     {
       "id": "5YJaBbNg",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.9397590361445783
     },
     {
       "id": "5ukZftw0",
       "format": ".xlsx",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.6779661016949151
     },
     {
       "id": "62PhJTyf",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.863013698630137
     },
     {
       "id": "69Ny1DwE",
       "format": ".jpeg",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.6451612903225806
     },
     {
       "id": "7ZhgzAzp",
       "format": ".tiff",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.8571428571428571
     },
     {
       "id": "97uZroyv",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.995260663507109
     },
     {
       "id": "9hPCh7ca",
@@ -89,350 +89,350 @@
     {
       "id": "B0nA2c30",
       "format": ".png",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.8200319488817892
     },
     {
       "id": "BnftpXVQ",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 1.0
     },
     {
       "id": "C7fe2lau",
       "format": ".xml",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 1.0
     },
     {
       "id": "DtfW60lS",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.7857142857142857
     },
     {
       "id": "ENoM9faK",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.9280882352941178
     },
     {
       "id": "EWUUeFYp",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.43913994169096215
     },
     {
       "id": "Eet2wW3x",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 1.0
     },
     {
       "id": "EkMAR28T",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.8647476340694006
     },
     {
       "id": "FiFgt4a6",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.85
     },
     {
       "id": "FnscKwQQ",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.7773809523809528
     },
     {
       "id": "FsGU3Q4X",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.425318066157761
     },
     {
       "id": "GW7i2xbM",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 1.0
     },
     {
       "id": "IPm0MkgQ",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.7588383838383844
     },
     {
       "id": "J6buHXQ4",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.08464448244876663
     },
     {
       "id": "JPIU6gjr",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.7148857526881714
     },
     {
       "id": "KYwdv07B",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.9229607250755287
     },
     {
       "id": "KpewWz3R",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.7213333333333334
     },
     {
       "id": "LYeb3G3s",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.8245562130177515
     },
     {
       "id": "M66HZlWT",
       "format": ".jpeg",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 1.0
     },
     {
       "id": "NNaGgwE5",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.9887640449438202
     },
     {
       "id": "NlWTPen5",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.9523809523809523
     },
     {
       "id": "OayFbGlG",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 1.0
     },
     {
       "id": "Oe7iRM1G",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.6262626262626262
     },
     {
       "id": "PSU5pciM",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 1.0
     },
     {
       "id": "PYhFptk3",
       "format": ".txt",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.9629629629629629
     },
     {
       "id": "QxoQ6zgn",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 1.0
     },
     {
       "id": "SBR9L7Y8",
       "format": ".jpeg",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.22988505747126434
     },
     {
       "id": "SkD8Lz8o",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.9
     },
     {
       "id": "UnG6cLfP",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.8095238095238096
     },
     {
       "id": "UqY6ItFZ",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.7176230793352117
     },
     {
       "id": "VJeLz6Am",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.8057142857142907
     },
     {
       "id": "WM9ZKrAr",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.9269097222222223
     },
     {
       "id": "WnxX1Buq",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.8666666666666666
     },
     {
       "id": "WxP8Tqgf",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.5003881987577639
     },
     {
       "id": "XhJyv5mb",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.45217391304347826
     },
     {
       "id": "ZN6HbuKp",
       "format": ".csv",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.6857142857142857
     },
     {
       "id": "ZXlksSpk",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 1.0
     },
     {
       "id": "bjBNmyNw",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.8915343915343915
     },
     {
       "id": "eKzY7gEA",
       "format": ".html",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 1.0
     },
     {
       "id": "eeqkpCkH",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.2797101449275352
     },
     {
       "id": "f9nrfUNC",
       "format": ".pdf",
-      "status": "missing",
+      "status": "failed",
       "score": 0.0
     },
     {
       "id": "fK6kDNqE",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.5533415502602096
     },
     {
       "id": "iTruRDrG",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.7272727272727273
     },
     {
       "id": "jlKc8eVi",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.9898477157360406
     },
     {
       "id": "kcnZ5EWa",
       "format": ".pdf",
-      "status": "missing",
+      "status": "completed",
       "score": 0.0
     },
     {
       "id": "nESapyAA",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.8636363636363636
     },
     {
       "id": "o0dn9Dd4",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.7617338003502654
     },
     {
       "id": "phovuuuk",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.35714285714285715
     },
     {
       "id": "pw8elPW9",
       "format": ".docx",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.8333333333333334
     },
     {
       "id": "qQUPWQNA",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.6341226708074533
     },
     {
       "id": "qRCO6ev5",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.44852941176470573
     },
     {
       "id": "qoSTXgNE",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.5520833333333334
     },
     {
       "id": "sHMajYzm",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.7881292517006837
     },
     {
       "id": "tLFa76nQ",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.5406481623599428
     },
     {
       "id": "vAdukzpt",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.9288086642599225
     },
     {
       "id": "vBIz5dut",
       "format": ".jpeg",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.9563502673796791
     },
     {
       "id": "wVafMvAC",
       "format": ".jpeg",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.1909604519774011
     },
     {
       "id": "yTRFKVPx",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 1.0
     },
     {
       "id": "zKibU88u",
@@ -441,5 +441,5 @@
       "score": 1.0
     }
   ],
-  "eligible_for_full_ranking": false
+  "eligible_for_full_ranking": true
 }
