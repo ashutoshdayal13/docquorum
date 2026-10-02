@@ -13,6 +13,7 @@ These results cover every task in their stated cohort. Reference ranks compare p
 | UNIKIE constrained-category | [Development 4 readings; stored-output re-score](results/multibench/unikie_audit.json) | 4472 | **81.3175** | 2 | 1.0525 |
 | UNIKIE constrained-category | [Tuned 6 readings; stored-output re-score](results/multibench/unikie_audit.json) | 4472 | **82.3746** | 1 (displayed tie) | 0.0000 |
 | DocuBench v0.2.0 | [DocQuorum8B-bounded-v1](results/multibench/docubench/summary.json) | 72 | **63.8574** | 11 | 33.1596 |
+| DocuBench v0.2.0 | [DocQuorum8B-bounded-v4](results/multibench/docubench_v4/summary.json) | 72 | **70.3995** | 10 | 26.6175 |
 
 Pilots, selected routing checks and incomplete runs remain below in the experiment notes. They receive no full-cohort rank. This table refreshes and is committed/pushed whenever a complete score changes.
 <!-- completed-results:end -->

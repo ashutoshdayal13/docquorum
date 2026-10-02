@@ -311,10 +311,10 @@
     {
       "benchmark": "DocuBench v0.2.0",
       "variant": "DocQuorum8B-bounded-v4",
-      "score": 29.647056790804697,
-      "full_comparison_eligible": false,
+      "score": 70.39950614396317,
+      "full_comparison_eligible": true,
       "official_submission": false,
-      "reference_score_rank": null,
+      "reference_score_rank": 10,
       "ties_at_published_precision": [],
       "leader": {
         "system": "DocuPipe high",
@@ -480,12 +480,12 @@
           "zKibU88u": 1.0
         }
       },
-      "gap_to_leader_pp": null,
-      "gap_to_third_pp": null,
+      "gap_to_leader_pp": 26.61748130376462,
+      "gap_to_third_pp": 21.33284403019637,
       "comparison": "Published reference scores; not an official accepted rank",
-      "attempted": 27,
+      "attempted": 72,
       "expected": 72,
-      "completed": 25,
+      "completed": 65,
       "source_summary": "docubench_v4/summary.json"
     },
     {
@@ -671,7 +671,7 @@
     {
       "benchmark": "DocuBench v0.2.0",
       "variant": "DocQuorum8B-bounded-v6",
-      "score": 1.3888888888888888,
+      "score": 1.983530661809352,
       "full_comparison_eligible": false,
       "official_submission": false,
       "reference_score_rank": null,
@@ -843,9 +843,9 @@
       "gap_to_leader_pp": null,
       "gap_to_third_pp": null,
       "comparison": "Published reference scores; not an official accepted rank",
-      "attempted": 1,
+      "attempted": 2,
       "expected": 72,
-      "completed": 1,
+      "completed": 2,
       "source_summary": "docubench_v6/summary.json"
     },
     {
@@ -990,6 +990,37 @@
       "expected": 3,
       "completed": 3,
       "source_summary": "longarray/scores/pilot/summary.json"
+    },
+    {
+      "benchmark": "LongArray-Extract",
+      "variant": "DocQuorum8B-bounded-v4",
+      "score": 19.81818181818182,
+      "full_comparison_eligible": false,
+      "official_submission": false,
+      "reference_score_rank": null,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Extend MAX",
+        "score": 99.2,
+        "completed": 45,
+        "expected": 45,
+        "published_latency_s": 301
+      },
+      "third_place_target": {
+        "system": "Claude Opus 4.7",
+        "score": 83.1,
+        "completed": 45,
+        "expected": 45,
+        "published_latency_s": 532
+      },
+      "gap_to_leader_pp": null,
+      "gap_to_third_pp": null,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "scope": "pilot",
+      "attempted": 1,
+      "expected": 3,
+      "completed": 1,
+      "source_summary": "longarray_v4/scores/pilot/summary.json"
     }
   ],
   "pending": [
