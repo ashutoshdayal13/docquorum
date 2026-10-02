@@ -1073,6 +1073,35 @@
       "source_summary": "varex/scores/full/summary.json"
     },
     {
+      "benchmark": "VAREX image_only",
+      "variant": "8B repaired quorum; stored-output development",
+      "score": 97.7897932081199,
+      "full_comparison_eligible": true,
+      "official_submission": false,
+      "reference_score_rank": 2,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini 2.5 Pro",
+        "size": "API",
+        "score": 98.0,
+        "anls": 98.5
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL",
+        "size": "8B",
+        "score": 96.6,
+        "anls": 97.6
+      },
+      "gap_to_leader_pp": 0.21020679188009694,
+      "gap_to_third_pp": -1.1897932081199087,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "scope": "full",
+      "attempted": 1777,
+      "expected": 1777,
+      "source_summary": "varex_selector_v2/scores/full/summary.json",
+      "fresh_inference": false
+    },
+    {
       "benchmark": "LongArray-Extract",
       "variant": "DocQuorum8B-bounded-v1",
       "score": 76.24767037175461,

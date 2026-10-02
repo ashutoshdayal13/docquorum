@@ -1,0 +1,15 @@
+{
+  "documents": 1777,
+  "counts": {
+    "official": 1466,
+    "nonzero_agreement": 1776,
+    "whole": 273,
+    "guided": 37,
+    "None": 1
+  },
+  "original_adapter": {
+    "zero_agreement_documents": 1776,
+    "all_failed": 1
+  },
+  "cause": "quorum.agree caught KeyError('pdf') and returned (0, 0)"
+}

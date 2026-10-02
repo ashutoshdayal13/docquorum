@@ -62,6 +62,13 @@ def build_report():
                     rows.append(reference('VAREX image_only','8B '+name,100*result['exact_match_normalized'],v['results'],
                         result['eligible_for_full_ranking'],1,scope=scope,attempted=result['attempted'],expected=s['docs'],
                         source_summary=f'varex/scores/{scope}/summary.json'))
+        repaired = load('varex_selector_v2/scores/full/summary.json')
+        if repaired:
+            result = repaired['systems']['quorum_v2']
+            rows.append(reference('VAREX image_only','8B repaired quorum; stored-output development',
+                100*result['exact_match_normalized'],v['results'],result['eligible_for_full_ranking'],1,
+                scope='full',attempted=result['attempted'],expected=repaired['docs'],
+                source_summary='varex_selector_v2/scores/full/summary.json',fresh_inference=False))
     peers=load('longarray_public_reference.json')['results']
     for folder in ['longarray','longarray_v2','longarray_v3','longarray_v4','longarray_v5']:
         for scope in ['pilot','full']:
