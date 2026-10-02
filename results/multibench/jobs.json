@@ -27,5 +27,20 @@
   "foreign_gpu_pid": 669913,
   "foreign_process_unchanged": true,
   "scheduler_pid": 1518073,
-  "longarray_controller": "Resumes PID 1494953 after original DocuBench finishes, scores original pilot, then runs/scorers V4 pilot"
+  "longarray_controller": "Resumes PID 1494953 after original DocuBench finishes, scores original pilot, then runs/scorers V4 pilot",
+  "queued": [
+    {
+      "benchmark": "longextract V4",
+      "scope": "full50",
+      "scheduler_pid": 1538637,
+      "predecessor_pid": 1523932
+    },
+    {
+      "benchmark": "longarray V4",
+      "scope": "full45",
+      "scheduler_pid": 1538789,
+      "predecessor_pid": 1525054
+    }
+  ],
+  "publisher_pid": 1538359
 }
