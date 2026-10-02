@@ -58,8 +58,8 @@
       ]
     }
   ],
-  "publisher_pid": null,
-  "publisher_restart_pending": true,
+  "publisher_pid": 1564459,
+  "publisher_restart_pending": false,
   "cpu_model_download": {
     "repo": "ulkaa/Qwen3.8-27B-AWQ-INT4",
     "pid": null,
