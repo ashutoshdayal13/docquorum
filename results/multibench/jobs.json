@@ -15,6 +15,12 @@
       "pid": 1518077,
       "scope": "full",
       "scheduling": "Official reading first; other fixed-policy readings follow; outputs checkpointed"
+    },
+    {
+      "benchmark": "DocuBench V4",
+      "pid": 1523932,
+      "scope": "full72",
+      "source_snapshot": "code_fingerprints_v4.json"
     }
   ],
   "deferred": [
@@ -28,5 +34,6 @@
   ],
   "foreign_gpu_pid": 669913,
   "foreign_process_unchanged": true,
-  "scheduler_pid": 1518073
+  "scheduler_pid": 1518073,
+  "longarray_controller": "Resumes PID 1494953 after original DocuBench finishes, scores original pilot, then runs/scorers V4 pilot"
 }

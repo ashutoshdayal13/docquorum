@@ -1,0 +1,1355 @@
+{
+  "scope": "Source-only PDF modality diagnostic; no labels or predictions read; excludes the 14 non-PDF tasks",
+  "pdf_documents": 58,
+  "mixed_pdfs": 3,
+  "pure_or_sparse_scan_pdfs": 21,
+  "potential_scan_pages_dropped_by_v1_chunk_limit": 147,
+  "note": "Potential dropped-page count applies to fallback list chunks; actual whole/geometry routes can differ. Textless pages can be blank, so mixed count is a routing trigger, not a content-loss certificate.",
+  "documents": [
+    {
+      "id": "1ZVqiyJZ",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        4088
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "2Kqu7k2B",
+      "pages": 14,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "potential_dropped_scan_pages": 7
+    },
+    {
+      "id": "3VX7OcKR",
+      "pages": 15,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "potential_dropped_scan_pages": 7
+    },
+    {
+      "id": "3cS2qu1e",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1
+      ],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "45xidifn",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        7322
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "4kVtTRoL",
+      "pages": 5,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "potential_dropped_scan_pages": 2
+    },
+    {
+      "id": "5YJaBbNg",
+      "pages": 2,
+      "native_text_chars_per_page": [
+        5102,
+        3440
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "62PhJTyf",
+      "pages": 3,
+      "native_text_chars_per_page": [
+        2450,
+        1810,
+        2768
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "97uZroyv",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        8198
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "9hPCh7ca",
+      "pages": 10,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "potential_dropped_scan_pages": 5
+    },
+    {
+      "id": "BnftpXVQ",
+      "pages": 2,
+      "native_text_chars_per_page": [
+        1801,
+        2500
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "DtfW60lS",
+      "pages": 4,
+      "native_text_chars_per_page": [
+        21184,
+        28917,
+        12,
+        16
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": true,
+      "nontext_pages": [
+        3,
+        4
+      ],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "ENoM9faK",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        13345
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "EWUUeFYp",
+      "pages": 28,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "potential_dropped_scan_pages": 14
+    },
+    {
+      "id": "Eet2wW3x",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        6406
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "EkMAR28T",
+      "pages": 11,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "potential_dropped_scan_pages": 5
+    },
+    {
+      "id": "FiFgt4a6",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        7583
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "FnscKwQQ",
+      "pages": 16,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "potential_dropped_scan_pages": 8
+    },
+    {
+      "id": "FsGU3Q4X",
+      "pages": 28,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "potential_dropped_scan_pages": 14
+    },
+    {
+      "id": "GW7i2xbM",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        3741
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "IPm0MkgQ",
+      "pages": 6,
+      "native_text_chars_per_page": [
+        3415,
+        4677,
+        1723,
+        3660,
+        931,
+        11161
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "J6buHXQ4",
+      "pages": 13,
+      "native_text_chars_per_page": [
+        2969,
+        0,
+        6846,
+        3566,
+        2632,
+        2927,
+        1471,
+        4659,
+        2667,
+        4829,
+        2314,
+        2701,
+        1869
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": true,
+      "nontext_pages": [
+        2
+      ],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "JPIU6gjr",
+      "pages": 40,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "potential_dropped_scan_pages": 20
+    },
+    {
+      "id": "KYwdv07B",
+      "pages": 16,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "potential_dropped_scan_pages": 8
+    },
+    {
+      "id": "KpewWz3R",
+      "pages": 7,
+      "native_text_chars_per_page": [
+        11241,
+        11849,
+        6053,
+        7461,
+        6947,
+        6979,
+        7249
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "LYeb3G3s",
+      "pages": 2,
+      "native_text_chars_per_page": [
+        3501,
+        707
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "NNaGgwE5",
+      "pages": 2,
+      "native_text_chars_per_page": [
+        10533,
+        9751
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "NlWTPen5",
+      "pages": 3,
+      "native_text_chars_per_page": [
+        5882,
+        8270,
+        646
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "OayFbGlG",
+      "pages": 2,
+      "native_text_chars_per_page": [
+        2741,
+        2508
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "Oe7iRM1G",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        9199
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "PSU5pciM",
+      "pages": 2,
+      "native_text_chars_per_page": [
+        6770,
+        2220
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "QxoQ6zgn",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        817
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "SkD8Lz8o",
+      "pages": 3,
+      "native_text_chars_per_page": [
+        2656,
+        3624,
+        3285
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "UnG6cLfP",
+      "pages": 2,
+      "native_text_chars_per_page": [
+        0,
+        4511
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": true,
+      "nontext_pages": [
+        1
+      ],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "UqY6ItFZ",
+      "pages": 14,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "potential_dropped_scan_pages": 7
+    },
+    {
+      "id": "VJeLz6Am",
+      "pages": 16,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "potential_dropped_scan_pages": 8
+    },
+    {
+      "id": "WM9ZKrAr",
+      "pages": 10,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "potential_dropped_scan_pages": 5
+    },
+    {
+      "id": "WnxX1Buq",
+      "pages": 4,
+      "native_text_chars_per_page": [
+        3272,
+        1258,
+        1378,
+        1153
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "WxP8Tqgf",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        14317
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "XhJyv5mb",
+      "pages": 2,
+      "native_text_chars_per_page": [
+        8719,
+        8361
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "ZXlksSpk",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        2839
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "bjBNmyNw",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        125
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "eeqkpCkH",
+      "pages": 25,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "potential_dropped_scan_pages": 12
+    },
+    {
+      "id": "f9nrfUNC",
+      "pages": 10,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "potential_dropped_scan_pages": 5
+    },
+    {
+      "id": "fK6kDNqE",
+      "pages": 22,
+      "native_text_chars_per_page": [
+        2439,
+        2632,
+        2832,
+        2729,
+        2553,
+        2699,
+        2649,
+        2763,
+        2444,
+        2511,
+        2651,
+        2950,
+        2734,
+        2531,
+        2602,
+        2831,
+        2749,
+        2645,
+        2675,
+        2953,
+        2903,
+        2804
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "iTruRDrG",
+      "pages": 2,
+      "native_text_chars_per_page": [
+        13124,
+        4563
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "jlKc8eVi",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        2928
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "kcnZ5EWa",
+      "pages": 3,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3
+      ],
+      "potential_dropped_scan_pages": 1
+    },
+    {
+      "id": "nESapyAA",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        2518
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "o0dn9Dd4",
+      "pages": 3,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3
+      ],
+      "potential_dropped_scan_pages": 1
+    },
+    {
+      "id": "phovuuuk",
+      "pages": 3,
+      "native_text_chars_per_page": [
+        12914,
+        3933,
+        7458
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "qQUPWQNA",
+      "pages": 5,
+      "native_text_chars_per_page": [
+        4146,
+        3251,
+        2245,
+        3282,
+        2224
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "qRCO6ev5",
+      "pages": 1,
+      "native_text_chars_per_page": [
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1
+      ],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "qoSTXgNE",
+      "pages": 4,
+      "native_text_chars_per_page": [
+        2340,
+        1281,
+        1860,
+        3053
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "sHMajYzm",
+      "pages": 16,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "potential_dropped_scan_pages": 8
+    },
+    {
+      "id": "tLFa76nQ",
+      "pages": 18,
+      "native_text_chars_per_page": [
+        3733,
+        2025,
+        3791,
+        6140,
+        6313,
+        2927,
+        3318,
+        3214,
+        1642,
+        5813,
+        4666,
+        3756,
+        2778,
+        4062,
+        4988,
+        3254,
+        2711,
+        5391
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    },
+    {
+      "id": "vAdukzpt",
+      "pages": 21,
+      "native_text_chars_per_page": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_image_mode": true,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "potential_dropped_scan_pages": 10
+    },
+    {
+      "id": "yTRFKVPx",
+      "pages": 4,
+      "native_text_chars_per_page": [
+        114,
+        5340,
+        1769,
+        525
+      ],
+      "baseline_image_mode": false,
+      "mixed_native_and_nontext_pages": false,
+      "nontext_pages": [],
+      "potential_dropped_scan_pages": 0
+    }
+  ]
+}
