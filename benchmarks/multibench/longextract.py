@@ -61,8 +61,11 @@ def cohort(scope):
     return manifest['docs'] if scope == 'full' else [r for r in manifest['docs'] if r['id'] in manifest['pilot_ids']]
 
 
-def run(scope, workers):
-    from resource_profile_v3 import install
+def run(scope, workers, version='bounded-v3'):
+    if version == 'bounded-v4':
+        from resource_profile_v4 import install
+    else:
+        from resource_profile_v3 import install
     profile = install()
     policy = {'profile':profile, 'model':C.MODEL, 'scope':scope, 'dataset_revision':REVISION,
               'task':'Extract every record and document-level field shown in the document according to the supplied schema.'}
@@ -112,7 +115,10 @@ def score(scope):
     failures = [r for r in scored if r['status']=='failure']
     assert len(successes)+len(failures) == len(cohort(scope))
     latencies = sorted(r['seconds'] for r in successes if r['seconds'] is not None)
-    summary = {'benchmark':'LongExtractBench public 50', 'scope':scope, 'profile':'DocQuorum8B-bounded-v3',
+    policy_path = OUT/('policy_'+scope+'.json')
+    policy = json.loads(policy_path.read_text()) if policy_path.exists() else {}
+    summary = {'benchmark':'LongExtractBench public 50', 'scope':scope,
+        'profile':policy.get('profile',{}).get('profile','unrecorded'),
         'expected':len(scored), 'attempted':sum(r['attempted'] for r in scored), 'successful':len(successes),
         'failed':len(failures), 'leaf_accuracy':statistics.mean(r['leaf_accuracy'] for r in successes) if successes else 0.,
         'row_precision':statistics.mean(r['precision'] for r in successes) if successes else 0.,
@@ -122,7 +128,8 @@ def score(scope):
         'metric':'Official macro accuracy and row P/R over successful documents only; failures reconciled separately',
         'scorer_sha256':hashlib.sha256((SOURCE/'src/longextract_bench/grading.py').read_bytes()).hexdigest(),
         'dataset_revision':REVISION, 'source_revision':CODE_REVISION,
-        'eligible_for_public50_comparison':scope=='full' and all(r['attempted'] for r in scored),
+        'eligible_for_public50_comparison':scope=='full' and len(scored)==50 and bool(policy)
+            and all(r['attempted'] for r in scored),
         'eligible_for_published225_ranking':False, 'reference_score_rank':None, 'official_submission':False,
         'per_document':scored}
     write(OUT/'scores'/scope/'summary.json',summary)
@@ -135,8 +142,9 @@ if __name__=='__main__':
     parser.add_argument('--scope',choices=['pilot','full'],default='pilot')
     parser.add_argument('--out',type=Path,default=OUT)
     parser.add_argument('--workers',type=int,default=2)
+    parser.add_argument('--profile',choices=['bounded-v3','bounded-v4'],default='bounded-v3')
     args = parser.parse_args()
     OUT = args.out.resolve()
     if args.action=='prepare':prepare()
-    elif args.action=='run':run(args.scope,args.workers)
+    elif args.action=='run':run(args.scope,args.workers,args.profile)
     else:score(args.scope)

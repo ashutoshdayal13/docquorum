@@ -22,12 +22,14 @@ def completed_report(report):
     rows = [r for r in report['rows'] if r['full_comparison_eligible']
             and r.get('attempted') == r.get('expected') and r.get('expected',0) > 0]
     diagnostics = []
-    s = B.load('longextract_v3/scores/full/summary.json')
-    if s and s.get('eligible_for_public50_comparison') and s['attempted']==s['expected']==50:
-        diagnostics.append({'benchmark':'LongExtractBench public 50', 'variant':s['profile'],
-            'score':s['leaf_accuracy'], 'row_precision':s['row_precision'], 'row_recall':s['row_recall'],
-            'successful':s['successful'],'failed':s['failed'],'expected':50,
-            'reference_score_rank':None,'source_summary':'longextract_v3/scores/full/summary.json'})
+    for folder in ['longextract_v3','longextract_v4']:
+        source = folder+'/scores/full/summary.json'
+        s = B.load(source)
+        if s and s.get('eligible_for_public50_comparison') and s['attempted']==s['expected']==50:
+            diagnostics.append({'benchmark':'LongExtractBench public 50', 'variant':s['profile'],
+                'score':s['leaf_accuracy'], 'row_precision':s['row_precision'], 'row_recall':s['row_recall'],
+                'successful':s['successful'],'failed':s['failed'],'expected':50,
+                'reference_score_rank':None,'source_summary':source})
     return {'branch':BRANCH, 'rows':rows, 'unranked_complete_cohorts':diagnostics,
             'note':'Published-score references, not accepted external leaderboard ranks. Development and stored-output measurements retain their scope.'}
 
@@ -50,7 +52,8 @@ def render_completed(report):
         lines.append(f"| {r['benchmark']} | [{variant}](results/multibench/{source}) | {r['expected']} | **{r['score']:.4f}** | {rank} | {gap:.4f} |")
     for r in report['unranked_complete_cohorts']:
         lines.append(f"| {r['benchmark']} | [{r['variant']}](results/multibench/{r['source_summary']}); {r['successful']}/50 successful | 50 | **{r['score']:.4f}** | Unknown on matching public cohort | — |")
-        lines.extend(['',f"Public-50 row precision: {100*r['row_precision']:.4f}%; recall: {100*r['row_recall']:.4f}%; failures: {r['failed']}/50. Leaf accuracy averages successful documents only."])
+    for r in report['unranked_complete_cohorts']:
+        lines.extend(['',f"{r['variant']} public-50 row precision: {100*r['row_precision']:.4f}%; recall: {100*r['row_recall']:.4f}%; failures: {r['failed']}/50. Leaf accuracy averages successful documents only."])
     lines.extend(['', 'Pilots, selected routing checks and incomplete runs remain below in the experiment notes. They receive no full-cohort rank. This table refreshes and is committed/pushed whenever a complete score changes.', END])
     return '\n'.join(lines)
 

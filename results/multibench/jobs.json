@@ -6,11 +6,6 @@
   },
   "running": [
     {
-      "benchmark": "DocuBench",
-      "pid": 1492643,
-      "scope": "full"
-    },
-    {
       "benchmark": "VAREX",
       "pid": 1518077,
       "scope": "full",
@@ -21,17 +16,14 @@
       "pid": 1523932,
       "scope": "full72",
       "source_snapshot": "code_fingerprints_v4.json"
-    }
-  ],
-  "deferred": [
+    },
     {
       "benchmark": "LongArray",
       "pid": 1494953,
-      "scope": "pilot",
-      "state": "SIGSTOP; resume with SIGCONT after small full cohorts finish",
-      "reason": "Give complete DocuBench and VAREX measurements priority; preserve in-flight long-array work"
+      "scope": "pilot"
     }
   ],
+  "deferred": [],
   "foreign_gpu_pid": 669913,
   "foreign_process_unchanged": true,
   "scheduler_pid": 1518073,

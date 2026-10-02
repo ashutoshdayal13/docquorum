@@ -609,7 +609,7 @@
     },
     {
       "benchmark": "LongArray-Extract",
-      "status": "Pilot deferred to prioritize shorter complete cohorts",
+      "status": "Original pilot resumed; V4 pilot follows, then full-cohort evaluation",
       "reference_score_rank": null
     },
     {

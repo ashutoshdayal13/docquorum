@@ -73,7 +73,7 @@ def build_report():
     pending=[{'benchmark':b,'status':state,'reference_score_rank':None} for b,state in [
         ('DocuBench','Full run in progress; refresh after scoring'),
         ('VAREX','Full run in progress; pilot does not establish a rank'),
-        ('LongArray-Extract','Pilot deferred to prioritize shorter complete cohorts'),
+        ('LongArray-Extract','Original pilot resumed; V4 pilot follows, then full-cohort evaluation'),
         ('Contextual AI Extract Bench','26/35 schema-valid; official judge and paper/scorer field-count reconciliation needed'),
         ('LongExtractBench public 50','All 50 inputs prepared; published 225-document cohort cannot supply a matching rank')]]
     present_full={r['benchmark'] for r in rows if r['full_comparison_eligible']}

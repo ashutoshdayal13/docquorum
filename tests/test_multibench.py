@@ -311,3 +311,39 @@ def test_results_refresh_keeps_manual_scope_notes_and_is_idempotent():
     assert 'Manual protocol and scope notes.' in updated
     assert PUB.update_readme(updated,report) == updated
     assert updated.count(PUB.START) == updated.count(PUB.END) == 1
+
+
+def test_public50_publisher_requires_complete_matching_cohort(monkeypatch):
+    complete = {'eligible_for_public50_comparison':True,'attempted':50,'expected':50,
+        'profile':'DocQuorum8B-bounded-v4','leaf_accuracy':98.,'row_precision':.9,
+        'row_recall':.7,'successful':48,'failed':2}
+    partial = dict(complete, attempted=49)
+    monkeypatch.setattr(B,'load',lambda name: complete if name.startswith('longextract_v4/') else partial)
+    report = PUB.completed_report({'rows':[]})
+    assert len(report['unranked_complete_cohorts']) == 1
+    row = report['unranked_complete_cohorts'][0]
+    assert row['reference_score_rank'] is None
+    assert row['source_summary'] == 'longextract_v4/scores/full/summary.json'
+    rendered = PUB.render_completed(report)
+    assert '**98.0000**' in rendered
+    assert 'precision: 90.0000%; recall: 70.0000%; failures: 2/50' in rendered
+
+
+def test_longextract_score_records_actual_profile_and_requires_policy(monkeypatch,tmp_path):
+    monkeypatch.setattr(LX,'OUT',tmp_path)
+    records = [{'id':str(i)} for i in range(50)]
+    monkeypatch.setattr(LX,'cohort',lambda _:records)
+    for r in records:
+        V.write(tmp_path/'predictions'/(r['id']+'.json'),{})
+    LX.score('full')
+    summary = json.loads((tmp_path/'scores/full/summary.json').read_text())
+    assert summary['attempted'] == 50
+    assert not summary['eligible_for_public50_comparison']
+    assert summary['profile'] == 'unrecorded'
+    V.write(tmp_path/'policy_full.json',{'profile':{'profile':'DocQuorum8B-bounded-v4'}})
+    LX.score('full')
+    summary = json.loads((tmp_path/'scores/full/summary.json').read_text())
+    assert summary['profile'] == 'DocQuorum8B-bounded-v4'
+    assert summary['eligible_for_public50_comparison']
+    assert summary['failed'] == 50
+    assert not summary['eligible_for_published225_ranking']
