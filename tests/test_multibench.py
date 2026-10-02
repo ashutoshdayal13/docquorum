@@ -16,6 +16,7 @@ import docubench as D
 import varex as V
 import longarray as L
 import leaderboard as B
+import contextual as X
 
 
 def image_part(color):
@@ -161,3 +162,13 @@ def test_unrounded_measurement_does_not_turn_published_tie_into_win():
     row = B.reference('UNIKIE','tuned',82.374571,peers,True,2)
     assert row['reference_score_rank'] == 1
     assert row['ties_at_published_precision'] == ['Gemini']
+
+
+def test_wrapped_contextual_schema_does_not_accept_every_prediction():
+    import jsonschema
+    wrapper = {'name':'resume', 'schema_definition':{'type':'object',
+        'properties':{'name':{'type':'string'}}, 'required':['name']}}
+    actual = X.actual_schema(wrapper)
+    assert list(jsonschema.Draft202012Validator(actual).iter_errors({'name':None}))
+    with pytest.raises(ValueError, match='No JSON Schema'):
+        X.actual_schema({'name':'metadata wrapper'})

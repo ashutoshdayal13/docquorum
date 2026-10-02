@@ -217,7 +217,7 @@
     },
     {
       "benchmark": "Contextual AI Extract Bench",
-      "status": "32/35 schema-valid; matching official content judge needed",
+      "status": "26/35 schema-valid; official judge and paper/scorer field-count reconciliation needed",
       "reference_score_rank": null
     },
     {

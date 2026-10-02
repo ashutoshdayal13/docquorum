@@ -65,7 +65,7 @@ def main():
         ('DocuBench','Full run in progress; refresh after scoring'),
         ('VAREX','Full run in progress; pilot does not establish a rank'),
         ('LongArray-Extract','Pilot deferred to prioritize shorter complete cohorts'),
-        ('Contextual AI Extract Bench','32/35 schema-valid; matching official content judge needed'),
+        ('Contextual AI Extract Bench','26/35 schema-valid; official judge and paper/scorer field-count reconciliation needed'),
         ('LongExtractBench public 50','Inputs available; published 225-document cohort cannot supply a matching rank')]]
     present_full={r['benchmark'] for r in rows if r['full_comparison_eligible']}
     pending=[p for p in pending if not any(p['benchmark'] in name for name in present_full)]
