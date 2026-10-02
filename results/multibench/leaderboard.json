@@ -131,10 +131,10 @@
     {
       "benchmark": "DocuBench v0.2.0",
       "variant": "DocQuorum8B-bounded-v1",
-      "score": 49.478291254029095,
-      "full_comparison_eligible": false,
+      "score": 63.85741659063385,
+      "full_comparison_eligible": true,
       "official_submission": false,
-      "reference_score_rank": null,
+      "reference_score_rank": 11,
       "ties_at_published_precision": [],
       "leader": {
         "system": "DocuPipe high",
@@ -300,12 +300,12 @@
           "zKibU88u": 1.0
         }
       },
-      "gap_to_leader_pp": null,
-      "gap_to_third_pp": null,
+      "gap_to_leader_pp": 33.15957085709394,
+      "gap_to_third_pp": 27.87493358352569,
       "comparison": "Published reference scores; not an official accepted rank",
-      "attempted": 52,
+      "attempted": 72,
       "expected": 72,
-      "completed": 52,
+      "completed": 71,
       "source_summary": "docubench/summary.json"
     },
     {
@@ -602,11 +602,6 @@
     }
   ],
   "pending": [
-    {
-      "benchmark": "DocuBench",
-      "status": "Full run in progress; refresh after scoring",
-      "reference_score_rank": null
-    },
     {
       "benchmark": "VAREX",
       "status": "Full run in progress; pilot does not establish a rank",
