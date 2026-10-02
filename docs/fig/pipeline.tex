@@ -1,46 +1,74 @@
-\begin{tikzpicture}[x=1cm,y=1cm,
- box/.style={draw=ink!25,rounded corners=3pt,fill=wash,align=flush left,inner sep=9pt,font=\small\sffamily,text=ink},
- stage/.style={box,text width=14.4cm},
- lane/.style={box,text width=3.05cm,minimum height=4.1cm,anchor=north,font=\footnotesize\sffamily,inner sep=7pt},
- flow/.style={-{Latex[length=2.2mm]},draw=ink!65,line width=.8pt},
- tag/.style={font=\scriptsize\bfseries,text=ink!70,fill=white,inner sep=3pt}]
-\node[stage] (input) at (0,0) {\textbf{INPUT}\quad PDF or image + JSON Schema / template + optional task};
-\node[stage,below=5mm of input] (prep) {\textbf{1\quad Prepare the evidence}\quad Normalize to PDF; count pages; inspect text.\\
-For a document without sufficient text, request a MinerU parse if available.\\
-\textcolor{ink!65}{Artifacts: PDF, page count $n$, text-layer flag, page text, cached parse.}};
-\node[stage,below=5mm of prep,fill=amber!12] (route) {\textbf{2\quad Choose the route}\quad Test specialized layout first.\\
-If no layout is selected, branch on text availability and page count.};
-\draw[flow] (input)--(prep); \draw[flow] (prep)--(route);
-\coordinate (split) at ($(route.south)+(0,-.35)$);
-\draw (route.south)--(split);
-\node[lane,fill=teal!9] (layout) at ($(route.south)+(-5.7,-1.05)$) {\textbf{3A\quad Layout}\\[5pt]
-Columns of records:\\column crops $\to$ LLM.\\[5pt]
-Ruled scan:\\row bands $\to$ LLM.\\[5pt]
-\textbf{One layout reading}};
-\node[lane,fill=blue!6] (text) at ($(route.south)+(-1.9,-1.05)$) {\textbf{3B\quad Text present}\\[5pt]
-Reader agent on text;\\page images included\\when the plan allows.\\[12pt]
-\textbf{Primary reading}};
-\node[lane,fill=blue!6] (short) at ($(route.south)+(1.9,-1.05)$) {\textbf{3C\quad Short scan}\\No text; $n\leq12$\\[5pt]
-Reader on page images.\\Reader on cached parse.*\\One-shot reader.\\[12pt]
-\textbf{Up to three readings}};
-\node[lane,fill=blue!6] (long) at ($(route.south)+(5.7,-1.05)$) {\textbf{3D\quad Long scan}\\No text; $n>12$\\[5pt]
-Run primary reader;\\then parse reader.*\\Prefer successful parse.\\[12pt]
-\textbf{Primary as fallback}};
-\foreach \b in {layout,text,short,long} {\draw[flow] (split)-|(\b.north);}
-\node[tag] at ($(route.south)+(-5.7,-.68)$) {layout selected};
-\node[tag] at ($(route.south)+(1.9,-.68)$) {otherwise: one of 3B--3D};
-\node[stage,anchor=north] (checks) at ($(layout.south)+(5.7,-.65)$) {\textbf{4\quad Check each reading separately}\quad Deterministic; no LLM.\\
-Apply the chain for its source: primary, parse, one-shot, or layout.\\
-\textcolor{ink!65}{Each chain uses the schema and document text; output: checked candidate JSON.}};
-\foreach \b in {layout,text,short,long} {\draw[flow] (\b.south)--(\b.south |- checks.north);}
-\node[stage,below=6mm of checks,fill=amber!12] (choose) {\textbf{5\quad Select the result}\\
-\textbf{Layout:} return its checked reading.\quad \textbf{Long scan:} return checked parse if successful.\\
-\textbf{Otherwise:} one candidate $\to$ return it; multiple $\to$ quorum; none $\to$ error.\\
-Quorum compares candidates pairwise and keeps one complete reading.};
-\draw[flow] (checks)--(choose);
-\node[stage,below=6mm of choose,fill=teal!9] (out) {\textbf{6\quad Format and return}\quad Refill original template if supplied.\\
-\textbf{OUTPUT}\quad Extracted JSON + routing / selection report};
-\draw[flow] (choose)--(out);
-\node[align=left,text width=14.5cm,font=\footnotesize\sffamily,text=ink!70,below=5mm of out] {* A parse reading requires cached pages. The reader uses them only when cache coverage reaches 90\% of the extracted page-text count. A cached parse is machine-read evidence, not extracted task JSON.\\[4pt]
-Blue/teal reader boxes call the extraction model; amber boxes make code-side decisions. Arrows carry evidence or JSON. Checks run before selection; the four lanes are alternatives, not four mandatory stages.};
+\begin{tikzpicture}[x=1cm,y=1cm,font=\small\sffamily,text=ink,
+ panel/.style={draw=ink!20,rounded corners=3pt,fill=wash,inner sep=7pt,align=center},
+ flow/.style={-{Latex[length=2mm]},draw=ink!65,line width=.8pt},
+ decision/.style={diamond,aspect=2.1,draw=amber!70,fill=amber!9,align=center,inner sep=3pt,font=\footnotesize\sffamily\bfseries},
+ caption/.style={font=\footnotesize\sffamily,align=center},
+ edge/.style={font=\scriptsize\sffamily\bfseries,fill=white,inner sep=2pt}]
+\node[anchor=west,font=\small\sffamily\bfseries,text=teal] at (-7.6,1) {INPUT / THREE THINGS YOU SUPPLY};
+\pic[scale=.7] at (-6.7,.55) {dqscan};
+\node[caption,anchor=west,align=left] at (-5.55,-.05) {PDF or image\\\textbf{the evidence}};
+\pic[scale=.7] at (-1.5,.55) {dqjson};
+\node[caption,anchor=west,align=left] at (-.35,-.05) {Schema / template\\\textbf{the requested fields}};
+\node[panel,text width=3cm,font=\footnotesize\sffamily] at (5,-.05) {Optional task\\``Extract every ordered item.''};
+\draw[flow] (-5,-.95)--(-5,-1.45);
+\draw[flow] (0,-.95)--(0,-1.45);
+\draw[flow] (5,-.65)--(5,-1.45);
+\node[panel,minimum width=15.3cm,minimum height=1.45cm] (prep) at (0,-2.2) {};
+\node[anchor=north west,font=\small\sffamily\bfseries] at (-7.45,-1.6) {1 / PREPARE: normalize PDF, count pages, inspect text};
+\node[caption] at (-4.6,-2.45) {\textbf{Page images}\\rendered when needed};
+\node[caption] at (0,-2.45) {\textbf{Embedded text}\\if the PDF contains it};
+\node[caption] at (4.6,-2.45) {\textbf{MinerU text + tables}\\optional cached parse*};
+\node[font=\small\sffamily\bfseries,text=amber] at (0,-3.5) {2 / ROUTE: follow the decisions from left to right};
+\node[decision] (layoutq) at (-5.7,-4.65) {Specialized\\layout?};
+\node[decision] (textq) at (-1.9,-4.65) {Enough\\PDF text?};
+\node[decision] (shortq) at (1.9,-4.65) {Scan has\\$\leq12$ pages?};
+\draw[flow] (prep.south)--(0,-3.1)--(-5.7,-3.1)--(layoutq.north);
+\draw[flow] (layoutq.east)--node[edge,above] {no} (textq.west);
+\draw[flow] (textq.east)--node[edge,above] {no} (shortq.west);
+\draw[flow] (shortq.east)--node[edge,above] {no} (5.7,-4.65)--(5.7,-6.0);
+\draw[flow] (layoutq.south)--node[edge,left] {yes} (-5.7,-6.0);
+\draw[flow] (textq.south)--node[edge,left] {yes} (-1.9,-6.0);
+\draw[flow] (shortq.south)--node[edge,left] {yes} (1.9,-6.0);
+\foreach \x in {-5.7,-1.9,1.9,5.7} {
+ \node[panel,fill=teal!4,minimum width=3.5cm,minimum height=5cm] at (\x,-8.5) {};
+}
+\node[font=\footnotesize\sffamily\bfseries] at (-5.7,-6.3) {3A / LAYOUT};
+\node[font=\footnotesize\sffamily\bfseries] at (-1.9,-6.3) {3B / TEXT PDF};
+\node[font=\footnotesize\sffamily\bfseries] at (1.9,-6.3) {3C / SHORT SCAN};
+\node[font=\footnotesize\sffamily\bfseries] at (5.7,-6.3) {3D / LONG SCAN};
+\pic[scale=.65] at (-6.15,-6.65) {dqlayout};
+\pic[scale=.65] at (-2.35,-6.65) {dqtext};
+\pic[scale=.65] at (1.45,-6.65) {dqscan};
+\pic[scale=.55] at (5.35,-6.65) {dqscan};
+\node[panel,fill=white,font=\scriptsize\sffamily\bfseries,inner sep=3pt] at (6.28,-7.48) {13+};
+\node[caption,text width=3.1cm] at (-5.7,-8.43) {Column crops or\\ruled row bands\\$\downarrow$ extraction model};
+\node[caption,text width=3.1cm] at (-1.9,-8.55) {Embedded text +\\page images when allowed\\$\downarrow$ primary reader};
+\node[caption,text width=3.1cm] at (1.9,-8.65) {Images $\to$ primary\\Parse* $\to$ parse reader\\Full scan $\to$ one-shot};
+\node[caption,text width=3.1cm] at (5.7,-8.65) {Primary reader first;\\then parse reader*\\(no one-shot)};
+\node[panel,fill=white,text width=2.75cm,font=\footnotesize\sffamily\bfseries] at (-5.7,-10.1) {One layout\\JSON};
+\node[panel,fill=white,text width=2.75cm,font=\footnotesize\sffamily\bfseries] at (-1.9,-10.1) {One primary\\JSON};
+\node[panel,fill=white,text width=2.75cm,font=\footnotesize\sffamily\bfseries] at (1.9,-10.1) {Up to 3 JSONs\\A\quad B\quad C};
+\node[panel,fill=white,text width=2.75cm,font=\footnotesize\sffamily\bfseries] at (5.7,-10.1) {Primary + parse*};
+\node[panel,minimum width=15.3cm,minimum height=2.25cm] at (0,-12.3) {};
+\node[anchor=west,font=\small\sffamily\bfseries] at (-7.6,-11.55) {4 / CHECK EACH JSON SEPARATELY (code; no model calls)};
+\foreach \x in {-5.7,-1.9,1.9,5.7} {
+ \draw[flow] (\x,-11.0)--(\x,-11.2);
+ \node[panel,fill=white,text width=2.95cm,minimum height=.9cm,font=\footnotesize\sffamily] at (\x,-12.55) {Checks for this\\reading source\\$\downarrow$ checked JSON(s)};
+ \draw[flow] (\x,-13.05)--(\x,-13.55);
+}
+\node[panel,fill=amber!8,minimum width=15.3cm,minimum height=2.05cm] (select) at (0,-14.65) {};
+\node[anchor=north west,font=\small\sffamily\bfseries] at (-7.45,-13.8) {5 / SELECT ONE COMPLETE CHECKED READING};
+\node[caption,text width=3.2cm] at (-5.7,-14.8) {\textbf{Return layout}\\directly};
+\node[caption,text width=3.2cm] at (-1.9,-14.8) {\textbf{Return primary}\\directly};
+\node[caption,text width=3.2cm] at (1.9,-14.8) {\textbf{Multiple: quorum}\\compare A, B, C\\and keep one};
+\node[caption,text width=3.2cm] at (5.7,-14.8) {\textbf{Prefer parse}\\if successful\\else return primary};
+\draw[flow] (select.south)--(0,-16.1);
+\node[panel,fill=teal!7,minimum width=15.3cm,minimum height=1.55cm] at (0,-16.95) {};
+\node[anchor=north west,font=\small\sffamily\bfseries] at (-7.45,-16.3) {6 / FORMAT AND RETURN};
+\node[caption] at (-3.65,-17.1) {\textbf{Extracted JSON}\\restore template shape if supplied};
+\node[caption] at (3.65,-17.1) {\textbf{Routing / selection report}\\readings used; selected candidate};
+\node[anchor=north west,align=left,text width=15.2cm,font=\footnotesize\sffamily,text=ink!75] at (-7.6,-18.0) {
+\textbf{Only one route runs.} Short scans keep successful candidates: one returns directly, several enter the quorum, none raises an error. Long scans also fail if no reading succeeds.\\[3pt]
+* Parse reading needs cached pages and adequate cache coverage. A parse is evidence, not task JSON. The detailed reader uses cached parse text only at $\geq90\%$ page-count coverage.\\[3pt]
+This is the main API flow. Checks are conditional repairs, not proof of correctness. Quorum chooses a whole candidate; it does not assemble fields from different candidates.};
 \end{tikzpicture}

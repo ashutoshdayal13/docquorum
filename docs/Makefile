@@ -4,11 +4,11 @@ FLAGS = -interaction=nonstopmode -halt-on-error
 .PHONY: all clean
 all: docquorum.pdf fig/pipeline.pdf
 
-docquorum.pdf: docquorum.tex fig/pipeline.tex
+docquorum.pdf: docquorum.tex fig/pipeline.tex fig/pictograms.tex fig/scan-trace.tex fig/route-examples.tex
 	$(LATEX) $(FLAGS) docquorum.tex
 	$(LATEX) $(FLAGS) docquorum.tex
 
-fig/pipeline.pdf: fig/pipeline.tex fig/pipeline-standalone.tex
+fig/pipeline.pdf: fig/pipeline.tex fig/pipeline-standalone.tex fig/pictograms.tex
 	cd fig && $(LATEX) $(FLAGS) -jobname=pipeline pipeline-standalone.tex
 
 clean:

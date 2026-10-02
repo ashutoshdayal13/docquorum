@@ -2,11 +2,12 @@
 \usepackage[margin=21mm,headheight=14pt]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern,microtype,graphicx,xcolor,booktabs,tabularx,array,amsmath,enumitem,fancyhdr,tikz,listings}
-\usetikzlibrary{arrows.meta,positioning,calc}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric}
 \definecolor{ink}{HTML}{17324D}
 \definecolor{teal}{HTML}{087F8C}
 \definecolor{amber}{HTML}{BD7A19}
 \definecolor{wash}{HTML}{F3F6FA}
+\input{fig/pictograms.tex}
 \usepackage[colorlinks=true,linkcolor=teal,urlcolor=teal,pdftitle={DocQuorum: From document to structured JSON}]{hyperref}
 \pagestyle{fancy}\fancyhf{}\lhead{\small\textcolor{ink}{DOCQUORUM / PIPELINE GUIDE}}\rhead{\small\thepage}
 \renewcommand{\headrulewidth}{.3pt}
@@ -44,12 +45,12 @@ Optional task & ``Extract every ordered item.'' & Task text becomes the schema's
 A reading is one candidate JSON for the task. It may require one model call or many calls over smaller pieces. A parse is different: MinerU produces page text and HTML tables, which a reader still has to interpret under the task schema.
 
 \sub{How to read this guide}
-Page 2 gives the complete data flow. Pages 3--6 explain preparation, reading, layout, and checks. Page 7 explains selection with a numerical example. Pages 8--9 show an end-to-end trace, execution details, and implementation boundaries.
+Start with the illustrated flow on page \pageref{fig:overview}. The following sections explain each operation. Page \pageref{fig:scantrace} follows one scanned purchase order through three separate readings; page \pageref{fig:routes} pictures how other document types take different routes.
 
 \vfill
-{\small\color{ink!70}Implementation basis: repository source at \code{b4ea9a1}. The main flow describes \code{docquorum.extract.extract}. Benchmark differences are explicit on page 9. This guide explains behavior; benchmark results remain in \code{results/README.md}.}
+{\small\color{ink!70}Implementation basis: repository source at \code{b4ea9a1}. The main flow describes \code{docquorum.extract.extract}. Benchmark differences are explicit on page \pageref{sec:execution}. This guide explains behavior; benchmark results remain in \code{results/README.md}.}
 
-\chapterpage{PIPELINE AT A GLANCE}{One document, from input to result}
+\chapterpage{PIPELINE AT A GLANCE}{One document, from input to result}\label{fig:overview}
 \begin{center}\input{fig/pipeline.tex}\end{center}
 
 \chapterpage{STEPS 1--2 / PREPARE AND ROUTE}{Turn the document into usable evidence}
@@ -206,45 +207,16 @@ B wins the tie with C because B is earlier. Its complete array is returned. Agre
 \sub{Step 6. Format and return}
 For a JSON Schema input, return the selected object. For a template input, \code{fill_template} restores the original template shape and uses empty strings for absent leaves. The Python API returns \code{(result, report)}. A multi-candidate report includes candidate names, the pick, and rounded agreement scores. Direct returns include a readings list; the long-scan direct return reports only ``parse'', even though primary was attempted first.
 
-\chapterpage{END-TO-END EXAMPLE}{Trace a two-page scanned purchase order}
+\chapterpage{END-TO-END EXAMPLE}{Follow the evidence into the final JSON}\label{fig:scantrace}
 This is a synthetic walkthrough, not a benchmark result. Assume there is no usable text layer, no specialized layout route, and the parser is available.
+\begin{center}\input{fig/scan-trace.tex}\end{center}
 
-\begin{tabularx}{\linewidth}{@{}p{27mm}YY@{}}\toprule
-Stage & Data entering & Data leaving\\\midrule
-Prepare & Two scanned pages; order schema & PDF, $n=2$, text flag false; two cached parse pages\\
-Route & Geometry, schema, parse & General short-scan route\\
-Primary & Page images + schema & Candidate A: header and item records\\
-Parse & Parsed text + schema; images if whole plan fits & Candidate B: independent header and items\\
-One-shot & PDF + schema, provider prompt & Candidate C: another independent JSON\\
-Checks & A, B, C individually + document evidence & Checked A, B, C\\
-Quorum & Checked candidates + schema & One selected complete candidate\\
-Finish & Selected JSON; original input format & JSON result and report\\\bottomrule
-\end{tabularx}
+\chapterpage{ROUTING COMPARISONS}{Four documents, four different paths}\label{fig:routes}
+Follow one pictured case at a time. The layout test comes first; text availability and page count decide the remaining routes.
+\begin{center}\input{fig/route-examples.tex}\end{center}
+The parse contains text and HTML tables; a model must still map that evidence into the task schema. Each candidate is checked independently before selection. A high agreement score cannot detect an error shared by every candidate.
 
-\sub{Illustrative selected JSON}
-\begin{lstlisting}
-{
-  "order_number": "PO-1042",
-  "supplier": "North Paper",
-  "items": [
-    {"description": "A4 paper", "quantity": 10,
-     "unit_price": 4.5},
-    {"description": "Envelopes", "quantity": 2,
-     "unit_price": 6.0}
-  ]
-}
-\end{lstlisting}
-The parse may contain the same values inside an HTML table, but it is not this object: extraction must still assign cells to the schema fields and collect all records. Checks may repair an individual candidate, but they do not combine candidates. Selection keeps one of the checked objects.
-
-\sub{How the same task changes with the document}
-\begin{itemize}
-\item \textbf{Digital PDF with sufficient text:} only the primary general reading is made, unless layout routing selects a specialist.
-\item \textbf{Scan with embedded OCR text:} sufficient embedded text also selects the text-present route. ``Scan'' alone does not imply three readings.
-\item \textbf{Twenty-page scan with cached parse:} primary is attempted, then parse; a successful checked parse is returned without a quorum.
-\item \textbf{Short scan without a parse cache or parser service:} primary and one-shot can still compete. Only successful candidates are kept.
-\end{itemize}
-
-\chapterpage{EXECUTION AND SCOPE}{Connect the guide to the code}
+\chapterpage{EXECUTION AND SCOPE}{Connect the guide to the code}\label{sec:execution}
 \sub{Run a document through the API}
 From the repository root, with dependencies and model endpoints configured as described in the repository README:
 \begin{lstlisting}

@@ -1,0 +1,42 @@
+% Editable vector illustrations. Synthetic documents, never benchmark evidence.
+\newcommand{\dqpaperoutline}{\path[draw=ink!45,fill=white,line width=.6pt] (0,0)--(1.12,0)--(1.4,-.28)--(1.4,-1.8)--(0,-1.8)--cycle;
+  \draw[ink!45] (1.12,0)--(1.12,-.28)--(1.4,-.28);}
+\tikzset{
+ pics/dqpaper/.style={code={
+  \path[draw=ink!45,fill=white,line width=.6pt] (0,0)--(1.12,0)--(1.4,-.28)--(1.4,-1.8)--(0,-1.8)--cycle;
+  \draw[ink!45] (1.12,0)--(1.12,-.28)--(1.4,-.28);
+ }},
+ pics/dqtext/.style={code={
+  \dqpaperoutline
+  \fill[teal!65] (.15,-.25) rectangle (.9,-.33);
+  \foreach \y in {.48,.64,.8} {\draw[ink!45,line width=.5pt] (.15,-\y)--(1.23,-\y);}
+  \draw[teal!65] (.15,-1) rectangle (1.23,-1.58);
+  \foreach \y in {1.2,1.4} {\draw[teal!45] (.15,-\y)--(1.23,-\y);}
+  \draw[teal!45] (.75,-1)--(.75,-1.58);
+ }},
+ pics/dqscan/.style={code={
+  \dqpaperoutline
+  \fill[ink!8] (.1,-.37) rectangle (1.28,-1.65);
+  \foreach \y in {.52,.7,.88} {\draw[ink!40,line width=1.1pt] (.2,-\y)--(1.17,-\y-.015);}
+  \draw[ink!50,line width=.8pt] (.2,-1.08) rectangle (1.17,-1.52);
+  \draw[ink!40] (.2,-1.3)--(1.17,-1.3) (.8,-1.08)--(.8,-1.52);
+  \node[font=\tiny\sffamily,text=ink!70] at (.7,-.22) {SCAN};
+ }},
+ pics/dqlayout/.style={code={
+  \dqpaperoutline
+  \foreach \x in {.12,.53,.94} {
+   \draw[teal,fill=teal!7] (\x,-.4) rectangle (\x+.33,-1.6);
+   \foreach \y in {.6,.82,1.04,1.26,1.48} {\draw[ink!40] (\x+.04,-\y)--(\x+.28,-\y);}
+  }
+ }},
+ pics/dqjson/.style={code={
+  \dqpaperoutline
+  \node[transform shape,anchor=north west,font=\scriptsize\ttfamily,text=teal,inner sep=0pt] at (.12,-.28) {\{};
+  \node[transform shape,anchor=north west,font=\tiny\ttfamily,text=ink,inner sep=0pt,align=left] at (.25,-.53) {order: ...\\[3pt]items: [\\[3pt]\quad\{...\}\\[3pt]]};
+  \node[transform shape,anchor=north west,font=\scriptsize\ttfamily,text=teal,inner sep=0pt] at (.12,-1.43) {\}};
+ }},
+ pics/dqcheck/.style={code={
+  \draw[teal,fill=teal!8,line width=.8pt] (0,0) circle (.2);
+  \draw[teal,line width=1.1pt] (-.1,0)--(-.025,-.075)--(.12,.1);
+ }}
+}

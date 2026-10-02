@@ -4,9 +4,12 @@ Start with [the document](docquorum.pdf): task definition, complete data flow, e
 
 - [LaTeX source](docquorum.tex)
 - [Main pipeline diagram (PDF)](fig/pipeline.pdf) and [editable TikZ source](fig/pipeline.tex)
+- [Illustrated purchase-order trace](fig/scan-trace.tex) and [four routing examples](fig/route-examples.tex)
 - [Implementation map](CODE_GUIDE.md)
 
-The main diagram describes the single-document API. Page 9 explains how the ExtractBench and UNIKIE runners differ. The guide is based on source revision `b4ea9a1`; numerical examples are illustrative, not measured benchmark results.
+![Illustrated API flow](fig/pipeline.png)
+
+The illustrated overview on page 2 shows the routing decisions. Page 8 follows a synthetic purchase order through three independent candidates and into the final JSON. Page 9 compares four document routes; page 10 explains how the ExtractBench and UNIKIE runners differ. The main diagram describes the single-document API. The guide is based on source revision `b4ea9a1`; numerical examples are illustrative, not measured benchmark results.
 
 ## Build
 
