@@ -1,0 +1,21 @@
+{
+  "repo": "ulkaa/Qwen3.8-27B-AWQ-INT4",
+  "revision": "2bf7f1646dc0875cff4404fdfef976cfb0ff2199",
+  "snapshot": "/tmp/hf_big/hub/models--ulkaa--Qwen3.8-27B-AWQ-INT4/snapshots/2bf7f1646dc0875cff4404fdfef976cfb0ff2199",
+  "weight_shards": 2,
+  "weights_bytes": 19547867688,
+  "mtp_tensors_present": true,
+  "gpu_fit_verified": false,
+  "extraction_score": null,
+  "ready_on_disk": true,
+  "source": "https://huggingface.co/ulkaa/Qwen3.8-27B-AWQ-INT4/tree/2bf7f1646dc0875cff4404fdfef976cfb0ff2199",
+  "note": "Pinned CPU-only checkpoint. Tensor inventory excludes mtp. for a memory estimate; GPU fit also needs KV cache, activations and runtime allocations and remains unverified.",
+  "mtp_tensor_bytes": 849398784,
+  "weight_tensor_bytes": 19547553504,
+  "estimated_tensor_bytes_without_mtp": 18698154720,
+  "weight_dtype_bytes": {
+    "I64": 6400,
+    "I32": 12258508800,
+    "BF16": 7289038304
+  }
+}
