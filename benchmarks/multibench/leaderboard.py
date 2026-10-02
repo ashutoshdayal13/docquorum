@@ -48,7 +48,7 @@ def build_report():
     d = load('docubench_public_audit.json')
     if d:
         peers=[r for r in d['results'] if r['rank_eligible']]
-        for folder in ['docubench','docubench_v2','docubench_v3','docubench_v4','docubench_v5']:
+        for folder in ['docubench','docubench_v2','docubench_v3','docubench_v4','docubench_v5','docubench_v6']:
             s=load(folder+'/summary.json')
             if s:
                 rows.append(reference('DocuBench v0.2.0',s['engine'],s['score'],peers,s['eligible_for_full_ranking'],8,

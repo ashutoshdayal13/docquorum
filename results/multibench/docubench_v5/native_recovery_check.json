@@ -1,0 +1,15 @@
+{
+  "scope": "Development-selected native overflow check; not a full-cohort score or rank",
+  "rank_eligible": false,
+  "id": "zKibU88u",
+  "reference_profile": "DocQuorum8B-bounded-v1",
+  "candidate_profile": "DocQuorum8B-bounded-v5",
+  "reference_score": 0.0,
+  "candidate_score": 23.972602739726025,
+  "model_calls": 13,
+  "all_calls_finished": true,
+  "prompt_tokens": 92806,
+  "completion_tokens": 3288,
+  "seconds_including_shared_model_queue": 475.5528203980066,
+  "source_audit": "native_source_audit.json"
+}

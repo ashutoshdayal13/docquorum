@@ -63,12 +63,16 @@ def text_parts(text,budget=TARGET_CHARS):
     return parts
 
 
-def read(cl,text,schema,task,extension):
+def read(cl,text,schema,task,extension,bind_queries=False):
+    from query_scope import bindings,restrict
     calls_before=len(cl.calls)
+    bound=bindings(schema,text) if bind_queries else {}
     def request(source,label):
+        effective=restrict(schema,source,bound)
+        if bound and not effective.get('properties'):return {}
         prompt=prompts.WHOLE.format(rules='',task=f'TASK\n{task or ""}\n\n',n=1,
             modality=f'This is {label} of the native {extension} source. Fill only fields shown here; use null for absent fields.',
-            text_block=prompts.TEXT_LAYER.format(body=source),schema=json.dumps(schema,indent=1))
+            text_block=prompts.TEXT_LAYER.format(body=source),schema=json.dumps(effective,indent=1))
         response=cl.chat.completions.create(model=C.MODEL,temperature=0,max_tokens=8192,
             response_format={'type':'json_object'},extra_body={'chat_template_kwargs':{'enable_thinking':False}},
             messages=[{'role':'user','content':prompt}])
@@ -76,7 +80,7 @@ def read(cl,text,schema,task,extension):
         if choice.finish_reason!='stop':raise RuntimeError('Native-format response was truncated')
         got=json.loads(choice.message.content)
         if not isinstance(got,dict):raise ValueError('Expected a JSON object')
-        return got
+        return {k:v for k,v in got.items() if k in effective['properties']} if bound else got
     def incomplete(error):
         return (isinstance(error,ValueError) and 'Input needs partitioning:' in str(error)
                 or isinstance(error,RuntimeError) and 'Native-format response was truncated' in str(error))
@@ -88,6 +92,10 @@ def read(cl,text,schema,task,extension):
     splitter=xml_parts if extension=='.xml' else text_parts
     partitions=splitter(text)
     if not partitions:raise ValueError('Cannot partition empty native source')
+    assigned={field:[i+1 for i,part in enumerate(partitions) if field in restrict(schema,part,bound).get('properties',{})]
+              for field in schema.get('properties',{})}
+    if any(not units for units in assigned.values()):
+        raise RuntimeError('A supplied schema field has no source-unit assignment')
     def complete(source,label,depth):
         try:return request(source,label)
         except Exception as error:
@@ -103,4 +111,6 @@ def read(cl,text,schema,task,extension):
     for i,part in enumerate(partitions):
         result=merge_windows(result,complete(part,f'partition {i+1}/{len(partitions)}',0))
     return result,{'readings':['native_partitions'],'native_format':extension,
-        'source_partitions':len(partitions),'all_partitions_completed':True,'requests':cl.calls[calls_before:]}
+        'source_partitions':len(partitions),'all_partitions_completed':True,'requests':cl.calls[calls_before:],
+        'query_binding_fields':sorted(bound),'field_window_assignments':assigned,
+        'every_field_scheduled':all(assigned.values())}

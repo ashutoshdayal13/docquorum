@@ -1,0 +1,445 @@
+{
+  "benchmark": "DocuBench",
+  "version": "0.2.0",
+  "engine": "DocQuorum8B-bounded-v5",
+  "metric": "macro_average_field_accuracy",
+  "score": 0.3329528158295281,
+  "expected": 72,
+  "attempted": 1,
+  "completed": 1,
+  "per_document": [
+    {
+      "id": "1ZVqiyJZ",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "2Kqu7k2B",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "3VX7OcKR",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "3cS2qu1e",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "45xidifn",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "4kVtTRoL",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "5YJaBbNg",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "5ukZftw0",
+      "format": ".xlsx",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "62PhJTyf",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "69Ny1DwE",
+      "format": ".jpeg",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "7ZhgzAzp",
+      "format": ".tiff",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "97uZroyv",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "9hPCh7ca",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "B0nA2c30",
+      "format": ".png",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "BnftpXVQ",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "C7fe2lau",
+      "format": ".xml",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "DtfW60lS",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "ENoM9faK",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "EWUUeFYp",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "Eet2wW3x",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "EkMAR28T",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "FiFgt4a6",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "FnscKwQQ",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "FsGU3Q4X",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "GW7i2xbM",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "IPm0MkgQ",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "J6buHXQ4",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "JPIU6gjr",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "KYwdv07B",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "KpewWz3R",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "LYeb3G3s",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "M66HZlWT",
+      "format": ".jpeg",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "NNaGgwE5",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "NlWTPen5",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "OayFbGlG",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "Oe7iRM1G",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "PSU5pciM",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "PYhFptk3",
+      "format": ".txt",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "QxoQ6zgn",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "SBR9L7Y8",
+      "format": ".jpeg",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "SkD8Lz8o",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "UnG6cLfP",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "UqY6ItFZ",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "VJeLz6Am",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "WM9ZKrAr",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "WnxX1Buq",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "WxP8Tqgf",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "XhJyv5mb",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "ZN6HbuKp",
+      "format": ".csv",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "ZXlksSpk",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "bjBNmyNw",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "eKzY7gEA",
+      "format": ".html",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "eeqkpCkH",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "f9nrfUNC",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "fK6kDNqE",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "iTruRDrG",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "jlKc8eVi",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "kcnZ5EWa",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "nESapyAA",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "o0dn9Dd4",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "phovuuuk",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "pw8elPW9",
+      "format": ".docx",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "qQUPWQNA",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "qRCO6ev5",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "qoSTXgNE",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "sHMajYzm",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "tLFa76nQ",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "vAdukzpt",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "vBIz5dut",
+      "format": ".jpeg",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "wVafMvAC",
+      "format": ".jpeg",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "yTRFKVPx",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "zKibU88u",
+      "format": ".xml",
+      "status": "completed",
+      "score": 0.23972602739726026
+    }
+  ],
+  "eligible_for_full_ranking": false
+}

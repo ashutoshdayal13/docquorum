@@ -23,6 +23,7 @@ import resource_profile_v4 as R4
 import publish_completed as PUB
 import resource_profile_v5 as R5
 import native_partition as N
+import query_scope as QS
 
 
 def image_part(color):
@@ -467,3 +468,45 @@ def test_docubench_native_overflow_uses_complete_xml_partitions(monkeypatch,tmp_
     report=json.loads((D.OUT/'reports/large.json').read_text())
     assert report['report']['all_partitions_completed']
     assert report['report']['source_partitions']>1
+
+
+def test_query_scope_requires_a_real_identifier_and_explicit_query():
+    schema={'properties':{
+        'focus':{'description':'the line items of order ORD-10134'},
+        'date':{'description':'placed_on for the order whose order_ref is ORD-10134'},
+        'example':{'description':'For example, the value of order ORD-10134'},
+        'format':{'description':'Date in YYYY-MM-DD format'},
+        'absent':{'description':'name of order ORD-99999'},
+        'global':{'description':'source system from metadata'}},'required':['focus','global']}
+    bound=QS.bindings(schema,'<order_ref>ORD-10134</order_ref>')
+    assert bound=={'focus':{'ORD-10134'},'date':{'ORD-10134'}}
+    missing=QS.restrict(schema,'<order_ref>ORD-10000</order_ref>',bound)
+    assert 'focus' not in missing['properties'] and 'date' not in missing['properties']
+    assert missing['required']==['global']
+    assert 'example' in missing['properties'] and 'absent' in missing['properties']
+    assert schema['required']==['focus','global']
+
+
+def test_native_query_guard_blocks_unsupported_fills_before_window_merge(monkeypatch):
+    import xml.etree.ElementTree as ET
+    source='<root><metadata>system-A</metadata>'+''.join(
+        '<order><order_ref>ORD-'+str(i).zfill(5)+'</order_ref><name>name-'+str(i)+'</name></order>' for i in range(5))+'</root>'
+    schema={'type':'object','properties':{'focus':{'description':'buyer name of order ORD-00003'},
+        'system':{'description':'source metadata'}},'required':['focus','system']}
+    monkeypatch.setattr(N,'xml_parts',lambda text,budget=N.TARGET_CHARS:[
+        '<root><metadata>system-A</metadata><order><order_ref>ORD-'+str(i).zfill(5)+'</order_ref><name>name-'+str(i)+'</name></order></root>' for i in range(5)])
+    calls=[]
+    def create(**kwargs):
+        prompt=kwargs['messages'][0]['content'];calls.append(prompt)
+        if len(calls)==1:raise ValueError('Input needs partitioning: full source')
+        # Model produces a plausible wrong value even when the schema excludes
+        # that query. Filtering must stop it from claiming the first window.
+        value='name-3' if 'ORD-00003' in prompt.split('--- END TEXT ---')[0] else 'wrong-window'
+        return SimpleNamespace(choices=[SimpleNamespace(finish_reason='stop',message=SimpleNamespace(
+            content=json.dumps({'focus':value,'system':'system-A'})))])
+    cl=SimpleNamespace(calls=calls,chat=SimpleNamespace(completions=SimpleNamespace(create=create)))
+    result,report=N.read(cl,source,schema,None,'.xml',bind_queries=True)
+    assert result['focus']=='name-3'
+    assert report['field_window_assignments']['focus']==[4]
+    assert report['field_window_assignments']['system']==[1,2,3,4,5]
+    assert report['every_field_scheduled']

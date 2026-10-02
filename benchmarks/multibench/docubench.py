@@ -82,6 +82,8 @@ def run(workers, version="bounded-v1", only=None):
         from resource_profile_v4 import install as installer
     elif version == 'bounded-v5':
         from resource_profile_v5 import install as installer
+    elif version == 'bounded-v6':
+        from resource_profile_v6 import install as installer
     profile = installer()
     manifest = {"source_commit": "43a3f3bc00e591e711075678ca6d154acfedcf42", "version": "0.2.0",
                 "model": C.MODEL, "profile": profile, "documents": records()}
@@ -116,9 +118,10 @@ def run(workers, version="bounded-v1", only=None):
                     log=lambda msg: print(f"{name}: {msg}", flush=True))
             else:
                 text = native_text(doc)
-                if version == 'bounded-v5':
+                if version in ('bounded-v5','bounded-v6'):
                     from native_partition import read as read_native
-                    result, report = read_native(llm.client(), text, schema, task, doc.suffix.lower())
+                    result, report = read_native(llm.client(), text, schema, task, doc.suffix.lower(),
+                                                 bind_queries=version=='bounded-v6')
                     result = conform(result, schema, schema)
                     return save(result, {"status":"completed", "report":report})
                 prompt = prompts.WHOLE.format(rules="", task=f"TASK\n{task or ''}\n\n", n=1,
@@ -184,7 +187,7 @@ if __name__ == "__main__":
     ap.add_argument("--workers", type=int, default=2)
     ap.add_argument("--only", nargs='+', help='Resume selected tasks; full 72-task manifest and scoring denominator are preserved')
     ap.add_argument("--out", type=Path, default=OUT)
-    ap.add_argument("--profile", choices=['bounded-v1', 'bounded-v2', 'bounded-v3', 'bounded-v4', 'bounded-v5'], default='bounded-v1')
+    ap.add_argument("--profile", choices=['bounded-v1', 'bounded-v2', 'bounded-v3', 'bounded-v4', 'bounded-v5', 'bounded-v6'], default='bounded-v1')
     a = ap.parse_args()
     OUT = a.out.resolve()
     if a.action == "run": run(a.workers, a.profile, a.only)
