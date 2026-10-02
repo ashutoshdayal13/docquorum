@@ -72,12 +72,14 @@ def records():
     return rows
 
 
-def run(workers, version="bounded-v1"):
+def run(workers, version="bounded-v1", only=None):
     installer = install
     if version == 'bounded-v2':
         from resource_profile_v2 import install as installer
     elif version == 'bounded-v3':
         from resource_profile_v3 import install as installer
+    elif version == 'bounded-v4':
+        from resource_profile_v4 import install as installer
     profile = installer()
     manifest = {"source_commit": "43a3f3bc00e591e711075678ca6d154acfedcf42", "version": "0.2.0",
                 "model": C.MODEL, "profile": profile, "documents": records()}
@@ -128,10 +130,15 @@ def run(workers, version="bounded-v1"):
         write(OUT / "reports" / f"{name}.json", info)
         write(dst, {"data": result, "meta": {"engine": profile['profile'], "status": info["status"], "model": C.MODEL}})
         return name
+    selected = manifest["documents"]
+    if only:
+        names = set(only)
+        if names - {row['id'] for row in selected}: raise ValueError('Unknown task IDs')
+        selected = [row for row in selected if row['id'] in names]
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = [pool.submit(one, row) for row in manifest["documents"]]
+        futures = [pool.submit(one, row) for row in selected]
         for i, f in enumerate(as_completed(futures), 1):
-            print(f"[{i}/72] {f.result()}", flush=True)
+            print(f"[{i}/{len(selected)}] {f.result()}", flush=True)
 
 
 def score():
@@ -166,9 +173,10 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("action", choices=["run", "score"])
     ap.add_argument("--workers", type=int, default=2)
+    ap.add_argument("--only", nargs='+', help='Resume selected tasks; full 72-task manifest and scoring denominator are preserved')
     ap.add_argument("--out", type=Path, default=OUT)
-    ap.add_argument("--profile", choices=['bounded-v1', 'bounded-v2', 'bounded-v3'], default='bounded-v1')
+    ap.add_argument("--profile", choices=['bounded-v1', 'bounded-v2', 'bounded-v3', 'bounded-v4'], default='bounded-v1')
     a = ap.parse_args()
     OUT = a.out.resolve()
-    if a.action == "run": run(a.workers, a.profile)
+    if a.action == "run": run(a.workers, a.profile, a.only)
     else: score()

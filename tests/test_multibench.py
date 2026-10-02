@@ -19,6 +19,7 @@ import leaderboard as B
 import contextual as X
 import resource_profile_v3 as R3
 import longextract as LX
+import resource_profile_v4 as R4
 
 
 def image_part(color):
@@ -266,3 +267,28 @@ def test_longextract_accuracy_keeps_omissions_and_failures_visible(monkeypatch, 
     assert (summary['successful'],summary['failed'],summary['expected']) == (1,1,2)
     assert not summary['eligible_for_public50_comparison']
     assert summary['reference_score_rank'] is None
+
+
+def test_scan_chunks_do_not_drop_every_second_physical_page(monkeypatch, install_v3):
+    from docquorum.agents import reader
+    monkeypatch.setattr(reader, 'load_pages', reader.load_pages)
+    monkeypatch.setattr(reader, 'plan_chunks', reader.plan_chunks)
+    R4.install()
+    chunks, size, _ = reader.plan_chunks(['']*5, 3)
+    assert size == 1
+    assert chunks == [(0,1),(1,2),(2,3),(3,4),(4,5)]
+
+
+def test_mixed_pdf_uses_images_for_its_unreadable_data_page(monkeypatch, install_v3):
+    from docquorum.agents import reader
+    pages = ['', 'Instructions and legend. '*20]
+    monkeypatch.setattr(reader, 'load_pages', lambda *args, **kwargs:(pages,False))
+    monkeypatch.setattr(reader, 'plan_chunks', reader.plan_chunks)
+    R4.install()
+    actual, parsed = reader.load_pages('doc.pdf','mixed')
+    assert actual == ['', ''] and not parsed
+    assert pages[1] != ''
+    pages[0] = 'Native first-page text. '*20
+    actual, _ = reader.load_pages('doc.pdf','native')
+    assert actual == pages
+    assert reader.plan_chunks(actual, 3)[1] == 2

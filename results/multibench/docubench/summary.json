@@ -1,0 +1,445 @@
+{
+  "benchmark": "DocuBench",
+  "version": "0.2.0",
+  "engine": "DocQuorum8B-bounded-v1",
+  "metric": "macro_average_field_accuracy",
+  "score": 49.478291254029095,
+  "expected": 72,
+  "attempted": 52,
+  "completed": 52,
+  "per_document": [
+    {
+      "id": "1ZVqiyJZ",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.8755555555555554
+    },
+    {
+      "id": "2Kqu7k2B",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.33682983682983686
+    },
+    {
+      "id": "3VX7OcKR",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.5057377049180328
+    },
+    {
+      "id": "3cS2qu1e",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.5393495934959349
+    },
+    {
+      "id": "45xidifn",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.9063223379629631
+    },
+    {
+      "id": "4kVtTRoL",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.4714285714285714
+    },
+    {
+      "id": "5YJaBbNg",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.963855421686747
+    },
+    {
+      "id": "5ukZftw0",
+      "format": ".xlsx",
+      "status": "completed",
+      "score": 0.7627118644067795
+    },
+    {
+      "id": "62PhJTyf",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.8767123287671232
+    },
+    {
+      "id": "69Ny1DwE",
+      "format": ".jpeg",
+      "status": "completed",
+      "score": 0.6451612903225806
+    },
+    {
+      "id": "7ZhgzAzp",
+      "format": ".tiff",
+      "status": "completed",
+      "score": 0.8571428571428571
+    },
+    {
+      "id": "97uZroyv",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.995260663507109
+    },
+    {
+      "id": "9hPCh7ca",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.2583705911574767
+    },
+    {
+      "id": "B0nA2c30",
+      "format": ".png",
+      "status": "completed",
+      "score": 0.7489639037433155
+    },
+    {
+      "id": "BnftpXVQ",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 1.0
+    },
+    {
+      "id": "C7fe2lau",
+      "format": ".xml",
+      "status": "completed",
+      "score": 1.0
+    },
+    {
+      "id": "DtfW60lS",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 1.0
+    },
+    {
+      "id": "ENoM9faK",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.9280882352941178
+    },
+    {
+      "id": "EWUUeFYp",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.22039473684210525
+    },
+    {
+      "id": "Eet2wW3x",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 1.0
+    },
+    {
+      "id": "EkMAR28T",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.42902208201892744
+    },
+    {
+      "id": "FiFgt4a6",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.85
+    },
+    {
+      "id": "FnscKwQQ",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.3506186317321689
+    },
+    {
+      "id": "FsGU3Q4X",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.20055272108843558
+    },
+    {
+      "id": "GW7i2xbM",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 1.0
+    },
+    {
+      "id": "IPm0MkgQ",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.7588383838383844
+    },
+    {
+      "id": "J6buHXQ4",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.14609917674298947
+    },
+    {
+      "id": "JPIU6gjr",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.3615591397849463
+    },
+    {
+      "id": "KYwdv07B",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.45065458207452164
+    },
+    {
+      "id": "KpewWz3R",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.7213333333333334
+    },
+    {
+      "id": "LYeb3G3s",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.8245562130177515
+    },
+    {
+      "id": "M66HZlWT",
+      "format": ".jpeg",
+      "status": "completed",
+      "score": 1.0
+    },
+    {
+      "id": "NNaGgwE5",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.9219903691813803
+    },
+    {
+      "id": "NlWTPen5",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 1.0
+    },
+    {
+      "id": "OayFbGlG",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 1.0
+    },
+    {
+      "id": "Oe7iRM1G",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.6262626262626262
+    },
+    {
+      "id": "PSU5pciM",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 1.0
+    },
+    {
+      "id": "PYhFptk3",
+      "format": ".txt",
+      "status": "completed",
+      "score": 0.9814814814814815
+    },
+    {
+      "id": "QxoQ6zgn",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 1.0
+    },
+    {
+      "id": "SBR9L7Y8",
+      "format": ".jpeg",
+      "status": "completed",
+      "score": 0.22988505747126434
+    },
+    {
+      "id": "SkD8Lz8o",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 1.0
+    },
+    {
+      "id": "UnG6cLfP",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.0
+    },
+    {
+      "id": "UqY6ItFZ",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.3499529633113832
+    },
+    {
+      "id": "VJeLz6Am",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.3781269841269831
+    },
+    {
+      "id": "WM9ZKrAr",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.46284722222222224
+    },
+    {
+      "id": "WnxX1Buq",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.125
+    },
+    {
+      "id": "WxP8Tqgf",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.5054347826086957
+    },
+    {
+      "id": "XhJyv5mb",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.6878980891719745
+    },
+    {
+      "id": "ZN6HbuKp",
+      "format": ".csv",
+      "status": "completed",
+      "score": 0.5
+    },
+    {
+      "id": "ZXlksSpk",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 1.0
+    },
+    {
+      "id": "bjBNmyNw",
+      "format": ".pdf",
+      "status": "completed",
+      "score": 0.8703703703703705
+    },
+    {
+      "id": "eKzY7gEA",
+      "format": ".html",
+      "status": "completed",
+      "score": 1.0
+    },
+    {
+      "id": "eeqkpCkH",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "f9nrfUNC",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "fK6kDNqE",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "iTruRDrG",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "jlKc8eVi",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "kcnZ5EWa",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "nESapyAA",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "o0dn9Dd4",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "phovuuuk",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "pw8elPW9",
+      "format": ".docx",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "qQUPWQNA",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "qRCO6ev5",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "qoSTXgNE",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "sHMajYzm",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "tLFa76nQ",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "vAdukzpt",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "vBIz5dut",
+      "format": ".jpeg",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "wVafMvAC",
+      "format": ".jpeg",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "yTRFKVPx",
+      "format": ".pdf",
+      "status": "missing",
+      "score": 0.0
+    },
+    {
+      "id": "zKibU88u",
+      "format": ".xml",
+      "status": "missing",
+      "score": 0.0
+    }
+  ],
+  "eligible_for_full_ranking": false
+}

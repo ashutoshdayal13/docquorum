@@ -41,7 +41,7 @@ def main():
     d = load('docubench_public_audit.json')
     if d:
         peers=[r for r in d['results'] if r['rank_eligible']]
-        for folder in ['docubench','docubench_v2','docubench_v3']:
+        for folder in ['docubench','docubench_v2','docubench_v3','docubench_v4']:
             s=load(folder+'/summary.json')
             if s:
                 rows.append(reference('DocuBench v0.2.0',s['engine'],s['score'],peers,s['eligible_for_full_ranking'],8,
@@ -55,7 +55,7 @@ def main():
                     rows.append(reference('VAREX image_only','8B '+name,100*result['exact_match_normalized'],v['results'],
                         result['eligible_for_full_ranking'],1,scope=scope,attempted=result['attempted'],expected=s['docs']))
     peers=[{'system':'Extend MAX','score':99.2},{'system':'Reducto Deep Extract','score':97.4},{'system':'Claude Opus 4.7','score':83.1}]
-    for folder in ['longarray','longarray_v2','longarray_v3']:
+    for folder in ['longarray','longarray_v2','longarray_v3','longarray_v4']:
         for scope in ['pilot','full']:
             s=load(f'{folder}/scores/{scope}/summary.json')
             if s:
