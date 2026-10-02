@@ -1,0 +1,230 @@
+{
+  "branch": "experiment/multibench-20261002",
+  "rows": [
+    {
+      "benchmark": "run-llama ExtractBench",
+      "variant": "Stored primary, current public annotations",
+      "score": 95.42784046488673,
+      "full_comparison_eligible": true,
+      "official_submission": false,
+      "reference_score_rank": 3,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "LlamaExtract Agentic Plus",
+        "score": 95.91
+      },
+      "third_place_target": {
+        "system": "LlamaExtract Agentic",
+        "score": 94.77
+      },
+      "gap_to_leader_pp": 0.4821595351132686,
+      "gap_to_third_pp": -0.657840464886732,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "provenance": "Archived evaluation, input and revision hashes revalidated"
+    },
+    {
+      "benchmark": "UNIKIE constrained-category",
+      "variant": "three_original_readings",
+      "score": 80.64499524181971,
+      "full_comparison_eligible": true,
+      "official_submission": false,
+      "reference_score_rank": 2,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini-3-Pro",
+        "score": 82.37
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL-8B",
+        "score": 79.12
+      },
+      "gap_to_leader_pp": 1.7250047581802903,
+      "gap_to_third_pp": -1.5249952418197097,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "documents": 4472,
+      "scope": "Original three-reading protocol, re-scored from current stored readings"
+    },
+    {
+      "benchmark": "UNIKIE constrained-category",
+      "variant": "four_readings",
+      "score": 81.31745069484249,
+      "full_comparison_eligible": true,
+      "official_submission": false,
+      "reference_score_rank": 2,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini-3-Pro",
+        "score": 82.37
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL-8B",
+        "score": 79.12
+      },
+      "gap_to_leader_pp": 1.0525493051575125,
+      "gap_to_third_pp": -2.1974506948424875,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "documents": 4472,
+      "scope": "Four development readings including the added oneshot_text arm"
+    },
+    {
+      "benchmark": "UNIKIE constrained-category",
+      "variant": "six_readings",
+      "score": 82.37457107876092,
+      "full_comparison_eligible": true,
+      "official_submission": false,
+      "reference_score_rank": 1,
+      "ties_at_published_precision": [
+        "Gemini-3-Pro"
+      ],
+      "leader": {
+        "system": "Gemini-3-Pro",
+        "score": 82.37
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL-8B",
+        "score": 79.12
+      },
+      "gap_to_leader_pp": -0.0045710787609181125,
+      "gap_to_third_pp": -3.254571078760918,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "documents": 4472,
+      "scope": "Six tuned readings, including two additional models after initial held-out run"
+    },
+    {
+      "benchmark": "VAREX image_only",
+      "variant": "8B official",
+      "score": 94.80812641083521,
+      "full_comparison_eligible": false,
+      "official_submission": false,
+      "reference_score_rank": null,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini 2.5 Pro",
+        "size": "API",
+        "score": 98.0,
+        "anls": 98.5
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL",
+        "size": "8B",
+        "score": 96.6,
+        "anls": 97.6
+      },
+      "gap_to_leader_pp": null,
+      "gap_to_third_pp": null,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "scope": "pilot",
+      "attempted": 36,
+      "expected": 36
+    },
+    {
+      "benchmark": "VAREX image_only",
+      "variant": "8B whole",
+      "score": 94.13092550790067,
+      "full_comparison_eligible": false,
+      "official_submission": false,
+      "reference_score_rank": null,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini 2.5 Pro",
+        "size": "API",
+        "score": 98.0,
+        "anls": 98.5
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL",
+        "size": "8B",
+        "score": 96.6,
+        "anls": 97.6
+      },
+      "gap_to_leader_pp": null,
+      "gap_to_third_pp": null,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "scope": "pilot",
+      "attempted": 36,
+      "expected": 36
+    },
+    {
+      "benchmark": "VAREX image_only",
+      "variant": "8B guided",
+      "score": 94.13092550790067,
+      "full_comparison_eligible": false,
+      "official_submission": false,
+      "reference_score_rank": null,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini 2.5 Pro",
+        "size": "API",
+        "score": 98.0,
+        "anls": 98.5
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL",
+        "size": "8B",
+        "score": 96.6,
+        "anls": 97.6
+      },
+      "gap_to_leader_pp": null,
+      "gap_to_third_pp": null,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "scope": "pilot",
+      "attempted": 36,
+      "expected": 36
+    },
+    {
+      "benchmark": "VAREX image_only",
+      "variant": "8B quorum",
+      "score": 94.80812641083521,
+      "full_comparison_eligible": false,
+      "official_submission": false,
+      "reference_score_rank": null,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini 2.5 Pro",
+        "size": "API",
+        "score": 98.0,
+        "anls": 98.5
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL",
+        "size": "8B",
+        "score": 96.6,
+        "anls": 97.6
+      },
+      "gap_to_leader_pp": null,
+      "gap_to_third_pp": null,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "scope": "pilot",
+      "attempted": 36,
+      "expected": 36
+    }
+  ],
+  "pending": [
+    {
+      "benchmark": "DocuBench",
+      "status": "Full run in progress; refresh after scoring",
+      "reference_score_rank": null
+    },
+    {
+      "benchmark": "VAREX",
+      "status": "Full run in progress; pilot does not establish a rank",
+      "reference_score_rank": null
+    },
+    {
+      "benchmark": "LongArray-Extract",
+      "status": "Pilot deferred to prioritize shorter complete cohorts",
+      "reference_score_rank": null
+    },
+    {
+      "benchmark": "Contextual AI Extract Bench",
+      "status": "32/35 schema-valid; matching official content judge needed",
+      "reference_score_rank": null
+    },
+    {
+      "benchmark": "LongExtractBench public 50",
+      "status": "Inputs available; published 225-document cohort cannot supply a matching rank",
+      "reference_score_rank": null
+    }
+  ],
+  "note": "Different metrics and cohorts remain separate. No cross-benchmark aggregate or superiority claim."
+}

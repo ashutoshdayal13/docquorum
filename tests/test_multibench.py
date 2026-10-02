@@ -15,6 +15,7 @@ import resource_profile as R
 import docubench as D
 import varex as V
 import longarray as L
+import leaderboard as B
 
 
 def image_part(color):
@@ -145,3 +146,18 @@ def test_v2_oneshot_rejects_partial_output_without_dropping_pages(monkeypatch):
     with pytest.raises(RuntimeError, match='incomplete'):
         oneshot.read('source.pdf', {}, prov)
     assert seen == ['first','middle','last']
+
+
+def test_pilot_cannot_receive_a_rank_even_above_every_leader():
+    peers = [{'system':'first','score':98}, {'system':'second','score':97}, {'system':'third','score':96}]
+    row = B.reference('benchmark','pilot',100,peers,False,1)
+    assert row['reference_score_rank'] is None
+    assert row['gap_to_leader_pp'] is None
+    assert not row['official_submission']
+
+
+def test_unrounded_measurement_does_not_turn_published_tie_into_win():
+    peers = [{'system':'Gemini','score':82.37}, {'system':'second','score':80.2}, {'system':'third','score':79.12}]
+    row = B.reference('UNIKIE','tuned',82.374571,peers,True,2)
+    assert row['reference_score_rank'] == 1
+    assert row['ties_at_published_precision'] == ['Gemini']
