@@ -62,7 +62,7 @@ def build_report():
                     rows.append(reference('VAREX image_only','8B '+name,100*result['exact_match_normalized'],v['results'],
                         result['eligible_for_full_ranking'],1,scope=scope,attempted=result['attempted'],expected=s['docs'],
                         source_summary=f'varex/scores/{scope}/summary.json'))
-    peers=[{'system':'Extend MAX','score':99.2},{'system':'Reducto Deep Extract','score':97.4},{'system':'Claude Opus 4.7','score':83.1}]
+    peers=load('longarray_public_reference.json')['results']
     for folder in ['longarray','longarray_v2','longarray_v3','longarray_v4','longarray_v5']:
         for scope in ['pilot','full']:
             s=load(f'{folder}/scores/{scope}/summary.json')

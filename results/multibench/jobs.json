@@ -18,16 +18,16 @@
       "source_snapshot": "code_fingerprints_v4.json"
     },
     {
-      "benchmark": "LongArray",
-      "pid": 1494953,
-      "scope": "pilot"
-    },
-    {
       "benchmark": "DocuBench V6 selected recovery checks",
       "controller_pid": 1550250,
       "scope": "Selected XML followed by two runtime-failure image cases; not a full-cohort rank",
       "xml_check_completed": true,
       "xml_check_score": 100.0
+    },
+    {
+      "benchmark": "LongArray V4",
+      "pid": 1559303,
+      "scope": "pilot before full45"
     }
   ],
   "deferred": [],
@@ -58,8 +58,8 @@
       ]
     }
   ],
-  "publisher_pid": 1556375,
-  "publisher_restart_pending": false,
+  "publisher_pid": null,
+  "publisher_restart_pending": true,
   "cpu_model_download": {
     "repo": "ulkaa/Qwen3.8-27B-AWQ-INT4",
     "pid": null,
