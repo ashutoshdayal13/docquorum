@@ -1,0 +1,193 @@
+{
+  "source": "https://github.com/run-llama/ExtractBench",
+  "rows": [
+    {
+      "system": "LlamaExtract Agentic Plus",
+      "score": 95.91
+    },
+    {
+      "system": "Pulse (Effort)",
+      "score": 95.91
+    },
+    {
+      "system": "LlamaExtract Agentic",
+      "score": 94.77
+    },
+    {
+      "system": "Codex (GPT-6 Sol Evidence)",
+      "score": 94.57
+    },
+    {
+      "system": "Codex (GPT-5.6 Sol Evidence)",
+      "score": 93.77
+    },
+    {
+      "system": "Codex (GPT-5.5)",
+      "score": 93.57
+    },
+    {
+      "system": "Codex (GPT-5.5 Evidence)",
+      "score": 93.35
+    },
+    {
+      "system": "Pulse (Non-effort)",
+      "score": 92.7
+    },
+    {
+      "system": "LlamaExtract Cost-Effective",
+      "score": 92.27
+    },
+    {
+      "system": "Codex (GPT-5.6 Terra Evidence)",
+      "score": 92.26
+    },
+    {
+      "system": "OpenAI GPT-6 Astra",
+      "score": 91.91
+    },
+    {
+      "system": "Codex (GPT-5.6 Luna Evidence)",
+      "score": 91.16
+    },
+    {
+      "system": "Codex (GPT-6 Luna Evidence)",
+      "score": 91.01
+    },
+    {
+      "system": "Reducto Deep Extract",
+      "score": 90.44
+    },
+    {
+      "system": "Qwen3.8 Flash Next",
+      "score": 89.88
+    },
+    {
+      "system": "Qwen3.8 27B",
+      "score": 89.75
+    },
+    {
+      "system": "Extend (Max Context)",
+      "score": 88.62
+    },
+    {
+      "system": "Qwen3.6 35B",
+      "score": 88.11
+    },
+    {
+      "system": "Qwen3.5 35B",
+      "score": 88.0
+    },
+    {
+      "system": "DeepSeek V4.1 Flash",
+      "score": 87.11
+    },
+    {
+      "system": "Claude Code (Opus 4.8)",
+      "score": 87.09
+    },
+    {
+      "system": "Claude Code (Opus 4.8 Evidence)",
+      "score": 86.84
+    },
+    {
+      "system": "Qwen3.5 9B",
+      "score": 86.1
+    },
+    {
+      "system": "Claude Code (Opus 5.5 Evidence)",
+      "score": 86.06
+    },
+    {
+      "system": "Extend Extract",
+      "score": 85.72
+    },
+    {
+      "system": "Datalab (Accurate + Balanced)",
+      "score": 85.7
+    },
+    {
+      "system": "Reducto Extract",
+      "score": 83.41
+    },
+    {
+      "system": "Kimi K3",
+      "score": 83.17
+    },
+    {
+      "system": "Qwen3.5 4B",
+      "score": 82.43
+    },
+    {
+      "system": "NuExtract3",
+      "score": 81.02
+    },
+    {
+      "system": "GLM-5.3 Flash",
+      "score": 80.75
+    },
+    {
+      "system": "Google Gemini 3.8 Flash",
+      "score": 80.71
+    },
+    {
+      "system": "Google Gemini 3.5 Flash",
+      "score": 79.84
+    },
+    {
+      "system": "Lift Datalab 9B",
+      "score": 78.43
+    },
+    {
+      "system": "OpenAI GPT-5.4 Nano",
+      "score": 74.9
+    },
+    {
+      "system": "Gemma4 26B",
+      "score": 70.27
+    },
+    {
+      "system": "Gemma4 E4B",
+      "score": 69.64
+    },
+    {
+      "system": "InternVL3.5 14B",
+      "score": 66.35
+    },
+    {
+      "system": "InternVL3.5 8B",
+      "score": 64.63
+    },
+    {
+      "system": "Qwen3.5 2B",
+      "score": 63.4
+    },
+    {
+      "system": "Kimi-VL A3B",
+      "score": 57.77
+    },
+    {
+      "system": "Gemma4 E2B",
+      "score": 51.85
+    },
+    {
+      "system": "NuExtract 2.0 8B",
+      "score": 49.42
+    },
+    {
+      "system": "Qwen3.5 0.8B",
+      "score": 46.63
+    },
+    {
+      "system": "MiniCPM-V 4.5",
+      "score": 45.85
+    },
+    {
+      "system": "Gemma4 12B",
+      "score": 45.39
+    },
+    {
+      "system": "GLM-4.6V Flash",
+      "score": 45.19
+    }
+  ]
+}

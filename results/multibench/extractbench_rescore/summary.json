@@ -1,0 +1,28 @@
+{
+  "score": 95.25349044578273,
+  "per_split": {
+    "short": 96.11316743219794,
+    "medium": 94.03132411329346,
+    "long": 90.41017544614843
+  },
+  "coverage": {
+    "short": {
+      "expected": 252,
+      "processed": 252,
+      "dataset_sha256": "e4b07b3612f1d4bcf4157d5b97b8692d671aeddaf96e5b5898338345b654e740"
+    },
+    "medium": {
+      "expected": 98,
+      "processed": 98,
+      "dataset_sha256": "8ae0884d8e8dddb1282eb98282d942b65c8d99b82dd37e650edc53cd0f5bb5df"
+    },
+    "long": {
+      "expected": 20,
+      "processed": 20,
+      "dataset_sha256": "ac5b22bbf810548a5e086e792d4afe0aa98dc572d24deceab820a2558570f3bd"
+    }
+  },
+  "scope": "Stored main-branch predictions re-scored; development result, not a fresh held-out run or submission",
+  "scorer_path": "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/multi_agent_test_9/eb_repo/src/extract_bench/evaluation/score_case.py",
+  "scorer_sha256": "fd7dc64871316c4e05af70e158449054571539491fec038cbe946f424b9aff65"
+}

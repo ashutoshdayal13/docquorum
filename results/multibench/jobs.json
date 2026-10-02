@@ -1,0 +1,30 @@
+{
+  "server": {
+    "api_pid": 1486915,
+    "engine_pid": 1487192,
+    "port": 8078
+  },
+  "running": [
+    {
+      "benchmark": "DocuBench",
+      "pid": 1492643,
+      "scope": "full"
+    },
+    {
+      "benchmark": "VAREX",
+      "pid": 1490774,
+      "scope": "full"
+    }
+  ],
+  "deferred": [
+    {
+      "benchmark": "LongArray",
+      "pid": 1494953,
+      "scope": "pilot",
+      "state": "SIGSTOP; resume with SIGCONT after small full cohorts finish",
+      "reason": "Give complete DocuBench and VAREX measurements priority; preserve in-flight long-array work"
+    }
+  ],
+  "foreign_gpu_pid": 669913,
+  "foreign_process_unchanged": true
+}

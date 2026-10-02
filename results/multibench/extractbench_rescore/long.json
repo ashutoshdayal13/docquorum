@@ -1,0 +1,22 @@
+{
+  "dd1155_schedule_continuation_0011": 0.968,
+  "dd1155_schedule_continuation_0012": 0.8285714285714286,
+  "gov_clin_schedule_0005": 0.9308176100628931,
+  "gov_clin_schedule_0031": 0.6928838951310862,
+  "real_credit_strategies_full": 0.9140463761078063,
+  "real_freer_register_full": 0.9671813213107322,
+  "real_ftx_full": 0.9910278734066168,
+  "real_ftx_full_corrupted": 0.953608623791096,
+  "real_imedia_full": 0.9880060840386871,
+  "real_imedia_full_corrupted": 0.9266880207970661,
+  "real_ishares_iboxx_bond_etfs": 0.6983717329078879,
+  "real_ofac_ssi_full": 0.8899927534537974,
+  "real_oklahoma_unclaimed_2024": 0.9822723811188375,
+  "real_sm0801_ae_full": 0.7366463559389095,
+  "real_sm0801_eco_full": 0.9829538820782253,
+  "real_sm0801_eco_full_corrupted": 0.9826036193812026,
+  "sec_13f_0010_renaissance_technologies": 0.9139831079838681,
+  "sec_13f_0026_brown_brothers_harriman": 0.9132093364081122,
+  "sf1449_supplies_services_0042": 0.9130434782608695,
+  "sf1449_supplies_services_0059": 0.9081272084805654
+}

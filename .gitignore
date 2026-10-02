@@ -19,3 +19,10 @@ configs/local.env
 
 # kept locally, not published
 _withheld/
+
+# Multi-benchmark source copies, images and raw runs stay local; manifests/summaries are tracked.
+results/multibench/**/inputs/
+results/multibench/**/converted/
+results/multibench/**/predictions/
+results/multibench/**/reports/
+results/multibench/**/*.csv

@@ -1,0 +1,357 @@
+{
+  "scope": "Schema validity only; content pass rate requires official Gemini 2.5 Flash judge",
+  "predictions": "runs/contextual/cx_final",
+  "docs": [
+    {
+      "id": "research__NIPS-1989-handwritten-digit-recognition-with-a-back-propagation-network-Paper",
+      "domain": "research",
+      "schema_valid": false,
+      "error_count": 7,
+      "errors": [
+        {
+          "path": [
+            "authors",
+            0,
+            "email"
+          ],
+          "validator": "type",
+          "message": "None is not of type 'string'"
+        },
+        {
+          "path": [
+            "authors",
+            1,
+            "email"
+          ],
+          "validator": "type",
+          "message": "None is not of type 'string'"
+        },
+        {
+          "path": [
+            "authors",
+            2,
+            "email"
+          ],
+          "validator": "type",
+          "message": "None is not of type 'string'"
+        },
+        {
+          "path": [
+            "authors",
+            3,
+            "email"
+          ],
+          "validator": "type",
+          "message": "None is not of type 'string'"
+        },
+        {
+          "path": [
+            "authors",
+            4,
+            "email"
+          ],
+          "validator": "type",
+          "message": "None is not of type 'string'"
+        }
+      ]
+    },
+    {
+      "id": "research__fan24_rag_survey",
+      "domain": "research",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "research__li25_vlm_survey",
+      "domain": "research",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "research__zhao25_a_survey_of_LLMs",
+      "domain": "research",
+      "schema_valid": false,
+      "error_count": 2929,
+      "errors": [
+        {
+          "path": [
+            "keywords",
+            0
+          ],
+          "validator": "type",
+          "message": "{'type': 'Large Language Models'} is not of type 'string'"
+        },
+        {
+          "path": [
+            "keywords",
+            1
+          ],
+          "validator": "type",
+          "message": "{'type': 'Emergent Abilities'} is not of type 'string'"
+        },
+        {
+          "path": [
+            "keywords",
+            2
+          ],
+          "validator": "type",
+          "message": "{'type': 'Adaptation Tuning'} is not of type 'string'"
+        },
+        {
+          "path": [
+            "keywords",
+            3
+          ],
+          "validator": "type",
+          "message": "{'type': 'Utilization'} is not of type 'string'"
+        },
+        {
+          "path": [
+            "keywords",
+            4
+          ],
+          "validator": "type",
+          "message": "{'type': 'Alignment'} is not of type 'string'"
+        }
+      ]
+    },
+    {
+      "id": "research__shah24--flashattention-3",
+      "domain": "research",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "research__survey_of_dimensionality_reduction_techniques",
+      "domain": "research",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "sec__adp_10q_fy2025q2",
+      "domain": "10kq",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "sec__csco_10q_fy2025q2",
+      "domain": "10kq",
+      "schema_valid": false,
+      "error_count": 3,
+      "errors": [
+        {
+          "path": [],
+          "validator": "required",
+          "message": "'income_statement' is a required property"
+        },
+        {
+          "path": [],
+          "validator": "required",
+          "message": "'cash_flow_statement' is a required property"
+        },
+        {
+          "path": [],
+          "validator": "required",
+          "message": "'other_disclosures' is a required property"
+        }
+      ]
+    },
+    {
+      "id": "sec__dell_10q_fy2025q2",
+      "domain": "10kq",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "sec__mck_10q_fy2025q2",
+      "domain": "10kq",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "sec__nke_10q_fy2025q2",
+      "domain": "10kq",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "sec__tho_10q_fy2025q2",
+      "domain": "10kq",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "sec__wdc_10q_fy2025q2",
+      "domain": "10kq",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "credit__adbe_credit_agreement_2000_08_09",
+      "domain": "credit_agreement",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "credit__amzn_credit_agreement_2014_09_05",
+      "domain": "credit_agreement",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "credit__ba_credit_agreement_2003_11_21",
+      "domain": "credit_agreement",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "credit__bkrf_credit-agreement_2020-05-04",
+      "domain": "credit_agreement",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "credit__csco_credit_agreement_2007_08_17",
+      "domain": "credit_agreement",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "credit__dis_credit-agreement_2022-03-24",
+      "domain": "credit_agreement",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "credit__expel_credit-agreement_2023-04-06",
+      "domain": "credit_agreement",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "credit__ibm_credit_agreement_2019_07_18",
+      "domain": "credit_agreement",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "credit__mmm_credit_agreement_2019_11_15",
+      "domain": "credit_agreement",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "credit__trmb_credit-agreement_2022-03-24",
+      "domain": "credit_agreement",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "resume__Resume-Academic01",
+      "domain": "resume",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "resume__Resume-Academic02",
+      "domain": "resume",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "resume__Resume-Finance",
+      "domain": "resume",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "resume__Resume-IT",
+      "domain": "resume",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "resume__Resume-Legal",
+      "domain": "resume",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "resume__Resume-Marketing",
+      "domain": "resume",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "resume__Resume-Med",
+      "domain": "resume",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "sports__ma_2023_sw_M-table1",
+      "domain": "swimming",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "sports__ma_2023_sw_M-table2",
+      "domain": "swimming",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "sports__ma_2023_sw_M-table3",
+      "domain": "swimming",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "sports__ma_2023_sw_M-table4",
+      "domain": "swimming",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "id": "sports__ma_2023_sw_M-table5",
+      "domain": "swimming",
+      "schema_valid": true,
+      "error_count": 0,
+      "errors": []
+    }
+  ],
+  "source_commit": "ca817638852a23bb17ca9aaeb82ccdd29e9af9ca",
+  "source_matches_pinned_current": true,
+  "source_differences": []
+}
