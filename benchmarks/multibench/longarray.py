@@ -51,6 +51,8 @@ def run(scope, workers, version='bounded-v1'):
     installer = install
     if version == 'bounded-v2':
         from resource_profile_v2 import install as installer
+    elif version == 'bounded-v3':
+        from resource_profile_v3 import install as installer
     profile = installer()
     policy = {"profile": profile, "model": C.MODEL, "scope": scope, "task": "Extract every record shown in the document according to its schema."}
     policy_path = OUT / f"policy_{scope}.json"
@@ -132,7 +134,7 @@ if __name__ == '__main__':
     ap.add_argument('--scope', choices=['pilot', 'full'], default='pilot')
     ap.add_argument('--workers', type=int, default=2)
     ap.add_argument('--out', type=Path, default=OUT)
-    ap.add_argument('--profile', choices=['bounded-v1','bounded-v2'], default='bounded-v1')
+    ap.add_argument('--profile', choices=['bounded-v1','bounded-v2','bounded-v3'], default='bounded-v1')
     a = ap.parse_args()
     OUT = a.out.resolve()
     if a.action == 'prepare': prepare()

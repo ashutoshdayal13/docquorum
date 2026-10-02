@@ -76,6 +76,8 @@ def run(workers, version="bounded-v1"):
     installer = install
     if version == 'bounded-v2':
         from resource_profile_v2 import install as installer
+    elif version == 'bounded-v3':
+        from resource_profile_v3 import install as installer
     profile = installer()
     manifest = {"source_commit": "43a3f3bc00e591e711075678ca6d154acfedcf42", "version": "0.2.0",
                 "model": C.MODEL, "profile": profile, "documents": records()}
@@ -165,7 +167,7 @@ if __name__ == "__main__":
     ap.add_argument("action", choices=["run", "score"])
     ap.add_argument("--workers", type=int, default=2)
     ap.add_argument("--out", type=Path, default=OUT)
-    ap.add_argument("--profile", choices=['bounded-v1', 'bounded-v2'], default='bounded-v1')
+    ap.add_argument("--profile", choices=['bounded-v1', 'bounded-v2', 'bounded-v3'], default='bounded-v1')
     a = ap.parse_args()
     OUT = a.out.resolve()
     if a.action == "run": run(a.workers, a.profile)

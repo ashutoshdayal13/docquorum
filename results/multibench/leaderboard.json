@@ -222,7 +222,7 @@
     },
     {
       "benchmark": "LongExtractBench public 50",
-      "status": "Inputs available; published 225-document cohort cannot supply a matching rank",
+      "status": "All 50 inputs prepared; published 225-document cohort cannot supply a matching rank",
       "reference_score_rank": null
     }
   ],

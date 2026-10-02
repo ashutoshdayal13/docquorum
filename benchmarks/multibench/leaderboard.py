@@ -41,7 +41,7 @@ def main():
     d = load('docubench_public_audit.json')
     if d:
         peers=[r for r in d['results'] if r['rank_eligible']]
-        for folder in ['docubench','docubench_v2']:
+        for folder in ['docubench','docubench_v2','docubench_v3']:
             s=load(folder+'/summary.json')
             if s:
                 rows.append(reference('DocuBench v0.2.0',s['engine'],s['score'],peers,s['eligible_for_full_ranking'],8,
@@ -55,7 +55,7 @@ def main():
                     rows.append(reference('VAREX image_only','8B '+name,100*result['exact_match_normalized'],v['results'],
                         result['eligible_for_full_ranking'],1,scope=scope,attempted=result['attempted'],expected=s['docs']))
     peers=[{'system':'Extend MAX','score':99.2},{'system':'Reducto Deep Extract','score':97.4},{'system':'Claude Opus 4.7','score':83.1}]
-    for folder in ['longarray','longarray_v2']:
+    for folder in ['longarray','longarray_v2','longarray_v3']:
         for scope in ['pilot','full']:
             s=load(f'{folder}/scores/{scope}/summary.json')
             if s:
@@ -66,7 +66,7 @@ def main():
         ('VAREX','Full run in progress; pilot does not establish a rank'),
         ('LongArray-Extract','Pilot deferred to prioritize shorter complete cohorts'),
         ('Contextual AI Extract Bench','26/35 schema-valid; official judge and paper/scorer field-count reconciliation needed'),
-        ('LongExtractBench public 50','Inputs available; published 225-document cohort cannot supply a matching rank')]]
+        ('LongExtractBench public 50','All 50 inputs prepared; published 225-document cohort cannot supply a matching rank')]]
     present_full={r['benchmark'] for r in rows if r['full_comparison_eligible']}
     pending=[p for p in pending if not any(p['benchmark'] in name for name in present_full)]
     report={'branch':'experiment/multibench-20261002','rows':rows,'pending':pending,

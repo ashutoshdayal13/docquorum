@@ -17,6 +17,8 @@ import varex as V
 import longarray as L
 import leaderboard as B
 import contextual as X
+import resource_profile_v3 as R3
+import longextract as LX
 
 
 def image_part(color):
@@ -172,3 +174,95 @@ def test_wrapped_contextual_schema_does_not_accept_every_prediction():
     assert list(jsonschema.Draft202012Validator(actual).iter_errors({'name':None}))
     with pytest.raises(ValueError, match='No JSON Schema'):
         X.actual_schema({'name':'metadata wrapper'})
+
+
+@pytest.fixture
+def install_v3(monkeypatch):
+    from docquorum.agents import whole, reader, oneshot
+    from docquorum.tools import llm
+    for obj, attrs in [(whole, ['MAX_IMAGE_PAGES','WINDOW_PAGES','MAX_IN_TOKENS','TEXT_WINDOW_TOKENS',
+                               'MAX_OUT_TOKENS','merge_filled','read_parts']),
+                       (reader, ['MAX_IMAGES_PER_CALL','_read_scalars','OUT_BUDGET','split_columns','_harvest','_ask_chunk']),
+                       (oneshot, ['read']), (llm, ['client'])]:
+        for attr in attrs: monkeypatch.setattr(obj, attr, getattr(obj, attr))
+    return R3.install
+
+
+def test_disjoint_windows_preserve_shorter_lists_and_repeated_rows():
+    first = {'rows':[{'id':'repeat'},{'id':'repeat'}], 'meta':{'issuer':'A','date':None}}
+    second = {'rows':[{'id':'B'}], 'meta':{'issuer':None,'date':'2026'}}
+    merged = R3.merge_windows(first, second)
+    assert merged['rows'] == [{'id':'repeat'},{'id':'repeat'},{'id':'B'}]
+    assert merged['meta'] == {'issuer':'A','date':'2026'}
+    assert len(first['rows']) == 2
+
+
+def test_one_incomplete_partition_forces_reader_fallback(monkeypatch, install_v3):
+    from docquorum.agents import whole
+    monkeypatch.setattr(whole, 'read_parts', lambda *a, **kw: ({'rows':['partial']},
+        [(1,'stop',True),(1,'length',True)]))
+    install_v3()
+    got, statuses = whole.read_parts()
+    assert got is None
+    assert statuses == [(1,'stop',True),(1,'length',False)]
+
+
+def test_dense_table_keeps_identifiers_with_values(monkeypatch, install_v3):
+    import threading
+    from docquorum.agents import reader
+    install_v3()
+    text = '\n'.join(f'PART-{i:04d} UNIT                  {i+1000}                 {i+2000}.00' for i in range(80))
+    seen = []
+    def harvest(cl, actual, imgs, meta, label, depth, stat):
+        seen.append(actual)
+        return [{'field_0':'PART-0000', 'field_1':'2000.00'}]
+    monkeypatch.setattr(reader, '_harvest', harvest)
+    item = {'type':'object', 'properties':{f'field_{i}':{'type':'string'} for i in range(20)}}
+    reader._read_list(None, {}, None, [text], False, 'rows', item, '', 1, {'lock':threading.Lock()})
+    assert seen == [text]
+
+
+def test_complete_refinement_replaces_longer_truncated_reply(monkeypatch, install_v3):
+    import threading
+    from docquorum.agents import reader
+    install_v3()
+    responses = iter([([{'id':'invalid'}]*10,True), ([{'id':'a'}],False), ([{'id':'b'}],False)])
+    monkeypatch.setattr(reader, '_ask_chunk', lambda *a:next(responses))
+    monkeypatch.setattr(reader, 'split_text', lambda text,n:['left','right'])
+    got = reader._harvest(None, 'source', (), None, 'page1', 0, {'lock':threading.Lock(),'refined':0})
+    assert got == [{'id':'a'},{'id':'b'}]
+
+
+def test_record_call_failure_cannot_be_reported_as_empty_success(monkeypatch, install_v3):
+    import threading
+    from docquorum.agents import reader
+    from docquorum.tools import llm
+    install_v3()
+    def fail(*args, **kw): raise ConnectionError('endpoint unavailable')
+    monkeypatch.setattr(llm, 'ask', fail)
+    stat = {'lock':threading.Lock(),'calls':0,'tok':0,'truncated':0}
+    with pytest.raises(ConnectionError, match='unavailable'):
+        reader._ask_chunk(None, 'source', (), ('rows','','{}',{}), 'page1', stat)
+
+
+def test_longextract_accuracy_keeps_omissions_and_failures_visible(monkeypatch, tmp_path):
+    monkeypatch.setattr(LX, 'OUT', tmp_path)
+    schema = {'properties':{'rows':{'type':'array','items':{'type':'object',
+        'properties':{'id':{'type':'string'},'amount':{'type':'number'}}}}}}
+    gold = {'rows':[{'id':'A','amount':1},{'id':'B','amount':2}]}
+    records = []
+    for name in ('done','missing'):
+        folder = tmp_path/'source'/name; folder.mkdir(parents=True)
+        (folder/'schema.json').write_text(json.dumps(schema))
+        (folder/'ground_truth.json').write_text(json.dumps(gold))
+        records.append({'id':name,'schema':str(folder/'schema.json'),'pdf':str(folder/'document.pdf')})
+    monkeypatch.setattr(LX, 'cohort', lambda _:records)
+    V.write(tmp_path/'predictions/done.json', {'rows':[{'id':'A','amount':1}]})
+    V.write(tmp_path/'reports/done.json', {'status':'completed','seconds':10})
+    LX.score('full')
+    summary = json.loads((tmp_path/'scores/full/summary.json').read_text())
+    assert summary['leaf_accuracy'] == 100
+    assert summary['row_recall'] == .5
+    assert (summary['successful'],summary['failed'],summary['expected']) == (1,1,2)
+    assert not summary['eligible_for_public50_comparison']
+    assert summary['reference_score_rank'] is None

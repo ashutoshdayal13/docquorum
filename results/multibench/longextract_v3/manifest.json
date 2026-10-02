@@ -1,0 +1,369 @@
+{
+  "dataset": "micro1-inc/longextract-bench-50",
+  "revision": "d4ca332f72f6d3649ecd11b69445a8f4ef5fcb02",
+  "scorer_revision": "b28888d7e864a84dfed810b00c899f308f0d24d0",
+  "docs": [
+    {
+      "id": "m1__Infectious_disease_surveillance_report",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Infectious_disease_surveillance_report/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Infectious_disease_surveillance_report/schema.json",
+      "pdf_sha256": "8d3e64e63cc518fec547d8180a3eca27930e850411eaa3fa6490863f592423c5",
+      "schema_sha256": "17f14b672e71c544d9bbc26068459a53e2816f9f21a25578d2f4bf42943c18f2"
+    },
+    {
+      "id": "2642087e__Inactive Ingredient Search for Approved Drug Products",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/2642087e__Inactive Ingredient Search for Approved Drug Products/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/2642087e__Inactive Ingredient Search for Approved Drug Products/schema.json",
+      "pdf_sha256": "f50f8fca81f3ff86eb2f0b1b58d30373045c30a5fb4e3e71c62420895493717a",
+      "schema_sha256": "e629619ab0b824dca6850a157074dd959de93d3c7658927fa0289fc51103c64c"
+    },
+    {
+      "id": "06_19_Government_zoning_and_land_use_geospatial_datasets",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_19_Government_zoning_and_land_use_geospatial_datasets/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_19_Government_zoning_and_land_use_geospatial_datasets/schema.json",
+      "pdf_sha256": "52b1c905309ecaf4ed32aba5b179f24bdfd413b9aa97a6e8cf8d8dfb4e00e781",
+      "schema_sha256": "bfba1c881c07ba94ca6a48961a803cb74da9ccb8286ec0234ccfbece6729d67b"
+    },
+    {
+      "id": "std__Municipal_continuing_disclosure_annual_financial_information_filing_-_2021",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/std__Municipal_continuing_disclosure_annual_financial_information_filing_-_2021/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/std__Municipal_continuing_disclosure_annual_financial_information_filing_-_2021/schema.json",
+      "pdf_sha256": "e7e6d8042f422497c76d27a15e288538aa60c17c4c3ff74e0892f408bc9eed08",
+      "schema_sha256": "3c00535d6f7dcf554eb88c9306c19c104780e0becb32b970eb42ea905a5b4034"
+    },
+    {
+      "id": "Proxy_statement_DEF_14A",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Proxy_statement_DEF_14A/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Proxy_statement_DEF_14A/schema.json",
+      "pdf_sha256": "d9f0c811a14c5def9989a65e20ab7d65df1f5103dfaec9000cb88898ba5d5865",
+      "schema_sha256": "dfa48ee85b9df52e41d8451c8e50c3e551cb5b92c6a907bf4ad7e1896c35f886"
+    },
+    {
+      "id": "53cf7eae__foi-eir-request-log-2023-1",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/53cf7eae__foi-eir-request-log-2023-1/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/53cf7eae__foi-eir-request-log-2023-1/schema.json",
+      "pdf_sha256": "024e25095e68bfbf0ad42f51cdb10687c292d5e44e676d83be4863be694950f9",
+      "schema_sha256": "1507fcc0fff2037baecb9499f9e37facde8e645919102e630457eccd5671637a"
+    },
+    {
+      "id": "Government_RFP-2",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Government_RFP-2/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Government_RFP-2/schema.json",
+      "pdf_sha256": "0853ef5962ba5f4dfa9f22188003cc3c2d01c85ac79dd91d0b42681cd29272c2",
+      "schema_sha256": "cfbf2003e5fa2102d7a15656fb1e7c2d4381919ce68a944a68feb24fc132c1f6"
+    },
+    {
+      "id": "b9489a19__Statistisch Jaarboek 2025",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/b9489a19__Statistisch Jaarboek 2025/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/b9489a19__Statistisch Jaarboek 2025/schema.json",
+      "pdf_sha256": "58bb5e440a0456b5b2a65798ba323d1ac47ea3386c1a7a4e4b5b4d8b9c5f237e",
+      "schema_sha256": "c98f95d0fa67efa6fe4b891bbb4ecb6b582e2fa00a90a7035e8a70f9568ca1d0"
+    },
+    {
+      "id": "Contracts_Awarded",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Contracts_Awarded/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Contracts_Awarded/schema.json",
+      "pdf_sha256": "6744815696e6cd37216e647317747ff66fdd407dd00d68b7947598db1f13a457",
+      "schema_sha256": "ba6255f8e07fa98aa054d911d093e858238f9475d2dfd8a6dc85d8053c8febd4"
+    },
+    {
+      "id": "std__Bureau_of_Economic_Analysis_GDP_release_-_gdp3q22_2nd_merge",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/std__Bureau_of_Economic_Analysis_GDP_release_-_gdp3q22_2nd_merge/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/std__Bureau_of_Economic_Analysis_GDP_release_-_gdp3q22_2nd_merge/schema.json",
+      "pdf_sha256": "560c3c460a29f025b211783a3518c757de7518a202909d80fd6f84b1b17373fc",
+      "schema_sha256": "39a971bc59cf84720bb5763e30204b51a111faffd95f92a3b5565d411886f762"
+    },
+    {
+      "id": "UK_asylum-applications-datasets-mar-2023",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/UK_asylum-applications-datasets-mar-2023/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/UK_asylum-applications-datasets-mar-2023/schema.json",
+      "pdf_sha256": "45773bba72d2a49d8d28e6af0491c01b8139de3aa9b69efa5ac7e397fec9baf1",
+      "schema_sha256": "c6a8112edd936cc9ba18aa4094d64d2b16b42d30946ed78c5b6bed5d28533221"
+    },
+    {
+      "id": "m1__Manufacturing_Industry_Datasets",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Manufacturing_Industry_Datasets/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Manufacturing_Industry_Datasets/schema.json",
+      "pdf_sha256": "4c3ef79a3a4ac64af07a11bbae51960172b0909f3972d2a3f64f7a50f02508de",
+      "schema_sha256": "3831ef5a72404229b8d8e25546905027a1af728648723f3aa181600909b5e24e"
+    },
+    {
+      "id": "6c9a8d3f__auslaendische-bevoelkerung-kreise-pdf",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/6c9a8d3f__auslaendische-bevoelkerung-kreise-pdf/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/6c9a8d3f__auslaendische-bevoelkerung-kreise-pdf/schema.json",
+      "pdf_sha256": "3c6cbc3c93c345f2c02f95a0b76d10f90166095334ba0ee16d367657edb55177",
+      "schema_sha256": "3bf3ff6ae035a9106a70c9d58324facc71d097962fcaf29db99878b5cefe0d71"
+    },
+    {
+      "id": "std__Regulatory_inspection_enforcement_activity_statistical_reports_-_catalog.da",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/std__Regulatory_inspection_enforcement_activity_statistical_reports_-_catalog.da/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/std__Regulatory_inspection_enforcement_activity_statistical_reports_-_catalog.da/schema.json",
+      "pdf_sha256": "8266d59bb63145a2a3518802cc2291e754ac4dd7b8950532afb1de77ba63ac35",
+      "schema_sha256": "5a43fdbf30adec95a90d95ed427d53d2ac4b0d4216f1eadfb83cc6768c65d588"
+    },
+    {
+      "id": "m1__Mortality_statistics_and_preventable_mortality_reports",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Mortality_statistics_and_preventable_mortality_reports/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Mortality_statistics_and_preventable_mortality_reports/schema.json",
+      "pdf_sha256": "377997b2891487d96403388217619a47553272c6b47f6b1fe20426fa9ddd50df",
+      "schema_sha256": "6ad1341ef0468752727c619c260baa9ba1c17b1265291ea1d22046f0661d6678"
+    },
+    {
+      "id": "m1__Public_service_remuneration_report",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Public_service_remuneration_report/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Public_service_remuneration_report/schema.json",
+      "pdf_sha256": "8da12757059a951ef0d456f8ba260b0d7eaeb2c2f46fbf734a42e84835e4d759",
+      "schema_sha256": "b4b6a328421ee23dacb535187814aa27a88deec44cbc1b3498e2777415c36dba"
+    },
+    {
+      "id": "m1__Language_speakers_and_linguistic_proficiency_census_tables",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Language_speakers_and_linguistic_proficiency_census_tables/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Language_speakers_and_linguistic_proficiency_census_tables/schema.json",
+      "pdf_sha256": "7f4f25907aea8455c59692a0e789de724b82ad4038a89966604dc21b58026d94",
+      "schema_sha256": "a6cc13b95120a0c1b15275d0c646d9ad308dc4b8f7f88a92b1b0a8ad73e5e4fc"
+    },
+    {
+      "id": "721d346e__table_6",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/721d346e__table_6/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/721d346e__table_6/schema.json",
+      "pdf_sha256": "dfaf02b214c49be26c6c5fcd286c9b915a5ec1e81065f3ecd76645087e09652f",
+      "schema_sha256": "027d888ac9fcd7da1e39cbb55a93378a39d189e660f72152f49769930db66d06"
+    },
+    {
+      "id": "4a20762e__K213919",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/4a20762e__K213919/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/4a20762e__K213919/schema.json",
+      "pdf_sha256": "2f557d2e721e729d6511b7c0304b3f0b04ffcadfb9a5b4837bd7cde3c1371bac",
+      "schema_sha256": "02478fbab87b3b7bdb284bb4e18823584d404e9d5843927bf69df575b0abf393"
+    },
+    {
+      "id": "64ce2c27__enrolment_by_school_2223_final_en_supp - Enrolment by School 2022-2023",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/64ce2c27__enrolment_by_school_2223_final_en_supp - Enrolment by School 2022-2023/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/64ce2c27__enrolment_by_school_2223_final_en_supp - Enrolment by School 2022-2023/schema.json",
+      "pdf_sha256": "51c610511c18866983b6849af4ee15d59089879cb21919e8ec1f8043af8fb960",
+      "schema_sha256": "c913af8cd8a6cba600d41a1d67202cd691c3ae7a091edbbcbaeeeef069bda851"
+    },
+    {
+      "id": "std__Annual_report_10-K_-_Exxon",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/std__Annual_report_10-K_-_Exxon/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/std__Annual_report_10-K_-_Exxon/schema.json",
+      "pdf_sha256": "a85bb947599154a2dd99daeb707a15281c0ec90c3314b84aeadacd5456b1a8b5",
+      "schema_sha256": "f1c9c97b797b37ad8fcbbb01c66bed4f9d251461bb6b26cefbea0a4c292be345"
+    },
+    {
+      "id": "Capital_improvement_plan___CIP_project_budget_report",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Capital_improvement_plan___CIP_project_budget_report/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Capital_improvement_plan___CIP_project_budget_report/schema.json",
+      "pdf_sha256": "f9da08e2f4310724eea6beb191b049fee0b1d8851f63636f11813421719a2333",
+      "schema_sha256": "2bfa2fb2d12096dcd46d9218372c2c089da62dc0d4581b362353e480fc1cbd51"
+    },
+    {
+      "id": "m1__Calibration__Quarterly_Report__10-Q__-_JPMorgan",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Calibration__Quarterly_Report__10-Q__-_JPMorgan/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Calibration__Quarterly_Report__10-Q__-_JPMorgan/schema.json",
+      "pdf_sha256": "a87c7f2b2eda74773773d14d2c5888a31dec6d094b55460836793f8595697975",
+      "schema_sha256": "73ccea2c2bbf9806eac800f4abf46f1a7067eb4d88a34be9a55d975758a3d7c3"
+    },
+    {
+      "id": "Energy_consumption___efficiency_report",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Energy_consumption___efficiency_report/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Energy_consumption___efficiency_report/schema.json",
+      "pdf_sha256": "1f5fcc8076d4324541e30bd3ecc7fbe588b5f6482b521dd32dd52f2cf5c6fcc7",
+      "schema_sha256": "7c3cf9a14d5860a6864269927c0bde9c13fb0412bfbac4e40924a45847749c58"
+    },
+    {
+      "id": "06_10_26_Federal_Reserve_Z_1_Financial_Accounts_of_the_United_States_e",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_10_26_Federal_Reserve_Z_1_Financial_Accounts_of_the_United_States_e/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_10_26_Federal_Reserve_Z_1_Financial_Accounts_of_the_United_States_e/schema.json",
+      "pdf_sha256": "275de9a67b565c85e57311d219faab533c501549c05e7a800c7a41946f3c1271",
+      "schema_sha256": "c0370444a82a104d138218dd7226b77144dfac842cc0b562082d3a5e5b4a8ccf"
+    },
+    {
+      "id": "06_10_26_Budget_vs_actuals_report_cbd029d1_2024_09_SEP_Period_3_MFR_1",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_10_26_Budget_vs_actuals_report_cbd029d1_2024_09_SEP_Period_3_MFR_1/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_10_26_Budget_vs_actuals_report_cbd029d1_2024_09_SEP_Period_3_MFR_1/schema.json",
+      "pdf_sha256": "517214c63296dccfc777b96c4ff42930d6336e1744576eae109f551718f48594",
+      "schema_sha256": "564c2f62f2205b00fa3c4823c4d19990f263eb3f806d552281a420760e55ef50"
+    },
+    {
+      "id": "m1__Clinical_Trial_Summary_Report",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Clinical_Trial_Summary_Report/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Clinical_Trial_Summary_Report/schema.json",
+      "pdf_sha256": "9733422d32d57d5877413258f4c7fe0d58805483c89be15305779186d2b4df9b",
+      "schema_sha256": "3806dd199b7db6773a642ff13d844ec5dceb022f8026fbba483136d4e065cf14"
+    },
+    {
+      "id": "f47be8a4__aaq-mntrpt-2005-vic-report-final",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/f47be8a4__aaq-mntrpt-2005-vic-report-final/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/f47be8a4__aaq-mntrpt-2005-vic-report-final/schema.json",
+      "pdf_sha256": "0f5821b37ea1ca10a60a2da253f94df2318003dca93244248a8d2b93e315017b",
+      "schema_sha256": "fb504acca6a7d381a05f48a4554b6e0a61b569cd71c0543310c8765145290d92"
+    },
+    {
+      "id": "c9b6b95b__TABLE3 Maritimes",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/c9b6b95b__TABLE3 Maritimes/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/c9b6b95b__TABLE3 Maritimes/schema.json",
+      "pdf_sha256": "03a700d55361ad94afb36b0496da9b39a1f4cd29982945b00ffa75ee7b75cda4",
+      "schema_sha256": "69662b74ef7417965c56d398a2514a88ad7799f9de4d3d80837f03c975ff4cf9"
+    },
+    {
+      "id": "m1__Local_government_budget_line-item_schedules",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Local_government_budget_line-item_schedules/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Local_government_budget_line-item_schedules/schema.json",
+      "pdf_sha256": "d9f1328d21db437340ee15fd4d99620f36042adce90d86c94ed1b22bafb9c56e",
+      "schema_sha256": "1d475c789f34870602c4bef71fc4384101108185b9582d7ac549f8f0ac2a1d3c"
+    },
+    {
+      "id": "06_10_26_American_Community_Survey_ACS_5_year_estimates_f507236a_sampl",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_10_26_American_Community_Survey_ACS_5_year_estimates_f507236a_sampl/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_10_26_American_Community_Survey_ACS_5_year_estimates_f507236a_sampl/schema.json",
+      "pdf_sha256": "b6042fe78f1d17cef6aabbdf5303368b55f0abf2b25a14eddd7dbe79a0c645a3",
+      "schema_sha256": "cbc87f5fa65cdc676e1b224e10722d1b70593e41d76169d0eb035b83b390ac06"
+    },
+    {
+      "id": "Wastewater_discharge_monitoring_report___permit_compliance_summary",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Wastewater_discharge_monitoring_report___permit_compliance_summary/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Wastewater_discharge_monitoring_report___permit_compliance_summary/schema.json",
+      "pdf_sha256": "338dda946bc99fc3be31e89a53cb1e6549732ab59c44c12e76e4434513fbce15",
+      "schema_sha256": "86267b47c8cb14f0c25d1dbfc2df3d54aef5e21dcff9ba60b9c517d0f0de220d"
+    },
+    {
+      "id": "m1__Power_Purchase_Agreement",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Power_Purchase_Agreement/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Power_Purchase_Agreement/schema.json",
+      "pdf_sha256": "50e4db3e363275ce31941acede5249a83d0bb2ad74eafdbad60c9c516d7a5400",
+      "schema_sha256": "60d47a85b7bfb7fee45bc5634e3f05e3fe74bc72bb685dcc20b0d257e32849ac"
+    },
+    {
+      "id": "06_10_26_Mortality_statistics_and_preventable_mortality_report_d87435b",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_10_26_Mortality_statistics_and_preventable_mortality_report_d87435b/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_10_26_Mortality_statistics_and_preventable_mortality_report_d87435b/schema.json",
+      "pdf_sha256": "26dec3538da79ab955bf6420317d9748bffadf0b2c6dc4464d5536d9687307a2",
+      "schema_sha256": "0c44cee450a7cf42866793a52d33a4a1ac57c3bc7bee5f21756342358a31358b"
+    },
+    {
+      "id": "c41ccbd2__tourism-satellite-account-2016",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/c41ccbd2__tourism-satellite-account-2016/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/c41ccbd2__tourism-satellite-account-2016/schema.json",
+      "pdf_sha256": "8770a53b3c04b59fe4ba355baae33425098272298b923ed7d1a77ceb6599bcab",
+      "schema_sha256": "c47eede39d62702e8f13743358c9288bc0d2644a54d62ffb4a2736a97827417a"
+    },
+    {
+      "id": "m1__Healthcare_facility_quality_measure_public_reporting",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Healthcare_facility_quality_measure_public_reporting/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Healthcare_facility_quality_measure_public_reporting/schema.json",
+      "pdf_sha256": "f83ddecf5b924af2ede5f26b75775bfd2fd4d2f4ed6f096d1fd1fa43cbd3285c",
+      "schema_sha256": "e8d9b0b988f4aa2e33f49856ebdaf817539dae73847e384372398b245e004730"
+    },
+    {
+      "id": "m1__Calibration__Postsecondary_Graduation_-_college___UNI_stats",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Calibration__Postsecondary_Graduation_-_college___UNI_stats/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Calibration__Postsecondary_Graduation_-_college___UNI_stats/schema.json",
+      "pdf_sha256": "a5940313ce09587ae7414d54caf0dc33592d24d023275b58540aa1b73227302b",
+      "schema_sha256": "7af0cc80b9d953eb09a2d647f912a625af94e1519356c42b48c126e6dfbc98b0"
+    },
+    {
+      "id": "m1__Air_quality_monitoring_report",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Air_quality_monitoring_report/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__Air_quality_monitoring_report/schema.json",
+      "pdf_sha256": "7c0ac7fdc0c464723e9b32b305dcf92fc7667de287d87f9278e9599e2e3a949b",
+      "schema_sha256": "39c8a1ea09d639568e910e02263ccb191058c7e2373dd893061340d995419045"
+    },
+    {
+      "id": "Fisheries_catch_and_aquaculture_production_statistical_reports",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Fisheries_catch_and_aquaculture_production_statistical_reports/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Fisheries_catch_and_aquaculture_production_statistical_reports/schema.json",
+      "pdf_sha256": "4e4c300b21b98ce48df2321daef5054f10109e96124c7e7d260fb9e7ebf7c36a",
+      "schema_sha256": "5d066aee8ce68caab2aa4118dd547da03fd1dff615d10c0305220206c77fcfc1"
+    },
+    {
+      "id": "06_20_Football_match_results_and_score_tables",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_20_Football_match_results_and_score_tables/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_20_Football_match_results_and_score_tables/schema.json",
+      "pdf_sha256": "768f49b3dd41aee2c7f551d689a1b6bea3f7486fd73dcc6f5fcc19826cbaba09",
+      "schema_sha256": "7db3145186a6ef04993c080678e947e309ab60d05621ee47fa8a5cf6be9991de"
+    },
+    {
+      "id": "std__Annual_report_10-K_-_wfc-20201231_d2",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/std__Annual_report_10-K_-_wfc-20201231_d2/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/std__Annual_report_10-K_-_wfc-20201231_d2/schema.json",
+      "pdf_sha256": "57c90e9ec1e0f7af79a80842a8d38edcbf03fcaedd164bd526f0b4932dce4e81",
+      "schema_sha256": "5ff140ce073aa858f2019f7aa1c1609e713f2d72593df3c6f3229b8caabe0801"
+    },
+    {
+      "id": "ed4f34de__table4_ac",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/ed4f34de__table4_ac/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/ed4f34de__table4_ac/schema.json",
+      "pdf_sha256": "03caa81c73e0ef48e97b379bdbc1b1d65f66ae82581b7ee8f8bdea4736c00fef",
+      "schema_sha256": "bd0209316209ee5cc246315b263563c98977166b94b4815102effc1aa0c504dc"
+    },
+    {
+      "id": "American_Community_Survey__ACS__5-year_estimates",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/American_Community_Survey__ACS__5-year_estimates/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/American_Community_Survey__ACS__5-year_estimates/schema.json",
+      "pdf_sha256": "31241c98701b2a14d3a27aa6f6a277eab05115c999cffbd1c257a8939c0b5ff2",
+      "schema_sha256": "e3e414ce712c6677554022afd14bc72bd8530ed8d54f42544d867d75cfb54f7f"
+    },
+    {
+      "id": "m1__510_k__Substantial_Equivalence_Determination_Decision_Summary-20260617T05220",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__510_k__Substantial_Equivalence_Determination_Decision_Summary-20260617T05220/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/m1__510_k__Substantial_Equivalence_Determination_Decision_Summary-20260617T05220/schema.json",
+      "pdf_sha256": "7b0cede5e6b323a871e2d00d17ab79e64e4b318758b9dfb0fea9e345968e9604",
+      "schema_sha256": "5b1bbd3ce3d7ce911356fdf6f640a0fe4242587dfc190b08f2a9d6bc83290511"
+    },
+    {
+      "id": "06_10_26_CMS_E_M_Utilization_Report_27e43c5f_cy_2017_evaluation_and_ma",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_10_26_CMS_E_M_Utilization_Report_27e43c5f_cy_2017_evaluation_and_ma/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_10_26_CMS_E_M_Utilization_Report_27e43c5f_cy_2017_evaluation_and_ma/schema.json",
+      "pdf_sha256": "445e7b97eecef702191910fc37f14f0fef3162c899418a265207979facde6c63",
+      "schema_sha256": "2a86e5ea842096b33b38813c1d1c19a4ed95e0aed2358a077618022ba056ef04"
+    },
+    {
+      "id": "Healthcare_Reimbursement_Regulations",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Healthcare_Reimbursement_Regulations/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/Healthcare_Reimbursement_Regulations/schema.json",
+      "pdf_sha256": "3734d0f60a151d7e819c63f7b80b8321ec4d46e066866bb0f351727a802be88f",
+      "schema_sha256": "ff9d37c2a3b26223be9d394038c129ce87d63d75d4ff7ce92b8112d33978c3c2"
+    },
+    {
+      "id": "06_19_Bankruptcy_Filings_Statistics",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_19_Bankruptcy_Filings_Statistics/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/06_19_Bankruptcy_Filings_Statistics/schema.json",
+      "pdf_sha256": "796a942cce35332a16fc8807d147b0711ad4059fa5d5ff35fa9f5c7f1b328cfb",
+      "schema_sha256": "23c4b281e820396527fac02058175f6d5bae8eb8e90a1b7af1da132eb524331f"
+    },
+    {
+      "id": "std__Board_examination_score_report_-_GCSE-Full-Course-results-summer-2024-2-202",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/std__Board_examination_score_report_-_GCSE-Full-Course-results-summer-2024-2-202/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/std__Board_examination_score_report_-_GCSE-Full-Course-results-summer-2024-2-202/schema.json",
+      "pdf_sha256": "2fa56df463cb66755aa7dde05eb903eea4d789cceffd494203481dfdc5d05539",
+      "schema_sha256": "1480d7d45a8cc9f2a423dd85bdcd331189473798cf5277e38d24bef9b351ceea"
+    },
+    {
+      "id": "60a608a5__Medical_Examiner-Coroner_Santa Clara_Full_dataset_2018-2019-20260617T2",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/60a608a5__Medical_Examiner-Coroner_Santa Clara_Full_dataset_2018-2019-20260617T2/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/60a608a5__Medical_Examiner-Coroner_Santa Clara_Full_dataset_2018-2019-20260617T2/schema.json",
+      "pdf_sha256": "e175a98c180b9a3f46f372597606213add6810a3046015eb51d8784650faf772",
+      "schema_sha256": "6f324d8e4d04143f3db1153441efb2881be635383f918d5d6d1cbbf537ae6b56"
+    },
+    {
+      "id": "hard__Municipal_continuing_disclosure_annual_financial_information_filing_-_efis",
+      "pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/hard__Municipal_continuing_disclosure_annual_financial_information_filing_-_efis/document.pdf",
+      "schema": "/home/krudra_mtp/ashutosh/agentic_document_extraction/docquorum/data/multibench_sources/longextract_data/hard__Municipal_continuing_disclosure_annual_financial_information_filing_-_efis/schema.json",
+      "pdf_sha256": "82a37e709efe5b09efcd6a744332668c946f750072930d3a35ef31051bd0e47a",
+      "schema_sha256": "d14fedef0cff1b995352328a8a978c166600bb4c90e824f9eba0cdf27e1510a0"
+    }
+  ],
+  "pilot_ids": [
+    "m1__Infectious_disease_surveillance_report",
+    "2642087e__Inactive Ingredient Search for Approved Drug Products",
+    "06_19_Government_zoning_and_land_use_geospatial_datasets"
+  ],
+  "excluded_inputs": [
+    "ground_truth",
+    "ground_truth_pruned_v3",
+    "target counts",
+    "provider outputs"
+  ],
+  "scope": "Public 50; not the published private 225-document cohort"
+}

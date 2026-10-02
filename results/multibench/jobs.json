@@ -12,8 +12,9 @@
     },
     {
       "benchmark": "VAREX",
-      "pid": 1490774,
-      "scope": "full"
+      "pid": 1518077,
+      "scope": "full",
+      "scheduling": "Official reading first; other fixed-policy readings follow; outputs checkpointed"
     }
   ],
   "deferred": [
@@ -26,5 +27,6 @@
     }
   ],
   "foreign_gpu_pid": 669913,
-  "foreign_process_unchanged": true
+  "foreign_process_unchanged": true,
+  "scheduler_pid": 1518073
 }
