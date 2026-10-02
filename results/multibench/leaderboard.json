@@ -994,7 +994,7 @@
     {
       "benchmark": "LongArray-Extract",
       "variant": "DocQuorum8B-bounded-v4",
-      "score": 19.81818181818182,
+      "score": 75.23468068011336,
       "full_comparison_eligible": false,
       "official_submission": false,
       "reference_score_rank": null,
@@ -1017,9 +1017,9 @@
       "gap_to_third_pp": null,
       "comparison": "Published reference scores; not an official accepted rank",
       "scope": "pilot",
-      "attempted": 1,
+      "attempted": 3,
       "expected": 3,
-      "completed": 1,
+      "completed": 3,
       "source_summary": "longarray_v4/scores/pilot/summary.json"
     }
   ],
