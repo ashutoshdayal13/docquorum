@@ -92,7 +92,7 @@ def publish_once():
                 return False
         path.write_text(updated)
         complete_path.write_text(encoded)
-        temp = B.OUT/'leaderboard.json.tmp'
+        temp = B.OUT/'publisher_leaderboard.json.tmp'
         temp.write_text(json.dumps(all_results,indent=2,ensure_ascii=False)+'\n')
         temp.replace(B.OUT/'leaderboard.json')
         paths = {path,complete_path,B.OUT/'leaderboard.json'}

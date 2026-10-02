@@ -1,5 +1,6 @@
 """Collect benchmark-specific results without promoting incomplete runs to ranks."""
 import json
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -84,7 +85,7 @@ def build_report():
 
 def main():
     report = build_report()
-    temp = OUT/'leaderboard.json.tmp'
+    temp = OUT/f'leaderboard.{os.getpid()}.json.tmp'
     temp.write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n')
     temp.replace(OUT/'leaderboard.json')
     for row in report['rows']:
