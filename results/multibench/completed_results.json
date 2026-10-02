@@ -1,0 +1,134 @@
+{
+  "branch": "experiment/multibench-20261002",
+  "rows": [
+    {
+      "benchmark": "run-llama ExtractBench",
+      "variant": "Stored primary, current public annotations",
+      "score": 95.42784046488673,
+      "full_comparison_eligible": true,
+      "official_submission": false,
+      "reference_score_rank": 3,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "LlamaExtract Agentic Plus",
+        "score": 95.91
+      },
+      "third_place_target": {
+        "system": "LlamaExtract Agentic",
+        "score": 94.77
+      },
+      "gap_to_leader_pp": 0.4821595351132686,
+      "gap_to_third_pp": -0.657840464886732,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "documents": 370,
+      "expected": 370,
+      "attempted": 370,
+      "source_summary": "extractbench_current_reference.json",
+      "provenance": "Archived evaluation, input and revision hashes revalidated"
+    },
+    {
+      "benchmark": "run-llama ExtractBench",
+      "variant": "Archived incremental repair development",
+      "score": 95.6429957485469,
+      "full_comparison_eligible": true,
+      "official_submission": false,
+      "reference_score_rank": 3,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "LlamaExtract Agentic Plus",
+        "score": 95.91
+      },
+      "third_place_target": {
+        "system": "LlamaExtract Agentic",
+        "score": 94.77
+      },
+      "gap_to_leader_pp": 0.2670042514531019,
+      "gap_to_third_pp": -0.8729957485468987,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "documents": 370,
+      "expected": 370,
+      "attempted": 370,
+      "source_summary": "extractbench_archived_candidate.json",
+      "provenance": "Development incremental measurement; stored primary outputs and explicit fixed verifier reads reused. Not a fresh primary or held-out run."
+    },
+    {
+      "benchmark": "UNIKIE constrained-category",
+      "variant": "three_original_readings",
+      "score": 80.64499524181971,
+      "full_comparison_eligible": true,
+      "official_submission": false,
+      "reference_score_rank": 2,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini-3-Pro",
+        "score": 82.37
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL-8B",
+        "score": 79.12
+      },
+      "gap_to_leader_pp": 1.7250047581802903,
+      "gap_to_third_pp": -1.5249952418197097,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "documents": 4472,
+      "expected": 4472,
+      "attempted": 4472,
+      "scope": "Original three-reading protocol, re-scored from current stored readings",
+      "source_summary": "unikie_audit.json"
+    },
+    {
+      "benchmark": "UNIKIE constrained-category",
+      "variant": "four_readings",
+      "score": 81.31745069484249,
+      "full_comparison_eligible": true,
+      "official_submission": false,
+      "reference_score_rank": 2,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini-3-Pro",
+        "score": 82.37
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL-8B",
+        "score": 79.12
+      },
+      "gap_to_leader_pp": 1.0525493051575125,
+      "gap_to_third_pp": -2.1974506948424875,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "documents": 4472,
+      "expected": 4472,
+      "attempted": 4472,
+      "scope": "Four development readings including the added oneshot_text arm",
+      "source_summary": "unikie_audit.json"
+    },
+    {
+      "benchmark": "UNIKIE constrained-category",
+      "variant": "six_readings",
+      "score": 82.37457107876092,
+      "full_comparison_eligible": true,
+      "official_submission": false,
+      "reference_score_rank": 1,
+      "ties_at_published_precision": [
+        "Gemini-3-Pro"
+      ],
+      "leader": {
+        "system": "Gemini-3-Pro",
+        "score": 82.37
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL-8B",
+        "score": 79.12
+      },
+      "gap_to_leader_pp": -0.0045710787609181125,
+      "gap_to_third_pp": -3.254571078760918,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "documents": 4472,
+      "expected": 4472,
+      "attempted": 4472,
+      "scope": "Six tuned readings, including two additional models after initial held-out run",
+      "source_summary": "unikie_audit.json"
+    }
+  ],
+  "unranked_complete_cohorts": [],
+  "note": "Published-score references, not accepted external leaderboard ranks. Development and stored-output measurements retain their scope."
+}

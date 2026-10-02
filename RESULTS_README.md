@@ -1,5 +1,21 @@
 # DocQuorum: additional benchmark experiments
 
+<!-- completed-results:start -->
+## Completed full-cohort results
+
+These results cover every task in their stated cohort. Reference ranks compare published scores; no external leaderboard submission has been accepted. Stored-output and development results are labelled explicitly.
+
+| Benchmark | Configuration / measurement | Tasks | Score (%) | Reference rank | Gap to leader (pp) |
+|---|---|---:|---:|---|---:|
+| run-llama ExtractBench | [Stored primary, current public annotations](results/multibench/extractbench_current_reference.json) | 370 | **95.4278** | 3 | 0.4822 |
+| run-llama ExtractBench | [Archived incremental repair development](results/multibench/extractbench_archived_candidate.json) | 370 | **95.6430** | 3 | 0.2670 |
+| UNIKIE constrained-category | [Original 3 readings; stored-output re-score](results/multibench/unikie_audit.json) | 4472 | **80.6450** | 2 | 1.7250 |
+| UNIKIE constrained-category | [Development 4 readings; stored-output re-score](results/multibench/unikie_audit.json) | 4472 | **81.3175** | 2 | 1.0525 |
+| UNIKIE constrained-category | [Tuned 6 readings; stored-output re-score](results/multibench/unikie_audit.json) | 4472 | **82.3746** | 1 (displayed tie) | 0.0000 |
+
+Pilots, selected routing checks and incomplete runs remain below in the experiment notes. They receive no full-cohort rank. This table refreshes and is committed/pushed whenever a complete score changes.
+<!-- completed-results:end -->
+
 Branch: `experiment/multibench-20261002`, based on `fb69fc4eab65ec690c892e36e43f7a3c53936693`. Checked 2 October 2026. Work remains in progress. No result here has been submitted to an external leaderboard.
 
 The strongest current evidence is the existing UNIKIE evaluation: the original three-reading configuration re-scores to **80.6450** across all 4,472 constrained-category documents, above the paper's third-place 79.12. The separately tuned six-reading configuration re-scores to **82.3746**, tying the displayed leader, 82.37. It must not replace the original held-out result. The added four-reading configuration scores 81.3175 and is also development work. [Primary paper, Table 4](https://arxiv.org/html/2602.07038v2); [full coverage audit](results/multibench/unikie_audit.json).
