@@ -26,18 +26,24 @@ def reference(benchmark, variant, score, peers, eligible, decimals, **extra):
             'comparison':'Published reference scores; not an official accepted rank', **extra}
 
 
-def main():
+def build_report():
     rows = []
     eb = load('extractbench_current_reference.json')
     if eb:
         rows.append(reference('run-llama ExtractBench','Stored primary, current public annotations',eb['score'],
-            load('extractbench_public_rows.json')['rows'], True, 2, provenance='Archived evaluation, input and revision hashes revalidated'))
+            load('extractbench_public_rows.json')['rows'], True, 2, documents=370, expected=370, attempted=370,
+            source_summary='extractbench_current_reference.json', provenance='Archived evaluation, input and revision hashes revalidated'))
+    archived = load('extractbench_archived_candidate.json')
+    if archived:
+        rows.append(reference('run-llama ExtractBench','Archived incremental repair development',archived['score'],
+            load('extractbench_public_rows.json')['rows'], True, 2, documents=370, expected=370, attempted=370,
+            source_summary='extractbench_archived_candidate.json', provenance=archived['scope']))
     u = load('unikie_audit.json')
     if u:
         for name in ['three_original_readings','four_readings','six_readings']:
             result=u['docquorum'][name]
             rows.append(reference('UNIKIE constrained-category',name,result['score'],u['published_results'],True,2,
-                documents=4472, scope=result['configuration']))
+                documents=4472, expected=4472, attempted=4472, scope=result['configuration'],source_summary='unikie_audit.json'))
     d = load('docubench_public_audit.json')
     if d:
         peers=[r for r in d['results'] if r['rank_eligible']]
@@ -45,7 +51,7 @@ def main():
             s=load(folder+'/summary.json')
             if s:
                 rows.append(reference('DocuBench v0.2.0',s['engine'],s['score'],peers,s['eligible_for_full_ranking'],8,
-                    attempted=s['attempted'], expected=72, completed=s['completed']))
+                    attempted=s['attempted'], expected=72, completed=s['completed'],source_summary=folder+'/summary.json'))
     v = load('varex_public_audit.json')
     if v:
         for scope in ['pilot','full']:
@@ -53,14 +59,16 @@ def main():
             if s:
                 for name, result in s['systems'].items():
                     rows.append(reference('VAREX image_only','8B '+name,100*result['exact_match_normalized'],v['results'],
-                        result['eligible_for_full_ranking'],1,scope=scope,attempted=result['attempted'],expected=s['docs']))
+                        result['eligible_for_full_ranking'],1,scope=scope,attempted=result['attempted'],expected=s['docs'],
+                        source_summary=f'varex/scores/{scope}/summary.json'))
     peers=[{'system':'Extend MAX','score':99.2},{'system':'Reducto Deep Extract','score':97.4},{'system':'Claude Opus 4.7','score':83.1}]
     for folder in ['longarray','longarray_v2','longarray_v3','longarray_v4']:
         for scope in ['pilot','full']:
             s=load(f'{folder}/scores/{scope}/summary.json')
             if s:
                 rows.append(reference('LongArray-Extract',s['profile'],s['score'],peers,s['eligible_for_full_ranking'],1,
-                    scope=scope,attempted=s['attempted'],expected=s['expected'],completed=s['completed']))
+                    scope=scope,attempted=s['attempted'],expected=s['expected'],completed=s['completed'],
+                    source_summary=f'{folder}/scores/{scope}/summary.json'))
     pending=[{'benchmark':b,'status':state,'reference_score_rank':None} for b,state in [
         ('DocuBench','Full run in progress; refresh after scoring'),
         ('VAREX','Full run in progress; pilot does not establish a rank'),
@@ -71,8 +79,15 @@ def main():
     pending=[p for p in pending if not any(p['benchmark'] in name for name in present_full)]
     report={'branch':'experiment/multibench-20261002','rows':rows,'pending':pending,
             'note':'Different metrics and cohorts remain separate. No cross-benchmark aggregate or superiority claim.'}
-    (OUT/'leaderboard.json').write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n')
-    for row in rows:
+    return report
+
+
+def main():
+    report = build_report()
+    temp = OUT/'leaderboard.json.tmp'
+    temp.write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n')
+    temp.replace(OUT/'leaderboard.json')
+    for row in report['rows']:
         print(row['benchmark'],row['variant'],f"{row['score']:.4f}", 'rank reference '+str(row['reference_score_rank']) if row['full_comparison_eligible'] else 'pilot/incomplete')
 
 

@@ -20,6 +20,7 @@ import contextual as X
 import resource_profile_v3 as R3
 import longextract as LX
 import resource_profile_v4 as R4
+import publish_completed as PUB
 
 
 def image_part(color):
@@ -292,3 +293,21 @@ def test_mixed_pdf_uses_images_for_its_unreadable_data_page(monkeypatch, install
     actual, _ = reader.load_pages('doc.pdf','native')
     assert actual == pages
     assert reader.plan_chunks(actual, 3)[1] == 2
+
+
+def test_completed_publication_excludes_pilots_and_missing_tasks(monkeypatch):
+    monkeypatch.setattr(B,'load',lambda _:None)
+    rows = [dict(full_comparison_eligible=False,attempted=36,expected=36),
+            dict(full_comparison_eligible=True,attempted=71,expected=72),
+            dict(full_comparison_eligible=True,attempted=72,expected=72)]
+    result = PUB.completed_report({'rows':rows})
+    assert result['rows'] == [rows[2]]
+
+
+def test_results_refresh_keeps_manual_scope_notes_and_is_idempotent():
+    report = {'rows':[], 'unranked_complete_cohorts':[]}
+    original = '# Results\n\nManual protocol and scope notes.\n'
+    updated = PUB.update_readme(original,report)
+    assert 'Manual protocol and scope notes.' in updated
+    assert PUB.update_readme(updated,report) == updated
+    assert updated.count(PUB.START) == updated.count(PUB.END) == 1
