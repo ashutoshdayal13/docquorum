@@ -1,0 +1,33 @@
+{
+  "benchmark": "DocuBench",
+  "document_id": "9hPCh7ca",
+  "scope": "Selected development check after V4 runtime truncation; not an independent holdout or full-cohort rank",
+  "eligible_for_full_ranking": false,
+  "source_sha256": "e69a7e5a6db3b9e8afa4d90c64b275426dd1511bf22f4365d268312b0e68bd75",
+  "schema_sha256": "c1cec6da262496b8668c4bf432915cde4e3611d2107c05f28afdb35f0a15b699",
+  "guidelines_sha256": null,
+  "measurements": [
+    {
+      "profile": "DocQuorum8B-bounded-v1",
+      "status": "completed",
+      "score_percent": 25.837059115747667,
+      "prediction_sha256": "1fc59f46e3465c6195f3b87022d1e49ce7bb2a80adbe700d9f1387908fa21f13",
+      "report_sha256": "2b59acf193196a7f321fbeaacb74da2a4cf05f9513fd202ce8605054ecc61d7d"
+    },
+    {
+      "profile": "DocQuorum8B-bounded-v4",
+      "status": "failed",
+      "score_percent": 0.0,
+      "prediction_sha256": "a9ae4f4be3819a3ab24a67bb417c34edf7dbfa231c82f1861f7a2a35458a82b7",
+      "report_sha256": "256b8f41c5251598494d545c244e565e8e6d187aa1ae81e0c89cf622f1e9a670"
+    },
+    {
+      "profile": "DocQuorum8B-bounded-v6",
+      "status": "completed",
+      "score_percent": 42.81420765027335,
+      "prediction_sha256": "25e9a8723691be5696ea968e74fb495147ac99797ba5f093912237071e68d3ab",
+      "report_sha256": "abb2d6bf035b862c6ad2b3b6bac626fad112ae18b96db30ddcd96cb7e7fec940"
+    }
+  ],
+  "note": "Source-owned image bands recover completion, but the official score is 42.8142%, so completing every page does not establish field accuracy."
+}

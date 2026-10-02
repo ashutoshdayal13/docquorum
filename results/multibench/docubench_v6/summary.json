@@ -3,10 +3,10 @@
   "version": "0.2.0",
   "engine": "DocQuorum8B-bounded-v6",
   "metric": "macro_average_field_accuracy",
-  "score": 1.3888888888888888,
+  "score": 1.983530661809352,
   "expected": 72,
-  "attempted": 1,
-  "completed": 1,
+  "attempted": 2,
+  "completed": 2,
   "per_document": [
     {
       "id": "1ZVqiyJZ",
@@ -83,8 +83,8 @@
     {
       "id": "9hPCh7ca",
       "format": ".pdf",
-      "status": "missing",
-      "score": 0.0
+      "status": "completed",
+      "score": 0.4281420765027335
     },
     {
       "id": "B0nA2c30",
