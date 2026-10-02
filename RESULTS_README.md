@@ -16,6 +16,9 @@ These results cover every task in their stated cohort. Reference ranks compare p
 | DocuBench v0.2.0 | [DocQuorum8B-bounded-v4](results/multibench/docubench_v4/summary.json) | 72 | **70.3995** | 10 | 26.6175 |
 | DocuBench v0.2.0 | [DocQuorum8B-bounded-v6](results/multibench/docubench_v6/summary.json) | 72 | **74.7936** | 8 | 22.2234 |
 | VAREX image_only | [8B official](results/multibench/varex/scores/full/summary.json) | 1777 | **96.9503** | 3 | 1.0497 |
+| VAREX image_only | [8B whole](results/multibench/varex/scores/full/summary.json) | 1777 | **97.4530** | 2 | 0.5470 |
+| VAREX image_only | [8B guided](results/multibench/varex/scores/full/summary.json) | 1777 | **97.6807** | 2 | 0.3193 |
+| VAREX image_only | [8B quorum](results/multibench/varex/scores/full/summary.json) | 1777 | **96.9503** | 3 | 1.0497 |
 
 Pilots, selected routing checks and incomplete runs remain below in the experiment notes. They receive no full-cohort rank. This table refreshes and is committed/pushed whenever a complete score changes.
 <!-- completed-results:end -->

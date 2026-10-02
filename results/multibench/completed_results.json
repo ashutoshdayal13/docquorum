@@ -695,6 +695,90 @@
       "attempted": 1777,
       "expected": 1777,
       "source_summary": "varex/scores/full/summary.json"
+    },
+    {
+      "benchmark": "VAREX image_only",
+      "variant": "8B whole",
+      "score": 97.45304496300513,
+      "full_comparison_eligible": true,
+      "official_submission": false,
+      "reference_score_rank": 2,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini 2.5 Pro",
+        "size": "API",
+        "score": 98.0,
+        "anls": 98.5
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL",
+        "size": "8B",
+        "score": 96.6,
+        "anls": 97.6
+      },
+      "gap_to_leader_pp": 0.5469550369948735,
+      "gap_to_third_pp": -0.8530449630051322,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "scope": "full",
+      "attempted": 1777,
+      "expected": 1777,
+      "source_summary": "varex/scores/full/summary.json"
+    },
+    {
+      "benchmark": "VAREX image_only",
+      "variant": "8B guided",
+      "score": 97.68070574843483,
+      "full_comparison_eligible": true,
+      "official_submission": false,
+      "reference_score_rank": 2,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini 2.5 Pro",
+        "size": "API",
+        "score": 98.0,
+        "anls": 98.5
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL",
+        "size": "8B",
+        "score": 96.6,
+        "anls": 97.6
+      },
+      "gap_to_leader_pp": 0.319294251565168,
+      "gap_to_third_pp": -1.0807057484348377,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "scope": "full",
+      "attempted": 1777,
+      "expected": 1777,
+      "source_summary": "varex/scores/full/summary.json"
+    },
+    {
+      "benchmark": "VAREX image_only",
+      "variant": "8B quorum",
+      "score": 96.95029406184784,
+      "full_comparison_eligible": true,
+      "official_submission": false,
+      "reference_score_rank": 3,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini 2.5 Pro",
+        "size": "API",
+        "score": 98.0,
+        "anls": 98.5
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL",
+        "size": "8B",
+        "score": 96.6,
+        "anls": 97.6
+      },
+      "gap_to_leader_pp": 1.049705938152158,
+      "gap_to_third_pp": -0.3502940618478476,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "scope": "full",
+      "attempted": 1777,
+      "expected": 1777,
+      "source_summary": "varex/scores/full/summary.json"
     }
   ],
   "unranked_complete_cohorts": [],
