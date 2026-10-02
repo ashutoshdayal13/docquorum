@@ -1,0 +1,22 @@
+{
+  "name": "DocQuorum8B-image-v1",
+  "model": "dq-multibench8b",
+  "endpoint": "http://localhost:8078/v1",
+  "model_revision": "9cdc6310a8cb770ce18efaf4e9935334512aee45",
+  "temperature": 0,
+  "max_tokens": 8192,
+  "max_model_len": 32768,
+  "scope": "full",
+  "views": [
+    "whole",
+    "guided"
+  ],
+  "quorum_beta": 2.0,
+  "tie_break": [
+    "official",
+    "whole",
+    "guided"
+  ],
+  "not_frozen_27b": true,
+  "truncation": "failure; never score repaired partial JSON as success"
+}

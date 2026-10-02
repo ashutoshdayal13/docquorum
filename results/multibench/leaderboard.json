@@ -671,7 +671,7 @@
     {
       "benchmark": "DocuBench v0.2.0",
       "variant": "DocQuorum8B-bounded-v6",
-      "score": 1.983530661809352,
+      "score": 2.5934472474912442,
       "full_comparison_eligible": false,
       "official_submission": false,
       "reference_score_rank": null,
@@ -843,9 +843,9 @@
       "gap_to_leader_pp": null,
       "gap_to_third_pp": null,
       "comparison": "Published reference scores; not an official accepted rank",
-      "attempted": 2,
+      "attempted": 3,
       "expected": 72,
-      "completed": 2,
+      "completed": 3,
       "source_summary": "docubench_v6/summary.json"
     },
     {
@@ -961,6 +961,118 @@
       "source_summary": "varex/scores/pilot/summary.json"
     },
     {
+      "benchmark": "VAREX image_only",
+      "variant": "8B official",
+      "score": 96.95029406184784,
+      "full_comparison_eligible": true,
+      "official_submission": false,
+      "reference_score_rank": 3,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini 2.5 Pro",
+        "size": "API",
+        "score": 98.0,
+        "anls": 98.5
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL",
+        "size": "8B",
+        "score": 96.6,
+        "anls": 97.6
+      },
+      "gap_to_leader_pp": 1.049705938152158,
+      "gap_to_third_pp": -0.3502940618478476,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "scope": "full",
+      "attempted": 1777,
+      "expected": 1777,
+      "source_summary": "varex/scores/full/summary.json"
+    },
+    {
+      "benchmark": "VAREX image_only",
+      "variant": "8B whole",
+      "score": 16.756782394232594,
+      "full_comparison_eligible": false,
+      "official_submission": false,
+      "reference_score_rank": null,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini 2.5 Pro",
+        "size": "API",
+        "score": 98.0,
+        "anls": 98.5
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL",
+        "size": "8B",
+        "score": 96.6,
+        "anls": 97.6
+      },
+      "gap_to_leader_pp": null,
+      "gap_to_third_pp": null,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "scope": "full",
+      "attempted": 306,
+      "expected": 1777,
+      "source_summary": "varex/scores/full/summary.json"
+    },
+    {
+      "benchmark": "VAREX image_only",
+      "variant": "8B guided",
+      "score": 16.742553595143235,
+      "full_comparison_eligible": false,
+      "official_submission": false,
+      "reference_score_rank": null,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini 2.5 Pro",
+        "size": "API",
+        "score": 98.0,
+        "anls": 98.5
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL",
+        "size": "8B",
+        "score": 96.6,
+        "anls": 97.6
+      },
+      "gap_to_leader_pp": null,
+      "gap_to_third_pp": null,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "scope": "full",
+      "attempted": 304,
+      "expected": 1777,
+      "source_summary": "varex/scores/full/summary.json"
+    },
+    {
+      "benchmark": "VAREX image_only",
+      "variant": "8B quorum",
+      "score": 1.9920318725099602,
+      "full_comparison_eligible": false,
+      "official_submission": false,
+      "reference_score_rank": null,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Gemini 2.5 Pro",
+        "size": "API",
+        "score": 98.0,
+        "anls": 98.5
+      },
+      "third_place_target": {
+        "system": "Qwen3-VL",
+        "size": "8B",
+        "score": 96.6,
+        "anls": 97.6
+      },
+      "gap_to_leader_pp": null,
+      "gap_to_third_pp": null,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "scope": "full",
+      "attempted": 36,
+      "expected": 1777,
+      "source_summary": "varex/scores/full/summary.json"
+    },
+    {
       "benchmark": "LongArray-Extract",
       "variant": "DocQuorum8B-bounded-v1",
       "score": 76.24767037175461,
@@ -1024,11 +1136,6 @@
     }
   ],
   "pending": [
-    {
-      "benchmark": "VAREX",
-      "status": "Full run in progress; pilot does not establish a rank",
-      "reference_score_rank": null
-    },
     {
       "benchmark": "LongArray-Extract",
       "status": "Original pilot resumed; V4 pilot follows, then full-cohort evaluation",
