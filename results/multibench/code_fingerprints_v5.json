@@ -1,0 +1,14 @@
+{
+  "purpose": "Freeze V5 before selected recovery checks and any full-cohort run",
+  "files": {
+    "benchmarks/multibench/resource_profile.py": "9ee15401cfdf75eb8b6243260a4e604abd40320107a07b19d68d0004746dbf56",
+    "benchmarks/multibench/resource_profile_v2.py": "de75291a8ba922125690911a1a1a69c11bca1a868c53e52446471e135808dbfb",
+    "benchmarks/multibench/resource_profile_v3.py": "7f8efcf1bafdb295ac3202eb9545384a70660a411d6d700d6cec90d4cab32362",
+    "benchmarks/multibench/resource_profile_v4.py": "51246c89ebb3ebb2f4a30a71a36afee329a22e20153e22da594adc09372596d3",
+    "benchmarks/multibench/resource_profile_v5.py": "137df6f7e8344fd4b365ef4fc6b3345b94ae4a3c13aaddff3eae82f6a660f865",
+    "benchmarks/multibench/native_partition.py": "46765b7afab0236b406dc421fdde87ce338839861581d2a72b5735e7bd2c710e",
+    "benchmarks/multibench/docubench.py": "bd9a467fd9fcb18852e27f070c88057f8b254a1ba354b8cb8026f40a7202f5dd",
+    "benchmarks/multibench/longarray.py": "c5e630951dbc4f7112ce83e785d1624c14705e9d8fb1a08e4a90ab505bccdb96",
+    "benchmarks/multibench/longextract.py": "19e0fc97d283627707b655fee0869101dc7d0af3d824290211f7558b91ee8af7"
+  }
+}

@@ -22,7 +22,7 @@ def completed_report(report):
     rows = [r for r in report['rows'] if r['full_comparison_eligible']
             and r.get('attempted') == r.get('expected') and r.get('expected',0) > 0]
     diagnostics = []
-    for folder in ['longextract_v3','longextract_v4']:
+    for folder in ['longextract_v3','longextract_v4','longextract_v5']:
         source = folder+'/scores/full/summary.json'
         s = B.load(source)
         if s and s.get('eligible_for_public50_comparison') and s['attempted']==s['expected']==50:

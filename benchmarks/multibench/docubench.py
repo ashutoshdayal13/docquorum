@@ -80,6 +80,8 @@ def run(workers, version="bounded-v1", only=None):
         from resource_profile_v3 import install as installer
     elif version == 'bounded-v4':
         from resource_profile_v4 import install as installer
+    elif version == 'bounded-v5':
+        from resource_profile_v5 import install as installer
     profile = installer()
     manifest = {"source_commit": "43a3f3bc00e591e711075678ca6d154acfedcf42", "version": "0.2.0",
                 "model": C.MODEL, "profile": profile, "documents": records()}
@@ -96,6 +98,11 @@ def run(workers, version="bounded-v1", only=None):
         schema = json.loads((SOURCE / "schemas" / f"{name}.json").read_text())
         guideline = SOURCE / "guidelines" / f"{name}.txt"
         task = guideline.read_text() if guideline.exists() else None
+        def save(result, info):
+            info["seconds"] = time.monotonic() - start
+            write(OUT / "reports" / f"{name}.json", info)
+            write(dst, {"data": result, "meta": {"engine": profile['profile'], "status": info["status"], "model": C.MODEL}})
+            return name
         try:
             if doc.suffix.lower() in {".pdf", ".png", ".jpg", ".jpeg", ".tif", ".tiff"}:
                 if doc.suffix.lower() in {".tif", ".tiff"}:
@@ -109,6 +116,11 @@ def run(workers, version="bounded-v1", only=None):
                     log=lambda msg: print(f"{name}: {msg}", flush=True))
             else:
                 text = native_text(doc)
+                if version == 'bounded-v5':
+                    from native_partition import read as read_native
+                    result, report = read_native(llm.client(), text, schema, task, doc.suffix.lower())
+                    result = conform(result, schema, schema)
+                    return save(result, {"status":"completed", "report":report})
                 prompt = prompts.WHOLE.format(rules="", task=f"TASK\n{task or ''}\n\n", n=1,
                     modality=f"Its complete native {doc.suffix} source is below.",
                     text_block=prompts.TEXT_LAYER.format(body=text), schema=json.dumps(schema, indent=1))
@@ -126,10 +138,7 @@ def run(workers, version="bounded-v1", only=None):
             info = {"status": "completed", "report": report}
         except Exception as error:
             result, info = {}, {"status": "failed", "error": f"{type(error).__name__}: {str(error)[:500]}"}
-        info["seconds"] = time.monotonic() - start
-        write(OUT / "reports" / f"{name}.json", info)
-        write(dst, {"data": result, "meta": {"engine": profile['profile'], "status": info["status"], "model": C.MODEL}})
-        return name
+        return save(result, info)
     selected = manifest["documents"]
     if only:
         names = set(only)
@@ -175,7 +184,7 @@ if __name__ == "__main__":
     ap.add_argument("--workers", type=int, default=2)
     ap.add_argument("--only", nargs='+', help='Resume selected tasks; full 72-task manifest and scoring denominator are preserved')
     ap.add_argument("--out", type=Path, default=OUT)
-    ap.add_argument("--profile", choices=['bounded-v1', 'bounded-v2', 'bounded-v3', 'bounded-v4'], default='bounded-v1')
+    ap.add_argument("--profile", choices=['bounded-v1', 'bounded-v2', 'bounded-v3', 'bounded-v4', 'bounded-v5'], default='bounded-v1')
     a = ap.parse_args()
     OUT = a.out.resolve()
     if a.action == "run": run(a.workers, a.profile, a.only)

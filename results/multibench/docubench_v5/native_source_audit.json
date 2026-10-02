@@ -1,0 +1,13 @@
+{
+  "scope": "Source-only audit of a development-selected oversized XML input; no answer key or model prediction used",
+  "id": "zKibU88u",
+  "source_sha256": "003cbdc235efbc4338f8af5b9e8a62ca7123b7142226ed410d8c195efb85f55b",
+  "schema_sha256": "f74f948327e1dc9ebc2026e077bc7e1154700a032592dbc09f8540bfbd971cbe",
+  "source_bytes": 224497,
+  "partitions": 13,
+  "max_partition_chars": 17978,
+  "original_leaf_occurrences": 6083,
+  "partition_leaf_occurrences": 6083,
+  "exact_ordered_leaf_preservation": true,
+  "rank_eligible": false
+}

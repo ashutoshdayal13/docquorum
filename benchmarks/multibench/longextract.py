@@ -62,7 +62,9 @@ def cohort(scope):
 
 
 def run(scope, workers, version='bounded-v3'):
-    if version == 'bounded-v4':
+    if version == 'bounded-v5':
+        from resource_profile_v5 import install
+    elif version == 'bounded-v4':
         from resource_profile_v4 import install
     else:
         from resource_profile_v3 import install
@@ -142,7 +144,7 @@ if __name__=='__main__':
     parser.add_argument('--scope',choices=['pilot','full'],default='pilot')
     parser.add_argument('--out',type=Path,default=OUT)
     parser.add_argument('--workers',type=int,default=2)
-    parser.add_argument('--profile',choices=['bounded-v3','bounded-v4'],default='bounded-v3')
+    parser.add_argument('--profile',choices=['bounded-v3','bounded-v4','bounded-v5'],default='bounded-v3')
     args = parser.parse_args()
     OUT = args.out.resolve()
     if args.action=='prepare':prepare()

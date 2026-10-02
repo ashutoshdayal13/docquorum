@@ -21,6 +21,8 @@ import resource_profile_v3 as R3
 import longextract as LX
 import resource_profile_v4 as R4
 import publish_completed as PUB
+import resource_profile_v5 as R5
+import native_partition as N
 
 
 def image_part(color):
@@ -347,3 +349,121 @@ def test_longextract_score_records_actual_profile_and_requires_policy(monkeypatc
     assert summary['eligible_for_public50_comparison']
     assert summary['failed'] == 50
     assert not summary['eligible_for_published225_ranking']
+
+
+def test_xml_partitions_preserve_leaf_occurrences_and_ancestor_attributes():
+    import collections
+    import xml.etree.ElementTree as ET
+    source='<export version="7"><meta>שלום</meta><records>'+''.join(
+        '<record><id>repeat</id><note>'+('אבג'*30)+'</note></record>' for _ in range(40))+'</records></export>'
+    parts=N.xml_parts(source,budget=800)
+    def leaves(root):return collections.Counter((e.tag,e.text) for e in root.iter() if not len(e))
+    assert len(parts)>1
+    assert all(ET.fromstring(p).attrib == {'version':'7'} for p in parts)
+    combined=sum((leaves(ET.fromstring(p)) for p in parts),collections.Counter())
+    assert combined==leaves(ET.fromstring(source))
+    assert combined['id','repeat']==40
+
+
+def test_native_partition_does_not_clip_an_oversized_leaf_or_line():
+    with pytest.raises(ValueError,match='leaf exceeds'):
+        N.xml_parts('<source><value>'+('x'*1000)+'</value></source>',budget=100)
+    with pytest.raises(ValueError,match='line exceeds'):
+        N.text_parts('x'*1000,budget=100)
+    source='a\r\nשלום\nlast\r\n'
+    assert ''.join(N.text_parts(source,budget=8))==source
+
+
+def test_native_partition_failure_never_returns_partial_success():
+    calls=[]
+    def create(**kwargs):
+        calls.append(kwargs)
+        if len(calls)==1:raise ValueError('Input needs partitioning: source')
+        raise ConnectionError('model unavailable')
+    cl=SimpleNamespace(calls=calls,chat=SimpleNamespace(completions=SimpleNamespace(create=create)))
+    source='<root>'+''.join('<record><id>'+str(i)+'</id><note>'+('x'*80)+'</note></record>' for i in range(250))+'</root>'
+    with pytest.raises(ConnectionError,match='model unavailable'):
+        N.read(cl,source,{'type':'object'},None,'.xml')
+    assert len(calls)==2
+
+
+@pytest.fixture
+def install_v5(monkeypatch,install_v3):
+    from docquorum.agents import reader
+    monkeypatch.setattr(reader,'load_pages',reader.load_pages)
+    monkeypatch.setattr(reader,'plan_chunks',reader.plan_chunks)
+    return R5.install
+
+
+def test_image_recovery_preserves_repeated_records_and_discards_truncated_rows(monkeypatch,install_v5):
+    import threading
+    from docquorum.agents import reader
+    from docquorum.tools import llm
+    seen=[]
+    def ask(cl,prompt,**kw):
+        seen.append((prompt,kw))
+        if len(seen)==1:return '[{"id":"partial"}]',0,'length'
+        return '[{"id":"repeat"}]',0,'stop'
+    monkeypatch.setattr(llm,'ask',ask)
+    install_v5()
+    image=Image.new('RGB',(80,600),'white')
+    buf=io.BytesIO();image.save(buf,format='JPEG')
+    encoded=base64.b64encode(buf.getvalue()).decode()
+    stat={'lock':threading.Lock(),'calls':0,'tok':0,'truncated':0,'refined':0}
+    rows,cut=reader._ask_chunk(None,reader.NO_TEXT,(encoded,),('rows','','{}',{}),'page1',stat)
+    assert rows==[{'id':'repeat'},{'id':'repeat'}] and not cut
+    assert len(seen)==3 and stat['refined']==1 and stat['truncated']==1
+    assert all('FIRST printed line' in prompt for prompt,_ in seen[1:])
+    assert 'body y=0:300/600' in seen[1][0]
+    assert 'body y=300:600/600' in seen[2][0]
+
+
+def test_missing_page_image_cannot_become_empty_success(install_v5):
+    from docquorum.agents import reader
+    install_v5()
+    with pytest.raises(RuntimeError,match='Image source missing'):
+        reader._ask_chunk(None,reader.NO_TEXT,(),('rows','','{}',{}),'page9',{})
+
+
+def test_image_seam_prefers_blank_gutter_without_erasing_source():
+    from PIL import ImageDraw
+    image=Image.new('RGB',(80,600),'black')
+    ImageDraw.Draw(image).rectangle((0,318,79,323),fill='white')
+    cut=R5.seam(image,0,600)
+    assert 319<=cut<=322
+    band=R5.decode_image(R5.band_image(image,cut,600))
+    assert band.width==image.width+12
+    # The gutter and the final physical source line remain visible in the band.
+    assert band.getpixel((50,band.height-1))[0]<30
+    assert any(band.getpixel((2,y))[0]>200 and band.getpixel((2,y))[1]<60 for y in range(band.height))
+
+
+def test_docubench_native_overflow_uses_complete_xml_partitions(monkeypatch,tmp_path):
+    import xml.etree.ElementTree as ET
+    from docquorum.tools import llm
+    src=tmp_path/'source';(src/'schemas').mkdir(parents=True);(src/'guidelines').mkdir()
+    doc=src/'large.xml'
+    ids=[str(i//2) for i in range(350)]
+    doc.write_text('<export><records>'+''.join('<record><id>'+key+'</id><note>'+('x'*120)+'</note></record>' for key in ids)+'</records></export>')
+    schema={'type':'object','properties':{'rows':{'type':'array','items':{'type':'object','properties':{'id':{'type':'string'}}}}}}
+    (src/'schemas/large.json').write_text(json.dumps(schema))
+    calls=[]
+    def create(**kwargs):
+        prompt=kwargs['messages'][0]['content']
+        source=prompt.split('The document\'s text layer (exact characters):\n',1)[1].split('\n--- END TEXT ---',1)[0]
+        calls.append(len(source))
+        if len(source)>N.TARGET_CHARS:raise ValueError('Input needs partitioning: source')
+        result={'rows':[{'id':e.find('id').text} for e in ET.fromstring(source).iter('record')]}
+        return SimpleNamespace(choices=[SimpleNamespace(finish_reason='stop',message=SimpleNamespace(content=json.dumps(result)))])
+    cl=SimpleNamespace(calls=calls,chat=SimpleNamespace(completions=SimpleNamespace(create=create)))
+    monkeypatch.setattr(D,'OUT',tmp_path/'out');monkeypatch.setattr(D,'SOURCE',src)
+    monkeypatch.setattr(D,'records',lambda:[{'id':'large','path':str(doc),'format':'.xml'}])
+    monkeypatch.setattr(llm,'client',lambda:cl)
+    monkeypatch.setattr(R5,'install',lambda:{'profile':'test-v5'})
+    D.run(1,'bounded-v5')
+    saved=json.loads((D.OUT/'predictions/large.json').read_text())
+    assert [r['id'] for r in saved['data']['rows']]==ids
+    assert saved['meta']['status']=='completed'
+    report=json.loads((D.OUT/'reports/large.json').read_text())
+    assert report['report']['all_partitions_completed']
+    assert report['report']['source_partitions']>1
