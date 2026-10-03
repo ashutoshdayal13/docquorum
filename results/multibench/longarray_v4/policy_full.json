@@ -1,0 +1,28 @@
+{
+  "profile": {
+    "profile": "DocQuorum8B-bounded-v4",
+    "max_model_len": 32768,
+    "model_revision": "9cdc6310a8cb770ce18efaf4e9935334512aee45",
+    "max_output_tokens": 8192,
+    "whole_input_estimate_limit": 20000,
+    "text_window_tokens": 10000,
+    "whole_image_pages": 4,
+    "multiple_image_adapter": "Row-major composite, at most 5 million pixels",
+    "parser": "unavailable; original parser fallback",
+    "frozen_27b_configuration": false,
+    "input_clipping": false,
+    "scalar_source_coverage": "Every page, with schema partitions if needed",
+    "oneshot": "Guarded client; reject truncated output; no page/schema dropping",
+    "row_output_budget": 8192,
+    "window_merge": "Accumulate disjoint-page arrays in page order; preserve repeats",
+    "partitions": "Require every partition to finish; otherwise use reader fallback",
+    "dense_tables": "Keep complete rows; split oversized/truncated text blocks up to depth 8",
+    "failed_record_calls": "Propagate failures; never treat failed calls as empty completed arrays",
+    "mixed_pdf": "If native and non-text pages coexist, visit all physical pages as images",
+    "scan_chunks": "One physical page per chunk; never slice away a second page image",
+    "development_scope": "Mixed-PDF routing change motivated by completed DocuBench baseline diagnostics"
+  },
+  "model": "dq-multibench8b",
+  "scope": "full",
+  "task": "Extract every record shown in the document according to its schema."
+}

@@ -808,6 +808,37 @@
       "expected": 1777,
       "source_summary": "varex_selector_v2/scores/full/summary.json",
       "fresh_inference": false
+    },
+    {
+      "benchmark": "LongArray-Extract",
+      "variant": "DocQuorum8B-bounded-v4",
+      "score": 66.89722331754737,
+      "full_comparison_eligible": true,
+      "official_submission": false,
+      "reference_score_rank": 6,
+      "ties_at_published_precision": [],
+      "leader": {
+        "system": "Extend MAX",
+        "score": 99.2,
+        "completed": 45,
+        "expected": 45,
+        "published_latency_s": 301
+      },
+      "third_place_target": {
+        "system": "Claude Opus 4.7",
+        "score": 83.1,
+        "completed": 45,
+        "expected": 45,
+        "published_latency_s": 532
+      },
+      "gap_to_leader_pp": 32.30277668245263,
+      "gap_to_third_pp": 16.202776682452622,
+      "comparison": "Published reference scores; not an official accepted rank",
+      "scope": "full",
+      "attempted": 45,
+      "expected": 45,
+      "completed": 45,
+      "source_summary": "longarray_v4/scores/full/summary.json"
     }
   ],
   "unranked_complete_cohorts": [],

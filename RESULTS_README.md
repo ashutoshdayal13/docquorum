@@ -20,6 +20,7 @@ These results cover every task in their stated cohort. Reference ranks compare p
 | VAREX image_only | [8B guided](results/multibench/varex/scores/full/summary.json) | 1777 | **97.6807** | 2 | 0.3193 |
 | VAREX image_only | [8B quorum](results/multibench/varex/scores/full/summary.json) | 1777 | **96.9503** | 3 | 1.0497 |
 | VAREX image_only | [8B repaired quorum; stored-output development](results/multibench/varex_selector_v2/scores/full/summary.json) | 1777 | **97.7898** | 2 | 0.2102 |
+| LongArray-Extract | [DocQuorum8B-bounded-v4](results/multibench/longarray_v4/scores/full/summary.json) | 45 | **66.8972** | 6 | 32.3028 |
 
 Pilots, selected routing checks and incomplete runs remain below in the experiment notes. They receive no full-cohort rank. This table refreshes and is committed/pushed whenever a complete score changes.
 <!-- completed-results:end -->
