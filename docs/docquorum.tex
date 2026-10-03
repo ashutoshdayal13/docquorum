@@ -1,6 +1,7 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[margin=21mm,headheight=14pt]{geometry}
 \usepackage[T1]{fontenc}
+\usepackage{pdflscape}
 \usepackage{lmodern,microtype,graphicx,xcolor,booktabs,tabularx,array,amsmath,enumitem,fancyhdr,tikz,listings}
 \usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric}
 \definecolor{ink}{HTML}{17324D}
@@ -50,8 +51,11 @@ Start with the illustrated flow on page \pageref{fig:overview}. The following se
 \vfill
 {\small\color{ink!70}Implementation basis: repository source at \code{b4ea9a1}. The main flow describes \code{docquorum.extract.extract}. Benchmark differences are explicit on page \pageref{sec:execution}. This guide explains behavior; benchmark results remain in \code{results/README.md}.}
 
-\chapterpage{PIPELINE AT A GLANCE}{One document, from input to result}\label{fig:overview}
+\begin{landscape}
+\chapterpage{PIPELINE AT A GLANCE\hfill\textcolor{ink!70}{DOCQUORUM / \thepage}}{One document, from input to result}\label{fig:overview}
+\thispagestyle{empty}
 \begin{center}\input{fig/pipeline.tex}\end{center}
+\end{landscape}
 
 \chapterpage{STEPS 1--2 / PREPARE AND ROUTE}{Turn the document into usable evidence}
 \sub{Step 1. Normalize and inspect}
