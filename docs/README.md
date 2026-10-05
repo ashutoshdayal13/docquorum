@@ -6,6 +6,7 @@ Start with [the document](docquorum.pdf): task definition, complete data flow, e
 - [Main pipeline diagram (PDF)](fig/pipeline.pdf) and [editable TikZ source](fig/pipeline.tex)
 - [Shared evidence and separate candidate flows](fig/evidence-sharing.tex)
 - [Complete schema / answer JSON examples and attribution](examples/README.md)
+- [Complete UNIKIE and ExtractBench results tables, ranks and source snapshots](results/README.md)
 - [Illustrated purchase-order trace](fig/scan-trace.tex) and [four routing examples](fig/route-examples.tex)
 - [Implementation map](CODE_GUIDE.md)
 
@@ -25,4 +26,6 @@ make -C docs clean
 
 Run from the repository root. If Poppler is outside your `PATH`, set `PDFTOPPM=/path/to/pdftoppm` when running the preview target. Both PDFs and the PNG preview are committed so reading the guide does not require LaTeX. The diagram is vector artwork and shares its source with the document. There are no model calls, dataset dependencies, or network downloads in the build.
 
-This folder replaces the former write-up and benchmark-example bundle. Benchmark outputs and results remain in `results/`; older documentation is available in Git history.
+The results section starts on page 14. Page 15 shows all 15 published UNIKIE systems, all 11 scenarios, and the three DocQuorum configurations. Pages 16--17 show all 49 published ExtractBench systems and the two recorded DocQuorum configurations. Tables are frozen to 5 October 2026; DocQuorum has reference rank 5 on that ExtractBench snapshot, rank 2 for original UNIKIE, and a displayed first-place tie for tuned UNIKIE. Reference ranks are comparisons, not accepted external leaderboard submissions.
+
+Benchmark predictions and evaluation outputs remain in the repository's `results/`; the snapshots used in this guide are in `docs/results/`. Older documentation is available in Git history.

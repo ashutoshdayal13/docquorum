@@ -1,0 +1,37 @@
+{
+  "stored_primary": {
+    "score": 95.42784046488673,
+    "documents": 370,
+    "scope": "Archived stored-primary evaluation, original prediction hashes revalidated; not fresh inference or submission",
+    "dataset_revision": "51bf3a03eb7feeaef8952be1fc2fc7f924ee72dc",
+    "scorer_revision": "c8e59696b19c50d904801390dedef8d292d529e7",
+    "verified_current_upstream_2026_10_02": true,
+    "evaluation_sha256": "3e028b5599b448d36d4f47198b065842d4df5591887530c716e43dcf532b8940",
+    "dataset_files": {
+      "short": "3373bfdd44077f852b8f60e1d5b878a582c0c9517b22bcc5f4ec0d28f2ada36c",
+      "medium": "3fe712510db5cfaa80ff4469349ddc0071c70722dab26ed021bee218dac75b87",
+      "long": "b932c32a59a87a3e430cb475d2db94581aaf6a5589219579d2b43171cfe13b72"
+    },
+    "per_split": {
+      "short": 96.33899495110072,
+      "medium": 94.10888505518105,
+      "long": 90.41017544614843
+    }
+  },
+  "incremental_development": {
+    "documents": 370,
+    "processed_documents": 370,
+    "gains": 14,
+    "regressions": 0,
+    "score": 95.6429957485469,
+    "scope": "Development incremental measurement; stored primary outputs and explicit fixed verifier reads reused. Not a fresh primary or held-out run.",
+    "dataset_revision": "51bf3a03eb7feeaef8952be1fc2fc7f924ee72dc",
+    "scorer_revision": "c8e59696b19c50d904801390dedef8d292d529e7",
+    "evaluation_sha256": "3e028b5599b448d36d4f47198b065842d4df5591887530c716e43dcf532b8940",
+    "manifest_sha256": "5c9a76c3b2f8524a75032fd052a45dd2cdab3b7aed25a584f1f194bc8772f084",
+    "code_bundle_sha256": "601d4ab9bc1505b2139e1d69f89bfc0df7b39e405ad7ce901cfb672af3fe6ad5",
+    "official_submission": false,
+    "held_out": false,
+    "fresh_full_inference": false
+  }
+}
