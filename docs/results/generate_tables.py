@@ -102,52 +102,52 @@ Benchmark / DocQuorum configuration & F1 (\%) & Ref. rank & Coverage\\\midrule
     out.append(r"{\small Local evaluations: \code{results/multibench/}. Table snapshots and provenance: \code{docs/results/}. No new inference was run for this section.}" + "\n")
 
     out.append(r"""
-\begin{landscape}
-\chapterpage{RESULTS / UNIKIE\hfill\textcolor{ink!70}{DOCQUORUM / \thepage}}{All 11 scenarios and all 15 published systems}\label{results:unikie}
-\thispagestyle{empty}
-Constrained-category track, 4,472 documents. Field F1 (\%); Avg. is the macro mean over scenarios. ``Pub.'' is the published-system rank by average; local ranks appear below.
-
-\begingroup\fontsize{8.5}{11}\selectfont
-\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.12}
-\begin{tabularx}{\linewidth}{@{}rYl*{12}{r}@{}}\toprule
-Pub. & System / configuration & Type & Ret. & Cat. & Com. & Acco. & Post. & Admi. & Edu. & Adv. & Tax. & Med. & Nut. & Avg.\\\midrule
+\chapterpage{RESULTS / UNIKIE}{Complete scenario results}\label{results:unikie}
+4,472 constrained-category documents; field F1 (\%). Both blocks include every system. Avg.: mean over all 11 scenarios. Pub.: published rank by average.
 """)
-    for i, (name, values, kind) in enumerate(u_rows, 1):
-        out.append(row([i, name, kind] + [f"{v:.2f}" for v in values]))
-    out.append(r"\midrule" + "\n")
     scenario_columns = published["columns"][:-1]
-    for name, key in [("DocQuorum / original 3 readings", "three_original_readings"), ("DocQuorum / development 4 readings", "four_readings"), ("DocQuorum / tuned 6 readings", "six_readings")]:
-        variant = unikie["variants"][key]
-        out.append(row(["--", name, "Local"] + [f"{variant['per_scenario'][c]:.2f}" for c in scenario_columns] + [f"{variant['score']:.2f}"], True))
+    for title, indices, headers in [
+        ("Business transactions and public services", range(6), ["Ret.", "Cat.", "Com.", "Acco.", "Post.", "Admi."]),
+        ("Remaining services and regulated records", range(6, 11), ["Edu.", "Adv.", "Tax.", "Med.", "Nut."]),
+    ]:
+        out.append(r"\par\vspace{1mm}{\color{ink}\small\bfseries " + title + "}\\par\n")
+        out.append(r"\begingroup\fontsize{9}{10.5}\selectfont\setlength{\tabcolsep}{2.5pt}\renewcommand{\arraystretch}{1.1}" + "\n")
+        out.append(r"\begin{tabularx}{\linewidth}{@{}rY*{" + str(len(headers) + 1) + r"}{r}@{}}\toprule" + "\n")
+        out.append(row(["Pub.", "System / configuration"] + headers + ["Avg."]))
+        out.append(r"\midrule" + "\n")
+        for i, (name, values, kind) in enumerate(u_rows, 1):
+            suffix = r"\textsuperscript{" + ("C" if kind == "Closed" else "O") + "}"
+            out.append(row([i, name + suffix] + [f"{values[j]:.2f}" for j in indices] + [f"{values[-1]:.2f}"]))
+        out.append(r"\midrule" + "\n")
+        for name, key in [("DocQuorum / original 3 readings", "three_original_readings"), ("DocQuorum / development 4 readings", "four_readings"), ("DocQuorum / tuned 6 readings", "six_readings")]:
+            variant = unikie["variants"][key]
+            values = [f"{variant['per_scenario'][scenario_columns[j]]:.2f}" for j in indices]
+            out.append(row(["--", name] + values + [f"{variant['score']:.2f}"], True))
+        out.append(r"\bottomrule\end{tabularx}\endgroup" + "\n")
     out.append(r"""
-\bottomrule\end{tabularx}\endgroup
+{\small\textbf{DocQuorum ranks:} original 3 readings: \textbf{2}; development 4: \textbf{2}; tuned 6: \textbf{1, displayed tie} with Gemini-3-Pro. Each variant is compared separately against the published rows.}
 
-\textbf{DocQuorum reference ranks:} original 3 readings: \textbf{2}; development 4 readings: \textbf{2}; tuned 6 readings: \textbf{1, displayed tie} with Gemini-3-Pro. Compare each local variant separately against the 15 published rows; no accepted external submission.
-
-{\small\textbf{Column key:} Ret. = Retail; Cat. = Catering-Services; Com. = Commercial; Acco. = Accommodation; Post. = Postal-Label; Admi. = Administrative; Edu. = Education; Adv. = Advertisement; Tax. = Tax-Compliant; Med. = Medical-Services; Nut. = Nutrition-Label. Closed/Open label the published model groups; Local denotes our pipeline.}
+{\footnotesize\textbf{Key:} Ret. = Retail; Cat. = Catering-Services; Com. = Commercial; Acco. = Accommodation; Post. = Postal-Label; Admi. = Administrative; Edu. = Education; Adv. = Advertisement; Tax. = Tax-Compliant; Med. = Medical-Services; Nut. = Nutrition-Label. Superscripts: C = closed-source; O = open-source.}
 
 """)
-    out.append(f"{{\\small\\color{{ink!75}}Published values: \\href{{{u_url}}}{{UNIKIE-BENCH Table 4, arXiv v2}}; all 15 rows and 12 numerical columns verified {date}. DocQuorum: full stored-output re-scores; six readings is a tuned development configuration. Scenario values are rounded individually, so the displayed average can differ from the mean of displayed cells.}}\n")
-    out.append(r"\end{landscape}" + "\n")
+    out.append(f"{{\\footnotesize\\color{{ink!75}}Source: \\href{{{u_url}}}{{UNIKIE-BENCH Table 4, arXiv v2}}, verified {date}. Local rows: stored-output scores; four/six readings are development configurations.}}\n")
 
     for part, peers in enumerate([eb_rows[:25], eb_rows[25:]], 1):
         start = 1 if part == 1 else 26
         end = 25 if part == 1 else len(eb_rows)
         label = r"\label{results:extractbench}" if part == 1 else ""
-        out.append(r"\begin{landscape}" + "\n")
-        out.append(r"\chapterpage{RESULTS / EXTRACTBENCH " + str(part) + r" OF 2\hfill\textcolor{ink!70}{DOCQUORUM / \thepage}}{Historical table: published ranks " + f"{start}--{end}" + "}" + label + "\n")
-        out.append(r"\thispagestyle{empty}" + "\n")
+        out.append(r"\chapterpage{RESULTS / EXTRACTBENCH " + str(part) + r" OF 2}{Historical table: published ranks " + f"{start}--{end}" + "}" + label + "\n")
         out.append(f"Historical published snapshot: {eb_date}; all 47 systems across two pages. DocQuorum has reference rank 3 in this comparison. Metric: value F1 over 370 PDFs. ``Pub.'' retains the source order; local ranks are computed separately.\n\n")
         out.append(r"""
-\begingroup\fontsize{9}{10.5}\selectfont
-\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.06}
-\begin{tabularx}{\linewidth}{@{}rYp{33mm}rrrrr@{}}\toprule
-Pub. / ref. & Provider / configuration & Category & Overall & Short & Medium & Long & cents/page\\\midrule
+\begingroup\fontsize{9.5}{12}\selectfont
+\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\linewidth}{@{}rYp{26mm}rrrrr@{}}\toprule
+Pub./ref. & Provider / configuration & Category & Overall & Short & Med. & Long & cents/page\\\midrule
 """)
         if part == 1:
             splits = primary["per_split"]
-            out.append(row(["3 ref.", "DocQuorum / stored primary", "Local stored-output", f"{primary['score']:.2f}", f"{splits['short']:.2f}", f"{splits['medium']:.2f}", f"{splits['long']:.2f}", "n/r"], True))
-            out.append(row(["3 ref.", "DocQuorum / incremental repair", "Local development", f"{repair['score']:.2f}", "n/r", "n/r", "n/r", "n/r"], True))
+            out.append(row(["3 ref.", "DocQuorum / stored primary", "Local", f"{primary['score']:.2f}", f"{splits['short']:.2f}", f"{splits['medium']:.2f}", f"{splits['long']:.2f}", "n/r"], True))
+            out.append(row(["3 ref.", "DocQuorum / incremental repair", "Local dev.", f"{repair['score']:.2f}", "n/r", "n/r", "n/r", "n/r"], True))
             out.append(r"\midrule" + "\n")
         for index, peer in enumerate(peers, start):
             cost = f"{Decimal(peer['Cost_Per_Page']) * 100:.2f}" if peer["Cost_Per_Page"] else "n/r"
@@ -157,8 +157,7 @@ Pub. / ref. & Provider / configuration & Category & Overall & Short & Medium & L
             out.append(r"{\small \textbf{Local rows:} recorded complete-cohort evaluations, not fresh inference. Incremental repair uses stored outputs and verifier readings; its split breakdown is not reported in the source summary. n/r = not reported; no local cost claim. Published ranks continue on the next page.}" + "\n\n")
         else:
             out.append(r"{\small \textbf{Metric:} Overall, Short, Medium and Long are mean document unified value F1 (\%). Overall weights every document equally: 252 short, 98 medium and 20 long; it is not the mean of the three split columns. OSS = open-source/self-hosted systems. Cost is the published dollar-per-page value converted to cents; n/r = not reported.}" + "\n\n")
-        out.append(f"{{\\footnotesize\\color{{ink!75}}Source: \\href{{{eb_url}}}{{ExtractBench leaderboard.csv}}, revision \\code{{{provenance['extractbench']['revision'][:7]}}}. Full CSV with all metrics: \\code{{docs/results/extractbench-leaderboard.csv}}.}}\n")
-        out.append(r"\end{landscape}" + "\n")
+        out.append(f"{{\\footnotesize\\color{{ink!75}}Source: \\href{{{eb_url}}}{{ExtractBench leaderboard.csv}}, revision \\code{{{provenance['extractbench']['revision'][:7]}}}.\\par Full CSV with all metrics: \\code{{docs/results/extractbench-leaderboard.csv}}.}}\n")
     (HERE.parent / "results-tables.tex").write_text("".join(out))
     print("Rendered 15 UNIKIE systems + 3 local variants; 47 historical ExtractBench systems + 2 local variants.")
 

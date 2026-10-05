@@ -6,6 +6,10 @@ overall/split F1, category and cost. The complete UNIKIE constrained-category
 Table 4 contains 15 published systems, all 11 scenarios and the average; its
 values were verified against the paper on 5 October 2026.
 
+All results tables use portrait pages. UNIKIE's 11 scenario columns are split
+into two blocks, with every system and the overall average repeated in each.
+ExtractBench's complete table continues across two portrait pages.
+
 DocQuorum's measured configurations are added separately and highlighted. Each
 configuration's reference rank compares it independently against the published
 systems at two-decimal precision. No external submission has been accepted.
