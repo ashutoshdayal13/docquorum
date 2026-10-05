@@ -6,7 +6,7 @@ PDFTOPPM ?= pdftoppm
 all: docquorum.pdf fig/pipeline.pdf
 preview: fig/pipeline.png
 
-docquorum.pdf: docquorum.tex fig/pipeline.tex fig/pictograms.tex fig/scan-trace.tex fig/route-examples.tex
+docquorum.pdf: docquorum.tex fig/pipeline.tex fig/pictograms.tex fig/evidence-sharing.tex fig/scan-trace.tex fig/route-examples.tex
 	$(LATEX) $(FLAGS) docquorum.tex
 	$(LATEX) $(FLAGS) docquorum.tex
 

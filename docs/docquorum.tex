@@ -26,7 +26,7 @@
 {\color{ink}\LARGE From document to\\structured JSON}\par\vspace{5mm}
 \textbf{The task:} extract the fields and repeated records requested by a schema from a PDF or image, while preserving what the document actually prints.
 
-DocQuorum prepares several representations of the document, chooses a suitable reader, repairs each resulting JSON independently, and---when several candidates remain---selects the candidate with the strongest agreement with the others.
+DocQuorum prepares document evidence, chooses one document route, and produces one or more separate candidate JSONs. It checks each candidate independently and, when the route uses quorum, selects the candidate with the strongest agreement with the others.
 
 \sub{1\quad Define the extraction task}
 The input is a document $D$, a schema $S$ (or a JSON template), and optionally a task description $T$. The intended output is a JSON object $Y$ whose fields, types, and repeated records follow $S$ and whose values are supported by $D$:
@@ -43,10 +43,10 @@ Optional task & ``Extract every ordered item.'' & Task text becomes the schema's
 \end{tabularx}
 
 \sub{What a ``reading'' means}
-A reading is one candidate JSON for the task. It may require one model call or many calls over smaller pieces. A parse is different: MinerU produces page text and HTML tables, which a reader still has to interpret under the task schema.
+A reading produces one candidate JSON, using one model call or many smaller calls. MinerU produces source evidence: page text and HTML tables. The parse-based reader maps that evidence to the schema. Readers can share source evidence, but never receive one another's candidate JSONs.
 
 \sub{How to read this guide}
-Start with the illustrated flow on page \pageref{fig:overview}. The following sections explain each operation. Page \pageref{fig:scantrace} follows one scanned purchase order through three separate readings; page \pageref{fig:routes} pictures how other document types take different routes.
+Start with the route overview on page \pageref{fig:overview}, then the evidence and candidate flows on page \pageref{fig:sharing}. Page \pageref{fig:scantrace} follows a scanned purchase order through three readings; page \pageref{fig:routes} compares other document routes.
 
 \vfill
 {\small\color{ink!70}Implementation basis: repository source at \code{b4ea9a1}. The main flow describes \code{docquorum.extract.extract}. Benchmark differences are explicit on page \pageref{sec:execution}. This guide explains behavior; benchmark results remain in \code{results/README.md}.}
@@ -56,6 +56,11 @@ Start with the illustrated flow on page \pageref{fig:overview}. The following se
 \thispagestyle{empty}
 \begin{center}\input{fig/pipeline.tex}\end{center}
 \end{landscape}
+
+\chapterpage{SHARED EVIDENCE / SEPARATE ANSWERS}{Where MinerU helps}\label{fig:sharing}
+MinerU's cache can help routing, the parse-based reader, and checks on other readings. The primary and one-shot extraction calls do not receive MinerU text. Primary and parse-based readings are separate executions of the same general reader code with different evidence.
+\begin{center}\input{fig/evidence-sharing.tex}\end{center}
+\textbf{Example of indirect help:} a primary candidate says \code{source_page: 1}. If the schema asks for printed numbering and the cached parse of PDF page 1 ends with ``7'', its page-index check can change the value to 7. It uses the source cache, not the parse reader's candidate JSON.
 
 \chapterpage{STEPS 1--2 / PREPARE AND ROUTE}{Turn the document into usable evidence}
 \sub{Step 1. Normalize and inspect}
@@ -75,35 +80,37 @@ Priority & Condition & Decision\\\midrule
 2. Ruled scan & No sufficient text layer; cached tables map to schema fields with conversion ratio $\geq0.9$ & Ruled reader\\
 3. General & Neither specialized condition holds & General reading route\\\bottomrule
 \end{tabularx}
-The column test samples up to four pages and requires column-width coefficient of variation below 0.12. The ruled test's conversion ratio compares converted records with parsed table body rows on pages not marked bad by the converter. It is a routing heuristic, not a measured extraction accuracy.
+The column test samples up to four pages and requires column-width coefficient of variation below 0.12. Ruled mode is intended for scanned tables with printed lines between records. Its router first tests the cached table's compatibility with the schema; the reader later detects the printed lines in page images.
 
-\sub{Keep the representations distinct}
-\begin{tabularx}{\linewidth}{@{}p{34mm}YY@{}}\toprule
-Artifact & Contains & Used by\\\midrule
-PDF text layer & Characters already embedded in the PDF & Routing, reader, checks\\
-Page image / crop & Rendered visual evidence & Parser and visual readers\\
-MinerU parse & Machine-read text and HTML tables & Parse reader, layout test, some checks\\
-Candidate JSON & Values mapped to the task schema & Checks and quorum\\\bottomrule
-\end{tabularx}
+\sub{What ``conversion ratio'' counts}
+Conversion means moving parsed table cells into records with the requested field names. For example, a table row \code{item: Pen, quantity: 5} becomes a JSON record with \code{item} and \code{quantity} fields. The router computes:
+\[
+\text{conversion ratio}=\frac{\text{converted records}}{\text{considered parsed table-body rows}}.
+\]
+If 95 records are converted from 100 considered rows, the ratio is 0.95 and passes the 0.9 threshold. Pages marked bad by the converter are excluded from this calculation. The ratio measures structural compatibility; it does not measure value accuracy or coverage of every document page.
+
+The cache remains source evidence. The ruled reader extracts its final records from image bands, with a detected row count and the table header attached to each band.
 \textbf{Data boundary:} answer keys do not enter preparation, routing, reading, checks, or candidate selection. Benchmark scoring is a separate operation after extraction.
 
 \chapterpage{STEP 3 / GENERAL READER}{Plan, read, inspect, and reduce the scope}
 \textbf{Input:} schema and PDF, with either text-layer pages or cached parse pages. The primary reader uses page images when text is insufficient. Parse mode uses cached text only if its page count covers at least 90\% of the extracted page-text count; otherwise it falls back to the text layer.
 
-\textbf{Output:} candidate JSON, call statistics, and a plan description. The reader tries the following plans in order, returning when a plan is accepted.
+\textbf{Output:} one candidate JSON and call/plan reports. Both primary and parse-based readings use these fallback strategies: try eligible plans in order and stop at an accepted result.
 
 \begin{tabularx}{\linewidth}{@{}p{29mm}YY@{}}\toprule
 Plan & When attempted & What it does\\\midrule
-1. Whole document & Estimated input $\leq100{,}000$ tokens and output $\leq140{,}000$; image-only input has $\leq12$ pages & Send full schema and available evidence in one call; inspect completion and missing keys\\
-2. Schema groups & Whole plan did not return; compact schema exceeds 60,000 characters; text exists or $n\leq12$ & Split top-level fields with their definitions; read groups, using page windows when needed\\
-3. Text windows & Earlier plans did not return; text exists and schema has no top-level arrays & Read consecutive windows and merge filled values\\
-4. Scalars + lists & Earlier plans did not return & Read document-level fields; then read each top-level array in page chunks\\\bottomrule
+1. Whole\newline document & Input estimate $\leq100{,}000$ tokens; output estimate $\leq140{,}000$; image-only input has $\leq12$ pages & \textbf{Keep everything together.} Full schema + available document evidence in one call.\\
+2. Schema groups & Whole plan did not return; schema exceeds 60,000 compact characters; text exists or $n\leq12$ & \textbf{Split requested fields.} Read smaller schema groups; use page windows if needed.\\
+3. Text windows & Earlier plans did not return; text exists; no top-level arrays & \textbf{Split source text.} Ask for the same fields in successive windows; merge filled values.\\
+4. Scalars + lists & Earlier plans did not return & \textbf{Read scalars and lists.} Read single-value fields, then each list in page chunks.\\\bottomrule
 \end{tabularx}
 
-\sub{What each model call sees}
-Whole-document calls include images for up to 12 pages. A parse-based scan of 13--24 pages can use paired-page images. Longer whole-document calls use text only. Partitioned long scans can use windows of up to eight page images; ordinary text windows target 60,000 tokens. OCR text is labeled as machine-read when accompanied by images.
+An invoice's number, date and supplier are scalars; its item rows form a list. The 140,000-token output estimate is a planning cutoff, not a response budget: actual whole-document replies are capped at 32,000 tokens in this baseline.
 
-In the chunk plan, text chunks contain text only; image-mode chunks contain up to two page images. Chunk size is one or two pages, estimated from row density and field count against a 9,000-token output target. Fields whose names contain ``page'' force one-page chunks. Results are collected in page order; earlier chunk predictions are not fed into later calls.
+\sub{What each model call sees}
+Whole calls attach up to 12 page images; parse-based scans of 13--24 pages can pair pages. Longer whole calls use text only. Partitioned long scans can use eight images per window; ordinary text windows target 60,000 tokens. OCR is labeled as machine-read alongside images.
+
+Text chunks contain text only; image chunks attach up to two pages. Chunk size is one or two pages, based on row density and field count against a 9,000-token output target. Fields named with ``page'' force one-page chunks. Earlier chunk predictions are not fed into later calls; rows are collected in page order.
 
 \sub{What causes a retry or fallback}
 \begin{itemize}
@@ -112,7 +119,7 @@ In the chunk plan, text chunks contain text only; image-mode chunks contain up t
 \item Truncated \emph{text} chunks split recursively, up to depth four; keep the halves' result only if it has more rows. Image chunks are not recursively split by this logic.
 \item A text chunk with at least five estimated rows but no extracted records gets one extra attempt with a row-count reminder.
 \end{itemize}
-Schema/window merging fills empty values, keeps the first nonempty scalar, and keeps the longer list. It does not concatenate window lists. In the chunk plan, scalar-only evidence is limited to the first two pages in image mode, or first three and last two pages if text exceeds 240,000 characters.
+Schema/window merging fills empty fields, keeps the first nonempty scalar and the longer list; window lists are not concatenated. Scalar extraction uses the first two pages in image mode; for text over 240,000 characters, it uses the first three and last two pages.
 
 \chapterpage{STEP 3 / ALTERNATIVE READERS}{Read the geometry that defines a record}
 \sub{Column reader: preserve the reading order}
@@ -150,6 +157,8 @@ A column crop makes small print readable and preserves column order. A ruled ban
 \textbf{Input:} one candidate JSON and a \code{checks.Doc} object containing the schema and lazily loaded text layer, reading-order text, and cached parse.\par
 \textbf{Operation:} run deterministic transformations in a fixed order. Every transformation receives a fresh JSON copy. There are no model calls or answer keys.\par
 \textbf{Output:} one checked candidate, still separate from every other reading.
+
+All chains can access the same document evidence. In particular, \code{page_index} can use the cached parse in primary/parse repairs, and \code{printed_pages} can use it in any chain. A primary or one-shot candidate can therefore benefit from MinerU during checks, although its extraction call did not receive the parse. Checks never receive another candidate's JSON.
 
 \begin{tabularx}{\linewidth}{@{}p{32mm}Y@{}}\toprule
 Candidate source & Exact chain\\\midrule
@@ -212,13 +221,13 @@ B wins the tie with C because B is earlier. Its complete array is returned. Agre
 For a JSON Schema input, return the selected object. For a template input, \code{fill_template} restores the original template shape and uses empty strings for absent leaves. The Python API returns \code{(result, report)}. A multi-candidate report includes candidate names, the pick, and rounded agreement scores. Direct returns include a readings list; the long-scan direct return reports only ``parse'', even though primary was attempted first.
 
 \chapterpage{END-TO-END EXAMPLE}{Follow the evidence into the final JSON}\label{fig:scantrace}
-This is a synthetic walkthrough, not a benchmark result. Assume there is no usable text layer, no specialized layout route, and the parser is available.
+This is a synthetic walkthrough, not a benchmark result. Assume there is no sufficient text layer, no specialized layout route, and the parser is available. Each reader produces its own candidate; the schema is common to all three.
 \begin{center}\input{fig/scan-trace.tex}\end{center}
 
 \chapterpage{ROUTING COMPARISONS}{Four documents, four different paths}\label{fig:routes}
 Follow one pictured case at a time. The layout test comes first; text availability and page count decide the remaining routes.
 \begin{center}\input{fig/route-examples.tex}\end{center}
-The parse contains text and HTML tables; a model must still map that evidence into the task schema. Each candidate is checked independently before selection. A high agreement score cannot detect an error shared by every candidate.
+One document route is chosen. The short-scan route can run several readings, each with a separate candidate JSON. MinerU evidence can help routing and checks as well as the parse-based reader; no reader sees another reader's answer. A high agreement score cannot detect an error shared by every candidate.
 
 \chapterpage{EXECUTION AND SCOPE}{Connect the guide to the code}\label{sec:execution}
 \sub{Run a document through the API}

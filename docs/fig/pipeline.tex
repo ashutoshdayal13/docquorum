@@ -55,14 +55,14 @@
 \node[caption,anchor=west,text width=3.6cm] at (5.95,-5.5) {
   \textbf{B / Text PDF}\\Text + images when allowed\\\textcolor{teal}{One primary reading}};
 \node[caption,anchor=west,text width=3.6cm] at (5.95,-8) {
-  \textbf{C / Short scan}\\Primary + parse* + one-shot\\\textcolor{teal}{Up to three readings}};
+  \textbf{C / Short scan}\\Primary / parse* / one-shot\\\textcolor{teal}{Separate candidate JSONs}};
 \node[caption,anchor=west,text width=3.6cm] at (5.95,-10.5) {
   \textbf{D / Long scan}\\Primary, then parse*\\\textcolor{teal}{Up to two readings}};
 
 % One shared stage, not a merge: every JSON gets its own source-specific chain.
 \node[panel,minimum width=3.9cm,minimum height=9.65cm] (checks) at (13,-6.75) {};
 \node[caption,align=center,text width=3.4cm] at (13,-2.8) {
-  \textbf{Check each JSON}\\Use its source's chain.};
+  \textbf{Check each JSON}\\Use its reading's chain.};
 \draw[ink!18] (11.4,-3.5)--(14.6,-3.5);
 \node[caption,align=center,text width=3.4cm] at (13,-4.45) {
   \textbf{Primary}\\Repairs $\to$\\output checks};
@@ -73,7 +73,7 @@
 \draw[ink!18] (11.4,-8.55)--(14.6,-8.55);
 \pic at (13,-9.25) {dqcheck};
 \node[caption,align=center,text width=3.3cm] at (13,-10.45) {
-  Conditional repairs.\\No model calls.};
+  MinerU evidence can\\help page checks.\\No model calls.};
 
 % Route-specific selection remains aligned with each input lane.
 \foreach \y/\name in {-3/keepLayout,-5.5/keepText,-8/keepShort,-10.5/keepLong} {
@@ -106,7 +106,8 @@
 
 \node[anchor=north west,align=left,text width=24.6cm,font=\footnotesize\sffamily,text=ink!75]
   at (.15,-12) {
-  \textbf{Only one route runs.} A reading is a candidate JSON. Quorum keeps one complete candidate; it does not mix fields.\\[4pt]
+  \textbf{One route per document.} The short-scan route can run three readings. Readers share source evidence, never candidate JSONs.\\[4pt]
+  MinerU can help routing, parse-based reading and candidate checks. Quorum compares checked JSONs and keeps one whole candidate.\\[4pt]
   * Parse reading requires cached pages. Cached text is used only at $\geq90\%$ page-count coverage; otherwise the reader uses PDF text.};
 \end{tikzpicture}
 \endgroup

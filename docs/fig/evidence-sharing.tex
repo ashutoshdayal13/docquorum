@@ -1,0 +1,60 @@
+% Distinguish shared source evidence from separate extracted answers.
+\begingroup\hyphenpenalty=10000\exhyphenpenalty=10000
+\begin{tikzpicture}[x=1cm,y=1cm,font=\small\sffamily,text=ink,
+ box/.style={draw=ink!22,fill=wash,rounded corners=3pt,align=center,inner sep=7pt},
+ flow/.style={-{Latex[length=2mm]},draw=ink!65,line width=.8pt},
+ evidence/.style={-{Latex[length=2mm]},draw=teal,dashed,line width=.9pt},
+ caption/.style={font=\footnotesize\sffamily,align=center},
+ label/.style={font=\small\sffamily\bfseries,text=teal}]
+\node[box,fill=teal!7,text width=6.6cm,minimum height=1.5cm] (cache) at (0,0) {
+  \textbf{MinerU cache: shared document evidence}\\Page text + HTML tables};
+\foreach \x/\name in {-5.15/router,0/parseUse,5.15/checkUse} {
+  \node[box,fill=white,minimum width=4.65cm,minimum height=1.6cm] (\name) at (\x,-2.35) {};
+  \draw[evidence] (cache.south)--(0,-1.25)-|(\name.north);
+}
+\node[caption,text width=4.15cm] at (-5.15,-2.35) {
+  \textbf{Routing}\\Table/schema compatibility\\helps select ruled mode.};
+\node[caption,text width=4.15cm] at (0,-2.35) {
+  \textbf{Parse-based reading}\\Cached text and tables\\become extraction input.};
+\node[caption,text width=4.15cm] at (5.15,-2.35) {
+  \textbf{Candidate checks}\\Cached evidence can repair\\page references in other readings.};
+\node[label] at (0,-3.9) {SHORT SCAN EXAMPLE / NO LAYOUT SPECIALIST};
+\node[caption,text width=14.8cm] at (0,-4.45) {
+  Same document and schema; up to three separate readings. Each sees the evidence shown below.};
+
+\foreach \x/\name in {-5.15/primary,0/parse,5.15/oneshot} {
+  \node[box,fill=teal!6,text width=4.15cm,minimum height=1.55cm] (\name) at (\x,-5.95) {};
+}
+\node[caption,text width=4.15cm] at (-5.15,-5.95) {
+  \textbf{PRIMARY READER}\\PDF text or page images};
+\node[caption,text width=4.15cm] at (0,-5.95) {
+  \textbf{PARSE-BASED READER}\\MinerU text/tables;\\images when the plan allows};
+\node[caption,text width=4.15cm] at (5.15,-5.95) {
+  \textbf{ONE-SHOT READER}\\Provider-rendered page images};
+
+\foreach \x/\key/\reader in {-5.15/A/primary,0/B/parse,5.15/C/oneshot} {
+  \node[box,fill=white,text width=3.6cm,minimum height=.8cm] (raw\key) at (\x,-7.75) {\textbf{Candidate JSON \key}};
+  \draw[flow] (\reader.south)--(raw\key.north);
+  \node[box,text width=4.15cm,minimum height=1.15cm] (check\key) at (\x,-9.4) {};
+  \node[box,fill=white,text width=3.6cm,minimum height=.8cm] (checked\key) at (\x,-11.05) {\textbf{Checked \key}};
+  \draw[flow] (raw\key.south)--(check\key.north);
+  \draw[flow] (check\key.south)--(checked\key.north);
+}
+\node[caption,text width=4.15cm] at (-5.15,-9.4) {\textbf{Check A}\\Repairs + output checks};
+\node[caption,text width=4.15cm] at (0,-9.4) {\textbf{Check B}\\Spacing + repairs + output};
+\node[caption,text width=4.15cm] at (5.15,-9.4) {\textbf{Check C}\\Output checks};
+\foreach \x/\key in {-5.15/A,0/B,5.15/C} {
+  \draw[flow] (checked\key.south)--(\x,-12);
+}
+\draw[ink!65,line width=.8pt] (-5.15,-12)--(5.15,-12);
+\draw[flow] (0,-12)--(0,-12.4);
+\node[box,fill=amber!8,text width=14.55cm,minimum height=1.3cm] (select) at (0,-13.15) {
+  \textbf{Select among successful checked readings}\\
+  One: return it.\quad Two or three: quorum compares them and keeps one.\quad None: error.};
+\draw[flow] (select.south)--(0,-14.3);
+\node[box,fill=teal!7,text width=7cm] at (0,-14.8) {\textbf{One selected JSON + report}};
+\node[anchor=north,align=left,text width=15.4cm,font=\footnotesize\sffamily,text=ink!75] at (0,-15.6) {
+  \textcolor{teal}{Dashed arrows: MinerU source evidence.}\quad Solid arrows: candidate flow.\\[3pt]
+  \textbf{No reader-to-reader answer flow.} Checks inspect source evidence, not a peer's JSON. The API attempts readers in sequence; these lanes do not imply concurrent execution.};
+\end{tikzpicture}
+\endgroup
