@@ -46,7 +46,7 @@ Optional task & ``Extract every ordered item.'' & Task text becomes the schema's
 A reading produces one candidate JSON, using one model call or many smaller calls. MinerU produces source evidence: page text and HTML tables. The parse-based reader maps that evidence to the schema. Readers can share source evidence, but never receive one another's candidate JSONs.
 
 \sub{How to read this guide}
-Start with the route overview on page \pageref{fig:overview}, then the evidence and candidate flows on page \pageref{fig:sharing}. Page \pageref{fig:scantrace} follows a scanned purchase order through three readings; page \pageref{fig:routes} compares other document routes.
+Start with the route overview on page \pageref{fig:overview}, then the evidence and candidate flows on page \pageref{fig:sharing}. Pages \pageref{demo:purchase}--\pageref{demo:electric} show complete schemas and answers. Page \pageref{fig:scantrace} follows a purchase order through three readings; page \pageref{fig:routes} compares document routes.
 
 \vfill
 {\small\color{ink!70}Implementation basis: repository source at \code{b4ea9a1}. The main flow describes \code{docquorum.extract.extract}. Benchmark differences are explicit on page \pageref{sec:execution}. This guide explains behavior; benchmark results remain in \code{results/README.md}.}
@@ -120,6 +120,8 @@ Text chunks contain text only; image chunks attach up to two pages. Chunk size i
 \item A text chunk with at least five estimated rows but no extracted records gets one extra attempt with a row-count reminder.
 \end{itemize}
 Schema/window merging fills empty fields, keeps the first nonempty scalar and the longer list; window lists are not concatenated. Scalar extraction uses the first two pages in image mode; for text over 240,000 characters, it uses the first three and last two pages.
+
+\input{schema-demos.tex}
 
 \chapterpage{STEP 3 / ALTERNATIVE READERS}{Read the geometry that defines a record}
 \sub{Column reader: preserve the reading order}

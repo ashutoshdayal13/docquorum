@@ -1,0 +1,11 @@
+{
+  "benchmark": "DocuBench",
+  "document_id": "PSU5pciM",
+  "revision": "43a3f3bc00e591e711075678ca6d154acfedcf42",
+  "source_schema_sha256": "a3b6628714ea5aaa2011dacdc2cf5db33c3d0af982deec4ea46f6bd1666a70d8",
+  "source_answer_sha256": "86b6e2849996f33049b6955c3acb2abea414491214ab57fced15342f57e4a6f4",
+  "source_document_sha256": "278ba09c356f6cffc9bef5b627f6caaf570ad1f0ad22bce19dc88c36fc141d69",
+  "license": "CC BY 4.0 for schema and reference answer; original PDF retains its own copyright",
+  "changes": "Whitespace formatting only; all schema fields, descriptions and reference values retained.",
+  "fresh_model_inference": false
+}
