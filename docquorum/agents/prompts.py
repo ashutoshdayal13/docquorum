@@ -28,7 +28,7 @@ OCR_TEXT = ("OCR text of the scanned pages (machine-read: it can misread charact
 # ---- the reader agent: one chunk of pages, for one list ----
 CHUNK = """You are extracting rows of a table from one part of a long document.
 
-Below is the text of pages {p0}-{p1}, with column alignment preserved.
+{context}Below is the text of pages {p0}-{p1}, with column alignment preserved.
 
 --- PAGE TEXT ---
 {text}
@@ -48,6 +48,29 @@ kinds of rows, leave those out.
 
 Reply with a JSON array only:
 [{{...}}, {{...}}]"""
+
+# material from elsewhere in the document that a chunk's rows depend on (legends, code keys,
+# per-entity reference tables), copied once per list and put before every chunk's text; when
+# the document has none, CHUNK is sent exactly as without it
+REFERENCE = """Below are the opening pages of a long document. Later pages hold the list "{array_name}",
+which will be read a few pages at a time by a reader who sees only those pages.
+{array_desc}Each entry has these fields:
+{fields}
+
+Copy out, VERBATIM, only the material in these opening pages that a reader of a later page
+would need to fill those fields but would not find on that page:
+- code legends and abbreviation keys (for example "1=mild; 2=moderate; 3=severe");
+- reference tables giving attributes of the people, accounts or items the entries belong to
+  (one line per identifier, with its attributes), when the entries' own rows do not repeat them.
+Do NOT copy entries of "{array_name}" themselves, narrative text, or anything else.
+If these pages contain no such material, reply with exactly: NONE
+
+--- OPENING PAGES ---
+{text}
+--- END OPENING PAGES ---"""
+REFERENCE_BLOCK = ("REFERENCE MATERIAL copied from elsewhere in the document (legends, codes, "
+                   "per-entity details). Use it to interpret and complete the rows below; do not "
+                   "return rows from it.\n--- REFERENCE ---\n{body}\n--- END REFERENCE ---\n\n")
 
 # a page that shows rows but came back empty is asked once more, told what was counted
 EMPTY_NUDGE = ("NOTE: an earlier reading of this text returned no entries, but the text "

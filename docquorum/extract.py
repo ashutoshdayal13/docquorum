@@ -3,8 +3,10 @@ DocQuorum on one document.
 
     python -m docquorum.extract DOC --schema SCHEMA.json [--task "..."] [-o OUT.json]
 
-DOC is a PDF or an image. SCHEMA is a JSON Schema, or a JSON template whose leaves are empty
-("" / [] / {}): the result then follows the template, with "" for anything absent.
+DOC is a PDF, an image (every page of a multi-page TIFF; a small image is enlarged, see
+tools/images.py), or a native file (.xlsx, .docx, .html, .xml, .csv, .txt), whose text becomes a
+PDF text layer (tools/native.py). SCHEMA is a JSON Schema, or a JSON template whose leaves are
+empty ("" / [] / {}): the result then follows the template, with "" for anything absent.
 
 The rule of the benchmark runs (benchmarks/extractbench/run.sh), on one document:
   * a layout reader when the page geometry selects one (agents/layout.py): pages printed as
@@ -26,7 +28,7 @@ from pathlib import Path
 from docquorum import checks, quorum
 from docquorum.agents import column_reader, layout, oneshot, ruled_reader
 from docquorum.agents.reader import read_document
-from docquorum.tools import llm, parser, pdf as PDF
+from docquorum.tools import images, llm, native, parser, pdf as PDF
 from docquorum.tools.schema import fill_template, is_template, template_to_schema
 
 
@@ -34,14 +36,32 @@ def as_pdf(doc, folder):
     doc, dst = Path(doc), Path(folder) / "doc.pdf"
     if doc.suffix.lower() == ".pdf":
         dst.write_bytes(doc.read_bytes())
+    elif doc.suffix.lower() in native.NATIVE:        # spreadsheet, Word, HTML, XML, CSV, text
+        native.text_pdf(native.native_text(doc), dst)
     else:
-        from PIL import Image
-        Image.open(doc).convert("RGB").save(dst, "PDF", resolution=150)
+        from PIL import Image, ImageOps, ImageSequence
+        with Image.open(doc) as im:
+            # every page of a multi-page TIFF (other formats' extra frames are previews), each
+            # turned upright by its EXIF orientation, a small one enlarged (tools/images.py)
+            frames = ImageSequence.Iterator(im) if doc.suffix.lower() in (".tif", ".tiff") else [im]
+            pages = [images.enlarge_small((ImageOps.exif_transpose(f) or f).convert("RGB")) for f in frames]
+        if len(pages) == 1:
+            pages[0].save(dst, "PDF", resolution=150)
+        else:
+            pages[0].save(dst, "PDF", resolution=150, save_all=True, append_images=pages[1:])
     return dst
 
 
-def extract(doc, schema, task=None, workers=8, log=print):
-    """Returns (result, report). `schema` is a JSON Schema or a JSON template (dict)."""
+def extract(doc, schema, task=None, workers=8, log=print, keep_readings=False):
+    """Returns (result, report). `schema` is a JSON Schema or a JSON template (dict).
+    keep_readings: the report also carries every checked reading ("data"), for analysis."""
+    result, report, readings = _extract(doc, schema, task, workers, log)
+    if keep_readings:
+        report["data"] = readings
+    return result, report
+
+
+def _extract(doc, schema, task, workers, log):
     template = schema if is_template(schema) else None
     schema = template_to_schema(template) if template is not None else dict(schema)
     if task:
@@ -59,8 +79,8 @@ def extract(doc, schema, task=None, workers=8, log=print):
         cl, d = llm.client(), checks.Doc(schema, pdf, name)
         if ev["reader"] != "route":
             reader = column_reader if ev["reader"] == "colflow" else ruled_reader
-            got = reader.read(cl, schema, pdf, workers=4, log=log)
-            return _finish(checks.run("layout", got, d), template), {"readings": [ev["reader"]]}
+            got = checks.run("layout", reader.read(cl, schema, pdf, workers=4, log=log), d)
+            return _finish(got, template), {"readings": [ev["reader"]]}, {ev["reader"]: got}
 
         readings = {}
 
@@ -75,7 +95,7 @@ def extract(doc, schema, task=None, workers=8, log=print):
             if not stat.get("errors"):
                 reading("parse", res)
             if n > 12 and "parse" in readings:                  # a long scan: its parse reading
-                return _finish(readings["parse"], template), {"readings": ["parse"]}
+                return _finish(readings["parse"], template), {"readings": ["parse"]}, readings
         if not text and n <= 12:
             try:
                 reading("oneshot", oneshot.read(pdf, schema))
@@ -84,11 +104,11 @@ def extract(doc, schema, task=None, workers=8, log=print):
         if not readings:
             raise RuntimeError("no reading succeeded")
         if len(readings) == 1:
-            return _finish(next(iter(readings.values())), template), {"readings": list(readings)}
+            return _finish(next(iter(readings.values())), template), {"readings": list(readings)}, readings
         rec = {"id": f"doc/{name}", "pdf": str(pdf), "category": "doc", "tags": [], "data_schema": schema}
         best, agreement, _ = quorum.pick(rec, readings)
         return _finish(readings[best], template), {"readings": list(readings), "picked": best,
-                                                   "agreement": {k: round(v, 4) for k, v in agreement.items()}}
+                                                   "agreement": {k: round(v, 4) for k, v in agreement.items()}}, readings
 
 
 def _finish(result, template):

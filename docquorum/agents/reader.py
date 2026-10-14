@@ -6,7 +6,9 @@ and act again -- or re-plan in smaller pieces -- until the document is read.
            2. the schema in groups, when the schema is what does not fit
            3. windows of the text, when the schema has no top-level list
            4. otherwise: the document-level fields in one call, and each list in page
-              chunks sized from the rows counted per page
+              chunks sized from the rows counted per page; one call first copies any
+              legends or per-entity reference tables from the opening pages, which every
+              chunk then sees (nothing is added when there are none)
   observe  a reply cut off (finish_reason) -> split and read again (up to 4 levels);
            a whole-document reply cut off at the full budget -> fall back to the next plan;
            a page with >= 5 rows but an empty reply -> ask once more, with the count;
@@ -19,6 +21,7 @@ page order). Nothing read in one chunk is passed to the model in another.
 """
 import argparse
 import json
+import re
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
@@ -37,6 +40,7 @@ MAX_DEPTH = 4                   # levels of splitting a cut-off chunk
 MAX_IMAGES_PER_CALL = 2         # a chunk of a scan without text
 PAGES_PER_CHUNK_CAP = 2
 MIN_EVIDENCE_ROWS = 5           # an empty reply for a page with this many rows is asked again
+REF_CHARS = 60000               # opening text searched for reference material (legends, tables)
 NO_TEXT = "(no extractable text; read the attached page images)"
 
 
@@ -80,7 +84,7 @@ def read_document(cl, schema, pdf, name, workers=8, use_parsed=False):
             if got is not None:
                 return got, stat, {"mode": "whole", "est_in": est_in, "est_out": est_out}
         except Exception as e:
-            _failed(stat, "whole", e)
+            _failed(stat, "whole", e, fallback=True)
 
     # plan 2: the schema in groups, when the schema is what does not fit
     if (not image_mode or n_pages <= whole.MAX_IMAGE_PAGES) and len(compact(schema)) > 60000:
@@ -92,7 +96,7 @@ def read_document(cl, schema, pdf, name, workers=8, use_parsed=False):
             if merged is not None and st and sum(1 for _n, _fr, ok in st if ok) >= max(1, len(st) - 1):
                 return merged, stat, {"mode": "partitioned", "groups": len(st)}
         except Exception as e:
-            _failed(stat, "partitioned", e)
+            _failed(stat, "partitioned", e, fallback=True)
 
     # plan 3: windows of the text, when no top-level list can be read in page chunks
     if not image_mode and not find_all_arrays(schema):
@@ -102,7 +106,7 @@ def read_document(cl, schema, pdf, name, workers=8, use_parsed=False):
             if merged is not None and st and sum(1 for _n, _fr, ok in st if ok) >= max(1, len(st) - 1):
                 return merged, stat, {"mode": "windows", "calls": len(st)}
         except Exception as e:
-            _failed(stat, "windows", e)
+            _failed(stat, "windows", e, fallback=True)
 
     # plan 4: the document-level fields, then each list in page chunks
     result = _read_scalars(cl, schema, pdf, pages, image_mode, stat)
@@ -113,9 +117,13 @@ def read_document(cl, schema, pdf, name, workers=8, use_parsed=False):
     return result, stat, plan
 
 
-def _failed(stat, what, e):
+def _failed(stat, what, e, fallback=False):
+    """A failed call. A server failure marks the reading as failed (it is not written, and a
+    resumed run redoes it) -- unless the plan that failed has a fallback plan: the fallback's
+    own calls then show whether the server is really down (a long whole-document call that
+    timed out on a busy server is not a server outage)."""
     print(f"    ! {what}: {type(e).__name__}: {str(e)[:100]}", flush=True)
-    if llm.server_failure(e):
+    if llm.server_failure(e) and not fallback:
         with stat["lock"]:
             stat["errors"] = stat.get("errors", 0) + 1
 
@@ -190,10 +198,11 @@ def plan_chunks(pages, n_fields, one_page=False):
 
 def _ask_chunk(cl, text, imgs, meta, label, stat):
     """One chunk; returns (rows, cut off)."""
-    array_name, lead, item_txt, dec_schema = meta
+    array_name, lead, item_txt, dec_schema, context = meta
     try:
-        txt, tk, fr = llm.ask(cl, prompts.CHUNK.format(p0=label, p1=label, text=text, item_schema=item_txt,
-                                                       array_name=array_name, array_desc=lead),
+        txt, tk, fr = llm.ask(cl, prompts.CHUNK.format(context=context, p0=label, p1=label, text=text,
+                                                       item_schema=item_txt, array_name=array_name,
+                                                       array_desc=lead),
                               max_tokens=12000, schema=dec_schema, images=imgs)
     except Exception as e:
         print(f"    ! {label}: {type(e).__name__}: {str(e)[:90]}", flush=True)
@@ -226,6 +235,57 @@ def _harvest(cl, text, imgs, meta, label, depth, stat):
     return sub if len(sub) > len(rows) else rows
 
 
+def _reference(cl, pages, arr_name, item, arr_desc, stat):
+    """Reference material for a list read in chunks: legends and per-entity tables from the
+    document's opening text, copied verbatim by one call. "" when there is none, so the chunk
+    prompts are then exactly those of a reading without this step."""
+    text, used = [], 0
+    for i, t in enumerate(pages):
+        if used >= REF_CHARS:
+            break
+        t = re.sub(r" {3,}", "  ", t)             # column padding, so long tables fit the window
+        text.append(f"--- PAGE {i + 1} ---\n{t[:REF_CHARS - used]}")
+        used += len(t)
+    props = item.get("properties") or {}
+    fields = "\n".join(f"- {k}: {(v.get('description') or '')[:160]}" if isinstance(v, dict) else f"- {k}"
+                       for k, v in props.items()) or "- value"
+    try:
+        txt, tk, fr = llm.ask(cl, prompts.REFERENCE.format(array_name=arr_name, fields=fields,
+                                                           array_desc=(arr_desc + "\n") if arr_desc else "",
+                                                           text="\n".join(text)), max_tokens=16000)
+    except Exception as e:                    # the chunks are read without it
+        _failed(stat, "reference", e, fallback=True)
+        return ""
+    with stat["lock"]:
+        stat["calls"] += 1
+        stat["tok"] += tk
+    body = (txt or "").strip()
+    if not body or body.upper().startswith("NONE") or len(body) < 20:
+        return ""
+    print(f"    [reference] {arr_name}: {len(body)} characters of legends / reference tables", flush=True)
+    return body
+
+
+def _reference_for(body, text):
+    """The reference block one chunk needs: every legend line, but of the reference tables only
+    the rows whose identifier (a leading token with three or more digits, e.g. a subject or
+    account number) occurs in the chunk's text; a row's indented continuation lines follow it."""
+    if not body:
+        return ""
+    kept, keep = [], True
+    for line in body.split("\n"):
+        first = line.split()[0] if line.strip() else ""
+        if line[:1].isspace() or not first:          # continuation of the line above
+            pass
+        elif sum(c.isdigit() for c in first) >= 3 and "=" not in first and len(first) >= 4:
+            keep = first in text                      # a reference-table row
+        else:
+            keep = True                               # legend, heading or note
+        if keep:
+            kept.append(line)
+    return prompts.REFERENCE_BLOCK.format(body="\n".join(kept).strip("\n"))
+
+
 def _read_list(cl, schema, pdf, pages, image_mode, arr_name, item, arr_desc, workers, stat):
     """One list, chunk by chunk in parallel; rows are collected in page order. A list of plain
     values is read as {"value": ...} records and unwrapped."""
@@ -242,7 +302,8 @@ def _read_list(cl, schema, pdf, pages, image_mode, arr_name, item, arr_desc, wor
                   {"type": "array", "maxItems": 1200, "items": {"type": "object"}})
     task = (schema.get("description") or "").strip()
     lead = (f"TASK\n{task}\n\n" if task else "") + ((arr_desc + "\n") if arr_desc else "")
-    meta = (arr_name, lead, json.dumps(item, indent=1), dec_schema)     # the whole item schema, never cut
+    reference = "" if image_mode else _reference(cl, pages, arr_name, item, arr_desc, stat)
+    meta = (arr_name, lead, json.dumps(item, indent=1), dec_schema, "")   # the whole item schema
     out = [None] * len(chunks)
 
     def do(ci):
@@ -256,16 +317,17 @@ def _read_list(cl, schema, pdf, pages, image_mode, arr_name, item, arr_desc, wor
             out[ci], _ = _ask_chunk(cl, NO_TEXT, imgs[:MAX_IMAGES_PER_CALL], meta, label, stat)
             return
         text = "\n".join(pages[lo:hi])
+        chunk_meta = meta[:4] + (_reference_for(reference, text),)
         blocks = [text]
         if count_row_lines(text) * max(12, n_fields * TOK_PER_FIELD) > OUT_BUDGET:
             blocks = split_columns(text)
         rows = []
         for bi, blk in enumerate(blocks):
-            rows.extend(_harvest(cl, blk, (), meta, label if len(blocks) == 1 else f"{label} col{bi+1}", 0, stat))
+            rows.extend(_harvest(cl, blk, (), chunk_meta, label if len(blocks) == 1 else f"{label} col{bi+1}", 0, stat))
         if not rows and (n_ev := evidence_rows(text)) >= MIN_EVIDENCE_ROWS:
             with stat["lock"]:
                 stat["reasked"] = stat.get("reasked", 0) + 1
-            meta2 = (meta[0], meta[1] + prompts.EMPTY_NUDGE.format(n=n_ev, a=meta[0]), meta[2], meta[3])
+            meta2 = (meta[0], meta[1] + prompts.EMPTY_NUDGE.format(n=n_ev, a=meta[0]), meta[2], meta[3], chunk_meta[4])
             rows = _harvest(cl, text, (), meta2, label + " re-ask", 0, stat)
             if rows:
                 with stat["lock"]:
@@ -277,7 +339,8 @@ def _read_list(cl, schema, pdf, pages, image_mode, arr_name, item, arr_desc, wor
     rows = [r for part in out for r in (part or [])]
     if scalar_items:
         rows = [r.get("value") for r in rows if r.get("value") not in (None, "")]
-    return rows, {"pages_per_chunk": ppc, "rows_per_page": typical, "chunks": len(chunks)}
+    return rows, {"pages_per_chunk": ppc, "rows_per_page": typical, "chunks": len(chunks),
+                  "reference_chars": len(reference)}
 
 
 def main():
