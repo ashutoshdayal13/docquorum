@@ -20,7 +20,7 @@ from PIL import Image
 
 # the UNIKIE-BENCH repository (datasets/ and src/kie_evaluator.py)
 UNIKIE = Path(os.environ.get("DQ_UNIKIE_DIR", Path(__file__).resolve().parents[2] / "data" / "unikie-bench"))
-DATASETS = UNIKIE / "datasets"
+DATASETS = Path(os.environ.get("DQ_UNIKIE_DATASETS", UNIKIE / "datasets"))     # another track's images
 sys.path.insert(0, str(UNIKIE / "src"))
 import kie_evaluator  # noqa: E402
 
@@ -35,15 +35,22 @@ Suppose you are an information extraction expert. Now given a json schema, fill 
 SCENARIOS = ["Accommodation", "Administrative", "Advertisement", "Catering-Services",
              "Commercial", "Education", "Medical-Services", "Nutrition-Label",
              "Postal-Label", "Retail", "Tax-Compliant"]
+if os.environ.get("DQ_UNIKIE_SCENARIOS"):              # e.g. the open-category track's eight
+    SCENARIOS = os.environ["DQ_UNIKIE_SCENARIOS"].split(",")
 
 
 def natural_key(s):
     return [int(t) if t.isdigit() else t.lower() for t in re.split(r"(\d+)", s)]
 
 
-def encode_image(path):
+def encode_image(path, enlarge=False):
+    """The benchmark's own encoding; enlarge=True first enlarges a small image (DocQuorum's
+    readings; docquorum/tools/images.py), within the same pixel cap."""
     with Image.open(path) as im:
         im = im.convert("RGB")
+        if enlarge:
+            from docquorum.tools.images import enlarge_small
+            im = enlarge_small(im, max_pixels=TARGET_MAX_PIXELS)
         w, h = im.size
         if w * h > TARGET_MAX_PIXELS:
             sc = (TARGET_MAX_PIXELS / (w * h)) ** 0.5
@@ -130,3 +137,10 @@ def score(preds, scenario, subset_only=False):
     ng = kie_evaluator.normalize_values_of_nested_dict(gts, normalize_func)
     f1, class_info, err = kie_evaluator.cal_f1_all(np_, ng)
     return f1, class_info, err
+
+
+def is_small(path):
+    """Whether DocQuorum's readings enlarge this image (its encoding differs from the protocol's)."""
+    from docquorum.tools.images import enlarge_small
+    with Image.open(path) as im:
+        return enlarge_small(im, max_pixels=TARGET_MAX_PIXELS).size != im.size

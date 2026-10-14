@@ -18,9 +18,15 @@ document: several readings of each image and the quorum over them.
             scores null as the string "None")
 
     python unikie_eval.py parse-images                 (MinerU cache; parser at $DQ_PARSER_URL)
+    (small images are enlarged before parsing and before DocQuorum's image / parse / oneshot_text
+     readings -- docquorum/tools/images.py; the oneshot readings keep the protocol's encoding)
     python unikie_eval.py read --reading oneshot|oneshot_text|image|parse[N]
     python unikie_eval.py score                        macro F1 over all 4,472 images
     python unikie_eval.py report                       against the paper's Table 4
+
+  The open-category track (1,661 documents, 8 scenarios): set DQ_UNIKIE_DATASETS to its datasets
+  folder, DQ_UNIKIE_SCENARIOS=receipt-cn,Form-cn,invoice-cn,Contract-cn,receipt-en,Form-en,
+  invoice-en,Contract-en, and separate DQ_UNIKIE_PCACHE / DQ_UNIKIE_READINGS folders.
 """
 import argparse
 import json
@@ -40,9 +46,10 @@ from docquorum.tools import llm, parser  # noqa: E402
 from docquorum.tools.schema import fill_template, template_to_schema  # noqa: E402
 
 OUT = Path(os.environ.get("DQ_UNIKIE_READINGS", ROOT / "results" / "unikie" / "readings"))
-PCACHE = ROOT / "cache" / "unikie_parse_1p6"
+PCACHE = Path(os.environ.get("DQ_UNIKIE_PCACHE", ROOT / "cache" / "unikie_parse_1p6"))
 MAX_IMAGES = int(os.environ.get("UNIKIE_MAX_IMAGES", "12"))     # a second model's server limit
 READINGS = ["image", "oneshot_text", "oneshot", "parse", "oneshot32", "oneshot8"]     # order = tie-break
+ENLARGED = {"image", "parse", "oneshot_text"}    # readings whose small images are enlarged first
 BETA = 2.0
 
 
@@ -57,15 +64,15 @@ def parsed_text(scenario, name, n):
 
 
 # ---------- readings ----------
-def read_oneshot(cl, imgs, template, text=None):
+def read_oneshot(cl, imgs, template, text=None, enlarge=False):
     prompt = U.PREFIX + json.dumps(template, ensure_ascii=False)
     if text is not None:
         prompt += "\nThe OCR text of the document, for reference:\n" + "\n".join(text)
-    reply, _, _ = llm.ask(cl, prompt, max_tokens=4096, images=[U.encode_image(p) for p in imgs])
+    reply, _, _ = llm.ask(cl, prompt, max_tokens=4096, images=[U.encode_image(p, enlarge) for p in imgs])
     return U.post_process_to_json(reply)[0]
 
 
-def read_whole(cl, imgs, template, text=None):
+def read_whole(cl, imgs, template, text=None, enlarge=True):
     schema = template_to_schema(template)
     if text is not None:
         body = "\n\n".join(f"--- PAGE {i + 1} ---\n{t}" for i, t in enumerate(text))
@@ -75,17 +82,25 @@ def read_whole(cl, imgs, template, text=None):
         text_block, modality = "", "Its pages are attached as images (the document has no text layer)."
     prompt = prompts.WHOLE.format(rules="", task="", n=len(imgs), modality=modality, text_block=text_block,
                                   schema=json.dumps(schema, indent=1))
-    reply, _, _ = llm.ask(cl, prompt, max_tokens=8000, schema=schema, images=[U.encode_image(p) for p in imgs])
+    reply, _, _ = llm.ask(cl, prompt, max_tokens=8000, schema=schema, images=[U.encode_image(p, enlarge) for p in imgs])
     return llm.parse_object(reply or "")
 
 
 def cmd_read(a):
-    cl = llm.client(timeout=900)
+    cl = llm.client(timeout=3600)    # a request can wait long on a shared GPU
     kind = a.reading.rstrip("0123456789")                     # oneshot32 -> oneshot
+    enlarge = kind in ENLARGED                                # DocQuorum's readings, not the protocol's
     for sc in U.SCENARIOS:
         dst = OUT / a.reading / f"{sc}.json"
         dst.parent.mkdir(parents=True, exist_ok=True)
         done = json.loads(dst.read_text()) if dst.exists() else {}
+        if a.only_small:              # re-read the images whose encoding the enlargement changed
+            redo = {name for name, imgs, _t in records(sc) if any(U.is_small(p) for p in imgs)}
+            if redo & set(done):
+                bak = dst.with_name(dst.stem + ".before_enlarge.json")
+                if not bak.exists():
+                    bak.write_text(json.dumps(done, ensure_ascii=False))
+                done = {k: v for k, v in done.items() if k not in redo}
         lock, failed = threading.Lock(), []
 
         def one(rec):
@@ -98,7 +113,7 @@ def cmd_read(a):
                     text = parsed_text(sc, name, len(imgs))
                     if text is None:
                         raise RuntimeError("no parse cached")
-                got = (read_oneshot if kind.startswith("oneshot") else read_whole)(cl, imgs, template, text)
+                got = (read_oneshot if kind.startswith("oneshot") else read_whole)(cl, imgs, template, text, enlarge)
             except Exception as e:                            # a failure is never written as a reading
                 with lock:
                     failed.append(f"{name}: {type(e).__name__}: {str(e)[:80]}")
@@ -116,6 +131,7 @@ def cmd_read(a):
 
 def cmd_parse(a):
     from PIL import Image
+    from docquorum.tools.images import enlarge_small
     client = parser.make_client()
 
     def one(item):
@@ -124,10 +140,14 @@ def cmd_parse(a):
         d.mkdir(parents=True, exist_ok=True)
         for i, p in enumerate(imgs, 1):
             f = d / f"{i:04d}.txt"
+            if f.exists() and a.only_small and U.is_small(p):
+                bak = f.with_suffix(".before_enlarge.txt")    # parsed again from the enlarged image
+                if not bak.exists():
+                    f.rename(bak)
             if f.exists():
                 continue
             with Image.open(p) as im:
-                im = im.convert("RGB")
+                im = enlarge_small(im.convert("RGB"), max_pixels=U.TARGET_MAX_PIXELS)
                 w, h = im.size
                 if w * h > U.TARGET_MAX_PIXELS:
                     s = (U.TARGET_MAX_PIXELS / (w * h)) ** 0.5
@@ -206,6 +226,8 @@ def main():
     ap.add_argument("cmd", choices=["read", "parse-images", "score", "report"])
     ap.add_argument("--reading", help="oneshot | oneshot_text | image | parse, with a model suffix for a second model")
     ap.add_argument("--workers", type=int, default=24)
+    ap.add_argument("--only-small", action="store_true",
+                    help="redo only the images DocQuorum enlarges (keeps the earlier output as *.before_enlarge)")
     a = ap.parse_args()
     {"read": cmd_read, "parse-images": cmd_parse, "score": cmd_score, "report": cmd_report}[a.cmd](a)
 
