@@ -1,0 +1,273 @@
+{
+ "form": {
+  "name": "2A-9-160298_109929",
+  "pages": 2,
+  "fields": 77,
+  "schema_excerpt": {
+   "p1_company": {
+    "anyOf": [
+     {
+      "type": "string"
+     },
+     {
+      "type": "null"
+     }
+    ],
+    "default": null,
+    "description": "The 'Company' field in the identification block on page 1: the name of the operator/company filing this plug application. Extract verbatim as printed (preserve casing, initials and punctuation); null if blank. Do NOT confuse with 'Name of Party Plugging Well' (the plugging contractor) or the 'Correspondence ... Name' field on the same page, nor with the identical 'Company' field on page 2 (p2_company).",
+    "title": "Company"
+   },
+   "p1_county": {
+    "anyOf": [
+     {
+      "type": "string"
+     },
+     {
+      "type": "null"
+     }
+    ],
+    "default": null,
+    "description": "The 'County' field in the page-1 land-description line: the Texas county in which the well is located. Extract verbatim as printed; null if blank. Do NOT confuse with 'Name of field in which well is located' (the RRC field name) on the same page, nor with the page-2 'County' (p2_county) or the notary's 'County, Texas' on page 2.",
+    "title": "County"
+   },
+   "p1_total_depth": {
+    "anyOf": [
+     {
+      "type": "string"
+     },
+     {
+      "type": "null"
+     }
+    ],
+    "default": null,
+    "description": "The 'Total Depth' field on page 1: the total measured depth of the well (printed unit feet). Include the unit only if written in the cell. Extract verbatim as printed; null if blank. Do NOT confuse with 'Elev.' on the same page, nor with the page-2 'Total Depth' (p2_total_depth) or 'Top of each producing sand' depth.",
+    "title": "Total Depth"
+   }
+  }
+ },
+ "task_example": {
+  "name": "hingham_lowes_receipt",
+  "task": "A single point-of-sale purchase RECEIPT (retail or restaurant). DOC-TYPE / SCOPE RULE: if one file bundles MULTIPLE distinct receipts or transactions (e.g. a Lowe's email containing several purchases, each with its own 'Transaction #' and 'Order #'), extract ONLY the FIRST receipt — the one that appears FIRST in reading order (top of the document, earliest Order Date/time). Ignore all later receipts; do NOT merge line items, totals, or payments across receipts. A receipt is NOT an invoice: there is no bill-to customer, no due date, no PO terms."
+ },
+ "template": {
+  "menu": [
+   {
+    "price": "",
+    "nm": ""
+   }
+  ],
+  "total": {
+   "cashprice": "",
+   "total_price": ""
+  }
+ },
+ "routes": [
+  {
+   "route": "A",
+   "name": "real_oklahoma_unclaimed_2024",
+   "pages": 59,
+   "chars_per_page": 15280,
+   "ocr_layer": false,
+   "label": "Equal-width columns of records"
+  },
+  {
+   "route": "B",
+   "name": "oklahoma_county_purchase_order_avl_systems",
+   "pages": 1,
+   "chars_per_page": 2253,
+   "ocr_layer": false,
+   "label": "Digital PDF: exact text layer"
+  },
+  {
+   "route": "B",
+   "name": "W14-58025_W14 Admin Reviewed",
+   "pages": 1,
+   "chars_per_page": 252,
+   "ocr_layer": true,
+   "label": "Scan with an OCR text layer"
+  },
+  {
+   "route": "C",
+   "name": "2A-9-160298_109929",
+   "pages": 2,
+   "chars_per_page": 0,
+   "ocr_layer": false,
+   "label": "Scan, no text, 2 pages"
+  },
+  {
+   "route": "D",
+   "name": "bar-lev-2022",
+   "pages": 25,
+   "chars_per_page": 0,
+   "ocr_layer": false,
+   "label": "Scan, no text, 25 pages"
+  }
+ ],
+ "mineru": {
+  "name": "real_ftx_full_corrupted",
+  "page": 47,
+  "rows": 65,
+  "table": [
+   [
+    "Name",
+    "Address1",
+    "Address2",
+    "Address3",
+    "Address4",
+    "City",
+    "State",
+    "PostalCode",
+    "Country"
+   ],
+   [
+    "INCENTIVE ECOSYSTEM FOUNDATION",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "INCO, LLC",
+    "425 BROADWAY, 5TH FLOOR",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "INO, LLC - INAVAILABLE NORTH",
+    "425 BROADWAY",
+    "5TH FLOOR",
+    "",
+    "",
+    "NEW YORK",
+    "NY",
+    "10013",
+    ""
+   ],
+   [
+    "INO, LLC DBA \"INAVAILABLE NORTH\"",
+    "425 BROADWAY, 5TH FLOOR",
+    "",
+    "",
+    "",
+    "NEW YORK",
+    "NY",
+    "10013-2599",
+    ""
+   ],
+   [
+    "INCORPORATING SERVICES, LTD.",
+    "3500 SOUTH COOPONT HWY",
+    "",
+    "",
+    "",
+    "NEW YORK",
+    "NY",
+    "10013",
+    ""
+   ],
+   [
+    "INCORPORATING SERVICES, LTD.",
+    "3500 S. DUPONT HWY.",
+    "",
+    "",
+    "",
+    "LOVER",
+    "DE",
+    "19901",
+    ""
+   ]
+  ],
+  "raw": "<TABLE>\n<table><tr><td>Name</td><td>Address1</td><td>Address2</td><td>Address3</td><td>Address4</td><td>City</td><td>State</td><td>PostalCode</td><td>Country</td></tr><tr><td>INCENTIVE ECOSYSTEM FOUNDATION</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>INCO, LLC</td><td>425 BROADWAY, 5TH FLOOR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>INO, LLC - IN"
+ },
+ "colflow": {
+  "name": "real_oklahoma_unclaimed_2024",
+  "columns": 7,
+  "pages": 59,
+  "records_total": 26675,
+  "page2_first": [
+   {
+    "name": "COLLINS RICHARD",
+    "locale": null,
+    "source_page": 2
+   },
+   {
+    "name": "EATON BETHINA",
+    "locale": "RT 1 BOX 220",
+    "source_page": 2
+   },
+   {
+    "name": "JOHNSON JOHNEY B",
+    "locale": "C/O MAE JEAN JOHNSON, RT 1 BOX 230",
+    "source_page": 2
+   },
+   {
+    "name": "SHERRILL IVANNA",
+    "locale": "RT 1 BOX 1142",
+    "source_page": 2
+   }
+  ]
+ },
+ "ruled": {
+  "name": "real_ftx_full_corrupted",
+  "page": 47,
+  "angle": 1.15,
+  "bands": [
+   12,
+   12,
+   12,
+   12,
+   12,
+   7
+  ],
+  "rows_counted": 67,
+  "rows_returned": 67,
+  "first": [
+   {
+    "name": "INCENTIVE ECOSYSTEM FOUNDATION",
+    "address_1": null,
+    "address_2": null,
+    "address_3": null,
+    "address_4": null,
+    "city": null,
+    "state": null,
+    "postal_code": null,
+    "country": null,
+    "source_page": 47
+   },
+   {
+    "name": "INCO, LLC",
+    "address_1": "425 BROADWAY, 5TH FLOOR",
+    "address_2": null,
+    "address_3": null,
+    "address_4": null,
+    "city": "NEW YORK",
+    "state": "NY",
+    "postal_code": "10013",
+    "country": null,
+    "source_page": 47
+   },
+   {
+    "name": "INCO, LLC - INVISIBLE NORTH",
+    "address_1": "425 BROADWAY",
+    "address_2": "5TH FLOOR",
+    "address_3": null,
+    "address_4": null,
+    "city": "NEW YORK",
+    "state": "NY",
+    "postal_code": "10013-2599",
+    "country": null,
+    "source_page": 47
+   }
+  ],
+  "records_total": 7511
+ }
+}

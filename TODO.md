@@ -34,3 +34,9 @@ Not KIE, so left out: DocVQA-style question answering (DocVQA, DUDE, Infographic
 * replicate the benchmark's own protocol (its prompt for the baseline, image size, post-processing, scorer);
 * no labels in any method step, and no rules fitted to one benchmark's answer conventions;
 * estimate a full run's GPU time on one GPU.
+
+## Extraction without a schema (research proposal, 2026-10-11; nothing run yet)
+
+Problem statement, scoring protocol, datasets with complete answer keys, related work and first experiments:
+[docs/research/schema-free.md](docs/research/schema-free.md). First run to do: ExtractBench short split with the
+schema hidden (value recall, projected score, mapping ceiling) against the schema-given 96.11.
