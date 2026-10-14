@@ -1,4 +1,4 @@
-"""Render complete comparison tables from frozen, attributed source snapshots."""
+"""Render the two results tables (ExtractBench, UNIKIE-BENCH) from frozen, attributed source snapshots."""
 import csv
 import hashlib
 import json
@@ -33,133 +33,106 @@ def row(values, highlight=False):
     return prefix + " & ".join(cells) + r"\\" + "\n"
 
 
+def markdown(title, table):
+    scores = [v for _, v in table]
+    lines = [f"## {title}\n", "| # | System | Score |", "|---:|---|---:|"]
+    for name, value in table:
+        cell = f"**{name}**" if name == "DocQuorum (ours)" else name
+        num = f"**{displayed(value)}**" if name == "DocQuorum (ours)" else f"{displayed(value)}"
+        lines.append(f"| {rank(value, scores)} | {cell} | {num} |")
+    return "\n".join(lines) + "\n"
+
+
+# further schema-guided benchmarks: a table appears once docquorum-<key>.json exists
+EXTRA = [
+    ("varex", "VAREX", "1,777 U.S. government forms, image input; exact match (\\%), normalized, by the "
+     "benchmark's own scorer. Published systems: the VAREX-Bench image-modality leaderboard (20 models).",
+     lambda: [(r["system"], r["em"]) for r in load("varex-published.json")["systems"]]),
+    ("unikie-open", "UNIKIE-BENCH open category", "1,661 documents in 8 scenarios (Chinese and English); "
+     "macro F1 (\\%) by the benchmark's own evaluator. Published systems: the paper's open-category table.",
+     lambda: [(n, v[-1]) for kind in ("closed_source", "open_source")
+              for n, v in load("unikie-open-published.json")[kind].items()]),
+    ("longarray", "LongArray-Extract", "45 long PDFs (bank statements, clinical listings, indictments); "
+     "macro document accuracy (\\%) by the publisher's reference scorer. Published systems: Extend AI's results page.",
+     lambda: [(r["system"], r["score"]) for r in load("longarray-published.json")["systems"]]),
+    ("docubench", "DocuBench", "72 documents in 10 file types; macro field accuracy (\\%) by the "
+     "benchmark's own scorer. Published systems: the DocuBench leaderboard.",
+     lambda: [(r["system"], r["score"]) for r in load("docubench-published.json")["systems"]]),
+]
+
+
 def main():
     provenance = load("provenance.json")
     for name, expected_hash in provenance["snapshot_sha256"].items():
         assert hashlib.sha256((HERE / name).read_bytes()).hexdigest() == expected_hash, name
     published = load("unikie-published.json")
-    unikie = load("docquorum-unikie.json")
-    eb = load("docquorum-extractbench.json")
+    unikie = load("docquorum-unikie.json")["variants"]["six_readings"]
+    eb = load("docquorum-extractbench.json")["stored_primary"]
     with (HERE / "extractbench-leaderboard.csv").open(newline="") as handle:
         eb_rows = list(csv.DictReader(handle))
-    # Match the upstream headline table's order, including its cost tie-break.
-    eb_rows.sort(key=lambda x: (-Decimal(x["Overall"]), Decimal(x["Cost_Per_Page"] or "Infinity")))
-    u_rows = [(name, values, "Closed") for name, values in published["closed_source"].items()]
-    u_rows += [(name, values, "Open") for name, values in published["open_source"].items()]
-    u_rows.sort(key=lambda x: -x[1][-1])
     assert len(eb_rows) == provenance["extractbench"]["published_systems"] == 47
+    # the leaderboard's own order (Overall, then cost); DocQuorum after any system it does not beat
+    eb_rows.sort(key=lambda x: (-Decimal(x["Overall"]), Decimal(x["Cost_Per_Page"] or "Infinity")))
+    ours = {"Provider": "DocQuorum (ours)", "Overall": eb["score"], **{k.capitalize(): v for k, v in eb["per_split"].items()}}
+    at = sum(displayed(r["Overall"]) >= displayed(ours["Overall"]) for r in eb_rows)
+    eb_table = eb_rows[:at] + [ours] + eb_rows[at:]
+    u_rows = [(name, values[-1]) for name, values in list(published["closed_source"].items()) + list(published["open_source"].items())]
     assert len(u_rows) == provenance["unikie"]["published_systems"] == 15
-    eb_peers = [x["Overall"] for x in eb_rows]
-    u_peers = [values[-1] for _, values, _ in u_rows]
-    original = unikie["variants"]["three_original_readings"]
-    four = unikie["variants"]["four_readings"]
-    six = unikie["variants"]["six_readings"]
-    primary = eb["stored_primary"]
-    repair = eb["incremental_development"]
-    assert rank(primary["score"], eb_peers) == rank(repair["score"], eb_peers) == 3
-    assert rank(original["score"], u_peers) == rank(four["score"], u_peers) == 2
-    assert rank(six["score"], u_peers) == 1
-    assert displayed(six["score"]) == displayed(u_peers[0])
-    date = provenance["display_date"]
-    eb_date = provenance["extractbench"]["snapshot_date"]
-    eb_url = provenance["extractbench"]["url"]
-    u_url = provenance["unikie"]["url"]
+    u_rows.sort(key=lambda x: -x[1])
+    at = sum(displayed(v) >= displayed(unikie["score"]) for _, v in u_rows)
+    u_table = u_rows[:at] + [("DocQuorum (ours)", unikie["score"])] + u_rows[at:]
+    eb_scores = [r["Overall"] for r in eb_table]
+    u_scores = [v for _, v in u_table]
+    assert rank(ours["Overall"], eb_scores) == 3 and rank(unikie["score"], u_scores) == 1
+
     out = [r"% Generated by results/generate_tables.py; edit the snapshots or generator." + "\n"]
-    out.append(r"""
-\chapterpage{RESULTS / COMPLETE COMPARISON TABLES}{DocQuorum's measured standing}\label{sec:results}
-""")
-    out.append(f"ExtractBench uses the historical published snapshot recorded {eb_date}, where DocQuorum has reference rank 3. UNIKIE uses the paper's Table 4, verified {date}. Both complete tables include highlighted DocQuorum rows.\n\n")
-    out.append(r"""
-\sub{Rank and score at a glance}
-\begin{tabularx}{\linewidth}{@{}Yrrp{26mm}@{}}\toprule
-Benchmark / DocQuorum configuration & F1 (\%) & Ref. rank & Coverage\\\midrule
-""")
-    for benchmark, value, ref, coverage in [
-        ("ExtractBench / stored primary", primary["score"], "3", "370 / 370"),
-        ("ExtractBench / incremental development", repair["score"], "3", "370 / 370"),
-        ("UNIKIE / original 3 readings", original["score"], "2", "4,472 / 4,472"),
-        ("UNIKIE / development 4 readings", four["score"], "2", "4,472 / 4,472"),
-        ("UNIKIE / tuned 6 readings", six["score"], "1 (tie)", "4,472 / 4,472"),
-    ]:
-        out.append(row([benchmark, f"{value:.4f}", ref, coverage], True))
-    out.append(r"\bottomrule\end{tabularx}" + "\n\n")
-    out.append(r"""
-\textbf{Reference rank} compares each DocQuorum configuration independently against the displayed published systems at two-decimal precision. The ExtractBench rank belongs to the historical snapshot dated above. Local variants do not compete with one another; no external leaderboard submission has been accepted.
+    out.append(r"\chapterpage{RESULTS}{ExtractBench}\label{sec:results}" + "\n")
+    out.append(f"370 enterprise PDFs; value F1 (\\%) by the benchmark's own scorer. Published systems: "
+               f"\\href{{{provenance['extractbench']['url']}}}{{ExtractBench leaderboard}} "
+               f"({provenance['extractbench']['snapshot_date']}). Equal scores share a rank.\n\n")
+    out.append(r"\begingroup\footnotesize\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.95}" + "\n")
+    out.append(r"\begin{tabularx}{\linewidth}{@{}rYrrrr@{}}\toprule" + "\n")
+    out.append(row(["#", "System", "Short", "Medium", "Long", "Overall"]) + r"\midrule" + "\n")
+    for r in eb_table:
+        mine = r["Provider"] == "DocQuorum (ours)"
+        out.append(row([rank(r["Overall"], eb_scores), r["Provider"]]
+                       + [f"{displayed(r[k])}" for k in ("Short", "Medium", "Long", "Overall")], mine))
+    out.append(r"\bottomrule\end{tabularx}\endgroup" + "\n\n")
 
-\sub{How far are we from the leaders?}
-""")
-    out.append(f"In this ExtractBench snapshot, LlamaExtract Agentic Plus and Pulse (Effort) both score {eb_rows[0]['Overall']}. DocQuorum's stored primary is {float(eb_rows[0]['Overall']) - primary['score']:.4f} percentage points below them, and {primary['score'] - float(eb_rows[2]['Overall']):.4f} above the next published system, LlamaExtract Agentic ({eb_rows[2]['Overall']}). The incremental development result reduces the leader gap to {float(eb_rows[0]['Overall']) - repair['score']:.4f}. Each DocQuorum variant therefore has historical reference rank 3 among 47 published systems plus that variant.\n\n")
-    out.append(f"On UNIKIE, the original configuration is {float(u_peers[0]) - original['score']:.4f} points below the leader and {original['score'] - float(u_peers[2]):.4f} above the published third-place score. The tuned configuration rounds to 82.37, matching Gemini-3-Pro. Its displayed first-place tie does not establish a statistically significant advantage.\n\n")
-    out.append(r"""
-\sub{What the measurements cover}
-\textbf{ExtractBench:} 370 enterprise PDFs; overall unified value F1 is the unweighted mean over documents. The stored-primary row reuses the archived evaluation after prediction-hash validation. The incremental repair row is development work using stored primary outputs and fixed verifier readings, with 14 improved documents and no regressions. Neither row is fresh full inference or a held-out result.
-
-\textbf{UNIKIE:} 4,472 documents in the constrained-category track; macro field F1 is the mean of 11 scenario scores. The three-reading row preserves the original configuration. Four and six readings were added during development; their scores must remain separate from that original result. All rows are full stored-output re-scores. The multi-category track was not evaluated here.
-
-\sub{Sources and reproducibility}
-""")
-    out.append(f"Published baselines: \\href{{{u_url}}}{{UNIKIE-BENCH, Table 4}} and \\href{{{eb_url}}}{{ExtractBench, historical full CSV}}. The ExtractBench CSV exactly matches all 47 systems and overall scores in our earlier saved comparison. Its pinned source revision is also the scorer revision recorded for the local measurements.\n\n")
-    out.append(r"{\small Local evaluations: \code{results/multibench/}. Table snapshots and provenance: \code{docs/results/}. No new inference was run for this section.}" + "\n")
-
-    out.append(r"""
-\chapterpage{RESULTS / UNIKIE}{Complete scenario results}\label{results:unikie}
-4,472 constrained-category documents; field F1 (\%). Both blocks include every system. Avg.: mean over all 11 scenarios. Pub.: published rank by average.
-""")
-    scenario_columns = published["columns"][:-1]
-    for title, indices, headers in [
-        ("Business transactions and public services", range(6), ["Ret.", "Cat.", "Com.", "Acco.", "Post.", "Admi."]),
-        ("Remaining services and regulated records", range(6, 11), ["Edu.", "Adv.", "Tax.", "Med.", "Nut."]),
-    ]:
-        out.append(r"\par\vspace{1mm}{\color{ink}\small\bfseries " + title + "}\\par\n")
-        out.append(r"\begingroup\fontsize{9}{10.5}\selectfont\setlength{\tabcolsep}{2.5pt}\renewcommand{\arraystretch}{1.1}" + "\n")
-        out.append(r"\begin{tabularx}{\linewidth}{@{}rY*{" + str(len(headers) + 1) + r"}{r}@{}}\toprule" + "\n")
-        out.append(row(["Pub.", "System / configuration"] + headers + ["Avg."]))
-        out.append(r"\midrule" + "\n")
-        for i, (name, values, kind) in enumerate(u_rows, 1):
-            suffix = r"\textsuperscript{" + ("C" if kind == "Closed" else "O") + "}"
-            out.append(row([i, name + suffix] + [f"{values[j]:.2f}" for j in indices] + [f"{values[-1]:.2f}"]))
-        out.append(r"\midrule" + "\n")
-        for name, key in [("DocQuorum / original 3 readings", "three_original_readings"), ("DocQuorum / development 4 readings", "four_readings"), ("DocQuorum / tuned 6 readings", "six_readings")]:
-            variant = unikie["variants"][key]
-            values = [f"{variant['per_scenario'][scenario_columns[j]]:.2f}" for j in indices]
-            out.append(row(["--", name] + values + [f"{variant['score']:.2f}"], True))
+    out.append(r"\chapterpage{RESULTS}{UNIKIE-BENCH}\label{results:unikie}" + "\n")
+    out.append(f"4,472 document images in 11 scenarios; macro F1 (\\%) by the benchmark's own evaluator. Published systems: "
+               f"\\href{{{provenance['unikie']['url']}}}{{UNIKIE-BENCH, Table 4}}. Equal scores share a rank.\n\n")
+    out.append(r"\begingroup\small\setlength{\tabcolsep}{4pt}" + "\n")
+    out.append(r"\begin{tabularx}{0.62\linewidth}{@{}rYr@{}}\toprule" + "\n")
+    out.append(row(["#", "System", "Macro F1"]) + r"\midrule" + "\n")
+    for name, value in u_table:
+        out.append(row([rank(value, u_scores), name, f"{displayed(value)}"], name == "DocQuorum (ours)"))
+    out.append(r"\bottomrule\end{tabularx}\endgroup" + "\n")
+    md = ["# Results: every published system and DocQuorum\n\nGenerated by `generate_tables.py`; equal "
+          "scores (at two decimals) share a rank.\n"]
+    md.append(markdown("ExtractBench (370 PDFs, value F1)", [(r["Provider"], r["Overall"]) for r in eb_table]))
+    md.append(markdown("UNIKIE-BENCH, constrained category (4,472 images, macro F1)", u_table))
+    for key, title, about, rows_of in EXTRA:
+        if not (HERE / f"docquorum-{key}.json").exists():
+            continue                                  # not run yet
+        ours = load(f"docquorum-{key}.json")["score"]
+        rows = sorted(rows_of(), key=lambda x: -x[1])
+        at = sum(displayed(v) >= displayed(ours) for _, v in rows)
+        table = rows[:at] + [("DocQuorum (ours)", ours)] + rows[at:]
+        scores = [v for _, v in table]
+        out.append(r"\chapterpage{RESULTS}{" + tex(title) + "}\n" + about + "\n\n")
+        out.append(r"\begingroup\small\setlength{\tabcolsep}{4pt}" + "\n")
+        out.append(r"\begin{tabularx}{0.62\linewidth}{@{}rYr@{}}\toprule" + "\n")
+        out.append(row(["#", "System", "Score"]) + r"\midrule" + "\n")
+        for name, value in table:
+            out.append(row([rank(value, scores), name, f"{displayed(value)}"], name == "DocQuorum (ours)"))
         out.append(r"\bottomrule\end{tabularx}\endgroup" + "\n")
-    out.append(r"""
-{\small\textbf{DocQuorum ranks:} original 3 readings: \textbf{2}; development 4: \textbf{2}; tuned 6: \textbf{1, displayed tie} with Gemini-3-Pro. Each variant is compared separately against the published rows.}
-
-{\footnotesize\textbf{Key:} Ret. = Retail; Cat. = Catering-Services; Com. = Commercial; Acco. = Accommodation; Post. = Postal-Label; Admi. = Administrative; Edu. = Education; Adv. = Advertisement; Tax. = Tax-Compliant; Med. = Medical-Services; Nut. = Nutrition-Label. Superscripts: C = closed-source; O = open-source.}
-
-""")
-    out.append(f"{{\\footnotesize\\color{{ink!75}}Source: \\href{{{u_url}}}{{UNIKIE-BENCH Table 4, arXiv v2}}, verified {date}. Local rows: stored-output scores; four/six readings are development configurations.}}\n")
-
-    for part, peers in enumerate([eb_rows[:25], eb_rows[25:]], 1):
-        start = 1 if part == 1 else 26
-        end = 25 if part == 1 else len(eb_rows)
-        label = r"\label{results:extractbench}" if part == 1 else ""
-        out.append(r"\chapterpage{RESULTS / EXTRACTBENCH " + str(part) + r" OF 2}{Historical table: published ranks " + f"{start}--{end}" + "}" + label + "\n")
-        out.append(f"Historical published snapshot: {eb_date}; all 47 systems across two pages. DocQuorum has reference rank 3 in this comparison. Metric: value F1 over 370 PDFs. ``Pub.'' retains the source order; local ranks are computed separately.\n\n")
-        out.append(r"""
-\begingroup\fontsize{9.5}{12}\selectfont
-\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.12}
-\begin{tabularx}{\linewidth}{@{}rYp{26mm}rrrrr@{}}\toprule
-Pub./ref. & Provider / configuration & Category & Overall & Short & Med. & Long & cents/page\\\midrule
-""")
-        if part == 1:
-            splits = primary["per_split"]
-            out.append(row(["3 ref.", "DocQuorum / stored primary", "Local", f"{primary['score']:.2f}", f"{splits['short']:.2f}", f"{splits['medium']:.2f}", f"{splits['long']:.2f}", "n/r"], True))
-            out.append(row(["3 ref.", "DocQuorum / incremental repair", "Local dev.", f"{repair['score']:.2f}", "n/r", "n/r", "n/r", "n/r"], True))
-            out.append(r"\midrule" + "\n")
-        for index, peer in enumerate(peers, start):
-            cost = f"{Decimal(peer['Cost_Per_Page']) * 100:.2f}" if peer["Cost_Per_Page"] else "n/r"
-            out.append(row([index, peer["Provider"], peer["Category"], peer["Overall"], peer["Short"], peer["Medium"], peer["Long"], cost]))
-        out.append(r"\bottomrule\end{tabularx}\endgroup" + "\n\n")
-        if part == 1:
-            out.append(r"{\small \textbf{Local rows:} recorded complete-cohort evaluations, not fresh inference. Incremental repair uses stored outputs and verifier readings; its split breakdown is not reported in the source summary. n/r = not reported; no local cost claim. Published ranks continue on the next page.}" + "\n\n")
-        else:
-            out.append(r"{\small \textbf{Metric:} Overall, Short, Medium and Long are mean document unified value F1 (\%). Overall weights every document equally: 252 short, 98 medium and 20 long; it is not the mean of the three split columns. OSS = open-source/self-hosted systems. Cost is the published dollar-per-page value converted to cents; n/r = not reported.}" + "\n\n")
-        out.append(f"{{\\footnotesize\\color{{ink!75}}Source: \\href{{{eb_url}}}{{ExtractBench leaderboard.csv}}, revision \\code{{{provenance['extractbench']['revision'][:7]}}}.\\par Full CSV with all metrics: \\code{{docs/results/extractbench-leaderboard.csv}}.}}\n")
+        md.append(markdown(title, table))
+        print(f"Rendered {title}: {len(rows)} published systems + DocQuorum (rank {rank(ours, scores)}).")
+    (HERE / "TABLES.md").write_text("\n".join(md))
     (HERE.parent / "results-tables.tex").write_text("".join(out))
-    print("Rendered 15 UNIKIE systems + 3 local variants; 47 historical ExtractBench systems + 2 local variants.")
+    print(f"Rendered ExtractBench: {len(eb_rows)} published systems + DocQuorum (rank {rank(ours['Overall'], eb_scores)}); "
+          f"UNIKIE: {len(u_rows)} published systems + DocQuorum (rank {rank(unikie['score'], u_scores)}).")
 
 
 if __name__ == "__main__":

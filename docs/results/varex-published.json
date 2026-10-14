@@ -1,0 +1,230 @@
+{
+ "benchmark": "VAREX-Bench, image (V) modality",
+ "metric": "exact match (%), normalized, micro over 21,084 fields of 1,777 forms",
+ "source": "https://udibarzi.github.io/varex-bench/ (index.html, github.com/udibarzi/varex-bench)",
+ "source_revision": "3cce9c18530748cfc843f38c02e2f43e0694d167",
+ "source_sha256": "cd1b554885c2f1522d7c8f58fff56f5f7b120f2382ceab9bf115081dd71154fc",
+ "note": "All published systems were run zero-shot by the benchmark authors with the official prompt.",
+ "systems": [
+  {
+   "system": "Gemini 2.5 Pro",
+   "model": "Gemini 2.5 Pro",
+   "size": "API",
+   "em": 98.0,
+   "anls": 98.5,
+   "flat": 97.3,
+   "nested": 98.2,
+   "table": 97.7,
+   "perfect": 82.8
+  },
+  {
+   "system": "Gemini 2.5 Flash",
+   "model": "Gemini 2.5 Flash",
+   "size": "API",
+   "em": 97.3,
+   "anls": 97.9,
+   "flat": 96.9,
+   "nested": 97.7,
+   "table": 96.5,
+   "perfect": 81.0
+  },
+  {
+   "system": "Qwen3-VL (8B)",
+   "model": "Qwen3-VL",
+   "size": "8B",
+   "em": 96.6,
+   "anls": 97.6,
+   "flat": 96.6,
+   "nested": 97.3,
+   "table": 95.0,
+   "perfect": 78.2
+  },
+  {
+   "system": "Llama 4 Maverick (17B\u00d7128E)",
+   "model": "Llama 4 Maverick",
+   "size": "17B\u00d7128E",
+   "em": 95.6,
+   "anls": 97.1,
+   "flat": 95.1,
+   "nested": 96.1,
+   "table": 94.4,
+   "perfect": 68.7
+  },
+  {
+   "system": "Ministral (14B)",
+   "model": "Ministral",
+   "size": "14B",
+   "em": 94.8,
+   "anls": 96.5,
+   "flat": 94.8,
+   "nested": 95.1,
+   "table": 94.0,
+   "perfect": 66.0
+  },
+  {
+   "system": "GPT-4o",
+   "model": "GPT-4o",
+   "size": "API",
+   "em": 94.8,
+   "anls": 97.1,
+   "flat": 95.1,
+   "nested": 95.3,
+   "table": 93.5,
+   "perfect": 64.3
+  },
+  {
+   "system": "Llama 4 Scout (17B\u00d716E)",
+   "model": "Llama 4 Scout",
+   "size": "17B\u00d716E",
+   "em": 94.3,
+   "anls": 95.8,
+   "flat": 95.2,
+   "nested": 94.3,
+   "table": 94.1,
+   "perfect": 63.4
+  },
+  {
+   "system": "granite-vision-4.1-4b (4B)",
+   "model": "granite-vision-4.1-4b",
+   "size": "4B",
+   "em": 94.2,
+   "anls": 96.4,
+   "flat": 95.2,
+   "nested": 94.9,
+   "table": 92.3,
+   "perfect": 65.2
+  },
+  {
+   "system": "NuExtract 2.0 (2B)",
+   "model": "NuExtract 2.0",
+   "size": "2B",
+   "em": 90.8,
+   "anls": 92.1,
+   "flat": 93.1,
+   "nested": 91.9,
+   "table": 87.3,
+   "perfect": 52.7
+  },
+  {
+   "system": "granite-4.0-3b-vision (3B)",
+   "model": "granite-4.0-3b-vision",
+   "size": "3B",
+   "em": 85.5,
+   "anls": 89.1,
+   "flat": 91.5,
+   "nested": 85.2,
+   "table": 84.0,
+   "perfect": 41.1
+  },
+  {
+   "system": "InternVL3.5 (2B)",
+   "model": "InternVL3.5",
+   "size": "2B",
+   "em": 85.6,
+   "anls": 89.1,
+   "flat": 89.6,
+   "nested": 86.1,
+   "table": 82.7,
+   "perfect": 42.4
+  },
+  {
+   "system": "Qwen 2.5-VL (3B)",
+   "model": "Qwen 2.5-VL",
+   "size": "3B",
+   "em": 82.5,
+   "anls": 85.4,
+   "flat": 79.9,
+   "nested": 83.1,
+   "table": 81.9,
+   "perfect": 43.7
+  },
+  {
+   "system": "Gemma 3n (E2B)",
+   "model": "Gemma 3n",
+   "size": "E2B",
+   "em": 71.0,
+   "anls": 78.1,
+   "flat": 76.7,
+   "nested": 71.0,
+   "table": 68.8,
+   "perfect": 19.0
+  },
+  {
+   "system": "MiniCPM-V4 (4B)",
+   "model": "MiniCPM-V4",
+   "size": "4B",
+   "em": 67.9,
+   "anls": 69.8,
+   "flat": 84.8,
+   "nested": 66.2,
+   "table": 65.5,
+   "perfect": 23.6
+  },
+  {
+   "system": "Gemma 3 (4B)",
+   "model": "Gemma 3",
+   "size": "4B",
+   "em": 65.3,
+   "anls": 75.0,
+   "flat": 71.7,
+   "nested": 65.0,
+   "table": 63.6,
+   "perfect": 13.7
+  },
+  {
+   "system": "h2oVL Miss. (2B)",
+   "model": "h2oVL Miss.",
+   "size": "2B",
+   "em": 61.3,
+   "anls": 64.9,
+   "flat": 67.2,
+   "nested": 61.3,
+   "table": 58.9,
+   "perfect": 11.6
+  },
+  {
+   "system": "Qwen3-VL (2B)",
+   "model": "Qwen3-VL",
+   "size": "2B",
+   "em": 34.2,
+   "anls": 34.7,
+   "flat": 93.3,
+   "nested": 26.8,
+   "table": 29.0,
+   "perfect": 29.3
+  },
+  {
+   "system": "h2oVL Miss. (800M)",
+   "model": "h2oVL Miss.",
+   "size": "800M",
+   "em": 34.2,
+   "anls": 36.1,
+   "flat": 35.8,
+   "nested": 33.2,
+   "table": 36.0,
+   "perfect": 5.9
+  },
+  {
+   "system": "InternVL3.5 (1B)",
+   "model": "InternVL3.5",
+   "size": "1B",
+   "em": 28.2,
+   "anls": 29.8,
+   "flat": 79.0,
+   "nested": 22.4,
+   "table": 22.2,
+   "perfect": 11.2
+  },
+  {
+   "system": "Qwen2-VL (2B)",
+   "model": "Qwen2-VL",
+   "size": "2B",
+   "em": 9.7,
+   "anls": 10.0,
+   "flat": 16.4,
+   "nested": 9.0,
+   "table": 8.9,
+   "perfect": 4.3
+  }
+ ]
+}

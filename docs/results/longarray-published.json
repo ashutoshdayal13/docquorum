@@ -1,0 +1,74 @@
+{
+ "benchmark": "LongArray-Extract (Extend AI), all 45 documents",
+ "metric": "Macro mean document accuracy; failures count as zero",
+ "source": "https://www.extend.ai/resources/long-array-extraction-benchmark",
+ "checked_utc": "2026-10-02",
+ "systems": [
+  {
+   "system": "Extend MAX",
+   "score": 99.2,
+   "completed": 45,
+   "expected": 45
+  },
+  {
+   "system": "Reducto Deep Extract",
+   "score": 97.4,
+   "completed": 45,
+   "expected": 45
+  },
+  {
+   "system": "Claude Opus 4.7",
+   "score": 83.1,
+   "completed": 45,
+   "expected": 45
+  },
+  {
+   "system": "Reducto Standard",
+   "score": 80.9,
+   "completed": 45,
+   "expected": 45
+  },
+  {
+   "system": "Pulse Effort",
+   "score": 68.8,
+   "completed": 45,
+   "expected": 45
+  },
+  {
+   "system": "Pulse Auto",
+   "score": 64.5,
+   "completed": 45,
+   "expected": 45
+  },
+  {
+   "system": "Gemini 3.1 Pro",
+   "score": 47.3,
+   "completed": 45,
+   "expected": 45
+  },
+  {
+   "system": "LlamaParse Standard",
+   "score": 47.2,
+   "completed": 26,
+   "expected": 45
+  },
+  {
+   "system": "LlamaParse Agentic",
+   "score": 34.7,
+   "completed": 35,
+   "expected": 45
+  },
+  {
+   "system": "GPT-5.5",
+   "score": 31.6,
+   "completed": 45,
+   "expected": 45
+  },
+  {
+   "system": "Gemini 3.5 Flash",
+   "score": 31.1,
+   "completed": 45,
+   "expected": 45
+  }
+ ]
+}
