@@ -61,7 +61,12 @@ Copy out, VERBATIM, only the material in these opening pages that a reader of a 
 would need to fill those fields but would not find on that page:
 - code legends and abbreviation keys (for example "1=mild; 2=moderate; 3=severe");
 - reference tables giving attributes of the people, accounts or items the entries belong to
-  (one line per identifier, with its attributes), when the entries' own rows do not repeat them.
+  (one line per identifier, with its attributes), when the entries' own rows do not repeat them;
+- facts printed once that the entries depend on: the period or dates the document covers
+  (the year of dates printed without one), and which account, currency or section the
+  following pages belong to.
+Copy whole lines exactly as printed (a table with its header line). Do not compute, shorten,
+rephrase or label anything, and do not fill the fields yourself.
 Do NOT copy entries of "{array_name}" themselves, narrative text, or anything else.
 If these pages contain no such material, reply with exactly: NONE
 
