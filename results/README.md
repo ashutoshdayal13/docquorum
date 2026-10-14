@@ -141,3 +141,42 @@ respect to output conventions.
 
 Files: `unikie/readings/<reading>/<scenario>.json` (every reading),
 `unikie/summary.json` (per-scenario scores). Re-score: `benchmarks/unikie/run.sh score`.
+
+## UNIKIE-BENCH open category (1,661 documents, 8 scenarios)
+
+The benchmark's second track: receipts, forms, invoices and contracts in Chinese and English, each
+with its own template of unusual fields. Same protocol, prompt, 1,605,632-pixel cap and evaluator as
+the constrained track (`benchmarks/unikie/`, with the open-category `DQ_UNIKIE_*` settings).
+
+| macro F1, all 1,661 documents | score | vs. the paper's open-category table |
+|---|---:|---|
+| **DocQuorum** (3 readings, Qwen3.8-27B) | **71.07** | **2nd of 16** |
+| Gemini-3-Pro (best published) | 81.65 | 1st |
+| Qwen3-VL-Plus | 70.61 | 3rd |
+| Qwen3.8-27B, the benchmark's own one-shot protocol | 70.91 | |
+| Qwen3-VL-8B (best published open model) | 67.36 | |
+
+* Configuration: the constrained track's frozen held-out three readings (the benchmark-protocol
+  one-shot reading, and the reader agent on the image and on the MinerU parse), quorum by
+  recall-weighted agreement. Single readings: one-shot 70.91, image
+  66.88, parse 60.46.
+* All 207 English receipts are 278x299-pixel images; at that size the model invented values (one-shot
+  69.54). Enlarging small images before the image and parse readings (docquorum/tools/images.py)
+  gives 81.03 on that scenario. The rule was found on this scenario, so that gain is a development
+  measurement; the one-shot reading keeps the protocol's encoding.
+* The reader agent's image and parse readings are weaker than the one-shot reading on this track's
+  long nested templates (unlike the constrained track, where all three are within one point).
+
+| scenario | Gemini-3-Pro | Qwen3-VL-Plus | Qwen3-VL-8B | 27B one-shot | DocQuorum | rank |
+|---|---:|---:|---:|---:|---:|:---:|
+| Receipt (zh) | 78.50 | 71.14 | 68.93 | 69.60 | **68.07** | 5 |
+| Form (zh) | 79.17 | 69.87 | 64.70 | 68.82 | **67.74** | 4 |
+| Invoice (zh) | 78.63 | 69.59 | 63.38 | 70.16 | **68.85** | 3 |
+| Contract (zh) | 75.96 | 70.95 | 65.59 | 71.58 | **72.41** | 2 |
+| Receipt (en) | 93.57 | 68.27 | 71.40 | 69.54 | **81.03** | 2 |
+| Form (en) | 80.41 | 66.82 | 61.46 | 66.30 | **67.25** | 2 |
+| Invoice (en) | 87.06 | 73.45 | 67.34 | 72.99 | **65.26** | 5 |
+| Contract (en) | 79.90 | 74.81 | 76.08 | 78.29 | **77.97** | 2 |
+| *macro average* | 81.65 | 70.61 | 67.36 | 70.91 | **71.07** | 2 |
+
+Readings: `results/unikie_open/readings/{oneshot,image,parse}/<scenario>.json`.

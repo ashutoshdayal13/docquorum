@@ -1,0 +1,63 @@
+{
+  "benchmark": "UNIKIE-BENCH, open category",
+  "documents": 1661,
+  "metric": "macro F1 over 8 scenarios (benchmark kie_evaluator)",
+  "score": 71.07268619552556,
+  "per_scenario": {
+    "receipt-cn": 68.07131277630822,
+    "Form-cn": 67.74070783515394,
+    "invoice-cn": 68.85245899237795,
+    "Contract-cn": 72.4082140454491,
+    "receipt-en": 81.02887551374221,
+    "Form-en": 67.2494956106928,
+    "invoice-en": 65.25809714947923,
+    "Contract-en": 77.97232764100103
+  },
+  "readings": {
+    "oneshot": 1661,
+    "image": 1661,
+    "parse": 1661
+  },
+  "single_readings": {
+    "oneshot": {
+      "score": 70.90945645016365,
+      "per_scenario": {
+        "receipt-cn": 69.60016071143252,
+        "Form-cn": 68.82211231930465,
+        "invoice-cn": 70.15834345914101,
+        "Contract-cn": 71.58313640801315,
+        "receipt-en": 69.53623463107584,
+        "Form-en": 66.29893715423142,
+        "invoice-en": 72.99031322858465,
+        "Contract-en": 78.28641368952597
+      }
+    },
+    "image": {
+      "score": 66.87635474083345,
+      "per_scenario": {
+        "receipt-cn": 66.51639341536215,
+        "Form-cn": 63.56470885747147,
+        "invoice-cn": 67.29493889448693,
+        "Contract-cn": 68.66007755069184,
+        "receipt-en": 72.44192048065216,
+        "Form-en": 64.68280804418157,
+        "invoice-en": 55.21722511014977,
+        "Contract-en": 76.63276557367166
+      }
+    },
+    "parse": {
+      "score": 60.46252534531088,
+      "per_scenario": {
+        "receipt-cn": 56.80230166181575,
+        "Form-cn": 55.347831602353345,
+        "invoice-cn": 60.94903337049244,
+        "Contract-cn": 54.093238331685235,
+        "receipt-en": 78.12562711657122,
+        "Form-en": 59.28119529969547,
+        "invoice-en": 56.58412696975641,
+        "Contract-en": 62.51684841011718
+      }
+    }
+  },
+  "configuration": "DocQuorum, three readings from Qwen3.8-27B (the constrained track's frozen held-out configuration): the benchmark-protocol one-shot reading, and the reader agent on the image and on the MinerU parse; quorum by recall-weighted agreement (beta 2). Small images (all 207 English receipts) are enlarged before the image and parse readings and the parse; the rule was found on this track's English receipts."
+}

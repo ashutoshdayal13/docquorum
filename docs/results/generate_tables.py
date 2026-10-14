@@ -116,10 +116,10 @@ def main():
     for key, title, about, rows_of in EXTRA:
         if not (HERE / f"docquorum-{key}.json").exists():
             continue                                  # not run yet
-        ours = load(f"docquorum-{key}.json")["score"]
+        score = load(f"docquorum-{key}.json")["score"]
         rows = sorted(rows_of(), key=lambda x: -x[1])
-        at = sum(displayed(v) >= displayed(ours) for _, v in rows)
-        table = rows[:at] + [("DocQuorum (ours)", ours)] + rows[at:]
+        at = sum(displayed(v) >= displayed(score) for _, v in rows)
+        table = rows[:at] + [("DocQuorum (ours)", score)] + rows[at:]
         scores = [v for _, v in table]
         out.append(r"\chapterpage{RESULTS}{" + tex(title) + "}\n" + about + "\n\n")
         out.append(r"\begingroup\small\setlength{\tabcolsep}{4pt}" + "\n")
@@ -129,7 +129,7 @@ def main():
             out.append(row([rank(value, scores), name, f"{displayed(value)}"], name == "DocQuorum (ours)"))
         out.append(r"\bottomrule\end{tabularx}\endgroup" + "\n")
         md.append(markdown(title, table))
-        print(f"Rendered {title}: {len(rows)} published systems + DocQuorum (rank {rank(ours, scores)}).")
+        print(f"Rendered {title}: {len(rows)} published systems + DocQuorum (rank {rank(score, scores)}).")
     (HERE / "TABLES.md").write_text("\n".join(md))
     (HERE.parent / "results-tables.tex").write_text("".join(out))
     print(f"Rendered ExtractBench: {len(eb_rows)} published systems + DocQuorum (rank {rank(ours['Overall'], eb_scores)}); "
