@@ -1,0 +1,39 @@
+{
+ "file_number": "DPM-2021-33308-001",
+ "date_of_application": "11/15/2023",
+ "applicant_signature_city_state": "West Ryanfort, OH",
+ "preparer_date": "11/15/2023",
+ "applicant": {
+  "last_name": "Morgan",
+  "first_name": "Jeffrey",
+  "middle_name": "P",
+  "country_of_citizenship": "United States of America",
+  "place_of_birth": "Cleveland, Ohio",
+  "date_of_birth": "02/27/1965"
+ },
+ "us_destination": {
+  "address": "97928 King Prairie Apt. 823, West Ryanfort, OH 45110",
+  "date_of_arrival": "11/16/2023",
+  "port_of_arrival": "Cleveland Hopkins International Airport, Cleveland, OH",
+  "manner_of_arrival": "Delta Air Lines Flight DL1234"
+ },
+ "permanent_address": {
+  "address": "97928 King Prairie Apt. 823, West Ryanfort, OH 45110"
+ },
+ "previous_visa": {
+  "place_issued": "Washington, D.C.",
+  "date_issued": "01/10/2020",
+  "visa_number": "V34567890",
+  "visa_classification": "B1/B2",
+  "valid_to": "01/10/2025"
+ },
+ "passport": {
+  "place_issued": "Cleveland, OH",
+  "date_issued": "02/27/2015",
+  "passport_number": "P12345678",
+  "valid_to": "02/27/2025"
+ },
+ "reason_for_not_possessing_passport_visa": {
+  "reason": "Lost passport and visa during travel."
+ }
+}

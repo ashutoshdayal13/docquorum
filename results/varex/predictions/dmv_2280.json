@@ -1,0 +1,16 @@
+{
+ "shipper_name": "Harris, Livingston and Jacobson",
+ "motor_carrier_name": "Rivas Ltd",
+ "cargo_description": "Medical equipment and supplies for hospital",
+ "certification_place_date": "Williamburgh, NY 03/15/2023",
+ "shipper_address_info": {
+  "address": "057 Owens Underpass Apt. 065",
+  "city": "Williamburgh",
+  "state": "NY",
+  "telephone": "(537) 491-8567"
+ },
+ "certifying_agent_info": {
+  "name": "Joseph Barrientos",
+  "title": "Cytogeneticist"
+ }
+}

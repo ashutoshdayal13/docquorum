@@ -1,0 +1,57 @@
+{
+ "solicitation_number": "REF-2022-645",
+ "date": "06/15/2022",
+ "issue_date": "05/30/2022",
+ "opening_date": "06/10/2022",
+ "contract_period": "07/01/2022 to 06/30/2023",
+ "supplies_service": "Occupational hygiene equipment and safety training services",
+ "total_dollar_value": 265516.49,
+ "contract_type": "Fixed Price (Firm)",
+ "number_of_offers_solicited": "5",
+ "acquisition_coding": "S - Small",
+ "proposed_awards": [
+  {
+   "award_description": "Equip",
+   "price_discount_analysis": "Market rate comparison"
+  },
+  {
+   "award_description": "Train",
+   "price_discount_analysis": "Competitive bid analysis"
+  },
+  {
+   "award_description": "Servi",
+   "price_discount_analysis": "Negotiated discount"
+  },
+  {
+   "award_description": "Misce",
+   "price_discount_analysis": "Bulk purchase discount"
+  }
+ ],
+ "contractor": {
+  "name": "Hayes-Fields"
+ },
+ "prepared_by": {
+  "name": "Gallardo, Odika G.",
+  "date": "06/15/2022"
+ },
+ "recommended_by": {
+  "name": "Stapor, Angelika W., Senior Contracting Officer"
+ },
+ "approved_by": {
+  "name": "Stapor, Angelika W., Contracting Officer"
+ },
+ "concurred_by": {
+  "name": "Kelley, Shawn U.",
+  "date": "06/15/2022"
+ },
+ "additional_concurred": [
+  {
+   "name": "Gallardo, Odika G.",
+   "date": "06/15/2022"
+  },
+  {
+   "name": "Stapor, Angelika W.",
+   "date": "06/15/2022"
+  }
+ ]
+}

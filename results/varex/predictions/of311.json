@@ -1,0 +1,21 @@
+{
+ "designated_agent_title": "Director of Payroll Services",
+ "employee_identification": {
+  "employee_name": "Perkins, Frederick S.",
+  "employee_address": "825 Maldonado Lodge, East Melissa, NY 59692",
+  "social_security_number": "256-04-7066",
+  "agency_employment_code": "Vaughn-2022-EXEC-7582"
+ },
+ "case_information": {
+  "case_number": "CTL-2021-72887",
+  "date_of_order": "04/10/2023"
+ },
+ "authorized_payee_identification": {
+  "payee_name": "Vaughn PLC Collections Department",
+  "payee_address": "1500 Market Street, Philadelphia, PA 19102"
+ },
+ "electronic_funds_transfer": {
+  "eft_account_number": "4614-4942-4801",
+  "eft_routing_number": "036001801"
+ }
+}

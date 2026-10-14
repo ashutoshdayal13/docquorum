@@ -1,0 +1,13 @@
+{
+ "provider_name": "Eric M. Ludwisiak",
+ "provider_number": "NHAP-2023-45678",
+ "telephone_number": "(315) 243-6526",
+ "provider_email": "eric.ludwisiak@aol.com",
+ "signature_date": "05/15/2023",
+ "address": {
+  "street": "949 Steve Lock",
+  "city": "New Jenniferstad",
+  "state": "MO",
+  "zip_code": "02815"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "annuitant_name": "Hilda W. Fowler",
+ "social_security_number": "764-47-3451",
+ "date_of_birth": "03/06/1982",
+ "retirement_claim_number": "CSA FERS-2023-123",
+ "service_termination_date": "06/15/2022",
+ "debt_amount": 561112.11,
+ "claim_accrued_date": "05/20/2022",
+ "installment_amount": "$4676.00",
+ "appropriation_fund": "Title 12, Symbol 3456",
+ "disbursing_officer": "Disbursing Officer 7890",
+ "reason_for_debt": "Overpayment of retirement benefits due to administrative error",
+ "certification_date": "09/01/2022",
+ "survivor": {
+  "name": "Kathryn E. Guerra",
+  "social_security_number": "581-14-3445",
+  "date_of_birth": "07/09/1998",
+  "claim_number": "CSF FERS-2023-678"
+ },
+ "payment_address": {
+  "address": "558 Stephanie Common, Jenniferton, CA 82518"
+ },
+ "certifying_official": {
+  "title": "Director of Financial Services, Kennedy LLC",
+  "phone": "(927) 618-1028",
+  "fax": "(672) 818-8973"
+ }
+}

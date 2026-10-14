@@ -1,0 +1,29 @@
+{
+ "invitation_for_bids_no": "DPM-2023-21947",
+ "bids_opening_date": "12/15/2023",
+ "bids_opening_time": "10:00 AM Central",
+ "bid_acceptance_days": "60",
+ "total_amount": 311242.89,
+ "issuing_agency": {
+  "agency_name": "Department of the Interior",
+  "bureau_service_office": "Bureau of Land Management",
+  "street_address": "1849 C Street NW",
+  "city": "Washington",
+  "state": "DC",
+  "zip_code": "20240",
+  "area_code": "(202)",
+  "phone_number": "507-4486",
+  "extension": "2034",
+  "email": "blm@doi.gov"
+ },
+ "bidder": {
+  "name": "Valencia, Sandra W.",
+  "id_number": "PE-2015-TX-65039",
+  "tin_ssn": "364-57-3208",
+  "street": "2614 Stacy Point Apt. 406",
+  "city": "North Derrick",
+  "state": "TX",
+  "zip_code": "02326",
+  "phone_area_code": "(001)"
+ }
+}

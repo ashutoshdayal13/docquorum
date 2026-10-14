@@ -1,0 +1,20 @@
+{
+ "full_name": "Abigail X. Turner",
+ "mailing_address": {
+  "street": "9257 Mark Key",
+  "city": "Bethfort",
+  "zip_code": "06368",
+  "country": "United States"
+ },
+ "physical_address": {
+  "street": "9257 Mark Key",
+  "city": "Bethfort",
+  "zip_code": "06368",
+  "country": "United States"
+ },
+ "previous_name": {
+  "family_name": "Turner",
+  "given_name": "Abigail",
+  "middle_name": "X."
+ }
+}

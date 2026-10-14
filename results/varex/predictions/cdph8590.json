@@ -1,0 +1,37 @@
+{
+ "license_number": "BWDL-2023-1",
+ "other_bottled_water_products": "Alkaline Water",
+ "website": "www.lynchboothwater.com",
+ "firm_information": {
+  "firm_name": "Lynch-Booth Water Distributors",
+  "dba_name": "Lynch-Booth H2O"
+ },
+ "facility_address": {
+  "facility_address": "0877 Cynthia Trail",
+  "facility_address_continued": "Suite 490",
+  "facility_city": "Juliaborough",
+  "facility_state": "MA",
+  "facility_zip_code": "68295"
+ },
+ "ownership_information": {
+  "owner_corporate_name": "Lynch-Booth Inc.",
+  "state_of_incorporation": "MA",
+  "owners_officers_names": "Inaya L. Colas, CEO"
+ },
+ "bottler_information": {
+  "bottlers_name": "Juliaborough Bottling Co.",
+  "bottling_plant_license_number": "BPL-2022-MA-15401",
+  "bottler_address": "1010 Spring Street",
+  "bottler_state": "MA",
+  "bottler_zip_code": "68295"
+ },
+ "product_information": {
+  "product_brand_names": "Lynch Pure"
+ },
+ "mailing_address": {
+  "mailing_address": "0877 Cynthia Trail",
+  "mailing_address_continued": "Suite 490",
+  "mailing_city": "Juliaborough",
+  "mailing_state": "MA"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "vin_or_hin": "G1ZT54826F123456",
+ "make": "Toyota",
+ "license_plate_number": "RIX-4829",
+ "owner_name": "Sampaio, Miranda N.",
+ "c_o": "Buchanan-Foley, 5686 Vincent Expressway Suite 339, North Stephenstad, CT 22651",
+ "date_signed": "10/15/2023",
+ "current_mailing_address": {
+  "street": "5686 Vincent Expressway Suite 339",
+  "apartment_number": "339",
+  "city_or_town": "North Stephenstad",
+  "state": "CT"
+ }
+}

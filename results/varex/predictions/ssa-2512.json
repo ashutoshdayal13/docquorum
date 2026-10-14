@@ -1,0 +1,24 @@
+{
+ "wage_earner_name": "Daniel Williams",
+ "social_security_number": "238-94-6556",
+ "name_used_in_service": "Daniel A. Williams",
+ "service_number": "123456789",
+ "basis_for_retirement": "Other",
+ "type_of_benefit": "Other",
+ "active_duty_service": [
+  {
+   "branch": "United States Army",
+   "start_date": "6/15/195",
+   "end_date": "2/31/195",
+   "rank": "Sergeant First"
+  }
+ ],
+ "reserve_service": [
+  {
+   "branch": "United States Army Reserve",
+   "start_date": "1/01/195",
+   "end_date": "6/30/196",
+   "rank": "Staff Sergeant"
+  }
+ ]
+}

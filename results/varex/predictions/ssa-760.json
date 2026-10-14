@@ -1,0 +1,21 @@
+{
+ "worker_name": "Joao I. Dutta",
+ "worker_social_security_number": "268-22-2319",
+ "stepparent_marriage_date": "06/15/1990",
+ "stepparent_marriage_location": "Haroldside, TN",
+ "adopting_parent_adoption_date": "07/20/1991",
+ "adopting_parent_adoption_location": "Nashville, TN",
+ "applicant": {
+  "name": "Luzia P. Dandolo",
+  "date_of_birth": "11/26/1968",
+  "social_security_number": "211-72-3609",
+  "relationship_to_worker": "Spouse"
+ },
+ "other_parents": [
+  {
+   "name": "Maria D. Schultz",
+   "address": "881 Nicole Ridge Apt. 263, Haroldside, TN 06036",
+   "relationship_to_worker": "Mother"
+  }
+ ]
+}

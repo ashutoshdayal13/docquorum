@@ -1,0 +1,21 @@
+{
+ "type_of_utility_service": "Electricity",
+ "contract_number": "GSA-1533-2023",
+ "premises_to_be_served": "172 White Walks, Johnmouth, NJ",
+ "lease_number": "LE-2023-001",
+ "lessor": "United States Government",
+ "description_of_services": "Providing electricity services to government premises",
+ "rate_schedule": "Standard Commercial Rate Schedule",
+ "special_terms_and_conditions": "Compliance with all safety regulations",
+ "contractor_execution_date": "10/15/2023",
+ "government_execution_date": "10/15/2023",
+ "accounting_and_appropriation_data": "Account Number: 3237-6652-4051",
+ "invoice_payment_address": "172 White Walks, Johnmouth, NJ 34462",
+ "contractor": {
+  "address": "172 White Walks, Johnmouth, NJ 34462",
+  "signature_title": "Civil engineer, contracting"
+ },
+ "government_signatory": {
+  "signature_title": "Director of Facilities Management"
+ }
+}

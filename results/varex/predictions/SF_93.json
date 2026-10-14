@@ -1,0 +1,41 @@
+{
+ "date_of_exam": "03/15/2023",
+ "patient_name": "Smith, Pauline",
+ "identification_number": "347-52-0265",
+ "grade": "N/A",
+ "examining_facility": "General Hospital, West Laurabury, ID",
+ "purpose_of_examination": "Routine physical examination for employment",
+ "present_health": "Generally in good health with minor allergies",
+ "allergies": "Penicillin, dust mites",
+ "height": "5'6\"",
+ "weight": "145 lbs",
+ "patient_occupation": "Ambulance person",
+ "home_address": {
+  "street": "3132 Wesley Loaf Suite 732",
+  "city": "West Laurabury",
+  "state": "ID",
+  "zip_code": "89199"
+ },
+ "current_medications": [
+  {
+   "medication_name": "Lisinopril",
+   "frequency": "Regular"
+  },
+  {
+   "medication_name": "Ibuprofen",
+   "frequency": "Intermittent"
+  },
+  {
+   "medication_name": "Multivitamin",
+   "frequency": "Regular"
+  },
+  {
+   "medication_name": "Antihistamine",
+   "frequency": "Intermittent"
+  },
+  {
+   "medication_name": "Aspirin",
+   "frequency": "Regular"
+  }
+ ]
+}

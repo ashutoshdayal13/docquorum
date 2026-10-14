@@ -1,0 +1,29 @@
+{
+ "work_description": "Removal and encapsulation of lead-based paint from window frames and doors",
+ "start_date": "05/15/2023",
+ "end_date": "06/30/2023",
+ "entry_restrictions": "Authorized personnel only. Residents must vacate during abatement.",
+ "structure_address": {
+  "address": "1234 Oak Avenue",
+  "city": "Chrisberg",
+  "county": "DE",
+  "zip_code": "56096"
+ },
+ "property_owner": {
+  "name": "Krystian Reed",
+  "phone": "(350) 658-1109",
+  "address": "357 Clark Manors Suite 103",
+  "city": "Chrisberg",
+  "state": "DE",
+  "zip_code": "56096"
+ },
+ "abatement_supervisor": {
+  "name": "Krystian Reed, May Ltd",
+  "phone": "(923) 360-1054",
+  "certification": "MD-2025-DE-94203",
+  "address": "357 Clark Manors Suite 103",
+  "city": "Chrisberg",
+  "state": "DE",
+  "zip_code": "56096"
+ }
+}

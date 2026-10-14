@@ -1,0 +1,26 @@
+{
+ "issuing_official_name": "Ramon X. Bowers",
+ "certificate_control_number": "CERT-2024-56789",
+ "date_issued": "03/15/2024",
+ "agency_name": "U.S. Department of Health",
+ "agency_organization_code": "DOH-2024-OPM-5678",
+ "bureau_or_field_office": "Bureau of Human Resources",
+ "agency_request_number": "REQ-2024-56789",
+ "date_of_request": "04/01/2024",
+ "delegated_examining_office": "U.S. Office of Personnel Management",
+ "series": "0080",
+ "position_title": "Medical Officer",
+ "grade": "GS-13",
+ "duty_location": "Washington, DC",
+ "temporary_nte": "12 months",
+ "full_performance_level": "GS-13",
+ "date_sf_52_initiated": "03/20/2024",
+ "other_conditions_of_employment": "Medical exam required",
+ "date_position_needs_to_be_filled": "05/15/2024",
+ "work_schedule": "Full-time",
+ "remarks": "Selective factor: Board certification in internal medicine required.",
+ "contact_name": "Cynthia K. Rendon",
+ "address_for_certificate": {
+  "street": "86154 Ethan Highway"
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "license_number": "MD-2010-NC-68003",
+ "business_license_number": "CTL-2023-55145",
+ "business_days_hours": "Monday to Friday, 9:00 AM to 5:00 PM",
+ "seller_permit_number": "SP-2023-76543",
+ "other_products_description": "Specialized home care products and accessories",
+ "firm_information": {
+  "firm_name": "Smith Group",
+  "dba_name": "HomeCare Solutions",
+  "website": "www.homecaresolutions.com",
+  "owner_name": "Nicole K. Dumas",
+  "state_of_incorporation": "North Carolina"
+ },
+ "facility_address": {
+  "facility_address": "15040 Stevenson Ramp",
+  "facility_city": "Stephensonland",
+  "facility_state": "NC",
+  "facility_zip_code": "80106"
+ },
+ "owner_officer_names": [
+  {
+   "name": "Nicole K. Dumas",
+   "title": "Forensic scientist"
+  },
+  {
+   "name": "Jeffery Y. Zepeda",
+   "title": "Equality and diversity officer"
+  }
+ ]
+}

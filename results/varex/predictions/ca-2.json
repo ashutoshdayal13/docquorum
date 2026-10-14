@@ -1,0 +1,29 @@
+{
+ "employee_name": "Castro, Auguste",
+ "employee_first_name": "Auguste",
+ "email_address": "auguste.castro@aol.com",
+ "social_security_number": "800-13-0619",
+ "date_of_birth": "12/30/1958",
+ "gender": "male",
+ "employee_occupation": "Teacher, adult education",
+ "occupation_code": "TEACHER-AE",
+ "date_first_aware_of_disease": "03/15/2023",
+ "date_realized_causation": "04/20/2023",
+ "relationship_to_employment": "Developed due to prolonged exposure to students with respiratory illnesses",
+ "nature_of_disease": "Occupational asthma",
+ "noi_code": "A0012",
+ "type_code": "A0012",
+ "reason_for_delay": "Waiting for medical confirmation of the occupational nature of the disease",
+ "reason_for_delay_statement": "Consulting with multiple specialists to understand the full extent of the condition",
+ "reason_for_delay_medical_reports": "Gathering comprehensive medical reports from various healthcare providers",
+ "home_address": {
+  "home_address": "52732 Debra Summit Apt. 885",
+  "home_city": "Wangport",
+  "home_state": "OH"
+ },
+ "work_location_address": {
+  "work_location_address": "Watson Group Headquarters",
+  "work_location_city": "Wangport",
+  "work_location_state": "OH"
+ }
+}

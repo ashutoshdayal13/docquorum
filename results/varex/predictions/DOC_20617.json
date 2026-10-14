@@ -1,0 +1,22 @@
+{
+ "report_date": "05/15/2023",
+ "fha_case_number": "FHA-2023-001234",
+ "hud_office": "HUD Regional Office - New York",
+ "mortgagor": {
+  "name": "Querini, Michelle B."
+ },
+ "mortgagee": {
+  "name": "Lee, Adams and Mason"
+ },
+ "credit_report_source": {
+  "name": "Experian Credit Reporting",
+  "address": "100 Credit Ave, Experianville, EX 54321",
+  "phone": "(800) 555-1234"
+ },
+ "required_items": {
+  "items": []
+ },
+ "rejection_reasons": {
+  "reasons": []
+ }
+}

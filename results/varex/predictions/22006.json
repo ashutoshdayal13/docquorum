@@ -1,0 +1,33 @@
+{
+ "date_of_request": "05/15/2023",
+ "hud_office_address": "4567 Housing Boulevard, Washington, DC 20410",
+ "correspondence_code": "HUD-IT-2023-001",
+ "telephone": "(240) 979-6862",
+ "total_cost": 179528.38,
+ "accommodation_description": "Request for assistive technology software and hardware to support visual and mobility impairments",
+ "supervisor_name": "Leon M. Gerritsen",
+ "at_program_coordinator": "Wilfrido D. Normand",
+ "employee": {
+  "name": "Valeria Q. Khatri",
+  "job_title": "Clinical psychologist",
+  "series_and_grade": "GS-0180-12"
+ },
+ "accommodation_requests": [
+  {
+   "description": "Screen reading software for visual impairment",
+   "cost": 3094.21
+  },
+  {
+   "description": "Ergonomic keyboard and mouse for mobility impairment",
+   "cost": 21.9
+  },
+  {
+   "description": "Speech recognition software for cognitive learning support",
+   "cost": 173514.27
+  },
+  {
+   "description": "Adjustable desk and chair for mobility support",
+   "cost": 2000
+  }
+ ]
+}

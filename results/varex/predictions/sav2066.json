@@ -1,0 +1,62 @@
+{
+ "customer_name": "Willie D. Davis",
+ "case_number": "CTL-2022-309",
+ "bond_check_details": [
+  {
+   "bond_check_number": "AW-2023-00783-238"
+  },
+  {
+   "bond_check_number": "CH-2023-00849-29"
+  },
+  {
+   "bond_check_number": "AW-2023-00785-230"
+  },
+  {
+   "bond_check_number": "CH-2023-00850-30"
+  }
+ ],
+ "deceased_owner": {
+  "owner_name": "Luana O. Davis",
+  "date_of_death": "08/10/2023",
+  "owner_address": "38402 Mcpherson Burg, Andersonview, NE 67807"
+ },
+ "survivors": [
+  {
+   "survivor_name": "Willie D. Davis",
+   "relationship_to_deceased": "Spouse",
+   "survivor_address": "33656 Brown Mountain Apt. 087, New"
+  },
+  {
+   "survivor_name": "Philippe Alves",
+   "relationship_to_deceased": "Friend",
+   "survivor_address": "950 Rogers Glens Apt. 248, Jaclynborough, WI"
+  },
+  {
+   "survivor_name": "John Doe",
+   "relationship_to_deceased": "Brother-in-law",
+   "survivor_address": "123 Main St, Springfield, IL 62704"
+  }
+ ],
+ "deceased_survivors": [
+  {
+   "deceased_survivor_name": "Jane Smith",
+   "date_of_death_survivor": "05/15/2023",
+   "relationship_to_deceased_survivor": "Daughter of the deceased"
+  },
+  {
+   "deceased_survivor_name": "Robert Brown",
+   "date_of_death_survivor": "06/22/2023",
+   "relationship_to_deceased_survivor": "Son of the deceased"
+  },
+  {
+   "deceased_survivor_name": "Emily Jones",
+   "date_of_death_survivor": "07/30/2023",
+   "relationship_to_deceased_survivor": "Granddaughter of the deceased"
+  },
+  {
+   "deceased_survivor_name": "Michael Green",
+   "date_of_death_survivor": "09/05/2023",
+   "relationship_to_deceased_survivor": "Nephew of the deceased"
+  }
+ ]
+}

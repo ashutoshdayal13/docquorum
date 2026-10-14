@@ -1,0 +1,11 @@
+{
+ "claimant_signature_date": "07/15/2023",
+ "medical_source_name": "Drs. Park & Associates",
+ "claimant": {
+  "name": "Pierz, Agustin",
+  "ssn": "720-65-1700",
+  "phone_number": "(330) 970-7682",
+  "address": "5482 Roberts Mountain, Margaretport, PA 79839",
+  "date_of_birth": "05/18/1970"
+ }
+}

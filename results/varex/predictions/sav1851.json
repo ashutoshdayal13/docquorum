@@ -1,0 +1,28 @@
+{
+ "total_face_amount": 670464.11,
+ "bonds": [
+  {
+   "issue_date": "02/15/2000",
+   "face_amount": null,
+   "bond_number": "HH548971528365"
+  },
+  {
+   "issue_date": "05/22/1998",
+   "face_amount": null,
+   "bond_number": "EE789456312874"
+  },
+  {
+   "issue_date": "11/30/2005",
+   "face_amount": null,
+   "bond_number": "IH123456789123"
+  }
+ ],
+ "trust_information": {
+  "trustee_name": "Francesco G. Yohannan",
+  "trust_establishment_date": "01/15/2010"
+ },
+ "delivery_instructions": {
+  "delivery_method": "Mail to Trustee's Address",
+  "delivery_address": "21662 Jones Rest Suite 304, South Michael, MN"
+ }
+}

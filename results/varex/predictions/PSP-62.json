@@ -1,0 +1,15 @@
+{
+ "company_name": "Davis LLC",
+ "company_license_number": "PS-2023-0987",
+ "applicant_date_of_birth": "06/09/2001",
+ "applicant_email_address": "deborah.gardner@outlook.com",
+ "owner_signatures": [
+  "Deborah X. Gardner, 05/15/2023",
+  "Carlota G. Sampath, 05/15/2023"
+ ],
+ "authorized_individual_signature": {
+  "name": "Deborah X. Gardner",
+  "date": "05/15/2023"
+ },
+ "applicant_name": "Deborah X. Gardner"
+}

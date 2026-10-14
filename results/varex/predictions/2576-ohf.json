@@ -1,0 +1,27 @@
+{
+ "facility_type": "Nursing Home",
+ "agency_name": "Department of Health and Human Services",
+ "services_provided": "Skilled nursing care and rehabilitation",
+ "beds_to_be_constructed": 120,
+ "beds_to_be_modernized": 80,
+ "service_area_name": "Northern California",
+ "state_name": "California",
+ "certification_duration": 24,
+ "other_federal_assistance_amount": 561112.11,
+ "date_issued": "05/15/2023",
+ "termination_date": "05/15/2025",
+ "signatory_title": "Director of Licensing and Certification",
+ "facility_address": {
+  "street": "558 Stephanie Common"
+ },
+ "sponsor_name_and_address": {
+  "name": "Miller PLC"
+ },
+ "project_name_and_address": {
+  "name": "Northern California Nursing Home Project",
+  "address": "558 Stephanie Common, Jenniferton, CA 82518"
+ },
+ "agency_address_and_phone": {
+  "address": "297 Kimberly Viaduct Suite 333, Port Lisaport, CT 07263"
+ }
+}

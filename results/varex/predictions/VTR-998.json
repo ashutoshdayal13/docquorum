@@ -1,0 +1,13 @@
+{
+ "first_name": "Janet",
+ "middle_name": "M.",
+ "last_name": "Alcala",
+ "email": "janet.alcala@gmail.com",
+ "phone_number": "(478) 588-4448",
+ "plate_choice": "Texas Lone Star Plate",
+ "address": {
+  "street": "0342 Ryan Expressway Apt. 416",
+  "city": "Christi",
+  "state": "MO"
+ }
+}

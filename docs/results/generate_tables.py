@@ -33,31 +33,34 @@ def row(values, highlight=False):
     return prefix + " & ".join(cells) + r"\\" + "\n"
 
 
-def markdown(title, table):
+def markdown(title, table, rank_of=None, digits=2):
     scores = [v for _, v in table]
+    rank_of = rank_of or (lambda v: rank(v, scores))
     lines = [f"## {title}\n", "| # | System | Score |", "|---:|---|---:|"]
     for name, value in table:
         cell = f"**{name}**" if name == "DocQuorum (ours)" else name
-        num = f"**{displayed(value)}**" if name == "DocQuorum (ours)" else f"{displayed(value)}"
-        lines.append(f"| {rank(value, scores)} | {cell} | {num} |")
+        num = f"**{displayed(value)}**" if name == "DocQuorum (ours)" else f"{float(value):.{digits}f}"
+        lines.append(f"| {rank_of(value)} | {cell} | {num} |")
     return "\n".join(lines) + "\n"
 
 
 # further schema-guided benchmarks: a table appears once docquorum-<key>.json exists
 EXTRA = [
     ("varex", "VAREX", "1,777 U.S. government forms, image input; exact match (\\%), normalized, by the "
-     "benchmark's own scorer. Published systems: the VAREX-Bench image-modality leaderboard (20 models).",
-     lambda: [(r["system"], r["em"]) for r in load("varex-published.json")["systems"]]),
+     "benchmark's own scorer. Published systems: the VAREX-Bench image-modality leaderboard (20 models), "
+     "which reports one decimal; ranks compare at that precision.",
+     lambda: [(r["system"], r["em"]) for r in load("varex-published.json")["systems"]], 1),
     ("unikie-open", "UNIKIE-BENCH open category", "1,661 documents in 8 scenarios (Chinese and English); "
      "macro F1 (\\%) by the benchmark's own evaluator. Published systems: the paper's open-category table.",
      lambda: [(n, v[-1]) for kind in ("closed_source", "open_source")
-              for n, v in load("unikie-open-published.json")[kind].items()]),
+              for n, v in load("unikie-open-published.json")[kind].items()], 2),
     ("longarray", "LongArray-Extract", "45 long PDFs (bank statements, clinical listings, indictments); "
-     "macro document accuracy (\\%) by the publisher's reference scorer. Published systems: Extend AI's results page.",
-     lambda: [(r["system"], r["score"]) for r in load("longarray-published.json")["systems"]]),
+     "macro document accuracy (\\%) by the publisher's reference scorer. Published systems: Extend AI's results "
+     "page, which reports one decimal; ranks compare at that precision.",
+     lambda: [(r["system"], r["score"]) for r in load("longarray-published.json")["systems"]], 1),
     ("docubench", "DocuBench", "72 documents in 10 file types; macro field accuracy (\\%) by the "
      "benchmark's own scorer. Published systems: the DocuBench leaderboard.",
-     lambda: [(r["system"], r["score"]) for r in load("docubench-published.json")["systems"]]),
+     lambda: [(r["system"], r["score"]) for r in load("docubench-published.json")["systems"]], 2),
 ]
 
 
@@ -113,23 +116,26 @@ def main():
           "scores (at two decimals) share a rank.\n"]
     md.append(markdown("ExtractBench (370 PDFs, value F1)", [(r["Provider"], r["Overall"]) for r in eb_table]))
     md.append(markdown("UNIKIE-BENCH, constrained category (4,472 images, macro F1)", u_table))
-    for key, title, about, rows_of in EXTRA:
+    for key, title, about, rows_of, digits in EXTRA:
         if not (HERE / f"docquorum-{key}.json").exists():
             continue                                  # not run yet
         score = load(f"docquorum-{key}.json")["score"]
         rows = sorted(rows_of(), key=lambda x: -x[1])
-        at = sum(displayed(v) >= displayed(score) for _, v in rows)
+        shown = lambda v: Decimal(str(v)).quantize(Decimal(1).scaleb(-digits), rounding=ROUND_HALF_UP)
+        at = sum(shown(v) >= shown(score) for _, v in rows)
         table = rows[:at] + [("DocQuorum (ours)", score)] + rows[at:]
         scores = [v for _, v in table]
+        rank_at = lambda v: 1 + sum(shown(p) > shown(v) for p in scores)
         out.append(r"\chapterpage{RESULTS}{" + tex(title) + "}\n" + about + "\n\n")
         out.append(r"\begingroup\small\setlength{\tabcolsep}{4pt}" + "\n")
         out.append(r"\begin{tabularx}{0.62\linewidth}{@{}rYr@{}}\toprule" + "\n")
         out.append(row(["#", "System", "Score"]) + r"\midrule" + "\n")
         for name, value in table:
-            out.append(row([rank(value, scores), name, f"{displayed(value)}"], name == "DocQuorum (ours)"))
+            mine = name == "DocQuorum (ours)"
+            out.append(row([rank_at(value), name, f"{displayed(value)}" if mine else f"{float(value):.{digits}f}"], mine))
         out.append(r"\bottomrule\end{tabularx}\endgroup" + "\n")
-        md.append(markdown(title, table))
-        print(f"Rendered {title}: {len(rows)} published systems + DocQuorum (rank {rank(score, scores)}).")
+        md.append(markdown(title, table, rank_at, digits))
+        print(f"Rendered {title}: {len(rows)} published systems + DocQuorum (rank {rank_at(score)}).")
     (HERE / "TABLES.md").write_text("\n".join(md))
     (HERE.parent / "results-tables.tex").write_text("".join(out))
     print(f"Rendered ExtractBench: {len(eb_rows)} published systems + DocQuorum (rank {rank(ours['Overall'], eb_scores)}); "

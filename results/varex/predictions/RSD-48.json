@@ -1,0 +1,25 @@
+{
+ "applicant_last_name": "Caban",
+ "applicant_first_name": "Guusje",
+ "applicant_middle_name": "U.",
+ "phone_number": "(101) 666-0117",
+ "email_address": "guusje.caban@gmail.com",
+ "company_website": "www.ortiz.com",
+ "private_investigators_license": "PI-2015-HI-45231",
+ "guards_license": "G-2018-HI-78452",
+ "statement_reasons_for_applying": "To contribute expertise in security and conservation to the advisory committee.",
+ "professional_licenses": "RN-2002-HI-20020, Conservation Officer License",
+ "noteworthy_accomplishments": "Awarded Historic Preservation Award in 2020 for outstanding contributions.",
+ "residence_address": {
+  "address": "05270 Kathleen Camp",
+  "city": "Lake Tracy",
+  "state": "HI",
+  "zip_code": "42853"
+ },
+ "mailing_address": {
+  "address": "05270 Kathleen Camp",
+  "city": "Lake Tracy",
+  "state": "HI",
+  "zip_code": "42853"
+ }
+}

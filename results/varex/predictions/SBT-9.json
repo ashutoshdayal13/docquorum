@@ -1,0 +1,23 @@
+{
+ "school_district_name": "North Vincent Independent School",
+ "district_number": 123456,
+ "city_location_accident": "North Vincent, OK 82294",
+ "date_of_accident": "08/22/2023",
+ "day_of_accident": "Thursday",
+ "time_of_accident": "3:15 PM",
+ "use_of_bus": "Field/Activity Trip",
+ "passenger_direction": "Forward",
+ "property_damage": "$991125.47",
+ "owner_leaseholder": "Molina, Woods and Murphy Transportation Services",
+ "model_year": "2020",
+ "body_make": "Thomas Built Buses",
+ "chassis_make": "Freightliner",
+ "rated_capacity": "72 passengers",
+ "school_bus_type": "Type C Conventional",
+ "driver": {
+  "driver_name": "Montenegro, Michael J.",
+  "driver_license_number": "DL-2018-OK-88765",
+  "driver_date_of_birth": "06/04/1996",
+  "driver_employer": "Molina, Woods and Murphy Transportation Services"
+ }
+}

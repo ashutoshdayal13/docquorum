@@ -1,0 +1,24 @@
+{
+ "principal_legal_name": "Schmitt-Maxwell Inc.",
+ "principal_state_of_incorporation": "Massachusetts",
+ "surety_name": "Robinson-Bates Surety Services",
+ "contract_date": "03/15/2023",
+ "contract_number": "RFQ-2022-69112",
+ "principal_name_title": "Christina Madrid, CEO",
+ "execution_date": "03/16/2023",
+ "individual_surety": [
+  {
+   "name": "Alphonse Stanton, CPA"
+  },
+  {
+   "name": "John B. Joyce, Attorney at Law"
+  }
+ ],
+ "corporate_surety": [
+  {
+   "name_address": "Robinson-Bates Surety Services, 6923 Joshua Radial Apt. 942,",
+   "state_incorporation": "Florida",
+   "name_title": "Alphonse Stanton, CPA"
+  }
+ ]
+}

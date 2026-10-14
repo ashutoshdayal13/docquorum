@@ -1,0 +1,44 @@
+{
+ "vendor_service_center_information": {
+  "service_center_name": "Holmes Interlock Services",
+  "address_line_1": "91713 Rachel Mill",
+  "state": "CA",
+  "zip_code": "40035",
+  "primary_contact_phone": "(782) 080-9393",
+  "primary_contact_email": "robert.holmes@yahoo.com"
+ },
+ "entity_owners": [
+  {
+   "owner_name": "Robert U. Holmes"
+  },
+  {
+   "owner_name": "Amber R. Hicks"
+  },
+  {
+   "owner_name": "David P. Aubert"
+  },
+  {
+   "owner_name": "John R. Smith"
+  },
+  {
+   "owner_name": "Emily T. Johnson"
+  },
+  {
+   "owner_name": "Michael L. Brown"
+  }
+ ],
+ "services_provided": [
+  {
+   "service_fee": 81
+  },
+  {
+   "service_fee": 50
+  },
+  {
+   "service_fee": 25
+  },
+  {
+   "service_fee": 100
+  }
+ ]
+}

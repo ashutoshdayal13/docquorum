@@ -1,0 +1,11 @@
+{
+ "security_resolution_certificate_number": "SRC-FAC001-03152023",
+ "facility_name": "Johnson LLC Headquarters",
+ "facility_location_number": "12345678",
+ "device_name_and_model": "Bosch B465 Fire Alarm Communicator",
+ "facility_address": {
+  "address": "56571 Carla Islands Suite 208, Port Keithport, CA 96206",
+  "city": "Port Keithport",
+  "state_territory": "CA"
+ }
+}

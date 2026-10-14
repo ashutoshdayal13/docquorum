@@ -1,0 +1,20 @@
+{
+ "applicant_name_last": "Brown",
+ "applicant_name_first": "Sandra",
+ "applicant_name_middle_initial": "D",
+ "social_security_number": "852-48-0441",
+ "license_number": "CPA-2021-TN-94983",
+ "date_of_birth": "08/18/1996",
+ "work_telephone_number": "(179) 813-8788",
+ "home_telephone_number": "(889) 939-6269",
+ "email_address": "sandra.brown@hotmail.com",
+ "mailing_address": {
+  "number": "23686"
+ },
+ "address_for_public_record": {
+  "number": "23686",
+  "state": "TN",
+  "zip_code": "29125",
+  "county": "David County"
+ }
+}

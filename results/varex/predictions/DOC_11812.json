@@ -1,0 +1,16 @@
+{
+ "request_received_date": "01/15/2024",
+ "hud_state_identification_number": "CTL-2024-15643",
+ "authorization_date": "01/15/2024",
+ "authorization_date_signed": "01/20/2024",
+ "recipient": {
+  "name_and_address": "Karen O. Malhotra, 825 Saunders Via, Bakerburgh, PA 89105"
+ },
+ "sub_recipient": {
+  "name_and_address": "Robert G. Murray, 500 Jeff Creek, South Anitaport,"
+ },
+ "authorizing_officer": {
+  "name": "Kaylee A. Erickson",
+  "title": "Designer, fashion/clothing"
+ }
+}

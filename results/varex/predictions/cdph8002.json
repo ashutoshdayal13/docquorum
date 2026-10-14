@@ -1,0 +1,30 @@
+{
+ "personal_information": {
+  "applicant_name": "Garcia, Jose G.",
+  "date_of_birth": "08/31/1988",
+  "phone_number": "(256) 537-6919",
+  "email_address": "jose.garcia@outlook.com"
+ },
+ "education": [
+  {
+   "institution_name": "University of Florida",
+   "degree_obtained": "Bachelor of Science",
+   "year_of_graduation": "2010"
+  },
+  {
+   "institution_name": "Florida State University",
+   "degree_obtained": "Master of Public Health",
+   "year_of_graduation": "2012"
+  },
+  {
+   "institution_name": "University of California, Berkeley",
+   "degree_obtained": "Doctor of Philosophy",
+   "year_of_graduation": "2015"
+  },
+  {
+   "institution_name": "Harvard University",
+   "degree_obtained": "Post-Doctoral Fellowship",
+   "year_of_graduation": "2017"
+  }
+ ]
+}

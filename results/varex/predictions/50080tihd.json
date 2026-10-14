@@ -1,0 +1,56 @@
+{
+ "period_covered": "01/2023-06",
+ "disbursement_type": 1,
+ "voucher_total": 158072.31,
+ "authorized_signatory": "Ann P. Matthews, Charity Officer",
+ "date_of_request": "07/15/2023",
+ "grantee": {
+  "organization": "Perez-Ruiz",
+  "tin": "12-3456789"
+ },
+ "payee": {
+  "organization": "Key, Patton and Myers",
+  "tin": "98-7654321"
+ },
+ "line_items": [
+  {
+   "amount": 3076.68
+  },
+  {
+   "amount": 146988.57
+  },
+  {
+   "amount": 77.03
+  },
+  {
+   "amount": 5000
+  },
+  {
+   "amount": 2000
+  },
+  {
+   "amount": 1500
+  },
+  {
+   "amount": 1000
+  },
+  {
+   "amount": 500
+  },
+  {
+   "amount": 300
+  },
+  {
+   "amount": 200
+  },
+  {
+   "amount": 1200
+  },
+  {
+   "amount": 800
+  },
+  {
+   "amount": 700
+  }
+ ]
+}

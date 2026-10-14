@@ -1,0 +1,24 @@
+{
+ "full_legal_name": "Raymond, Reed and Perry",
+ "other_names": "RR&P Technologies",
+ "telephone_number": "(       ) 789001551",
+ "physical_address_info": {
+  "street": "593 Larson Center",
+  "city": "Murrayland",
+  "zip_code": "44961"
+ },
+ "mailing_address_info": {
+  "street": "593 Larson Center",
+  "city": "Murrayland",
+  "zip_code": "44961"
+ },
+ "contact_info": {
+  "name": "Pam J. Hood",
+  "title": "Public House Manager",
+  "mailing_address": "593 Larson Center",
+  "city": "Murrayland",
+  "zip_code": "44961",
+  "telephone_number": "(       ) 789001551",
+  "email": "phood@raymond.com"
+ }
+}

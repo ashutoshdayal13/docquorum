@@ -1,0 +1,20 @@
+{
+ "date_of_injury": "08/15/2023",
+ "telephone": "(136) 346-7",
+ "employer": "Murphy Inc",
+ "insurance_carrier": "Liberty Mutual Insurance",
+ "injury_details": "Left arm fracture and laceration",
+ "previous_physician": "Dr. Emily Johnson, General Practitioner",
+ "pre_existing_condition": "No history of pre-existing conditions related to the injury",
+ "present_condition": "Fracture healing, minor pain",
+ "hospitalization_details": "Admitted for 3 days post-injury",
+ "treatment_details": "Cast application, pain management, physical therapy",
+ "probable_duration": "6 weeks",
+ "employee": {
+  "name": "Alexandra van Noort"
+ },
+ "treatment_dates": {
+  "initial_treatment_date": "08/16/2023",
+  "last_treatment_date": "09/15/2023"
+ }
+}

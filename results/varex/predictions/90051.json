@@ -1,0 +1,20 @@
+{
+ "mortgagee_contact_person": "Borys Taylor",
+ "mortgagee_phone_number": "(979) 606-1489",
+ "account_control_number": "3110-1012-9326",
+ "fa_case_number": "PO-2023-38639",
+ "date_of_sales_contract": "06/15/2023",
+ "date_contract_received_by_mortgagee": "06/16/2023",
+ "sales_agent_firm": "Diaz-Serrano Realty",
+ "sales_agent_phone_number": "(089) 749-1424",
+ "approval_to_participate_issuance_date": "06/17/2023",
+ "signature_date": "06/18/2023",
+ "homeowner": {
+  "name": "Stephanie Q. Solis",
+  "property_address": "735 Armstrong Street, Matthewchester, UT 83625"
+ },
+ "offered_by": {
+  "name": "Maria del Carmen Centeno",
+  "address": "35005 Greer Station, Lake Timothy, PA 14164"
+ }
+}

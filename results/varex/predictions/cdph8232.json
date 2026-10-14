@@ -1,0 +1,13 @@
+{
+ "applicant_name": "Walker, Stephen T.",
+ "date_of_birth": "05/24/1996",
+ "ssn_or_itin": "099-36-5385",
+ "phone_number": "(829) 327-3578",
+ "email_address": "stephen.walker@aol.com",
+ "mailing_address": {
+  "street": "859 Byrd Mountains",
+  "city": "East Shawn",
+  "state": "SC",
+  "zip_code": "89274"
+ }
+}

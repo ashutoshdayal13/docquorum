@@ -1,0 +1,24 @@
+{
+ "revocation_order_number": "DRV-2023-89012",
+ "case_number": "DMV-2023-4567890123",
+ "form_completion_date": "10/01/2023",
+ "affirmation_print_name": "Rachel Johnson",
+ "date_of_birth": "08/23/2002",
+ "form_date": "10/25/2023",
+ "current_residence": {
+  "street": "0337 Nicole Center",
+  "city": "Whiteland",
+  "state": "CA",
+  "zip": "48433"
+ },
+ "accident_residence": {
+  "street": "0337 Nicole Center",
+  "city": "Whiteland",
+  "state": "CA",
+  "zip": "48433"
+ },
+ "accident_details": {
+  "date": "06/15/2023",
+  "location": "Highway I-95, Miami"
+ }
+}

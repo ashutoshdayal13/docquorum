@@ -1,0 +1,62 @@
+{
+ "region": "Region 5, Chicago",
+ "place_of_inspection": "Sharonbury, MA",
+ "inspection_date": "10/05/2023",
+ "contract_number": "CONT-2023-001",
+ "purchase_order_number": "PO-2023-001",
+ "requisition_number": "REQ-2023-001",
+ "remarks": "Inspection completed. All items meet specifications.",
+ "contractors": {
+  "contractor": "Johnson Ltd",
+  "subcontractor": "Hill-White"
+ },
+ "consignee": {
+  "consignee": "Andrea Q. Gross",
+  "date_of_shipment": "10/10/2023",
+  "method_of_shipment": "Truck",
+  "number_of_cartons": "10",
+  "weight_and_cube": "500 lbs, 20 cubic feet",
+  "date_of_reoffer": "10/15/2023",
+  "charge_for_reinspection_retest": "$50.19"
+ },
+ "items": [
+  {
+   "lot_or_item_numbers": [
+    "ITM-001",
+    "ITM-002",
+    "ITM-003",
+    "ITM-004",
+    "ITM-005",
+    "ITM-006",
+    "ITM-007",
+    "ITM-008",
+    "ITM-009",
+    "ITM-010"
+   ],
+   "commodity_names": [
+    "Control Systems",
+    "Instrumentation",
+    "Psychological Tools",
+    "Tourism Equipment",
+    "Architectural Plans",
+    "Engineering Tools",
+    "Pharmaceuticals",
+    "Office Supplies",
+    "Electronics",
+    "Laboratory Equipment"
+   ],
+   "quantities": [
+    "10 units",
+    "15 units",
+    "20 units",
+    "5 units",
+    "8 units",
+    "12 units",
+    "7 units",
+    "10 units",
+    "6 units",
+    "9 units"
+   ]
+  }
+ ]
+}

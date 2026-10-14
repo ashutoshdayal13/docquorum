@@ -1,0 +1,42 @@
+{
+ "insurance_carrier": "Mason Insurance Co.",
+ "sequence_number": "SEQ-2023-001",
+ "ein": "61-5553766",
+ "telephone_number": "(130) 256-7630",
+ "facsimile_number": "(666) 134-5062",
+ "address": {
+  "street": "02890 Anthony Plains",
+  "city": "Thompsonview",
+  "state": "MA",
+  "zip_code": "35791"
+ },
+ "outstanding_payment_obligations": [
+  {
+   "obligation_description": "Compensation"
+  },
+  {
+   "obligation_description": "Medical"
+  },
+  {
+   "obligation_description": "Supplies"
+  },
+  {
+   "obligation_description": "Legal Fees"
+  },
+  {
+   "obligation_description": "Administrati"
+  },
+  {
+   "obligation_description": "Rehabilitati"
+  },
+  {
+   "obligation_description": "Vocational"
+  },
+  {
+   "obligation_description": "Miscellaneous"
+  },
+  {
+   "obligation_description": "Penalties"
+  }
+ ]
+}

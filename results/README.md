@@ -142,6 +142,37 @@ respect to output conventions.
 Files: `unikie/readings/<reading>/<scenario>.json` (every reading),
 `unikie/summary.json` (per-scenario scores). Re-score: `benchmarks/unikie/run.sh score`.
 
+## VAREX (IBM Research; arXiv 2603.15118), image input
+
+All 1,777 U.S. government forms (21,084 scored fields), the image modality, the benchmark's own
+`evaluation/score.py` with its field exclusions. Each published model was run zero-shot by the
+benchmark's authors; the leaderboard reports one decimal.
+
+| exact match (normalized), all 1,777 forms | score | vs. the image-modality leaderboard |
+|---|---:|---|
+| **DocQuorum** (Qwen3.8-27B + MinerU2.5) | **98.05** | **1st, tied with Gemini 2.5 Pro at one decimal** |
+| Gemini 2.5 Pro | 98.0 | 1st |
+| Gemini 2.5 Flash | 97.3 | 3rd |
+| Qwen3-VL-8B (best published open model) | 96.6 | 4th |
+
+| | DocQuorum | Gemini 2.5 Pro |
+|---|---:|---:|
+| ANLS (normalized) | **98.77** | 98.5 |
+| flat forms (299) | **98.15** | 97.3 |
+| nested forms (1,146) | **98.27** | 98.2 |
+| table forms (332) | 97.48 | **97.7** |
+| documents with every field right | **0.8%** | 82.8% |
+
+* The forms are page images without a text layer, so each takes route C: the reader agent on the
+  image and on the MinerU parse, the one-shot reading, the checks, and the quorum
+  (kept reading: {'primary': 1698, 'ruled': 19, 'parse': 49, 'oneshot': 11}).
+* A form whose parsed tables map onto its schema is read by the ruled-table reader; the reader
+  agent now reads the schema's other fields for it (fixed during this run: before, those 7 forms
+  came back with only their table).
+* Files: `varex/predictions/<form>.json`, `varex/scores.json`, `varex/provenance.json` (route,
+  readings and agreement per form; code version). Re-score: `benchmarks/multibench/frozen27b.py
+  varex score` (needs the VAREX dataset under `data/multibench_sources/`).
+
 ## UNIKIE-BENCH open category (1,661 documents, 8 scenarios)
 
 The benchmark's second track: receipts, forms, invoices and contracts in Chinese and English, each

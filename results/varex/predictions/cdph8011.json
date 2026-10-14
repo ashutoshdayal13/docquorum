@@ -1,0 +1,17 @@
+{
+ "complaint_type": "Other: Knowingly made a false statement of fact required to be revealed in the application for registration. [HSC s 106715(a)(1)]",
+ "business_name": "Kennedy LLC",
+ "daytime_phone": "(927) 618-1028",
+ "rehs_number": 80735,
+ "email": "jdacosta@kennedy.com",
+ "rehs_name": {
+  "first_name": "Jerry",
+  "last_name": "Da Costa"
+ },
+ "address": {
+  "street": "297 Kimberly Viaduct Suite 333",
+  "city": "Port Lisaport",
+  "state": "CT",
+  "zip_code": "07263"
+ }
+}

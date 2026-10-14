@@ -1,0 +1,25 @@
+{
+ "beneficiary_id_number": "DPM-2020-35817",
+ "date_of_birth": "01/12/1988",
+ "individual": {
+  "last_name": "Kroker",
+  "first_name": "Sabrina",
+  "middle_initial": "I",
+  "address": "620 Cameron Village",
+  "city_state": "West James, TX",
+  "zip_code": "44067"
+ },
+ "representative": {
+  "last_name": "Preston",
+  "first_name": "Farhan",
+  "middle_initial": "P",
+  "address": "5976 Nguyen Gardens",
+  "city_state": "Morenoville, PA",
+  "zip_code": "23875",
+  "daytime_phone": "(140) 111-5742",
+  "evening_phone": "(772) 310-8609",
+  "email": "farhan.preston@gmail.com",
+  "best_hours_to_reach": "9:00 AM - 5:00 PM",
+  "legal_documentation_type": "Court Order"
+ }
+}

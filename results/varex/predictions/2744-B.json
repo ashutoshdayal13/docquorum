@@ -1,0 +1,16 @@
+{
+ "mortgagee_name": "Allen-Soto",
+ "project_location": "Kaiserchester, VA",
+ "project_number": "VA-2023-9876",
+ "number_of_units": 150,
+ "date_mortgagee_assumed_control": "06/15/2023",
+ "date_mortgagee_relinquished_control": "12/31/2023",
+ "totals": "$914205.22",
+ "totals_details": {
+  "date_totals_rent_started": "07/01/2023",
+  "date_totals_unit_vacated": "12/31/2023",
+  "date_totals_rent_paid_thru": "12/31/2023",
+  "totals_collections": "$914205.22"
+ },
+ "tenant_details": []
+}

@@ -1,0 +1,18 @@
+{
+ "program_name": "Ace Driving School",
+ "instructor_last_name": "Gibson",
+ "instructor_first_name": "Sebastien",
+ "instructor_program_name": "Ace Driving School",
+ "program_address": {
+  "street": "123 Safe Drive Lane",
+  "city": "Buffalo",
+  "state": "N",
+  "zip_code": "14201"
+ },
+ "instructor_address": {
+  "street": "167 Alexa Land Suite 925",
+  "city": "Cohenville",
+  "state": "CA",
+  "zip_code": "98901"
+ }
+}

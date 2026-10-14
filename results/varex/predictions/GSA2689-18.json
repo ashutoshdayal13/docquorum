@@ -1,0 +1,18 @@
+{
+ "rfi_sources_sought_number": "RFI-2022-98765",
+ "federal_supply_class": "R425-01-IT-233",
+ "naics_code": "541511-876543-9021",
+ "contracting_officer": {
+  "name": "Veronica Mennea",
+  "office_symbol": "CO-VM-2022",
+  "office_organization": "Livingston, Adams and Davis"
+ },
+ "period_of_performance": {
+  "base_period_start": "01/01/2023",
+  "base_period_end": "12/31/2023"
+ },
+ "option_periods": {
+  "start": "01/01/2026",
+  "end": "12/31/2026"
+ }
+}

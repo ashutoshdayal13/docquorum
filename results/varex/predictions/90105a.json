@@ -1,0 +1,10 @@
+{
+ "unit_number": "A12",
+ "lease_start_date": "11/01/2023",
+ "lease_term_length": "one year",
+ "partial_month_end_date": "10/31/2023",
+ "unit_address": {
+  "address": "139 Deanna Run Apt. 091, East Jaimeport, OR 43995",
+  "project_name": "Green Valley Apartments"
+ }
+}

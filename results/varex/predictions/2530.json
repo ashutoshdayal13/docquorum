@@ -1,0 +1,29 @@
+{
+ "agency_name": "Hahn, Lloyd and Shepherd",
+ "project_name": "Ashleyton Renewal Project",
+ "loan_or_contract_amount": 314085.56,
+ "number_of_units_or_beds": 120,
+ "section_of_act": "Section 221(d)(3) BMIR",
+ "controlling_participants": [
+  {
+   "name": "Daniel, Axel F.",
+   "role": "Project Manager",
+   "ssn_or_irs_employer_number": "029-03-8009"
+  },
+  {
+   "name": "Klups, Remy W.",
+   "role": "Financial Advisor",
+   "ssn_or_irs_employer_number": "112-16-0375"
+  },
+  {
+   "name": "Rowe, Sharon",
+   "role": "Legal Advisor",
+   "ssn_or_irs_employer_number": "818-66-3005"
+  },
+  {
+   "name": "Shepherd, John A.",
+   "role": "Architect",
+   "ssn_or_irs_employer_number": "123-45-6789"
+  }
+ ]
+}

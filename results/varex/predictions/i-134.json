@@ -1,0 +1,23 @@
+{
+ "date_of_birth": "01/24/1995",
+ "country_of_citizenship": "United States of America",
+ "beneficiary_name": {
+  "first_name": "Justin",
+  "last_name": "Mata"
+ },
+ "other_names_used": [
+  {
+   "name": "Justin Michael Mata",
+   "type": "maiden name"
+  },
+  {
+   "name": "J. Mata",
+   "type": "alias"
+  }
+ ],
+ "place_of_birth": {
+  "city": "South Tammy",
+  "state": "Michigan",
+  "country": "United States of America"
+ }
+}

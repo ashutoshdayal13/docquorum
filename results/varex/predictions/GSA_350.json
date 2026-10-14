@@ -1,0 +1,29 @@
+{
+ "city_and_state": "Washington, DC",
+ "building": "Federal Office Building",
+ "region_number": "Region 5",
+ "headquarters": "Washington, D.C.",
+ "date_of_inspection": "10/15/2023",
+ "date_of_last_inspection": "10/15/2022",
+ "last_inspector_name": "Sylvia U. Allen, Legal Executive",
+ "pressure_vessels": [
+  {
+   "plant_pressure_vessel_number": "PV-2023-001",
+   "manufacturer_name": "Allied Industrial Systems Inc.",
+   "manufacturer_number": "AIS-2023-1001",
+   "type_of_pressure_vessel": "Domestic hot water tank",
+   "date_manufactured": "06/10/2018",
+   "date_installed": "07/01/2018",
+   "type_of_shell_construction": "Welded steel construction",
+   "material_and_gauge_of_shell": "Carbon steel, 3/8 inch thick",
+   "overall_dimensions_of_shell": "Height: 60 inches, Diameter: 36 inches",
+   "state_service": "Domestic hot water supply",
+   "manufacturer_rating": "CAPACITY 120 PSI at 210°F",
+   "pressure_reduction_details": "Pressure reducing valve set at 100 PSI",
+   "type_of_heating_or_cooling_medium": "Electric",
+   "description_of_heat_transfer_surface": "Coil type heat exchanger",
+   "number_and_length_of_tubes": "50 tubes, each 4 feet long",
+   "diameter_of_tubes": "1/2 inch outer diameter"
+  }
+ ]
+}

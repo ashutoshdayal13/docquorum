@@ -1,0 +1,17 @@
+{
+ "vehicle_vin": "1G1ZT53826F123456",
+ "vehicle_make": "Toyota",
+ "vehicle_model": "Camry",
+ "applicant_name": "Christopher Mulichen",
+ "appraiser_company_name": "Hahn, Kim and Lester",
+ "appraiser_name": "Steven H. Ellis",
+ "appraiser_license_number": "MD-2004-CO-75300",
+ "appraisal_date": "05/15/2023",
+ "certification_date": "05/15/2023",
+ "applicant_address": {
+  "street": "6616 Vargas Port"
+ },
+ "appraiser_address": {
+  "street": "5498 James Pine Suite 302"
+ }
+}

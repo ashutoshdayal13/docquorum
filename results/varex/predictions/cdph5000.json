@@ -1,0 +1,12 @@
+{
+ "facility_name": "Baldwin and Sons Rehabilitation Center",
+ "request_date": "05/15/2023",
+ "section_number": "Section 71450",
+ "proposed_methods": "Implement a digital monitoring system for patient vitals instead of manual recording every 2 hours",
+ "facility_administrator": "Ishaan R. Osborn",
+ "facility_address": {
+  "address": "134 Christopher Neck",
+  "city": "East Carlshire",
+  "zip": "30196"
+ }
+}

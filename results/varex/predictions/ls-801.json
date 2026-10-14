@@ -1,0 +1,18 @@
+{
+ "employee_name": "Christopher Santos",
+ "owcp_number": "LS-1234567890",
+ "signature_date": "05/15/2023",
+ "representative": {
+  "name": "Kevin W. Christian",
+  "party_name": "Byrd-Jones",
+  "company_name": "Byrd-Jones",
+  "signature_title": "Psychologist, occupational",
+  "firm_name": "Byrd-Jones",
+  "address": "287 Jane Divide Apt. 645, Lake Tracy, 42718, US",
+  "telephone_number": "(649)583-4",
+  "email_addresses": [
+   "kchristian@byrdjones.com",
+   "kevin.christian@hotmail.com"
+  ]
+ }
+}

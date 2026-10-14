@@ -1,0 +1,25 @@
+{
+ "public_housing_agency_name": "Brown, Reynolds and Kelly Public Housing Agency",
+ "periodic_estimate_number": "CTL-2023-91611",
+ "period_from": "01/01/2023",
+ "project_number": "HUD-2023-5050",
+ "general_contractor_name": "Christian-Williamson Construction",
+ "contract_number": "CON-2023-78168",
+ "total_amount": 935536.49,
+ "owner_name": "Mugdha R. Fonseca",
+ "authorized_representative": "Thomas S. Lopes",
+ "title": "Project Manager",
+ "subcontractors": [
+  {
+   "name": "Smith-Carlson Materials"
+  }
+ ],
+ "prepared_by_info": {
+  "prepared_by": "Nikodem Cainero",
+  "prepared_date": "03/30/2023"
+ },
+ "checked_by_info": {
+  "checked_by": "Thomas S. Lopes",
+  "checked_date": "03/31/2023"
+ }
+}

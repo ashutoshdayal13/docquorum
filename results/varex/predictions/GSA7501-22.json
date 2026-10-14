@@ -1,0 +1,22 @@
+{
+ "employee_first_name": "Hannah",
+ "employee_middle_initial": "M",
+ "employee_last_name": "Bartos",
+ "employee_office": "Audit Department",
+ "employee_division": "Internal Controls",
+ "employee_correspondence_symbol": "AUD-INT",
+ "employee_office_phone_number": "(464) 329-2348",
+ "employee_office_email_address": "hbartos@rose.com",
+ "employee_work_office": "Audit Department",
+ "employee_access_purpose": "Monitoring internal controls and auditing processes",
+ "employee_signature_date": "05/15/2023",
+ "supervisor_signature_date": "05/15/2023",
+ "supervisor": {
+  "first_name": "William",
+  "middle_initial": "U",
+  "last_name": "Jacobs",
+  "office": "Audit Department",
+  "division": "Internal Controls",
+  "correspondence_symbol": "AUD-MGR"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "license_number": "HMDR-2023-15950",
+ "firm_name": "Simon and Sons Healthcare Equipment",
+ "dba_name": "SimonsMedical",
+ "website": "https://www.simonsmedical.com",
+ "owner_name": "Simon and Sons Inc.",
+ "state_of_incorporation": "IL",
+ "business_hours": "Monday to Friday, 9:00 AM to 6:00 PM",
+ "other_products_description": "Various assistive devices and accessories",
+ "mailing_address": {
+  "street": "78963 Ramirez Plaza Suite 846",
+  "city": "Donnaburgh",
+  "state": "IL",
+  "zip_code": "02927"
+ },
+ "facility_address": {
+  "street": "78963 Ramirez Plaza Suite 846",
+  "city": "Donnaburgh",
+  "state": "IL",
+  "zip_code": "02927"
+ },
+ "owner_officer_names": [
+  {
+   "name": "Marcin P. Letellier",
+   "title": "CEO"
+  },
+  {
+   "name": "Debbie Singleton",
+   "title": "Operations Manager"
+  }
+ ]
+}

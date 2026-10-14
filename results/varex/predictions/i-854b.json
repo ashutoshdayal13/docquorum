@@ -1,0 +1,19 @@
+{
+ "law_enforcement_agency": "Federal Bureau of Investigation",
+ "requesting_agent": "Special Agent in Charge, Diane M. Carter",
+ "control_agent": "Kenneth T. Williams",
+ "mailing_address": {
+  "street": "2954 Horton Center",
+  "city": "West Jonathan",
+  "zip_code": "83034"
+ },
+ "contact_information": {
+  "phone_number": "(130) 397-0486",
+  "email": "diane.carter@outlook.com",
+  "fax_number": "(168) 818-9187"
+ },
+ "alien_information": {
+  "full_name": "Diane M. Carter",
+  "alien_registration_number": "CTL-2023"
+ }
+}

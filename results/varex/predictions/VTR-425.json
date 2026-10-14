@@ -1,0 +1,20 @@
+{
+ "license_no": "TX-VSP-2023-",
+ "date_issued": "10/15/2023",
+ "month_year_of_exp": "10/2028",
+ "signature_date": "10/15/2023",
+ "applicant_info": {
+  "name": "Brewer, Kyle W.",
+  "address": "153 Hoffman Knolls Apt. 178",
+  "city": "Taylorland",
+  "state": "OH",
+  "zip_code": "34203",
+  "phone": "(946) 330-9467",
+  "email": "kyle.brewer@outlook.com"
+ },
+ "vehicle_info": {
+  "vehicle_make": "Toyota",
+  "vehicle_year": "2020",
+  "vehicle_identification_number": "5TFBW5FPXLX012345"
+ }
+}

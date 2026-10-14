@@ -1,0 +1,26 @@
+{
+ "issuer_name": "Williams-Burgess",
+ "issuer_id_number": "PLS-2016-WY-34372",
+ "ginnie_mae_pool_number": "GM-2023-0001",
+ "reporting_month": "November",
+ "reporting_date": "11/15/2023",
+ "schedule_i": {
+  "principal_scheduled_current_month": 347338.26,
+  "amount_principal_to_redeem": 347338.26,
+  "balance_carried_forward_next_period": 90.29
+ },
+ "schedule_ii": {
+  "serial_unit_number": 9127,
+  "total_items_a_and_b": 349378.63
+ },
+ "schedule_ii_serial_units_outstanding": [
+  {
+   "serial_units_outstanding": "Serial Note Certificates for units"
+  }
+ ],
+ "schedule_iii_serial_units_paid": [
+  {
+   "serial_units_paid": "Serial Units 1-500 and Serial Note Certificates for units 1-500 have been paid and surrendered."
+  }
+ ]
+}

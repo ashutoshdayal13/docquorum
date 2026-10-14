@@ -1,0 +1,27 @@
+{
+ "locality_where_repossession_occurred": "East Angela, IL",
+ "vehicle_details": {
+  "year_and_make_of_vehicle": "2018 Toyota",
+  "model": "Camry",
+  "state_last_registered": "IL",
+  "plate_number": "ABC1234",
+  "vehicle_identification_number": "JT2BF22K2W1001234",
+  "body_type": "Sedan",
+  "color": "Blue"
+ },
+ "registrant": {
+  "name": "John B. Dietz"
+ },
+ "lienholder": {
+  "name": "Calderon Group"
+ },
+ "owner": {
+  "name": "John B. Dietz"
+ },
+ "repossessor": {
+  "name": "Calderon Recovery Services"
+ },
+ "police_agency_notified": {
+  "name": "East Angela Police Department"
+ }
+}

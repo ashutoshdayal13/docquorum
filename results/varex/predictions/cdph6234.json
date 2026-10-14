@@ -1,0 +1,22 @@
+{
+ "last_name": "Garozzo",
+ "first_name": "Daniel",
+ "middle_initial": "M",
+ "date_of_birth": "07/24/1971",
+ "beneficiary_id_number": "650-99-1977",
+ "daytime_telephone_number": "(144) 200-0960",
+ "evening_telephone_number": "(958) 886-9883",
+ "email_address": "daniel.garozzo@hotmail.com",
+ "best_hours_to_reach": "9:00 AM to 5:00 PM",
+ "alternate_telephone_number": "(622) 130-0429",
+ "current_address_info": {
+  "street": "85867 Monica Mall Suite 758",
+  "city_state": "North Rebeccahaven, AZ",
+  "zip_code": "50415"
+ },
+ "alternate_address_info": {
+  "street": "12345 Secure Lane Apt 4B",
+  "city_state": "Springfield, IL",
+  "zip_code": "62704"
+ }
+}

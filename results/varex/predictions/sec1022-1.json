@@ -1,0 +1,40 @@
+{
+ "customer_name": "Joseph Simpson",
+ "case_number": "REF-2024-492",
+ "capacity": "Owner",
+ "last_holder": "Ada C. Granado, due to a business transaction",
+ "access_granted": "Maria N. Curiel, as a trusted associate",
+ "last_placement": "Safe deposit box at Burgess-Robertson Bank",
+ "recovery_actions": "Filed police report and contacted financial advisors",
+ "witnesses": "Maria N. Curiel, Commercial art gallery",
+ "securities": [
+  {
+   "name": "U.S. Treasury Bond, 3.5% Interest, Maturity 2035",
+   "date_acquired": "06/15/2020",
+   "date_of_theft": "11/10/2023",
+   "date_loss_discovered": "11/12/2023",
+   "last_seen_date": "11/05/2023"
+  },
+  {
+   "name": "U.S. Savings Bond, Series H, $10,000",
+   "date_acquired": "03/22/2019",
+   "date_of_theft": "11/10/2023",
+   "date_loss_discovered": "11/12/2023",
+   "last_seen_date": "11/05/2023"
+  },
+  {
+   "name": "Corporate Bond, IBM Corp., 4.25% Interest",
+   "date_acquired": "09/03/2018",
+   "date_of_theft": "11/10/2023",
+   "date_loss_discovered": "11/12/2023",
+   "last_seen_date": "11/05/2023"
+  },
+  {
+   "name": "Municipal Bond, Texas Municipal, 3.75% Interest",
+   "date_acquired": "01/14/2021",
+   "date_of_theft": "11/10/2023",
+   "date_loss_discovered": "11/12/2023",
+   "last_seen_date": "11/05/2023"
+  }
+ ]
+}

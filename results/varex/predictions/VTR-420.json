@@ -1,0 +1,36 @@
+{
+ "license_number": "MSLP-2023-56789",
+ "date_issued": "03/15/2023",
+ "expiration_month_year": "03/2025",
+ "signature_date": "03/15/2023",
+ "applicant": {
+  "first_name": "Falguni",
+  "middle_name": "B.",
+  "last_name": "Morin",
+  "county": "Milwaukee",
+  "mailing_address": "46464 Guerrero Key Apt. 083",
+  "city": "Hernandezfurt",
+  "state": "WI",
+  "zip": "71342",
+  "email": "falguni.morin@yahoo.com",
+  "phone_number": "(784) 526-9206"
+ },
+ "vehicles": [
+  {
+   "vin": "1G1ZT54825F123456",
+   "current_tx_plate": "ABC1234",
+   "year": "2020",
+   "make": "Toyota",
+   "body_style": "SUV",
+   "empty_weight": "4000 lbs"
+  },
+  {
+   "vin": "2C4RC1BGXKR123456",
+   "current_tx_plate": "XYZ7890",
+   "year": "2018",
+   "make": "Dodge",
+   "body_style": "Truck",
+   "empty_weight": "5000 lbs"
+  }
+ ]
+}

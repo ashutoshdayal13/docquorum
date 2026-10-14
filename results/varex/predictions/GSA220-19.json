@@ -1,0 +1,31 @@
+{
+ "contract_task_order_number": "GSA-220-19-0001",
+ "project_number": "GSA-220-19-27000",
+ "date_of_notice_to_proceed": "06/15/2022",
+ "contract_completion_date": "12/31/2023",
+ "revised_completion_date": "06/30/2024",
+ "estimated_completion_date": "07/15/2024",
+ "actual_completion_date": "07/20/2024",
+ "percentage_of_completion": 75,
+ "date_of_last_inspection": "03/10/2023",
+ "date_of_this_inspection": "06/15/2023",
+ "significant_change_orders": "Change Order 001 for additional materials",
+ "location": {
+  "building": "Federal Building",
+  "street": "897 Mata Walks Apt. 306"
+ },
+ "contractor": {
+  "name": "Swanson Inc"
+ },
+ "work_details": {
+  "type_of_work": "Construction"
+ },
+ "firms": {
+  "architect_engineer_firm": "Swanson Inc",
+  "construction_manager_firm": "Cooper, Carpenter and Smith",
+  "construction_manager_as_agent": "Green, Brown and Cole"
+ },
+ "inspection_details": {
+  "gsa_inspector": "Bethany P. Martinez"
+ }
+}

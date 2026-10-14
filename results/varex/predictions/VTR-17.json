@@ -1,0 +1,21 @@
+{
+ "vehicle_identifier": "1HGCM82633A129182",
+ "date_of_sale": "04/15/2023",
+ "odometer_disclosure": "Federal and state law require that you state the mileage upon transfer of ownership. Providing a false statement or failure to complete this form may result in fines and/or imprisonment. I, the purchaser listed above or their authorized agent, certify to the best of my knowledge the odometer reading is the actual mileage of the vehicle unless one of the statements is checked:",
+ "purchaser_information": {
+  "name": "Stacy W. Palla",
+  "address": "953 Andrea Cliff Suite 328"
+ },
+ "lienholder_information": {
+  "name": "First National Bank",
+  "address": "1234 Financial Blvd"
+ },
+ "dealership_information": {
+  "name": "Kim Auto Dealership",
+  "address": "7890 Auto Way"
+ },
+ "signatures": {
+  "seller_date": "04/15/2023",
+  "purchaser_date": "04/15/2023"
+ }
+}
