@@ -88,17 +88,22 @@ at the benchmark's 1,605,632 pixels (the cap all published systems were measured
 
 | macro F1, all 4,472 images | score | vs. the paper's Table 4 |
 |---|---:|---|
-| **DocQuorum** (6 readings from 3 open models) | **82.37** | **ties 1st of 16** |
-| Gemini-3-Pro (best published) | 82.37 | 1st |
+| **DocQuorum** (6 readings from 3 open models) | **82.62** | **1st of 16** |
+| Gemini-3-Pro (best published) | 82.37 | 2nd |
 | Qwen3.8-27B, the benchmark's own one-shot protocol | 80.45 | |
 | Qwen3-VL-8B (best published open model) | 79.12 | |
 
 * DocQuorum reads each image six ways and keeps the reading the others agree with most: the reader
   agent on the image and on the MinerU parse, and the benchmark's own one-shot prompt (Qwen3.8-27B);
   the same prompt with the OCR text (27B); one-shot readings from Qwen3-VL-32B and Qwen3-VL-8B.
-* Unrounded: 82.3746 vs Gemini-3-Pro's 82.3664 (mean of its 11 published two-decimal scores): a tie
-  within the table's rounding, not a win.
-* Above every published system on: Retail, Catering-Services, Administrative, Tax-Compliant.
+* Unrounded: 82.6181 vs Gemini-3-Pro's 82.3664 (mean of its 11 published two-decimal scores).
+* Small images are enlarged before DocQuorum's own readings (image, parse, one-shot with the OCR text)
+  and before the MinerU parse: 807 of the 4,472 images, mostly nutrition labels, have a shorter side
+  under 1,000 px (`docquorum/tools/images.py`). This raised the score from 82.3746 (a tie with
+  Gemini-3-Pro) to 82.6181; Nutrition-Label 90.87 -> 92.26. The rule was found on UNIKIE's
+  open-category English receipts (278x299 px images whose values the model invented), not on this
+  track; the benchmark-protocol one-shot readings keep the benchmark's own image encoding.
+* Above every published system on: Retail, Catering-Services, Administrative, Tax-Compliant, Medical-Services.
 
 Per scenario (F1 on all 4,472 images; published values from the paper's Table 4; **bold** =
 best of the 16 published systems and DocQuorum; rank = DocQuorum's position when inserted
@@ -106,18 +111,18 @@ among the 16 published systems):
 
 | scenario | GPT-5 | Claude Sonnet 4.5 | Qwen3-VL-Plus | Gemini-3-Pro | Qwen3-VL-8B (best open) | DocQuorum | rank |
 |---|---:|---:|---:|---:|---:|---:|:---:|
-| Retail | 71.90 | 69.24 | 89.12 | 89.27 | 88.26 | **90.71** | 1 |
-| Catering-Services | 71.33 | 73.65 | 86.45 | 83.54 | 86.23 | **87.56** | 1 |
+| Retail | 71.90 | 69.24 | 89.12 | 89.27 | 88.26 | **90.78** | 1 |
+| Catering-Services | 71.33 | 73.65 | 86.45 | 83.54 | 86.23 | **88.19** | 1 |
 | Commercial | 45.94 | 45.92 | 50.57 | **53.87** | 51.14 | 53.46 | 2 |
 | Accommodation | 69.29 | 69.29 | 77.86 | **81.43** | 71.07 | 80.00 | 2 |
 | Postal-Label | 80.95 | 79.45 | 83.55 | **90.74** | 83.80 | 85.65 | 2 |
-| Administrative | 62.79 | 69.20 | 78.91 | 84.32 | 78.90 | **86.60** | 1 |
+| Administrative | 62.79 | 69.20 | 78.91 | 84.32 | 78.90 | **86.95** | 1 |
 | Education | 50.26 | 39.46 | **87.44** | 80.71 | 87.39 | 85.46 | 3 |
 | Advertisement | 75.48 | 85.06 | 83.14 | **90.54** | 81.23 | 86.21 | 2 |
-| Tax-Compliant | 72.05 | 67.79 | 78.93 | 81.54 | 78.74 | **82.10** | 1 |
-| Medical-Services | 67.71 | 63.96 | 76.46 | **77.60** | 77.19 | 77.50 | 2 |
-| Nutrition-Label | 75.83 | 67.24 | 89.72 | **92.47** | 86.36 | 90.87 | 2 |
-| *macro average* | 67.59 | 66.39 | 80.20 | **82.37** | 79.12 | **82.37** | 1 (tie) |
+| Tax-Compliant | 72.05 | 67.79 | 78.93 | 81.54 | 78.74 | **82.13** | 1 |
+| Medical-Services | 67.71 | 63.96 | 76.46 | 77.60 | 77.19 | **77.71** | 1 |
+| Nutrition-Label | 75.83 | 67.24 | 89.72 | **92.47** | 86.36 | 92.26 | 2 |
+| *macro average* | 67.59 | 66.39 | 80.20 | 82.37 | 79.12 | **82.62** | 1 |
 
 Commercial is the hardest scenario for every system (GPT-5 45.94, Claude Sonnet 4.5 45.92);
 DocQuorum is second only to Gemini-3-Pro there.

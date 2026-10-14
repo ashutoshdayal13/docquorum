@@ -57,6 +57,43 @@
       },
       "scope": "Full 4,472 constrained-category documents; stored predictions re-scored",
       "configuration": "Six tuned readings, including two additional models after initial held-out run"
+    },
+    "six_readings_enlarged": {
+      "score": 82.61809174889247,
+      "per_scenario": {
+        "Accommodation": 79.99999971428572,
+        "Administrative": 86.95458589182789,
+        "Advertisement": 86.20689622142952,
+        "Catering-Services": 88.18852919466863,
+        "Commercial": 53.45639479121183,
+        "Education": 85.46209752288463,
+        "Medical-Services": 77.70833325238715,
+        "Nutrition-Label": 92.26388228250848,
+        "Postal-Label": 85.649999957175,
+        "Retail": 90.77809791730684,
+        "Tax-Compliant": 82.13019249213143
+      },
+      "scope": "Full 4,472 constrained-category documents",
+      "configuration": "The six readings, with DocQuorum's image, parse and oneshot_text readings (and the MinerU parse) enlarging small images first (docquorum/tools/images.py; 807 images re-read). The rule was found on the open-category English receipts, not on this track."
+    },
+    "three_readings_enlarged": {
+      "score": 80.96723489045127,
+      "per_scenario": {
+        "Accommodation": 78.92857114668368,
+        "Administrative": 86.10863753957764,
+        "Advertisement": 83.5249038945406,
+        "Catering-Services": 81.53011699598622,
+        "Commercial": 51.79883216202696,
+        "Education": 84.52751808460278,
+        "Medical-Services": 76.77083325336372,
+        "Nutrition-Label": 91.15646257061279,
+        "Postal-Label": 85.149999957425,
+        "Retail": 89.69740627543413,
+        "Tax-Compliant": 81.44630191471045
+      },
+      "scope": "Full 4,472 constrained-category documents",
+      "configuration": "The original three readings (image, oneshot, parse) with small images enlarged."
     }
-  }
+  },
+  "headline": "six_readings_enlarged"
 }

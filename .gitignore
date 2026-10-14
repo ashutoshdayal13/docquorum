@@ -26,3 +26,7 @@ results/multibench/**/converted/
 results/multibench/**/predictions/
 results/multibench/**/reports/
 results/multibench/**/*.csv
+
+# earlier readings kept locally when a re-read replaces them
+*.before_enlarge.json
+*.before_enlarge.txt

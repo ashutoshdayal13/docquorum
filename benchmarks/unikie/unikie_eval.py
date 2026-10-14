@@ -120,6 +120,10 @@ def cmd_read(a):
                 return
             with lock:
                 done[name] = got if isinstance(got, (dict, list)) else {}
+                if len(done) % 25 == 0:               # save progress: a stopped run resumes here
+                    tmp = dst.with_suffix(".tmp")
+                    tmp.write_text(json.dumps(done, ensure_ascii=False))
+                    tmp.replace(dst)
 
         with ThreadPoolExecutor(a.workers) as ex:
             list(ex.map(one, [r for r in records(sc) if r[0] not in done]))

@@ -6,11 +6,11 @@ Each lists every published system and one DocQuorum row, placed by score; equal 
 | table | published systems | DocQuorum | rank |
 |---|---|---:|---|
 | ExtractBench (370 PDFs, value F1) | 47, from the ExtractBench leaderboard CSV (2 October 2026) | 95.43 | 3rd |
-| UNIKIE-BENCH (4,472 images, macro F1) | 15, from the paper's Table 4 | 82.37 | 1st, tied with Gemini-3-Pro |
+| UNIKIE-BENCH (4,472 images, macro F1) | 15, from the paper's Table 4 | 82.62 | 1st (Gemini-3-Pro 82.37) |
 
 The ExtractBench row is the stored final outputs scored with the same scorer revision as that leaderboard snapshot
 (the repository README's 95.25 is the same outputs under the earlier scorer revision). The UNIKIE row is the quorum
-over six readings. Source revisions and hashes are in [provenance](provenance.json).
+over six readings, small images enlarged first (82.37 before). Source revisions and hashes are in [provenance](provenance.json).
 
 - [Complete original ExtractBench CSV](extractbench-leaderboard.csv), including
   the additional precision/recall, grounding, latency and split-cost columns.

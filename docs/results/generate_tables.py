@@ -66,7 +66,8 @@ def main():
     for name, expected_hash in provenance["snapshot_sha256"].items():
         assert hashlib.sha256((HERE / name).read_bytes()).hexdigest() == expected_hash, name
     published = load("unikie-published.json")
-    unikie = load("docquorum-unikie.json")["variants"]["six_readings"]
+    u = load("docquorum-unikie.json")
+    unikie = u["variants"][u.get("headline", "six_readings")]
     eb = load("docquorum-extractbench.json")["stored_primary"]
     with (HERE / "extractbench-leaderboard.csv").open(newline="") as handle:
         eb_rows = list(csv.DictReader(handle))

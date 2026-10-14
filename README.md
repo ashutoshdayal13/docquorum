@@ -12,7 +12,7 @@ The table below records earlier stored results; the experiment results above dis
 | benchmark | earlier stored result | reference comparison |
 |---|---|---|
 | ExtractBench (370 enterprise PDFs, 1-163 pages) | Overall **95.25** (short 96.11, medium 94.03, long 90.41) | 3rd of 45 leaderboard rows (behind two commercial systems at 95.91) |
-| UNIKIE-BENCH (4,472 images, 11 scenarios) | tuned six-reading macro F1 **82.37** | displayed tie with Gemini-3-Pro 82.37 |
+| UNIKIE-BENCH (4,472 images, 11 scenarios) | six-reading macro F1 **82.62** (small images enlarged; 82.37 before) | **1st**: above Gemini-3-Pro 82.37 |
 
 * Details, caveats, per-document scores: [`results/README.md`](results/README.md)
 * How it works, with a diagram and worked examples: [`docs/docquorum.pdf`](docs/docquorum.pdf), [documentation and build instructions](docs/README.md)
@@ -72,7 +72,7 @@ images as its `DATA.md` describes, and point `DQ_UNIKIE_DIR` at the clone (defau
 ```bash
 benchmarks/unikie/run.sh score     # from the stored readings in results/unikie/readings
 ```
-**Expected output:** one line starting `DocQuorum macro  82.37`, followed by the 11 per-scenario scores.
+**Expected output:** one line starting `DocQuorum macro  82.62`, followed by the 11 per-scenario scores.
 
 ---
 
