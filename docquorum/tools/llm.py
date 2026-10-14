@@ -10,11 +10,12 @@ import re
 from docquorum import config as C
 
 
-def client(timeout=7200):
-    """A long call (a whole document, up to 32k output tokens) can take an hour on a shared GPU;
-    re-sending it after a timeout repeats all of that work, so retries are few."""
+def client(timeout=21600):
+    """A long call (a whole document, up to 32k output tokens) can take hours on a shared GPU.
+    A failed or timed-out call is not re-sent (a re-send repeats all of its work): the reader
+    falls back to its next plan, and a runner re-runs a failed document."""
     from openai import OpenAI
-    return OpenAI(base_url=C.LLM_URL, api_key="EMPTY", timeout=timeout, max_retries=2)
+    return OpenAI(base_url=C.LLM_URL, api_key="EMPTY", timeout=timeout, max_retries=0)
 
 
 def extra_body(schema=None):
