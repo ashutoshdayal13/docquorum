@@ -72,6 +72,17 @@ def scalar_fields(schema):
     return {k: v for k, v in (schema.get("properties") or {}).items() if k not in names}
 
 
+def without_fields(schema, names):
+    """The schema minus the named top-level properties (None when nothing is left)."""
+    props = {k: v for k, v in (schema.get("properties") or {}).items() if k not in names}
+    if not props:
+        return None
+    rest = dict(schema, properties=props)
+    if isinstance(schema.get("required"), list):
+        rest["required"] = [k for k in schema["required"] if k in props]
+    return rest
+
+
 # ---------- size and split ----------
 def compact(obj):
     return json.dumps(obj, separators=(",", ":"), ensure_ascii=False)

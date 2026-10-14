@@ -29,7 +29,7 @@ from docquorum import checks, quorum
 from docquorum.agents import column_reader, layout, oneshot, ruled_reader
 from docquorum.agents.reader import read_document
 from docquorum.tools import images, llm, native, parser, pdf as PDF
-from docquorum.tools.schema import fill_template, is_template, template_to_schema
+from docquorum.tools.schema import fill_template, is_template, template_to_schema, without_fields
 
 
 def as_pdf(doc, folder):
@@ -79,7 +79,14 @@ def _extract(doc, schema, task, workers, log):
         cl, d = llm.client(), checks.Doc(schema, pdf, name)
         if ev["reader"] != "route":
             reader = column_reader if ev["reader"] == "colflow" else ruled_reader
-            got = checks.run("layout", reader.read(cl, schema, pdf, workers=4, log=log), d)
+            got = reader.read(cl, schema, pdf, workers=4, log=log)
+            # a layout reader reads one list; the reader agent reads every other field
+            rest = without_fields(schema, set(got))
+            if rest:
+                res, stat, _ = read_document(cl, rest, pdf, name, workers)
+                if not stat.get("errors"):
+                    got = {**res, **got}
+            got = checks.run("layout", got, d)
             return _finish(got, template), {"readings": [ev["reader"]]}, {ev["reader"]: got}
 
         readings = {}

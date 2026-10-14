@@ -64,3 +64,12 @@ def test_reference_block_keeps_legends_and_only_the_chunks_own_entities():
 def test_chunk_prompt_without_reference_is_unchanged():
     kw = dict(p0="page 3", p1="page 3", text="X", item_schema="S", array_name="a", array_desc="D")
     assert prompts.CHUNK.format(context="", **kw) == prompts.CHUNK.replace("{context}", "").format(**kw)
+
+
+def test_without_fields_keeps_the_rest_of_the_schema():
+    from docquorum.tools.schema import without_fields
+    schema = {"type": "object", "required": ["title", "rows"],
+              "properties": {"title": {"type": "string"}, "rows": {"type": "array", "items": {"type": "object"}}}}
+    rest = without_fields(schema, {"rows"})
+    assert list(rest["properties"]) == ["title"] and rest["required"] == ["title"]
+    assert without_fields(schema, {"rows", "title"}) is None
