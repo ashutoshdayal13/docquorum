@@ -11,8 +11,8 @@ import json
 from functools import cached_property
 
 from docquorum.checks import (blank_boxes, carry_down, conform, copied_rows, dedupe, page_index,
-                              printed_numbers, printed_pages, printed_quotes, record_counts,
-                              spacing, stacked_rows, template_rows)
+                              printed_numbers, printed_pages, printed_quotes, printed_suffix,
+                              record_counts, spacing, stacked_rows, template_rows)
 from docquorum.tools import parser, pdf as PDF
 
 # what chunked reading gets wrong: values printed once per group, page labels, repeated and
@@ -21,7 +21,7 @@ REPAIRS = (carry_down, page_index, dedupe, stacked_rows)
 # what any reading gets wrong: shape, blank boxes and lines, copied and over-counted rows,
 # and values that are not what the page prints
 OUTPUT = (conform, blank_boxes, template_rows, copied_rows, record_counts, printed_pages,
-          printed_quotes, printed_numbers)
+          printed_quotes, printed_numbers, printed_suffix)
 CHAINS = {"primary": REPAIRS + OUTPUT, "parse": (spacing,) + REPAIRS + OUTPUT,
           "oneshot": OUTPUT, "layout": OUTPUT}
 

@@ -73,3 +73,13 @@ def test_without_fields_keeps_the_rest_of_the_schema():
     rest = without_fields(schema, {"rows"})
     assert list(rest["properties"]) == ["title"] and rest["required"] == ["title"]
     assert without_fields(schema, {"rows", "title"}) is None
+
+
+def test_last_digits_are_taken_from_the_printed_number():
+    from docquorum.checks.printed_suffix import printed_digit_runs, repair, wanted
+    runs = printed_digit_runs("Account number: 1010200605786   Page 2   Card 4421")
+    assert repair("786", 4, runs) == "5786"            # a digit dropped
+    assert repair("5786", 4, runs) == "5786"           # already right
+    assert repair("999", 4, runs) == "999"             # nothing printed ends with it
+    assert wanted({"description": "The last four digits of the account number."}, {}) == 4
+    assert wanted({"description": "Account number."}, {}) is None
