@@ -1,14 +1,17 @@
 """
-Zoom re-reading (docquorum/zoom.py) on UNIKIE-BENCH's open category: a second held-out test, the
-design unchanged since the VAREX run. It starts from the stored readings (image, oneshot, parse)
-and the quorum's choice among them (unikie_eval.quorum), and re-reads the disputed fields from
-crops of the image, each capped at the benchmark's 1,605,632 pixels like every other input.
+Zoom re-reading (docquorum/zoom.py) on UNIKIE-BENCH, design unchanged since the VAREX run. It
+starts from the stored readings and the quorum's choice among them (unikie_eval.quorum), and
+re-reads the disputed fields from crops of the images, each capped at the benchmark's 1,605,632
+pixels like every other input. Open category (second held-out test): the three readings image,
+oneshot, parse. Constrained category (third): the six readings of the reported configuration.
 
-    set -a; source runs/unikie_open.env; set +a      (the open-category folders)
-    python benchmarks/unikie/zoom_open.py run         -> results/unikie_open/zoom/<scenario>.json
-    python benchmarks/unikie/zoom_open.py score       macro F1 before / after, form by form
+    python benchmarks/unikie/zoom_unikie.py run      -> results/unikie[_open]/zoom/<scenario>.json
+    python benchmarks/unikie/zoom_unikie.py score    macro F1 before / after, document by document
+
+For the open category, first: set -a; source runs/unikie_open.env; set +a (its folders).
 """
 import json
+import os
 import random
 import sys
 import tempfile
@@ -26,7 +29,8 @@ import unikie_protocol as U  # noqa: E402
 from docquorum import zoom  # noqa: E402
 from docquorum.tools.schema import fill_template  # noqa: E402
 
-ARMS = [r for r in E.READINGS if r in ("image", "oneshot", "parse")]     # the open track's readings
+OPEN = bool(os.environ.get("DQ_UNIKIE_SCENARIOS"))        # the open category's settings are loaded
+ARMS = [r for r in E.READINGS if r in ("image", "oneshot", "parse")] if OPEN else list(E.READINGS)
 OUT = E.OUT.parent / "zoom"
 
 
@@ -38,8 +42,24 @@ def candidates(sc):
         yield name, imgs, t, kept, [c for c in cands.values() if c is not kept]
 
 
-def run():
+def document_pdf(imgs, folder):
+    """The document as a PDF: one image as the pipeline prepares it (extract.as_pdf); several
+    images (a few constrained-category documents) prepared the same way, one page each."""
     from docquorum.extract import as_pdf
+    if len(imgs) == 1:
+        return as_pdf(imgs[0], folder)
+    from PIL import Image, ImageOps
+    from docquorum.tools import images
+    pages = []
+    for p in imgs:
+        with Image.open(p) as im:
+            pages.append(images.enlarge_small(images.flatten(ImageOps.exif_transpose(im) or im)))
+    dst = Path(folder) / "doc.pdf"
+    pages[0].save(dst, "PDF", resolution=150, save_all=True, append_images=pages[1:])
+    return dst
+
+
+def run():
     from docquorum.tools import llm, parser
     zoom.MAX_CROP_PIXELS = U.TARGET_MAX_PIXELS
     cl, pc = llm.client(timeout=3600), parser.make_client()
@@ -58,7 +78,7 @@ def run():
             name, imgs, t, kept, others = item
             with tempfile.TemporaryDirectory() as td:
                 try:
-                    new, s = zoom.reread(cl, kept, others, t, as_pdf(imgs[0], td), parser_client=pc,
+                    new, s = zoom.reread(cl, kept, others, t, document_pdf(imgs, td), parser_client=pc,
                                          log=lambda m: None)
                 except Exception as e:                      # the quorum's reading stands
                     new, s = kept, {"error": type(e).__name__}
@@ -95,7 +115,7 @@ def score():
     stats = {}
     for sc in U.SCENARIOS:
         stats.update(json.loads((OUT / f"{sc}.stats.json").read_text()))
-    rep = {"benchmark": "UNIKIE-BENCH, open category", "documents": len(per_doc),
+    rep = {"benchmark": "UNIKIE-BENCH, " + ("open" if OPEN else "constrained") + " category", "documents": len(per_doc),
            "macro_f1": {"before": sum(before.values()) / len(before), "after": sum(after.values()) / len(after)},
            "per_scenario": {sc: {"before": before[sc], "after": after[sc]} for sc in U.SCENARIOS},
            "documents_better": up, "documents_worse": down, "sign_test_p_two_sided": p,

@@ -5,7 +5,10 @@ After the quorum keeps one whole reading, the fields where the readings disagree
 more from a high-resolution crop of the page region that prints them, by a call that sees
 neither the readings nor their values. The kept reading changes only when the zoomed reading
 equals a value one of the readings already proposed: the zoom breaks ties with a sharper view of
-the page and never adds a value of its own. No answer key is used.
+the page and never adds a value of its own. The zoomed reading counts as ZOOM_VOTES readings: a
+value changes only when its readings plus those votes outnumber the readings behind the kept
+value, so the zoom can overturn a lead of one reading but not a clear majority (with six readings,
+five agreeing readings against one). No answer key is used.
 """
 import base64
 import copy
@@ -16,6 +19,7 @@ from docquorum.tools import llm, parser, pdf as PDF
 
 ZOOM_DPI, MIN_WIDTH, PAD, MAX_DISPUTES = 300, 1200, 0.015, 40
 MAX_CROP_PIXELS = None      # a benchmark's cap on every model input, where it has one
+ZOOM_VOTES = 2              # the sharper zoomed reading weighs as two readings
 
 ASK = ('This image is a region cut from a page of a document. Read the value of the field '
        '"{path}"{desc} exactly as printed in the image. Reply with JSON only: {{"value": "..."}}; '
@@ -138,7 +142,12 @@ def reread(cl, kept, others, schema, pdf, parser_client=None, log=print):
     client = parser_client or parser.make_client()
     n, cache, out = PDF.npages(pdf), {}, copy.deepcopy(kept)
     before = leaves(kept)
+    every = [before] + [leaves(o) for o in others]
+    votes = lambda path, v: sum(norm(lv.get(path)) == norm(v) for lv in every)
     for path, vals in found.items():
+        held = votes(path, before.get(path))
+        if max(votes(path, v) for v in vals if norm(v) != norm(before.get(path))) + ZOOM_VOTES <= held:
+            continue                                  # no zoomed reading could overturn the kept value
         loc = locate(vals, pdf, n, client, cache)
         img = crop(pdf, loc[0], loc[1], cache) if loc else None
         if img is None:
@@ -154,7 +163,7 @@ def reread(cl, kept, others, schema, pdf, parser_client=None, log=print):
         got = llm.parse_object(txt or "")
         seen = norm(got.get("value")) if isinstance(got, dict) else ""
         match = [v for v in vals if seen and norm(v) == seen]
-        if match and seen != norm(before.get(path)):
+        if match and seen != norm(before.get(path)) and votes(path, match[0]) + ZOOM_VOTES > held:
             set_path(out, path, match[0])
             stat["changed"] += 1
     return out, stat
