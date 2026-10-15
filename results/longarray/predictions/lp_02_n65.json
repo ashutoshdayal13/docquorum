@@ -1,0 +1,1687 @@
+{
+ "case_name": "United States of America v. Iris Diaz, Iris Lopez, Marek Ellis",
+ "court": "UNITED STATES DISTRICT COURT NORTHERN DISTRICT OF CALIFORNIA SAN JOSE DIVISION",
+ "docket_number": "23-CR-07412-EJD",
+ "defendants": [
+  {
+   "defendant_id": "DEF-001",
+   "name": "Iris Diaz",
+   "aliases": [
+    "juno",
+    "weld"
+   ],
+   "residence": "Reno, Nevada",
+   "role": "credential broker"
+  },
+  {
+   "defendant_id": "DEF-002",
+   "name": "Iris Lopez",
+   "aliases": [
+    "ridge"
+   ],
+   "residence": "San Jose, California",
+   "role": "credential broker"
+  },
+  {
+   "defendant_id": "DEF-003",
+   "name": "Marek Ellis",
+   "aliases": [
+    "northstar"
+   ],
+   "residence": "Denver, Colorado",
+   "role": "payment courier"
+  }
+ ],
+ "counts": [
+  {
+   "count_number": 1,
+   "count_label": "Count One",
+   "offense": "Aggravated Identity Theft",
+   "statutes": [
+    "18 U.S.C. § 1028A",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Iris Lopez",
+    "Marek Ellis"
+   ],
+   "incorporated_paragraphs": "1-39",
+   "date_range": "2024-03-24 to 2024-05-14",
+   "source_page": 2
+  },
+  {
+   "count_number": 2,
+   "count_label": "Count Two",
+   "offense": "Criminal Copyright Infringement",
+   "statutes": [
+    "17 U.S.C. § 506(a)(1)(B)",
+    "18 U.S.C. § 2319(c)(1)"
+   ],
+   "defendants": [
+    "Marek Ellis",
+    "Iris Lopez"
+   ],
+   "incorporated_paragraphs": "1-25",
+   "date_range": "2024-01-10 to 2024-02-23",
+   "source_page": 4
+  },
+  {
+   "count_number": 3,
+   "count_label": "Count Three",
+   "offense": "Money Laundering",
+   "statutes": [
+    "18 U.S.C. § 1956(a)(1)(B)(i)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Iris Lopez",
+    "Marek Ellis",
+    "Iris Diaz"
+   ],
+   "incorporated_paragraphs": "1-24",
+   "date_range": "2024-03-05 to 2024-05-24",
+   "source_page": 6
+  },
+  {
+   "count_number": 4,
+   "count_label": "Count Four",
+   "offense": "Aggravated Identity Theft",
+   "statutes": [
+    "18 U.S.C. § 1028A",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "incorporated_paragraphs": "1-23",
+   "date_range": "2024-03-02 to 2024-05-10",
+   "source_page": 8
+  },
+  {
+   "count_number": 5,
+   "count_label": "Count Five",
+   "offense": "Wire Fraud",
+   "statutes": [
+    "18 U.S.C. § 1343",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Marek Ellis",
+    "Iris Lopez"
+   ],
+   "incorporated_paragraphs": "1-27",
+   "date_range": "2024-02-15 to 2024-04-25",
+   "source_page": 10
+  }
+ ],
+ "charged_facts": [
+  {
+   "fact_id": "ACT-000001",
+   "paragraph_id": "1.01",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-23",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "claims export batch Q4-17",
+   "method": "sold",
+   "venue": "routing table North Dock",
+   "amount_usd": 91191.59,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Attachment C",
+    "Schedule A"
+   ],
+   "source_page": 2
+  },
+  {
+   "fact_id": "ACT-000002",
+   "paragraph_id": "1.02",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-30",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "North Pier Software",
+   "object": "wire transfer instruction packet",
+   "method": "exchanged",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 53370.09,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule A"
+   ],
+   "source_page": 2
+  },
+  {
+   "fact_id": "ACT-000003",
+   "paragraph_id": "1.03",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [
+    "Count Four",
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-01-13",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Marek Ellis"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "pre-release console image",
+   "method": "caused to be routed",
+   "venue": "drop account 7781",
+   "amount_usd": 18369.97,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 3",
+    "Schedule B"
+   ],
+   "source_page": 2
+  },
+  {
+   "fact_id": "ACT-000004",
+   "paragraph_id": "1.04",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [
+    "Count Two",
+    "Count Five"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-01-04",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Marek Ellis"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "Aurora Ledger v9 installer",
+   "method": "caused to be routed",
+   "venue": "vault share HARBOR",
+   "amount_usd": 37755.86,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000005",
+   "paragraph_id": "1.05",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-12",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Marek Ellis"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "merchant token bundle",
+   "method": "encrypted and forwarded",
+   "venue": "routing table North Dock",
+   "amount_usd": 65344.93,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000006",
+   "paragraph_id": "1.06",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-14",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Marek Ellis",
+    "Iris Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "Episode 408 screener",
+   "method": "exchanged",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 68122.65,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2",
+    "Exhibit 1"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000007",
+   "paragraph_id": "1.07",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-17",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez",
+    "Marek Ellis"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "subscriber credential list",
+   "method": "sold",
+   "venue": "channel #ridge",
+   "amount_usd": 61805.23,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Schedule B"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000008",
+   "paragraph_id": "1.08",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-23",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Marek Ellis",
+    "Iris Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "merchant token bundle",
+   "method": "staged for distribution",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 12481.74,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Schedule A",
+    "Exhibit 3"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000009",
+   "paragraph_id": "1.09",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-21",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Lopez",
+    "Marek Ellis"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "warehouse access manifest",
+   "method": "transmitted",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 46250.82,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000010",
+   "paragraph_id": "1.10",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-04-18",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "Aurora Ledger v9 installer",
+   "method": "mirrored",
+   "venue": "vault share HARBOR",
+   "amount_usd": 19747.66,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 1"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000011",
+   "paragraph_id": "1.11",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-10",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Lopez",
+    "Marek Ellis"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "Episode 408 screener",
+   "method": "staged for distribution",
+   "venue": "channel #ridge",
+   "amount_usd": 37799.15,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule B",
+    "Exhibit 3"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000012",
+   "paragraph_id": "1.12",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [
+    "Count Four",
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-28",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Lopez",
+    "Marek Ellis"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "merchant token bundle",
+   "method": "reconciled",
+   "venue": "terminal session M-22",
+   "amount_usd": 17582.47,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000013",
+   "paragraph_id": "1.13",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [
+    "Count Five",
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-02-23",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "claims export batch Q4-17",
+   "method": "exchanged",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000014",
+   "paragraph_id": "2.01",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-28",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Marek Ellis"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "licensing key archive",
+   "method": "caused to be routed",
+   "venue": "channel #ridge",
+   "amount_usd": 46049.68,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 3"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000015",
+   "paragraph_id": "2.02",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [
+    "Count Four"
+   ],
+   "relationship_type": "background_only",
+   "date": "2024-02-19",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Marek Ellis"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "pre-release console image",
+   "method": "staged for distribution",
+   "venue": "terminal session M-22",
+   "amount_usd": 38981.0,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule A",
+    "Attachment C"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000016",
+   "paragraph_id": "2.03",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [
+    "Count Four"
+   ],
+   "relationship_type": "background_only",
+   "date": "2024-07-23",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Marek Ellis",
+    "Iris Lopez"
+   ],
+   "victim": "North Pier Software",
+   "object": "pre-release console image",
+   "method": "transmitted",
+   "venue": "routing table North Dock",
+   "amount_usd": 33970.81,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule A",
+    "Attachment C"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000017",
+   "paragraph_id": "2.04",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-05",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Lopez",
+    "Marek Ellis"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Episode 408 screener",
+   "method": "transmitted",
+   "venue": "channel #ridge",
+   "amount_usd": 75029.81,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000018",
+   "paragraph_id": "2.05",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-24",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Marek Ellis"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "licensing key archive",
+   "method": "uploaded",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 28902.88,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Schedule A",
+    "Exhibit 1"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000019",
+   "paragraph_id": "2.06",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-08",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "merchant token bundle",
+   "method": "sold",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 1",
+    "Exhibit 3"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000020",
+   "paragraph_id": "2.07",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-04",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Marek Ellis",
+    "Iris Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Episode 408 screener",
+   "method": "sold",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Attachment C"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000021",
+   "paragraph_id": "2.08",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-07",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Lopez",
+    "Marek Ellis"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "claims export batch Q4-17",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": 72825.21,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 1"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000022",
+   "paragraph_id": "2.09",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [
+    "Count Three",
+    "Count Four"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-04",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez",
+    "Marek Ellis"
+   ],
+   "victim": "North Pier Software",
+   "object": "customer refund spreadsheet",
+   "method": "sold",
+   "venue": "server BX-14",
+   "amount_usd": 3608.59,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000023",
+   "paragraph_id": "2.10",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-30",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "warehouse access manifest",
+   "method": "transmitted",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 84555.5,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 1",
+    "Schedule A"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000024",
+   "paragraph_id": "2.11",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-06",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez",
+    "Marek Ellis"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "customer refund spreadsheet",
+   "method": "transmitted",
+   "venue": "drop account 7781",
+   "amount_usd": 21428.75,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2",
+    "Schedule A"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000025",
+   "paragraph_id": "2.12",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-10",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Marek Ellis"
+   ],
+   "victim": "North Pier Software",
+   "object": "licensing key archive",
+   "method": "reconciled",
+   "venue": "server BX-14",
+   "amount_usd": 34622.31,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 1",
+    "Exhibit 3"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000026",
+   "paragraph_id": "2.13",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-20",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez",
+    "Marek Ellis"
+   ],
+   "victim": "North Pier Software",
+   "object": "claims export batch Q4-17",
+   "method": "uploaded",
+   "venue": "terminal session M-22",
+   "amount_usd": 64041.53,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 1",
+    "Attachment C"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000027",
+   "paragraph_id": "3.01",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [
+    "Count One"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-26",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Diaz"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Episode 408 screener",
+   "method": "mirrored",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule B"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000028",
+   "paragraph_id": "3.02",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-17",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Marek Ellis",
+    "Iris Diaz"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "claims export batch Q4-17",
+   "method": "exchanged",
+   "venue": "drop account 7781",
+   "amount_usd": 87072.54,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000029",
+   "paragraph_id": "3.03",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-25",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Marek Ellis",
+    "Iris Diaz"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "claims export batch Q4-17",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": 52730.8,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000030",
+   "paragraph_id": "3.04",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [
+    "Count One",
+    "Count Five"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-05-21",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez",
+    "Marek Ellis"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "customer refund spreadsheet",
+   "method": "reconciled",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Attachment C"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000031",
+   "paragraph_id": "3.05",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-23",
+   "actor": "Iris Diaz",
+   "actor_alias": "juno",
+   "defendants": [
+    "Iris Diaz"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "pre-release console image",
+   "method": "encrypted and forwarded",
+   "venue": "drop account 7781",
+   "amount_usd": 53290.02,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000032",
+   "paragraph_id": "3.06",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [
+    "Count Five"
+   ],
+   "relationship_type": "background_only",
+   "date": "2024-01-23",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Diaz"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "subscriber credential list",
+   "method": "transmitted",
+   "venue": "channel #ridge",
+   "amount_usd": 63262.24,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000033",
+   "paragraph_id": "3.07",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [
+    "Count Five"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-15",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Marek Ellis"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "warehouse access manifest",
+   "method": "encrypted and forwarded",
+   "venue": "routing table North Dock",
+   "amount_usd": 94290.62,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 3"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000034",
+   "paragraph_id": "3.08",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-30",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "subscriber credential list",
+   "method": "caused to be routed",
+   "venue": "vault share HARBOR",
+   "amount_usd": 27648.83,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 1",
+    "Attachment C"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000035",
+   "paragraph_id": "3.09",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [
+    "Count Two"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-08",
+   "actor": "Iris Diaz",
+   "actor_alias": "juno",
+   "defendants": [
+    "Iris Diaz",
+    "Iris Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Episode 408 screener",
+   "method": "staged for distribution",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 23166.01,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Schedule B",
+    "Exhibit 2"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000036",
+   "paragraph_id": "3.10",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-07",
+   "actor": "Iris Diaz",
+   "actor_alias": "weld",
+   "defendants": [
+    "Iris Diaz"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "subscriber credential list",
+   "method": "transmitted",
+   "venue": "routing table North Dock",
+   "amount_usd": 93150.05,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000037",
+   "paragraph_id": "3.11",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-10",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Diaz"
+   ],
+   "victim": "North Pier Software",
+   "object": "pre-release console image",
+   "method": "uploaded",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 78261.34,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000038",
+   "paragraph_id": "3.12",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [
+    "Count Two"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-03-20",
+   "actor": "Iris Diaz",
+   "actor_alias": "juno",
+   "defendants": [
+    "Marek Ellis",
+    "Iris Lopez"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "warehouse access manifest",
+   "method": "uploaded",
+   "venue": "terminal session M-22",
+   "amount_usd": 42239.94,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000039",
+   "paragraph_id": "3.13",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-23",
+   "actor": "Iris Diaz",
+   "actor_alias": "weld",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "North Pier Software",
+   "object": "claims export batch Q4-17",
+   "method": "mirrored",
+   "venue": "terminal session M-22",
+   "amount_usd": 61438.94,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Attachment C",
+    "Schedule A"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000040",
+   "paragraph_id": "4.01",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-26",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "Aurora Ledger v9 installer",
+   "method": "caused to be routed",
+   "venue": "vault share HARBOR",
+   "amount_usd": 76892.66,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 3",
+    "Exhibit 2"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000041",
+   "paragraph_id": "4.02",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-07-13",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "North Pier Software",
+   "object": "Episode 408 screener",
+   "method": "encrypted and forwarded",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 49645.06,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000042",
+   "paragraph_id": "4.03",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-20",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "pre-release console image",
+   "method": "mirrored",
+   "venue": "routing table North Dock",
+   "amount_usd": 25775.49,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000043",
+   "paragraph_id": "4.04",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-25",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "pre-release console image",
+   "method": "staged for distribution",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 56949.3,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000044",
+   "paragraph_id": "4.05",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-01",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "warehouse access manifest",
+   "method": "mirrored",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 62944.23,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000045",
+   "paragraph_id": "4.06",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-06",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "customer refund spreadsheet",
+   "method": "caused to be routed",
+   "venue": "channel #ridge",
+   "amount_usd": 73110.3,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000046",
+   "paragraph_id": "4.07",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-09",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "Aurora Ledger v9 installer",
+   "method": "sold",
+   "venue": "vault share HARBOR",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000047",
+   "paragraph_id": "4.08",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-09",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "customer refund spreadsheet",
+   "method": "exchanged",
+   "venue": "channel #ridge",
+   "amount_usd": 37134.23,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Schedule B"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000048",
+   "paragraph_id": "4.09",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-20",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "pre-release console image",
+   "method": "exchanged",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 58024.09,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000049",
+   "paragraph_id": "4.10",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-29",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "merchant token bundle",
+   "method": "caused to be routed",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 33434.44,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000050",
+   "paragraph_id": "4.11",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-15",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "merchant token bundle",
+   "method": "uploaded",
+   "venue": "server BX-14",
+   "amount_usd": 66332.9,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 3",
+    "Attachment C"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000051",
+   "paragraph_id": "4.12",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-29",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "pre-release console image",
+   "method": "caused to be routed",
+   "venue": "vault share HARBOR",
+   "amount_usd": 54718.27,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 1"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000052",
+   "paragraph_id": "4.13",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-25",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "pre-release console image",
+   "method": "exchanged",
+   "venue": "vault share HARBOR",
+   "amount_usd": 73772.65,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule B"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000053",
+   "paragraph_id": "5.01",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count Two"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-01-25",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Marek Ellis"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "merchant token bundle",
+   "method": "reconciled",
+   "venue": "drop account 7781",
+   "amount_usd": 44101.35,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule A"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000054",
+   "paragraph_id": "5.02",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-28",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "pre-release console image",
+   "method": "uploaded",
+   "venue": "vault share HARBOR",
+   "amount_usd": 61042.44,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 2",
+    "Schedule A"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000055",
+   "paragraph_id": "5.03",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-23",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Lopez",
+    "Marek Ellis"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "customer refund spreadsheet",
+   "method": "caused to be routed",
+   "venue": "drop account 7781",
+   "amount_usd": 19215.01,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Attachment C",
+    "Schedule A"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000056",
+   "paragraph_id": "5.04",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-05",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "licensing key archive",
+   "method": "uploaded",
+   "venue": "drop account 7781",
+   "amount_usd": 49646.06,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000057",
+   "paragraph_id": "5.05",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-02",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Marek Ellis"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "licensing key archive",
+   "method": "encrypted and forwarded",
+   "venue": "vault share HARBOR",
+   "amount_usd": 78068.51,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 1",
+    "Schedule A"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000058",
+   "paragraph_id": "5.06",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-07",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "wire transfer instruction packet",
+   "method": "transmitted",
+   "venue": "routing table North Dock",
+   "amount_usd": 11575.97,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Schedule A",
+    "Exhibit 1"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000059",
+   "paragraph_id": "5.07",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-01-24",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Marek Ellis",
+    "Iris Lopez"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "warehouse access manifest",
+   "method": "transmitted",
+   "venue": "routing table North Dock",
+   "amount_usd": 52448.3,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule A",
+    "Exhibit 1"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000060",
+   "paragraph_id": "5.08",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-28",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "subscriber credential list",
+   "method": "caused to be routed",
+   "venue": "drop account 7781",
+   "amount_usd": 61894.3,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000061",
+   "paragraph_id": "5.09",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count Two"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-12",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "claims export batch Q4-17",
+   "method": "reconciled",
+   "venue": "drop account 7781",
+   "amount_usd": 76534.18,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 1"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000062",
+   "paragraph_id": "5.10",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-26",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Marek Ellis",
+    "Iris Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "customer refund spreadsheet",
+   "method": "caused to be routed",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 60994.46,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000063",
+   "paragraph_id": "5.11",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-19",
+   "actor": "Iris Lopez",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "Episode 408 screener",
+   "method": "mirrored",
+   "venue": "channel #ridge",
+   "amount_usd": 63918.45,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000064",
+   "paragraph_id": "5.12",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-05",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Marek Ellis"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "licensing key archive",
+   "method": "exchanged",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 89835.48,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000065",
+   "paragraph_id": "5.13",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-16",
+   "actor": "Marek Ellis",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Marek Ellis"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "pre-release console image",
+   "method": "mirrored",
+   "venue": "terminal session M-22",
+   "amount_usd": 85153.42,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule A"
+   ],
+   "source_page": 11
+  }
+ ]
+}

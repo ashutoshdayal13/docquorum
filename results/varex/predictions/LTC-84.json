@@ -2,6 +2,12 @@
  "state": "Florida",
  "county": "Miami-Dade",
  "agency_name": "Miami-Dade Police Dept",
+ "handgun_types": [
+  "SIG Sauer P226",
+  "Glock 17",
+  "Smith & Wesson M&P",
+  "Beretta 92FS"
+ ],
  "applicant_condition": "I am over eighteen years of age, of sound mind",
  "reemployment_reasons": "Honorable retirement after 25 years of service",
  "notary": {
@@ -13,6 +19,5 @@
   "driver_license": "D-2015-FL-18127",
   "rank": "Sergeant",
   "status": "Honorable Retirement"
- },
- "handgun_types": []
+ }
 }

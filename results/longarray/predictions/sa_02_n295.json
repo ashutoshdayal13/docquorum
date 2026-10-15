@@ -1,0 +1,3249 @@
+{
+ "transactions": [
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 376.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "CHECK 2100",
+   "check_number": "2100",
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 249.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "CHECK 2101",
+   "check_number": "2101",
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 85.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "CHECK 2102",
+   "check_number": "2102",
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 365.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "CHECK 2103",
+   "check_number": "2103",
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 82.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "CHECK 2104",
+   "check_number": "2104",
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 549.78,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "CHECK 2105",
+   "check_number": "2105",
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 358.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "CHECK 2106",
+   "check_number": "2106",
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 84.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "CHECK 2107",
+   "check_number": "2107",
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 368.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "CHECK 2108",
+   "check_number": "2108",
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 269.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "CHECK 2109",
+   "check_number": "2109",
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 1696.21,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MOBILE DEPOSIT REF 9300713176",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 170.1,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/18 FROM: TASHA MCKINNEY REF 178404212039",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 1114.76,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEPOSIT - BRANCH REF 24195162",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 5380.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MERCHANT BANKCD OTR BROKERPAY CLEARING LLC NAME-IDS FREIGHT DESK REF# 1344662093",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 2469.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MERCHANT BANKCD NORTHEAST LOADLINK PAYMENTS INC NAME-IDS FREIGHT DESK REF# 3617243100",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 226.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/21 FROM: RAUL BENITEZ REF 617084359389",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 202.15,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/23 FROM: EVAN KOWALSKI REF 274299196541",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 325.58,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/24 FROM: LUCIA PEREIRA REF 271412454441",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 292.4,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/24 FROM: OMAR VALDES REF 234996358860",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 3359.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MERCHANT BANKCD HIGHWAY LEDGER SERVICES LLC NAME-IDS FREIGHT DESK REF# 7336843959",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 352.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/25 FROM: OMAR VALDES REF 609875218433",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 155.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/25 FROM: LUCIA PEREIRA REF 166780456195",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 34.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/26 FROM: RAUL BENITEZ REF 002398456526",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 123.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/26 FROM: EVAN KOWALSKI REF 516572308510",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 3668.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MERCHANT BANKCD NORTHEAST LOADLINK PAYMENTS INC NAME-IDS FREIGHT DESK REF# 3119888935",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 2359.11,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MERCHANT BANKCD OTR BROKERPAY CLEARING LLC NAME-IDS FREIGHT DESK REF# 9272902306",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 832.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MOBILE DEPOSIT REF 2960563106",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 320.88,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/28 FROM: LUCIA PEREIRA REF 381988327598",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 60.95,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/29 FROM: NICOLE HARTWELL REF 482290415652",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 295.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/29 FROM: RAUL BENITEZ REF 069357437752",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 337.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/29 FROM: RAUL BENITEZ REF 500059728845",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 184.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/30 FROM: LUCIA PEREIRA REF 040384613819",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 232.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/30 FROM: NICOLE HARTWELL REF 037747501776",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 287.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/31 FROM: LUCIA PEREIRA REF 819029427117",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 315.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/01 FROM: RAUL BENITEZ REF 265549743957",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 248.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/03 FROM: RAUL BENITEZ REF 015501533236",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 3945.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MERCHANT BANKCD OTR BROKERPAY CLEARING LLC NAME-IDS FREIGHT DESK REF# 5949024542",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 3068.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MERCHANT BANKCD NORTHEAST LOADLINK PAYMENTS INC NAME-IDS FREIGHT DESK REF# 8096234373",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 144.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/04 FROM: TASHA MCKINNEY REF 418246367480",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 4.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "INTEREST CREDITED",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 1414.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MOBILE DEPOSIT REF 7388330104",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 264.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/07 FROM: RAUL BENITEZ REF 262767905663",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 3962.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MERCHANT BANKCD HIGHWAY LEDGER SERVICES LLC NAME-IDS FREIGHT DESK REF# 3920612451",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 166.71,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/10 FROM: RAUL BENITEZ REF 560006738561",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 33.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/10 FROM: TASHA MCKINNEY REF 805222876864",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 2647.17,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MERCHANT BANKCD NORTHEAST LOADLINK PAYMENTS INC NAME-IDS FREIGHT DESK REF# 2657687112",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 21.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/11 FROM: OMAR VALDES REF 755547770662",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 3487.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MERCHANT BANKCD OTR BROKERPAY CLEARING LLC NAME-IDS FREIGHT DESK REF# 9805506619",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 382.26,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/13 FROM: RAUL BENITEZ REF 690735621652",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 163.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/14 FROM: RAUL BENITEZ REF 252616035849",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 55.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/14 FROM: RAUL BENITEZ REF 586465933689",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 198.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/16 FROM: EVAN KOWALSKI REF 910079865614",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 51.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/16 FROM: TASHA MCKINNEY REF 633500239066",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 15.43,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HUDSON COUNTY OFFICE CAFE TERMINAL 296354",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 283.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/17 TO: OMAR VALDES REF 742094159224",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 44.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET STREET OFFICE SUPPLY #31 TERMINAL 717059",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 12.71,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PENN STATION COFFEE BAR #7 TERMINAL 367029",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 33.58,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NEWARK TECH ACCESSORIES #12 TERMINAL 526745",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 120.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/17 TO: OMAR VALDES REF 302040212590",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 20.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 415391 DATE 08/17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 88.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/17 TO: RAUL BENITEZ REF 754842648552",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 22.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ACH WITHDRAWAL DOCKSIDE DOCSIGN DESC-RECURRING REF 63984489189",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 14.15,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RAIL YARD CONVENIENCE #3 TERMINAL 506332",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 26.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERFRONT PARKING LOT B TERMINAL 131261",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 20.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TUNNEL TOLLS ONLINE TERMINAL 230529",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 285.57,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/18 TO: NICOLE HARTWELL REF 915801662763",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 58.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/18 TO: EVAN KOWALSKI REF 652497133517",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 54.88,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET STREET OFFICE SUPPLY #31 TERMINAL 477972",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 179.78,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/19 TO: LUCIA PEREIRA REF 416400245068",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 14.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERFRONT PARKING LOT B TERMINAL 311465",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 390.97,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/19 TO: EVAN KOWALSKI REF 248821678007",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 8.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PENN STATION COFFEE BAR #7 TERMINAL 458920",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 30.64,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NEWARK TECH ACCESSORIES #12 TERMINAL 312191",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 17.58,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HUDSON COUNTY OFFICE CAFE TERMINAL 166750",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 678.53,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ACH WITHDRAWAL VENDOR-RIVERVIEW EQUIPMENT FINANCE DESC-PAYMENT REF 79639289876",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 60.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 651047 DATE 08/20",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 350.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/20 TO: TASHA MCKINNEY REF 827892109598",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 13.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HUDSON COUNTY OFFICE CAFE TERMINAL 036556",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 25.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERFRONT PARKING LOT B TERMINAL 046722",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 163.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/20 TO: RAUL BENITEZ REF 438054837386",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 80.96,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/20 TO: RAUL BENITEZ REF 987542633767",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 53.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GARDEN STATE FUEL STOP #220 TERMINAL 426421",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 20.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 994823 DATE 08/20",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 18.5,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HUDSON COUNTY OFFICE CAFE TERMINAL 143806",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 343.15,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/21 TO: NICOLE HARTWELL REF 553368430013",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 14.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 029370",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 307.19,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/22 TO: LUCIA PEREIRA REF 002733596581",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 62.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GARDEN STATE FUEL STOP #220 TERMINAL 549202",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 33.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PORTSIDE PRINT AND SHIP #5 TERMINAL 177482",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 18.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TUNNEL TOLLS ONLINE TERMINAL 866015",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 9.2,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PENN STATION COFFEE BAR #7 TERMINAL 394479",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 17.01,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LIBERTY AVE CAR WASH #4 TERMINAL 078583",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 22.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 952761",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 262.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/23 TO: LUCIA PEREIRA REF 902148507069",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 13.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TUNNEL TOLLS ONLINE TERMINAL 249527",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 36.14,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PORTSIDE PRINT AND SHIP #5 TERMINAL 062876",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 170.64,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/23 TO: NICOLE HARTWELL REF 235511886427",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 9.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PENN STATION COFFEE BAR #7 TERMINAL 410095",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 13.57,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LIBERTY AVE CAR WASH #4 TERMINAL 570829",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 271.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/23 TO: TASHA MCKINNEY REF 991409944098",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 12.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PENN STATION COFFEE BAR #7 TERMINAL 237146",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 287.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/24 TO: EVAN KOWALSKI REF 027330880115",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 23.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERFRONT PARKING LOT B TERMINAL 591341",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 396.17,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/24 TO: LUCIA PEREIRA REF 369721125347",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 35.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ACH WITHDRAWAL MAILVAULT BUSINESS EMAIL DESC-RECURRING REF 92744364167",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 21.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 482699",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 85.48,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/25 TO: OMAR VALDES REF 510338580700",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 14.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RAIL YARD CONVENIENCE #3 TERMINAL 071220",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 30.43,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NORTH WARD PIZZA HOUSE #6 TERMINAL 468139",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 23.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TUNNEL TOLLS ONLINE TERMINAL 870102",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 8.73,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RAIL YARD CONVENIENCE #3 TERMINAL 914972",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 35.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NORTH WARD PIZZA HOUSE #6 TERMINAL 510866",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 36.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PORTSIDE PRINT AND SHIP #5 TERMINAL 329158",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 335.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/25 TO: TASHA MCKINNEY REF 328739570427",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 40.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NEWARK TECH ACCESSORIES #12 TERMINAL 894462",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 90.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE ESSEX MOBILE REPAIR KIOSK TERMINAL 627205",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 22.05,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 980476",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 25.39,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERFRONT PARKING LOT B TERMINAL 904807",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 148.76,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/25 TO: LUCIA PEREIRA REF 246738603502",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 21.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 698799",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 14.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RAIL YARD CONVENIENCE #3 TERMINAL 066479",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 310.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/26 TO: RAUL BENITEZ REF 993423995229",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 28.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NEWARK TECH ACCESSORIES #12 TERMINAL 354887",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 20.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 642237 DATE 08/26",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 25.71,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TRUCKERS LUNCH BOX CAFE #88 TERMINAL 443470",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 175.94,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ACH WITHDRAWAL VENDOR-PASSAIC POWER AND GAS DESC-PAYMENT REF 66195851872",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 11.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HUDSON COUNTY OFFICE CAFE TERMINAL 617217",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 200.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 818137 DATE 08/27",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 16.72,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LIBERTY AVE CAR WASH #4 TERMINAL 171784",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 20.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TRUCKERS LUNCH BOX CAFE #88 TERMINAL 513740",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 40.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 261294 DATE 08/27",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 67.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BROADWAY BUSINESS MART #19 TERMINAL 086697",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 93.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/27 TO: LUCIA PEREIRA REF 200084393226",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 52.03,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BROADWAY BUSINESS MART #19 TERMINAL 328287",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 23.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PORTSIDE PRINT AND SHIP #5 TERMINAL 607923",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 31.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/27 TO: OMAR VALDES REF 381243857131",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 305.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/27 TO: RAUL BENITEZ REF 938735330145",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 28.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TRUCKERS LUNCH BOX CAFE #88 TERMINAL 442285",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 19.05,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HUDSON COUNTY OFFICE CAFE TERMINAL 729031",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 213.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/28 TO: NICOLE HARTWELL REF 349146690895",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 18.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERFRONT PARKING LOT B TERMINAL 748854",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 348.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/28 TO: RAUL BENITEZ REF 419361020419",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 12.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RAIL YARD CONVENIENCE #3 TERMINAL 144875",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 78.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GARDEN STATE FUEL STOP #220 TERMINAL 823303",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 13.05,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FERRY STREET PHARMACY #102 TERMINAL 151639",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 27.46,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NORTH WARD PIZZA HOUSE #6 TERMINAL 168145",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 22.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERFRONT PARKING LOT B TERMINAL 991158",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 16.75,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FERRY STREET PHARMACY #102 TERMINAL 982660",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 29.17,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PORTSIDE PRINT AND SHIP #5 TERMINAL 131902",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 18.88,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 811768",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 76.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GARDEN STATE FUEL STOP #220 TERMINAL 520487",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 15.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TUNNEL TOLLS ONLINE TERMINAL 367760",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 15.57,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HUDSON COUNTY OFFICE CAFE TERMINAL 947678",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 25.1,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PORTSIDE PRINT AND SHIP #5 TERMINAL 624268",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 316.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/30 TO: OMAR VALDES REF 804922491282",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 21.97,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 859827",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 13.14,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RAIL YARD CONVENIENCE #3 TERMINAL 197519",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 20.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TRUCKERS LUNCH BOX CAFE #88 TERMINAL 645466",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 39.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NORTH WARD PIZZA HOUSE #6 TERMINAL 149200",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 67.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BROADWAY BUSINESS MART #19 TERMINAL 795817",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 12.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PENN STATION COFFEE BAR #7 TERMINAL 972487",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 74.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE ESSEX MOBILE REPAIR KIOSK TERMINAL 635701",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 13.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FERRY STREET PHARMACY #102 TERMINAL 655385",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 37.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/31 TO: TASHA MCKINNEY REF 839336920501",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 20.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 200512 DATE 08/31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 290.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/31 TO: NICOLE HARTWELL REF 092401813409",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 26.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/31 TO: LUCIA PEREIRA REF 599232003283",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 57.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GARDEN STATE FUEL STOP #220 TERMINAL 327081",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 20.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TUNNEL TOLLS ONLINE TERMINAL 261635",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 279.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/31 TO: TASHA MCKINNEY REF 234262238413",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 29.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 08/31 TO: EVAN KOWALSKI REF 132104810743",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 1854.95,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ACH WITHDRAWAL VENDOR-NEWARK OFFICE LOFTS LLC DESC-PAYMENT REF 67231036523",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 20.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LIBERTY AVE CAR WASH #4 TERMINAL 066376",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 18.19,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LIBERTY AVE CAR WASH #4 TERMINAL 852430",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 27.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PORTSIDE PRINT AND SHIP #5 TERMINAL 494821",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 19.71,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 152793",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 40.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 219795 DATE 09/01",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 136.97,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/02 TO: OMAR VALDES REF 676041684986",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 43.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BROADWAY BUSINESS MART #19 TERMINAL 155081",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 200.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 780526 DATE 09/02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 190.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ACH WITHDRAWAL FREIGHTBOARD PRO DESC-RECURRING REF 53118100584",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 20.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 712234 DATE 09/03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 24.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NORTH WARD PIZZA HOUSE #6 TERMINAL 194724",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 20.72,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 032037",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 17.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HUDSON COUNTY OFFICE CAFE TERMINAL 865663",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 20.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HUDSON COUNTY OFFICE CAFE TERMINAL 644956",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 61.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE ESSEX MOBILE REPAIR KIOSK TERMINAL 406914",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 18.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LIBERTY AVE CAR WASH #4 TERMINAL 885727",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 44.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BROADWAY BUSINESS MART #19 TERMINAL 564763",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 40.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 313145 DATE 09/03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 22.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TRUCKERS LUNCH BOX CAFE #88 TERMINAL 831755",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 73.95,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/03 TO: TASHA MCKINNEY REF 053484995116",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 20.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LIBERTY AVE CAR WASH #4 TERMINAL 697293",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 14.73,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TUNNEL TOLLS ONLINE TERMINAL 076189",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 40.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 697417 DATE 09/04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 100.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 099324 DATE 09/04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 35.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET STREET OFFICE SUPPLY #31 TERMINAL 261862",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 151.42,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/05 TO: TASHA MCKINNEY REF 113368753734",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 20.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERFRONT PARKING LOT B TERMINAL 842472",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 19.94,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 743141",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 18.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LIBERTY AVE CAR WASH #4 TERMINAL 332370",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 100.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 786451 DATE 09/05",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 139.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/05 TO: EVAN KOWALSKI REF 793341661028",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 14.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RAIL YARD CONVENIENCE #3 TERMINAL 365864",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 130.78,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ACH WITHDRAWAL VENDOR-METROLINK FIBER SERVICES DESC-PAYMENT REF 00452463183",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 51.14,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GARDEN STATE FUEL STOP #220 TERMINAL 125162",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 36.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NORTH WARD PIZZA HOUSE #6 TERMINAL 449786",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 92.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE ESSEX MOBILE REPAIR KIOSK TERMINAL 453001",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 13.53,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 237503",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 60.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GARDEN STATE FUEL STOP #220 TERMINAL 717982",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 71.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/06 TO: OMAR VALDES REF 623385234101",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 16.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 435690",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 396.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/06 TO: OMAR VALDES REF 717648554846",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 22.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 834561",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 23.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PORTSIDE PRINT AND SHIP #5 TERMINAL 462293",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 25.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PORTSIDE PRINT AND SHIP #5 TERMINAL 063362",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 15.72,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HUDSON COUNTY OFFICE CAFE TERMINAL 805023",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 14.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HUDSON COUNTY OFFICE CAFE TERMINAL 247933",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 27.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PORTSIDE PRINT AND SHIP #5 TERMINAL 524412",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 22.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 246612",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 50.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NEWARK TECH ACCESSORIES #12 TERMINAL 661796",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 20.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TUNNEL TOLLS ONLINE TERMINAL 509109",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 30.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NORTH WARD PIZZA HOUSE #6 TERMINAL 453098",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 74.64,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ACH WITHDRAWAL ROUTESIGNAL DISPATCH SUITE DESC-RECURRING REF 14296450655",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 286.65,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/08 TO: OMAR VALDES REF 749984964500",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 16.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 219736",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 353.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/08 TO: OMAR VALDES REF 649327163480",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 337.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/08 TO: LUCIA PEREIRA REF 012941848570",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 42.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET STREET OFFICE SUPPLY #31 TERMINAL 958060",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 44.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NEWARK TECH ACCESSORIES #12 TERMINAL 636397",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 223.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/08 TO: NICOLE HARTWELL REF 308782830780",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 53.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BROADWAY BUSINESS MART #19 TERMINAL 284641",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 10.78,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PENN STATION COFFEE BAR #7 TERMINAL 292580",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 21.66,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LIBERTY AVE CAR WASH #4 TERMINAL 351360",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 60.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 464930 DATE 09/09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 20.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LIBERTY AVE CAR WASH #4 TERMINAL 955125",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 47.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NEWARK TECH ACCESSORIES #12 TERMINAL 401011",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 13.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RAIL YARD CONVENIENCE #3 TERMINAL 047905",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 7.4,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PENN STATION COFFEE BAR #7 TERMINAL 750788",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 74.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE ESSEX MOBILE REPAIR KIOSK TERMINAL 175492",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 229.73,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/09 TO: EVAN KOWALSKI REF 649164913309",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 17.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERFRONT PARKING LOT B TERMINAL 020538",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 386.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/09 TO: RAUL BENITEZ REF 451762399060",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 60.66,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GARDEN STATE FUEL STOP #220 TERMINAL 799595",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 236.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/10 TO: LUCIA PEREIRA REF 566892114495",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 20.43,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LIBERTY AVE CAR WASH #4 TERMINAL 634183",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 20.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 147898 DATE 09/10",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 16.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TUNNEL TOLLS ONLINE TERMINAL 417677",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 65.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BROADWAY BUSINESS MART #19 TERMINAL 693351",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 12.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PENN STATION COFFEE BAR #7 TERMINAL 505899",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 332.29,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/10 TO: NICOLE HARTWELL REF 403157189494",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 30.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TRUCKERS LUNCH BOX CAFE #88 TERMINAL 505815",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 37.65,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NEWARK TECH ACCESSORIES #12 TERMINAL 165148",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 12.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FERRY STREET PHARMACY #102 TERMINAL 964273",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 36.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PORTSIDE PRINT AND SHIP #5 TERMINAL 647856",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 17.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TUNNEL TOLLS ONLINE TERMINAL 000248",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 40.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 714426 DATE 09/11",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 20.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 456929 DATE 09/11",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 39.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NORTH WARD PIZZA HOUSE #6 TERMINAL 668711",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 144.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/11 TO: TASHA MCKINNEY REF 910926494108",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 47.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/11 TO: EVAN KOWALSKI REF 690350430268",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 200.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 616359 DATE 09/11",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 219.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/11 TO: EVAN KOWALSKI REF 451654468883",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 19.57,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TRUCKERS LUNCH BOX CAFE #88 TERMINAL 623960",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 36.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PORTSIDE PRINT AND SHIP #5 TERMINAL 065523",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 47.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ACH WITHDRAWAL LEDGERLIFT CLOUD ACCOUNTING DESC-RECURRING REF 59500045323",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 20.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 895456 DATE 09/12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 20.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE IRONBOUND DELI & GRILL #14 TERMINAL 763469",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 15.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RAIL YARD CONVENIENCE #3 TERMINAL 202906",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 239.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/12 TO: OMAR VALDES REF 401504040008",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 16.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LIBERTY AVE CAR WASH #4 TERMINAL 617220",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 19.94,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FERRY STREET PHARMACY #102 TERMINAL 172197",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 9.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PENN STATION COFFEE BAR #7 TERMINAL 557821",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 40.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 165613 DATE 09/13",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 53.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET STREET OFFICE SUPPLY #31 TERMINAL 340185",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 16.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FERRY STREET PHARMACY #102 TERMINAL 584113",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 35.29,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PORTSIDE PRINT AND SHIP #5 TERMINAL 071847",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 8.76,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PENN STATION COFFEE BAR #7 TERMINAL 875771",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 37.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NEWARK TECH ACCESSORIES #12 TERMINAL 658260",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 53.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GARDEN STATE FUEL STOP #220 TERMINAL 014740",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 10.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PENN STATION COFFEE BAR #7 TERMINAL 806620",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 407.2,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ACH WITHDRAWAL VENDOR-HUDSON MUTUAL BUSINESS INSURANCE DESC-PAYMENT REF 61893836066",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 180.68,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/14 TO: RAUL BENITEZ REF 447161679240",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 10.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RAIL YARD CONVENIENCE #3 TERMINAL 402106",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 200.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM WITHDRAWAL TERMINAL 099958 DATE 09/14",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 124.65,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/14 TO: RAUL BENITEZ REF 910827331498",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 20.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FERRY STREET PHARMACY #102 TERMINAL 529183",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 12.88,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LIBERTY AVE CAR WASH #4 TERMINAL 387494",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 394.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/15 TO: RAUL BENITEZ REF 890526315229",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 87.75,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE ESSEX MOBILE REPAIR KIOSK TERMINAL 734728",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 15.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TUNNEL TOLLS ONLINE TERMINAL 412342",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 13.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HUDSON COUNTY OFFICE CAFE TERMINAL 800173",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 20.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HUDSON COUNTY OFFICE CAFE TERMINAL 815526",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 26.46,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NORTH WARD PIZZA HOUSE #6 TERMINAL 119270",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "9871"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 368.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ZELLE TRANSACTION DATE 09/16 TO: LUCIA PEREIRA REF 428073654632",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "9871"
+  }
+ ]
+}

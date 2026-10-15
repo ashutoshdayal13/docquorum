@@ -1,0 +1,5242 @@
+{
+ "case_name": "UNITED STATES OF AMERICA v. PRIYA KLINE, FARAH DIAZ, IRIS MORI",
+ "court": "UNITED STATES DISTRICT COURT NORTHERN DISTRICT OF CALIFORNIA SAN JOSE DIVISION",
+ "docket_number": "20-CR-02045-BLF",
+ "charged_facts": [
+  {
+   "fact_id": "ACT-000001",
+   "paragraph_id": "9",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-05",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "pre-release console image",
+   "method": "reconciled",
+   "venue": "channel #ridge",
+   "amount_usd": 5145.0,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Attachment C"
+   ],
+   "source_page": 2
+  },
+  {
+   "fact_id": "ACT-000002",
+   "paragraph_id": "10",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-11",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "Aurora Ledger v9 installer",
+   "method": "staged for distribution",
+   "venue": "server BX-14",
+   "amount_usd": 50124.23,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule B"
+   ],
+   "source_page": 2
+  },
+  {
+   "fact_id": "ACT-000003",
+   "paragraph_id": "11",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-22",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "licensing key archive",
+   "method": "staged for distribution",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 2
+  },
+  {
+   "fact_id": "ACT-000004",
+   "paragraph_id": "1.04",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [
+    "Count Six",
+    "Count Nine"
+   ],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-02-29",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "claims export batch Q4-17",
+   "method": "staged for distribution",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 79946.37,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule B",
+    "Exhibit 1"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000005",
+   "paragraph_id": "1.05",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-05",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "warehouse access manifest",
+   "method": "encrypted and forwarded",
+   "venue": "terminal session M-22",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Attachment C"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000006",
+   "paragraph_id": "1.06",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-21",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "licensing key archive",
+   "method": "exchanged",
+   "venue": "terminal session M-22",
+   "amount_usd": 58347.28,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Schedule B"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000007",
+   "paragraph_id": "1.07",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-04",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Aurora Ledger v9 installer",
+   "method": "uploaded",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 5968.23,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Attachment C",
+    "Exhibit 3"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000008",
+   "paragraph_id": "1.08",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-27",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "licensing key archive",
+   "method": "transmitted",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 79786.7,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000009",
+   "paragraph_id": "1.09",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [
+    "Count Five",
+    "Count Four"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-09",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "merchant token bundle",
+   "method": "mirrored",
+   "venue": "routing table North Dock",
+   "amount_usd": 50445.76,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000010",
+   "paragraph_id": "1.10",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-19",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "Aurora Ledger v9 installer",
+   "method": "sold",
+   "venue": "terminal session M-22",
+   "amount_usd": 82029.52,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000011",
+   "paragraph_id": "1.11",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-28",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "wire transfer instruction packet",
+   "method": "reconciled",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 16618.92,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule B"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000012",
+   "paragraph_id": "1.12",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-08",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "North Pier Software",
+   "object": "wire transfer instruction packet",
+   "method": "uploaded",
+   "venue": "server BX-14",
+   "amount_usd": 68410.42,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 2",
+    "Exhibit 1"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000013",
+   "paragraph_id": "1.13",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-20",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "merchant token bundle",
+   "method": "encrypted and forwarded",
+   "venue": "server BX-14",
+   "amount_usd": 69528.03,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule A",
+    "Attachment C"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000014",
+   "paragraph_id": "1.14",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-21",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "customer refund spreadsheet",
+   "method": "reconciled",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2",
+    "Exhibit 3"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000015",
+   "paragraph_id": "1.15",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-11",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "warehouse access manifest",
+   "method": "transmitted",
+   "venue": "vault share HARBOR",
+   "amount_usd": 57868.14,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000016",
+   "paragraph_id": "1.16",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-26",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "licensing key archive",
+   "method": "uploaded",
+   "venue": "routing table North Dock",
+   "amount_usd": 12874.93,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3",
+    "Schedule A"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000017",
+   "paragraph_id": "1.17",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-23",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "Episode 408 screener",
+   "method": "transmitted",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Attachment C",
+    "Exhibit 1"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000018",
+   "paragraph_id": "1.18",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-01",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "subscriber credential list",
+   "method": "staged for distribution",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000019",
+   "paragraph_id": "1.19",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-13",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "merchant token bundle",
+   "method": "staged for distribution",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000020",
+   "paragraph_id": "1.20",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-06",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "wire transfer instruction packet",
+   "method": "sold",
+   "venue": "vault share HARBOR",
+   "amount_usd": 16684.23,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000021",
+   "paragraph_id": "1.21",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-16",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "Aurora Ledger v9 installer",
+   "method": "mirrored",
+   "venue": "vault share HARBOR",
+   "amount_usd": 43256.6,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Attachment C"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000022",
+   "paragraph_id": "1.22",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-19",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "North Pier Software",
+   "object": "pre-release console image",
+   "method": "reconciled",
+   "venue": "routing table North Dock",
+   "amount_usd": 14543.09,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000023",
+   "paragraph_id": "1.23",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-14",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "subscriber credential list",
+   "method": "transmitted",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 2538.13,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 3"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000024",
+   "paragraph_id": "2.01",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-18",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "subscriber credential list",
+   "method": "caused to be routed",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000025",
+   "paragraph_id": "2.02",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-29",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "Episode 408 screener",
+   "method": "exchanged",
+   "venue": "vault share HARBOR",
+   "amount_usd": 12279.44,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000026",
+   "paragraph_id": "2.03",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-05-05",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "subscriber credential list",
+   "method": "caused to be routed",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 42803.29,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000027",
+   "paragraph_id": "2.04",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [
+    "Count Five",
+    "Count Nine"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-20",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "Episode 408 screener",
+   "method": "mirrored",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 18917.44,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000028",
+   "paragraph_id": "2.05",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [
+    "Count Five"
+   ],
+   "relationship_type": "background_only",
+   "date": "2024-05-12",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "licensing key archive",
+   "method": "mirrored",
+   "venue": "terminal session M-22",
+   "amount_usd": 50721.81,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000029",
+   "paragraph_id": "2.06",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-14",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "subscriber credential list",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": 13208.3,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Schedule A"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000030",
+   "paragraph_id": "2.07",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-27",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori",
+    "Farah Diaz"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "merchant token bundle",
+   "method": "sold",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 44195.27,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule B",
+    "Schedule A"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000031",
+   "paragraph_id": "2.08",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-12",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "licensing key archive",
+   "method": "exchanged",
+   "venue": "vault share HARBOR",
+   "amount_usd": 32073.31,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule B"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000032",
+   "paragraph_id": "2.09",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-01",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Episode 408 screener",
+   "method": "exchanged",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule B",
+    "Schedule A"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000033",
+   "paragraph_id": "2.10",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-09",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "customer refund spreadsheet",
+   "method": "exchanged",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 2",
+    "Exhibit 1"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000034",
+   "paragraph_id": "2.11",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-12",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "customer refund spreadsheet",
+   "method": "encrypted and forwarded",
+   "venue": "vault share HARBOR",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule B",
+    "Schedule A"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000035",
+   "paragraph_id": "2.12",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-25",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Farah Diaz"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "wire transfer instruction packet",
+   "method": "staged for distribution",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 1133.2,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000036",
+   "paragraph_id": "2.13",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-16",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Episode 408 screener",
+   "method": "exchanged",
+   "venue": "channel #ridge",
+   "amount_usd": 53014.56,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000037",
+   "paragraph_id": "2.14",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-28",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "customer refund spreadsheet",
+   "method": "encrypted and forwarded",
+   "venue": "vault share HARBOR",
+   "amount_usd": 25529.09,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 3",
+    "Exhibit 2"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000038",
+   "paragraph_id": "2.15",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-17",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "warehouse access manifest",
+   "method": "staged for distribution",
+   "venue": "server BX-14",
+   "amount_usd": 7228.38,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000039",
+   "paragraph_id": "2.16",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-07",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Farah Diaz"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "subscriber credential list",
+   "method": "staged for distribution",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3",
+    "Exhibit 1"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000040",
+   "paragraph_id": "2.17",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-03",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "subscriber credential list",
+   "method": "mirrored",
+   "venue": "terminal session M-22",
+   "amount_usd": 14680.68,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000041",
+   "paragraph_id": "2.18",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-23",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Farah Diaz"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "merchant token bundle",
+   "method": "caused to be routed",
+   "venue": "terminal session M-22",
+   "amount_usd": 88840.92,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000042",
+   "paragraph_id": "2.19",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-26",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "subscriber credential list",
+   "method": "uploaded",
+   "venue": "routing table North Dock",
+   "amount_usd": 17288.69,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 2"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000043",
+   "paragraph_id": "2.20",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-16",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "warehouse access manifest",
+   "method": "caused to be routed",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 64131.39,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000044",
+   "paragraph_id": "2.21",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-11",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Farah Diaz"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "Episode 408 screener",
+   "method": "encrypted and forwarded",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 31203.44,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000045",
+   "paragraph_id": "2.22",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-22",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "licensing key archive",
+   "method": "encrypted and forwarded",
+   "venue": "server BX-14",
+   "amount_usd": 3978.9,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 1"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000046",
+   "paragraph_id": "2.23",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-25",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "claims export batch Q4-17",
+   "method": "transmitted",
+   "venue": "routing table North Dock",
+   "amount_usd": 83514.39,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000047",
+   "paragraph_id": "3.01",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-31",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "customer refund spreadsheet",
+   "method": "sold",
+   "venue": "vault share HARBOR",
+   "amount_usd": 21887.69,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Schedule B",
+    "Exhibit 2"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000048",
+   "paragraph_id": "3.02",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-25",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "claims export batch Q4-17",
+   "method": "caused to be routed",
+   "venue": "server BX-14",
+   "amount_usd": 15268.88,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Schedule B",
+    "Attachment C"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000049",
+   "paragraph_id": "3.03",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-15",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "claims export batch Q4-17",
+   "method": "exchanged",
+   "venue": "routing table North Dock",
+   "amount_usd": 2393.6,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule B",
+    "Schedule A"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000050",
+   "paragraph_id": "3.04",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-08",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "Aurora Ledger v9 installer",
+   "method": "caused to be routed",
+   "venue": "drop account 7781",
+   "amount_usd": 63434.47,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000051",
+   "paragraph_id": "3.05",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-05",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "merchant token bundle",
+   "method": "encrypted and forwarded",
+   "venue": "drop account 7781",
+   "amount_usd": 652.39,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 1",
+    "Attachment C"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000052",
+   "paragraph_id": "3.06",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-25",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "Episode 408 screener",
+   "method": "caused to be routed",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000053",
+   "paragraph_id": "3.07",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-24",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "wire transfer instruction packet",
+   "method": "transmitted",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000054",
+   "paragraph_id": "3.08",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-28",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "customer refund spreadsheet",
+   "method": "staged for distribution",
+   "venue": "North Dock",
+   "amount_usd": 56090.16,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000055",
+   "paragraph_id": "3.09",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-26",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Aurora Ledger v9 installer",
+   "method": "mirrored",
+   "venue": "terminal session M-22",
+   "amount_usd": 33742.72,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 1"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000056",
+   "paragraph_id": "3.10",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-09",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "pre-release console image",
+   "method": "staged for distribution",
+   "venue": "vault share HARBOR",
+   "amount_usd": 43715.12,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 1",
+    "Exhibit 2"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000057",
+   "paragraph_id": "3.11",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-14",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "customer refund spreadsheet",
+   "method": "encrypted and forwarded",
+   "venue": "channel #ridge",
+   "amount_usd": 80295.52,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000058",
+   "paragraph_id": "3.12",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-16",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "licensing key archive",
+   "method": "encrypted and forwarded",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 87255.9,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 2"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000059",
+   "paragraph_id": "3.13",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [
+    "Count Eight"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-25",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "North Pier Software",
+   "object": "pre-release console image",
+   "method": "mirrored",
+   "venue": "server BX-14",
+   "amount_usd": 38048.92,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3",
+    "Exhibit 1"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000060",
+   "paragraph_id": "3.14",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-28",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "North Pier Software",
+   "object": "warehouse access manifest",
+   "method": "sold",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 50526.23,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 3",
+    "Schedule B"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000061",
+   "paragraph_id": "3.15",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-25",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "claims export batch Q4-17",
+   "method": "sold",
+   "venue": "drop account 7781",
+   "amount_usd": 79324.47,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000062",
+   "paragraph_id": "3.16",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-03-05",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "subscriber credential list",
+   "method": "reconciled",
+   "venue": "vault share HARBOR",
+   "amount_usd": 28796.54,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000063",
+   "paragraph_id": "3.17",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-29",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "Episode 408 screener",
+   "method": "uploaded",
+   "venue": "vault share HARBOR",
+   "amount_usd": 78474.29,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000064",
+   "paragraph_id": "3.18",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-03",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "subscriber credential list",
+   "method": "caused to be routed",
+   "venue": "channel #ridge",
+   "amount_usd": 36388.25,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000065",
+   "paragraph_id": "3.19",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-16",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "North Pier Software",
+   "object": "subscriber credential list",
+   "method": "mirrored",
+   "venue": "terminal session M-22",
+   "amount_usd": 71185.51,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule B",
+    "Exhibit 3"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000066",
+   "paragraph_id": "3.20",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-31",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "Aurora Ledger v9 installer",
+   "method": "sold",
+   "venue": "routing table North Dock",
+   "amount_usd": 8289.34,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3",
+    "Exhibit 1"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000067",
+   "paragraph_id": "3.21",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-10",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "North Pier Software",
+   "object": "pre-release console image",
+   "method": "staged for distribution",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 2894.31,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000068",
+   "paragraph_id": "3.22",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-03",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "subscriber credential list",
+   "method": "transmitted",
+   "venue": "server BX-14",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000069",
+   "paragraph_id": "3.23",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [
+    "Count Nine",
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-03-27",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "Episode 408 screener",
+   "method": "transmitted",
+   "venue": "terminal session M-22",
+   "amount_usd": 34660.42,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2",
+    "Exhibit 3"
+   ],
+   "source_page": 12
+  },
+  {
+   "fact_id": "ACT-000070",
+   "paragraph_id": "4.01",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [
+    "Count Nine"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-22",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "subscriber credential list",
+   "method": "sold",
+   "venue": "terminal session M-22",
+   "amount_usd": 64337.29,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 1",
+    "Schedule B"
+   ],
+   "source_page": 12
+  },
+  {
+   "fact_id": "ACT-000071",
+   "paragraph_id": "4.02",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-17",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "subscriber credential list",
+   "method": "encrypted and forwarded",
+   "venue": "routing table North Dock",
+   "amount_usd": 26835.27,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 1"
+   ],
+   "source_page": 12
+  },
+  {
+   "fact_id": "ACT-000072",
+   "paragraph_id": "4.03",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-18",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "wire transfer instruction packet",
+   "method": "staged for distribution",
+   "venue": "terminal session M-22",
+   "amount_usd": 5365.43,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 12
+  },
+  {
+   "fact_id": "ACT-000073",
+   "paragraph_id": "4.04",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-13",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "claims export batch Q4-17",
+   "method": "staged for distribution",
+   "venue": "vault share HARBOR",
+   "amount_usd": 49944.74,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 12
+  },
+  {
+   "fact_id": "ACT-000074",
+   "paragraph_id": "4.05",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [
+    "Count Five",
+    "Count Nine"
+   ],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-06-07",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "pre-release console image",
+   "method": "mirrored",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule B",
+    "Attachment C"
+   ],
+   "source_page": 13
+  },
+  {
+   "fact_id": "ACT-000075",
+   "paragraph_id": "4.06",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [
+    "Count One",
+    "Count Seven"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-13",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "Episode 408 screener",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": 22400.14,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule A"
+   ],
+   "source_page": 13
+  },
+  {
+   "fact_id": "ACT-000076",
+   "paragraph_id": "4.07",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-31",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "merchant token bundle",
+   "method": "encrypted and forwarded",
+   "venue": "vault share HARBOR",
+   "amount_usd": 40230.93,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 13
+  },
+  {
+   "fact_id": "ACT-000077",
+   "paragraph_id": "4.08",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-08",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "merchant token bundle",
+   "method": "reconciled",
+   "venue": "server BX-14",
+   "amount_usd": 44234.57,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule A",
+    "Exhibit 3"
+   ],
+   "source_page": 13
+  },
+  {
+   "fact_id": "ACT-000078",
+   "paragraph_id": "4.09",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-11",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "subscriber credential list",
+   "method": "sold",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 58871.02,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 13
+  },
+  {
+   "fact_id": "ACT-000079",
+   "paragraph_id": "4.10",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-08",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "Aurora Ledger v9 installer",
+   "method": "reconciled",
+   "venue": "server BX-14",
+   "amount_usd": 56468.28,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 13
+  },
+  {
+   "fact_id": "ACT-000080",
+   "paragraph_id": "4.11",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-04",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "wire transfer instruction packet",
+   "method": "mirrored",
+   "venue": "terminal session M-22",
+   "amount_usd": 15584.27,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 13
+  },
+  {
+   "fact_id": "ACT-000081",
+   "paragraph_id": "4.12",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-07-25",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "Episode 408 screener",
+   "method": "caused to be routed",
+   "venue": "drop account 7781",
+   "amount_usd": 71107.21,
+   "referenced_exhibits": [],
+   "source_page": 13
+  },
+  {
+   "fact_id": "ACT-000082",
+   "paragraph_id": "4.13",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [
+    "Count Eight",
+    "Count Five"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-03-17",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "wire transfer instruction packet",
+   "method": "mirrored",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 83851.58,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 14
+  },
+  {
+   "fact_id": "ACT-000083",
+   "paragraph_id": "4.14",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-04",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Aurora Ledger v9 installer",
+   "method": "mirrored",
+   "venue": "terminal session M-22",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Schedule B"
+   ],
+   "source_page": 14
+  },
+  {
+   "fact_id": "ACT-000084",
+   "paragraph_id": "4.15",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-20",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "warehouse access manifest",
+   "method": "transmitted",
+   "venue": "vault share HARBOR",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 1"
+   ],
+   "source_page": 14
+  },
+  {
+   "fact_id": "ACT-000085",
+   "paragraph_id": "4.16",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [
+    "Count Nine"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-16",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "merchant token bundle",
+   "method": "mirrored",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 14
+  },
+  {
+   "fact_id": "ACT-000086",
+   "paragraph_id": "4.17",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-30",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "wire transfer instruction packet",
+   "method": "sold",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 71531.81,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 3"
+   ],
+   "source_page": 14
+  },
+  {
+   "fact_id": "ACT-000087",
+   "paragraph_id": "4.18",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [
+    "Count Nine",
+    "Count Six"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-02-06",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "Aurora Ledger v9 installer",
+   "method": "caused to be routed",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule A"
+   ],
+   "source_page": 14
+  },
+  {
+   "fact_id": "ACT-000088",
+   "paragraph_id": "4.19",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-24",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "claims export batch Q4-17",
+   "method": "uploaded",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 1",
+    "Schedule B"
+   ],
+   "source_page": 14
+  },
+  {
+   "fact_id": "ACT-000089",
+   "paragraph_id": "4.20",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-04-19",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "pre-release console image",
+   "method": "mirrored",
+   "venue": "server BX-14",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 14
+  },
+  {
+   "fact_id": "ACT-000090",
+   "paragraph_id": "4.21",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [
+    "Count Four"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-04",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "merchant token bundle",
+   "method": "staged for distribution",
+   "venue": "Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B",
+    "Exhibit 1"
+   ],
+   "source_page": 15
+  },
+  {
+   "fact_id": "ACT-000091",
+   "paragraph_id": "4.22",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-20",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "subscriber credential list",
+   "method": "caused to be routed",
+   "venue": "HARBOR",
+   "amount_usd": 30125.24,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 15
+  },
+  {
+   "fact_id": "ACT-000092",
+   "paragraph_id": "4.23",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-05-29",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "licensing key archive",
+   "method": "mirrored",
+   "venue": "HARBOR",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 15
+  },
+  {
+   "fact_id": "ACT-000093",
+   "paragraph_id": "5.01",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count Eight"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-12",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "subscriber credential list",
+   "method": "exchanged",
+   "venue": "North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 3"
+   ],
+   "source_page": 15
+  },
+  {
+   "fact_id": "ACT-000094",
+   "paragraph_id": "5.02",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-31",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "wire transfer instruction packet",
+   "method": "encrypted and forwarded",
+   "venue": "M-22",
+   "amount_usd": 30049.4,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 15
+  },
+  {
+   "fact_id": "ACT-000095",
+   "paragraph_id": "5.03",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-04-15",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "Aurora Ledger v9 installer",
+   "method": "uploaded",
+   "venue": "#ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 15
+  },
+  {
+   "fact_id": "ACT-000096",
+   "paragraph_id": "5.04",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-20",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "pre-release console image",
+   "method": "transmitted",
+   "venue": "terminal session M-22",
+   "amount_usd": 42974.58,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000097",
+   "paragraph_id": "5.05",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count Nine"
+   ],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-06-22",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "North Pier Software",
+   "object": "merchant token bundle",
+   "method": "staged for distribution",
+   "venue": "vault share HARBOR",
+   "amount_usd": 32596.74,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Schedule A"
+   ],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000098",
+   "paragraph_id": "5.06",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count Four",
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-16",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "pre-release console image",
+   "method": "mirrored",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 1"
+   ],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000099",
+   "paragraph_id": "5.07",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-12",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "Aurora Ledger v9 installer",
+   "method": "uploaded",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 60688.61,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 2"
+   ],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000100",
+   "paragraph_id": "5.08",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-03-28",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "pre-release console image",
+   "method": "staged for distribution",
+   "venue": "terminal session M-22",
+   "amount_usd": 71091.37,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 3"
+   ],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000101",
+   "paragraph_id": "5.09",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-24",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "claims export batch Q4-17",
+   "method": "staged for distribution",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 1",
+    "Exhibit 3"
+   ],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000102",
+   "paragraph_id": "5.10",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-16",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "subscriber credential list",
+   "method": "staged for distribution",
+   "venue": "vault share HARBOR",
+   "amount_usd": 23720.97,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000103",
+   "paragraph_id": "5.11",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-07-12",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "subscriber credential list",
+   "method": "staged for distribution",
+   "venue": "server BX-14",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000104",
+   "paragraph_id": "5.12",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-10",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "encrypted and forwarded",
+   "venue": "vault share HARBOR",
+   "amount_usd": 47270.3,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule B"
+   ],
+   "source_page": 17
+  },
+  {
+   "fact_id": "ACT-000105",
+   "paragraph_id": "5.13",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-19",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "mirrored",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 91366.31,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B",
+    "Exhibit 2"
+   ],
+   "source_page": 17
+  },
+  {
+   "fact_id": "ACT-000106",
+   "paragraph_id": "5.14",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-25",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "claims export batch Q4-17",
+   "method": "caused to be routed",
+   "venue": "channel #ridge",
+   "amount_usd": 36772.53,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B",
+    "Exhibit 1"
+   ],
+   "source_page": 17
+  },
+  {
+   "fact_id": "ACT-000107",
+   "paragraph_id": "5.15",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-04",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "claims export batch Q4-17",
+   "method": "mirrored",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 33276.78,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 17
+  },
+  {
+   "fact_id": "ACT-000108",
+   "paragraph_id": "5.16",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count Nine",
+    "Count Four"
+   ],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-03-24",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "wire transfer instruction packet",
+   "method": "sold",
+   "venue": "terminal session M-22",
+   "amount_usd": 43131.74,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 17
+  },
+  {
+   "fact_id": "ACT-000109",
+   "paragraph_id": "5.17",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-11",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "warehouse access manifest",
+   "method": "encrypted and forwarded",
+   "venue": "server BX-14",
+   "amount_usd": 25837.84,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 17
+  },
+  {
+   "fact_id": "ACT-000110",
+   "paragraph_id": "5.18",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-27",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "wire transfer instruction packet",
+   "method": "reconciled",
+   "venue": "channel #ridge",
+   "amount_usd": 1061.01,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 17
+  },
+  {
+   "fact_id": "ACT-000111",
+   "paragraph_id": "5.19",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-06-04",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "wire transfer instruction packet",
+   "method": "transmitted",
+   "venue": "vault share HARBOR",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 18
+  },
+  {
+   "fact_id": "ACT-000112",
+   "paragraph_id": "5.20",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-05-10",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "customer refund spreadsheet",
+   "method": "uploaded",
+   "venue": "drop account 7781",
+   "amount_usd": 86997.44,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 2",
+    "Schedule A"
+   ],
+   "source_page": 18
+  },
+  {
+   "fact_id": "ACT-000113",
+   "paragraph_id": "5.21",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count Six",
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-02-24",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "warehouse access manifest",
+   "method": "transmitted",
+   "venue": "routing table North Dock",
+   "amount_usd": 94784.75,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 18
+  },
+  {
+   "fact_id": "ACT-000114",
+   "paragraph_id": "5.22",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-17",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "licensing key archive",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": 76179.13,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 18
+  },
+  {
+   "fact_id": "ACT-000115",
+   "paragraph_id": "5.23",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-30",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "pre-release console image",
+   "method": "uploaded",
+   "venue": "server BX-14",
+   "amount_usd": 11106.49,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 18
+  },
+  {
+   "fact_id": "ACT-000116",
+   "paragraph_id": "6.01",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-06-03",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "licensing key archive",
+   "method": "mirrored",
+   "venue": "drop account 7781",
+   "amount_usd": 36344.36,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 18
+  },
+  {
+   "fact_id": "ACT-000117",
+   "paragraph_id": "6.02",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [
+    "Count Nine"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-01-16",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "warehouse access manifest",
+   "method": "sold",
+   "venue": "server BX-14",
+   "amount_usd": 78741.32,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000118",
+   "paragraph_id": "6.03",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-11",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "merchant token bundle",
+   "method": "reconciled",
+   "venue": "server BX-14",
+   "amount_usd": 16079.02,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Attachment C",
+    "Exhibit 3"
+   ],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000119",
+   "paragraph_id": "6.04",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-05",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "North Pier Software",
+   "object": "merchant token bundle",
+   "method": "transmitted",
+   "venue": "channel #ridge",
+   "amount_usd": 70073.5,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Attachment C"
+   ],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000120",
+   "paragraph_id": "6.05",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [
+    "Count Three"
+   ],
+   "relationship_type": "background_only",
+   "date": "2024-05-10",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "wire transfer instruction packet",
+   "method": "staged for distribution",
+   "venue": "routing table North Dock",
+   "amount_usd": 58902.78,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 2",
+    "Exhibit 3"
+   ],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000121",
+   "paragraph_id": "6.06",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-02",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "North Pier Software",
+   "object": "warehouse access manifest",
+   "method": "reconciled",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 14288.57,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 3"
+   ],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000122",
+   "paragraph_id": "6.07",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-15",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline",
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "pre-release console image",
+   "method": "mirrored",
+   "venue": "server BX-14",
+   "amount_usd": 53597.5,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000123",
+   "paragraph_id": "6.08",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-13",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "Episode 408 screener",
+   "method": "transmitted",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 3"
+   ],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000124",
+   "paragraph_id": "6.09",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-02-11",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline",
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "Episode 408 screener",
+   "method": "staged for distribution",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000125",
+   "paragraph_id": "6.10",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-11",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "Episode 408 screener",
+   "method": "mirrored",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 4472.44,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 20
+  },
+  {
+   "fact_id": "ACT-000126",
+   "paragraph_id": "6.11",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-14",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "customer refund spreadsheet",
+   "method": "caused to be routed",
+   "venue": "server BX-14",
+   "amount_usd": 21192.63,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 20
+  },
+  {
+   "fact_id": "ACT-000127",
+   "paragraph_id": "6.12",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-10",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "encrypted and forwarded",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 74738.43,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 1"
+   ],
+   "source_page": 20
+  },
+  {
+   "fact_id": "ACT-000128",
+   "paragraph_id": "6.13",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [
+    "Count Five",
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-03-18",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "pre-release console image",
+   "method": "sold",
+   "venue": "drop account 7781",
+   "amount_usd": 67256.29,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 20
+  },
+  {
+   "fact_id": "ACT-000129",
+   "paragraph_id": "6.14",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [
+    "Count Eight",
+    "Count Two"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-16",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "subscriber credential list",
+   "method": "sold",
+   "venue": "server BX-14",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 20
+  },
+  {
+   "fact_id": "ACT-000130",
+   "paragraph_id": "6.15",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-15",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline",
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "claims export batch Q4-17",
+   "method": "uploaded",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 18608.9,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 20
+  },
+  {
+   "fact_id": "ACT-000131",
+   "paragraph_id": "6.16",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-16",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Episode 408 screener",
+   "method": "exchanged",
+   "venue": "terminal session M-22",
+   "amount_usd": 86000.18,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 20
+  },
+  {
+   "fact_id": null,
+   "paragraph_id": null,
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [
+    "Count Seven"
+   ],
+   "relationship_type": "charged_act",
+   "date": null,
+   "actor": null,
+   "actor_alias": null,
+   "defendants": [
+    "Priya Kline",
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": null,
+   "method": null,
+   "venue": null,
+   "amount_usd": 55331.39,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 3",
+    "Exhibit 2"
+   ],
+   "source_page": 21
+  },
+  {
+   "fact_id": "ACT-000133",
+   "paragraph_id": "6.18",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-04-15",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "Episode 408 screener",
+   "method": "reconciled",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule A"
+   ],
+   "source_page": 21
+  },
+  {
+   "fact_id": "ACT-000134",
+   "paragraph_id": "6.19",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [
+    "Count Five"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-03",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "claims export batch Q4-17",
+   "method": "encrypted and forwarded",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 3"
+   ],
+   "source_page": 21
+  },
+  {
+   "fact_id": "ACT-000135",
+   "paragraph_id": "6.20",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-04",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "North Pier Software",
+   "object": "merchant token bundle",
+   "method": "uploaded",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 45000.78,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 21
+  },
+  {
+   "fact_id": "ACT-000136",
+   "paragraph_id": "6.21",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-20",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline",
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "Episode 408 screener",
+   "method": "sold",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 21
+  },
+  {
+   "fact_id": "ACT-000137",
+   "paragraph_id": "6.22",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-03",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline",
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "warehouse access manifest",
+   "method": "transmitted",
+   "venue": "drop account 7781",
+   "amount_usd": 77341.25,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule A",
+    "Exhibit 3"
+   ],
+   "source_page": 21
+  },
+  {
+   "fact_id": "ACT-000138",
+   "paragraph_id": "6.23",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [
+    "Count Two"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-14",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "caused to be routed",
+   "venue": "routing table North Dock",
+   "amount_usd": 6683.43,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 21
+  },
+  {
+   "fact_id": "ACT-000139",
+   "paragraph_id": "7.01",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-26",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "claims export batch Q4-17",
+   "method": "exchanged",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 18322.17,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 22
+  },
+  {
+   "fact_id": "ACT-000140",
+   "paragraph_id": "7.02",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [
+    "Count Nine",
+    "Count Eight"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-02-22",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "uploaded",
+   "venue": "terminal session M-22",
+   "amount_usd": 88429.33,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3"
+   ],
+   "source_page": 22
+  },
+  {
+   "fact_id": "ACT-000141",
+   "paragraph_id": "7.03",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-13",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "North Pier Software",
+   "object": "wire transfer instruction packet",
+   "method": "encrypted and forwarded",
+   "venue": "terminal session M-22",
+   "amount_usd": 10700.56,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 3",
+    "Exhibit 2"
+   ],
+   "source_page": 22
+  },
+  {
+   "fact_id": "ACT-000142",
+   "paragraph_id": "7.04",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-20",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "pre-release console image",
+   "method": "caused to be routed",
+   "venue": "terminal session M-22",
+   "amount_usd": 29252.81,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 22
+  },
+  {
+   "fact_id": "ACT-000143",
+   "paragraph_id": "7.05",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-19",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "merchant token bundle",
+   "method": "transmitted",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 1",
+    "Attachment C"
+   ],
+   "source_page": 22
+  },
+  {
+   "fact_id": "ACT-000144",
+   "paragraph_id": "7.06",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-05",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "subscriber credential list",
+   "method": "caused to be routed",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 75840.32,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 22
+  },
+  {
+   "fact_id": "ACT-000145",
+   "paragraph_id": "7.07",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-05",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline",
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "pre-release console image",
+   "method": "encrypted and forwarded",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 22
+  },
+  {
+   "fact_id": "ACT-000146",
+   "paragraph_id": "7.08",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-06",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "claims export batch Q4-17",
+   "method": "sold",
+   "venue": "vault share HARBOR",
+   "amount_usd": 32773.22,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000147",
+   "paragraph_id": "7.09",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-20",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "claims export batch Q4-17",
+   "method": "reconciled",
+   "venue": "drop account 7781",
+   "amount_usd": 24604.77,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 1",
+    "Exhibit 3"
+   ],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000148",
+   "paragraph_id": "7.10",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [
+    "Count Three",
+    "Count Two"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-01-10",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "customer refund spreadsheet",
+   "method": "caused to be routed",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 32109.57,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 1",
+    "Attachment C"
+   ],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000149",
+   "paragraph_id": "7.11",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-23",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "subscriber credential list",
+   "method": "reconciled",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000150",
+   "paragraph_id": "7.12",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-06",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "pre-release console image",
+   "method": "caused to be routed",
+   "venue": "routing table North Dock",
+   "amount_usd": 48822.07,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 3",
+    "Schedule B"
+   ],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000151",
+   "paragraph_id": "7.13",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-09",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "claims export batch Q4-17",
+   "method": "mirrored",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000152",
+   "paragraph_id": "7.14",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-09",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Farah Diaz"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "pre-release console image",
+   "method": "staged for distribution",
+   "venue": "terminal session M-22",
+   "amount_usd": 59804.82,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000153",
+   "paragraph_id": "7.15",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-01-16",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "warehouse access manifest",
+   "method": "encrypted and forwarded",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000154",
+   "paragraph_id": "7.16",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-04-17",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "claims export batch Q4-17",
+   "method": "exchanged",
+   "venue": "terminal session M-22",
+   "amount_usd": 36507.82,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2",
+    "Exhibit 1"
+   ],
+   "source_page": 24
+  },
+  {
+   "fact_id": "ACT-000155",
+   "paragraph_id": "7.17",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-09",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "Episode 408 screener",
+   "method": "transmitted",
+   "venue": "channel #ridge",
+   "amount_usd": 65153.94,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 24
+  },
+  {
+   "fact_id": "ACT-000156",
+   "paragraph_id": "7.18",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-07",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "claims export batch Q4-17",
+   "method": "staged for distribution",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 24
+  },
+  {
+   "fact_id": "ACT-000157",
+   "paragraph_id": "7.19",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-03-26",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "North Pier Software",
+   "object": "customer refund spreadsheet",
+   "method": "mirrored",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 81451.4,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Attachment C",
+    "Schedule A"
+   ],
+   "source_page": 24
+  },
+  {
+   "fact_id": "ACT-000158",
+   "paragraph_id": "7.20",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-12",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "subscriber credential list",
+   "method": "staged for distribution",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 24
+  },
+  {
+   "fact_id": "ACT-000159",
+   "paragraph_id": "7.21",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-13",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "Episode 408 screener",
+   "method": "uploaded",
+   "venue": "terminal session M-22",
+   "amount_usd": 83650.04,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 24
+  },
+  {
+   "fact_id": "ACT-000160",
+   "paragraph_id": "7.22",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-17",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Farah Diaz"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "claims export batch Q4-17",
+   "method": "mirrored",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 39530.36,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 24
+  },
+  {
+   "fact_id": "ACT-000162",
+   "paragraph_id": "194",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-08",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "licensing key archive",
+   "method": "staged for distribution",
+   "venue": "terminal session M-22",
+   "amount_usd": 92187.51,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 25
+  },
+  {
+   "fact_id": "ACT-000163",
+   "paragraph_id": "195",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [
+    "Count One"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-05",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "warehouse access manifest",
+   "method": "reconciled",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 25
+  },
+  {
+   "fact_id": "ACT-000164",
+   "paragraph_id": "196",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-14",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "Aurora Ledger v9 installer",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": 63259.39,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 25
+  },
+  {
+   "fact_id": "ACT-000165",
+   "paragraph_id": "197",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-06",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "mirrored",
+   "venue": "terminal session M-22",
+   "amount_usd": 18336.47,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 25
+  },
+  {
+   "fact_id": "ACT-000166",
+   "paragraph_id": "198",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-11",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Aurora Ledger v9 installer",
+   "method": "uploaded",
+   "venue": "routing table North Dock",
+   "amount_usd": 4589.71,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 25
+  },
+  {
+   "fact_id": "ACT-000167",
+   "paragraph_id": "199",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-03",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline",
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "claims export batch Q4-17",
+   "method": "transmitted",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 25
+  },
+  {
+   "fact_id": "ACT-000168",
+   "paragraph_id": "8.07",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-10",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "Aurora Ledger v9 installer",
+   "method": "caused to be routed",
+   "venue": "server BX-14",
+   "amount_usd": 1466.49,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 26
+  },
+  {
+   "fact_id": "ACT-000169",
+   "paragraph_id": "8.08",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-06",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "pre-release console image",
+   "method": "caused to be routed",
+   "venue": "drop account 7781",
+   "amount_usd": 54409.5,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Attachment C",
+    "Schedule A"
+   ],
+   "source_page": 26
+  },
+  {
+   "fact_id": "ACT-000170",
+   "paragraph_id": "8.09",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [
+    "Count Seven",
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-26",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline",
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "subscriber credential list",
+   "method": "uploaded",
+   "venue": "routing table North Dock",
+   "amount_usd": 71537.2,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 26
+  },
+  {
+   "fact_id": "ACT-000171",
+   "paragraph_id": "8.10",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [
+    "Count Five"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-08",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "licensing key archive",
+   "method": "staged for distribution",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 77273.9,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Attachment C"
+   ],
+   "source_page": 26
+  },
+  {
+   "fact_id": "ACT-000172",
+   "paragraph_id": "8.11",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [
+    "Count Five"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-16",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "warehouse access manifest",
+   "method": "caused to be routed",
+   "venue": "server BX-14",
+   "amount_usd": 55787.49,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule B"
+   ],
+   "source_page": 26
+  },
+  {
+   "fact_id": "ACT-000173",
+   "paragraph_id": "8.12",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-20",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "merchant token bundle",
+   "method": "uploaded",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 73815.1,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 26
+  },
+  {
+   "fact_id": "ACT-000174",
+   "paragraph_id": "8.13",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-05-18",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "wire transfer instruction packet",
+   "method": "reconciled",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 26
+  },
+  {
+   "fact_id": "ACT-000175",
+   "paragraph_id": "8.14",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-23",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "merchant token bundle",
+   "method": "sold",
+   "venue": "terminal session M-22",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000176",
+   "paragraph_id": "8.15",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-06-20",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "customer refund spreadsheet",
+   "method": "exchanged",
+   "venue": "channel #ridge",
+   "amount_usd": 88039.81,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 3",
+    "Schedule B"
+   ],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000177",
+   "paragraph_id": "8.16",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-18",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "North Pier Software",
+   "object": "Aurora Ledger v9 installer",
+   "method": "exchanged",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000178",
+   "paragraph_id": "8.17",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-18",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "mirrored",
+   "venue": "vault share HARBOR",
+   "amount_usd": 50505.04,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Schedule A"
+   ],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000179",
+   "paragraph_id": "8.18",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-03-19",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "licensing key archive",
+   "method": "transmitted",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 44654.15,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000180",
+   "paragraph_id": "8.19",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-07",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Episode 408 screener",
+   "method": "reconciled",
+   "venue": "channel #ridge",
+   "amount_usd": 24977.68,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000181",
+   "paragraph_id": "8.20",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-28",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "claims export batch Q4-17",
+   "method": "exchanged",
+   "venue": "routing table North Dock",
+   "amount_usd": 37364.46,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Schedule B",
+    "Exhibit 2"
+   ],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000182",
+   "paragraph_id": "8.21",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-17",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "North Pier Software",
+   "object": "wire transfer instruction packet",
+   "method": "mirrored",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000183",
+   "paragraph_id": "8.22",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-22",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline",
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "merchant token bundle",
+   "method": "exchanged",
+   "venue": "server BX-14",
+   "amount_usd": 47705.17,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 28
+  },
+  {
+   "fact_id": "ACT-000184",
+   "paragraph_id": "8.23",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-04",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "warehouse access manifest",
+   "method": "mirrored",
+   "venue": "North Dock",
+   "amount_usd": 83009.22,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 28
+  },
+  {
+   "fact_id": "ACT-000185",
+   "paragraph_id": "9.01",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-12",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "merchant token bundle",
+   "method": "mirrored",
+   "venue": "terminal session M-22",
+   "amount_usd": 75028.45,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 28
+  },
+  {
+   "fact_id": "ACT-000186",
+   "paragraph_id": "9.02",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count Seven",
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-05-01",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "Episode 408 screener",
+   "method": "reconciled",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 87765.52,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 28
+  },
+  {
+   "fact_id": "ACT-000187",
+   "paragraph_id": "9.03",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count Six"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-01-05",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "claims export batch Q4-17",
+   "method": "sold",
+   "venue": "#ridge",
+   "amount_usd": 19260.26,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 28
+  },
+  {
+   "fact_id": "ACT-000188",
+   "paragraph_id": "9.04",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count Five",
+    "Count One"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-07",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori",
+    "Farah Diaz",
+    "Priya Kline"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "merchant token bundle",
+   "method": "uploaded",
+   "venue": "routing table North Dock",
+   "amount_usd": 80660.35,
+   "referenced_exhibits": [],
+   "source_page": 28
+  },
+  {
+   "fact_id": "ACT-000189",
+   "paragraph_id": "9.05",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count One",
+    "Count Eight"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-23",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "pre-release console image",
+   "method": "reconciled",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000190",
+   "paragraph_id": "9.06",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-09",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "warehouse access manifest",
+   "method": "exchanged",
+   "venue": "channel #ridge",
+   "amount_usd": 7076.04,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000191",
+   "paragraph_id": "9.07",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-03",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "licensing key archive",
+   "method": "uploaded",
+   "venue": "server BX-14",
+   "amount_usd": 85772.57,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule A"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000192",
+   "paragraph_id": "9.08",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-14",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Priya Kline",
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "claims export batch Q4-17",
+   "method": "sold",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000193",
+   "paragraph_id": "9.09",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-04",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "merchant token bundle",
+   "method": "staged for distribution",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000194",
+   "paragraph_id": "9.10",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count Eight"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-01-04",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "pre-release console image",
+   "method": "exchanged",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000195",
+   "paragraph_id": "9.11",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count Seven",
+    "Count Five"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-11",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline",
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "wire transfer instruction packet",
+   "method": "transmitted",
+   "venue": "terminal session M-22",
+   "amount_usd": 83719.89,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 3"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000196",
+   "paragraph_id": "9.12",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-03-04",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "merchant token bundle",
+   "method": "uploaded",
+   "venue": "vault share HARBOR",
+   "amount_usd": 90277.41,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 1"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000197",
+   "paragraph_id": "9.13",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count Four",
+    "Count Five"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-03-15",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "mirrored",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 48936.49,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 30
+  },
+  {
+   "fact_id": "ACT-000198",
+   "paragraph_id": "9.14",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count Four"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-05",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "claims export batch Q4-17",
+   "method": "transmitted",
+   "venue": "terminal session M-22",
+   "amount_usd": 66397.33,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 30
+  },
+  {
+   "fact_id": "ACT-000199",
+   "paragraph_id": "9.15",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-30",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "wire transfer instruction packet",
+   "method": "encrypted and forwarded",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule B",
+    "Schedule A"
+   ],
+   "source_page": 30
+  },
+  {
+   "fact_id": "ACT-000200",
+   "paragraph_id": "9.16",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-30",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "merchant token bundle",
+   "method": "uploaded",
+   "venue": "terminal session M-22",
+   "amount_usd": 24022.66,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2",
+    "Exhibit 3"
+   ],
+   "source_page": 30
+  },
+  {
+   "fact_id": "ACT-000201",
+   "paragraph_id": "9.17",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count Two"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-09",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "warehouse access manifest",
+   "method": "staged for distribution",
+   "venue": "drop account 7781",
+   "amount_usd": 85816.54,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule A",
+    "Exhibit 1"
+   ],
+   "source_page": 30
+  },
+  {
+   "fact_id": "ACT-000202",
+   "paragraph_id": "9.18",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-25",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "Episode 408 screener",
+   "method": "uploaded",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule B",
+    "Exhibit 3"
+   ],
+   "source_page": 30
+  },
+  {
+   "fact_id": "ACT-000203",
+   "paragraph_id": "9.19",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-19",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "Episode 408 screener",
+   "method": "sold",
+   "venue": "terminal session M-22",
+   "amount_usd": 81413.02,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 30
+  },
+  {
+   "fact_id": "ACT-000204",
+   "paragraph_id": "9.20",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-05-16",
+   "actor": "Farah Diaz",
+   "actor_alias": "northstar",
+   "defendants": [],
+   "victim": "Lumen Retail Group",
+   "object": "Episode 408 screener",
+   "method": "transmitted",
+   "venue": "terminal session M-22",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 30
+  },
+  {
+   "fact_id": "ACT-000205",
+   "paragraph_id": "9.21",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-28",
+   "actor": "Farah Diaz",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "caused to be routed",
+   "venue": "channel #ridge",
+   "amount_usd": 6319.88,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 31
+  },
+  {
+   "fact_id": "ACT-000206",
+   "paragraph_id": "9.22",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-23",
+   "actor": "Priya Kline",
+   "actor_alias": "paperclip",
+   "defendants": [
+    "Priya Kline",
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "encrypted and forwarded",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 65098.17,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 31
+  },
+  {
+   "fact_id": "ACT-000207",
+   "paragraph_id": "9.23",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-24",
+   "actor": "Iris Mori",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "pre-release console image",
+   "method": "mirrored",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 69797.86,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 31
+  }
+ ],
+ "counts": [
+  {
+   "count_number": 1,
+   "count_label": "Count One",
+   "offense": "Wire Fraud",
+   "statutes": [
+    "18 U.S.C. § 1343",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 2,
+   "count_label": "Count Two",
+   "offense": "Trafficking in Access Devices",
+   "statutes": [
+    "18 U.S.C. § 1029(a)(2)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 3,
+   "count_label": "Count Three",
+   "offense": "Trafficking in Access Devices",
+   "statutes": [
+    "18 U.S.C. § 1029(a)(2)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 4,
+   "count_label": "Count Four",
+   "offense": "Aggravated Identity Theft",
+   "statutes": [
+    "18 U.S.C. § 1028A",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 5,
+   "count_label": "Count Five",
+   "offense": "Money Laundering",
+   "statutes": [
+    "18 U.S.C. § 1956(a)(1)(B)(i)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 6,
+   "count_label": "Count Six",
+   "offense": "Criminal Copyright Infringement",
+   "statutes": [
+    "17 U.S.C. § 506(a)(1)(B)",
+    "18 U.S.C. § 2319(c)(1)"
+   ],
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 7,
+   "count_label": "Count Seven",
+   "offense": "Criminal Copyright Infringement",
+   "statutes": [
+    "17 U.S.C. § 506(a)(1)(B)",
+    "18 U.S.C. § 2319(c)(1)"
+   ],
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 8,
+   "count_label": "Count Eight",
+   "offense": "Money Laundering",
+   "statutes": [
+    "18 U.S.C. § 1956(a)(1)(B)(i)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 9,
+   "count_label": "Count Nine",
+   "offense": "Trafficking in Access Devices",
+   "statutes": [
+    "18 U.S.C. § 1029(a)(2)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 1,
+   "count_label": "Count One",
+   "offense": "Wire Fraud",
+   "statutes": [
+    "18 U.S.C. § 1343",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Priya Kline"
+   ],
+   "incorporated_paragraphs": "1-21",
+   "date_range": "2024-01-26 to 2024-04-27",
+   "source_page": 2
+  },
+  {
+   "count_number": 1,
+   "count_label": "Count One",
+   "offense": "Conspiracy",
+   "statutes": [],
+   "defendants": [
+    "Priya Kline"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 5
+  },
+  {
+   "count_number": 2,
+   "count_label": "Count Two",
+   "offense": "Trafficking in Access Devices",
+   "statutes": [
+    "18 U.S.C. § 1029(a)(2)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Farah Diaz",
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": "Paragraphs 1-18",
+   "date_range": "2024-03-20 to 2024-04-11",
+   "source_page": 5
+  },
+  {
+   "count_number": 3,
+   "count_label": "Count Three",
+   "offense": "Trafficking in Access Devices",
+   "statutes": [
+    "18 U.S.C. § 1029(a)(2)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "incorporated_paragraphs": "1-42",
+   "date_range": "2024-02-15 to 2024-06-09",
+   "source_page": 8
+  },
+  {
+   "count_number": 4,
+   "count_label": "Count Four",
+   "offense": "Aggravated Identity Theft",
+   "statutes": [
+    "18 U.S.C. § 1028A",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": "Paragraphs 1-29",
+   "date_range": "2024-02-21 to 2024-04-24",
+   "source_page": 12
+  },
+  {
+   "count_number": 5,
+   "count_label": "Count Five",
+   "offense": "Money Laundering",
+   "statutes": [
+    "18 U.S.C. § 1956(a)(1)(B)(i)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Priya Kline",
+    "Farah Diaz"
+   ],
+   "incorporated_paragraphs": "Paragraphs 1-42",
+   "date_range": "2024-02-08 to 2024-04-02",
+   "source_page": 15
+  },
+  {
+   "count_number": 6,
+   "count_label": "Count Six",
+   "offense": "Criminal Copyright Infringement",
+   "statutes": [
+    "17 U.S.C. § 506(a)(1)(B)",
+    "18 U.S.C. § 2319(c)(1)"
+   ],
+   "defendants": [
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "incorporated_paragraphs": "1-37",
+   "date_range": "2024-02-18 to 2024-04-11",
+   "source_page": 18
+  },
+  {
+   "count_number": 7,
+   "count_label": "Count Seven",
+   "offense": "Criminal Copyright Infringement",
+   "statutes": [
+    "17 U.S.C. § 506(a)(1)(B)",
+    "18 U.S.C. § 2319(c)(1)"
+   ],
+   "defendants": [
+    "Farah Diaz",
+    "Iris Mori",
+    "Priya Kline"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": "2024-02-09 to 2024-02-20",
+   "source_page": 21
+  },
+  {
+   "count_number": 8,
+   "count_label": "Count Eight",
+   "offense": "Money Laundering",
+   "statutes": [
+    "18 U.S.C. § 1956(a)(1)(B)(i)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Priya Kline",
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": "1-23",
+   "date_range": "2024-02-15 to 2024-02-27",
+   "source_page": 25
+  },
+  {
+   "count_number": 9,
+   "count_label": "Count Nine",
+   "offense": "Trafficking in Access Devices",
+   "statutes": [
+    "18 U.S.C. § 1029(a)(2)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Priya Kline",
+    "Iris Mori",
+    "Farah Diaz"
+   ],
+   "incorporated_paragraphs": "1-26",
+   "date_range": "2024-02-11 to 2024-04-18",
+   "source_page": 28
+  }
+ ],
+ "defendants": [
+  {
+   "defendant_id": "DEF-001",
+   "name": "Priya Kline",
+   "aliases": [
+    "paperclip"
+   ],
+   "residence": "Reno, Nevada",
+   "role": "distribution lead"
+  },
+  {
+   "defendant_id": "DEF-002",
+   "name": "Farah Diaz",
+   "aliases": [
+    "northstar",
+    "cinder"
+   ],
+   "residence": "Denver, Colorado",
+   "role": "payment courier"
+  },
+  {
+   "defendant_id": "DEF-003",
+   "name": "Iris Mori",
+   "aliases": [
+    "northstar"
+   ],
+   "residence": "Reno, Nevada",
+   "role": "server operator"
+  },
+  {
+   "defendant_id": "DEF-002",
+   "name": "Farah Diaz",
+   "aliases": [
+    "cinder"
+   ],
+   "residence": "Denver, Colorado",
+   "role": "payment courier"
+  },
+  {
+   "defendant_id": "DEF-002",
+   "name": "Farah Diaz",
+   "aliases": [
+    "cinder",
+    "northstar"
+   ],
+   "residence": "Denver, Colorado",
+   "role": "payment courier"
+  }
+ ]
+}

@@ -1,0 +1,7930 @@
+{
+ "case_name": "UNITED STATES OF AMERICA v. BIANCA LOPEZ, IRIS MORI, BIANCA ARDEN",
+ "court": "UNITED STATES DISTRICT COURT NORTHERN DISTRICT OF CALIFORNIA SAN JOSE DIVISION",
+ "docket_number": "22-CR-06931-BLF",
+ "charged_facts": [
+  {
+   "fact_id": "ACT-000001",
+   "paragraph_id": "9",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-23",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "warehouse access manifest",
+   "method": "exchanged",
+   "venue": "North Dock",
+   "amount_usd": 42897.01,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 2
+  },
+  {
+   "fact_id": "ACT-000002",
+   "paragraph_id": "10",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-28",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "warehouse access manifest",
+   "method": "transmitted",
+   "venue": "server BX-14",
+   "amount_usd": 19558.07,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 2
+  },
+  {
+   "fact_id": "ACT-000003",
+   "paragraph_id": "11",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-16",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "warehouse access manifest",
+   "method": "transmitted",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 2
+  },
+  {
+   "fact_id": "ACT-000004",
+   "paragraph_id": "1.04",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [
+    "Count Four",
+    "Count Five"
+   ],
+   "relationship_type": "background_only",
+   "date": "2024-02-01",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "subscriber credential list",
+   "method": "sold",
+   "venue": "terminal session M-22",
+   "amount_usd": 78274.08,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 3"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000005",
+   "paragraph_id": "1.05",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-06",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "customer refund spreadsheet",
+   "method": "exchanged",
+   "venue": "terminal session M-22",
+   "amount_usd": 84952.2,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000006",
+   "paragraph_id": "1.06",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-15",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "warehouse access manifest",
+   "method": "exchanged",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 37529.44,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000007",
+   "paragraph_id": "1.07",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [
+    "Count Six",
+    "Count Eight"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-01-02",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Episode 408 screener",
+   "method": "reconciled",
+   "venue": "channel #ridge",
+   "amount_usd": 50534.26,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 1"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000008",
+   "paragraph_id": "1.08",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-05",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "claims export batch Q4-17",
+   "method": "caused to be routed",
+   "venue": "vault share HARBOR",
+   "amount_usd": 88395.66,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 3",
+    "Schedule A"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000009",
+   "paragraph_id": "1.09",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-03-19",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "wire transfer instruction packet",
+   "method": "sold",
+   "venue": "routing table North Dock",
+   "amount_usd": 86853.9,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000010",
+   "paragraph_id": "1.10",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-21",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Aurora Ledger v9 installer",
+   "method": "sold",
+   "venue": "channel #ridge",
+   "amount_usd": 68796.8,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000011",
+   "paragraph_id": "1.11",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-06-16",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "merchant token bundle",
+   "method": "uploaded",
+   "venue": "server BX-14",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000012",
+   "paragraph_id": "1.12",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-07",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "transmitted",
+   "venue": "channel #ridge",
+   "amount_usd": 56804.04,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000013",
+   "paragraph_id": "1.13",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-02",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "wire transfer instruction packet",
+   "method": "sold",
+   "venue": "drop account 7781",
+   "amount_usd": 2149.13,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule A",
+    "Schedule B"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000014",
+   "paragraph_id": "1.14",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-10",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "claims export batch Q4-17",
+   "method": "encrypted and forwarded",
+   "venue": "drop account 7781",
+   "amount_usd": 65022.41,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 1"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000015",
+   "paragraph_id": "1.15",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-06",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "subscriber credential list",
+   "method": "staged for distribution",
+   "venue": "routing table North Dock",
+   "amount_usd": 12965.9,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 3",
+    "Schedule B"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000016",
+   "paragraph_id": "1.16",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-12",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "claims export batch Q4-17",
+   "method": "encrypted and forwarded",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 26126.24,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 1",
+    "Schedule A"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000017",
+   "paragraph_id": "1.17",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-21",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "warehouse access manifest",
+   "method": "caused to be routed",
+   "venue": "vault share HARBOR",
+   "amount_usd": 17698.36,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule A"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000018",
+   "paragraph_id": "1.18",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-13",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "warehouse access manifest",
+   "method": "sold",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 92270.06,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule A",
+    "Schedule B"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000019",
+   "paragraph_id": "1.19",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-02-23",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "Episode 408 screener",
+   "method": "exchanged",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000020",
+   "paragraph_id": "1.20",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [
+    "Count Eight"
+   ],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-01-04",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "staged for distribution",
+   "venue": "terminal session M-22",
+   "amount_usd": 18360.58,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000021",
+   "paragraph_id": "1.21",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-07-04",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "warehouse access manifest",
+   "method": "staged for distribution",
+   "venue": "server BX-14",
+   "amount_usd": 25387.72,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000022",
+   "paragraph_id": "1.22",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-06",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "warehouse access manifest",
+   "method": "exchanged",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 88889.24,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000023",
+   "paragraph_id": "1.23",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-06-23",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Aurora Ledger v9 installer",
+   "method": "reconciled",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 82337.42,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000024",
+   "paragraph_id": "1.24",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-02-26",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "Episode 408 screener",
+   "method": "mirrored",
+   "venue": "routing table North Dock",
+   "amount_usd": 88370.45,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000025",
+   "paragraph_id": "1.25",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-23",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "wire transfer instruction packet",
+   "method": "reconciled",
+   "venue": "server BX-14",
+   "amount_usd": 11701.98,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000026",
+   "paragraph_id": "1.26",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-13",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Episode 408 screener",
+   "method": "reconciled",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 55343.87,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 1"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000027",
+   "paragraph_id": "1.27",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-10",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "pre-release console image",
+   "method": "sold",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000028",
+   "paragraph_id": "1.28",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-22",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "merchant token bundle",
+   "method": "mirrored",
+   "venue": "vault share HARBOR",
+   "amount_usd": 90689.59,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 3",
+    "Attachment C"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000029",
+   "paragraph_id": "1.29",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-08",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "Episode 408 screener",
+   "method": "sold",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 8125.69,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000030",
+   "paragraph_id": "2.01",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-02",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "wire transfer instruction packet",
+   "method": "caused to be routed",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 46055.63,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000031",
+   "paragraph_id": "2.02",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [
+    "Count One",
+    "Count Six"
+   ],
+   "relationship_type": "background_only",
+   "date": "2024-04-09",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez",
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "customer refund spreadsheet",
+   "method": "sold",
+   "venue": "vault share HARBOR",
+   "amount_usd": 47051.83,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule A",
+    "Schedule B"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000032",
+   "paragraph_id": "2.03",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [
+    "Count Five",
+    "Count Four"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-03-31",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "Episode 408 screener",
+   "method": "mirrored",
+   "venue": "vault share HARBOR",
+   "amount_usd": 61733.36,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000033",
+   "paragraph_id": "2.04",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-02",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [],
+   "victim": "Lumen Retail Group",
+   "object": "subscriber credential list",
+   "method": "caused to be routed",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000034",
+   "paragraph_id": "2.05",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-13",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "merchant token bundle",
+   "method": "caused to be routed",
+   "venue": "routing table North Dock",
+   "amount_usd": 20838.03,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000035",
+   "paragraph_id": "2.06",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-14",
+   "actor": "Bianca Lopez",
+   "actor_alias": null,
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "merchant token bundle",
+   "method": "mirrored",
+   "venue": "server BX-14",
+   "amount_usd": 47556.5,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000036",
+   "paragraph_id": "2.07",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-08",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "pre-release console image",
+   "method": "encrypted and forwarded",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 4787.79,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B",
+    "Exhibit 3"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000037",
+   "paragraph_id": "2.08",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-19",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "merchant token bundle",
+   "method": "exchanged",
+   "venue": "routing table North Dock",
+   "amount_usd": 63503.61,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Schedule B",
+    "Exhibit 1"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000038",
+   "paragraph_id": "2.09",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-16",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "subscriber credential list",
+   "method": "staged for distribution",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 25964.08,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000039",
+   "paragraph_id": "2.10",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-06",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "subscriber credential list",
+   "method": "staged for distribution",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 72737.71,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000040",
+   "paragraph_id": "2.11",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-21",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "Aurora Ledger v9 installer",
+   "method": "caused to be routed",
+   "venue": "channel #ridge",
+   "amount_usd": 25845.11,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 7
+  },
+  {
+   "fact_id": "ACT-000041",
+   "paragraph_id": "2.12",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-02-26",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "staged for distribution",
+   "venue": "server BX-14",
+   "amount_usd": 73787.07,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 3"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000042",
+   "paragraph_id": "2.13",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-05-21",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "pre-release console image",
+   "method": "staged for distribution",
+   "venue": "channel #ridge",
+   "amount_usd": 81551.74,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000043",
+   "paragraph_id": "2.14",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-06-29",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "subscriber credential list",
+   "method": "uploaded",
+   "venue": "routing table North Dock",
+   "amount_usd": 61664.78,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000044",
+   "paragraph_id": "2.15",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-02",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden",
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "wire transfer instruction packet",
+   "method": "reconciled",
+   "venue": "channel #ridge",
+   "amount_usd": 2060.45,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000045",
+   "paragraph_id": "2.16",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-05-30",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "Episode 408 screener",
+   "method": "exchanged",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 50426.0,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000046",
+   "paragraph_id": "2.17",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [
+    "Count Four",
+    "Count Ten"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-29",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden",
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "wire transfer instruction packet",
+   "method": "uploaded",
+   "venue": "routing table North Dock",
+   "amount_usd": 52070.83,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000047",
+   "paragraph_id": "2.18",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-11",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Bianca Arden",
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "pre-release console image",
+   "method": "sold",
+   "venue": "server BX-14",
+   "amount_usd": 39237.94,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000048",
+   "paragraph_id": "2.19",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [
+    "Count Three",
+    "Count Nine"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-02-03",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "Episode 408 screener",
+   "method": "sold",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 68747.07,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 8
+  },
+  {
+   "fact_id": "ACT-000049",
+   "paragraph_id": "2.20",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-22",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "warehouse access manifest",
+   "method": "caused to be routed",
+   "venue": "terminal session M-22",
+   "amount_usd": 86347.71,
+   "referenced_exhibits": [
+    "Exhibit 2, Attachment C",
+    "Exhibit 1"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000050",
+   "paragraph_id": "2.21",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-12",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "warehouse access manifest",
+   "method": "mirrored",
+   "venue": "channel #ridge",
+   "amount_usd": 32438.75,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule B"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000051",
+   "paragraph_id": "2.22",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-22",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "subscriber credential list",
+   "method": "reconciled",
+   "venue": "terminal session M-22",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000052",
+   "paragraph_id": "2.23",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-05",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "pre-release console image",
+   "method": "reconciled",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000053",
+   "paragraph_id": "2.24",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-01",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "uploaded",
+   "venue": "vault share HARBOR",
+   "amount_usd": 14344.87,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000054",
+   "paragraph_id": "2.25",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [
+    "Count One"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-21",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "uploaded",
+   "venue": "server BX-14",
+   "amount_usd": 50239.7,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule B",
+    "Exhibit 2"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000055",
+   "paragraph_id": "2.26",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-30",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "Aurora Ledger v9 installer",
+   "method": "sold",
+   "venue": "terminal session M-22",
+   "amount_usd": 42671.86,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000056",
+   "paragraph_id": "2.27",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-02",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "Episode 408 screener",
+   "method": "sold",
+   "venue": "vault share HARBOR",
+   "amount_usd": 4922.82,
+   "referenced_exhibits": [],
+   "source_page": 9
+  },
+  {
+   "fact_id": "ACT-000057",
+   "paragraph_id": "2.28",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-07",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "warehouse access manifest",
+   "method": "sold",
+   "venue": "channel #ridge",
+   "amount_usd": 12716.84,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000058",
+   "paragraph_id": "2.29",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-10",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "wire transfer instruction packet",
+   "method": "staged for distribution",
+   "venue": "routing table North Dock",
+   "amount_usd": 76320.21,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000059",
+   "paragraph_id": "3.01",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-08",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "customer refund spreadsheet",
+   "method": "reconciled",
+   "venue": "routing table North Dock",
+   "amount_usd": 43221.44,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000060",
+   "paragraph_id": "3.02",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [
+    "Count Seven"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-02-24",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "claims export batch Q4-17",
+   "method": "sold",
+   "venue": "terminal session M-22",
+   "amount_usd": 16678.17,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Attachment C"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000061",
+   "paragraph_id": "3.03",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-07",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "merchant token bundle",
+   "method": "caused to be routed",
+   "venue": "drop account 7781",
+   "amount_usd": 84602.89,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000062",
+   "paragraph_id": "3.04",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-03-15",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "licensing key archive",
+   "method": "reconciled",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 10
+  },
+  {
+   "fact_id": "ACT-000063",
+   "paragraph_id": "3.05",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-28",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "customer refund spreadsheet",
+   "method": "sold",
+   "venue": "terminal session M-22",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 3"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000064",
+   "paragraph_id": "3.06",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-19",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "warehouse access manifest",
+   "method": "staged for distribution",
+   "venue": "routing table North Dock",
+   "amount_usd": 25139.75,
+   "referenced_exhibits": [
+    "Exhibit 3, Attachment C",
+    "Schedule A"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000065",
+   "paragraph_id": "3.07",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-03",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "customer refund spreadsheet",
+   "method": "mirrored",
+   "venue": "#ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000066",
+   "paragraph_id": "3.08",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-09",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "customer refund spreadsheet",
+   "method": "uploaded",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 10641.97,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000067",
+   "paragraph_id": "3.09",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-15",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "claims export batch Q4-17",
+   "method": "exchanged",
+   "venue": "vault share HARBOR",
+   "amount_usd": 65725.31,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule B"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000068",
+   "paragraph_id": "3.10",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-25",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "subscriber credential list",
+   "method": "mirrored",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 54830.02,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000069",
+   "paragraph_id": "3.11",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [
+    "Count Seven"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-02-11",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "pre-release console image",
+   "method": "staged for distribution",
+   "venue": "server BX-14",
+   "amount_usd": 48833.19,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 3"
+   ],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000070",
+   "paragraph_id": "3.12",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-01",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "warehouse access manifest",
+   "method": "sold",
+   "venue": "#ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 11
+  },
+  {
+   "fact_id": "ACT-000071",
+   "paragraph_id": "3.13",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-16",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "warehouse access manifest",
+   "method": "mirrored",
+   "venue": "drop account 7781",
+   "amount_usd": 30192.28,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 12
+  },
+  {
+   "fact_id": "ACT-000072",
+   "paragraph_id": "3.14",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-15",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "customer refund spreadsheet",
+   "method": "reconciled",
+   "venue": "server BX-14",
+   "amount_usd": 47368.71,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule A"
+   ],
+   "source_page": 12
+  },
+  {
+   "fact_id": "ACT-000073",
+   "paragraph_id": "3.15",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-02",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "warehouse access manifest",
+   "method": "transmitted",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 26475.28,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 12
+  },
+  {
+   "fact_id": "ACT-000074",
+   "paragraph_id": "3.16",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-12",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "licensing key archive",
+   "method": "transmitted",
+   "venue": "routing table North Dock",
+   "amount_usd": 40348.67,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 1",
+    "Schedule A"
+   ],
+   "source_page": 12
+  },
+  {
+   "fact_id": "ACT-000075",
+   "paragraph_id": "3.17",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-15",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "licensing key archive",
+   "method": "transmitted",
+   "venue": "#ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 12
+  },
+  {
+   "fact_id": "ACT-000076",
+   "paragraph_id": "3.18",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-03",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "licensing key archive",
+   "method": "uploaded",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 12
+  },
+  {
+   "fact_id": "ACT-000077",
+   "paragraph_id": "3.19",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-09",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "licensing key archive",
+   "method": "caused to be routed",
+   "venue": "drop account 7781",
+   "amount_usd": 67363.68,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 12
+  },
+  {
+   "fact_id": "ACT-000078",
+   "paragraph_id": "3.20",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-07",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "licensing key archive",
+   "method": "mirrored",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 22365.57,
+   "referenced_exhibits": [],
+   "source_page": 12
+  },
+  {
+   "fact_id": "ACT-000079",
+   "paragraph_id": "3.21",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-20",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "North Pier Software",
+   "object": "Aurora Ledger v9 installer",
+   "method": "reconciled",
+   "venue": "server BX-14",
+   "amount_usd": 48767.91,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule A"
+   ],
+   "source_page": 13
+  },
+  {
+   "fact_id": "ACT-000080",
+   "paragraph_id": "3.22",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-07-29",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "merchant token bundle",
+   "method": "staged for distribution",
+   "venue": "routing table North Dock",
+   "amount_usd": 83297.54,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Attachment C",
+    "Schedule A"
+   ],
+   "source_page": 13
+  },
+  {
+   "fact_id": "ACT-000081",
+   "paragraph_id": "3.23",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-06-30",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "transmitted",
+   "venue": "routing table North Dock",
+   "amount_usd": 4618.15,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule A",
+    "Schedule B"
+   ],
+   "source_page": 13
+  },
+  {
+   "fact_id": "ACT-000082",
+   "paragraph_id": "3.24",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-06",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "subscriber credential list",
+   "method": "transmitted",
+   "venue": "server BX-14",
+   "amount_usd": 11344.85,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 1",
+    "Exhibit 2"
+   ],
+   "source_page": 13
+  },
+  {
+   "fact_id": "ACT-000083",
+   "paragraph_id": "3.25",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-05",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "reconciled",
+   "venue": "drop account 7781",
+   "amount_usd": 46648.51,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3"
+   ],
+   "source_page": 13
+  },
+  {
+   "fact_id": "ACT-000084",
+   "paragraph_id": "3.26",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-17",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "North Pier Software",
+   "object": "licensing key archive",
+   "method": "transmitted",
+   "venue": "channel #ridge",
+   "amount_usd": 40971.88,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 3",
+    "Exhibit 1"
+   ],
+   "source_page": 13
+  },
+  {
+   "fact_id": "ACT-000085",
+   "paragraph_id": "3.27",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-11",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "subscriber credential list",
+   "method": "encrypted and forwarded",
+   "venue": "routing table North Dock",
+   "amount_usd": 51568.65,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule B",
+    "Attachment C"
+   ],
+   "source_page": 13
+  },
+  {
+   "fact_id": "ACT-000086",
+   "paragraph_id": "3.28",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-01",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "claims export batch Q4-17",
+   "method": "transmitted",
+   "venue": "#ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3"
+   ],
+   "source_page": 14
+  },
+  {
+   "fact_id": "ACT-000087",
+   "paragraph_id": "3.29",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-21",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "mirrored via relay node Falcon-2",
+   "venue": "Falcon-2",
+   "amount_usd": 70192.18,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 14
+  },
+  {
+   "fact_id": "ACT-000088",
+   "paragraph_id": "4.01",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-25",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "subscriber credential list",
+   "method": "encrypted and forwarded",
+   "venue": "drop account 7781",
+   "amount_usd": 77716.84,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 14
+  },
+  {
+   "fact_id": "ACT-000089",
+   "paragraph_id": "4.02",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-26",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "merchant token bundle",
+   "method": "sold",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3"
+   ],
+   "source_page": 14
+  },
+  {
+   "fact_id": "ACT-000090",
+   "paragraph_id": "4.03",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-11",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "wire transfer instruction packet",
+   "method": "sold",
+   "venue": "vault share HARBOR",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 14
+  },
+  {
+   "fact_id": "ACT-000091",
+   "paragraph_id": "4.04",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-29",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Bianca Lopez",
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "claims export batch Q4-17",
+   "method": "transmitted",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 75545.24,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 3",
+    "Schedule B"
+   ],
+   "source_page": 14
+  },
+  {
+   "fact_id": "ACT-000092",
+   "paragraph_id": "4.05",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-08",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Lopez",
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "Episode 408 screener",
+   "method": "transmitted",
+   "venue": "terminal session M-22",
+   "amount_usd": 16357.93,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 15
+  },
+  {
+   "fact_id": "ACT-000093",
+   "paragraph_id": "4.06",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-05",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "subscriber credential list",
+   "method": "uploaded",
+   "venue": "routing table North Dock",
+   "amount_usd": 37254.99,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 3",
+    "Schedule A"
+   ],
+   "source_page": 15
+  },
+  {
+   "fact_id": "ACT-000094",
+   "paragraph_id": "4.07",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [
+    "Count Five",
+    "Count Seven"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-02-13",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "licensing key archive",
+   "method": "reconciled",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule B"
+   ],
+   "source_page": 15
+  },
+  {
+   "fact_id": "ACT-000095",
+   "paragraph_id": "4.08",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-25",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Lopez",
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "subscriber credential list",
+   "method": "exchanged",
+   "venue": "drop account 7781",
+   "amount_usd": 82784.67,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2",
+    "Schedule A"
+   ],
+   "source_page": 15
+  },
+  {
+   "fact_id": "ACT-000096",
+   "paragraph_id": "4.09",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [
+    "Count Five"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-24",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "subscriber credential list",
+   "method": "mirrored",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 8625.3,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 3",
+    "Exhibit 1"
+   ],
+   "source_page": 15
+  },
+  {
+   "fact_id": "ACT-000097",
+   "paragraph_id": "4.10",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-03",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden",
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "wire transfer instruction packet",
+   "method": "exchanged",
+   "venue": "routing table North Dock",
+   "amount_usd": 81348.2,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 15
+  },
+  {
+   "fact_id": "ACT-000098",
+   "paragraph_id": "4.11",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-09",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden",
+    "Bianca Lopez"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "pre-release console image",
+   "method": "exchanged",
+   "venue": "server BX-14",
+   "amount_usd": 5908.42,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 3",
+    "Schedule A"
+   ],
+   "source_page": 15
+  },
+  {
+   "fact_id": "ACT-000099",
+   "paragraph_id": "4.12",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-07-07",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "North Pier Software",
+   "object": "Episode 408 screener",
+   "method": "mirrored",
+   "venue": "drop account 7781",
+   "amount_usd": 47548.63,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule A"
+   ],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000100",
+   "paragraph_id": "4.13",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-24",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Lopez",
+    "Bianca Arden"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "claims export batch Q4-17",
+   "method": "exchanged",
+   "venue": "terminal session M-22",
+   "amount_usd": 18022.62,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 1"
+   ],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000101",
+   "paragraph_id": "4.14",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-06-13",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "licensing key archive",
+   "method": "uploaded",
+   "venue": "routing table North Dock",
+   "amount_usd": 60469.12,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000102",
+   "paragraph_id": "4.15",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-05-13",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Bianca Lopez",
+    "Bianca Arden"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "warehouse access manifest",
+   "method": "encrypted and forwarded",
+   "venue": "vault share HARBOR",
+   "amount_usd": 32518.95,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule A",
+    "Exhibit 3"
+   ],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000103",
+   "paragraph_id": "4.16",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [
+    "Count Four"
+   ],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-02-05",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden",
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "claims export batch Q4-17",
+   "method": "encrypted and forwarded",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 26873.68,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000104",
+   "paragraph_id": "4.17",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-24",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "merchant token bundle",
+   "method": "caused to be routed",
+   "venue": "channel #ridge",
+   "amount_usd": 32308.28,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000105",
+   "paragraph_id": "4.18",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [
+    "Count Eleven",
+    "Count Ten"
+   ],
+   "relationship_type": "background_only",
+   "date": "2024-05-07",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "wire transfer instruction packet",
+   "method": "encrypted and forwarded",
+   "venue": "terminal session M-22",
+   "amount_usd": 77810.48,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 1"
+   ],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000106",
+   "paragraph_id": "4.19",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-02-24",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden",
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "pre-release console image",
+   "method": "reconciled",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 16
+  },
+  {
+   "fact_id": "ACT-000107",
+   "paragraph_id": "4.20",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-04-14",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden",
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "pre-release console image",
+   "method": "transmitted",
+   "venue": "routing table North Dock",
+   "amount_usd": 44666.88,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 17
+  },
+  {
+   "fact_id": "ACT-000108",
+   "paragraph_id": "4.21",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-01-11",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "customer refund spreadsheet",
+   "method": "transmitted",
+   "venue": "terminal session M-22",
+   "amount_usd": 53365.72,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 17
+  },
+  {
+   "fact_id": "ACT-000109",
+   "paragraph_id": "4.22",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-22",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "sold",
+   "venue": "routing table North Dock",
+   "amount_usd": 33398.9,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule B",
+    "Exhibit 2"
+   ],
+   "source_page": 17
+  },
+  {
+   "fact_id": "ACT-000110",
+   "paragraph_id": "4.23",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-06-08",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Arden",
+    "Bianca Lopez"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "merchant token bundle",
+   "method": "staged for distribution",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 9541.51,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3",
+    "Exhibit 2"
+   ],
+   "source_page": 17
+  },
+  {
+   "fact_id": "ACT-000111",
+   "paragraph_id": "4.24",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [
+    "Count Nine"
+   ],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-05-04",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "warehouse access manifest",
+   "method": "reconciled",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 41035.29,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule A",
+    "Attachment C"
+   ],
+   "source_page": 17
+  },
+  {
+   "fact_id": "ACT-000112",
+   "paragraph_id": "4.25",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-06",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "customer refund spreadsheet",
+   "method": "exchanged",
+   "venue": "channel #ridge",
+   "amount_usd": 76091.45,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 17
+  },
+  {
+   "fact_id": "ACT-000113",
+   "paragraph_id": "4.26",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [
+    "Count Two",
+    "Count Seven"
+   ],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-06-26",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden",
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "subscriber credential list",
+   "method": "caused to be routed",
+   "venue": "vault share HARBOR",
+   "amount_usd": 71440.3,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 17
+  },
+  {
+   "fact_id": "ACT-000114",
+   "paragraph_id": "4.27",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-02-29",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Bianca Arden",
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "subscriber credential list",
+   "method": "staged for distribution",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 56960.32,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 18
+  },
+  {
+   "fact_id": "ACT-000115",
+   "paragraph_id": "4.28",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-19",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "licensing key archive",
+   "method": "encrypted and forwarded",
+   "venue": "server BX-14",
+   "amount_usd": 53390.3,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule A",
+    "Exhibit 3"
+   ],
+   "source_page": 18
+  },
+  {
+   "fact_id": "ACT-000116",
+   "paragraph_id": "4.29",
+   "primary_count": "Count Four",
+   "also_applies_to_counts": [
+    "Count One"
+   ],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-04-10",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "Aurora Ledger v9 installer",
+   "method": "reconciled",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 18
+  },
+  {
+   "fact_id": "ACT-000117",
+   "paragraph_id": "5.01",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-20",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Bianca Arden",
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "subscriber credential list",
+   "method": "reconciled",
+   "venue": "server BX-14",
+   "amount_usd": 56160.27,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 18
+  },
+  {
+   "fact_id": "ACT-000118",
+   "paragraph_id": "5.02",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-13",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "warehouse access manifest",
+   "method": "uploaded",
+   "venue": "routing table North Dock",
+   "amount_usd": 84995.97,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 18
+  },
+  {
+   "fact_id": "ACT-000119",
+   "paragraph_id": "5.03",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-02",
+   "actor": "Bianca Lopez",
+   "actor_alias": null,
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": null,
+   "object": "wire transfer instruction packet",
+   "method": "exchanged",
+   "venue": "terminal session M-22",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 18
+  },
+  {
+   "fact_id": null,
+   "paragraph_id": null,
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": null,
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": null,
+   "method": null,
+   "venue": null,
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000120",
+   "paragraph_id": "5.04",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count Eight"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-20",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "subscriber credential list",
+   "method": "uploaded",
+   "venue": "terminal session M-22",
+   "amount_usd": 18526.48,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000121",
+   "paragraph_id": "5.05",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-22",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "pre-release console image",
+   "method": "reconciled",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000122",
+   "paragraph_id": "5.06",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-06-20",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden",
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "customer refund spreadsheet",
+   "method": "mirrored",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Attachment C",
+    "Exhibit 1"
+   ],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000123",
+   "paragraph_id": "5.07",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-04",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "claims export batch Q4-17",
+   "method": "mirrored",
+   "venue": "terminal session M-22",
+   "amount_usd": 53254.08,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000124",
+   "paragraph_id": "5.08",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-26",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "licensing key archive",
+   "method": "transmitted",
+   "venue": "vault share HARBOR",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000125",
+   "paragraph_id": "5.09",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count Six"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-26",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Lopez",
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Aurora Ledger v9 installer",
+   "method": "uploaded",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 42496.64,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000126",
+   "paragraph_id": "5.10",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count One"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-16",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "subscriber credential list",
+   "method": "exchanged",
+   "venue": "server BX-14",
+   "amount_usd": 68439.36,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 2",
+    "Exhibit 3"
+   ],
+   "source_page": 19
+  },
+  {
+   "fact_id": "ACT-000127",
+   "paragraph_id": "5.11",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-02",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "claims export batch Q4-17",
+   "method": "mirrored",
+   "venue": "server BX-14",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 20
+  },
+  {
+   "fact_id": "ACT-000128",
+   "paragraph_id": "5.12",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-29",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "customer refund spreadsheet",
+   "method": "reconciled",
+   "venue": "vault share HARBOR",
+   "amount_usd": 86279.3,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 20
+  },
+  {
+   "fact_id": "ACT-000129",
+   "paragraph_id": "5.13",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count Three",
+    "Count Two"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-05-06",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "pre-release console image",
+   "method": "caused to be routed",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 81105.2,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 1",
+    "Schedule B"
+   ],
+   "source_page": 20
+  },
+  {
+   "fact_id": "ACT-000130",
+   "paragraph_id": "5.14",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-01-21",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "North Pier Software",
+   "object": "warehouse access manifest",
+   "method": "reconciled",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 3971.15,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 20
+  },
+  {
+   "fact_id": "ACT-000131",
+   "paragraph_id": "5.15",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-05-17",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden",
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "licensing key archive",
+   "method": "uploaded",
+   "venue": "server BX-14",
+   "amount_usd": 9231.51,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 3"
+   ],
+   "source_page": 20
+  },
+  {
+   "fact_id": "ACT-000132",
+   "paragraph_id": "5.16",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-05",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "merchant token bundle",
+   "method": "sold",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 20
+  },
+  {
+   "fact_id": "ACT-000133",
+   "paragraph_id": "5.17",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-15",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "Episode 408 screener",
+   "method": "mirrored",
+   "venue": "routing table North Dock",
+   "amount_usd": 658.53,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 20
+  },
+  {
+   "fact_id": "ACT-000134",
+   "paragraph_id": "5.18",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-07-01",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "customer refund spreadsheet",
+   "method": "exchanged",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 3"
+   ],
+   "source_page": 20
+  },
+  {
+   "fact_id": "ACT-000135",
+   "paragraph_id": "5.19",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count Four"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-02-09",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Bianca Lopez",
+    "Bianca Arden"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "uploaded",
+   "venue": "terminal session M-22",
+   "amount_usd": 11791.34,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 21
+  },
+  {
+   "fact_id": "ACT-000136",
+   "paragraph_id": "5.20",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-29",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "customer refund spreadsheet",
+   "method": "caused to be routed",
+   "venue": "terminal session M-22",
+   "amount_usd": 3459.07,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 21
+  },
+  {
+   "fact_id": "ACT-000137",
+   "paragraph_id": "5.21",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-14",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "customer refund spreadsheet",
+   "method": "staged for distribution",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 52628.73,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 2",
+    "Exhibit 3"
+   ],
+   "source_page": 21
+  },
+  {
+   "fact_id": "ACT-000138",
+   "paragraph_id": "5.22",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-16",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "merchant token bundle",
+   "method": "staged for distribution",
+   "venue": "terminal session M-22",
+   "amount_usd": 25419.27,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 1"
+   ],
+   "source_page": 21
+  },
+  {
+   "fact_id": "ACT-000139",
+   "paragraph_id": "5.23",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-16",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Aurora Ledger v9 installer",
+   "method": "exchanged",
+   "venue": "drop account 7781",
+   "amount_usd": 43819.0,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 21
+  },
+  {
+   "fact_id": "ACT-000140",
+   "paragraph_id": "5.24",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-22",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "merchant token bundle",
+   "method": "encrypted and forwarded",
+   "venue": "drop account 7781",
+   "amount_usd": 35611.97,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 1",
+    "Attachment C"
+   ],
+   "source_page": 21
+  },
+  {
+   "fact_id": "ACT-000141",
+   "paragraph_id": "5.25",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-12",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "pre-release console image",
+   "method": "sold",
+   "venue": "drop account 7781",
+   "amount_usd": 42972.07,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 2"
+   ],
+   "source_page": 21
+  },
+  {
+   "fact_id": "ACT-000142",
+   "paragraph_id": "5.26",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-04-16",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "wire transfer instruction packet",
+   "method": "reconciled",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 21
+  },
+  {
+   "fact_id": "ACT-000143",
+   "paragraph_id": "5.27",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-04-20",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "subscriber credential list",
+   "method": "staged for distribution",
+   "venue": "terminal session M-22",
+   "amount_usd": 15045.79,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 22
+  },
+  {
+   "fact_id": "ACT-000144",
+   "paragraph_id": "5.28",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count Ten"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-02-10",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden",
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "Episode 408 screener",
+   "method": "exchanged",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 80793.28,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 3"
+   ],
+   "source_page": 22
+  },
+  {
+   "fact_id": "ACT-000145",
+   "paragraph_id": "5.29",
+   "primary_count": "Count Five",
+   "also_applies_to_counts": [
+    "Count Six",
+    "Count Nine"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-02",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "subscriber credential list",
+   "method": "sold",
+   "venue": "vault share HARBOR",
+   "amount_usd": 36971.63,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Attachment C"
+   ],
+   "source_page": 22
+  },
+  {
+   "fact_id": "ACT-000146",
+   "paragraph_id": "6.01",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [
+    "Count Eight"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-03-13",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "warehouse access manifest",
+   "method": "exchanged",
+   "venue": "channel #ridge",
+   "amount_usd": 94893.08,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3",
+    "Exhibit 1"
+   ],
+   "source_page": 22
+  },
+  {
+   "fact_id": "ACT-000147",
+   "paragraph_id": "6.02",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-02",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "merchant token bundle",
+   "method": "reconciled",
+   "venue": "vault share HARBOR",
+   "amount_usd": 75593.48,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 3"
+   ],
+   "source_page": 22
+  },
+  {
+   "fact_id": null,
+   "paragraph_id": null,
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": null,
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": null,
+   "method": null,
+   "venue": null,
+   "amount_usd": 30273.94,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Attachment C"
+   ],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000149",
+   "paragraph_id": "6.04",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [
+    "Count One",
+    "Count Nine"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-09",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Episode 408 screener",
+   "method": "mirrored",
+   "venue": "drop account 7781",
+   "amount_usd": 25786.79,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000150",
+   "paragraph_id": "6.05",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-06-09",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "pre-release console image",
+   "method": "transmitted",
+   "venue": "routing table North Dock",
+   "amount_usd": 65044.53,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000151",
+   "paragraph_id": "6.06",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [
+    "Count Two"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-10",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "wire transfer instruction packet",
+   "method": "caused to be routed",
+   "venue": "routing table North Dock",
+   "amount_usd": 24487.56,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 1"
+   ],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000152",
+   "paragraph_id": "6.07",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-22",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Episode 408 screener",
+   "method": "exchanged",
+   "venue": "drop account 7781",
+   "amount_usd": 25875.16,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000153",
+   "paragraph_id": "6.08",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-27",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "sold",
+   "venue": "drop account 7781",
+   "amount_usd": 19020.98,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2",
+    "Exhibit 1"
+   ],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000154",
+   "paragraph_id": "6.09",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-17",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Aurora Ledger v9 installer",
+   "method": "transmitted",
+   "venue": "terminal session M-22",
+   "amount_usd": 47861.7,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Schedule A",
+    "Attachment C"
+   ],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000155",
+   "paragraph_id": "6.10",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-24",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "customer refund spreadsheet",
+   "method": "staged for distribution",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 47864.41,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 3",
+    "Exhibit 2"
+   ],
+   "source_page": 23
+  },
+  {
+   "fact_id": "ACT-000156",
+   "paragraph_id": "6.11",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-04",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "customer refund spreadsheet",
+   "method": "staged for distribution",
+   "venue": "drop account 7781",
+   "amount_usd": 79547.75,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 24
+  },
+  {
+   "fact_id": "ACT-000157",
+   "paragraph_id": "6.12",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-05-04",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "wire transfer instruction packet",
+   "method": "caused to be routed",
+   "venue": "routing table North Dock",
+   "amount_usd": 2572.43,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 3"
+   ],
+   "source_page": 24
+  },
+  {
+   "fact_id": "ACT-000158",
+   "paragraph_id": "6.13",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-18",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "claims export batch Q4-17",
+   "method": "reconciled",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 90915.49,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 3"
+   ],
+   "source_page": 24
+  },
+  {
+   "fact_id": "ACT-000159",
+   "paragraph_id": "6.14",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-22",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "merchant token bundle",
+   "method": "staged for distribution",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Attachment C"
+   ],
+   "source_page": 24
+  },
+  {
+   "fact_id": "ACT-000160",
+   "paragraph_id": "6.15",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-08",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "merchant token bundle",
+   "method": "transmitted",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 24
+  },
+  {
+   "fact_id": "ACT-000161",
+   "paragraph_id": "6.16",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-11",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "claims export batch Q4-17",
+   "method": "exchanged",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule B"
+   ],
+   "source_page": 24
+  },
+  {
+   "fact_id": "ACT-000162",
+   "paragraph_id": "6.17",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-20",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "merchant token bundle",
+   "method": "caused to be routed",
+   "venue": "routing table North Dock",
+   "amount_usd": 24136.12,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 24
+  },
+  {
+   "fact_id": "ACT-000163",
+   "paragraph_id": "6.18",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-14",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Episode 408 screener",
+   "method": "encrypted and forwarded",
+   "venue": "terminal session M-22",
+   "amount_usd": 92695.9,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 24
+  },
+  {
+   "fact_id": "ACT-000164",
+   "paragraph_id": "6.19",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-07",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Aurora Ledger v9 installer",
+   "method": "staged for distribution",
+   "venue": "channel #ridge",
+   "amount_usd": 9241.72,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 2"
+   ],
+   "source_page": 25
+  },
+  {
+   "fact_id": "ACT-000165",
+   "paragraph_id": "6.20",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-17",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "subscriber credential list",
+   "method": "mirrored",
+   "venue": "terminal session M-22",
+   "amount_usd": 84845.61,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 25
+  },
+  {
+   "fact_id": "ACT-000166",
+   "paragraph_id": "6.21",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-19",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "pre-release console image",
+   "method": "caused to be routed",
+   "venue": "routing table North Dock",
+   "amount_usd": 57488.32,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 25
+  },
+  {
+   "fact_id": "ACT-000167",
+   "paragraph_id": "6.22",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-07-27",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "wire transfer instruction packet",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": 89182.3,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 1",
+    "Attachment C"
+   ],
+   "source_page": 25
+  },
+  {
+   "fact_id": "ACT-000168",
+   "paragraph_id": "6.23",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [
+    "Count Eight"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-07",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "merchant token bundle",
+   "method": "sold",
+   "venue": "channel #ridge",
+   "amount_usd": 65697.08,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule A",
+    "Schedule B"
+   ],
+   "source_page": 25
+  },
+  {
+   "fact_id": "ACT-000169",
+   "paragraph_id": "6.24",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-05-10",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "claims export batch Q4-17",
+   "method": "staged for distribution",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 25
+  },
+  {
+   "fact_id": "ACT-000170",
+   "paragraph_id": "6.25",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [
+    "Count Ten"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-03-10",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "claims export batch Q4-17",
+   "method": "reconciled",
+   "venue": "terminal session M-22",
+   "amount_usd": 47449.28,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 25
+  },
+  {
+   "fact_id": "ACT-000171",
+   "paragraph_id": "6.26",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-04-22",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "merchant token bundle",
+   "method": "staged for distribution",
+   "venue": "server BX-14",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 25
+  },
+  {
+   "fact_id": "ACT-000172",
+   "paragraph_id": "6.27",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-08",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "subscriber credential list",
+   "method": "sold",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 26
+  },
+  {
+   "fact_id": "ACT-000173",
+   "paragraph_id": "6.28",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-11",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "merchant token bundle",
+   "method": "mirrored",
+   "venue": "channel #ridge",
+   "amount_usd": 55077.54,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 3",
+    "Attachment C"
+   ],
+   "source_page": 26
+  },
+  {
+   "fact_id": "ACT-000174",
+   "paragraph_id": "6.29",
+   "primary_count": "Count Six",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-30",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "pre-release console image",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": 57470.41,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 26
+  },
+  {
+   "fact_id": "ACT-000175",
+   "paragraph_id": "7.01",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-28",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "claims export batch Q4-17",
+   "method": "staged for distribution",
+   "venue": "drop account 7781",
+   "amount_usd": 63705.63,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 26
+  },
+  {
+   "fact_id": "ACT-000176",
+   "paragraph_id": "7.02",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-07",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "merchant token bundle",
+   "method": "sold",
+   "venue": "terminal session M-22",
+   "amount_usd": 89597.8,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 3",
+    "Attachment C"
+   ],
+   "source_page": 26
+  },
+  {
+   "fact_id": "ACT-000177",
+   "paragraph_id": "7.03",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-01-15",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "warehouse access manifest",
+   "method": "exchanged",
+   "venue": "vault share HARBOR",
+   "amount_usd": 3672.13,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 1"
+   ],
+   "source_page": 26
+  },
+  {
+   "fact_id": "ACT-000178",
+   "paragraph_id": "7.04",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [
+    "Count Five"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-01-09",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "pre-release console image",
+   "method": "uploaded",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Schedule B",
+    "Attachment C"
+   ],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000179",
+   "paragraph_id": "7.05",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-04",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "licensing key archive",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": 44339.35,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000180",
+   "paragraph_id": "7.06",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-10",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "pre-release console image",
+   "method": "mirrored",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 78237.57,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000181",
+   "paragraph_id": "7.07",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-19",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "subscriber credential list",
+   "method": "caused to be routed",
+   "venue": "terminal session M-22",
+   "amount_usd": 38091.71,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000182",
+   "paragraph_id": "7.08",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-15",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "wire transfer instruction packet",
+   "method": "staged for distribution",
+   "venue": "drop account 7781",
+   "amount_usd": 37994.13,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000183",
+   "paragraph_id": "7.09",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [
+    "Count Six",
+    "Count Nine"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-01-05",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "licensing key archive",
+   "method": "exchanged",
+   "venue": "vault share HARBOR",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000184",
+   "paragraph_id": "7.10",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-17",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "licensing key archive",
+   "method": "encrypted and forwarded",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 63696.95,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3",
+    "Schedule B"
+   ],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000185",
+   "paragraph_id": "7.11",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-05-11",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "customer refund spreadsheet",
+   "method": "encrypted and forwarded",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 27
+  },
+  {
+   "fact_id": "ACT-000186",
+   "paragraph_id": "7.12",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-13",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "exchanged",
+   "venue": "vault share HARBOR",
+   "amount_usd": 70202.18,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Schedule A"
+   ],
+   "source_page": 28
+  },
+  {
+   "fact_id": "ACT-000187",
+   "paragraph_id": "7.13",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [
+    "Count Eleven",
+    "Count Six"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-21",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "merchant token bundle",
+   "method": "exchanged",
+   "venue": "channel #ridge",
+   "amount_usd": 33500.1,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 3"
+   ],
+   "source_page": 28
+  },
+  {
+   "fact_id": "ACT-000188",
+   "paragraph_id": "7.14",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-02-13",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "merchant token bundle",
+   "method": "reconciled",
+   "venue": "terminal session M-22",
+   "amount_usd": 72994.22,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 28
+  },
+  {
+   "fact_id": "ACT-000189",
+   "paragraph_id": "7.15",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-12",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "merchant token bundle",
+   "method": "caused to be routed",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Attachment C"
+   ],
+   "source_page": 28
+  },
+  {
+   "fact_id": "ACT-000190",
+   "paragraph_id": "7.16",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [
+    "Count Eleven"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-14",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "warehouse access manifest",
+   "method": "staged for distribution",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 19530.58,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Schedule B"
+   ],
+   "source_page": 28
+  },
+  {
+   "fact_id": "ACT-000191",
+   "paragraph_id": "7.17",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-05",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "Aurora Ledger v9 installer",
+   "method": "transmitted",
+   "venue": "vault share HARBOR",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 1"
+   ],
+   "source_page": 28
+  },
+  {
+   "fact_id": "ACT-000192",
+   "paragraph_id": "7.18",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-06",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "pre-release console image",
+   "method": "sold",
+   "venue": "terminal session M-22",
+   "amount_usd": 69623.98,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Attachment C",
+    "Exhibit 1"
+   ],
+   "source_page": 28
+  },
+  {
+   "fact_id": "ACT-000193",
+   "paragraph_id": "7.19",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-01-04",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": null,
+   "object": "Episode 408 screener",
+   "method": "reconciled",
+   "venue": null,
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 28
+  },
+  {
+   "fact_id": "ACT-000194",
+   "paragraph_id": "7.20",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-14",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Episode 408 screener",
+   "method": "transmitted",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 1"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000195",
+   "paragraph_id": "7.21",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-28",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "subscriber credential list",
+   "method": "mirrored",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 3",
+    "Schedule A"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000196",
+   "paragraph_id": "7.22",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [
+    "Count Four",
+    "Count One"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-18",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "warehouse access manifest",
+   "method": "reconciled",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 87001.08,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 2",
+    "Exhibit 3"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000197",
+   "paragraph_id": "7.23",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-26",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "licensing key archive",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": 54454.24,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 2",
+    "Exhibit 1"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000198",
+   "paragraph_id": "7.24",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-05",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "Aurora Ledger v9 installer",
+   "method": "staged for distribution",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 10461.27,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2",
+    "Schedule A"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000199",
+   "paragraph_id": "7.25",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-01",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "subscriber credential list",
+   "method": "transmitted",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 28865.8,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000200",
+   "paragraph_id": "7.26",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-25",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "wire transfer instruction packet",
+   "method": "reconciled",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 57110.13,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000201",
+   "paragraph_id": "7.27",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-12",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "subscriber credential list",
+   "method": "exchanged",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule A"
+   ],
+   "source_page": 29
+  },
+  {
+   "fact_id": "ACT-000202",
+   "paragraph_id": "7.28",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-17",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "subscriber credential list",
+   "method": "staged for distribution",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 15519.59,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule B",
+    "Attachment C"
+   ],
+   "source_page": 30
+  },
+  {
+   "fact_id": "ACT-000203",
+   "paragraph_id": "7.29",
+   "primary_count": "Count Seven",
+   "also_applies_to_counts": [
+    "Count Five"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-14",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "subscriber credential list",
+   "method": "exchanged",
+   "venue": "drop account 7781",
+   "amount_usd": 77170.67,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 30
+  },
+  {
+   "fact_id": "ACT-000204",
+   "paragraph_id": "8.01",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-26",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "merchant token bundle",
+   "method": "uploaded",
+   "venue": "routing table North Dock",
+   "amount_usd": 50893.29,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule A",
+    "Exhibit 1"
+   ],
+   "source_page": 30
+  },
+  {
+   "fact_id": "ACT-000205",
+   "paragraph_id": "8.02",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [
+    "Count Two"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-16",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Episode 408 screener",
+   "method": "sold",
+   "venue": "channel #ridge",
+   "amount_usd": 9376.96,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 1",
+    "Schedule A"
+   ],
+   "source_page": 30
+  },
+  {
+   "fact_id": "ACT-000206",
+   "paragraph_id": "8.03",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [
+    "Count Two"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-26",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "licensing key archive",
+   "method": "exchanged",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 8030.46,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 30
+  },
+  {
+   "fact_id": "ACT-000207",
+   "paragraph_id": "8.04",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-02",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Episode 408 screener",
+   "method": "exchanged",
+   "venue": "drop account 7781",
+   "amount_usd": 6241.98,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 30
+  },
+  {
+   "fact_id": "ACT-000208",
+   "paragraph_id": "8.05",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-29",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Episode 408 screener",
+   "method": "mirrored",
+   "venue": "channel #ridge",
+   "amount_usd": 13404.13,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 1"
+   ],
+   "source_page": 31
+  },
+  {
+   "fact_id": "ACT-000209",
+   "paragraph_id": "8.06",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-30",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "warehouse access manifest",
+   "method": "reconciled",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 60012.01,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 31
+  },
+  {
+   "fact_id": "ACT-000210",
+   "paragraph_id": "8.07",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-05",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "staged for distribution",
+   "venue": "server BX-14",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 31
+  },
+  {
+   "fact_id": "ACT-000211",
+   "paragraph_id": "8.08",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-26",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "claims export batch Q4-17",
+   "method": "staged for distribution",
+   "venue": "drop account 7781",
+   "amount_usd": 82772.54,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 31
+  },
+  {
+   "fact_id": "ACT-000212",
+   "paragraph_id": "8.09",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [
+    "Count Six"
+   ],
+   "relationship_type": "background_only",
+   "date": "2024-03-05",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "licensing key archive",
+   "method": "reconciled",
+   "venue": "routing table North Dock",
+   "amount_usd": 91798.71,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule A"
+   ],
+   "source_page": 31
+  },
+  {
+   "fact_id": "ACT-000213",
+   "paragraph_id": "8.10",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-14",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Episode 408 screener",
+   "method": "mirrored",
+   "venue": "routing table North Dock",
+   "amount_usd": 22686.7,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Attachment C",
+    "Exhibit 1"
+   ],
+   "source_page": 31
+  },
+  {
+   "fact_id": "ACT-000214",
+   "paragraph_id": "8.11",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [
+    "Count Nine"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-17",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "pre-release console image",
+   "method": "sold",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 50883.21,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 31
+  },
+  {
+   "fact_id": "ACT-000215",
+   "paragraph_id": "8.12",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-06-07",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "warehouse access manifest",
+   "method": "uploaded",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 31
+  },
+  {
+   "fact_id": "ACT-000216",
+   "paragraph_id": "8.13",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-09",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "wire transfer instruction packet",
+   "method": "exchanged",
+   "venue": "server BX-14",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 32
+  },
+  {
+   "fact_id": "ACT-000217",
+   "paragraph_id": "8.14",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [
+    "Count Six"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-01-12",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "warehouse access manifest",
+   "method": "mirrored",
+   "venue": "terminal session M-22",
+   "amount_usd": 15351.47,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 2",
+    "Schedule A"
+   ],
+   "source_page": 32
+  },
+  {
+   "fact_id": "ACT-000218",
+   "paragraph_id": "8.15",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-12",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "subscriber credential list",
+   "method": "exchanged",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Attachment C"
+   ],
+   "source_page": 32
+  },
+  {
+   "fact_id": "ACT-000219",
+   "paragraph_id": "8.16",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-03",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "claims export batch Q4-17",
+   "method": "uploaded",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 91056.11,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2",
+    "Schedule A"
+   ],
+   "source_page": 32
+  },
+  {
+   "fact_id": "ACT-000220",
+   "paragraph_id": "8.17",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-17",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "claims export batch Q4-17",
+   "method": "caused to be routed",
+   "venue": "routing table North Dock",
+   "amount_usd": 44188.16,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 2"
+   ],
+   "source_page": 32
+  },
+  {
+   "fact_id": "ACT-000221",
+   "paragraph_id": "8.18",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [
+    "Count Six",
+    "Count Ten"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-02-25",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "North Pier Software",
+   "object": "warehouse access manifest",
+   "method": "exchanged",
+   "venue": "channel #ridge",
+   "amount_usd": 7113.29,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 32
+  },
+  {
+   "fact_id": "ACT-000222",
+   "paragraph_id": "8.19",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [
+    "Count Ten",
+    "Count Four"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-05-11",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "claims export batch Q4-17",
+   "method": "exchanged",
+   "venue": "server BX-14",
+   "amount_usd": 9299.33,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3"
+   ],
+   "source_page": 32
+  },
+  {
+   "fact_id": "ACT-000223",
+   "paragraph_id": "8.20",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-07-09",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "customer refund spreadsheet",
+   "method": "sold",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 32
+  },
+  {
+   "fact_id": "ACT-000224",
+   "paragraph_id": "8.21",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-04",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "Episode 408 screener",
+   "method": "sold",
+   "venue": "drop account 7781",
+   "amount_usd": 27124.76,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 33
+  },
+  {
+   "fact_id": "ACT-000225",
+   "paragraph_id": "8.22",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-23",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "uploaded",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 8385.48,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 33
+  },
+  {
+   "fact_id": "ACT-000226",
+   "paragraph_id": "8.23",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-16",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "warehouse access manifest",
+   "method": "mirrored",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 84382.0,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 33
+  },
+  {
+   "fact_id": "ACT-000227",
+   "paragraph_id": "8.24",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-25",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "customer refund spreadsheet",
+   "method": "caused to be routed",
+   "venue": "vault share HARBOR",
+   "amount_usd": 41544.67,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 33
+  },
+  {
+   "fact_id": "ACT-000228",
+   "paragraph_id": "8.25",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-03",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "claims export batch Q4-17",
+   "method": "reconciled",
+   "venue": "channel #ridge",
+   "amount_usd": 73996.56,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 33
+  },
+  {
+   "fact_id": "ACT-000229",
+   "paragraph_id": "8.26",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-11",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "pre-release console image",
+   "method": "uploaded",
+   "venue": "terminal session M-22",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Schedule A"
+   ],
+   "source_page": 33
+  },
+  {
+   "fact_id": "ACT-000230",
+   "paragraph_id": "8.27",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-08",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "subscriber credential list",
+   "method": "transmitted",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 1042.68,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 3"
+   ],
+   "source_page": 33
+  },
+  {
+   "fact_id": "ACT-000231",
+   "paragraph_id": "8.28",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-07-09",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "Aurora Ledger v9 installer",
+   "method": "caused to be routed",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 33
+  },
+  {
+   "fact_id": "ACT-000232",
+   "paragraph_id": "8.29",
+   "primary_count": "Count Eight",
+   "also_applies_to_counts": [
+    "Count Nine",
+    "Count Ten"
+   ],
+   "relationship_type": "incorporated_by_reference",
+   "date": "2024-05-15",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "wire transfer instruction packet",
+   "method": "reconciled",
+   "venue": "server BX-14",
+   "amount_usd": 44101.64,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Schedule A",
+    "Exhibit 1"
+   ],
+   "source_page": 34
+  },
+  {
+   "fact_id": "ACT-000233",
+   "paragraph_id": "9.01",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-26",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "pre-release console image",
+   "method": "uploaded",
+   "venue": "routing table North Dock",
+   "amount_usd": 48089.98,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 34
+  },
+  {
+   "fact_id": "ACT-000234",
+   "paragraph_id": "9.02",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-26",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "claims export batch Q4-17",
+   "method": "staged for distribution",
+   "venue": "vault share HARBOR",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 34
+  },
+  {
+   "fact_id": "ACT-000235",
+   "paragraph_id": "9.03",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count Seven"
+   ],
+   "relationship_type": "background_only",
+   "date": "2024-05-24",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "merchant token bundle",
+   "method": "mirrored",
+   "venue": "terminal session M-22",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 34
+  },
+  {
+   "fact_id": "ACT-000236",
+   "paragraph_id": "9.04",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count Eleven"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-05-03",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "sold",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 10206.45,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2",
+    "Exhibit 1"
+   ],
+   "source_page": 34
+  },
+  {
+   "fact_id": "ACT-000237",
+   "paragraph_id": "9.05",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-13",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "warehouse access manifest",
+   "method": "uploaded",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 62013.53,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 34
+  },
+  {
+   "fact_id": "ACT-000238",
+   "paragraph_id": "9.06",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count Eight"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-03-05",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "Episode 408 screener",
+   "method": "transmitted",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Exhibit 1",
+    "Schedule B"
+   ],
+   "source_page": 35
+  },
+  {
+   "fact_id": "ACT-000239",
+   "paragraph_id": "9.07",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-13",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "licensing key archive",
+   "method": "encrypted and forwarded",
+   "venue": "drop account 7781",
+   "amount_usd": 44009.85,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 2"
+   ],
+   "source_page": 35
+  },
+  {
+   "fact_id": "ACT-000240",
+   "paragraph_id": "9.08",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count Ten",
+    "Count Eight"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-20",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "claims export batch Q4-17",
+   "method": "caused to be routed",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 35
+  },
+  {
+   "fact_id": "ACT-000241",
+   "paragraph_id": "9.09",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-02",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "warehouse access manifest",
+   "method": "staged for distribution",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 63148.8,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 35
+  },
+  {
+   "fact_id": "ACT-000242",
+   "paragraph_id": "9.10",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-02",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "licensing key archive",
+   "method": "staged for distribution",
+   "venue": "drop account 7781",
+   "amount_usd": 51624.79,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 3",
+    "Attachment C"
+   ],
+   "source_page": 35
+  },
+  {
+   "fact_id": "ACT-000243",
+   "paragraph_id": "9.11",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count Five",
+    "Count Eight"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-02",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "claims export batch Q4-17",
+   "method": "exchanged",
+   "venue": "routing table North Dock",
+   "amount_usd": 17763.29,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 35
+  },
+  {
+   "fact_id": "ACT-000244",
+   "paragraph_id": "9.12",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-16",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "licensing key archive",
+   "method": "transmitted",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 35
+  },
+  {
+   "fact_id": "ACT-000245",
+   "paragraph_id": "9.13",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-13",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "wire transfer instruction packet",
+   "method": "uploaded",
+   "venue": "server BX-14",
+   "amount_usd": 34433.71,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 35
+  },
+  {
+   "fact_id": "ACT-000246",
+   "paragraph_id": "9.14",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-20",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Aurora Ledger v9 installer",
+   "method": "staged for distribution",
+   "venue": "server BX-14",
+   "amount_usd": 52428.61,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 36
+  },
+  {
+   "fact_id": "ACT-000247",
+   "paragraph_id": "9.15",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-16",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "transmitted",
+   "venue": "drop account 7781",
+   "amount_usd": 11870.57,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule A"
+   ],
+   "source_page": 36
+  },
+  {
+   "fact_id": "ACT-000248",
+   "paragraph_id": "9.16",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-08",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "pre-release console image",
+   "method": "encrypted and forwarded",
+   "venue": "server BX-14",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 36
+  },
+  {
+   "fact_id": "ACT-000249",
+   "paragraph_id": "9.17",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-28",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "licensing key archive",
+   "method": "mirrored",
+   "venue": "channel #ridge",
+   "amount_usd": 88752.77,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 36
+  },
+  {
+   "fact_id": "ACT-000250",
+   "paragraph_id": "9.18",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-27",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "warehouse access manifest",
+   "method": "sold",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 36
+  },
+  {
+   "fact_id": "ACT-000251",
+   "paragraph_id": "9.19",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-04",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "subscriber credential list",
+   "method": "caused to be routed",
+   "venue": "terminal session M-22",
+   "amount_usd": 67050.71,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule A"
+   ],
+   "source_page": 36
+  },
+  {
+   "fact_id": "ACT-000252",
+   "paragraph_id": "9.20",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-17",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "Episode 408 screener",
+   "method": "caused to be routed",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 36
+  },
+  {
+   "fact_id": "ACT-000253",
+   "paragraph_id": "9.21",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-23",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "warehouse access manifest",
+   "method": "encrypted and forwarded",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 36
+  },
+  {
+   "fact_id": "ACT-000254",
+   "paragraph_id": "9.22",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-11",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "claims export batch Q4-17",
+   "method": "sold",
+   "venue": "vault share HARBOR",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 37
+  },
+  {
+   "fact_id": "ACT-000255",
+   "paragraph_id": "9.23",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-24",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "pre-release console image",
+   "method": "encrypted and forwarded",
+   "venue": "terminal session M-22",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Schedule B",
+    "Exhibit 1"
+   ],
+   "source_page": 37
+  },
+  {
+   "fact_id": "ACT-000256",
+   "paragraph_id": "9.24",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-21",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "merchant token bundle",
+   "method": "transmitted",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 37
+  },
+  {
+   "fact_id": "ACT-000257",
+   "paragraph_id": "9.25",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [
+    "Count Seven"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-01-15",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "Aurora Ledger v9 installer",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": 64040.85,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule A",
+    "Schedule B"
+   ],
+   "source_page": 37
+  },
+  {
+   "fact_id": "ACT-000258",
+   "paragraph_id": "9.26",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-19",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "Episode 408 screener",
+   "method": "uploaded",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 86043.57,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 37
+  },
+  {
+   "fact_id": "ACT-000259",
+   "paragraph_id": "9.27",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-08",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Episode 408 screener",
+   "method": "uploaded",
+   "venue": "vault share HARBOR",
+   "amount_usd": 8149.09,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 37
+  },
+  {
+   "fact_id": "ACT-000260",
+   "paragraph_id": "9.28",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-14",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "warehouse access manifest",
+   "method": "exchanged",
+   "venue": "terminal session M-22",
+   "amount_usd": 6523.57,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 1",
+    "Exhibit 2"
+   ],
+   "source_page": 37
+  },
+  {
+   "fact_id": "ACT-000261",
+   "paragraph_id": "292",
+   "primary_count": "Count Nine",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-02",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "warehouse access manifest",
+   "method": "reconciled",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 90298.3,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 38
+  },
+  {
+   "fact_id": "ACT-000262",
+   "paragraph_id": "296",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-27",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "Episode 408 screener",
+   "method": "transmitted",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 8570.19,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Schedule B",
+    "Exhibit 2"
+   ],
+   "source_page": 38
+  },
+  {
+   "fact_id": "ACT-000263",
+   "paragraph_id": "297",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [
+    "Count Seven"
+   ],
+   "relationship_type": "background_only",
+   "date": "2024-02-19",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "North Pier Software",
+   "object": "merchant token bundle",
+   "method": "uploaded",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 27490.2,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3",
+    "Exhibit 2"
+   ],
+   "source_page": 38
+  },
+  {
+   "fact_id": "ACT-000264",
+   "paragraph_id": "298",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-25",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez",
+    "Bianca Arden"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Aurora Ledger v9 installer",
+   "method": "reconciled",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 71394.44,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Attachment C"
+   ],
+   "source_page": 38
+  },
+  {
+   "fact_id": "ACT-000265",
+   "paragraph_id": "299",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-02",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "uploaded",
+   "venue": "server BX-14",
+   "amount_usd": 28371.74,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 38
+  },
+  {
+   "fact_id": "ACT-000266",
+   "paragraph_id": "300",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-19",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "pre-release console image",
+   "method": "exchanged",
+   "venue": "server BX-14",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 38
+  },
+  {
+   "fact_id": "ACT-000267",
+   "paragraph_id": "10.06",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-25",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden",
+    "Bianca Lopez"
+   ],
+   "victim": "North Pier Software",
+   "object": "customer refund spreadsheet",
+   "method": "exchanged",
+   "venue": "drop account 7781",
+   "amount_usd": 35101.8,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2",
+    "Exhibit 3"
+   ],
+   "source_page": 39
+  },
+  {
+   "fact_id": "ACT-000268",
+   "paragraph_id": "10.07",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-20",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden",
+    "Bianca Lopez"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Episode 408 screener",
+   "method": "exchanged",
+   "venue": "routing table North Dock",
+   "amount_usd": 46203.28,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule A",
+    "Exhibit 1"
+   ],
+   "source_page": 39
+  },
+  {
+   "fact_id": "ACT-000269",
+   "paragraph_id": "10.08",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-17",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "merchant token bundle",
+   "method": "staged for distribution",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule A"
+   ],
+   "source_page": 39
+  },
+  {
+   "fact_id": "ACT-000270",
+   "paragraph_id": "10.09",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [
+    "Count Two",
+    "Count Four"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-23",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez",
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "Aurora Ledger v9 installer",
+   "method": "exchanged",
+   "venue": "channel #ridge",
+   "amount_usd": 74676.37,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 2",
+    "Exhibit 1"
+   ],
+   "source_page": 39
+  },
+  {
+   "fact_id": "ACT-000271",
+   "paragraph_id": "10.10",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-17",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "licensing key archive",
+   "method": "encrypted and forwarded",
+   "venue": "vault share HARBOR",
+   "amount_usd": 44071.6,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule B"
+   ],
+   "source_page": 39
+  },
+  {
+   "fact_id": "ACT-000272",
+   "paragraph_id": "10.11",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-13",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Lopez",
+    "Bianca Arden"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "merchant token bundle",
+   "method": "transmitted",
+   "venue": "channel #ridge",
+   "amount_usd": 30449.92,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 39
+  },
+  {
+   "fact_id": "ACT-000273",
+   "paragraph_id": "10.12",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-04",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "mirrored",
+   "venue": "vault share HARBOR",
+   "amount_usd": 34847.23,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 39
+  },
+  {
+   "fact_id": "ACT-000274",
+   "paragraph_id": "10.13",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-23",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Lopez",
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "merchant token bundle",
+   "method": "encrypted and forwarded",
+   "venue": "vault share HARBOR",
+   "amount_usd": 57881.9,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 39
+  },
+  {
+   "fact_id": "ACT-000275",
+   "paragraph_id": "10.14",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-04-02",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden",
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "claims export batch Q4-17",
+   "method": "mirrored",
+   "venue": "routing table North Dock",
+   "amount_usd": 42864.81,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 2"
+   ],
+   "source_page": 40
+  },
+  {
+   "fact_id": "ACT-000276",
+   "paragraph_id": "10.15",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-04",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "Aurora Ledger v9 installer",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B",
+    "Schedule A"
+   ],
+   "source_page": 40
+  },
+  {
+   "fact_id": "ACT-000277",
+   "paragraph_id": "10.16",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-07-21",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "pre-release console image",
+   "method": "caused to be routed",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule B",
+    "Schedule A"
+   ],
+   "source_page": 40
+  },
+  {
+   "fact_id": "ACT-000278",
+   "paragraph_id": "10.17",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-09",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "North Pier Software",
+   "object": "merchant token bundle",
+   "method": "caused to be routed",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 16850.68,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 40
+  },
+  {
+   "fact_id": "ACT-000279",
+   "paragraph_id": "10.18",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-24",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "North Pier Software",
+   "object": "warehouse access manifest",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": 53337.67,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 40
+  },
+  {
+   "fact_id": "ACT-000280",
+   "paragraph_id": "10.19",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [
+    "Count Eleven"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-03-22",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden",
+    "Bianca Lopez"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "licensing key archive",
+   "method": "caused to be routed",
+   "venue": "drop account 7781",
+   "amount_usd": 15851.54,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 40
+  },
+  {
+   "fact_id": "ACT-000281",
+   "paragraph_id": "10.20",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-17",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "claims export batch Q4-17",
+   "method": "exchanged",
+   "venue": "channel #ridge",
+   "amount_usd": 41126.47,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 2"
+   ],
+   "source_page": 40
+  },
+  {
+   "fact_id": "ACT-000282",
+   "paragraph_id": "10.21",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-27",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "customer refund spreadsheet",
+   "method": "sold",
+   "venue": "vault share HARBOR",
+   "amount_usd": 6025.96,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Attachment C",
+    "Schedule A"
+   ],
+   "source_page": 40
+  },
+  {
+   "fact_id": "ACT-000283",
+   "paragraph_id": "10.22",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-03",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "customer refund spreadsheet",
+   "method": "exchanged",
+   "venue": "routing table North Dock",
+   "amount_usd": 29230.46,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Schedule B",
+    "Exhibit 3"
+   ],
+   "source_page": 41
+  },
+  {
+   "fact_id": "ACT-000284",
+   "paragraph_id": "10.23",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-05",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden",
+    "Bianca Lopez"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "Aurora Ledger v9 installer",
+   "method": "mirrored",
+   "venue": "server BX-14",
+   "amount_usd": 67437.18,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Exhibit 3",
+    "Attachment C"
+   ],
+   "source_page": 41
+  },
+  {
+   "fact_id": "ACT-000285",
+   "paragraph_id": "10.24",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [
+    "Count Nine"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-05-18",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden",
+    "Bianca Lopez"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "merchant token bundle",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule B"
+   ],
+   "source_page": 41
+  },
+  {
+   "fact_id": "ACT-000286",
+   "paragraph_id": "10.25",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [
+    "Count Eleven",
+    "Count Six"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-18",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden",
+    "Bianca Lopez"
+   ],
+   "victim": "North Pier Software",
+   "object": "Aurora Ledger v9 installer",
+   "method": "encrypted and forwarded",
+   "venue": "server BX-14",
+   "amount_usd": 76738.58,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 1",
+    "Schedule A"
+   ],
+   "source_page": 41
+  },
+  {
+   "fact_id": "ACT-000287",
+   "paragraph_id": "10.26",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-08",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Lopez",
+    "Bianca Arden"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "warehouse access manifest",
+   "method": "transmitted",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 958.78,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B",
+    "Exhibit 2"
+   ],
+   "source_page": 41
+  },
+  {
+   "fact_id": "ACT-000288",
+   "paragraph_id": "10.27",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-26",
+   "actor": "Bianca Arden",
+   "actor_alias": "ridge",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "Aurora Ledger v9 installer",
+   "method": "caused to be routed",
+   "venue": "vault share HARBOR",
+   "amount_usd": 68510.07,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3"
+   ],
+   "source_page": 41
+  },
+  {
+   "fact_id": "ACT-000289",
+   "paragraph_id": "10.28",
+   "primary_count": "Count Ten",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-03",
+   "actor": "Bianca Lopez",
+   "actor_alias": "northstar",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "customer refund spreadsheet",
+   "method": "transmitted",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule B"
+   ],
+   "source_page": 41
+  },
+  {
+   "fact_id": "ACT-000290",
+   "paragraph_id": "10.29",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-01-25",
+   "actor": "Bianca Arden",
+   "actor_alias": "kestrel",
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "victim": "North Pier Software",
+   "object": "merchant token bundle",
+   "method": "sold",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 41
+  },
+  {
+   "fact_id": "ACT-000291",
+   "paragraph_id": "11.01",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [
+    "Count Three",
+    "Count Six"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-03-29",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "wire transfer instruction packet",
+   "method": "mirrored",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 93868.24,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule A"
+   ],
+   "source_page": 42
+  },
+  {
+   "fact_id": "ACT-000292",
+   "paragraph_id": "11.02",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-03",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "Aurora Ledger v9 installer",
+   "method": "reconciled",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 2",
+    "Exhibit 3"
+   ],
+   "source_page": 42
+  },
+  {
+   "fact_id": "ACT-000293",
+   "paragraph_id": "11.03",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-02-06",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "licensing key archive",
+   "method": "encrypted and forwarded",
+   "venue": "drop account 7781",
+   "amount_usd": 82024.7,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2",
+    "Attachment C"
+   ],
+   "source_page": 42
+  },
+  {
+   "fact_id": "ACT-000294",
+   "paragraph_id": "11.04",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [
+    "Count One",
+    "Count Seven"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-03-18",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "wire transfer instruction packet",
+   "method": "mirrored",
+   "venue": "channel #ridge",
+   "amount_usd": 85558.95,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 3"
+   ],
+   "source_page": 42
+  },
+  {
+   "fact_id": "ACT-000295",
+   "paragraph_id": "11.05",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [
+    "Count Three",
+    "Count Seven"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-08",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "claims export batch Q4-17",
+   "method": "caused to be routed",
+   "venue": "routing table North Dock",
+   "amount_usd": 9254.7,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 3"
+   ],
+   "source_page": 42
+  },
+  {
+   "fact_id": "ACT-000296",
+   "paragraph_id": "11.06",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-08",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "claims export batch Q4-17",
+   "method": "reconciled",
+   "venue": "routing table North Dock",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 42
+  },
+  {
+   "fact_id": "ACT-000297",
+   "paragraph_id": "11.07",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-13",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "warehouse access manifest",
+   "method": "caused to be routed",
+   "venue": "drop account 7781",
+   "amount_usd": 43697.25,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule B",
+    "Exhibit 3"
+   ],
+   "source_page": 43
+  },
+  {
+   "fact_id": "ACT-000298",
+   "paragraph_id": "11.08",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-05",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Aurora Ledger v9 installer",
+   "method": "reconciled",
+   "venue": "routing table North Dock",
+   "amount_usd": 34812.5,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 43
+  },
+  {
+   "fact_id": "ACT-000299",
+   "paragraph_id": "11.09",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-01",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "subscriber credential list",
+   "method": "staged for distribution",
+   "venue": "routing table North Dock",
+   "amount_usd": 17018.7,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Schedule A"
+   ],
+   "source_page": 43
+  },
+  {
+   "fact_id": "ACT-000300",
+   "paragraph_id": "11.10",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-11",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "licensing key archive",
+   "method": "encrypted and forwarded",
+   "venue": "server BX-14",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B",
+    "Attachment C"
+   ],
+   "source_page": 43
+  },
+  {
+   "fact_id": "ACT-000301",
+   "paragraph_id": "11.11",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [
+    "Count Nine"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-05-25",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "wire transfer instruction packet",
+   "method": "mirrored",
+   "venue": "terminal session M-22",
+   "amount_usd": 16131.54,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 3",
+    "Attachment C"
+   ],
+   "source_page": 43
+  },
+  {
+   "fact_id": "ACT-000302",
+   "paragraph_id": "11.12",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-16",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "claims export batch Q4-17",
+   "method": "encrypted and forwarded",
+   "venue": "terminal session M-22",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Attachment C"
+   ],
+   "source_page": 43
+  },
+  {
+   "fact_id": "ACT-000303",
+   "paragraph_id": "11.13",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-11",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "licensing key archive",
+   "method": "exchanged",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 33226.73,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 43
+  },
+  {
+   "fact_id": "ACT-000304",
+   "paragraph_id": "11.14",
+   "primary_count": null,
+   "also_applies_to_counts": [],
+   "relationship_type": null,
+   "date": "2024-07-26",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "staged for distribution",
+   "venue": "vault share HARBOR",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 43
+  },
+  {
+   "fact_id": "ACT-000305",
+   "paragraph_id": "11.15",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-30",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "caused to be routed",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 37249.7,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 44
+  },
+  {
+   "fact_id": "ACT-000306",
+   "paragraph_id": "11.16",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-27",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "Episode 408 screener",
+   "method": "transmitted",
+   "venue": "terminal session M-22",
+   "amount_usd": 38909.38,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 44
+  },
+  {
+   "fact_id": "ACT-000307",
+   "paragraph_id": "11.17",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-27",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Episode 408 screener",
+   "method": "uploaded",
+   "venue": "drop account 7781",
+   "amount_usd": 74580.89,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 44
+  },
+  {
+   "fact_id": "ACT-000308",
+   "paragraph_id": "11.18",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-06",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "pre-release console image",
+   "method": "caused to be routed",
+   "venue": "relay node Falcon-2",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 44
+  },
+  {
+   "fact_id": "ACT-000309",
+   "paragraph_id": "11.19",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-15",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "merchant token bundle",
+   "method": "uploaded",
+   "venue": "server BX-14",
+   "amount_usd": 36819.16,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 44
+  },
+  {
+   "fact_id": "ACT-000310",
+   "paragraph_id": "11.20",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-27",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "subscriber credential list",
+   "method": "transmitted",
+   "venue": "routing table North Dock",
+   "amount_usd": 11716.54,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule A"
+   ],
+   "source_page": 44
+  },
+  {
+   "fact_id": "ACT-000311",
+   "paragraph_id": "11.21",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-24",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "warehouse access manifest",
+   "method": "staged for distribution",
+   "venue": "channel #ridge",
+   "amount_usd": 53344.6,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 44
+  },
+  {
+   "fact_id": "ACT-000312",
+   "paragraph_id": "11.22",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-10",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "warehouse access manifest",
+   "method": "reconciled",
+   "venue": "workspace Atlas Room",
+   "amount_usd": null,
+   "referenced_exhibits": [],
+   "source_page": 44
+  },
+  {
+   "fact_id": "ACT-000313",
+   "paragraph_id": "11.23",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-25",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "North Pier Software",
+   "object": "merchant token bundle",
+   "method": "exchanged",
+   "venue": "channel #ridge",
+   "amount_usd": 74944.37,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 1",
+    "Schedule A"
+   ],
+   "source_page": 45
+  },
+  {
+   "fact_id": "ACT-000314",
+   "paragraph_id": "11.24",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-05",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "merchant token bundle",
+   "method": "transmitted",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 83637.15,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Attachment C",
+    "Schedule A"
+   ],
+   "source_page": 45
+  },
+  {
+   "fact_id": "ACT-000315",
+   "paragraph_id": "11.25",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-13",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "merchant token bundle",
+   "method": "mirrored",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule B"
+   ],
+   "source_page": 45
+  },
+  {
+   "fact_id": "ACT-000316",
+   "paragraph_id": "11.26",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [
+    "Count Six",
+    "Count One"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-02-06",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "claims export batch Q4-17",
+   "method": "staged for distribution",
+   "venue": "server BX-14",
+   "amount_usd": 9344.42,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 45
+  },
+  {
+   "fact_id": "ACT-000317",
+   "paragraph_id": "11.27",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-18",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "licensing key archive",
+   "method": "encrypted and forwarded",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Schedule A"
+   ],
+   "source_page": 45
+  },
+  {
+   "fact_id": "ACT-000318",
+   "paragraph_id": "11.28",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-01",
+   "actor": "Iris Mori",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "Aurora Ledger v9 installer",
+   "method": "exchanged",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 22440.3,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 45
+  },
+  {
+   "fact_id": "ACT-000319",
+   "paragraph_id": "11.29",
+   "primary_count": "Count Eleven",
+   "also_applies_to_counts": [
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-06-02",
+   "actor": "Iris Mori",
+   "actor_alias": "cinder",
+   "defendants": [
+    "Iris Mori"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "pre-release console image",
+   "method": "staged for distribution",
+   "venue": "server BX-14",
+   "amount_usd": 61048.45,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 45
+  }
+ ],
+ "counts": [
+  {
+   "count_number": 1,
+   "count_label": "Count One",
+   "offense": "Aggravated Identity Theft",
+   "statutes": [
+    "18 U.S.C. § 1028A",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 2,
+   "count_label": "Count Two",
+   "offense": "Trafficking in Access Devices",
+   "statutes": [
+    "18 U.S.C. § 1029(a)(2)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 3,
+   "count_label": "Count Three",
+   "offense": "Criminal Copyright Infringement",
+   "statutes": [
+    "17 U.S.C. § 506(a)(1)(B)",
+    "18 U.S.C. § 2319(c)(1)"
+   ],
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 4,
+   "count_label": "Count Four",
+   "offense": "Trafficking in Access Devices",
+   "statutes": [
+    "18 U.S.C. § 1029(a)(2)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 5,
+   "count_label": "Count Five",
+   "offense": "Money Laundering",
+   "statutes": [
+    "18 U.S.C. § 1956(a)(1)(B)(i)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 6,
+   "count_label": "Count Six",
+   "offense": "Money Laundering",
+   "statutes": [
+    "18 U.S.C. § 1956(a)(1)(B)(i)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 7,
+   "count_label": "Count Seven",
+   "offense": "Criminal Copyright Infringement",
+   "statutes": [
+    "17 U.S.C. § 506(a)(1)(B)",
+    "18 U.S.C. § 2319(c)(1)"
+   ],
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 8,
+   "count_label": "Count Eight",
+   "offense": "Wire Fraud",
+   "statutes": [
+    "18 U.S.C. § 1343",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 9,
+   "count_label": "Count Nine",
+   "offense": "Money Laundering",
+   "statutes": [
+    "18 U.S.C. § 1956(a)(1)(B)(i)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 10,
+   "count_label": "Count Ten",
+   "offense": "Criminal Copyright Infringement",
+   "statutes": [
+    "17 U.S.C. § 506(a)(1)(B)",
+    "18 U.S.C. § 2319(c)(1)"
+   ],
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 11,
+   "count_label": "Count Eleven",
+   "offense": "Aggravated Identity Theft",
+   "statutes": [
+    "18 U.S.C. § 1028A",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": null,
+   "date_range": null,
+   "source_page": 1
+  },
+  {
+   "count_number": 1,
+   "count_label": "Count One",
+   "offense": "Aggravated Identity Theft",
+   "statutes": [
+    "18 U.S.C. § 1028A",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": "1-27",
+   "date_range": "2024-01-10 to 2024-05-04",
+   "source_page": 2
+  },
+  {
+   "count_number": 2,
+   "count_label": "Count Two",
+   "offense": "Trafficking in Access Devices",
+   "statutes": [
+    "18 U.S.C. § 1029(a)(2)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Bianca Lopez",
+    "Bianca Arden",
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": "Paragraphs 1-39",
+   "date_range": "2024-01-05 to 2024-02-09",
+   "source_page": 6
+  },
+  {
+   "count_number": 3,
+   "count_label": "Count Three",
+   "offense": "Criminal Copyright Infringement",
+   "statutes": [
+    "17 U.S.C. § 506(a)(1)(B)",
+    "18 U.S.C. § 2319(c)(1)"
+   ],
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": "1-36",
+   "date_range": "2024-03-03 to 2024-06-14",
+   "source_page": 10
+  },
+  {
+   "count_number": 4,
+   "count_label": "Count Four",
+   "offense": "Trafficking in Access Devices",
+   "statutes": [
+    "18 U.S.C. § 1029(a)(2)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Bianca Lopez",
+    "Iris Mori",
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": "1-41",
+   "date_range": "2024-02-15 to 2024-04-27",
+   "source_page": 14
+  },
+  {
+   "count_number": 5,
+   "count_label": "Count Five",
+   "offense": "Money Laundering",
+   "statutes": [
+    "18 U.S.C. § 1956(a)(1)(B)(i)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Iris Mori",
+    "Bianca Lopez",
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": "1-32",
+   "date_range": "2024-02-29 to 2024-04-30",
+   "source_page": 18
+  },
+  {
+   "count_number": 6,
+   "count_label": "Count Six",
+   "offense": "Money Laundering",
+   "statutes": [
+    "18 U.S.C. § 1956(a)(1)(B)(i)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": "1-23",
+   "date_range": "2024-01-20 to 2024-02-02",
+   "source_page": 22
+  },
+  {
+   "count_number": 7,
+   "count_label": "Count Seven",
+   "offense": "Criminal Copyright Infringement",
+   "statutes": [
+    "17 U.S.C. § 506(a)(1)(B)",
+    "18 U.S.C. § 2319(c)(1)"
+   ],
+   "defendants": [
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": "1-44",
+   "date_range": "2024-02-06 to 2024-02-19",
+   "source_page": 26
+  },
+  {
+   "count_number": 8,
+   "count_label": "Count Eight",
+   "offense": "Wire Fraud",
+   "statutes": [
+    "18 U.S.C. § 1343",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "incorporated_paragraphs": "1-27",
+   "date_range": "2024-03-20 to 2024-06-30",
+   "source_page": 30
+  },
+  {
+   "count_number": 9,
+   "count_label": "Count Nine",
+   "offense": "Money Laundering",
+   "statutes": [
+    "18 U.S.C. § 1956(a)(1)(B)(i)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Bianca Lopez"
+   ],
+   "incorporated_paragraphs": "1-33",
+   "date_range": "2024-03-22 to 2024-04-26",
+   "source_page": 34
+  },
+  {
+   "count_number": 10,
+   "count_label": "Count Ten",
+   "offense": "Criminal Copyright Infringement",
+   "statutes": [
+    "17 U.S.C. § 506(a)(1)(B)",
+    "18 U.S.C. § 2319(c)(1)"
+   ],
+   "defendants": [
+    "Bianca Lopez",
+    "Bianca Arden"
+   ],
+   "incorporated_paragraphs": "1-22",
+   "date_range": "2024-03-25 to 2024-05-18",
+   "source_page": 38
+  },
+  {
+   "count_number": 11,
+   "count_label": "Count Eleven",
+   "offense": "Aggravated Identity Theft",
+   "statutes": [
+    "18 U.S.C. § 1028A",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Iris Mori"
+   ],
+   "incorporated_paragraphs": "1-24",
+   "date_range": "2024-02-05 to 2024-06-01",
+   "source_page": 42
+  }
+ ],
+ "defendants": [
+  {
+   "defendant_id": "DEF-001",
+   "name": "Bianca Lopez",
+   "aliases": [
+    "northstar"
+   ],
+   "residence": "Reno, Nevada",
+   "role": "credential broker"
+  },
+  {
+   "defendant_id": "DEF-002",
+   "name": "Iris Mori",
+   "aliases": [
+    "cinder",
+    "blackline"
+   ],
+   "residence": "Denver, Colorado",
+   "role": "server operator"
+  },
+  {
+   "defendant_id": "DEF-003",
+   "name": "Bianca Arden",
+   "aliases": [
+    "kestrel",
+    "ridge"
+   ],
+   "residence": "Austin, Texas",
+   "role": "distribution lead"
+  },
+  {
+   "defendant_id": "DEF-003",
+   "name": "Bianca Arden",
+   "aliases": [
+    "ridge",
+    "kestrel"
+   ],
+   "residence": "Austin, Texas",
+   "role": "distribution lead"
+  }
+ ]
+}

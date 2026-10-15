@@ -6,5 +6,12 @@
  "proposed_rent": "$1200.00",
  "security_deposit_amount": "$1200.00",
  "date_unit_available_for_inspection": "05/15/2023",
- "utilities_and_appliances": []
+ "utilities_and_appliances": [
+  "Electricity",
+  "Water",
+  "Gas",
+  "Refrigerator",
+  "Stove",
+  "Dishwasher"
+ ]
 }

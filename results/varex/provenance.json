@@ -9,7 +9,7 @@
   "answer_keys_at_inference": false
  },
  "code": {
-  "commit": "77954571c86aa8b4a5d351c3e3ac3ddbcca5d1f5",
+  "commit": "4d33fd726c8f062f7757e502cf76efda0cf99f9f",
   "uncommitted_pipeline_diff_sha256": null
  },
  "documents": {
@@ -196,9 +196,17 @@
   "1068": {
    "status": "completed",
    "readings": [
-    "ruled"
+    "primary",
+    "parse",
+    "oneshot"
    ],
-   "seconds": 95.0
+   "picked": "primary",
+   "agreement": {
+    "primary": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   },
+   "seconds": 224.9
   },
   "11600": {
    "status": "completed",
@@ -1283,9 +1291,17 @@
   "2744-B": {
    "status": "completed",
    "readings": [
-    "ruled"
+    "primary",
+    "parse",
+    "oneshot"
    ],
-   "seconds": 35.1
+   "picked": "primary",
+   "agreement": {
+    "primary": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   },
+   "seconds": 314.3
   },
   "2744-C": {
    "status": "completed",
@@ -2100,9 +2116,17 @@
   "4743": {
    "status": "completed",
    "readings": [
-    "ruled"
+    "primary",
+    "parse",
+    "oneshot"
    ],
-   "seconds": 232.3
+   "picked": "primary",
+   "agreement": {
+    "primary": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   },
+   "seconds": 314.3
   },
   "4750": {
    "status": "completed",
@@ -2167,9 +2191,17 @@
   "50070": {
    "status": "completed",
    "readings": [
-    "ruled"
+    "primary",
+    "parse",
+    "oneshot"
    ],
-   "seconds": 202.8
+   "picked": "primary",
+   "agreement": {
+    "primary": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   },
+   "seconds": 264.3
   },
   "50071": {
    "status": "completed",
@@ -2759,9 +2791,17 @@
   "52517": {
    "status": "completed",
    "readings": [
-    "ruled"
+    "primary",
+    "parse",
+    "oneshot"
    ],
-   "seconds": 201.5
+   "picked": "primary",
+   "agreement": {
+    "primary": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   },
+   "seconds": 249.0
   },
   "52522a_b": {
    "status": "completed",
@@ -9745,9 +9785,17 @@
   "LTC-84": {
    "status": "completed",
    "readings": [
-    "ruled"
+    "primary",
+    "parse",
+    "oneshot"
    ],
-   "seconds": 164.2
+   "picked": "primary",
+   "agreement": {
+    "primary": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   },
+   "seconds": 295.9
   },
   "LTC-85": {
    "status": "completed",
@@ -17611,9 +17659,17 @@
   "cdph8719": {
    "status": "completed",
    "readings": [
-    "ruled"
+    "primary",
+    "parse",
+    "oneshot"
    ],
-   "seconds": 282.0
+   "picked": "primary",
+   "agreement": {
+    "primary": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   },
+   "seconds": 297.9
   },
   "cdph8722": {
    "status": "completed",
@@ -21750,9 +21806,17 @@
   "lab184": {
    "status": "completed",
    "readings": [
-    "ruled"
+    "primary",
+    "parse",
+    "oneshot"
    ],
-   "seconds": 273.9
+   "picked": "primary",
+   "agreement": {
+    "primary": 0.9375,
+    "parse": 0.9375,
+    "oneshot": 0.9375
+   },
+   "seconds": 587.7
   },
   "lab192": {
    "status": "completed",
@@ -21802,9 +21866,17 @@
   "lab416": {
    "status": "completed",
    "readings": [
-    "ruled"
+    "primary",
+    "parse",
+    "oneshot"
    ],
-   "seconds": 248.7
+   "picked": "primary",
+   "agreement": {
+    "primary": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   },
+   "seconds": 261.5
   },
   "lab807": {
    "status": "completed",
@@ -24644,16 +24716,32 @@
   "sav3062-4": {
    "status": "completed",
    "readings": [
-    "ruled"
+    "primary",
+    "parse",
+    "oneshot"
    ],
-   "seconds": 111.5
+   "picked": "primary",
+   "agreement": {
+    "primary": 1.0,
+    "parse": 1.0,
+    "oneshot": 1.0
+   },
+   "seconds": 230.6
   },
   "sav4239": {
    "status": "completed",
    "readings": [
-    "ruled"
+    "primary",
+    "parse",
+    "oneshot"
    ],
-   "seconds": 472.7
+   "picked": "primary",
+   "agreement": {
+    "primary": 0.993,
+    "parse": 0.993,
+    "oneshot": 0.9459
+   },
+   "seconds": 334.6
   },
   "sav5063": {
    "status": "completed",

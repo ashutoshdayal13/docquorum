@@ -1,6 +1,11 @@
 {
  "hud_reviewer": "Jurij H. Morrison",
  "hud_review_date": "06/15/2024",
+ "agency_personnel_contacted": [
+  "Andrew B. Wolf (IS Manager)",
+  "Blanca Z. Rios (Legal)",
+  "Lisa Johnson (HR)"
+ ],
  "agency": {
   "name": "Ortega LLC Community Development",
   "address": "50743 Laura Inlet Suite 766",
@@ -9,6 +14,5 @@
   "chief_executive_officer": "Andrew B. Wolf",
   "labor_standards_officer": "Blanca Z. Rios",
   "telephone_number": "(296) 702-6926"
- },
- "agency_personnel_contacted": []
+ }
 }

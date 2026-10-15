@@ -1,0 +1,2897 @@
+{
+ "transactions": [
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 224.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to SAMIRA Q HADDAD on 8/17 Ref # Wfct6YXATTK3",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 11.76,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/17 ARBORWAY PHARMACY #003 Card 7894",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 12.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/17 JAMAICA PLAIN TACO BAR #11 Card 8049",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 7.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/17 MISSION HILL BAKERY #08 Card 4277",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 8.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/17 MISSION HILL BAKERY #08 Card 6637",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 321.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 8/17 Ref # Wfct13P4DXGK",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 2.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/17 HUB CYCLE KIOSK #203 Card 6714",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 69.76,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Baystate Electric Service Payments 250818 8072067299 Melissa",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 17.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/18 JAMAICA PLAIN TACO BAR #11 Card 4405",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 21.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/18 WASHINGTON STREET THAI #16 Card 7899",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 12.19,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/18 CITYLINE RIDESHARE BOSTON Card 5447",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 164.78,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to ELENA R MARQUEZ on 8/18 Ref # WfctZJX2Z01Q",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 12.97,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/18 BACK BAY LUNCH BOX #27 Card 1350",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 49.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/18 CENTRE STREET GROCER #02130 Card 1615",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 18.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 8/18 Wells Fargo ATM Card 9226",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 5.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/19 FOREST HILLS COFFEE #012 Card 1096",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 37.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/19 SOUTHWEST CORRIDOR BIKE SHOP #2 Card 7032",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 13.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/19 CITYLINE RIDESHARE BOSTON Card 6591",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 19.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/19 JAMAICA PLAIN TACO BAR #11 Card 5627",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 278.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From SAMIRA Q HADDAD on 8/20 Ref # PpZYP7YH1A",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 32.01,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From TYLER A BOWEN on 8/20 Ref # Pp0U7H5GWX",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 33.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/20 SOUTHWEST CORRIDOR BIKE SHOP #2 Card 3375",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 14.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/20 BACK BAY LUNCH BOX #27 Card 2832",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 218.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 8/20 Ref # WfctE1K5UZFX",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 6.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/20 MISSION HILL BAKERY #08 Card 6076",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 118.14,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to NOAH J KIM on 8/20 Ref # Wfct1T23X9XN",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 33.38,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/20 CENTRE STREET GROCER #02130 Card 1866",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 2418.1,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "CODMAN HILL SYSTEMS LLC DD 250821 4944309180 Melissa Tran",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 1.68,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Interest Payment",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 10.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Recurring Payment authorized on 8/21 Tunebay Music Tunebay Music CA S495989815754151 Card 4324",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 56.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 8/21 Wells Fargo ATM Card 8013",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 252.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 8/21 Ref # WfctRGXWAXYL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 6.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/21 FOREST HILLS COFFEE #012 Card 9015",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 22.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/21 STONY BROOK BOOKS #005 Card 4214",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 56.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 8/21 Wells Fargo ATM Card 1066",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 182.21,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to SAMIRA Q HADDAD on 8/22 Ref # Wfct3QT3WKY0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 238.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to SAMIRA Q HADDAD on 8/22 Ref # WfctBJVS09SM",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 4.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/22 HUB CYCLE KIOSK #203 Card 8498",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 222.34,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 8/22 Ref # WfctG45E01CM",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 5.76,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/22 MISSION HILL BAKERY #08 Card 6708",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 283.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to ELENA R MARQUEZ on 8/22 Ref # WfctG38FWHVY",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 317.42,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 8/22 Ref # WfctCX6PAAPQ",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 56.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to SAMIRA Q HADDAD on 8/22 Ref # Wfct14F1EN90",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 282.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Mobile Deposit on 8/23",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 11.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/23 JAMAICA PLAIN TACO BAR #11 Card 6489",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 14.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/23 ARBORWAY PHARMACY #003 Card 6551",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 13.43,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/23 POND SIDE PIZZA #07 Card 9972",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 11.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/23 ARBORWAY PHARMACY #003 Card 7232",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 12.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/23 ARBORWAY PHARMACY #003 Card 2566",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 17.43,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/23 JAMAICA PLAIN TACO BAR #11 Card 8372",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 2.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/23 HUB CYCLE KIOSK #203 Card 5035",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 35.29,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/23 CENTRE STREET GROCER #02130 Card 1583",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 44.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From NOAH J KIM on 8/24 Ref # PpS1YTJN52",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 176.7,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Beacon Mutual Student Loan Payments 250824 4552148753 Melissa",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 187.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 8/24 Wells Fargo ATM Card 5117",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 9.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/24 CITYLINE RIDESHARE BOSTON Card 4774",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 9.48,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/24 ARBORWAY PHARMACY #003 Card 6514",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 17.41,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/24 BACK BAY LUNCH BOX #27 Card 9689",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 14.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/24 LONGWOOD NOODLE HOUSE #04 Card 7200",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 15.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/24 POND SIDE PIZZA #07 Card 5785",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 362.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to NOAH J KIM on 8/25 Ref # WfctK34EF75D",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 73.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to TYLER A BOWEN on 8/25 Ref # WfctU4N9DDUU",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 20.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/25 LONGWOOD NOODLE HOUSE #04 Card 1391",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 11.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/25 CITYLINE RIDESHARE BOSTON Card 5250",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 22.43,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/25 POND SIDE PIZZA #07 Card 4700",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 16.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/25 POND SIDE PIZZA #07 Card 3836",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 282.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 8/25 Ref # Wfct4AQA4RB9",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 24.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/25 STONY BROOK BOOKS #005 Card 6675",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 8.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/25 BROOKLINE LAUNDROMAT #006 Card 1904",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 93.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 8/25 Wells Fargo ATM Card 1642",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 2.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/25 HUB CYCLE KIOSK #203 Card 9339",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 16.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/25 POND SIDE PIZZA #07 Card 9999",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 15.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/25 ARBORWAY PHARMACY #003 Card 3169",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 163.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From PRIYA N DESAI on 8/26 Ref # PpGX2WBVH8",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 87.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Check",
+   "check_number": "2100",
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 6.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/26 MISSION HILL BAKERY #08 Card 1668",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 7.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/26 BROOKLINE LAUNDROMAT #006 Card 1392",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 19.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/26 JAMAICA PLAIN TACO BAR #11 Card 2645",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 13.68,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/26 JAMAICA PLAIN TACO BAR #11 Card 2019",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 15.05,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/26 CITYLINE RIDESHARE BOSTON Card 1461",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 20.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/26 WASHINGTON STREET THAI #16 Card 9230",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 16.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/26 JAMAICA PLAIN TACO BAR #11 Card 8818",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 10.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/26 BROOKLINE LAUNDROMAT #006 Card 2133",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 212.18,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From ELENA R MARQUEZ on 8/27 Ref # PpLXZ7E7YU",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 71.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From PRIYA N DESAI on 8/27 Ref # Pp0UZSEQ4M",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 377.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From PRIYA N DESAI on 8/27 Ref # PpK11S3ZUL",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 202.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From PRIYA N DESAI on 8/27 Ref # PpL3PSV9AH",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 10.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/27 GREEN LINE MARKET #039 Card 6029",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 23.38,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/27 STONY BROOK BOOKS #005 Card 1978",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 3.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/27 HUB CYCLE KIOSK #203 Card 8509",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 23.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/28 WASHINGTON STREET THAI #16 Card 4953",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 24.4,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/28 STONY BROOK BOOKS #005 Card 1386",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 35.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/28 RUGGLES TECH SUPPLY #10 Card 6059",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 93.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 8/28 Wells Fargo ATM Card 1340",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 9.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/28 BROOKLINE LAUNDROMAT #006 Card 1543",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 196.15,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From ELENA R MARQUEZ on 8/29 Ref # Pp56EACG5T",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 5.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/29 FOREST HILLS COFFEE #012 Card 4309",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 20.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/29 LONGWOOD NOODLE HOUSE #04 Card 4779",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 187.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 8/29 Wells Fargo ATM Card 2700",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 15.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/29 LONGWOOD NOODLE HOUSE #04 Card 5369",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 9.15,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/29 BROOKLINE LAUNDROMAT #006 Card 7323",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 17.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/29 LONGWOOD NOODLE HOUSE #04 Card 8804",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 34.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/29 CENTRE STREET GROCER #02130 Card 7355",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 16.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/29 BACK BAY LUNCH BOX #27 Card 7668",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 350.38,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to SAMIRA Q HADDAD on 8/29 Ref # WfctNP63SE9X",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 7.1,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/29 BROOKLINE LAUNDROMAT #006 Card 8537",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 21.78,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/30 STONY BROOK BOOKS #005 Card 3346",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 17.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/30 BACK BAY LUNCH BOX #27 Card 5142",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 93.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 8/30 Wells Fargo ATM Card 7832",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 21.57,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/30 STONY BROOK BOOKS #005 Card 4279",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 13.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/30 WASHINGTON STREET THAI #16 Card 3577",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 120.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 8/30 Ref # WfctQSZ6WHXS",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 93.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 8/30 Wells Fargo ATM Card 3751",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 55.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 8/30 Ref # WfctTSXQMWP2",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 69.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From NOAH J KIM on 8/31 Ref # PpD1KD0CQG",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 31.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From SAMIRA Q HADDAD on 8/31 Ref # PpL5Q1M2XM",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 5.66,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/31 FOREST HILLS COFFEE #012 Card 4782",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 6.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/31 FOREST HILLS COFFEE #012 Card 5125",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 14.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/31 ARBORWAY PHARMACY #003 Card 1013",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 35.03,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/31 CENTRE STREET GROCER #02130 Card 3409",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 18.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 8/31 Wells Fargo ATM Card 3145",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 367.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 8/31 Ref # WfctLK4R29NJ",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 6.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 8/31 FOREST HILLS COFFEE #012 Card 8092",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 263.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to SAMIRA Q HADDAD on 8/31 Ref # WfctC1VY874E",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 1348.21,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Pinebank Realty Rent Ach Payments 250901 7455869833 Melissa",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 56.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/1 Wells Fargo ATM Card 6064",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 3.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/1 HUB CYCLE KIOSK #203 Card 8003",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 49.5,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/1 CENTRE STREET GROCER #02130 Card 1381",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 57.26,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From NOAH J KIM on 9/2 Ref # Pp7KNF10H8",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 191.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Mobile Deposit on 9/2",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 325.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From TYLER A BOWEN on 9/2 Ref # PpU19R5HSZ",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 255.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From TYLER A BOWEN on 9/2 Ref # PpEKSW6ZE9",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 37.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/2 Wells Fargo ATM Card 6536",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 12.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/2 ARBORWAY PHARMACY #003 Card 7677",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 75.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to ELENA R MARQUEZ on 9/2 Ref # WfctKQLNPYVU",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 254.64,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to ELENA R MARQUEZ on 9/2 Ref # WfctBWH6G5GG",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 187.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/2 Wells Fargo ATM Card 9435",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 9.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/2 ARBORWAY PHARMACY #003 Card 6635",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 10.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/2 ARBORWAY PHARMACY #003 Card 5410",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 14.5,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/2 BACK BAY LUNCH BOX #27 Card 1669",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 31.34,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/2 CENTRE STREET GROCER #02130 Card 5061",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 17.39,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/2 BACK BAY LUNCH BOX #27 Card 9433",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 20.43,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/2 STONY BROOK BOOKS #005 Card 7506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 11.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Recurring Payment authorized on 9/3 Codecraft Cloud Ide Codecraft Cloud Ide CA S769909606461028 Card 1716",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 56.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/3 Wells Fargo ATM Card 8757",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 12.53,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/3 GREEN LINE MARKET #039 Card 1082",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 6.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/3 FOREST HILLS COFFEE #012 Card 6372",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 23.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 9/3 Ref # Wfct115FMFXP",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 49.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/3 CENTRE STREET GROCER #02130 Card 1050",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 2341.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "CODMAN HILL SYSTEMS LLC DD 250904 3718267470 Melissa Tran",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 355.38,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From TYLER A BOWEN on 9/4 Ref # Pp55HQS7H8",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 20.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/4 LONGWOOD NOODLE HOUSE #04 Card 9711",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 12.68,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/4 CITYLINE RIDESHARE BOSTON Card 4715",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 135.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to SAMIRA Q HADDAD on 9/4 Ref # WfctSVT4V36V",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 46.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/4 RUGGLES TECH SUPPLY #10 Card 5386",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 28.76,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/4 SOUTHWEST CORRIDOR BIKE SHOP #2 Card 2803",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 18.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/4 Wells Fargo ATM Card 9167",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 73.29,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From ELENA R MARQUEZ on 9/5 Ref # PpVJAQZKKP",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 119.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From NOAH J KIM on 9/5 Ref # Pp8YFUA5WS",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 60.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Hublink Fiber Internet Payments 250905 4183583823 Melissa",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 171.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 9/5 Ref # WfctD4G8GK8M",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 13.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/5 ARBORWAY PHARMACY #003 Card 4586",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 14.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/5 ARBORWAY PHARMACY #003 Card 4895",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 37.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/5 Wells Fargo ATM Card 4771",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 254.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to NOAH J KIM on 9/5 Ref # Wfct4CHM64BY",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 19.5,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/6 JAMAICA PLAIN TACO BAR #11 Card 6109",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 15.97,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/6 JAMAICA PLAIN TACO BAR #11 Card 7816",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 261.42,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to TYLER A BOWEN on 9/6 Ref # Wfct2NQ8GHGP",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 17.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Recurring Payment authorized on 9/7 Streamhouse Plus Streamhouse Plus CA S538074502885988 Card 9314",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 90.41,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Check",
+   "check_number": "2101",
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 10.76,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/7 BROOKLINE LAUNDROMAT #006 Card 5001",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 232.01,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to NOAH J KIM on 9/7 Ref # Wfct40WLZ6Y8",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 171.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to NOAH J KIM on 9/7 Ref # Wfct8APEKQ5M",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 26.95,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/7 STONY BROOK BOOKS #005 Card 2997",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 31.17,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/7 CENTRE STREET GROCER #02130 Card 1584",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 20.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/8 POND SIDE PIZZA #07 Card 1542",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 307.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 9/8 Ref # WfctJ9ED1RDX",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 6.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/8 FOREST HILLS COFFEE #012 Card 1006",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 20.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/8 POND SIDE PIZZA #07 Card 7508",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 240.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to NOAH J KIM on 9/8 Ref # WfctGMTKNBKE",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 6.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/8 MISSION HILL BAKERY #08 Card 8893",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 265.71,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to TYLER A BOWEN on 9/8 Ref # WfctTEUMULBL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 3.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/8 HUB CYCLE KIOSK #203 Card 7723",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 294.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From SAMIRA Q HADDAD on 9/9 Ref # PpWH7HH48M",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 267.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to ELENA R MARQUEZ on 9/9 Ref # Wfct7AYGQ21S",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 153.75,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to ELENA R MARQUEZ on 9/9 Ref # WfctLLEY87XQ",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 18.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/9 Wells Fargo ATM Card 8683",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 14.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/9 CITYLINE RIDESHARE BOSTON Card 6190",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 18.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/9 Wells Fargo ATM Card 2463",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 187.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/9 Wells Fargo ATM Card 6496",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 56.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/9 Wells Fargo ATM Card 4240",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 249.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From SAMIRA Q HADDAD on 9/10 Ref # PpCQGC8D5E",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 183.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From NOAH J KIM on 9/10 Ref # Pp9J7CQBFT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 238.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to NOAH J KIM on 9/10 Ref # WfctCBKJA7MM",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 9.11,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/10 GREEN LINE MARKET #039 Card 6168",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 18.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/10 JAMAICA PLAIN TACO BAR #11 Card 9714",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 3.72,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/10 HUB CYCLE KIOSK #203 Card 8456",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 31.15,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/10 CENTRE STREET GROCER #02130 Card 2644",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 6.34,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/10 FOREST HILLS COFFEE #012 Card 1603",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 48.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/10 CENTRE STREET GROCER #02130 Card 5561",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 5.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/10 MISSION HILL BAKERY #08 Card 1277",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 18.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/10 Wells Fargo ATM Card 8271",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 17.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/10 WASHINGTON STREET THAI #16 Card 5351",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 9.58,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/10 GREEN LINE MARKET #039 Card 2348",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 2.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/10 HUB CYCLE KIOSK #203 Card 8418",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 190.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Mobile Deposit on 9/11",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 13.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Harbor Shield Renters Ins Payments 250911 4013363125 Melissa",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 51.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/11 RUGGLES TECH SUPPLY #10 Card 2031",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 14.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/11 BACK BAY LUNCH BOX #27 Card 8028",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 6.11,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/11 FOREST HILLS COFFEE #012 Card 9712",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 16.48,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/11 WASHINGTON STREET THAI #16 Card 3957",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 226.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From PRIYA N DESAI on 9/12 Ref # PpZQD6FCZU",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 36.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/12 RUGGLES TECH SUPPLY #10 Card 4307",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 239.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 9/12 Ref # WfctNJHPCUZ8",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 10.18,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/12 GREEN LINE MARKET #039 Card 6722",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 28.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/12 CENTRE STREET GROCER #02130 Card 4086",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 17.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/12 JAMAICA PLAIN TACO BAR #11 Card 7704",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 337.96,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 9/12 Ref # WfctAHSZNX2Z",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 13.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/12 POND SIDE PIZZA #07 Card 7357",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 171.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to ELENA R MARQUEZ on 9/12 Ref # WfctJHK01JP2",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 55.66,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From NOAH J KIM on 9/13 Ref # Pp6CQZGCG1",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 311.11,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From NOAH J KIM on 9/13 Ref # PpMBUX60B3",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 265.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From TYLER A BOWEN on 9/13 Ref # PpS1UGLDN8",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 109.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to TYLER A BOWEN on 9/13 Ref # WfctQ0N84CR0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 10.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/13 CITYLINE RIDESHARE BOSTON Card 7501",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 37.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/13 Wells Fargo ATM Card 1537",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 93.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/13 Wells Fargo ATM Card 1832",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 56.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/13 Wells Fargo ATM Card 3050",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 20.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/13 JAMAICA PLAIN TACO BAR #11 Card 5426",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 273.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From TYLER A BOWEN on 9/14 Ref # PpJVE3RG10",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 213.96,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From TYLER A BOWEN on 9/14 Ref # Pp70GV73XE",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 56.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/14 Wells Fargo ATM Card 5695",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 16.1,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/14 BACK BAY LUNCH BOX #27 Card 8233",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 29.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/14 SOUTHWEST CORRIDOR BIKE SHOP #2 Card 8964",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 17.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/14 BACK BAY LUNCH BOX #27 Card 6621",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 92.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From PRIYA N DESAI on 9/15 Ref # PpEQS031W8",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 37.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Recurring Payment authorized on 9/15 Fitloop Gym Jamaica Plain Fitloop Gym Jamaica Plain CA S471344938392107 Card 4951",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 25.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/15 SOUTHWEST CORRIDOR BIKE SHOP #2 Card 8379",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 128.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to TYLER A BOWEN on 9/15 Ref # Wfct47QA4XXS",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 180.29,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to NOAH J KIM on 9/15 Ref # Wfct43JTL7YY",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 14.64,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/15 GREEN LINE MARKET #039 Card 2046",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 18.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/15 BACK BAY LUNCH BOX #27 Card 5660",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 10.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/15 BROOKLINE LAUNDROMAT #006 Card 1558",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 13.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/15 BACK BAY LUNCH BOX #27 Card 4528",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 115.11,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to NOAH J KIM on 9/15 Ref # Wfct162LCHBK",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 27.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/15 SOUTHWEST CORRIDOR BIKE SHOP #2 Card 9239",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 10.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/15 GREEN LINE MARKET #039 Card 9362",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 31.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/15 CENTRE STREET GROCER #02130 Card 3826",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 37.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/15 Wells Fargo ATM Card 1880",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 88.05,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle From PRIYA N DESAI on 9/16 Ref # Pp6SEET8LB",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 53.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/16 RUGGLES TECH SUPPLY #10 Card 5676",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 315.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to TYLER A BOWEN on 9/16 Ref # WfctWL83M1G1",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 37.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/16 Wells Fargo ATM Card 9025",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 16.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/16 BACK BAY LUNCH BOX #27 Card 7300",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 187.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM Withdrawal authorized on 9/16 Wells Fargo ATM Card 9663",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 86.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 9/16 Ref # WfctQ2S0GZ5Y",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 132.38,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to PRIYA N DESAI on 9/16 Ref # Wfct5LP5DH12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 13.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/16 BACK BAY LUNCH BOX #27 Card 9257",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 19.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Purchase authorized on 9/16 WASHINGTON STREET THAI #16 Card 2873",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 188.5,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Zelle to TYLER A BOWEN on 9/16 Ref # WfctLXCF185R",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0780"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 50.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Recurring Transfer From Xxxxxxxxx0780 on 8/23 Ref #Save",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0420"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 50.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Recurring Transfer From Xxxxxxxxx0780 on 9/7 Ref #Save",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0420"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 0.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "Interest Payment",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0420"
+  }
+ ]
+}

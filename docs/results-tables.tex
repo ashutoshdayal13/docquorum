@@ -87,8 +87,8 @@
 \begin{tabularx}{0.62\linewidth}{@{}rYr@{}}\toprule
 \# & System & Score\\
 \midrule
-1 & Gemini 2.5 Pro & 98.0\\
-\rowcolor{teal!9} \textbf{1} & \textbf{DocQuorum (ours)} & \textbf{98.05}\\
+\rowcolor{teal!9} \textbf{1} & \textbf{DocQuorum (ours)} & \textbf{98.10}\\
+2 & Gemini 2.5 Pro & 98.0\\
 3 & Gemini 2.5 Flash & 97.3\\
 4 & Qwen3-VL (8B) & 96.6\\
 5 & Llama 4 Maverick (17B×128E) & 95.6\\
@@ -132,4 +132,24 @@
 14 & Claude-Sonnet-4.5 & 39.71\\
 15 & Gemma-3-12B & 30.90\\
 16 & SmolVLM2-2.2B & 12.83\\
+\bottomrule\end{tabularx}\endgroup
+\chapterpage{RESULTS}{LongArray-Extract}
+45 long PDFs (bank statements, clinical listings, indictments); macro document accuracy (\%) by the publisher's reference scorer. Published systems: Extend AI's results page, which reports one decimal; ranks compare at that precision.
+
+\begingroup\small\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{0.62\linewidth}{@{}rYr@{}}\toprule
+\# & System & Score\\
+\midrule
+1 & Extend MAX & 99.2\\
+\rowcolor{teal!9} \textbf{2} & \textbf{DocQuorum (ours)} & \textbf{98.05}\\
+3 & Reducto Deep Extract & 97.4\\
+4 & Claude Opus 4.7 & 83.1\\
+5 & Reducto Standard & 80.9\\
+6 & Pulse Effort & 68.8\\
+7 & Pulse Auto & 64.5\\
+8 & Gemini 3.1 Pro & 47.3\\
+9 & LlamaParse Standard & 47.2\\
+10 & LlamaParse Agentic & 34.7\\
+11 & GPT-5.5 & 31.6\\
+12 & Gemini 3.5 Flash & 31.1\\
 \bottomrule\end{tabularx}\endgroup

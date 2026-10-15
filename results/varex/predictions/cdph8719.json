@@ -7,6 +7,9 @@
  "email_address": "lcoleman@milesedwards.com",
  "date_of_request": "10/15/2023",
  "desired_date_of_completion": "11/15/2023",
- "information_description": "Data on HIV prevention programs for proposal submission and program evaluation",
- "time_period_of_interest": []
+ "time_period_of_interest": [
+  "2020-2021",
+  "2022-2023"
+ ],
+ "information_description": "Data on HIV prevention programs for proposal submission and program evaluation"
 }

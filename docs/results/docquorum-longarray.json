@@ -1,0 +1,18 @@
+{
+  "benchmark": "LongArray-Extract",
+  "score": 98.05249971235187,
+  "detail": {
+    "benchmark": "LongArray-Extract",
+    "official_reference_sha256": "e406978c4f91a7ea81c5337d8c1e3b1f8db179229622df870c2b6e59975ea1f5",
+    "score": 98.05249971235187,
+    "documents": 45,
+    "completed": 45,
+    "by_vertical": {
+      "clinical": 95.444,
+      "financial": 99.314,
+      "legal": 98.023
+    }
+  },
+  "predictions": "results/longarray",
+  "variant": "final pipeline (run folder results/multibench/longarray_27b_ref4)"
+}

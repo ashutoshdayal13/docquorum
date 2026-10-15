@@ -1,0 +1,737 @@
+{
+ "case_name": "United States of America v. Devon Gupta, Gavin Jensen, Iris Hale",
+ "court": "UNITED STATES DISTRICT COURT NORTHERN DISTRICT OF CALIFORNIA SAN JOSE DIVISION",
+ "docket_number": "21-CR-03536-EJD",
+ "defendants": [
+  {
+   "defendant_id": "DEF-001",
+   "name": "Devon Gupta",
+   "aliases": [
+    "weld"
+   ],
+   "residence": "Portland, Oregon",
+   "role": "server operator"
+  },
+  {
+   "defendant_id": "DEF-002",
+   "name": "Gavin Jensen",
+   "aliases": [
+    "weld",
+    "vapor"
+   ],
+   "residence": "Chicago, Illinois",
+   "role": "release coordinator"
+  },
+  {
+   "defendant_id": "DEF-003",
+   "name": "Iris Hale",
+   "aliases": [
+    "blackline",
+    "weld"
+   ],
+   "residence": "Madison, Wisconsin",
+   "role": "distribution lead"
+  }
+ ],
+ "counts": [
+  {
+   "count_number": 1,
+   "count_label": "Count One",
+   "offense": "Trafficking in Access Devices",
+   "statutes": [
+    "18 U.S.C. § 1029(a)(2)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Gavin Jensen",
+    "Iris Hale"
+   ],
+   "incorporated_paragraphs": "1-30",
+   "date_range": "2024-02-16 to 2024-05-10",
+   "source_page": 2
+  },
+  {
+   "count_number": 2,
+   "count_label": "Count Two",
+   "offense": "Money Laundering",
+   "statutes": [
+    "18 U.S.C. § 1956(a)(1)(B)(i)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Iris Hale"
+   ],
+   "incorporated_paragraphs": "1-32",
+   "date_range": "2024-01-04 to 2024-02-07",
+   "source_page": 3
+  },
+  {
+   "count_number": 3,
+   "count_label": "Count Three",
+   "offense": "Money Laundering",
+   "statutes": [
+    "18 U.S.C. § 1956(a)(1)(B)(i)",
+    "18 U.S.C. § 2"
+   ],
+   "defendants": [
+    "Gavin Jensen",
+    "Devon Gupta",
+    "Iris Hale"
+   ],
+   "incorporated_paragraphs": "1-36",
+   "date_range": "2024-02-25 to 2024-03-13",
+   "source_page": 5
+  }
+ ],
+ "charged_facts": [
+  {
+   "fact_id": "ACT-000001",
+   "paragraph_id": "1.01",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-04-17",
+   "actor": "Iris Hale",
+   "actor_alias": "weld",
+   "defendants": [
+    "Iris Hale",
+    "Gavin Jensen"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "claims export batch Q4-17",
+   "method": "exchanged",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 16407.41,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 2
+  },
+  {
+   "fact_id": "ACT-000002",
+   "paragraph_id": "1.02",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-05",
+   "actor": "Gavin Jensen",
+   "actor_alias": "vapor",
+   "defendants": [
+    "Iris Hale"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "subscriber credential list",
+   "method": "encrypted and forwarded",
+   "venue": "vault share HARBOR",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 3"
+   ],
+   "source_page": 2
+  },
+  {
+   "fact_id": "ACT-000003",
+   "paragraph_id": "1.03",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-29",
+   "actor": "Iris Hale",
+   "actor_alias": "weld",
+   "defendants": [
+    "Iris Hale"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "pre-release console image",
+   "method": "transmitted",
+   "venue": "vault share HARBOR",
+   "amount_usd": 66589.27,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Schedule A"
+   ],
+   "source_page": 2
+  },
+  {
+   "fact_id": "ACT-000004",
+   "paragraph_id": "1.04",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-01-02",
+   "actor": "Iris Hale",
+   "actor_alias": "weld",
+   "defendants": [
+    "Iris Hale",
+    "Gavin Jensen"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "wire transfer instruction packet",
+   "method": "reconciled",
+   "venue": "server BX-14",
+   "amount_usd": 7655.54,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Schedule A"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000005",
+   "paragraph_id": "1.05",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-25",
+   "actor": "Gavin Jensen",
+   "actor_alias": "vapor",
+   "defendants": [
+    "Gavin Jensen"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "Episode 408 screener",
+   "method": "transmitted",
+   "venue": "routing table North Dock",
+   "amount_usd": 56982.35,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000006",
+   "paragraph_id": "1.06",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-06-07",
+   "actor": "Iris Hale",
+   "actor_alias": "weld",
+   "defendants": [
+    "Gavin Jensen",
+    "Iris Hale"
+   ],
+   "victim": "North Pier Software",
+   "object": "Episode 408 screener",
+   "method": "encrypted and forwarded",
+   "venue": "server BX-14",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Attachment C",
+    "Schedule B"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000007",
+   "paragraph_id": "1.07",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-30",
+   "actor": "Iris Hale",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Gavin Jensen",
+    "Iris Hale"
+   ],
+   "victim": "North Pier Software",
+   "object": "claims export batch Q4-17",
+   "method": "reconciled",
+   "venue": "vault share HARBOR",
+   "amount_usd": 89870.47,
+   "referenced_exhibits": [
+    "Attachment C"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000008",
+   "paragraph_id": "1.08",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [
+    "Count Two",
+    "Count Three"
+   ],
+   "relationship_type": "background_only",
+   "date": "2024-03-04",
+   "actor": "Gavin Jensen",
+   "actor_alias": "vapor",
+   "defendants": [
+    "Iris Hale"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "subscriber credential list",
+   "method": "staged for distribution",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 49861.26,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000009",
+   "paragraph_id": "1.09",
+   "primary_count": "Count One",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-17",
+   "actor": "Gavin Jensen",
+   "actor_alias": "weld",
+   "defendants": [
+    "Gavin Jensen"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "wire transfer instruction packet",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3",
+    "Schedule A"
+   ],
+   "source_page": 3
+  },
+  {
+   "fact_id": "ACT-000010",
+   "paragraph_id": "2.01",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-02-08",
+   "actor": "Iris Hale",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Hale"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "customer refund spreadsheet",
+   "method": "reconciled",
+   "venue": "channel #ridge",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 2"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000011",
+   "paragraph_id": "2.02",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-11",
+   "actor": "Iris Hale",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Hale"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "warehouse access manifest",
+   "method": "reconciled",
+   "venue": "drop account 7781",
+   "amount_usd": null,
+   "referenced_exhibits": [
+    "Schedule A"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000012",
+   "paragraph_id": "2.03",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-25",
+   "actor": "Iris Hale",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Hale"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "warehouse access manifest",
+   "method": "exchanged",
+   "venue": "drop account 7781",
+   "amount_usd": 41259.9,
+   "referenced_exhibits": [
+    "Exhibit 3",
+    "Exhibit 2",
+    "Exhibit 1"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000013",
+   "paragraph_id": "2.04",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-22",
+   "actor": "Iris Hale",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Hale"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "warehouse access manifest",
+   "method": "uploaded",
+   "venue": "routing table North Dock",
+   "amount_usd": 70021.35,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000014",
+   "paragraph_id": "2.05",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-01-09",
+   "actor": "Iris Hale",
+   "actor_alias": "weld",
+   "defendants": [
+    "Iris Hale"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "Aurora Ledger v9 installer",
+   "method": "encrypted and forwarded",
+   "venue": "drop account 7781",
+   "amount_usd": 49843.94,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000015",
+   "paragraph_id": "2.06",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "background_only",
+   "date": "2024-06-08",
+   "actor": "Iris Hale",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Hale"
+   ],
+   "victim": "Asterion Games Inc.",
+   "object": "licensing key archive",
+   "method": "exchanged",
+   "venue": "routing table North Dock",
+   "amount_usd": 35316.61,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Attachment C",
+    "Exhibit 3"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000016",
+   "paragraph_id": "2.07",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [
+    "Count Three"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-05-22",
+   "actor": "Iris Hale",
+   "actor_alias": "weld",
+   "defendants": [
+    "Iris Hale"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "customer refund spreadsheet",
+   "method": "transmitted",
+   "venue": "channel #ridge",
+   "amount_usd": 35738.34,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Attachment C"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000017",
+   "paragraph_id": "2.08",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-19",
+   "actor": "Iris Hale",
+   "actor_alias": "weld",
+   "defendants": [
+    "Iris Hale"
+   ],
+   "victim": "Westbridge Health Plan",
+   "object": "licensing key archive",
+   "method": "mirrored",
+   "venue": "server BX-14",
+   "amount_usd": 70810.34,
+   "referenced_exhibits": [
+    "Exhibit 3"
+   ],
+   "source_page": 4
+  },
+  {
+   "fact_id": "ACT-000018",
+   "paragraph_id": "2.09",
+   "primary_count": "Count Two",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-05-04",
+   "actor": "Iris Hale",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Iris Hale"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "Aurora Ledger v9 installer",
+   "method": "reconciled",
+   "venue": "server BX-14",
+   "amount_usd": 48473.22,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 2",
+    "Schedule A"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000019",
+   "paragraph_id": "3.01",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [
+    "Count Two",
+    "Count One"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-03-01",
+   "actor": "Gavin Jensen",
+   "actor_alias": "vapor",
+   "defendants": [
+    "Devon Gupta"
+   ],
+   "victim": "North Pier Software",
+   "object": "Aurora Ledger v9 installer",
+   "method": "exchanged",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 34728.88,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 3",
+    "Schedule A"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000020",
+   "paragraph_id": "3.02",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-07-14",
+   "actor": "Gavin Jensen",
+   "actor_alias": "vapor",
+   "defendants": [
+    "Devon Gupta"
+   ],
+   "victim": "North Pier Software",
+   "object": "Aurora Ledger v9 installer",
+   "method": "caused to be routed",
+   "venue": "server BX-14",
+   "amount_usd": 54311.25,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000021",
+   "paragraph_id": "3.03",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [
+    "Count One",
+    "Count Two"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-07-20",
+   "actor": "Gavin Jensen",
+   "actor_alias": "vapor",
+   "defendants": [
+    "Iris Hale"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "Aurora Ledger v9 installer",
+   "method": "transmitted",
+   "venue": "vault share HARBOR",
+   "amount_usd": 6135.12,
+   "referenced_exhibits": [
+    "Attachment C",
+    "Exhibit 1",
+    "Exhibit 2"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000022",
+   "paragraph_id": "3.04",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-20",
+   "actor": "Iris Hale",
+   "actor_alias": "weld",
+   "defendants": [
+    "Iris Hale"
+   ],
+   "victim": "Heliograph Studios",
+   "object": "merchant token bundle",
+   "method": "caused to be routed",
+   "venue": "channel #ridge",
+   "amount_usd": 29376.37,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000023",
+   "paragraph_id": "3.05",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-02-04",
+   "actor": "Gavin Jensen",
+   "actor_alias": "weld",
+   "defendants": [
+    "Gavin Jensen"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "warehouse access manifest",
+   "method": "caused to be routed",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 30056.48,
+   "referenced_exhibits": [
+    "Exhibit 2"
+   ],
+   "source_page": 5
+  },
+  {
+   "fact_id": "ACT-000024",
+   "paragraph_id": "3.06",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-03-21",
+   "actor": "Iris Hale",
+   "actor_alias": "weld",
+   "defendants": [
+    "Iris Hale",
+    "Devon Gupta"
+   ],
+   "victim": "Prism Ticketing Ltd.",
+   "object": "Aurora Ledger v9 installer",
+   "method": "uploaded",
+   "venue": "channel #ridge",
+   "amount_usd": 28653.18,
+   "referenced_exhibits": [
+    "Exhibit 1",
+    "Exhibit 3"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000025",
+   "paragraph_id": "3.07",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [],
+   "relationship_type": "charged_act",
+   "date": "2024-04-03",
+   "actor": "Devon Gupta",
+   "actor_alias": "weld",
+   "defendants": [
+    "Iris Hale",
+    "Devon Gupta"
+   ],
+   "victim": "Lumen Retail Group",
+   "object": "merchant token bundle",
+   "method": "exchanged",
+   "venue": "workspace Atlas Room",
+   "amount_usd": 52414.47,
+   "referenced_exhibits": [
+    "Exhibit 1"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000026",
+   "paragraph_id": "3.08",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [
+    "Count Two",
+    "Count One"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-02-10",
+   "actor": "Gavin Jensen",
+   "actor_alias": "weld",
+   "defendants": [
+    "Iris Hale",
+    "Gavin Jensen"
+   ],
+   "victim": "Orion Media LLC",
+   "object": "merchant token bundle",
+   "method": "reconciled",
+   "venue": "relay node Falcon-2",
+   "amount_usd": 35638.01,
+   "referenced_exhibits": [
+    "Schedule A",
+    "Exhibit 3"
+   ],
+   "source_page": 6
+  },
+  {
+   "fact_id": "ACT-000027",
+   "paragraph_id": "3.09",
+   "primary_count": "Count Three",
+   "also_applies_to_counts": [
+    "Count One",
+    "Count Two"
+   ],
+   "relationship_type": "charged_act",
+   "date": "2024-02-01",
+   "actor": "Iris Hale",
+   "actor_alias": "blackline",
+   "defendants": [
+    "Gavin Jensen",
+    "Devon Gupta"
+   ],
+   "victim": "Cobalt Finance Corp.",
+   "object": "Episode 408 screener",
+   "method": "mirrored",
+   "venue": "server BX-14",
+   "amount_usd": 70556.68,
+   "referenced_exhibits": [
+    "Exhibit 2",
+    "Attachment C",
+    "Exhibit 1"
+   ],
+   "source_page": 6
+  }
+ ]
+}

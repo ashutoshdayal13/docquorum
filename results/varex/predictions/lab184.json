@@ -2,6 +2,11 @@
  "date": "03/15/2023",
  "tissue_bank_license_id": "CTB-56789-001",
  "tissue_bank_name": "California Tissue Bank and Research Institute",
+ "backup_persons": [
+  "Rebecca Bhandari, Sport and exercise",
+  "Rebecca E. Wilson, Petroleum engineer",
+  "Terry P. de Gruson, Tax inspector"
+ ],
  "facility_name": "California Tissue Bank",
  "license_mailing_attention": "Attn: Tissue Bank Director",
  "tissue_bank_director": {
@@ -21,6 +26,5 @@
  "address": {
   "address_line": "446 Cameron Shores Apt. 849",
   "city_state_zip": "Ramoston, AK 76088"
- },
- "backup_persons": []
+ }
 }

@@ -1,0 +1,35 @@
+{
+ "benchmark": "VAREX",
+ "track": "image_only",
+ "systems": {
+  "docquorum": {
+   "model": "docquorum",
+   "mode": "image_only",
+   "docs": 1578,
+   "fields": 18689,
+   "exact_match": 0.9610466049547862,
+   "exact_match_ci": 0.9614746642409974,
+   "exact_match_normalized": 0.9790786023864305,
+   "anls": 0.978381205140371,
+   "anls_ci": 0.9784409064110989,
+   "anls_normalized": 0.9865443442715446,
+   "perfect_docs": 1327,
+   "perfect_docs_pct": 0.8409378960709759,
+   "em_flat": 0.9815100154083205,
+   "docs_flat": 270,
+   "perfect_flat": 236,
+   "perfect_flat_pct": 0.8740740740740741,
+   "em_nested": 0.9812863525246565,
+   "docs_nested": 1018,
+   "perfect_nested": 861,
+   "perfect_nested_pct": 0.8457760314341847,
+   "em_table": 0.9727403156384505,
+   "docs_table": 290,
+   "perfect_table": 230,
+   "perfect_table_pct": 0.7931034482758621,
+   "predictions": 1578,
+   "documents": 1578
+  }
+ },
+ "scope": "predicted documents only (pilot)"
+}

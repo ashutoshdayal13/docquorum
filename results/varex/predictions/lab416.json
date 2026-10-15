@@ -8,9 +8,11 @@
  "specimen_source": "Stool",
  "specimen_collection_date": "05/15/2023",
  "submitter_result": "Pending",
+ "test_requested": [
+  "Cryptosporidia"
+ ],
  "other_parasite": "None",
  "other_parasite_method": "N/A",
  "other_results_comments": "Patient advised to follow up with physician for treatment options.",
- "date_reported": "05/20/2023",
- "test_requested": []
+ "date_reported": "05/20/2023"
 }

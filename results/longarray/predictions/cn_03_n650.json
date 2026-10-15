@@ -1,0 +1,7374 @@
+{
+ "transactions": [
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 1019.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEPOSIT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 207.07,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-8TO3OMS9JA",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 286.78,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-YDL6NRNQZF",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 680.72,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-TROPIC POWER & LIG-Payment NAME-Biscayne Mobile Detail ID-TVDK3SU48NQ7SA",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 182.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 19.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 73.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-EK5A12V1NP",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 100.68,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 238.34,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 295.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-T267GO9XMR",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 114.73,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 15.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 27.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 196.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 11.18,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 99.15,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 342.07,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-UD39HNAYH4",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 196.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 196.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 59.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 42.5,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 3943.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MOBILE DEPOSIT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 215.48,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-VMZXX43KCN",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 13.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 150.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 29.78,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 66.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 100.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 85.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 9.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 67.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 30.78,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-MGAYWFY2JU",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 59.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 122.66,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-QEQ2F4OY6M",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 94.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 36.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 130.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 97.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-LOCAL DETAIL CLIENTS ID-ZJ7LOEZA7R",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 375.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-3YHHFO8ZCZ",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 128.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-N1TI40TC42",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 47.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-FLEETMAP ROUTE PLA-SUBSCRIPTION NAME-BISCAYNE MOBILE DETAIL ID-CWYTU79CNH",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 79.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 100.21,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 8.64,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 285.53,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-N4K2NEO5LK",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 79.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 46.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 271.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-0X3ECKCK4P",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 176.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 11.72,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 271.46,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-3UTGSGG0EM",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 63.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 196.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 33.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 115.29,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 342.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-US9PZAOG97",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 15.14,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 119.39,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 13.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 230.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 121.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 146.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-Z89K4XD7GI",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 256.1,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-0TB3JD5P49",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 16.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 29.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-EQP96HFQQ2",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 121.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 128.34,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 77.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 80.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 49.94,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 215.05,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-F0UYTV3E6Q",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 196.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 59.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 148.71,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-I1SJFDKMCG",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 84.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 204.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 76.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 72.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 308.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-QOVXTOE25R",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 175.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-J1HUXZ8G2E",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 376.96,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-NLH1Z6MTRN",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 1167.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-MANGROVE EQUIPMENT-Payment NAME-Biscayne Mobile Detail ID-XWTNLL9HEXQCY1",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 366.17,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-BW3S5B87EU",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 20.5,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 47.01,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-BQ9QKUIC5F",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 66.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 57.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 258.95,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 18.57,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 47.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 18.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 6.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 294.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-08W051RTEW",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 83.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-1CL8HQF9CM",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 302.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-XHZIFYUNC1",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 350.34,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-KYBGE7SJSS",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 111.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 39.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 61.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-3H35DVXRX1",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 74.43,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 2712.11,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-SUNCOAST TAP PAYMENTS-SETTLEMENT NAME-BISCAYNE MOBIL SUN1131681148 ID-FC08NSKDU",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 39.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 67.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 17.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 9.75,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 392.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-TLBNTF0J8D",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 92.2,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 105.58,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-8G9B3S935E",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 133.48,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 98.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 16.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 373.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-NDZNTDEK5K",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 36.1,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-LPJ55XLZNQ",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 108.48,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 212.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-YG8RCWINU5",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 202.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-W74DOQGC7C",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 13.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 47.7,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 110.46,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 81.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 1215.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEPOSIT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 44.07,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 227.14,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 7.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 44.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 122.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 159.58,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 40.72,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-0HOU1052TQ",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 84.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 9.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 172.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-9GEU1GOX3V",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 44.38,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 98.66,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 9.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 276.72,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-W3CXDC0RWI",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 23.01,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 103.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 336.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-Y4X60L7ZYH",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 284.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-D705SXN4TU",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 40.07,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-CLOUDCAM SHOP SECU-SUBSCRIPTION NAME-BISCAYNE MOBILE DETAIL ID-87P8LVBEQE",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 39.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 248.19,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-3T166KZGQ1",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 153.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 32.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 196.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 20.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 165.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 83.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 18.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 227.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 294.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-B61FBRC5H2",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 59.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 282.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-1S3LGI80UZ",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 158.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 77.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 98.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 20.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 327.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-UU62AB945Z",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 13.65,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 33.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 135.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-DZ62MPG2CC",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 118.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 25.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 363.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-WWKYOTMW5K",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 12.75,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 18.53,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 293.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-379DROM7GH",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 233.66,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-DJT81YQNDP",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 29.29,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 86.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 324.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-7S1KRHIKR8",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 8.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 39.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 19.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 39.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 27.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 776.18,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-PALMLEDGER MERCHANT SERVICES-SETTLEMENT NAME-BISCAYNE MOBIL PAL8479974209 ID-MXLH06HJW",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 35.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-UY6JSIL4GR",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 46.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-P3VY9Q8N3R",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 396.96,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-QNT059UIGX",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 7.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 59.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 109.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 54.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 14.66,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 98.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 255.7,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-8LW79Z94PX",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 30.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 20.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 323.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-9HXUBGHKX9",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 79.75,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-6MMFGERXCB",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 19.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 12.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 99.05,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 80.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 19.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 93.96,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 35.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 170.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-UDE1CY3OH5",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 241.73,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-EYE8Z7OQ9X",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 72.15,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-SEQ2LRHALY",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 310.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-YMQOR6WEWF",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 47.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 13.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 231.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 98.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 159.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 229.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-FGB6E3E6WJ",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 196.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 12.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 157.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 79.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 58.01,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 150.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 16.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 80.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 38.95,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 112.95,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 200.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-JQDQD9XXPO",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 80.58,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 131.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 218.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-LOCAL DETAIL CLIENTS ID-VC7ZNWZVWU",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 217.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-1S8F57QBIG",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 305.46,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-LY7XHBA7W7",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 239.41,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-SDYJF6KAHI",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 120.53,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-WE4K5ACLUL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 251.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-2BLGCWYXZE",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 27.05,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 11.72,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 108.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 27.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 9.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 71.72,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 145.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 36.78,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 341.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-NWKRLBRQN5",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 240.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 87.19,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 154.05,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 32.88,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 51.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 12.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 63.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 98.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 16.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 1055.34,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEPOSIT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 164.21,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-CYGLA545W3",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 398.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-VKKNIPJH69",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 359.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-S0VYQ4Q881",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 175.66,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-ALCVEZZ329",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 59.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 7.05,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 15.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 85.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 186.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 196.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 93.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 10.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 58.94,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 187.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 101.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 242.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 196.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 54.38,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 19.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 84.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 3143.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-SUNCOAST TAP PAYMENTS-SETTLEMENT NAME-BISCAYNE MOBIL SUN9876474100 ID-0WZ8DAXU4",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 17.38,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 23.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 16.7,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 152.03,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 76.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 15.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 47.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 138.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-SJOK20EBPT",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 7.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 288.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-JIOADDKX1T",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 20.57,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 85.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-VHAIBMYGIG",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 85.26,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 29.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 10.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 10.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 32.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 26.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 19.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 98.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 74.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-QLUJ6FDAJI",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 45.14,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 162.42,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 43.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 66.17,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 310.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-CFG41I5UYL",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 8.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 26.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 104.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 59.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 10.34,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 22.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 19.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 110.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 22.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 16.18,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 10.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 71.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-5AMRQGYU03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 107.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 14.15,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 166.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 18.48,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 23.68,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 353.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-4V1Q9N8NLO",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 39.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 14.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 17.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 144.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 59.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 281.39,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-G08HNTEK5X",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 36.2,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 35.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 20.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 92.65,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 14.14,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 26.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 21.58,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 226.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-HJ3ZLAS9I4",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 128.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-AP5FP9B57L",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 267.21,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-DRTDUJLMQ8",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 17.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 26.58,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-KOGM0LRWYW",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 31.94,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 131.03,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 13.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 69.07,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 20.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 15.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 140.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-D63WXQWV78",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 148.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 149.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-CY2PKCTIL2",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 59.4,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 210.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 31.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 170.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 181.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-3ZITB68XHL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 201.21,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 98.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 17.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 5344.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MOBILE DEPOSIT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 347.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-FCY5C1C3ZK",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 77.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-SCHEDULEWAVE PRO-SUBSCRIPTION NAME-BISCAYNE MOBILE DETAIL ID-0D31SXYY93",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 8.41,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 80.01,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-3QYERWACOI",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 64.71,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 97.01,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 15.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 278.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-QMQI8897K9",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 52.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 141.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 125.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 19.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 31.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 70.41,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 55.57,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 25.19,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 49.42,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-QX3Z3V8XDP",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 177.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 11.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 382.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-5QDBGRE7XF",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 370.5,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-IS5N7SEFWY",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 102.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 19.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 23.46,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 172.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-5R1XX3UMMT",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 196.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 23.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-4587J02RMV",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 7.95,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 8.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 125.78,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 8.41,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 15.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 173.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 187.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-JAN9EFQD69",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 58.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 138.75,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-HW68OID5G4",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 23.15,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 12.14,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 3064.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-SUNCOAST TAP PAYMENTS-SETTLEMENT NAME-BISCAYNE MOBIL SUN3682629655 ID-DD5SFYKYP",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 1189.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEPOSIT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 174.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-QHOA0Q6MHA",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 345.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-GVXCQ4981B",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 29.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 62.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 160.68,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 14.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 111.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 54.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 12.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 211.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 235.75,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 52.57,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-J02HOSM9S8",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 22.76,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 139.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-1Q5C7EBLOK",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 7.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 194.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 225.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-UQ5GVL2O2K",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 203.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 210.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-E40MRT6EYE",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 269.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-9ZE30EZU64",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 19.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 58.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 70.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-4O8NFZ05M5",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 15.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 12.18,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 172.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 72.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 263.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 167.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 395.42,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-1F5ZHOIQ06",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 26.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 34.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 24.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 13.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 17.03,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 19.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 9.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 39.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-QMH2NPGQJT",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 237.11,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-1D897OC0CW",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 11.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 377.03,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-QB1EBJ3F2F",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 17.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 379.57,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-CKXFU60DOI",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 73.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 137.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 101.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 156.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-3ZYRFED11E",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 277.96,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-LSXGAI46DW",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 19.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 93.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 77.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-9RIS1PHMHD",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 196.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 34.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 290.94,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-DFBEWN7NF3",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 114.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 116.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-LOCAL DETAIL CLIENTS ID-5HMGA3ZWBM",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 7.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "INTEREST PAID",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 135.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-V0COM9Y376",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 379.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-WY6TM7LJ5Q",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 302.76,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-MIAMI-DADE WATER B-Payment NAME-Biscayne Mobile Detail ID-NZW3GZ2XMRV0D1",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 22.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 59.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 19.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 196.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 19.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 170.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 226.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 233.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-VD1AY7VH6Z",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 21.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 63.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 19.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 38.57,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 169.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 93.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-TEIYOV4NQQ",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 13.18,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 63.1,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-BOOKVAULT ACCOUNTI-SUBSCRIPTION NAME-BISCAYNE MOBILE DETAIL ID-PRBI6TSWRZ",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 383.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-WT59S5UUT8",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 40.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 18.38,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 10.64,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 12.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 139.39,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 104.01,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 27.19,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 115.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 98.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 296.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-XDORDE3B00",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 153.95,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-7WT76UMK7T",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 50.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-YB0LNVQU4W",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 12.11,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 290.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-LBMT76EMMZ",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 80.07,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-STFGU9NMS8",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 68.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 20.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 166.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 83.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-S3T6RULXYL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 227.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 76.2,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 106.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 230.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-SWF4X0FVST",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 71.72,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 192.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 11.18,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 21.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 176.5,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 111.94,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 48.39,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 70.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 199.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-XUJOA88PXS",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 350.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-PVQ87H56X1",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 34.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-6FOLXRFBON",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 19.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 88.97,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 20.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 20.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 102.46,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 12.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 14.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 59.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 138.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 123.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-RDBG3YOXYH",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 196.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 105.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 22.96,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 46.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 303.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-3EKZY0DRLQ",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 65.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 373.03,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-YS0CT8APXJ",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 11.53,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 151.42,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MATEO ALVAREZ ID-KXTPA4RW8G",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 147.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 19.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 175.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 53.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 9.15,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 110.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-2XUGIBIFU0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 78.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 81.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-MUX9OW6L7X",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 185.29,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 751.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEPOSIT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 126.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-HOJ77YV5Z0",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 910.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-SEASIDE COMMERCIAL-Payment NAME-Biscayne Mobile Detail ID-SD0S1N2QXDN06T",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 141.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 7.2,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 122.03,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-VE7JD5F9VA",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 52.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE FLAGLER AUTO PARTS #331",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 234.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-YKZIQXTTV3",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 115.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 352.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-SQ46YKPPZ0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 83.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 8.64,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 27.95,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 18.96,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 47.95,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-VA0YWJG52Z",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 6.75,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 111.75,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 150.94,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 23.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 11.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 296.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-ARXLO38SX3",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 22.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 39.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 12.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 69.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 14.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 4606.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-SUNCOAST TAP PAYMENTS-SETTLEMENT NAME-BISCAYNE MOBIL SUN7192905297 ID-NNMMTEXTY",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 229.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-5ADJ63163X",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 219.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-AJLO6GU4QO",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 43.53,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-AS6N8K34FI",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 283.71,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 59.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 103.72,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 169.5,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 55.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-0GPUNLNJ9H",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 13.4,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 29.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 94.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 158.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-5F4M8QQUAH",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 66.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 9.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 18.53,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 120.7,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-WWQ36L921R",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 13.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 11.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 65.14,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 20.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 364.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-W551XHODR4",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 21.2,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 98.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 129.94,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-G17WBPAOE2",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 320.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-O3T8DWYAM1",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 377.2,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-SOUTH FLORIDA UNIF-Payment NAME-Biscayne Mobile Detail ID-CVKQUZIF6UJH0W",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 54.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 21.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 47.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 59.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 30.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALMETTO SANDWICH GRILL #44",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 27.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 145.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-ZPXMVB4S9D",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 268.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-RNGPI40F5R",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 57.19,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERDOCK OFFICE MART #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 322.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-BPQQ4EIXHU",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 133.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 233.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-E3QM8IB8RD",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 83.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-8ZQINLT5GR",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 98.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 9.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE KEYS WATER ICE DISPENSER #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 168.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-MYNKW90WVT",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 19.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 44.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-RVLW9AT7DX",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 137.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 19.53,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 170.88,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 169.34,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 59.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 357.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-0S519HHOQN",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 109.19,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 84.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 101.03,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-GAZF4JVQL6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 39.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 228.14,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 261.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 152.38,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 18.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 88.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-KPIUF1D0R1",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 197.01,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-KARINA SOTO ID-ZF7OQTEPPG",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 68.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 68.41,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 164.29,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 381.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-67L92D6MKN",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 22.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE NW 36TH STREET TACOS #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 114.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 107.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NATALIE CRESPO ID-BU46CK36IK",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 282.94,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-TWB595TBFK",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 193.14,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-3S8P7I4M8Y",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 345.26,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-EK9QCJ8ZHT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 397.68,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-OEBVDMTMZQ",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 341.95,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RAFAEL NUNEZ ID-J3FHMLM2WP",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 15.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MAGIC CITY CAR WASH BAY #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 10.38,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BISCAYNE COFFEE WINDOW #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 59.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 176.65,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TROPIC WHOLESALE CLUB #506",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 100.71,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CORAL PUMP FUEL #218",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 178.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE DOLPHIN BAY TIRE & LUBE #28",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 80.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE OCEANLINE SAFETY GEAR #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 29.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-OMAR FERNANDEZ ID-QNTZL0E639",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 169.14,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 106.15,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 62.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSET INDUSTRIAL HARDWARE #19",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 157.65,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BRICKELL MOBILE WASH SUPPLY #0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 271.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-JESSICA PAREDES ID-CZ8QIOJ28R",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 209.39,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 98.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 16.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE LITTLE HAVANA PHARMACY #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 194.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MIAMI DETAIL SUPPLY DEPOT #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 10.72,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE EVERGLADE PARKING PAYSTATION #",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 24908.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 25459.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 24871.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 22959.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 20787.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 20630.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 19329.29,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 17312.4,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 16793.46,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 18344.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 17841.66,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 17390.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 16277.19,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 20203.26,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 19274.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 20675.38,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 15050.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 12166.97,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 11135.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 9610.15,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 7567.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 5413.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 3406.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 7295.21,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 5587.73,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 2617.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 1654.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": null,
+   "account_number_last4": "0622"
+  }
+ ]
+}

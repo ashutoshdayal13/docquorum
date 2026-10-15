@@ -1,0 +1,5196 @@
+{
+ "transactions": [
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 151.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-J4YB6SKI2I",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 80.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALM FUEL MART #118",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 107.65,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-A2UX7GIR53",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 96.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYFRONT SAFETY GEAR #05",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 150.99,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYFRONT SAFETY GEAR #05",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 35.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 136.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-17",
+   "amount": {
+    "amount": 23.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TAMPA BAY TRUCK WASH #04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 1882.26,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-PINNACLE AMEX PROCESSING-SETTLEMENT NAME-HARBOR PALM HE PIN9239289847 ID-9C465GKGX",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 49.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-EKCYNYF2L4",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 345.73,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ADTRACK LOCAL LEAD-SUBSCRIPTION NAME-HARBOR PALM HEATING & AI ID-1EHRTE1F27",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 170.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-K6BNSW80RM",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 37.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 37.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 196.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-YCQWWRWTFC",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 262.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-YBFS7NNUZF",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 248.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE APEX PARTS WAREHOUSE #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 156.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TOOL RENTAL #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-18",
+   "amount": {
+    "amount": 10.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE QUICK STOP ICE #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 5471.5,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-BAYWIRE MERCHANT SERVICES-SETTLEMENT NAME-HARBOR PALM HE BAY6390576911 ID-L30W5XPGH",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 3777.03,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-SERVICELINK FIELD PAYMENTS-SETTLEMENT NAME-HARBOR PALM HE SER6361241042 ID-6BUBT9NHJ",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 71.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-TREVOR CALDWELL ID-DMY1C8C6S8",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 16.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 204.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-F6VDUOKOV4",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 86.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 557.65,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GULF COAST SUPPLY HOUSE #204",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 401.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GULF COAST SUPPLY HOUSE #204",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 30.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TAMPA BAY TRUCK WASH #04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 369.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 37.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-19",
+   "amount": {
+    "amount": 147.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYFRONT SAFETY GEAR #05",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 276.17,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-PLTVK0EHEE",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 394.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-4UNM5BANES",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 346.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-ZUC4V5688L",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 80.26,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALM FUEL MART #118",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 17.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 25.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TAMPA BAY TRUCK WASH #04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 45.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 186.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 83.97,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALM FUEL MART #118",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 134.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-LPN0ZYP6CI",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 291.4,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 153.76,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-20",
+   "amount": {
+    "amount": 317.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 1213.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-SUNCOAST FLEET FIN-Payment NAME-Harbor Palm Heating & Ai ID-C2CD2IOWPZA6SS",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 11.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 476.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 82.57,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALM FUEL MART #118",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 18.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 49.64,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERBEND HARDWARE #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 482.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GULF COAST SUPPLY HOUSE #204",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 21.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TAMPA BAY TRUCK WASH #04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 214.58,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE APEX PARTS WAREHOUSE #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 365.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-3ZRO86NPTW",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 363.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-TREVOR CALDWELL ID-IM9BAIG3U9",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-21",
+   "amount": {
+    "amount": 18.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 651.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEPOSIT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 207.5,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-ARSR6A6C8Z",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 241.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-MB3WVLPYZH",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 98.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALM FUEL MART #118",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 196.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE APEX PARTS WAREHOUSE #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 70.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALM FUEL MART #118",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 251.17,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE APEX PARTS WAREHOUSE #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 123.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 183.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-MWDAFI12HS",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 18.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 213.75,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE APEX PARTS WAREHOUSE #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 104.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYFRONT SAFETY GEAR #05",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-22",
+   "amount": {
+    "amount": 55.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 389.71,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-LANA GOODWIN ID-Y4TX4DANYA",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 18.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 345.18,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 350.75,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-0IOR5HALEV",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 76.46,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-7E2CT4FX2B",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 15.78,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 151.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TOOL RENTAL #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 383.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GULF COAST SUPPLY HOUSE #204",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 12.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE QUICK STOP ICE #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 289.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-QSDW4PIQU1",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 270.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE APEX PARTS WAREHOUSE #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 93.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 19.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 764.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 137.71,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TOOL RENTAL #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 95.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-23",
+   "amount": {
+    "amount": 33.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-LANA GOODWIN ID-DFSSHEA22M",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 688.39,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 78.73,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-SQRHM4UQDM",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 108.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 20.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-XC53NZGKHE",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 55.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 72.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 158.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-LANA GOODWIN ID-FL3XZE3GMZ",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 127.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 55.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 36.94,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 346.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-EQSCADHFVO",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 17.68,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-24",
+   "amount": {
+    "amount": 55.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 1631.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MOBILE DEPOSIT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 314.58,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RESIDENTIAL CUSTOMER ZEL ID-GE3DYUMTO0",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 314.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-2P3JR7YSGN",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 236.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-5A5D7EGPLK",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 3435.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-COASTAL WHOLESALE -Payment NAME-Harbor Palm Heating & Ai ID-IEW6L7WSL2TSZ5",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 37.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 142.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYFRONT SAFETY GEAR #05",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 18.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 10.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE QUICK STOP ICE #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 18.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 63.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-0EA54BKTDR",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 164.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-LANA GOODWIN ID-2G1Z2Q6V5Z",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 51.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERBEND HARDWARE #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 93.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 148.26,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-Y7MV6FW3AC",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 262.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-KK75WDPSQ8",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-25",
+   "amount": {
+    "amount": 37.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 358.4,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-TREVOR CALDWELL ID-DE4O999WEI",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 346.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-NMEG9M9NFC",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 24.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 37.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 86.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERBEND HARDWARE #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 189.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-N87A7BBF8Q",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 21.29,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 19.42,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 299.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-5ZGI2W4IGC",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 77.97,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 9.72,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE QUICK STOP ICE #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 18.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 27.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TAMPA BAY TRUCK WASH #04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 135.15,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-TREVOR CALDWELL ID-U4BQZTI580",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 9.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE QUICK STOP ICE #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 324.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-XZ75ILG9K2",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 119.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 14.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-26",
+   "amount": {
+    "amount": 20.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 4092.2,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-BAYWIRE MERCHANT SERVICES-SETTLEMENT NAME-HARBOR PALM HE BAY2923040122 ID-8GPJYM794",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 3222.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-SERVICELINK FIELD PAYMENTS-SETTLEMENT NAME-HARBOR PALM HE SER6686458625 ID-ANJG0XH9R",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 25.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-LANA GOODWIN ID-3EJ1DU2DPJ",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 191.01,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-ZJDS6P5HAP",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 35.28,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-C81U0DYMN1",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 61.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-HILLSBOROUGH BUSIN-Payment NAME-Harbor Palm Heating & Ai ID-LRF5MSVXE2SJ2E",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 727.48,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 617.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 55.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 76.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 76.66,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 336.43,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-M5C3W4PHI8",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 339.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-WV5ZJPF1WS",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 365.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-QOESS4VXYZ",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 40.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 172.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-UMHW7ZV16K",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-27",
+   "amount": {
+    "amount": 200.53,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-WW83SCQ4H8",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 387.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-XRJIM0Z79R",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 193.75,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-INAXJ6AOIJ",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 580.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-SOUTH RIDGE EQUIPM-Payment NAME-Harbor Palm Heating & Ai ID-NVL6MSCKPHXEBB",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 814.75,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 22.4,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TAMPA BAY TRUCK WASH #04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 35.19,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 138.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TOOL RENTAL #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 382.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GULF COAST SUPPLY HOUSE #204",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 329.72,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-IORW4ED3GS",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 59.26,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-T6AU80FBLR",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 82.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALM FUEL MART #118",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 30.68,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TAMPA BAY TRUCK WASH #04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 13.26,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 134.66,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-28",
+   "amount": {
+    "amount": 71.46,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 155.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-9J89L2ZIG6",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 238.68,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-2IKPYZCPKL",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 213.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-TREVOR CALDWELL ID-UZEEHUS8ZC",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 93.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 167.71,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 35.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 149.48,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-NSEDXL8LRC",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 504.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GULF COAST SUPPLY HOUSE #204",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 256.39,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-UGLC6CK29W",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 360.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 40.05,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 561.42,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GULF COAST SUPPLY HOUSE #204",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 11.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE QUICK STOP ICE #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 105.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALM FUEL MART #118",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 166.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-29",
+   "amount": {
+    "amount": 18.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 650.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEPOSIT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 148.38,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TOOL RENTAL #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 37.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 358.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 609.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 62.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 34.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 186.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 237.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 176.48,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-TREVOR CALDWELL ID-D5PBDLJ1P3",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 31.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 201.64,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TOOL RENTAL #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 55.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-30",
+   "amount": {
+    "amount": 48.65,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 361.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-1MCEZBBLT4",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 79.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 63.21,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 379.58,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GULF COAST SUPPLY HOUSE #204",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 377.41,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 201.95,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-92R1ZOWBMN",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 336.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-EGLUPPLQ6X",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 78.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 74.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 346.17,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 328.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 89.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYFRONT SAFETY GEAR #05",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 394.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 160.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TOOL RENTAL #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 93.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 13.17,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 15.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-08-31",
+   "amount": {
+    "amount": 22.96,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 69.48,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERBEND HARDWARE #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 242.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-5FPFZGYC72",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 11.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 11.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE QUICK STOP ICE #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 165.66,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE APEX PARTS WAREHOUSE #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 361.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 43.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-DXWJT0SJSL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 78.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 68.1,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 14.41,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-01",
+   "amount": {
+    "amount": 61.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 95.46,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-VEABWE2SQW",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 295.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-BM1V1C1S2F",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 351.4,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 287.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 40.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 287.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-IH5UOPGH7B",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 237.88,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-LZXM8J4GPM",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 593.88,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 45.76,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 15.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 73.16,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 357.35,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-0HI2S7O2DX",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-02",
+   "amount": {
+    "amount": 30.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 4276.38,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-BAYWIRE MERCHANT SERVICES-SETTLEMENT NAME-HARBOR PALM HE BAY2335403597 ID-27GYN1EGU",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 3276.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-SERVICELINK FIELD PAYMENTS-SETTLEMENT NAME-HARBOR PALM HE SER4511183549 ID-029H2FLZH",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 2933.43,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MOBILE DEPOSIT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 521.5,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RESIDENTIAL CUSTOMER ZEL ID-LWJDXHO3TQ",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 324.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-W76FL91KSG",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 62.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-FMLE7EXAGK",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 266.4,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ROUTEWRENCH FIELD -SUBSCRIPTION NAME-HARBOR PALM HEATING & AI ID-KYURUME3JL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 215.97,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-B4UR0XR735",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 564.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 84.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 207.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TOOL RENTAL #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 26.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TAMPA BAY TRUCK WASH #04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 411.53,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 70.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 820.19,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 18.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-03",
+   "amount": {
+    "amount": 21.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 24.94,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-QAWN5C05HF",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 361.03,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 102.76,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALM FUEL MART #118",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 32.17,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 106.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 71.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYFRONT SAFETY GEAR #05",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 26.68,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 32.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TAMPA BAY TRUCK WASH #04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 178.05,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 11.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TOOL RENTAL #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 14.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE QUICK STOP ICE #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 279.78,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 91.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 285.05,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-MG65JYYDF4",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-04",
+   "amount": {
+    "amount": 44.7,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 347.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-WPP4EKG2OY",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 50.18,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERBEND HARDWARE #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 115.14,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-JGAVBM5PS3",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 103.05,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 207.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TOOL RENTAL #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 364.74,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-TREVOR CALDWELL ID-ADBERT4RE1",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 55.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 284.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 423.66,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 93.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 515.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GULF COAST SUPPLY HOUSE #204",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 90.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 190.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-IE5SHZQJQC",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 18.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 53.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 104.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 56.76,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-Y5K6VAACT1",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 70.57,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERBEND HARDWARE #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-05",
+   "amount": {
+    "amount": 93.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 255.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-NZNJBA1YSU",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 166.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 619.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GULF COAST SUPPLY HOUSE #204",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 33.01,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 91.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 82.0,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALM FUEL MART #118",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 371.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-HQPWWCFCRS",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 15.64,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 129.39,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYFRONT SAFETY GEAR #05",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 208.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-LANA GOODWIN ID-NDB4VP5Q8Z",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 455.53,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GULF COAST SUPPLY HOUSE #204",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 221.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TOOL RENTAL #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-06",
+   "amount": {
+    "amount": 122.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TOOL RENTAL #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 393.7,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEPOSIT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 352.32,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-RF8OK3G2WL",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 347.61,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-F55XAFJ8RS",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 85.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERBEND HARDWARE #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 82.65,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYFRONT SAFETY GEAR #05",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 14.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 61.6,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 23.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERBEND HARDWARE #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 97.63,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 168.05,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 329.17,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-M1JY7UPD2A",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 25.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TAMPA BAY TRUCK WASH #04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 29.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 777.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 118.13,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 87.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-TUDZX62AI1",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 55.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 17.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 351.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-LJ9D9QT90G",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 470.86,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 199.17,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-6DS4KER768",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-07",
+   "amount": {
+    "amount": 50.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 176.91,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-4VY3SS8M25",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 25.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-ERHX92XU07",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 319.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-QZW6J49YUW",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 166.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-7GCINA8VM3",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 132.68,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-FLN6I1QQ7I",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 85.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-LEDGERLOOP BUSINES-SUBSCRIPTION NAME-HARBOR PALM HEATING & AI ID-9R34JQ0CN9",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 281.3,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 38.78,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 224.94,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-EW38Q18ZHX",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 301.03,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 153.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-5VPT2RL1VV",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 146.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-XP6ZD427C1",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 154.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TOOL RENTAL #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-08",
+   "amount": {
+    "amount": 186.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 288.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-LANA GOODWIN ID-8OPAEJZSJW",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 58.58,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 48.96,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-JOL5VHTN25",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 99.53,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYFRONT SAFETY GEAR #05",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 79.49,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERBEND HARDWARE #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 294.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 521.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GULF COAST SUPPLY HOUSE #204",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 286.92,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-ZNH9Y44KLG",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 105.4,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-CNR1TJFBZY",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 252.36,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-QVXW8LFRJG",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 86.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYFRONT SAFETY GEAR #05",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 186.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 317.07,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 75.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 94.43,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-AA1L6A350N",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 363.43,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-OH1QEABCNX",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 15.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 162.17,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-842D0KM97Z",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 79.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 25.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TAMPA BAY TRUCK WASH #04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 93.29,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 67.83,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-TREVOR CALDWELL ID-GGOVWUBIK4",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-09",
+   "amount": {
+    "amount": 51.21,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 3782.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-SERVICELINK FIELD PAYMENTS-SETTLEMENT NAME-HARBOR PALM HE SER8122337053 ID-HTW25RR8V",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 170.37,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-TAMPA ELECTRIC WOR-Payment NAME-Harbor Palm Heating & Ai ID-9HO4PQQFOO7ZK5",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 25.1,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-ZJEOYDZE14",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 26.55,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-98QEQF01QR",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 63.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 89.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 186.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 102.48,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 18.34,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 196.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-TREVOR CALDWELL ID-968SRQ85YA",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 13.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE QUICK STOP ICE #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 46.4,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-HFDK5FQBRW",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 276.84,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-Q8AUVUWTPQ",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 18.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 331.95,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-72JW5PG5EY",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-10",
+   "amount": {
+    "amount": 23.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 5188.19,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-BAYWIRE MERCHANT SERVICES-SETTLEMENT NAME-HARBOR PALM HE BAY2042467053 ID-INGSP942C",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 7.45,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "INTEREST PAID",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 188.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-08A9RSSJO6",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 100.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-ZD63POTUDN",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 58.22,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-JD6U4VX7X4",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 15.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 35.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-Y4TO6LQJTW",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 68.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 60.65,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 49.53,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 24.46,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TAMPA BAY TRUCK WASH #04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 37.82,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-L148Z8W0L0",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 22.14,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 140.97,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 80.57,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERBEND HARDWARE #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 165.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 55.87,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 162.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 37.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-LANA GOODWIN ID-SPMQ1A0KKV",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-11",
+   "amount": {
+    "amount": 344.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GULF COAST SUPPLY HOUSE #204",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 2296.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "MOBILE DEPOSIT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 154.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-TRXWN8H593",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 354.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-V8I2WJSH83",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 44.65,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-MAILVAULT WORKSPAC-SUBSCRIPTION NAME-HARBOR PALM HEATING & AI ID-RFRMF788V4",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 7.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE QUICK STOP ICE #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 82.08,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 17.64,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CYPRESS CORNER CAFE #6",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 205.9,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-CYZTNX29NN",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 323.81,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-NICOLE BRIER ID-7N2EBYD0NU",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 416.01,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 437.69,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE GULF COAST SUPPLY HOUSE #204",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 566.06,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 30.79,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE MARKET SQUARE GROCER #15",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 29.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-7CUIS2EWNC",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 17.29,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 37.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 74.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-12",
+   "amount": {
+    "amount": 83.94,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERBEND HARDWARE #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 56.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-TREVOR CALDWELL ID-XZCJ1V0QYT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 93.12,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 395.34,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 361.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-YUOPPVT54E",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 80.71,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALM FUEL MART #118",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 234.98,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-0V8153LZTD",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 7.68,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE QUICK STOP ICE #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 120.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-UGNCYR0I66",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 31.31,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-C1BOP8LB56",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 121.19,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 266.04,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-ANTHONY VARELA ID-XWC5AD5RN4",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 202.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TOOL RENTAL #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 67.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-13",
+   "amount": {
+    "amount": 91.09,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYSHORE AUTO PARTS #22",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 870.93,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEPOSIT",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 362.4,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-RESIDENTIAL CUSTOMER ZEL ID-SRKRJ3C8OF",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 107.77,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-TREVOR CALDWELL ID-OJRY0T93IA",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 18.62,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 37.25,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 13.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 73.59,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALM FUEL MART #118",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 210.52,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-KFHENS3TRO",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 104.18,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 304.15,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-LANA GOODWIN ID-PGM5DIUX9M",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 221.51,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-WT9FAK604W",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 49.01,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-DANIEL ORTIZ ID-BNVKUBGD4O",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-14",
+   "amount": {
+    "amount": 666.42,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 879.97,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-GULF SHORE COMMERC-Payment NAME-Harbor Palm Heating & Ai ID-SDNIYG9ZE5UJXR",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 24.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TAMPA BAY TRUCK WASH #04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 635.18,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 255.23,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": null,
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 733.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE SUNSTATE WHOLESALE HVAC #07",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 218.27,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MARCUS ELLERY ID-QUL1ZMUPE4",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 18.19,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 186.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 119.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYFRONT SAFETY GEAR #05",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-15",
+   "amount": {
+    "amount": 212.56,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE APEX PARTS WAREHOUSE #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 363.03,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-UMAQAUKIBN",
+   "check_number": null,
+   "transaction_type": "CREDIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 12.8,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE METRO POSTAL CENTER #31",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 64.41,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALM FUEL MART #118",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 186.24,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "ATM CASH WITHDRAWAL",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 354.67,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-MELISSA KRAUSE ID-9C2PJWNUBM",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 26.58,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE TAMPA BAY TRUCK WASH #04",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 150.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE APEX PARTS WAREHOUSE #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 204.85,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE HARBOR TOOL RENTAL #12",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 63.89,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE PALM FUEL MART #118",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 121.02,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "AC-ZELLE PAYMENTS-PAYMENT NAME-PRIYA NANDA ID-BHAE2KFJMG",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 66.78,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIVERBEND HARDWARE #03",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 51.39,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 270.44,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE RIDGE ROAD TIRE & SERVICE #09",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 75.07,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE CAUSEWAY OFFICE SUPPLY #41",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 270.47,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE APEX PARTS WAREHOUSE #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 103.54,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BAYFRONT SAFETY GEAR #05",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 258.2,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE APEX PARTS WAREHOUSE #17",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 13.48,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE QUICK STOP ICE #88",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  },
+  {
+   "date": "2025-09-16",
+   "amount": {
+    "amount": 78.33,
+    "iso_4217_currency_code": "USD"
+   },
+   "description": "DEBIT CARD PURCHASE BLUE PELICAN UNIFORMS #02",
+   "check_number": null,
+   "transaction_type": "DEBIT",
+   "account_number_last4": "0621"
+  }
+ ]
+}

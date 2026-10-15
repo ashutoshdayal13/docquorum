@@ -150,28 +150,58 @@ benchmark's authors; the leaderboard reports one decimal.
 
 | exact match (normalized), all 1,777 forms | score | vs. the image-modality leaderboard |
 |---|---:|---|
-| **DocQuorum** (Qwen3.8-27B + MinerU2.5) | **98.05** | **1st, tied with Gemini 2.5 Pro at one decimal** |
+| **DocQuorum** (Qwen3.8-27B + MinerU2.5) | **98.10** | **1st, tied with Gemini 2.5 Pro at one decimal** |
 | Gemini 2.5 Pro | 98.0 | 1st |
 | Gemini 2.5 Flash | 97.3 | 3rd |
 | Qwen3-VL-8B (best published open model) | 96.6 | 4th |
 
 | | DocQuorum | Gemini 2.5 Pro |
 |---|---:|---:|
-| ANLS (normalized) | **98.77** | 98.5 |
-| flat forms (299) | **98.15** | 97.3 |
-| nested forms (1,146) | **98.27** | 98.2 |
+| ANLS (normalized) | **98.83** | 98.5 |
+| flat forms (299) | **98.38** | 97.3 |
+| nested forms (1,146) | **98.31** | 98.2 |
 | table forms (332) | 97.48 | **97.7** |
-| documents with every field right | **0.8%** | 82.8% |
+| documents with every field right | **84.9%** | 82.8% |
 
 * The forms are page images without a text layer, so each takes route C: the reader agent on the
   image and on the MinerU parse, the one-shot reading, the checks, and the quorum
-  (kept reading: {'primary': 1698, 'ruled': 19, 'parse': 49, 'oneshot': 11}).
+  (kept reading: {'primary': 1709, 'parse': 49, 'oneshot': 11, 'ruled': 8}).
 * A form whose parsed tables map onto its schema is read by the ruled-table reader; the reader
-  agent now reads the schema's other fields for it (fixed during this run: before, those 7 forms
-  came back with only their table).
+  agent now reads the schema's other fields for it. Both fixes were made during this run:
+  before, such forms came back with only their table; and a layout reader that finds no
+  records now hands the form to the normal route (the 11 forms affected were read again).
 * Files: `varex/predictions/<form>.json`, `varex/scores.json`, `varex/provenance.json` (route,
   readings and agreement per form; code version). Re-score: `benchmarks/multibench/frozen27b.py
   varex score` (needs the VAREX dataset under `data/multibench_sources/`).
+
+## LongArray-Extract (Extend AI), all 45 documents
+
+Long single-list documents: 25 bank statements (220 to 2,205 transactions), 12 clinical
+adverse-event listings (31 to 1,283 events) and 8 federal indictments (27 to 1,139 charged
+facts), 29,328 rows in all. Scored with the publisher's reference implementation (from the
+dataset card): data-point accuracy with order-insensitive row matching, macro mean over
+documents.
+
+| macro accuracy, all 45 documents | score | vs. the publisher's results page |
+|---|---:|---|
+| Extend MAX | 99.2 | 1st |
+| **DocQuorum** (Qwen3.8-27B) | **98.05** | **2nd of 12** |
+| Reducto Deep Extract | 97.4 | 3rd |
+| Claude Opus 4.7 | 83.1 | |
+| Gemini 3.1 Pro | 47.3 | |
+
+* By vertical: bank statements 99.31, indictments
+  98.02, clinical listings 95.44.
+* What made the difference (each a general pipeline change; this benchmark is where they were
+  found, so these are development measurements): the reference step that gives every page chunk
+  the document's legends, per-subject tables and statement period (a clinical listing 75.4 ->
+  96.3); a failed long call no longer re-sent (a six-hour waste on one document); the
+  last-digits check (a statement 82.9 -> 99.6). The run predates the last-digits check, which
+  was applied to its final outputs afterwards (it runs last in the chain; originals kept).
+* Remaining errors: the clinical relationship-to-product code, printed alone under a footnote
+  marker, is often attached to the wrong event.
+* Files: `longarray/predictions/<document>.json`, `longarray/scores.json`,
+  `longarray/provenance.json`.
 
 ## UNIKIE-BENCH open category (1,661 documents, 8 scenarios)
 
