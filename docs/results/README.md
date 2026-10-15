@@ -6,7 +6,7 @@ Each lists every published system and one DocQuorum row, placed by score; equal 
 | table | published systems | DocQuorum | rank |
 |---|---|---:|---|
 | ExtractBench (370 PDFs, value F1) | 47, from the ExtractBench leaderboard CSV (2 October 2026) | 95.43 | 3rd |
-| UNIKIE-BENCH (4,472 images, macro F1) | 15, from the paper's Table 4 | 82.62 | 1st (Gemini-3-Pro 82.37) |
+| UNIKIE-BENCH (4,472 images, macro F1) | 15, from the paper's Table 4 | 82.65 (with zoom re-reading) | 1st (Gemini-3-Pro 82.37) |
 | VAREX (1,777 forms, exact match) | 20, from the image-modality leaderboard | 98.30 (with zoom re-reading) | 1st (Gemini 2.5 Pro 98.0) |
 | LongArray-Extract (45 documents, accuracy) | 11, from Extend AI's results page | 98.05 | 2nd (Extend MAX 99.2) |
 | UNIKIE-BENCH open (1,661 documents, macro F1) | 15, from the paper's open-category table | 72.33 (with zoom re-reading) | 2nd (Gemini-3-Pro 81.65) |

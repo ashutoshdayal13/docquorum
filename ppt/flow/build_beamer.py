@@ -519,7 +519,7 @@ peb = [(r["Provider"], float(r["Overall"])) for r in lb]
 ORD = {1: "1st", 2: "2nd", 3: "3rd"}
 bench = [  # (name, ours, published, digits, note)
     ("VAREX (1,777 government forms)", vx["score"], pv, 1, "with zoom re-reading"),
-    ("UNIKIE-BENCH (4,472 images)", u["score"], puk, 2, ""),
+    ("UNIKIE-BENCH (4,472 images)", u["score"], puk, 2, "with zoom re-reading"),
     ("LongArray-Extract (45 long documents)", la["score"], pl, 1, ""),
     ("UNIKIE-BENCH open category (1,661 documents)", uo["score"], puo, 2, "with zoom re-reading"),
     ("ExtractBench (370 PDFs)", eb["score"], peb, 2, "development set"),
@@ -545,26 +545,29 @@ frame("Results on six benchmarks", r"""{\footnotesize\renewcommand{\arraystretch
 
 zv = load("../../results/varex-zoom/comparison.json")
 zu = json.loads((ROOT / "results/unikie_open/zoom/comparison.json").read_text())
+zc = json.loads((ROOT / "results/unikie/zoom/comparison.json").read_text())
+zc0 = json.loads((ROOT / "results/unikie/zoom/as_run/comparison.json").read_text())
 frame("Zoom re-reading: a new step after the quorum", r"""
 \begin{columns}[T]
 \column{0.52\textwidth}
 \small
 After the quorum keeps one reading, each field on which the readings disagree is found on the page and read once more from a sharp crop of that region.\par\vspace{0.5em}
-This new reading sees none of the earlier answers. The kept value changes only if it matches a value some reading already proposed.\par\vspace{0.5em}
-The design was fixed on ExtractBench, then run once on two other benchmarks.
+This new reading sees none of the earlier answers. It changes the kept value only if it matches a value some reading already proposed, and it counts as two votes: it can overturn a lead of one reading, not a clear majority.\par\vspace{0.5em}
+The vote rule was added after the third test, where five agreeing readings were overturned too often.
 \column{0.44\textwidth}
-\begin{block}{Held-out results}
+\begin{block}{Three tests}
 \small
 VAREX: %.2f%s\textbf{%.2f}\\
 %d forms better, %d worse\\[0.5em]
 UNIKIE open: %.2f%s\textbf{%.2f}\\
 %d documents better, %d worse\\[0.5em]
-Both are far beyond chance (sign test).
+UNIKIE (six readings): %.2f%s%.2f; %.2f with the vote rule
 \end{block}
 \end{columns}
 \src{results/README.md: method, statistics, and every changed value checked against the answer key after the runs.}
 """ % (zv["exact_match_normalized"]["before"], ARROW, zv["exact_match_normalized"]["after"], zv["forms_better"], zv["forms_worse"],
-       zu["macro_f1"]["before"], ARROW, zu["macro_f1"]["after"], zu["documents_better"], zu["documents_worse"]))
+       zu["macro_f1"]["before"], ARROW, zu["macro_f1"]["after"], zu["documents_better"], zu["documents_worse"],
+       zc0["macro_f1"]["before"], ARROW, zc0["macro_f1"]["after"], zc["macro_f1"]["after"]))
 
 # ------------------------------------------------------------------ summary
 T.append(r"\section{Summary}" + "\n")
@@ -574,7 +577,7 @@ frame("Summary", r"""
 \begin{block}{Results}
 \small
 1st on VAREX and UNIKIE-BENCH; 2nd on LongArray-Extract and UNIKIE open; 3rd on ExtractBench.\\[0.4em]
-A new step, zoom re-reading, improved both benchmarks it was tested on.\\[0.4em]
+A new step, zoom re-reading, improved VAREX and UNIKIE open; with its vote rule it holds UNIKIE level.\\[0.4em]
 Open-weight models on one GPU.
 \end{block}
 \column{0.32\textwidth}

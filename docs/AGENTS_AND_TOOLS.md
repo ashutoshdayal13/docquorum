@@ -12,7 +12,7 @@ All operations after input submission run automatically. The extraction model su
 | One-shot reader (O) | Whole-document extraction through the ExtractBench provider | [oneshot.py](../docquorum/agents/oneshot.py) |
 | Checks | Deterministic transformations of one candidate using schema and available source evidence | [checks](../docquorum/checks/__init__.py) |
 | Quorum | Deterministic candidate comparison; retain one complete JSON | [quorum.py](../docquorum/quorum.py) |
-| Zoom re-reading (optional) | After the quorum: each field the candidates disagree on is located on the page and read again from a sharp crop; a value changes only to one a candidate proposed | [zoom.py](../docquorum/zoom.py) |
+| Zoom re-reading (optional) | After the quorum: each field the candidates disagree on is located on the page and read again from a sharp crop; a value changes only to one a candidate proposed, the zoomed reading counting as two votes | [zoom.py](../docquorum/zoom.py) |
 
 P and M identify evidence modes, not different model identities. Column and ruled-table readers are alternatives producing the same candidate source label L. Calling a module an agent does not make its decisions LLM-based: layout routing is implemented with geometry and schema-mapping rules.
 

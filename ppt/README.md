@@ -34,7 +34,7 @@ The template and optional task are teaching alternatives, labeled on the page; t
 
 The stored one-shot candidate wins mean agreement and is returned whole, without field fusion. In this example the primary candidate has a higher historical answer-key score. Agreement is not a guarantee of accuracy, and answer keys are not supplied to selection.
 
-Both result tables use the maintained [results snapshot](results/README.md). ExtractBench is 95.43 overall, 3rd in the pinned 2 October 2026 snapshot, with all 47 published systems plus DocQuorum. ExtractBench was used during development. UNIKIE-BENCH is 82.62 macro F1, 1st, with all 15 published systems plus DocQuorum; it uses a separate six-reading benchmark protocol including extra-model readings, with small images enlarged before reading.
+Both result tables use the maintained [results snapshot](results/README.md). ExtractBench is 95.43 overall, 3rd in the pinned 2 October 2026 snapshot, with all 47 published systems plus DocQuorum. ExtractBench was used during development. UNIKIE-BENCH is 82.65 macro F1 with zoom re-reading (82.62 without), 1st, with all 15 published systems plus DocQuorum; it uses a separate six-reading benchmark protocol including extra-model readings, with small images enlarged before reading.
 
 ## Rebuild and verify
 

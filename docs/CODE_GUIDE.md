@@ -16,7 +16,7 @@ Read [the pipeline guide](docquorum.pdf) first. Its main diagram follows `extrac
 | One-shot reading | [agents/oneshot.py](../docquorum/agents/oneshot.py) | PDF + schema → provider candidate |
 | Check each reading | [checks/__init__.py](../docquorum/checks/__init__.py) | Candidate + `Doc` → checked candidate |
 | Select | [quorum.py](../docquorum/quorum.py) | Checked candidates + schema → winner, scores, pairwise metrics |
-| Zoom re-reading (optional) | [zoom.py](../docquorum/zoom.py) | Kept + other readings + PDF → kept reading with disputed fields re-read from a crop; statistics |
+| Zoom re-reading (optional) | [zoom.py](../docquorum/zoom.py) | Kept + other readings + PDF → kept reading with disputed fields re-read from a crop (the zoomed reading counts as two votes); statistics |
 | Format templates | [tools/schema.py](../docquorum/tools/schema.py) | Selected object + template → template-shaped result |
 
 Supporting modules: [prompts](../docquorum/agents/prompts.py), [LLM calls](../docquorum/tools/llm.py), [row estimates](../docquorum/tools/rows.py), [geometry](../docquorum/tools/layout.py), and [configuration](../docquorum/config.py).

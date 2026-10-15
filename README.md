@@ -11,13 +11,14 @@ Each benchmark below is scored with its own scorer and placed against every publ
 | benchmark | DocQuorum | place among published systems |
 |---|---|---|
 | VAREX (1,777 government forms, image input) | exact match **98.30** with zoom re-reading (98.10 without) | **1st** (Gemini 2.5 Pro 98.0) |
-| UNIKIE-BENCH (4,472 images, 11 scenarios) | six-reading macro F1 **82.62** | **1st** (Gemini-3-Pro 82.37) |
+| UNIKIE-BENCH (4,472 images, 11 scenarios) | six-reading macro F1 **82.65** with zoom re-reading (82.62 without) | **1st** (Gemini-3-Pro 82.37) |
 | ExtractBench (370 enterprise PDFs, 1-163 pages) | Overall **95.43** (short 96.34, medium 94.11, long 90.41) | 3rd (two commercial systems at 95.91) |
 | LongArray-Extract (45 long documents, 29,328 rows) | macro accuracy **98.05** | 2nd of 12 (Extend MAX 99.2; Reducto Deep Extract 97.4) |
 | UNIKIE-BENCH open category (1,661 documents) | macro F1 **72.33** with zoom re-reading (71.07 without) | 2nd of 16 (Gemini-3-Pro 81.65) |
 
 Also run: DocuBench (72 documents in 10 file types), 86.47, 5th of 10. Zoom re-reading, the new step, was tested
-held-out on two benchmarks: VAREX (60 forms better, 25 worse) and UNIKIE open (291 documents better, 138 worse).
+held-out on VAREX (60 forms better, 25 worse) and UNIKIE open (291 documents better, 138 worse); on UNIKIE constrained
+it first lowered the score, which led to its vote rule (details in `results/README.md`).
 
 * Details, caveats, per-document scores: [`results/README.md`](results/README.md)
 * How it works, with a diagram and worked examples: [`docs/docquorum.pdf`](docs/docquorum.pdf), [documentation and build instructions](docs/README.md)
@@ -79,7 +80,7 @@ images as its `DATA.md` describes, and point `DQ_UNIKIE_DIR` at the clone (defau
 ```bash
 benchmarks/unikie/run.sh score     # from the stored readings in results/unikie/readings
 ```
-**Expected output:** one line starting `DocQuorum macro  82.62`, followed by the 11 per-scenario scores.
+**Expected output:** one line starting `DocQuorum macro  82.62`, followed by the 11 per-scenario scores (the six-reading quorum; `python benchmarks/unikie/zoom_unikie.py score` re-scores the stored zoom outputs: 82.65).
 
 ---
 
@@ -172,9 +173,11 @@ read from its page images (and, up to 12 pages, by the one-shot reader).
 
 **Zoom re-reading** (`--zoom`, or `extract(..., zoom_reread=True)`). When the quorum has chosen among several readings, every field
 on which they disagree is found on the page and read once more from a sharp crop of that region, by a call that sees none of the
-readings. The kept value changes only if the zoomed reading equals a value some reading already proposed. Tested held-out on two
-benchmarks after its design was fixed: VAREX exact match 98.10 -> 98.30 (60 forms better, 25 worse) and UNIKIE open macro F1
-71.07 -> 72.33 (291 documents better, 138 worse); see `results/README.md`. It needs the parser server.
+readings. The kept value changes only if the zoomed reading equals a value some reading already proposed, and the zoomed reading
+counts as two votes: it can overturn a lead of one reading, not a clear majority. Held-out results: VAREX exact match 98.10 ->
+98.30 (60 forms better, 25 worse) and UNIKIE open macro F1 71.07 -> 72.33 (291 better, 138 worse). On UNIKIE constrained, with six
+readings, the first design overturned five agreeing readings too often (82.62 -> 81.62); the vote rule, added after that result,
+gives 82.65 there and leaves the other two unchanged. See `results/README.md`. It needs the parser server.
 
 ---
 

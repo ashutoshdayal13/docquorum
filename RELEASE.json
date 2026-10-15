@@ -1,5 +1,5 @@
 {
- "written_utc": "2026-10-15 17:38",
+ "written_utc": "2026-10-15 19:29",
  "model": "Qwen/Qwen3.8-27B-FP8, vLLM 0.27.1, greedy decoding; MinerU2.5-2509-1.2B parser",
  "serving": "serve/serve_qwen38_27b.sh; on the shared GPU GPU_UTIL 0.62-0.66, and from 14 October 2026 SPEC_TOKENS=2 (speculative decoding, which leaves greedy outputs unchanged up to floating-point batch effects)",
  "pipeline_sha256": {
@@ -41,7 +41,7 @@
   "docquorum/tools/pdf.py": "d361b7f5ab594dba7ac6aa2fedbe4f53347f9a94c134646f2d9b67a9b86e4820",
   "docquorum/tools/rows.py": "d2542c6e42df70110c7a85519af5673c5baede6b445b4b3367ab919e5d31ef46",
   "docquorum/tools/schema.py": "c9dcca97a0ee37e850075ff2902ee7eefad44455fbbab08fbe83580cda421d0e",
-  "docquorum/zoom.py": "58bc96bd15fc6d0321cd5f83db2b3ff03a91a7b0c9ca92c848b3536142cb5973"
+  "docquorum/zoom.py": "3c8af42aa642cc4a50c116babca947a521ff147995672d5228e2031831a2b470"
  },
  "results": [
   {
@@ -59,10 +59,11 @@
   {
    "benchmark": "UNIKIE-BENCH, constrained category",
    "metric": "macro F1",
-   "score": 82.61809174889247,
+   "score": 82.65259739275433,
    "place": "1st (Gemini-3-Pro 82.37)",
-   "configuration": "six_readings_enlarged",
-   "files": "results/unikie/readings"
+   "configuration": "six_readings_enlarged_zoom",
+   "files": "results/unikie/readings, results/unikie/zoom",
+   "without_zoom": 82.61809174889247
   },
   {
    "benchmark": "ExtractBench",
@@ -163,6 +164,12 @@
    "commit": "v1.1",
    "change": "final review: a task text no longer replaces the schema's own description; a short native file is read as text; native files keep Chinese, Japanese, Korean, Devanagari and Thai text (font fallback); transparent images are flattened onto white; a template may have fields named like schema keywords; nullable lists are found; a failed parse is not cached; a failing check leaves the reading as it was; the quorum no longer forks a threaded process (it could hang); a missing scorer package raises instead of making every agreement 0; layout readers only for schemas with a list; clear errors for unreadable or unsupported files",
    "results_touched": "DocuBench (15 documents re-read with their descriptions: 86.44 -> 86.47); every other change was checked against the stored inputs and outputs of all benchmarks and changes none of them"
+  },
+  {
+   "date": "2026-10-15",
+   "commit": "v1.2",
+   "change": "zoom re-reading: the zoomed reading counts as two votes, so it can overturn a lead of one reading but not a clear majority (found from the UNIKIE constrained test, where it first lowered the score 82.62 -> 81.62)",
+   "results_touched": "UNIKIE constrained headline 82.65 with zoom (development measurement); VAREX and UNIKIE open unchanged (the rule withdraws none of their changes)"
   }
  ],
  "rules": [

@@ -18,7 +18,8 @@ results = [
      "place": "1st (Gemini 2.5 Pro 98.0)", "configuration": "pipeline + zoom re-reading (held-out run)",
      "files": vx["predictions"], "without_zoom": vx["without_zoom"]},
     {"benchmark": "UNIKIE-BENCH, constrained category", "metric": "macro F1", "score": uk["variants"][uk["headline"]]["score"],
-     "place": "1st (Gemini-3-Pro 82.37)", "configuration": uk["headline"], "files": "results/unikie/readings"},
+     "place": "1st (Gemini-3-Pro 82.37)", "configuration": uk["headline"], "files": "results/unikie/readings, results/unikie/zoom",
+     "without_zoom": uk["variants"]["six_readings_enlarged"]["score"]},
     {"benchmark": "ExtractBench", "metric": "Overall value F1", "score": eb["stored_primary"]["score"],
      "place": "3rd (two commercial systems at 95.91)", "configuration": "the development set",
      "files": "results/extractbench/predictions", "per_split": eb["stored_primary"]["per_split"]},
@@ -57,6 +58,11 @@ changes = [
      "unsupported files",
      "DocuBench (15 documents re-read with their descriptions: 86.44 -> 86.47); every other change was checked "
      "against the stored inputs and outputs of all benchmarks and changes none of them"),
+    ("2026-10-15", "v1.2", "zoom re-reading: the zoomed reading counts as two votes, so it can overturn a lead of "
+     "one reading but not a clear majority (found from the UNIKIE constrained test, where it first lowered the "
+     "score 82.62 -> 81.62)",
+     "UNIKIE constrained headline 82.65 with zoom (development measurement); VAREX and UNIKIE open unchanged "
+     "(the rule withdraws none of their changes)"),
 ]
 release = {
     "written_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"),

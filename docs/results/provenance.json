@@ -1,41 +1,48 @@
 {
-  "retrieved_utc": "2026-10-05T16:34:54.465132+00:00",
-  "display_date": "5 October 2026",
-  "extractbench": {
-    "url": "https://github.com/run-llama/ExtractBench/blob/c8e59696b19c50d904801390dedef8d292d529e7/leaderboard.csv",
-    "revision": "c8e59696b19c50d904801390dedef8d292d529e7",
-    "commit_date": "2026-09-29T01:42:39Z",
-    "published_systems": 47,
-    "snapshot_date": "2 October 2026",
-    "scope": "Historical published comparison used by the earlier rank-3 result; not a live leaderboard rank.",
-    "matches_saved_comparison": "results/multibench/extractbench_public_rows.json",
-    "all_overall_scores_match_saved_comparison": true,
-    "scorer_revision": "c8e59696b19c50d904801390dedef8d292d529e7",
-    "upstream_csv_sha256": "2642a78c8ce42312876ebbce177d69fc8e582b2ebb8d6989a12bc3c1efc9b53c",
-    "formatting_changes": "CRLF line endings normalized to LF; all 47 rows and 27 columns unchanged."
-  },
-  "unikie": {
-    "url": "https://arxiv.org/html/2602.07038v2#S4.T4",
-    "published_systems": 15,
-    "verified_against_paper": {
-      "model_rows": 15,
-      "numeric_columns_per_row": 12,
-      "all_values_match": true
-    }
-  },
-  "local_sources": {
-    "results/multibench/unikie_audit.json": "9a4bb8d8b41e765f34b392b15a617ecbafc483fe67f6c36278dbe01d84cd9a1b",
-    "results/multibench/extractbench_current_reference.json": "8af97dc5a37aa13f0da05345900f65f3c4f7b69c151cb9dbf19b518323b51fa8",
-    "results/multibench/extractbench_archived_candidate.json": "e3f45b09a42c8015197efedad3096b0a9eee582a912a5866a3df4055a992e632",
-    "results/multibench/extractbench_public_rows.json": "363ad693089a783dcb1f50b209a317d3e8fbb5f8a5abba1e8168183615e5c66d"
-  },
-  "snapshot_sha256": {
-    "docquorum-extractbench.json": "5f4d3a69b5686efb00395275bae2870d546dbea262f56a36faed3c5dcf185ba6",
-    "docquorum-unikie.json": "53162504b6a81d180548de0d8bc011e4f33d92ce08affc37e13e0f70a99a9803",
-    "extractbench-leaderboard.csv": "1ce3ab9ae46b1ead70fdac227ecf72999c3e94a90b37fd21060a9e6ae1b8714d",
-    "unikie-published.json": "a337d431724b9e2e1554236ccbfb7ef3b6588912c3be003845fd38987331873b"
-  },
-  "official_submission": false,
-  "fresh_inference": false,
-  "updated_utc": "2026-10-05T16:45:42.862554+00:00"
+ "retrieved_utc": "2026-10-05T16:34:54.465132+00:00",
+ "display_date": "5 October 2026",
+ "extractbench": {
+  "url": "https://github.com/run-llama/ExtractBench/blob/c8e59696b19c50d904801390dedef8d292d529e7/leaderboard.csv",
+  "revision": "c8e59696b19c50d904801390dedef8d292d529e7",
+  "commit_date": "2026-09-29T01:42:39Z",
+  "published_systems": 47,
+  "snapshot_date": "2 October 2026",
+  "scope": "Historical published comparison used by the earlier rank-3 result; not a live leaderboard rank.",
+  "matches_saved_comparison": "results/multibench/extractbench_public_rows.json",
+  "all_overall_scores_match_saved_comparison": true,
+  "scorer_revision": "c8e59696b19c50d904801390dedef8d292d529e7",
+  "upstream_csv_sha256": "2642a78c8ce42312876ebbce177d69fc8e582b2ebb8d6989a12bc3c1efc9b53c",
+  "formatting_changes": "CRLF line endings normalized to LF; all 47 rows and 27 columns unchanged."
+ },
+ "unikie": {
+  "url": "https://arxiv.org/html/2602.07038v2#S4.T4",
+  "published_systems": 15,
+  "verified_against_paper": {
+   "model_rows": 15,
+   "numeric_columns_per_row": 12,
+   "all_values_match": true
+  }
+ },
+ "local_sources": {
+  "results/multibench/unikie_audit.json": "9a4bb8d8b41e765f34b392b15a617ecbafc483fe67f6c36278dbe01d84cd9a1b",
+  "results/multibench/extractbench_current_reference.json": "8af97dc5a37aa13f0da05345900f65f3c4f7b69c151cb9dbf19b518323b51fa8",
+  "results/multibench/extractbench_archived_candidate.json": "e3f45b09a42c8015197efedad3096b0a9eee582a912a5866a3df4055a992e632",
+  "results/multibench/extractbench_public_rows.json": "363ad693089a783dcb1f50b209a317d3e8fbb5f8a5abba1e8168183615e5c66d"
+ },
+ "snapshot_sha256": {
+  "docquorum-extractbench.json": "5f4d3a69b5686efb00395275bae2870d546dbea262f56a36faed3c5dcf185ba6",
+  "docquorum-unikie.json": "0d18d99aa06cfcaa3270692cd5066898e0ea37dc023da63015920052f62058b1",
+  "extractbench-leaderboard.csv": "1ce3ab9ae46b1ead70fdac227ecf72999c3e94a90b37fd21060a9e6ae1b8714d",
+  "unikie-published.json": "a337d431724b9e2e1554236ccbfb7ef3b6588912c3be003845fd38987331873b"
+ },
+ "official_submission": false,
+ "fresh_inference": false,
+ "updated_utc": "2026-10-15T19:27:24.454352+00:00",
+ "changes": [
+  {
+   "utc": "2026-10-15T19:27:24.454352+00:00",
+   "file": "docquorum-unikie.json",
+   "change": "added variant six_readings_enlarged_zoom (zoom re-reading with the vote rule) and made it the headline"
+  }
+ ]
 }

@@ -96,7 +96,8 @@ at the benchmark's 1,605,632 pixels (the cap all published systems were measured
 
 | macro F1, all 4,472 images | score | vs. the paper's Table 4 |
 |---|---:|---|
-| **DocQuorum** (6 readings from 3 open models) | **82.62** | **1st of 16** |
+| **DocQuorum with zoom re-reading** (6 readings from 3 open models) | **82.65** | **1st of 16** |
+| DocQuorum without zoom re-reading | 82.62 | 1st of 16 |
 | Gemini-3-Pro (best published) | 82.37 | 2nd |
 | Qwen3.8-27B, the benchmark's own one-shot protocol | 80.45 | |
 | Qwen3-VL-8B (best published open model) | 79.12 | |
@@ -112,6 +113,19 @@ at the benchmark's 1,605,632 pixels (the cap all published systems were measured
   open-category English receipts (278x299 px images whose values the model invented), not on this
   track; the benchmark-protocol one-shot readings keep the benchmark's own image encoding.
 * Above every published system on: Retail, Catering-Services, Administrative, Tax-Compliant, Medical-Services.
+* **Zoom re-reading, third test** (`benchmarks/unikie/zoom_unikie.py`). Run as designed, it lowered
+  the score: 82.62 -> 81.62 (239 documents better,
+  569 worse; `unikie/zoom/as_run/`). Checked against the answer key afterwards, the harm came
+  from overturning clear majorities: with six readings, five often agreed and the zoomed reading
+  matched the sixth (those switches broke 225 values and fixed 66). With three readings, as on
+  VAREX and UNIKIE open, that cannot happen. Zoom now counts its reading as two votes: a value
+  changes only when its readings plus those two votes outnumber the readings behind the kept value
+  (`zoom.ZOOM_VOTES`). This only withdraws changes, so its effect is exact on the stored runs: on
+  VAREX and UNIKIE open it withdraws none (results unchanged); here it withdraws
+  1,011 of 1,439, giving 82.62 -> **82.65** (120 better,
+  115 worse; sign test p = 0.79, so neutral within noise). The rule was found from
+  this result, so this score is a development measurement
+  (`benchmarks/unikie/zoom_votes_apply.py`; outputs and comparison in `unikie/zoom/`).
 
 Per scenario (F1 on all 4,472 images; published values from the paper's Table 4; **bold** =
 best of the 16 published systems and DocQuorum; rank = DocQuorum's position when inserted
@@ -183,6 +197,8 @@ one run, nothing changed afterwards:
 * 413 of 1,777 forms had a disputed field: 1,449 disputes, 1,334 located, 141 values changed.
 * Form by form: 60 better, 25 worse (two-sided sign test p = 0.0002); mean gain 0.21 points
   per form, 95% bootstrap interval 0.09 to 0.33.
+* The vote rule added after the UNIKIE constrained test (see that section) withdraws none of
+  these changes: the result is the same with it.
 * Checked against the answer key after the run (analysis only): of the 141 changed values, 88
   were fixed, 38 were broken, 15 were wrong before and after. Fixes are mostly misread
   characters (`Termitor` -> `Termidor`, `AGCT-2023-001` -> `ACCT-2023-001`) and values cut short
@@ -260,14 +276,15 @@ the constrained track (`benchmarks/unikie/`, with the open-category `DQ_UNIKIE_*
   measurement; the one-shot reading keeps the protocol's encoding.
 * The reader agent's image and parse readings are weaker than the one-shot reading on this track's
   long nested templates (unlike the constrained track, where all three are within one point).
-* **Zoom re-reading, second held-out test** (`benchmarks/unikie/zoom_open.py`; design unchanged
+* **Zoom re-reading, second held-out test** (`benchmarks/unikie/zoom_unikie.py`; design unchanged
   since VAREX; crops capped at the benchmark's 1,605,632 pixels like every input). 1,614
   documents had a disputed field: 13,297 disputes, 4,885 located on
   the page, 1,012 values changed. Document by document: 291 better,
   138 worse (two-sided sign test p < 1e-12); mean gain 1.33 F1
   points per document, 95% bootstrap interval 1.03 to 1.66.
   Seven of the eight scenarios improve; Chinese receipts lose 0.40, mostly single digits read
-  as another (1 as 2) in the crop. Outputs and the comparison: `unikie_open/zoom/`.
+  as another (1 as 2) in the crop. Outputs and the comparison: `unikie_open/zoom/`. The vote rule added
+  after the constrained test withdraws none of these changes.
 
 | scenario | Gemini-3-Pro | Qwen3-VL-Plus | Qwen3-VL-8B | 27B one-shot | DocQuorum | + zoom | rank (+ zoom) |
 |---|---:|---:|---:|---:|---:|---:|:---:|

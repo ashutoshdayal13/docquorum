@@ -1,0 +1,70 @@
+{
+ "benchmark": "UNIKIE-BENCH, constrained category",
+ "documents": 4472,
+ "macro_f1": {
+  "before": 82.61809174889247,
+  "after": 81.62459895604658
+ },
+ "per_scenario": {
+  "Accommodation": {
+   "before": 79.99999971428572,
+   "after": 78.57142829081633
+  },
+  "Administrative": {
+   "before": 86.95458589182789,
+   "after": 85.66340156470909
+  },
+  "Advertisement": {
+   "before": 86.20689622142952,
+   "after": 86.59003798241365
+  },
+  "Catering-Services": {
+   "before": 88.18852919466863,
+   "after": 86.71209535110044
+  },
+  "Commercial": {
+   "before": 53.45639479121183,
+   "after": 51.59163683337885
+  },
+  "Education": {
+   "before": 85.46209752288463,
+   "after": 85.46209752288463
+  },
+  "Medical-Services": {
+   "before": 77.70833325238715,
+   "after": 77.29166658615452
+  },
+  "Nutrition-Label": {
+   "before": 92.26388228250848,
+   "after": 91.23556397860536
+  },
+  "Postal-Label": {
+   "before": 85.649999957175,
+   "after": 85.549999957225
+  },
+  "Retail": {
+   "before": 90.77809791730684,
+   "after": 88.83285296193598
+  },
+  "Tax-Compliant": {
+   "before": 82.13019249213143,
+   "after": 80.36980748728853
+  }
+ },
+ "documents_better": 239,
+ "documents_worse": 569,
+ "sign_test_p_two_sided": 7.649173750660092e-32,
+ "mean_gain_per_document_f1_points": -1.2024721339792055,
+ "bootstrap_95ci_points": [
+  -1.4513301887046293,
+  -0.9567342087829039
+ ],
+ "zoom": {
+  "documents_with_disputes": 2883,
+  "errors": 0,
+  "disputes": 7227,
+  "located": 5131,
+  "changed": 1439
+ },
+ "note": "document F1 by the benchmark's own matching; the answer key is used only here, after the run"
+}
