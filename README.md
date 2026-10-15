@@ -172,8 +172,9 @@ read from its page images (and, up to 12 pages, by the one-shot reader).
 
 **Zoom re-reading** (`--zoom`, or `extract(..., zoom_reread=True)`). When the quorum has chosen among several readings, every field
 on which they disagree is found on the page and read once more from a sharp crop of that region, by a call that sees none of the
-readings. The kept value changes only if the zoomed reading equals a value some reading already proposed. On VAREX it lifted exact
-match from 98.10 to 98.30 (60 forms better, 25 worse); see `results/README.md`. It needs the parser server.
+readings. The kept value changes only if the zoomed reading equals a value some reading already proposed. Tested held-out on two
+benchmarks after its design was fixed: VAREX exact match 98.10 -> 98.30 (60 forms better, 25 worse) and UNIKIE open macro F1
+71.07 -> 72.33 (291 documents better, 138 worse); see `results/README.md`. It needs the parser server.
 
 ---
 
