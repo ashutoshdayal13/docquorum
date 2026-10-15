@@ -15,6 +15,7 @@ import re
 from docquorum.tools import llm, parser, pdf as PDF
 
 ZOOM_DPI, MIN_WIDTH, PAD, MAX_DISPUTES = 300, 1200, 0.015, 40
+MAX_CROP_PIXELS = None      # a benchmark's cap on every model input, where it has one
 
 ASK = ('This image is a region cut from a page of a document. Read the value of the field '
        '"{path}"{desc} exactly as printed in the image. Reply with JSON only: {{"value": "..."}}; '
@@ -100,6 +101,9 @@ def crop(pdf, page, box, cache):
     if region.width < MIN_WIDTH:
         k = MIN_WIDTH / max(1, region.width)
         region = region.resize((MIN_WIDTH, max(1, int(region.height * k))), Image.LANCZOS)
+    if MAX_CROP_PIXELS and region.width * region.height > MAX_CROP_PIXELS:
+        k = (MAX_CROP_PIXELS / (region.width * region.height)) ** 0.5
+        region = region.resize((max(1, int(region.width * k)), max(1, int(region.height * k))), Image.LANCZOS)
     buf = io.BytesIO()
     region.convert("RGB").save(buf, format="JPEG", quality=95)
     return base64.b64encode(buf.getvalue()).decode()

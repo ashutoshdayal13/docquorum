@@ -83,10 +83,16 @@ def _extract(doc, schema, task, workers, log, zoom_reread=False):
         cl, d = llm.client(), checks.Doc(schema, pdf, name)
         got = None
         if ev["reader"] != "route":
-            reader = column_reader if ev["reader"] == "colflow" else ruled_reader
-            got = reader.read(cl, schema, pdf, workers=4, log=log)
+            seen = {}
+            if ev["reader"] == "colflow":
+                got = column_reader.read(cl, schema, pdf, workers=4, log=log)
+            else:
+                got = ruled_reader.read(cl, schema, pdf, workers=4, log=log, pages_seen=seen)
             if not any(got.values()):                # found no records: read it the usual way
                 log(f"[docquorum] {ev['reader']} reader found no records; reading by route")
+                got = None
+            elif ev["reader"] == "ruled" and layout.rules_missing(ev, seen):
+                log("[docquorum] no rules on most table pages; reading by route")
                 got = None
         if got is not None:
             # a layout reader reads one list; the reader agent reads every other field

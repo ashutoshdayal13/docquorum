@@ -5,7 +5,8 @@ scored with a as the reference, recall-weighted (F-beta, beta = 2): omissions ar
 across readers (a hard page is hard for all of them) while inventions are not, so a reading
 is rewarded for containing what the others found. Only the schema is used: the benchmark
 record's answer key and scoring rules (per-field comparators, row identity keys) are not.
-A whole reading is chosen; no record is stitched together from several.
+A whole reading is chosen; no record is stitched together from several. A reading whose list
+went round in a loop (mostly exact repeats) is kept only if every reading did.
 
     python -m docquorum.quorum <split> <out_dir> <reading_dir> [<reading_dir> ...]
 
@@ -19,6 +20,7 @@ from pathlib import Path
 from docquorum import extractbench as EB
 
 BETA = 2.0
+LOOP_MIN, LOOP_SHARE = 20, 0.5      # a list this long, less than this share of it distinct: a loop
 
 
 def agree(args):
@@ -39,6 +41,25 @@ def fbeta(p, r, beta=BETA):
     return (1 + beta * beta) * p * r / (beta * beta * p + r)
 
 
+def _record_lists(o):
+    if isinstance(o, dict):
+        for v in o.values():
+            yield from _record_lists(v)
+    elif isinstance(o, list):
+        if o and all(isinstance(x, dict) for x in o):
+            yield o
+        for x in o:
+            yield from _record_lists(x)
+
+
+def looped(reading):
+    """Whether a list of LOOP_MIN or more records is mostly exact repeats: the model went round
+    in a loop (seen on long lists in Hebrew and Devanagari scans), not a document's repeated rows."""
+    return any(len(rows) >= LOOP_MIN
+               and len({json.dumps(x, sort_keys=True) for x in rows}) < LOOP_SHARE * len(rows)
+               for rows in _record_lists(reading))
+
+
 def pick(rec, views, workers=8):
     """(the reading dir to keep, {dir: agreement}, {dir: {other: [p, r]}}) for one document."""
     names = list(views)
@@ -53,7 +74,11 @@ def pick(rec, views, workers=8):
         pairs[c] = {o: list(v) for o, v in zip(others, pr)}
         # rounded so that tied readings tie exactly and the tie goes to the earlier reading
         score[c] = round(sum(fbeta(p, r) for p, r in pr) / max(1, len(others)), 9)
-    return max(score, key=score.get), score, pairs
+    best = max(score, key=score.get)
+    if looped(views[best]):         # two readings caught in the same loop agree with each other
+        sound = {c: s for c, s in score.items() if not looped(views[c])}
+        best = max(sound, key=sound.get) if sound else best
+    return best, score, pairs
 
 
 def main():

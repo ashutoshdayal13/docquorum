@@ -29,3 +29,16 @@ def test_a_zoomed_value_is_taken_only_when_a_reading_proposed_it(monkeypatch):
 def test_a_fence_without_a_newline_parses():
     assert llm.parse_object('```{"value": "a"}```') == {"value": "a"}
     assert llm.parse_object("```") is None
+
+
+def test_a_crop_respects_an_input_cap(monkeypatch):
+    import base64
+    import io
+    from PIL import Image
+    monkeypatch.setattr(zoom.parser, "render_page", lambda pdf, page, **k: Image.new("RGB", (2550, 3300), "white"))
+    monkeypatch.setattr(zoom, "MAX_CROP_PIXELS", None)
+    full = Image.open(io.BytesIO(base64.b64decode(zoom.crop("doc.pdf", 1, (0, 0, 1, 1), {}))))
+    assert full.size == (2550, 3300)                               # no cap: the region as rendered
+    monkeypatch.setattr(zoom, "MAX_CROP_PIXELS", 1_605_632)
+    capped = Image.open(io.BytesIO(base64.b64decode(zoom.crop("doc.pdf", 1, (0, 0, 1, 1), {}))))
+    assert capped.width * capped.height <= 1_605_632

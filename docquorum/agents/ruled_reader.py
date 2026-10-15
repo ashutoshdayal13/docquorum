@@ -51,8 +51,9 @@ def read_page(cl, pdf, page, meta, dpi=200):
     return rows, {"bands": len(bands), "rows": sum(n for _, n in bands)}
 
 
-def read(cl, schema, pdf, workers=4, log=print):
-    """The whole document: {list name: records in page order}."""
+def read(cl, schema, pdf, workers=4, log=print, pages_seen=None):
+    """The whole document: {list name: records in page order}. pages_seen, a dict, receives
+    {page: rows counted between its rules}."""
     from concurrent.futures import ThreadPoolExecutor
     meta = list_meta(schema)
     pages = list(range(1, PDF.npages(pdf) + 1))
@@ -62,5 +63,7 @@ def read(cl, schema, pdf, workers=4, log=print):
         for p in pages:
             got, st = futs[p].result()
             out.extend(got)
+            if pages_seen is not None:
+                pages_seen[p] = st["rows"]
             log(f"  page {p:3d} bands={st['bands']} ruled-rows={st['rows']} got={len(got)}")
     return {meta[0]: out}

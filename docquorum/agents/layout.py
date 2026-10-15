@@ -24,6 +24,16 @@ from docquorum.tools import llm, parser, pdf as PDF
 from docquorum.tools.layout import convert_tables, is_column_flow, table_rows
 
 
+RULED_MIN_ROWS = 5      # a page whose parse holds a table of this many rows should show its rules
+
+
+def rules_missing(ev, pages_seen):
+    """Whether the ruled reader found no rules on most of the pages whose parse holds a table:
+    the tables are not ruled, and the document is read by route instead."""
+    pages = ev.get("table_pages") or []
+    return bool(pages) and sum(pages_seen.get(p, 0) == 0 for p in pages) > len(pages) / 2
+
+
 def decide(schema, pdf, name):
     """{pages, text_layer, [table_completeness], reader: colflow | ruled | route}."""
     n = PDF.npages(pdf)
@@ -38,6 +48,8 @@ def decide(schema, pdf, name):
             body = sum(max(0, len(r) - 1) for pg, t in texts.items() if pg not in bad for r in table_rows(t))
             comp = sum(len(v) for v in good.values()) / max(1, body)
             ev["table_completeness"] = round(comp, 3)
+            ev["table_pages"] = sorted(pg for pg, t in texts.items() if pg not in bad
+                                       and sum(max(0, len(r) - 1) for r in table_rows(t)) >= RULED_MIN_ROWS)
             if comp >= 0.9:
                 ev["reader"] = "ruled"
     ev.setdefault("reader", "route")
