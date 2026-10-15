@@ -3,7 +3,9 @@ Last digits as printed. A field whose own description asks for the last N digits
 ("the last four digits of the account number") must hold exactly N digits. A value of digits
 with another length that a printed number ends with (a reader wrote "786" for the last four
 digits of 1010200605786) becomes that number's last N digits: "5786". A value no printed number
-ends with, or one that two printed numbers end with in different ways, is left alone.
+ends with, or one that two printed numbers end with in different ways, is left alone. A value
+of the right length that ends no printed number but lies inside exactly one (a reader wrote "8198"
+for the last four digits of 9537819840) becomes that number's last N digits: "9840".
 """
 import re
 
@@ -26,9 +28,14 @@ def printed_digit_runs(text):
 
 
 def repair(value, n, runs):
-    if not isinstance(value, str) or not value.isdigit() or len(value) == n:
+    if not isinstance(value, str) or not value.isdigit():
         return value
-    tails = {r[-n:] for r in runs if len(r) >= n and r.endswith(value) and len(r) > len(value)}
+    if len(value) == n and any(r.endswith(value) for r in runs):
+        return value                                        # the end of a printed number
+    if len(value) != n:                                     # a digit dropped or added
+        tails = {r[-n:] for r in runs if len(r) >= n and r.endswith(value) and len(r) > len(value)}
+    else:                                                   # digits taken from inside a number
+        tails = {r[-n:] for r in runs if len(r) > n and value in r}
     return tails.pop() if len(tails) == 1 else value
 
 

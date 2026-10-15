@@ -83,3 +83,10 @@ def test_last_digits_are_taken_from_the_printed_number():
     assert repair("999", 4, runs) == "999"             # nothing printed ends with it
     assert wanted({"description": "The last four digits of the account number."}, {}) == 4
     assert wanted({"description": "Account number."}, {}) is None
+
+
+def test_last_digits_taken_from_inside_a_number_are_replaced():
+    from docquorum.checks.printed_suffix import printed_digit_runs, repair
+    runs = printed_digit_runs("Account # 9537819840  Statement Period 08/17/25")
+    assert repair("8198", 4, runs) == "9840"
+    assert repair("9840", 4, runs) == "9840"
