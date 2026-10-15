@@ -1,7 +1,7 @@
 {
  "benchmark": "DocuBench v0.2.0",
  "metric": "macro average field accuracy (official scorer)",
- "score": 86.44313037338084,
+ "score": 86.46983977509024,
  "documents": 72,
  "completed": 72,
  "per_document": [
@@ -189,7 +189,7 @@
    "id": "LYeb3G3s",
    "format": "pdf",
    "status": "completed",
-   "score": 0.8245562130177515
+   "score": 0.8437869822485207
   },
   {
    "id": "M66HZlWT",

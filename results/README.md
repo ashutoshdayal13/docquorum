@@ -295,11 +295,12 @@ benchmark does for every system). Scored with the benchmark's own `scorer.py`
 | DocuPipe (high effort) | 97.02 | 1st |
 | Claude Sonnet 5 (direct LLM) | 91.73 | 3rd |
 | Reducto Deep Extract | 89.38 | 4th |
-| **DocQuorum** (Qwen3.8-27B + MinerU2.5) | **86.44** | **5th of 10** |
+| **DocQuorum** (Qwen3.8-27B + MinerU2.5) | **86.47** | **5th of 10** |
 | Reducto (standard) | 81.11 | 6th |
 
-* 34 of 72 documents score 95 or more; every non-PDF file scores 95 to 100 (native files are
-  turned into a text-layer PDF, `docquorum/tools/native.py`).
+* 34 of 72 documents score 95 or more. The 7 native files (spreadsheet, Word, HTML, XML, CSV,
+  text) score 96.6 to 100: they are turned into a text-layer PDF (`docquorum/tools/native.py`).
+  The 5 JPEG photos average 81.6.
 * Four pipeline fixes came from this benchmark, so the numbers below are development
   measurements: a layout reader that finds no records hands the document to the route
   (WM9ZKrAr 0 -> 87.3); the ruled-table reader only where printed rules are found (vAdukzpt
@@ -309,6 +310,9 @@ benchmark does for every system). Scored with the benchmark's own `scorer.py`
   The last two were applied to the run's stored readings afterwards
   (`benchmarks/multibench/apply_reading_rules.py`; originals kept); for the first two, the
   documents were read again.
+* A bug found in the final review: the guideline replaced the schema's own description of the
+  document instead of following it. The 15 documents whose schema has a description were read
+  again with it restored (one improved, LYeb3G3s 82.5 -> 84.4; 86.44 -> 86.47 overall).
 * Remaining errors: two dictionary scans in Devanagari and Hebrew (9.9, 16.5), where the parser
   garbles the script and the model loops; a one-page Japanese gazette (17.6); and several scans
   where the quorum keeps a weaker reading than one it had (choosing better would need the answer key).

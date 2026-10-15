@@ -9,7 +9,7 @@
     "voce": "0",
     "description": "Retribuzione ordinaria",
     "unitaDiMisura": "GIORNI",
-    "quantita": 23.0,
+    "quantita": 23,
     "base": 67.66808,
     "trattenute": 0,
     "competenze": 1556.37
@@ -18,7 +18,7 @@
     "voce": "200",
     "description": "Ferie godute",
     "unitaDiMisura": "ORE",
-    "quantita": 32.0,
+    "quantita": 32,
     "base": 0,
     "trattenute": 0,
     "competenze": 0
@@ -27,7 +27,7 @@
     "voce": "210",
     "description": "Permessi riduz. orario goduti",
     "unitaDiMisura": "ORE",
-    "quantita": 4.0,
+    "quantita": 4,
     "base": 0,
     "trattenute": 0,
     "competenze": 0
@@ -36,7 +36,7 @@
     "voce": "221",
     "description": "Permessi ex-festivita' goduti",
     "unitaDiMisura": "ORE",
-    "quantita": 4.0,
+    "quantita": 4,
     "base": 0,
     "trattenute": 0,
     "competenze": 0
@@ -45,7 +45,7 @@
     "voce": "230",
     "description": "Festivita'",
     "unitaDiMisura": "GIORNI",
-    "quantita": 1.0,
+    "quantita": 1,
     "base": 67.66808,
     "trattenute": 0,
     "competenze": 67.67
@@ -54,7 +54,7 @@
     "voce": "232",
     "description": "Festivita' in domenica",
     "unitaDiMisura": "GIORNI",
-    "quantita": 1.0,
+    "quantita": 1,
     "base": 67.66808,
     "trattenute": 0,
     "competenze": 67.67
@@ -63,7 +63,7 @@
     "voce": "400",
     "description": "Carenza malattia",
     "unitaDiMisura": "GIORNI",
-    "quantita": 2.0,
+    "quantita": 2,
     "base": 67.66808,
     "trattenute": 0,
     "competenze": 135.34
@@ -75,11 +75,11 @@
     "quantita": 0,
     "base": 0,
     "trattenute": 0,
-    "competenze": 80.0
+    "competenze": 80
    }
   ],
   "totaleCompetenze": 1907.05,
   "totaleTrattenute": 460.41,
-  "nettoInBusta": 1447.0
+  "nettoInBusta": 1447
  }
 }

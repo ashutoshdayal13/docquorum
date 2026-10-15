@@ -10,7 +10,7 @@ Each lists every published system and one DocQuorum row, placed by score; equal 
 | VAREX (1,777 forms, exact match) | 20, from the image-modality leaderboard | 98.30 (with zoom re-reading) | 1st (Gemini 2.5 Pro 98.0) |
 | LongArray-Extract (45 documents, accuracy) | 11, from Extend AI's results page | 98.05 | 2nd (Extend MAX 99.2) |
 | UNIKIE-BENCH open (1,661 documents, macro F1) | 15, from the paper's open-category table | 72.33 (with zoom re-reading) | 2nd (Gemini-3-Pro 81.65) |
-| DocuBench v0.2.0 (72 documents, accuracy) | 9, from the DocuBench leaderboard | 86.44 | 5th (DocuPipe 97.02) |
+| DocuBench v0.2.0 (72 documents, accuracy) | 9, from the DocuBench leaderboard | 86.47 | 5th (DocuPipe 97.02) |
 
 The ExtractBench row is the stored final outputs scored against the dataset as published now (revision `51bf3a0`);
 on the earlier revision the pipeline was developed on, the same outputs score 95.25. The UNIKIE row is the quorum

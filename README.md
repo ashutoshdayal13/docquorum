@@ -16,7 +16,7 @@ Each benchmark below is scored with its own scorer and placed against every publ
 | LongArray-Extract (45 long documents, 29,328 rows) | macro accuracy **98.05** | 2nd of 12 (Extend MAX 99.2; Reducto Deep Extract 97.4) |
 | UNIKIE-BENCH open category (1,661 documents) | macro F1 **72.33** with zoom re-reading (71.07 without) | 2nd of 16 (Gemini-3-Pro 81.65) |
 
-Also run: DocuBench (72 documents in 10 file types), 86.44, 5th of 10. Zoom re-reading, the new step, was tested
+Also run: DocuBench (72 documents in 10 file types), 86.47, 5th of 10. Zoom re-reading, the new step, was tested
 held-out on two benchmarks: VAREX (60 forms better, 25 worse) and UNIKIE open (291 documents better, 138 worse).
 
 * Details, caveats, per-document scores: [`results/README.md`](results/README.md)
