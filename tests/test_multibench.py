@@ -26,6 +26,14 @@ import native_partition as N
 import query_scope as QS
 
 
+# a few tests need a benchmark's own scorer or data (data/multibench_sources/, not in the repository)
+needs_varex = pytest.mark.skipif(not (V.SOURCE / "evaluation/score.py").exists(), reason="VAREX scorer not downloaded")
+needs_longarray = pytest.mark.skipif(not (L.SOURCE / "README.md").exists(), reason="LongArray-Extract not downloaded")
+needs_docubench = pytest.mark.skipif(not (D.SOURCE / "schemas").is_dir(), reason="DocuBench not downloaded")
+needs_longextract = pytest.mark.skipif(not (LX.SOURCE / "src/longextract_bench/grading.py").exists(),
+                                       reason="LongExtract not downloaded")
+
+
 def image_part(color):
     buf = io.BytesIO()
     Image.new("RGB", (40, 40), color).save(buf, format="PNG")
@@ -81,6 +89,7 @@ def test_native_docx_preserves_hebrew_and_paragraph_order(tmp_path):
     assert text == 'word/document.xml\nשלום\n123.45'
 
 
+@needs_varex
 def test_varex_missing_prediction_remains_in_denominator(monkeypatch, tmp_path):
     monkeypatch.setattr(V, 'OUT', tmp_path)
     V.write(tmp_path/'manifest.json', {'docs':[{'id':'a'}, {'id':'b'}], 'pilot_ids':['a','b']})
@@ -95,6 +104,7 @@ def test_varex_missing_prediction_remains_in_denominator(monkeypatch, tmp_path):
     assert not result['eligible_for_full_ranking']
 
 
+@needs_longarray
 def test_longarray_uses_official_unordered_matching_and_surplus_diagnostic():
     score, fuzzy, _ = L.official_scorer()
     schema = {'properties': {'rows': {'type':'array', 'items': {'properties': {'id':{}, 'amount':{}}}}}}
@@ -105,6 +115,7 @@ def test_longarray_uses_official_unordered_matching_and_surplus_diagnostic():
     assert score({'rows':[{'id':'a','amount':1}]}, gold, schema, {}) == (2, 4)
 
 
+@needs_docubench
 def test_public_baseline_coverage():
     root = D.SOURCE
     ids = {p.stem for p in (root/'schemas').glob('*.json')}
@@ -250,6 +261,7 @@ def test_record_call_failure_cannot_be_reported_as_empty_success(monkeypatch, in
         reader._ask_chunk(None, 'source', (), ('rows','','{}',{}), 'page1', stat)
 
 
+@needs_longextract
 def test_longextract_accuracy_keeps_omissions_and_failures_visible(monkeypatch, tmp_path):
     monkeypatch.setattr(LX, 'OUT', tmp_path)
     schema = {'properties':{'rows':{'type':'array','items':{'type':'object',
@@ -332,6 +344,7 @@ def test_public50_publisher_requires_complete_matching_cohort(monkeypatch):
     assert 'precision: 90.0000%; recall: 70.0000%; failures: 2/50' in rendered
 
 
+@needs_longextract
 def test_longextract_score_records_actual_profile_and_requires_policy(monkeypatch,tmp_path):
     monkeypatch.setattr(LX,'OUT',tmp_path)
     records = [{'id':str(i)} for i in range(50)]
