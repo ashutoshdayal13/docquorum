@@ -48,6 +48,15 @@ changes = [
      "found", "DocuBench (2 documents); checked to change nothing else"),
     ("2026-10-15", "3c54355", "a long scan keeps its page-image reading when the parse reading lost the list",
      "DocuBench (1 document)"),
+    ("2026-10-15", "v1.1", "final review: a task text no longer replaces the schema's own description; a short "
+     "native file is read as text; native files keep Chinese, Japanese, Korean, Devanagari and Thai text (font "
+     "fallback); transparent images are flattened onto white; a template may have fields named like schema "
+     "keywords; nullable lists are found; a failed parse is not cached; a failing check leaves the reading as it "
+     "was; the quorum no longer forks a threaded process (it could hang); a missing scorer package raises instead "
+     "of making every agreement 0; layout readers only for schemas with a list; clear errors for unreadable or "
+     "unsupported files",
+     "DocuBench (15 documents re-read with their descriptions: 86.44 -> 86.47); every other change was checked "
+     "against the stored inputs and outputs of all benchmarks and changes none of them"),
 ]
 release = {
     "written_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"),
