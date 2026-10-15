@@ -126,6 +126,9 @@ serve/serve_mineru.sh          # MinerU2.5 parser, needed only for scans and ima
 Check that they answer: `curl http://localhost:8079/v1/models` and `curl http://localhost:8081/v1/models`.
 
 * The 27B server runs at `GPU_UTIL=0.74 MAX_LEN=131072 MAX_SEQS=48`; the parser at 0.13. Together they fit one 94 GB GPU.
+  On a shared GPU the later runs used `GPU_UTIL=0.62`-`0.66` and, from 14 October 2026, `SPEC_TOKENS=2` (speculative
+  decoding, about 3 tokens per step; it leaves greedy outputs unchanged up to floating-point batch effects). `RELEASE.json`
+  lists which results used what.
   Do not lower `MAX_LEN` or the image limit: the planner assumes a 131k-token context and up to 12 page images per call.
 * Only UNIKIE-BENCH uses the extra readers `serve/serve_qwen3vl_32b.sh` (port 8079, in place of the 27B)
   and `serve/serve_qwen3vl_8b.sh` (port 8078).
@@ -158,7 +161,9 @@ under it. Put field instructions in the schema's `description` fields: they are 
 
 **What happens to your document.** A PDF with a text layer is read once by the reader agent. A scan or image of 12 pages or fewer is read
 three ways (the reader agent on its page images, the reader agent on its MinerU parse, and a one-shot reader) and the quorum keeps
-the reading the others agree with most; a longer scan is read through its parse. Documents printed as columns of records, and ruled tables on scans, go to a layout reader. Every
+the reading the others agree with most (passing over a reading caught in a repetition loop); a longer scan is read through
+its parse, or from its page images when the parse reading lost most of the list. Documents printed as columns of records, and ruled tables on scans, go to a layout reader (back to the normal route if it
+finds no records, or no printed rules on most table pages). Every
 reading is repaired and checked against the schema and the page text before it is returned. Without the parser server, a scan is
 read from its page images (and, up to 12 pages, by the one-shot reader).
 
