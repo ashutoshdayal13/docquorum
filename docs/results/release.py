@@ -25,12 +25,12 @@ results = [
     {"benchmark": "LongArray-Extract", "metric": "macro document accuracy", "score": la["score"],
      "place": "2nd of 12 (Extend MAX 99.2)", "configuration": la.get("variant"), "files": la["predictions"]},
     {"benchmark": "UNIKIE-BENCH, open category", "metric": "macro F1", "score": uo["score"],
-     "place": "2nd of 16 (Gemini-3-Pro 81.65)", "configuration": "three readings", "files": "results/unikie_open/readings"},
+     "place": "2nd of 16 (Gemini-3-Pro 81.65)", "configuration": "three readings + zoom re-reading (held-out run)",
+     "files": "results/unikie_open/readings, results/unikie_open/zoom", "without_zoom": uo["without_zoom"]["score"]},
+    {"benchmark": "DocuBench v0.2.0", "metric": "macro field accuracy", "score": load("docquorum-docubench.json")["score"],
+     "place": "5th of 10 (DocuPipe 97.02)", "configuration": "pipeline as released; four fixes found on this benchmark",
+     "files": "results/docubench"},
 ]
-for extra in ("docquorum-docubench.json", "docquorum-unikie-open-zoom.json"):
-    if (HERE / extra).exists():
-        d = load(extra)
-        results.append({k: d[k] for k in ("benchmark", "score", "place", "configuration", "predictions") if k in d})
 
 changes = [
     ("2026-10-14", "13bc487", "native files (.xlsx .docx .html .xml .csv .txt) become a text-layer PDF; small images "
@@ -43,7 +43,7 @@ changes = [
     ("2026-10-14", "379077d, f8e314d", "check: last digits as printed (checks/printed_suffix.py)",
      "LongArray (applied to final outputs afterwards); no ExtractBench or VAREX output changes"),
     ("2026-10-15", "4d33fd7", "a layout reader that finds no records hands the document to the route", "VAREX (11 forms), DocuBench (1)"),
-    ("2026-10-15", "00d1020", "zoom re-reading after the quorum (optional, --zoom)", "VAREX headline"),
+    ("2026-10-15", "00d1020", "zoom re-reading after the quorum (optional, --zoom)", "VAREX and UNIKIE open headlines"),
     ("2026-10-15", "0dececb", "the quorum passes over a reading caught in a loop; the ruled reader only where rules are "
      "found", "DocuBench (2 documents); checked to change nothing else"),
     ("2026-10-15", "3c54355", "a long scan keeps its page-image reading when the parse reading lost the list",

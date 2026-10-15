@@ -1,0 +1,58 @@
+{
+ "benchmark": "UNIKIE-BENCH, open category",
+ "documents": 1661,
+ "macro_f1": {
+  "before": 71.07268619552556,
+  "after": 72.32797249513875
+ },
+ "per_scenario": {
+  "receipt-cn": {
+   "before": 68.07131277630822,
+   "after": 67.66612639073496
+  },
+  "Form-cn": {
+   "before": 67.74070783515394,
+   "after": 69.79576301666985
+  },
+  "invoice-cn": {
+   "before": 68.85245899237795,
+   "after": 69.72445062095414
+  },
+  "Contract-cn": {
+   "before": 72.4082140454491,
+   "after": 74.25015555090226
+  },
+  "receipt-en": {
+   "before": 81.02887551374221,
+   "after": 83.09845272827467
+  },
+  "Form-en": {
+   "before": 67.2494956106928,
+   "after": 67.65299258435697
+  },
+  "invoice-en": {
+   "before": 65.25809714947923,
+   "after": 68.21862346451958
+  },
+  "Contract-en": {
+   "before": 77.97232764100103,
+   "after": 78.21721560469763
+  }
+ },
+ "documents_better": 291,
+ "documents_worse": 138,
+ "sign_test_p_two_sided": 1.1924206230182114e-13,
+ "mean_gain_per_document_f1_points": 1.3276550719045261,
+ "bootstrap_95ci_points": [
+  1.0313182161126593,
+  1.6593528605767003
+ ],
+ "zoom": {
+  "documents_with_disputes": 1614,
+  "errors": 0,
+  "disputes": 13297,
+  "located": 4885,
+  "changed": 1012
+ },
+ "note": "document F1 by the benchmark's own matching; the answer key is used only here, after the run"
+}

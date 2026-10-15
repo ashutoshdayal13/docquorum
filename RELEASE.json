@@ -1,0 +1,167 @@
+{
+ "written_utc": "2026-10-15 15:40",
+ "model": "Qwen/Qwen3.8-27B-FP8, vLLM 0.27.1, greedy decoding; MinerU2.5-2509-1.2B parser",
+ "serving": "serve/serve_qwen38_27b.sh; on the shared GPU GPU_UTIL 0.62-0.66, and from 14 October 2026 SPEC_TOKENS=2 (speculative decoding, which leaves greedy outputs unchanged up to floating-point batch effects)",
+ "pipeline_sha256": {
+  "docquorum/__init__.py": "b0081b83dc0afbef78f5e0a34ab0659218d09e6d0c1649cd46eab648efdd9cd9",
+  "docquorum/agents/__init__.py": "487eac7532dfd1dc2ba4d29bcd9a4cf6abf80112eaf49605e31931fe121a37b1",
+  "docquorum/agents/column_reader.py": "89631571fee21641ec8df5babf4f69d4f189c231aa8a4d8d8e0b76c203dfc3a4",
+  "docquorum/agents/layout.py": "963358851c354313a4599ddcf4f6b5a2fa6b1715c116ba6b9a8232a77e77cc63",
+  "docquorum/agents/oneshot.py": "c94abd1d028aa82c4e9f31b27c008b03ee5667e841a933d5b123231150db5700",
+  "docquorum/agents/prompts.py": "72904be9cb0e8205057079e5b74e8fc899219c5d031b878cd492b2e33d66ce55",
+  "docquorum/agents/reader.py": "cc374e762aa628aa47c993205cb5359bd72e54948baabce830ee14ac5c3bc48a",
+  "docquorum/agents/ruled_reader.py": "54c1a1e5f8e728bf0bf0ed0e529912c8398d17132a9693de2622b31f00e7f446",
+  "docquorum/agents/whole.py": "f004832aa8c02ca7bfddbafc5e3a95aba27e2f15f8acaab7fcb93a78b55e84e6",
+  "docquorum/checks/__init__.py": "7c3ffbdc5a38e9adf3dffc5a885bd39f45854ad678a1f451653e67573ba97b0f",
+  "docquorum/checks/__main__.py": "d3e92adaad611b013a9fcc5ca3579bafd1cbd8db7737054ab32c6aa77fe33b07",
+  "docquorum/checks/blank_boxes.py": "5f43f661d0d416bf1e29d4128601a421dc6524a057c9659fa9759d7dfcbaa190",
+  "docquorum/checks/carry_down.py": "df199151997b9bb4e0438b9a08d0b9bdcd20db12451baa26aa7124672de4dcc4",
+  "docquorum/checks/conform.py": "20ffaf9ae73fe441a065ec5725f322368a9bc3794ef9ab6f729e5827b3061eba",
+  "docquorum/checks/copied_rows.py": "3fa8353a071e3b96a258db206bb72b764c1d624f927aa04b5f738a789e01cf36",
+  "docquorum/checks/dedupe.py": "2b36f51ecc0fbd4d3c86e781bdbfd4221f1d01f662bd9003f27d408033c9d691",
+  "docquorum/checks/page_index.py": "7dc00cd978c56ee27778ab1c259f3d18584ee7f6cd2ee8efc36bd9685f3ec2cf",
+  "docquorum/checks/printed_numbers.py": "2b57858b24ee26cb8f06c4b9bd1c7248757f972fb3d3b8acd12f82653f1ea304",
+  "docquorum/checks/printed_pages.py": "7a6639b8c8e418432860a09b6f3b2715be487aae928cf40839284257e0a6b342",
+  "docquorum/checks/printed_quotes.py": "f68009b61c37def7f92873532f3b11375a9dcaf7b76973dc5cff1346ddd0e980",
+  "docquorum/checks/printed_suffix.py": "13ce98a05acd07aa85d559c7298648b057de8d441999ebad6c43c28832bea946",
+  "docquorum/checks/record_counts.py": "6556a77e00560484118b4d2d3a30b9fab1a53bc89104e1c473131cedf6f88440",
+  "docquorum/checks/spacing.py": "e208533c8026b00de415b0a426af1a1086398841ff5b4e6920f62f3383d674bc",
+  "docquorum/checks/stacked_rows.py": "3ed15e36e02ab3618486be36497232ac8bfa76be83c76503d2171b6b27c2696d",
+  "docquorum/checks/template_rows.py": "47a2e24d5aa168db173fe543b2500d11f668ff7d9d1ec9486a2937a8f0909f1d",
+  "docquorum/config.py": "4a0645ad133bf69b2f9bd5373aef84b0db2b4806123e82a553b4a603a5725248",
+  "docquorum/extract.py": "eb033e7be2cbe2238bbae7f77656a07fffba31ffaff1b10ba5ac159c2a57184d",
+  "docquorum/extractbench.py": "7c257c167bc131d27daf3dace933b79082f66e1a4dbbd53839e1a526a4e9b971",
+  "docquorum/quorum.py": "67e05e6c8b5259a952b6be83cd6ad148fa2ac8688e9a8aaf09a7de73fb9fb623",
+  "docquorum/tools/__init__.py": "76a9af8c849bb268bf407fafcc393d5dc3390407d38bb0100c4ed715deeb410a",
+  "docquorum/tools/images.py": "183855eddb22143b1b2b3b86847dc0158b6f65cd529af74caf369c7d5e122505",
+  "docquorum/tools/layout.py": "a63aa41aa20817a1d4420b90248d27a947e7b844b4726f0991cba8a985d3f26e",
+  "docquorum/tools/llm.py": "d51d75b564e6b7c4e6dc408ef4dcae382dae56d190c8c9591596aebad6f2633e",
+  "docquorum/tools/native.py": "357cd62242d7ff9d729c574b7279890cd345775f090066e0e24cd5ab75d304e5",
+  "docquorum/tools/parser.py": "eb2e3d02fb99bdd9d02493b87af7e67cd16d06153d3948e79e5c998c64b11f4a",
+  "docquorum/tools/pdf.py": "8db5dad3b5637ad552e6c20faa3489584ea33f91b8f7a9513903a6e803845459",
+  "docquorum/tools/rows.py": "d2542c6e42df70110c7a85519af5673c5baede6b445b4b3367ab919e5d31ef46",
+  "docquorum/tools/schema.py": "5e1bf3dff6bb909f590c2c7a1ee95cc832a99c642a2dcd144f78028be55e4ee9",
+  "docquorum/zoom.py": "58bc96bd15fc6d0321cd5f83db2b3ff03a91a7b0c9ca92c848b3536142cb5973"
+ },
+ "results": [
+  {
+   "benchmark": "VAREX (image input)",
+   "metric": "exact match, normalized",
+   "score": 98.29728704230696,
+   "place": "1st (Gemini 2.5 Pro 98.0)",
+   "configuration": "pipeline + zoom re-reading (held-out run)",
+   "files": "results/varex-zoom",
+   "without_zoom": {
+    "score": 98.09808385505596,
+    "predictions": "results/varex"
+   }
+  },
+  {
+   "benchmark": "UNIKIE-BENCH, constrained category",
+   "metric": "macro F1",
+   "score": 82.61809174889247,
+   "place": "1st (Gemini-3-Pro 82.37)",
+   "configuration": "six_readings_enlarged",
+   "files": "results/unikie/readings"
+  },
+  {
+   "benchmark": "ExtractBench",
+   "metric": "Overall value F1",
+   "score": 95.42784046488673,
+   "place": "3rd (two commercial systems at 95.91)",
+   "configuration": "the development set",
+   "files": "results/extractbench/predictions",
+   "per_split": {
+    "short": 96.33899495110072,
+    "medium": 94.10888505518105,
+    "long": 90.41017544614843
+   }
+  },
+  {
+   "benchmark": "LongArray-Extract",
+   "metric": "macro document accuracy",
+   "score": 98.05249971235187,
+   "place": "2nd of 12 (Extend MAX 99.2)",
+   "configuration": "final pipeline (run folder results/multibench/longarray_27b_ref4)",
+   "files": "results/longarray"
+  },
+  {
+   "benchmark": "UNIKIE-BENCH, open category",
+   "metric": "macro F1",
+   "score": 72.32797249513875,
+   "place": "2nd of 16 (Gemini-3-Pro 81.65)",
+   "configuration": "three readings + zoom re-reading (held-out run)",
+   "files": "results/unikie_open/readings, results/unikie_open/zoom",
+   "without_zoom": 71.07268619552556
+  },
+  {
+   "benchmark": "DocuBench v0.2.0",
+   "metric": "macro field accuracy",
+   "score": 86.44313037338084,
+   "place": "5th of 10 (DocuPipe 97.02)",
+   "configuration": "pipeline as released; four fixes found on this benchmark",
+   "files": "results/docubench"
+  }
+ ],
+ "changes_since_frozen": [
+  {
+   "date": "2026-10-14",
+   "commit": "13bc487",
+   "change": "native files (.xlsx .docx .html .xml .csv .txt) become a text-layer PDF; small images are enlarged by a whole factor; chunked lists get the document's legends and per-subject tables; a failed planning call falls back instead of failing the document",
+   "results_touched": "LongArray, DocuBench, UNIKIE (small images)"
+  },
+  {
+   "date": "2026-10-14",
+   "commit": "2f4e7db",
+   "change": "the reference step also copies facts printed once (period, account, section), verbatim",
+   "results_touched": "LongArray"
+  },
+  {
+   "date": "2026-10-14",
+   "commit": "a7956e5",
+   "change": "a layout reader reads one list; the reader agent reads the schema's other fields",
+   "results_touched": "VAREX"
+  },
+  {
+   "date": "2026-10-14",
+   "commit": "7795457",
+   "change": "a timed-out model call is not re-sent",
+   "results_touched": "none (time only)"
+  },
+  {
+   "date": "2026-10-14",
+   "commit": "379077d, f8e314d",
+   "change": "check: last digits as printed (checks/printed_suffix.py)",
+   "results_touched": "LongArray (applied to final outputs afterwards); no ExtractBench or VAREX output changes"
+  },
+  {
+   "date": "2026-10-15",
+   "commit": "4d33fd7",
+   "change": "a layout reader that finds no records hands the document to the route",
+   "results_touched": "VAREX (11 forms), DocuBench (1)"
+  },
+  {
+   "date": "2026-10-15",
+   "commit": "00d1020",
+   "change": "zoom re-reading after the quorum (optional, --zoom)",
+   "results_touched": "VAREX and UNIKIE open headlines"
+  },
+  {
+   "date": "2026-10-15",
+   "commit": "0dececb",
+   "change": "the quorum passes over a reading caught in a loop; the ruled reader only where rules are found",
+   "results_touched": "DocuBench (2 documents); checked to change nothing else"
+  },
+  {
+   "date": "2026-10-15",
+   "commit": "3c54355",
+   "change": "a long scan keeps its page-image reading when the parse reading lost the list",
+   "results_touched": "DocuBench (1 document)"
+  }
+ ],
+ "rules": [
+  "no answer key in any step of the method (answer keys only score finished outputs)",
+  "zero-shot with respect to each benchmark's output conventions",
+  "each benchmark scored with its own scorer; no leaderboard submission"
+ ]
+}

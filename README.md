@@ -14,7 +14,10 @@ Each benchmark below is scored with its own scorer and placed against every publ
 | UNIKIE-BENCH (4,472 images, 11 scenarios) | six-reading macro F1 **82.62** | **1st** (Gemini-3-Pro 82.37) |
 | ExtractBench (370 enterprise PDFs, 1-163 pages) | Overall **95.43** (short 96.34, medium 94.11, long 90.41) | 3rd (two commercial systems at 95.91) |
 | LongArray-Extract (45 long documents, 29,328 rows) | macro accuracy **98.05** | 2nd of 12 (Extend MAX 99.2; Reducto Deep Extract 97.4) |
-| UNIKIE-BENCH open category (1,661 documents) | macro F1 **71.07** | 2nd of 16 (Gemini-3-Pro 81.65) |
+| UNIKIE-BENCH open category (1,661 documents) | macro F1 **72.33** with zoom re-reading (71.07 without) | 2nd of 16 (Gemini-3-Pro 81.65) |
+
+Also run: DocuBench (72 documents in 10 file types), 86.44, 5th of 10. Zoom re-reading, the new step, was tested
+held-out on two benchmarks: VAREX (60 forms better, 25 worse) and UNIKIE open (291 documents better, 138 worse).
 
 * Details, caveats, per-document scores: [`results/README.md`](results/README.md)
 * How it works, with a diagram and worked examples: [`docs/docquorum.pdf`](docs/docquorum.pdf), [documentation and build instructions](docs/README.md)

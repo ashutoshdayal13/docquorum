@@ -2,16 +2,16 @@
   "benchmark": "UNIKIE-BENCH, open category",
   "documents": 1661,
   "metric": "macro F1 over 8 scenarios (benchmark kie_evaluator)",
-  "score": 71.07268619552556,
+  "score": 72.32797249513875,
   "per_scenario": {
-    "receipt-cn": 68.07131277630822,
-    "Form-cn": 67.74070783515394,
-    "invoice-cn": 68.85245899237795,
-    "Contract-cn": 72.4082140454491,
-    "receipt-en": 81.02887551374221,
-    "Form-en": 67.2494956106928,
-    "invoice-en": 65.25809714947923,
-    "Contract-en": 77.97232764100103
+    "receipt-cn": 67.66612639073496,
+    "Form-cn": 69.79576301666985,
+    "invoice-cn": 69.72445062095414,
+    "Contract-cn": 74.25015555090226,
+    "receipt-en": 83.09845272827467,
+    "Form-en": 67.65299258435697,
+    "invoice-en": 68.21862346451958,
+    "Contract-en": 78.21721560469763
   },
   "readings": {
     "oneshot": 1661,
@@ -59,5 +59,23 @@
       }
     }
   },
-  "configuration": "DocQuorum, three readings from Qwen3.8-27B (the constrained track's frozen held-out configuration): the benchmark-protocol one-shot reading, and the reader agent on the image and on the MinerU parse; quorum by recall-weighted agreement (beta 2). Small images (all 207 English receipts) are enlarged before the image and parse readings and the parse; the rule was found on this track's English receipts."
+  "configuration": "DocQuorum, three readings from Qwen3.8-27B (the benchmark-protocol one-shot reading, and the reader agent on the image and on the MinerU parse), quorum by recall-weighted agreement (beta 2), then zoom re-reading of the disputed fields. Small images (all 207 English receipts) are enlarged before the image and parse readings and the parse; that rule was found on this track's English receipts.",
+  "without_zoom": {
+    "score": 71.07268619552556,
+    "per_scenario": {
+      "receipt-cn": 68.07131277630822,
+      "Form-cn": 67.74070783515394,
+      "invoice-cn": 68.85245899237795,
+      "Contract-cn": 72.4082140454491,
+      "receipt-en": 81.02887551374221,
+      "Form-en": 67.2494956106928,
+      "invoice-en": 65.25809714947923,
+      "Contract-en": 77.97232764100103
+    }
+  },
+  "zoom": {
+    "outputs": "results/unikie_open/zoom",
+    "comparison": "results/unikie_open/zoom/comparison.json",
+    "note": "zoom re-reading after the quorum, crops capped at 1,605,632 pixels; second held-out test of the method, design unchanged since VAREX"
+  }
 }

@@ -243,7 +243,8 @@ the constrained track (`benchmarks/unikie/`, with the open-category `DQ_UNIKIE_*
 
 | macro F1, all 1,661 documents | score | vs. the paper's open-category table |
 |---|---:|---|
-| **DocQuorum** (3 readings, Qwen3.8-27B) | **71.07** | **2nd of 16** |
+| **DocQuorum with zoom re-reading** (3 readings, Qwen3.8-27B) | **72.33** | **2nd of 16** |
+| DocQuorum without zoom re-reading | 71.07 | 2nd of 16 |
 | Gemini-3-Pro (best published) | 81.65 | 1st |
 | Qwen3-VL-Plus | 70.61 | 3rd |
 | Qwen3.8-27B, the benchmark's own one-shot protocol | 70.91 | |
@@ -259,17 +260,57 @@ the constrained track (`benchmarks/unikie/`, with the open-category `DQ_UNIKIE_*
   measurement; the one-shot reading keeps the protocol's encoding.
 * The reader agent's image and parse readings are weaker than the one-shot reading on this track's
   long nested templates (unlike the constrained track, where all three are within one point).
+* **Zoom re-reading, second held-out test** (`benchmarks/unikie/zoom_open.py`; design unchanged
+  since VAREX; crops capped at the benchmark's 1,605,632 pixels like every input). 1,614
+  documents had a disputed field: 13,297 disputes, 4,885 located on
+  the page, 1,012 values changed. Document by document: 291 better,
+  138 worse (two-sided sign test p < 1e-12); mean gain 1.33 F1
+  points per document, 95% bootstrap interval 1.03 to 1.66.
+  Seven of the eight scenarios improve; Chinese receipts lose 0.40, mostly single digits read
+  as another (1 as 2) in the crop. Outputs and the comparison: `unikie_open/zoom/`.
 
-| scenario | Gemini-3-Pro | Qwen3-VL-Plus | Qwen3-VL-8B | 27B one-shot | DocQuorum | rank |
-|---|---:|---:|---:|---:|---:|:---:|
-| Receipt (zh) | 78.50 | 71.14 | 68.93 | 69.60 | **68.07** | 5 |
-| Form (zh) | 79.17 | 69.87 | 64.70 | 68.82 | **67.74** | 4 |
-| Invoice (zh) | 78.63 | 69.59 | 63.38 | 70.16 | **68.85** | 3 |
-| Contract (zh) | 75.96 | 70.95 | 65.59 | 71.58 | **72.41** | 2 |
-| Receipt (en) | 93.57 | 68.27 | 71.40 | 69.54 | **81.03** | 2 |
-| Form (en) | 80.41 | 66.82 | 61.46 | 66.30 | **67.25** | 2 |
-| Invoice (en) | 87.06 | 73.45 | 67.34 | 72.99 | **65.26** | 5 |
-| Contract (en) | 79.90 | 74.81 | 76.08 | 78.29 | **77.97** | 2 |
-| *macro average* | 81.65 | 70.61 | 67.36 | 70.91 | **71.07** | 2 |
+| scenario | Gemini-3-Pro | Qwen3-VL-Plus | Qwen3-VL-8B | 27B one-shot | DocQuorum | + zoom | rank (+ zoom) |
+|---|---:|---:|---:|---:|---:|---:|:---:|
+| Receipt (zh) | 78.50 | 71.14 | 68.93 | 69.60 | 68.07 | **67.67** | 5 |
+| Form (zh) | 79.17 | 69.87 | 64.70 | 68.82 | 67.74 | **69.80** | 3 |
+| Invoice (zh) | 78.63 | 69.59 | 63.38 | 70.16 | 68.85 | **69.72** | 2 |
+| Contract (zh) | 75.96 | 70.95 | 65.59 | 71.58 | 72.41 | **74.25** | 2 |
+| Receipt (en) | 93.57 | 68.27 | 71.40 | 69.54 | 81.03 | **83.10** | 2 |
+| Form (en) | 80.41 | 66.82 | 61.46 | 66.30 | 67.25 | **67.65** | 2 |
+| Invoice (en) | 87.06 | 73.45 | 67.34 | 72.99 | 65.26 | **68.22** | 4 |
+| Contract (en) | 79.90 | 74.81 | 76.08 | 78.29 | 77.97 | **78.22** | 2 |
+| *macro average* | 81.65 | 70.61 | 67.36 | 70.91 | 71.07 | **72.33** | 2 |
 
 Readings: `results/unikie_open/readings/{oneshot,image,parse}/<scenario>.json`.
+
+## DocuBench v0.2.0 (also run; not a leading result)
+
+72 documents in 10 file types (58 PDFs, 5 JPEGs, and one or two each of PNG, TIFF, XLSX, DOCX,
+HTML, XML, CSV and TXT), each with its own schema and guideline (sent as the task text, as the
+benchmark does for every system). Scored with the benchmark's own `scorer.py`
+(`score_standardization`), macro over documents.
+
+| macro field accuracy, all 72 documents | score | vs. the DocuBench leaderboard |
+|---|---:|---|
+| DocuPipe (high effort) | 97.02 | 1st |
+| Claude Sonnet 5 (direct LLM) | 91.73 | 3rd |
+| Reducto Deep Extract | 89.38 | 4th |
+| **DocQuorum** (Qwen3.8-27B + MinerU2.5) | **86.44** | **5th of 10** |
+| Reducto (standard) | 81.11 | 6th |
+
+* 34 of 72 documents score 95 or more; every non-PDF file scores 95 to 100 (native files are
+  turned into a text-layer PDF, `docquorum/tools/native.py`).
+* Four pipeline fixes came from this benchmark, so the numbers below are development
+  measurements: a layout reader that finds no records hands the document to the route
+  (WM9ZKrAr 0 -> 87.3); the ruled-table reader only where printed rules are found (vAdukzpt
+  0.2 -> 81.4); the quorum passes over a reading caught in a repetition loop (f9nrfUNC
+  5.3 -> 16.5); a long scan keeps its page-image reading when the parse reading lost most of
+  the list (UqY6ItFZ 5.8 -> 78.3). Each was checked to change no output on the other benchmarks.
+  The last two were applied to the run's stored readings afterwards
+  (`benchmarks/multibench/apply_reading_rules.py`; originals kept); for the first two, the
+  documents were read again.
+* Remaining errors: two dictionary scans in Devanagari and Hebrew (9.9, 16.5), where the parser
+  garbles the script and the model loops; a one-page Japanese gazette (17.6); and several scans
+  where the quorum keeps a weaker reading than one it had (choosing better would need the answer key).
+* Files: `docubench/predictions/<document>.json`, `docubench/scores.json`,
+  `docubench/provenance.json`.

@@ -117,7 +117,7 @@
 \# & System & Score\\
 \midrule
 1 & Gemini-3-Pro & 81.65\\
-\rowcolor{teal!9} \textbf{2} & \textbf{DocQuorum (ours)} & \textbf{71.07}\\
+\rowcolor{teal!9} \textbf{2} & \textbf{DocQuorum (ours)} & \textbf{72.33}\\
 3 & Qwen3-VL-Plus & 70.61\\
 4 & Qwen-VL-Max & 69.95\\
 5 & Qwen3-VL-8B & 67.36\\
@@ -152,4 +152,22 @@
 10 & LlamaParse Agentic & 34.7\\
 11 & GPT-5.5 & 31.6\\
 12 & Gemini 3.5 Flash & 31.1\\
+\bottomrule\end{tabularx}\endgroup
+\chapterpage{RESULTS}{DocuBench}
+72 documents in 10 file types; macro field accuracy (\%) by the benchmark's own scorer. Published systems: the DocuBench leaderboard.
+
+\begingroup\small\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{0.62\linewidth}{@{}rYr@{}}\toprule
+\# & System & Score\\
+\midrule
+1 & DocuPipe (high effort) & 97.02\\
+2 & DocuPipe (standard effort) & 96.14\\
+3 & Claude Sonnet 5 (direct LLM) & 91.73\\
+4 & Reducto Deep Extract & 89.38\\
+\rowcolor{teal!9} \textbf{5} & \textbf{DocQuorum (ours)} & \textbf{86.44}\\
+6 & Reducto (standard) & 81.11\\
+7 & Extend & 80.28\\
+8 & GPT-5.5 (direct LLM) & 76.48\\
+9 & Gemini 3.5 Flash (direct LLM) & 72.98\\
+10 & Unstructured & 67.67\\
 \bottomrule\end{tabularx}\endgroup
