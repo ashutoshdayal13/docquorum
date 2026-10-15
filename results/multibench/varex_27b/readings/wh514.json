@@ -1,0 +1,29 @@
+{
+ "primary": {
+  "vehicle_serial_number": "VIN12345678901234567",
+  "vehicle_registration_number": "TX1234567",
+  "vehicle_state": "TX",
+  "vehicle_license_plate": "ABC12345",
+  "vehicle_make": "Ford",
+  "vehicle_model": "F-150 SuperCrew",
+  "vehicle_color": "BLK"
+ },
+ "parse": {
+  "vehicle_serial_number": "VIN12345678901234567",
+  "vehicle_registration_number": "TX1234567",
+  "vehicle_state": "TX",
+  "vehicle_license_plate": "ABC12345",
+  "vehicle_make": "Ford",
+  "vehicle_model": "F-150 SuperCrew",
+  "vehicle_color": "BLK"
+ },
+ "oneshot": {
+  "vehicle_serial_number": "VIN12345678901234567",
+  "vehicle_registration_number": "TX1234567",
+  "vehicle_state": "TX",
+  "vehicle_license_plate": "ABC12345",
+  "vehicle_make": "Ford",
+  "vehicle_model": "F-150 SuperCrew",
+  "vehicle_color": "BLK"
+ }
+}

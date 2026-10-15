@@ -1,0 +1,32 @@
+{
+ "primary": {
+  "patient_recipient_name": "Ferguson, Juana J.",
+  "patient_recipient_ssn": "260-69-8670",
+  "patient_recipient_statement": "I am currently in a medical facility and expect to stay for less than 90 days. _________________________ needs to continue to receive his or her Supplemental Security Income payment to continue to maintain his or her household or living arrangement that he or she intends to return to after release from the medical facility.",
+  "patient_recipient_representative_payee_name": "Anthony E. Robinson",
+  "patient_recipient_representative_payee_signature_date": "07/20/2023",
+  "medical_facility": {
+   "name_and_address": "Port Andrea General Hospital, 50555 Hernandez Wall, Port Andrea, MN 79751"
+  }
+ },
+ "parse": {
+  "patient_recipient_name": "Ferguson, Juana J.",
+  "patient_recipient_ssn": "260-69-8670",
+  "patient_recipient_statement": "I am currently in a medical facility and expect to stay for less than 90 days. Ferguson, Juana J. needs to continue to receive his or her Supplemental Security Income payment to continue to maintain his or her household or living arrangement that he or she intends to return to after release from the medical facility.",
+  "patient_recipient_representative_payee_name": "Anthony E. Robinson",
+  "patient_recipient_representative_payee_signature_date": "07/20/2023",
+  "medical_facility": {
+   "name_and_address": "Port Andrea General Hospital, 50555 Hernandez Wall, Port Andrea, MN 79751"
+  }
+ },
+ "oneshot": {
+  "patient_recipient_name": "Ferguson, Juana J.",
+  "patient_recipient_ssn": "260-69-8670",
+  "patient_recipient_statement": "I am currently in a medical facility and expect to stay for less than 90 days. _________________________ needs to continue to receive his or her Supplemental Security Income payment to continue to maintain his or her household or living arrangement that he or she intends to return to after release from the medical facility.",
+  "patient_recipient_representative_payee_name": "Anthony E. Robinson",
+  "patient_recipient_representative_payee_signature_date": "07/20/2023",
+  "medical_facility": {
+   "name_and_address": "Port Andrea General Hospital, 50555 Hernandez Wall, Port Andrea, MN 79751"
+  }
+ }
+}

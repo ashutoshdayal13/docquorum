@@ -1,0 +1,23 @@
+{
+ "primary": {
+  "employee_name": "Luis Wujek",
+  "supervisor": {
+   "name": "Caroline J. Mathis",
+   "title": "Social research officer, government"
+  }
+ },
+ "parse": {
+  "employee_name": "Luis Wujek",
+  "supervisor": {
+   "name": "Caroline J. Mathis",
+   "title": "Social research officer, government"
+  }
+ },
+ "oneshot": {
+  "employee_name": "Luis Wujek",
+  "supervisor": {
+   "name": "Caroline J. Mathis",
+   "title": "Social research officer, government"
+  }
+ }
+}

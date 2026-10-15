@@ -1,0 +1,134 @@
+{
+ "primary": {
+  "seller_name": "Jeffrey K. Villalobos",
+  "seller_id": "JD-2016-MI-58408",
+  "seller_phone": "(074) 422-9046",
+  "seller_cell_phone": "(459) 797-6216",
+  "seller_email": "jvillalobos@marshalljackson.com",
+  "mre_representative": "Patricia T. Alvarado",
+  "mre_representative_phone": "(379) 352-5154",
+  "mre_representative_cell_phone": "(329) 725-3634",
+  "mre_representative_email": "palvarado@peterson.com",
+  "signature_date": "03/25/2023",
+  "seller_address": {
+   "street": "770 Edwards View",
+   "city": "Smithberg",
+   "state": "MI"
+  },
+  "regulated_materials": [
+   {
+    "material_name": "Aluminum cans",
+    "quantity": 3388.51,
+    "unit": "pound"
+   },
+   {
+    "material_name": "Copper wire",
+    "quantity": 466408.19,
+    "unit": "pound"
+   },
+   {
+    "material_name": "Steel beams",
+    "quantity": 37.08,
+    "unit": "pound"
+   },
+   {
+    "material_name": "Brass fixtures",
+    "quantity": 1200.75,
+    "unit": "pound"
+   },
+   {
+    "material_name": "Lead batteries",
+    "quantity": 850.25,
+    "unit": "each"
+   }
+  ]
+ },
+ "parse": {
+  "seller_name": "Jeffrey K. Villalobos",
+  "seller_id": "JD-2016-MI-58408",
+  "seller_phone": "(074) 422-9046",
+  "seller_cell_phone": "(459) 797-6216",
+  "seller_email": "jvillalobos@marshalljackson.com",
+  "mre_representative": "Patricia T. Alvarado",
+  "mre_representative_phone": "(379) 352-5154",
+  "mre_representative_cell_phone": "(329) 725-3634",
+  "mre_representative_email": "palvarado@peterson.com",
+  "signature_date": "03/25/2023",
+  "seller_address": {
+   "street": "770 Edwards View",
+   "city": "Smithberg",
+   "state": "MI"
+  },
+  "regulated_materials": [
+   {
+    "material_name": "Aluminum cans",
+    "quantity": 3388.51,
+    "unit": "pound"
+   },
+   {
+    "material_name": "Copper wire",
+    "quantity": 466408.19,
+    "unit": "pound"
+   },
+   {
+    "material_name": "Steel beams",
+    "quantity": 37.08,
+    "unit": "pound"
+   },
+   {
+    "material_name": "Brass fixtures",
+    "quantity": 1200.75,
+    "unit": "pound"
+   },
+   {
+    "material_name": "Lead batteries",
+    "quantity": 850.25,
+    "unit": "each"
+   }
+  ]
+ },
+ "oneshot": {
+  "seller_name": "Jeffrey K. Villalobos",
+  "seller_id": "JD-2016-MI-58408",
+  "seller_phone": "(074) 422-9046",
+  "seller_cell_phone": "(459) 797-6216",
+  "seller_email": "jvillalobos@marshalljackson.com",
+  "mre_representative": "Patricia T. Alvarado",
+  "mre_representative_phone": "(379) 352-5154",
+  "mre_representative_cell_phone": "(329) 725-3634",
+  "mre_representative_email": "palvarado@peterson.com",
+  "signature_date": "03/25/2023",
+  "seller_address": {
+   "street": "770 Edwards View",
+   "city": "Smithberg",
+   "state": "MI"
+  },
+  "regulated_materials": [
+   {
+    "material_name": "Aluminum cans",
+    "quantity": 3388.51,
+    "unit": "pound"
+   },
+   {
+    "material_name": "Copper wire",
+    "quantity": 466408.19,
+    "unit": "pound"
+   },
+   {
+    "material_name": "Steel beams",
+    "quantity": 37.08,
+    "unit": "pound"
+   },
+   {
+    "material_name": "Brass fixtures",
+    "quantity": 1200.75,
+    "unit": "pound"
+   },
+   {
+    "material_name": "Lead batteries",
+    "quantity": 850.25,
+    "unit": "each"
+   }
+  ]
+ }
+}

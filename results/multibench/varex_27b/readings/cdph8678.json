@@ -1,0 +1,92 @@
+{
+ "primary": {
+  "license_number": "COS-2024-CA-10054",
+  "name_of_firm": "GlowEssence Cosmetics Inc.",
+  "dba_name": "GlowEssence",
+  "website": "www.glowessence.com",
+  "owner_corporate_name": "GlowEssence Cosmetics Inc.",
+  "state_of_incorporation": "California",
+  "owners_officers_names": [
+   "Keano H. Saran, CEO",
+   "Albert Y. Roberts, COO",
+   "Alana Adams, CFO"
+  ],
+  "other_products": "Skincare serums",
+  "mailing_address": {
+   "street": "123 Beauty Boulevard",
+   "city": "Los Angeles",
+   "state": "California",
+   "zip_code": "90012"
+  },
+  "facility_address": {
+   "street": "123 Beauty Boulevard",
+   "city": "Los Angeles",
+   "state": "California",
+   "zip_code": "90012"
+  },
+  "business_license_information": {
+   "license_number": "COS-2024-CA-10054",
+   "permit_number": "PMT-2024-CA-10054"
+  }
+ },
+ "parse": {
+  "license_number": "COS-2024-CA-10054",
+  "name_of_firm": "GlowEssence Cosmetics Inc.",
+  "dba_name": "GlowEssence",
+  "website": "www.glowessence.com",
+  "owner_corporate_name": "GlowEssence Cosmetics Inc.",
+  "state_of_incorporation": "California",
+  "owners_officers_names": [
+   "Keano H. Saran, CEO",
+   "Albert Y. Roberts, COO",
+   "Alana Adams, CFO"
+  ],
+  "other_products": "Skincare serums",
+  "mailing_address": {
+   "street": "123 Beauty Boulevard",
+   "city": "Los Angeles",
+   "state": "California",
+   "zip_code": "90012"
+  },
+  "facility_address": {
+   "street": "123 Beauty Boulevard",
+   "city": "Los Angeles",
+   "state": "California",
+   "zip_code": "90012"
+  },
+  "business_license_information": {
+   "license_number": "COS-2024-CA-10054",
+   "permit_number": "PMT-2024-CA-10054"
+  }
+ },
+ "oneshot": {
+  "license_number": "COS-2024-CA-10054",
+  "name_of_firm": "GlowEssence Cosmetics Inc.",
+  "dba_name": "GlowEssence",
+  "website": "www.glowessence.com",
+  "owner_corporate_name": "GlowEssence Cosmetics Inc.",
+  "state_of_incorporation": "California",
+  "owners_officers_names": [
+   "Keano H. Saran, CEO",
+   "Albert Y. Roberts, COO",
+   "Alana Adams, CFO"
+  ],
+  "other_products": "Skincare serums",
+  "mailing_address": {
+   "street": "123 Beauty Boulevard",
+   "city": "Los Angeles",
+   "state": "California",
+   "zip_code": "90012"
+  },
+  "facility_address": {
+   "street": "123 Beauty Boulevard",
+   "city": "Los Angeles",
+   "state": "California",
+   "zip_code": "90012"
+  },
+  "business_license_information": {
+   "license_number": "COS-2024-CA-10054",
+   "permit_number": "PMT-2024-CA-10054"
+  }
+ }
+}

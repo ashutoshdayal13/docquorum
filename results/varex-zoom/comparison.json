@@ -1,0 +1,28 @@
+{
+ "forms": 1777,
+ "forms_better": 60,
+ "forms_worse": 25,
+ "sign_test_p_two_sided": 0.00018679938527835335,
+ "mean_gain_per_form_points": 0.21136606136381875,
+ "bootstrap_95ci_points": [
+  0.09379485475631935,
+  0.33216805512456976
+ ],
+ "exact_match_normalized": {
+  "before": 98.09808385505596,
+  "after": 98.29728704230696
+ },
+ "changed_values": 141,
+ "changed_values_vs_answer_key": {
+  "fixed": 88,
+  "broke": 38,
+  "both wrong": 15
+ },
+ "note": "analysis after the run; the answer key plays no part in the method",
+ "zoom": {
+  "forms_with_disputes": 413,
+  "disputes": 1449,
+  "located": 1334,
+  "changed": 141
+ }
+}

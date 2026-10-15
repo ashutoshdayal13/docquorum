@@ -1,0 +1,14 @@
+{
+ "employee_id": "EMP123456789",
+ "login_number": "LOGIN123456",
+ "work_phone": "(486) 029-3519 x1234",
+ "monthly_transit_cost": 13.59,
+ "smartrip_card_number": "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+ "work_email": "kbon dumier@howell.com",
+ "date_of_birth": "1213",
+ "van_pool_details": {
+  "van_pool_operator": "First Class Vanpool Services",
+  "van_pool_registration_number": "VPR-2023-77795"
+ },
+ "applicant_name": "Kaylee E. Bondumier"
+}

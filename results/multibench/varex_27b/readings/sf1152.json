@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "name": "Solorzano, Stephanie F.",
+  "date_of_birth": "04/18/1968",
+  "social_security_number": "799-05-4494",
+  "beneficiaries": [
+   "Powers, Thomas Q.",
+   "Romero, Laura J.",
+   "Powers, Emily A.",
+   "Powers, Michael T."
+  ],
+  "date_of_designation": "11/15/2023",
+  "witnesses": [
+   "Laura J. Romero",
+   "Thomas Q. Powers"
+  ],
+  "return_address": "849 Haynes Valleys, Brittanyhaven, CO 02438",
+  "employment_details": {
+   "department": "Department of Energy",
+   "bureau": "Bureau of Chemical",
+   "division": "Division of",
+   "location": "Brittanyhaven, CO"
+  }
+ },
+ "parse": {
+  "name": "Solorzano, Stephanie F.",
+  "date_of_birth": "04/18/1968",
+  "social_security_number": "799-05-4494",
+  "beneficiaries": [
+   "Powers, Thomas Q.",
+   "Romero, Laura J.",
+   "Powers, Emily A.",
+   "Powers, Michael T."
+  ],
+  "date_of_designation": "11/15/2023",
+  "witnesses": [
+   "Laura J. Romero",
+   "Thomas Q. Powers"
+  ],
+  "return_address": "849 Haynes Valleys, Brittanyhaven, CO 02438",
+  "employment_details": {
+   "department": "Department of Energy",
+   "bureau": "Bureau of Chemical",
+   "division": "Division of",
+   "location": "Brittanyhaven, CO"
+  }
+ },
+ "oneshot": {
+  "name": "Solorzano, Stephanie F.",
+  "date_of_birth": "04/18/1968",
+  "social_security_number": "799-05-4494",
+  "beneficiaries": [
+   "Powers, Thomas Q.",
+   "Romero, Laura J.",
+   "Powers, Emily A.",
+   "Powers, Michael T."
+  ],
+  "date_of_designation": "11/15/2023",
+  "witnesses": [
+   "Laura J. Romero",
+   "Thomas Q. Powers"
+  ],
+  "return_address": "849 Haynes Valleys, Brittanyhaven, CO 02438",
+  "employment_details": {
+   "department": "Department of Energy",
+   "bureau": "Bureau of Chemical",
+   "division": "Division of",
+   "location": "Brittanyhaven, CO"
+  }
+ }
+}

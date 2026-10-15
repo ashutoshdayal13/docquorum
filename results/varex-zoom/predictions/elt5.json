@@ -1,0 +1,22 @@
+{
+ "lending_institution_name": "Suarez-Bell Financial Services",
+ "ein": "12-3456789",
+ "city": "East Derek",
+ "state": "CA",
+ "mailing_address": "982 Duran Gateway Suite",
+ "mailing_city": "East Derek",
+ "mailing_state": "CA",
+ "authorized_individual_name": "Isabela X. Oconnell, Engineer",
+ "lienholder_code": "NYDMV-LH-2023-54321",
+ "administrative_contact": {
+  "name": "Jacob E. Rodriguez",
+  "phone": "(392) 204-7719",
+  "email": "jrodriguez@bautista.com"
+ },
+ "technical_contact": {
+  "name": "Heidi Johnson",
+  "phone": "(608) 792-4317",
+  "email": "hjohnson@morris.com"
+ },
+ "address": "982 Duran Gateway Suite 074"
+}

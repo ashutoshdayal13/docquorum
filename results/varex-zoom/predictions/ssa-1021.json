@@ -1,0 +1,11 @@
+{
+ "applicant_name": "Esther Knapp",
+ "social_security_number": "635-48-4162",
+ "medicare_number": "A1B2C3D4E5",
+ "appeal_reason": "I disagree with the decision because my income was incorrectly calculated. I provided",
+ "spouse_information": {
+  "spouse_name": "Aziz H. Salas",
+  "spouse_social_security_number": "088-31-0790",
+  "spouse_medicare_number": "F6G7H8I9J0"
+ }
+}

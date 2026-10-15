@@ -11,10 +11,18 @@ Model: Qwen3.8-27B-FP8 served with vLLM, one GPU.
 
 | split | DocQuorum | rank among the 11 leaderboard rows scored with the current scorer |
 |---|---:|---|
-| short (252) | **96.11** | 3 |
-| medium (98) | **94.03** | 3 |
+| short (252) | **96.34** | 3 |
+| medium (98) | **94.11** | 3 |
 | long (20) | **90.41** | 3 (above LlamaExtract Agentic Plus, 90.18) |
-| **Overall** | **95.25** (95% CI 94.64-95.85) | **3** (also 3 of all 45 rows) |
+| **Overall** | **95.43** (95% CI 94.81-96.02) | **3** (also 3 of all 45 rows) |
+
+Scored against the dataset as published now (revision `51bf3a0`). The pipeline was developed on an
+earlier revision, on which the same outputs score 96.11 / 94.03 / 90.41, Overall 95.25 (95% CI
+94.64-95.85); the tables of changes below use that revision.
+
+Zoom re-reading (`docquorum/zoom.py`; see the VAREX section) was designed on the short split's 97
+documents decided by the quorum: 15 better, 4 worse, short split +0.10
+(`extractbench/scores/zoom_dev_short.json`). It is not part of the scores above.
 
 Leaders: LlamaExtract Agentic Plus 95.91, Pulse (Effort) 95.91; then DocQuorum; then
 LlamaExtract Agentic 94.77 and Codex (GPT-5.6 Sol Evidence) 93.77. The best open-weight entry on
@@ -150,18 +158,37 @@ benchmark's authors; the leaderboard reports one decimal.
 
 | exact match (normalized), all 1,777 forms | score | vs. the image-modality leaderboard |
 |---|---:|---|
-| **DocQuorum** (Qwen3.8-27B + MinerU2.5) | **98.10** | **1st, tied with Gemini 2.5 Pro at one decimal** |
-| Gemini 2.5 Pro | 98.0 | 1st |
+| **DocQuorum with zoom re-reading** (Qwen3.8-27B + MinerU2.5) | **98.30** | **1st** |
+| Gemini 2.5 Pro | 98.0 | 2nd |
+| DocQuorum without zoom re-reading | 98.10 | tied with Gemini 2.5 Pro at one decimal |
 | Gemini 2.5 Flash | 97.3 | 3rd |
 | Qwen3-VL-8B (best published open model) | 96.6 | 4th |
 
-| | DocQuorum | Gemini 2.5 Pro |
-|---|---:|---:|
-| ANLS (normalized) | **98.83** | 98.5 |
-| flat forms (299) | **98.38** | 97.3 |
-| nested forms (1,146) | **98.31** | 98.2 |
-| table forms (332) | 97.48 | **97.7** |
-| documents with every field right | **84.9%** | 82.8% |
+| | DocQuorum + zoom | DocQuorum | Gemini 2.5 Pro |
+|---|---:|---:|---:|
+| ANLS (normalized) | **98.87** | 98.83 | 98.5 |
+| flat forms (299) | 98.34 | **98.38** | 97.3 |
+| nested forms (1,146) | **98.60** | 98.31 | 98.2 |
+| table forms (332) | 97.57 | 97.48 | **97.7** |
+| documents with every field right | **86.2%** | 84.9% | 82.8% |
+
+**Zoom re-reading** (`docquorum/zoom.py`, new in this work). After the quorum keeps one whole
+reading, every field on which the readings disagree is located on the page (the MinerU block
+that prints the most of the proposed values) and read once more from a 300 dpi crop of that
+block, by a call that sees neither the readings nor their values. The kept value changes only
+when the zoomed value equals a value one of the readings already proposed. Its design was fixed
+on ExtractBench's short split (15 documents better, 4 worse); this VAREX run is its held-out test,
+one run, nothing changed afterwards:
+
+* 413 of 1,777 forms had a disputed field: 1,449 disputes, 1,334 located, 141 values changed.
+* Form by form: 60 better, 25 worse (two-sided sign test p = 0.0002); mean gain 0.21 points
+  per form, 95% bootstrap interval 0.09 to 0.33.
+* Checked against the answer key after the run (analysis only): of the 141 changed values, 88
+  were fixed, 38 were broken, 15 were wrong before and after. Fixes are mostly misread
+  characters (`Termitor` -> `Termidor`, `AGCT-2023-001` -> `ACCT-2023-001`) and values cut short
+  (a street without its city); breaks are mostly the crop siding with a reading's slip
+  (`TIL-001-2023` -> `TIIL-001-2023`) or the wrong block located (a witness name read from
+  another signature block). Every change is listed in `varex-zoom/changes.json`.
 
 * The forms are page images without a text layer, so each takes route C: the reader agent on the
   image and on the MinerU parse, the one-shot reading, the checks, and the quorum
@@ -170,9 +197,13 @@ benchmark's authors; the leaderboard reports one decimal.
   agent now reads the schema's other fields for it. Both fixes were made during this run:
   before, such forms came back with only their table; and a layout reader that finds no
   records now hands the form to the normal route (the 11 forms affected were read again).
-* Files: `varex/predictions/<form>.json`, `varex/scores.json`, `varex/provenance.json` (route,
-  readings and agreement per form; code version). Re-score: `benchmarks/multibench/frozen27b.py
-  varex score` (needs the VAREX dataset under `data/multibench_sources/`).
+* Files: `varex-zoom/` (with zoom: `predictions/`, `scores.json`, `provenance.json`,
+  `comparison.json`, `changes.json`) and `varex/` (without zoom: `predictions/<form>.json`,
+  `scores.json`, `provenance.json` with route, readings and agreement per form; code version).
+  Re-score: `benchmarks/multibench/frozen27b.py varex score [--variant zoom]` (needs the VAREX
+  dataset under `data/multibench_sources/`). Re-run zoom on the stored readings:
+  `benchmarks/multibench/zoom_varex.py`, then `frozen27b.py varex score --variant zoom`,
+  `zoom_varex_audit.py` and `zoom_varex_package.py` (same folder).
 
 ## LongArray-Extract (Extend AI), all 45 documents
 
@@ -197,7 +228,8 @@ documents.
   the document's legends, per-subject tables and statement period (a clinical listing 75.4 ->
   96.3); a failed long call no longer re-sent (a six-hour waste on one document); the
   last-digits check (a statement 82.9 -> 99.6). The run predates the last-digits check, which
-  was applied to its final outputs afterwards (it runs last in the chain; originals kept).
+  was applied to its final outputs afterwards (it runs last in the chain; originals kept;
+  `benchmarks/multibench/apply_late_checks.py`).
 * Remaining errors: the clinical relationship-to-product code, printed alone under a footnote
   marker, is often attached to the wrong event.
 * Files: `longarray/predictions/<document>.json`, `longarray/scores.json`,

@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "patient_identifier": "FRM-2024-32757",
+  "patient_date_of_birth": "11/10/2001",
+  "date_of_event": "05/15/2024",
+  "date_of_report": "05/20/2024",
+  "manufacturer_report_number": "MFR-2024-32757-001",
+  "uf_importer_report_number": "UF-2024-32757"
+ },
+ "parse": {
+  "patient_identifier": "FRM-2024-32757",
+  "patient_date_of_birth": "11/10/2001",
+  "date_of_event": "05/15/2024",
+  "date_of_report": "05/20/2024",
+  "manufacturer_report_number": "MFR-2024-32757-001",
+  "uf_importer_report_number": "UF-2024-32757"
+ },
+ "oneshot": {
+  "patient_identifier": "FRM-2024-32757",
+  "patient_date_of_birth": "11/10/2001",
+  "date_of_event": "05/15/2024",
+  "date_of_report": "05/20/2024",
+  "manufacturer_report_number": "MFR-2024-32757-001",
+  "uf_importer_report_number": "UF-2024-32757"
+ }
+}

@@ -1,0 +1,681 @@
+{
+ "02-10121 H-12 7-2-2024 F-22628": {
+  "disputes": 1,
+  "located": 1,
+  "changed": 0,
+  "before": 0.9743589743589743,
+  "after": 0.9743589743589743
+ },
+ "2A-9-136008_97695": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.868421052631579,
+  "after": 0.868421052631579
+ },
+ "08-43259 H-12 3-18-2024 F-22737": {
+  "disputes": 3,
+  "located": 2,
+  "changed": 1,
+  "before": 0.9871794871794872,
+  "after": 0.9871794871794872
+ },
+ "2A-9-160248_109904": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9404761904761905,
+  "after": 0.9404761904761905
+ },
+ "08-20813 H-12 10-17-2008 F-01094A": {
+  "disputes": 6,
+  "located": 2,
+  "changed": 0,
+  "before": 0.9615384615384616,
+  "after": 0.9615384615384616
+ },
+ "08-15427 H-12 1-21-2003 F-01341": {
+  "disputes": 2,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9358974358974359,
+  "after": 0.9358974358974359
+ },
+ "08-51344 H-12 10-2-2023 F-22666": {
+  "disputes": 4,
+  "located": 3,
+  "changed": 1,
+  "before": 0.9615384615384616,
+  "after": 0.9743589743589743
+ },
+ "08-37943 H-12 09-25-2014 F-01249": {
+  "disputes": 5,
+  "located": 4,
+  "changed": 0,
+  "before": 0.9871794871794872,
+  "after": 0.9871794871794872
+ },
+ "2A-9-160258_109909": {
+  "disputes": 4,
+  "located": 2,
+  "changed": 0,
+  "before": 0.9285714285714286,
+  "after": 0.9285714285714286
+ },
+ "2A-9-160266_109913": {
+  "disputes": 4,
+  "located": 4,
+  "changed": 1,
+  "before": 0.9047619047619048,
+  "after": 0.9047619047619048
+ },
+ "2A-9-156032_107792": {
+  "disputes": 7,
+  "located": 7,
+  "changed": 2,
+  "before": 0.9523809523809523,
+  "after": 0.9761904761904762
+ },
+ "3N1AB7AP8FY283932_professional_valuation": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9607843137254902,
+  "after": 0.9607843137254902
+ },
+ "2A-9-160282_109921": {
+  "disputes": 1,
+  "located": 1,
+  "changed": 0,
+  "before": 0.9761904761904762,
+  "after": 0.9761904761904762
+ },
+ "2A-9-160268_109914": {
+  "disputes": 3,
+  "located": 3,
+  "changed": 0,
+  "before": 0.9285714285714286,
+  "after": 0.9285714285714286
+ },
+ "7C-02014 H-12 5-20-2013 F-01083": {
+  "disputes": 2,
+  "located": 1,
+  "changed": 1,
+  "before": 0.9358974358974359,
+  "after": 0.9487179487179487
+ },
+ "2A-9-160318_109939": {
+  "disputes": 4,
+  "located": 4,
+  "changed": 2,
+  "before": 0.9285714285714286,
+  "after": 0.9166666666666666
+ },
+ "H9-53-2119_2144": {
+  "disputes": 4,
+  "located": 1,
+  "changed": 1,
+  "before": 0.9827586206896551,
+  "after": 0.9827586206896551
+ },
+ "7C-04947 H-12 12-7-2009 F-01079": {
+  "disputes": 4,
+  "located": 3,
+  "changed": 2,
+  "before": 0.9487179487179487,
+  "after": 0.9743589743589743
+ },
+ "H9-53-1621_1656": {
+  "disputes": 4,
+  "located": 3,
+  "changed": 1,
+  "before": 0.9655172413793104,
+  "after": 0.9827586206896551
+ },
+ "3N1AB7AP8FY283932_professional_valuation_corrupted": {
+  "disputes": 5,
+  "located": 5,
+  "changed": 0,
+  "before": 0.9607843137254902,
+  "after": 0.9607843137254902
+ },
+ "H9-53-23_23": {
+  "disputes": 6,
+  "located": 4,
+  "changed": 3,
+  "before": 0.9137931034482759,
+  "after": 0.9137931034482759
+ },
+ "H9-53-24_24": {
+  "disputes": 5,
+  "located": 2,
+  "changed": 0,
+  "before": 0.9482758620689655,
+  "after": 0.9482758620689655
+ },
+ "H9-53-319_311": {
+  "disputes": 4,
+  "located": 2,
+  "changed": 1,
+  "before": 0.8793103448275863,
+  "after": 0.896551724137931
+ },
+ "H9-53-30_30": {
+  "disputes": 4,
+  "located": 3,
+  "changed": 0,
+  "before": 0.9827586206896551,
+  "after": 0.9827586206896551
+ },
+ "H9-53-514_1043": {
+  "disputes": 2,
+  "located": 2,
+  "changed": 1,
+  "before": 0.9545454545454546,
+  "after": 0.9696969696969697
+ },
+ "H9-53-59_60": {
+  "disputes": 6,
+  "located": 4,
+  "changed": 1,
+  "before": 0.9310344827586207,
+  "after": 0.9310344827586207
+ },
+ "2A-9-160294_109927": {
+  "disputes": 26,
+  "located": 21,
+  "changed": 0,
+  "before": 0.9736842105263158,
+  "after": 0.9736842105263158
+ },
+ "H9-53-31_31": {
+  "disputes": 5,
+  "located": 4,
+  "changed": 1,
+  "before": 0.9655172413793104,
+  "after": 0.9655172413793104
+ },
+ "H9-53-9349_9509": {
+  "disputes": 1,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9827586206896551,
+  "after": 0.9827586206896551
+ },
+ "H9-53-7239_7253": {
+  "disputes": 4,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9655172413793104,
+  "after": 0.9655172413793104
+ },
+ "H9-53-32_32": {
+  "disputes": 8,
+  "located": 6,
+  "changed": 1,
+  "before": 0.9655172413793104,
+  "after": 0.9655172413793104
+ },
+ "P18-28-21_77": {
+  "disputes": 5,
+  "located": 4,
+  "changed": 1,
+  "before": 0.9722222222222222,
+  "after": 0.9583333333333334
+ },
+ "H9-53-9386_9545": {
+  "disputes": 11,
+  "located": 8,
+  "changed": 1,
+  "before": 0.9666666666666666,
+  "after": 0.9666666666666666
+ },
+ "P18-28-1547": {
+  "disputes": 6,
+  "located": 6,
+  "changed": 1,
+  "before": 0.9565217391304348,
+  "after": 0.9420289855072463
+ },
+ "P18-28-44_45": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 1.0,
+  "after": 1.0
+ },
+ "P18-28-35_39": {
+  "disputes": 4,
+  "located": 4,
+  "changed": 3,
+  "before": 0.9444444444444444,
+  "after": 0.9861111111111112
+ },
+ "P18-28-43_44": {
+  "disputes": 8,
+  "located": 4,
+  "changed": 0,
+  "before": 0.8985507246376812,
+  "after": 0.8985507246376812
+ },
+ "P18-28-52_53": {
+  "disputes": 1,
+  "located": 1,
+  "changed": 0,
+  "before": 0.9565217391304348,
+  "after": 0.9565217391304348
+ },
+ "2A-9-160298_109929": {
+  "disputes": 40,
+  "located": 37,
+  "changed": 0,
+  "before": 0.9523809523809523,
+  "after": 0.9523809523809523
+ },
+ "P18-28-56_57": {
+  "disputes": 1,
+  "located": 1,
+  "changed": 1,
+  "before": 0.9855072463768116,
+  "after": 0.9855072463768116
+ },
+ "P18-28-50_51": {
+  "disputes": 7,
+  "located": 6,
+  "changed": 2,
+  "before": 0.8933333333333333,
+  "after": 0.92
+ },
+ "P18-28-54_55": {
+  "disputes": 3,
+  "located": 3,
+  "changed": 0,
+  "before": 0.927536231884058,
+  "after": 0.927536231884058
+ },
+ "P18-28-55_56": {
+  "disputes": 10,
+  "located": 4,
+  "changed": 0,
+  "before": 0.927536231884058,
+  "after": 0.927536231884058
+ },
+ "P18-28-62_62": {
+  "disputes": 3,
+  "located": 2,
+  "changed": 1,
+  "before": 0.9420289855072463,
+  "after": 0.9565217391304348
+ },
+ "W14-52342_W14": {
+  "disputes": 17,
+  "located": 4,
+  "changed": 0,
+  "before": 0.9010416666666666,
+  "after": 0.9010416666666666
+ },
+ "YV4952BL2C1140915_professional_valuation_corrupted": {
+  "disputes": 24,
+  "located": 4,
+  "changed": 0,
+  "before": 0.8290598290598291,
+  "after": 0.8290598290598291
+ },
+ "H9-53-7226_7240": {
+  "disputes": 40,
+  "located": 24,
+  "changed": 0,
+  "before": 0.9655172413793104,
+  "after": 0.9655172413793104
+ },
+ "H9-53-7234_7248": {
+  "disputes": 40,
+  "located": 23,
+  "changed": 0,
+  "before": 0.9827586206896551,
+  "after": 0.9827586206896551
+ },
+ "aclu_cdwg_invoice": {
+  "disputes": 5,
+  "located": 5,
+  "changed": 2,
+  "before": 0.9090909090909091,
+  "after": 0.9545454545454546
+ },
+ "WVWJK73C19P047779_professional_valuation_corrupted": {
+  "disputes": 8,
+  "located": 5,
+  "changed": 2,
+  "before": 0.8282208588957056,
+  "after": 0.8404907975460123
+ },
+ "ca_rad_crossover_inpatient_p5_corrupted": {
+  "disputes": 13,
+  "located": 13,
+  "changed": 0,
+  "before": 0.963855421686747,
+  "after": 0.963855421686747
+ },
+ "ca_rad_crossover_outpatient_p5_corrupted": {
+  "disputes": 15,
+  "located": 0,
+  "changed": 0,
+  "before": 0.891566265060241,
+  "after": 0.891566265060241
+ },
+ "arif-2024": {
+  "disputes": 40,
+  "located": 15,
+  "changed": 0,
+  "before": 0.9762308998302207,
+  "after": 0.9762308998302207
+ },
+ "arif-2022": {
+  "disputes": 40,
+  "located": 17,
+  "changed": 0,
+  "before": 0.9718736477715275,
+  "after": 0.9718736477715275
+ },
+ "caterpillar_spec_sheet_330_excavator_corrupted": {
+  "disputes": 26,
+  "located": 21,
+  "changed": 0,
+  "before": 0.9973404255319149,
+  "after": 0.9973404255319149
+ },
+ "ccc_online_0006_esurance_toyota_rav4_corrupted": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 1.0,
+  "after": 1.0
+ },
+ "caterpillar_spec_sheet_312c_excavator_corrupted": {
+  "disputes": 40,
+  "located": 40,
+  "changed": 8,
+  "before": 0.9948320413436692,
+  "after": 0.9741602067183462
+ },
+ "cfpb_closing-disclosure_H25F_corrupted": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9193548387096774,
+  "after": 0.9193548387096774
+ },
+ "ccc_online_0005_american_family_chevrolet_sonic_corrupted": {
+  "disputes": 13,
+  "located": 13,
+  "changed": 2,
+  "before": 0.9907407407407407,
+  "after": 0.9907407407407407
+ },
+ "fort_bend_operativeiq_invoice": {
+  "disputes": 1,
+  "located": 1,
+  "changed": 0,
+  "before": 1.0,
+  "after": 1.0
+ },
+ "golden_corral_receipt_refugio_county_auditor": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 1.0,
+  "after": 1.0
+ },
+ "lancaster_county_ne_requisition_po_husker_steel_corrupted": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 1.0,
+  "after": 1.0
+ },
+ "mcdonalds_receipt_chicago_documentcloud": {
+  "disputes": 1,
+  "located": 1,
+  "changed": 1,
+  "before": 0.9814814814814815,
+  "after": 1.0
+ },
+ "cfpb_closing-disclosure_filled-sample_corrupted": {
+  "disputes": 1,
+  "located": 1,
+  "changed": 0,
+  "before": 0.9585987261146497,
+  "after": 0.9585987261146497
+ },
+ "ms_medicaid_ra_adjustments_corrupted": {
+  "disputes": 3,
+  "located": 0,
+  "changed": 0,
+  "before": 1.0,
+  "after": 1.0
+ },
+ "oklahoma_county_purchase_order_avl_systems_corrupted": {
+  "disputes": 2,
+  "located": 2,
+  "changed": 0,
+  "before": 0.782608695652174,
+  "after": 0.782608695652174
+ },
+ "arif-2021": {
+  "disputes": 40,
+  "located": 34,
+  "changed": 0,
+  "before": 0.9778346121057119,
+  "after": 0.9778346121057119
+ },
+ "brand_price_list_lifescience_2024_corrupted": {
+  "disputes": 40,
+  "located": 39,
+  "changed": 0,
+  "before": 0.9970631424375918,
+  "after": 0.9970631424375918
+ },
+ "passcoag-2020-w2-p0002-r2": {
+  "disputes": 1,
+  "located": 1,
+  "changed": 0,
+  "before": 0.9743589743589743,
+  "after": 0.9743589743589743
+ },
+ "passcoag-2020-w2-p0002-r3": {
+  "disputes": 1,
+  "located": 1,
+  "changed": 0,
+  "before": 0.9767441860465116,
+  "after": 0.9767441860465116
+ },
+ "passcoag-2020-w2-p0002-r4": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.975609756097561,
+  "after": 0.975609756097561
+ },
+ "passcoag-2020-w2-p0003-r1": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9767441860465116,
+  "after": 0.9767441860465116
+ },
+ "passcoag-2020-w2-p0003-r2": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.975609756097561,
+  "after": 0.975609756097561
+ },
+ "passcoag-2020-w2-p0003-r3": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.975609756097561,
+  "after": 0.975609756097561
+ },
+ "passcoag-2020-w2-p0003-r4": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9767441860465116,
+  "after": 0.9767441860465116
+ },
+ "passcoag-2020-w2-p0002-r1": {
+  "disputes": 5,
+  "located": 3,
+  "changed": 0,
+  "before": 0.9767441860465116,
+  "after": 0.9767441860465116
+ },
+ "passcoag-2020-w2-p0004-r1": {
+  "disputes": 1,
+  "located": 1,
+  "changed": 0,
+  "before": 0.9767441860465116,
+  "after": 0.9767441860465116
+ },
+ "passcoag-2020-w2-p0004-r2": {
+  "disputes": 1,
+  "located": 1,
+  "changed": 1,
+  "before": 0.9534883720930233,
+  "after": 0.9767441860465116
+ },
+ "passcoag-2020-w2-p0004-r4": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9767441860465116,
+  "after": 0.9767441860465116
+ },
+ "passcoag-2020-w2-p0005-r1": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9767441860465116,
+  "after": 0.9767441860465116
+ },
+ "passcoag-2020-w2-p0005-r2": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9767441860465116,
+  "after": 0.9767441860465116
+ },
+ "passcoag-2020-w2-p0005-r3": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9767441860465116,
+  "after": 0.9767441860465116
+ },
+ "passcoag-2020-w2-p0005-r4": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9767441860465116,
+  "after": 0.9767441860465116
+ },
+ "passcoag-2020-w2-p0006-r1": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9767441860465116,
+  "after": 0.9767441860465116
+ },
+ "passcoag-2020-w2-p0006-r2": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9767441860465116,
+  "after": 0.9767441860465116
+ },
+ "passcoag-2020-w2-p0006-r3": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9767441860465116,
+  "after": 0.9767441860465116
+ },
+ "passcoag-2020-w2-p0006-r4": {
+  "disputes": 2,
+  "located": 1,
+  "changed": 0,
+  "before": 0.9767441860465116,
+  "after": 0.9767441860465116
+ },
+ "bianco-2024": {
+  "disputes": 40,
+  "located": 37,
+  "changed": 0,
+  "before": 0.9663113006396588,
+  "after": 0.9663113006396588
+ },
+ "ti_spec_sheet_ne555_timer_corrupted": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9887640449438202,
+  "after": 0.9887640449438202
+ },
+ "uillinois_rate_card_carpool_2024_corrupted": {
+  "disputes": 0,
+  "located": 0,
+  "changed": 0,
+  "before": 1.0,
+  "after": 1.0
+ },
+ "passcoag-2020-w2-p0004-r3": {
+  "disputes": 2,
+  "located": 2,
+  "changed": 0,
+  "before": 0.9767441860465116,
+  "after": 0.9767441860465116
+ },
+ "utah_fleet_rate_schedule_fy2024_corrupted": {
+  "disputes": 4,
+  "located": 0,
+  "changed": 0,
+  "before": 0.9318181818181819,
+  "after": 0.9318181818181819
+ },
+ "texas_facilities_commission_purchase_order_shelton-keller_corrupted": {
+  "disputes": 2,
+  "located": 1,
+  "changed": 0,
+  "before": 1.0,
+  "after": 1.0
+ },
+ "real_clinton_property_25_11073_corrupted": {
+  "disputes": 2,
+  "located": 1,
+  "changed": 0,
+  "before": 0.9956709956709957,
+  "after": 0.9956709956709957
+ },
+ "cfpb_closing-disclosure_H25E_corrupted": {
+  "disputes": 40,
+  "located": 40,
+  "changed": 0,
+  "before": 0.9512195121951219,
+  "after": 0.9512195121951219
+ },
+ "ms_medicaid_ra_paid_denied_claims_corrupted": {
+  "disputes": 40,
+  "located": 38,
+  "changed": 1,
+  "before": 0.951048951048951,
+  "after": 0.958041958041958
+ },
+ "viega_price_list_propress_2026_corrupted": {
+  "disputes": 40,
+  "located": 16,
+  "changed": 0,
+  "before": 0.9992800575953924,
+  "after": 0.9992800575953924
+ }
+}

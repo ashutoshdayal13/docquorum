@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "motorist_last_name": "Burton",
+  "motorist_first_name": "Rosina",
+  "motorist_middle_initial": "A",
+  "nys_driver_license_client_id_number": 8509762561,
+  "incident_location_name": "I-75 Near Exit 23",
+  "incident_county": "Hamilton",
+  "officer_name_police_agency": "Officer D. Thompson, NYS Police",
+  "signature_date": "03/16/2023",
+  "motorist_address": {
+   "address": "85097 Deborah Valley, Apt. 3B",
+   "city": "North Keithborough",
+   "zip_code": "56880-1234"
+  }
+ },
+ "parse": {
+  "motorist_last_name": "Burton",
+  "motorist_first_name": "Rosina",
+  "motorist_middle_initial": "A",
+  "nys_driver_license_client_id_number": 8509762561,
+  "incident_location_name": "I-75 Near Exit 23",
+  "incident_county": "Hamilton",
+  "officer_name_police_agency": "Officer D. Thompson, NYS Police",
+  "signature_date": "03/16/2023",
+  "motorist_address": {
+   "address": "85097 Deborah Valley, Apt. 3B",
+   "city": "North Keithborough",
+   "zip_code": "56880-1234"
+  }
+ },
+ "oneshot": {
+  "motorist_last_name": "Burton",
+  "motorist_first_name": "Rosina",
+  "motorist_middle_initial": "A",
+  "nys_driver_license_client_id_number": 8509762561,
+  "incident_location_name": "I-75 Near Exit 23",
+  "incident_county": "Hamilton",
+  "officer_name_police_agency": "Officer D. Thompson, NYS Police",
+  "signature_date": "03/16/2023",
+  "motorist_address": {
+   "address": "85097 Deborah Valley, Apt. 3B",
+   "city": "North Keithborough",
+   "zip_code": "56880-1234"
+  }
+ }
+}

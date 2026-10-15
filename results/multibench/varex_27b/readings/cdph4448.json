@@ -1,0 +1,113 @@
+{
+ "primary": {
+  "medi_cal_region": "Northern California",
+  "managed_care_plan": "Blue Shield of CA",
+  "hospitalist_or_laborist_group": "Northstate Perinatal",
+  "provider_information": {
+   "provider_name": "West Courtneystad Clinic",
+   "provider_address": "69648 Tran Corner Apt.",
+   "provider_email": "wcc@curry.com"
+  },
+  "practitioner_information": [
+   {
+    "practitioner_name": "Kelly, Donna I.",
+    "practitioner_specialty": "Obstetrics",
+    "practitioner_license_number": "MD-2009-MD-92686"
+   },
+   {
+    "practitioner_name": "Zedillo, Matthieu F.",
+    "practitioner_specialty": "Pediatrics",
+    "practitioner_license_number": "CPA-1995-GA-14278"
+   },
+   {
+    "practitioner_name": "Godard, Yinthe",
+    "practitioner_specialty": "Nursing",
+    "practitioner_license_number": "CFP-2017-PA-23229"
+   },
+   {
+    "practitioner_name": "Smith, Jennifer L.",
+    "practitioner_specialty": "Midwifery",
+    "practitioner_license_number": "LM-2015-CA-11234"
+   },
+   {
+    "practitioner_name": "Johnson, Robert M.",
+    "practitioner_specialty": "Family Medicine",
+    "practitioner_license_number": "OM-2010-CA-55678"
+   }
+  ]
+ },
+ "parse": {
+  "medi_cal_region": "Northern California",
+  "managed_care_plan": "Blue Shield of CA",
+  "hospitalist_or_laborist_group": "Northstate Perinatal",
+  "provider_information": {
+   "provider_name": "West Courtneystad Clinic",
+   "provider_address": "69648 Tran Corner Apt.",
+   "provider_email": "wcc@curry.com"
+  },
+  "practitioner_information": [
+   {
+    "practitioner_name": "Kelly, Donna I.",
+    "practitioner_specialty": "Obstetrics",
+    "practitioner_license_number": "MD-2009-MD-92686"
+   },
+   {
+    "practitioner_name": "Zedillo, Matthieu F.",
+    "practitioner_specialty": "Pediatrics",
+    "practitioner_license_number": "CPA-1995-GA-14278"
+   },
+   {
+    "practitioner_name": "Godard, Yinthe",
+    "practitioner_specialty": "Nursing",
+    "practitioner_license_number": "CFP-2017-PA-23229"
+   },
+   {
+    "practitioner_name": "Smith, Jennifer L.",
+    "practitioner_specialty": "Midwifery",
+    "practitioner_license_number": "LM-2015-CA-11234"
+   },
+   {
+    "practitioner_name": "Johnson, Robert M.",
+    "practitioner_specialty": "Family Medicine",
+    "practitioner_license_number": "OM-2010-CA-55678"
+   }
+  ]
+ },
+ "oneshot": {
+  "medi_cal_region": "Northern California",
+  "managed_care_plan": "Blue Shield of CA",
+  "hospitalist_or_laborist_group": "Northstate Perinatal",
+  "provider_information": {
+   "provider_name": "West Courtneystad Clinic",
+   "provider_address": "69648 Tran Corner Apt.",
+   "provider_email": "wcc@curry.com"
+  },
+  "practitioner_information": [
+   {
+    "practitioner_name": "Kelly, Donna I.",
+    "practitioner_specialty": "Obstetrics",
+    "practitioner_license_number": "MD-2009-MD-92686"
+   },
+   {
+    "practitioner_name": "Zedillo, Matthieu F.",
+    "practitioner_specialty": "Pediatrics",
+    "practitioner_license_number": "CPA-1995-GA-14278"
+   },
+   {
+    "practitioner_name": "Godard, Yinthe",
+    "practitioner_specialty": "Nursing",
+    "practitioner_license_number": "CFP-2017-PA-23229"
+   },
+   {
+    "practitioner_name": "Smith, Jennifer L.",
+    "practitioner_specialty": "Midwifery",
+    "practitioner_license_number": "LM-2015-CA-11234"
+   },
+   {
+    "practitioner_name": "Johnson, Robert M.",
+    "practitioner_specialty": "Family Medicine",
+    "practitioner_license_number": "OM-2010-CA-55678"
+   }
+  ]
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "date_of_request": "06/15/2023",
+  "payment_reference_number": "REF-2020-90406",
+  "transfer_funds_from": "4634-7791-7649",
+  "transfer_funds_to": "FDA User Fee Account",
+  "transfer_reason": "Transfer of user fees for FDA application processing",
+  "organization_name": "Smith Ltd",
+  "contact_name": "Rogers, Matthieu",
+  "contact_title_position": "Training and development officer",
+  "contact_phone_number": "(578) 163-0226",
+  "contact_email_address": "mrogers@smith.com",
+  "fda_received_date": "06/16/2023",
+  "decision_date": "06/20/2023",
+  "center_contact_name": "Zeljko O. Miranda",
+  "organization_address": {
+   "street": "82016 Shane Dam",
+   "city": "Heatherhaven",
+   "state": "Iowa",
+   "zip_code": "91798"
+  }
+ },
+ "parse": {
+  "date_of_request": "06/15/2023",
+  "payment_reference_number": "REF-2020-90406",
+  "transfer_funds_from": "4634-7791-7649",
+  "transfer_funds_to": "FDA User Fee Account",
+  "transfer_reason": "Transfer of user fees for FDA application processing",
+  "organization_name": "Smith Ltd",
+  "contact_name": "Rogers, Matthieu",
+  "contact_title_position": "Training and development officer",
+  "contact_phone_number": "(578) 163-0226",
+  "contact_email_address": "mrogers@smith.com",
+  "fda_received_date": "06/16/2023",
+  "decision_date": "06/20/2023",
+  "center_contact_name": "Zeljko O. Miranda",
+  "organization_address": {
+   "street": "82016 Shane Dam",
+   "city": "Heatherhaven",
+   "state": "Iowa",
+   "zip_code": "91798"
+  }
+ },
+ "oneshot": {
+  "date_of_request": "06/15/2023",
+  "payment_reference_number": "REF-2020-90406",
+  "transfer_funds_from": "4634-7791-7649",
+  "transfer_funds_to": "FDA User Fee Account",
+  "transfer_reason": "Transfer of user fees for FDA application processing",
+  "organization_name": "Smith Ltd",
+  "contact_name": "Rogers, Matthieu",
+  "contact_title_position": "Training and development officer",
+  "contact_phone_number": "(578) 163-0226",
+  "contact_email_address": "mrogers@smith.com",
+  "fda_received_date": "06/16/2023",
+  "decision_date": "06/20/2023",
+  "center_contact_name": "Zeljko O. Miranda",
+  "organization_address": {
+   "street": "82016 Shane Dam",
+   "city": "Heatherhaven",
+   "state": "Iowa",
+   "zip_code": "91798"
+  }
+ }
+}

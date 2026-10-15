@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "hospital_name": "St. Mary's Medical Center",
+  "physician_name": "Brett Zuniga, MD, Board Certified in Physical Medicine and Rehabilitation",
+  "nurse_name": "Aniela Wong, RN, BSN, Certified Rehabilitation Registered Nurse (CRRN)",
+  "registered_nurses_count": 12,
+  "licensed_vocational_nurses_count": 8,
+  "nurses_aides_count": 15,
+  "staff_conference_frequency": "Weekly",
+  "major_diagnostic_categories": [
+   {
+    "category": "Stroke"
+   }
+  ],
+  "utilization_review_committee_disciplines": [
+   {
+    "discipline": "Physical Therapy"
+   }
+  ]
+ },
+ "parse": {
+  "hospital_name": "St. Mary's Medical Center",
+  "physician_name": "Brett Zuniga, MD, Board Certified in Physical Medicine and Rehabilitation",
+  "nurse_name": "Aniela Wong, RN, BSN, Certified Rehabilitation Registered Nurse (CRRN)",
+  "registered_nurses_count": 12,
+  "licensed_vocational_nurses_count": 8,
+  "nurses_aides_count": 15,
+  "staff_conference_frequency": "Weekly",
+  "major_diagnostic_categories": [
+   {
+    "category": "Stroke"
+   }
+  ],
+  "utilization_review_committee_disciplines": [
+   {
+    "discipline": "Physical Therapy"
+   }
+  ]
+ },
+ "oneshot": {
+  "hospital_name": "St. Mary's Medical Center",
+  "physician_name": "Brett Zuniga, MD, Board Certified in Physical Medicine and Rehabilitation",
+  "nurse_name": "Aniela Wong, RN, BSN, Certified Rehabilitation Registered Nurse (CRRN)",
+  "registered_nurses_count": 12,
+  "licensed_vocational_nurses_count": 8,
+  "nurses_aides_count": 15,
+  "staff_conference_frequency": "Weekly",
+  "major_diagnostic_categories": [
+   {
+    "category": "Stroke"
+   }
+  ],
+  "utilization_review_committee_disciplines": [
+   {
+    "discipline": "Physical Therapy"
+   }
+  ]
+ }
+}

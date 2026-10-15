@@ -1,0 +1,33 @@
+{
+ "applicant_name": "Dayamai R. Jonak",
+ "applicant_telephone": "(474) 092-5696 x1234",
+ "proposed_use_description": "Use of radioactive materials for research in web design applications",
+ "mailing_address": {
+  "street": "254 Johnson Forge Apt. 457",
+  "city": "Rebeccaside",
+  "state": "TX",
+  "zip_code": "84509"
+ },
+ "physical_address": {
+  "street": "254 Johnson Forge Apt. 457",
+  "city": "Rebeccaside",
+  "state": "TX",
+  "zip_code": "84509"
+ },
+ "radioactive_material_addresses": [
+  {
+   "address": "254 Johnson Forge Apt. 457, Rebeccaside, TX"
+  },
+  {
+   "address": "1262 Wilkins Mount, Port Frances, WA"
+  },
+  {
+   "address": "917 Arellano Mill, South Nicole, IL"
+  }
+ ],
+ "nuclides": [
+  {
+   "nuclide": "Cobalt-60"
+  }
+ ]
+}

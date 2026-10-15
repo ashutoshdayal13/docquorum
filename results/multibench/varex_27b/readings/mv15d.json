@@ -1,0 +1,56 @@
+{
+ "primary": {
+  "account_number": "9515-2829-3853",
+  "applicant_name": "Yuridia M. Carson",
+  "driver_license_number": 10168,
+  "business_email": "ycarson@pham.com",
+  "previous_account_numbers": 202226224,
+  "business_info": {
+   "business_name": "Pham, Hansen and Parks",
+   "business_address": "4510 Bird Circle",
+   "business_city": "East Victoriaborough",
+   "business_zip_code": "43142"
+  },
+  "director_info": {
+   "director_name": "Yuridia M. Carson",
+   "director_title": "Scientist, physiological",
+   "director_email": "ycarson@pham.com"
+  }
+ },
+ "parse": {
+  "account_number": "9515-2829-3853",
+  "applicant_name": "Yuridia M. Carson",
+  "driver_license_number": 10168,
+  "business_email": "ycarson@pham.com",
+  "previous_account_numbers": 202226224,
+  "business_info": {
+   "business_name": "Pham, Hansen and Parks",
+   "business_address": "4510 Bird Circle",
+   "business_city": "East Victoriaborough",
+   "business_zip_code": "43142"
+  },
+  "director_info": {
+   "director_name": "Yuridia M. Carson",
+   "director_title": "Scientist, physiological",
+   "director_email": "ycarson@pham.com"
+  }
+ },
+ "oneshot": {
+  "account_number": "9515-2829-3853",
+  "applicant_name": "Yuridia M. Carson",
+  "driver_license_number": 10168,
+  "business_email": "ycarson@pham.com",
+  "previous_account_numbers": 202226224,
+  "business_info": {
+   "business_name": "Pham, Hansen and Parks",
+   "business_address": "4510 Bird Circle",
+   "business_city": "East Victoriaborough",
+   "business_zip_code": "43142"
+  },
+  "director_info": {
+   "director_name": "Yuridia M. Carson",
+   "director_title": "Scientist, physiological",
+   "director_email": "ycarson@pham.com"
+  }
+ }
+}

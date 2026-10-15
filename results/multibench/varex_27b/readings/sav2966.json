@@ -1,0 +1,104 @@
+{
+ "primary": {
+  "customer_name": "Jurij H. Morrison",
+  "case_number": "RFQ-2024-496",
+  "purchaser_name": "Jurij H. Morrison",
+  "indemnity_amount": 556216.81,
+  "mailing_address": "28332 Andre Streets Suite 205, Port Kyletown, WA 15365",
+  "social_security_number": "033-03-3980",
+  "email_address": "jurij.morrison@outlook.com",
+  "phone_number": "(991) 312-2268",
+  "purchaser_address": {
+   "street": "28332 Andre Streets Suite",
+   "city": "Port Kyletown",
+   "state": "WA"
+  },
+  "bonds": [
+   {
+    "bond_number": "E1234567890",
+    "bond_type": "Series E Savings Bond"
+   },
+   {
+    "bond_number": "EE9876543210",
+    "bond_type": "Series E Savings Bond"
+   },
+   {
+    "bond_number": "I5555555555",
+    "bond_type": "Series E Savings Bond"
+   }
+  ],
+  "bank_account": {
+   "account_number": "5379-4526-6878",
+   "bank_name": "Bank of Port Kyletown",
+   "routing_number": "091006194"
+  }
+ },
+ "parse": {
+  "customer_name": "Jurij H. Morrison",
+  "case_number": "RFQ-2024-496",
+  "purchaser_name": "Jurij H. Morrison",
+  "indemnity_amount": 556216.81,
+  "mailing_address": "28332 Andre Streets Suite 205, Port Kyletown, WA 15365",
+  "social_security_number": "033-03-3980",
+  "email_address": "jurij.morrison@outlook.com",
+  "phone_number": "(991) 312-2268",
+  "purchaser_address": {
+   "street": "28332 Andre Streets Suite",
+   "city": "Port Kyletown",
+   "state": "WA"
+  },
+  "bonds": [
+   {
+    "bond_number": "E1234567890",
+    "bond_type": "Series E Savings Bond"
+   },
+   {
+    "bond_number": "EE9876543210",
+    "bond_type": "Series E Savings Bond"
+   },
+   {
+    "bond_number": "I5555555555",
+    "bond_type": "Series E Savings Bond"
+   }
+  ],
+  "bank_account": {
+   "account_number": "5379-4526-6878",
+   "bank_name": "Bank of Port Kyletown",
+   "routing_number": "091006194"
+  }
+ },
+ "oneshot": {
+  "customer_name": "Jurij H. Morrison",
+  "case_number": "RFQ-2024-496",
+  "purchaser_name": "Jurij H. Morrison",
+  "indemnity_amount": 556216.81,
+  "mailing_address": "28332 Andre Streets Suite 205, Port Kyletown, WA 15365",
+  "social_security_number": "033-03-3980",
+  "email_address": "jurij.morrison@outlook.com",
+  "phone_number": "(991) 312-2268",
+  "purchaser_address": {
+   "street": "28332 Andre Streets Suite",
+   "city": "Port Kyletown",
+   "state": "WA"
+  },
+  "bonds": [
+   {
+    "bond_number": "E1234567890",
+    "bond_type": "Series E Savings Bond"
+   },
+   {
+    "bond_number": "EE9876543210",
+    "bond_type": "Series E Savings Bond"
+   },
+   {
+    "bond_number": "I5555555555",
+    "bond_type": "Series E Savings Bond"
+   }
+  ],
+  "bank_account": {
+   "account_number": "5379-4526-6878",
+   "bank_name": "Bank of Port Kyletown",
+   "routing_number": "091006194"
+  }
+ }
+}

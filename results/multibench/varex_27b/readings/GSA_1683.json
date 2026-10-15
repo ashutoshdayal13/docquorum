@@ -1,0 +1,72 @@
+{
+ "primary": {
+  "contracting_number": "CTL-2020-38807",
+  "special_terms_and_conditions": "Withdrawal of services with 30 days notice",
+  "accounting_and_appropriation_data": "Account: 9563-1300-8133; Appropriation: FY2023",
+  "service_location": {
+   "address": "565 Mark Ford, Lake Ronald, TX 17395",
+   "description": "Government facility for early years education"
+  },
+  "service_characteristics": {
+   "phase": "Single phase"
+  },
+  "contractor": {
+   "rate_schedule": "Commercial Rate Schedule A",
+   "title": "Teacher, early years/pre",
+   "address": "565 Mark Ford, Lake Ronald, TX 17395",
+   "execution_date": "12/20/2022"
+  },
+  "invoice_payment_address": {
+   "address": "565 Mark Ford, Lake Ronald, TX 17395"
+  },
+  "government_execution_date": {
+   "date": "12/23/2022"
+  }
+ },
+ "parse": {
+  "contracting_number": "CTL-2020-38807",
+  "special_terms_and_conditions": "Withdrawal of services with 30 days notice",
+  "accounting_and_appropriation_data": "Account: 9563-1300-8133; Appropriation: FY2023",
+  "service_location": {
+   "address": "565 Mark Ford, Lake Ronald, TX 17395",
+   "description": "Government facility for early years education"
+  },
+  "service_characteristics": {
+   "phase": "Single phase"
+  },
+  "contractor": {
+   "rate_schedule": "Commercial Rate Schedule A",
+   "title": "Teacher, early years/pre",
+   "address": "565 Mark Ford, Lake Ronald, TX 17395",
+   "execution_date": "12/20/2022"
+  },
+  "invoice_payment_address": {
+   "address": "565 Mark Ford, Lake Ronald, TX 17395"
+  },
+  "government_execution_date": {
+   "date": "12/23/2022"
+  }
+ },
+ "oneshot": {
+  "contracting_number": "CTL-2020-38807",
+  "special_terms_and_conditions": "Withdrawal of services with 30 days notice",
+  "accounting_and_appropriation_data": "Account: 9563-1300-8133; Appropriation: FY2023",
+  "service_location": {
+   "address": "565 Mark Ford, Lake Ronald, TX 17395",
+   "description": "Government facility for early years education"
+  },
+  "service_characteristics": {},
+  "contractor": {
+   "rate_schedule": "Commercial Rate Schedule A",
+   "title": "Teacher, early years/pre",
+   "address": "565 Mark Ford, Lake Ronald, TX 17395",
+   "execution_date": "12/20/2022"
+  },
+  "invoice_payment_address": {
+   "address": "565 Mark Ford, Lake Ronald, TX 17395"
+  },
+  "government_execution_date": {
+   "date": "12/23/2022"
+  }
+ }
+}

@@ -1,0 +1,158 @@
+{
+ "primary": {
+  "legal_name": "Hayes PLC",
+  "npi": "1234567890",
+  "business_name": "Hayes Medical Services",
+  "service_address": "9067 Brittany Summit, North Sarah, VA 38611",
+  "practitioners": [
+   "Richard J. Anderson",
+   "Jack Kozieja",
+   "Margaret B. Ryan",
+   "Emily Smith",
+   "Michael Johnson",
+   "Sarah Williams",
+   "David Brown",
+   "Jennifer Davis",
+   "Robert Miller"
+  ],
+  "practitioner": [
+   {
+    "npi": "9876543210",
+    "specialty": "Obstetrics"
+   },
+   {
+    "npi": "4567891230",
+    "specialty": "Psychosocial"
+   },
+   {
+    "npi": "7891234560",
+    "specialty": "Health Education"
+   },
+   {
+    "npi": "1237894560",
+    "specialty": "Nutrition"
+   },
+   {
+    "npi": "4561237890",
+    "specialty": "Consultation"
+   },
+   {
+    "npi": "7894561230",
+    "specialty": "Client Orientation"
+   },
+   {
+    "npi": "1234567890",
+    "specialty": "Back-up Physician"
+   },
+   {
+    "npi": "4567891230",
+    "specialty": "Case Coordination"
+   },
+   {
+    "npi": "7891234560",
+    "specialty": "Obstetrics"
+   }
+  ]
+ },
+ "parse": {
+  "legal_name": "Hayes PLC",
+  "npi": "1234567890",
+  "business_name": "Hayes Medical Services",
+  "service_address": "9067 Brittany Summit, North Sarah, VA 38611",
+  "practitioners": [
+   "Richard J. Anderson",
+   "Jack Kozieja",
+   "Margaret B. Ryan",
+   "Emily Smith",
+   "Michael Johnson",
+   "Sarah Williams",
+   "David Brown",
+   "Jennifer Davis",
+   "Robert Miller"
+  ],
+  "practitioner": [
+   {
+    "npi": "9876543210",
+    "specialty": "Obstetrics"
+   },
+   {
+    "npi": "4567891230",
+    "specialty": "Psychosocial"
+   },
+   {
+    "npi": "7891234560",
+    "specialty": "Health Education"
+   },
+   {
+    "npi": "1237894560",
+    "specialty": "Nutrition"
+   },
+   {
+    "npi": "4561237890",
+    "specialty": "Consultation"
+   },
+   {
+    "npi": "7894561230",
+    "specialty": "Client Orientation"
+   },
+   {
+    "npi": "1234567890",
+    "specialty": "Back-up Physician"
+   },
+   {
+    "npi": "4567891230",
+    "specialty": "Case Coordination"
+   },
+   {
+    "npi": "7891234560",
+    "specialty": "Obstetrics"
+   }
+  ]
+ },
+ "oneshot": {
+  "legal_name": "Hayes PLC",
+  "npi": "1234567890",
+  "business_name": "Hayes Medical Services",
+  "service_address": "9067 Brittany Summit, North Sarah, VA 38611",
+  "practitioners": [
+   "Richard J. Anderson",
+   "Jack Kozieja",
+   "Margaret B. Ryan",
+   "Emily Smith",
+   "Michael Johnson",
+   "Sarah Williams",
+   "David Brown",
+   "Jennifer Davis",
+   "Robert Miller"
+  ],
+  "practitioner": [
+   {
+    "specialty": "Obstetrics"
+   },
+   {
+    "specialty": "Psychosocial"
+   },
+   {
+    "specialty": "Health Education"
+   },
+   {
+    "specialty": "Nutrition"
+   },
+   {
+    "specialty": "Consultation"
+   },
+   {
+    "specialty": "Client Orientation"
+   },
+   {
+    "specialty": "Back-up Physician"
+   },
+   {
+    "specialty": "Case Coordination"
+   },
+   {
+    "specialty": "Obstetrics"
+   }
+  ]
+ }
+}

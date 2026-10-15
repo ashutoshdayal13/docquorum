@@ -5,6 +5,7 @@ Read [the pipeline guide](docquorum.pdf) first. Its main diagram follows `extrac
 | Step | Source | Data contract |
 |---|---|---|
 | Prepare and orchestrate | [extract.py](../docquorum/extract.py) | Document + schema/template → `(result, report)` |
+| Native files, small images | [tools/native.py](../docquorum/tools/native.py), [tools/images.py](../docquorum/tools/images.py) | .xlsx/.docx/.html/.xml/.csv/.txt → text-layer PDF; small image → enlarged by a whole factor |
 | Inspect/render PDF | [tools/pdf.py](../docquorum/tools/pdf.py) | PDF → text, page count, rendered images |
 | Parse scans | [tools/parser.py](../docquorum/tools/parser.py) | Page image → cached text/HTML tables |
 | Route layout | [agents/layout.py](../docquorum/agents/layout.py) | Schema + PDF + cache → `colflow`, `ruled`, or `route` |
@@ -15,6 +16,7 @@ Read [the pipeline guide](docquorum.pdf) first. Its main diagram follows `extrac
 | One-shot reading | [agents/oneshot.py](../docquorum/agents/oneshot.py) | PDF + schema → provider candidate |
 | Check each reading | [checks/__init__.py](../docquorum/checks/__init__.py) | Candidate + `Doc` → checked candidate |
 | Select | [quorum.py](../docquorum/quorum.py) | Checked candidates + schema → winner, scores, pairwise metrics |
+| Zoom re-reading (optional) | [zoom.py](../docquorum/zoom.py) | Kept + other readings + PDF → kept reading with disputed fields re-read from a crop; statistics |
 | Format templates | [tools/schema.py](../docquorum/tools/schema.py) | Selected object + template → template-shaped result |
 
 Supporting modules: [prompts](../docquorum/agents/prompts.py), [LLM calls](../docquorum/tools/llm.py), [row estimates](../docquorum/tools/rows.py), [geometry](../docquorum/tools/layout.py), and [configuration](../docquorum/config.py).
@@ -24,13 +26,13 @@ Supporting modules: [prompts](../docquorum/agents/prompts.py), [LLM calls](../do
 - **Primary:** `carry_down → page_index → dedupe → stacked_rows → OUTPUT`.
 - **Parse:** `spacing → primary chain`.
 - **One-shot/layout:** `OUTPUT`.
-- **OUTPUT:** `conform → blank_boxes → template_rows → copied_rows → record_counts → printed_pages → printed_quotes → printed_numbers`.
+- **OUTPUT:** `conform → blank_boxes → template_rows → copied_rows → record_counts → printed_pages → printed_quotes → printed_numbers → printed_suffix`.
 
 Each module in [checks/](../docquorum/checks/) defines `apply(pred, doc)`. Guards make these conditional transformations, not universal corrections. `conform` is not a full schema validator.
 
 ## Separate benchmark entry points
 
-[ExtractBench run.sh](../benchmarks/extractbench/run.sh) operates on stage directories and applies layout overrides after the general flow, excluding the short split. Populate parses first with `python -m docquorum.tools.parser SPLIT`. [UNIKIE](../benchmarks/unikie/unikie_eval.py) has its own six-reading protocol, normalization, and quorum matcher. [extractbench.py](../docquorum/extractbench.py) wraps the external scorer; selection replaces the reference with another candidate and removes annotated matching rules.
+[ExtractBench run.sh](../benchmarks/extractbench/run.sh) operates on stage directories and applies layout overrides after the general flow, excluding the short split. Populate parses first with `python -m docquorum.tools.parser SPLIT`. [UNIKIE](../benchmarks/unikie/unikie_eval.py) has its own six-reading protocol, normalization, and quorum matcher. [multibench/frozen27b.py](../benchmarks/multibench/frozen27b.py) runs `extract()` unchanged on VAREX, LongArray-Extract and DocuBench, scores with each benchmark's scorer and packages `results/<benchmark>/`; [zoom_varex.py](../benchmarks/multibench/zoom_varex.py) applies zoom re-reading to the stored VAREX readings. [extractbench.py](../docquorum/extractbench.py) wraps the external scorer; selection replaces the reference with another candidate and removes annotated matching rules.
 
 ## Historical names
 

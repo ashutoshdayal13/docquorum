@@ -1,0 +1,53 @@
+{
+ "primary": {
+  "first_name": "Julia",
+  "middle_initial": "A",
+  "last_name": "Taylor",
+  "social_security_number": "120-08-2491",
+  "email": "julia.taylor@outlook.com",
+  "old_address": {
+   "city": "West Daniel"
+  },
+  "new_address": {
+   "city": "East Elenorville"
+  },
+  "telephone": {
+   "area_code": "862",
+   "number": "787-4584"
+  }
+ },
+ "parse": {
+  "first_name": "Julia",
+  "middle_initial": "A",
+  "last_name": "Taylor",
+  "social_security_number": "120-08-2491",
+  "email": "julia.taylor@outlook.com",
+  "old_address": {
+   "city": "West Daniel"
+  },
+  "new_address": {
+   "city": "East Elenorville"
+  },
+  "telephone": {
+   "area_code": "862",
+   "number": "787-4584"
+  }
+ },
+ "oneshot": {
+  "first_name": "Julia",
+  "middle_initial": "A",
+  "last_name": "Taylor",
+  "social_security_number": "120-08-2491",
+  "email": "julia.taylor@outlook.com",
+  "old_address": {
+   "city": "West Daniel"
+  },
+  "new_address": {
+   "city": "East Elenorville"
+  },
+  "telephone": {
+   "area_code": "862",
+   "number": "787-4584"
+  }
+ }
+}

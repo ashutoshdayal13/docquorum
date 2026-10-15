@@ -1,0 +1,119 @@
+{
+ "primary": {
+  "decedent_name": "Sylvester F. de Gruijl",
+  "social_security_number": "097-89-3422",
+  "state_of_legal_residence": "HI",
+  "persons_entitled": [
+   {
+    "name": "Susan C. Bazin",
+    "relationship": "Spouse of the deceased"
+   },
+   {
+    "name": "Linda K. Williams",
+    "relationship": "Executor of the will"
+   },
+   {
+    "name": "John D. Doe",
+    "relationship": "Son of the deceased"
+   },
+   {
+    "name": "Jane A. Smith",
+    "relationship": "Daughter of the deceased"
+   },
+   {
+    "name": "Michael T. Johnson",
+    "relationship": "Brother of the deceased"
+   }
+  ],
+  "persons_under_legal_disability": [
+   {
+    "name": "Emily R. Williams",
+    "relationship": "Granddaughter",
+    "guardian_name": "Linda K. Williams"
+   },
+   {
+    "name": "David L. Brown",
+    "relationship": "Grandson",
+    "guardian_name": "Susan C. Bazin"
+   }
+  ]
+ },
+ "parse": {
+  "decedent_name": "Sylvester F. de Gruijl",
+  "social_security_number": "097-89-3422",
+  "state_of_legal_residence": "HI",
+  "persons_entitled": [
+   {
+    "name": "Susan C. Bazin",
+    "relationship": "Spouse of the deceased"
+   },
+   {
+    "name": "Linda K. Williams",
+    "relationship": "Executor of the will"
+   },
+   {
+    "name": "John D. Doe",
+    "relationship": "Son of the deceased"
+   },
+   {
+    "name": "Jane A. Smith",
+    "relationship": "Daughter of the deceased"
+   },
+   {
+    "name": "Michael T. Johnson",
+    "relationship": "Brother of the deceased"
+   }
+  ],
+  "persons_under_legal_disability": [
+   {
+    "name": "Emily R. Williams",
+    "relationship": "Granddaughter",
+    "guardian_name": "Linda K. Williams"
+   },
+   {
+    "name": "David L. Brown",
+    "relationship": "Grandson",
+    "guardian_name": "Susan C. Bazin"
+   }
+  ]
+ },
+ "oneshot": {
+  "decedent_name": "Sylvester F. de Gruijl",
+  "social_security_number": "097-89-3422",
+  "state_of_legal_residence": "HI",
+  "persons_entitled": [
+   {
+    "name": "Susan C. Bazin",
+    "relationship": "Spouse of the deceased"
+   },
+   {
+    "name": "Linda K. Williams",
+    "relationship": "Executor of the will"
+   },
+   {
+    "name": "John D. Doe",
+    "relationship": "Son of the deceased"
+   },
+   {
+    "name": "Jane A. Smith",
+    "relationship": "Daughter of the deceased"
+   },
+   {
+    "name": "Michael T. Johnson",
+    "relationship": "Brother of the deceased"
+   }
+  ],
+  "persons_under_legal_disability": [
+   {
+    "name": "Emily R. Williams",
+    "relationship": "Granddaughter",
+    "guardian_name": "Linda K. Williams"
+   },
+   {
+    "name": "David L. Brown",
+    "relationship": "Grandson",
+    "guardian_name": "Susan C. Bazin"
+   }
+  ]
+ }
+}

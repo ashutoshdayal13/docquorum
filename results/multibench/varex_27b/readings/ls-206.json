@@ -1,0 +1,89 @@
+{
+ "primary": {
+  "owcp_number": "LS-2023-1",
+  "carrier_number": "CAR-2023-0004567",
+  "injured_person": "Todd U. Sampaio",
+  "accident_date": "07/15/2023",
+  "disability_begin_date": "07/16/2023",
+  "payee_name": "Todd U. Sampaio",
+  "compensation_type": "Temporary Total Disability",
+  "payment_begin_date": "07/20/2023",
+  "first_payment_date": "07/20/2023",
+  "signer_title": "Producer, television/film/video",
+  "signer_name": "Rebecca Gregory",
+  "signer_phone": "(661)271-0",
+  "signature_date": "07/20/2023",
+  "injured_person_address": {
+   "street": "04957 Hernandez Square",
+   "city": "East Jenniferhaven",
+   "state": "TX",
+   "zip_code": "35742"
+  },
+  "employer": {
+   "name": "Lee LLC",
+   "address": "04957 Hernandez Square, East Jenniferhaven, TX 35742"
+  },
+  "insurance_carrier": {
+   "name": "Atlantic Insurance Company",
+   "address": "123 Business Park, Boston, MA 02108"
+  }
+ },
+ "parse": {
+  "owcp_number": "LS-2023-1",
+  "carrier_number": "CAR-2023-0004567",
+  "injured_person": "Todd U. Sampaio",
+  "accident_date": "07/15/2023",
+  "disability_begin_date": "07/16/2023",
+  "payee_name": "Todd U. Sampaio",
+  "compensation_type": "Temporary Total Disability",
+  "payment_begin_date": "07/20/2023",
+  "first_payment_date": "07/20/2023",
+  "signer_title": "Producer, television/film/video",
+  "signer_name": "Rebecca Gregory",
+  "signer_phone": "(661)271-0",
+  "signature_date": "07/20/2023",
+  "injured_person_address": {
+   "street": "04957 Hernandez Square",
+   "city": "East Jenniferhaven",
+   "state": "TX",
+   "zip_code": "35742"
+  },
+  "employer": {
+   "name": "Lee LLC",
+   "address": "04957 Hernandez Square, East Jenniferhaven, TX 35742, US"
+  },
+  "insurance_carrier": {
+   "name": "Atlantic Insurance Company",
+   "address": "123 Business Park, Boston, MA 02108, US"
+  }
+ },
+ "oneshot": {
+  "owcp_number": "LS-2023-1",
+  "carrier_number": "CAR-2023-0004567",
+  "injured_person": "Todd U. Sampaio",
+  "accident_date": "07/15/2023",
+  "disability_begin_date": "07/16/2023",
+  "payee_name": "Todd U. Sampaio",
+  "compensation_type": "Temporary Total Disability",
+  "payment_begin_date": "07/20/2023",
+  "first_payment_date": "07/20/2023",
+  "signer_title": "Producer, television/film/video",
+  "signer_name": "Rebecca Gregory",
+  "signer_phone": "(661)271-0",
+  "signature_date": "07/20/2023",
+  "injured_person_address": {
+   "street": "04957 Hernandez Square",
+   "city": "East Jenniferhaven",
+   "state": "TX",
+   "zip_code": "35742"
+  },
+  "employer": {
+   "name": "Lee LLC",
+   "address": "04957 Hernandez Square, East Jenniferhaven, TX 35742, US"
+  },
+  "insurance_carrier": {
+   "name": "Atlantic Insurance Company",
+   "address": "123 Business Park, Boston, MA 02108, US"
+  }
+ }
+}

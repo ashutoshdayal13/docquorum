@@ -1,0 +1,21 @@
+{
+ "date_of_birth": "10/17/1983",
+ "other_names_used": [
+  "Gautami C. Gupta"
+ ],
+ "full_legal_name": {
+  "first_name": "Gautami",
+  "middle_name": "C.",
+  "last_name": "Anderson"
+ },
+ "us_mailing_address": {
+  "street_address": "529 Holloway Rest Apt. 485",
+  "city": "Kimton",
+  "zip_code": "71440"
+ },
+ "us_physical_address": {
+  "street_address": "529 Holloway Rest Apt. 485",
+  "city": "Kimton",
+  "zip_code": "71440"
+ }
+}

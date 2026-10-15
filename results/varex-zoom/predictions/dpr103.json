@@ -1,0 +1,19 @@
+{
+ "agency_name": "SafeRoads Rehabilitation Center",
+ "federal_employer_id_number": "12-3456789",
+ "sponsor_address": {
+  "address": "123 Main Street",
+  "address_continued": "Building A",
+  "city": "New York",
+  "county": "New York County"
+ },
+ "contact_person": {
+  "last_name": "Young",
+  "first_name": "Amy",
+  "middle_initial": "A",
+  "title": "Program Director",
+  "phone_extension": "201",
+  "email_address": "ayoung@miller.com",
+  "additional_information": "Certified Financial Planner"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "type_of_financing": "Section 8",
+  "section_8_project_number": "CTL-2020-11548",
+  "pha_name": "Lake Patricia Housing Authority",
+  "owner_name": "Maria Cristina F. Tomaselli",
+  "fiscal_year_end_date": "06/30/2023",
+  "project_description": "Sunset Apartments, 61462 Williams Street, Lake Patricia, PA 05239. Total number of units: 50. Total number of Section 8-assisted units: 30."
+ },
+ "parse": {
+  "type_of_financing": "Section 8",
+  "section_8_project_number": "CTL-2020-11548",
+  "pha_name": "Lake Patricia Housing Authority",
+  "owner_name": "Maria Cristina F. Tomaselli",
+  "fiscal_year_end_date": "06/30/2023",
+  "project_description": "Sunset Apartments, 61462 Williams Street, Lake Patricia, PA 05239. Total number of units: 50. Total number of Section 8-assisted units: 30."
+ },
+ "oneshot": {
+  "type_of_financing": "Section 8",
+  "section_8_project_number": "CTL-2020-11548",
+  "pha_name": "Lake Patricia Housing Authority",
+  "owner_name": "Maria Cristina F. Tomaselli",
+  "fiscal_year_end_date": "06/30/2023",
+  "project_description": "Sunset Apartments, 61462 Williams Street, Lake Patricia, PA 05239. Total number of units: 50. Total number of Section 8-assisted units: 30."
+ }
+}

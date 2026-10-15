@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "name": "Paul, Earl S.",
+  "date_of_birth": "11/14/2003",
+  "social_security_number": "009-18-5913",
+  "payroll_office_number": 71379,
+  "enrollment_code_number": 196,
+  "sf_2811_report_number": 202171379,
+  "effective_date": "01/15/2024",
+  "remarks": "Enrollment update due to address change.",
+  "agency_name_and_address": "Human Resources, Port Karenstad, VA",
+  "personnel_contact": "Jennifer L. Santos (239) 967-1422",
+  "payroll_contact": "Heather de Groot (745) 838-2722",
+  "signature_date": "01/15/2024",
+  "address": {
+   "home_address": "3711 Maureen Cove Suite 032, Port Karenstad, VA 93601",
+   "new_address": "600 Andrea Rapid, East Robinfurt, GA 47335"
+  },
+  "enrollment_details": {
+   "new_name": "Paul, Earl S.",
+   "new_date_of_birth": "11/14/2003",
+   "new_enrollment_code_number": 196
+  }
+ },
+ "parse": {
+  "name": "Paul, Earl S.",
+  "date_of_birth": "11/14/2003",
+  "social_security_number": "009-18-5913",
+  "payroll_office_number": 71379,
+  "enrollment_code_number": 196,
+  "sf_2811_report_number": 202171379,
+  "effective_date": "01/15/2024",
+  "remarks": "Enrollment update due to address change.",
+  "agency_name_and_address": "Human Resources, Port Karenstad, VA",
+  "personnel_contact": "Jennifer L. Santos (239) 967-1422",
+  "payroll_contact": "Heather de Groot (745) 838-2722",
+  "signature_date": "01/15/2024",
+  "address": {
+   "home_address": "3711 Maureen Cove Suite 032, Port Karenstad, VA 93601",
+   "new_address": "600 Andrea Rapid, East Robinfurt, GA 47335"
+  },
+  "enrollment_details": {
+   "new_name": "Paul, Earl S.",
+   "new_date_of_birth": "11/14/2003",
+   "new_enrollment_code_number": 196
+  }
+ },
+ "oneshot": {
+  "name": "Paul, Earl S.",
+  "date_of_birth": "11/14/2003",
+  "social_security_number": "009-18-5913",
+  "payroll_office_number": 71379,
+  "enrollment_code_number": 196,
+  "sf_2811_report_number": 202171379,
+  "effective_date": "01/15/2024",
+  "remarks": "Enrollment update due to address change.",
+  "agency_name_and_address": "Human Resources, Port Karenstad, VA",
+  "personnel_contact": "Jennifer L. Santos (239) 967-1422",
+  "payroll_contact": "Heather de Groot (745) 838-2722",
+  "signature_date": "01/15/2024",
+  "address": {
+   "home_address": "3711 Maureen Cove Suite 032, Port Karenstad, VA 93601",
+   "new_address": "600 Andrea Rapid, East Robinfurt, GA 47335"
+  },
+  "enrollment_details": {
+   "new_name": "Paul, Earl S.",
+   "new_date_of_birth": "11/14/2003",
+   "new_enrollment_code_number": 196
+  }
+ }
+}

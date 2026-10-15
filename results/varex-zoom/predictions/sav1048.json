@@ -1,0 +1,47 @@
+{
+ "bond_details": [
+  {
+   "serial_number": "A123456789012345",
+   "denomination": 500,
+   "issue_date": "05/01/2010",
+   "registration_details": "Joshua Sundaram, 534 Rachel Lakes Suite 020, South Jacob, NV 62327"
+  },
+  {
+   "serial_number": "B987654321098765",
+   "denomination": 1000,
+   "issue_date": "12/15/2015",
+   "registration_details": "Neel S. Davis, 7682 Lloyd Shoal, East Anthony, CA 92597"
+  },
+  {
+   "serial_number": "C543210987654321",
+   "denomination": 200,
+   "issue_date": "03/22/2012",
+   "registration_details": "Joshua Sundaram, 534 Rachel Lakes Suite 020, South Jacob, NV 62327"
+  },
+  {
+   "serial_number": "D456789012345678",
+   "denomination": 5000,
+   "issue_date": "08/30/2018",
+   "registration_details": "Jennifer X. Khare, 8895 Alan Point, New Anthony, HI 80196"
+  },
+  {
+   "serial_number": "E789012345678901",
+   "denomination": 100,
+   "issue_date": "11/10/2016",
+   "registration_details": "Neel S. Davis, 7682 Lloyd Shoal, East Anthony, CA 92597"
+  }
+ ],
+ "loss_details": {
+  "date_of_loss": "07/14/2023"
+ },
+ "authority_details": {
+  "relationship_to_owner": "Certified Financial Planner for Joshua Sundaram"
+ },
+ "minor_details": [
+  {
+   "name": "Ava Sundaram",
+   "date_of_birth": "05/15/2015",
+   "relationship_to_owner": "Daughter"
+  }
+ ]
+}

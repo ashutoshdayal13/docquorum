@@ -1,0 +1,34 @@
+{
+ "motor_carrier_name": "Smith Group Logistics",
+ "motor_carrier_address": {
+  "address": "15040 Stevenson Ramp",
+  "city": "Stephensonland",
+  "zip_code": "80106"
+ },
+ "records_location": {
+  "address": "15040 Stevenson Ramp",
+  "city": "Stephensonland",
+  "zip_code": "80106",
+  "telephone": "(789) 260-23",
+  "telephone_extension": "238",
+  "fax": "(280) 896-6102",
+  "fax_extension": "610",
+  "email": "ndumas@smith.com"
+ },
+ "records_responsible_person": {
+  "name": "Nicole K. Dumas",
+  "telephone": "(789) 260-23",
+  "telephone_extension": "238"
+ },
+ "billing_responsible_person": {
+  "name": "Nicole K. Dumas",
+  "address": "15040 Stevenson Ramp",
+  "city": "Stephensonland",
+  "zip_code": "80106",
+  "telephone": "(789) 260-23",
+  "telephone_extension": "238",
+  "fax": "(280)",
+  "fax_extension": "610",
+  "email": "nicole.dumas@yahoo.com"
+ }
+}

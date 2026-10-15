@@ -1,0 +1,83 @@
+{
+ "primary": {
+  "date": "06/20/2023",
+  "contract_number": "GS-35F-12345",
+  "contract_period": "06/21/2023 to 06/20/2028",
+  "contract_award_date": "06/21/2023",
+  "project_number": "PO-2022-71430",
+  "services_commodity": "IT Consulting Services",
+  "quantity": "1000 hours",
+  "unit_of_issue": "hours",
+  "receiving_agency": "General Services Admin",
+  "requirement_for_overseas": "No",
+  "congressional_district": "New Hampshire 1st Congressional District",
+  "brief_description": "IT consulting services for building services and infrastructure support",
+  "contractor": {
+   "name": "Rodriguez-Burke"
+  },
+  "production_point": {
+   "name": "Rodriguez-Burke Production Facility"
+  },
+  "congressional_interest": {
+   "name": "Senator Eleanor Jones"
+  },
+  "contracting_officer": {
+   "name": "Mahika A. Sanders",
+   "phone": "(240) 279-9187"
+  }
+ },
+ "parse": {
+  "date": "06/20/2023",
+  "contract_number": "GS-35F-12345",
+  "contract_period": "06/21/2023 to 06/20/2028",
+  "contract_award_date": "06/21/2023",
+  "project_number": "PO-2022-71430",
+  "services_commodity": "IT Consulting Services",
+  "quantity": "1000 hours",
+  "unit_of_issue": "hours",
+  "receiving_agency": "General Services Admin",
+  "requirement_for_overseas": "No",
+  "congressional_district": "New Hampshire 1st Congressional District",
+  "brief_description": "IT consulting services for building services and infrastructure support",
+  "contractor": {
+   "name": "Rodriguez-Burke"
+  },
+  "production_point": {
+   "name": "Rodriguez-Burke Production Facility"
+  },
+  "congressional_interest": {
+   "name": "Senator Eleanor Jones"
+  },
+  "contracting_officer": {
+   "name": "Mahika A. Sanders",
+   "phone": "(240) 279-9187"
+  }
+ },
+ "oneshot": {
+  "date": "06/20/2023",
+  "contract_number": "GS-35F-12345",
+  "contract_period": "06/21/2023 to 06/20/2028",
+  "contract_award_date": "06/21/2023",
+  "project_number": "PO-2022-71430",
+  "services_commodity": "IT Consulting Services",
+  "quantity": "1000 hours",
+  "unit_of_issue": "hours",
+  "receiving_agency": "General Services Admin",
+  "requirement_for_overseas": "No",
+  "congressional_district": "New Hampshire 1st Congressional District",
+  "brief_description": "IT consulting services for building services and infrastructure support",
+  "contractor": {
+   "name": "Rodriguez-Burke"
+  },
+  "production_point": {
+   "name": "Rodriguez-Burke Production Facility"
+  },
+  "congressional_interest": {
+   "name": "Senator Eleanor Jones"
+  },
+  "contracting_officer": {
+   "name": "Mahika A. Sanders",
+   "phone": "(240) 279-9187"
+  }
+ }
+}

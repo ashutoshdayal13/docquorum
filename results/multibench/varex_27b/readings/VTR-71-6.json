@@ -1,0 +1,53 @@
+{
+ "primary": {
+  "vehicle_identification_number": "1G1ZT54812F123456",
+  "vehicle_year": 2012,
+  "vehicle_make": "Chevy",
+  "vehicle_body_style": "Sedan",
+  "vehicle_model": "Malib",
+  "license_plate_state": "Texas",
+  "vehicle_physical_location": "1234 Storage Lane, Austin, TX 78701",
+  "applicant_date": "05/15/2024",
+  "applicant_business_info": {
+   "business_name": "Rosales Storage Solutions",
+   "license_number": "ST-2020-TX-654"
+  },
+  "applicant_address": {
+   "address": "65730 Roberts Knolls"
+  }
+ },
+ "parse": {
+  "vehicle_identification_number": "1G1ZT54812F123456",
+  "vehicle_year": 2012,
+  "vehicle_make": "Chevy",
+  "vehicle_body_style": "Sedan",
+  "vehicle_model": "Malib",
+  "license_plate_state": "Texas",
+  "vehicle_physical_location": "1234 Storage Lane, Austin, TX 78701",
+  "applicant_date": "05/15/2024",
+  "applicant_business_info": {
+   "business_name": "Rosales Storage Solutions",
+   "license_number": "ST-2020-TX-654"
+  },
+  "applicant_address": {
+   "address": "65730 Roberts Knolls"
+  }
+ },
+ "oneshot": {
+  "vehicle_identification_number": "1G1ZT54812F123456",
+  "vehicle_year": 2012,
+  "vehicle_make": "Chevy",
+  "vehicle_body_style": "Sedan",
+  "vehicle_model": "Malib",
+  "license_plate_state": "Texas",
+  "vehicle_physical_location": "1234 Storage Lane, Austin, TX 78701",
+  "applicant_date": "05/15/2024",
+  "applicant_business_info": {
+   "business_name": "Rosales Storage Solutions",
+   "license_number": "ST-2020-TX-654"
+  },
+  "applicant_address": {
+   "address": "65730 Roberts Knolls"
+  }
+ }
+}

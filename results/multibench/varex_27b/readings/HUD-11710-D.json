@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "issuer_name": "Aguirre Inc",
+  "reporting_month": "April 2023",
+  "issuer_id_number": "PO-2022-44505",
+  "issuer_rpb_report_id_number": "6718-8869-6385",
+  "number_of_pools_and_loan_pkgs": 15,
+  "total_escrow_funds": 321107.17,
+  "total_funds_other_than_escrow": 4930.59,
+  "issuer_contact": {
+   "printed_name": "Luigina Sloan",
+   "title": "Research scientist (physical sciences)",
+   "phone_number": "(028) 355-6232"
+  }
+ },
+ "parse": {
+  "issuer_name": "Aguirre Inc",
+  "reporting_month": "April 2023",
+  "issuer_id_number": "PO-2022-44505",
+  "issuer_rpb_report_id_number": "6718-8869-6385",
+  "number_of_pools_and_loan_pkgs": 15,
+  "total_escrow_funds": 321107.17,
+  "total_funds_other_than_escrow": 4930.59,
+  "issuer_contact": {
+   "printed_name": "Luigina Sloan",
+   "title": "Research scientist (physical sciences)",
+   "phone_number": "(028) 355-6232"
+  }
+ },
+ "oneshot": {
+  "issuer_name": "Aguirre Inc",
+  "reporting_month": "April 2023",
+  "issuer_id_number": "PO-2022-44505",
+  "issuer_rpb_report_id_number": "6718-8869-6385",
+  "number_of_pools_and_loan_pkgs": 15,
+  "total_escrow_funds": 321107.17,
+  "total_funds_other_than_escrow": 4930.59,
+  "issuer_contact": {
+   "printed_name": "Luigina Sloan",
+   "title": "Research scientist (physical sciences)",
+   "phone_number": "(028) 355-6232"
+  }
+ }
+}

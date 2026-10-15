@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "employee_name": "Deleon, Kenneth",
+  "employee_ssn": "291287029",
+  "employee_home_address": "14942 Tammy Court Apt. 428, West Ashleyhaven, NY",
+  "federal_agency": "U.S. Department of Health and Human Services",
+  "state_local_government": "California Department of Public Health",
+  "current_position": {
+   "position_title": "Public Health Analyst",
+   "department": "Department of Health and Human Services"
+  },
+  "assignment_position": {
+   "position_title": "Senior Epidemiologist",
+   "department": "California Department of Public Health"
+  }
+ },
+ "parse": {
+  "employee_name": "Deleon, Kenneth",
+  "employee_ssn": "291287029",
+  "employee_home_address": "14942 Tammy Court Apt. 428, West Ashleyhaven, NY",
+  "federal_agency": "U.S. Department of Health and Human Services",
+  "state_local_government": "California Department of Public Health",
+  "current_position": {
+   "position_title": "Public Health Analyst",
+   "department": "Department of Health and Human Services"
+  },
+  "assignment_position": {
+   "position_title": "Senior Epidemiologist",
+   "department": "California Department of Public Health"
+  }
+ },
+ "oneshot": {
+  "employee_name": "Deleon, Kenneth",
+  "employee_ssn": "291287029",
+  "employee_home_address": "14942 Tammy Court Apt. 428, West Ashleyhaven, NY",
+  "federal_agency": "U.S. Department of Health and Human Services",
+  "state_local_government": "California Department of Public Health",
+  "current_position": {
+   "position_title": "Public Health Analyst",
+   "department": "Department of Health and Human Services"
+  },
+  "assignment_position": {
+   "position_title": "Senior Epidemiologist",
+   "department": "California Department of Public Health"
+  }
+ }
+}

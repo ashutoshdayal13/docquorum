@@ -1,0 +1,23 @@
+{
+ "primary": {
+  "comments_justification": "We are requesting additional filing equipment due to an increase in office records that are not covered by the current HUD Records Disposition Schedule items. The existing equipment is being fully utilized, and we have surveyed the office to confirm that redistribution is not feasible. The new equipment is necessary to meet security storage requirements and to ensure efficient record management.",
+  "requester": {
+   "name": "Tammie V. Gotti",
+   "office": "Passenger Transport Department"
+  }
+ },
+ "parse": {
+  "comments_justification": "We are requesting additional filing equipment due to an increase in office records that are not covered by the current HUD Records Disposition Schedule items. The existing equipment is being fully utilized, and we have surveyed the office to confirm that redistribution is not feasible. The new equipment is necessary to meet security storage requirements and to ensure efficient record management.",
+  "requester": {
+   "name": "Tammie V. Gotti",
+   "office": "Passenger Transport Department"
+  }
+ },
+ "oneshot": {
+  "comments_justification": "We are requesting additional filing equipment due to an increase in office records that are not covered by the current HUD Records Disposition Schedule items. The existing equipment is being fully utilized, and we have surveyed the office to confirm that redistribution is not feasible. The new equipment is necessary to meet security storage requirements and to ensure efficient record management.",
+  "requester": {
+   "name": "Tammie V. Gotti",
+   "office": "Passenger Transport Department"
+  }
+ }
+}

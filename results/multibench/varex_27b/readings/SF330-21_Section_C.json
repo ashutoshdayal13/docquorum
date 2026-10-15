@@ -1,0 +1,116 @@
+{
+ "primary": {
+  "title_and_location": "New City Hall Construction, Springfield, IL",
+  "public_notice_date": "05/15/2023",
+  "solicitation_project_number": "CTL-2023-90123",
+  "firm_name": "Ho Group",
+  "point_of_contact": {
+   "name_title": "Olga Galuppi, Senior Architect",
+   "telephone_number": "(761) 806-6109",
+   "fax_number": "(503) 220-5625",
+   "email_address": "ogaluppi@ho.com"
+  },
+  "proposed_team": [
+   {
+    "name": "Olga Galuppi",
+    "role": "Project Manager"
+   },
+   {
+    "name": "Jerzy A. Sharaf",
+    "role": "Structural Design"
+   },
+   {
+    "name": "Veronica Q. Jansdr",
+    "role": "Safety Compliance"
+   },
+   {
+    "name": "Alice Johnson",
+    "role": "Site Planning"
+   },
+   {
+    "name": "Robert Smith",
+    "role": "Electrical Systems"
+   },
+   {
+    "name": "Emma Wilson",
+    "role": "Interior Design"
+   }
+  ]
+ },
+ "parse": {
+  "title_and_location": "New City Hall Construction, Springfield, IL",
+  "public_notice_date": "05/15/2023",
+  "solicitation_project_number": "CTL-2023-90123",
+  "firm_name": "Ho Group",
+  "point_of_contact": {
+   "name_title": "Olga Galuppi, Senior Architect",
+   "telephone_number": "(761) 806-6109",
+   "fax_number": "(503) 220-5625",
+   "email_address": "ogaluppi@ho.com"
+  },
+  "proposed_team": [
+   {
+    "name": "Olga Galuppi",
+    "role": "Project Manager"
+   },
+   {
+    "name": "Jerzy A. Sharaf",
+    "role": "Structural Design"
+   },
+   {
+    "name": "Veronica Q. Jansdr",
+    "role": "Safety Compliance"
+   },
+   {
+    "name": "Alice Johnson",
+    "role": "Site Planning"
+   },
+   {
+    "name": "Robert Smith",
+    "role": "Electrical Systems"
+   },
+   {
+    "name": "Emma Wilson",
+    "role": "Interior Design"
+   }
+  ]
+ },
+ "oneshot": {
+  "title_and_location": "New City Hall Construction, Springfield, IL",
+  "public_notice_date": "05/15/2023",
+  "solicitation_project_number": "CTL-2023-90123",
+  "firm_name": "Ho Group",
+  "point_of_contact": {
+   "name_title": "Olga Galuppi, Senior Architect",
+   "telephone_number": "(761) 806-6109",
+   "fax_number": "(503) 220-5625",
+   "email_address": "ogaluppi@ho.com"
+  },
+  "proposed_team": [
+   {
+    "name": "Olga Galuppi",
+    "role": "Project Manager"
+   },
+   {
+    "name": "Jerzy A. Sharaf",
+    "role": "Structural Design"
+   },
+   {
+    "name": "Veronica Q. Jansdr",
+    "role": "Safety Compliance"
+   },
+   {
+    "name": "Alice Johnson",
+    "role": "Site Planning"
+   },
+   {
+    "name": "Robert Smith",
+    "role": "Electrical Systems"
+   },
+   {
+    "name": "Emma Wilson",
+    "role": "Interior Design"
+   }
+  ]
+ }
+}

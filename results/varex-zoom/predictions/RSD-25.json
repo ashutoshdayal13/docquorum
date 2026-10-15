@@ -1,0 +1,27 @@
+{
+ "date_of_request": "06/15/2023",
+ "signature_date": "06/15/2023",
+ "agent_investigator_information": {
+  "name": "Russell Landry",
+  "title": "Surveyor, minerals",
+  "contact_information": "rlandry@thomas.com, (183) 634-2017"
+ },
+ "case_details": {
+  "case_number": "INV-2023-0456",
+  "case_description": "Investigation into suspicious activities related to private security"
+ },
+ "subject_entity_information": [
+  {
+   "name": "Breanna J. Otto",
+   "address": "859 John Island Suite"
+  },
+  {
+   "name": "Sarah Roldan",
+   "address": "5439 Hunter Divide,"
+  },
+  {
+   "name": "Thomas Ltd",
+   "address": "65465 Gomez Mills,"
+  }
+ ]
+}

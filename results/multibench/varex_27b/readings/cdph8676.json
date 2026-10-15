@@ -1,0 +1,107 @@
+{
+ "primary": {
+  "license_number": "PFPR-2023-CA-56789",
+  "total_fees_due": 4427.17,
+  "firm_information": {
+   "firm_name": "Paws & Claws Pet Foods Inc.",
+   "dba_name": "Paws & Claws",
+   "website_url": "https://www.pawsandclaws.com"
+  },
+  "facility_address": {
+   "facility_address": "1234 Pet Food Lane",
+   "facility_address_continued": "Suite 100",
+   "facility_city": "Sacramento",
+   "facility_state": "CA",
+   "facility_zip_code": "94203"
+  },
+  "mailing_address": {
+   "mailing_address": "6051 Vega Forges Apt. 401",
+   "mailing_city": "North Richard",
+   "mailing_state": "SC",
+   "mailing_zip_code": "02208",
+   "mailing_country": "United States"
+  },
+  "ownership_information": {
+   "owner_name": "Paws & Claws Pet Foods Inc.",
+   "state_of_incorporation": "California",
+   "owners_officers_names": "Abril X. Miller, CEO"
+  },
+  "activity_information": {
+   "pet_food_products": "Dry dog food, wet cat food",
+   "nutritional_supplement_products": "Vitamin supplements for dogs"
+  },
+  "owner_signature": {
+   "owner_printed_name": "Abril X. Miller"
+  }
+ },
+ "parse": {
+  "license_number": "PFPR-2023-CA-56789",
+  "total_fees_due": 4427.17,
+  "firm_information": {
+   "firm_name": "Paws & Claws Pet Foods Inc.",
+   "dba_name": "Paws & Claws",
+   "website_url": "https://www.pawsandclaws.com"
+  },
+  "facility_address": {
+   "facility_address": "1234 Pet Food Lane",
+   "facility_address_continued": "Suite 100",
+   "facility_city": "Sacramento",
+   "facility_state": "CA",
+   "facility_zip_code": "94203"
+  },
+  "mailing_address": {
+   "mailing_address": "6051 Vega Forges Apt. 401",
+   "mailing_city": "North Richard",
+   "mailing_state": "SC",
+   "mailing_zip_code": "02208",
+   "mailing_country": "United States"
+  },
+  "ownership_information": {
+   "owner_name": "Paws & Claws Pet Foods Inc.",
+   "state_of_incorporation": "California",
+   "owners_officers_names": "Abril X. Miller, CEO"
+  },
+  "activity_information": {
+   "pet_food_products": "Dry dog food, wet cat food",
+   "nutritional_supplement_products": "Vitamin supplements for dogs"
+  },
+  "owner_signature": {
+   "owner_printed_name": "Abril X. Miller"
+  }
+ },
+ "oneshot": {
+  "license_number": "PFPR-2023-CA-56789",
+  "total_fees_due": 4427.17,
+  "firm_information": {
+   "firm_name": "Paws & Claws Pet Foods Inc.",
+   "dba_name": "Paws & Claws",
+   "website_url": "https://www.pawsandclaws.com"
+  },
+  "facility_address": {
+   "facility_address": "1234 Pet Food Lane",
+   "facility_address_continued": "Suite 100",
+   "facility_city": "Sacramento",
+   "facility_state": "CA",
+   "facility_zip_code": "94203"
+  },
+  "mailing_address": {
+   "mailing_address": "6051 Vega Forges Apt. 401",
+   "mailing_city": "North Richard",
+   "mailing_state": "SC",
+   "mailing_zip_code": "02208",
+   "mailing_country": "United States"
+  },
+  "ownership_information": {
+   "owner_name": "Paws & Claws Pet Foods Inc.",
+   "state_of_incorporation": "California",
+   "owners_officers_names": "Abril X. Miller, CEO"
+  },
+  "activity_information": {
+   "pet_food_products": "Dry dog food, wet cat food",
+   "nutritional_supplement_products": "Vitamin supplements for dogs"
+  },
+  "owner_signature": {
+   "owner_printed_name": "Abril X. Miller"
+  }
+ }
+}

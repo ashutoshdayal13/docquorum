@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "taxpayer_name": "Zacharia, Holly",
+  "business_name": "Meyer, Wright and Mueller",
+  "tax_classification": "S",
+  "account_numbers": [
+   "2497-3748-8120"
+  ],
+  "requester_name": "Tom P. Murphy",
+  "address": {
+   "street": "66136 Sheri Ridge"
+  }
+ },
+ "parse": {
+  "taxpayer_name": "Zacharia, Holly",
+  "business_name": "Meyer, Wright and Mueller",
+  "tax_classification": "Limited liability company (S)",
+  "account_numbers": [
+   "2497-3748-8120"
+  ],
+  "requester_name": "Tom P. Murphy",
+  "address": {
+   "street": "66136 Sheri Ridge"
+  }
+ },
+ "oneshot": {
+  "taxpayer_name": "Zacharia, Holly",
+  "business_name": "Meyer, Wright and Mueller",
+  "tax_classification": "S",
+  "account_numbers": [
+   "2497-3748-8120"
+  ],
+  "requester_name": "Tom P. Murphy",
+  "address": {
+   "street": "66136 Sheri Ridge"
+  }
+ }
+}

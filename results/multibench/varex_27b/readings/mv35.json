@@ -1,0 +1,80 @@
+{
+ "primary": {
+  "vehicle_year": 2012,
+  "vehicle_make": "Ford",
+  "vehicle_model": "F-150",
+  "vehicle_vin": "1FTFW1E52CFB33021",
+  "vehicle_color": "Red",
+  "owner_signature_date": "05/16/2023",
+  "delivery_agent_signature_date": "04/17/2023",
+  "business_signature_date": "06/03/2023",
+  "vehicle_owner": {
+   "name": "Kai T. Greene",
+   "id": "661-46-5126",
+   "address": "69818 Ross Estate, West Charles, TX 07019"
+  },
+  "delivery_agent": {
+   "name": "Miranda T. Amanowicz",
+   "dob": "04/17/1989",
+   "vehicle_plate": "NV 27491"
+  },
+  "business": {
+   "name": "Conway, Gray and Owen",
+   "id": "DIS-2023-TX-66194",
+   "contact_name": "Kai T. Greene",
+   "contact_title": "Adult guidance worker"
+  }
+ },
+ "parse": {
+  "vehicle_year": 2012,
+  "vehicle_make": "Ford",
+  "vehicle_model": "F-150",
+  "vehicle_vin": "1FTFW1E52CFB33021",
+  "vehicle_color": "Red",
+  "owner_signature_date": "05/16/2023",
+  "delivery_agent_signature_date": "04/17/2023",
+  "business_signature_date": "06/03/2023",
+  "vehicle_owner": {
+   "name": "Kai T. Greene",
+   "id": "661-46-5126",
+   "address": "69818 Ross Estate, West Charles, TX 07019"
+  },
+  "delivery_agent": {
+   "name": "Miranda T. Amanowicz",
+   "dob": "04/17/1989",
+   "vehicle_plate": "NV 27491"
+  },
+  "business": {
+   "name": "Conway, Gray and Owen",
+   "id": "DIS-2023-TX-66194",
+   "contact_name": "Kai T. Greene",
+   "contact_title": "Adult guidance worker"
+  }
+ },
+ "oneshot": {
+  "vehicle_year": 2012,
+  "vehicle_make": "Ford",
+  "vehicle_model": "F-150",
+  "vehicle_vin": "1FTFW1E52CFB33021",
+  "vehicle_color": "Red",
+  "owner_signature_date": "05/16/2023",
+  "delivery_agent_signature_date": "04/17/2023",
+  "business_signature_date": "06/03/2023",
+  "vehicle_owner": {
+   "name": "Kai T. Greene",
+   "id": "661-46-5126",
+   "address": "69818 Ross Estate, West Charles, TX 07019"
+  },
+  "delivery_agent": {
+   "name": "Miranda T. Amanowicz",
+   "dob": "04/17/1989",
+   "vehicle_plate": "NV 27491"
+  },
+  "business": {
+   "name": "Conway, Gray and Owen",
+   "id": "DIS-2023-TX-66194",
+   "contact_name": "Kai T. Greene",
+   "contact_title": "Adult guidance worker"
+  }
+ }
+}

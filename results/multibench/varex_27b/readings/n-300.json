@@ -1,0 +1,81 @@
+{
+ "primary": {
+  "date_of_birth": "03/09/1977",
+  "date_became_lawful_permanent_resident": "05/15/2010",
+  "country_of_birth": "United States of America",
+  "country_of_citizenship": "United States of America",
+  "applicant_name": {
+   "first_name": "Andrew",
+   "middle_name": "Michael",
+   "last_name": "Vargas"
+  },
+  "other_names": [
+   {
+    "name": "Andrew M. Vargas",
+    "type": "Maiden Name"
+   },
+   {
+    "name": "Andy Vargas",
+    "type": "Alias"
+   },
+   {
+    "name": "Andrew Michael Vargas Rodriguez",
+    "type": "Other"
+   }
+  ]
+ },
+ "parse": {
+  "date_of_birth": "03/09/1977",
+  "date_became_lawful_permanent_resident": "05/15/2010",
+  "country_of_birth": "United States of America",
+  "country_of_citizenship": "United States of America",
+  "applicant_name": {
+   "first_name": "Andrew",
+   "middle_name": "Michael",
+   "last_name": "Vargas"
+  },
+  "other_names": [
+   {
+    "name": "Andrew M. Vargas",
+    "type": "Maiden Name"
+   },
+   {
+    "name": "Andy Vargas",
+    "type": "Alias"
+   }
+  ]
+ },
+ "oneshot": {
+  "date_of_birth": "03/09/1977",
+  "date_became_lawful_permanent_resident": "05/15/2010",
+  "country_of_birth": "United States of America",
+  "country_of_citizenship": "United States of America",
+  "applicant_name": {
+   "first_name": "Andrew",
+   "middle_name": "Michael",
+   "last_name": "Vargas"
+  },
+  "other_names": [
+   {
+    "name": "Andrew M. Vargas",
+    "type": "Given Name (First Name)"
+   },
+   {
+    "name": "Maiden Name",
+    "type": "Middle Name"
+   },
+   {
+    "name": "Andrew Michael Vargas Rodriguez",
+    "type": "Family Name (Last Name)"
+   },
+   {
+    "name": "Andy Vargas",
+    "type": "Given Name (First Name)"
+   },
+   {
+    "name": "Alias",
+    "type": "Middle Name"
+   }
+  ]
+ }
+}

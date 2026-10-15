@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "claim_no": "REF-2022-38089",
+  "property_or_cash_transferred": "Transferred $500 to a family member for medical expenses.",
+  "overpaid_person": {
+   "last_name": "Stokes",
+   "first_name": "Hugues"
+  },
+  "claimant": {
+   "last_name": "Rajagopalan",
+   "first_name": "Natividad"
+  }
+ },
+ "parse": {
+  "claim_no": "REF-2022-38089",
+  "property_or_cash_transferred": "Transferred $500 to a family member for medical expenses.",
+  "overpaid_person": {
+   "last_name": "Stokes",
+   "first_name": "Hugues"
+  },
+  "claimant": {
+   "last_name": "Rajagopalan",
+   "first_name": "Natividad"
+  }
+ },
+ "oneshot": {
+  "claim_no": "REF-2022-38089",
+  "property_or_cash_transferred": "Transferred $500 to a family member for medical expenses.",
+  "overpaid_person": {
+   "last_name": "Stokes",
+   "first_name": "Hugues"
+  },
+  "claimant": {
+   "last_name": "Rajagopalan",
+   "first_name": "Natividad"
+  }
+ }
+}

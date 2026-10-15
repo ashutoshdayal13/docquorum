@@ -1,0 +1,17 @@
+{
+ "primary": {
+  "employee_name": "Klotz, Arkadiusz",
+  "employee_date_of_birth": "04/01/1991",
+  "employee_social_security_number": "897-88-4006"
+ },
+ "parse": {
+  "employee_name": "Klotz, Arkadiusz",
+  "employee_date_of_birth": "04/01/1991",
+  "employee_social_security_number": "897-88-4006"
+ },
+ "oneshot": {
+  "employee_name": "Klotz, Arkadiusz",
+  "employee_date_of_birth": "04/01/1991",
+  "employee_social_security_number": "897-88-4006"
+ }
+}

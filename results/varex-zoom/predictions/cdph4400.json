@@ -1,0 +1,19 @@
+{
+ "student_first_name": "Alejandro",
+ "student_last_name": "Medina",
+ "student_date_of_birth": "05/15/2000",
+ "hospital_of_birth": "St. Mary's Medical Center",
+ "birth_city": "San Francisco",
+ "email_address": "alejandro.medina@student.university.edu",
+ "phone_number": "(415) 555-1234",
+ "signature_name": "Alejandro Medina",
+ "signature_date": "03/10/2023",
+ "birth_mother": {
+  "first_name": "Omar",
+  "last_name": "Medina",
+  "date_of_birth": "11/05/1960",
+  "maiden_name": "Omar K. Johnson",
+  "other_names": "Omar K. Medina-Johnson",
+  "city": "South Diane"
+ }
+}

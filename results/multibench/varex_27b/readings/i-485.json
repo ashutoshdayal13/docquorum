@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "a_number": "",
+  "other_names": [
+   "Leticia Maria"
+  ],
+  "date_of_birth": "01/17/2001",
+  "city_or_town_of_birth": "Rio de Janeiro",
+  "form_i_485_edition": "02/21/23",
+  "applicant_name": {
+   "first_name": "Leticia",
+   "middle_name": "Maria",
+   "last_name": "Singleton"
+  }
+ },
+ "parse": {
+  "a_number": "",
+  "other_names": [
+   "Leticia Maria",
+   "Letty Singleton"
+  ],
+  "date_of_birth": "01/17/2001",
+  "city_or_town_of_birth": "Rio de Janeiro",
+  "form_i_485_edition": "02/21/23",
+  "applicant_name": {
+   "first_name": "Leticia",
+   "middle_name": "Maria",
+   "last_name": "Singleton"
+  }
+ },
+ "oneshot": {
+  "other_names": [
+   "Leticia Maria"
+  ],
+  "date_of_birth": "01/17/2001",
+  "city_or_town_of_birth": "Rio de Janeiro",
+  "form_i_485_edition": "02/21/23",
+  "applicant_name": {
+   "first_name": "Leticia",
+   "middle_name": "Maria",
+   "last_name": "Singleton"
+  }
+ }
+}

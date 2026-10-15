@@ -1,0 +1,19 @@
+{
+ "primary": {
+  "retirement_claim_number": "CS RC-2024-58237",
+  "person_name": "Brian Q. Burke",
+  "signature_date": "05/15/2024",
+  "form_date": "05/15/2024"
+ },
+ "parse": {
+  "retirement_claim_number": "CS RC-2024-58237",
+  "person_name": "Brian Q. Burke",
+  "signature_date": "05/15/2024",
+  "form_date": "05/15/2024"
+ },
+ "oneshot": {
+  "retirement_claim_number": "CS RC-2024-58237",
+  "person_name": "Brian Q. Burke",
+  "form_date": "05/15/2024"
+ }
+}

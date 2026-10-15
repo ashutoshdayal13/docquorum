@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "field_office": "Central Electrical Division, 3000 Technology Parkway, Suite 500, Springfield",
+  "building_and_location": "Main Power Distribution Center, Sub-basement Level 2, Panel 12-B",
+  "circuit_designation": "PDC-MPB-12-B-042",
+  "remarks": "Routine quarterly testing. All parameters within acceptable limits. No anomalies",
+  "analyst": "Kenneth Thornton",
+  "date": "10/15/2023",
+  "protector": {
+   "type": "Relay Protector",
+   "serial_number": "897654321098765432109876543210",
+   "rating": "480V, 216A"
+  }
+ },
+ "parse": {
+  "field_office": "Central Electrical Division, 3000 Technology Parkway, Suite 500, Springfield",
+  "building_and_location": "Main Power Distribution Center, Sub-basement Level 2, Panel 12-B",
+  "circuit_designation": "PDC-MPB-12-B-042",
+  "remarks": "Routine quarterly testing. All parameters within acceptable limits. No anomalies",
+  "analyst": "Kenneth Thornton",
+  "date": "10/15/2023",
+  "protector": {
+   "type": "Relay Protector",
+   "serial_number": "897654321098765432109876543210",
+   "rating": "480V, 216A"
+  }
+ },
+ "oneshot": {
+  "field_office": "Central Electrical Division, 3000 Technology Parkway, Suite 500, Springfield",
+  "building_and_location": "Main Power Distribution Center, Sub-basement Level 2, Panel 12-B",
+  "circuit_designation": "PDC-MPB-12-B-042",
+  "remarks": "Routine quarterly testing. All parameters within acceptable limits. No anomalies",
+  "analyst": "Kenneth Thornton",
+  "date": "10/15/2023",
+  "protector": {
+   "type": "Relay Protector",
+   "serial_number": "897654321098765432109876543210",
+   "rating": "480V, 216A"
+  }
+ }
+}

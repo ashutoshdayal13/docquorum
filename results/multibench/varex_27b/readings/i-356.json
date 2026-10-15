@@ -1,0 +1,32 @@
+{
+ "primary": {
+  "volag_number_obligor": "VOL-2023-001",
+  "attorney_state_bar_number_obligor": "CPA-2007-OH-745",
+  "obligor_name": "Sole P. Guillon",
+  "obligor_mailing_address": {
+   "street": "38765 Frazier Extension",
+   "city": "Robertsbury",
+   "zip_code": "84377"
+  }
+ },
+ "parse": {
+  "volag_number_obligor": "VOL-2023-001",
+  "attorney_state_bar_number_obligor": "CPA-2007-OH-745",
+  "obligor_name": "Sole P. Guillon",
+  "obligor_mailing_address": {
+   "street": "38765 Frazier Extension",
+   "city": "Robertsbury",
+   "zip_code": "84377"
+  }
+ },
+ "oneshot": {
+  "volag_number_obligor": "VOL-2023-001",
+  "attorney_state_bar_number_obligor": "CPA-2007-OH-745",
+  "obligor_name": "Sole P. Guillon",
+  "obligor_mailing_address": {
+   "street": "38765 Frazier Extension",
+   "city": "Robertsbury",
+   "zip_code": "84377"
+  }
+ }
+}

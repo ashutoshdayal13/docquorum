@@ -1,0 +1,56 @@
+{
+ "primary": {
+  "employee_details": {
+   "employee_name": "Orengo, Gary",
+   "date_of_birth": "10/29/2001",
+   "employee_id": "BRY-001-2023",
+   "organization": "Bryant Ltd, HR Department",
+   "duty_station": "Lake Dylanside, ND",
+   "date_of_appointment": "03/15/2023",
+   "position_title": "Hospital Pharmacist",
+   "pay_plan": "GS-12",
+   "series": "0660",
+   "grade": "12",
+   "step": "03"
+  },
+  "advance_pay_details": {
+   "financial_hardship_explanation": "Unexpected medical expenses due to family emergency."
+  }
+ },
+ "parse": {
+  "employee_details": {
+   "employee_name": "Orengo, Gary",
+   "date_of_birth": "10/29/2001",
+   "employee_id": "BRY-001-2023",
+   "organization": "Bryant Ltd, HR Department",
+   "duty_station": "Lake Dylanside, ND",
+   "date_of_appointment": "03/15/2023",
+   "position_title": "Hospital Pharmacist",
+   "pay_plan": "GS-12",
+   "series": "0660",
+   "grade": "12",
+   "step": "03"
+  },
+  "advance_pay_details": {
+   "financial_hardship_explanation": "Unexpected medical expenses due to family emergency."
+  }
+ },
+ "oneshot": {
+  "employee_details": {
+   "employee_name": "Orengo, Gary",
+   "date_of_birth": "10/29/2001",
+   "employee_id": "BRY-001-2023",
+   "organization": "Bryant Ltd, HR Department",
+   "duty_station": "Lake Dylanside, ND",
+   "date_of_appointment": "03/15/2023",
+   "position_title": "Hospital Pharmacist",
+   "pay_plan": "GS-12",
+   "series": "0660",
+   "grade": "12",
+   "step": "03"
+  },
+  "advance_pay_details": {
+   "financial_hardship_explanation": "Unexpected medical expenses due to family emergency."
+  }
+ }
+}

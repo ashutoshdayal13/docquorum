@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "homeworker_name": "Sandra B. Brown",
+  "age": 61,
+  "telephone_number": "(647) 190-1580",
+  "reason_for_not_working_in_factory": "Due to a medical condition that requires a home-based work environment.",
+  "signature_date": "07/28/2023",
+  "address": {
+   "street": "7822 Kimberly Roads",
+   "city": "Sherryport"
+  },
+  "state_homeworker_certificate": {
+   "certificate_number": "OR-HW-2023-00123",
+   "issue_date": "06/15/2023"
+  }
+ },
+ "parse": {
+  "homeworker_name": "Sandra B. Brown",
+  "age": 61,
+  "telephone_number": "(647) 190-1580",
+  "reason_for_not_working_in_factory": "Due to a medical condition that requires a home-based work environment.",
+  "signature_date": "07/28/2023",
+  "address": {
+   "street": "7822 Kimberly Roads",
+   "city": "Sherryport"
+  },
+  "state_homeworker_certificate": {
+   "certificate_number": "OR-HW-2023-00123",
+   "issue_date": "06/15/2023"
+  }
+ },
+ "oneshot": {
+  "homeworker_name": "Sandra B. Brown",
+  "age": 61,
+  "telephone_number": "(647) 190-1580",
+  "reason_for_not_working_in_factory": "Due to a medical condition that requires a home-based work environment.",
+  "signature_date": "07/28/2023",
+  "address": {
+   "street": "7822 Kimberly Roads",
+   "city": "Sherryport"
+  },
+  "state_homeworker_certificate": {
+   "certificate_number": "OR-HW-2023-00123",
+   "issue_date": "06/15/2023"
+  }
+ }
+}

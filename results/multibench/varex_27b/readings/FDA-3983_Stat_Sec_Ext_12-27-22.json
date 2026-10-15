@@ -1,0 +1,29 @@
+{
+ "primary": {
+  "name": "da Mata, Modesto B.",
+  "counseling_date": "12/20/2022",
+  "employee_signature_date": "12/27/2022",
+  "clinician_provider_signature_date": "12/27/2022",
+  "physician_comment": "Employee understands the risks and preventive measures for Zika virus exposure.",
+  "expiration_date": "12/27/2023",
+  "supervisor_signature_date": "12/28/2022"
+ },
+ "parse": {
+  "name": "da Mata, Modesto B.",
+  "counseling_date": "12/20/2022",
+  "employee_signature_date": "12/27/2022",
+  "clinician_provider_signature_date": "12/27/2022",
+  "physician_comment": "Employee understands the risks and preventive measures for Zika virus exposure.",
+  "expiration_date": "12/27/2023",
+  "supervisor_signature_date": "12/28/2022"
+ },
+ "oneshot": {
+  "name": "da Mata, Modesto B.",
+  "counseling_date": "12/20/2022",
+  "employee_signature_date": "12/27/2022",
+  "clinician_provider_signature_date": "12/27/2022",
+  "physician_comment": "Employee understands the risks and preventive measures for Zika virus exposure.",
+  "expiration_date": "12/27/2023",
+  "supervisor_signature_date": "12/28/2022"
+ }
+}

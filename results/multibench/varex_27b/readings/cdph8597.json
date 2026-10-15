@@ -1,0 +1,134 @@
+{
+ "primary": {
+  "firm_name": "Dixon, Bryant and Johnson",
+  "dba_name": "DBJ Canning Solutions",
+  "website": "https://www.dbjcanningsolutions.com",
+  "owner_name": "Dixon, Bryant and Johnson Inc.",
+  "state_of_incorporation": "California",
+  "other_products_canned": "Organic products",
+  "other_retort_equipment": "Custom automated retort system",
+  "iheo_authorization_fee": "$87.76",
+  "total_fees_due": 369628.02,
+  "owner_printed_name": "Massimo E. Cavalcante",
+  "signature_date": "04/29/2024",
+  "mailing_address": {
+   "street": "119 Murphy Road Suite 287",
+   "city": "Hayesshire",
+   "state": "DE",
+   "zip_code": "94179"
+  },
+  "facility_address": {
+   "street": "119 Murphy Road Suite 287",
+   "city": "Hayesshire",
+   "state": "DE",
+   "zip_code": "94179"
+  },
+  "owners_or_officers": [
+   {
+    "name": "Massimo E. Cavalcante",
+    "title": "Building services engineer"
+   },
+   {
+    "name": "Angela E. Cole",
+    "title": "Chief Strategy Officer"
+   }
+  ],
+  "authorized_representatives": [
+   {
+    "name": "Jose Carlos X. Gupta"
+   }
+  ],
+  "correspondent": {
+   "name": "Jose Carlos X. Gupta",
+   "phone": "(327) 352-6900",
+   "email": "jgupta@fletcher.com"
+  }
+ },
+ "parse": {
+  "firm_name": "Dixon, Bryant and Johnson",
+  "dba_name": "DBJ Canning Solutions",
+  "website": "https://www.dbjcanningsolutions.com",
+  "owner_name": "Dixon, Bryant and Johnson Inc.",
+  "state_of_incorporation": "California",
+  "other_products_canned": "Organic products",
+  "other_retort_equipment": "Custom automated retort system",
+  "iheo_authorization_fee": "$87.76",
+  "total_fees_due": 369628.02,
+  "owner_printed_name": "Massimo E. Cavalcante",
+  "signature_date": "04/29/2024",
+  "mailing_address": {
+   "street": "119 Murphy Road Suite 287",
+   "city": "Hayesshire",
+   "state": "DE",
+   "zip_code": "94179"
+  },
+  "facility_address": {
+   "street": "119 Murphy Road Suite 287",
+   "city": "Hayesshire",
+   "state": "DE",
+   "zip_code": "94179"
+  },
+  "owners_or_officers": [
+   {
+    "name": "Massimo E. Cavalcante",
+    "title": "Building services engineer"
+   },
+   {
+    "name": "Angela E. Cole",
+    "title": "Chief Strategy Officer"
+   }
+  ],
+  "authorized_representatives": [
+   {
+    "name": "Jose Carlos X. Gupta"
+   }
+  ],
+  "correspondent": {
+   "name": "Jose Carlos X. Gupta",
+   "phone": "(327) 352-6900",
+   "email": "jgupta@fletcher.com"
+  }
+ },
+ "oneshot": {
+  "firm_name": "Dixon, Bryant and Johnson",
+  "dba_name": "DBJ Canning Solutions",
+  "website": "https://www.dbjcanningsolutions.com",
+  "owner_name": "Dixon, Bryant and Johnson Inc.",
+  "state_of_incorporation": "California",
+  "other_products_canned": "Organic products",
+  "other_retort_equipment": "Custom automated retort system",
+  "iheo_authorization_fee": "$87.76",
+  "total_fees_due": 369628.02,
+  "owner_printed_name": "Massimo E. Cavalcante",
+  "signature_date": "04/29/2024",
+  "mailing_address": {
+   "street": "119 Murphy Road Suite 287"
+  },
+  "facility_address": {
+   "street": "119 Murphy Road Suite 287",
+   "city": "Hayesshire",
+   "state": "DE",
+   "zip_code": "94179"
+  },
+  "owners_or_officers": [
+   {
+    "name": "Massimo E. Cavalcante",
+    "title": "Building services engineer"
+   },
+   {
+    "name": "Angela E. Cole",
+    "title": "Chief Strategy Officer"
+   }
+  ],
+  "authorized_representatives": [
+   {
+    "name": "Jose Carlos X. Gupta"
+   }
+  ],
+  "correspondent": {
+   "name": "Jose Carlos X. Gupta",
+   "phone": "(327) 352-6900",
+   "email": "jgupta@fletcher.com"
+  }
+ }
+}

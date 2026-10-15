@@ -79,7 +79,8 @@ def parse_object(text):
     {"a": 1, "items": [...]}); a cut-off object is repaired."""
     t = re.sub(r"^.*?</think>", "", text, count=1, flags=re.S).strip()
     if t.startswith("```"):
-        t = t.split("\n", 1)[1].rsplit("```", 1)[0]
+        # a fence with or without a language tag and newline: ```json\n{...}``` or ```{...}```
+        t = (t.split("\n", 1)[1] if "\n" in t else t[3:]).rsplit("```", 1)[0]
     try:
         v = json.loads(t)
         return v if isinstance(v, dict) else None

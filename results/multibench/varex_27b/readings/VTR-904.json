@@ -1,0 +1,20 @@
+{
+ "primary": {
+  "purchaser_phone_number": "(583) 367-8102",
+  "vehicle_identification_number": "1HGCM82633A129184",
+  "license_plate_number": "ABC1234",
+  "certification_date": "05/15/2023"
+ },
+ "parse": {
+  "purchaser_phone_number": "(583) 367-8102",
+  "vehicle_identification_number": "1HGCM82633A129184",
+  "license_plate_number": "ABC1234",
+  "certification_date": "05/15/2023"
+ },
+ "oneshot": {
+  "purchaser_phone_number": "(583) 367-8102",
+  "vehicle_identification_number": "1HGCM82633A129184",
+  "license_plate_number": "ABC1234",
+  "certification_date": "05/15/2023"
+ }
+}

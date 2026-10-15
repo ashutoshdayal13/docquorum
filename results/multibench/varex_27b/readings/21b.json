@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "recipient_name": "Adalberto Moura",
+  "notice_type": "Policy Update Notice",
+  "issue_date": "03/15/2023",
+  "expiry_date": "03/15/2024",
+  "cross_references": [
+   "HUD-2023-045: New Policy Guidelines"
+  ],
+  "subject": "Update on HUD Policy Regarding Biomedical Research Funding Allocation",
+  "distribution_list": [
+   "W-3-1",
+   "All Regional Offices"
+  ]
+ },
+ "parse": {
+  "recipient_name": "Adalberto Moura",
+  "notice_type": "Policy Update Notice",
+  "issue_date": "03/15/2023",
+  "expiry_date": "03/15/2024",
+  "cross_references": [
+   "HUD-2023-045: New Policy Guidelines"
+  ],
+  "subject": "Update on HUD Policy Regarding Biomedical Research Funding Allocation",
+  "distribution_list": [
+   "W-3-1",
+   "All Regional Offices"
+  ]
+ },
+ "oneshot": {
+  "recipient_name": "Adalberto Moura",
+  "notice_type": "Policy Update Notice",
+  "issue_date": "03/15/2023",
+  "expiry_date": "03/15/2024",
+  "cross_references": [
+   "HUD-2023-045: New Policy Guidelines"
+  ],
+  "subject": "Update on HUD Policy Regarding Biomedical Research Funding Allocation",
+  "distribution_list": [
+   "W-3-1",
+   "All Regional Offices"
+  ]
+ }
+}

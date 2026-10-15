@@ -1,0 +1,49 @@
+{
+ "primary": {
+  "to_date": "11/15/2023",
+  "attention": "Accounting POC",
+  "from_sender": "Francisco B. Guzman",
+  "from_phone_number": "(654) 818-8243",
+  "invoice_number": "INV-2023-0987",
+  "invoice_date": "10/30/2023",
+  "invoice_amount": 225738.44,
+  "document_number": "DPM-2022-13035",
+  "line_numbers": "001-010",
+  "services_delivered": "Water treatment and purification services",
+  "services_accepted": "Water treatment and purification services",
+  "remarks": "All services have been completed and verified. Payment is final.",
+  "approving_official": {
+   "name": "Francisco B. Guzman",
+   "signature_date": "11/15/2023",
+   "phone_number": "(654) 818-8243"
+  },
+  "contract_specialist": {
+   "signature_date": "11/15/2023",
+   "phone_number": "(484) 573-8284"
+  }
+ },
+ "parse": {
+  "to_date": "11/15/2023",
+  "attention": "Accounting POC",
+  "from_sender": "Francisco B. Guzman",
+  "from_phone_number": "(654) 818-8243",
+  "invoice_number": "INV-2023-0987",
+  "invoice_date": "10/30/2023",
+  "invoice_amount": 225738.44,
+  "document_number": "DPM-2022-13035",
+  "line_numbers": "001-010",
+  "services_delivered": "Water treatment and purification services",
+  "services_accepted": "Water treatment and purification services",
+  "remarks": "All services have been completed and verified. Payment is final.",
+  "approving_official": {
+   "name": "Francisco B. Guzman",
+   "signature_date": "11/15/2023",
+   "phone_number": "(654) 818-8243"
+  },
+  "contract_specialist": {
+   "signature_date": "11/15/2023",
+   "phone_number": "(484) 573-8284"
+  }
+ },
+ "oneshot": {}
+}

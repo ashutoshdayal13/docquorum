@@ -1,0 +1,92 @@
+{
+ "primary": {
+  "taxpayer_first_name": "Jason P.",
+  "taxpayer_last_name": "Fogaca",
+  "spouse_first_name": "Stella",
+  "spouse_last_name": "Snyder",
+  "address": {
+   "street": "92962 Larry Drive Apt. 457",
+   "city": "Goodmanville",
+   "state": "MI",
+   "zip_code": "05743"
+  },
+  "dependents": [
+   {
+    "name": "Gregoire Webster",
+    "relationship": "son"
+   },
+   {
+    "name": "Alisha Webster",
+    "relationship": "daughter"
+   },
+   {
+    "name": "Jason Fogaca Jr.",
+    "relationship": "son"
+   },
+   {
+    "name": "Stella Snyder Jr.",
+    "relationship": "daughter"
+   }
+  ]
+ },
+ "parse": {
+  "taxpayer_first_name": "Jason P.",
+  "taxpayer_last_name": "Fogaca",
+  "spouse_first_name": "Stella",
+  "spouse_last_name": "Snyder",
+  "address": {
+   "street": "92962 Larry Drive Apt. 457",
+   "city": "Goodmanville",
+   "state": "MI",
+   "zip_code": "05743"
+  },
+  "dependents": [
+   {
+    "name": "Gregoire Webster",
+    "relationship": "son"
+   },
+   {
+    "name": "Alisha Webster",
+    "relationship": "daughter"
+   },
+   {
+    "name": "Jason Fogaca Jr.",
+    "relationship": "son"
+   },
+   {
+    "name": "Stella Snyder Jr.",
+    "relationship": "daughter"
+   }
+  ]
+ },
+ "oneshot": {
+  "taxpayer_first_name": "Jason P.",
+  "taxpayer_last_name": "Fogaca",
+  "spouse_first_name": "Stella",
+  "spouse_last_name": "Snyder",
+  "address": {
+   "street": "92962 Larry Drive Apt. 457",
+   "city": "Goodmanville",
+   "state": "MI",
+   "zip_code": "05743"
+  },
+  "dependents": [
+   {
+    "name": "Gregoire Webster",
+    "relationship": "son"
+   },
+   {
+    "name": "Alisha Webster",
+    "relationship": "daughter"
+   },
+   {
+    "name": "Jason Fogaca Jr.",
+    "relationship": "son"
+   },
+   {
+    "name": "Stella Snyder Jr.",
+    "relationship": "daughter"
+   }
+  ]
+ }
+}

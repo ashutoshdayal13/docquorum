@@ -1,25 +1,25 @@
 # DocQuorum
 
-**Experiment results:** [completed benchmark scores, configurations and leader gaps](RESULTS_README.md) for `experiment/multibench-20261002`, including UNIKIE and ExtractBench. Each completed benchmark is committed and pushed to this branch.
-
 **Agentic document extraction by a quorum of grounded readings.**
 
 Give DocQuorum a document (PDF or image) and a JSON Schema (or a JSON template); it returns JSON that
 follows the schema. It runs on open-weight models (Qwen3.8-27B) on a single GPU; no commercial API is used.
 
-The table below records earlier stored results; the experiment results above distinguish current annotations, original configurations and development variants.
+Each benchmark below is scored with its own scorer and placed against every published system
+([full tables](docs/results/TABLES.md)). No result was submitted to a leaderboard.
 
-| benchmark | earlier stored result | reference comparison |
+| benchmark | DocQuorum | place among published systems |
 |---|---|---|
-| ExtractBench (370 enterprise PDFs, 1-163 pages) | Overall **95.25** (short 96.11, medium 94.03, long 90.41) | 3rd of 45 leaderboard rows (behind two commercial systems at 95.91) |
-| UNIKIE-BENCH (4,472 images, 11 scenarios) | six-reading macro F1 **82.62** (small images enlarged; 82.37 before) | **1st**: above Gemini-3-Pro 82.37 |
-| VAREX (1,777 government forms, image input) | exact match **98.10** | **1st**, tied with Gemini 2.5 Pro (98.0, one decimal) |
-| UNIKIE-BENCH open category (1,661 documents) | macro F1 **71.07** | 2nd of 16 (Gemini-3-Pro 81.65) |
+| VAREX (1,777 government forms, image input) | exact match **98.30** with zoom re-reading (98.10 without) | **1st** (Gemini 2.5 Pro 98.0) |
+| UNIKIE-BENCH (4,472 images, 11 scenarios) | six-reading macro F1 **82.62** | **1st** (Gemini-3-Pro 82.37) |
+| ExtractBench (370 enterprise PDFs, 1-163 pages) | Overall **95.43** (short 96.34, medium 94.11, long 90.41) | 3rd (two commercial systems at 95.91) |
 | LongArray-Extract (45 long documents, 29,328 rows) | macro accuracy **98.05** | 2nd of 12 (Extend MAX 99.2; Reducto Deep Extract 97.4) |
+| UNIKIE-BENCH open category (1,661 documents) | macro F1 **71.07** | 2nd of 16 (Gemini-3-Pro 81.65) |
 
 * Details, caveats, per-document scores: [`results/README.md`](results/README.md)
 * How it works, with a diagram and worked examples: [`docs/docquorum.pdf`](docs/docquorum.pdf), [documentation and build instructions](docs/README.md)
 * The code, file by file: [`docs/CODE_GUIDE.md`](docs/CODE_GUIDE.md)
+* [`RESULTS_README.md`](RESULTS_README.md) is the log of an earlier experiment with an 8B model; the table above supersedes it.
 
 ---
 
@@ -66,9 +66,10 @@ done
 python benchmarks/extractbench/overall.py /tmp/short.json /tmp/medium.json /tmp/long.json
 python benchmarks/extractbench/robustness.py /tmp/short.json /tmp/medium.json /tmp/long.json
 ```
-**Expected output:** the three `MEAN` lines read `96.11`, `94.03` and `90.41` (first number on each line), and
-`overall.py` prints `ours: Overall 95.25 | Short 96.11 | Medium 94.03 | Long 90.41`, then the ranking against the
-44 leaderboard rows (DocQuorum is 3rd).
+**Expected output** (the dataset as published now, revision `51bf3a0`): the three `MEAN` lines read `96.34`,
+`94.11` and `90.41` (first number on each line), and `overall.py` prints
+`ours: Overall 95.43 | Short 96.34 | Medium 94.11 | Long 90.41`, then the ranking against the leaderboard rows
+(DocQuorum is 3rd). The revision the pipeline was developed on gives `95.25` (96.11, 94.03, 90.41).
 
 **UNIKIE-BENCH (optional).** Clone [github.com/NEUIR/UNIKIE-BENCH](https://github.com/NEUIR/UNIKIE-BENCH), download its
 images as its `DATA.md` describes, and point `DQ_UNIKIE_DIR` at the clone (default: `data/unikie-bench`). Then:
@@ -139,6 +140,7 @@ Check that they answer: `curl http://localhost:8079/v1/models` and `curl http://
 python -m docquorum.extract invoice.pdf --schema invoice_schema.json -o invoice.json
 python -m docquorum.extract receipt.jpg --schema receipt_template.json          # template in, template out
 python -m docquorum.extract report.pdf --schema s.json --task "Extract every holding in the schedule of investments."
+python -m docquorum.extract form.png --schema form_schema.json --zoom          # with zoom re-reading (scans and images)
 ```
 Run these from the project folder (or add it to `PYTHONPATH`). Progress and a final report (which readings were made,
 which one was kept, their agreement) go to stderr; the JSON goes to `-o` or stdout.
@@ -159,6 +161,11 @@ three ways (the reader agent on its page images, the reader agent on its MinerU 
 the reading the others agree with most; a longer scan is read through its parse. Documents printed as columns of records, and ruled tables on scans, go to a layout reader. Every
 reading is repaired and checked against the schema and the page text before it is returned. Without the parser server, a scan is
 read from its page images (and, up to 12 pages, by the one-shot reader).
+
+**Zoom re-reading** (`--zoom`, or `extract(..., zoom_reread=True)`). When the quorum has chosen among several readings, every field
+on which they disagree is found on the page and read once more from a sharp crop of that region, by a call that sees none of the
+readings. The kept value changes only if the zoomed reading equals a value some reading already proposed. On VAREX it lifted exact
+match from 98.10 to 98.30 (60 forms better, 25 worse); see `results/README.md`. It needs the parser server.
 
 ---
 
@@ -201,7 +208,7 @@ results, run with `DQ_UNIKIE_READINGS=/some/other/folder`.
 
 ### Tests
 ```bash
-python -m pytest tests/                        # 15 unit tests; no model, parser or data needed
+python -m pytest tests/                        # unit tests; no model, parser or data needed
 ```
 
 ---
@@ -230,10 +237,11 @@ docquorum/            the pipeline (file by file: docs/CODE_GUIDE.md)
   config.py             endpoints and paths (the only environment variables)
   extractbench.py       benchmark records and the benchmark's scorer
   quorum.py             the reading the others agree with most
+  zoom.py               zoom re-reading: disputed fields read again from a sharp crop
   tools/                what the agents act with, no decisions: pdf, parser, llm, schema, rows, layout
   agents/               the readers: reader (plan / act / observe), whole, oneshot, layout (+ column_reader, ruled_reader), prompts
   checks/               deterministic repairs and checks, one file each, and their chains
-benchmarks/           ExtractBench and UNIKIE-BENCH runners and scorers
+benchmarks/           runners and scorers: ExtractBench, UNIKIE-BENCH, and multibench/ (VAREX, LongArray-Extract, DocuBench)
 serve/                vLLM serving scripts
 configs/              example.env (copy it to local.env)
 results/              scores, final outputs, research log; archive/ holds the code before the 2026-09-29 reorganisation

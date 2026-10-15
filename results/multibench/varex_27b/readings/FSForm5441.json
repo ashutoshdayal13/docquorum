@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "institution_name": "Gordon Ltd",
+  "aba_number": 31108028,
+  "address": {
+   "street": "874 John Points Apt. 711",
+   "city_state_zip": "West Richardbury, NJ 77305"
+  }
+ },
+ "parse": {
+  "institution_name": "Gordon Ltd",
+  "aba_number": 31108028,
+  "address": {
+   "street": "874 John Points Apt. 711",
+   "city_state_zip": "West Richardbury, NJ 77305"
+  }
+ },
+ "oneshot": {
+  "institution_name": "Gordon Ltd",
+  "aba_number": 31108028,
+  "address": {
+   "street": "874 John Points Apt. 711",
+   "city_state_zip": "West Richardbury, NJ 77305"
+  }
+ }
+}

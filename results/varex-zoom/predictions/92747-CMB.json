@@ -1,0 +1,47 @@
+{
+ "schedule_number": 92747,
+ "schedule_total": 921756.45,
+ "item_count": "4",
+ "pay_cycle_schedule_number": 55542,
+ "people_soft_file_number": 783596795645,
+ "preparer": "Dina V. Smith",
+ "preparer_date": "03/15/2023",
+ "approver": "Krishna Miller",
+ "approver_date": "03/15/2023",
+ "data_entry_operator": "Serena V. Cuda",
+ "data_entry_operator_date": "03/15/2023",
+ "certifying_officer": "Dina V. Smith",
+ "certifying_officer_date": "03/15/2023",
+ "funds_control_approval": "Krishna Miller",
+ "funds_control_approval_date": "03/15/2023",
+ "appropriation_distributions": [
+  {
+   "amount": "$6003.40",
+   "fund": "FHA Multifamily",
+   "program": "",
+   "treasury_appropriation": "Housing Assistance",
+   "default_yn": "FHAMF"
+  },
+  {
+   "amount": "$48.68",
+   "fund": "General Fund",
+   "program": "Administrative Costs",
+   "treasury_appropriation": "GENAD",
+   "default_yn": "Y"
+  },
+  {
+   "amount": "$921756.45",
+   "fund": "FHA Multifamily",
+   "program": "Housing Development",
+   "treasury_appropriation": "MULTI",
+   "default_yn": "N"
+  },
+  {
+   "amount": "$1000.00",
+   "fund": "Special Projects",
+   "program": "Infrastructure",
+   "treasury_appropriation": "PROJ1",
+   "default_yn": "Y"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "period_covered_from": "01/01/2024",
+ "period_covered_to": "01/31/2024",
+ "disbursement_type": 1,
+ "voice_response_number": "(800) 555-1234 x12345",
+ "voucher_total": 313927.63,
+ "date_of_request": "02/15/2024",
+ "grantee_organization": {
+  "name": "Rhodes LLC",
+  "tin": "12-3456789"
+ },
+ "payee_organization": {
+  "name": "Ball-Johnson Financial Services",
+  "tin": "98-7654321"
+ },
+ "line_items": [
+  {
+   "description": "Project Coordinator"
+  },
+  {
+   "description": "Contract Administrator"
+  },
+  {
+   "description": "Training Costs"
+  },
+  {
+   "description": "Individual Savings Accounts"
+  },
+  {
+   "description": "Stipends"
+  },
+  {
+   "description": "Supportive Services"
+  },
+  {
+   "description": "Subcontracting"
+  },
+  {
+   "description": "Travel Costs"
+  },
+  {
+   "description": "Administrative Costs"
+  },
+  {
+   "description": "Resident Salaries"
+  },
+  {
+   "description": "Indirect Costs"
+  },
+  {
+   "description": "Evaluation and reporting services"
+  }
+ ],
+ "completer": {
+  "name": "Kevin A. Pizarro"
+ },
+ "authorized_signatory": {
+  "name": "Charlene K. Rodrigues, Director of Finance"
+ }
+}

@@ -1,0 +1,75 @@
+{
+ "primary": {
+  "name_of_nominee": "Sam J. Bernard",
+  "email": "sbernard@cunningham.com",
+  "series": "",
+  "federal_staffing_courses": [],
+  "special_accommodations_details": "No special accommodations",
+  "nominee_signature_date": "11/15/2023",
+  "training_preferences": {
+   "training_dates_first_choice": "01/15/2024",
+   "training_dates_second_choice": "02/20/2024"
+  },
+  "agency_information": {
+   "agency_name": "Department of Health and Human Services",
+   "agency_address": "200 Independence Avenue SW",
+   "agency_address_line2": "Washington, D.C. 20201",
+   "deu_id_number": "DEU-2023-5678",
+   "agency_point_of_contact": "John Doe",
+   "agency_point_of_contact_phone": "(202) 123-456"
+  },
+  "supervisor_information": {
+   "supervisor_name": "Ruben Q. Wilson",
+   "supervisor_signature_date": "11/15/2023"
+  }
+ },
+ "parse": {
+  "name_of_nominee": "Sam J. Bernard",
+  "email": "sbernard@cunningham.com",
+  "series": "",
+  "federal_staffing_courses": [],
+  "special_accommodations_details": "No special accommodations",
+  "nominee_signature_date": "11/15/2023",
+  "training_preferences": {
+   "training_dates_first_choice": "01/15/2024",
+   "training_dates_second_choice": "02/20/2024"
+  },
+  "agency_information": {
+   "agency_name": "Department of Health and Human Services",
+   "agency_address": "200 Independence Avenue SW",
+   "agency_address_line2": "Washington, D.C. 20201",
+   "deu_id_number": "DEU-2023-5678",
+   "agency_point_of_contact": "John Doe",
+   "agency_point_of_contact_phone": "(202) 123-456"
+  },
+  "supervisor_information": {
+   "supervisor_name": "Ruben Q. Wilson",
+   "supervisor_signature_date": "11/15/2023"
+  }
+ },
+ "oneshot": {
+  "name_of_nominee": "Sam J. Bernard",
+  "email": "sbernard@cunningham.com",
+  "federal_staffing_courses": [
+   "Federal Staffing Training Course 1"
+  ],
+  "special_accommodations_details": "No special accommodations",
+  "nominee_signature_date": "11/15/2023",
+  "training_preferences": {
+   "training_dates_first_choice": "01/15/2024",
+   "training_dates_second_choice": "02/20/2024"
+  },
+  "agency_information": {
+   "agency_name": "Department of Health and Human Services",
+   "agency_address": "200 Independence Avenue SW",
+   "agency_address_line2": "Washington, D.C. 20201",
+   "deu_id_number": "DEU-2023-5678",
+   "agency_point_of_contact": "John Doe",
+   "agency_point_of_contact_phone": "(202) 123-456"
+  },
+  "supervisor_information": {
+   "supervisor_name": "Ruben Q. Wilson",
+   "supervisor_signature_date": "11/15/2023"
+  }
+ }
+}

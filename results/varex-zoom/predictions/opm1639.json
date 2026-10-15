@@ -1,0 +1,23 @@
+{
+ "agency_name": "Department of Health and Human Services",
+ "disaster_or_emergency": "Hurricane Katrina",
+ "donated_leave_hours": 5000,
+ "emergency_leave_recipients": 12,
+ "estimated_leave_hours_needed": "4800 hours",
+ "contact_person": "Jennifer V. Wright",
+ "contact_phone": "(531) 744-4578",
+ "contact_fax": "(937) 986-6882",
+ "contact_email": "jwright@ingram.com",
+ "hours_donated": "4500 hou",
+ "hours_transferred": "300 hour",
+ "authorizing_official": {
+  "date": "03/15/2023",
+  "name": "Jennifer V. Wright",
+  "title": "Chief of Staff"
+ },
+ "opm_official": {
+  "date": "03/20/2023",
+  "name": "John D. Smith",
+  "title": "Director, Pay and Leave"
+ }
+}

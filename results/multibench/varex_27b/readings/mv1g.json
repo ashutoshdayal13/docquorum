@@ -1,0 +1,29 @@
+{
+ "primary": {
+  "vehicle_year_make": "2018 Toyota Camry",
+  "vehicle_body_type": "Sedan",
+  "vehicle_identification_number": "5TFBW5BP2JX012345",
+  "owner_address": {
+   "street": "57370 Medina Dam"
+  },
+  "owner_name": "Kyle Mcclure"
+ },
+ "parse": {
+  "vehicle_year_make": "2018 Toyota Camry",
+  "vehicle_body_type": "Sedan",
+  "vehicle_identification_number": "5TFBW5BP2JX012345",
+  "owner_address": {
+   "street": "57370 Medina Dam"
+  },
+  "owner_name": "Kyle Mcclure"
+ },
+ "oneshot": {
+  "vehicle_year_make": "2018 Toyota Camry",
+  "vehicle_body_type": "Sedan",
+  "vehicle_identification_number": "5TFBW5BP2JX012345",
+  "owner_address": {
+   "street": "57370 Medina Dam"
+  },
+  "owner_name": "Kyle McClure"
+ }
+}

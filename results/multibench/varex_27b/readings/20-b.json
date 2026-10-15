@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "office": {
+   "office_name": "Department of Housing and Urban Development",
+   "office_address": "451 7th Street SW",
+   "office_room_number": "Room B-100",
+   "city": "Washington",
+   "state": "DC",
+   "zip_code": "20410",
+   "office_phone_number": "(202) 708-1112",
+   "office_phone_extension": "2000",
+   "office_fax_number": "(202) 708-1450",
+   "office_tty_number": "(202) 708-1451",
+   "office_email": "hud.info@hud.gov"
+  },
+  "contact": {
+   "contact_name": "Guadalupe B. Marshall",
+   "contact_title": "Accounting Technician",
+   "cellular_phone_number": "(940) 054-1733",
+   "pager_number": "123-456-7890"
+  }
+ },
+ "parse": {
+  "office": {
+   "office_name": "Department of Housing and Urban Development",
+   "office_address": "451 7th Street SW",
+   "office_room_number": "Room B-100",
+   "city": "Washington",
+   "state": "DC",
+   "zip_code": "20410",
+   "office_phone_number": "(202) 708-1112",
+   "office_phone_extension": "2000",
+   "office_fax_number": "(202) 708-1450",
+   "office_tty_number": "(202) 708-1451",
+   "office_email": "hud.info@hud.gov"
+  },
+  "contact": {
+   "contact_name": "Guadalupe B. Marshall",
+   "contact_title": "Accounting Technician",
+   "cellular_phone_number": "(940) 054-1733",
+   "pager_number": "123-456-7890"
+  }
+ },
+ "oneshot": {
+  "office": {
+   "office_name": "Department of Housing and Urban Development",
+   "office_address": "451 7th Street SW",
+   "office_room_number": "Room B-100",
+   "city": "Washington",
+   "state": "DC",
+   "zip_code": "20410",
+   "office_phone_number": "(202) 708-1112",
+   "office_phone_extension": "2000",
+   "office_fax_number": "(202) 708-1450",
+   "office_tty_number": "(202) 708-1451",
+   "office_email": "hud.info@hud.gov"
+  },
+  "contact": {
+   "contact_name": "Guadalupe B. Marshall",
+   "contact_title": "Accounting Technician",
+   "cellular_phone_number": "(940) 054-1733",
+   "pager_number": "123-456-7890"
+  }
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "primary": {
+  "vehicle_vin": "1G1ZT52837F122365",
+  "vehicle_make": "Chevrolet",
+  "vehicle_body_style": "SUV",
+  "vehicle_model": "Tahoe",
+  "applicant_date": "05/15/2023",
+  "additional_applicant_date": "05/15/2023",
+  "liens": [
+   {
+    "lien_holder_name": "Archer, Pineda and Mcdaniel",
+    "lien_date": "01/10/2020"
+   },
+   {
+    "lien_holder_name": "Bauer, Rodriguez and Flores",
+    "lien_date": "03/22/2021"
+   }
+  ]
+ },
+ "parse": {
+  "vehicle_vin": "1G1ZT52837F122365",
+  "vehicle_make": "Chevrolet",
+  "vehicle_body_style": "SUV",
+  "vehicle_model": "Tahoe",
+  "applicant_date": "05/15/2023",
+  "additional_applicant_date": "05/15/2023",
+  "liens": [
+   {
+    "lien_holder_name": "Archer, Pineda and Mcdaniel",
+    "lien_date": "01/10/2020"
+   },
+   {
+    "lien_holder_name": "Bauer, Rodriguez and Flores",
+    "lien_date": "03/22/2021"
+   }
+  ]
+ },
+ "oneshot": {
+  "vehicle_vin": "1G1ZT52837F122365",
+  "vehicle_make": "Chevrolet",
+  "vehicle_body_style": "SUV",
+  "vehicle_model": "Tahoe",
+  "applicant_date": "05/15/2023",
+  "additional_applicant_date": "05/15/2023",
+  "liens": [
+   {
+    "lien_holder_name": "Archer, Pineda and Mcdaniel",
+    "lien_date": "01/10/2020"
+   },
+   {
+    "lien_holder_name": "Bauer, Rodriguez and Flores",
+    "lien_date": "03/22/2021"
+   }
+  ]
+ }
+}

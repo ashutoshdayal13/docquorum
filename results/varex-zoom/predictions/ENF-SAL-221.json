@@ -1,0 +1,9 @@
+{
+ "year": "2018",
+ "vin": "1G1ZT53829F123456",
+ "make": "Ford",
+ "purchaser": {
+  "name": "Paul Boyer",
+  "signature_date": "05/15/2023"
+ }
+}

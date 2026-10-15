@@ -1,0 +1,20 @@
+{
+ "organization_name": "Guerrero Healthcare",
+ "organization_description": "Nonprofit providing healthcare services to",
+ "irs_tax_number": "45-4823786",
+ "organization_creation_date": "05/15/2005",
+ "occupations_seeking_authorization": [
+  "Registered Nurse"
+ ],
+ "certification_issuance_process": "Verification of licenses and background checks",
+ "atty_state_license_number": "JD-2017-TN-48358",
+ "organization_address": {
+  "street": "30244 Burns Street Suite",
+  "city": "New Laura",
+  "zip_code": "99553"
+ },
+ "point_of_contact": {
+  "name": "Monika Stewart",
+  "title": "Director of Operations"
+ }
+}

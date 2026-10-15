@@ -1,0 +1,26 @@
+{
+ "permit_number": "DPM-2021-66899",
+ "record_number": "2096-2746-4596",
+ "date_issued": "03/15/2023",
+ "summary_findings": "All animals are healthy and free from infectious diseases. No deaths or illnesses reported.",
+ "veterinarian": {
+  "name": "Victoria V.",
+  "contact_info": "victoria.magrassi@yahoo.com"
+ },
+ "owner_agent": {
+  "name": "Mohammed K.",
+  "address": "9620 Edwards Fords, West",
+  "contact_info": "mohammed.guevara@hotmail.c"
+ },
+ "animals": [
+  {
+   "species": "African Grey Parrot"
+  },
+  {
+   "species": "Bengal Tiger"
+  },
+  {
+   "species": "Green Iguana"
+  }
+ ]
+}

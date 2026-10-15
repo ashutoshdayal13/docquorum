@@ -1,0 +1,28 @@
+{
+ "employee_name": "Barrios, Laksh D.",
+ "date_of_birth": "08/21/1964",
+ "social_security_number": "085-54-9015",
+ "agency": "Henderson Inc",
+ "payroll_office_number": "PO-2021-9648",
+ "location": "Lyonshaven, ND 65635",
+ "reason_for_correction": "Incorrect total cumulative deductions reported in previous submission",
+ "current_year_deductions": "$1245.81",
+ "total_cumulative_deductions": 311565.3,
+ "corrected_current_year_deductions": "$1245.81",
+ "corrected_total_cumulative_deductions": 311565.3,
+ "overstatement_amount": "$69.23",
+ "correction_report_number": 7590992234,
+ "pat": "REF-2023-0",
+ "standard_form_3100_forwarded_date": "03/15/2023",
+ "standard_form_3100_dated": "03/10/2023",
+ "certification_date": "03/15/2023",
+ "service_history_data": {
+  "name": "Barrios, Laksh D.",
+  "date_of_birth": "08/21/1964",
+  "appointment": "06/01/1990 as Media Planner"
+ },
+ "certifying_person": {
+  "title": "Media Planner",
+  "telephone_number": 1561761819
+ }
+}

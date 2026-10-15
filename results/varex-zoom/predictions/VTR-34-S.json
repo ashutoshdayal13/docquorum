@@ -1,0 +1,16 @@
+{
+ "vehicle_identification_number": "1HGCM82633A129188",
+ "vehicle_year": 2015,
+ "vehicle_make": "Honda",
+ "vehicle_model": "Civic",
+ "vehicle_body_style": "Sedan",
+ "title_document_number": "TX1234567890",
+ "recipient_address": "7389 Benjamin Hollow Apt. 565, East Randybury, TN 76064",
+ "recipient_email": "nicole.walter@outlook.com",
+ "recipient_phone_number": "(146) 611-4914",
+ "applicant_signature_date": "06/19/2023",
+ "additional_applicant_signature_date": "06/30/2023",
+ "recipient_name": {
+  "first_name": "Nicole"
+ }
+}

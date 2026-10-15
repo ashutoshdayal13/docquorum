@@ -1,0 +1,17 @@
+{
+ "accrediting_agency_name": "California Continuing Education Accreditation Board",
+ "business_address": "1234 Health Street, Suite 500, Sacramento, CA 95814",
+ "agency_administrator": "Jennifer B. Chavez",
+ "agency_coordinator": "Ishanvi F. Santos",
+ "business_phone_number": "(503) 572-2283",
+ "fax_number": "(783) 946-9865",
+ "email_address": "info@ccaab.org",
+ "agency_owners": "California Department of Public Health",
+ "printed_name": "Jennifer B. Chavez",
+ "signature_date": "03/15/2023",
+ "address": {
+  "city": "Sacramento",
+  "state": "CA",
+  "zip_code": "95814"
+ }
+}

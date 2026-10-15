@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "implementation_date": "08/15/2023",
+  "financial_institution_information": {
+   "institution_name": "Harris-Campbell Financial",
+   "institution_address": "4951 Destiny Streets Suite 860"
+  },
+  "change_contact_information": {
+   "contact_name": "Jeffrey P. van der Meer",
+   "contact_phone": "(680) 570-3840",
+   "contact_email": "jvandermeer@harriscampbell.com"
+  }
+ },
+ "parse": {
+  "implementation_date": "08/15/2023",
+  "financial_institution_information": {
+   "institution_name": "Harris-Campbell Financial",
+   "institution_address": "4951 Destiny Streets Suite 860"
+  },
+  "change_contact_information": {
+   "contact_name": "Jeffrey P. van der Meer",
+   "contact_phone": "(680) 570-3840",
+   "contact_email": "jvandermeer@harriscampbell.com"
+  }
+ },
+ "oneshot": {
+  "implementation_date": "08/15/2023",
+  "financial_institution_information": {
+   "institution_name": "Harris-Campbell Financial",
+   "institution_address": "4951 Destiny Streets Suite 860"
+  },
+  "change_contact_information": {
+   "contact_name": "Jeffrey P. van der Meer",
+   "contact_phone": "(680) 570-3840",
+   "contact_email": "jvandermeer@harriscampbell.com"
+  }
+ }
+}

@@ -1,0 +1,197 @@
+{
+ "primary": {
+  "name_of_tissue_bank": "Guerra Tissue Solutions",
+  "telephone_number": "53273351",
+  "fax_number": "33160664",
+  "application_date": "07/15/2023",
+  "mailing_address": "65392 Aguirre Bridge Apt. 110, Lake Lynn, NJ",
+  "mailing_zip_code": "17145",
+  "change_of_owner_date": "06/14/2023",
+  "addresses": [
+   {
+    "street": "65392 Aguirre Bridge Apt. 110",
+    "city": "Lake Lynn",
+    "zip_code": "17145"
+   },
+   {
+    "street": "7525 Moore Plain",
+    "city": "Smithtown",
+    "zip_code": "89645"
+   }
+  ],
+  "owner_details": {
+   "owner_name": "Filip Fernandes",
+   "owner_address": "65392 Aguirre Bridge Apt. 110, Lake Lynn, NJ"
+  },
+  "partnership_members": [
+   {
+    "member_name": "Silvano J. Savant",
+    "member_address": "7525 Moore Plain, Smithtown, ID 89645"
+   },
+   {
+    "member_name": "Scott T. Łapacz",
+    "member_address": "8958 Lindsey Highway Apt. 489,"
+   }
+  ],
+  "corporation_officers": [
+   {
+    "officer_name": "Filip Fernandes",
+    "officer_address": "65392 Aguirre Bridge Apt. 110, Lake Lynn, NJ"
+   },
+   {
+    "officer_name": "Silvano J. Savant",
+    "officer_address": "7525 Moore Plain, Smithtown, ID 89645"
+   },
+   {
+    "officer_name": "Scott T. Łapacz",
+    "officer_address": "8958 Lindsey Highway Apt. 489,"
+   },
+   {
+    "officer_name": "Emma Johnson",
+    "officer_address": "1234 Health Ave, Medical City, CA 90001"
+   },
+   {
+    "officer_name": "Michael Brown",
+    "officer_address": "5678 Business Blvd, Business Town, CA 90002"
+   },
+   {
+    "officer_name": "Sarah Davis",
+    "officer_address": "91011 Marketing St, Marketing City, CA 90003"
+   },
+   {
+    "officer_name": "David Wilson",
+    "officer_address": "121314 Finance Rd, Finance Town, CA 90004"
+   }
+  ]
+ },
+ "parse": {
+  "name_of_tissue_bank": "Guerra Tissue Solutions",
+  "telephone_number": "53273351",
+  "fax_number": "33160664",
+  "application_date": "07/15/2023",
+  "mailing_address": "65392 Aguirre Bridge Apt. 110, Lake Lynn, NJ",
+  "mailing_zip_code": "17145",
+  "change_of_owner_date": "06/14/2023",
+  "addresses": [
+   {
+    "street": "65392 Aguirre Bridge Apt. 110",
+    "city": "Lake Lynn",
+    "zip_code": "17145"
+   },
+   {
+    "street": "7525 Moore Plain",
+    "city": "Smithtown",
+    "zip_code": "89645"
+   }
+  ],
+  "owner_details": {
+   "owner_name": "Filip Fernandes",
+   "owner_address": "65392 Aguirre Bridge Apt. 110, Lake Lynn, NJ"
+  },
+  "partnership_members": [
+   {
+    "member_name": "Silvano J. Savant",
+    "member_address": "7525 Moore Plain, Smithtown, ID 89645"
+   },
+   {
+    "member_name": "Scott T. Lapacz",
+    "member_address": "8958 Lindsey Highway Apt. 489,"
+   }
+  ],
+  "corporation_officers": [
+   {
+    "officer_name": "Filip Fernandes",
+    "officer_address": "65392 Aguirre Bridge Apt. 110, Lake Lynn, NJ"
+   },
+   {
+    "officer_name": "Silvano J. Savant",
+    "officer_address": "7525 Moore Plain, Smithtown, ID 89645"
+   },
+   {
+    "officer_name": "Scott T. Lapacz",
+    "officer_address": "8958 Lindsey Highway Apt. 489,"
+   },
+   {
+    "officer_name": "Emma Johnson",
+    "officer_address": "1234 Health Ave, Medical City, CA 90001"
+   },
+   {
+    "officer_name": "Michael Brown",
+    "officer_address": "5678 Business Blvd, Business Town, CA 90002"
+   },
+   {
+    "officer_name": "Sarah Davis",
+    "officer_address": "91011 Marketing St, Marketing City, CA 90003"
+   },
+   {
+    "officer_name": "David Wilson",
+    "officer_address": "121314 Finance Rd, Finance Town, CA 90004"
+   }
+  ]
+ },
+ "oneshot": {
+  "name_of_tissue_bank": "Guerra Tissue Solutions",
+  "telephone_number": "53273351",
+  "fax_number": "33160664",
+  "application_date": "07/15/2023",
+  "mailing_address": "65392 Aguirre Bridge Apt. 110, Lake Lynn, NJ",
+  "mailing_zip_code": "17145",
+  "change_of_owner_date": "06/14/2023",
+  "addresses": [
+   {
+    "street": "65392 Aguirre Bridge Apt. 110",
+    "city": "Lake Lynn",
+    "zip_code": "17145"
+   },
+   {
+    "street": "7525 Moore Plain",
+    "city": "Smithtown",
+    "zip_code": "89645"
+   }
+  ],
+  "owner_details": {
+   "owner_name": "Filip Fernandes",
+   "owner_address": "65392 Aguirre Bridge Apt. 110, Lake Lynn, NJ"
+  },
+  "partnership_members": [
+   {
+    "member_name": "Silvano J. Savant",
+    "member_address": "7525 Moore Plain, Smithtown, ID 89645"
+   },
+   {
+    "member_name": "Scott T. Łapacz",
+    "member_address": "8958 Lindsey Highway Apt. 489,"
+   }
+  ],
+  "corporation_officers": [
+   {
+    "officer_name": "Filip Fernandes",
+    "officer_address": "65392 Aguirre Bridge Apt. 110, Lake Lynn, NJ"
+   },
+   {
+    "officer_name": "Silvano J. Savant",
+    "officer_address": "7525 Moore Plain, Smithtown, ID 89645"
+   },
+   {
+    "officer_name": "Scott T. Łapacz",
+    "officer_address": "8958 Lindsey Highway Apt. 489,"
+   },
+   {
+    "officer_name": "Emma Johnson",
+    "officer_address": "1234 Health Ave, Medical City, CA 90001"
+   },
+   {
+    "officer_name": "Michael Brown",
+    "officer_address": "5678 Business Blvd, Business Town, CA 90002"
+   },
+   {
+    "officer_name": "Sarah Davis",
+    "officer_address": "91011 Marketing St, Marketing City, CA 90003"
+   },
+   {
+    "officer_name": "David Wilson",
+    "officer_address": "121314 Finance Rd, Finance Town, CA 90004"
+   }
+  ]
+ }
+}

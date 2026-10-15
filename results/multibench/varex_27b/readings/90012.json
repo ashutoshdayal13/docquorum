@@ -1,0 +1,32 @@
+{
+ "primary": {
+  "date_of_request": "05/15/2023",
+  "authorized_user_details": {
+   "user_name": "Jose F. Tylka",
+   "user_id": "HUD-EMP-2023-001",
+   "job_title": "Statistician",
+   "email": "jtylka@edwardsmartin.com",
+   "phone_number": "(561) 282-8426"
+  }
+ },
+ "parse": {
+  "date_of_request": "05/15/2023",
+  "authorized_user_details": {
+   "user_name": "Jose F. Tylka",
+   "user_id": "HUD-EMP-2023-001",
+   "job_title": "Statistician",
+   "email": "jtylka@edwardsmartin.com",
+   "phone_number": "(561) 282-8426"
+  }
+ },
+ "oneshot": {
+  "date_of_request": "05/15/2023",
+  "authorized_user_details": {
+   "user_name": "Jose F. Tylka",
+   "user_id": "HUD-EMP-2023-001",
+   "job_title": "Statistician",
+   "email": "jtylka@edwardsmartin.com",
+   "phone_number": "(561) 282-8426"
+  }
+ }
+}

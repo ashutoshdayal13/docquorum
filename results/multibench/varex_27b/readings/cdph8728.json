@@ -1,0 +1,23 @@
+{
+ "primary": {
+  "applicant_full_name": "Melanie S. Lalla",
+  "date_of_birth": "08/12/1982",
+  "client_id_number": "ADAP-2023-51784",
+  "applicant_signature_date": "03/15/2023",
+  "adap_designated_agent_name": "David K. Jean"
+ },
+ "parse": {
+  "applicant_full_name": "Melanie S. Lalla",
+  "date_of_birth": "08/12/1982",
+  "client_id_number": "ADAP-2023-51784",
+  "applicant_signature_date": "03/15/2023",
+  "adap_designated_agent_name": "David K. Jean"
+ },
+ "oneshot": {
+  "applicant_full_name": "Melanie S. Lalla",
+  "date_of_birth": "08/12/1982",
+  "client_id_number": "ADAP-2023-51784",
+  "applicant_signature_date": "03/15/2023",
+  "adap_designated_agent_name": "David K. Jean"
+ }
+}

@@ -1,0 +1,145 @@
+{
+ "primary": {
+  "requesting_office_name": "Social Security Administration Office",
+  "claimant_name": "Morales, Andrew K.",
+  "school_name": "West Jennifer Elementary School",
+  "other_health_impairment": "Attention Deficit Hyperactivity Disorder",
+  "specific_learning_disability": "Dyslexia",
+  "developmental_delay": "None",
+  "multiple_disabilities": "None",
+  "special_ed_instruction_hours": "15 hou",
+  "resource_room_hours": "10 hou",
+  "self_contained_regular_school_hours": "20 hou",
+  "self_contained_special_school_hours": "0 hour",
+  "evaluations": [
+   {
+    "evaluation_type": "Psychological Evaluation",
+    "evaluation_date": "10/15/2023"
+   },
+   {
+    "evaluation_type": "Speech and Language Evaluation",
+    "evaluation_date": "11/20/2023"
+   }
+  ],
+  "assessment_referrals": [
+   {
+    "assessment_referral": "Referral for IEP Meeting",
+    "assessment_referral_date": "12/05/2023"
+   },
+   {
+    "assessment_referral": "Referral for Occupational Therapy",
+    "assessment_referral_date": "12/10/2023"
+   }
+  ],
+  "reading_level": {
+   "reading_level_instrument": "Woodcock-Johnson IV",
+   "reading_level_score": "SS = 85, PR = 16",
+   "reading_level_date": "11/15/2023"
+  },
+  "math_level": {
+   "math_level_instrument": "KTEA-3",
+   "math_level_score": "SS = 90, PR = 25",
+   "math_level_date": "11/15/2023"
+  },
+  "written_language_level": {
+   "written_language_level_instrument": "WIAT-III",
+   "written_language_level_score": "SS = 80, PR = 10",
+   "written_language_level_date": "11/15/2023"
+  }
+ },
+ "parse": {
+  "requesting_office_name": "Social Security Administration Office",
+  "claimant_name": "Morales, Andrew K.",
+  "school_name": "West Jennifer Elementary School",
+  "other_health_impairment": "Attention Deficit Hyperactivity Disorder",
+  "specific_learning_disability": "Dyslexia",
+  "developmental_delay": "None",
+  "multiple_disabilities": "None",
+  "special_ed_instruction_hours": "15 hou",
+  "resource_room_hours": "10 hou",
+  "self_contained_regular_school_hours": "20 hou",
+  "self_contained_special_school_hours": "0 hour",
+  "evaluations": [
+   {
+    "evaluation_type": "Psychological Evaluation",
+    "evaluation_date": "10/15/2023"
+   },
+   {
+    "evaluation_type": "Speech and Language Evaluation",
+    "evaluation_date": "11/20/2023"
+   }
+  ],
+  "assessment_referrals": [
+   {
+    "assessment_referral": "Referral for IEP Meeting",
+    "assessment_referral_date": "12/05/2023"
+   },
+   {
+    "assessment_referral": "Referral for Occupational Therapy",
+    "assessment_referral_date": "12/10/2023"
+   }
+  ],
+  "reading_level": {
+   "reading_level_instrument": "Woodcock-Johnson IV",
+   "reading_level_score": "SS = 85, PR = 16",
+   "reading_level_date": "11/15/2023"
+  },
+  "math_level": {
+   "math_level_instrument": "KTEA-3",
+   "math_level_score": "SS = 90, PR = 25",
+   "math_level_date": "11/15/2023"
+  },
+  "written_language_level": {
+   "written_language_level_instrument": "WIAT-III",
+   "written_language_level_score": "SS = 80, PR = 10",
+   "written_language_level_date": "11/15/2023"
+  }
+ },
+ "oneshot": {
+  "requesting_office_name": "Social Security Administration Office",
+  "claimant_name": "Morales, Andrew K.",
+  "school_name": "West Jennifer Elementary School",
+  "other_health_impairment": "Attention Deficit Hyperactivity Disorder",
+  "specific_learning_disability": "Dyslexia",
+  "developmental_delay": "None",
+  "multiple_disabilities": "None",
+  "resource_room_hours": "10 hou",
+  "self_contained_regular_school_hours": "20 hou",
+  "self_contained_special_school_hours": "0 hour",
+  "evaluations": [
+   {
+    "evaluation_type": "Psychological Evaluation",
+    "evaluation_date": "10/15/2023"
+   },
+   {
+    "evaluation_type": "Speech and Language Evaluation",
+    "evaluation_date": "11/20/2023"
+   }
+  ],
+  "assessment_referrals": [
+   {
+    "assessment_referral": "Referral for IEP Meeting",
+    "assessment_referral_date": "12/05/2023"
+   },
+   {
+    "assessment_referral": "Referral for Occupational Therapy",
+    "assessment_referral_date": "12/10/2023"
+   }
+  ],
+  "reading_level": {
+   "reading_level_instrument": "Woodcock-Johnson IV",
+   "reading_level_score": "SS = 85, PR = 16",
+   "reading_level_date": "11/15/2023"
+  },
+  "math_level": {
+   "math_level_instrument": "KTEA-3",
+   "math_level_score": "SS = 90, PR = 25",
+   "math_level_date": "11/15/2023"
+  },
+  "written_language_level": {
+   "written_language_level_instrument": "WIAT-III",
+   "written_language_level_score": "SS = 80, PR = 10",
+   "written_language_level_date": "11/15/2023"
+  }
+ }
+}

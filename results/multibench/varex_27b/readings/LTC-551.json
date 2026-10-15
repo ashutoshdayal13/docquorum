@@ -1,0 +1,53 @@
+{
+ "primary": {
+  "county": "Travis",
+  "agency_name": "Texas Department of Public Safety",
+  "affiant_id_number": "PO-2024-78334",
+  "license_holder_name": "Minerva Lawson",
+  "license_holder_tdl_number": "CPA2020N",
+  "license_holder_date_of_birth": "06/07/1991",
+  "court_type": "District Court",
+  "offense_date": "04/15/2023",
+  "exhibits": "Copy of protective order, police report, and witness statements",
+  "agency_address": {
+   "street": "1134 Glover Plaza"
+  },
+  "agency_phone_number": {
+   "phone_number": "(991) 341-089"
+  }
+ },
+ "parse": {
+  "county": "Travis",
+  "agency_name": "Texas Department of Public Safety",
+  "affiant_id_number": "PO-2024-78334",
+  "license_holder_name": "Minerva Lawson",
+  "license_holder_tdl_number": "CPA2020N",
+  "license_holder_date_of_birth": "06/07/1991",
+  "court_type": "District Court",
+  "offense_date": "04/15/2023",
+  "exhibits": "Copy of protective order, police report, and witness statements",
+  "agency_address": {
+   "street": "1134 Glover Plaza"
+  },
+  "agency_phone_number": {
+   "phone_number": "(991) 341-089"
+  }
+ },
+ "oneshot": {
+  "county": "Travis",
+  "agency_name": "Texas Department of Public Safety",
+  "affiant_id_number": "PO-2024-78334",
+  "license_holder_name": "Minerva Lawson",
+  "license_holder_tdl_number": "CPA2020N",
+  "license_holder_date_of_birth": "06/07/1991",
+  "court_type": "District Court",
+  "offense_date": "04/15/2023",
+  "exhibits": "Copy of protective order, police report, and witness statements",
+  "agency_address": {
+   "street": "1134 Glover Plaza"
+  },
+  "agency_phone_number": {
+   "phone_number": "(991) 341-089"
+  }
+ }
+}

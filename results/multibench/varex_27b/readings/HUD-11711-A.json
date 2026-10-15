@@ -1,0 +1,23 @@
+{
+ "primary": {
+  "gnma_pool_number": "GNM12345678901234567890123456789",
+  "mortgage_details": "Residential mortgages secured by properties located in Ohio and Indiana",
+  "signature_date": "05/15/2023",
+  "title_of_individual_signing": "Vice President of Mortgage Operations",
+  "release_notes": "Release of security interest following the pooling of mortgages into Ginnie Mae MBS pool"
+ },
+ "parse": {
+  "gnma_pool_number": "GNM12345678901234567890123456789",
+  "mortgage_details": "Residential mortgages secured by properties located in Ohio and Indiana",
+  "signature_date": "05/15/2023",
+  "title_of_individual_signing": "Vice President of Mortgage Operations",
+  "release_notes": "Release of security interest following the pooling of mortgages into Ginnie Mae MBS pool"
+ },
+ "oneshot": {
+  "gnma_pool_number": "GNM12345678901234567890123456789",
+  "mortgage_details": "Residential mortgages secured by properties located in Ohio and Indiana",
+  "signature_date": "05/15/2023",
+  "title_of_individual_signing": "Vice President of Mortgage Operations",
+  "release_notes": "Release of security interest following the pooling of mortgages into Ginnie Mae MBS pool"
+ }
+}

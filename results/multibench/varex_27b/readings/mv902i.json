@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "vehicle_identification_number": "G1ZT54856F123456",
+  "vehicle_year": 2020,
+  "vehicle_make": "Ford",
+  "license_plate_number": "TX-FORD-2018",
+  "owner_full_name": "Larsen, Agustin",
+  "c_o_name": "Lara-Lawrence",
+  "daytime_phone_number": "(313) 348-7858",
+  "signature_date": "11/15/2023",
+  "owner_address": {
+   "street": "5256 David Knoll Suite 751",
+   "apartment_number": "751",
+   "city": "Port Sonia"
+  }
+ },
+ "parse": {
+  "vehicle_identification_number": "G1ZT54856F123456",
+  "vehicle_year": 2020,
+  "vehicle_make": "Ford",
+  "license_plate_number": "TX-FORD-2018",
+  "owner_full_name": "Larsen, Agustin",
+  "c_o_name": "Lara-Lawrence",
+  "daytime_phone_number": "(313) 348-7858",
+  "signature_date": "11/15/2023",
+  "owner_address": {
+   "street": "5256 David Knoll",
+   "apartment_number": "Suite 751",
+   "city": "Port Sonia"
+  }
+ },
+ "oneshot": {
+  "vehicle_identification_number": "1G1ZT54856F123456",
+  "vehicle_year": 2020,
+  "vehicle_make": "Ford",
+  "license_plate_number": "TX-FORD-2018",
+  "owner_full_name": "Larsen, Agustin",
+  "c_o_name": "Lara-Lawrence",
+  "daytime_phone_number": "(313) 348-7858",
+  "signature_date": "11/15/2023",
+  "owner_address": {
+   "street": "5256 David Knoll Suite 751",
+   "apartment_number": "751",
+   "city": "Port Sonia"
+  }
+ }
+}

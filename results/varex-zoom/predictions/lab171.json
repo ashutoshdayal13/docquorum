@@ -1,0 +1,14 @@
+{
+ "license_id": "TB-2023-CA-17195",
+ "tissue_bank_name": "California Biotissue Solutions",
+ "expiration_date": "12/31/2023",
+ "address_info": {
+  "address": "12345 Science Parkway",
+  "city_state_zip": "Los Altos, CA 94022"
+ },
+ "signature_info": {
+  "signature_date": "10/15/2023",
+  "signature_city": "Los Altos",
+  "signature_state": "CA"
+ }
+}

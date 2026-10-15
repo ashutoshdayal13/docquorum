@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "vin_number": "NYA-1FTFW1E53LF",
+  "signature_date": "10/15/2023",
+  "motor_vehicles_representative": "Christina S. Brown",
+  "owner_address": {
+   "street_address": "4306 Newman Burg Suite 852",
+   "city": "Sanchezstad",
+   "county": "Los Angeles County",
+   "state": "California"
+  },
+  "trailer_details": {
+   "trailer_type": "Utility Trailer"
+  }
+ },
+ "parse": {
+  "vin_number": "NYA-1FTFW1E53LF",
+  "signature_date": "10/15/2023",
+  "motor_vehicles_representative": "Christina S. Brown",
+  "owner_address": {
+   "street_address": "4306 Newman Burg Suite 852",
+   "city": "Sanchezstad",
+   "county": "Los Angeles County",
+   "state": "California"
+  },
+  "trailer_details": {
+   "trailer_type": "Utility Trailer"
+  }
+ },
+ "oneshot": {
+  "vin_number": "NYA-1FTFW1E53LF",
+  "signature_date": "10/15/2023",
+  "motor_vehicles_representative": "Christina S. Brown",
+  "owner_address": {
+   "street_address": "4306 Newman Burg Suite 852",
+   "city": "Sanchezstad",
+   "county": "Los Angeles County",
+   "state": "California"
+  },
+  "trailer_details": {
+   "trailer_type": "Utility Trailer"
+  }
+ }
+}

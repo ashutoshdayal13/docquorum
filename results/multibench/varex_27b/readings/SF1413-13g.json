@@ -1,0 +1,101 @@
+{
+ "primary": {
+  "prime_contract_number": "PC-2023-1001",
+  "date_subcontract_awarded": "06/15/2023",
+  "subcontract_number": "SC-2023-5001",
+  "name_of_awarding_firm": "Wells-Snyder Construction Co.",
+  "description_of_work": "Construction of residential housing units",
+  "project": "Sunset Meadows Development",
+  "location": "Schultzburgh, OK",
+  "intermediate_subcontractors": [
+   "Acme Plumbing Services",
+   "Quality Roofing LLC",
+   "Best Electric Co.",
+   "Ace Drywall Inc."
+  ],
+  "prime_contractor": {
+   "name": "Wells-Snyder Construction Co.",
+   "address": "00591 James Flats, Schultzburgh, OK 69862"
+  },
+  "subcontractor": {
+   "name": "Mccann and Sons Construction",
+   "address": "4735 Christopher Lakes, East Ryan, FL 38760"
+  },
+  "signing_party_prime": {
+   "name": "Yatin F. Szajner",
+   "title": "Project Manager",
+   "signature_date": "06/15/2023"
+  },
+  "signing_party_subcontractor": {
+   "name": "Christopher N. Staude",
+   "title": "Operations Manager",
+   "signature_date": "06/15/2023"
+  }
+ },
+ "parse": {
+  "prime_contract_number": "PC-2023-1001",
+  "date_subcontract_awarded": "06/15/2023",
+  "subcontract_number": "SC-2023-5001",
+  "name_of_awarding_firm": "Wells-Snyder Construction Co.",
+  "description_of_work": "Construction of residential housing units",
+  "project": "Sunset Meadows Development",
+  "location": "Schultzburgh, OK",
+  "intermediate_subcontractors": [
+   "Acme Plumbing Services",
+   "Quality Roofing LLC",
+   "Best Electric Co.",
+   "Ace Drywall Inc."
+  ],
+  "prime_contractor": {
+   "name": "Wells-Snyder Construction Co.",
+   "address": "00591 James Flats, Schultzburgh, OK 69862"
+  },
+  "subcontractor": {
+   "name": "Mccann and Sons Construction",
+   "address": "4735 Christopher Lakes, East Ryan, FL 38760"
+  },
+  "signing_party_prime": {
+   "name": "Yatin F. Szajner",
+   "title": "Project Manager",
+   "signature_date": "06/15/2023"
+  },
+  "signing_party_subcontractor": {
+   "name": "Christopher N. Staude",
+   "title": "Operations Manager",
+   "signature_date": "06/15/2023"
+  }
+ },
+ "oneshot": {
+  "prime_contract_number": "PC-2023-1001",
+  "date_subcontract_awarded": "06/15/2023",
+  "subcontract_number": "SC-2023-5001",
+  "name_of_awarding_firm": "Wells-Snyder Construction Co.",
+  "description_of_work": "Construction of residential housing units",
+  "project": "Sunset Meadows Development",
+  "location": "Schultzburgh, OK",
+  "intermediate_subcontractors": [
+   "Acme Plumbing Services",
+   "Quality Roofing LLC",
+   "Best Electric Co.",
+   "Ace Drywall Inc."
+  ],
+  "prime_contractor": {
+   "name": "Wells-Snyder Construction Co.",
+   "address": "00591 James Flats, Schultzburgh, OK 69862"
+  },
+  "subcontractor": {
+   "name": "Mccann and Sons Construction",
+   "address": "4735 Christopher Lakes, East Ryan, FL 38760"
+  },
+  "signing_party_prime": {
+   "name": "Yatin F. Szajner",
+   "title": "Project Manager",
+   "signature_date": "06/15/2023"
+  },
+  "signing_party_subcontractor": {
+   "name": "Christopher N. Staude",
+   "title": "Operations Manager",
+   "signature_date": "06/15/2023"
+  }
+ }
+}

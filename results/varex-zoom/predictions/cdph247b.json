@@ -1,0 +1,15 @@
+{
+ "patient_name": "Jackson, Warda L.",
+ "telephone_number": "(782) 612-5527",
+ "birthdate": "11/12/1988",
+ "delivery_date": "05/15/2023",
+ "medical_conditions": "Gestational diabetes, mild anemia",
+ "medications_supplements": "Prenatal vitamins, insulin injections",
+ "impressions_comments": "Patient is recovering well post-delivery",
+ "local_wic_agency": "California WIC Program - Murillotown Clinic",
+ "healthcare_provider_name": "David Chapman, MD",
+ "healthcare_provider_phone": "(011) 486-2007",
+ "address": {
+  "street": "57794 Brown Fords Apt. 273"
+ }
+}

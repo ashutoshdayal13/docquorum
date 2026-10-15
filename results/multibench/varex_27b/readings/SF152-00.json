@@ -1,0 +1,104 @@
+{
+ "primary": {
+  "requesting_department_or_agency": "Department of Health and Human Services",
+  "requesting_bureau_or_office": "Office of the Secretary",
+  "date_request_initiated": "03/15/2023",
+  "type_of_action": "revision",
+  "proposed_form_title": "Application for Health Services",
+  "present_edition_date": "06/10/2020",
+  "proposed_edition": "Rev 3",
+  "present_form_number": "SF 152-01",
+  "regulating_regulation_or_directive": "45 CFR 142",
+  "date_of_regulation": "01/15/2020",
+  "omb_number": "0990-0001",
+  "omb_expiration_date": "02/28/2025",
+  "interagency_report_number": "IRN-2023",
+  "interagency_report_expiration_date": "12/31/2025",
+  "related_forms": "SF 152-00, SF 152-02, SF 152-03",
+  "form_number_assigned": "SF 152-01 Rev 3",
+  "form_date": "Proposed revision date: 03/01/2024",
+  "submitting_official": {
+   "name": "Medici, Nancy P.",
+   "title": "Trading Standards Officer",
+   "phone": "467-4",
+   "date_signed": "03/15/2023"
+  },
+  "liaison_representative": {
+   "name": "Medici, Nancy P.",
+   "phone": "659-63",
+   "date_signed": "03/15/2023"
+  },
+  "clearance_official": {
+   "name": "Medici, Nancy P.",
+   "date_signed": "03/15/2023"
+  }
+ },
+ "parse": {
+  "requesting_department_or_agency": "Department of Health and Human Services",
+  "requesting_bureau_or_office": "Office of the Secretary",
+  "date_request_initiated": "03/15/2023",
+  "type_of_action": "revision",
+  "proposed_form_title": "Application for Health Services",
+  "present_edition_date": "06/10/2020",
+  "proposed_edition": "Rev 3",
+  "present_form_number": "SF 152-01",
+  "regulating_regulation_or_directive": "45 CFR 142",
+  "date_of_regulation": "01/15/2020",
+  "omb_number": "0990-0001",
+  "omb_expiration_date": "02/28/2025",
+  "interagency_report_number": "IRN-2023",
+  "interagency_report_expiration_date": "12/31/2025",
+  "related_forms": "SF 152-00, SF 152-02, SF 152-03",
+  "form_number_assigned": "SF 152-01 Rev 3",
+  "form_date": "Proposed revision date: 03/01/2024",
+  "submitting_official": {
+   "name": "Medici, Nancy P.",
+   "title": "Trading Standards Officer",
+   "phone": "467-4",
+   "date_signed": "03/15/2023"
+  },
+  "liaison_representative": {
+   "name": "Medici, Nancy P.",
+   "phone": "659-63",
+   "date_signed": "03/15/2023"
+  },
+  "clearance_official": {
+   "name": "Medici, Nancy P.",
+   "date_signed": "03/15/2023"
+  }
+ },
+ "oneshot": {
+  "requesting_department_or_agency": "Department of Health and Human Services",
+  "requesting_bureau_or_office": "Office of the Secretary",
+  "date_request_initiated": "03/15/2023",
+  "type_of_action": "revision",
+  "proposed_form_title": "Application for Health Services",
+  "present_edition_date": "06/10/2020",
+  "proposed_edition": "Rev 3",
+  "present_form_number": "SF 152-01",
+  "regulating_regulation_or_directive": "45 CFR 142",
+  "date_of_regulation": "01/15/2020",
+  "omb_number": "0990-0001",
+  "omb_expiration_date": "02/28/2025",
+  "interagency_report_number": "IRN-2023",
+  "interagency_report_expiration_date": "12/31/2025",
+  "related_forms": "SF 152-00, SF 152-02, SF 152-03",
+  "form_number_assigned": "SF 152-01 Rev 3",
+  "form_date": "Proposed revision date: 03/01/2024",
+  "submitting_official": {
+   "name": "Medici, Nancy P.",
+   "title": "Trading Standards Officer",
+   "phone": "467-4",
+   "date_signed": "03/15/2023"
+  },
+  "liaison_representative": {
+   "name": "Medici, Nancy P.",
+   "phone": "659-63",
+   "date_signed": "03/15/2023"
+  },
+  "clearance_official": {
+   "name": "Medici, Nancy P.",
+   "date_signed": "03/15/2023"
+  }
+ }
+}

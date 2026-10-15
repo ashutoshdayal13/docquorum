@@ -1,0 +1,23 @@
+{
+ "primary": {
+  "agency": "Department of Health and Human Services",
+  "collector_title": "Milk Sample Collector",
+  "location": "123 Dairy Lane, Port Kevin, MN 77111",
+  "date": "03/15/2023",
+  "evaluator": "Gavin Perry"
+ },
+ "parse": {
+  "agency": "Department of Health and Human Services",
+  "collector_title": "Milk Sample Collector",
+  "location": "123 Dairy Lane, Port Kevin, MN 77111",
+  "date": "03/15/2023",
+  "evaluator": "Gavin Perry"
+ },
+ "oneshot": {
+  "agency": "Department of Health and Human Services",
+  "collector_title": "Milk Sample Collector",
+  "location": "123 Dairy Lane, Port Kevin, MN 77111",
+  "date": "03/15/2023",
+  "evaluator": "Gavin Perry"
+ }
+}

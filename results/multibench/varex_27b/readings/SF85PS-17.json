@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "full_name": "Alta Gracia Rodriguez",
+  "social_security_number": "450752181",
+  "drug_use_history": [
+   {
+    "details": "Experimental use in college, no"
+   }
+  ],
+  "alcohol_treatment_history": [
+   {
+    "details": "Brief couse, No treatment"
+   }
+  ]
+ },
+ "parse": {
+  "full_name": "Alta Gracia Rodriguez",
+  "social_security_number": "450752181",
+  "drug_use_history": [
+   {
+    "details": "Experimental use in college, no"
+   }
+  ],
+  "alcohol_treatment_history": [
+   {
+    "details": "Brief course"
+   }
+  ]
+ },
+ "oneshot": {
+  "full_name": "Alta Gracia Rodriguez",
+  "social_security_number": "450752181",
+  "drug_use_history": [
+   {
+    "details": "Experimental use in college, no"
+   }
+  ],
+  "alcohol_treatment_history": [
+   {
+    "details": "Brief couse No treatment"
+   }
+  ]
+ }
+}

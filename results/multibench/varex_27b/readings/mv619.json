@@ -1,0 +1,56 @@
+{
+ "primary": {
+  "patient_name": "Crystal Roussel",
+  "middle_initial": "M",
+  "professional_license_number": "LCSW-2003-VT-68514",
+  "patient_address": {
+   "street_address": "930 Melissa Fords",
+   "apartment_number": "009",
+   "city": "Kevinport",
+   "state": "NE",
+   "country": "USA"
+  },
+  "provider_address": {
+   "street_address": "9141 Emily Fort Apt. 463",
+   "city": "Sheltonland",
+   "state": "VT",
+   "country": "USA"
+  }
+ },
+ "parse": {
+  "patient_name": "Crystal Roussel",
+  "middle_initial": "M",
+  "professional_license_number": "LCSW-2003-VT-68514",
+  "patient_address": {
+   "street_address": "930 Melissa Fords",
+   "apartment_number": "009",
+   "city": "Kevinport",
+   "state": "NE",
+   "country": "USA"
+  },
+  "provider_address": {
+   "street_address": "9141 Emily Fort",
+   "city": "Sheltonland",
+   "state": "VT",
+   "country": "USA"
+  }
+ },
+ "oneshot": {
+  "patient_name": "Crystal Roussel",
+  "middle_initial": "M",
+  "professional_license_number": "LCSW-2003-VT-68514",
+  "patient_address": {
+   "street_address": "930 Melissa Fords",
+   "apartment_number": "Apt. 009",
+   "city": "Kevinport",
+   "state": "NE",
+   "country": "USA"
+  },
+  "provider_address": {
+   "street_address": "9141 Emily Fort Apt. 463",
+   "city": "Sheltonland",
+   "state": "VT",
+   "country": "USA"
+  }
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "primary": {
+  "incident_date": "05/15/2023",
+  "other_incident_reason": "The vendor was rude and uncooperative throughout the interaction.",
+  "local_agency_info": "Local Agency: WIC Program, Agency Number: LA1001, Site: Main Office",
+  "report_date": "05/16/2023",
+  "action_date": "05/17/2023",
+  "action_taken": "Contacted the vendor to resolve the issue and ensure compliance with WIC program rules.",
+  "vendor_info": {
+   "vendor_name": "Super Savings Market",
+   "vendor_address": "1234 Main Street, Anytown, CA 90001"
+  },
+  "reporter_info": {
+   "reporter_name": "Jill P. Miller",
+   "reporter_phone": "(491) 226-6870",
+   "reporter_email": "jill.miller@gmail.com"
+  },
+  "wic_staff_info": {
+   "wic_staff_name": "Jill P. Miller"
+  }
+ },
+ "parse": {
+  "incident_date": "05/15/2023",
+  "other_incident_reason": "The vendor was rude and uncooperative throughout the interaction.",
+  "local_agency_info": "Local Agency: WIC Program, Agency Number: LA1001, Site: Main Office",
+  "report_date": "05/16/2023",
+  "action_date": "05/17/2023",
+  "action_taken": "Contacted the vendor to resolve the issue and ensure compliance with WIC program rules.",
+  "vendor_info": {
+   "vendor_name": "Super Savings Market",
+   "vendor_address": "1234 Main Street, Anytown, CA 90001"
+  },
+  "reporter_info": {
+   "reporter_name": "Jill P. Miller",
+   "reporter_phone": "(491) 226-6870",
+   "reporter_email": "jill.miller@gmail.com"
+  },
+  "wic_staff_info": {
+   "wic_staff_name": "Jill P. Miller"
+  }
+ },
+ "oneshot": {
+  "incident_date": "05/15/2023",
+  "other_incident_reason": "The vendor was rude and uncooperative throughout the interaction.",
+  "local_agency_info": "Local Agency: WIC Program, Agency Number: LA1001, Site: Main Office",
+  "report_date": "05/16/2023",
+  "action_date": "05/17/2023",
+  "action_taken": "Contacted the vendor to resolve the issue and ensure compliance with WIC program rules.",
+  "vendor_info": {
+   "vendor_name": "Super Savings Market",
+   "vendor_address": "1234 Main Street, Anytown, CA 90001"
+  },
+  "reporter_info": {
+   "reporter_name": "Jill P. Miller",
+   "reporter_phone": "(491) 226-6870",
+   "reporter_email": "jill.miller@gmail.com"
+  },
+  "wic_staff_info": {
+   "wic_staff_name": "Jill P. Miller"
+  }
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "name_of_provider": "Castillo LLC CDL Testing",
+  "tax_id": "76-1234567",
+  "email_address": "cdl@castillo.com",
+  "designated_responsible_person": "Travis Z. Brown",
+  "business_license_expiration_date": "12/31/2025",
+  "phone_number": "(409) 781-7648",
+  "hours_of_operation": "8:00 AM - 5:00 PM,",
+  "physical_address": {
+   "street": "374 Hamilton Shoals Suite 268"
+  },
+  "mailing_address": {
+   "street": "374 Hamilton Shoals Suite 268"
+  },
+  "physical_addresses_for_cdl_exams": [
+   {
+    "street": "1234 Main Street"
+   },
+   {
+    "street": "5678 Industrial Way"
+   }
+  ]
+ },
+ "parse": {
+  "name_of_provider": "Castillo LLC CDL Testing",
+  "tax_id": "76-1234567",
+  "email_address": "cdl@castillo.com",
+  "designated_responsible_person": "Travis Z. Brown",
+  "business_license_expiration_date": "12/31/2025",
+  "phone_number": "(409) 781-7648",
+  "hours_of_operation": "8:00 AM - 5:00 PM,",
+  "physical_address": {
+   "street": "374 Hamilton Shoals Suite 268"
+  },
+  "mailing_address": {
+   "street": "374 Hamilton Shoals Suite 268"
+  },
+  "physical_addresses_for_cdl_exams": [
+   {
+    "street": "1234 Main Street"
+   },
+   {
+    "street": "5678 Industrial Way"
+   }
+  ]
+ },
+ "oneshot": {
+  "name_of_provider": "Castillo LLC CDL Testing",
+  "tax_id": "76-1234567",
+  "email_address": "cdl@castillo.com",
+  "designated_responsible_person": "Travis Z. Brown",
+  "business_license_expiration_date": "12/31/2025",
+  "phone_number": "(409) 781-7648",
+  "hours_of_operation": "8:00 AM - 5:00 PM,",
+  "physical_address": {
+   "street": "374 Hamilton Shoals Suite 268"
+  },
+  "mailing_address": {
+   "street": "374 Hamilton Shoals Suite 268"
+  },
+  "physical_addresses_for_cdl_exams": [
+   {
+    "street": "1234 Main Street"
+   },
+   {
+    "street": "5678 Industrial Way"
+   }
+  ]
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "employee_name": "Montenegro, Gianna C.",
+ "date_of_birth": "01/16/1968",
+ "social_security_number": "743-23-8557",
+ "employing_department": "Department of the Interior",
+ "owcp_claim_number": "CTL-2023-91212",
+ "location_of_department": "Hernandezchester, VA",
+ "daytime_telephone_number": "(402) 474-8782",
+ "employing_office_name_address": "620 Olson Canyon, Hernandezchester, VA 22714",
+ "date_received_in_employing_office": "05/15/2023",
+ "effective_date_of_coverage": "06/01/2023",
+ "agency_remarks": "Employee elects Basic and Options A, B, and C for maximum coverage.",
+ "basic_insurance": {
+  "date": "05/20/2023"
+ },
+ "option_a": {
+  "date": "05/20/2023"
+ },
+ "option_b": {
+  "date": "05/20/2023"
+ },
+ "option_c": {
+  "date": "05/20/2023"
+ }
+}

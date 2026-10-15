@@ -1,0 +1,23 @@
+{
+ "employee_name": "Beverly T. Pantoja",
+ "current_organization": "Barron, Fisher and Joseph",
+ "current_title_series_grade_step": "Chemist, analytical - GS-0905-13-05",
+ "detail_position_title_series_grade": "Senior Analytical Chemist - GS-0905-14",
+ "salary": 9093.78,
+ "other_payments": "Performance bonus of $2,000",
+ "start_date": "03/15/2023",
+ "end_date": "09/15/2023",
+ "from_pay_period": "08",
+ "to_pay_period": "18",
+ "gaining_organization_program_office": "Research and Development Division",
+ "duty_location": "West Melissa, IL",
+ "budget_officer_name": "Lindsay D. Smith",
+ "budget_officer_signature_date": "03/10/2023",
+ "assistant_secretary_name": "Andres O. Sathe",
+ "assistant_secretary_signature_date": "03/12/2023",
+ "accounting_information": {
+  "account_code": "ACCT-2023-001",
+  "fund_code": "ACCT-2023-001",
+  "project_code": "PROJ-2023-001"
+ }
+}

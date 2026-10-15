@@ -1,0 +1,23 @@
+{
+ "complainant_name": "Rebecca X. Cochran",
+ "complainant_ssn": "567-41-0023",
+ "complainant_current_address": "20749 Joseph Parkway, Jenniferberg, TN 02107",
+ "complainant_phone": "(283) 491-4519",
+ "complainant_email": "rebecca.cochran@gmail.com",
+ "project_name": "Greenfield Urban Renewal",
+ "employer_name": "Chavez-Durham Construction",
+ "employer_owner_name": "Maria Chavez",
+ "employer_address": "12345 Construction Boulevard, Jenniferberg, TN 02108",
+ "employer_contact_info": "(623) 849-9698",
+ "occupation": "Construction Site Supervisor",
+ "duties_performed": "Supervised construction activities, managed workforce, ensured compliance with safety regulations",
+ "tools_used": "Hard hat, safety goggles, walkie-talkie, construction plans, measuring tape",
+ "employment_period": {
+  "start_date": "06/01/2022",
+  "end_date": "03/20/2023"
+ },
+ "work_times": {
+  "start_time": "07:00 AM",
+  "stop_time": "05:00 PM"
+ }
+}

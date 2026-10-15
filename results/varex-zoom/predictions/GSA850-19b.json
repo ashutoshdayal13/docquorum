@@ -1,0 +1,19 @@
+{
+ "contract_employee_information": {
+  "employee_name": "Velasquez, Livia",
+  "employee_address": "9048 Williams Turnpike Suite 003, New Julia, AZ 65096",
+  "employee_phone": "(731) 780-9400",
+  "employee_email": "livia.velasquez@hotmail.com"
+ },
+ "contract_information": {
+  "contract_type": "Service Contract"
+ },
+ "project_work_location_information": {
+  "work_location": "9048 Williams Turnpike Suite 003, New Julia, AZ 65096"
+ },
+ "contractor_name": "Wagner Inc",
+ "contractor_phone": "(735) 572-9090",
+ "contractor_email": "lvelasquez@wagner.com",
+ "contract_start_date": "06/01/2023",
+ "contract_end_date": "05/31/2024"
+}

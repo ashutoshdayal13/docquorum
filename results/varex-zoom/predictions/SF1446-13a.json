@@ -1,0 +1,23 @@
+{
+ "reporting_office": "Department of Labor",
+ "contract_number": "CTL-2023-41652",
+ "date_of_contract": "06/15/2023",
+ "wage_determination_number": 123456789,
+ "wage_determination_date": 0,
+ "number_of_employees_involved": "15 employees",
+ "amount_of_restitution": 0,
+ "remarks": "Investigation concluded with restitution and corrective actions.",
+ "contractor": {
+  "name": "Richard, Thomas and Nguyen"
+ },
+ "employer": {
+  "name": "Kenneth Deleon"
+ },
+ "project": {
+  "name_and_location": "Highway Construction Project, San Francisco, CA",
+  "description_of_work": "Construction of a new highway including roadways, bridges, and drainage systems."
+ },
+ "investigation_details": {
+  "basis_for_investigation": "Complaint received regarding underpayment of wages."
+ }
+}

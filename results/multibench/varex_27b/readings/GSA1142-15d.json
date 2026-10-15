@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "contract_number": "GS-01F-0973-0001-01",
+  "contract_description": "Armed Forces Training Services",
+  "claim_details": "Release of all claims related to services provided under contract GS-01F-0973-0001-01",
+  "signature_date": "07/15/2023",
+  "signature_month": "July 2023",
+  "contractor": {
+   "title": "Armed forces training and education officer",
+   "address": "4845 Harrison Ranch, North Heather, FL"
+  },
+  "witness": {
+   "name": "Alma N. Atkinson"
+  }
+ },
+ "parse": {
+  "contract_number": "GS-01F-0973-0001-01",
+  "contract_description": "Armed Forces Training Services",
+  "claim_details": "Release of all claims related to services provided under contract GS-01F-0973-0001-01",
+  "signature_date": "07/15/2023",
+  "signature_month": "July 2023",
+  "contractor": {
+   "title": "Armed forces training and education officer",
+   "address": "4845 Harrison Ranch, North Heather, FL"
+  },
+  "witness": {
+   "name": "Alma N. Atkinson"
+  }
+ },
+ "oneshot": {
+  "contract_number": "GS-01F-0973-0001-01",
+  "contract_description": "Armed Forces Training Services",
+  "claim_details": "Release of all claims related to services provided under contract GS-01F-0973-0001-01",
+  "signature_date": "07/15/2023",
+  "signature_month": "July 2023",
+  "contractor": {
+   "title": "Armed forces training and education officer",
+   "address": "4845 Harrison Ranch, North Heather, FL"
+  },
+  "witness": {
+   "name": "Alma N. Atkinson"
+  }
+ }
+}

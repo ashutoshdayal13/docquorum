@@ -1,0 +1,86 @@
+{
+ "primary": {
+  "notes": "Patient had a severe case of influenza with multiple complications.",
+  "patient_information": {
+   "first_name": "John",
+   "last_name": "Courtois",
+   "date_of_birth": "03/09/1976"
+  },
+  "onset_vaccination_history": {
+   "date_of_onset": "12/15/2022",
+   "vaccination_date": "10/10/2022"
+  },
+  "hospitalization_information": {
+   "hospital_name": "General Hospital",
+   "admission_date": "12/18/2022",
+   "hospital_discharge_date": "12/30/2022"
+  },
+  "death_information": {
+   "date_of_death": "12/31/2022"
+  },
+  "influenza_laboratory_testing": {
+   "test_type": "PCR",
+   "test_date": "12/16/2022"
+  },
+  "reporting_agency_information": {
+   "agency_name": "Department of Health",
+   "agency_contact": "health@doh.gov"
+  }
+ },
+ "parse": {
+  "notes": "Patient had a severe case of influenza with multiple complications.",
+  "patient_information": {
+   "first_name": "John",
+   "last_name": "Courtois",
+   "date_of_birth": "03/09/1976"
+  },
+  "onset_vaccination_history": {
+   "date_of_onset": "12/15/2022",
+   "vaccination_date": "10/10/2022"
+  },
+  "hospitalization_information": {
+   "hospital_name": "General Hospital",
+   "admission_date": "12/18/2022",
+   "hospital_discharge_date": "12/30/2022"
+  },
+  "death_information": {
+   "date_of_death": "12/31/2022"
+  },
+  "influenza_laboratory_testing": {
+   "test_type": "PCR",
+   "test_date": "12/16/2022"
+  },
+  "reporting_agency_information": {
+   "agency_name": "Department of Health",
+   "agency_contact": "health@doh.gov"
+  }
+ },
+ "oneshot": {
+  "notes": "Patient had a severe case of influenza with multiple complications.",
+  "patient_information": {
+   "first_name": "John",
+   "last_name": "Courtois",
+   "date_of_birth": "03/09/1976"
+  },
+  "onset_vaccination_history": {
+   "date_of_onset": "12/15/2022",
+   "vaccination_date": "10/10/2022"
+  },
+  "hospitalization_information": {
+   "hospital_name": "General Hospital",
+   "admission_date": "12/18/2022",
+   "hospital_discharge_date": "12/30/2022"
+  },
+  "death_information": {
+   "date_of_death": "12/31/2022"
+  },
+  "influenza_laboratory_testing": {
+   "test_type": "PCR",
+   "test_date": "12/16/2022"
+  },
+  "reporting_agency_information": {
+   "agency_name": "Department of Health",
+   "agency_contact": "health@doh.gov"
+  }
+ }
+}

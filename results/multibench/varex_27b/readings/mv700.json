@@ -1,0 +1,107 @@
+{
+ "primary": {
+  "business_name": "Stevens, Hogan and Suarez",
+  "facility_number": 87107,
+  "business_address": "184 Heidi Spur",
+  "business_city": "West Stephanie",
+  "business_phone_number": 9670155682,
+  "sale_address": "495 Clinton Highway Apt. 970",
+  "sale_county": "Los Angeles",
+  "sale_city": "Lake Samuelborough",
+  "sale_zip_code": "44346",
+  "beginning_date": "06/24/2023",
+  "ending_date": "06/24/2024",
+  "contact_person": "Marie Y. Quezada",
+  "contact_phone_number": 8987001426,
+  "certification_date": "06/24/2023",
+  "sales_staff": [
+   {
+    "name": "Jean H. Torrez"
+   },
+   {
+    "name": "David D. Robertson"
+   },
+   {
+    "name": "Marie Y. Quezada"
+   }
+  ],
+  "third_party_companies": [
+   {
+    "name": "Clay Inc",
+    "fein": 617105,
+    "address": "495 Clinton Highway Apt. 970",
+    "city": "Lake Samuelborough"
+   }
+  ]
+ },
+ "parse": {
+  "business_name": "Stevens, Hogan and Suarez",
+  "facility_number": 87107,
+  "business_address": "184 Heidi Spur",
+  "business_city": "West Stephanie",
+  "business_phone_number": 9670155682,
+  "sale_address": "495 Clinton Highway Apt. 970",
+  "sale_county": "Los Angeles",
+  "sale_city": "Lake Samuelborough",
+  "sale_zip_code": "44346",
+  "beginning_date": "06/24/2023",
+  "ending_date": "06/24/2024",
+  "contact_person": "Marie Y. Quezada",
+  "contact_phone_number": 8987001426,
+  "certification_date": "06/24/2023",
+  "sales_staff": [
+   {
+    "name": "Jean H. Torrez"
+   },
+   {
+    "name": "David D. Robertson"
+   },
+   {
+    "name": "Marie Y. Quezada"
+   }
+  ],
+  "third_party_companies": [
+   {
+    "name": "Clay Inc",
+    "fein": 617105,
+    "address": "495 Clinton Highway Apt. 970",
+    "city": "Lake Samuelborough"
+   }
+  ]
+ },
+ "oneshot": {
+  "business_name": "Stevens, Hogan and Suarez",
+  "facility_number": 87107,
+  "business_address": "184 Heidi Spur",
+  "business_city": "West Stephanie",
+  "business_phone_number": 9670155682,
+  "sale_address": "495 Clinton Highway Apt. 970",
+  "sale_county": "Los Angeles",
+  "sale_city": "Lake Samuelborough",
+  "sale_zip_code": "44346",
+  "beginning_date": "06/24/2023",
+  "ending_date": "06/24/2024",
+  "contact_person": "Marie Y. Quezada",
+  "contact_phone_number": 8987001426,
+  "certification_date": "06/24/2023",
+  "sales_staff": [
+   {
+    "name": "Jean H. Torrez"
+   },
+   {
+    "name": "David D. Robertson"
+   },
+   {
+    "name": "Marie Y. Quezada"
+   }
+  ],
+  "third_party_companies": [
+   {
+    "name": "Clay Inc",
+    "fein": 617105,
+    "address": "495 Clinton Highway Apt. 970",
+    "city": "Lake Samuelborough"
+   }
+  ]
+ }
+}

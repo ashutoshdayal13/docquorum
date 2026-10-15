@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "family_name": "Fiolek",
+  "given_name": "Duane",
+  "middle_name": "I.",
+  "date_of_birth": "09/07/1990",
+  "country_of_birth": "Poland",
+  "country_of_citizenship": "Poland",
+  "address": {
+   "street": "83826 Hunter Prairie",
+   "city": "Lake Alicia",
+   "zip_code": "99522"
+  }
+ },
+ "parse": {
+  "family_name": "Fintek",
+  "given_name": "Duane",
+  "middle_name": "I.",
+  "date_of_birth": "09/07/1990",
+  "country_of_birth": "Poland",
+  "country_of_citizenship": "Poland",
+  "address": {
+   "street": "83826 Hunter Prairie",
+   "city": "Lake Alicia",
+   "zip_code": "99522"
+  }
+ },
+ "oneshot": {
+  "family_name": "Fintek",
+  "given_name": "Duane",
+  "middle_name": "I.",
+  "date_of_birth": "09/07/1990",
+  "country_of_birth": "Poland",
+  "country_of_citizenship": "Poland",
+  "address": {
+   "street": "83826 Hunter Prairie",
+   "city": "Lake Alicia",
+   "zip_code": "99522"
+  }
+ }
+}

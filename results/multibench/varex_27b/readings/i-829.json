@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "attorney_state_bar_number": "MO-2025-95254",
+  "regional_center": {
+   "name": "Midwest Regional Center for Investment",
+   "identification_number": "MRC-I-2023-001"
+  },
+  "new_commercial_enterprise": {
+   "name": "GreenTech Innovations LLC"
+  },
+  "petitioner": {
+   "family_name": "Moore",
+   "given_name": "Barbara",
+   "middle_name": "O.",
+   "date_of_birth": "12/03/1993",
+   "country_of_birth": "United States of America",
+   "country_of_citizenship_or_nationality": "United States of America",
+   "date_of_admission_as_conditional_permanent_resident": "06/15/2021"
+  }
+ },
+ "parse": {
+  "attorney_state_bar_number": "MO-2025-95254",
+  "regional_center": {
+   "name": "Midwest Regional Center for Investment",
+   "identification_number": "MRC-I-2023-001"
+  },
+  "new_commercial_enterprise": {
+   "name": "GreenTech Innovations LLC"
+  },
+  "petitioner": {
+   "family_name": "Moore",
+   "given_name": "Barbara",
+   "middle_name": "O.",
+   "date_of_birth": "12/03/1993",
+   "country_of_birth": "United States of America",
+   "country_of_citizenship_or_nationality": "United States of America",
+   "date_of_admission_as_conditional_permanent_resident": "06/15/2021"
+  }
+ },
+ "oneshot": {
+  "attorney_state_bar_number": "MO-2025-95254",
+  "regional_center": {
+   "name": "Midwest Regional Center for Investment",
+   "identification_number": "MRC-I-2023-001"
+  },
+  "new_commercial_enterprise": {
+   "name": "GreenTech Innovations LLC"
+  },
+  "petitioner": {
+   "family_name": "Moore",
+   "given_name": "Barbara",
+   "middle_name": "O.",
+   "date_of_birth": "12/03/1993",
+   "country_of_birth": "United States of America",
+   "country_of_citizenship_or_nationality": "United States of America",
+   "date_of_admission_as_conditional_permanent_resident": "06/15/2021"
+  }
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "primary": {
+  "license_number": "LLP-2023-45678",
+  "expiration_date": "12/31/2024",
+  "date_issued": "05/15/2023",
+  "signature_date": "05/15/2023",
+  "applicant_info": {
+   "applicant_name": "Leslie Caldwell",
+   "applicant_address": "7012 Hall Plaza, Janetton, FL 46967",
+   "applicant_phone": "(762) 204-6143",
+   "applicant_email": "leslie.caldwell@aol.com"
+  },
+  "vehicle_info": {
+   "vehicle_make": "Caterpillar",
+   "vehicle_model": "950K",
+   "vehicle_vin": "1C4PJLCB6DN123456"
+  }
+ },
+ "parse": {
+  "license_number": "LLP-2023-45678",
+  "expiration_date": "12/31/2024",
+  "date_issued": "05/15/2023",
+  "signature_date": "05/15/2023",
+  "applicant_info": {
+   "applicant_name": "Leslie Caldwell",
+   "applicant_address": "7012 Hall Plaza, Janetton, FL 46967",
+   "applicant_phone": "(762) 204-6143",
+   "applicant_email": "leslie.caldwell@aol.com"
+  },
+  "vehicle_info": {
+   "vehicle_make": "Caterpillar",
+   "vehicle_model": "950K",
+   "vehicle_vin": "1C4PJLCB6DN123456"
+  }
+ },
+ "oneshot": {
+  "license_number": "LLP-2023-45678",
+  "expiration_date": "12/31/2024",
+  "date_issued": "05/15/2023",
+  "signature_date": "05/15/2023",
+  "applicant_info": {
+   "applicant_name": "Leslie Caldwell",
+   "applicant_address": "7012 Hall Plaza, Janetton, FL 46967",
+   "applicant_phone": "(762) 204-6143",
+   "applicant_email": "leslie.caldwell@aol.com"
+  },
+  "vehicle_info": {
+   "vehicle_make": "Caterpillar",
+   "vehicle_model": "950K",
+   "vehicle_vin": "1C4PJLCB6DN123456"
+  }
+ }
+}

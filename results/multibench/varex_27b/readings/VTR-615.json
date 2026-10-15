@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "parking_placard_1": "PP2023001A",
+  "parking_placard_2": "PP2023001B",
+  "expiration_month_year": "12/2025",
+  "date_issued": "03/15/2023",
+  "applicant": {
+   "first_name": "Deborah",
+   "middle_name": "Q.",
+   "last_name": "Bradley",
+   "address": "4554 Diana Estate Apt. 427",
+   "email": "deborah.bradley@hotmail.com",
+   "phone_number": "(387) 456-7334",
+   "driver_license_state": "FL",
+   "driver_license_number": "CPA-2025-FL-40898"
+  },
+  "vehicle": {
+   "vIN": "1G1ZT53827F455427",
+   "current_tx_plate": "ABC1234",
+   "year": "2020",
+   "make": "Ford",
+   "body_style": "SUV"
+  }
+ },
+ "parse": {
+  "parking_placard_1": "PP2023001A",
+  "parking_placard_2": "PP2023001B",
+  "expiration_month_year": "12/2025",
+  "date_issued": "03/15/2023",
+  "applicant": {
+   "first_name": "Debora",
+   "middle_name": "Q.",
+   "last_name": "Bradley",
+   "address": "4554 Diana Estate Apt. 427",
+   "email": "debora.bradley@hotmail.com",
+   "phone_number": "(387) 456-7334",
+   "driver_license_state": "FL",
+   "driver_license_number": "CPA-2025-FL-40898"
+  },
+  "vehicle": {
+   "vIN": "1G1ZT53827F455427",
+   "current_tx_plate": "ABC1234",
+   "year": "2020",
+   "make": "Ford",
+   "body_style": "SUV"
+  }
+ },
+ "oneshot": {
+  "parking_placard_1": "PP2023001A",
+  "parking_placard_2": "PP2023001B",
+  "expiration_month_year": "12/2025",
+  "date_issued": "03/15/2023",
+  "applicant": {
+   "first_name": "Deborah",
+   "middle_name": "Q.",
+   "last_name": "Bradley",
+   "address": "4554 Diana Estate Apt. 427",
+   "email": "debora.bradley@hotmail.com",
+   "phone_number": "(387) 456-7334",
+   "driver_license_state": "FL",
+   "driver_license_number": "CPA-2025-FL-40898"
+  },
+  "vehicle": {
+   "vIN": "1G1ZT53827F455427",
+   "current_tx_plate": "ABC1234",
+   "year": "2020",
+   "make": "Ford",
+   "body_style": "SUV"
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "primary": {
+  "program_name": "Germana Reuter School Nurse Training",
+  "program_phone_number": "(778) 032-6844",
+  "program_website": "www.mosesschmidt.com/nurse-training",
+  "program_curriculum_name_and_edition": "School Nurse Curriculum 5th Edition",
+  "program_identification_training_number": [
+   {
+    "pitn_detail": "PITN-2023-001"
+   },
+   {
+    "pitn_detail": "PITN-2023-002"
+   },
+   {
+    "pitn_detail": "PITN-2023-003"
+   },
+   {
+    "pitn_detail": "PITN-2023-004"
+   },
+   {
+    "pitn_detail": "PITN-2023-005"
+   },
+   {
+    "pitn_detail": "PITN-2023-006"
+   },
+   {
+    "pitn_detail": "PITN-2023-007"
+   }
+  ]
+ },
+ "parse": {
+  "program_name": "Germana Reuter School Nurse Training",
+  "program_phone_number": "(778) 032-6844",
+  "program_website": "www.mosesschmidt.com/nurse-training",
+  "program_curriculum_name_and_edition": "School Nurse Curriculum 5th Edition",
+  "program_identification_training_number": [
+   {
+    "pitn_detail": "PITN-2023-001"
+   },
+   {
+    "pitn_detail": "PITN-2023-002"
+   },
+   {
+    "pitn_detail": "PITN-2023-003"
+   },
+   {
+    "pitn_detail": "PITN-2023-004"
+   },
+   {
+    "pitn_detail": "PITN-2023-005"
+   },
+   {
+    "pitn_detail": "PITN-2023-006"
+   },
+   {
+    "pitn_detail": "PITN-2023-007"
+   }
+  ]
+ },
+ "oneshot": {
+  "program_name": "Germana Reuter School Nurse Training",
+  "program_phone_number": "(778) 032-6844",
+  "program_website": "www.mosesschmidt.com/nurse-training",
+  "program_curriculum_name_and_edition": "School Nurse Curriculum 5th Edition",
+  "program_identification_training_number": [
+   {
+    "pitn_detail": "PITN-2023-001"
+   },
+   {
+    "pitn_detail": "PITN-2023-002"
+   },
+   {
+    "pitn_detail": "PITN-2023-003"
+   },
+   {
+    "pitn_detail": "PITN-2023-004"
+   },
+   {
+    "pitn_detail": "PITN-2023-005"
+   },
+   {
+    "pitn_detail": "PITN-2023-006"
+   },
+   {
+    "pitn_detail": "PITN-2023-007"
+   }
+  ]
+ }
+}

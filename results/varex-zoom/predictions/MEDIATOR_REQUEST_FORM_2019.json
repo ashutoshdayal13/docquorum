@@ -1,0 +1,24 @@
+{
+ "date": "05/15/2023",
+ "case_number": "DOL-2023-53874",
+ "matter_parties": [
+  "Angela Hicks",
+  "Michael Y. Brown",
+  "Reynaldo F. Martinez"
+ ],
+ "mediation_location_preference": "Telephonic",
+ "assigned_alj_name": "Beth Slavet",
+ "hearing_date": "06/30/2023",
+ "requester_information": {
+  "name": "Angela Hicks",
+  "address": "6515 Kayla Roads",
+  "phone_number": "(835) 393-4720",
+  "email": "angela.hicks@outlook.com"
+ },
+ "respondent_information": {
+  "name": "Michael Y. Brown",
+  "address": "73967 Spencer Springs",
+  "phone_number": "(527) 297-8157",
+  "email": "mbrown@reyeskelley.com"
+ }
+}

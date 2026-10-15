@@ -1,0 +1,86 @@
+{
+ "primary": {
+  "property_address": "3801 Alicia Keys, Lake Jessica, MI 78172",
+  "case_number": "HUD-2024-18768",
+  "request_number": "RQ-2024-00292",
+  "borrower_name": "Cook, Renee J.",
+  "builder_sponsor_consultant_name": "Leon, Williams and Brady",
+  "mortgagee_name": "Short Ltd",
+  "determination_acceptability": "Changes are acceptable with conditions.",
+  "va_id_number": "VA-2024-18768",
+  "borrower_date": "06/15/2024",
+  "builder_sponsor_consultant_date": "06/15/2024",
+  "mortgagee_date": "06/16/2024",
+  "va_date": "06/17/2024",
+  "change_details": [
+   {
+    "description": "Upgrade to energy-efficient windows throughout the property"
+   },
+   {
+    "description": "Installation of smart home security system"
+   },
+   {
+    "description": "Refinishing hardwood floors in all bedrooms"
+   },
+   {
+    "description": "Landscaping improvements in front and back yards"
+   }
+  ]
+ },
+ "parse": {
+  "property_address": "3801 Alicia Keys, Lake Jessica, MI 78172",
+  "case_number": "HUD-2024-18768",
+  "request_number": "RQ-2024-00292",
+  "borrower_name": "Cook, Renee J.",
+  "builder_sponsor_consultant_name": "Leon, Williams and Brady",
+  "mortgagee_name": "Short Ltd",
+  "determination_acceptability": "Changes are acceptable with conditions.",
+  "va_id_number": "VA-2024-18768",
+  "borrower_date": "06/15/2024",
+  "builder_sponsor_consultant_date": "06/15/2024",
+  "mortgagee_date": "06/16/2024",
+  "va_date": "06/17/2024",
+  "change_details": [
+   {
+    "description": "Upgrade to energy-efficient windows throughout the property"
+   },
+   {
+    "description": "Installation of smart home security system"
+   },
+   {
+    "description": "Refinishing hardwood floors in all bedrooms"
+   },
+   {
+    "description": "Landscaping improvements in front and back yards"
+   }
+  ]
+ },
+ "oneshot": {
+  "property_address": "3801 Alicia Keys, Lake Jessica, MI 78172",
+  "case_number": "HUD-2024-18768",
+  "request_number": "RQ-2024-00292",
+  "borrower_name": "Cook, Renee J.",
+  "builder_sponsor_consultant_name": "Leon, Williams and Brady",
+  "mortgagee_name": "Short Ltd",
+  "determination_acceptability": "Changes are acceptable with conditions.",
+  "va_id_number": "VA-2024-18768",
+  "borrower_date": "06/15/2024",
+  "builder_sponsor_consultant_date": "06/15/2024",
+  "mortgagee_date": "06/16/2024",
+  "va_date": "06/17/2024",
+  "change_details": [
+   {
+    "description": "Upgrade to energy-efficient windows throughout the property"
+   },
+   {
+    "description": "Installation of smart home security system"
+   },
+   {
+    "description": "Refinishing hardwood floors in all bedrooms"
+   },
+   {
+    "description": "Landscaping improvements in front and back yards"
+   }
+  ]
+ }
+}

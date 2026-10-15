@@ -1,0 +1,20 @@
+{
+ "psb_name": "Harper Services Bureau",
+ "psb_license_number": "PSB-2020-CA-4567",
+ "owner_name": "Megan L. Collins",
+ "partner_changes": "Previous partner: John Doe; Current partner: Jane Smith; Change due to",
+ "mailing_address": {
+  "address": "013 Amanda Crest",
+  "city": "South Alan",
+  "state": "CA"
+ },
+ "contact_information": {
+  "telephone_number": "(961) 579-5253",
+  "cell_number": "(570) 462-2812",
+  "email_address": "megan.collins@gmail.com"
+ },
+ "website_information": {
+  "website_url": "www.harperservicesbureau.com",
+  "website_urls": "www.harperservicesbureau.com, www.harperlegal.com"
+ }
+}

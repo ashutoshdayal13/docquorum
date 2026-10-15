@@ -1,0 +1,52 @@
+{
+ "primary": {
+  "applicant_last_name": "Fonseca",
+  "applicant_first_name": "Joshua",
+  "applicant_middle_initial": "K",
+  "social_security_number": "891-61-7898",
+  "date_of_birth": "03/15/1991",
+  "driver_license_number": "PA-12403-891617898",
+  "application_fee": "$23.48",
+  "mailing_address": {
+   "address": "965 Carrie Cove Suite 090, Colemanside, PA 12403",
+   "county": ""
+  },
+  "telephone_numbers": {
+   "work": "(039) 140-1510",
+   "home": "(836) 807-8315"
+  }
+ },
+ "parse": {
+  "applicant_last_name": "Fonseca",
+  "applicant_first_name": "Joshua",
+  "applicant_middle_initial": "K",
+  "social_security_number": "891-61-7898",
+  "date_of_birth": "03/15/1991",
+  "driver_license_number": "PA-12403-891617898",
+  "application_fee": "$23.48",
+  "mailing_address": {
+   "address": "965 Carrie Cove Suite 090, Colemanside, PA 12403",
+   "county": ""
+  },
+  "telephone_numbers": {
+   "work": "(039) 140-1510",
+   "home": "(836) 807-8315"
+  }
+ },
+ "oneshot": {
+  "applicant_last_name": "Fonseca",
+  "applicant_first_name": "Joshua",
+  "applicant_middle_initial": "K",
+  "social_security_number": "891-61-7898",
+  "date_of_birth": "03/15/1991",
+  "driver_license_number": "PA-12403-891617898",
+  "application_fee": "$23.48",
+  "mailing_address": {
+   "address": "965 Carrie Cove Suite 090, Colemanside, PA 12403"
+  },
+  "telephone_numbers": {
+   "work": "(039) 140-1510",
+   "home": "(836) 807-8315"
+  }
+ }
+}

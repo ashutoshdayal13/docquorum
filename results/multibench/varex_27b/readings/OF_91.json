@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "contract_number": "W912QA-21-C-0001",
+  "surety_name": "Ronald Z. Bruce",
+  "surety_residence": "Gilltown, TX 13292",
+  "escrow_account_number": "6636-4160-4975",
+  "authorized_representative_name": "Marco Antonio Cervantes, Chief of Staff",
+  "released_property_description": "Construction equipment including excavators, bulldozers, and trucks",
+  "release_date": "05/15/2023",
+  "financial_institution": {
+   "name": "First National Bank of Gilltown",
+   "address": "1500 Main Street, Gilltown, TX 13292"
+  }
+ },
+ "parse": {
+  "contract_number": "W912QA-21-C-0001",
+  "surety_name": "Ronald Z. Bruce",
+  "surety_residence": "Gilltown, TX 13292",
+  "escrow_account_number": "6636-4160-4975",
+  "authorized_representative_name": "Marco Antonio Cervantes, Chief of Staff",
+  "released_property_description": "Construction equipment including excavators, bulldozers, and trucks",
+  "release_date": "05/15/2023",
+  "financial_institution": {
+   "name": "First National Bank of Gilltown",
+   "address": "1500 Main Street, Gilltown, TX 13292"
+  }
+ },
+ "oneshot": {
+  "contract_number": "W912QA-21-C-0001",
+  "surety_name": "Ronald Z. Bruce",
+  "surety_residence": "Gilltown, TX 13292",
+  "escrow_account_number": "6636-4160-4975",
+  "authorized_representative_name": "Marco Antonio Cervantes, Chief of Staff",
+  "released_property_description": "Construction equipment including excavators, bulldozers, and trucks",
+  "release_date": "05/15/2023",
+  "financial_institution": {
+   "name": "First National Bank of Gilltown",
+   "address": "1500 Main Street, Gilltown, TX 13292"
+  }
+ }
+}

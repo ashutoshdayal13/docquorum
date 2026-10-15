@@ -1,0 +1,77 @@
+{
+ "primary": {
+  "returned_date": "03/15/2023",
+  "resubmitted_date": "03/20/2023",
+  "action_block_date": "03/20/2023",
+  "sponsor_full_name": "KUBASIAK, NATANIEL",
+  "sponsor_given_name": "NatanieI",
+  "sponsor_middle_name": "Joseph",
+  "sponsor_date_of_birth": "02/02/1979",
+  "address_change_effective_date": "03/15/2023",
+  "new_mailing_address": {
+   "street": "6541 Villa Shores",
+   "city": "West Kyle",
+   "zip_code": "49361"
+  },
+  "new_physical_address": {
+   "street": "6541 Villa Shores",
+   "city": "West Kyle",
+   "zip_code": "49361"
+  },
+  "sponsored_immigrants": [
+   {
+    "full_name": "Leslie Sansoni"
+   }
+  ]
+ },
+ "parse": {
+  "returned_date": "03/15/2023",
+  "resubmitted_date": "03/20/2023",
+  "action_block_date": "03/20/2023",
+  "sponsor_full_name": "KUBASIAK, NATANIEL",
+  "sponsor_given_name": "Nataniel",
+  "sponsor_middle_name": "Joseph",
+  "sponsor_date_of_birth": "02/02/1979",
+  "address_change_effective_date": "03/15/2023",
+  "new_mailing_address": {
+   "street": "6541 Villa Shores",
+   "city": "West Kyle",
+   "zip_code": "49361"
+  },
+  "new_physical_address": {
+   "street": "6541 Villa Shores",
+   "city": "West Kyle",
+   "zip_code": "49361"
+  },
+  "sponsored_immigrants": [
+   {
+    "full_name": "Leslie Sansoni"
+   }
+  ]
+ },
+ "oneshot": {
+  "returned_date": "03/15/2023",
+  "resubmitted_date": "03/20/2023",
+  "action_block_date": "03/20/2023",
+  "sponsor_full_name": "KUBASIAK, NATANIEL",
+  "sponsor_given_name": "NatanieI",
+  "sponsor_middle_name": "Joseph",
+  "sponsor_date_of_birth": "02/02/1979",
+  "address_change_effective_date": "03/15/2023",
+  "new_mailing_address": {
+   "street": "6541 Villa Shores",
+   "city": "West Kyle",
+   "zip_code": "49361"
+  },
+  "new_physical_address": {
+   "street": "6541 Villa Shores",
+   "city": "West Kyle",
+   "zip_code": "49361"
+  },
+  "sponsored_immigrants": [
+   {
+    "full_name": "Leslie Sansoni"
+   }
+  ]
+ }
+}

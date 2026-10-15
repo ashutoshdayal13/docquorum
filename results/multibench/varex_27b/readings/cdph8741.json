@@ -1,0 +1,35 @@
+{
+ "primary": {
+  "client_name": "Abraham L. Hill",
+  "prep_ap_id_number": 123456789,
+  "agency_referred_to": "Bennett, Soto and Jones, 2820 Erika Mission, Lake Jesse, WA 77465",
+  "enrollment_worker": {
+   "name": "Fabian Martinez",
+   "phone": "(815) 164-7469",
+   "email": "fmartinez@bennett.com",
+   "fax": "(987) 785-8090"
+  }
+ },
+ "parse": {
+  "client_name": "Abraham L. Hill",
+  "prep_ap_id_number": 123456789,
+  "agency_referred_to": "Bennett, Soto and Jones, 2820 Erika Mission, Lake Jesse, WA 77465",
+  "enrollment_worker": {
+   "name": "Fabian Martinez",
+   "phone": "(815) 164-7469",
+   "email": "fmartinez@bennett.com",
+   "fax": "(987) 785-8090"
+  }
+ },
+ "oneshot": {
+  "client_name": "Abraham L. Hill",
+  "prep_ap_id_number": 123456789,
+  "agency_referred_to": "Bennett, Soto and Jones, 2820 Erika Mission, Lake Jesse, WA 77465",
+  "enrollment_worker": {
+   "name": "Fabian Martinez",
+   "phone": "(815) 164-7469",
+   "email": "fmartinez@bennett.com",
+   "fax": "(987) 785-8090"
+  }
+ }
+}

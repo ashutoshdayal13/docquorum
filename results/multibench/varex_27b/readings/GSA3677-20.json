@@ -1,0 +1,32 @@
+{
+ "primary": {
+  "requestor_name": "Gallardo, Odika",
+  "type_of_accommodation_requested": "Modified Work Schedule",
+  "date_of_request": "11/15/2023",
+  "decision_date": "11/20/2023",
+  "accommodations_specified": "Flexible start and end times to accommodate medical appointments.",
+  "decision_maker": {
+   "name": "Stapor, Angelika"
+  }
+ },
+ "parse": {
+  "requestor_name": "Gallardo, Odika",
+  "type_of_accommodation_requested": "Modified Work Schedule",
+  "date_of_request": "11/15/2023",
+  "decision_date": "11/20/2023",
+  "accommodations_specified": "Flexible start and end times to accommodate medical appointments.",
+  "decision_maker": {
+   "name": "Stapor, Angelika"
+  }
+ },
+ "oneshot": {
+  "requestor_name": "Gallardo, Odika",
+  "type_of_accommodation_requested": "Modified Work Schedule",
+  "date_of_request": "11/15/2023",
+  "decision_date": "11/20/2023",
+  "accommodations_specified": "Flexible start and end times to accommodate medical appointments.",
+  "decision_maker": {
+   "name": "Stapor, Angelika"
+  }
+ }
+}

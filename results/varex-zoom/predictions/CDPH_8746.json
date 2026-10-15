@@ -1,0 +1,14 @@
+{
+ "date": "03/15/2023",
+ "re_enrollment_due_on": "03/15/2025",
+ "client_id_number": "CTL-2023-11733",
+ "applicant": {
+  "name": "Maurice, Pahal Q.",
+  "date_of_birth": "04/29/1980",
+  "email_address": "pahal.maurice@yahoo.com"
+ },
+ "enrollment_site": {
+  "site_number": "ES-001",
+  "site_name": "North Brittnestad Enrollment Center"
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "agreement_date": "03/15/2023",
+  "owner": {
+   "name": "Brooks, Wolf and Benson"
+  },
+  "grantee": {
+   "name": "Amy C. Evans"
+  },
+  "property": {
+   "name": "East Laura Apartments"
+  }
+ },
+ "parse": {
+  "agreement_date": "03/15/2023",
+  "owner": {
+   "name": "Brooks, Wolf and Benson"
+  },
+  "grantee": {
+   "name": "Amy C. Evans"
+  },
+  "property": {
+   "name": "East Laura Apartments"
+  }
+ },
+ "oneshot": {
+  "agreement_date": "03/15/2023",
+  "owner": {
+   "name": "Brooks, Wolf and Benson"
+  },
+  "grantee": {
+   "name": "Amy C. Evans"
+  },
+  "property": {
+   "name": "East Laura Apartments"
+  }
+ }
+}

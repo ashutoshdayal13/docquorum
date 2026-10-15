@@ -1,0 +1,62 @@
+{
+ "primary": {
+  "requester_name": "Emily U. Bajwa",
+  "requester_title": "Public Health Epidemiologist",
+  "date_of_request": "05/15/2024",
+  "desired_completion_date": "05/25/2024",
+  "organization": {
+   "organization_name": "California Department of Health",
+   "organization_unit": "Epidemiology Section"
+  },
+  "mailing_address": {
+   "address_line_1": "487 Brown Ports Apt. 299",
+   "address_line_2": "East Leslie, CA 94294"
+  },
+  "contact_information": {
+   "telephone_number": "(567) 752-4775",
+   "fax_number": "(268) 747-0663",
+   "email_address": "emily.bajwa@outlook.com",
+   "email_address_2": "ebajwa@burkebooth.com"
+  }
+ },
+ "parse": {
+  "requester_name": "Emily U. Bajwa",
+  "requester_title": "Public Health Epidemiologist",
+  "date_of_request": "05/15/2024",
+  "desired_completion_date": "05/25/2024",
+  "organization": {
+   "organization_name": "California Department of Health",
+   "organization_unit": "Epidemiology Section"
+  },
+  "mailing_address": {
+   "address_line_1": "487 Brown Ports Apt. 299",
+   "address_line_2": "East Leslie, CA 94294"
+  },
+  "contact_information": {
+   "telephone_number": "(567) 752-4775",
+   "fax_number": "(268) 747-0663",
+   "email_address": "emily.bajwa@outlook.com",
+   "email_address_2": "ebajwa@burkebooth.com"
+  }
+ },
+ "oneshot": {
+  "requester_name": "Emily U. Bajwa",
+  "requester_title": "Public Health Epidemiologist",
+  "date_of_request": "05/15/2024",
+  "desired_completion_date": "05/25/2024",
+  "organization": {
+   "organization_name": "California Department of Health",
+   "organization_unit": "Epidemiology Section"
+  },
+  "mailing_address": {
+   "address_line_1": "487 Brown Ports Apt. 299",
+   "address_line_2": "East Leslie, CA 94294"
+  },
+  "contact_information": {
+   "telephone_number": "(567) 752-4775",
+   "fax_number": "(268) 747-0663",
+   "email_address": "emily.bajwa@outlook.com",
+   "email_address_2": "ebajwa@burkebooth.com"
+  }
+ }
+}

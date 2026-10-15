@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "date_reported": "06/15/2023",
+  "name_of_reporting_office": "Office of Administration, Lindsey-Case Hospital",
+  "records_custodian": "Aldonza X. Thomas, Hospital Records Custodian, (321) 358-8269",
+  "records_management_coordinator": "Lawrence Mielcarek",
+  "file_plan_name": "Lindsey-Case Hospital Records Plan",
+  "record_series_title": "Patient Medical Records",
+  "record_series_schedule": "HUD-2020-03",
+  "record_series_item_number": "Item #42",
+  "records_retention_instructions": "Retain for 7 years after patient discharge or death",
+  "disposition_authority": "HUD Records Management Division",
+  "date_range_of_records": "01/01/2013 - 12/31/2015",
+  "record_type": "Paper",
+  "volume_of_records": "150 boxes",
+  "inventory_of_records": "Medical records of patients discharged between 2013 and 2015. Includes patient charts, lab results, and discharge summaries."
+ },
+ "parse": {
+  "date_reported": "06/15/2023",
+  "name_of_reporting_office": "Office of Administration, Lindsey-Case Hospital",
+  "records_custodian": "Aldonza X. Thomas, Hospital Records Custodian, (321) 358-8269",
+  "records_management_coordinator": "Lawrence Mielcarek",
+  "file_plan_name": "Lindsey-Case Hospital Records Plan",
+  "record_series_title": "Patient Medical Records",
+  "record_series_schedule": "HUD-2020-03",
+  "record_series_item_number": "Item #42",
+  "records_retention_instructions": "Retain for 7 years after patient discharge or death",
+  "disposition_authority": "HUD Records Management Division",
+  "date_range_of_records": "01/01/2013 - 12/31/2015",
+  "record_type": "Paper",
+  "volume_of_records": "150 boxes",
+  "inventory_of_records": "Medical records of patients discharged between 2013 and 2015. Includes patient charts, lab results, and discharge summaries."
+ },
+ "oneshot": {
+  "date_reported": "06/15/2023",
+  "name_of_reporting_office": "Office of Administration, Lindsey-Case Hospital",
+  "records_custodian": "Aldonza X. Thomas, Hospital Records Custodian, (321) 358-8269",
+  "records_management_coordinator": "Lawrence Mielcarek",
+  "file_plan_name": "Lindsey-Case Hospital Records Plan",
+  "record_series_title": "Patient Medical Records",
+  "record_series_schedule": "HUD-2020-03",
+  "record_series_item_number": "Item #42",
+  "records_retention_instructions": "Retain for 7 years after patient discharge or death",
+  "disposition_authority": "HUD Records Management Division",
+  "date_range_of_records": "01/01/2013 - 12/31/2015",
+  "record_type": "Paper",
+  "volume_of_records": "150 boxes",
+  "inventory_of_records": "Medical records of patients discharged between 2013 and 2015. Includes patient charts, lab results, and discharge summaries."
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "primary": {
+  "claim_number": "CSAREF-2020-435",
+  "marriage_end_date": "05/15/2022",
+  "signature_date": "06/20/2023",
+  "applicant": {
+   "name": "Ria N. Briones",
+   "telephone_number": "(732) 359-9766",
+   "email_address": "ria.briones@gmail.com"
+  }
+ },
+ "parse": {
+  "claim_number": "CSAREF-2020-435",
+  "marriage_end_date": "05/15/2022",
+  "signature_date": "06/20/2023",
+  "applicant": {
+   "name": "Ria N. Briones",
+   "telephone_number": "(732) 359-9766",
+   "email_address": "ria.briones@gmail.com"
+  }
+ },
+ "oneshot": {
+  "claim_number": "CSA REF-2020-435",
+  "marriage_end_date": "05/15/2022",
+  "signature_date": "06/20/2023",
+  "applicant": {
+   "name": "Ria N. Briones",
+   "telephone_number": "(732) 359-9766",
+   "email_address": "ria.briones@gmail.com"
+  }
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "primary": {
+  "certification_date": "05/15/2023",
+  "applicant": {
+   "first_name": "Mark",
+   "middle_name": "Alexander",
+   "last_name": "Bennett",
+   "county": "Clark",
+   "address": "76285 Jeffrey Mountains",
+   "city": "South Chadbor",
+   "email": "mark.bennett@aol.com",
+   "phone_number": "(380) 674-4856"
+  },
+  "truck": {
+   "current_tx_plate": "TX-456789",
+   "make": "Ford",
+   "vehicle_type": "Truck-Tractor",
+   "vehicle_identification_number": "1FTFW1E52MKD12345",
+   "title_document_number": "TX1234567890123456789012345678901234"
+  },
+  "trailer": {
+   "current_tx_plate": "TX-987654",
+   "make": "Utility",
+   "vehicle_type": "Semitrailer",
+   "vehicle_identification_number": "1FTFW1E52MKD12345",
+   "title_document_number": "TX1234567890123456789012345678901234"
+  }
+ },
+ "parse": {
+  "certification_date": "05/15/2023",
+  "applicant": {
+   "first_name": "Mark",
+   "middle_name": "Alexander",
+   "last_name": "Bennett",
+   "county": "Clark",
+   "address": "76285 Jeffrey Mountains",
+   "city": "South Chadbor",
+   "email": "mark.bennett@aol.com",
+   "phone_number": "(380) 674-4856"
+  },
+  "truck": {
+   "current_tx_plate": "TX-456789",
+   "make": "Ford",
+   "vehicle_type": "Truck-Tractor",
+   "vehicle_identification_number": "1FTFW1E52MKD12345",
+   "title_document_number": "TX1234567890123456789012345678901234"
+  },
+  "trailer": {
+   "current_tx_plate": "TX-987654",
+   "make": "Utility",
+   "vehicle_type": "Semitrailer",
+   "vehicle_identification_number": "1FTFW1E52MKD12345",
+   "title_document_number": "TX1234567890123456789012345678901234"
+  }
+ },
+ "oneshot": {
+  "certification_date": "05/15/2023",
+  "applicant": {
+   "first_name": "Mark",
+   "middle_name": "Alexander",
+   "last_name": "Bennett",
+   "county": "Clark",
+   "address": "76285 Jeffrey Mountains",
+   "city": "South Chadbor",
+   "email": "mark.bennett@aol.com",
+   "phone_number": "(380) 674-4856"
+  },
+  "truck": {
+   "current_tx_plate": "TX-456789",
+   "make": "Ford",
+   "vehicle_type": "Truck-Tractor",
+   "vehicle_identification_number": "1FTFW1E52MKD12345",
+   "title_document_number": "TX1234567890123456789012345678901234"
+  },
+  "trailer": {
+   "current_tx_plate": "TX-987654",
+   "make": "Utility",
+   "vehicle_type": "Semitrailer",
+   "vehicle_identification_number": "1FTFW1E52MKD12345",
+   "title_document_number": "TX1234567890123456789012345678901234"
+  }
+ }
+}

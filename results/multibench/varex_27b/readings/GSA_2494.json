@@ -1,0 +1,233 @@
+{
+ "primary": {
+  "employee_name": "Christopher de Gruijter",
+  "travel_authorization": "TA-2023-001",
+  "new_official_station": "Browning-Hanna, New York",
+  "property_type": "SINGLE",
+  "old_official_station": "Amberhaven, MT",
+  "date_notified_of_transfer": "03/15/2023",
+  "reporting_date": "04/01/2023",
+  "old_residence_address": "570 Alan Bypass Suite 395, Amberhaven, MT 55528",
+  "date_of_closing": "03/28/2023",
+  "total_closing_costs": 5707.33,
+  "employee_certification_date": "03/28/2023",
+  "sale_approval_date": "03/28/2023",
+  "sale_approval_name_title": "Annerose Moore, Attorney",
+  "final_approval_date": "03/30/2023",
+  "final_approval_name_title": "Suzanne Renzi, Programmer",
+  "approved_payment_amount": 5707.3,
+  "closing_costs": [
+   {
+    "description": "SALES/BROKER'S COMMISSION"
+   },
+   {
+    "description": "SETTLEMENT OR CLOSING FEE"
+   },
+   {
+    "description": "ABSTRACT OR TITLE SEARCH"
+   },
+   {
+    "description": "TITLE INSURANCE BINDER"
+   },
+   {
+    "description": "TITLE EXAMINATION"
+   },
+   {
+    "description": "DOCUMENT PREPARATION"
+   },
+   {
+    "description": "NOTARY FEES"
+   },
+   {
+    "description": "ATTORNEY'S FEES"
+   },
+   {
+    "description": "TITLE INSURANCE"
+   },
+   {
+    "description": "RECORDING FEES"
+   },
+   {
+    "description": "CITY/COUNTY TAX/STAMPS"
+   },
+   {
+    "description": "STATE TAX/STAMPS"
+   },
+   {
+    "description": "PEST INSPECTION"
+   },
+   {
+    "description": "OTHER CLOSING COSTS (Identify)"
+   },
+   {
+    "description": "Homeowners association transfer fee"
+   },
+   {
+    "description": "HOA document fees"
+   },
+   {
+    "description": "HOA capital contribution"
+   },
+   {
+    "description": "HOA prorated fees"
+   },
+   {
+    "description": "HOA estoppel fee"
+   }
+  ]
+ },
+ "parse": {
+  "employee_name": "Christopher de Gruijter",
+  "travel_authorization": "TA-2023-001",
+  "new_official_station": "Browning-Hanna, New York",
+  "property_type": "SINGLE",
+  "old_official_station": "Amberhaven, MT",
+  "date_notified_of_transfer": "03/15/2023",
+  "reporting_date": "04/01/2023",
+  "old_residence_address": "570 Alan Bypass Suite 395, Amberhaven, MT 55528",
+  "date_of_closing": "03/28/2023",
+  "total_closing_costs": 5707.33,
+  "employee_certification_date": "03/28/2023",
+  "sale_approval_date": "03/28/2023",
+  "sale_approval_name_title": "Annerose Moore, Attorney",
+  "final_approval_date": "03/30/2023",
+  "final_approval_name_title": "Suzanne Renzi, Programmer",
+  "approved_payment_amount": 5707.3,
+  "closing_costs": [
+   {
+    "description": "SALES/BROKER'S COMMISSION"
+   },
+   {
+    "description": "SETTLEMENT OR CLOSING FEE"
+   },
+   {
+    "description": "ABSTRACT OR TITLE SEARCH"
+   },
+   {
+    "description": "TITLE INSURANCE BINDER"
+   },
+   {
+    "description": "TITLE EXAMINATION"
+   },
+   {
+    "description": "DOCUMENT PREPARATION"
+   },
+   {
+    "description": "NOTARY FEES"
+   },
+   {
+    "description": "ATTORNEY'S FEES"
+   },
+   {
+    "description": "TITLE INSURANCE"
+   },
+   {
+    "description": "RECORDING FEES"
+   },
+   {
+    "description": "CITY/COUNTY TAX/STAMPS"
+   },
+   {
+    "description": "STATE TAX/STAMPS"
+   },
+   {
+    "description": "PEST INSPECTION"
+   },
+   {
+    "description": "OTHER CLOSING COSTS"
+   },
+   {
+    "description": "Homeowners association transfer fee"
+   },
+   {
+    "description": "HOA document fees"
+   },
+   {
+    "description": "HOA capital contribution"
+   },
+   {
+    "description": "HOA prorated fees"
+   },
+   {
+    "description": "HOA estoppel fee"
+   }
+  ]
+ },
+ "oneshot": {
+  "employee_name": "Christopher de Gruijter",
+  "travel_authorization": "TA-2023-001",
+  "new_official_station": "Browning-Hanna, New York",
+  "property_type": "SINGLE",
+  "old_official_station": "Amberhaven, MT",
+  "date_notified_of_transfer": "03/15/2023",
+  "reporting_date": "04/01/2023",
+  "old_residence_address": "570 Alan Bypass Suite 395, Amberhaven, MT 55528",
+  "date_of_closing": "03/28/2023",
+  "total_closing_costs": 5707.33,
+  "employee_certification_date": "03/28/2023",
+  "sale_approval_date": "03/28/2023",
+  "sale_approval_name_title": "Annerose Moore, Attorney",
+  "final_approval_date": "03/30/2023",
+  "final_approval_name_title": "Suzanne Renzi, Programmer",
+  "approved_payment_amount": 5707.3,
+  "closing_costs": [
+   {
+    "description": "SALES/BROKER'S COMMISSION"
+   },
+   {
+    "description": "SETTLEMENT OR CLOSING FEE"
+   },
+   {
+    "description": "ABSTRACT OR TITLE SEARCH"
+   },
+   {
+    "description": "TITLE INSURANCE BINDER"
+   },
+   {
+    "description": "TITLE EXAMINATION"
+   },
+   {
+    "description": "DOCUMENT PREPARATION"
+   },
+   {
+    "description": "NOTARY FEES"
+   },
+   {
+    "description": "ATTORNEY'S FEES"
+   },
+   {
+    "description": "TITLE INSURANCE"
+   },
+   {
+    "description": "RECORDING FEES"
+   },
+   {
+    "description": "CITY/COUNTY TAX/STAMPS"
+   },
+   {
+    "description": "STATE TAX/STAMPS"
+   },
+   {
+    "description": "PEST INSPECTION"
+   },
+   {
+    "description": "OTHER CLOSING COSTS"
+   },
+   {
+    "description": "Homeowners association transfer fee"
+   },
+   {
+    "description": "HOA document fees"
+   },
+   {
+    "description": "HOA capital contribution"
+   },
+   {
+    "description": "HOA prorated fees"
+   },
+   {
+    "description": "HOA estoppel fee"
+   }
+  ]
+ }
+}

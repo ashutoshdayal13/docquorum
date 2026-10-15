@@ -1,0 +1,86 @@
+{
+ "primary": {
+  "ltc_instructor_number": "LTCINSTR23",
+  "dl_id_number": "RA-2026-FL-5986",
+  "signature_date": "06/15/2023",
+  "applicant_name": {
+   "last_name": "Parker",
+   "first_name": "Joseph",
+   "middle_name": "Michael"
+  },
+  "residence_address": {
+   "street": "580 Todd Corners",
+   "city": "West Melissa",
+   "zip": "48062"
+  },
+  "mailing_address": {
+   "street": "580 Todd Corners",
+   "city": "West Melissa",
+   "zip": "48062"
+  },
+  "phone_numbers": [
+   {
+    "number": "(885) 896-1557"
+   },
+   {
+    "number": "(758) 878-3746"
+   }
+  ]
+ },
+ "parse": {
+  "ltc_instructor_number": "LTCINSTR23",
+  "dl_id_number": "RA-2026-FL-5986",
+  "signature_date": "06/15/2023",
+  "applicant_name": {
+   "last_name": "Parker",
+   "first_name": "Joseph",
+   "middle_name": "Michael"
+  },
+  "residence_address": {
+   "street": "580 Todd Corners",
+   "city": "West Melissa",
+   "zip": "48062"
+  },
+  "mailing_address": {
+   "street": "580 Todd Corners",
+   "city": "West Melissa",
+   "zip": "48062"
+  },
+  "phone_numbers": [
+   {
+    "number": "(885) 896-1557"
+   },
+   {
+    "number": "(758) 878-3746"
+   }
+  ]
+ },
+ "oneshot": {
+  "ltc_instructor_number": "LTCINSTR23",
+  "dl_id_number": "RA-2026-FL-5986",
+  "signature_date": "06/15/2023",
+  "applicant_name": {
+   "last_name": "Parker",
+   "first_name": "Joseph",
+   "middle_name": "Michael"
+  },
+  "residence_address": {
+   "street": "580 Todd Corners",
+   "city": "West Melissa",
+   "zip": "48062"
+  },
+  "mailing_address": {
+   "street": "580 Todd Corners",
+   "city": "West Melissa",
+   "zip": "48062"
+  },
+  "phone_numbers": [
+   {
+    "number": "(885) 896-1557"
+   },
+   {
+    "number": "(758) 878-3746"
+   }
+  ]
+ }
+}

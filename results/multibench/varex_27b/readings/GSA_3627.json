@@ -1,0 +1,83 @@
+{
+ "primary": {
+  "date": "03/15/2023",
+  "building_name_and_location": "123 Main Street, Anytown, USA",
+  "client_agency": "Department of Defense",
+  "special_requirements": "Accessibility for disabled personnel",
+  "selection_factors_other_than_price": "Proximity to public transport",
+  "neighborhood_description": "Urban area with high foot traffic",
+  "space_available": [
+   "First Floor",
+   "Second Floor"
+  ],
+  "comments": "Building meets all client requirements",
+  "decision_to_consider_for_negotiation": "Yes, building meets all requirements",
+  "owner_or_agent": {
+   "name_and_address": "Julia Bryant, 21310 Garcia Rapid, New Joe, TX",
+   "telephone": "(055) 743-4852"
+  },
+  "asking_price_and_terms": {
+   "terms": "Monthly"
+  },
+  "agency_representative": {
+   "date": "03/15/2023"
+  },
+  "gsa_representative": {
+   "date": "03/15/2023"
+  }
+ },
+ "parse": {
+  "date": "03/15/2023",
+  "building_name_and_location": "123 Main Street, Anytown, USA",
+  "client_agency": "Department of Defense",
+  "special_requirements": "Accessibility for disabled personnel",
+  "selection_factors_other_than_price": "Proximity to public transport",
+  "neighborhood_description": "Urban area with high foot traffic",
+  "space_available": [
+   "First Floor",
+   "Second Floor"
+  ],
+  "comments": "Building meets all client requirements",
+  "decision_to_consider_for_negotiation": "Yes, building meets all requirements",
+  "owner_or_agent": {
+   "name_and_address": "Julia Bryant, 21310 Garcia Rapid, New Joe, TX",
+   "telephone": "(055) 743-4852"
+  },
+  "asking_price_and_terms": {
+   "terms": "Monthly"
+  },
+  "agency_representative": {
+   "date": "03/15/2023"
+  },
+  "gsa_representative": {
+   "date": "03/15/2023"
+  }
+ },
+ "oneshot": {
+  "date": "03/15/2023",
+  "building_name_and_location": "123 Main Street, Anytown, USA",
+  "client_agency": "Department of Defense",
+  "special_requirements": "Accessibility for disabled personnel",
+  "selection_factors_other_than_price": "Proximity to public transport",
+  "neighborhood_description": "Urban area with high foot traffic",
+  "space_available": [
+   "First Floor",
+   "Second Floor"
+  ],
+  "comments": "Building meets all client requirements",
+  "decision_to_consider_for_negotiation": "Yes, building meets all requirements",
+  "owner_or_agent": {
+   "name_and_address": "Julia Bryant, 21310 Garcia Rapid, New Joe, TX",
+   "telephone": "(055) 743-4852"
+  },
+  "asking_price_and_terms": {
+   "terms": "Monthly"
+  },
+  "agency_representative": {
+   "date": "03/15/2023"
+  },
+  "gsa_representative": {
+   "date": "03/15/2023"
+  }
+ }
+}

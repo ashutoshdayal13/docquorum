@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "contractor": {
+   "name": "Lawson Construction Services",
+   "sign_date": "08/19/2023"
+  },
+  "mortgagor": {
+   "name": "Summers Family Trust",
+   "sign_date": "08/19/2023"
+  },
+  "mortgagee": {
+   "name": "Lawson PLC",
+   "title": "Exercise Physiologist"
+  },
+  "approval": {
+   "name": "Alexandra P. Summers",
+   "title": "Certified Financial Planner",
+   "date": "08/19/2023"
+  }
+ },
+ "parse": {
+  "contractor": {
+   "name": "Lawson Construction Services",
+   "sign_date": "08/19/2023"
+  },
+  "mortgagor": {
+   "name": "Summers Family Trust",
+   "sign_date": "08/19/2023"
+  },
+  "mortgagee": {
+   "name": "Lawson PLC",
+   "title": "Exercise Physiologist"
+  },
+  "approval": {
+   "name": "Alexandra P. Summers",
+   "title": "Certified Financial Planner",
+   "date": "08/19/2023"
+  }
+ },
+ "oneshot": {
+  "contractor": {
+   "name": "Lawson Construction Services",
+   "sign_date": "08/19/2023"
+  },
+  "mortgagor": {
+   "name": "Summers Family Trust",
+   "sign_date": "08/19/2023"
+  },
+  "mortgagee": {
+   "name": "Lawson PLC",
+   "title": "Exercise Physiologist"
+  },
+  "approval": {
+   "name": "Alexandra P. Summers",
+   "title": "Certified Financial Planner",
+   "date": "08/19/2023"
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "report_control_no": "RFQ-2022-40967",
+ "building_name_and_address": "17736 Olson Rapids, Leeton, OK 86594",
+ "field_office": "Barnes Inc Field",
+ "status_report_no": "SR-2023-001",
+ "status_as_of_date": "10/15/2023",
+ "survey_report_date": "09/01/2023",
+ "date_signed": "10/15/2023",
+ "recommendations": [
+  {
+   "status_of_recommendations": "Completed",
+   "revision_or_completion_date": "10/10/2023"
+  }
+ ]
+}

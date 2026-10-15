@@ -30,3 +30,5 @@ results/multibench/**/*.csv
 # earlier readings kept locally when a re-read replaces them
 *.before_enlarge.json
 *.before_enlarge.txt
+# copies of predictions laid out for the VAREX scorer (rebuilt by frozen27b.py varex score)
+results/multibench/**/official_layout/

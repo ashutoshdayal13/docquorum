@@ -1,0 +1,15 @@
+{
+ "product_description": "Electronic Medical Devices",
+ "quantity": "500 items/10",
+ "model_brand": "Model X300 - King Medical Devices",
+ "accession_number": "RFQ-2025-57464-KMD-00",
+ "manufacturer_of_record": "King Medical Devices Inc.",
+ "unknown_manufacturer_reason": "Not applicable",
+ "responsible_person": "Janet G. Roybal, Aid Worker",
+ "manufacturer_site": {
+  "name": "King Medical Devices Manufacturing Plant"
+ },
+ "importer_consignee": {
+  "name": "King LLC"
+ }
+}

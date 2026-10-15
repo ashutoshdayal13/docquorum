@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "employee_name": "Schipper, William",
+  "date_of_birth": "11/15/1994",
+  "social_security_number": "155-95-8727",
+  "signature_date": "05/15/2023",
+  "agency_info": {
+   "agency_name_and_address": "Department of Human Resources, 123 Main Street, Washington, DC 20001"
+  },
+  "election_details": {
+   "election_deadline": "06/30/2023"
+  }
+ },
+ "parse": {
+  "employee_name": "Schipper, William",
+  "date_of_birth": "11/15/1994",
+  "social_security_number": "155-95-8727",
+  "signature_date": "05/15/2023",
+  "agency_info": {
+   "agency_name_and_address": "Department of Human Resources, 123 Main Street, Washington, DC 20001"
+  },
+  "election_details": {
+   "election_deadline": "06/30/2023"
+  }
+ },
+ "oneshot": {
+  "employee_name": "Schipper, William",
+  "date_of_birth": "11/15/1994",
+  "social_security_number": "155-95-8727",
+  "signature_date": "05/15/2023",
+  "agency_info": {
+   "agency_name_and_address": "Department of Human Resources, 123 Main Street, Washington, DC 20001"
+  },
+  "election_details": {
+   "election_deadline": "06/30/2023"
+  }
+ }
+}

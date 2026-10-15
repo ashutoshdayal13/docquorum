@@ -1,0 +1,18 @@
+{
+ "applicant_first_name": "Dustin",
+ "applicant_middle_name": "Lee",
+ "applicant_last_name": "Stephens",
+ "applicant_county": "Travi",
+ "applicant_email": "dustin.stephens@hotmail.com",
+ "applicant_phone_number": "(578) 640-2",
+ "vehicle_vIN": "1GTN1TEG5JF123456",
+ "vehicle_make": "Ford",
+ "vehicle_body_style": "Truck",
+ "vehicle_current_license_plate": "ABC1234",
+ "signature_date": "05/15/2023",
+ "applicant_address": {
+  "street": "85903 Monica Ridge Suite 472",
+  "city": "Lake Kathleen",
+  "zip": "11893"
+ }
+}

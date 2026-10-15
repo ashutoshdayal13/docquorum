@@ -1,0 +1,24 @@
+{
+ "country_of_birth": "United States",
+ "city_state_of_birth": "Ryanside, South Carolina",
+ "country_of_citizenship": "United States",
+ "foreign_tax_id": "FTA-2023-85154",
+ "us_visa_info": "H1B-123456789-01/01/2025",
+ "applicant_name": {
+  "first_name": "Victor",
+  "middle_name": "J.",
+  "last_name": "Varkey"
+ },
+ "mailing_address": {
+  "mailing_address_line1": "409 Brett Extensions, Karenville, VT 78880",
+  "mailing_address_line2": "P.O. Box 456"
+ },
+ "foreign_address": {
+  "foreign_address_line1": "123 Main Street, Toronto, ON M1M 1M1, Canada",
+  "foreign_address_line2": "Apartment 4B"
+ },
+ "identification_document": {
+  "issued_by": "Canada",
+  "document_number": "PASS12345678"
+ }
+}

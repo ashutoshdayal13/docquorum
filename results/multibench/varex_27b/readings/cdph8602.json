@@ -1,0 +1,89 @@
+{
+ "primary": {
+  "license_number": "RWF-2023-00",
+  "firm_name": "PureH2O Inc.",
+  "dba_name": "PureH2O Bottling Company",
+  "website": "www.pureh2o.com",
+  "other_water_treatment": "UV Purification",
+  "other_water_products": "Alkaline Water",
+  "water_district_name": "Crystal Springs Water District",
+  "water_district_phone": "(555) 123-4567",
+  "mailing_address": {
+   "address_line1": "123 Main Street",
+   "address_line2": "Suite 100"
+  },
+  "facility_address": {
+   "address_line1": "78606 Allen Landing Suite 317",
+   "city": "East Annville",
+   "state": "WA",
+   "zip_code": "47831",
+   "country": "United States"
+  },
+  "owner_information": {
+   "corporate_name": "Parker-Sawyer",
+   "state_of_incorporation": "Washington",
+   "owners_officers_names": "Frank Kothari, Production manager"
+  },
+  "water_district_address": {
+   "address": "123 Crystal Springs Road, Springfield, IL 62704"
+  }
+ },
+ "parse": {
+  "license_number": "RWF-2023-00",
+  "firm_name": "PureH2O Inc.",
+  "dba_name": "PureH2O Bottling Company",
+  "website": "www.pureh2o.com",
+  "other_water_treatment": "UV Purification",
+  "other_water_products": "Alkaline Water",
+  "water_district_name": "Crystal Springs Water District",
+  "water_district_phone": "(555) 123-4567",
+  "mailing_address": {
+   "address_line1": "123 Main Street",
+   "address_line2": "Suite 100"
+  },
+  "facility_address": {
+   "address_line1": "78606 Allen Landing Suite 317",
+   "city": "East Annaville",
+   "state": "WA",
+   "zip_code": "47831",
+   "country": "United States"
+  },
+  "owner_information": {
+   "corporate_name": "Parker-Sawyer",
+   "state_of_incorporation": "Washington",
+   "owners_officers_names": "Frank Kothari, Production manager"
+  },
+  "water_district_address": {
+   "address": "123 Crystal Springs Road, Springfield, IL 62704"
+  }
+ },
+ "oneshot": {
+  "license_number": "RWF-2023-00",
+  "firm_name": "PureH2O Inc.",
+  "dba_name": "PureH2O Bottling Company",
+  "website": "www.pureh2o.com",
+  "other_water_treatment": "UV Purification",
+  "other_water_products": "Alkaline Water",
+  "water_district_name": "Crystal Springs Water District",
+  "water_district_phone": "(555) 123-4567",
+  "mailing_address": {
+   "address_line1": "123 Main Street",
+   "address_line2": "Suite 100"
+  },
+  "facility_address": {
+   "address_line1": "78606 Allen Landing Suite 317",
+   "city": "East Annville",
+   "state": "WA",
+   "zip_code": "47831",
+   "country": "United States"
+  },
+  "owner_information": {
+   "corporate_name": "Parker-Sawyer",
+   "state_of_incorporation": "Washington",
+   "owners_officers_names": "Frank Kothari, Production manager"
+  },
+  "water_district_address": {
+   "address": "123 Crystal Springs Road, Springfield, IL 62704"
+  }
+ }
+}

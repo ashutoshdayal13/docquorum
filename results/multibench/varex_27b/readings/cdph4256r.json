@@ -1,0 +1,56 @@
+{
+ "primary": {
+  "tsp_number": "TSP-2022-CA-12345",
+  "tcp_number": "TCP-2022-CA-67890",
+  "ssn_itin": "524-56-4052",
+  "phone_number": "(014) 671-7768",
+  "email_address": "amy.smith@outlook.com",
+  "signature_date": "05/15/2023",
+  "applicant_name": {
+   "last_name": "Smith",
+   "first_name": "Amy"
+  },
+  "mailing_address": {
+   "street": "64697 Mitchell Crescent Suite 538",
+   "city": "Craneside",
+   "state": "MO",
+   "zip_code": "36403"
+  }
+ },
+ "parse": {
+  "tsp_number": "TSP-2022-CA-12345",
+  "tcp_number": "TCP-2022-CA-67890",
+  "ssn_itin": "524-56-4052",
+  "phone_number": "(014) 671-7768",
+  "email_address": "amy.smith@outlook.com",
+  "signature_date": "05/15/2023",
+  "applicant_name": {
+   "last_name": "Smith",
+   "first_name": "Amy"
+  },
+  "mailing_address": {
+   "street": "64697 Mitchell Crescent Suite 538",
+   "city": "Craneside",
+   "state": "MO",
+   "zip_code": "36403"
+  }
+ },
+ "oneshot": {
+  "tsp_number": "TSP-2022-CA-12345",
+  "tcp_number": "TCP-2022-CA-67890",
+  "ssn_itin": "524-56-4052",
+  "phone_number": "(014) 671-7768",
+  "email_address": "amy.smith@outlook.com",
+  "signature_date": "05/15/2023",
+  "applicant_name": {
+   "last_name": "Smith",
+   "first_name": "Amy"
+  },
+  "mailing_address": {
+   "street": "64697 Mitchell Crescent Suite 538",
+   "city": "Craneside",
+   "state": "MO",
+   "zip_code": "36403"
+  }
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "vehicle_identification_number": "1HGCM82633A123456",
+  "body_style": "Coupe",
+  "replica_year": "1967",
+  "replica_make": "Ford Mustang",
+  "applicant_printed_name": "Sean Nogueira",
+  "applicant_signature_date": "05/15/2023",
+  "applicant": {
+   "first_name": "Sean",
+   "address": "49743 Shelby Pike",
+   "email": "sean.nogueira@outlook.com",
+   "phone": "(811) 315-3833",
+   "signature_date": "05/15/2023"
+  }
+ },
+ "parse": {
+  "vehicle_identification_number": "1HGCM82633A123456",
+  "body_style": "Coupe",
+  "replica_year": "1967",
+  "replica_make": "Ford Mustang",
+  "applicant_printed_name": "Sean Nogueira",
+  "applicant_signature_date": "05/15/2023",
+  "applicant": {
+   "first_name": "Sean",
+   "address": "49743 Shelby Pike",
+   "email": "sean.nogueira@outlook.com",
+   "phone": "(811) 315-3833",
+   "signature_date": "05/15/2023"
+  }
+ },
+ "oneshot": {
+  "vehicle_identification_number": "1HGCM82633A123456",
+  "body_style": "Coupe",
+  "replica_year": "1967",
+  "replica_make": "Ford Mustang",
+  "applicant_printed_name": "Sean Nogueira",
+  "applicant_signature_date": "05/15/2023",
+  "applicant": {
+   "first_name": "Sean",
+   "address": "49743 Shelby Pike",
+   "email": "sean.nogueira@outlook.com",
+   "phone": "(811) 315-3833",
+   "signature_date": "05/15/2023"
+  }
+ }
+}

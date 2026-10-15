@@ -1,0 +1,13 @@
+{
+ "licensee_name": "John P. Ellis",
+ "radioactive_materials_license_number": "RN-2025-NV-55022",
+ "trainer_information": {
+  "trainer_name": "Caroline X. Smith",
+  "experience_dates": "01/15/2000-12/28/20",
+  "radiographer_certificate_number": "JD-2010-AK-22490"
+ },
+ "exposure_device_information": {
+  "exposure_device_name": "Portable X-ray",
+  "exposure_device_model": "Model XR-3000"
+ }
+}

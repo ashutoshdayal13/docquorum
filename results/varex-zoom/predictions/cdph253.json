@@ -1,0 +1,29 @@
+{
+ "hospital_name": "General Hospital of West Christopherland",
+ "physician_name": "Castro, Danielle G.",
+ "technical_director_name": "Marques, Nanni",
+ "annual_treatments": 3904.03,
+ "personnel": [
+  {
+   "name": "Marques, Nanni"
+  },
+  {
+   "name": "Abreu, Ebony"
+  },
+  {
+   "name": "Johnson, Michael"
+  },
+  {
+   "name": "Williams, Sarah"
+  },
+  {
+   "name": "Brown, Robert"
+  },
+  {
+   "name": "Davis, Emily"
+  },
+  {
+   "name": "Miller, James"
+  }
+ ]
+}

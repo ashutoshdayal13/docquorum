@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "hud_project_no": "HUD-2023-811-4567",
+  "effective_date": "06/15/2023",
+  "fiscal_year_end_date": "09/30/2023",
+  "equipment": "Elevators, ramps, and adaptive kitchen/bathroom equipment",
+  "utilities": "Water, sewer, trash collection, and basic cable television",
+  "other_services": "Transportation assistance and case management services"
+ },
+ "parse": {
+  "hud_project_no": "HUD-2023-811-4567",
+  "effective_date": "06/15/2023",
+  "fiscal_year_end_date": "09/30/2023",
+  "equipment": "Elevators, ramps, and adaptive kitchen/bathroom equipment",
+  "utilities": "Water, sewer, trash collection, and basic cable television",
+  "other_services": "Transportation assistance and case management services"
+ },
+ "oneshot": {
+  "hud_project_no": "HUD-2023-811-4567",
+  "effective_date": "06/15/2023",
+  "fiscal_year_end_date": "09/30/2023",
+  "equipment": "Elevators, ramps, and adaptive kitchen/bathroom equipment",
+  "utilities": "Water, sewer, trash collection, and basic cable television",
+  "other_services": "Transportation assistance and case management services"
+ }
+}

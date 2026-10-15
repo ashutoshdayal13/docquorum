@@ -1,0 +1,35 @@
+{
+ "primary": {
+  "carrier_name": "Molina-Herring Transport",
+  "date": "07/01/2023",
+  "federal_id_number": "1234567890ABCDEF123456",
+  "business_id_number": "AB123456789012345678",
+  "certification_date": "06/30/2023",
+  "address": {
+   "street": "18683 Jessica",
+   "city": "Port Audreyfort"
+  }
+ },
+ "parse": {
+  "carrier_name": "Molina-Herring Transport",
+  "date": "07/01/2023",
+  "federal_id_number": "1234567890ABCDEF123456",
+  "business_id_number": "AB123456789012345678",
+  "certification_date": "06/30/2023",
+  "address": {
+   "street": "18683 Jessica",
+   "city": "Port Audreyfort"
+  }
+ },
+ "oneshot": {
+  "carrier_name": "Molina-Herring Transport",
+  "date": "07/01/2023",
+  "federal_id_number": "1234567890ABCDEF123456",
+  "business_id_number": "AB123456789012345678",
+  "certification_date": "06/30/2023",
+  "address": {
+   "street": "18683 Jessica",
+   "city": "Port Audreyfort"
+  }
+ }
+}

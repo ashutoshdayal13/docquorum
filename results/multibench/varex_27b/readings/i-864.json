@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "relationship_to_immigrant": "Spouse",
+  "ownership_interest_entity": "Gross Group",
+  "relationship_to_immigrant_ownership": "Owner",
+  "substitute_sponsor": "None",
+  "attorney_state_bar_number": "PE-2015-CA-67160",
+  "principal_immigrant_daytime_telephone_number": "2524567526",
+  "mailing_address": {
+   "in_care_of_name": "Rosa F. Allen",
+   "city_or_town": "West Anna",
+   "province": "California",
+   "postal_code": "71014"
+  },
+  "principal_immigrant": {
+   "family_name": "Allen",
+   "given_name": "Rosa",
+   "middle_name": "F.",
+   "country_of_citizenship": "United States of America",
+   "date_of_birth": "12/08/1981"
+  }
+ },
+ "parse": {
+  "relationship_to_immigrant": "Spouse",
+  "ownership_interest_entity": "Gross Group",
+  "relationship_to_immigrant_ownership": "Owner",
+  "substitute_sponsor": "None",
+  "attorney_state_bar_number": "PE-2015-CA-67160",
+  "principal_immigrant_daytime_telephone_number": "2524567526",
+  "mailing_address": {
+   "in_care_of_name": "Rosa F. Allen",
+   "city_or_town": "West Anna",
+   "province": "California",
+   "postal_code": "71014"
+  },
+  "principal_immigrant": {
+   "family_name": "Allen",
+   "given_name": "Rosa",
+   "middle_name": "F.",
+   "country_of_citizenship": "United States of America",
+   "date_of_birth": "12/08/1981"
+  }
+ },
+ "oneshot": {
+  "relationship_to_immigrant": "Spouse",
+  "ownership_interest_entity": "Gross Group",
+  "relationship_to_immigrant_ownership": "Owner",
+  "substitute_sponsor": "None",
+  "attorney_state_bar_number": "PE-2015-CA-67160",
+  "principal_immigrant_daytime_telephone_number": "2524567526",
+  "mailing_address": {
+   "in_care_of_name": "Rosa F. Allen",
+   "city_or_town": "West Anna",
+   "province": "California",
+   "postal_code": "71014"
+  },
+  "principal_immigrant": {
+   "family_name": "Allen",
+   "given_name": "Rosa",
+   "middle_name": "F.",
+   "country_of_citizenship": "United States of America",
+   "date_of_birth": "12/08/1981"
+  }
+ }
+}

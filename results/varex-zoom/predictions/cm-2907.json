@@ -1,0 +1,15 @@
+{
+ "miner_name": "Angela N. Dean",
+ "dol_case_id": "CTL-2023-10485-ANGDEA",
+ "test_date": "05/15/2023",
+ "test_type": "Pulmonary Function Test",
+ "additional_comments": "The miner was cooperative and followed instructions accurately. No issues were encountered during the test.",
+ "machine_type": "Spirometer Model XYZ-123",
+ "paper_speed": "25 mm/sec",
+ "facility_name": "White Medical Center",
+ "technician_name": "Brandon Sangha, Respiratory Therapist",
+ "physician_name": "Denis Machado, MD",
+ "miner_details": {
+  "sex": "Female"
+ }
+}

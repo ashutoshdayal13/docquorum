@@ -1,0 +1,92 @@
+{
+ "primary": {
+  "date": "03/15/2023",
+  "tissue_bank_license_id": "CTB-56789-001",
+  "tissue_bank_name": "California Tissue Bank and Research Institute",
+  "backup_persons": [
+   "Rebecca Bhandari, Sport and exercise",
+   "Rebecca E. Wilson, Petroleum engineer",
+   "Terry P. de Gruson, Tax inspector"
+  ],
+  "facility_name": "California Tissue Bank",
+  "license_mailing_attention": "Attn: Tissue Bank Director",
+  "tissue_bank_director": {
+   "name": "Rebecca Bhandari",
+   "phone": "(938) 527-4695"
+  },
+  "contact_person": {
+   "name": "Rebecca Bhandari, Director of Operations",
+   "phone": "(856) 790-3253",
+   "fax": "(810) 618-3754",
+   "email": "rbhandari@kirbylee.com"
+  },
+  "compliance_person": {
+   "name": "Rebecca E. Wilson",
+   "phone": "(940) 662-2904"
+  },
+  "address": {
+   "address_line": "446 Cameron Shores Apt. 849",
+   "city_state_zip": "Ramoston, AK 76088"
+  }
+ },
+ "parse": {
+  "date": "03/15/2023",
+  "tissue_bank_license_id": "cTB-56789-001",
+  "tissue_bank_name": "California Tissue Bank and Research Institute",
+  "backup_persons": [
+   "Rebecca Bhandari, Sport and exercise",
+   "Rebecca E. Wilson, Petroleum engineer",
+   "Terry P. de Gruson, Tax inspector"
+  ],
+  "facility_name": "California Tissue Bank",
+  "license_mailing_attention": "Attn: Tissue Bank Director",
+  "tissue_bank_director": {
+   "name": "Rebecca Bhandari",
+   "phone": "(938) 527-4695"
+  },
+  "contact_person": {
+   "name": "Rebecca Bhandari, Director of Operations",
+   "phone": "(856) 790-3253",
+   "fax": "(810) 618-3754",
+   "email": "rbhandari@kirbylee.com"
+  },
+  "compliance_person": {
+   "name": "Rebecca E. Wilson",
+   "phone": "(940) 662-2904"
+  },
+  "address": {
+   "address_line": "446 Cameron Shores Apt. 849",
+   "city_state_zip": "Ramoston, AK 76088"
+  }
+ },
+ "oneshot": {
+  "date": "03/15/2023",
+  "tissue_bank_license_id": "c TB-56789-001",
+  "tissue_bank_name": "California Tissue Bank and Research Institute",
+  "backup_persons": [
+   "Rebecca Bhandari, Sport and exercise",
+   "Rebecca E. Wilson, Petroleum engineer",
+   "Terry P. de Gruson, Tax inspector"
+  ],
+  "facility_name": "California Tissue Bank",
+  "license_mailing_attention": "Attn: Tissue Bank Director",
+  "tissue_bank_director": {
+   "name": "Rebecca Bhandari",
+   "phone": "(938) 527-4695"
+  },
+  "contact_person": {
+   "name": "Rebecca Bhandari, Director of Operations",
+   "phone": "(856) 790-3253",
+   "fax": "(810) 618-3754",
+   "email": "rbhandari@kirbylee.com"
+  },
+  "compliance_person": {
+   "name": "Rebecca E. Wilson",
+   "phone": "(940) 662-2904"
+  },
+  "address": {
+   "address_line": "446 Cameron Shores Apt. 849",
+   "city_state_zip": "Ramoston, AK 76088"
+  }
+ }
+}

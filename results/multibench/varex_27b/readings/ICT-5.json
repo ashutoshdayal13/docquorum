@@ -1,0 +1,68 @@
+{
+ "primary": {
+  "date_of_request": "06/15/2023",
+  "media_inquiry_phone_number": "(737) 223-5154",
+  "suspect_description": "White male, approximately 6'0\" tall, wearing a black hoodie and blue",
+  "requesting_agency_contact": {
+   "name": "Horne Group",
+   "contact_number": "(737) 223-5154",
+   "fax_number": "(439) 772-0143"
+  },
+  "investigating_officer_contact": {
+   "name_title": "Andrew Jilani, Research Officer",
+   "cell_phone_number": "(125) 675-6548"
+  },
+  "incident_details": {
+   "date": "06/15/2023",
+   "time": "14:30"
+  },
+  "suspect_location": {
+   "last_known_location": "3224 Vargas Avenue Apt. 154, East Anthony, WI 09781",
+   "zip_code": "09781"
+  }
+ },
+ "parse": {
+  "date_of_request": "06/15/2023",
+  "media_inquiry_phone_number": "(737) 223-5154",
+  "suspect_description": "White male, approximately 6'0\" tall, wearing a black hoodie and blue",
+  "requesting_agency_contact": {
+   "name": "Horne Group",
+   "contact_number": "(737) 223-5154",
+   "fax_number": "(439) 772-0143"
+  },
+  "investigating_officer_contact": {
+   "name_title": "Andrew Jilani, Research Officer",
+   "cell_phone_number": "(125) 675-6548"
+  },
+  "incident_details": {
+   "date": "06/15/2023",
+   "time": "14:30"
+  },
+  "suspect_location": {
+   "last_known_location": "3224 Vargas Avenue Apt. 154, East Anthony, WI 09781",
+   "zip_code": "09781"
+  }
+ },
+ "oneshot": {
+  "date_of_request": "06/15/2023",
+  "media_inquiry_phone_number": "(737) 223-5154",
+  "suspect_description": "White male, approximately 6'0\" tall, wearing a black hoodie and blue",
+  "requesting_agency_contact": {
+   "name": "Horne Group",
+   "contact_number": "(737) 223-5154",
+   "fax_number": "(439) 772-0143"
+  },
+  "investigating_officer_contact": {
+   "name_title": "Andrew Jilani, Research Officer",
+   "cell_phone_number": "(125) 675-6548"
+  },
+  "incident_details": {
+   "date": "06/15/2023",
+   "time": "14:30"
+  },
+  "suspect_location": {
+   "last_known_location": "3224 Vargas Avenue Apt. 154, East Anthony, WI 09781",
+   "zip_code": "09781"
+  }
+ }
+}

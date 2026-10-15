@@ -1,0 +1,20 @@
+{
+ "ticket_number": "HERMIT-2023-10567",
+ "organization_name": "Huffman Group",
+ "fha_mortgagee_id": "FHA-2023-987654",
+ "comments": "Requesting access for new employees to the HERMIT system for reverse mortgage processing.",
+ "applicant": {
+  "first_name": "Brian",
+  "last_name": "Lawrence",
+  "pin": "1234",
+  "job_title": "Surveyor, building control",
+  "office_phone": "(995) 623-1151",
+  "office_email": "brian.lawrence@huffman.com",
+  "business_mailing_address": "090 Paul Stream, Jacobmouth, FL 31451"
+ },
+ "supervisor": {
+  "name": "Brian O. Lawrence",
+  "phone": "(995) 623-1151",
+  "email": "brian.lawrence@huffman.com"
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "primary": {
+  "vehicle_identification_number": "1G1ZT54888F123456",
+  "year": "2018",
+  "make": "Chevrolet",
+  "body_type": "Sedan",
+  "registration_plate_number": "ABC1234",
+  "owner_title": "Sound Technician",
+  "signature_date": "05/15/2023",
+  "lien_filing_code": "LF-2023-05-15-001",
+  "date_of_security_agreement": "01/10/2023",
+  "dmv_charge_account_number": "1427-8608-2679",
+  "owner": {
+   "name": "Keer, Bertrand J.",
+   "license_number": "CFP-2025"
+  },
+  "co_owner": {
+   "name": "Muller, Nicole R.",
+   "license_number": "LCSW-2024"
+  },
+  "mailing_address": {
+   "address": "0478 Wayne Keys",
+   "apartment_number": "644",
+   "city": "New Jennaview",
+   "zip_code": "47114"
+  },
+  "lienholder": {
+   "name": "Newton-Galloway Financial Services",
+   "name_continued": "LLC",
+   "mailing_address": "33588 Jill Squares",
+   "city": "Greenbury",
+   "zip_code": "12913"
+  }
+ },
+ "parse": {
+  "vehicle_identification_number": "1G1ZT54888F123456",
+  "year": "2018",
+  "make": "Chevrolet",
+  "body_type": "Sedan",
+  "registration_plate_number": "ABC1234",
+  "owner_title": "Sound Technician",
+  "signature_date": "05/15/2023",
+  "lien_filing_code": "LF-2023-05-15-001",
+  "date_of_security_agreement": "01/10/2023",
+  "dmv_charge_account_number": "1427-8608-2679",
+  "owner": {
+   "name": "Keer, Bertrand J.",
+   "license_number": "CFP-2025"
+  },
+  "co_owner": {
+   "name": "Muller, Nicole R.",
+   "license_number": "LCSW-2024"
+  },
+  "mailing_address": {
+   "address": "0478 Wayne Keys",
+   "apartment_number": "644",
+   "city": "New Jennaview",
+   "zip_code": "47114"
+  },
+  "lienholder": {
+   "name": "Newton-Galloway Financial Services",
+   "name_continued": "LLC",
+   "mailing_address": "33588 Jill Squares",
+   "city": "Greenbury",
+   "zip_code": "12913"
+  }
+ },
+ "oneshot": {
+  "vehicle_identification_number": "1G1ZT54888F123456",
+  "year": "2018",
+  "make": "Chevrolet",
+  "body_type": "Sedan",
+  "registration_plate_number": "ABC1234",
+  "owner_title": "Sound Technician",
+  "signature_date": "05/15/2023",
+  "lien_filing_code": "LF-2023-05-15-001",
+  "date_of_security_agreement": "01/10/2023",
+  "dmv_charge_account_number": "1427-8608-2679",
+  "owner": {
+   "name": "Keer, Bertrand J.",
+   "license_number": "CFP-2025"
+  },
+  "co_owner": {
+   "name": "Muller, Nicole R.",
+   "license_number": "LCSW-2024"
+  },
+  "mailing_address": {
+   "address": "0478 Wayne Keys",
+   "apartment_number": "644",
+   "city": "New Jennaview",
+   "zip_code": "47114"
+  },
+  "lienholder": {
+   "name": "Newton-Galloway Financial Services",
+   "name_continued": "LLC",
+   "mailing_address": "33588 Jill Squares",
+   "city": "Greenbury",
+   "zip_code": "12913"
+  }
+ }
+}

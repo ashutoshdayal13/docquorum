@@ -1,0 +1,83 @@
+{
+ "primary": {
+  "applicant_name": "Yang, Kathy X.",
+  "work_telephone_number": "(898) 279-6869",
+  "email_address": "kyang@castrowiley.com",
+  "office_division_branch": "Human Resources Division",
+  "official_position_title": "Human Resources Specialist",
+  "pay_plan_series_grade": "GS-0203-09",
+  "time_limit_agreement_type": "Initial Time Limit Agreement",
+  "agreement_statements": [
+   "I may, with the permission of the approving official, return to regular employment status (prior to the expiration of this agreement), subject to 5 CFR § 831.1721, 5 U.S.C. 8336a(g), and by following the procedures outlined in HUD's Phased Retirement Policy and Procedures Handbook.",
+   "I have the right to elect to fully retire at any time (as provided in 5 CFR § 831.1731) or upon expiration of the time limit agreement.",
+   "I may accept a new appointment at another agency, with or without the new agency's approval for me to continue in phased employment, at any time before the expiration of this agreement or within 3 days of the expiration of the agreement.",
+   "If I return to regular employment status, I will be prohibited from reelecting phased retirement status.",
+   "When the agreed term of phased employment ends, I will be separated from employment and that such separation will be considered voluntary based on this agreement, unless I am approved to return to regular employment or accept a new appointment at another agency prior to expiration of this agreement.",
+   "If I am separated from phased employment and not employed within 3 days (i.e., a break in service of greater than 3 days), that I will be deemed to have elected full retirement.",
+   "A HUD authorized approving official may rescind an existing agreement, or approve the employee to enter into a new agreement to extend or reduce the term of phased employment agreed to in an existing agreement, by entering into a new written agreement before the expiration of the agreement currently in effect.",
+   "I understand that a HUD approving official may remove me from phased retirement prior to the end of the time limit agreement due to budget restrictions, performance, or conduct and will use existing workforce authorities such as removal for performance or conduct; transfer of function or reduction in force; as appropriate."
+  ],
+  "employee_signature_date": "05/15/2023",
+  "supervisor_signature_date": "05/15/2023",
+  "work_address": {
+   "street": "8389 Swanson Hollow",
+   "city": "West Aaronfort",
+   "state": "PA",
+   "zip_code": "05687"
+  }
+ },
+ "parse": {
+  "applicant_name": "Yang, Kathy X.",
+  "work_telephone_number": "(888) 279-6869",
+  "email_address": "kyang@castrowiley.com",
+  "office_division_branch": "Human Resources Division",
+  "official_position_title": "Human Resources Specialist",
+  "pay_plan_series_grade": "GS-0203-09",
+  "time_limit_agreement_type": "Initial Time Limit Agreement",
+  "agreement_statements": [
+   "I may, with the permission of the approving official, return to regular employment status (prior to the expiration of this agreement), subject to 5 CFR § 831.1721, 5 U.S.C. 8336a(g), and by following the procedures outlined in HUD's Phased Retirement Policy and Procedures Handbook.",
+   "I have the right to elect to fully retire at any time (as provided in 5 CFR § 831.1731) or upon expiration of the time limit agreement.",
+   "I may accept a new appointment at another agency, with or without the new agency's approval for me to continue in phased employment, at any time before the expiration of this agreement or within 3 days of the expiration of the agreement.",
+   "If I return to regular employment status, I will be prohibited from reelecting phased retirement status.",
+   "When the agreed term of phased employment ends, I will be separated from employment and that such separation will be considered voluntary based on this agreement, unless I am approved to return to regular employment or accept a new appointment at another agency prior to expiration of this agreement.",
+   "If I am separated from phased employment and not employed within 3 days (i.e., a break in service of greater than 3 days), that I will be deemed to have elected full retirement.",
+   "A HUD authorized approving official may rescind an existing agreement, or approve the employee to enter into a new agreement to extend or reduce the term of phased employment agreed to in an existing agreement, by entering into a new written agreement before the expiration of the agreement currently in effect.",
+   "I understand that a HUD approving official may remove me from phased retirement prior to the end of the time limit agreement due to budget restrictions, performance, or conduct and will use existing workforce authorities such as removal for performance or conduct; transfer of function or reduction in force; as appropriate."
+  ],
+  "employee_signature_date": "05/15/2023",
+  "supervisor_signature_date": "05/15/2023",
+  "work_address": {
+   "street": "8389 Swanson Hollow",
+   "city": "West Aaronfort",
+   "state": "PA",
+   "zip_code": "05687"
+  }
+ },
+ "oneshot": {
+  "applicant_name": "Yang, Kathy X.",
+  "work_telephone_number": "(898) 279-6889",
+  "email_address": "kyang@castrowiley.com",
+  "office_division_branch": "Human Resources Division",
+  "official_position_title": "Human Resources Specialist",
+  "pay_plan_series_grade": "GS-0203-09",
+  "time_limit_agreement_type": "Initial Time Limit Agreement",
+  "agreement_statements": [
+   "I may, with the permission of the approving official, return to regular employment status (prior to the expiration of this agreement), subject to 5 CFR § 831.1721, 5 U.S.C. 8336a(g), and by following the procedures outlined in HUD's Phased Retirement Policy and Procedures Handbook.",
+   "I have the right to elect to fully retire at any time (as provided in 5 CFR § 831.1731) or upon expiration of the time limit agreement.",
+   "I may accept a new appointment at another agency, with or without the new agency's approval for me to continue in phased employment, at any time before the expiration of this agreement or within 3 days of the expiration of the agreement.",
+   "If I return to regular employment status, I will be prohibited from reelecting phased retirement status.",
+   "When the agreed term of phased employment ends, I will be separated from employment and that such separation will be considered voluntary based on this agreement, unless I am approved to return to regular employment or accept a new appointment at another agency prior to expiration of this agreement.",
+   "If I am separated from phased employment and not employed within 3 days (i.e., a break in service of greater than 3 days), that I will be deemed to have elected full retirement.",
+   "A HUD authorized approving official may rescind an existing agreement, or approve the employee to enter into a new agreement to extend or reduce the term of phased employment agreed to in an existing agreement, by entering into a new written agreement before the expiration of the agreement currently in effect.",
+   "I understand that a HUD approving official may remove me from phased retirement prior to the end of the time limit agreement due to budget restrictions, performance, or conduct and will use existing workforce authorities such as removal for performance or conduct; transfer of function or reduction in force; as appropriate."
+  ],
+  "employee_signature_date": "05/15/2023",
+  "supervisor_signature_date": "05/15/2023",
+  "work_address": {
+   "street": "8389 Swanson Hollow",
+   "city": "West Aaronfort",
+   "state": "PA",
+   "zip_code": "05687"
+  }
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "requestor_name": "Kelly I. Edwards",
+  "requestor_firm": "West, Simon and Pugh",
+  "owner_operator_number": "OON-2023-MD-56789",
+  "telephone_number": "(174) 131-8663",
+  "fax_number": "(772) 949-0391",
+  "firm_tax_id_code": "123456789",
+  "email_address": "kelly.edwards@aol.com",
+  "shipping_account_number": "ACCT-2023-MD-98765",
+  "requestor_address": {
+   "address": "6971 Frank Curve Suite 433, North Teresa, MD 21306"
+  },
+  "billing_address": {
+   "address": "7000 Billings Way, North Teresa, MD 21306"
+  },
+  "alternate_billing_email": {
+   "email": "billing@west.com"
+  },
+  "manufacturer_firm": {
+   "name": "West, Simon and Pugh",
+   "address": "6971 Frank Curve Suite 433, North Teresa, MD 21306"
+  }
+ },
+ "parse": {
+  "requestor_name": "Kelly I. Edwards",
+  "requestor_firm": "West, Simon and Pugh",
+  "owner_operator_number": "OON-2023-MD-56789",
+  "telephone_number": "(174) 131-8663",
+  "fax_number": "(772) 949-0391",
+  "firm_tax_id_code": "123456789",
+  "email_address": "kelly.edwards@aol.com",
+  "shipping_account_number": "ACCT-2023-MD-98765",
+  "requestor_address": {
+   "address": "6971 Frank Curve Suite 433, North Teresa, MD 21306"
+  },
+  "billing_address": {
+   "address": "7000 Billings Way, North Teresa, MD 21306"
+  },
+  "alternate_billing_email": {
+   "email": "billing@west.com"
+  },
+  "manufacturer_firm": {
+   "name": "West, Simon and Pugh",
+   "address": "6971 Frank Curve Suite 433, North Teresa, MD 21306"
+  }
+ },
+ "oneshot": {
+  "requestor_name": "Kelly I. Edwards",
+  "requestor_firm": "West, Simon and Pugh",
+  "owner_operator_number": "OON-2023-MD-56789",
+  "telephone_number": "(174) 131-8663",
+  "fax_number": "(772) 949-0391",
+  "firm_tax_id_code": "123456789",
+  "email_address": "kelly.edwards@aol.com",
+  "shipping_account_number": "ACCT-2023-MD-98765",
+  "requestor_address": {
+   "address": "6971 Frank Curve Suite 433, North Teresa, MD 21306"
+  },
+  "billing_address": {
+   "address": "7000 Billings Way, North Teresa, MD 21306"
+  },
+  "alternate_billing_email": {
+   "email": "billing@west.com"
+  },
+  "manufacturer_firm": {
+   "name": "West, Simon and Pugh",
+   "address": "6971 Frank Curve Suite 433, North Teresa, MD 21306"
+  }
+ }
+}

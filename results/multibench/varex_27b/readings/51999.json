@@ -1,0 +1,35 @@
+{
+ "primary": {
+  "agreement_date": "05/15/2023",
+  "housing_authority": {
+   "name": "Lake Desirie Housing Authority",
+   "state": "TN"
+  },
+  "depository_institution": {
+   "name": "First National Bank of Lake Desirie",
+   "address": "54975 Brown Prairie Apt. 685, Lake Desirie, TN 71742"
+  }
+ },
+ "parse": {
+  "agreement_date": "05/15/2023",
+  "housing_authority": {
+   "name": "Lake Desirie Housing Authority",
+   "state": "TN"
+  },
+  "depository_institution": {
+   "name": "First National Bank of Lake Desirie",
+   "address": "54975 Brown Prairie Apt. 685, Lake Desirie, TN 71742"
+  }
+ },
+ "oneshot": {
+  "agreement_date": "05/15/2023",
+  "housing_authority": {
+   "name": "Lake Desirie Housing Authority",
+   "state": "TN"
+  },
+  "depository_institution": {
+   "name": "First National Bank of Lake Desirie",
+   "address": "54975 Brown Prairie Apt. 685, Lake Desirie, TN 71742"
+  }
+ }
+}

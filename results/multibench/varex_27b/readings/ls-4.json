@@ -1,0 +1,77 @@
+{
+ "primary": {
+  "date_of_accident_illness": "05/15/2023",
+  "carrier_number": "Carrier-2023-00456",
+  "owcp_number": "OWCP-2023-78901",
+  "injured_worker_name": "Andrew K. Humphrey",
+  "fee_resolution_efforts": "Negotiations were conducted with the employer's representative",
+  "certifier_print_name": "Paul K. Gollum",
+  "certification_date": "09/20/2023",
+  "fee_seeker_details": {
+   "name": "Andrew K. Humphrey"
+  },
+  "attorney_details": [
+   {
+    "total_hours": 14.12
+   }
+  ],
+  "paralegal_details": [
+   {
+    "total_hours": 20.5
+   }
+  ],
+  "payee_details": {
+   "details": "Andrew K. Humphrey"
+  }
+ },
+ "parse": {
+  "date_of_accident_illness": "05/15/2023",
+  "carrier_number": "Carrier-2023-00456",
+  "owcp_number": "OWCP-2023-78901",
+  "injured_worker_name": "Andrew K. Humphrey",
+  "fee_resolution_efforts": "Negotiations were conducted with the employer's representative",
+  "certifier_print_name": "Paul K. Gollum",
+  "certification_date": "09/20/2023",
+  "fee_seeker_details": {
+   "name": "Andrew K. Humphrey"
+  },
+  "attorney_details": [
+   {
+    "total_hours": 14.12
+   }
+  ],
+  "paralegal_details": [
+   {
+    "total_hours": 20.5
+   }
+  ],
+  "payee_details": {
+   "details": "Andrew K. Humphrey"
+  }
+ },
+ "oneshot": {
+  "date_of_accident_illness": "05/15/2023",
+  "carrier_number": "Carrier-2023-00456",
+  "owcp_number": "OWCP-2023-78901",
+  "injured_worker_name": "Andrew K. Humphrey",
+  "fee_resolution_efforts": "Negotiations were conducted with the employer's representative",
+  "certifier_print_name": "Paul K. Gollum",
+  "certification_date": "09/20/2023",
+  "fee_seeker_details": {
+   "name": "Andrew K. Humphrey"
+  },
+  "attorney_details": [
+   {
+    "total_hours": 14.12
+   }
+  ],
+  "paralegal_details": [
+   {
+    "total_hours": 20.5
+   }
+  ],
+  "payee_details": {
+   "details": "Andrew K. Humphrey"
+  }
+ }
+}

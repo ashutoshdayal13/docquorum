@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "current_legal_name": {
+   "first_name": "Leonard",
+   "middle_name": "James",
+   "last_name": "Sawyer"
+  },
+  "permanent_resident_card_name": {
+   "first_name": "Leonard",
+   "middle_name": "J.",
+   "last_name": "Sawyer"
+  }
+ },
+ "parse": {
+  "current_legal_name": {
+   "first_name": "Leonard",
+   "middle_name": "James",
+   "last_name": "Sawyer"
+  },
+  "permanent_resident_card_name": {
+   "first_name": "Leonard",
+   "middle_name": "J.",
+   "last_name": "Sawyer"
+  }
+ },
+ "oneshot": {
+  "current_legal_name": {
+   "first_name": "Leonard",
+   "middle_name": "James",
+   "last_name": "Sawyer"
+  },
+  "permanent_resident_card_name": {
+   "first_name": "Leonard",
+   "middle_name": "J.",
+   "last_name": "Sawyer"
+  }
+ }
+}

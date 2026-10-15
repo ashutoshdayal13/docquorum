@@ -1,0 +1,110 @@
+{
+ "primary": {
+  "filing_date": "08/15/2023",
+  "preferred_language_written": "Englis",
+  "preferred_language_spoken": "Englis",
+  "applicant": {
+   "name": "Cruz, Liz J.",
+   "birthdate": "01/27/1963",
+   "ssn": "329-49-3021",
+   "other_names": "Elizabeth J. Cruz",
+   "other_ssn": "000-00-0000"
+  },
+  "parents": [
+   {
+    "name": "Cruz, Maria",
+    "other_names": "Maria Lopez Cruz"
+   },
+   {
+    "name": "Gilbert, Sarah",
+    "other_names": "Sarah Jane Gilbert"
+   }
+  ],
+  "mailing_address": {
+   "street": "49108 Meghan Circle Apt. 729",
+   "city": "East Michaeltown",
+   "zip_code": "32129"
+  },
+  "residence_address": {
+   "street": "49108 Meghan Circle Apt. 729",
+   "city": "East Michaeltown",
+   "zip_code": "32129"
+  },
+  "direct_deposit_information": {
+   "account_number": "7156-8747-6019",
+   "routing_number": "026012881"
+  }
+ },
+ "parse": {
+  "filing_date": "08/15/2023",
+  "preferred_language_written": "English",
+  "preferred_language_spoken": "English",
+  "applicant": {
+   "name": "Cruz, Liz J.",
+   "birthdate": "01/27/1963",
+   "ssn": "329-49-3021",
+   "other_names": "Elizabeth J. Cruz",
+   "other_ssn": "000-00-0000"
+  },
+  "parents": [
+   {
+    "name": "Cruz, Maria",
+    "other_names": "Maria Lopez Cruz"
+   },
+   {
+    "name": "Gilbert, Sarah",
+    "other_names": "Sarah Jane Gilbert"
+   }
+  ],
+  "mailing_address": {
+   "street": "49108 Meghan Circle Apt. 729",
+   "city": "East Michaeltown",
+   "zip_code": "32129"
+  },
+  "residence_address": {
+   "street": "49108 Meghan Circle Apt. 729",
+   "city": "East Michaeltown",
+   "zip_code": "32129"
+  },
+  "direct_deposit_information": {
+   "account_number": "7156-8747-6019",
+   "routing_number": "026012881"
+  }
+ },
+ "oneshot": {
+  "filing_date": "08/15/2023",
+  "preferred_language_written": "Englis",
+  "preferred_language_spoken": "Englis",
+  "applicant": {
+   "name": "Cruz, Liz J.",
+   "birthdate": "01/27/1963",
+   "ssn": "329-49-3021",
+   "other_names": "Elizabeth J. Cruz",
+   "other_ssn": "000-00-0000"
+  },
+  "parents": [
+   {
+    "name": "Cruz, Maria",
+    "other_names": "Maria Lopez Cruz"
+   },
+   {
+    "name": "Gilbert, Sarah",
+    "other_names": "Sarah Jane Gilbert"
+   }
+  ],
+  "mailing_address": {
+   "street": "49108 Meghan Circle Apt. 729",
+   "city": "East Michaeltown",
+   "zip_code": "32129"
+  },
+  "residence_address": {
+   "street": "49108 Meghan Circle Apt. 729",
+   "city": "East Michaeltown",
+   "zip_code": "32129"
+  },
+  "direct_deposit_information": {
+   "account_number": "7156-8747-6019",
+   "routing_number": "026012881"
+  }
+ }
+}

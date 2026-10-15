@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "mortgagee_number": "MORG007619823456",
+  "cusip_number": "123456789000000000",
+  "mortgagee_loan_number": "MLN123456789012345",
+  "ha_case_number": "CASE123456",
+  "fha_requisition_number": "FHAREQ2023007619",
+  "date_of_requisition": "03/15/2023",
+  "voucher_number": "VCH7619823",
+  "schedule_number": "SCH2023007619823456",
+  "cash_adjustment_amount": 38.83,
+  "employer_identification_number": "98-7654321",
+  "interest_computed_through": "03/15/2023",
+  "interest_amount": 886544.88,
+  "amount_of_debentures": 886544.88,
+  "registered_owner": {
+   "name": "Karan U. Garcia",
+   "address": "796 William Skyway, Joneston, MT"
+  }
+ },
+ "parse": {
+  "mortgagee_number": "MORG007619823456",
+  "cusip_number": "123456789000000000",
+  "mortgagee_loan_number": "MLN123456789012345",
+  "ha_case_number": "CASE123456",
+  "fha_requisition_number": "FHAREQ2023007619",
+  "date_of_requisition": "03/15/2023",
+  "voucher_number": "VCH7619823",
+  "schedule_number": "SCH2023007619823456",
+  "cash_adjustment_amount": 38.83,
+  "employer_identification_number": "98-7654321",
+  "interest_computed_through": "03/15/2023",
+  "interest_amount": 886544.88,
+  "amount_of_debentures": 886544.88,
+  "registered_owner": {
+   "name": "Karan U. Garcia",
+   "address": "796 William Skyway, Joneston, MT"
+  }
+ },
+ "oneshot": {
+  "mortgagee_number": "MORG007619823456",
+  "cusip_number": "123456789000000000",
+  "mortgagee_loan_number": "MLN123456789012345",
+  "ha_case_number": "CASE123456",
+  "fha_requisition_number": "FHAREQ2023007619",
+  "date_of_requisition": "03/15/2023",
+  "voucher_number": "VCH7619823",
+  "schedule_number": "SCH2023007619823456",
+  "cash_adjustment_amount": 38.83,
+  "employer_identification_number": "98-7654321",
+  "interest_computed_through": "03/15/2023",
+  "interest_amount": 886544.88,
+  "amount_of_debentures": 886544.88,
+  "registered_owner": {
+   "name": "Karan U. Garcia",
+   "address": "796 William Skyway, Joneston, MT"
+  }
+ }
+}

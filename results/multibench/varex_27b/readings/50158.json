@@ -1,0 +1,17 @@
+{
+ "primary": {
+  "official_housing_authority_name": "Dalefort Housing Authority",
+  "project_name": "Jonathan Causeway Development",
+  "number_of_public_housing_units": 120
+ },
+ "parse": {
+  "official_housing_authority_name": "Dalefort Housing Authority",
+  "project_name": "Jonathan Causeway Development",
+  "number_of_public_housing_units": 120
+ },
+ "oneshot": {
+  "official_housing_authority_name": "Dalefort Housing Authority",
+  "project_name": "Jonathan Causeway Development",
+  "number_of_public_housing_units": 120
+ }
+}

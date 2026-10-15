@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "facility_registration_number": "FDA-CTL-2023-48200-GRME",
+  "facility_name": "Grimes Inc - Lake Michael Food Processing Plant",
+  "telephone_number": "(987) 789-7106",
+  "fax_number": "(656) 330-4356",
+  "email_address": "mcarrero@grimes.com",
+  "facility_address": {
+   "street": "4467 John Spurs Suite 611",
+   "city": "Lake Michael",
+   "state": "TX",
+   "zip_code": "29420"
+  }
+ },
+ "parse": {
+  "facility_registration_number": "FDA-CTL-2023-48200-GRME",
+  "facility_name": "Grimes Inc - Lake Michael Food Processing Plant",
+  "telephone_number": "(987) 789-7106",
+  "fax_number": "(656) 330-4356",
+  "email_address": "mcarrero@grimes.com",
+  "facility_address": {
+   "street": "4467 John Spurs Suite 611",
+   "city": "Lake Michael",
+   "state": "TX",
+   "zip_code": "29420"
+  }
+ },
+ "oneshot": {
+  "facility_registration_number": "FDA-CTL-2023-48200-GRME",
+  "facility_name": "Grimes Inc - Lake Michael Food Processing Plant",
+  "telephone_number": "(987) 789-7106",
+  "fax_number": "(656) 330-4356",
+  "email_address": "mcarrero@grimes.com",
+  "facility_address": {
+   "street": "4467 John Spurs Suite 611",
+   "city": "Lake Michael",
+   "state": "TX",
+   "zip_code": "29420"
+  }
+ }
+}

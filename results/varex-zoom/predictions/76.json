@@ -1,0 +1,16 @@
+{
+ "application_entered_date": "03/15/2023",
+ "application_approval_date": "03/15/2023",
+ "applicant": {
+  "home_telephone_number": "(121) 471-0876"
+ },
+ "vehicle": {
+  "year_make": "2020 Toyota Camry",
+  "tag_number": "RI 123456",
+  "permit_number": "P2023-001"
+ },
+ "office": {
+  "telephone_number": "(773) 305-7870",
+  "room_number_building": "Room 205, Building 1"
+ }
+}

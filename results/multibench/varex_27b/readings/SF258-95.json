@@ -1,0 +1,89 @@
+{
+ "primary": {
+  "interim_control_no": "INT-2023-74125",
+  "agency_approval_date": "05/15/2023",
+  "nara_approval_date": "May 20,",
+  "records_series_title": "Financial Reports and Correspondence",
+  "date_span_of_series": "2010-2023",
+  "agency_or_establishment": "Wright-Mckenzie Corporation",
+  "agency_major_subdivision": "Finance Department",
+  "agency_minor_subdivision": "Accounting Division",
+  "unit_that_created_record": "Budgeting Unit",
+  "container_type": "Record",
+  "date_records_eligible_for_transfer": "05/10/2023",
+  "disposition_authority": "NARA General Records Schedule",
+  "special_markings": "Confidential",
+  "frc_accession_number": "FRC-2023-45789",
+  "container_numbers": "RB-201 to RB-210",
+  "frc_location": "Fort Worth Federal Records Center",
+  "nara_accession_no": "NARA-2023-74125",
+  "agency_contact": {
+   "name": "Andrew Baker",
+   "telephone": "(507) 804-9129"
+  },
+  "agency_address": {
+   "name_title_mailing_address": "Andrew Baker, CEO, Wright-Mckenzie, 512 Patrick"
+  },
+  "nara_address": {
+   "name_title_mailing_address": "Patrick Mahoney, Archivist, National Archives,"
+  }
+ },
+ "parse": {
+  "interim_control_no": "INT-2023-74125",
+  "agency_approval_date": "05/15/2023",
+  "nara_approval_date": "May 20,",
+  "records_series_title": "Financial Reports and Correspondence",
+  "date_span_of_series": "2010-2023",
+  "agency_or_establishment": "Wright-Mckenzie Corporation",
+  "agency_major_subdivision": "Finance Department",
+  "agency_minor_subdivision": "Accounting Division",
+  "unit_that_created_record": "Budgeting Unit",
+  "container_type": "Record",
+  "date_records_eligible_for_transfer": "05/10/2023",
+  "disposition_authority": "NARA General Records Schedule",
+  "special_markings": "Confidential",
+  "frc_accession_number": "FRC-2023-45789",
+  "container_numbers": "RB-201 to RB-210",
+  "frc_location": "Fort Worth Federal Records Center",
+  "nara_accession_no": "NARA-2023-74125",
+  "agency_contact": {
+   "name": "Andrew Baker",
+   "telephone": "(507) 804-9129"
+  },
+  "agency_address": {
+   "name_title_mailing_address": "Andrew Baker, CEO, Wright-Mckenzie, 512 Patrick"
+  },
+  "nara_address": {
+   "name_title_mailing_address": "Patrick Mahoney, Archivist, National Archives,"
+  }
+ },
+ "oneshot": {
+  "interim_control_no": "INT-2023-74125",
+  "agency_approval_date": "05/15/2023",
+  "nara_approval_date": "May 20,",
+  "records_series_title": "Financial Reports and Correspondence",
+  "date_span_of_series": "2010-2023",
+  "agency_or_establishment": "Wright-Mckenzie Corporation",
+  "agency_major_subdivision": "Finance Department",
+  "agency_minor_subdivision": "Accounting Division",
+  "unit_that_created_record": "Budgeting Unit",
+  "container_type": "Record",
+  "date_records_eligible_for_transfer": "05/10/2023",
+  "disposition_authority": "NARA General Records Schedule",
+  "special_markings": "Confidential",
+  "frc_accession_number": "FRC-2023-45789",
+  "container_numbers": "RB-201 to RB-210",
+  "frc_location": "Fort Worth Federal Records Center",
+  "nara_accession_no": "NARA-2023-74125",
+  "agency_contact": {
+   "name": "Andrew Baker",
+   "telephone": "(507) 804-9129"
+  },
+  "agency_address": {
+   "name_title_mailing_address": "Andrew Baker, CEO, Wright-Mckenzie, 512 Patrick"
+  },
+  "nara_address": {
+   "name_title_mailing_address": "Patrick Mahoney, Archivist, National Archives,"
+  }
+ }
+}

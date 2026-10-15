@@ -1,0 +1,22 @@
+{
+ "reporting_agency_name": "Texas Department of Public Safety",
+ "reporting_agency_contact_number": 5124247981,
+ "reporting_agency_fax_number": 5124247418,
+ "investigating_officer_name": "Stacey D. Parsons",
+ "investigating_officer_cell_phone": 2212076385,
+ "media_inquiries_phone_number": 4165791446,
+ "date_of_request": "10/15/2023",
+ "date_of_last_contact": "10/12/2023",
+ "time_of_last_contact": "20:30",
+ "last_known_location": "Lake Ashley, VT",
+ "military_member_data": {
+  "member_name": "Maria Teresa Camara",
+  "member_service_number": "SSN-768-62-3211"
+ },
+ "vehicle_data": {
+  "vehicle_make": "Ford",
+  "vehicle_model": "F-150",
+  "vehicle_color": "Blue",
+  "vehicle_license_plate": "TX 12345"
+ }
+}

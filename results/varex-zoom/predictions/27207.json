@@ -1,0 +1,15 @@
+{
+ "message_disposition": "1100",
+ "acceptance_time_stamp": "03/15/2023 14:30:00",
+ "omad": "03/15/2023",
+ "type_subtype_code": "MULTIFAMILY_CLAIMS",
+ "imad": "03/15/2023 14:30:00",
+ "sender_di": "021030004",
+ "sender_reference": "RFQ-2023-54649",
+ "business_function": "WIRE_TRANSFER",
+ "obi_line_2": "Multifamily Claims Wire Transfer",
+ "closing_agent": {
+  "contact_person": "Ridhi C. Stafford",
+  "phone_number": "(585) 915-7361"
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "service_center_number": "SC2023-1057",
+ "service_center_name": "Baker Ignition Solutions",
+ "new_service_center_name": "Baker Interlock Services",
+ "local_phone_number": "(546) 473-7976",
+ "toll_free_phone_number": "(800) 123-4567",
+ "email_address": "support@bakerinterlock.com",
+ "web_address": "www.bakerinterlock.com",
+ "terminated_individuals": [
+  "Shannon W. Blair",
+  "Gael Henrique Latek"
+ ],
+ "new_individuals": [
+  "Kristy M. Roman"
+ ],
+ "mailing_address": {
+  "address": "40180 Mcgrath Terrace",
+  "city": "Waltersfurt",
+  "state": "PA",
+  "zip_code": "48474"
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "primary": {
+  "name": "Granado, Ada C.",
+  "firm_name_and_location": "Gibson, Greene and Acosta, Amberhaven, MD",
+  "education": "Bachelor of Arts in Communication",
+  "other_professional_qualifications": "Member of National Association of Broadcasters, Awarded Best Local Broadcast 2023",
+  "role_in_this_contract": "Broadcast Coordinator",
+  "years_experience_total": 2,
+  "years_experience_with_current_firm": 1.5,
+  "current_professional_registration": "Broadcast License, State of Maryland",
+  "relevant_projects": [
+   "Local News Broadcast, Amberhaven, MD - Ongoing",
+   "Community Event Coverage, Amberhaven, MD - 2023",
+   "Educational Program Hosting, Amberhaven, MD - 2022",
+   "Live Sports Event Broadcasting, Amberhaven, MD - 2022",
+   "Public Service Announcement Campaign, Amberhaven, MD - 2022"
+  ]
+ },
+ "parse": {
+  "name": "Granado, Ada C.",
+  "firm_name_and_location": "Gibson, Greene and Acosta, Amberhaven, MD",
+  "education": "Bachelor of Arts in Communication",
+  "other_professional_qualifications": "Member of National Association of Broadcasters, Awarded Best Local Broadcast 2023",
+  "role_in_this_contract": "Broadcast Coordinator",
+  "years_experience_total": 2,
+  "years_experience_with_current_firm": 1.5,
+  "current_professional_registration": "Broadcast License, State of Maryland",
+  "relevant_projects": [
+   "Local News Broadcast, Amberhaven, MD - Ongoing",
+   "Community Event Coverage, Amberhaven, MD - 2023",
+   "Educational Program Hosting, Amberhaven, MD - 2022",
+   "Live Sports Event Broadcasting, Amberhaven, MD - 2022",
+   "Public Service Announcement Campaign, Amberhaven, MD - 2022"
+  ]
+ },
+ "oneshot": {
+  "name": "Granado, Ada C.",
+  "firm_name_and_location": "Gibson, Greene and Acosta, Amberhaven, MD",
+  "education": "Bachelor of Arts in Communication",
+  "other_professional_qualifications": "Member of National Association of Broadcasters, Awarded Best Local Broadcast 2023",
+  "role_in_this_contract": "Broadcast Coordinator",
+  "years_experience_total": 2,
+  "years_experience_with_current_firm": 1.5,
+  "current_professional_registration": "Broadcast License, State of Maryland",
+  "relevant_projects": [
+   "Local News Broadcast, Amberhaven, MD - Ongoing",
+   "Community Event Coverage, Amberhaven, MD - 2023",
+   "Educational Program Hosting, Amberhaven, MD - 2022",
+   "Live Sports Event Broadcasting, Amberhaven, MD - 2022",
+   "Public Service Announcement Campaign, Amberhaven, MD - 2022"
+  ]
+ }
+}

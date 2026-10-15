@@ -1,0 +1,21 @@
+{
+ "type_of_appeal": "Driver License Suspension Appeal",
+ "corporate_name_or_dba": "Hall-Ramirez Pharmaceuticals",
+ "facility_certificate_number": 123456,
+ "case_numbers": "CASE-2024-78945, CASE-2024-78946",
+ "date_of_each_hearing": "03/15/2024, 03/22/2024",
+ "attorney_for_this_appeal": "Rolando M. Osborn, Esq.",
+ "date_of_decision_order": "02/20/2024",
+ "hearing_locations": "DMV Hearing Office, Downtown",
+ "administrative_law_judge": "Hon. Sarah L. Miller",
+ "appeal_mailing_address": {
+  "street": "28865 David Alley Apt. 562",
+  "city": "East Sergio",
+  "state": "ND"
+ },
+ "attorney_mailing_address": {
+  "street": "086 Jimenez Orchard Suite 506",
+  "city": "Lake Kimberly",
+  "state": "CA"
+ }
+}

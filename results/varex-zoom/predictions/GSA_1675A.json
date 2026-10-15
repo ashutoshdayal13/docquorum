@@ -1,0 +1,23 @@
+{
+ "building_name": "Federal Office Building",
+ "agency_bureau_inspected": "General Services Administration",
+ "region_number": "Region 5",
+ "room_number": "Room 205, Suite A",
+ "agency_representative_contacted": "Senna K. Robertson",
+ "inspection_findings": "Some areas lack adequate daylight.",
+ "recommended_action": "Install additional windows or use reflective surfaces to improve natural lighting.",
+ "address": {
+  "street": "5157 Sean Expressway",
+  "city": "West Kellymouth",
+  "zip_code": "51743"
+ },
+ "inspection_details": {
+  "inspection_date": "03/15/2023"
+ },
+ "inspector_information": {
+  "inspector_name": "Jason Y. Miller"
+ },
+ "reviewer_information": {
+  "reviewer_name": "Cynthia B. da Luz"
+ }
+}

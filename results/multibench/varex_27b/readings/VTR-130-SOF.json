@@ -1,0 +1,29 @@
+{
+ "primary": {
+  "vehicle_identification_number": "1G1ZD54895F123456",
+  "purchase_price": 313.1,
+  "application_explanation": "I am requesting a bonded title because I purchased this vehicle from a private seller who did not have the original title. I need to obtain a bonded title to register and insure the vehicle.",
+  "certification": {
+   "certified_by": "Samantha K. Sampaio",
+   "certification_date": "10/15/2023"
+  }
+ },
+ "parse": {
+  "vehicle_identification_number": "1G1ZD54895F123456",
+  "purchase_price": 313.1,
+  "application_explanation": "I am requesting a bonded title because I purchased this vehicle from a private seller who did not have the original title. I need to obtain a bonded title to register and insure the vehicle.",
+  "certification": {
+   "certified_by": "Samantha K. Sampaio",
+   "certification_date": "10/15/2023"
+  }
+ },
+ "oneshot": {
+  "vehicle_identification_number": "1G1ZD54895F123456",
+  "purchase_price": 313.1,
+  "application_explanation": "I am requesting a bonded title because I purchased this vehicle from a private seller who did not have the original title. I need to obtain a bonded title to register and insure the vehicle.",
+  "certification": {
+   "certified_by": "Samantha K. Sampaio",
+   "certification_date": "10/15/2023"
+  }
+ }
+}

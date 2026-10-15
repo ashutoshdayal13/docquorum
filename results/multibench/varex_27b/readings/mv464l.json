@@ -1,0 +1,125 @@
+{
+ "primary": {
+  "date": "05/20/2024",
+  "facility_identification_number": "NY-DMV-2024-123456789",
+  "title_clerk_name": "Rebeca Z. Walter",
+  "fax_number": "(681)134-1086",
+  "email": "rwalter@simpsonriley.com",
+  "business_name": "Simpson-Riley",
+  "total_registration_plates": 10,
+  "total_registration_plates_cost": 95.38,
+  "total_permits": 5,
+  "total_permits_cost": 7114.09,
+  "amount_enclosed": 7209,
+  "check_number": "CHK-2024-001",
+  "title": "Child psychotherapist",
+  "address": {
+   "street": "036 Kennedy Isle Suite 729",
+   "city": "Perryshire",
+   "state": "TX",
+   "zip_code": "17828"
+  },
+  "registration_plates_requested": [
+   {
+    "quantity": 5
+   },
+   {
+    "quantity": 5
+   },
+   {
+    "quantity": 4
+   },
+   {
+    "quantity": 4
+   },
+   {
+    "quantity": 4
+   },
+   {
+    "quantity": 3
+   }
+  ]
+ },
+ "parse": {
+  "date": "05/20/2024",
+  "facility_identification_number": "NY-DMV-2024-123456789",
+  "title_clerk_name": "Rebeca Z. Walter",
+  "fax_number": "(681) 134-1086",
+  "email": "rwalter@simpsonriley.com",
+  "business_name": "Simpson-Riley",
+  "total_registration_plates": 10,
+  "total_registration_plates_cost": 95.38,
+  "total_permits": 5,
+  "total_permits_cost": 7114.09,
+  "amount_enclosed": 7209.0,
+  "check_number": "CHK-2024-001",
+  "title": "Child psychotherapist",
+  "address": {
+   "street": "036 Kennedy Isle Suite 729",
+   "city": "Perryshire",
+   "state": "TX",
+   "zip_code": "17828"
+  },
+  "registration_plates_requested": [
+   {
+    "quantity": 5
+   },
+   {
+    "quantity": 5
+   },
+   {
+    "quantity": 4
+   },
+   {
+    "quantity": 4
+   },
+   {
+    "quantity": 4
+   },
+   {
+    "quantity": 3
+   }
+  ]
+ },
+ "oneshot": {
+  "date": "05/20/2024",
+  "facility_identification_number": "NY-DMV-2024-123456789",
+  "title_clerk_name": "Rebeca Z. Walter",
+  "fax_number": "(681)134-1086",
+  "email": "rwalter@simpsonriley.com",
+  "business_name": "Simpson-Riley",
+  "total_registration_plates": 10,
+  "total_registration_plates_cost": 95.38,
+  "total_permits": 5,
+  "total_permits_cost": 7114.09,
+  "amount_enclosed": 7209,
+  "check_number": "CHK-2024-001",
+  "title": "Child psychotherapist",
+  "address": {
+   "street": "036 Kennedy Isle Suite 729",
+   "city": "Perryshire",
+   "state": "TX",
+   "zip_code": "17828"
+  },
+  "registration_plates_requested": [
+   {
+    "quantity": 5
+   },
+   {
+    "quantity": 5
+   },
+   {
+    "quantity": 4
+   },
+   {
+    "quantity": 4
+   },
+   {
+    "quantity": 4
+   },
+   {
+    "quantity": 3
+   }
+  ]
+ }
+}

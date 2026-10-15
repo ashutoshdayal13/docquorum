@@ -1,0 +1,22 @@
+{
+ "applicant_first_name": "Frederique",
+ "applicant_middle_name": "W.",
+ "applicant_last_name": "Mukherjee",
+ "applicant_email": "frederique.mukherjee@hotmail.com",
+ "applicant_phone_number": "(346) 222-5077",
+ "vehicle_vIN": "1G1ZT54898F123456",
+ "vehicle_current_tx_plate": "ABC1234",
+ "vehicle_make": "Toyota",
+ "vehicle_body_style": "Sedan",
+ "applicant_signature_date": "10/15/2023",
+ "certifying_officer_date": "10/15/2023",
+ "unit": "1st Battalion, 141st Infantry",
+ "rank": "Sergeant",
+ "applicant_address": {
+  "street": "6250 Mark Valley",
+  "city": "Michealbur",
+  "state": "CA",
+  "zip_code": "7149",
+  "county": "San Joaquin"
+ }
+}

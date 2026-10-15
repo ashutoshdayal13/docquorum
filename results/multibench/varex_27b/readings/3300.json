@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "ticket_number": "DPM-2025-25570",
+  "applicant": {
+   "first_name": "Cynthia",
+   "last_name": "Krish",
+   "h_id_or_cid": "HUD12345678",
+   "pin": "1234",
+   "job_title": "Broadcast journalist",
+   "organization_name": "Ochoa, Carter and Smith",
+   "location": "South Zacharyside, FL",
+   "office_phone": "(061) 566-6410",
+   "office_email": "ckrish@ochoa.com"
+  },
+  "supervisor": {
+   "supervisor_name": "Kevin Scibior",
+   "supervisor_phone": "(644) 330-9217",
+   "supervisor_email": "kscibior@wongtaylor.com"
+  }
+ },
+ "parse": {
+  "ticket_number": "DPM-2025-25570",
+  "applicant": {
+   "first_name": "Cynthia",
+   "last_name": "Krish",
+   "h_id_or_cid": "HUD12345678",
+   "pin": "1234",
+   "job_title": "Broadcast journalist",
+   "organization_name": "Ochoa, Carter and Smith",
+   "location": "South Zacharyside, FL",
+   "office_phone": "(061) 566-6410",
+   "office_email": "ckrish@ochoa.com"
+  },
+  "supervisor": {
+   "supervisor_name": "Kevin Scibior",
+   "supervisor_phone": "(644) 330-9217",
+   "supervisor_email": "kscibior@wongtaylor.com"
+  }
+ },
+ "oneshot": {
+  "ticket_number": "DPM-2025-25570",
+  "applicant": {
+   "first_name": "Cynthia",
+   "last_name": "Krish",
+   "h_id_or_cid": "HUD12345678",
+   "pin": "1234",
+   "job_title": "Broadcast journalist",
+   "organization_name": "Ochoa, Carter and Smith",
+   "location": "South Zacharyside, FL",
+   "office_phone": "(061) 566-6410",
+   "office_email": "ckrish@ochoa.com"
+  },
+  "supervisor": {
+   "supervisor_name": "Kevin Scibior",
+   "supervisor_phone": "(644) 330-9217",
+   "supervisor_email": "kscibior@wongtaylor.com"
+  }
+ }
+}

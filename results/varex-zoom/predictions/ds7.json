@@ -1,0 +1,24 @@
+{
+ "driver_last_name": "Dawson",
+ "driver_first_name": "Philip",
+ "driver_date_of_birth": "10/07/1967",
+ "vehicle_make": "Toyota Camry",
+ "vehicle_color": "Silver",
+ "license_plate_number": "ABC1234",
+ "reporter_name": "Lisa T. Guzman",
+ "reporter_date_of_birth": "12/13/1963",
+ "reporter_client_id": "CPA-2012",
+ "reporter_phone_number": "(794) 295-1436",
+ "reporter_relationship": "Other (explain) Concerned citizen",
+ "report_reason": "Driver appears to have difficulty staying in lane and reacting to traffic signals",
+ "driver_address": {
+  "street": "77604 Jones Expressway",
+  "city": "Barnesburgh",
+  "zip_code": "48034"
+ },
+ "reporter_address": {
+  "street": "36228 Franklin Spring Suite 565",
+  "city": "West Christineport",
+  "zip_code": "29546"
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "coal_miner_name": "Samuel Shaffer",
+  "beneficiary_name": "Christina Brito",
+  "requester_name": "Matthew I. Wolfe",
+  "requester_identifier": "009-80-4918",
+  "relationship_to_beneficiary": "Christina Brito is the spouse of Samuel Shaffer, the coal miner, and I am a family friend assisting with the benefits process.",
+  "payment_reason": "To ensure timely and proper distribution of Black Lung benefits to the rightful beneficiary.",
+  "felony_conviction": "No, the requester has not been convicted of a felony.",
+  "dol_case_id_coal_miner": "DOL-2023-59483",
+  "dol_case_id_beneficiary": "DOL-2023-59484",
+  "bank_details": {
+   "account_type": "Checking",
+   "routing_number": "051000017",
+   "account_number": "9739-5063-5761"
+  }
+ },
+ "parse": {
+  "coal_miner_name": "Samuel Shaffer",
+  "beneficiary_name": "Christina Brito",
+  "requester_name": "Matthew I. Wolfe",
+  "requester_identifier": "009-80-4918",
+  "relationship_to_beneficiary": "Christina Brito is the spouse of Samuel Shaffer, the coal miner, and I am a family friend assisting with the benefits process.",
+  "payment_reason": "To ensure timely and proper distribution of Black Lung benefits to the rightful beneficiary.",
+  "felony_conviction": "No, the requester has not been convicted of a felony.",
+  "dol_case_id_coal_miner": "DOL-2023-59483",
+  "dol_case_id_beneficiary": "DOL-2023-59484",
+  "bank_details": {
+   "account_type": "Checking",
+   "routing_number": "051000017",
+   "account_number": "9739-5063-5761"
+  }
+ },
+ "oneshot": {
+  "coal_miner_name": "Samuel Shaffer",
+  "beneficiary_name": "Christina Brito",
+  "requester_name": "Matthew I. Wolfe",
+  "requester_identifier": "009-80-4918",
+  "relationship_to_beneficiary": "Christina Brito is the spouse of Samuel Shaffer, the coal miner, and I am a family friend assisting with the benefits process.",
+  "payment_reason": "To ensure timely and proper distribution of Black Lung benefits to the rightful beneficiary.",
+  "felony_conviction": "No, the requester has not been convicted of a felony.",
+  "dol_case_id_coal_miner": "DOL-2023-59483",
+  "dol_case_id_beneficiary": "DOL-2023-59484",
+  "bank_details": {
+   "account_type": "Checking",
+   "routing_number": "051000017",
+   "account_number": "9739-5063-5761"
+  }
+ }
+}

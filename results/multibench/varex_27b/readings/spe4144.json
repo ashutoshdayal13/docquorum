@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "requested_redemption_date": "12/15/2023",
+  "issuer": {
+   "name": "Bowman, Houston and Dennis",
+   "address": "8302 Michael Way, Lake Amy, OH 19957"
+  },
+  "trustee_bank": {
+   "name": "National City Bank",
+   "address": "123 Main Street, Columbus, OH 43215"
+  },
+  "signature_details": {
+   "signer_name": "Todd Hernandez",
+   "signer_title": "Psychotherapist",
+   "signature_date": "12/15/2023"
+  }
+ },
+ "parse": {
+  "requested_redemption_date": "12/15/2023",
+  "issuer": {
+   "name": "Bowman, Houston and Dennis",
+   "address": "8302 Michael Way, Lake Amy, OH 19957"
+  },
+  "trustee_bank": {
+   "name": "National City Bank",
+   "address": "123 Main Street, Columbus, OH 43215"
+  },
+  "signature_details": {
+   "signer_name": "Todd Hernandez",
+   "signer_title": "Psychotherapist",
+   "signature_date": "12/15/2023"
+  }
+ },
+ "oneshot": {
+  "requested_redemption_date": "12/15/2023",
+  "issuer": {
+   "name": "Bowman, Houston and Dennis",
+   "address": "8302 Michael Way, Lake Amy, OH 19957"
+  },
+  "trustee_bank": {
+   "name": "National City Bank",
+   "address": "123 Main Street, Columbus, OH 43215"
+  },
+  "signature_details": {
+   "signer_name": "Todd Hernandez",
+   "signer_title": "Psychotherapist",
+   "signature_date": "12/15/2023"
+  }
+ }
+}

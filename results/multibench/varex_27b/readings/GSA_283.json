@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "building_name": "Federal Office Building",
+  "work_description": "Replace HVAC unit in office space",
+  "prepared_by": "Jason P. Echeverria",
+  "preparation_date": "03/15/2023",
+  "location_details": {
+   "floor_number": "3",
+   "corridor_number": "A",
+   "stair_number": "B",
+   "room_number": "302"
+  }
+ },
+ "parse": {
+  "building_name": "Federal Office Building",
+  "work_description": "Replace HVAC unit in office space",
+  "prepared_by": "Jason P. Echeverria",
+  "preparation_date": "03/15/2023",
+  "location_details": {
+   "floor_number": "3",
+   "corridor_number": "A",
+   "stair_number": "B",
+   "room_number": "302"
+  }
+ },
+ "oneshot": {
+  "building_name": "Federal Office Building",
+  "work_description": "Replace HVAC unit in office space",
+  "prepared_by": "Jason P. Echeverria",
+  "preparation_date": "03/15/2023",
+  "location_details": {
+   "floor_number": "3",
+   "corridor_number": "A",
+   "stair_number": "B",
+   "room_number": "302"
+  }
+ }
+}

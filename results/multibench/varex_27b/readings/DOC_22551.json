@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "incident_date": "10/15/2023",
+  "incident_time": "14:30",
+  "reporting_office": "Department of Housing, Boston",
+  "incident_type": "Injury",
+  "incident_description": "Employee fell from a ladder while performing maintenance on a light fixture.",
+  "incident_location": "Main Office Building, 3rd",
+  "assigned_duties": "Yes, performing assigned",
+  "unsafe_act": "No, followed safety",
+  "damaged_equipment": "Ladder and light fixture",
+  "corrective_action": "Replaced damaged ladder and light fixture, reinforced safety protocols.",
+  "supervisor_recommendations": "Implement mandatory safety training for all",
+  "safety_representative_comments": "Agree with supervisor's recommendations,",
+  "supervisor_signature_date": "10/15/2023",
+  "safety_representative_signature_date": "10/16/2023"
+ },
+ "parse": {
+  "incident_date": "10/15/2023",
+  "incident_time": "14:30",
+  "reporting_office": "Department of Housing, Boston",
+  "incident_type": "Injury",
+  "incident_description": "Employee fell from a ladder while performing maintenance on a light fixture.",
+  "incident_location": "Main Office Building, 3rd",
+  "assigned_duties": "Yes, performing assigned",
+  "unsafe_act": "No, followed safety",
+  "damaged_equipment": "Ladder and light fixture",
+  "corrective_action": "Replaced damaged ladder and light fixture, reinforced safety protocols.",
+  "supervisor_recommendations": "Implement mandatory safety training for all",
+  "safety_representative_comments": "Agree with supervisor's recommendations,",
+  "supervisor_signature_date": "10/15/2023",
+  "safety_representative_signature_date": "10/16/2023"
+ },
+ "oneshot": {
+  "incident_date": "10/15/2023",
+  "incident_time": "14:30",
+  "reporting_office": "Department of Housing, Boston",
+  "incident_type": "Injury",
+  "incident_description": "Employee fell from a ladder while performing maintenance on a light fixture.",
+  "incident_location": "Main Office Building, 3rd",
+  "assigned_duties": "Yes, performing assigned",
+  "unsafe_act": "No, followed safety",
+  "damaged_equipment": "Ladder and light fixture",
+  "corrective_action": "Replaced damaged ladder and light fixture, reinforced safety protocols.",
+  "supervisor_recommendations": "Implement mandatory safety training for all",
+  "safety_representative_comments": "Agree with supervisor's recommendations,",
+  "supervisor_signature_date": "10/15/2023",
+  "safety_representative_signature_date": "10/16/2023"
+ }
+}

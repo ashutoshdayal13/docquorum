@@ -1,0 +1,14 @@
+{
+ "nature_and_duration_of_complaints": "Patient reports severe headaches and dizziness for the past 3 days, following a car accident.",
+ "history_of_present_illnesses": "Patient has a history of migraines and was recently involved in a minor car accident.",
+ "department_service": "Neurology Department",
+ "hospital_or_medical_facility": "General Hospital",
+ "records_maintained_at": "Central Medical Records",
+ "ward_number": "A12",
+ "sponsor": {
+  "relationship_to_sponsor": "Spouse",
+  "sponsor_name_last": "Bell",
+  "sponsor_name_first": "Barbara",
+  "sponsor_id_number": "215-55-8633"
+ }
+}

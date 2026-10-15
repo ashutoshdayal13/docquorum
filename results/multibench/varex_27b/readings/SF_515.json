@@ -1,0 +1,95 @@
+{
+ "primary": {
+  "specimen_submitted_by": "Haley K. Pacheco",
+  "specimen": "Skin biopsy from right forearm",
+  "brief_clinical_history": "Patient presented with a growing lesion on right forearm for 2 months",
+  "preoperative_diagnosis": "Suspected basal cell carcinoma",
+  "operative_findings": "Excisional biopsy of right forearm lesion",
+  "postoperative_diagnosis": "Basal cell carcinoma confirmed",
+  "name_of_laboratory": "Young PLC Pathology Lab",
+  "accession_number": "DPM-2022-38870",
+  "gross_description": "Pinkish nodule, 0.8 cm in diameter",
+  "hospital_or_medical_facility": "Burton LLC Medical Center",
+  "records_maintained_at": "Lake Thomas, SC",
+  "department_service_of_patient": "Dermatology",
+  "signer_info": {
+   "name": "Haley K. Pacheco",
+   "title": "Financial trader"
+  },
+  "pathologist_info": {
+   "name": "Dr. Ronald I. Deol"
+  },
+  "sponsor_info": {
+   "name": "Haley K. Pacheco",
+   "id_number": "877-17-6420",
+   "relation_to_patient": "Patient's spouse"
+  },
+  "patient_info": {
+   "identification": "Haley K. Pacheco, 7372 Strickland Vista Apt. 449, Lake Thomas,",
+   "register_number": "DPM-2022-38870",
+   "ward_number": "A12"
+  }
+ },
+ "parse": {
+  "specimen_submitted_by": "Haley K. Pacheco",
+  "specimen": "Skin biopsy from right forearm",
+  "brief_clinical_history": "Patient presented with a growing lesion on right forearm for 2 months",
+  "preoperative_diagnosis": "Suspected basal cell carcinoma",
+  "operative_findings": "Excisional biopsy of right forearm lesion",
+  "postoperative_diagnosis": "Basal cell carcinoma confirmed",
+  "name_of_laboratory": "Young PLC Pathology Lab",
+  "accession_number": "DPM-2022-38870",
+  "gross_description": "Pinkish nodule, 0.8 cm in diameter",
+  "hospital_or_medical_facility": "Burton LLC Medical Center",
+  "records_maintained_at": "Lake Thomas, SC",
+  "department_service_of_patient": "Dermatology",
+  "signer_info": {
+   "name": "Haley K. Pacheco",
+   "title": "Financial trader"
+  },
+  "pathologist_info": {
+   "name": "Dr. Ronald I. Deol"
+  },
+  "sponsor_info": {
+   "name": "Haley K. Pacheco",
+   "id_number": "877-17-6420",
+   "relation_to_patient": "Patient's spouse"
+  },
+  "patient_info": {
+   "identification": "Haley K. Pacheco, 7372 Strickland Vista Apt. 449, Lake Thomas,",
+   "register_number": "DPM-2022-38870",
+   "ward_number": "A12"
+  }
+ },
+ "oneshot": {
+  "specimen_submitted_by": "Haley K. Pacheco",
+  "specimen": "Skin biopsy from right forearm",
+  "brief_clinical_history": "Patient presented with a growing lesion on right forearm for 2 months",
+  "preoperative_diagnosis": "Suspected basal cell carcinoma",
+  "operative_findings": "Excisional biopsy of right forearm lesion",
+  "postoperative_diagnosis": "Basal cell carcinoma confirmed",
+  "name_of_laboratory": "Young PLC Pathology Lab",
+  "accession_number": "DPM-2022-38870",
+  "gross_description": "Pinkish nodule, 0.8 cm in diameter",
+  "hospital_or_medical_facility": "Burton LLC Medical Center",
+  "records_maintained_at": "Lake Thomas, SC",
+  "department_service_of_patient": "Dermatology",
+  "signer_info": {
+   "name": "Haley K. Pacheco",
+   "title": "Financial trader"
+  },
+  "pathologist_info": {
+   "name": "Dr. Ronald I. Deol"
+  },
+  "sponsor_info": {
+   "name": "Haley K. Pacheco",
+   "id_number": "877-17-6420",
+   "relation_to_patient": "Patient's spouse"
+  },
+  "patient_info": {
+   "identification": "Haley K. Pacheco, 7372 Strickland Vista Apt. 449, Lake Thomas,",
+   "register_number": "DPM-2022-38870",
+   "ward_number": "A12"
+  }
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "date": "05/15/2023",
+ "employer": {
+  "name": "Wilson, Murphy and Tate"
+ },
+ "employee": {
+  "name": "Janet Y. King"
+ },
+ "leave_details": {
+  "start_date": "06/01/2023"
+ },
+ "fmla_representative": {
+  "name": "Eloy R. Mullins",
+  "contact_information": "emullins@riddle.com"
+ }
+}

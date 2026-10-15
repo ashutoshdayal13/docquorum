@@ -1,0 +1,91 @@
+{
+ "primary": {
+  "vehicle_information": {
+   "vehicle_identifier": "VH1001",
+   "year": 2018,
+   "make": "Toyota",
+   "model": "Camry",
+   "vin": "JT2BF22K5JC004557"
+  },
+  "mechanic_customer_information": {
+   "mechanic_name": "Phillips-Fletcher Auto Repair",
+   "mechanic_address": "526 William Ways Suite 876",
+   "customer_name": "Kevin F. Hoffman",
+   "customer_address": "526 William Ways Suite 876"
+  },
+  "foreclosure_public_sale_information": {
+   "foreclosure_date": "06/15/2023",
+   "sale_date": "07/01/2023",
+   "sale_location": "Auction House, Thomasport, WI"
+  },
+  "purchaser_information": {
+   "purchaser_name": "John Doe",
+   "purchaser_address": "123 Main Street"
+  },
+  "odometer_disclosure_statement": {
+   "odometer_disclosure_date": "05/01/2023"
+  },
+  "affidavit_of_statutory_lienholder": {
+   "lienholder_name": "Bank of Thomasport"
+  }
+ },
+ "parse": {
+  "vehicle_information": {
+   "vehicle_identifier": "JT2BF22K5JC004557",
+   "year": 2018,
+   "make": "Toyota",
+   "model": "Camry",
+   "vin": "VH1001"
+  },
+  "mechanic_customer_information": {
+   "mechanic_name": "Phillips-Fletcher Auto Repair",
+   "mechanic_address": "526 William Ways Suite 876",
+   "customer_name": "Kevin F. Hoffman",
+   "customer_address": "526 William Ways Suite 876"
+  },
+  "foreclosure_public_sale_information": {
+   "foreclosure_date": "06/15/2023",
+   "sale_date": "07/01/2023",
+   "sale_location": "Auction House, Thomasport, WI"
+  },
+  "purchaser_information": {
+   "purchaser_name": "John Doe",
+   "purchaser_address": "123 Main Street"
+  },
+  "odometer_disclosure_statement": {
+   "odometer_disclosure_date": "05/01/2023"
+  },
+  "affidavit_of_statutory_lienholder": {
+   "lienholder_name": "Bank of Thomasport"
+  }
+ },
+ "oneshot": {
+  "vehicle_information": {
+   "vehicle_identifier": "VH1001",
+   "year": 2018,
+   "make": "Toyota",
+   "model": "Camry",
+   "vin": "JT2BF22K5JC004557"
+  },
+  "mechanic_customer_information": {
+   "mechanic_name": "Phillips-Fletcher Auto Repair",
+   "mechanic_address": "526 William Ways Suite 876",
+   "customer_name": "Kevin F. Hoffman",
+   "customer_address": "526 William Ways Suite 876"
+  },
+  "foreclosure_public_sale_information": {
+   "sale_date": "07/01/2023",
+   "sale_location": "Auction House, Thomasport, WI"
+  },
+  "purchaser_information": {
+   "purchaser_name": "John Doe",
+   "purchaser_address": "123 Main Street"
+  },
+  "odometer_disclosure_statement": {
+   "odometer_disclosure_date": "05/01/2023"
+  },
+  "affidavit_of_statutory_lienholder": {
+   "lienholder_name": "Bank of Thomasport"
+  }
+ }
+}

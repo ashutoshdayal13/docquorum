@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "employee_name": "Delahaye, Hanna E.",
+  "employee_ssn": "192443123",
+  "employee_home_address": "89025 Ariana Track, Susanmouth, VA 61485",
+  "federal_agency": "U.S. Department of the Interior",
+  "state_local_government": "Virginia Department of Conservation",
+  "faculty_fellows_program": "Intergovernmental Personnel Act Mobility Program",
+  "current_position": {
+   "position_title": "Environmental",
+   "department": "Bureau of Land Management"
+  },
+  "assignment_position": {
+   "position_title": "Chief, Conservation",
+   "department": "Virginia Department of Conservation"
+  }
+ },
+ "parse": {
+  "employee_name": "Delahaye, Hanna E.",
+  "employee_ssn": "192443123",
+  "employee_home_address": "89025 Ariana Track, Susanmouth, VA 61485",
+  "federal_agency": "U.S. Department of the Interior",
+  "state_local_government": "Virginia Department of Conservation",
+  "faculty_fellows_program": "Intergovernmental Personnel Act Mobility Program",
+  "current_position": {
+   "position_title": "Environmental",
+   "department": "Bureau of Land Management"
+  },
+  "assignment_position": {
+   "position_title": "Chief, Conservation",
+   "department": "Virginia Department of Conservation"
+  }
+ },
+ "oneshot": {
+  "employee_name": "Delahaye, Hanna E.",
+  "employee_ssn": "192443123",
+  "employee_home_address": "89025 Ariana Track, Susanmouth, VA 61485",
+  "federal_agency": "U.S. Department of the Interior",
+  "state_local_government": "Virginia Department of Conservation",
+  "faculty_fellows_program": "Intergovernmental Personnel Act Mobility Program",
+  "current_position": {
+   "position_title": "Environmental",
+   "department": "Bureau of Land Management"
+  },
+  "assignment_position": {
+   "position_title": "Chief, Conservation",
+   "department": "Virginia Department of Conservation"
+  }
+ }
+}

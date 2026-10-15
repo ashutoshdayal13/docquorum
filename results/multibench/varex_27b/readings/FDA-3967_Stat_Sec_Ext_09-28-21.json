@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "data_collection": {
+   "collection_date": "09/28/2021",
+   "collected_by": "Amanda H. Rege, Williams PLC"
+  },
+  "establishment_information": {
+   "establishment_name": "Fresh Delights Deli & Grocery",
+   "address": "1234 Maple Street, Suite 101",
+   "city": "Port Richard",
+   "zip_code": "73720"
+  },
+  "regulatory_authority": {
+   "authority_name": "Tennessee Department of Health"
+  }
+ },
+ "parse": {
+  "data_collection": {
+   "collection_date": "09/28/2021",
+   "collected_by": "Amanda H. Rege, Williams PLC"
+  },
+  "establishment_information": {
+   "establishment_name": "Fresh Delights Deli & Grocery",
+   "address": "1234 Maple Street, Suite 101",
+   "city": "Port Richard",
+   "zip_code": "73720"
+  },
+  "regulatory_authority": {
+   "authority_name": "Tennessee Department of Health"
+  }
+ },
+ "oneshot": {
+  "data_collection": {
+   "collection_date": "09/28/2021",
+   "collected_by": "Amanda H. Rege, Williams PLC"
+  },
+  "establishment_information": {
+   "establishment_name": "Fresh Delights Deli & Grocery",
+   "address": "1234 Maple Street, Suite 101",
+   "city": "Port Richard",
+   "zip_code": "73720"
+  },
+  "regulatory_authority": {
+   "authority_name": "Tennessee Department of Health"
+  }
+ }
+}

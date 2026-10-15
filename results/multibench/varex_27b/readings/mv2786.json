@@ -1,0 +1,98 @@
+{
+ "primary": {
+  "driving_school": {
+   "name": "Steele's Safe Driving Academy"
+  },
+  "authorized_official": {
+   "name": "Damon O. Steele",
+   "title": "Chartered certified accountant",
+   "date": "06/28/2023"
+  },
+  "authorized_individuals": [
+   {
+    "name": "Esparta U. Bishop",
+    "title": "Forensic scientist"
+   },
+   {
+    "name": "Stephen A. Lee",
+    "title": "Textile designer"
+   },
+   {
+    "name": "Michael J. Johnson",
+    "title": "Driving Instructor"
+   },
+   {
+    "name": "Sarah L. Williams",
+    "title": "Driving Instructor"
+   },
+   {
+    "name": "Robert T. Smith",
+    "title": "Driving Instructor"
+   }
+  ]
+ },
+ "parse": {
+  "driving_school": {
+   "name": "Steele's Safe Driving Academy"
+  },
+  "authorized_official": {
+   "name": "Damon O. Steele",
+   "title": "Chartered certified accountant",
+   "date": "06/28/2023"
+  },
+  "authorized_individuals": [
+   {
+    "name": "Esparta U. Bishop",
+    "title": "Forensic scientist"
+   },
+   {
+    "name": "Stephen A. Lee",
+    "title": "Textile designer"
+   },
+   {
+    "name": "Michael J. Johnson",
+    "title": "Driving Instructor"
+   },
+   {
+    "name": "Sarah L. Williams",
+    "title": "Driving Instructor"
+   },
+   {
+    "name": "Robert T. Smith",
+    "title": "Driving Instructor"
+   }
+  ]
+ },
+ "oneshot": {
+  "driving_school": {
+   "name": "Steele's Safe Driving Academy"
+  },
+  "authorized_official": {
+   "name": "Damon O. Steele",
+   "title": "Chartered certified accountant",
+   "date": "06/28/2023"
+  },
+  "authorized_individuals": [
+   {
+    "name": "Esparta U. Bishop",
+    "title": "Forensic scientist"
+   },
+   {
+    "name": "Stephen A. Lee",
+    "title": "Textile designer"
+   },
+   {
+    "name": "Michael J. Johnson",
+    "title": "Driving Instructor"
+   },
+   {
+    "name": "Sarah L. Williams",
+    "title": "Driving Instructor"
+   },
+   {
+    "name": "Robert T. Smith",
+    "title": "Driving Instructor"
+   }
+  ]
+ }
+}

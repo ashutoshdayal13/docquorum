@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "security_descriptions": [
+   "Treasury Bond 3.5% 2035",
+   "Treasury Note 2.25% 2028",
+   "Treasury Bill 1.75% 2025",
+   "Treasury Inflation-Prote"
+  ],
+  "disclaimer_name": "Roland Morrow",
+  "disclaimer_address": "767 Smith Crossroad Apt. 124, Geraldton, VA 42794",
+  "disclaimer_reason": "Transfer of securities to new beneficiary due to inheritance settlement.",
+  "signer_name": "Roland Morrow",
+  "signer_ssn": "525-14-7103",
+  "signer_phone": "(484) 632-7255",
+  "signer_email": "roland.morrow@yahoo.com",
+  "signer_address": {
+   "street": "767 Smith Crossroad Apt. 124",
+   "city": "Geraldton",
+   "state": "VA",
+   "zip": "42794"
+  }
+ },
+ "parse": {
+  "security_descriptions": [
+   "Treasury Bond 3.5% 2035",
+   "Treasury Note 2.25% 2028",
+   "Treasury Bill 1.75% 2025",
+   "Treasury Inflation-Prote"
+  ],
+  "disclaimer_name": "Roland Morrow",
+  "disclaimer_address": "767 Smith Crossroad Apt. 124, Geraldton, VA 42794",
+  "disclaimer_reason": "Transfer of securities to new beneficiary due to inheritance settlement.",
+  "signer_name": "Roland Morrow",
+  "signer_ssn": "525-14-7103",
+  "signer_phone": "(484) 632-7255",
+  "signer_email": "roland.morrow@yahoo.com",
+  "signer_address": {
+   "street": "767 Smith Crossroad Apt. 124",
+   "city": "Geraldton",
+   "state": "VA",
+   "zip": "42794"
+  }
+ },
+ "oneshot": {
+  "security_descriptions": [
+   "Treasury Bond 3.5% 2035",
+   "Treasury Note 2.25% 2028",
+   "Treasury Bill 1.75% 2025",
+   "Treasury Inflation-Prote"
+  ],
+  "disclaimer_name": "Roland Morrow",
+  "disclaimer_address": "767 Smith Crossroad Apt. 124, Geraldton, VA 42794",
+  "disclaimer_reason": "Transfer of securities to new beneficiary due to inheritance settlement.",
+  "signer_name": "Roland Morrow",
+  "signer_ssn": "525-14-7103",
+  "signer_phone": "(484) 632-7255",
+  "signer_email": "roland.morrow@yahoo.com",
+  "signer_address": {
+   "street": "767 Smith Crossroad Apt. 124",
+   "city": "Geraldton",
+   "state": "VA",
+   "zip": "42794"
+  }
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "applicant_name": "Rebecca X. Cochran",
+  "financial_institution": {
+   "name": "Chavez-Durham Financial Services",
+   "address": "20749 Joseph Parkway, Jenniferberg, TN 02107"
+  },
+  "employment_details": {
+   "department": "Financial Planning and Analysis",
+   "start_date": "03/11/2010"
+  },
+  "employment_verification": [
+   {
+    "verifier_name": "Henry C. Matthews",
+    "verifier_position": "Trading Standards Officer",
+    "verification_date": "05/15/2023"
+   }
+  ],
+  "supervisor_details": {
+   "supervisor_name": "Daniel E. Reynaud"
+  }
+ },
+ "parse": {
+  "applicant_name": "Rebecca X. Cochran",
+  "financial_institution": {
+   "name": "Chavez-Durham Financial Services",
+   "address": "20749 Joseph Parkway, Jenniferberg, TN 02107"
+  },
+  "employment_details": {
+   "department": "Financial Planning and Analysis",
+   "start_date": "03/11/2010"
+  },
+  "employment_verification": [
+   {
+    "verifier_name": "Henry C. Matthews",
+    "verifier_position": "Trading Standards Officer",
+    "verification_date": "05/15/2023"
+   }
+  ],
+  "supervisor_details": {
+   "supervisor_name": "Daniel E. Reynaud"
+  }
+ },
+ "oneshot": {
+  "applicant_name": "Rebecca X. Cochran",
+  "financial_institution": {
+   "name": "Chavez-Durham Financial Services",
+   "address": "20749 Joseph Parkway, Jenniferberg, TN 02107"
+  },
+  "employment_details": {
+   "department": "Financial Planning and Analysis",
+   "start_date": "03/11/2010"
+  },
+  "employment_verification": [
+   {
+    "verifier_name": "Henry C. Matthews",
+    "verifier_position": "Trading Standards Officer",
+    "verification_date": "05/15/2023"
+   }
+  ],
+  "supervisor_details": {
+   "supervisor_name": "Daniel E. Reynaud"
+  }
+ }
+}

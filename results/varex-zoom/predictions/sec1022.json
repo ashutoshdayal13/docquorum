@@ -1,0 +1,43 @@
+{
+ "customer_name": "Jones PLC",
+ "case_number": "RFQ-2021-172",
+ "taxpayer_identification_number": "23-5227962",
+ "applicant_name": "John F. Wyrwich",
+ "applicant_title": "Water quality scientist",
+ "organization_name": "Jones PLC",
+ "organization_type": "corporation",
+ "acquirer_name": "Sandra G. Fraszczyk",
+ "reimbursement_details": "Loss of securities due to unexpected natural disaster",
+ "payee_name": "John Q. Stanley",
+ "organization_address": {
+  "street": "87875 Dillon Ways"
+ },
+ "acquirer_address": {
+  "street": "39955 Ashley Estates"
+ },
+ "payee_address": {
+  "street": "50128 Geoffrey Trafficway"
+ },
+ "securities": [
+  {
+   "security_name": "U.S. Treasury Bond",
+   "security_number": "A1234567890123456"
+  },
+  {
+   "security_name": "U.S. Savings Bond Series I",
+   "security_number": "B9876543210987654"
+  },
+  {
+   "security_name": "U.S. Savings Bond Series EE",
+   "security_number": "C55555555555555555"
+  },
+  {
+   "security_name": "Treasury Inflation-Protected Securities",
+   "security_number": "D4444444444444444"
+  },
+  {
+   "security_name": "U.S. Treasury Note",
+   "security_number": "E7777777777777777"
+  }
+ ]
+}

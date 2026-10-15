@@ -1,0 +1,17 @@
+{
+ "primary": {
+  "driving_school_name": "SafeWheels Driving Academy",
+  "instructor_applicant_name": "Kevin Y. Owen",
+  "driver_license_id": "RA-2023-ND-38709"
+ },
+ "parse": {
+  "driving_school_name": "SafeWheels Driving Academy",
+  "instructor_applicant_name": "Kevin Y. Owen",
+  "driver_license_id": "RA-2023-ND-38709"
+ },
+ "oneshot": {
+  "driving_school_name": "SafeWheels Driving Academy",
+  "instructor_applicant_name": "Kevin Y. Owen",
+  "driver_license_id": "RA-2023-ND-38709"
+ }
+}

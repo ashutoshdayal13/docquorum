@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "federal_employer_id_number": "123456789",
+  "nys_dot_number": "NYDOT1234567890123",
+  "us_dot_number": "USDOT12345678901234",
+  "legal_name": "Harris and Sons Transportation",
+  "assumed_name": "HST Inc",
+  "email_address": "hstinc@harris.com",
+  "mailing_address": {
+   "street": "831 Richard Court",
+   "city": "Donaldside",
+   "state": "ID",
+   "zip_code": "44171"
+  },
+  "physical_address": {
+   "street": "831 Richard Court, Warehouse 5",
+   "city": "Donaldside",
+   "state": "ID",
+   "zip_code": "44171"
+  },
+  "liaison_information": {
+   "name": "Dulce Maria da Rocha",
+   "email_address": "ddaro cha@harris.com"
+  },
+  "contact_representative": {
+   "name": "Ian C. Lefort",
+   "title": "Operations Manager",
+   "email_address": "ilefort@harris.com"
+  },
+  "authorized_representative": {
+   "name": "Anna Little",
+   "title": "Compliance Officer",
+   "email_address": "alittle@harris.com"
+  }
+ },
+ "parse": {
+  "federal_employer_id_number": "123456789",
+  "nys_dot_number": "NYDOT1234567890123",
+  "us_dot_number": "USDOT12345678901234",
+  "legal_name": "Harris and Sons Transportation",
+  "assumed_name": "HST Inc",
+  "email_address": "hstinc@harris.com",
+  "mailing_address": {
+   "street": "831 Richard Court",
+   "city": "Donaldside",
+   "state": "ID",
+   "zip_code": "44171"
+  },
+  "physical_address": {
+   "street": "831 Richard Court, Warehouse 5",
+   "city": "Donaldside",
+   "state": "ID",
+   "zip_code": "44171"
+  },
+  "liaison_information": {
+   "name": "Dulce Maria da Rocha",
+   "email_address": "ddarocha@harris.com"
+  },
+  "contact_representative": {
+   "name": "Ian C. Lefort",
+   "title": "Operations Manager",
+   "email_address": "ilefort@harris.com"
+  },
+  "authorized_representative": {
+   "name": "Anna Little",
+   "title": "Compliance Officer",
+   "email_address": "alittle@harris.com"
+  }
+ },
+ "oneshot": {}
+}

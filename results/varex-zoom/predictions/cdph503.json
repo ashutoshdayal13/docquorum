@@ -1,0 +1,19 @@
+{
+ "applicant_last_name": "Martinez",
+ "applicant_first_name": "Bethany",
+ "applicant_middle_initial": "P",
+ "ait_number": "AIT-2023-12345",
+ "cell_phone_number": "(325) 484-7343",
+ "home_phone_number": "(376) 216-6171",
+ "email_address": "bethany.martinez@aol.com",
+ "date_of_birth": "03/06/1990",
+ "mailing_address": {
+  "street": "897 Mata Walks Apt. 306",
+  "city": "Lake Jose",
+  "state": "MI",
+  "zip_code": "81922"
+ },
+ "exam_preferences": {
+  "exam_date": "06/20/2023"
+ }
+}

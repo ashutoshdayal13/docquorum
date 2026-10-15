@@ -1,0 +1,21 @@
+{
+ "project_name": "Sunny Meadows Residential Development",
+ "fha_number": "FHA-2023-0045",
+ "assignment_date": "05/15/2023",
+ "credit_instrument_date": "01/10/2020",
+ "credit_instrument_type": "Mortgage",
+ "credit_instrument_description": "A mortgage agreement for the Sunny Meadows Residential Development project.",
+ "lender_name": "Hamilton, Bullock and Riley",
+ "principal_amount": 855133.31,
+ "security_instrument_description": "Deed of Trust securing the mortgage for the Sunny Meadows Residential Development project.",
+ "amendments": "None",
+ "assignor": {
+  "name": "Michael E. Yadav",
+  "address": "477 Gibbs Pine, Wrightview, MD 97082"
+ },
+ "recording_details": {
+  "date": "01/15/2020",
+  "location": "County Recorder's Office, Wrightview, MD",
+  "reference": "REF-2020-00456"
+ }
+}

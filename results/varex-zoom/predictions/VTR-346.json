@@ -1,0 +1,13 @@
+{
+ "vehicle_identification_number": "1HGCM82633A129184",
+ "vehicle_make": "Ford",
+ "vehicle_body_style": "Sedan",
+ "vehicle_model": "Fusion",
+ "title_document_number": "TX1234567890",
+ "texas_license_plate_number": "ABC1234",
+ "date_of_transfer": "05/15/2023",
+ "transferor": {
+  "phone_number": "(083) 341-4761",
+  "email": "bryan.magnani@hotmail.com"
+ }
+}

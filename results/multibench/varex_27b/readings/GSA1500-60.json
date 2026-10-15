@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "nature_of_violation": "On 05/15/2023, at approximately 14:30, classified documents were left unattended in a common area for",
+  "document_security_officer": {
+   "title": "Senior Document Security Officer",
+   "date": "05/16/2023"
+  },
+  "violator": {
+   "name": "Imelda L. Calvillo",
+   "title_and_duty_station": "Pilot, Hill Inc, New Jersey Office",
+   "statement": "I left the documents unattended while fetching coffee. I apologize for the oversight.",
+   "date": "05/16/2023"
+  }
+ },
+ "parse": {
+  "nature_of_violation": "On 05/15/2023, at approximately 14:30, classified documents were left unattended in a common area for",
+  "document_security_officer": {
+   "title": "Senior Document Security Officer",
+   "date": "05/16/2023"
+  },
+  "violator": {
+   "name": "Imelda L. Calvillo",
+   "title_and_duty_station": "Pilot, Hill Inc, New Jersey Office",
+   "statement": "I left the documents unattended while fetching coffee. I apologize for the oversight.",
+   "date": "05/16/2023"
+  }
+ },
+ "oneshot": {
+  "nature_of_violation": "On 05/15/2023, at approximately 14:30, classified documents were left unattended in a common area for",
+  "document_security_officer": {
+   "title": "Senior Document Security Officer",
+   "date": "05/16/2023"
+  },
+  "violator": {
+   "name": "Imelda L. Calvillo",
+   "title_and_duty_station": "Pilot, Hill Inc, New Jersey Office",
+   "statement": "I left the documents unattended while fetching coffee. I apologize for the oversight.",
+   "date": "05/16/2023"
+  }
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "primary": {
+  "worker_name": "Luis J. Key",
+  "worker_ssn": "783-44-7148",
+  "other_names_used": [
+   "Luis James Key"
+  ],
+  "other_ssn_used": [
+   "123-45-6789"
+  ],
+  "applicant_details": {
+   "name": "Joaquim Wang",
+   "ssn": "496-87-3781",
+   "date_of_birth": "05/02/1995",
+   "place_of_birth": "Shelleymouth, GA",
+   "lawful_admission_date": "01/15/2010",
+   "full_name_at_birth": "Joaquim Chen Wang"
+  },
+  "language_preferences": {
+   "spoken": "English",
+   "written": "English"
+  }
+ },
+ "parse": {
+  "worker_name": "Luis J. Key",
+  "worker_ssn": "783-44-7148",
+  "other_names_used": [
+   "Luis James Key"
+  ],
+  "other_ssn_used": [
+   "123-45-6789"
+  ],
+  "applicant_details": {
+   "name": "Joaquim Wang",
+   "ssn": "496-87-3781",
+   "date_of_birth": "05/02/1995",
+   "place_of_birth": "Shelleymouth, GA",
+   "lawful_admission_date": "01/15/2010",
+   "full_name_at_birth": "Joaquim Chen Wang"
+  },
+  "language_preferences": {
+   "spoken": "English",
+   "written": "English"
+  }
+ },
+ "oneshot": {
+  "worker_name": "Luis J. Key",
+  "worker_ssn": "783-44-7148",
+  "other_names_used": [
+   "Luis James Key"
+  ],
+  "other_ssn_used": [
+   "123-45-6789"
+  ],
+  "applicant_details": {
+   "name": "Joaquim Wang",
+   "ssn": "496-87-3781",
+   "date_of_birth": "05/02/1995",
+   "place_of_birth": "Shelleymouth, GA",
+   "lawful_admission_date": "01/15/2010",
+   "full_name_at_birth": "Joaquim Chen Wang"
+  },
+  "language_preferences": {
+   "spoken": "English",
+   "written": "English"
+  }
+ }
+}

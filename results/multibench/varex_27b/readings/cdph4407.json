@@ -1,0 +1,74 @@
+{
+ "primary": {
+  "newborn_patient_name": "Emma Conner",
+  "newborn_patient_date_of_birth": "05/15/2023",
+  "hospital_of_birth": "St. Mary's Medical Center, San Francisco, CA",
+  "patient_address_at_time_of_birth": "91408 Christopher Field, Danielston, OR 23291",
+  "ship_attention_to": "Dr. Emily White",
+  "reason_for_request": "Follow-up genetic testing for familial genetic disorder",
+  "authorization_expiration_date": "11/15/2023",
+  "signature_date": "05/20/2023",
+  "mother_info": {
+   "mother_full_name": "Alexis A. Conner (née Martinez)",
+   "mother_date_of_birth": "04/02/1977"
+  },
+  "requestor_info": {
+   "requestor_name": "Dr. Emily White",
+   "requestor_phone": "(415) 555-1234",
+   "requestor_email": "emily.white@geneticlabs.com"
+  },
+  "facility_info": {
+   "facility_name_and_address": "Genetic Labs Inc., 1234 Science Park, San Francisco, CA 94103",
+   "facility_phone": "(415) 555-5678",
+   "facility_fax": "(415) 555-5679"
+  }
+ },
+ "parse": {
+  "newborn_patient_name": "Emma Conner",
+  "newborn_patient_date_of_birth": "05/15/2023",
+  "hospital_of_birth": "St. Mary's Medical Center, San Francisco, CA",
+  "patient_address_at_time_of_birth": "91408 Christopher Field, Danielston, OR 23291",
+  "ship_attention_to": "Dr. Emily White",
+  "reason_for_request": "Follow-up genetic testing for familial genetic disorder",
+  "authorization_expiration_date": "11/15/2023",
+  "signature_date": "05/20/2023",
+  "mother_info": {
+   "mother_full_name": "Alexis A. Conner (née Martinez)",
+   "mother_date_of_birth": "04/02/1977"
+  },
+  "requestor_info": {
+   "requestor_name": "Dr. Emily White",
+   "requestor_phone": "(415) 555-1234",
+   "requestor_email": "emily.white@geneticlabs.com"
+  },
+  "facility_info": {
+   "facility_name_and_address": "Genetic Labs Inc., 1234 Science Park, San Francisco, CA 94103",
+   "facility_phone": "(415) 555-5678",
+   "facility_fax": "(415) 555-5679"
+  }
+ },
+ "oneshot": {
+  "newborn_patient_name": "Emma Conner",
+  "newborn_patient_date_of_birth": "05/15/2023",
+  "hospital_of_birth": "St. Mary's Medical Center, San Francisco, CA",
+  "patient_address_at_time_of_birth": "91408 Christopher Field, Danielston, OR 23291",
+  "ship_attention_to": "Dr. Emily White",
+  "reason_for_request": "Follow-up genetic testing for familial genetic disorder",
+  "authorization_expiration_date": "11/15/2023",
+  "signature_date": "05/20/2023",
+  "mother_info": {
+   "mother_full_name": "Alexis A. Conner (née Martinez)",
+   "mother_date_of_birth": "04/02/1977"
+  },
+  "requestor_info": {
+   "requestor_name": "Dr. Emily White",
+   "requestor_phone": "(415) 555-1234",
+   "requestor_email": "emily.white@geneticlabs.com"
+  },
+  "facility_info": {
+   "facility_name_and_address": "Genetic Labs Inc., 1234 Science Park, San Francisco, CA 94103",
+   "facility_phone": "(415) 555-5678",
+   "facility_fax": "(415) 555-5679"
+  }
+ }
+}

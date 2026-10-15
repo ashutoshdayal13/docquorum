@@ -1,0 +1,17 @@
+{
+ "primary": {
+  "date_appeals_council_review_requested": "03/15/2023",
+  "date_alj_decision": "02/28/2023",
+  "signature_date": "03/16/2023"
+ },
+ "parse": {
+  "date_appeals_council_review_requested": "03/15/2023",
+  "date_alj_decision": "02/28/2023",
+  "signature_date": "03/16/2023"
+ },
+ "oneshot": {
+  "date_appeals_council_review_requested": "03/15/2023",
+  "date_alj_decision": "02/28/2023",
+  "signature_date": "03/16/2023"
+ }
+}

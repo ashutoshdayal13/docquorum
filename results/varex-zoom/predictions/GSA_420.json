@@ -1,0 +1,37 @@
+{
+ "requesting_agency_file_number": "RA-2023-00456",
+ "date_of_request": "09/15/2023",
+ "proposed_shipping_date": "10/01/2023",
+ "types_of_rates_requested": "Truck, Rail, Air",
+ "commodity_description": "Surgical instruments and medical supplies",
+ "transportation_appropriation_number": "TA-2023-8765",
+ "routes_authorized": "Interstate Highway System",
+ "bill_of_lading_description": "Medical equipment for hospital",
+ "remarks": "Urgent shipment for hospital use",
+ "gsa_control_number_response": "GSA-2023-9876",
+ "date_issued": "09/20/2023",
+ "requesting_agency": {
+  "name": "Vattimo, Virgilio Z.",
+  "address": "Vattimo, Virgilio Z."
+ },
+ "contact": {
+  "name": "Vattimo, Virgilio Z.",
+  "phone": "(371) 793-0986"
+ },
+ "consignor": {
+  "name": "Berry, Hall and Lane"
+ },
+ "consignee": {
+  "name": "General Hospital South Daryl"
+ },
+ "paying_office": {
+  "name": "Berry, Hall and Lane Finance"
+ },
+ "rail_carriers": {
+  "serving_consignor": "Union Pacific",
+  "serving_consignee": "BNSF Railway"
+ },
+ "technician": {
+  "name": "Vattimo, Virgilio Z."
+ }
+}

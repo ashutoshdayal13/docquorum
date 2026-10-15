@@ -1,0 +1,19 @@
+{
+ "name_of_adoption_service_provider": "Watkins Adoption Services",
+ "point_of_contact": "Christof O. Collins",
+ "email_address": "ccollins@watkins.com",
+ "daytime_phone_number": "(434) 128-8499",
+ "fax_number": "(806) 426-0349",
+ "applicant_signature_date": "05/15/2023",
+ "applicant_uscis_account_number": "3636-1458-9305",
+ "spouse_signature_date": "05/15/2023",
+ "spouse_uscis_account_number": "2547-3689-1402",
+ "address": {
+  "street_address": "529 Collins Land Suite 555",
+  "suite_number": "555",
+  "city": "West Antonioland",
+  "state_province": "VT",
+  "zip_postal_code": "14074",
+  "country": "United States"
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "primary": {
+  "name_of_deceased": "Andrew K. Humphrey",
+  "other_names_used": [
+   "Andrew Humphrey"
+  ],
+  "date_of_death": "05/15/2023",
+  "location_of_death": "Tarahaven, RI, USA",
+  "date_of_birth": "12/16/1995",
+  "location_of_birth": "Providence, RI, USA",
+  "certification_date": "05/16/2023",
+  "ssa_processed_date": "05/18/2023",
+  "surviving_spouse": {
+   "name": "Susan A. Robert",
+   "ssn": "445-24-66",
+   "address": "23444 Flores Inlet Apt. 518",
+   "city": "West Amanda",
+   "state": "NC",
+   "zip_code": "71965",
+   "phone": "(979) 682-9970"
+  },
+  "funeral_director": {
+   "name": "Susan A. Robert, Fischer Ltd",
+   "phone": "(979) 682-9970"
+  }
+ },
+ "parse": {
+  "name_of_deceased": "Andrew K. Humphrey",
+  "other_names_used": [
+   "Andrew Humphrey"
+  ],
+  "date_of_death": "05/15/2023",
+  "location_of_death": "Tarahaven, RI, USA",
+  "date_of_birth": "12/16/1995",
+  "location_of_birth": "Providence, RI, USA",
+  "certification_date": "05/16/2023",
+  "ssa_processed_date": "05/18/2023",
+  "surviving_spouse": {
+   "name": "Susan A. Robert",
+   "ssn": "445-24-66",
+   "address": "23444 Flores Inlet Apt. 518",
+   "city": "West Amanda",
+   "state": "NC",
+   "zip_code": "71965",
+   "phone": "(979) 682-9970"
+  },
+  "funeral_director": {
+   "name": "Susan A. Robert, Fischer Ltd",
+   "phone": "(979) 682-9970"
+  }
+ },
+ "oneshot": {
+  "name_of_deceased": "Andrew K. Humphrey",
+  "other_names_used": [
+   "Andrew Humphrey"
+  ],
+  "date_of_death": "05/15/2023",
+  "location_of_death": "Tarahaven, RI, USA",
+  "date_of_birth": "12/16/1995",
+  "location_of_birth": "Providence, RI, USA",
+  "certification_date": "05/16/2023",
+  "ssa_processed_date": "05/18/2023",
+  "surviving_spouse": {
+   "name": "Susan A. Robert",
+   "ssn": "445-24-66",
+   "address": "23444 Flores Inlet Apt. 518",
+   "city": "West Amanda",
+   "state": "NC",
+   "zip_code": "71965",
+   "phone": "(979) 682-9970"
+  },
+  "funeral_director": {
+   "name": "Susan A. Robert, Fischer Ltd",
+   "phone": "(979) 682-9970"
+  }
+ }
+}

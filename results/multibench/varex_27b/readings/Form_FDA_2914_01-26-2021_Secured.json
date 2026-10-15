@@ -1,0 +1,164 @@
+{
+ "primary": {
+  "date_of_submission": "05/15/2023",
+  "committee_number": "RDRC-2023-001",
+  "institution_name": "Giles-Smith Research Institute",
+  "chairperson": {
+   "name": "Garay, Michael",
+   "address": "7568 Wong Summit Apt. 046, Rivasview, VT 22833",
+   "email": "mgaray@gilessmith.com",
+   "phone": "(140) 160-9356",
+   "fax": "(170) 404-1253"
+  },
+  "required_members": [
+   {
+    "name": "Simpson, Amrita M.",
+    "qualifications": "Engineer, site"
+   },
+   {
+    "name": "Johnson, Adam",
+    "qualifications": "Exercise physiologist"
+   },
+   {
+    "name": "Wade, Robert",
+    "qualifications": "Medical physicist"
+   }
+  ],
+  "formulation_personnel": [
+   {
+    "name": "Garrett, Linda",
+    "qualifications": "Pharmacist, nuclear"
+   },
+   {
+    "name": "Smith, John",
+    "qualifications": "Chemist, radiopharmaceutical"
+   },
+   {
+    "name": "Davis, Emily",
+    "qualifications": "Pharmacy technician"
+   }
+  ],
+  "radiation_safety_personnel": [
+   {
+    "name": "Brown, James",
+    "qualifications": "Health physicist"
+   },
+   {
+    "name": "Wilson, Sarah",
+    "qualifications": "Radiation safety officer"
+   },
+   {
+    "name": "Miller, David",
+    "qualifications": "Dosimetrist"
+   }
+  ]
+ },
+ "parse": {
+  "date_of_submission": "05/15/2023",
+  "committee_number": "RDRC-2023-001",
+  "institution_name": "Giles-Smith Research Institute",
+  "chairperson": {
+   "name": "Garay, Michael",
+   "address": "7568 Wong Summit Apt. 046, Rivasview, VT 22833",
+   "email": "mgaray@gilessmith.com",
+   "phone": "(140) 160-9356",
+   "fax": "(170) 404-1253"
+  },
+  "required_members": [
+   {
+    "name": "Simpson, Amrita M.",
+    "qualifications": "Engineer, site"
+   },
+   {
+    "name": "Johnson, Adam",
+    "qualifications": "Exercise physiologist"
+   },
+   {
+    "name": "Wade, Robert",
+    "qualifications": "Medical physicist"
+   }
+  ],
+  "formulation_personnel": [
+   {
+    "name": "Garrett, Linda",
+    "qualifications": "Pharmacist, nuclear"
+   },
+   {
+    "name": "Smith, John",
+    "qualifications": "Chemist, radiopharmaceutical"
+   },
+   {
+    "name": "Davis, Emily",
+    "qualifications": "Pharmacy technician"
+   }
+  ],
+  "radiation_safety_personnel": [
+   {
+    "name": "Brown, James",
+    "qualifications": "Health physicist"
+   },
+   {
+    "name": "Wilson, Sarah",
+    "qualifications": "Radiation safety officer"
+   },
+   {
+    "name": "Miller, David",
+    "qualifications": "Dosimetrist"
+   }
+  ]
+ },
+ "oneshot": {
+  "date_of_submission": "05/15/2023",
+  "committee_number": "RDRC-2023-001",
+  "institution_name": "Giles-Smith Research Institute",
+  "chairperson": {
+   "name": "Garay, Michael",
+   "address": "7568 Wong Summit Apt. 046, Rivasview, VT 22833",
+   "email": "mgaray@gilessmith.com",
+   "phone": "(140) 160-9356",
+   "fax": "(170) 404-1253"
+  },
+  "required_members": [
+   {
+    "name": "Simpson, Amrita M.",
+    "qualifications": "Engineer, site"
+   },
+   {
+    "name": "Johnson, Adam",
+    "qualifications": "Exercise physiologist"
+   },
+   {
+    "name": "Wade, Robert",
+    "qualifications": "Medical physicist"
+   }
+  ],
+  "formulation_personnel": [
+   {
+    "name": "Garrett, Linda",
+    "qualifications": "Pharmacist, nuclear"
+   },
+   {
+    "name": "Smith, John",
+    "qualifications": "Chemist, radiopharmaceutical"
+   },
+   {
+    "name": "Davis, Emily",
+    "qualifications": "Pharmacy technician"
+   }
+  ],
+  "radiation_safety_personnel": [
+   {
+    "name": "Brown, James",
+    "qualifications": "Health physicist"
+   },
+   {
+    "name": "Wilson, Sarah",
+    "qualifications": "Radiation safety officer"
+   },
+   {
+    "name": "Miller, David",
+    "qualifications": "Dosimetrist"
+   }
+  ]
+ }
+}

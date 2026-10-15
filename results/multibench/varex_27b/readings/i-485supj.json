@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "date_of_birth": "02/26/1977",
+  "country_of_birth": "United States of America",
+  "applicant_name": "Morrow, Amanda",
+  "form_i_485_receipt_number": "WAC-15-0760345984",
+  "form_i_485_filing_date": "03/15/2015",
+  "form_i_140_receipt_number": "LIN-14-0760345984",
+  "us_mailing_address": {
+   "street": "3856 Lopez Mount",
+   "city": "East Brendaton",
+   "zip_code": "32698"
+  }
+ },
+ "parse": {
+  "date_of_birth": "02/26/1977",
+  "country_of_birth": "United States of America",
+  "applicant_name": "Morrow, Amanda",
+  "form_i_485_receipt_number": "WAC-15-0760345984",
+  "form_i_485_filing_date": "03/15/2015",
+  "form_i_140_receipt_number": "LIN-14-0760345984",
+  "us_mailing_address": {
+   "street": "3856 Lopez Mount",
+   "city": "East Brendaton",
+   "zip_code": "32698"
+  }
+ },
+ "oneshot": {
+  "date_of_birth": "02/26/1977",
+  "country_of_birth": "United States of America",
+  "applicant_name": "Morrow, Amanda",
+  "form_i_485_receipt_number": "WAC-15-0760345984",
+  "form_i_485_filing_date": "03/15/2015",
+  "form_i_140_receipt_number": "LIN-14-0760345984",
+  "us_mailing_address": {
+   "street": "3856 Lopez Mount",
+   "city": "East Brendaton",
+   "zip_code": "32698"
+  }
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "primary": {
+  "applicant_email": "oliver.beckmann@yahoo.com",
+  "applicant_phone": "(313) 383-4176",
+  "signature_date": "09/01/2023",
+  "applicant_name": {
+   "first_name": "Oliver",
+   "middle_name": "L.",
+   "last_name": "Beckmann"
+  },
+  "applicant_address": {
+   "county": "Davidson",
+   "city": "Port Lisa",
+   "zip": "71633"
+  },
+  "vehicles": [
+   {
+    "license_number": "TN-123-456",
+    "expiration_date": "06/30/2024"
+   },
+   {
+    "license_number": "TN-789-012",
+    "expiration_date": "06/30/2024"
+   }
+  ]
+ },
+ "parse": {
+  "applicant_email": "oliver.beckmann@yahoo.com",
+  "applicant_phone": "(313) 383-4176",
+  "signature_date": "09/01/2023",
+  "applicant_name": {
+   "first_name": "Oliver",
+   "middle_name": "L.",
+   "last_name": "Beckmann"
+  },
+  "applicant_address": {
+   "county": "Davidson",
+   "city": "Port Lisa",
+   "zip": "71633"
+  },
+  "vehicles": [
+   {
+    "license_number": "TN-123-456",
+    "expiration_date": "06/30/2024"
+   },
+   {
+    "license_number": "TN-789-012",
+    "expiration_date": "06/30/2024"
+   }
+  ]
+ },
+ "oneshot": {
+  "applicant_email": "oliver.beckmann@yahoo.com",
+  "applicant_phone": "(313) 383-4176",
+  "signature_date": "09/01/2023",
+  "applicant_name": {
+   "first_name": "Oliver",
+   "middle_name": "L.",
+   "last_name": "Beckmann"
+  },
+  "applicant_address": {
+   "county": "Davidson",
+   "city": "Port Lisa",
+   "zip": "71633"
+  },
+  "vehicles": [
+   {
+    "license_number": "TN-123-456",
+    "expiration_date": "06/30/2024"
+   },
+   {
+    "license_number": "TN-789-012",
+    "expiration_date": "06/30/2024"
+   }
+  ]
+ }
+}

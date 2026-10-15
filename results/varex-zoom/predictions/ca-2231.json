@@ -1,0 +1,29 @@
+{
+ "employer_name": "Hicks-Delgado",
+ "employer_phone_number": "(073) 608-2077",
+ "employer_tax_id": "98-7654321",
+ "employer_bill_payment_provider_number": "REF-2020-15315",
+ "employee_owcp_file_number": "OWCP-2023-00456",
+ "ar_agreement_date": "03/15/2023",
+ "total_gross_amount_earned": 2040,
+ "reimbursement_amount_claimed": 1836,
+ "supervisor_explanation": "Employee signature obtained via electronic consent due to remote work.",
+ "supervisor_printed_name": "Liz M. Nunez",
+ "supervisor_date": "03/20/2023",
+ "total_payment_amount": 1652.4,
+ "authorized_by": "Carlota Fowler, Hinton-Jones",
+ "authorization_date": "03/22/2023",
+ "employer_address": {
+  "street": "83053 Elizabeth Falls",
+  "city": "West Beth",
+  "state": "CA"
+ },
+ "employee_name": {
+  "first_name": "Jurgen",
+  "last_name": "Fletcher"
+ },
+ "work_date_range": {
+  "start_date": "03/01/2023",
+  "end_date": "03/15/2023"
+ }
+}

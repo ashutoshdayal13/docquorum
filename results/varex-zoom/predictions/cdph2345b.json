@@ -1,0 +1,13 @@
+{
+ "county_city": "Los Angeles County",
+ "certification_date": "06/30/2023",
+ "fiscal_year": "2022-2023",
+ "fiscal_year_end_date": "06/30/2023",
+ "auditor": {
+  "name": "Kathryn K. Taylor",
+  "title": "Audit Manager",
+  "signature_date": "06/30/2023",
+  "email": "ktaylor@lacounty.gov",
+  "phone": "(302) 343-4202"
+ }
+}

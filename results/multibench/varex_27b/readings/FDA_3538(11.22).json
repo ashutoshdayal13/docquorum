@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "stakeholder_name": "Julie Leao",
+  "stakeholder_company_name": "Kim Group",
+  "stakeholder_phone": "(538) 796-8225",
+  "stakeholder_email": "jleao@kim.com",
+  "company_address": {
+   "street": "179 Burnett Land Apt. 533",
+   "city": "Vasquezmouth",
+   "state": "NJ",
+   "zip_code": "68514"
+  }
+ },
+ "parse": {
+  "stakeholder_name": "Julie Leao",
+  "stakeholder_company_name": "Kim Group",
+  "stakeholder_phone": "(538) 796-8225",
+  "stakeholder_email": "jleao@kim.com",
+  "company_address": {
+   "street": "179 Burnett Land Apt. 533",
+   "city": "Vasquezmouth",
+   "state": "NJ",
+   "zip_code": "68514"
+  }
+ },
+ "oneshot": {
+  "stakeholder_name": "Julie Leao",
+  "stakeholder_company_name": "Kim Group",
+  "stakeholder_phone": "(538) 796-8225",
+  "stakeholder_email": "jleao@kim.com",
+  "company_address": {
+   "street": "179 Burnett Land Apt. 533",
+   "city": "Vasquezmouth",
+   "state": "NJ",
+   "zip_code": "68514"
+  }
+ }
+}

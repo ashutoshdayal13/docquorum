@@ -1,0 +1,37 @@
+{
+ "primary": {
+  "cw1_case_number": "CW-1-2023-00452",
+  "determination_date": "06/15/2023",
+  "employer_information": {
+   "name": "Reese-Maldonado",
+   "address": "7278 Garcia Haven, 87116",
+   "city": "Mckaymouth",
+   "state": "HI",
+   "zip_code": "",
+   "phone_number": "(822) 164-3561"
+  }
+ },
+ "parse": {
+  "cw1_case_number": "CW-1-2023-00452",
+  "determination_date": "06/15/2023",
+  "employer_information": {
+   "name": "Reese-Maldonado",
+   "address": "7278 Garcia Haven, 87116",
+   "city": "Mckaymouth",
+   "state": "HI",
+   "zip_code": "",
+   "phone_number": "(822) 164-3561"
+  }
+ },
+ "oneshot": {
+  "cw1_case_number": "CW-1-2023-00452",
+  "determination_date": "06/15/2023",
+  "employer_information": {
+   "name": "Reese-Maldonado",
+   "address": "7278 Garcia Haven, 87116",
+   "city": "Mckaymouth",
+   "state": "HI",
+   "phone_number": "(822) 164-3561"
+  }
+ }
+}

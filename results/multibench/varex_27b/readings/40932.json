@@ -1,0 +1,62 @@
+{
+ "primary": {
+  "name": "Piotr H. Kim",
+  "position_title": "Management and Program Analyst, 0343-13",
+  "office_name": "Office of Community Planning and Development, Chicago, IL",
+  "training_objectives_achieved": "Yes, the training program provided comprehensive insights into community planning and development processes.",
+  "training_attended": "Attended 'Introduction to Community Development' (40 hours) and 'Grant Management Fundamentals' (30 hours).",
+  "technical_knowledge_increase": "Assignments significantly enhanced my understanding of grant management and community development strategies.",
+  "further_training_needed": "Need further training in advanced data analysis techniques for community impact assessment.",
+  "comments": "The hands-on projects were particularly beneficial for applying theoretical knowledge to real-world scenarios.",
+  "signature_date": "04/01/2023",
+  "reporting_period": {
+   "start_date": "01/01/2023",
+   "end_date": "03/31/2023"
+  },
+  "assignments": [
+   {
+    "description": "Assisted in the development and implementation of community development block grants"
+   }
+  ]
+ },
+ "parse": {
+  "name": "Piotr H. Kim",
+  "position_title": "Management and Program Analyst, 0343-13",
+  "office_name": "Office of Community Planning and Development, Chicago, IL",
+  "training_objectives_achieved": "Yes, the training program provided comprehensive insights into community planning and development processes.",
+  "training_attended": "Attended 'Introduction to Community Development' (40 hours) and 'Grant Management Fundamentals' (30 hours).",
+  "technical_knowledge_increase": "Assignments significantly enhanced my understanding of grant management and community development strategies.",
+  "further_training_needed": "Need further training in advanced data analysis techniques for community impact assessment.",
+  "comments": "The hands-on projects were particularly beneficial for applying theoretical knowledge to real-world scenarios.",
+  "signature_date": "04/01/2023",
+  "reporting_period": {
+   "start_date": "01/01/2023",
+   "end_date": "03/31/2023"
+  },
+  "assignments": [
+   {
+    "description": "Assisted in the development and implementation of community development block grants"
+   }
+  ]
+ },
+ "oneshot": {
+  "name": "Piotr H. Kim",
+  "position_title": "Management and Program Analyst, 0343-13",
+  "office_name": "Office of Community Planning and Development, Chicago, IL",
+  "training_objectives_achieved": "Yes, the training program provided comprehensive insights into community planning and development processes.",
+  "training_attended": "Attended 'Introduction to Community Development' (40 hours) and 'Grant Management Fundamentals' (30 hours).",
+  "technical_knowledge_increase": "Assignments significantly enhanced my understanding of grant management and community development strategies.",
+  "further_training_needed": "Need further training in advanced data analysis techniques for community impact assessment.",
+  "comments": "The hands-on projects were particularly beneficial for applying theoretical knowledge to real-world scenarios.",
+  "signature_date": "04/01/2023",
+  "reporting_period": {
+   "start_date": "01/01/2023",
+   "end_date": "03/31/2023"
+  },
+  "assignments": [
+   {
+    "description": "Assisted in the development and implementation of community development block grants"
+   }
+  ]
+ }
+}

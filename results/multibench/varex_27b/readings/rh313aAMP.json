@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "authorized_medical_physicist_name": "Jason A. Fournier",
+  "license_number": "RML-2023-CA-1",
+  "signature_date": "05/15/2023",
+  "senior_management": {
+   "name": "Hitesh Sehgal"
+  }
+ },
+ "parse": {
+  "authorized_medical_physicist_name": "Jason A. Fournier",
+  "license_number": "RML-2023-CA-1",
+  "signature_date": "05/15/2023",
+  "senior_management": {
+   "name": "Hitesh Sehgal"
+  }
+ },
+ "oneshot": {
+  "authorized_medical_physicist_name": "Jason A. Fournier",
+  "license_number": "RML-2023-CA-1",
+  "signature_date": "05/15/2023",
+  "senior_management": {
+   "name": "Hitesh Sehgal"
+  }
+ }
+}

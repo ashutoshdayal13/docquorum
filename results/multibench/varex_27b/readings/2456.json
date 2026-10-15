@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "agreement_date": "05/15/2023",
+  "mortgagor_name": "Vincenzio Z. Sane",
+  "depository_name": "Crawford, Schmidt and Williams",
+  "project_name": "Jennifer Heights",
+  "building_loan_agreement_date": "03/10/2023",
+  "completion_deadline": "09/15/20",
+  "project_location": {
+   "county": "Jennifer",
+   "state": "South Dakota"
+  }
+ },
+ "parse": {
+  "agreement_date": "05/15/2023",
+  "mortgagor_name": "Vincentio Z. Sane",
+  "depository_name": "Crawford, Schmidt and Williams",
+  "project_name": "Jennifer Heights",
+  "building_loan_agreement_date": "03/10/2023",
+  "completion_deadline": "09/15/20",
+  "project_location": {
+   "county": "Jennifer",
+   "state": "South Dakota"
+  }
+ },
+ "oneshot": {
+  "agreement_date": "05/15/2023",
+  "mortgagor_name": "Vincenzio Z. Sane",
+  "depository_name": "Crawford, Schmidt and Williams",
+  "project_name": "Jennifer Heights",
+  "building_loan_agreement_date": "03/10/2023",
+  "completion_deadline": "09/15/20",
+  "project_location": {
+   "county": "Jennifer",
+   "state": "South Dakota"
+  }
+ }
+}

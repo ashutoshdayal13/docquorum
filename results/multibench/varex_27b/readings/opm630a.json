@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "donor_name": "Sheila Garza",
+  "donor_ssn_last_four": "0283",
+  "donor_employee_number": "JG65169",
+  "donor_position_title": "Geologist, wellsite",
+  "donor_pay_plan": "General Schedule",
+  "donor_grade_pay_level": "GS-13 Step 5",
+  "donor_organization": "Johnson, Griffin and Cruz",
+  "donor_office_telephone": "(596) 329-2015",
+  "recipient_identifier": "Margaret R. Herman",
+  "donor_signature_date": "03/15/2023"
+ },
+ "parse": {
+  "donor_name": "Sheila Garza",
+  "donor_ssn_last_four": "0283",
+  "donor_employee_number": "JG65169",
+  "donor_position_title": "Geologist, wellsite",
+  "donor_pay_plan": "General Schedule",
+  "donor_grade_pay_level": "GS-13 Step 5",
+  "donor_organization": "Johnson, Griffin and Cruz",
+  "donor_office_telephone": "(596) 329-2015",
+  "recipient_identifier": "Margaret R. Herman",
+  "donor_signature_date": "03/15/2023"
+ },
+ "oneshot": {
+  "donor_name": "Sheila Garza",
+  "donor_ssn_last_four": "0283",
+  "donor_employee_number": "JG65169",
+  "donor_position_title": "Geologist, wellsite",
+  "donor_pay_plan": "General Schedule",
+  "donor_grade_pay_level": "GS-13 Step 5",
+  "donor_organization": "Johnson, Griffin and Cruz",
+  "donor_office_telephone": "(596) 329-2015",
+  "recipient_identifier": "Margaret R. Herman",
+  "donor_signature_date": "03/15/2023"
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "requester_name": "Michelle W. Rodriguez",
+  "requester_title": "Contracting civil engineer",
+  "organization": "Smith, Martin and Porter",
+  "date_of_request": "06/15/2023",
+  "desired_completion_date": "08/15/2023",
+  "telephone_number": "(431) 472-3889",
+  "email_address": "mrodriguez@smith.com",
+  "special_instructions": "Please provide data in CSV format for easier analysis.",
+  "categories_of_interest": [
+   {
+    "categories_of_interest": "Race/ethnicity, Age"
+   }
+  ],
+  "data_time_period": {
+   "data_time_period": "2018-2022"
+  },
+  "purpose_of_data_request": [
+   {
+    "purpose_of_data_request": "Research on HIV/AIDS prevalence"
+   }
+  ]
+ },
+ "parse": {
+  "requester_name": "Michelle W. Rodriguez",
+  "requester_title": "Contracting civil engineer",
+  "organization": "Smith, Martin and Porter",
+  "date_of_request": "06/15/2023",
+  "desired_completion_date": "08/15/2023",
+  "telephone_number": "(431) 472-3889",
+  "email_address": "mrodriguez@smith.com",
+  "special_instructions": "Please provide data in CSV format for easier analysis.",
+  "categories_of_interest": [
+   {
+    "categories_of_interest": "Race/ethnicity, Age"
+   }
+  ],
+  "data_time_period": {
+   "data_time_period": "2018-2022"
+  },
+  "purpose_of_data_request": [
+   {
+    "purpose_of_data_request": "Research on HIV/AIDS prevalence"
+   }
+  ]
+ },
+ "oneshot": {
+  "requester_name": "Michelle W. Rodriguez",
+  "requester_title": "Contracting civil engineer",
+  "organization": "Smith, Martin and Porter",
+  "date_of_request": "06/15/2023",
+  "desired_completion_date": "08/15/2023",
+  "telephone_number": "(431) 472-3889",
+  "email_address": "mrodriguez@smith.com",
+  "special_instructions": "Please provide data in CSV format for easier analysis.",
+  "categories_of_interest": [
+   {
+    "categories_of_interest": "Race/ethnicity, Age"
+   }
+  ],
+  "data_time_period": {
+   "data_time_period": "2018-2022"
+  },
+  "purpose_of_data_request": [
+   {
+    "purpose_of_data_request": "Research on HIV/AIDS prevalence"
+   }
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "primary": {
+  "hospital_name": "West Kelly General Hospital",
+  "physical_therapist_name": "Jolanda Benitez, DPT - California PT License #PT-2015-CA-85372",
+  "full_time_physical_therapists": 4,
+  "part_time_physical_therapists": 2,
+  "physical_therapy_assistants": 6,
+  "physical_therapy_aides": 3,
+  "treatments_provided_annually": 12500
+ },
+ "parse": {
+  "hospital_name": "West Kelly General Hospital",
+  "physical_therapist_name": "Jolanda Benitez, DPT - California PT License #PT-2015-CA-85372",
+  "full_time_physical_therapists": 4,
+  "part_time_physical_therapists": 2,
+  "physical_therapy_assistants": 6,
+  "physical_therapy_aides": 3,
+  "treatments_provided_annually": 12500
+ },
+ "oneshot": {
+  "hospital_name": "West Kelly General Hospital",
+  "physical_therapist_name": "Jolanda Benitez, DPT - California PT License #PT-2015-CA-85372",
+  "full_time_physical_therapists": 4,
+  "part_time_physical_therapists": 2,
+  "physical_therapy_assistants": 6,
+  "physical_therapy_aides": 3,
+  "treatments_provided_annually": 12500
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "borrower_name": "Oliboni, Stacey I.",
+  "section_184a_case_no": "PO-2025-39130",
+  "lender_loan_no": "LL-2023-8296",
+  "property_address": "1234 Oakwood Drive, Green Valley Subdivision Lot 45 Block 7 Port Stephens",
+  "loan_amount": 911466.56,
+  "lender_id_code": "LID-2023-4585",
+  "sponsor_agent_id_code": "SAID-2023-7391",
+  "lender_info": {
+   "name": "Summers LLC",
+   "telephone_number": "(003) 836-2400"
+  },
+  "sponsor_agent_info": {
+   "name": "Walker, Thomas R."
+  }
+ },
+ "parse": {
+  "borrower_name": "Oliboni, Stacey I.",
+  "section_184a_case_no": "PO-2025-39130",
+  "lender_loan_no": "LL-2023-8296",
+  "property_address": "1234 Oakwood Drive, Green Valley Subdivision Lot 45, Block 7, Port Stephanie",
+  "loan_amount": 911466.56,
+  "lender_id_code": "LID-2023-4585",
+  "sponsor_agent_id_code": "SAID-2023-7391",
+  "lender_info": {
+   "name": "Summers LLC",
+   "telephone_number": "(003) 836-2400"
+  },
+  "sponsor_agent_info": {
+   "name": "Walker, Thomas R."
+  }
+ },
+ "oneshot": {
+  "borrower_name": "Oliboni, Stacey I.",
+  "section_184a_case_no": "PO-2025-39130",
+  "lender_loan_no": "LL-2023-8296",
+  "property_address": "1234 Oakwood Drive, Green Valley Subdivision, Lot 45, Block 7, Port Stephens",
+  "loan_amount": 911466.56,
+  "lender_id_code": "LID-2023-4585",
+  "sponsor_agent_id_code": "SAID-2023-7391",
+  "lender_info": {
+   "name": "Summers LLC",
+   "telephone_number": "(003) 836-2400"
+  },
+  "sponsor_agent_info": {
+   "name": "Walker, Thomas R."
+  }
+ }
+}

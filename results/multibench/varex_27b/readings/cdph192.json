@@ -1,0 +1,32 @@
+{
+ "primary": {
+  "provider_business_name": "HealthEd Solutions Inc",
+  "provider_telephone_number": "(379) 124-6044",
+  "provider_website_address": "www.healthedsol.com",
+  "provider_county": "Los Angeles",
+  "provider_contact_name": "Dolores Thompson",
+  "provider_contact_email": "dthompson@lewisdean.com",
+  "provider_nac_number": "1",
+  "expiration_date": "06/30/2024"
+ },
+ "parse": {
+  "provider_business_name": "HealthEd Solutions Inc",
+  "provider_telephone_number": "(379) 124-6044",
+  "provider_website_address": "www.healthedsol.com",
+  "provider_county": "Los Angeles",
+  "provider_contact_name": "Dolores Thompson",
+  "provider_contact_email": "dthompson@lewisdean.com",
+  "provider_nac_number": "1",
+  "expiration_date": "06/30/2024"
+ },
+ "oneshot": {
+  "provider_business_name": "HealthEd Solutions Inc",
+  "provider_telephone_number": "(379) 124-6044",
+  "provider_website_address": "www.healthedsol.com",
+  "provider_county": "Los Angeles",
+  "provider_contact_name": "Dolores Thompson",
+  "provider_contact_email": "dthompson@lewisdean.com",
+  "provider_nac_number": "1",
+  "expiration_date": "06/30/2024"
+ }
+}

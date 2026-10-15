@@ -1,0 +1,89 @@
+{
+ "primary": {
+  "last_name": "Vargas",
+  "first_name": "Christopher",
+  "middle_initial": "A",
+  "date_of_birth": "05/11/1962",
+  "beneficiary_id_number": "279-41-0742",
+  "daytime_telephone_number": "(601) 045-1150",
+  "evening_telephone_number": "(192) 705-2054",
+  "email_address": "christopher.vargas@gmail.com",
+  "best_hours_to_reach": "9 AM to 5 PM",
+  "from_date": "01/01/2020",
+  "to_date": "12/31/2022",
+  "address": {
+   "street": "6395 Courtney Plains",
+   "city_state": "Richardfort, MI",
+   "zip_code": "97241"
+  },
+  "cdph_programs": [
+   {
+    "program_name": "OTHER (Please list CDPH program(s) which may have your personal information)"
+   }
+  ],
+  "authorized_person": {
+   "name": "Diane H. Owen",
+   "relationship_to_you": "Colleague",
+   "telephone_number": "(920) 958-9412",
+   "address": "2072 Smith Isle"
+  }
+ },
+ "parse": {
+  "last_name": "Vargas",
+  "first_name": "Christopher",
+  "middle_initial": "A",
+  "date_of_birth": "05/11/1962",
+  "beneficiary_id_number": "279-41-0742",
+  "daytime_telephone_number": "(601) 045-1150",
+  "evening_telephone_number": "(192) 705-2054",
+  "email_address": "christopher.vargas@gmail.com",
+  "best_hours_to_reach": "9 AM to 5 PM",
+  "from_date": "01/01/2020",
+  "to_date": "12/31/2022",
+  "address": {
+   "street": "6395 Courtney Plains",
+   "city_state": "Richardfort, MI",
+   "zip_code": "97241"
+  },
+  "cdph_programs": [
+   {
+    "program_name": "Health Information Management"
+   }
+  ],
+  "authorized_person": {
+   "name": "Diane H. Owen",
+   "relationship_to_you": "Colleague",
+   "telephone_number": "(920) 958-9412",
+   "address": "2072 Smith Isle"
+  }
+ },
+ "oneshot": {
+  "last_name": "Vargas",
+  "first_name": "Christopher",
+  "middle_initial": "A",
+  "date_of_birth": "05/11/1962",
+  "beneficiary_id_number": "279-41-0742",
+  "daytime_telephone_number": "(601) 045-1150",
+  "evening_telephone_number": "(192) 705-2054",
+  "email_address": "christopher.vargas@gmail.com",
+  "best_hours_to_reach": "9 AM to 5 PM",
+  "from_date": "01/01/2020",
+  "to_date": "12/31/2022",
+  "address": {
+   "street": "6395 Courtney Plains",
+   "city_state": "Richardfort, MI",
+   "zip_code": "97241"
+  },
+  "cdph_programs": [
+   {
+    "program_name": "OTHER (Please list CDPH program(s) which may have your personal information) Health Information Management"
+   }
+  ],
+  "authorized_person": {
+   "name": "Diane H. Owen",
+   "relationship_to_you": "Colleague",
+   "telephone_number": "(920) 958-9412",
+   "address": "2072 Smith Isle"
+  }
+ }
+}

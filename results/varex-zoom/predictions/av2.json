@@ -1,0 +1,28 @@
+{
+ "entity_name": "Waymo LLC",
+ "law_enforcement_interaction_plan": {
+  "contact_person": "Ewelina H. Chauveau"
+ },
+ "test_vehicle_operators": [
+  {
+   "operator_name": "Jonathan X. Cohen",
+   "operator_license": "RA-2022-SC"
+  },
+  {
+   "operator_name": "Arnaude Bentley",
+   "operator_license": "RA-2024-IN"
+  },
+  {
+   "operator_name": "Ewelina H. Chauveau",
+   "operator_license": "PE-2003-MD"
+  },
+  {
+   "operator_name": "Maximilian Smith",
+   "operator_license": "AV-2023-NY"
+  },
+  {
+   "operator_name": "Isabella Johnson",
+   "operator_license": "AV-2023-CA"
+  }
+ ]
+}

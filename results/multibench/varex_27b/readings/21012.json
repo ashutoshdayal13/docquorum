@@ -1,0 +1,17 @@
+{
+ "primary": {
+  "record_title": "Employee Records",
+  "record_description": "Human resources and personnel files for the year 2023",
+  "supervisor": "Freia A. Cardenas"
+ },
+ "parse": {
+  "record_title": "Employee Records",
+  "record_description": "Human resources and personnel files for the year 2023",
+  "supervisor": "Freia A. Cardenas"
+ },
+ "oneshot": {
+  "record_title": "Employee Records",
+  "record_description": "Human resources and personnel files for the year 2023",
+  "supervisor": "Freia A. Cardenas"
+ }
+}

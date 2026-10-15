@@ -15,7 +15,9 @@ The rule of the benchmark runs (benchmarks/extractbench/run.sh), on one document
   * otherwise, a PDF with a text layer -> one reading, by the reader agent;
   * a PDF without one -> the reader agent on the page images and on the MinerU parse; up to
     12 pages also the one-shot reader, and the quorum keeps the reading the others agree
-    with most; a longer scan is read through its parse.
+    with most; a longer scan is read through its parse;
+  * with --zoom, the fields on which the readings disagree are then read once more from a
+    high-resolution crop of the page region that prints them (zoom.py).
 Every reading passes its chain of checks (docquorum/checks) before the quorum.
 """
 import argparse
@@ -25,7 +27,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-from docquorum import checks, quorum
+from docquorum import checks, quorum, zoom
 from docquorum.agents import column_reader, layout, oneshot, ruled_reader
 from docquorum.agents.reader import read_document
 from docquorum.tools import images, llm, native, parser, pdf as PDF
@@ -52,16 +54,18 @@ def as_pdf(doc, folder):
     return dst
 
 
-def extract(doc, schema, task=None, workers=8, log=print, keep_readings=False):
+def extract(doc, schema, task=None, workers=8, log=print, keep_readings=False, zoom_reread=False):
     """Returns (result, report). `schema` is a JSON Schema or a JSON template (dict).
-    keep_readings: the report also carries every checked reading ("data"), for analysis."""
-    result, report, readings = _extract(doc, schema, task, workers, log)
+    keep_readings: the report also carries every checked reading ("data"), for analysis.
+    zoom_reread: after the quorum, the fields the readings disagree on are read again from a
+    high-resolution crop of the page (zoom.py); needs the parser."""
+    result, report, readings = _extract(doc, schema, task, workers, log, zoom_reread)
     if keep_readings:
         report["data"] = readings
     return result, report
 
 
-def _extract(doc, schema, task, workers, log):
+def _extract(doc, schema, task, workers, log, zoom_reread=False):
     template = schema if is_template(schema) else None
     schema = template_to_schema(template) if template is not None else dict(schema)
     if task:
@@ -119,8 +123,17 @@ def _extract(doc, schema, task, workers, log):
             return _finish(next(iter(readings.values())), template), {"readings": list(readings)}, readings
         rec = {"id": f"doc/{name}", "pdf": str(pdf), "category": "doc", "tags": [], "data_schema": schema}
         best, agreement, _ = quorum.pick(rec, readings)
-        return _finish(readings[best], template), {"readings": list(readings), "picked": best,
-                                                   "agreement": {k: round(v, 4) for k, v in agreement.items()}}, readings
+        report = {"readings": list(readings), "picked": best,
+                  "agreement": {k: round(v, 4) for k, v in agreement.items()}}
+        got = readings[best]
+        if zoom_reread and parser.available():
+            # the fields the readings disagree on, read again from a sharp crop (zoom.py)
+            try:
+                got, report["zoom"] = zoom.reread(cl, got, [v for k, v in readings.items() if k != best],
+                                                  schema, pdf, log=log)
+            except Exception as e:
+                log(f"[docquorum] zoom re-reading failed, quorum reading kept: {type(e).__name__}")
+        return _finish(got, template), report, readings
 
 
 def _finish(result, template):
@@ -134,9 +147,11 @@ def main():
     ap.add_argument("--task", default=None, help="optional task description (what to extract, and how)")
     ap.add_argument("-o", "--out", default=None, help="write the result here (default: stdout)")
     ap.add_argument("--workers", type=int, default=8)
+    ap.add_argument("--zoom", action="store_true",
+                    help="re-read the fields the readings disagree on from a sharp crop (zoom.py)")
     a = ap.parse_args()
     result, report = extract(a.doc, json.loads(Path(a.schema).read_text()), a.task, a.workers,
-                             log=lambda m: print(m, file=sys.stderr))
+                             log=lambda m: print(m, file=sys.stderr), zoom_reread=a.zoom)
     print(f"[docquorum] {report}", file=sys.stderr)
     out = json.dumps(result, indent=2, ensure_ascii=False)
     if a.out:

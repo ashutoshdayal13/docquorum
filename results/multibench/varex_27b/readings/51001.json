@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "public_housing_agency_name": "East Margaretville Housing Authority",
+  "periodic_estimate_number": 51001,
+  "period_start_date": "01/01/2023",
+  "period_end_date": "03/31/2023",
+  "project_location": "3730 Nguyen Knoll Apt. 446, East Margaretville, SC 49332",
+  "project_number": 63312,
+  "contractor_name": "Williamson, Simon and Bell",
+  "contract_number": 2023,
+  "line_items": [
+   {
+    "description": "Construction of new public housing units"
+   }
+  ]
+ },
+ "parse": {
+  "public_housing_agency_name": "East Margaretville Housing Authority",
+  "periodic_estimate_number": 51001,
+  "period_start_date": "01/01/2023",
+  "period_end_date": "03/31/2023",
+  "project_location": "3730 Nguyen Knoll Apt. 446, East Margaretville, SC 49332",
+  "project_number": 63312,
+  "contractor_name": "Williamson, Simon and Bell",
+  "contract_number": 2023,
+  "line_items": [
+   {
+    "description": "Construction of new public housing units"
+   }
+  ]
+ },
+ "oneshot": {
+  "public_housing_agency_name": "East Margaretville Housing Authority",
+  "periodic_estimate_number": 51001,
+  "period_start_date": "01/01/2023",
+  "period_end_date": "03/31/2023",
+  "project_location": "3730 Nguyen Knoll Apt. 446, East Margaretville, SC 49332",
+  "project_number": 63312,
+  "contractor_name": "Williamson, Simon and Bell",
+  "contract_number": 2023,
+  "line_items": [
+   {
+    "description": "Construction of new public housing units"
+   }
+  ]
+ }
+}

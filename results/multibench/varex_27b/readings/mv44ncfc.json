@@ -1,0 +1,56 @@
+{
+ "primary": {
+  "full_name": "Melissa J. Day",
+  "eye_color": "green",
+  "phone_number": "(516) 999-0862",
+  "organ_donor_consent_date": "01/15/2024",
+  "mailing_address": {
+   "street": "0553",
+   "city": "North Courtneyville",
+   "state": "FL",
+   "zip_code": "87152-987"
+  },
+  "residential_address": {
+   "street": "0553",
+   "city": "North Courtneyville",
+   "state": "FL",
+   "zip_code": "87152-987"
+  }
+ },
+ "parse": {
+  "full_name": "Melissa J. Day",
+  "eye_color": "green",
+  "phone_number": "(516) 999-0862",
+  "organ_donor_consent_date": "01/15/2024",
+  "mailing_address": {
+   "street": "0553",
+   "city": "North Courtneyville",
+   "state": "FL",
+   "zip_code": "87152-987"
+  },
+  "residential_address": {
+   "street": "0553",
+   "city": "North Courtneyville",
+   "state": "FL",
+   "zip_code": "87152-987"
+  }
+ },
+ "oneshot": {
+  "full_name": "Melissa J. Day",
+  "eye_color": "green",
+  "phone_number": "(516) 999-0862",
+  "organ_donor_consent_date": "01/15/2024",
+  "mailing_address": {
+   "street": "0553",
+   "city": "North Courtneyville",
+   "state": "FL",
+   "zip_code": "87152-987"
+  },
+  "residential_address": {
+   "street": "0553",
+   "city": "North Courtneyville",
+   "state": "FL",
+   "zip_code": "87152-987"
+  }
+ }
+}

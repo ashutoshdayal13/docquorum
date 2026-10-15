@@ -1,0 +1,77 @@
+{
+ "primary": {
+  "location_of_housing_inspected": "12345 Farmview Lane, Harvestville, CA 90001",
+  "description_of_housing_units": "20 units of single-story, 3-bedroom, 2-bathroom houses with shared community facilities",
+  "inspection_request_date": "03/15/2023",
+  "expected_occupancy_from_date": "05/01/2023",
+  "expected_occupancy_to_date": "11/30/2023",
+  "inspection_date": "04/10/2023",
+  "certificate_expiry_date": "10/31/2023",
+  "special_conditions": "All units must pass final safety inspection before occupancy",
+  "district_office_address": "100 Main St, Farmville, CA 90002",
+  "certificate_issuer_name": "Peter Saenz, Regional Inspector",
+  "certificate_issue_date": "04/15/2023",
+  "owner": {
+   "name": "Adrienne X. Lee",
+   "phone": "(263) 207-0897"
+  },
+  "individual_in_charge": {
+   "name": "Tristan D. Perez",
+   "phone": "(318) 635-9544"
+  },
+  "farm_labor_contractor": {
+   "name": "Flowers Inc",
+   "registration_no": "FLC-2022-AL-63044"
+  }
+ },
+ "parse": {
+  "location_of_housing_inspected": "12345 Farmview Lane, Harvestville, CA 90001",
+  "description_of_housing_units": "20 units of single-story, 3-bedroom, 2-bathroom houses with shared community facilities",
+  "inspection_request_date": "03/15/2023",
+  "expected_occupancy_from_date": "05/01/2023",
+  "expected_occupancy_to_date": "11/30/2023",
+  "inspection_date": "04/10/2023",
+  "certificate_expiry_date": "10/31/2023",
+  "special_conditions": "All units must pass final safety inspection before occupancy",
+  "district_office_address": "100 Main St, Farmville, CA 90002",
+  "certificate_issuer_name": "Peter Saenz, Regional Inspector",
+  "certificate_issue_date": "04/15/2023",
+  "owner": {
+   "name": "Adrienne X. Lee",
+   "phone": "(263) 207-0897"
+  },
+  "individual_in_charge": {
+   "name": "Tristan D. Perez",
+   "phone": "(318) 635-9544"
+  },
+  "farm_labor_contractor": {
+   "name": "Flowers Inc",
+   "registration_no": "FLC-2022-AL-63044"
+  }
+ },
+ "oneshot": {
+  "location_of_housing_inspected": "12345 Farmview Lane, Harvestville, CA 90001",
+  "description_of_housing_units": "20 units of single-story, 3-bedroom, 2-bathroom houses with shared community facilities",
+  "inspection_request_date": "03/15/2023",
+  "expected_occupancy_from_date": "05/01/2023",
+  "expected_occupancy_to_date": "11/30/2023",
+  "inspection_date": "04/10/2023",
+  "certificate_expiry_date": "10/31/2023",
+  "special_conditions": "All units must pass final safety inspection before occupancy",
+  "district_office_address": "100 Main St, Farmville, CA 90002",
+  "certificate_issuer_name": "Peter Saenz, Regional Inspector",
+  "certificate_issue_date": "04/15/2023",
+  "owner": {
+   "name": "Adrienne X. Lee",
+   "phone": "(263) 207-0897"
+  },
+  "individual_in_charge": {
+   "name": "Tristan D. Perez",
+   "phone": "(318) 635-9544"
+  },
+  "farm_labor_contractor": {
+   "name": "Flowers Inc",
+   "registration_no": "FLC-2022-AL-63044"
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "employee_name": "Frederick I. Reid",
+ "organization_name": "Mills-Porter",
+ "date": "2023-10-15",
+ "pay_period_dates": {
+  "start_date": "2023-10-01",
+  "end_date": "2023-10-15"
+ },
+ "week_one": {
+  "start_date": "2023-10-01",
+  "end_date": "2023-10-07"
+ },
+ "week_two": {
+  "start_date": "2023-10-08",
+  "end_date": "2023-10-14"
+ }
+}

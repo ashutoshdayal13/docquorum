@@ -1,0 +1,74 @@
+{
+ "primary": {
+  "applicant_name": "Cezary U. da Mota",
+  "applicant_email": "cezary.damota@gmail.com",
+  "dispute_description": "The moving company damaged several pieces of furniture during the move. I am seeking compensation for the repair or replacement of these items.",
+  "signature_date": "09/15/2020",
+  "applicant_address": {
+   "street": "354 Gentry Wells",
+   "city": "North Ryantown",
+   "state": "WI",
+   "zip_code": "84814"
+  },
+  "applicant_phone": {
+   "home_phone": "(262) 102-4897",
+   "mobile_phone": "(802) 386-4670"
+  },
+  "moving_company": {
+   "company_name": "All-Star Movers",
+   "company_phone": "(217) 555-1234"
+  },
+  "claim_details": {
+   "claim_date": "08/20/2020",
+   "claim_amount": 8828.8
+  }
+ },
+ "parse": {
+  "applicant_name": "Cezary U. da Mota",
+  "applicant_email": "cezary.damota@gmail.com",
+  "dispute_description": "The moving company damaged several pieces of furniture during the move. I am seeking compensation for the repair or replacement of these items.",
+  "signature_date": "09/15/2020",
+  "applicant_address": {
+   "street": "354 Gentry Wells",
+   "city": "North Ryantown",
+   "state": "WI",
+   "zip_code": "84814"
+  },
+  "applicant_phone": {
+   "home_phone": "(262) 102-4897",
+   "mobile_phone": "(802) 386-4670"
+  },
+  "moving_company": {
+   "company_name": "All-Star Movers",
+   "company_phone": "(217) 555-1234"
+  },
+  "claim_details": {
+   "claim_date": "08/20/2020",
+   "claim_amount": 8828.8
+  }
+ },
+ "oneshot": {
+  "applicant_name": "Cezary U. da Mota",
+  "applicant_email": "cezary.damota@gmail.com",
+  "dispute_description": "The moving company damaged several pieces of furniture during the move. I am seeking compensation for the repair or replacement of these items.",
+  "signature_date": "09/15/2020",
+  "applicant_address": {
+   "street": "354 Gentry Wells",
+   "city": "North Ryantown",
+   "state": "WI",
+   "zip_code": "84814"
+  },
+  "applicant_phone": {
+   "home_phone": "(262) 102-4897",
+   "mobile_phone": "(802) 386-4670"
+  },
+  "moving_company": {
+   "company_name": "All-Star Movers",
+   "company_phone": "(217) 555-1234"
+  },
+  "claim_details": {
+   "claim_date": "08/20/2020",
+   "claim_amount": 8828.8
+  }
+ }
+}

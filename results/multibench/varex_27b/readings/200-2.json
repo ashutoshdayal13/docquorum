@@ -1,0 +1,221 @@
+{
+ "primary": {
+  "reporting_unit_name": "U.S. Department of Housing and Urban Development",
+  "pay_period_start": "10/01/2023",
+  "pay_period_end": "10/15/2023",
+  "correspondence_code": "OVRT-ADJ-2023-10",
+  "approval_date": "10/16/2023",
+  "approving_officer_title": "Chief Human Capital Officer",
+  "employees": [
+   {
+    "employee_name": "Love, Uriel E."
+   },
+   {
+    "employee_name": "Brumleve, Matthew D."
+   },
+   {
+    "employee_name": "Williams, Sarah J."
+   },
+   {
+    "employee_name": "Johnson, Michael T."
+   },
+   {
+    "employee_name": "Smith, Emily R."
+   },
+   {
+    "employee_name": "Brown, David K."
+   },
+   {
+    "employee_name": "Davis, Jennifer L."
+   },
+   {
+    "employee_name": "Miller, Robert A."
+   },
+   {
+    "employee_name": "Wilson, Lisa M."
+   },
+   {
+    "employee_name": "Moore, James P."
+   },
+   {
+    "employee_name": "Taylor, Patricia S."
+   },
+   {
+    "employee_name": "Anderson, Thomas R."
+   },
+   {
+    "employee_name": "Thomas, Nancy Q."
+   },
+   {
+    "employee_name": "Jackson, William X."
+   },
+   {
+    "employee_name": "White, Katherine Y."
+   },
+   {
+    "employee_name": "Harris, Charles Z."
+   },
+   {
+    "employee_name": "Martin, Margaret W."
+   },
+   {
+    "employee_name": "Thompson, Joseph V."
+   },
+   {
+    "employee_name": "Garcia, Linda U."
+   },
+   {
+    "employee_name": "Martinez, Richard T."
+   },
+   {
+    "employee_name": "Robinson, Barbara S."
+   }
+  ]
+ },
+ "parse": {
+  "reporting_unit_name": "U.S. Department of Housing and Urban Development",
+  "pay_period_start": "10/01/2023",
+  "pay_period_end": "10/15/2023",
+  "correspondence_code": "OVRT-ADJ-2023-10",
+  "approval_date": "10/16/2023",
+  "approving_officer_title": "Chief Human Capital Officer",
+  "employees": [
+   {
+    "employee_name": "Love, Uriel E."
+   },
+   {
+    "employee_name": "Brumleve, Matthew D."
+   },
+   {
+    "employee_name": "Williams, Sarah J."
+   },
+   {
+    "employee_name": "Johnson, Michael T."
+   },
+   {
+    "employee_name": "Smith, Emily R."
+   },
+   {
+    "employee_name": "Brown, David K."
+   },
+   {
+    "employee_name": "Davis, Jennifer L."
+   },
+   {
+    "employee_name": "Miller, Robert A."
+   },
+   {
+    "employee_name": "Wilson, Lisa M."
+   },
+   {
+    "employee_name": "Moore, James P."
+   },
+   {
+    "employee_name": "Taylor, Patricia S."
+   },
+   {
+    "employee_name": "Anderson, Thomas R."
+   },
+   {
+    "employee_name": "Thomas, Nancy Q."
+   },
+   {
+    "employee_name": "Jackson, William X."
+   },
+   {
+    "employee_name": "White, Katherine Y."
+   },
+   {
+    "employee_name": "Harris, Charles Z."
+   },
+   {
+    "employee_name": "Martin, Margaret W."
+   },
+   {
+    "employee_name": "Thompson, Joseph V."
+   },
+   {
+    "employee_name": "Garcia, Linda U."
+   },
+   {
+    "employee_name": "Martinez, Richard T."
+   },
+   {
+    "employee_name": "Robinson, Barbara S."
+   }
+  ]
+ },
+ "oneshot": {
+  "reporting_unit_name": "U.S. Department of Housing and Urban Development",
+  "pay_period_start": "10/01/2023",
+  "pay_period_end": "10/15/2023",
+  "correspondence_code": "OVRT-ADJ-2023-10",
+  "approval_date": "10/16/2023",
+  "approving_officer_title": "Chief Human Capital Officer",
+  "employees": [
+   {
+    "employee_name": "Love, Uriel E."
+   },
+   {
+    "employee_name": "Brumleve, Matthew D."
+   },
+   {
+    "employee_name": "Williams, Sarah J."
+   },
+   {
+    "employee_name": "Johnson, Michael T."
+   },
+   {
+    "employee_name": "Smith, Emily R."
+   },
+   {
+    "employee_name": "Brown, David K."
+   },
+   {
+    "employee_name": "Davis, Jennifer L."
+   },
+   {
+    "employee_name": "Miller, Robert A."
+   },
+   {
+    "employee_name": "Wilson, Lisa M."
+   },
+   {
+    "employee_name": "Moore, James P."
+   },
+   {
+    "employee_name": "Taylor, Patricia S."
+   },
+   {
+    "employee_name": "Anderson, Thomas R."
+   },
+   {
+    "employee_name": "Thomas, Nancy Q."
+   },
+   {
+    "employee_name": "Jackson, William X."
+   },
+   {
+    "employee_name": "White, Katherine Y."
+   },
+   {
+    "employee_name": "Harris, Charles Z."
+   },
+   {
+    "employee_name": "Martin, Margaret W."
+   },
+   {
+    "employee_name": "Thompson, Joseph V."
+   },
+   {
+    "employee_name": "Garcia, Linda U."
+   },
+   {
+    "employee_name": "Martinez, Richard T."
+   },
+   {
+    "employee_name": "Robinson, Barbara S."
+   }
+  ]
+ }
+}

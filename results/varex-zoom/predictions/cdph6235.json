@@ -1,0 +1,30 @@
+{
+ "beneficiary_id_number": "REF-2020-94646",
+ "individual": {
+  "last_name": "Hall",
+  "first_name": "Eddie",
+  "middle_initial": "A",
+  "date_of_birth": "07/14/1974",
+  "address": "227 Pham Causeway",
+  "city_state": "Kevinville, FL",
+  "zip_code": "48631"
+ },
+ "representative": {
+  "last_name": "Mann",
+  "first_name": "Pierina",
+  "middle_initial": "L",
+  "address": "809 Nathaniel Centers",
+  "city_state": "New Nicholasmouth, WI",
+  "zip_code": "96210",
+  "daytime_telephone_number": "(355) 570-3636",
+  "evening_telephone_number": "(070) 255-1842",
+  "email_address": "pierina.mann@outlook.com",
+  "best_hours_to_reach": "9:00 AM - 5:00 PM",
+  "type_of_legal_documentation": "CPA-2016-WI-97130 (Certified Public Accountant)"
+ },
+ "cdph_programs": [
+  {
+   "program_name": "Vaccine Program"
+  }
+ ]
+}

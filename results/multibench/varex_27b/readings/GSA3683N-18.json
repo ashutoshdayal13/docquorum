@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "employee_name": "Guerrero, Stephanie Y.",
+  "office_symbol": "NFFE-1801",
+  "date": "10/15/2018",
+  "major_accomplishments": [
+   "Successfully directed the annual theatre production, receiving positive feedback from audie"
+  ],
+  "other_accomplishments": [
+   "Completed a workshop on 'Advanced Stage Lighting Techniques' to enhance technical skills."
+  ],
+  "training_and_developmental_needs": [
+   "Attend a seminar on 'Digital Marketing for Performing Arts' to stay updated with industry"
+  ],
+  "employee_signature_date": "10/15/2018",
+  "performance_period": {
+   "start_date": "10/01/2017",
+   "end_date": "09/30/2018"
+  }
+ },
+ "parse": {
+  "employee_name": "Guerrero, Stephanie Y.",
+  "office_symbol": "NFFE-1801",
+  "date": "10/15/2018",
+  "major_accomplishments": [
+   "Successfully directed the annual theatre production, receiving positive feedback from audie"
+  ],
+  "other_accomplishments": [
+   "Completed a workshop on 'Advanced Stage Lighting Techniques' to enhance technical skills."
+  ],
+  "training_and_developmental_needs": [
+   "Attend a seminar on 'Digital Marketing for Performing Arts' to stay updated with industry"
+  ],
+  "employee_signature_date": "10/15/2018",
+  "performance_period": {
+   "start_date": "10/01/2017",
+   "end_date": "09/30/2018"
+  }
+ },
+ "oneshot": {
+  "employee_name": "Guerrero, Stephanie Y.",
+  "office_symbol": "NFFE-1801",
+  "date": "10/15/2018",
+  "major_accomplishments": [
+   "Successfully directed the annual theatre production, receiving positive feedback from audie"
+  ],
+  "other_accomplishments": [
+   "Completed a workshop on 'Advanced Stage Lighting Techniques' to enhance technical skills."
+  ],
+  "training_and_developmental_needs": [
+   "Attend a seminar on 'Digital Marketing for Performing Arts' to stay updated with industry"
+  ],
+  "employee_signature_date": "10/15/2018",
+  "performance_period": {
+   "start_date": "10/01/2017",
+   "end_date": "09/30/2018"
+  }
+ }
+}

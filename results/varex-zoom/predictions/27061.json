@@ -1,0 +1,46 @@
+{
+ "hud_program_title": "Community Development Block Grant Program",
+ "grantee_recipient_uei": "UEI12345678901234",
+ "grantee_recipient_name": "Ibarra-Garcia",
+ "grantee_reporting_organization": "Ibarra-Garcia Community Development",
+ "reporting_period_from": "01/01/2023",
+ "reporting_period_to": "12/31/2023",
+ "racial_categories": [
+  {
+   "count": 15
+  },
+  {
+   "count": 87
+  },
+  {
+   "count": 120
+  },
+  {
+   "count": 5
+  },
+  {
+   "count": 300
+  },
+  {
+   "count": 8
+  },
+  {
+   "count": 12
+  },
+  {
+   "count": 20
+  },
+  {
+   "count": 3
+  },
+  {
+   "count": 10
+  },
+  {
+   "count": 53
+  },
+  {
+   "count": 75
+  }
+ ]
+}

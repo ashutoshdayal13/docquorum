@@ -1,0 +1,104 @@
+{
+ "primary": {
+  "submitting_lab_number": 2023001,
+  "state_lab_number": 2023045,
+  "patient_name": "Mike Hamilton",
+  "patient_sex": "Male",
+  "patient_date_of_birth": "08/15/1991",
+  "patient_ssn": "415-65-1837",
+  "patient_medical_record_number": "MRN123456",
+  "onset_of_symptoms": "06/15/2023",
+  "additional_information": "Patient reported symptoms of blurred vision and muscle weakness.",
+  "received_in_lab_date_time": "06/16/2023 10:30 AM",
+  "received_in_lab_by": "JD",
+  "analyst_name": "Teresa Schultz",
+  "date_reported": "06/20/2023",
+  "patient_specimen": {
+   "specimen_comments": "Pre-antitoxin specimen",
+   "specimen_collection_date": "06/15/2023",
+   "specimen_collection_time": "09:15 AM"
+  },
+  "contact_information": {
+   "contact_doctor_name": "Dr. Sibille W. Garcia",
+   "contact_fax_number": "(815) 546-0059",
+   "contact_phone_number": "(256) 490-2124"
+  },
+  "sample_information": {
+   "sample_comments": "Specimen stored at 4°C during transport."
+  },
+  "final_results": {
+   "final_results_toxin_detected": "Yes",
+   "final_results_organisms_type": "Clostridium botulinum",
+   "final_results_other_findings": "High levels of toxin detected in serum specimen.",
+   "final_results_unsatisfactory_sample": "No"
+  }
+ },
+ "parse": {
+  "submitting_lab_number": 2023001,
+  "state_lab_number": 2023045,
+  "patient_name": "Mike Hamilton",
+  "patient_sex": "Male",
+  "patient_date_of_birth": "08/15/1991",
+  "patient_ssn": "415-65-1837",
+  "patient_medical_record_number": "MRN123456",
+  "onset_of_symptoms": "06/15/2023",
+  "additional_information": "Patient reported symptoms of blurred vision and muscle weakness.",
+  "received_in_lab_date_time": "06/16/2023 10:30 AM",
+  "received_in_lab_by": "JD",
+  "analyst_name": "Teresa Schultz",
+  "date_reported": "06/20/2023",
+  "patient_specimen": {
+   "specimen_comments": "Pre-antitoxin specimen",
+   "specimen_collection_date": "06/15/2023",
+   "specimen_collection_time": "09:15 AM"
+  },
+  "contact_information": {
+   "contact_doctor_name": "Dr. Sibille W. Garcia",
+   "contact_fax_number": "(815) 546-0059",
+   "contact_phone_number": "(256) 490-2124"
+  },
+  "sample_information": {
+   "sample_comments": "Specimen stored at 4°C during transport."
+  },
+  "final_results": {
+   "final_results_toxin_detected": "Yes",
+   "final_results_organisms_type": "Clostridium botulinum",
+   "final_results_other_findings": "High levels of toxin detected in serum specimen.",
+   "final_results_unsatisfactory_sample": "No"
+  }
+ },
+ "oneshot": {
+  "submitting_lab_number": 2023001,
+  "state_lab_number": 2023045,
+  "patient_name": "Mike Hamilton",
+  "patient_sex": "Male",
+  "patient_date_of_birth": "08/15/1991",
+  "patient_ssn": "415-65-1837",
+  "patient_medical_record_number": "MRN123456",
+  "onset_of_symptoms": "06/15/2023",
+  "additional_information": "Patient reported symptoms of blurred vision and muscle weakness.",
+  "received_in_lab_date_time": "06/16/2023 10:30 AM",
+  "received_in_lab_by": "JD",
+  "analyst_name": "Teresa Schultz",
+  "date_reported": "06/20/2023",
+  "patient_specimen": {
+   "specimen_comments": "Pre-antitoxin specimen",
+   "specimen_collection_date": "06/15/2023",
+   "specimen_collection_time": "09:15 AM"
+  },
+  "contact_information": {
+   "contact_doctor_name": "Dr. Sibille W. Garcia",
+   "contact_fax_number": "(815) 546-0059",
+   "contact_phone_number": "(256) 490-2124"
+  },
+  "sample_information": {
+   "sample_comments": "Specimen stored at 4°C during transport."
+  },
+  "final_results": {
+   "final_results_toxin_detected": "Yes",
+   "final_results_organisms_type": "Clostridium botulinum",
+   "final_results_other_findings": "High levels of toxin detected in serum specimen.",
+   "final_results_unsatisfactory_sample": "No"
+  }
+ }
+}

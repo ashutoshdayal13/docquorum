@@ -1,0 +1,107 @@
+{
+ "primary": {
+  "name": "Angela Hicks",
+  "waiver_reason": "Medical disability due to prolonged illness",
+  "mailing_address": "6515 Kayla Roads",
+  "city": "New Jennifer",
+  "state": "F",
+  "country": "United States",
+  "zip_code": "71237",
+  "telephone_day": "(835)",
+  "telephone_home": "(494)",
+  "email_address": "angela.hicks@outlook.co",
+  "signature_date": "10/15/2023",
+  "disability_information": {
+   "disability_dates": "01/01/2023 to 10/14/2023",
+   "physician_verification": "Verified by Dr. Smith, Board Certified",
+   "physician_signature_date": "10/14/2023"
+  },
+  "physician_details": {
+   "physician_name": "Dr. John Smith",
+   "physician_license_number": "MD-47582",
+   "physician_address": "123 Main Street",
+   "physician_city": "New Jennifer",
+   "physician_state": "F",
+   "physician_zip_code": "71237",
+   "physician_telephone": "(555)"
+  },
+  "absence_information": {
+   "absence_dates": "01/01/2023 to 10/14/2023",
+   "country_of_residence": "United States"
+  },
+  "military_service_information": {
+   "military_service_dates": "01/01/2023 to 10/14/2023",
+   "military_station": "Fort Benning, GA"
+  }
+ },
+ "parse": {
+  "name": "Angela Hicks",
+  "waiver_reason": "Medical disability due to prolonged illness",
+  "mailing_address": "6515 Kayla Roads",
+  "city": "New Jennifer",
+  "state": "F",
+  "country": "United States",
+  "zip_code": "71237",
+  "telephone_day": "(835)",
+  "telephone_home": "(494)",
+  "email_address": "angela.hicks@outlook.co",
+  "signature_date": "10/15/2023",
+  "disability_information": {
+   "disability_dates": "01/01/2023 to 10/14/2023",
+   "physician_verification": "Verified by Dr. Smith, Board Certified",
+   "physician_signature_date": "10/14/2023"
+  },
+  "physician_details": {
+   "physician_name": "Dr. John Smith",
+   "physician_license_number": "MD-47582",
+   "physician_address": "123 Main Street",
+   "physician_city": "New Jennifer",
+   "physician_state": "F",
+   "physician_zip_code": "71237",
+   "physician_telephone": "(555)"
+  },
+  "absence_information": {
+   "absence_dates": "01/01/2023 to 10/14/2023",
+   "country_of_residence": "United States"
+  },
+  "military_service_information": {
+   "military_service_dates": "01/01/2023 to 10/14/2023",
+   "military_station": "Fort Benning, GA"
+  }
+ },
+ "oneshot": {
+  "name": "Angela Hicks",
+  "waiver_reason": "Medical disability due to prolonged illness",
+  "mailing_address": "6515 Kayla Roads",
+  "city": "New Jennifer",
+  "state": "F",
+  "country": "United States",
+  "zip_code": "71237",
+  "telephone_day": "(835)",
+  "telephone_home": "(494)",
+  "email_address": "angela.hicks@outlook.co",
+  "signature_date": "10/15/2023",
+  "disability_information": {
+   "disability_dates": "01/01/2023 to 10/14/2023",
+   "physician_verification": "Verified by Dr. Smith, Board Certified",
+   "physician_signature_date": "10/14/2023"
+  },
+  "physician_details": {
+   "physician_name": "Dr. John Smith",
+   "physician_license_number": "MD-47582",
+   "physician_address": "123 Main Street",
+   "physician_city": "New Jennifer",
+   "physician_state": "F",
+   "physician_zip_code": "71237",
+   "physician_telephone": "(555)"
+  },
+  "absence_information": {
+   "absence_dates": "01/01/2023 to 10/14/2023",
+   "country_of_residence": "United States"
+  },
+  "military_service_information": {
+   "military_service_dates": "01/01/2023 to 10/14/2023",
+   "military_station": "Fort Benning, GA"
+  }
+ }
+}

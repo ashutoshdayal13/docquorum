@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "homeworker_name": "Adrian O. Bobal",
+  "homeworker_address": "76394 Erik Trail Apt. 451, West Jamesstad, FL 41955",
+  "homework_distributed_from": "29768 Alisha Station, North Luis, VA 97300",
+  "industry": "Historic Preservation",
+  "workweek_begin_day": "Monday at 8:00 AM",
+  "date_issued": "03/15/2023",
+  "homeworker_certificate_number": "RA-2024-FL-73339",
+  "firm": {
+   "name": "Church, Suarez and Clayton",
+   "address": "76394 Erik Trail Apt. 451, West Jamesstad, FL 41955"
+  }
+ },
+ "parse": {
+  "homeworker_name": "Adrian O. Bobal",
+  "homeworker_address": "76394 Erik Trail Apt. 451, West Jamesstad, FL 41955",
+  "homework_distributed_from": "29768 Alisha Station, North Luis, VA 97300",
+  "industry": "Historic Preservation",
+  "workweek_begin_day": "Monday at 8:00 AM",
+  "date_issued": "03/15/2023",
+  "homeworker_certificate_number": "RA-2024-FL-73339",
+  "firm": {
+   "name": "Church, Suarez and Clayton",
+   "address": "76394 Erik Trail Apt. 451, West Jamesstad, FL 41955"
+  }
+ },
+ "oneshot": {
+  "homeworker_name": "Adrian O. Bobal",
+  "homeworker_address": "76394 Erik Trail Apt. 451, West Jamesstad, FL 41955",
+  "homework_distributed_from": "29768 Alisha Station, North Luis, VA 97300",
+  "industry": "Historic Preservation",
+  "workweek_begin_day": "Monday at 8:00 AM",
+  "date_issued": "03/15/2023",
+  "homeworker_certificate_number": "RA-2024-FL-73339",
+  "firm": {
+   "name": "Church, Suarez and Clayton",
+   "address": "76394 Erik Trail Apt. 451, West Jamesstad, FL 41955"
+  }
+ }
+}

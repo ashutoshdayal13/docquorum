@@ -1,0 +1,15 @@
+{
+ "project_number": "REF-2020-79634",
+ "amount_of_mortgage_note": 22725.98,
+ "mortgage_recorded_date": "05/15/2023",
+ "mortgagor_name": "Hubert Aubry",
+ "mortgagor_address": "26123 Christopher Flats, West Kristenport, CA 10416",
+ "reserve_fund_deposit_amount": 6091.25,
+ "mortgage_recorded_location": {
+  "state": "California",
+  "county": "Kristenport County"
+ },
+ "agreement_date": {
+  "date": "15"
+ }
+}

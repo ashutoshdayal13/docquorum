@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "year": "2022",
+  "grantee_name": "California",
+  "grant_amount": 281872.25,
+  "grant_information": [
+   "Infrastructure improvement project",
+   "Community center renovation",
+   "Economic development initiative"
+  ],
+  "director": {
+   "name": "Roger Y. Choudhary",
+   "signature_date": "10/15/2022"
+  }
+ },
+ "parse": {
+  "year": "2022",
+  "grantee_name": "California",
+  "grant_amount": 281872.25,
+  "grant_information": [
+   "Infrastructure improvement project",
+   "Community center renovation",
+   "Economic development initiative"
+  ],
+  "director": {
+   "name": "Roger Y. Choudhary",
+   "signature_date": "10/15/2022"
+  }
+ },
+ "oneshot": {
+  "year": "2022",
+  "grantee_name": "California",
+  "grant_amount": 281872.25,
+  "grant_information": [
+   "Infrastructure improvement project",
+   "Community center renovation",
+   "Economic development initiative"
+  ],
+  "director": {
+   "name": "Roger Y. Choudhary",
+   "signature_date": "10/15/2022"
+  }
+ }
+}

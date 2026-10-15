@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "subject_name": "William Boccherini",
+  "driver_license_number": "CPA-1993-CA-43369",
+  "date_of_birth": "04271959",
+  "arrest_details": {
+   "arrest_date": "2023-10-15",
+   "arrest_location": "Ellisonhaven, CA"
+  },
+  "officer_details": {
+   "officer_name": "Misty Moretti",
+   "officer_department": "Ramirez-White"
+  }
+ },
+ "parse": {
+  "subject_name": "William Boccherini",
+  "driver_license_number": "CPA-1993-CA-43369",
+  "date_of_birth": "04271959",
+  "arrest_details": {
+   "arrest_date": "2023-10-15",
+   "arrest_location": "Ellisonhaven, CA"
+  },
+  "officer_details": {
+   "officer_name": "Misty Moretti",
+   "officer_department": "Ramirez-White"
+  }
+ },
+ "oneshot": {
+  "subject_name": "William Boccherini",
+  "driver_license_number": "CPA-1993-CA-43369",
+  "date_of_birth": "04271959",
+  "arrest_details": {
+   "arrest_date": "2023-10-15",
+   "arrest_location": "Ellisonhaven, CA"
+  },
+  "officer_details": {
+   "officer_name": "Misty Moretti",
+   "officer_department": "Ramirez-White"
+  }
+ }
+}

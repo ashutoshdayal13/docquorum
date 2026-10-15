@@ -1,0 +1,143 @@
+{
+ "primary": {
+  "facility_name": "Marshall's Auto Inspection Services",
+  "station_id": "TX-INSP-2023-4",
+  "station_name": "Marshall's Inspection Station",
+  "website": "www.marshallautoinpection.com",
+  "email": "info@marshallautoinpection.com",
+  "phone": "(730) 171-27",
+  "fax": "(407) 153-06",
+  "owner_agent_name": "Salma K. Marshall",
+  "signature_date": "03/15/2023",
+  "physical_address": {
+   "street_address": "5448 Christopher Valleys",
+   "city": "North Gregoryside",
+   "zip_code": "0524"
+  },
+  "mailing_address": {
+   "mailing_address": "5448 Christopher Valleys",
+   "mailing_city": "North Gregoryside",
+   "mailing_zip_code": "0524"
+  },
+  "owners": [
+   {
+    "owner_name": "Salma K. Marshall"
+   },
+   {
+    "owner_name": "Reva H. Dominguez"
+   }
+  ],
+  "technicians": [
+   {
+    "technician_name": "Melissa C. Cervantes",
+    "technician_license": "PLS-2027-FL-94855"
+   },
+   {
+    "technician_name": "John Doe",
+    "technician_license": "TECH-2022-TX-12345"
+   },
+   {
+    "technician_name": "Jane Smith",
+    "technician_license": "TECH-2021-TX-67890"
+   },
+   {
+    "technician_name": "Robert Johnson",
+    "technician_license": "TECH-2020-TX-54321"
+   }
+  ]
+ },
+ "parse": {
+  "facility_name": "Marshall's Auto Inspection Services",
+  "station_id": "TX-INSP-2023-4",
+  "station_name": "Marshall's Inspection Station",
+  "website": "www.marshallsautoinspection.com",
+  "email": "info@marshallsautoinspection.com",
+  "phone": "(730) 171-27",
+  "fax": "(407) 153-06",
+  "owner_agent_name": "Salma K. Marshall",
+  "signature_date": "03/15/2023",
+  "physical_address": {
+   "street_address": "5448 Christopher Valleys",
+   "city": "North Gregoryside",
+   "zip_code": "0524"
+  },
+  "mailing_address": {
+   "mailing_address": "5448 Christopher Valleys",
+   "mailing_city": "North Gregoryside",
+   "mailing_zip_code": "0524"
+  },
+  "owners": [
+   {
+    "owner_name": "Salma K. Marshall"
+   },
+   {
+    "owner_name": "Reva H. Dominguez"
+   }
+  ],
+  "technicians": [
+   {
+    "technician_name": "Melissa C. Cervantes",
+    "technician_license": "PLS-2027-FL-94855"
+   },
+   {
+    "technician_name": "John Doe",
+    "technician_license": "TECH-2022-TX-12345"
+   },
+   {
+    "technician_name": "Jane Smith",
+    "technician_license": "TECH-2021-TX-67890"
+   },
+   {
+    "technician_name": "Robert Johnson",
+    "technician_license": "TECH-2020-TX-54321"
+   }
+  ]
+ },
+ "oneshot": {
+  "facility_name": "Marshall's Auto Inspection Services",
+  "station_id": "TX-INSP-2023-4",
+  "station_name": "Marshall's Inspection Station",
+  "website": "www.marshallautoinpection.com",
+  "email": "info@marshallautoinpection.com",
+  "phone": "(730) 171-27",
+  "fax": "(407) 153-06",
+  "owner_agent_name": "Salma K. Marshall",
+  "signature_date": "03/15/2023",
+  "physical_address": {
+   "street_address": "5448 Christopher Valleys",
+   "city": "North Gregoryside",
+   "zip_code": "0524"
+  },
+  "mailing_address": {
+   "mailing_address": "5448 Christopher Valleys",
+   "mailing_city": "North Gregoryside",
+   "mailing_zip_code": "0524"
+  },
+  "owners": [
+   {
+    "owner_name": "Salma K. Marshall"
+   },
+   {
+    "owner_name": "Reva H. Dominguez"
+   }
+  ],
+  "technicians": [
+   {
+    "technician_name": "Melissa C. Cervantes",
+    "technician_license": "PLS-2027-FL-94855"
+   },
+   {
+    "technician_name": "John Doe",
+    "technician_license": "TECH-2022-TX-12345"
+   },
+   {
+    "technician_name": "Jane Smith",
+    "technician_license": "TECH-2021-TX-67890"
+   },
+   {
+    "technician_name": "Robert Johnson",
+    "technician_license": "TECH-2020-TX-54321"
+   }
+  ]
+ }
+}

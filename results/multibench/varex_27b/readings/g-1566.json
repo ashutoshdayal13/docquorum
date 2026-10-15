@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "number_of_certificates_requested": 1,
+  "subject_of_record": {
+   "name": "Fouquet, Natasha G.",
+   "date_of_birth": "06/22/1983",
+   "place_of_birth": "Williamsonfurt, PA"
+  }
+ },
+ "parse": {
+  "number_of_certificates_requested": 1,
+  "subject_of_record": {
+   "name": "Fouquet, Natasha G.",
+   "date_of_birth": "06/22/1983",
+   "place_of_birth": "Williamsonfurt, PA"
+  }
+ },
+ "oneshot": {
+  "number_of_certificates_requested": 1,
+  "subject_of_record": {
+   "name": "Fouquet, Natasha G.",
+   "date_of_birth": "06/22/1983",
+   "place_of_birth": "Williamsonfurt, PA"
+  }
+ }
+}

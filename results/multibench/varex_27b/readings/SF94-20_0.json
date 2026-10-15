@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "witness_name": "Christopher Ramos",
+  "accident_description": "A vehicle ran a red light and collided with another car at an intersection.",
+  "injury_description": "One person sustained minor cuts and bruises; another had a sprained ankle.",
+  "road_conditions": "Wet due to recent rain, but no major puddles or standing water.",
+  "unusual_observations": "A dog ran into the street moments before the accident, distracting the driver.",
+  "witness_contact_info": {
+   "work_telephone": "(162) 718-1108",
+   "cellular_telephone": "(180) 366-0035",
+   "home_telephone": "(259) 240-9028"
+  },
+  "accident_details": {
+   "did_witness_accident": "Yes",
+   "date_of_accident": "05/15/2023",
+   "time_of_accident": "03:45 PM",
+   "time_arrived_at_scene": "03:47 PM",
+   "location": "Intersection of Main Street and Elm Avenue, East Kayla, NY"
+  },
+  "property_damage": {
+   "private_property": "Front bumper and right fender of a 2020 Toyota Camry damaged.",
+   "government_property": "Street light pole slightly bent but still functional."
+  }
+ },
+ "parse": {
+  "witness_name": "Christopher Ramos",
+  "accident_description": "A vehicle ran a red light and collided with another car at an intersection.",
+  "injury_description": "One person sustained minor cuts and bruises; another had a sprained ankle.",
+  "road_conditions": "Wet due to recent rain, but no major puddles or standing water.",
+  "unusual_observations": "A dog ran into the street moments before the accident, distracting the driver.",
+  "witness_contact_info": {
+   "work_telephone": "(162) 718-1108",
+   "cellular_telephone": "(180) 366-0035",
+   "home_telephone": "(259) 240-9028"
+  },
+  "accident_details": {
+   "did_witness_accident": "Yes",
+   "date_of_accident": "05/15/2023",
+   "time_of_accident": "03:45 PM",
+   "time_arrived_at_scene": "03:47 PM",
+   "location": "Intersection of Main Street and Elm Avenue, East Kayla, NY"
+  },
+  "property_damage": {
+   "private_property": "Front bumper and right fender of a 2020 Toyota Camry damaged.",
+   "government_property": "Street light pole slightly bent but still functional."
+  }
+ },
+ "oneshot": {
+  "witness_name": "Christopher Ramos",
+  "accident_description": "A vehicle ran a red light and collided with another car at an intersection.",
+  "injury_description": "One person sustained minor cuts and bruises; another had a sprained ankle.",
+  "road_conditions": "Wet due to recent rain, but no major puddles or standing water.",
+  "unusual_observations": "A dog ran into the street moments before the accident, distracting the driver.",
+  "witness_contact_info": {
+   "work_telephone": "(162) 718-1108",
+   "cellular_telephone": "(180) 366-0035",
+   "home_telephone": "(259) 240-9028"
+  },
+  "accident_details": {
+   "did_witness_accident": "Yes",
+   "date_of_accident": "05/15/2023",
+   "time_of_accident": "03:45 PM",
+   "time_arrived_at_scene": "03:47 PM",
+   "location": "Intersection of Main Street and Elm Avenue, East Kayla, NY"
+  },
+  "property_damage": {
+   "private_property": "Front bumper and right fender of a 2020 Toyota Camry damaged.",
+   "government_property": "Street light pole slightly bent but still functional."
+  }
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "primary": {
+  "ginnie_mae_pool_commitment_number": "GM-2022-10457",
+  "date": "04/15/2023",
+  "certificate_number": "CERT-2022-5678",
+  "reporting_month": "March 2023",
+  "issuer": "Stevenson, Barry and Potter",
+  "issuer_address": {
+   "street_address": "1299 Julie Dale Apt. 695",
+   "city_and_state": "Rebeccaville, PA 85406"
+  }
+ },
+ "parse": {
+  "ginnie_mae_pool_commitment_number": "GM-2022-10457",
+  "date": "04/15/2023",
+  "certificate_number": "CERT-2022-5678",
+  "reporting_month": "March 2023",
+  "issuer": "Stevenson, Barry and Potter",
+  "issuer_address": {
+   "street_address": "1299 Julie Dale Apt. 695",
+   "city_and_state": "Rebeccaville, PA 85406"
+  }
+ },
+ "oneshot": {
+  "ginnie_mae_pool_commitment_number": "GM-2022-10457",
+  "date": "04/15/2023",
+  "certificate_number": "CERT-2022-5678",
+  "reporting_month": "March 2023",
+  "issuer": "Stevenson, Barry and Potter",
+  "issuer_address": {
+   "street_address": "1299 Julie Dale Apt. 695",
+   "city_and_state": "Rebeccaville, PA 85406"
+  }
+ }
+}

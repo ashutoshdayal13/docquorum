@@ -1,0 +1,15 @@
+{
+ "infant_name": "Murthy, Amanda F.",
+ "infant_dob": "03/15/2023",
+ "infant_calredie_id": "CR-2023-78945",
+ "infant_local_id": "L-2023-45678",
+ "mother_information": {
+  "mother_name": "Murthy, Amanda F.",
+  "mother_calredie_id": "CR-2007-12345",
+  "mother_local_id": "L-2007-54321"
+ },
+ "prenatal_care": {
+  "prenatal_care_practice_name": "North Ellen Women's Health Center",
+  "wic_site": "North Ellen WIC Clinic"
+ }
+}

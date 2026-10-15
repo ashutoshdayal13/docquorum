@@ -1,0 +1,12 @@
+{
+ "bus_driver_name": "Kabir Carpenter",
+ "date_of_birth": "02/17/1974",
+ "driver_license_id_number": "CPA-2023-",
+ "diabetic_condition_stabilization": "Diet and hypoglycemic agent",
+ "medication_details": "Metformin 500mg twice daily",
+ "certification_date": "05/15/2023",
+ "healthcare_provider": {
+  "name": "April C. Choudhury",
+  "contact_information": "(186) 979-3069"
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "primary": {
+  "social_security_number": "386288234",
+  "uscis_online_account_number": "657686142623",
+  "date_of_birth": "06/04/1986",
+  "country_of_birth": "United States of America",
+  "country_of_prior_citizenship": "United States of America",
+  "other_names": [
+   "Trinidad James Kirby",
+   "Trinidad J. Kirby Jr."
+  ],
+  "current_legal_name": {
+   "first_name": "Trinidad",
+   "middle_name": "J.",
+   "last_name": "Kirby"
+  },
+  "permanent_resident_card_name": {
+   "first_name": "Trinidad",
+   "middle_name": "J.",
+   "last_name": "Kirby"
+  },
+  "attorney_or_representative": {
+   "uscis_representative_number": ""
+  }
+ },
+ "parse": {
+  "social_security_number": "386288234",
+  "uscis_online_account_number": "657686142623",
+  "date_of_birth": "06/04/1986",
+  "country_of_birth": "United States of America",
+  "country_of_prior_citizenship": "United States of America",
+  "other_names": [
+   "Trinidad James Kirby",
+   "Trinidad J. Kirby Jr."
+  ],
+  "current_legal_name": {
+   "first_name": "Trinidad",
+   "middle_name": "J.",
+   "last_name": "Kirby"
+  },
+  "permanent_resident_card_name": {
+   "first_name": "Trinidad",
+   "middle_name": "J.",
+   "last_name": "Kirby"
+  },
+  "attorney_or_representative": {
+   "uscis_representative_number": ""
+  }
+ },
+ "oneshot": {
+  "social_security_number": "386288234",
+  "uscis_online_account_number": "657686142623",
+  "date_of_birth": "06/04/1986",
+  "country_of_birth": "United States of America",
+  "country_of_prior_citizenship": "United States of America",
+  "other_names": [
+   "Trinidad James Kirby",
+   "Trinidad J. Kirby Jr."
+  ],
+  "current_legal_name": {
+   "first_name": "Trinidad",
+   "middle_name": "J.",
+   "last_name": "Kirby"
+  },
+  "permanent_resident_card_name": {
+   "first_name": "Trinidad",
+   "middle_name": "J.",
+   "last_name": "Kirby"
+  },
+  "attorney_or_representative": {}
+ }
+}

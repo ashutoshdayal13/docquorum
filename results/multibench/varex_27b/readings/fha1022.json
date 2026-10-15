@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "project_name": "Sunrise Meadows Apartments",
+  "project_number": "FHA-2023-1022",
+  "mortgagor": {
+   "name": "Richardson, Diaz and Lopez",
+   "address": "278 West Loop, Ericport, NE 25353"
+  },
+  "mortgagee": {
+   "name": "Dixon-Perez",
+   "address": "1321 Robert Prairie Suite 475, Baldwinfurt, AZ 48291"
+  }
+ },
+ "parse": {
+  "project_name": "Sunrise Meadows Apartments",
+  "project_number": "FHA-2023-1022",
+  "mortgagor": {
+   "name": "Richardson, Diaz and Lopez",
+   "address": "278 West Loop, Ericport, NE 25353"
+  },
+  "mortgagee": {
+   "name": "Dixon-Perez",
+   "address": "1321 Robert Prairie Suite 475, Baldwinfurt, AZ 48291"
+  }
+ },
+ "oneshot": {
+  "project_name": "Sunrise Meadows Apartments",
+  "project_number": "FHA-2023-1022",
+  "mortgagor": {
+   "name": "Richardson, Diaz and Lopez",
+   "address": "278 West Loop, Ericport, NE 25353"
+  },
+  "mortgagee": {
+   "name": "Dixon-Perez",
+   "address": "1321 Robert Prairie Suite 475, Baldwinfurt, AZ 48291"
+  }
+ }
+}

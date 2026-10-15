@@ -1,0 +1,18 @@
+{
+ "employee_name": "Amy Young",
+ "mailing_address": "7937 Carol Prairie Suite 361, North Albert,",
+ "old_official_station": "Heathville, CA",
+ "new_official_station": "Hinesfort, CA",
+ "service_agreement_date": "03/15/2023",
+ "travel_authorization_number": "TA-2024-5678",
+ "travel_authorization_date": "04/01/2024",
+ "duty_report_date": "05/15/2024",
+ "old_property_details": {
+  "property_address": "663 Mary Drive, Heathville, CA 91670",
+  "purchase_date": "01/10/2020"
+ },
+ "new_property_details": {
+  "property_address": "783 Tim Junctions Suite 601, Hinesfort, CA 85325",
+  "purchase_date": "04/01/2024"
+ }
+}

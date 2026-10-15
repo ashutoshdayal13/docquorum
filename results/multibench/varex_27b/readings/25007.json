@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "position_title": "Senior Policy Analyst",
+  "vacancy_announce_number": "HUD-2023-0456-DE",
+  "organization": "Office of Policy Development and Research, U.S. Department of Housing and Urban Development",
+  "quality_ranking_factors": [
+   {
+    "factor_description": "Demonstrated experience in housing policy analysis and research, with a focus on affordable housing"
+   },
+   {
+    "factor_description": "Proven ability to develop and implement innovative policy solutions that address urban development"
+   }
+  ]
+ },
+ "parse": {
+  "position_title": "Senior Policy Analyst",
+  "vacancy_announce_number": "HUD-2023-0456-DE",
+  "organization": "Office of Policy Development and Research, U.S. Department of Housing and Urban Development",
+  "quality_ranking_factors": [
+   {
+    "factor_description": "Demonstrated experience in housing policy analysis and research, with a focus on affordable housing"
+   },
+   {
+    "factor_description": "Proven ability to develop and implement innovative policy solutions that address urban development"
+   }
+  ]
+ },
+ "oneshot": {
+  "position_title": "Senior Policy Analyst",
+  "vacancy_announce_number": "HUD-2023-0456-DE",
+  "organization": "Office of Policy Development and Research, U.S. Department of Housing and Urban Development",
+  "quality_ranking_factors": [
+   {
+    "factor_description": "Demonstrated experience in housing policy analysis and research, with a focus on affordable housing"
+   },
+   {
+    "factor_description": "Proven ability to develop and implement innovative policy solutions that address urban development"
+   }
+  ]
+ }
+}

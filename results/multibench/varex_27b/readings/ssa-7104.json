@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "name_of_firm": "Hoover & Gotti Partnership",
+  "address_of_firm": "3400 Main St, New York, NY",
+  "employer_identification_number": "88-1234567",
+  "partnership_formation_date": "05/15/2020",
+  "nature_of_business": "Real estate management and fashion design consulting services",
+  "partnership_agreement_details": "Partnership agreement dated 05/15/2020, equal profit sharing",
+  "period_from": "01/01/2023",
+  "period_to": "12/31/2023",
+  "wage_earner_details": {
+   "name_of_wage_earner": "Hoover, Joshua J.",
+   "social_security_number": "546-88-5215"
+  },
+  "partner_details": [
+   {
+    "partner_contributions": "Initial capital contribution of $73740.94",
+    "partner_training_and_experience": "Joshua: 10 years in real estate management, Colleen: 20 years in",
+    "partner_services": "Joshua handles property management, Colleen oversees design projects",
+    "partner_time_devotion": "Both partners devote full time to the business",
+    "profit_loss_sharing": "Profits and losses shared equally between partners"
+   }
+  ]
+ },
+ "parse": {
+  "name_of_firm": "Hoover & Gotti Partnership",
+  "address_of_firm": "3400 Main St, New York, NY",
+  "employer_identification_number": "88-1234567",
+  "partnership_formation_date": "05/15/2020",
+  "nature_of_business": "Real estate management and fashion design consulting services",
+  "partnership_agreement_details": "Partnership agreement dated 05/15/2020, equal profit sharing",
+  "period_from": "01/01/2023",
+  "period_to": "12/31/2023",
+  "wage_earner_details": {
+   "name_of_wage_earner": "Hoover, Joshua J.",
+   "social_security_number": "546-88-5215"
+  },
+  "partner_details": [
+   {
+    "partner_contributions": "Initial capital contribution of $73740.94",
+    "partner_training_and_experience": "Joshua: 10 years in real estate management, Colleen: 20 years in",
+    "partner_services": "Joshua handles property management, Colleen oversees design projects",
+    "partner_time_devotion": "Both partners devote full time to the business",
+    "profit_loss_sharing": "Profits and losses shared equally between partners"
+   }
+  ]
+ },
+ "oneshot": {
+  "name_of_firm": "Hoover & Gotti Partnership",
+  "address_of_firm": "3400 Main St, New York, NY",
+  "employer_identification_number": "88-1234567",
+  "partnership_formation_date": "05/15/2020",
+  "nature_of_business": "Real estate management and fashion design consulting services",
+  "partnership_agreement_details": "Partnership agreement dated 05/15/2020, equal profit sharing",
+  "period_from": "01/01/2023",
+  "period_to": "12/31/2023",
+  "wage_earner_details": {
+   "name_of_wage_earner": "Hoover, Joshua J.",
+   "social_security_number": "546-88-5215"
+  },
+  "partner_details": [
+   {
+    "partner_contributions": "Initial capital contribution of $73740.94",
+    "partner_training_and_experience": "Joshua: 10 years in real estate management, Colleen: 20 years in",
+    "partner_services": "Joshua handles property management, Colleen oversees design projects",
+    "partner_time_devotion": "Both partners devote full time to the business",
+    "profit_loss_sharing": "Profits and losses shared equally between partners"
+   }
+  ]
+ }
+}

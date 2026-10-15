@@ -1,0 +1,32 @@
+{
+ "primary": {
+  "applicant_family_name": "Martin",
+  "applicant_given_name": "Franck",
+  "applicant_middle_name": "A.",
+  "applicant_address": {
+   "street": "8825 Mcclain Key Suite 689",
+   "city": "North Carlos",
+   "zip_code": "29639"
+  }
+ },
+ "parse": {
+  "applicant_family_name": "Martin",
+  "applicant_given_name": "Franck",
+  "applicant_middle_name": "A.",
+  "applicant_address": {
+   "street": "8825 Mcclain Key Suite 689",
+   "city": "North Carlos",
+   "zip_code": "29639"
+  }
+ },
+ "oneshot": {
+  "applicant_family_name": "Martin",
+  "applicant_given_name": "Franck",
+  "applicant_middle_name": "A.",
+  "applicant_address": {
+   "street": "8825 Mcclain Key Suite 689",
+   "city": "North Carlos",
+   "zip_code": "29639"
+  }
+ }
+}

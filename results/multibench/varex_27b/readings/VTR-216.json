@@ -1,0 +1,62 @@
+{
+ "primary": {
+  "vehicle_information": {
+   "vehicle_type": "SUV",
+   "vehicle_identifier": "1HGCM82633A123456"
+  },
+  "applicant_information": {
+   "applicant_name": "Breanna G. Nair",
+   "applicant_address": "325 Martin Throughway, Matthewmouth, FL 61384",
+   "applicant_phone": "(141) 609-0903",
+   "applicant_email": "breanna.nair@yahoo.com"
+  },
+  "health_care_provider_certification": {
+   "provider_name": "Dr. Sarah Johnson, MD",
+   "provider_license_number": "MD-2015-FL-55555"
+  },
+  "applicant_certification": {
+   "certification_date": "10/15/2023"
+  },
+  "certification_date": "10/15/2023"
+ },
+ "parse": {
+  "vehicle_information": {
+   "vehicle_type": "SUV",
+   "vehicle_identifier": "1HGCM82633A123456"
+  },
+  "applicant_information": {
+   "applicant_name": "Breanna G. Nair",
+   "applicant_address": "325 Martin Throughway, Matthewmouth, FL 61384",
+   "applicant_phone": "(141) 609-0903",
+   "applicant_email": "breanna.nair@yahoo.com"
+  },
+  "health_care_provider_certification": {
+   "provider_name": "Dr. Sarah Johnson, MD",
+   "provider_license_number": "MD-2015-FL-55555"
+  },
+  "applicant_certification": {
+   "certification_date": "10/15/2023"
+  },
+  "certification_date": "10/15/2023"
+ },
+ "oneshot": {
+  "vehicle_information": {
+   "vehicle_type": "SUV",
+   "vehicle_identifier": "1HGCM82633A123456"
+  },
+  "applicant_information": {
+   "applicant_name": "Breanna G. Nair",
+   "applicant_address": "325 Martin Throughway, Matthewmouth, FL 61384",
+   "applicant_phone": "(141) 609-0903",
+   "applicant_email": "breanna.nair@yahoo.com"
+  },
+  "health_care_provider_certification": {
+   "provider_name": "Dr. Sarah Johnson, MD",
+   "provider_license_number": "MD-2015-FL-55555"
+  },
+  "applicant_certification": {
+   "certification_date": "10/15/2023"
+  },
+  "certification_date": "10/15/2023"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "signature_date": "08/15/2023",
+  "applicant_information": {
+   "name": "Karan U. Garcia",
+   "phone_number": "(941) 382-3943",
+   "email": "karan.garcia@gmail.com"
+  }
+ },
+ "parse": {
+  "signature_date": "08/15/2023",
+  "applicant_information": {
+   "name": "Karan U. Garcia",
+   "phone_number": "(941) 382-3943",
+   "email": "karan.garcia@gmail.com"
+  }
+ },
+ "oneshot": {
+  "signature_date": "08/15/2023",
+  "applicant_information": {
+   "name": "Karan U. Garcia",
+   "phone_number": "(941) 382-3943",
+   "email": "karan.garcia@gmail.com"
+  }
+ }
+}

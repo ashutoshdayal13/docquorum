@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "license_number": "TX-DLR-2023-001",
+  "date_of_expiration": "12/31/2024",
+  "date_issued": "01/15/2023",
+  "plate_selections": [
+   "SMITHLTD",
+   "FISHER20",
+   "ROBI1978"
+  ],
+  "dealership_info": {
+   "dealership_name": "Smith Ltd Dealership",
+   "county": "Heather County",
+   "mailing_address": "82016 Shane Dam",
+   "city": "Heatherhaven",
+   "state": "IA",
+   "zip_code": "91798",
+   "email": "plates@smith.com",
+   "phone": "(578) 163-0226",
+   "alternate_phone": "(075) 885-0223"
+  }
+ },
+ "parse": {
+  "license_number": "TX-DLR-2023-001",
+  "date_of_expiration": "12/31/2024",
+  "date_issued": "01/15/2023",
+  "plate_selections": [
+   "SMITHLTD",
+   "FISHER20",
+   "ROBI1978"
+  ],
+  "dealership_info": {
+   "dealership_name": "Smith Ltd Dealership",
+   "county": "Heather County",
+   "mailing_address": "82016 Shane Dam",
+   "city": "Heatherhaven",
+   "state": "IA",
+   "zip_code": "91798",
+   "email": "plates@smith.com",
+   "phone": "(578) 163-0226",
+   "alternate_phone": "(075) 885-0223"
+  }
+ },
+ "oneshot": {
+  "license_number": "TX-DLR-2023-001",
+  "date_of_expiration": "12/31/2024",
+  "date_issued": "01/15/2023",
+  "plate_selections": [
+   "SMITHLTD",
+   "FISHER20",
+   "ROBI1978"
+  ],
+  "dealership_info": {
+   "dealership_name": "Smith Ltd Dealership",
+   "county": "Heather County",
+   "mailing_address": "82016 Shane Dam",
+   "city": "Heatherhaven",
+   "state": "IA",
+   "zip_code": "91798",
+   "email": "plates@smith.com",
+   "phone": "(578) 163-0226",
+   "alternate_phone": "(075) 885-0223"
+  }
+ }
+}

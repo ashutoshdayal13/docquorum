@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "submission_date": "03/15/2023",
+  "number_of_pages": 5,
+  "explanation_comments": "Client needs urgent medication due to recent diagnosis.",
+  "enrollment_worker": {
+   "name": "John Impastato",
+   "contact_information": "(356) 087-4535, jimpastato@peters.com"
+  },
+  "client_information": {
+   "name": "Selina V. Harvey",
+   "date_of_birth": "04/27/1964"
+  }
+ },
+ "parse": {
+  "submission_date": "03/15/2023",
+  "number_of_pages": 5,
+  "explanation_comments": "Client needs urgent medication due to recent diagnosis.",
+  "enrollment_worker": {
+   "name": "John Impastato",
+   "contact_information": "(356) 087-4535, jimpastato@peters.com"
+  },
+  "client_information": {
+   "name": "Selina V. Harvey",
+   "date_of_birth": "04/27/1964"
+  }
+ },
+ "oneshot": {
+  "submission_date": "03/15/2023",
+  "number_of_pages": 5,
+  "explanation_comments": "Client needs urgent medication due to recent diagnosis.",
+  "enrollment_worker": {
+   "name": "John Impastato",
+   "contact_information": "(356) 087-4535, jimpastato@peters.com"
+  },
+  "client_information": {
+   "name": "Selina V. Harvey",
+   "date_of_birth": "04/27/1964"
+  }
+ }
+}

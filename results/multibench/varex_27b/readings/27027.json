@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "name": "Christopher U. Trivedi",
+  "employee_id": "EMP-2025-65",
+  "travel_order_number": "PO-2025-65619",
+  "reporting_date": "03/15/2025",
+  "office": "Office of Human",
+  "activity_code": "RELOC-2025-001",
+  "office_phone_number": "(883) 704-8793",
+  "tax_year": "2025",
+  "state_name": "Montana",
+  "local_jurisdiction_name": "New Marciaeshire",
+  "address": {
+   "street": "933 Vang Motorway Apt. 374"
+  }
+ },
+ "parse": {
+  "name": "Christopher U. Trivedi",
+  "employee_id": "EMP-2025-65",
+  "travel_order_number": "PO-2025-65619",
+  "reporting_date": "03/15/2025",
+  "office": "Office of Human",
+  "activity_code": "RELOC-2025-001",
+  "office_phone_number": "(883) 704-8793",
+  "tax_year": "2025",
+  "state_name": "Montana",
+  "local_jurisdiction_name": "New Marciashire",
+  "address": {
+   "street": "933 Vang Motorway Apt. 374"
+  }
+ },
+ "oneshot": {
+  "name": "Christopher U. Trivedi",
+  "employee_id": "EMP-2025-65",
+  "travel_order_number": "PO-2025-65619",
+  "reporting_date": "03/15/2025",
+  "office": "Office of Human",
+  "activity_code": "RELOC-2025-001",
+  "office_phone_number": "(883) 704-8793",
+  "tax_year": "2025",
+  "state_name": "Montana",
+  "local_jurisdiction_name": "New Marcia shire",
+  "address": {
+   "street": "933 Vang Motorway Apt. 374"
+  }
+ }
+}

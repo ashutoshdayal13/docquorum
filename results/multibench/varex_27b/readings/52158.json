@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "agency_name": "West Shannon Public Housing Agency",
+  "agency_id": "WSPHA-2024-12345",
+  "effective_date": "01/15/2024",
+  "expiration_date": "01/14/2025",
+  "dbls_staff_signature_date": "01/15/2024",
+  "work_classifications": [
+   {
+    "classification_name": "Maintenance Mechanic",
+    "fringe_benefits": "$3.50 per hour"
+   }
+  ]
+ },
+ "parse": {
+  "agency_name": "West Shannon Public Housing Agency",
+  "agency_id": "WSPHA-2024-12345",
+  "effective_date": "01/15/2024",
+  "expiration_date": "01/14/2025",
+  "dbls_staff_signature_date": "01/15/2024",
+  "work_classifications": [
+   {
+    "classification_name": "Maintenance Mechanic",
+    "fringe_benefits": "$3.50 per hour"
+   }
+  ]
+ },
+ "oneshot": {
+  "agency_name": "West Shannon Public Housing Agency",
+  "agency_id": "WSPHA-2024-12345",
+  "effective_date": "01/15/2024",
+  "expiration_date": "01/14/2025",
+  "dbls_staff_signature_date": "01/15/2024",
+  "work_classifications": [
+   {
+    "classification_name": "Maintenance Mechanic",
+    "fringe_benefits": "$3.50 per hour"
+   }
+  ]
+ }
+}

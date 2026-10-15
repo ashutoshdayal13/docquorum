@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "applicant_name": "Gabrielle R. Madera",
+  "applicant_date_of_birth": "12/20/1991",
+  "client_id_number": "RFQ-2025-32926",
+  "three_months_total": 97252.57,
+  "signature_date": "05/15/2023",
+  "applicant_signature_date": "05/15/2023",
+  "self_employment_information": [
+   {
+    "details": "Freelance learning mentor services for various educational institutions and private clients."
+   }
+  ]
+ },
+ "parse": {
+  "applicant_name": "Gabrielle R. Madera",
+  "applicant_date_of_birth": "12/20/1991",
+  "client_id_number": "RFQ-2025-32926",
+  "three_months_total": 97252.57,
+  "signature_date": "05/15/2023",
+  "applicant_signature_date": "05/15/2023",
+  "self_employment_information": [
+   {
+    "details": "Freelance learning mentor services for various educational institutions and private clients."
+   }
+  ]
+ },
+ "oneshot": {
+  "applicant_name": "Gabrielle R. Madera",
+  "applicant_date_of_birth": "12/20/1991",
+  "client_id_number": "RFQ-2025-32926",
+  "three_months_total": 97252.57,
+  "signature_date": "05/15/2023",
+  "applicant_signature_date": "05/15/2023",
+  "self_employment_information": [
+   {
+    "details": "Freelance learning mentor services for various educational institutions and private clients."
+   }
+  ]
+ }
+}

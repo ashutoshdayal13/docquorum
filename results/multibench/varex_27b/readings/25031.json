@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "applicant_name": "Gina H. van Engelen",
+  "program_office": "Office of Public Libraries",
+  "program_location": "East Emilyland, WA",
+  "title": "Public Librarian",
+  "occupational_series_grade": "0060-11",
+  "resignation_date": "12/31/2023",
+  "contact_information": {
+   "day_phone": "(861) 347-9348",
+   "day_phone_date": "10/15/2023",
+   "evening_phone": "(818) 380-4143"
+  }
+ },
+ "parse": {
+  "applicant_name": "Gina H. van Engelen",
+  "program_office": "Office of Public Libraries",
+  "program_location": "East Emilyland, WA",
+  "title": "Public Librarian",
+  "occupational_series_grade": "0060-11",
+  "resignation_date": "12/31/2023",
+  "contact_information": {
+   "day_phone": "(661) 347-9348",
+   "day_phone_date": "10/15/2023",
+   "evening_phone": "(818) 380-4143"
+  }
+ },
+ "oneshot": {
+  "applicant_name": "Gina H. van Engelen",
+  "program_office": "Office of Public Libraries",
+  "program_location": "East Emilyland, WA",
+  "title": "Public Librarian",
+  "occupational_series_grade": "0060-11",
+  "resignation_date": "12/31/2023",
+  "contact_information": {
+   "day_phone": "(861) 347-9348",
+   "day_phone_date": "10/15/2023",
+   "evening_phone": "(818) 380-4143"
+  }
+ }
+}

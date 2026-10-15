@@ -1,0 +1,431 @@
+{
+ "primary": {
+  "contract_number": "CON-2023-1122",
+  "task_order_number": "TO-2023-00345",
+  "modification_number": "MOD-2023-00123",
+  "solicitation_number": "SOL-2023-00456",
+  "contractor": "Stafford, Day and Griffin",
+  "amount": 335181.38,
+  "contract_type": "Fixed Price",
+  "contract_specialist_signature_date": "02/25/2023",
+  "division_director_solicitation_signature_date": "02/22/2023",
+  "division_director_contract_signature_date": "02/26/2023",
+  "office_director_signature_date": "02/28/2023",
+  "checklist_items": [
+   {
+    "item": "1. Request for Services and Statement of Work"
+   },
+   {
+    "item": "2. Fund Reservation"
+   },
+   {
+    "item": "3. Synopsis or Memorandum of Non-Synopsis"
+   },
+   {
+    "item": "4. Contract Type"
+   },
+   {
+    "item": "5. Justification for Other Than Full and Open Competition"
+   },
+   {
+    "item": "6. Individual Procurement Planning Document"
+   },
+   {
+    "item": "7. Source List"
+   },
+   {
+    "item": "8. IFB/RFP Reviews"
+   },
+   {
+    "item": "9. Panel Appointments and Evaluation Plan"
+   },
+   {
+    "item": "10. Other Coordination:"
+   },
+   {
+    "item": "a. OGC"
+   },
+   {
+    "item": "b. Program Office"
+   },
+   {
+    "item": "c. Small Business Specialist"
+   },
+   {
+    "item": "d. Other (specify)"
+   },
+   {
+    "item": "11. Procurement Integrity (certifications,list of authorized officials) and HUD-844/Ethics Memo"
+   },
+   {
+    "item": "12. Termination Clause for Convenience of Government"
+   },
+   {
+    "item": "13. Termination Clause for Cause"
+   },
+   {
+    "item": "14. Termination for Default"
+   },
+   {
+    "item": "15. Contractor's Representations and Certifications"
+   },
+   {
+    "item": "16 a. Successful Proposal"
+   },
+   {
+    "item": "16 b. Certifications"
+   },
+   {
+    "item": "16 c. Lobbying Disclosure (FAR 3.803)"
+   },
+   {
+    "item": "12. Solicitation & Amendments"
+   },
+   {
+    "item": "13. IFB / RFP Correspondence"
+   },
+   {
+    "item": "14. Abstract"
+   },
+   {
+    "item": "15. Technical Evaluation"
+   },
+   {
+    "item": "16 a. Successful Proposal"
+   },
+   {
+    "item": "b. Certifications"
+   },
+   {
+    "item": "c. Lobbying Disclosure (FAR 3.803)"
+   },
+   {
+    "item": "17. Cost / Price Analysis, Audit, and Cost Proposal"
+   },
+   {
+    "item": "18. Other Approvals / Clearances:"
+   },
+   {
+    "item": "a. Inspector General/Debarred List"
+   },
+   {
+    "item": "b. Office of Federal Contract Compliance (DOL-EEO)"
+   },
+   {
+    "item": "c. OSDBU (subcontracting plans)"
+   },
+   {
+    "item": "19. Price Negotiation Memo/Summary of Procurement Action"
+   },
+   {
+    "item": "20. Review Comments"
+   },
+   {
+    "item": "21. Letters to Unsuccessful Offerors/Debriefing Record"
+   },
+   {
+    "item": "22. Award Synopsis"
+   },
+   {
+    "item": "23. Contract"
+   },
+   {
+    "item": "24. Distribution"
+   },
+   {
+    "item": "25. MIS Input"
+   },
+   {
+    "item": "26. Contract Modifications and Backup"
+   },
+   {
+    "item": "27. Payment Record/Documentation"
+   },
+   {
+    "item": "28. Subcontracting Plan and Reports"
+   }
+  ]
+ },
+ "parse": {
+  "contract_number": "CON-2023-1122",
+  "task_order_number": "TO-2023-00345",
+  "modification_number": "MOD-2023-00123",
+  "solicitation_number": "SOL-2023-00456",
+  "contractor": "Stafford, Day and Griffin",
+  "amount": 335181.38,
+  "contract_type": "Fixed Price",
+  "contract_specialist_signature_date": "02/25/2023",
+  "division_director_solicitation_signature_date": "02/22/2023",
+  "division_director_contract_signature_date": "02/26/2023",
+  "office_director_signature_date": "02/28/2023",
+  "checklist_items": [
+   {
+    "item": "Request for Services and Statement of Work"
+   },
+   {
+    "item": "Fund Reservation"
+   },
+   {
+    "item": "Synopsis or Memorandum of Non-Synopsis"
+   },
+   {
+    "item": "Contract Type"
+   },
+   {
+    "item": "Justification for Other Than Full and Open Competition"
+   },
+   {
+    "item": "Individual Procurement Planning Document"
+   },
+   {
+    "item": "Source List"
+   },
+   {
+    "item": "IFB/RFP Reviews"
+   },
+   {
+    "item": "Panel Appointments and Evaluation Plan"
+   },
+   {
+    "item": "Other Coordination: a. OGC"
+   },
+   {
+    "item": "b. Program Office"
+   },
+   {
+    "item": "c. Small Business Specialist"
+   },
+   {
+    "item": "d. Other (specify)"
+   },
+   {
+    "item": "Procurement Integrity (certifications, list of authorized officials) and HUD-844/Ethics Memo"
+   },
+   {
+    "item": "Termination Clause for Convenience of Government"
+   },
+   {
+    "item": "Termination Clause for Cause"
+   },
+   {
+    "item": "Termination for Default"
+   },
+   {
+    "item": "Contractor's Representations and Certifications"
+   },
+   {
+    "item": "Successful Proposal"
+   },
+   {
+    "item": "Certifications"
+   },
+   {
+    "item": "Lobbying Disclosure (FAR 3.803)"
+   },
+   {
+    "item": "Solicitation & Amendments"
+   },
+   {
+    "item": "IFB / RFP Correspondence"
+   },
+   {
+    "item": "Abstract"
+   },
+   {
+    "item": "Technical Evaluation"
+   },
+   {
+    "item": "Successful Proposal"
+   },
+   {
+    "item": "Certifications"
+   },
+   {
+    "item": "Lobbying Disclosure (FAR 3.803)"
+   },
+   {
+    "item": "Cost / Price Analysis, Audit, and Cost Proposal"
+   },
+   {
+    "item": "Other Approvals / Clearances: a. Inspector General/Debarred List"
+   },
+   {
+    "item": "b. Office of Federal Contract Compliance (DOL-EEO)"
+   },
+   {
+    "item": "c. OSDBU (subcontracting plans)"
+   },
+   {
+    "item": "Price Negotiation Memo/Summary of Procurement Action"
+   },
+   {
+    "item": "Review Comments"
+   },
+   {
+    "item": "Letters to Unsuccessful Offerors/Debriefing Record"
+   },
+   {
+    "item": "Award Synopsis"
+   },
+   {
+    "item": "Contract"
+   },
+   {
+    "item": "Distribution"
+   },
+   {
+    "item": "MIS Input"
+   },
+   {
+    "item": "Contract Modifications and Backup"
+   },
+   {
+    "item": "Payment Record/Documentation"
+   },
+   {
+    "item": "Subcontracting Plan and Reports"
+   }
+  ]
+ },
+ "oneshot": {
+  "contract_number": "CON-2023-1122",
+  "task_order_number": "TO-2023-00345",
+  "modification_number": "MOD-2023-00123",
+  "solicitation_number": "SOL-2023-00456",
+  "contractor": "Stafford, Day and Griffin",
+  "amount": 335181.38,
+  "contract_type": "Fixed Price",
+  "contract_specialist_signature_date": "02/25/2023",
+  "division_director_solicitation_signature_date": "02/22/2023",
+  "division_director_contract_signature_date": "02/26/2023",
+  "office_director_signature_date": "02/28/2023",
+  "checklist_items": [
+   {
+    "item": "1. Request for Services and Statement of Work"
+   },
+   {
+    "item": "2. Fund Reservation"
+   },
+   {
+    "item": "3. Synopsis or Memorandum of Non-Synopsis"
+   },
+   {
+    "item": "4. Contract Type"
+   },
+   {
+    "item": "5. Justification for Other Than Full and Open Competition"
+   },
+   {
+    "item": "6. Individual Procurement Planning Document"
+   },
+   {
+    "item": "7. Source List"
+   },
+   {
+    "item": "8. IFB/RFP Reviews"
+   },
+   {
+    "item": "9. Panel Appointments and Evaluation Plan"
+   },
+   {
+    "item": "10. Other Coordination: a. OGC"
+   },
+   {
+    "item": "b. Program Office"
+   },
+   {
+    "item": "c. Small Business Specialist"
+   },
+   {
+    "item": "d. Other (specify)"
+   },
+   {
+    "item": "11. Procurement Integrity (certifications, list of authorized officials) and HUD-844/Ethics Memo"
+   },
+   {
+    "item": "12. Termination Clause for Convenience of Government"
+   },
+   {
+    "item": "13. Termination Clause for Cause"
+   },
+   {
+    "item": "14. Termination for Default"
+   },
+   {
+    "item": "15. Contractor's Representations and Certifications"
+   },
+   {
+    "item": "16 a. Successful Proposal"
+   },
+   {
+    "item": "16 b. Certifications"
+   },
+   {
+    "item": "16 c. Lobbying Disclosure (FAR 3.803)"
+   },
+   {
+    "item": "12. Solicitation & Amendments"
+   },
+   {
+    "item": "13. IFB / RFP Correspondence"
+   },
+   {
+    "item": "14. Abstract"
+   },
+   {
+    "item": "15. Technical Evaluation"
+   },
+   {
+    "item": "16 a. Successful Proposal"
+   },
+   {
+    "item": "b. Certifications"
+   },
+   {
+    "item": "c. Lobbying Disclosure (FAR 3.803)"
+   },
+   {
+    "item": "17. Cost / Price Analysis, Audit, and Cost Proposal"
+   },
+   {
+    "item": "18. Other Approvals / Clearances: a. Inspector General/Debarred List"
+   },
+   {
+    "item": "b. Office of Federal Contract Compliance (DOL-EE0)"
+   },
+   {
+    "item": "c. OSDBU (subcontracting plans)"
+   },
+   {
+    "item": "19. Price Negotiation Memo/Summary of Procurement Action"
+   },
+   {
+    "item": "20. Review Comments"
+   },
+   {
+    "item": "21. Letters to Unsuccessful Offerors/Debriefing Record"
+   },
+   {
+    "item": "22. Award Synopsis"
+   },
+   {
+    "item": "23. Contract"
+   },
+   {
+    "item": "24. Distribution"
+   },
+   {
+    "item": "25. MIS Input"
+   },
+   {
+    "item": "26. Contract Modifications and Backup"
+   },
+   {
+    "item": "27. Payment Record/Documentation"
+   },
+   {
+    "item": "28. Subcontracting Plan and Reports"
+   }
+  ]
+ }
+}

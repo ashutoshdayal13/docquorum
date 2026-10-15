@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "mortgagee_name": "Hayden-Nelson",
+  "fha_case_number": "FHA-2023-00123456",
+  "mortgagor": "Maya J. Barnes",
+  "property_location": "960 Howell Port, Sarachester",
+  "hud_commitment_date": "01/15/2023",
+  "completion_date": "06/20/2023",
+  "builder_name": "Murphy-Mitchell Construction Co.",
+  "commercial_bank": "First National Bank of Sarachester",
+  "items_to_be_completed": [
+   {
+    "item": "Installation of kitchen cabinets and countertops"
+   }
+  ]
+ },
+ "parse": {
+  "mortgagee_name": "Hayden-Nelson",
+  "fha_case_number": "FHA-2023-00123456",
+  "mortgagor": "Maya J. Barnes",
+  "property_location": "960 Howell Port, Sarachester",
+  "hud_commitment_date": "01/15/2023",
+  "completion_date": "06/20/2023",
+  "builder_name": "Murphy-Mitchell Construction Co.",
+  "commercial_bank": "First National Bank of Sarachester",
+  "items_to_be_completed": [
+   {
+    "item": "Installation of kitchen cabinets and countertops"
+   }
+  ]
+ },
+ "oneshot": {
+  "mortgagee_name": "Hayden-Nelson",
+  "fha_case_number": "FHA-2023-00123456",
+  "mortgagor": "Maya J. Barnes",
+  "property_location": "960 Howell Port, Sarachester",
+  "hud_commitment_date": "01/15/2023",
+  "completion_date": "06/20/2023",
+  "builder_name": "Murphy-Mitchell Construction Co.",
+  "commercial_bank": "First National Bank of Sarachester",
+  "items_to_be_completed": [
+   {
+    "item": "Installation of kitchen cabinets and countertops"
+   }
+  ]
+ }
+}

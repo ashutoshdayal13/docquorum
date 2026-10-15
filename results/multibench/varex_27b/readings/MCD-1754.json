@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "county": "Harris County",
+  "bond_number": "TPB-2023-7890",
+  "department_insurance_number": "TX-DOI-2023-147258",
+  "principal": {
+   "name": "Karen Martin",
+   "address": "143 Melissa Road",
+   "city": "New Jennifer",
+   "state_zip": "WV 37517"
+  },
+  "bond_effective_date": {
+   "month": "January"
+  }
+ },
+ "parse": {
+  "county": "Harris County",
+  "bond_number": "TPB-2023-7890",
+  "department_insurance_number": "TX-DOI-2023-147258",
+  "principal": {
+   "name": "Karen Martin",
+   "address": "143 Melissa Road",
+   "city": "New Jennifer",
+   "state_zip": "WV 37517"
+  },
+  "bond_effective_date": {
+   "month": "January"
+  }
+ },
+ "oneshot": {
+  "county": "Harris County",
+  "bond_number": "TPB-2023-7890",
+  "department_insurance_number": "TX-DOI-2023-147258",
+  "principal": {
+   "name": "Karen Martin",
+   "address": "143 Melissa Road",
+   "city": "New Jennifer",
+   "state_zip": "WV 37517"
+  },
+  "bond_effective_date": {
+   "month": "January"
+  }
+ }
+}

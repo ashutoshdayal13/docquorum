@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "members": [
+   {
+    "member_client_id": "ADAP-789012",
+    "date_of_birth": "03/20/1958",
+    "client_name": "Molly Reese"
+   },
+   {
+    "member_client_id": "ADAP-456789",
+    "date_of_birth": "09/01/1970",
+    "client_name": "Otto Lane"
+   },
+   {
+    "member_client_id": "ADAP-135790",
+    "date_of_birth": "06/15/1985",
+    "client_name": "Alexandra Martinez"
+   }
+  ]
+ },
+ "parse": {
+  "members": [
+   {
+    "member_client_id": "ADAP-789012",
+    "date_of_birth": "03/20/1958",
+    "client_name": "Molly Reese"
+   },
+   {
+    "member_client_id": "ADAP-456789",
+    "date_of_birth": "09/01/1970",
+    "client_name": "Otto Lane"
+   },
+   {
+    "member_client_id": "ADAP-135790",
+    "date_of_birth": "06/15/1985",
+    "client_name": "Alexandra Martinez"
+   }
+  ]
+ },
+ "oneshot": {
+  "members": [
+   {
+    "member_client_id": "ADAP-789012",
+    "date_of_birth": "03/20/1958",
+    "client_name": "Molly Reese"
+   },
+   {
+    "member_client_id": "ADAP-456789",
+    "date_of_birth": "09/01/1970",
+    "client_name": "Otto Lane"
+   },
+   {
+    "member_client_id": "ADAP-135790",
+    "date_of_birth": "06/15/1985",
+    "client_name": "Alexandra Martinez"
+   }
+  ]
+ }
+}

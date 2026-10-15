@@ -1,0 +1,25 @@
+{
+ "company_legal_name": "Barnes, Anderson and Garcia",
+ "company_assumed_name": "BAG Rides",
+ "telephone_number": "(357) 004-0",
+ "fax_number": "(229) 066-8",
+ "website": "https://www.bagrides.com",
+ "mailing_address": {
+  "street": "9520 Deanna Square",
+  "city": "Port Paulberg",
+  "state": "VA",
+  "zip_code": "57114"
+ },
+ "physical_address": {
+  "street": "9520 Deanna Square",
+  "city": "Port Paulberg",
+  "state": "VA",
+  "zip_code": "57114"
+ },
+ "contact_information": {
+  "contact_name": "Susan O. Martin",
+  "contact_title": "Economist",
+  "contact_phone": "(357) 004-0",
+  "contact_email": "susan.martin@yahoo.com"
+ }
+}

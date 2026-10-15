@@ -1,0 +1,29 @@
+{
+ "primary": {
+  "hospital_name": "St. Mary's Medical Center",
+  "podiatrist_name": "Marica A. Meyer",
+  "method_of_care": "Patients receive care through direct consultation and follow-up appointments with",
+  "number_of_podiatrists": 3,
+  "number_of_admissions": 250,
+  "scope_of_services": "Comprehensive foot and ankle care, including diabetic foot care, wound care, and surgical services.",
+  "relation_to_medical_staff": "The podiatric service works collaboratively with the orthopedic, endocrinology, and vascular medicine departments to provide integrated care for patients with complex foot and ankle conditions."
+ },
+ "parse": {
+  "hospital_name": "St. Mary's Medical Center",
+  "podiatrist_name": "Marica A. Meyer",
+  "method_of_care": "Patients receive care through direct consultation and follow-up appointments with",
+  "number_of_podiatrists": 3,
+  "number_of_admissions": 250,
+  "scope_of_services": "Comprehensive foot and ankle care, including diabetic foot care, wound care, and surgical services.",
+  "relation_to_medical_staff": "The podiatric service works collaboratively with the orthopedic, endocrinology, and vascular medicine departments to provide integrated care for patients with complex foot and ankle conditions."
+ },
+ "oneshot": {
+  "hospital_name": "St. Mary's Medical Center",
+  "podiatrist_name": "Marica A. Meyer",
+  "method_of_care": "Patients receive care through direct consultation and follow-up appointments with",
+  "number_of_podiatrists": 3,
+  "number_of_admissions": 250,
+  "scope_of_services": "Comprehensive foot and ankle care, including diabetic foot care, wound care, and surgical services.",
+  "relation_to_medical_staff": "The podiatric service works collaboratively with the orthopedic, endocrinology, and vascular medicine departments to provide integrated care for patients with complex foot and ankle conditions."
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "name_of_establishment": "Sunrise Vocational Center",
+  "total_employees": 3,
+  "address_of_establishment": [
+   {
+    "street": "71469 McKenzie Cove",
+    "city": "Leonardview",
+    "state": "GA",
+    "zip_code": "81718"
+   }
+  ]
+ },
+ "parse": {
+  "name_of_establishment": "Sunrise Vocational Center",
+  "total_employees": 3,
+  "address_of_establishment": [
+   {
+    "street": "71469 Mckenzie Cove",
+    "city": "Leonardview",
+    "state": "GA",
+    "zip_code": "81718"
+   }
+  ]
+ },
+ "oneshot": {
+  "name_of_establishment": "Sunrise Vocational Center",
+  "total_employees": 3,
+  "address_of_establishment": [
+   {
+    "street": "71469 Mckenzie Cove",
+    "city": "Leonardview",
+    "state": "GA",
+    "zip_code": "81718"
+   }
+  ]
+ }
+}

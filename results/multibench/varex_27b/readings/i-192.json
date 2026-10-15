@@ -1,0 +1,23 @@
+{
+ "primary": {
+  "applicant_name": {
+   "first_name": "Cipriano",
+   "middle_name": "Paul",
+   "last_name": "Cipriano"
+  }
+ },
+ "parse": {
+  "applicant_name": {
+   "first_name": "Cipriano",
+   "middle_name": "Paul",
+   "last_name": "Cipriano"
+  }
+ },
+ "oneshot": {
+  "applicant_name": {
+   "first_name": "Cipriano",
+   "middle_name": "Paul",
+   "last_name": "Cipriano"
+  }
+ }
+}

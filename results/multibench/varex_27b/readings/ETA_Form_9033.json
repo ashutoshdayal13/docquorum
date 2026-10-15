@@ -1,0 +1,83 @@
+{
+ "primary": {
+  "employer_information": {
+   "employer_name": "Harrison Group",
+   "employer_address": "20043 Montgomery Rapid Suite 063",
+   "employer_city": "Danielleport",
+   "employer_state": "TN",
+   "employer_zip_code": "32490",
+   "employer_country": "USA",
+   "employer_contact_name": "Sarah I. Farias",
+   "employer_contact_phone": "(745) 623-8055",
+   "employer_contact_email": "sfarias@harrison.com"
+  },
+  "us_agent_information": {
+   "us_agent_name": "Harrison Group Legal Department",
+   "us_agent_address": "20043 Montgomery Rapid Suite 063",
+   "us_agent_city": "Danielleport",
+   "us_agent_state": "TN",
+   "us_agent_zip_code": "32490",
+   "us_agent_contact_phone": "(638) 196-3987",
+   "us_agent_contact_email": "sfarias@harrison.com"
+  },
+  "location_and_job_information": {
+   "port_of_entry": "Port of Los Angeles",
+   "number_of_crewmembers": 15,
+   "start_date": "06/01/2023"
+  }
+ },
+ "parse": {
+  "employer_information": {
+   "employer_name": "Harrison Group",
+   "employer_address": "20043 Montgomery Rapid Suite 063",
+   "employer_city": "Danielleport",
+   "employer_state": "TN",
+   "employer_zip_code": "32490",
+   "employer_country": "USA",
+   "employer_contact_name": "Sarah I. Farias",
+   "employer_contact_phone": "(745) 623-8055",
+   "employer_contact_email": "sfarias@harrison.com"
+  },
+  "us_agent_information": {
+   "us_agent_name": "Harrison Group Legal Department",
+   "us_agent_address": "20043 Montgomery Rapid Suite 063",
+   "us_agent_city": "Danielleport",
+   "us_agent_state": "TN",
+   "us_agent_zip_code": "32490",
+   "us_agent_contact_phone": "(638) 196-3987",
+   "us_agent_contact_email": "sfarias@harrison.com"
+  },
+  "location_and_job_information": {
+   "port_of_entry": "Port of Los Angeles",
+   "number_of_crewmembers": 15,
+   "start_date": "06/01/2023"
+  }
+ },
+ "oneshot": {
+  "employer_information": {
+   "employer_name": "Harrison Group",
+   "employer_address": "20043 Montgomery Rapid Suite 063",
+   "employer_city": "Danielleport",
+   "employer_state": "TN",
+   "employer_zip_code": "32490",
+   "employer_country": "USA",
+   "employer_contact_name": "Sarah I. Farias",
+   "employer_contact_phone": "(745) 623-8055",
+   "employer_contact_email": "sfarias@harrison.com"
+  },
+  "us_agent_information": {
+   "us_agent_name": "Harrison Group Legal Department",
+   "us_agent_address": "20043 Montgomery Rapid Suite 063",
+   "us_agent_city": "Danielleport",
+   "us_agent_state": "TN",
+   "us_agent_zip_code": "32490",
+   "us_agent_contact_phone": "(638) 196-3987",
+   "us_agent_contact_email": "sfarias@harrison.com"
+  },
+  "location_and_job_information": {
+   "port_of_entry": "Port of Los Angeles",
+   "number_of_crewmembers": 15,
+   "start_date": "06/01/2023"
+  }
+ }
+}

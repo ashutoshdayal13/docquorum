@@ -1,0 +1,77 @@
+{
+ "primary": {
+  "county_of_origin_name": "Los Angeles",
+  "original_case_id": "LA-HB-2023-00456",
+  "transfer_sent_date": "09/15/2023",
+  "mother_name": "Bignardi, Marissa F.",
+  "infant_name": "Bignardi, Sophia",
+  "mother_address": "882 Leonard Stravenue Suite 970, Port Tammymouth, NY 81823",
+  "receiving_county_name": "San Diego",
+  "new_case_transfer_id": "SD-HB-2023-00987",
+  "transfer_received_date": "09/18/2023",
+  "county_of_origin_coordinator": {
+   "name": "Liam Dzienis",
+   "email": "ldzienis@ramseyjacobs.com",
+   "phone": "(215) (629) 215-1608",
+   "phone_extension": "215",
+   "fax": "(031) 232-5133"
+  },
+  "receiving_county_coordinator": {
+   "name": "Camille Mazzini",
+   "email": "cmazzini@rhodes.com",
+   "phone": "(756) (472) 756-0262",
+   "phone_extension": "756",
+   "fax": "(996) 861-2562"
+  }
+ },
+ "parse": {
+  "county_of_origin_name": "Los Angeles",
+  "original_case_id": "LA-HB-2023-00456",
+  "transfer_sent_date": "09/15/2023",
+  "mother_name": "Bignardi, Marissa F.",
+  "infant_name": "Bignardi, Sophia",
+  "mother_address": "882 Leonard Stravenue Suite 970, Port Tammy mouth, NY 81823",
+  "receiving_county_name": "San Diego",
+  "new_case_transfer_id": "SD-HB-2023-00987",
+  "transfer_received_date": "09/18/2023",
+  "county_of_origin_coordinator": {
+   "name": "Liam Dzienis",
+   "email": "ldzienis@ramseyjacobs.com",
+   "phone": "(215) 215-1608",
+   "phone_extension": "629",
+   "fax": "(031) 232-5133"
+  },
+  "receiving_county_coordinator": {
+   "name": "Camille Mazzini",
+   "email": "cmazzini@rhodes.com",
+   "phone": "(756) 756-0262",
+   "phone_extension": "472",
+   "fax": "(996) 861-2562"
+  }
+ },
+ "oneshot": {
+  "county_of_origin_name": "Los Angeles",
+  "original_case_id": "LA-HB-2023-00456",
+  "transfer_sent_date": "09/15/2023",
+  "mother_name": "Bignardi, Marissa F.",
+  "infant_name": "Bignardi, Sophia",
+  "mother_address": "882 Leonard Stravenue Suite 970, Port Tammmymouth, NY 81823",
+  "receiving_county_name": "San Diego",
+  "new_case_transfer_id": "SD-HB-2023-00987",
+  "transfer_received_date": "09/18/2023",
+  "county_of_origin_coordinator": {
+   "name": "Liam Dzienis",
+   "email": "ldzienis@ramseyjacobs.com",
+   "phone": "(629) 215-1608",
+   "phone_extension": "215",
+   "fax": "(031) 232-5133"
+  },
+  "receiving_county_coordinator": {
+   "name": "Camille Mazzini",
+   "email": "cmazzini@rhodes.com",
+   "phone": "(472) 756-0262",
+   "phone_extension": "756",
+   "fax": "(996) 861-2562"
+  }
+ }
+}

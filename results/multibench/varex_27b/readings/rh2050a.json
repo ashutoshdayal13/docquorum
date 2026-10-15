@@ -1,0 +1,84 @@
+{
+ "primary": {
+  "name_of_proposed_user": "Azra A. Harris",
+  "position_title": "Radiologic Technologist",
+  "employer_address": {
+   "street": "456 Brandon Junctions Apt. 623",
+   "city": "South Toddport",
+   "state": "MD",
+   "zip_code": "61738"
+  },
+  "radioactive_materials_license": {
+   "license_number": "RML-2020-MD-77777"
+  },
+  "experience": [
+   {
+    "organization": "Hernandez-Smith Medical Center",
+    "duration": "3 years",
+    "description": "Performed diagnostic imaging procedures using radioactive materials"
+   },
+   {
+    "organization": "Brownview General Hospital",
+    "duration": "2 years",
+    "description": "Assisted in the administration of radioactive tracers for medical imaging"
+   }
+  ]
+ },
+ "parse": {
+  "name_of_proposed_user": "Azra A. Harris",
+  "position_title": "Radiologic Technologist",
+  "employer_address": {
+   "street": "456 Brandon Junctions Apt. 623",
+   "city": "South Toddport",
+   "state": "MD",
+   "zip_code": "61738"
+  },
+  "radioactive_materials_license": {
+   "license_number": "RML-2020-MD-77777"
+  },
+  "experience": [
+   {
+    "organization": "Hernandez-Smith Medical Center",
+    "duration": "3 years",
+    "description": "Performed diagnostic imaging procedures using radioactive materials"
+   },
+   {
+    "organization": "Brownview General Hospital",
+    "duration": "2 years",
+    "description": "Assisted in the administration of radioactive tracers for medical imaging"
+   }
+  ]
+ },
+ "oneshot": {
+  "properties": {
+   "name_of_proposed_user": {
+    "prefixItems": [
+     {
+      "properties": {
+       "employer_address": {
+        "prefixItems": [
+         {
+          "properties": {
+           "street": {
+            "const": "456 Brandon Junctions Apt. 623"
+           },
+           "city": {
+            "const": "South Toddport"
+           },
+           "state": {
+            "const": "MD"
+           },
+           "zip_code": {
+            "const": "61738"
+           }
+          }
+         }
+        ]
+       }
+      }
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "license_number": "SHL-2023",
+ "firm_name": "Smith Shellfish Enterprises",
+ "dba_name": "Smith's Seafood",
+ "fda_cfn_or_fei_number": "12345678",
+ "shellfish_storage_location": "On-site warehous",
+ "owner_printed_name": "Dina V. Smith",
+ "signature_date": "03/15/2023",
+ "business_operator_name": "Krishna Miller",
+ "business_operator_phone": "(549) 255-6270",
+ "facility_address": {
+  "address": "0560 Cooper Parks",
+  "city": "East Catherine",
+  "state": "GA",
+  "zip_code": "43342"
+ },
+ "mailing_address": {
+  "address": "0560 Cooper Parks, East Catherine, GA 43342"
+ },
+ "owner_corporate_name": {
+  "name": "Dina V. Smith",
+  "state_of_incorporation": "Georgia"
+ },
+ "owners_or_officers": [
+  {
+   "name": "Dina V. Smith",
+   "title": "Owner"
+  },
+  {
+   "name": "Krishna Miller",
+   "title": "Fisheries Officer"
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "primary": {
+  "agreement_date": "06/27/2023",
+  "agreeing_party": "The Robbins, Bowers and Hoffman",
+  "manufacturer": "Samsung Electronics America",
+  "product_type": "Microwave Oven",
+  "brand": "Samsung",
+  "model": "ME19H701SFS",
+  "chassis_series": "MSH0001",
+  "comments": "Sample provided for testing and evaluation purposes only. Not for resale.",
+  "authorizing_persons": [
+   "Deborah W. Gay",
+   "Krzysztof K. Sura"
+  ],
+  "availability_dates": [
+   {
+    "date": "06/30/2023"
+   }
+  ],
+  "contact_persons": [
+   {
+    "name": "Deborah W. Gay",
+    "phone": "(418) 515-2223"
+   },
+   {
+    "name": "Imelda I. Wagner",
+    "phone": "(112) 511-5810"
+   }
+  ],
+  "return_locations": [
+   {
+    "address": "65819 Michael Vista",
+    "city": "West Mark",
+    "state": "ME"
+   },
+   {
+    "address": "9242 Spears Hills",
+    "city": "Hernandezhaven",
+    "state": "VA"
+   }
+  ]
+ },
+ "parse": {
+  "agreement_date": "06/27/2023",
+  "agreeing_party": "The Robbins, Bowers and Hoffman",
+  "manufacturer": "Samsung Electronics America",
+  "product_type": "Microwave Oven",
+  "brand": "Samsung",
+  "model": "ME19H701SFS",
+  "chassis_series": "MSH0001",
+  "comments": "Sample provided for testing and evaluation purposes only. Not for resale.",
+  "authorizing_persons": [
+   "Debora W. Gay",
+   "Krzysztof K. Sura"
+  ],
+  "availability_dates": [
+   {
+    "date": "06/30/2023"
+   }
+  ],
+  "contact_persons": [
+   {
+    "name": "Debora W. Gay",
+    "phone": "(418) 515-2223"
+   },
+   {
+    "name": "Imelda I. Wagner",
+    "phone": "(112) 511-5810"
+   }
+  ],
+  "return_locations": [
+   {
+    "address": "65819 Michael Vista",
+    "city": "West Mark",
+    "state": "ME"
+   },
+   {
+    "address": "9242 Spears Hills",
+    "city": "Hernandezhaven",
+    "state": "VA"
+   }
+  ]
+ },
+ "oneshot": {
+  "agreement_date": "06/27/2023",
+  "agreeing_party": "The Robbins, Bowers and Hoffman",
+  "manufacturer": "Samsung Electronics America",
+  "product_type": "Microwave Oven",
+  "brand": "Samsung",
+  "model": "ME19H701SFS",
+  "chassis_series": "MSH0001",
+  "comments": "Sample provided for testing and evaluation purposes only. Not for resale.",
+  "authorizing_persons": [
+   "Deborah W. Gay",
+   "Krzysztof K. Sura"
+  ],
+  "availability_dates": [
+   {
+    "date": "06/30/2023"
+   }
+  ],
+  "contact_persons": [
+   {
+    "name": "Deborah W. Gay",
+    "phone": "(418) 515-2223"
+   },
+   {
+    "name": "Imelda I. Wagner",
+    "phone": "(112) 511-5810"
+   }
+  ],
+  "return_locations": [
+   {
+    "address": "65819 Michael Vista",
+    "city": "West Mark",
+    "state": "ME"
+   },
+   {
+    "address": "9242 Spears Hills",
+    "city": "Hernandezhaven",
+    "state": "VA"
+   }
+  ]
+ }
+}

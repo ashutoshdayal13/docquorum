@@ -1,0 +1,21 @@
+{
+ "employee_name": "Estela N. Blackburn",
+ "prime_contractors_name": "Mitchell, Pratt and Phillips",
+ "employer_name": "Walsh-Thomas",
+ "work_classification": "Construction Laborer",
+ "supervisors_name": "Azad R. Keer",
+ "other_deductions": [
+  "Union Dues"
+ ],
+ "date_worked": "05/15/2024",
+ "work_description": "Assisting in the construction of a residential building framework.",
+ "tools_used": [
+  "Hammer"
+ ],
+ "date_began_work": "04/01/2024",
+ "employee_signature_date": "05/16/2024",
+ "interviewers_signature_date": "05/16/2024",
+ "payroll_checker_comments": "All deductions appear to be correct.",
+ "payroll_checker_name_and_title": "Veronica J. Magar, Payroll Officer",
+ "date_of_check": "05/16/2024"
+}

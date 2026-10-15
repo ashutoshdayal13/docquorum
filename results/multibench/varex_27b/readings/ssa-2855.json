@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "claimant_name": "Rowe, Cody B.",
+  "claimant_ssn": "247-52-9164",
+  "relationship_to_claimant": "Colleague and friend",
+  "signature_date": "05/15/2023",
+  "mailing_address": "46957 Michael Ville Suite 903, East Meaganfurt, TX 87791",
+  "telephone_number": "(902) 559-3144",
+  "funds_received": [
+   {
+    "donor_name": "Bradley L. Gimenez",
+    "date_received": "03/10/2023"
+   }
+  ],
+  "repayment_details": {
+   "repayment_start_date": "06/01/2023",
+   "payment_frequency": "Monthly",
+   "property_description": "None (cash repayment)",
+   "repayment_source": "Salary deductions from Schmitt, Espinoza and Valencia"
+  },
+  "person_making_statement": "Vedika Bora"
+ },
+ "parse": {
+  "claimant_name": "Rowe, Cody B.",
+  "claimant_ssn": "247-52-9164",
+  "relationship_to_claimant": "Colleague and friend",
+  "signature_date": "05/15/2023",
+  "mailing_address": "46957 Michael Ville Suite 903, East Meaganfurt, TX 87791",
+  "telephone_number": "(902) 559-3144",
+  "funds_received": [
+   {
+    "donor_name": "Bradley L. Gimenez",
+    "date_received": "03/10/2023"
+   }
+  ],
+  "repayment_details": {
+   "repayment_start_date": "06/01/2023",
+   "payment_frequency": "Monthly",
+   "property_description": "None (cash repayment)",
+   "repayment_source": "Salary deductions from Schmitt, Espinoza and Valencia"
+  },
+  "person_making_statement": "Vedika Bora"
+ },
+ "oneshot": {
+  "claimant_name": "Rowe, Cody B.",
+  "claimant_ssn": "247-52-9164",
+  "relationship_to_claimant": "Colleague and friend",
+  "signature_date": "05/15/2023",
+  "mailing_address": "46957 Michael Ville Suite 903, East Meaganfurt, TX 87791",
+  "telephone_number": "(902) 559-3144",
+  "funds_received": [
+   {
+    "donor_name": "Bradley L. Gimenez",
+    "date_received": "03/10/2023"
+   }
+  ],
+  "repayment_details": {
+   "repayment_start_date": "06/01/2023",
+   "payment_frequency": "Monthly",
+   "property_description": "None (cash repayment)",
+   "repayment_source": "Salary deductions from Schmitt, Espinoza and Valencia"
+  },
+  "person_making_statement": "Vedika Bora"
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "bond_number": "BND-2023-145",
+ "company_name": "Robinson Inc",
+ "mailing_address": "152 Stephen Haven Suite 870",
+ "city": "South Jason",
+ "county": "Henderson",
+ "state": "NC",
+ "zip_code": "01582",
+ "effective_date": "01/15/2023",
+ "effective_year": "2023",
+ "principal_title": "Engineer, electronics",
+ "name_of_surety": "Sullivan Inc",
+ "vehicles": [
+  {
+   "vehicle_identifier": "NC-176-01-1145-A",
+   "vehicle_make": "Ford",
+   "vehicle_model": "F-150"
+  },
+  {
+   "vehicle_identifier": "NC-176-01-1145-B",
+   "vehicle_make": "Chevrolet",
+   "vehicle_model": "Silverado"
+  },
+  {
+   "vehicle_identifier": "NC-176-01-1145-C",
+   "vehicle_make": "Toyota",
+   "vehicle_model": "Tacoma"
+  },
+  {
+   "vehicle_identifier": "NC-176-01-1145-D",
+   "vehicle_make": "RAM",
+   "vehicle_model": "1500"
+  },
+  {
+   "vehicle_identifier": "NC-176-01-1145-E",
+   "vehicle_make": "GMC",
+   "vehicle_model": "Sierra"
+  },
+  {
+   "vehicle_identifier": "NC-176-01-1145-F",
+   "vehicle_make": "Nissan",
+   "vehicle_model": "Titan"
+  },
+  {
+   "vehicle_identifier": "NC-176-01-1145-G",
+   "vehicle_make": "Honda",
+   "vehicle_model": "Ridgeline"
+  },
+  {
+   "vehicle_identifier": "NC-176-01-1145-H",
+   "vehicle_make": "Jeep",
+   "vehicle_model": "Gladiator"
+  }
+ ]
+}

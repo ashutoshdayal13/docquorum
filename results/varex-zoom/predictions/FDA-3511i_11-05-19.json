@@ -1,0 +1,16 @@
+{
+ "firm_name": "Miller-Woods Processing",
+ "firm_location": "Port Melindaview, CO",
+ "inspection_date": "11/15/2023 to 11/17/2023",
+ "firm_fe_number": "FEI-2023-CO-10163",
+ "firm_fce_number": "FCE-2023-CO-10163",
+ "investigators": "Mary K. Pruvost, Josue F. Karge",
+ "retort_manufacturer": "ABC Retort Systems, Model R-750, Serial No. 2991-2463-5487",
+ "container_sizes": "300 x 400 mm, 300 x 400 mm, 300 x 400 mm",
+ "products": [
+  {
+   "product_name": "Canned Vegetable Mix",
+   "sid_number": "SID-2023-CO-10163"
+  }
+ ]
+}

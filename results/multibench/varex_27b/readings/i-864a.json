@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "attorney_bar_number": "TN-2010-53478",
+  "attorney_account_number": "USCIS1234567",
+  "household_member_info": {
+   "name": "Sharon Y. Cordero",
+   "date_of_birth": "03/20/1981"
+  }
+ },
+ "parse": {
+  "attorney_bar_number": "TN-2010-53478",
+  "attorney_account_number": "USCIS1234567",
+  "household_member_info": {
+   "name": "Sharon Y. Cordero",
+   "date_of_birth": "03/20/1981"
+  }
+ },
+ "oneshot": {
+  "attorney_bar_number": "TN-2010-53478",
+  "attorney_account_number": "USCIS1234567",
+  "household_member_info": {
+   "name": "Sharon Y. Cordero",
+   "date_of_birth": "03/20/1981"
+  }
+ }
+}

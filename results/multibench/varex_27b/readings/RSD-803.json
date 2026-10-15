@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "regulated_materials": [
+   "Scrap aluminum, approximately 500 lbs, from abandoned construction site at 123 Main St, Houston, TX",
+   "Stainless steel pipes, 20 pieces, 10 ft each, recovered from demolished factory at 456 Industrial Ave, Dallas, TX",
+   "Copper wiring, estimated 1000 ft, salvaged from foreclosed property at 789 Oak Rd, Austin, TX",
+   "Brass fixtures, 50 units, removed from closed business at 321 Pine St, San Antonio, TX",
+   "Lead batteries, 25 units, confiscated from illegal dumping site near El Paso, TX",
+   "Steel beams, 12 pieces, 20 ft each, taken from condemned warehouse at 654 Elm St, Fort Worth, TX"
+  ],
+  "peace_officer": {
+   "name": "Officer Erik N. Kelly"
+  },
+  "person_seizing": {
+   "name": "Jose Y. Rivera"
+  },
+  "business_entity": {
+   "name": "Williams Ltd",
+   "license_number": "CPA-2012-AR-21429",
+   "representative": "Jose Y. Rivera"
+  }
+ },
+ "parse": {
+  "regulated_materials": [
+   "Scrap aluminum, approximately 500 lbs, from abandoned construction site at 123 Main St, Houston, TX",
+   "Stainless steel pipes, 20 pieces, 10 ft each, recovered from demolished factory at 456 Industrial Ave, Dallas, TX",
+   "Copper wiring, estimated 1000 ft, salvaged from foreclosed property at 789 Oak Rd, Austin, TX",
+   "Brass fixtures, 50 units, removed from closed business at 321 Pine St, San Antonio, TX",
+   "Lead batteries, 25 units, confiscated from illegal dumping site near El Paso, TX",
+   "Steel beams, 12 pieces, 20 ft each, taken from condemned warehouse at 654 Elm St, Fort Worth, TX"
+  ],
+  "peace_officer": {
+   "name": "Officer Erik N. Kelly"
+  },
+  "person_seizing": {
+   "name": "Jose Y. Rivera"
+  },
+  "business_entity": {
+   "name": "Williams Ltd",
+   "license_number": "CPA-2012-AR-21429",
+   "representative": "Jose Y. Rivera"
+  }
+ },
+ "oneshot": {
+  "regulated_materials": [
+   "Scrap aluminum, approximately 500 lbs, from abandoned construction site at 123 Main St, Houston, TX",
+   "Stainless steel pipes, 20 pieces, 10 ft each, recovered from demolished factory at 456 Industrial Ave, Dallas, TX",
+   "Copper wiring, estimated 1000 ft, salvaged from foreclosed property at 789 Oak Rd, Austin, TX",
+   "Brass fixtures, 50 units, removed from closed business at 321 Pine St, San Antonio, TX",
+   "Lead batteries, 25 units, confiscated from illegal dumping site near El Paso, TX",
+   "Steel beams, 12 pieces, 20 ft each, taken from condemned warehouse at 654 Elm St, Fort Worth, TX"
+  ],
+  "peace_officer": {
+   "name": "Officer Erik N. Kelly"
+  },
+  "person_seizing": {
+   "name": "Jose Y. Rivera"
+  },
+  "business_entity": {
+   "name": "Williams Ltd",
+   "license_number": "CPA-2012-AR-21429",
+   "representative": "Jose Y. Rivera"
+  }
+ }
+}

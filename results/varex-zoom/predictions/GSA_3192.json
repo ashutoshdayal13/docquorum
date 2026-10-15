@@ -1,0 +1,26 @@
+{
+ "employee_name": "Zola, Susan P.",
+ "position_title": "General practice doctor",
+ "probation_period_start_date": "01/01/2023",
+ "probation_period_end_date": "06/30/2023",
+ "remarks": "Dr. Zola has shown exceptional dedication and skill during her probation period.",
+ "supervisor_signature_date": "06/30/2023",
+ "reviewing_official_signature_date": "07/01/2023",
+ "performance_review": [
+  {
+   "rating": "S"
+  },
+  {
+   "rating": "S"
+  },
+  {
+   "rating": "S"
+  },
+  {
+   "rating": "S"
+  },
+  {
+   "rating": "S"
+  }
+ ]
+}

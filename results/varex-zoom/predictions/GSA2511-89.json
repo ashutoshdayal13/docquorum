@@ -1,0 +1,22 @@
+{
+ "employee_name": "Juliusz A. Smith",
+ "travel_authorization_number": "TA-2023-10-12345",
+ "remarks": "Temporary quarters due to project assignment in Perezborough.",
+ "total_sum": 696102.78,
+ "total_itemized_expenses": 190.99,
+ "total_amount": 68.34,
+ "occupants": [
+  {
+   "dates_of_stay": "01/01/2023-01"
+  },
+  {
+   "dates_of_stay": "01/01/2023-01"
+  },
+  {
+   "dates_of_stay": "01/01/2023-01"
+  },
+  {
+   "dates_of_stay": "01/01/2023-01"
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "signature_full_name": "Aksnay V. Saini",
+  "full_name_printed": "Saini, Aksnay V.",
+  "other_names_used": "A. V. Saini",
+  "date": "08/01/2023",
+  "telephone_number": "(718) 214-4971",
+  "current_address": {
+   "street": "753 Stephanie Bridge",
+   "city": "Port Williamshire",
+   "state": "MI"
+  }
+ },
+ "parse": {
+  "signature_full_name": "Akshay V. Saini",
+  "full_name_printed": "Saini, Akshay V.",
+  "other_names_used": "A. V. Saini",
+  "date": "08/01/2023",
+  "telephone_number": "(718) 214-4971",
+  "current_address": {
+   "street": "753 Stephanie Bridge",
+   "city": "Port Williamshire",
+   "state": "MI"
+  }
+ },
+ "oneshot": {
+  "signature_full_name": "Akshay V. Saini",
+  "full_name_printed": "Saini, Akshay V.",
+  "other_names_used": "A. V. Saini",
+  "date": "08/01/2023",
+  "telephone_number": "(718) 214-4971",
+  "current_address": {
+   "street": "753 Stephanie Bridge",
+   "city": "Port Williamshire",
+   "state": "MI"
+  }
+ }
+}

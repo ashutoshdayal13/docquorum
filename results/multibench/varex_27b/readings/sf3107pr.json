@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "applicant_name": "Lecoq, Louis",
+  "date_of_birth": "02/18/1964",
+  "social_security_number": "115-15-2142",
+  "submitting_office_number": "RFQ-2024-86117",
+  "certification_date": "05/15/2023",
+  "agency_certification": {
+   "address": "036 Anthony Garden, North Melissa, NC 48296",
+   "title": "Chief Human Resources Officer"
+  },
+  "contact_information": {
+   "person": "Arunima E. Clerc",
+   "details": "(516) 179-6015, (613) 107-3748, aclerc@serrano.com"
+  }
+ },
+ "parse": {
+  "applicant_name": "Lecoq, Louis",
+  "date_of_birth": "02/18/1964",
+  "social_security_number": "115-15-2142",
+  "submitting_office_number": "RFQ-2024-86117",
+  "certification_date": "05/15/2023",
+  "agency_certification": {
+   "address": "036 Anthony Garden, North Melissa, NC 48296",
+   "title": "Chief Human Resources Officer"
+  },
+  "contact_information": {
+   "person": "Arunima E. Clerc",
+   "details": "(516) 179-6015, (613) 107-3748, aclerc@serrano.com"
+  }
+ },
+ "oneshot": {
+  "applicant_name": "Lecoq, Louis",
+  "date_of_birth": "02/18/1964",
+  "social_security_number": "115-15-2142",
+  "submitting_office_number": "RFQ-2024-86117",
+  "certification_date": "05/15/2023",
+  "agency_certification": {
+   "address": "036 Anthony Garden, North Melissa, NC 48296",
+   "title": "Chief Human Resources Officer"
+  },
+  "contact_information": {
+   "person": "Arunima E. Clerc",
+   "details": "(516) 179-6015, (613) 107-3748, aclerc@serrano.com"
+  }
+ }
+}

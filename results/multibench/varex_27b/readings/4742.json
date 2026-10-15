@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "agency_name": "U.S. Department of Housing",
+  "agency_address": "450 7th Street SW, Washington",
+  "agency_number": "DBLS-2023-5012",
+  "chief_executive_officer": "Richard Pope",
+  "agency_labor_standards_officer": "Kathy V. Perez",
+  "agency_telephone_number": "(202) 402-5111"
+ },
+ "parse": {
+  "agency_name": "U.S. Department of Housing",
+  "agency_address": "450 7th Street SW, Washington",
+  "agency_number": "DBLS-2023-5012",
+  "chief_executive_officer": "Richard Pope",
+  "agency_labor_standards_officer": "Kathy V. Perez",
+  "agency_telephone_number": "(202) 402-5111"
+ },
+ "oneshot": {
+  "agency_name": "U.S. Department of Housing",
+  "agency_address": "450 7th Street SW, Washington",
+  "agency_number": "DBLS-2023-5012",
+  "chief_executive_officer": "Richard Pope",
+  "agency_labor_standards_officer": "Kathy V. Perez",
+  "agency_telephone_number": "(202) 402-5111"
+ }
+}

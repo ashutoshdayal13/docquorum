@@ -1,0 +1,44 @@
+{
+ "license_number": "CSRL-2023-0",
+ "firm_name": "Tran, Bennett and Thomas",
+ "dba_name": "TBT Geochemical Solutions",
+ "website": "www.tbtgeochem.com",
+ "owner_corporate_name": "Tran, Bennett and Thomas",
+ "state_of_incorporation": "New York",
+ "owners_officers": [
+  "John C. van der Hoeven, CEO",
+  "Jenny D. Miller, COO"
+ ],
+ "owner_printed_name": "John C. van der Hoeven",
+ "signature_date": "05/15/2023",
+ "business_operator": "John C. van der Hoeven",
+ "telephone_number": "(379) 563-4313",
+ "emergency_number": "(569) 933-6861",
+ "email_address": "john.vanderhoeven@aol.com",
+ "correspondent": "Paul Querini",
+ "correspondent_telephone_number": "(799) 753-6894",
+ "alternate_phone_number": "(657) 694-2227",
+ "correspondent_email_address": "paul.querini@outlook.com",
+ "facility_address": {
+  "street": "224 Kimberly Motorway Apt. 648",
+  "city": "Lake Markshire",
+  "state": "NY",
+  "zip_code": "73668"
+ },
+ "mailing_address": {
+  "street": "224 Kimberly Motorway Apt. 648",
+  "city": "Lake Markshire",
+  "state": "NY",
+  "zip_code": "73668"
+ },
+ "license_registrations": [
+  {
+   "license_type": "CFP",
+   "license_number": "CFP-2021-NY-60125"
+  },
+  {
+   "license_type": "LCSW",
+   "license_number": "LCSW-2022-IL-69822"
+  }
+ ]
+}

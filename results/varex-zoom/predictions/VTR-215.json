@@ -1,0 +1,21 @@
+{
+ "applicant_first_name": "Virginia",
+ "applicant_middle_name": "Q.",
+ "applicant_last_name": "Martin",
+ "applicant_email": "virginia.martin@outlook.com",
+ "applicant_phone": "(547) 585-9345",
+ "vehicle_vin": "1G1ZT54825F123456",
+ "vehicle_make": "Toyota",
+ "vehicle_body_style": "SUV",
+ "vehicle_current_license_plate": "ABC1234",
+ "physician_name": "Dr. Jane Smith",
+ "physician_license_number": "TX-123456",
+ "physician_printed_name": "Dr. Jane Smith",
+ "physician_signature_date": "10/15/2023",
+ "applicant_address": {
+  "street": "027 Potts Brook Suite 164",
+  "city": "Port Josephtown",
+  "state": "MT",
+  "zip": "62426"
+ }
+}

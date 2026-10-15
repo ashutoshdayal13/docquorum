@@ -1,0 +1,56 @@
+{
+ "primary": {
+  "registrant_name": "Magdalena X. Barela",
+  "vehicle_id_number": "1HGCM82633A129184",
+  "insurance_exemption_date": "06/15/2023",
+  "approved_by": "Derek B. Terrell",
+  "approval_date": "06/10/2023",
+  "address": {
+   "street": "329 Lewis Coves Suite 614",
+   "city": "Obrienberg",
+   "state": "NJ",
+   "zip_code": "35616"
+  },
+  "vehicle_details": {
+   "make": "Toyota",
+   "model": "Camry",
+   "year": 2020
+  }
+ },
+ "parse": {
+  "registrant_name": "Magdalena X. Barela",
+  "vehicle_id_number": "1HGCM82633A129184",
+  "insurance_exemption_date": "06/15/2023",
+  "approved_by": "Derek B. Terrell",
+  "approval_date": "06/10/2023",
+  "address": {
+   "street": "329 Lewis Coves Suite 614",
+   "city": "Obrienberg",
+   "state": "NJ",
+   "zip_code": "35616"
+  },
+  "vehicle_details": {
+   "make": "Toyota",
+   "model": "Camry",
+   "year": 2020
+  }
+ },
+ "oneshot": {
+  "registrant_name": "Magdalena X. Barela",
+  "vehicle_id_number": "1HGCM82633A129184",
+  "insurance_exemption_date": "06/15/2023",
+  "approved_by": "Derek B. Terrell",
+  "approval_date": "06/10/2023",
+  "address": {
+   "street": "329 Lewis Coves Suite 614",
+   "city": "Obrienberg",
+   "state": "NJ",
+   "zip_code": "35616"
+  },
+  "vehicle_details": {
+   "make": "Toyota",
+   "model": "Camry",
+   "year": 2020
+  }
+ }
+}

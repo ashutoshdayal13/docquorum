@@ -1,0 +1,23 @@
+{
+ "beneficiary_id_number": "PO-2024-54599",
+ "date_of_birth": "09/25/1984",
+ "individual": {
+  "last_name": "Siwczak",
+  "first_name": "Pierluigi",
+  "middle_initial": "W",
+  "address": "209 Mark Stravenue Apt. 893",
+  "city_state": "Stacyburgh, ID",
+  "zip_code": "92533"
+ },
+ "representative": {
+  "last_name": "Moreno",
+  "first_name": "Sierra",
+  "address": "58968 Franklin Fords Suite 518",
+  "city_state": "Parrishland, TX",
+  "zip_code": "68310",
+  "daytime_telephone_number": "(758) 355-2037",
+  "evening_telephone_number": "(786) 804-7677",
+  "email_address": "sierra.moreno@yahoo.com",
+  "best_hours_to_reach": "9 AM to 5 PM"
+ }
+}

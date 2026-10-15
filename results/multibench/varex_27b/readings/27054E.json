@@ -1,0 +1,72 @@
+{
+ "primary": {
+  "authorized_user": {
+   "name": "Hill, Kristine D.",
+   "title": "Therapist, drama",
+   "office_telephone": "(037) 841-6539",
+   "mailing_address": "5779 Shannon Rue Suite 402, Lake Allison, AL 06403",
+   "signature_date": "06/15/2023"
+  },
+  "approving_official": {
+   "name": "Tyler, Jennifer Y.",
+   "title": "Amenity horticulturist",
+   "email": "jtyler@johnson.com",
+   "user_id": "JYT2023",
+   "mailing_address": "7411 Michael Knolls, East Brittany, OH 46472",
+   "signature_date": "06/15/2023"
+  },
+  "hud_program_office_poc": {
+   "name": "Cherian, Eberhardt",
+   "title": "Journalist, broadcasting",
+   "h_id": "ECH2023",
+   "office_telephone": "(877) 496-5668"
+  }
+ },
+ "parse": {
+  "other": "Form HUD-27054E (07/2022), Page 1 of 2, OMB Approval No. 2535-0102 (exp. 4/30/2023)",
+  "authorized_user": {
+   "name": "Hill, Kristine D.",
+   "title": "Therapist, drama",
+   "office_telephone": "(037) 841-6539",
+   "mailing_address": "5779 Shannon Rue Suite 402, Lake Allison, AL 06403",
+   "signature_date": "06/15/2023"
+  },
+  "approving_official": {
+   "name": "Tyler, Jennifer Y.",
+   "title": "Amenity horticulturist",
+   "email": "jtyler@johnson.com",
+   "user_id": "JYT2023",
+   "mailing_address": "7411 Michael Knolls, East Brittany, OH 46472",
+   "signature_date": "06/15/2023"
+  },
+  "hud_program_office_poc": {
+   "name": "Cherian, Eberhardt",
+   "title": "Journalist, broadcasting",
+   "h_id": "ECH2023",
+   "office_telephone": "(877) 496-5668"
+  }
+ },
+ "oneshot": {
+  "authorized_user": {
+   "name": "Hill, Kristine D.",
+   "title": "Therapist, drama",
+   "office_telephone": "(037) 841-6539",
+   "mailing_address": "5779 Shannon Rue Suite 402, Lake Allison, AL 06403",
+   "signature_date": "06/15/2023"
+  },
+  "approving_official": {
+   "name": "Tyler, Jennifer Y.",
+   "title": "Amenity horticulturist",
+   "email": "jtyler@johnson.com",
+   "user_id": "JYT2023",
+   "mailing_address": "7411 Michael Knolls, East Brittany, OH 46472",
+   "signature_date": "06/15/2023"
+  },
+  "hud_program_office_poc": {
+   "name": "Cherian, Eberhardt",
+   "title": "Journalist, broadcasting",
+   "h_id": "ECH2023",
+   "office_telephone": "(877) 496-5668"
+  }
+ }
+}

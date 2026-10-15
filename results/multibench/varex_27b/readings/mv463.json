@@ -1,0 +1,92 @@
+{
+ "primary": {
+  "facility_identification_number": 1234567890,
+  "business_name": "English-Levy Automotive Dealership",
+  "contact_person": "Tammy Dias",
+  "dealer_email_address": "tdias@englishlevy.com",
+  "business_telephone": "(433) 333-3823",
+  "emergency_telephone": "(603) 301-8360",
+  "fax_number": "(591) 961-1076",
+  "security_type": "Electronic Locking System",
+  "business_address": {
+   "street": "11444 Andrew Ford Apt. 820",
+   "city": "Lorettamouth",
+   "state": "MN",
+   "zip_code": "05611"
+  },
+  "previous_businesses": [
+   {
+    "business_name": "Lorettamouth Motors",
+    "license_number": "DL-2015-MN-45678"
+   },
+   {
+    "business_name": "Northstar Automotive",
+    "license_number": "DL-2018-MN-12345"
+   },
+   {
+    "business_name": "Minnesota Car Dealers",
+    "license_number": "DL-2020-MN-78901"
+   }
+  ]
+ },
+ "parse": {
+  "facility_identification_number": 1234567890,
+  "business_name": "English-Levy Automotive Dealership",
+  "contact_person": "Tammy Dias",
+  "dealer_email_address": "tdias@englishlevy.com",
+  "business_telephone": "(433) 333-3823",
+  "emergency_telephone": "(603) 301-8360",
+  "fax_number": "(591) 961-1076",
+  "security_type": "Electronic Locking System",
+  "business_address": {
+   "street": "11444 Andrew Ford Apt. 820",
+   "city": "Lorettamouth",
+   "state": "MN",
+   "zip_code": "05611"
+  },
+  "previous_businesses": [
+   {
+    "business_name": "Lorettamouth Motors",
+    "license_number": "DL-2015-MN-45678"
+   },
+   {
+    "business_name": "Northstar Automotive",
+    "license_number": "DL-2018-MN-12345"
+   },
+   {
+    "business_name": "Minnesota Car Dealers",
+    "license_number": "DL-2020-MN-78901"
+   }
+  ]
+ },
+ "oneshot": {
+  "facility_identification_number": 1234567890,
+  "business_name": "English-Levy Automotive Dealership",
+  "contact_person": "Tammy Dias",
+  "dealer_email_address": "tdias@englishlevy.com",
+  "business_telephone": "(433) 333-3823",
+  "emergency_telephone": "(603) 301-8360",
+  "fax_number": "(591) 961-1076",
+  "security_type": "Electronic Locking System",
+  "business_address": {
+   "street": "11444 Andrew Ford Apt. 820",
+   "city": "Lorettamouth",
+   "state": "MN",
+   "zip_code": "05611"
+  },
+  "previous_businesses": [
+   {
+    "business_name": "Lorettamouth Motors",
+    "license_number": "DL-2015-MN-45678"
+   },
+   {
+    "business_name": "Northstar Automotive",
+    "license_number": "DL-2018-MN-12345"
+   },
+   {
+    "business_name": "Minnesota Car Dealers",
+    "license_number": "DL-2020-MN-78901"
+   }
+  ]
+ }
+}

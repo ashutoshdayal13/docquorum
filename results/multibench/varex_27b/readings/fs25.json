@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "payment_account_number": 78526727,
+  "daytime_phone_number": "(326) 417-8430",
+  "vehicle_make": "Toyota Camry",
+  "vehicle_plate_number": "PA 123456",
+  "insurance_company": "State Farm Mutual Automobile Insurance Company",
+  "policy_number": "POLICY-2023-785267",
+  "registrant": {
+   "last_name": "Brown",
+   "first_name": "Krisha"
+  }
+ },
+ "parse": {
+  "payment_account_number": 78526727,
+  "daytime_phone_number": "(326) 417-8430",
+  "vehicle_make": "Toyota Camry",
+  "vehicle_plate_number": "PA 123456",
+  "insurance_company": "State Farm Mutual Automobile Insurance Company",
+  "policy_number": "POLICY-2023-785267",
+  "registrant": {
+   "last_name": "Brown",
+   "first_name": "Krisha"
+  }
+ },
+ "oneshot": {
+  "payment_account_number": 78526727,
+  "daytime_phone_number": "(326) 417-8430",
+  "vehicle_make": "Toyota Camry",
+  "vehicle_plate_number": "PA 123456",
+  "insurance_company": "State Farm Mutual Automobile Insurance Company",
+  "policy_number": "POLICY-2023-785267",
+  "registrant": {
+   "last_name": "Brown",
+   "first_name": "Krisha"
+  }
+ }
+}

@@ -1,0 +1,224 @@
+{
+ "primary": {
+  "customer_name": "Nadia I. Jaimes",
+  "customer_number": "DPM-2020-16514",
+  "film_record_unavailable_reason": "Natural disaster damaged records",
+  "disappearance_circumstances": "Lost during a house fire, searched thoroughly",
+  "bonds": [
+   {
+    "bond_identifier": "AAA 12345678 A",
+    "denomination": 1000,
+    "issue_date": "01/15/2010",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "BBB 98765432 B",
+    "denomination": 500,
+    "issue_date": "05/22/2012",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "CCC 45678912 C",
+    "denomination": 200,
+    "issue_date": "09/18/2015",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "DDD 78912345 D",
+    "denomination": 100,
+    "issue_date": "03/10/2018",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "EEE 23456789 E",
+    "denomination": 50,
+    "issue_date": "11/30/2019",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "FFF 56789123 F",
+    "denomination": 25,
+    "issue_date": "07/14/2020",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "GGG 89123456 G",
+    "denomination": 10,
+    "issue_date": "02/28/2021",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "HHH 34567891 H",
+    "denomination": 5,
+    "issue_date": "06/16/2022",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "III 67891234 I",
+    "denomination": 1000,
+    "issue_date": "10/20/2011",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "JJJ 91234567 J",
+    "denomination": 500,
+    "issue_date": "04/05/2014",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "KKK 23456789 K",
+    "denomination": 200,
+    "issue_date": "08/12/2017",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   }
+  ]
+ },
+ "parse": {
+  "customer_name": "Nadia I. Jaimes",
+  "customer_number": "DPM-2020-16514",
+  "film_record_unavailable_reason": "Natural disaster damaged records",
+  "disappearance_circumstances": "Lost during a house fire, searched thoroughly",
+  "bonds": [
+   {
+    "bond_identifier": "AAA 12345678 A",
+    "denomination": 1000,
+    "issue_date": "01/15/2010",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "BBB 98765432 B",
+    "denomination": 500,
+    "issue_date": "05/22/2012",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "CCC 45678912 C",
+    "denomination": 200,
+    "issue_date": "09/18/2015",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "DDD 78912345 D",
+    "denomination": 100,
+    "issue_date": "03/10/2018",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "EEE 23456789 E",
+    "denomination": 50,
+    "issue_date": "11/30/2019",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "FFF 56789123 F",
+    "denomination": 25,
+    "issue_date": "07/14/2020",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "GGG 89123456 G",
+    "denomination": 10,
+    "issue_date": "02/28/2021",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "HHH 34567891 H",
+    "denomination": 5,
+    "issue_date": "06/16/2022",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "III 67891234 I",
+    "denomination": 1000,
+    "issue_date": "10/20/2011",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "JJJ 91234567 J",
+    "denomination": 500,
+    "issue_date": "04/05/2014",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "KKK 23456789 K",
+    "denomination": 200,
+    "issue_date": "08/12/2017",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   }
+  ]
+ },
+ "oneshot": {
+  "customer_name": "Nadia I. Jaimes",
+  "customer_number": "DPM-2020-16514",
+  "film_record_unavailable_reason": "Natural disaster damaged records",
+  "disappearance_circumstances": "Lost during a house fire, searched thoroughly",
+  "bonds": [
+   {
+    "bond_identifier": "AAA 12345678 A",
+    "denomination": 1000,
+    "issue_date": "01/15/2010",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "BBB 98765432 B",
+    "denomination": 500,
+    "issue_date": "05/22/2012",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "CCC 45678912 C",
+    "denomination": 200,
+    "issue_date": "09/18/2015",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "DDD 78912345 D",
+    "denomination": 100,
+    "issue_date": "03/10/2018",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "EEE 23456789 E",
+    "denomination": 50,
+    "issue_date": "11/30/2019",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "FFF 56789123 F",
+    "denomination": 25,
+    "issue_date": "07/14/2020",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "GGG 89123456 G",
+    "denomination": 10,
+    "issue_date": "02/28/2021",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "HHH 34567891 H",
+    "denomination": 5,
+    "issue_date": "06/16/2022",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "III 67891234 I",
+    "denomination": 1000,
+    "issue_date": "10/20/2011",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "JJJ 91234567 J",
+    "denomination": 500,
+    "issue_date": "04/05/2014",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   },
+   {
+    "bond_identifier": "KKK 23456789 K",
+    "denomination": 200,
+    "issue_date": "08/12/2017",
+    "description": "Series EE bond issued to Nadia Jaimes"
+   }
+  ]
+ }
+}

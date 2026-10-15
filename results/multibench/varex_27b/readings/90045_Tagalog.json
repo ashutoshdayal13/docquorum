@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "control_number": "RFQ-2024-75992",
+  "fha_case_number": "FHA-2023-10457",
+  "contact_person": "Brandon A. Valdez",
+  "property_address": {
+   "zip_code": "13670"
+  },
+  "homeowners": [
+   {
+    "name": "Brittany Philippe"
+   }
+  ]
+ },
+ "parse": {
+  "control_number": "RFQ-2024-75992",
+  "fha_case_number": "FHA-2023-10457",
+  "contact_person": "Brandon A. Valdez",
+  "property_address": {
+   "zip_code": "13670"
+  },
+  "homeowners": [
+   {
+    "name": "Brittany Philippe"
+   }
+  ]
+ },
+ "oneshot": {
+  "control_number": "RFQ-2024-75992",
+  "fha_case_number": "FHA-2023-10457",
+  "contact_person": "Brandon A. Valdez",
+  "property_address": {
+   "zip_code": "13670"
+  },
+  "homeowners": [
+   {
+    "name": "Brittany Philippe"
+   }
+  ]
+ }
+}

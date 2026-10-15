@@ -1,0 +1,134 @@
+{
+ "primary": {
+  "received_from": "Colon, Adams and May",
+  "date": "03/25/2023",
+  "organizational_location": "395 Vega Drive Apt. 511, Rebeccaville",
+  "telephone": "(612) 290-6237",
+  "items": [
+   {
+    "stock_number": "DPM-2024-807",
+    "description": "Architectural drafting tools and supplies",
+    "quantity": 5,
+    "total_cost": 117.5
+   },
+   {
+    "stock_number": "DPM-2024-808",
+    "description": "Topographic mapping equipment",
+    "quantity": 2,
+    "total_cost": 2501.5
+   },
+   {
+    "stock_number": "DPM-2024-809",
+    "description": "GIS software license",
+    "quantity": 1,
+    "total_cost": 4628.63
+   },
+   {
+    "stock_number": "DPM-2024-810",
+    "description": "Surveying instruments",
+    "quantity": 3,
+    "total_cost": 450
+   },
+   {
+    "stock_number": "DPM-2024-811",
+    "description": "Office supplies for cartography",
+    "quantity": 10,
+    "total_cost": 57.1
+   },
+   {
+    "stock_number": "DPM-2024-812",
+    "description": "Digital plotting tablets",
+    "quantity": 1,
+    "total_cost": 615869.07
+   }
+  ]
+ },
+ "parse": {
+  "received_from": "Colon, Adams and May",
+  "date": "03/25/2023",
+  "organizational_location": "395 Vega Drive Apt. 511, Rebeccaville",
+  "telephone": "(612) 290-6237",
+  "items": [
+   {
+    "stock_number": "DPM-2024-807",
+    "description": "Architectural drafting tools and supplies",
+    "quantity": 5,
+    "total_cost": 117.5
+   },
+   {
+    "stock_number": "DPM-2024-808",
+    "description": "Topographic mapping equipment",
+    "quantity": 2,
+    "total_cost": 2501.5
+   },
+   {
+    "stock_number": "DPM-2024-809",
+    "description": "GIS software license",
+    "quantity": 1,
+    "total_cost": 4628.63
+   },
+   {
+    "stock_number": "DPM-2024-810",
+    "description": "Surveying instruments",
+    "quantity": 3,
+    "total_cost": 450
+   },
+   {
+    "stock_number": "DPM-2024-811",
+    "description": "Office supplies for cartography",
+    "quantity": 10,
+    "total_cost": 57.1
+   },
+   {
+    "stock_number": "DPM-2024-812",
+    "description": "Digital plotting tablets",
+    "quantity": 1,
+    "total_cost": 615869.07
+   }
+  ]
+ },
+ "oneshot": {
+  "received_from": "Colon, Adams and May",
+  "date": "03/25/2023",
+  "organizational_location": "395 Vega Drive Apt. 511, Rebeccaville",
+  "telephone": "(612) 290-6237",
+  "items": [
+   {
+    "stock_number": "DPM-2024-807",
+    "description": "Architectural drafting tools and supplies",
+    "quantity": 5,
+    "total_cost": 117.5
+   },
+   {
+    "stock_number": "DPM-2024-808",
+    "description": "Topographic mapping equipment",
+    "quantity": 2,
+    "total_cost": 2501.5
+   },
+   {
+    "stock_number": "DPM-2024-809",
+    "description": "GIS software license",
+    "quantity": 1,
+    "total_cost": 4628.63
+   },
+   {
+    "stock_number": "DPM-2024-810",
+    "description": "Surveying instruments",
+    "quantity": 3,
+    "total_cost": 450
+   },
+   {
+    "stock_number": "DPM-2024-811",
+    "description": "Office supplies for cartography",
+    "quantity": 10,
+    "total_cost": 57.1
+   },
+   {
+    "stock_number": "DPM-2024-812",
+    "description": "Digital plotting tablets",
+    "quantity": 1,
+    "total_cost": 615869.07
+   }
+  ]
+ }
+}

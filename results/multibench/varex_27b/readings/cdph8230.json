@@ -1,0 +1,17 @@
+{
+ "primary": {
+  "date_of_birth": "05/17/1980",
+  "ssn_or_itin": "668-67-3495",
+  "phone_number": "(906) 637-7046"
+ },
+ "parse": {
+  "date_of_birth": "05/17/1980",
+  "ssn_or_itin": "668-67-3495",
+  "phone_number": "(906) 637-7046"
+ },
+ "oneshot": {
+  "date_of_birth": "05/17/1980",
+  "ssn_or_itin": "668-67-3495",
+  "phone_number": "(906) 637-7046"
+ }
+}

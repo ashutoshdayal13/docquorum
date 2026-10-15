@@ -1,0 +1,89 @@
+{
+ "primary": {
+  "date_received": "04/16/2023",
+  "date_reviewed": "04/18/2023",
+  "bpd_id": "BPD-2023-04-16-001",
+  "bpd_number": "BPD-001",
+  "facility_information": {
+   "facility_name": "Morris Inc",
+   "facility_address": "05941 Beck Pass",
+   "facility_city": "New Samantha",
+   "facility_state": "FL",
+   "facility_zip_code": "30011",
+   "facility_contact_name": "Alma Rust",
+   "facility_contact_phone": "(515) 552-5702",
+   "facility_contact_email": "arust@morris.com"
+  },
+  "alternative_facility_information": {
+   "alternative_facility_name": "BioTech Solutions",
+   "alternative_facility_address": "123 Science Park",
+   "alternative_facility_city": "Boston",
+   "alternative_facility_state": "MA",
+   "alternative_facility_zip_code": "02139"
+  },
+  "bpd_information": {
+   "deviation_description": "Contamination detected in batch during quality control",
+   "deviation_date": "04/10/2023",
+   "corrective_actions": "Quarantine affected batch, initiate investigation",
+   "preventive_actions": "Review and enhance cleaning procedures"
+  }
+ },
+ "parse": {
+  "date_received": "04/16/2023",
+  "date_reviewed": "04/18/2023",
+  "bpd_id": "BPD-2023-04-16-001",
+  "bpd_number": "BPD-001",
+  "facility_information": {
+   "facility_name": "Morris Inc",
+   "facility_address": "05941 Beck Pass",
+   "facility_city": "New Samantha",
+   "facility_state": "FL",
+   "facility_zip_code": "30011",
+   "facility_contact_name": "Alma Rust",
+   "facility_contact_phone": "(515) 552-5702",
+   "facility_contact_email": "arust@morris.com"
+  },
+  "alternative_facility_information": {
+   "alternative_facility_name": "BioTech Solutions",
+   "alternative_facility_address": "123 Science Park",
+   "alternative_facility_city": "Boston",
+   "alternative_facility_state": "MA",
+   "alternative_facility_zip_code": "02139"
+  },
+  "bpd_information": {
+   "deviation_description": "Contamination detected in batch during quality control",
+   "deviation_date": "04/10/2023",
+   "corrective_actions": "Quarantine affected batch, initiate investigation",
+   "preventive_actions": "Review and enhance cleaning procedures"
+  }
+ },
+ "oneshot": {
+  "date_received": "04/16/2023",
+  "date_reviewed": "04/18/2023",
+  "bpd_id": "BPD-2023-04-16-001",
+  "bpd_number": "BPD-001",
+  "facility_information": {
+   "facility_name": "Morris Inc",
+   "facility_address": "05941 Beck Pass",
+   "facility_city": "New Samantha",
+   "facility_state": "FL",
+   "facility_zip_code": "30011",
+   "facility_contact_name": "Alma Rust",
+   "facility_contact_phone": "(515) 552-5702",
+   "facility_contact_email": "arust@morris.com"
+  },
+  "alternative_facility_information": {
+   "alternative_facility_name": "BioTech Solutions",
+   "alternative_facility_address": "123 Science Park",
+   "alternative_facility_city": "Boston",
+   "alternative_facility_state": "MA",
+   "alternative_facility_zip_code": "02139"
+  },
+  "bpd_information": {
+   "deviation_description": "Contamination detected in batch during quality control",
+   "deviation_date": "04/10/2023",
+   "corrective_actions": "Quarantine affected batch, initiate investigation",
+   "preventive_actions": "Review and enhance cleaning procedures"
+  }
+ }
+}

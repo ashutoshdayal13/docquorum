@@ -1,0 +1,132 @@
+{
+ "primary": {
+  "case_number": "REF-2022-105",
+  "customer_name": "Vidhi R. Tran",
+  "amount_owed": 899109.41,
+  "nature_of_claim": "Payment for inherited Treasury Securities from deceased estate",
+  "deceased_owner": {
+   "name": "Isabela Corral",
+   "ssn": "612-08-4042",
+   "jurisdiction_of_residence": "New York"
+  },
+  "payee": {
+   "name": "Dario Greene",
+   "phone": "(155) 276-5595",
+   "address": "15258 Rogers Freeway, South Paulville, IA 65853",
+   "email": "dario.greene@aol.com"
+  },
+  "securities": [
+   {
+    "security_id": "6934-3835-6161-001",
+    "amount": 3247.14,
+    "payment_date": "05/01"
+   },
+   {
+    "security_id": "6934-3835-6161-002",
+    "amount": 895000,
+    "payment_date": ""
+   },
+   {
+    "security_id": "6934-3835-6161-003",
+    "amount": 15.41,
+    "payment_date": "05/01"
+   },
+   {
+    "security_id": "6934-3835-6161-004",
+    "amount": 15.41,
+    "payment_date": ""
+   },
+   {
+    "security_id": "6934-3835-6161-005",
+    "amount": 15.41,
+    "payment_date": "05/01"
+   }
+  ]
+ },
+ "parse": {
+  "case_number": "REF-2022-105",
+  "customer_name": "Vidhi R. Tran",
+  "amount_owed": 899109.41,
+  "nature_of_claim": "Payment for inherited Treasury Securities from deceased estate",
+  "deceased_owner": {
+   "name": "Isabela Corral",
+   "ssn": "612-08-4042",
+   "jurisdiction_of_residence": "New York"
+  },
+  "payee": {
+   "name": "Dario Greene",
+   "phone": "(155) 276-5595",
+   "address": "15258 Rogers Freeway, South Paulville, IA 65853",
+   "email": "dario.greenene@aol.com"
+  },
+  "securities": [
+   {
+    "security_id": "6934-3835-6161-001",
+    "amount": 3247.14,
+    "payment_date": "05/01"
+   },
+   {
+    "security_id": "6934-3835-6161-002",
+    "amount": 895000,
+    "payment_date": "null"
+   },
+   {
+    "security_id": "6934-3835-6161-003",
+    "amount": 15.41,
+    "payment_date": "05/01"
+   },
+   {
+    "security_id": "6934-3835-6161-004",
+    "amount": 15.41,
+    "payment_date": "null"
+   },
+   {
+    "security_id": "6934-3835-6161-005",
+    "amount": 15.41,
+    "payment_date": "05/01"
+   }
+  ]
+ },
+ "oneshot": {
+  "case_number": "REF-2022-105",
+  "customer_name": "Vidhi R. Tran",
+  "amount_owed": 899109.41,
+  "nature_of_claim": "Payment for inherited Treasury Securities from deceased estate",
+  "deceased_owner": {
+   "name": "Isabela Corral",
+   "ssn": "612-08-4042",
+   "jurisdiction_of_residence": "New York"
+  },
+  "payee": {
+   "name": "Dario Greene",
+   "phone": "(155) 276-5595",
+   "address": "15258 Rogers Freeway, South Paulville, IA 65853",
+   "email": "dario.greene@aol.com"
+  },
+  "securities": [
+   {
+    "security_id": "6934-3835-6161-001",
+    "amount": 3247.14,
+    "payment_date": "05/01"
+   },
+   {
+    "security_id": "6934-3835-6161-002",
+    "amount": 895000
+   },
+   {
+    "security_id": "6934-3835-6161-003",
+    "amount": 15.41,
+    "payment_date": "05/01"
+   },
+   {
+    "security_id": "6934-3835-6161-004",
+    "amount": 15.41
+   },
+   {
+    "security_id": "6934-3835-6161-005",
+    "amount": 15.41,
+    "payment_date": "05/01"
+   }
+  ]
+ }
+}

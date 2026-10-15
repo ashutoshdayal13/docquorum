@@ -1,0 +1,15 @@
+{
+ "applicant_last_name": "Haro",
+ "applicant_first_name": "Nicole",
+ "applicant_middle_name": "H.",
+ "applicant_date_of_birth": "08/13/1993",
+ "applicant_ssn_or_itin": "126-91-5920",
+ "applicant_phone_number": "(724) 349-9478",
+ "applicant_email_address": "nicole.haro@outlook.com",
+ "applicant_mailing_address": {
+  "street": "0867 Brown Lodge",
+  "city": "Adamsland",
+  "state": "MN",
+  "zip_code": "87718"
+ }
+}

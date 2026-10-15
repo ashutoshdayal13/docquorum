@@ -1,0 +1,25 @@
+{
+ "investigator_name": "Nisa S. Rios",
+ "protocol_name": "PROTOCOL-2023-5678: Clinical Trial for Drug XYZ",
+ "subinvestigators": [
+  "Melissa W. Harris"
+ ],
+ "investigator_address": {
+  "street": "5981 Strong Loop Suite 461",
+  "city": "Lake Michelle",
+  "state": "ND",
+  "zip_code": "27894"
+ },
+ "research_facility": {
+  "name": "Kim-Beasley Research Center",
+  "address": "5981 Strong Loop Suite 461, Lake Michelle, ND"
+ },
+ "clinical_laboratory_facility": {
+  "name": "Lake Michelle Clinical Labs",
+  "address": "5981 Strong Loop Suite 461, Lake Michelle, ND"
+ },
+ "institutional_review_board": {
+  "name": "North Dakota IRB",
+  "address": "5981 Strong Loop Suite 461, Lake Michelle, ND"
+ }
+}

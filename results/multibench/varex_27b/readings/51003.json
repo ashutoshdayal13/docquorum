@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "public_housing_agency_name": "Curtisshire Public Housing Authority",
+  "periodic_estimate_number": "CTL-2024-87852",
+  "period_from": "01/01/2024",
+  "amount_carried_forward": 19767.29,
+  "total_amount": 19821.25,
+  "prepared_by": "Homero S. Wolf",
+  "prepared_date": "03/31/2024",
+  "checked_by": "Timoteo H. Narayanan",
+  "checked_date": "04/01/2024",
+  "project": {
+   "name": "Lauren Path Housing Project, Curtisshire, ME",
+   "number": "LPHP-2024-001"
+  },
+  "general_contractor": {
+   "name": "Wu-Parker Construction",
+   "contract_number": "WPC-2024-001"
+  },
+  "subcontractor": {
+   "name": "Williams-Calhoun Electrical",
+   "subcontract_number": "WCE-2024-001"
+  }
+ },
+ "parse": {
+  "public_housing_agency_name": "Curtisshire Public Housing Authority",
+  "periodic_estimate_number": "CTL-2024-87852",
+  "period_from": "01/01/2024",
+  "amount_carried_forward": 19767.29,
+  "total_amount": 19821.25,
+  "prepared_by": "Homero S. Wolf",
+  "prepared_date": "03/31/2024",
+  "checked_by": "Timoteo H. Narayanan",
+  "checked_date": "04/01/2024",
+  "project": {
+   "name": "Lauren Path Housing Project, Curtisshire, ME",
+   "number": "LPHP-2024-001"
+  },
+  "general_contractor": {
+   "name": "Wu-Parker Construction",
+   "contract_number": "WPC-2024-001"
+  },
+  "subcontractor": {
+   "name": "Williams-Calhoun Electrical",
+   "subcontract_number": "WCE-2024-001"
+  }
+ },
+ "oneshot": {
+  "public_housing_agency_name": "Curtisshire Public Housing Authority",
+  "periodic_estimate_number": "CTL-2024-87852",
+  "period_from": "01/01/2024",
+  "amount_carried_forward": 19767.29,
+  "total_amount": 19821.25,
+  "prepared_by": "Homero S. Wolf",
+  "prepared_date": "03/31/2024",
+  "checked_by": "Timoteo H. Narayanan",
+  "checked_date": "04/01/2024",
+  "project": {
+   "name": "Lauren Path Housing Project, Curtisshire, ME",
+   "number": "LPHP-2024-001"
+  },
+  "general_contractor": {
+   "name": "Wu-Parker Construction",
+   "contract_number": "WPC-2024-001"
+  },
+  "subcontractor": {
+   "name": "Williams-Calhoun Electrical",
+   "subcontract_number": "WCE-2024-001"
+  }
+ }
+}

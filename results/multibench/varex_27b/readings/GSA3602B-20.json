@@ -1,0 +1,32 @@
+{
+ "primary": {
+  "claim_number": "REF-2023-75624",
+  "cardholder_name": "Jennifer C. Schenk",
+  "telephone_number": "(212) 777-5232",
+  "authorization_date": "10/15/2023",
+  "billing_address": {
+   "state": "GA",
+   "zip_code": "30542"
+  }
+ },
+ "parse": {
+  "claim_number": "REF-2023-75624",
+  "cardholder_name": "Jennifer C. Schenk",
+  "telephone_number": "(212) 777-5232",
+  "authorization_date": "10/15/2023",
+  "billing_address": {
+   "state": "GA",
+   "zip_code": "30542"
+  }
+ },
+ "oneshot": {
+  "claim_number": "REF-2023-75624",
+  "cardholder_name": "Jennifer C. Schenk",
+  "telephone_number": "(212) 777-5232",
+  "authorization_date": "10/15/2023",
+  "billing_address": {
+   "state": "GA",
+   "zip_code": "30542"
+  }
+ }
+}

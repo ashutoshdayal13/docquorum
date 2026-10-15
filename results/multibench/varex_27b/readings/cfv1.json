@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "vehicle_year": "2020",
+  "vehicle_make": "Ford",
+  "vehicle_vin": "1FTRW1E1XLF797209",
+  "signature_date": "07/15/2023",
+  "printed_name": "Jennifer Phillips",
+  "title": "Farm Owner",
+  "owner": {
+   "name": "Jennifer Phillips",
+   "address": "97874 Cooper Spring, East Craigbury, OH 83112"
+  }
+ },
+ "parse": {
+  "vehicle_year": "2020",
+  "vehicle_make": "Ford",
+  "vehicle_vin": "1FTRW1E1XLF797209",
+  "signature_date": "07/15/2023",
+  "printed_name": "Jennifer Phillips",
+  "title": "Farm Owner",
+  "owner": {
+   "name": "Jennifer Phillips",
+   "address": "97874 Cooper Spring, East Craigbury, OH 83112"
+  }
+ },
+ "oneshot": {
+  "vehicle_year": "2020",
+  "vehicle_make": "Ford",
+  "vehicle_vin": "1FTRW1E1XLF797209",
+  "signature_date": "07/15/2023",
+  "printed_name": "Jennifer Phillips",
+  "title": "Farm Owner",
+  "owner": {
+   "name": "Jennifer Phillips",
+   "address": "97874 Cooper Spring, East Craigbury, OH 83112"
+  }
+ }
+}

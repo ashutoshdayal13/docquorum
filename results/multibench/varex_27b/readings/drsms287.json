@@ -1,0 +1,53 @@
+{
+ "primary": {
+  "member_name": "Connie McMillan",
+  "social_security_number": "813-48-4170",
+  "mailing_address": "45154 Chad Avenue, New Williamside",
+  "phone_number": "(817) 355-4910",
+  "employment_end_date": "03/15/2022",
+  "employer": "Garcia, Gutierrez",
+  "email_address": "connie.mcmillan@hotmail.com",
+  "financial_institution": "First National Bank",
+  "routing_number": "056005600",
+  "account_number": "7959-6716-5353",
+  "mailing_address_details": {
+   "city": "New Williamside",
+   "state": "VA",
+   "zip_code": "15043"
+  }
+ },
+ "parse": {
+  "member_name": "Connie McMillan",
+  "social_security_number": "813-48-4170",
+  "mailing_address": "45154 Chad Avenue, New Williamside",
+  "phone_number": "(817) 355-4910",
+  "employment_end_date": "03/15/2022",
+  "employer": "Garcia, Gutierrez",
+  "email_address": "connie.mcmillan@hotmail.com",
+  "financial_institution": "First National Bank",
+  "routing_number": "056005600",
+  "account_number": "7959-6716-5353",
+  "mailing_address_details": {
+   "city": "New Williamside",
+   "state": "VA",
+   "zip_code": "15043"
+  }
+ },
+ "oneshot": {
+  "member_name": "Connie McMillan",
+  "social_security_number": "813-48-4170",
+  "mailing_address": "45154 Chad Avenue, New Williamside",
+  "phone_number": "(817) 355-4910",
+  "employment_end_date": "03/15/2022",
+  "employer": "Garcia, Gutierrez",
+  "email_address": "connie.mcmillan@hotmail.com",
+  "financial_institution": "First National Bank",
+  "routing_number": "056005600",
+  "account_number": "7959-6716-5353",
+  "mailing_address_details": {
+   "city": "New Williamside",
+   "state": "VA",
+   "zip_code": "15043"
+  }
+ }
+}

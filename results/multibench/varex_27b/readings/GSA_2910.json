@@ -1,0 +1,146 @@
+{
+ "primary": {
+  "employee_name": "Flores, Liam D.",
+  "date_of_birth": "01/22/1990",
+  "place_of_birth": "North Edward, AR",
+  "contractor": "Thomas LLC",
+  "contract_number": "CONT-2023-45678",
+  "building_name": "Federal Plaza",
+  "social_security_number": "891-66-411",
+  "type_of_service": "CUSTODIAL",
+  "citizenship": "U.S.",
+  "fingerprint_cards_received_date": "02/15/23",
+  "statement_of_personal_history_received_date": "02/15/23",
+  "tsa_forward_date": "02/20/23",
+  "suitability_rating_received_date": "03/01/23",
+  "employee_on_duty_date": "03/05/23",
+  "building_pass_numbers": [
+   "FED-PLAZ-2023-00",
+   "FED-PLAZ-2023-002",
+   "FED-PLAZ-2023-003",
+   "FED-PLAZ-2023-00"
+  ],
+  "dates_issued": [
+   "03/05/2023",
+   "06/05/2023",
+   "09/05/2023",
+   "12/05/2023"
+  ],
+  "certifications": [
+   {
+    "certification_date": "03/01/23"
+   },
+   {
+    "certification_date": "02/28/23"
+   },
+   {
+    "certification_date": "03/02/23"
+   },
+   {
+    "certification_date": "03/03/23"
+   },
+   {
+    "certification_date": "03/04/23"
+   },
+   {
+    "certification_date": "03/05/23"
+   }
+  ]
+ },
+ "parse": {
+  "employee_name": "Flores, Liam D.",
+  "date_of_birth": "01/22/1990",
+  "place_of_birth": "North Edward, AR",
+  "contractor": "Thomas LLC",
+  "contract_number": "CONT-2023-45678",
+  "building_name": "Federal Plaza",
+  "social_security_number": "891-66-411",
+  "type_of_service": "CUSTODIAL",
+  "citizenship": "U.S.",
+  "fingerprint_cards_received_date": "02/15/23",
+  "statement_of_personal_history_received_date": "02/15/23",
+  "tsa_forward_date": "02/20/23",
+  "suitability_rating_received_date": "03/01/23",
+  "employee_on_duty_date": "03/05/23",
+  "building_pass_numbers": [
+   "FED-PLAZ-2023-00",
+   "FED-PLAZ-2023-002",
+   "FED-PLAZ-2023-003",
+   "FED-PLAZ-2023-00"
+  ],
+  "dates_issued": [
+   "03/05/2023",
+   "06/05/2023",
+   "09/05/2023",
+   "12/05/2023"
+  ],
+  "certifications": [
+   {
+    "certification_date": "03/01/23"
+   },
+   {
+    "certification_date": "02/28/23"
+   },
+   {
+    "certification_date": "03/02/23"
+   },
+   {
+    "certification_date": "03/03/23"
+   },
+   {
+    "certification_date": "03/04/23"
+   },
+   {
+    "certification_date": "03/05/23"
+   }
+  ]
+ },
+ "oneshot": {
+  "employee_name": "Flores, Liam D.",
+  "date_of_birth": "01/22/1990",
+  "place_of_birth": "North Edward, AR",
+  "contractor": "Thomas LLC",
+  "contract_number": "CONT-2023-45678",
+  "building_name": "Federal Plaza",
+  "social_security_number": "891-66-411",
+  "type_of_service": "CUSTODIAL",
+  "citizenship": "U.S.",
+  "fingerprint_cards_received_date": "02/15/23",
+  "statement_of_personal_history_received_date": "02/15/23",
+  "tsa_forward_date": "02/20/23",
+  "suitability_rating_received_date": "03/01/23",
+  "employee_on_duty_date": "03/05/23",
+  "building_pass_numbers": [
+   "FED-PLAZ-2023-00",
+   "FED-PLAZ-2023-002",
+   "FED-PLAZ-2023-003",
+   "FED-PLAZ-2023-00"
+  ],
+  "dates_issued": [
+   "03/05/2023",
+   "06/05/2023",
+   "09/05/2023",
+   "12/05/2023"
+  ],
+  "certifications": [
+   {
+    "certification_date": "03/01/23"
+   },
+   {
+    "certification_date": "02/28/23"
+   },
+   {
+    "certification_date": "03/02/23"
+   },
+   {
+    "certification_date": "03/03/23"
+   },
+   {
+    "certification_date": "03/04/23"
+   },
+   {
+    "certification_date": "03/05/23"
+   }
+  ]
+ }
+}

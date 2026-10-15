@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "mortgagee_id": "CTL-2023-91611",
+  "date_of_request": "05/15/2023",
+  "fha_case_number": "FHA-2023-91611-5050-6320-2",
+  "homeowner_name": "Nikodem Cainero",
+  "contact_person": {
+   "name": "Nikodem Cainero"
+  },
+  "property_address": {
+   "street": "99516 Rose Course Apt. 712"
+  },
+  "hud_official": {
+   "response_date": "05/20/2023"
+  }
+ },
+ "parse": {
+  "mortgagee_id": "CTL-2023-91611",
+  "date_of_request": "05/15/2023",
+  "fha_case_number": "FHA-2023-91611-5050-6320-2",
+  "homeowner_name": "Nikodem Cainero",
+  "contact_person": {
+   "name": "Nikodem Cainero"
+  },
+  "property_address": {
+   "street": "99516 Rose Course Apt. 712"
+  },
+  "hud_official": {
+   "response_date": "05/20/2023"
+  }
+ },
+ "oneshot": {
+  "mortgagee_id": "CTL-2023-91611",
+  "date_of_request": "05/15/2023",
+  "fha_case_number": "FHA-2023-91611-5050-6320-2",
+  "homeowner_name": "Nikodem Cainero",
+  "contact_person": {
+   "name": "Nikodem Cainero"
+  },
+  "property_address": {
+   "street": "99516 Rose Course Apt. 712"
+  },
+  "hud_official": {
+   "response_date": "05/20/2023"
+  }
+ }
+}

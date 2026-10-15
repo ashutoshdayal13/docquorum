@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "family_name": "Holland",
+  "given_name": "Tyler",
+  "middle_name": "H.",
+  "date_of_birth": "11/28/1987",
+  "present_physical_address": {
+   "street": "256 Sanders Flats",
+   "city": "Walkerhaven",
+   "zip_code": "27447"
+  },
+  "previous_physical_address": {
+   "street": "123 Main St",
+   "city": "Atlanta",
+   "zip_code": "30303"
+  },
+  "mailing_address": {
+   "street": "256 Sanders Flats",
+   "city": "Walkerhaven",
+   "zip_code": "27447"
+  }
+ },
+ "parse": {
+  "family_name": "Holland",
+  "given_name": "Tyler",
+  "middle_name": "H.",
+  "date_of_birth": "11/28/1987",
+  "present_physical_address": {
+   "street": "256 Sanders Flats",
+   "city": "Walkerhaven",
+   "zip_code": "27447"
+  },
+  "previous_physical_address": {
+   "street": "123 Main St",
+   "city": "Atlanta",
+   "zip_code": "30303"
+  },
+  "mailing_address": {
+   "street": "256 Sanders Flats",
+   "city": "Walkerhaven",
+   "zip_code": "27447"
+  }
+ },
+ "oneshot": {
+  "family_name": "Holland",
+  "given_name": "Tyler",
+  "middle_name": "H.",
+  "date_of_birth": "11/28/1987",
+  "present_physical_address": {
+   "street": "256 Sanders Flats",
+   "city": "Walkerhaven",
+   "zip_code": "27447"
+  },
+  "previous_physical_address": {
+   "street": "123 Main St",
+   "city": "Atlanta",
+   "zip_code": "30303"
+  },
+  "mailing_address": {
+   "street": "256 Sanders Flats",
+   "city": "Walkerhaven",
+   "zip_code": "27447"
+  }
+ }
+}

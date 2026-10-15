@@ -1,0 +1,56 @@
+{
+ "primary": {
+  "member_name": "Monteiro, Megan E.",
+  "member_ssn": "387-89-2402",
+  "attorney_in_fact_name": "Smith, Gabrielly",
+  "attorney_in_fact_birthdate": "01/14/1969",
+  "attorney_in_fact_ssn": "233-90-7711",
+  "attorney_in_fact_email": "gabrielly.smith@hotmail.com",
+  "attorney_in_fact_phone": "(677) 068-3393",
+  "relationship_to_member": "Friend",
+  "notarized_document": "Power of Attorney - Health Care",
+  "proposed_actions": "Manage retirement benefits and accounts",
+  "attorney_in_fact_address": {
+   "street": "82814 Lauren Mall",
+   "city": "Lake Jeffrey",
+   "state": "FL",
+   "zip_code": "38081"
+  }
+ },
+ "parse": {
+  "member_name": "Monteiro, Megan E.",
+  "member_ssn": "387-89-2402",
+  "attorney_in_fact_name": "Smith, Gabrielly",
+  "attorney_in_fact_birthdate": "01/14/1969",
+  "attorney_in_fact_ssn": "233-90-7711",
+  "attorney_in_fact_email": "gabrielly.smith@hotmail.com",
+  "attorney_in_fact_phone": "(677) 068-3393",
+  "relationship_to_member": "Friend",
+  "notarized_document": "Power of Attorney - Health Care",
+  "proposed_actions": "Manage retirement benefits and accounts",
+  "attorney_in_fact_address": {
+   "street": "82814 Lauren Mall",
+   "city": "Lake Jeffrey",
+   "state": "FL",
+   "zip_code": "38081"
+  }
+ },
+ "oneshot": {
+  "member_name": "Monteiro, Megan E.",
+  "member_ssn": "387-89-2402",
+  "attorney_in_fact_name": "Smith, Gabrielly",
+  "attorney_in_fact_birthdate": "01/14/1969",
+  "attorney_in_fact_ssn": "233-90-7711",
+  "attorney_in_fact_email": "gabrielly.smith@hotmail.com",
+  "attorney_in_fact_phone": "(677) 068-3393",
+  "relationship_to_member": "Friend",
+  "notarized_document": "Power of Attorney - Health Care",
+  "proposed_actions": "Manage retirement benefits and accounts",
+  "attorney_in_fact_address": {
+   "street": "82814 Lauren Mall",
+   "city": "Lake Jeffrey",
+   "state": "FL",
+   "zip_code": "38081"
+  }
+ }
+}

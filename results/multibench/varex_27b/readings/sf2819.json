@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "employee_name": "Gary Orengo",
+  "date_of_birth": "10/29/2001",
+  "date_insurance_terminated": "05/15/2023",
+  "date_of_notice": "05/15/2023",
+  "agency_info": {
+   "name_and_address": "Bryant Ltd, 7186 Livingston Knoll, Lake",
+   "authorized_official_name": "Valerie K. Yanez",
+   "authorized_official_title": "Airline Pilot",
+   "telephone_number": "(526) 889-9435"
+  }
+ },
+ "parse": {
+  "employee_name": "Gary Orengo",
+  "date_of_birth": "10/29/2001",
+  "date_insurance_terminated": "05/15/2023",
+  "date_of_notice": "05/15/2023",
+  "agency_info": {
+   "name_and_address": "Bryant Ltd, 7186 Livingston Knoll, Lake",
+   "authorized_official_name": "Valerie K. Yanez",
+   "authorized_official_title": "Airline Pilot",
+   "telephone_number": "(526) 889-9435"
+  }
+ },
+ "oneshot": {
+  "employee_name": "Gary Oren go",
+  "date_of_birth": "10/29/2001",
+  "date_insurance_terminated": "05/15/2023",
+  "date_of_notice": "05/15/2023",
+  "agency_info": {
+   "name_and_address": "Bryant Ltd, 7186 Livingston Knoll, Lake",
+   "authorized_official_name": "Valerie K. Yanez",
+   "authorized_official_title": "Airline Pilot",
+   "telephone_number": "(526) 889-9435"
+  }
+ }
+}

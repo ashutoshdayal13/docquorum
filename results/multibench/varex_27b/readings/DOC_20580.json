@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "execution_date": "10/15/2023",
+  "mortgagor_name": "Wallace PLC",
+  "mortgagor_jurisdiction": "Florida",
+  "capital_advance_amount": 119127.36,
+  "maturity_date": "10/15/2053",
+  "property_description": "A residential property consisting of a single-family dwelling with approximately 2,200 square feet of living space, including three bedrooms, two bathrooms, a kitchen, a living room, and a dining area. The property is situated on a 0.25-acre lot.",
+  "property_location": {
+   "city": "East Kellymouth",
+   "state": "FL"
+  }
+ },
+ "parse": {
+  "execution_date": "10/15/2023",
+  "mortgagor_name": "Wallace PLC",
+  "mortgagor_jurisdiction": "Florida",
+  "capital_advance_amount": 119127.36,
+  "maturity_date": "10/15/2053",
+  "property_description": "A residential property consisting of a single-family dwelling with approximately 2,200 square feet of living space, including three bedrooms, two bathrooms, a kitchen, a living room, and a dining area. The property is situated on a 0.25-acre lot.",
+  "property_location": {
+   "city": "East Kellymouth",
+   "state": "FL"
+  }
+ },
+ "oneshot": {
+  "execution_date": "10/15/2023",
+  "mortgagor_name": "Wallace PLC",
+  "mortgagor_jurisdiction": "Florida",
+  "capital_advance_amount": 119127.36,
+  "maturity_date": "10/15/2053",
+  "property_description": "A residential property consisting of a single-family dwelling with approximately 2,200 square feet of living space, including three bedrooms, two bathrooms, a kitchen, a living room, and a dining area. The property is situated on a 0.25-acre lot.",
+  "property_location": {
+   "city": "East Kellymouth",
+   "state": "FL"
+  }
+ }
+}

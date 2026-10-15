@@ -1,0 +1,101 @@
+{
+ "primary": {
+  "pha": "Lake Lisamouth Housing Authority",
+  "tenant_id_number": "TN-2023-5678",
+  "date_of_request": "02/15/2023",
+  "inspector": "Anita C. Edwards",
+  "date_last_inspection": "01/10/2023",
+  "date_of_inspection": "02/20/2023",
+  "neighborhood_census_tract": "Lake Lisamouth Census Tract 4567",
+  "project_number": "PRJ-2023-0045",
+  "inspected_unit_address": "9246 Jonathan Roads, Lake Lisamouth, MA 01259",
+  "inspected_unit_location": {
+   "city": "Lake Lisamouth",
+   "county": "Berkshire",
+   "state": "MA",
+   "zip": "01259"
+  },
+  "family_information": {
+   "family_name": "Judith I. Setty",
+   "family_telephone": "(786) 805-1392",
+   "family_address": "9246 Jonathan Roads, Lake Lisamouth, MA 01259"
+  },
+  "family_current_address": {
+   "family_city": "Lake Lisamouth",
+   "family_county": "Berkshire",
+   "family_state": "MA",
+   "family_zip": "01259"
+  },
+  "owner_agent_information": {
+   "owner_agent_name": "Quinn, Hamilton and Fisher",
+   "owner_agent_telephone": "(368) 265-9700",
+   "owner_agent_address": "9246 Jonathan Roads, Lake Lisamouth, MA 01259"
+  }
+ },
+ "parse": {
+  "pha": "Lake Lisamouth Housing Authority",
+  "tenant_id_number": "TN-2023-5678",
+  "date_of_request": "02/15/2023",
+  "inspector": "Anita C. Edwards",
+  "date_last_inspection": "01/10/2023",
+  "date_of_inspection": "02/20/2023",
+  "neighborhood_census_tract": "Lake Lisamouth Census Tract 4567",
+  "project_number": "PRJ-2023-0045",
+  "inspected_unit_address": "9246 Jonathan Roads, Lake Lisamouth, MA 01259",
+  "inspected_unit_location": {
+   "city": "Lake Lisamouth",
+   "county": "Berkshire",
+   "state": "MA",
+   "zip": "01259"
+  },
+  "family_information": {
+   "family_name": "Judith I. Setty",
+   "family_telephone": "(786) 805-1392",
+   "family_address": "9246 Jonathan Roads, Lake Lisamouth, MA 01259"
+  },
+  "family_current_address": {
+   "family_city": "Lake Lisamouth",
+   "family_county": "Berkshire",
+   "family_state": "MA",
+   "family_zip": "01259"
+  },
+  "owner_agent_information": {
+   "owner_agent_name": "Quinn, Hamilton and Fisher",
+   "owner_agent_telephone": "(368) 265-9700",
+   "owner_agent_address": "9246 Jonathan Roads, Lake Lisamouth, MA 01259"
+  }
+ },
+ "oneshot": {
+  "pha": "Lake Lisamouth Housing Authority",
+  "tenant_id_number": "TN-2023-5678",
+  "date_of_request": "02/15/2023",
+  "inspector": "Anita C. Edwards",
+  "date_last_inspection": "01/10/2023",
+  "date_of_inspection": "02/20/2023",
+  "neighborhood_census_tract": "Lake Lisamouth Census Tract 4567",
+  "project_number": "PRJ-2023-0045",
+  "inspected_unit_address": "9246 Jonathan Roads, Lake Lisamouth, MA 01259",
+  "inspected_unit_location": {
+   "city": "Lake Lisamouth",
+   "county": "Berkshire",
+   "state": "MA",
+   "zip": "01259"
+  },
+  "family_information": {
+   "family_name": "Judith I. Setty",
+   "family_telephone": "(786) 805-1392",
+   "family_address": "9246 Jonathan Roads, Lake Lisamouth, MA 01259"
+  },
+  "family_current_address": {
+   "family_city": "Lake Lisamouth",
+   "family_county": "Berkshire",
+   "family_state": "MA",
+   "family_zip": "01259"
+  },
+  "owner_agent_information": {
+   "owner_agent_name": "Quinn, Hamilton and Fisher",
+   "owner_agent_telephone": "(368) 265-9700",
+   "owner_agent_address": "9246 Jonathan Roads, Lake Lisamouth, MA 01259"
+  }
+ }
+}

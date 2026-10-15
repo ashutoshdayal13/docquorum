@@ -1,0 +1,101 @@
+{
+ "primary": {
+  "preceptor_name": "Jeffrey P. Morgan",
+  "preceptor_license_number": "LCSW-2010-OH-24718",
+  "preceptor_number": "DPM-2021-33308",
+  "administrator_in_training_name": "Michelle K. Schwartz",
+  "ce_hours_claimed": 40,
+  "training_facility": "Whitehead, Rios and Page",
+  "facility_telephone_number": "(556) 813-7049",
+  "preceptor_email": "jeffrey.morgan@aol.com",
+  "signature_date": "05/15/2023",
+  "preceptor_address": {
+   "street": "97928 King Prairie Apt. 823",
+   "city": "West Ryanfort",
+   "state": "OH",
+   "zip_code": "45110"
+  },
+  "ait_address": {
+   "street": "1695 Martinez Junctions",
+   "city": "Ryanton",
+   "state": "MS",
+   "zip_code": "69997"
+  },
+  "ait_program_dates": {
+   "start_date": "01/01/2023",
+   "end_date": "03/31/2023"
+  },
+  "facility_address": {
+   "street": "1695 Martinez Junctions",
+   "city": "Ryanton",
+   "state": "MS",
+   "zip_code": "69997"
+  }
+ },
+ "parse": {
+  "preceptor_name": "Jeffrey P. Morgan",
+  "preceptor_license_number": "LCSW-2010-OH-24718",
+  "preceptor_number": "DPM-2021-33308",
+  "administrator_in_training_name": "Michelle K. Schwartz",
+  "ce_hours_claimed": 40,
+  "training_facility": "Whitehead, Rios and Page",
+  "facility_telephone_number": "(556) 813-7049",
+  "preceptor_email": "jeffrey.morgan@aol.com",
+  "signature_date": "05/15/2023",
+  "preceptor_address": {
+   "street": "97928 King Prairie Apt. 823",
+   "city": "West Ryanfort",
+   "state": "OH",
+   "zip_code": "45110"
+  },
+  "ait_address": {
+   "street": "1695 Martinez Junctions",
+   "city": "Ryanton",
+   "state": "MS",
+   "zip_code": "69997"
+  },
+  "ait_program_dates": {
+   "start_date": "01/01/2023",
+   "end_date": "03/31/2023"
+  },
+  "facility_address": {
+   "street": "1695 Martinez Junctions",
+   "city": "Ryanton",
+   "state": "MS",
+   "zip_code": "69997"
+  }
+ },
+ "oneshot": {
+  "preceptor_name": "Jeffrey P. Morgan",
+  "preceptor_license_number": "LCSW-2010-OH-24718",
+  "preceptor_number": "DPM-2021-33308",
+  "administrator_in_training_name": "Michelle K. Schwartz",
+  "ce_hours_claimed": 40,
+  "training_facility": "Whitehead, Rios and Page",
+  "facility_telephone_number": "(556) 813-7049",
+  "preceptor_email": "jeffrey.morgan@aol.com",
+  "signature_date": "05/15/2023",
+  "preceptor_address": {
+   "street": "97928 King Prairie Apt. 823",
+   "city": "West Ryanfort",
+   "state": "OH",
+   "zip_code": "45110"
+  },
+  "ait_address": {
+   "street": "1695 Martinez Junctions",
+   "city": "Ryanton",
+   "state": "MS",
+   "zip_code": "69997"
+  },
+  "ait_program_dates": {
+   "start_date": "01/01/2023",
+   "end_date": "03/31/2023"
+  },
+  "facility_address": {
+   "street": "1695 Martinez Junctions",
+   "city": "Ryanton",
+   "state": "MS",
+   "zip_code": "69997"
+  }
+ }
+}
