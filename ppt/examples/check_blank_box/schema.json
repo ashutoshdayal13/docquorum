@@ -1,0 +1,832 @@
+{
+  "$defs": {
+    "GasGathererPurchaser": {
+      "properties": {
+        "gatherer": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Item 13 grid (\"Authorized GAS WELL GAS or CASINGHEAD GAS Gatherer(s) and/or Purchaser(s)\"), leftmost narrow column header \"Gatherer\" (printed vertically) for THIS row. True if the Gatherer checkbox on this row is marked, false if it is blank. This box indicates the named entity on this row acts as a gas gatherer. Do NOT confuse with the adjacent \"purchaser\" box (next column to the right, indicating a gas purchaser role) or with the \"full_well_stream\" box at the far right of the row.",
+          "title": "Gatherer"
+        },
+        "purchaser": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Item 13 grid, second narrow column header \"Purchaser\" (printed vertically), for THIS row. True if the Purchaser checkbox on this row is marked, false if blank. Indicates the named entity on this row acts as a gas purchaser. Do NOT confuse with the \"gatherer\" box (the column immediately to its left) or with the \"full_well_stream\" box at the far right of the row.",
+          "title": "Purchaser"
+        },
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Item 13 grid, wide center column \"Name of GAS WELL GAS or CASINGHEAD GAS Gatherer(s) or Purchaser(s) As Indicated in Columns to the Left\", for THIS row. The company/entity name of the gas gatherer or purchaser, transcribed verbatim as printed (preserve casing, punctuation, and any '&'/'INC'/'LLC' suffixes). Null if the row is blank. This is the row's identifying value. Do NOT confuse with the item-14 \"Name of OIL or CONDENSATE Gatherer(s)\" column (that is the separate oil/condensate grid) or with the operator names in items 3, 15, or 16.",
+          "title": "Name Of Gas Well Gas Or Casinghead Gas Gatherer Or Purchaser"
+        },
+        "system_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Item 13 grid, column \"Purchaser's RRC Assigned System Code\", for THIS row. The RRC-assigned gas purchaser system code, transcribed verbatim including any leading zeros (it is an identifier, not a quantity). Null if blank. Do NOT confuse with the item-12a \"gas purchaser system code\" change checkbox (change_gas_purchaser_system_code), with \"operator_p5_no\" (item 4), or with \"oil_lse_gas_id_no\" (item 5).",
+          "title": "Purchaser's RRC Assigned System Code"
+        },
+        "percent_of_take": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Item 13 grid, column \"Percent of Take\", for THIS row. The percentage of production taken by this gatherer/purchaser, transcribed verbatim as printed including any '%' sign or decimal (e.g. '100%', '50'). Kept as a string to preserve the exact printed form. Null if blank. Do NOT confuse with the item-14 oil/condensate \"Percent of Take\" column (separate grid).",
+          "title": "Percent Of Take"
+        },
+        "full_well_stream": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Item 13 grid, rightmost narrow column header \"Full-well Stream\" (printed vertically), for THIS row. True if the Full-well Stream checkbox on this row is marked, false if blank. Indicates the purchaser takes the full well stream. Do NOT confuse with the \"gatherer\" or \"purchaser\" boxes at the left of the row.",
+          "title": "Full Well Stream"
+        }
+      },
+      "title": "GasGathererPurchaser",
+      "type": "object"
+    },
+    "OilCondensateGatherer": {
+      "properties": {
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Item 14 grid (\"Authorized OIL or CONDENSATE Gatherer(s)\"), wide column \"Name of OIL or CONDENSATE Gatherer(s) - List Highest Volume Gatherer First\", for THIS row. The oil/condensate gatherer entity name, transcribed verbatim as printed. Rows are ordered highest-volume gatherer first as instructed on the form. Null if the row is blank. This is the row's identifying value. Do NOT confuse with the item-13 \"Name of GAS WELL GAS or CASINGHEAD GAS Gatherer(s) or Purchaser(s)\" column (the separate gas grid).",
+          "title": "Name Of Oil Or Condensate Gatherer"
+        },
+        "percent_of_take": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Item 14 grid, column \"Percent of Take\", for THIS row. The percentage of oil/condensate production taken by this gatherer, transcribed verbatim including any '%' sign or decimal. Kept as a string to preserve the exact printed form. Null if blank. Do NOT confuse with the item-13 gas \"Percent of Take\" column (separate grid).",
+          "title": "Percent Of Take"
+        }
+      },
+      "title": "OilCondensateGatherer",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "field_name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 1, top-left box \"Field name exactly as shown on proration schedule\". The oil/gas field name transcribed verbatim as printed (preserve casing and any '(' qualifiers such as district designations). Null if blank. Do NOT confuse with item 2 \"lease_name\" (the lease, in the top-right box) or with the item-12a \"change_field_name_from\" text (the prior field name being changed from).",
+      "title": "Field Name Exactly As Shown On Proration Schedule"
+    },
+    "lease_name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 2, top-right box \"Lease name as shown on proration schedule\". The lease name transcribed verbatim as printed. Null if blank. Do NOT confuse with item 1 \"field_name\" (the field, top-left), item 3 \"current_operator_name\", or the item-12a \"change_lease_name_from\" text.",
+      "title": "Lease Name As Shown On Proration Schedule"
+    },
+    "current_operator_name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 3, box \"Current operator name exactly as shown on P-5 Organization Report\". The current (incoming) operator's legal name, verbatim. Null if blank. Do NOT confuse with item 15 \"prev_operator_name\" (the previous/outgoing operator), with item 16 \"curr_operator_name_print\" (the signer's printed name in the current-operator certification), or with the lease/field names in items 1-2.",
+      "title": "Current Operator Name Exactly As Shown On P-5 Organization Report"
+    },
+    "operator_p5_no": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 4, box \"Operator P-5 no.\" (sits in the right strip beside item 3). The operator's P-5 Organization Report number, transcribed verbatim as a string including any leading zeros. Null if blank. Do NOT confuse with item 5 \"oil_lse_gas_id_no\", item 7 \"rrc_district\", or the item-13 \"system_code\".",
+      "title": "Operator P-5 No"
+    },
+    "oil_lse_gas_id_no": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 5, box \"Oil Lse/Gas ID no.\" (right strip beside item 3, between items 4 and 6). The RRC oil lease number or gas well ID, transcribed verbatim as a string preserving leading zeros. Null if blank. Do NOT confuse with item 4 \"operator_p5_no\", item 9 \"well_nos\", or the item-13 \"system_code\".",
+      "title": "Oil Lse/Gas ID No"
+    },
+    "county": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 6, box \"County\" (right strip beside item 3, between items 5 and 7). The Texas county name where the lease/well is located, verbatim. Null if blank. Do NOT confuse with item 7 \"rrc_district\" (a numeric RRC district code) or with any city/state inside item 8 \"operator_address\".",
+      "title": "County"
+    },
+    "rrc_district": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 7, rightmost box of the item-3 strip \"RRC District\". The Railroad Commission district code, transcribed verbatim as a string preserving leading zeros (e.g. '08', '7B', '01'). Null if blank. Do NOT confuse with item 6 \"county\" (a county name) or with item 4 \"operator_p5_no\".",
+      "title": "RRC District"
+    },
+    "operator_address": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 8, wide box \"Operator address including city, state, and zip code\". The full operator mailing address as printed; concatenate multiple printed lines with single spaces, verbatim. Null if blank. Do NOT confuse with item 3 \"current_operator_name\" (the name, not the address) or with the RRC PO Box printed in the form's top-left letterhead.",
+      "title": "Operator Address Including City State And Zip Code"
+    },
+    "well_nos": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 9, box \"Well no(s) (see instruction E)\" (upper-right area, above items 10-11). The well number(s) covered by this filing, transcribed verbatim as a single string preserving commas/ranges/dashes exactly as printed (e.g. '1, 2, 3', '1-5'). Null if blank. Do NOT confuse with item 5 \"oil_lse_gas_id_no\" or item 4 \"operator_p5_no\".",
+      "title": "Well No(s)"
+    },
+    "classification_oil": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 10 \"Classification\", the \"Oil\" checkbox (leftmost of three boxes Oil/Gas/Other, located left of item 11). True if the Oil box is marked, false if blank. Do NOT confuse with the sibling \"classification_gas\" or \"classification_other\" boxes in the same item-10 group, nor with the item-12b \"new_rrc_oil_lease\" box.",
+      "title": "Classification Oil"
+    },
+    "classification_gas": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 10 \"Classification\", the \"Gas\" checkbox (middle of three boxes Oil/Gas/Other). True if the Gas box is marked, false if blank. Do NOT confuse with the sibling \"classification_oil\" or \"classification_other\" boxes, nor with the item-12b \"new_rrc_gas_well\" box.",
+      "title": "Classification Gas"
+    },
+    "classification_other": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 10 \"Classification\", the \"Other (see instruction A)\" checkbox (rightmost of three boxes Oil/Gas/Other). True if the Other box is marked, false if blank. Do NOT confuse with the sibling \"classification_oil\" or \"classification_gas\" boxes, nor with the item-12b \"new_rrc_other_well\" box.",
+      "title": "Classification Other"
+    },
+    "effective_date": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 11, box \"Effective Date\" (top-right, to the right of item 10). The effective date of the filing, transcribed verbatim as printed (keep the printed format, e.g. 'MM/DD/YYYY'). Null if blank. Do NOT confuse with item-15 \"prev_operator_date\", item-16 \"curr_operator_date\", or the RRC-use-only \"approval_date\".",
+      "title": "Effective Date"
+    },
+    "change_operator": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12a \"Purpose of Filing - Change of:\" the \"operator\" checkbox (first box on the 12a row). True if marked, false if blank. Indicates this filing is a change of operator. Do NOT confuse with the other 12a boxes (oil/condensate gatherer, gas gatherer, gas purchaser, gas purchaser system code) or with item-12b boxes.",
+      "title": "Change Of Operator"
+    },
+    "change_oil_condensate_gatherer": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12a \"Change of:\" the \"oil or condensate gatherer\" checkbox (second box on the 12a row). True if marked, false if blank. Do NOT confuse with the 12a \"change_gas_gatherer\" or \"change_gas_purchaser\" boxes, nor with the item-14 oil/condensate gatherer grid.",
+      "title": "Change Of Oil Or Condensate Gatherer"
+    },
+    "change_gas_gatherer": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12a \"Change of:\" the \"gas gatherer\" checkbox (third box on the 12a row). True if marked, false if blank. Do NOT confuse with \"change_gas_purchaser\" or \"change_gas_purchaser_system_code\" (later boxes on the same row), nor with the item-13 gas grid \"gatherer\" cell checkboxes.",
+      "title": "Change Of Gas Gatherer"
+    },
+    "change_gas_purchaser": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12a \"Change of:\" the \"gas purchaser\" checkbox (fourth box on the 12a row). True if marked, false if blank. Do NOT confuse with \"change_gas_gatherer\" (immediately before it) or \"change_gas_purchaser_system_code\" (immediately after it), nor with the item-13 grid \"purchaser\" cell checkboxes.",
+      "title": "Change Of Gas Purchaser"
+    },
+    "change_gas_purchaser_system_code": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12a \"Change of:\" the \"gas purchaser system code\" checkbox (fifth/last box on the 12a row). True if marked, false if blank. Do NOT confuse with \"change_gas_purchaser\" (the box just before it) or with the item-13 \"system_code\" text cell (the actual RRC-assigned code value).",
+      "title": "Change Of Gas Purchaser System Code"
+    },
+    "change_field_name": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12a \"Change of:\" the checkbox at the left of the \"field name from:\" line (the sub-line below the main 12a checkbox row). True if marked, false if blank. Do NOT confuse with the \"change_field_name_from\" text (the value written on the blank after this box) or with the \"change_lease_name\" box on the line directly below it.",
+      "title": "Change Of Field Name From"
+    },
+    "change_field_name_from": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12a, the text written on the blank line after \"field name from:\". The prior field name the filing is changing FROM, verbatim. Null if blank. Do NOT confuse with item 1 \"field_name\" (the current field name in the header box), the \"change_field_name\" checkbox preceding this blank, or \"change_field_name_docket\" (the Docket # blank on the same line).",
+      "title": "Field Name From (text)"
+    },
+    "change_field_name_docket": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12a, the value on the \"Docket #:\" blank at the right end of the \"field name from:\" line. The docket number authorizing the field-name change, verbatim including leading zeros/letters. Null if blank. Do NOT confuse with \"change_field_name_from\" (the field name on the same line) or with item-13 \"system_code\".",
+      "title": "Field Name Docket #"
+    },
+    "change_lease_name": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12a \"Change of:\" the checkbox at the left of the \"lease name from:\" line (the sub-line directly below the \"field name from:\" line). True if marked, false if blank. Do NOT confuse with the \"change_lease_name_from\" text value on this line or with the \"change_field_name\" box on the line above it.",
+      "title": "Change Of Lease Name From"
+    },
+    "change_lease_name_from": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12a, the text written on the blank line after \"lease name from:\". The prior lease name the filing is changing FROM, verbatim. Null if blank. Do NOT confuse with item 2 \"lease_name\" (the current lease name in the header box) or with the \"change_lease_name\" checkbox preceding this blank.",
+      "title": "Lease Name From (text)"
+    },
+    "new_rrc_oil_lease": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12b \"New RRC Number for:\" the \"oil lease\" checkbox (top box of the left 12b sub-column). True if marked, false if blank. Do NOT confuse with the sibling 12b boxes \"new_rrc_gas_well\" or \"new_rrc_other_well\", nor with the item-10 \"classification_oil\" box.",
+      "title": "New RRC Number For Oil Lease"
+    },
+    "new_rrc_gas_well": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12b \"New RRC Number for:\" the \"gas well\" checkbox (top-right box of the 12b left sub-column, beside \"oil lease\"). True if marked, false if blank. Do NOT confuse with \"new_rrc_oil_lease\" or \"new_rrc_other_well\", nor with the item-10 \"classification_gas\" box.",
+      "title": "New RRC Number For Gas Well"
+    },
+    "new_rrc_other_well": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12b \"New RRC Number for:\" the \"other well (specify)\" checkbox (second-row box of the 12b left sub-column). True if marked, false if blank. Do NOT confuse with the \"new_rrc_other_well_specify\" text written on the blank after it, nor with \"new_rrc_oil_lease\"/\"new_rrc_gas_well\".",
+      "title": "New RRC Number For Other Well (specify)"
+    },
+    "new_rrc_other_well_specify": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12b, the text written on the blank after \"other well (specify)\". The free-text well-type description when \"other well\" is selected, verbatim. Null if blank. Do NOT confuse with the \"new_rrc_other_well\" checkbox preceding this blank, or with item 9 \"well_nos\".",
+      "title": "Other Well Specify (text)"
+    },
+    "due_new_completion_recompletion": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12b \"Due to:\" the \"new completion or recompletion\" checkbox (top box of the first \"Due to\" column). True if marked, false if blank. Do NOT confuse with the other \"Due to\" boxes (reclass oil to gas, reclass gas to oil, consolidation, unitization, field transfer, subdivision).",
+      "title": "Due To New Completion Or Recompletion"
+    },
+    "due_reclass_gas_to_oil": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12b \"Due to:\" the \"reclass gas to oil\" checkbox (rightmost box on the top \"Due to\" row, after \"reclass oil to gas\"). True if marked, false if blank. Do NOT confuse with its mirror \"due_reclass_oil_to_gas\" (the opposite direction, immediately to its left) or with the other \"Due to\" boxes.",
+      "title": "Due To Reclass Gas To Oil"
+    },
+    "due_reclass_oil_to_gas": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12b \"Due to:\" the \"reclass oil to gas\" checkbox (middle box on the top \"Due to\" row, between \"new completion or recompletion\" and \"reclass gas to oil\"). True if marked, false if blank. Do NOT confuse with its mirror \"due_reclass_gas_to_oil\" (the opposite direction, immediately to its right).",
+      "title": "Due To Reclass Oil To Gas"
+    },
+    "due_consolidation": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12b \"Due to:\" the \"consolidation\" checkbox (second-row, left \"Due to\" column, below \"new completion or recompletion\"). True if marked, false if blank. Do NOT confuse with \"due_unitization\" (the box to its right) or \"due_field_transfer\" (the box below it).",
+      "title": "Due To Consolidation"
+    },
+    "due_unitization": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12b \"Due to:\" the \"unitization\" checkbox (second-row, right \"Due to\" column, below \"reclass oil to gas\"). True if marked, false if blank. Do NOT confuse with \"due_consolidation\" (the box to its left) or \"due_subdivision\" (the box below it).",
+      "title": "Due To Unitization"
+    },
+    "due_field_transfer": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12b \"Due to:\" the \"field transfer\" checkbox (third-row, left \"Due to\" column, below \"consolidation\"). True if marked, false if blank. Do NOT confuse with \"due_subdivision\" (the box to its right) or with the item-12a operator/gatherer change boxes.",
+      "title": "Due To Field Transfer"
+    },
+    "due_subdivision": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 12b \"Due to:\" the \"subdivision (oil lease only)\" checkbox (third-row, right \"Due to\" column, below \"unitization\"). True if marked, false if blank. Do NOT confuse with \"due_field_transfer\" (the box to its left) or \"due_consolidation\".",
+      "title": "Due To Subdivision (oil lease only)"
+    },
+    "prev_operator_name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 15 \"Previous Operator Certification\", the value on the blank above the label \"Name of Previous Operator\" (left side of the first signature row). The previous (outgoing) operator's legal name, verbatim. Null if blank. Do NOT confuse with item 3 \"current_operator_name\" (the incoming operator), item-15 \"prev_operator_name_print\" (the signer's printed name on the line below), or item-16 names.",
+      "title": "Name Of Previous Operator"
+    },
+    "prev_operator_signature": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 15 \"Previous Operator Certification\", the \"Signature\" line (right side of the first signature row, above the label \"Signature\"). True if a handwritten signature/mark is present on the line, false if the line is blank. Do NOT confuse with item-15 \"prev_operator_name_print\" (the typed/printed name) or with item-16 \"curr_operator_signature\" (the current operator's signature).",
+      "title": "Previous Operator Signature"
+    },
+    "prev_operator_name_print": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 15, the value on the blank above the label \"Name (print)\" (left side, second row of the previous-operator block). The printed (typed) name of the person signing for the previous operator, verbatim. Null if blank. Do NOT confuse with \"prev_operator_name\" (the previous operator entity name on the row above) or with \"prev_operator_signature\" (the handwritten signature to its right).",
+      "title": "Name (print)"
+    },
+    "prev_operator_title": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 15, the value on the blank above the label \"Title\" (left side, third/bottom row of the previous-operator block). The job title of the previous-operator signer, verbatim. Null if blank. Do NOT confuse with item-16 \"curr_operator_title\" (current operator's signer title) or with \"prev_operator_name_print\".",
+      "title": "Title"
+    },
+    "prev_operator_date": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 15, the value on the blank above the label \"Date\" (center, bottom row of the previous-operator block). The date the previous operator signed, verbatim as printed. Null if blank. Do NOT confuse with item 11 \"effective_date\", item-16 \"curr_operator_date\", or the RRC-use-only \"approval_date\".",
+      "title": "Date"
+    },
+    "prev_operator_phone": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 15, the value on the blank above the label \"Phone with area code\" (right, bottom row of the previous-operator block). The previous-operator signer's phone number including area code, verbatim. Null if blank. Do NOT confuse with item-16 \"curr_operator_phone\" (current operator's phone) or with \"prev_operator_date\".",
+      "title": "Phone With Area Code"
+    },
+    "prev_operator_authorized_employee": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 15, the \"Authorized Employee of previous operator\" checkbox (left box of the two role boxes beside the Name (print) line). True if marked, false if blank. Do NOT confuse with the sibling \"prev_operator_authorized_agent\" box (immediately to its right) or with the item-16 current-operator role boxes.",
+      "title": "Authorized Employee Of Previous Operator"
+    },
+    "prev_operator_authorized_agent": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 15, the \"Authorized agent of previous operator (see instruction G)\" checkbox (right box of the two role boxes beside the Name (print) line). True if marked, false if blank. Do NOT confuse with the sibling \"prev_operator_authorized_employee\" box (immediately to its left) or with the item-16 current-operator role boxes.",
+      "title": "Authorized Agent Of Previous Operator"
+    },
+    "curr_operator_name_print": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 16 \"Current Operator Certification\", the value on the blank above the label \"Name (print)\" (left side of the first row of the current-operator block). The printed (typed) name of the person signing for the current operator, verbatim. Null if blank. Do NOT confuse with item 3 \"current_operator_name\" (the operator entity name in the header), item-15 \"prev_operator_name_print\", or \"curr_operator_signature\" to its right.",
+      "title": "Name (print)"
+    },
+    "curr_operator_signature": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 16 \"Current Operator Certification\", the \"Signature\" line (right side of the first row, above the label \"Signature\"). True if a handwritten signature/mark is present on the line, false if blank. Do NOT confuse with item-16 \"curr_operator_name_print\" (the typed name) or with item-15 \"prev_operator_signature\".",
+      "title": "Current Operator Signature"
+    },
+    "curr_operator_title": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 16, the value on the blank above the label \"Title\" (left side, second row of the current-operator block). The job title of the current-operator signer, verbatim. Null if blank. Do NOT confuse with item-15 \"prev_operator_title\" or with \"curr_operator_name_print\".",
+      "title": "Title"
+    },
+    "curr_operator_email": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 16, the value on the blank above the label \"E-mail Address (optional)\" (left, bottom row of the current-operator block). The current-operator signer's email address, verbatim. Null if blank (the field is optional). Do NOT confuse with any phone/date field in the same block; this is the only email field on the form.",
+      "title": "E-mail Address (optional)"
+    },
+    "curr_operator_date": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 16, the value on the blank above the label \"Date\" (center, bottom row of the current-operator block). The date the current operator signed, verbatim as printed. Null if blank. Do NOT confuse with item 11 \"effective_date\", item-15 \"prev_operator_date\", or the RRC-use-only \"approval_date\".",
+      "title": "Date"
+    },
+    "curr_operator_phone": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 16, the value on the blank above the label \"Phone with area code\" (right, bottom row of the current-operator block). The current-operator signer's phone number including area code, verbatim. Null if blank. Do NOT confuse with item-15 \"prev_operator_phone\" or with \"curr_operator_date\".",
+      "title": "Phone With Area Code"
+    },
+    "curr_operator_authorized_employee": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 16, the \"Authorized Employee of current operator\" checkbox (left box of the two role boxes beside the Title line of the current-operator block). True if marked, false if blank. Do NOT confuse with the sibling \"curr_operator_authorized_agent\" box (immediately to its right) or with the item-15 previous-operator role boxes.",
+      "title": "Authorized Employee Of Current Operator"
+    },
+    "curr_operator_authorized_agent": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 16, the \"Authorized agent of current operator (see instruction G)\" checkbox (right box of the two role boxes beside the Title line of the current-operator block). True if marked, false if blank. Do NOT confuse with the sibling \"curr_operator_authorized_employee\" box (immediately to its left) or with the item-15 previous-operator role boxes.",
+      "title": "Authorized Agent Of Current Operator"
+    },
+    "reviewer_initials": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "\"RRC USE ONLY\" box (right of item 14), the value on the \"Reviewer's initials:\" blank. The RRC reviewer's initials, verbatim. Null if blank. This is an agency-use field. Do NOT confuse with \"approval_date\" (the blank directly below it in the same RRC-use box) or with any operator name/title.",
+      "title": "Reviewer's Initials"
+    },
+    "approval_date": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "\"RRC USE ONLY\" box (right of item 14), the value on the \"Approval date:\" blank (directly below \"Reviewer's initials:\"). The RRC approval date, verbatim as printed. Null if blank. This is an agency-use field. Do NOT confuse with item 11 \"effective_date\", item-15 \"prev_operator_date\", or item-16 \"curr_operator_date\".",
+      "title": "Approval Date"
+    },
+    "gas_gatherers_purchasers": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/GasGathererPurchaser"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 13 table \"Authorized GAS WELL GAS or CASINGHEAD GAS Gatherer(s) and/or Purchaser(s)\" (6 pre-printed rows on page 1). One object per FILLED row, top-to-bottom; each row carries Gatherer/Purchaser checkboxes, the entity Name, the Purchaser's RRC Assigned System Code, Percent of Take, and a Full-well Stream checkbox. Use null (or an empty list) when no rows are filled. Rows are identified by the \"name\" cell. Do NOT confuse with item 14 \"oil_condensate_gatherers\" (the separate oil/condensate grid) or with the item-12a gas-gatherer/purchaser change checkboxes.",
+      "title": "Gas Gatherers/Purchasers (Item 13)"
+    },
+    "oil_condensate_gatherers": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/OilCondensateGatherer"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Item 14 table \"Authorized OIL or CONDENSATE Gatherer(s)\" (3 pre-printed rows on page 1). One object per FILLED row, top-to-bottom, highest-volume gatherer first; each row carries the gatherer Name and a Percent of Take. Use null (or an empty list) when no rows are filled. Rows are identified by the \"name\" cell. Do NOT confuse with item 13 \"gas_gatherers_purchasers\" (the separate gas grid) or with the item-12a oil/condensate-gatherer change checkbox.",
+      "title": "Oil/Condensate Gatherers (Item 14)"
+    }
+  },
+  "title": "RRCP4Extraction",
+  "type": "object"
+}

@@ -50,12 +50,14 @@ A reading produces one candidate JSON, using one model call or many smaller call
 Start with the route overview on page \pageref{fig:overview}, then the evidence and candidate flows on page \pageref{fig:sharing}. Pages \pageref{demo:purchase}--\pageref{demo:electric} show complete schemas and answers. Page \pageref{fig:scantrace} follows a purchase order through three readings; page \pageref{fig:routes} compares document routes. The results section starts on page \pageref{sec:results}.
 
 \vfill
-{\small\color{ink!70}Implementation basis: repository source at \code{b4ea9a1}. The main flow describes \code{docquorum.extract.extract}. Benchmark differences are explicit on page \pageref{sec:execution}; complete comparison tables and measured results follow on page \pageref{sec:results}.}
+{\small\color{ink!70}Implementation basis: repository source at \code{b4ea9a1}. The main flow describes \code{docquorum.extract.extract}. Benchmark differences are explicit on page \pageref{sec:execution}; the results tables follow on page \pageref{sec:results}.}
 
 \begin{landscape}
-\chapterpage{PIPELINE AT A GLANCE\hfill\textcolor{ink!70}{DOCQUORUM / \thepage}}{One document, from input to result}\label{fig:overview}
-\thispagestyle{empty}
-\begin{center}\input{fig/pipeline.tex}\end{center}
+\label{fig:overview}\thispagestyle{empty}
+\begin{center}
+\includegraphics[width=\linewidth,height=150mm,keepaspectratio]{fig/docquorum-pipeline-imagegen-v5.png}
+\end{center}
+{\footnotesize\textbf{Reader components and tools.} Python controls execution and the bounded P/M feedback loop. The figure shows successful paths; runtime exceptions are omitted. Not shown: the optional zoom re-reading after the quorum (\code{docquorum/zoom.py}). Source roles and eligibility details: \code{docs/AGENTS\_AND\_TOOLS.md}.}
 \end{landscape}
 
 \chapterpage{SHARED EVIDENCE / SEPARATE ANSWERS}{Where MinerU helps}\label{fig:sharing}

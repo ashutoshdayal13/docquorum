@@ -42,7 +42,7 @@
 \item Task and pipeline
 \item Walkthrough on real documents\\
   {\footnotesize inputs, routing, parsing, readers, deterministic checks, selection by quorum, output}
-\item Results: ExtractBench and UNIKIE-BENCH
+\item Results on six benchmarks; zoom re-reading
 \item Summary
 \end{enumerate}
 \column{0.48\textwidth}
@@ -372,8 +372,8 @@ On the scanned county purchase order the quorum kept the one-shot reading (78.26
 \begingroup\scriptsize\renewcommand{\arraystretch}{0.9}\setlength{\tabcolsep}{3.2pt}
 \begin{tabularx}{\textwidth}{@{}rYc*{11}{r}r@{}}\toprule
 \textbf{\#} & \textbf{System} & & \textbf{Ret.} & \textbf{Cat.} & \textbf{Com.} & \textbf{Acc.} & \textbf{Post.} & \textbf{Adm.} & \textbf{Edu.} & \textbf{Adv.} & \textbf{Tax} & \textbf{Med.} & \textbf{Nut.} & \textbf{Avg.}\\\midrule
-1 & Gemini-3-Pro & C & 89.27 & 83.54 & \underline{53.87} & \underline{81.43} & \underline{90.74} & 84.32 & 80.71 & \underline{90.54} & 81.54 & \underline{77.60} & \underline{92.47} & \underline{82.37}\\
-\rowcolor{hl}1 & \textbf{DocQuorum (ours)} & O & \textbf{\underline{90.71}} & \textbf{\underline{87.56}} & \textbf{53.46} & \textbf{80.00} & \textbf{85.65} & \textbf{\underline{86.60}} & \textbf{85.46} & \textbf{86.21} & \textbf{\underline{82.10}} & \textbf{77.50} & \textbf{90.87} & \textbf{\underline{82.37}}\\
+\rowcolor{hl}1 & \textbf{DocQuorum (ours)} & O & \textbf{\underline{90.78}} & \textbf{\underline{88.19}} & \textbf{53.46} & \textbf{80.00} & \textbf{85.65} & \textbf{\underline{86.95}} & \textbf{85.46} & \textbf{86.21} & \textbf{\underline{82.13}} & \textbf{\underline{77.71}} & \textbf{92.26} & \textbf{\underline{82.62}}\\
+2 & Gemini-3-Pro & C & 89.27 & 83.54 & \underline{53.87} & \underline{81.43} & \underline{90.74} & 84.32 & 80.71 & \underline{90.54} & 81.54 & 77.60 & \underline{92.47} & 82.37\\
 3 & Qwen3-VL-Plus & C & 89.12 & 86.45 & 50.57 & 77.86 & 83.55 & 78.91 & \underline{87.44} & 83.14 & 78.93 & 76.46 & 89.72 & 80.20\\
 4 & Qwen3-VL-8B & O & 88.26 & 86.23 & 51.14 & 71.07 & 83.80 & 78.90 & 87.39 & 81.23 & 78.74 & 77.19 & 86.36 & 79.12\\
 5 & Qwen-VL-Max & C & 86.67 & 84.68 & 49.33 & 76.07 & 84.85 & 79.96 & 82.46 & 82.76 & 77.94 & 75.62 & 75.14 & 77.77\\
@@ -392,7 +392,42 @@ On the scanned county purchase order the quorum kept the one-shot reading (78.26
 
 \vspace{0.3em}
 {\tiny Ret.\ Retail; Cat.\ Catering services; Com.\ Commercial; Acc.\ Accommodation; Post.\ Postal label; Adm.\ Administrative; Edu.\ Education; Adv.\ Advertisement; Tax: Tax-compliant; Med.\ Medical services; Nut.\ Nutrition label; Avg.\ macro average. C: closed model; O: open model. Underlined: best in the column.\par}
-\src{UNIKIE-BENCH (ACL 2026), Table 4: 15 published systems; F1 (\%) by the benchmark's evaluator on 4,472 images, every input capped at 1,605,632 pixels. DocQuorum: quorum over six readings from three open models.}
+\src{UNIKIE-BENCH (ACL 2026), Table 4: 15 published systems; F1 (\%) by the benchmark's evaluator on 4,472 images, every input capped at 1,605,632 pixels. DocQuorum: quorum over six readings from three open models; small images enlarged before reading.}
+\end{frame}
+\begin{frame}{Results on six benchmarks}
+\begingroup\footnotesize\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}Yrll@{}}\toprule
+\textbf{Benchmark} & \textbf{DocQuorum} & \textbf{Place} & \textbf{Comparison}\\\midrule
+\rowcolor{hl}VAREX (1,777 government forms) {\footnotesize(with zoom re-reading)} & \textbf{98.30} & \textbf{1st of 21} & next: Gemini 2.5 Pro 98.0\\
+\rowcolor{hl}UNIKIE-BENCH (4,472 images) & \textbf{82.62} & \textbf{1st of 16} & next: Gemini-3-Pro 82.37\\
+LongArray-Extract (45 long documents) & \textbf{98.05} & 2nd of 12 & 1st: Extend MAX 99.2\\
+UNIKIE-BENCH open category (1,661 documents) {\footnotesize(with zoom re-reading)} & \textbf{72.33} & 2nd of 16 & 1st: Gemini-3-Pro 81.65\\
+ExtractBench (370 PDFs) {\footnotesize(development set)} & \textbf{95.43} & 3rd of 48 & 1st: LlamaExtract Agentic Plus 95.91\\
+DocuBench (72 documents, 10 file types) & \textbf{86.47} & 5th of 10 & 1st: DocuPipe (high effort) 97.02\\
+\bottomrule\end{tabularx}\endgroup
+
+\vspace{0.6em}
+{\small Each score is the benchmark's own scorer on the full test set, with open-weight models (Qwen3.8-27B and MinerU2.5) on one GPU. Places count every published system.\par}
+\src{docs/results/: one complete table per benchmark (TABLES.md). No result was submitted to a leaderboard.}
+\end{frame}
+\begin{frame}{Zoom re-reading: a new step after the quorum}
+\begin{columns}[T]
+\column{0.52\textwidth}
+\small
+After the quorum keeps one reading, each field on which the readings disagree is found on the page and read once more from a sharp crop of that region.\par\vspace{0.5em}
+This new reading sees none of the earlier answers. The kept value changes only if it matches a value some reading already proposed.\par\vspace{0.5em}
+The design was fixed on ExtractBench, then run once on two other benchmarks.
+\column{0.44\textwidth}
+\begin{block}{Held-out results}
+\small
+VAREX: 98.10\,$\rightarrow$\,\textbf{98.30}\\
+60 forms better, 25 worse\\[0.5em]
+UNIKIE open: 71.07\,$\rightarrow$\,\textbf{72.33}\\
+291 documents better, 138 worse\\[0.5em]
+Both are far beyond chance (sign test).
+\end{block}
+\end{columns}
+\src{results/README.md: method, statistics, and every changed value checked against the answer key after the runs.}
 \end{frame}
 \section{Summary}
 \begin{frame}{Summary}
@@ -400,8 +435,8 @@ On the scanned county purchase order the quorum kept the one-shot reading (78.26
 \column{0.32\textwidth}
 \begin{block}{Results}
 \small
-ExtractBench: \textbf{95.43}, 3rd of 48, behind two commercial services (95.91).\\[0.4em]
-UNIKIE-BENCH: \textbf{82.37}, equal to the best published system (Gemini-3-Pro).\\[0.4em]
+1st on VAREX and UNIKIE-BENCH; 2nd on LongArray-Extract and UNIKIE open; 3rd on ExtractBench.\\[0.4em]
+A new step, zoom re-reading, improved both benchmarks it was tested on.\\[0.4em]
 Open-weight models on one GPU.
 \end{block}
 \column{0.32\textwidth}

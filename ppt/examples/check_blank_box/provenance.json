@@ -1,0 +1,13 @@
+{
+  "document": "P4-83-211_35",
+  "input_prediction": "../Recent_Papers/multi_agent_test_9/runs/_abl_base_short/P4-83-211_35.json",
+  "replay": "docquorum.checks.blank_boxes.apply",
+  "no_model_calls": true,
+  "text_extraction": "schema only",
+  "shown_change": {
+    "path": "gas_gatherers_purchasers[0].gatherer",
+    "before": null,
+    "after": false,
+    "source_page": 1
+  }
+}

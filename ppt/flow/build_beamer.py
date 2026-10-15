@@ -106,7 +106,7 @@ frame("Outline", r"""
 \item Task and pipeline
 \item Walkthrough on real documents\\
   {\footnotesize inputs, routing, parsing, readers, deterministic checks, selection by quorum, output}
-\item Results: ExtractBench and UNIKIE-BENCH
+\item Results on six benchmarks; zoom re-reading
 \item Summary
 \end{enumerate}
 \column{0.48\textwidth}
@@ -468,7 +468,8 @@ eb_table(3, 32, 48)
 
 # ------------------------------------------------------------------ results: UNIKIE (complete)
 pub = json.loads((RES / "unikie-published.json").read_text())
-u = json.loads((RES / "docquorum-unikie.json").read_text())["variants"]["six_readings"]
+uj = json.loads((RES / "docquorum-unikie.json").read_text())
+u = uj["variants"][uj["headline"]]          # the reported configuration
 cols = pub["columns"][:-1]
 urows = [(n, v, "C") for n, v in pub["closed_source"].items()] + [(n, v, "O") for n, v in pub["open_source"].items()]
 urows.sort(key=lambda x: -x[1][-1])
@@ -496,8 +497,74 @@ frame("UNIKIE-BENCH: complete results", ut + r"""
 
 \vspace{0.3em}
 {\tiny Ret.\ Retail; Cat.\ Catering services; Com.\ Commercial; Acc.\ Accommodation; Post.\ Postal label; Adm.\ Administrative; Edu.\ Education; Adv.\ Advertisement; Tax: Tax-compliant; Med.\ Medical services; Nut.\ Nutrition label; Avg.\ macro average. C: closed model; O: open model. Underlined: best in the column.\par}
-\src{UNIKIE-BENCH (ACL 2026), Table 4: 15 published systems; F1 (\%) by the benchmark's evaluator on 4,472 images, every input capped at 1,605,632 pixels. DocQuorum: quorum over six readings from three open models.}
+\src{UNIKIE-BENCH (ACL 2026), Table 4: 15 published systems; F1 (\%) by the benchmark's evaluator on 4,472 images, every input capped at 1,605,632 pixels. DocQuorum: quorum over six readings from three open models; small images enlarged before reading.}
 """)
+
+# ------------------------------------------------------------------ results on six benchmarks
+def place(score, published, digits):
+    """1 + published scores above ours, compared at the published precision."""
+    q = Decimal(1).scaleb(-digits)
+    sh = lambda v: Decimal(str(v)).quantize(q, rounding=ROUND_HALF_UP)
+    return 1 + sum(sh(v) > sh(score) for _, v in published)
+
+
+load = lambda name: json.loads((RES / name).read_text())
+vx, la, uo, db = (load(f"docquorum-{k}.json") for k in ("varex", "longarray", "unikie-open", "docubench"))
+pv = [(r["system"], r["em"]) for r in load("varex-published.json")["systems"]]
+pl = [(r["system"], r["score"]) for r in load("longarray-published.json")["systems"]]
+puo = [(n, v[-1]) for k in ("closed_source", "open_source") for n, v in load("unikie-open-published.json")[k].items()]
+pdb = [(r["system"], r["score"]) for r in load("docubench-published.json")["systems"]]
+puk = [(n, v[-1]) for n, v, _ in urows]
+peb = [(r["Provider"], float(r["Overall"])) for r in lb]
+ORD = {1: "1st", 2: "2nd", 3: "3rd"}
+bench = [  # (name, ours, published, digits, note)
+    ("VAREX (1,777 government forms)", vx["score"], pv, 1, "with zoom re-reading"),
+    ("UNIKIE-BENCH (4,472 images)", u["score"], puk, 2, ""),
+    ("LongArray-Extract (45 long documents)", la["score"], pl, 1, ""),
+    ("UNIKIE-BENCH open category (1,661 documents)", uo["score"], puo, 2, "with zoom re-reading"),
+    ("ExtractBench (370 PDFs)", eb["score"], peb, 2, "development set"),
+    ("DocuBench (72 documents, 10 file types)", db["score"], pdb, 2, ""),
+]
+rows6 = ""
+for name, score, published, digits, note in sorted(bench, key=lambda b: place(b[1], b[2], b[3])):
+    k = place(score, published, digits)
+    top = max(published, key=lambda r: r[1])            # the best published system
+    other = (r"next: %s %s" if k == 1 else r"1st: %s %s") % (esc(top[0]), f"{top[1]:.{digits}f}")
+    cells = [esc(name) + (r" {\footnotesize(%s)}" % note if note else ""), r"\textbf{%.2f}" % score,
+             (r"\textbf{%s}" if k == 1 else "%s") % f"{ORD.get(k, f'{k}th')} of {len(published) + 1}", esc(other)]
+    rows6 += (r"\rowcolor{hl}" if k == 1 else "") + " & ".join(cells) + r"\\" + "\n"
+frame("Results on six benchmarks", r"""{\footnotesize\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}Yrll@{}}\toprule
+\textbf{Benchmark} & \textbf{DocQuorum} & \textbf{Place} & \textbf{Comparison}\\\midrule
+""" + rows6 + r"""\bottomrule\end{tabularx}}
+
+\vspace{0.6em}
+{\small Each score is the benchmark's own scorer on the full test set, with open-weight models (Qwen3.8-27B and MinerU2.5) on one GPU. Places count every published system.\par}
+\src{docs/results/: one complete table per benchmark (TABLES.md). No result was submitted to a leaderboard.}
+""")
+
+zv = load("../../results/varex-zoom/comparison.json")
+zu = json.loads((ROOT / "results/unikie_open/zoom/comparison.json").read_text())
+frame("Zoom re-reading: a new step after the quorum", r"""
+\begin{columns}[T]
+\column{0.52\textwidth}
+\small
+After the quorum keeps one reading, each field on which the readings disagree is found on the page and read once more from a sharp crop of that region.\par\vspace{0.5em}
+This new reading sees none of the earlier answers. The kept value changes only if it matches a value some reading already proposed.\par\vspace{0.5em}
+The design was fixed on ExtractBench, then run once on two other benchmarks.
+\column{0.44\textwidth}
+\begin{block}{Held-out results}
+\small
+VAREX: %.2f%s\textbf{%.2f}\\
+%d forms better, %d worse\\[0.5em]
+UNIKIE open: %.2f%s\textbf{%.2f}\\
+%d documents better, %d worse\\[0.5em]
+Both are far beyond chance (sign test).
+\end{block}
+\end{columns}
+\src{results/README.md: method, statistics, and every changed value checked against the answer key after the runs.}
+""" % (zv["exact_match_normalized"]["before"], ARROW, zv["exact_match_normalized"]["after"], zv["forms_better"], zv["forms_worse"],
+       zu["macro_f1"]["before"], ARROW, zu["macro_f1"]["after"], zu["documents_better"], zu["documents_worse"]))
 
 # ------------------------------------------------------------------ summary
 T.append(r"\section{Summary}" + "\n")
@@ -506,8 +573,8 @@ frame("Summary", r"""
 \column{0.32\textwidth}
 \begin{block}{Results}
 \small
-ExtractBench: \textbf{95.43}, 3rd of 48, behind two commercial services (95.91).\\[0.4em]
-UNIKIE-BENCH: \textbf{82.37}, equal to the best published system (Gemini-3-Pro).\\[0.4em]
+1st on VAREX and UNIKIE-BENCH; 2nd on LongArray-Extract and UNIKIE open; 3rd on ExtractBench.\\[0.4em]
+A new step, zoom re-reading, improved both benchmarks it was tested on.\\[0.4em]
 Open-weight models on one GPU.
 \end{block}
 \column{0.32\textwidth}

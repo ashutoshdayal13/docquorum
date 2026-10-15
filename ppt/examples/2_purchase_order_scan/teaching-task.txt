@@ -1,0 +1,3 @@
+Presenter-supplied alternative input; not used for the archived readings.
+
+Extract every ordered item from this purchase order. Exclude totals and blank filler rows.

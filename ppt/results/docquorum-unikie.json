@@ -1,0 +1,62 @@
+{
+  "documents": 4472,
+  "metric": "macro scenario field F1",
+  "track": "constrained_category",
+  "official_submission": false,
+  "variants": {
+    "three_original_readings": {
+      "score": 80.64499524181971,
+      "per_scenario": {
+        "Accommodation": 78.92857114668368,
+        "Administrative": 85.57435436973537,
+        "Advertisement": 83.90804565552473,
+        "Catering-Services": 80.69873993087128,
+        "Commercial": 51.85533997893099,
+        "Education": 84.52751808460278,
+        "Medical-Services": 76.56249992024739,
+        "Nutrition-Label": 88.83088117563187,
+        "Postal-Label": 85.149999957425,
+        "Retail": 89.62536016597595,
+        "Tax-Compliant": 81.43363727438783
+      },
+      "scope": "Full 4,472 constrained-category documents; stored predictions re-scored",
+      "configuration": "Original three-reading protocol, re-scored from current stored readings"
+    },
+    "four_readings": {
+      "score": 81.31745069484249,
+      "per_scenario": {
+        "Accommodation": 79.64285685841837,
+        "Administrative": 85.79697235716965,
+        "Advertisement": 83.5249038945406,
+        "Catering-Services": 85.39835549452886,
+        "Commercial": 52.92898850010756,
+        "Education": 84.52751808460278,
+        "Medical-Services": 76.97916658648003,
+        "Nutrition-Label": 89.5269735659663,
+        "Postal-Label": 85.149999957425,
+        "Retail": 89.48126794705959,
+        "Tax-Compliant": 81.53495439696871
+      },
+      "scope": "Full 4,472 constrained-category documents; stored predictions re-scored",
+      "configuration": "Four development readings including the added oneshot_text arm"
+    },
+    "six_readings": {
+      "score": 82.37457107876092,
+      "per_scenario": {
+        "Accommodation": 79.99999971428572,
+        "Administrative": 86.59839711193304,
+        "Advertisement": 86.20689622142952,
+        "Catering-Services": 87.56388410700518,
+        "Commercial": 53.45639479121183,
+        "Education": 85.46209752288463,
+        "Medical-Services": 77.49999991927083,
+        "Nutrition-Label": 90.87169750183962,
+        "Postal-Label": 85.649999957175,
+        "Retail": 90.70605180784865,
+        "Tax-Compliant": 82.10486321148622
+      },
+      "scope": "Full 4,472 constrained-category documents; stored predictions re-scored",
+      "configuration": "Six tuned readings, including two additional models after initial held-out run"
+    }
+  }
+}

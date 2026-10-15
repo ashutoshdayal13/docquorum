@@ -1,0 +1,10 @@
+{
+  "input_prediction": "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/multi_agent_test_9/runs/_abl_base_medium/real_pueblo_oct_2025.json",
+  "check": "docquorum.checks.copied_rows.apply",
+  "source_pdf": "/home/krudra_mtp/ashutosh/agentic_document_extraction/Recent_Papers/multi_agent_test_9/eb_data/docs/medium/real_pueblo_oct_2025.pdf",
+  "source_page": 1,
+  "replayed": true,
+  "before_batches": 562,
+  "after_batches": 51,
+  "checks_unchanged": true
+}

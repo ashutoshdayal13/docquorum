@@ -1,0 +1,17 @@
+{
+  "check": {
+    "bank": "01",
+    "check_number": "01033982",
+    "type": "C",
+    "date": "10/01/2025",
+    "vendor_number": "651630",
+    "vendor_name": "ALGEBROS LLC, THE",
+    "amount": "700.88",
+    "source_page": 1
+  },
+  "removed_batch": {
+    "batch_year": "26",
+    "batch_number": "01033982",
+    "amount": "700.88"
+  }
+}

@@ -5,7 +5,7 @@ Read [the pipeline guide](docquorum.pdf) first. Its main diagram follows `extrac
 | Step | Source | Data contract |
 |---|---|---|
 | Prepare and orchestrate | [extract.py](../docquorum/extract.py) | Document + schema/template → `(result, report)` |
-| Native files, small images | [tools/native.py](../docquorum/tools/native.py), [tools/images.py](../docquorum/tools/images.py) | .xlsx/.docx/.html/.xml/.csv/.txt → text-layer PDF; small image → enlarged by a whole factor |
+| Native files, images | [tools/native.py](../docquorum/tools/native.py), [tools/images.py](../docquorum/tools/images.py) | .xlsx/.docx/.html/.xml/.csv/.txt → text-layer PDF (each character in a font that has it); image → transparency made white, a small one enlarged by a whole factor |
 | Inspect/render PDF | [tools/pdf.py](../docquorum/tools/pdf.py) | PDF → text, page count, rendered images |
 | Parse scans | [tools/parser.py](../docquorum/tools/parser.py) | Page image → cached text/HTML tables |
 | Route layout | [agents/layout.py](../docquorum/agents/layout.py) | Schema + PDF + cache → `colflow`, `ruled`, or `route` |
