@@ -76,15 +76,13 @@ def parse_pages(pdf, pages, cache_key=None, client=None, dense=None):
         if cf is not None and cf.exists():
             res[pno] = cf.read_text()
             continue
-        im = render_page(pdf, pno, dense=dense)
-        if im is None:
-            res[pno] = ""
-            continue
         try:
-            txt = blocks_to_text(client.two_step_extract(im))
-        except Exception as e:
-            txt = ""
+            im = render_page(pdf, pno, dense=dense)
+            txt = blocks_to_text(client.two_step_extract(im)) if im is not None else ""
+        except Exception as e:          # not cached, so a later run parses the page again
+            res[pno] = ""
             print(f"    ! parse {Path(pdf).stem} p{pno}: {type(e).__name__}: {str(e)[:80]}", flush=True)
+            continue
         res[pno] = txt
         if cf is not None:
             cf.write_text(txt)
@@ -92,11 +90,13 @@ def parse_pages(pdf, pages, cache_key=None, client=None, dense=None):
 
 
 def cached_pages(name, errors=None):
-    """The cached parse of a document, one string per page ([] when it was never parsed)."""
+    """The cached parse of a document, one string per page ([] when it was never parsed); a
+    page whose parse failed (not cached) is "", so later pages keep their numbers."""
     d = CACHE / name
     if not d.is_dir():
         return []
-    return [f.read_text(errors=errors) for f in sorted(d.glob("*.txt"))]
+    got = {int(f.stem): f.read_text(errors=errors) for f in d.glob("*.txt") if f.stem.isdigit()}
+    return [got.get(i, "") for i in range(1, max(got, default=0) + 1)]
 
 
 def available():

@@ -488,7 +488,6 @@ def test_query_scope_requires_a_real_identifier_and_explicit_query():
 
 
 def test_native_query_guard_blocks_unsupported_fills_before_window_merge(monkeypatch):
-    import xml.etree.ElementTree as ET
     source='<root><metadata>system-A</metadata>'+''.join(
         '<order><order_ref>ORD-'+str(i).zfill(5)+'</order_ref><name>name-'+str(i)+'</name></order>' for i in range(5))+'</root>'
     schema={'type':'object','properties':{'focus':{'description':'buyer name of order ORD-00003'},

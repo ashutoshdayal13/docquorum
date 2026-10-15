@@ -90,3 +90,19 @@ def test_last_digits_taken_from_inside_a_number_are_replaced():
     runs = printed_digit_runs("Account # 9537819840  Statement Period 08/17/25")
     assert repair("8198", 4, runs) == "9840"
     assert repair("9840", 4, runs) == "9840"
+
+
+def test_transparent_images_are_flattened_onto_white():
+    from docquorum.tools.images import flatten
+    im = Image.new("RGBA", (4, 4), (0, 0, 0, 0))            # fully transparent, black underneath
+    im.putpixel((1, 1), (0, 0, 0, 255))                     # one black "ink" pixel
+    out = flatten(im)
+    assert out.mode == "RGB" and out.getpixel((0, 0)) == (255, 255, 255) and out.getpixel((1, 1)) == (0, 0, 0)
+    assert flatten(Image.new("L", (2, 2), 128)).getpixel((0, 0)) == (128, 128, 128)
+
+
+def test_native_text_keeps_every_script():
+    with tempfile.TemporaryDirectory() as td:
+        lines = ["Invoice 42", "发票号码 12345", "बैंक खाता 9876", "청구서 7", "ใบแจ้งหนี้ 15"]
+        native.text_pdf("\n".join(lines), Path(td) / "t.pdf")
+        assert PDF.plain_text(Path(td) / "t.pdf").splitlines()[:5] == lines

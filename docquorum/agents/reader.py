@@ -66,10 +66,11 @@ def load_pages(pdf, name, use_parsed=False):
     return pages, parsed
 
 
-def read_document(cl, schema, pdf, name, workers=8, use_parsed=False):
-    """Returns (result, stat, plan)."""
+def read_document(cl, schema, pdf, name, workers=8, use_parsed=False, text_layer=False):
+    """Returns (result, stat, plan). text_layer: the PDF was written from a native file's text,
+    so it is read as text however short it is."""
     pages, parsed = load_pages(pdf, name, use_parsed)
-    image_mode = sum(len(p.strip()) for p in pages) < 50 * max(1, len(pages))
+    image_mode = not text_layer and sum(len(p.strip()) for p in pages) < 50 * max(1, len(pages))
     n_pages = PDF.npages(pdf)
     # a scan read through its parse: its text is OCR, so the page images decide
     is_scan = parsed and sum(len(t.strip()) for t in PDF.page_texts(pdf)[:n_pages]) < 50 * n_pages

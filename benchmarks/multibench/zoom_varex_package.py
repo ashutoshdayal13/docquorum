@@ -7,7 +7,6 @@ import json
 import random
 import shutil
 import subprocess
-import sys
 from collections import defaultdict
 from math import comb
 from pathlib import Path

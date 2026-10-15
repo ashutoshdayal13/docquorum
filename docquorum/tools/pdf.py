@@ -19,7 +19,7 @@ MAX_TILE_PX = 2_800_000       # one tile of two pages: the image size the server
 def _run(*args):
     """Tool output as text, decoded leniently: pdffonts prints font names as raw bytes, and
     Shift-JIS names (MS Gothic) are not UTF-8."""
-    return subprocess.run(list(args), capture_output=True).stdout.decode("utf-8", "replace")
+    return subprocess.run(list(args), capture_output=True, timeout=600).stdout.decode("utf-8", "replace")
 
 
 def page_texts(pdf):
@@ -34,7 +34,7 @@ def page_texts(pdf):
 
 def plain_text(pdf):
     """The whole text layer in reading order (`pdftotext`, no layout)."""
-    return subprocess.run([C.PDFTOTEXT, str(pdf), "-"], capture_output=True, text=True).stdout
+    return subprocess.run([C.PDFTOTEXT, str(pdf), "-"], capture_output=True, text=True, timeout=600).stdout
 
 
 def has_text_layer(pages):
@@ -48,8 +48,10 @@ def pdf_has_text(pdf, n_pages):
 
 
 def npages(pdf):
-    return int(next(l.split()[-1] for l in _run(C.PDFINFO, str(pdf)).splitlines()
-                    if l.startswith("Pages")))
+    got = [l.split()[-1] for l in _run(C.PDFINFO, str(pdf)).splitlines() if l.startswith("Pages")]
+    if not got:
+        raise ValueError(f"pdfinfo cannot read {pdf} (damaged or encrypted PDF, or Poppler missing)")
+    return int(got[0])
 
 
 def render_gray(pdf, page, dpi):

@@ -48,5 +48,10 @@ class Doc:
 
 def run(kind, pred, doc):
     for check in CHAINS[kind]:
-        pred = check.apply(json.loads(json.dumps(pred)), doc)   # each check gets its own copy
+        try:
+            got = check.apply(json.loads(json.dumps(pred)), doc)   # each check gets its own copy
+        except Exception as e:             # a repair that fails leaves the reading as it was
+            print(f"    ! check {check.__name__.split('.')[-1]}: {type(e).__name__}: {str(e)[:80]}", flush=True)
+            continue
+        pred = got if got is not None else pred
     return pred

@@ -145,3 +145,23 @@ def test_text_windows_cover_every_page_once_within_budget():
     assert covered == list(range(1, len(pages) + 1))
     assert all(sum(len(t) for t in pages[a - 1:b]) <= 60000 * 3 for a, b in wins)
     assert len(wins) == 2
+
+
+def test_a_template_may_have_fields_named_like_schema_keywords():
+    assert is_template({"type": "", "amount": "", "items": [{"name": ""}]})
+    assert is_template({"properties": {"address": "", "owner": ""}})
+    assert not is_template({"type": "object", "properties": {"a": {"type": "string"}}})
+    assert not is_template({"properties": {"a": {"$ref": "#/$defs/A"}}, "$defs": {"A": {"type": "string"}}})
+    assert not is_template({"properties": {"a": {}}})                     # an untyped property
+    assert not is_template({"type": ["object", "null"], "properties": {}})
+
+
+def test_a_check_that_fails_leaves_the_reading_as_it_was(monkeypatch):
+    from docquorum import checks
+    class Boom:
+        __name__ = "docquorum.checks.boom"
+        @staticmethod
+        def apply(pred, doc):
+            raise ValueError("unusual input")
+    monkeypatch.setitem(checks.CHAINS, "oneshot", (Boom,))
+    assert checks.run("oneshot", {"a": 1}, None) == {"a": 1}

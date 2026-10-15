@@ -10,7 +10,8 @@ from pathlib import Path
 from docquorum import config as C
 
 os.environ.setdefault("DQ_ONESHOT_URL", C.LLM_URL[:-3] if C.LLM_URL.endswith("/v1") else C.LLM_URL)
-os.environ["PATH"] = str(Path(C.PDFTOPPM).parent) + os.pathsep + os.environ.get("PATH", "")
+if Path(C.PDFTOPPM).is_absolute():               # the provider calls pdftoppm by name
+    os.environ["PATH"] = str(Path(C.PDFTOPPM).parent) + os.pathsep + os.environ.get("PATH", "")
 
 
 def provider():

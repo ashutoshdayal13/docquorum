@@ -173,7 +173,6 @@ def combine(scope):
 
 
 def score(scope):
-    import importlib.util
     spec = importlib.util.spec_from_file_location("official_varex_score", SOURCE / "evaluation/score.py")
     scorer = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(scorer)

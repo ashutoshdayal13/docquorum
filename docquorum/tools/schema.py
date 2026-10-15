@@ -27,6 +27,12 @@ def admits_null(s, root):
 
 
 # ---------- the lists a schema asks for ----------
+def is_array(node):
+    """A list schema: "type": "array", a type list that includes it (a nullable list), or items."""
+    t = node.get("type")
+    return t == "array" or (isinstance(t, list) and "array" in t) or "items" in node
+
+
 def find_array_field(schema):
     """The top-level list with the widest records: (name, item schema, description)."""
     defs = defs_of(schema)
@@ -40,7 +46,7 @@ def find_array_field(schema):
             if comb in node:
                 for opt in node[comb]:
                     r = res(opt, depth + 1)
-                    if isinstance(r, dict) and r.get("type") == "array":
+                    if isinstance(r, dict) and is_array(r):
                         return r
                 return res(node[comb][0], depth + 1)
         return node
@@ -48,7 +54,7 @@ def find_array_field(schema):
     arrays = []
     for name, prop in (schema.get("properties") or {}).items():
         r = res(prop)
-        if isinstance(r, dict) and r.get("type") == "array":
+        if isinstance(r, dict) and is_array(r):
             item = res(r.get("items") or {})
             arrays.append((name, item, prop.get("description") or r.get("description") or ""))
     if not arrays:
@@ -244,10 +250,26 @@ def missing_keys(schema, obj):
 
 
 # ---------- JSON templates (UNIKIE style) ----------
+JSON_TYPES = {"object", "array", "string", "number", "integer", "boolean", "null"}
+
+
+def _schema_like(obj):
+    """Whether a dict uses JSON-Schema keywords as keywords. A template may have a field named
+    "type" or "properties"; there its value is an empty leaf (or a template), not a JSON type."""
+    t = obj.get("type")
+    props = obj.get("properties")
+    return ("$schema" in obj or (isinstance(t, str) and t in JSON_TYPES)
+            or (isinstance(t, list) and bool(t) and set(t) <= JSON_TYPES)
+            or (isinstance(props, dict) and props == {} and "type" in obj)
+            or (isinstance(props, dict) and bool(props)
+                and all(isinstance(v, dict) and (not v or _schema_like(v) or "$ref" in v or "description" in v)
+                        for v in props.values())))
+
+
 def is_template(obj):
-    """A JSON template: no JSON-Schema keywords, only empty leaves."""
+    """A JSON template: only empty leaves, and no JSON-Schema keywords used as keywords."""
     if isinstance(obj, dict):
-        if {"type", "properties", "$schema"} & set(obj):
+        if _schema_like(obj):
             return False
         return all(is_template(v) for v in obj.values())
     if isinstance(obj, list):

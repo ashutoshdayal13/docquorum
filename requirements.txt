@@ -2,6 +2,9 @@
 openai>=1.40          # the model calls (any OpenAI-compatible server, e.g. vLLM)
 numpy
 pillow
+pymupdf               # native files written as a text-layer PDF (tools/native.py)
+pymupdf-fonts         # its fallback fonts: Devanagari, Thai and other scripts in native files
+openpyxl              # .xlsx input
 json_repair
 mineru-vl-utils       # client for the MinerU2.5 parser (scans and images)
 pytest                # tests/

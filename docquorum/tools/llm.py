@@ -108,4 +108,4 @@ def server_failure(e):
     import openai
     if isinstance(e, (openai.APIConnectionError, openai.APITimeoutError, openai.InternalServerError)):
         return True
-    return getattr(e, "status_code", 0) >= 500
+    return (getattr(e, "status_code", 0) or 0) >= 500

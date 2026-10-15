@@ -14,6 +14,10 @@ from pathlib import Path
 NATIVE = {".txt", ".csv", ".tsv", ".xml", ".html", ".htm", ".json", ".md", ".xlsx", ".docx"}
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"   # Latin, Greek, Cyrillic
 WIDE_FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"   # also Hebrew and Arabic
+# for characters neither has: FiraGO (the pymupdf-fonts package: Devanagari, Thai, ...) and
+# PyMuPDF's built-in Droid Sans Fallback (Chinese, Japanese, Korean). A character no font has
+# would reach the text layer as nothing, so every font that has it is tried in turn.
+FALLBACK_FONTS = ("figo", "cjk")
 FONT_SIZE, LINES_PER_PAGE, CHARS_PER_LINE = 7.0, 90, 160
 
 
@@ -22,13 +26,14 @@ def native_text(path):
     suffix = path.suffix.lower()
     if suffix == ".xlsx":
         from openpyxl import load_workbook
-        wb = load_workbook(path, read_only=True, data_only=True)
-        raw = load_workbook(path, read_only=True, data_only=False)
+        wb = load_workbook(path, read_only=True, data_only=True)        # computed values
+        raw = load_workbook(path, read_only=True, data_only=False)      # formulas, as a fallback
         lines = []
         for sheet in raw:
             lines.append(f"WORKSHEET {sheet.title}")
-            for row in sheet:
-                cells = [f"{c.coordinate}: {v if (v := wb[sheet.title][c.coordinate].value) is not None else c.value}"
+            for row, values in zip(sheet.iter_rows(), wb[sheet.title].iter_rows()):
+                computed = {c.coordinate: c.value for c in values if c.value is not None}
+                cells = [f"{c.coordinate}: {v if (v := computed.get(c.coordinate)) is not None else c.value}"
                          for c in row if c.value is not None]
                 if cells:
                     lines.append(" | ".join(cells))
@@ -58,28 +63,58 @@ def _wrap(text):
         yield line
 
 
+def _font_chain():
+    import fitz
+    chain = [fitz.Font(fontfile=FONT), fitz.Font(fontfile=WIDE_FONT)]
+    for name in FALLBACK_FONTS:
+        try:
+            chain.append(fitz.Font(name))
+        except Exception:                          # pymupdf-fonts not installed
+            pass
+    return chain
+
+
+def _runs(line, chain):
+    """The line as [font index, text] runs, each character in the first font that has it."""
+    runs = []
+    for ch in line:
+        k = next((i for i, f in enumerate(chain) if f.has_glyph(ord(ch))), 0)
+        if runs and runs[-1][0] == k:
+            runs[-1][1] += ch
+        else:
+            runs.append([k, ch])
+    return runs
+
+
 def text_pdf(text, dst):
     """A PDF whose text layer is `text`, line by line (long lines wrapped), 90 lines a page."""
     import fitz
     lines = list(_wrap(text)) or [""]
-    rtl_font = fitz.Font(fontfile=WIDE_FONT)
+    chain = _font_chain()
     doc = fitz.open()
     width = 36 + CHARS_PER_LINE * FONT_SIZE * 0.61
     height = 36 + LINES_PER_PAGE * FONT_SIZE * 1.25
     for i in range(0, len(lines), LINES_PER_PAGE):
         page = doc.new_page(width=width, height=height)
         page.insert_font(fontname="dqmono", fontfile=FONT)
-        rtl_writer = fitz.TextWriter(page.rect)
         y = 18 + FONT_SIZE
         for line in lines[i:i + LINES_PER_PAGE]:
+            runs = _runs(line, chain)
             if any(0x0590 <= ord(c) <= 0x06FF for c in line):
                 # Hebrew / Arabic: a font with those letters, glyphs laid out right to left, so
                 # the text layer reads back in logical order
-                rtl_writer.append((18, y), line, font=rtl_font, fontsize=FONT_SIZE, right_to_left=True)
-            elif line:
+                writer = fitz.TextWriter(page.rect)
+                writer.append((18, y), line, font=chain[1], fontsize=FONT_SIZE, right_to_left=True)
+                writer.write_text(page)
+            elif len(runs) == 1 and runs[0][0] == 0:
                 page.insert_text((18, y), line, fontname="dqmono", fontsize=FONT_SIZE)
+            elif line:
+                # other scripts: each run of characters in a font that has them
+                writer, at = fitz.TextWriter(page.rect), fitz.Point(18, y)
+                for k, run in runs:
+                    _, at = writer.append(at, run, font=chain[k], fontsize=FONT_SIZE)
+                writer.write_text(page)
             y += FONT_SIZE * 1.25
-        rtl_writer.write_text(page)
     doc.save(str(dst))
     doc.close()
     return Path(dst)

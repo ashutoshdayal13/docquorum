@@ -42,12 +42,17 @@ def as_pdf(doc, folder):
     elif doc.suffix.lower() in native.NATIVE:        # spreadsheet, Word, HTML, XML, CSV, text
         native.text_pdf(native.native_text(doc), dst)
     else:
-        from PIL import Image, ImageOps, ImageSequence
-        with Image.open(doc) as im:
+        from PIL import Image, ImageOps, ImageSequence, UnidentifiedImageError
+        try:
+            im = Image.open(doc)
+        except UnidentifiedImageError:
+            raise ValueError(f"{doc.name}: not a PDF, an image or one of {', '.join(sorted(native.NATIVE))}") from None
+        with im:
             # every page of a multi-page TIFF (other formats' extra frames are previews), each
-            # turned upright by its EXIF orientation, a small one enlarged (tools/images.py)
+            # turned upright by its EXIF orientation, transparency made white, a small one
+            # enlarged (tools/images.py)
             frames = ImageSequence.Iterator(im) if doc.suffix.lower() in (".tif", ".tiff") else [im]
-            pages = [images.enlarge_small((ImageOps.exif_transpose(f) or f).convert("RGB")) for f in frames]
+            pages = [images.enlarge_small(images.flatten(ImageOps.exif_transpose(f) or f)) for f in frames]
         if len(pages) == 1:
             pages[0].save(dst, "PDF", resolution=150)
         else:
@@ -69,13 +74,15 @@ def extract(doc, schema, task=None, workers=8, log=print, keep_readings=False, z
 def _extract(doc, schema, task, workers, log, zoom_reread=False):
     template = schema if is_template(schema) else None
     schema = template_to_schema(template) if template is not None else dict(schema)
-    if task:
-        schema["description"] = task
+    if task:            # after the schema's own description of the document, not in its place
+        own = (schema.get("description") or "").strip()
+        schema["description"] = f"{own}\n\n{task}" if own else task
     name = "doc_" + hashlib.sha1(Path(doc).read_bytes()).hexdigest()[:12]   # the parse cache key
     with tempfile.TemporaryDirectory() as td:
         pdf = as_pdf(doc, td)
         n = PDF.npages(pdf)
-        text = PDF.pdf_has_text(pdf, n)
+        native_doc = Path(doc).suffix.lower() in native.NATIVE      # its text layer is the file
+        text = native_doc or PDF.pdf_has_text(pdf, n)
         if not text and parser.available():
             parser.parse_pages(pdf, list(range(1, n + 1)), cache_key=name)
         ev = layout.decide(schema, pdf, name)
@@ -99,7 +106,7 @@ def _extract(doc, schema, task, workers, log, zoom_reread=False):
             # a layout reader reads one list; the reader agent reads every other field
             rest = without_fields(schema, set(got))
             if rest:
-                res, stat, _ = read_document(cl, rest, pdf, name, workers)
+                res, stat, _ = read_document(cl, rest, pdf, name, workers, text_layer=native_doc)
                 if not stat.get("errors"):
                     got = {**res, **got}
             got = checks.run("layout", got, d)
@@ -110,7 +117,7 @@ def _extract(doc, schema, task, workers, log, zoom_reread=False):
         def reading(kind, got):
             readings[kind] = checks.run(kind, got, d)
 
-        res, stat, _ = read_document(cl, schema, pdf, name, workers)
+        res, stat, _ = read_document(cl, schema, pdf, name, workers, text_layer=native_doc)
         if not stat.get("errors"):
             reading("primary", res)
         if not text and parser.cached_pages(name):

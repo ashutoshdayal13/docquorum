@@ -14,6 +14,7 @@ Ties go to the reading given first. out_dir/_medoid.json records every agreement
 """
 import json
 import sys
+import threading
 from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 
@@ -31,6 +32,8 @@ def agree(args):
     try:
         m = EB.score(case, b)["metrics"]
         return m.get("extract_unified_value_precision", 0.0), m.get("extract_unified_value_recall", 0.0)
+    except ImportError:              # the scorer package is missing: every agreement would be 0
+        raise
     except Exception:
         return 0.0, 0.0
 
@@ -81,8 +84,13 @@ def pick(rec, views, workers=8):
     """(the reading dir to keep, {dir: agreement}, {dir: {other: [p, r]}}) for one document."""
     names = list(views)
     jobs = [(rec, views[o], views[c]) for c in names for o in names if o != c]
-    with ProcessPoolExecutor(max_workers=workers) as ex:
-        vals = list(ex.map(agree, jobs))
+    if threading.active_count() == 1:
+        with ProcessPoolExecutor(max_workers=workers) as ex:
+            vals = list(ex.map(agree, jobs))
+    else:
+        # forking a process that runs other threads can leave a worker waiting forever on a
+        # lock one of them held, so the agreements are computed here instead
+        vals = [agree(j) for j in jobs]
     score, pairs, i = {}, {}, 0
     for c in names:
         others = [o for o in names if o != c]
