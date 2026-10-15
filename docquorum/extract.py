@@ -15,7 +15,8 @@ The rule of the benchmark runs (benchmarks/extractbench/run.sh), on one document
   * otherwise, a PDF with a text layer -> one reading, by the reader agent;
   * a PDF without one -> the reader agent on the page images and on the MinerU parse; up to
     12 pages also the one-shot reader, and the quorum keeps the reading the others agree
-    with most; a longer scan is read through its parse;
+    with most; a longer scan is read through its parse (its page-image reading instead when
+    the parse reading lost most of the list);
   * with --zoom, the fields on which the readings disagree are then read once more from a
     high-resolution crop of the page region that prints them (zoom.py).
 Every reading passes its chain of checks (docquorum/checks) before the quorum.
@@ -117,7 +118,8 @@ def _extract(doc, schema, task, workers, log, zoom_reread=False):
             if not stat.get("errors"):
                 reading("parse", res)
             if n > 12 and "parse" in readings:                  # a long scan: its parse reading
-                return _finish(readings["parse"], template), {"readings": ["parse"]}, readings
+                keep = quorum.long_scan_choice(readings)
+                return _finish(readings[keep], template), {"readings": [keep]}, readings
         if not text and n <= 12:
             try:
                 reading("oneshot", oneshot.read(pdf, schema))

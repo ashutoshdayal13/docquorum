@@ -60,6 +60,23 @@ def looped(reading):
                for rows in _record_lists(reading))
 
 
+def record_count(reading):
+    """Records in the reading's longest list of records (0 if it has none)."""
+    return max((len(rows) for rows in _record_lists(reading)), default=0)
+
+
+def long_scan_choice(readings):
+    """For a scan too long for the quorum: the parse reading, unless it lost most of the list
+    (under half the records of the page-image reading) or went round in a loop where the
+    page-image reading did not."""
+    keep = "parse"
+    other = readings.get("primary")
+    if other is not None and (record_count(readings["parse"]) < 0.5 * record_count(other)
+                              or looped(readings["parse"]) and not looped(other)):
+        keep = "primary"
+    return keep
+
+
 def pick(rec, views, workers=8):
     """(the reading dir to keep, {dir: agreement}, {dir: {other: [p, r]}}) for one document."""
     names = list(views)

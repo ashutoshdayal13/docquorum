@@ -31,3 +31,13 @@ def _names(views, job):
     _rec, a, b = job
     find = lambda v: next(k for k, x in views.items() if x is v)
     return find(a), find(b)
+
+
+def test_a_long_scan_keeps_its_parse_reading_unless_the_parse_lost_the_list():
+    rows = [{"w": str(i)} for i in range(100)]
+    assert quorum.long_scan_choice({"primary": {"e": rows}, "parse": {"e": rows[:90]}}) == "parse"
+    assert quorum.long_scan_choice({"primary": {"e": rows}, "parse": {"e": rows[:40]}}) == "primary"
+    assert quorum.long_scan_choice({"parse": {"e": rows[:5]}}) == "parse"            # nothing to compare
+    loop = {"e": rows[:1] * 120}
+    assert quorum.long_scan_choice({"primary": {"e": rows}, "parse": loop}) == "primary"
+    assert quorum.long_scan_choice({"primary": loop, "parse": {"e": rows[:1] * 90}}) == "parse"
