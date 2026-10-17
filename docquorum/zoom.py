@@ -27,8 +27,28 @@ ASK = ('This image is a region cut from a page of a document. Read the value of 
 
 
 def norm(v):
-    """Text for comparing values: case, spaces and punctuation ignored."""
+    """A value for comparing: a number by its numeric value (12845.38 and 1284538 differ, though
+    they share their digits); text with case, spaces and punctuation ignored."""
+    if isinstance(v, (int, float)) and not isinstance(v, bool):
+        return f"#{float(v)!r}"
     return re.sub(r"[\W_]+", "", str(v)).lower() if v not in (None, "") else ""
+
+
+def printed(v):
+    """A value as its characters appear on a page, for finding it there: letters and digits only
+    (12845.38 and "12,845.38" are both found as 1284538)."""
+    return re.sub(r"[\W_]+", "", str(v)).lower() if v not in (None, "") else ""
+
+
+def as_number(v):
+    """A zoomed answer read as a number ("12,845.38", "$1,095.00" -> 12845.38, 1095.0), or None."""
+    if isinstance(v, (int, float)) and not isinstance(v, bool):
+        return float(v)
+    s = re.sub(r"[^\d.\-]", "", str(v or ""))
+    try:
+        return float(s) if re.search(r"\d", s) else None
+    except ValueError:
+        return None
 
 
 def leaves(o, path=()):
@@ -69,14 +89,14 @@ def page_blocks(pdf, page, client, cache):
     if page not in cache:
         im = parser.render_page(pdf, page)
         got = client.two_step_extract(im) if im is not None else []
-        cache[page] = [(b.get("bbox"), norm(b.get("content") or "")) for b in got
+        cache[page] = [(b.get("bbox"), printed(b.get("content") or "")) for b in got
                        if isinstance(b, dict) and b.get("bbox")]
     return cache[page]
 
 
 def locate(values, pdf, n_pages, client, cache):
     """(page, box) of the smallest block holding the most proposed values; None if none does."""
-    keys = [norm(v) for v in values if len(norm(v)) >= 2]
+    keys = [printed(v) for v in values if len(printed(v)) >= 2]
     best = None
     for page in range(1, n_pages + 1):
         for box, text in page_blocks(pdf, page, client, cache):
@@ -161,8 +181,13 @@ def reread(cl, kept, others, schema, pdf, parser_client=None, log=print):
             log(f"    ! zoom: {type(e).__name__}")
             continue
         got = llm.parse_object(txt or "")
-        seen = norm(got.get("value")) if isinstance(got, dict) else ""
+        value = got.get("value") if isinstance(got, dict) else None
+        seen = norm(value)
         match = [v for v in vals if seen and norm(v) == seen]
+        if not match and any(norm(v).startswith("#") for v in vals):       # numbers: by value
+            num = as_number(value)
+            match = [v for v in vals if num is not None and norm(v) == norm(num)]
+            seen = norm(num) if match else seen
         if match and seen != norm(before.get(path)) and votes(path, match[0]) + ZOOM_VOTES > held:
             set_path(out, path, match[0])
             stat["changed"] += 1

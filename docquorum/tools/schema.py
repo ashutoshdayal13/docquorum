@@ -200,6 +200,50 @@ def _nullable(node):
         node["anyOf"] = [{"$ref": node.pop("$ref")}, {"type": "null"}]
 
 
+def nullable_optional(schema):
+    """The decoding form of a schema: every scalar property its object does not require may
+    also be null. Under a grammar the model fills every key it is shown, so an optional field typed
+    "string" or "number" would otherwise force a value where the page prints none (a copied
+    neighbour, a 0, the text "null"); null is how an extraction says "not printed"."""
+    s = copy.deepcopy(schema)
+
+    def scalar(v):                       # a list can already be [] and an object can omit fields
+        r = resolve(v, s)
+        t = r.get("type")
+        return not ({"object", "array"} & set(t if isinstance(t, list) else [t]) or "properties" in r or "items" in r)
+
+    def walk(node):
+        if isinstance(node, dict):
+            props = node.get("properties")
+            if isinstance(props, dict):
+                req = set(node.get("required") or [])
+                for k, v in props.items():
+                    if k not in req and isinstance(v, dict) and scalar(v):
+                        _nullable(v)
+            for v in list(node.values()):
+                walk(v)
+        elif isinstance(node, list):
+            for v in node:
+                walk(v)
+    walk(s)
+    return s
+
+
+def require_fields(item):
+    """The item schema with every top-level field required (so a reply cannot skip one) and each
+    field so required also allowed to be null, as in require_all: a blank cell is then null, not a
+    0 or a "null" string the decoder would otherwise force."""
+    out = copy.deepcopy(item)
+    props = out.get("properties")
+    if isinstance(props, dict) and props:
+        had = set(out.get("required") or [])
+        for k, v in props.items():
+            if k not in had and isinstance(v, dict):
+                _nullable(v)
+        out["required"] = list(props)
+    return out
+
+
 def require_all(schema):
     """The schema with every object property required; each added requirement nullable."""
     s = copy.deepcopy(schema)

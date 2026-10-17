@@ -19,10 +19,13 @@ def client(timeout=21600):
 
 
 def extra_body(schema=None):
-    """Request fields: the decoding schema, and reasoning off (Qwen3.8 reasons by default)."""
+    """Request fields: the decoding schema, and reasoning off (Qwen3.8 reasons by default).
+    Every decoding schema admits null for the scalar fields it does not require
+    (schema.nullable_optional): otherwise the grammar forces a value where none is printed."""
+    from docquorum.tools.schema import nullable_optional
     eb = {}
     if schema:
-        eb["structured_outputs"] = {"json": schema}
+        eb["structured_outputs"] = {"json": nullable_optional(schema)}
     eb["chat_template_kwargs"] = {"enable_thinking": False}
     return eb
 
@@ -31,12 +34,15 @@ def image_parts(images, mime="jpeg"):
     return [{"type": "image_url", "image_url": {"url": f"data:image/{mime};base64,{b}"}} for b in images]
 
 
-def ask(cl, prompt, max_tokens=8000, schema=None, images=()):
-    """One call; returns (reply text, tokens used, finish_reason)."""
+def ask(cl, prompt, max_tokens=8000, schema=None, images=(), repetition_penalty=None):
+    """One call; returns (reply text, tokens used, finish_reason). repetition_penalty: for
+    reading again a reply that went round in a loop (vLLM's sampling parameter)."""
     content = (image_parts(images) + [{"type": "text", "text": prompt}]) if images else prompt
+    body = extra_body(schema)
+    if repetition_penalty:
+        body["repetition_penalty"] = repetition_penalty
     r = cl.chat.completions.create(model=C.MODEL, temperature=0.0, max_tokens=max_tokens,
-                                   messages=[{"role": "user", "content": content}],
-                                   extra_body=extra_body(schema))
+                                   messages=[{"role": "user", "content": content}], extra_body=body)
     ch = r.choices[0]
     return ch.message.content, (r.usage.total_tokens if r.usage else 0), ch.finish_reason
 

@@ -2,6 +2,7 @@
 Counting table rows in page text, deterministically: the reader agent plans its page chunks
 from these counts and checks empty replies against them.
 """
+import json
 import re
 
 _NUMERIC_TOKEN = re.compile(r"^[\d,.$()\-]+$")
@@ -64,3 +65,26 @@ def split_text(text, parts=2):
     step = len(lines) // parts
     return ["\n".join(lines[i * step:(i + 1) * step if i < parts - 1 else len(lines)])
             for i in range(parts)]
+
+
+# ---------- decoding loops ----------
+LOOP_MIN, LOOP_SHARE = 20, 0.5      # a list this long, less than this share of it distinct: a loop
+
+
+def is_loop(rows):
+    """Whether a list of records is mostly exact repeats: the model went round in a decoding
+    loop (a real document's repeated rows are a small share of its list)."""
+    if not isinstance(rows, list) or len(rows) < LOOP_MIN:
+        return False
+    return len({json.dumps(r, sort_keys=True, ensure_ascii=False) for r in rows}) < LOOP_SHARE * len(rows)
+
+
+def without_repeats(rows):
+    """The records with exact repeats removed, first occurrences kept in order."""
+    seen, out = set(), []
+    for r in rows:
+        k = json.dumps(r, sort_keys=True, ensure_ascii=False)
+        if k not in seen:
+            seen.add(k)
+            out.append(r)
+    return out

@@ -19,9 +19,9 @@ from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 
 from docquorum import extractbench as EB
+from docquorum.tools.rows import is_loop
 
 BETA = 2.0
-LOOP_MIN, LOOP_SHARE = 20, 0.5      # a list this long, less than this share of it distinct: a loop
 
 
 def agree(args):
@@ -56,28 +56,8 @@ def _record_lists(o):
 
 
 def looped(reading):
-    """Whether a list of LOOP_MIN or more records is mostly exact repeats: the model went round
-    in a loop (seen on long lists in Hebrew and Devanagari scans), not a document's repeated rows."""
-    return any(len(rows) >= LOOP_MIN
-               and len({json.dumps(x, sort_keys=True) for x in rows}) < LOOP_SHARE * len(rows)
-               for rows in _record_lists(reading))
-
-
-def record_count(reading):
-    """Records in the reading's longest list of records (0 if it has none)."""
-    return max((len(rows) for rows in _record_lists(reading)), default=0)
-
-
-def long_scan_choice(readings):
-    """For a scan too long for the quorum: the parse reading, unless it lost most of the list
-    (under half the records of the page-image reading) or went round in a loop where the
-    page-image reading did not."""
-    keep = "parse"
-    other = readings.get("primary")
-    if other is not None and (record_count(readings["parse"]) < 0.5 * record_count(other)
-                              or looped(readings["parse"]) and not looped(other)):
-        keep = "primary"
-    return keep
+    """Whether a list of records went round in a decoding loop (tools.rows.is_loop)."""
+    return any(is_loop(rows) for rows in _record_lists(reading))
 
 
 def pick(rec, views, workers=8):

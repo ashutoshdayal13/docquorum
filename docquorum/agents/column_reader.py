@@ -12,20 +12,17 @@ from docquorum import config as C
 from docquorum.agents import prompts
 from docquorum.tools import llm, pdf as PDF
 from docquorum.tools.layout import column_crops
-from docquorum.tools.schema import array_schema, find_array_field
+from docquorum.tools.schema import array_schema, find_array_field, require_fields
 
 
 def list_meta(schema):
     """(list name, item schema, description, decoding item with every field required and the
     definitions attached, task prefix) of the schema's main list."""
     arr_name, item, arr_desc = find_array_field(schema)
-    guide = dict(item)
+    guide = require_fields(item)                       # every field, so none is skipped; each may be null
     for key in ("$defs", "definitions"):
         if schema.get(key):
             guide[key] = schema[key]
-    props = list((item.get("properties") or {}).keys())
-    if props:
-        guide["required"] = props
     task = (schema.get("description") or "").strip()
     return arr_name, item, arr_desc, guide, (f"TASK\n{task}\n\n" if task else "")
 

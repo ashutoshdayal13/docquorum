@@ -57,3 +57,20 @@ def test_the_zoom_overturns_a_lead_of_one_reading_but_not_a_clear_majority(monke
     assert out == {"f": "A"} and stat["located"] == 0
     # six readings, 3 against 2: the zoom may overturn a lead of one
     assert run({"f": "A"}, [{"f": "A"}] * 2 + [{"f": "B"}] * 2 + [{"f": "C"}])[0] == {"f": "B"}
+
+
+def test_numbers_are_compared_by_value(monkeypatch):
+    assert zoom.norm(12845.38) != zoom.norm(1284538) and zoom.norm(5) == zoom.norm(5.0)
+    assert zoom.as_number("$12,845.38") == 12845.38 and zoom.as_number("n/a") is None
+    monkeypatch.setattr(zoom.PDF, "npages", lambda pdf: 1)
+    monkeypatch.setattr(zoom, "locate", lambda vals, *a: (1, (0, 0, 1, 1)))
+    monkeypatch.setattr(zoom, "crop", lambda *a: "img")
+    monkeypatch.setattr(llm, "ask", lambda cl, q, **k: ('{"value": "12,845.38"}', None, None))
+    out, stat = zoom.reread(None, {"t": 1284538}, [{"t": 12845.38}, {"t": 12845.38}], {}, "doc.pdf",
+                            parser_client=object(), log=lambda s: None)
+    assert out == {"t": 12845.38} and stat["changed"] == 1
+
+
+def test_a_number_is_found_on_the_page_by_its_printed_digits(monkeypatch):
+    monkeypatch.setattr(zoom, "page_blocks", lambda pdf, page, client, cache: [((0, 0, 1, 1), zoom.printed("Total $12,845.38"))])
+    assert zoom.locate([1284538, 12845.38], "doc.pdf", 1, None, {}) == (1, (0, 0, 1, 1))

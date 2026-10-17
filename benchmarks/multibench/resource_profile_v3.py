@@ -37,10 +37,11 @@ def install():
             return None, statuses
         return merged, statuses
 
-    def ask_chunk(cl, text, imgs, meta, label, stat):
+    def ask_chunk(cl, text, imgs, meta, label, stat, penalty=None, scan=False):
         array_name, lead, item_text, decoding_schema = meta[:4]
         context = meta[4] if len(meta) > 4 else ""      # the reader's reference block, if any
-        prompt = prompts.CHUNK.format(context=context, p0=label, p1=label, text=text, item_schema=item_text,
+        intro = (prompts.CHUNK_OCR if scan else prompts.CHUNK_TEXT).format(p0=label, p1=label)
+        prompt = prompts.CHUNK.format(context=context, intro=intro, text=text, item_schema=item_text,
                                       array_name=array_name, array_desc=lead)
         # A failed call is not evidence for an empty table. Propagate it rather than
         # letting the original helper return ([], False) and count it as completed.

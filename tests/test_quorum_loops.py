@@ -33,11 +33,23 @@ def _names(views, job):
     return find(a), find(b)
 
 
-def test_a_long_scan_keeps_its_parse_reading_unless_the_parse_lost_the_list():
-    rows = [{"w": str(i)} for i in range(100)]
-    assert quorum.long_scan_choice({"primary": {"e": rows}, "parse": {"e": rows[:90]}}) == "parse"
-    assert quorum.long_scan_choice({"primary": {"e": rows}, "parse": {"e": rows[:40]}}) == "primary"
-    assert quorum.long_scan_choice({"parse": {"e": rows[:5]}}) == "parse"            # nothing to compare
-    loop = {"e": rows[:1] * 120}
-    assert quorum.long_scan_choice({"primary": {"e": rows}, "parse": loop}) == "primary"
-    assert quorum.long_scan_choice({"primary": loop, "parse": {"e": rows[:1] * 90}}) == "parse"
+def test_a_chunk_that_went_round_in_a_loop_is_read_again_then_cleaned(monkeypatch):
+    import json
+    import threading
+    from docquorum.agents import reader
+    from docquorum.tools import llm
+    calls = []
+    good = [{"w": str(i)} for i in range(25)]
+
+    def ask(cl, prompt, **k):
+        calls.append(k.get("repetition_penalty"))
+        rows = [{"w": "0"}] * 40 if len(calls) == 1 else good
+        return json.dumps(rows), 0, "stop"
+    monkeypatch.setattr(llm, "ask", ask)
+    stat = {"calls": 0, "tok": 0, "truncated": 0, "lock": threading.Lock()}
+    rows, cut = reader._ask_chunk(None, "text", (), ("rows", "", "{}", None, ""), "page 1", stat)
+    assert rows == good and calls == [None, reader.LOOP_PENALTY] and stat["loops"] == 1
+    # a reply that still loops after the penalty keeps each record once
+    monkeypatch.setattr(llm, "ask", lambda cl, p, **k: (json.dumps([{"w": "0"}] * 30 + [{"w": "1"}]), 0, "stop"))
+    rows, _ = reader._ask_chunk(None, "text", (), ("rows", "", "{}", None, ""), "page 2", stat)
+    assert rows == [{"w": "0"}, {"w": "1"}]

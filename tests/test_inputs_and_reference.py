@@ -62,7 +62,7 @@ def test_reference_block_keeps_legends_and_only_the_chunks_own_entities():
 
 
 def test_chunk_prompt_without_reference_is_unchanged():
-    kw = dict(p0="page 3", p1="page 3", text="X", item_schema="S", array_name="a", array_desc="D")
+    kw = dict(intro=prompts.CHUNK_TEXT.format(p0="page 3", p1="page 3"), text="X", item_schema="S", array_name="a", array_desc="D")
     assert prompts.CHUNK.format(context="", **kw) == prompts.CHUNK.replace("{context}", "").format(**kw)
 
 

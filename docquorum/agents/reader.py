@@ -30,9 +30,10 @@ from docquorum import config as C
 from docquorum.agents import prompts, whole
 from docquorum.tools import llm, parser, pdf as PDF
 from docquorum.tools.layout import split_html_panels, split_text_panels
-from docquorum.tools.rows import count_row_lines, evidence_rows, split_columns, split_text
+from docquorum.tools.rows import (count_row_lines, evidence_rows, is_loop, split_columns, split_text,
+                                  without_repeats)
 from docquorum.tools.schema import (array_schema, compact, find_all_arrays, find_array_field,
-                                    leaf_count, missing_keys, scalar_fields)
+                                    leaf_count, missing_keys, require_fields, scalar_fields)
 
 OUT_BUDGET = 9000               # output tokens one chunk is planned to need at most
 TOK_PER_FIELD = 9
@@ -42,6 +43,7 @@ PAGES_PER_CHUNK_CAP = 2
 MIN_EVIDENCE_ROWS = 5           # an empty reply for a page with this many rows is asked again
 REF_CHARS = 60000               # opening text searched for reference material (legends, tables)
 NO_TEXT = "(no extractable text; read the attached page images)"
+LOOP_PENALTY = 1.1              # a chunk whose reply went round in a loop is read again with it
 
 
 def load_pages(pdf, name, use_parsed=False):
@@ -74,6 +76,9 @@ def read_document(cl, schema, pdf, name, workers=8, use_parsed=False, text_layer
     n_pages = PDF.npages(pdf)
     # a scan read through its parse: its text is OCR, so the page images decide
     is_scan = parsed and sum(len(t.strip()) for t in PDF.page_texts(pdf)[:n_pages]) < 50 * n_pages
+    # machine-read text either way (the parse of a scan, or a scan's own OCR text layer): every
+    # chunk of it is sent with its page images, which decide where the text disagrees
+    ocr_text = is_scan or (not parsed and not image_mode and not text_layer and PDF.ocr_text_layer(pdf))
     stat = {"calls": 0, "tok": 0, "refined": 0, "truncated": 0, "lock": threading.Lock()}
     text = [] if image_mode else pages
 
@@ -114,7 +119,7 @@ def read_document(cl, schema, pdf, name, workers=8, use_parsed=False, text_layer
     plan = {}
     for arr_name, item, arr_desc in find_all_arrays(schema):
         result[arr_name], plan[arr_name] = _read_list(cl, schema, pdf, pages, image_mode, arr_name,
-                                                      item, arr_desc, workers, stat)
+                                                      item, arr_desc, workers, stat, scan=ocr_text)
     return result, stat, plan
 
 
@@ -151,7 +156,10 @@ def _read_whole(cl, schema, pdf, text, has_text, n_pages, est_out, scan, stat):
         if kept:
             got = got2
     if got is not None and fr != "length":
-        return got
+        if not any(is_loop(v) for v in got.values() if isinstance(v, list)):
+            return got
+        print("    [whole] a list went round in a loop -> read in pieces", flush=True)
+        return None
     print(f"    [whole] fell back (finish={fr}, parsed={got is not None})", flush=True)
     return None
 
@@ -197,14 +205,17 @@ def plan_chunks(pages, n_fields, one_page=False):
     return [(i, min(i + ppc, len(pages))) for i in range(0, len(pages), ppc)], ppc, typical
 
 
-def _ask_chunk(cl, text, imgs, meta, label, stat):
-    """One chunk; returns (rows, cut off)."""
+def _ask_chunk(cl, text, imgs, meta, label, stat, penalty=None, scan=False):
+    """One chunk; returns (rows, cut off). A reply that went round in a decoding loop (mostly
+    repeated records) is read once more with a repetition penalty; repeats that remain are
+    dropped."""
     array_name, lead, item_txt, dec_schema, context = meta
+    intro = (prompts.CHUNK_OCR if scan else prompts.CHUNK_TEXT).format(p0=label, p1=label)
     try:
-        txt, tk, fr = llm.ask(cl, prompts.CHUNK.format(context=context, p0=label, p1=label, text=text,
+        txt, tk, fr = llm.ask(cl, prompts.CHUNK.format(context=context, intro=intro, text=text,
                                                        item_schema=item_txt, array_name=array_name,
                                                        array_desc=lead),
-                              max_tokens=12000, schema=dec_schema, images=imgs)
+                              max_tokens=12000, schema=dec_schema, images=imgs, repetition_penalty=penalty)
     except Exception as e:
         print(f"    ! {label}: {type(e).__name__}: {str(e)[:90]}", flush=True)
         if llm.server_failure(e):
@@ -216,14 +227,23 @@ def _ask_chunk(cl, text, imgs, meta, label, stat):
         stat["tok"] += tk
         stat["truncated"] += fr == "length"
     got = llm.parse_json(txt)
-    return ([r for r in got if isinstance(r, dict)] if isinstance(got, list) else []), fr == "length"
+    rows = [r for r in got if isinstance(r, dict)] if isinstance(got, list) else []
+    if is_loop(rows):
+        with stat["lock"]:
+            stat["loops"] = stat.get("loops", 0) + 1
+        if penalty is None:
+            print(f"    [loop] {label}: {len(rows)} records, mostly repeats -> read again", flush=True)
+            return _ask_chunk(cl, text, imgs, meta, label, stat, penalty=LOOP_PENALTY, scan=scan)
+        rows = without_repeats(rows)
+    return rows, fr == "length"
 
 
-def _harvest(cl, text, imgs, meta, label, depth, stat):
+def _harvest(cl, text, imgs, meta, label, depth, stat, scan=False):
     """Read a block; if the reply was cut off, read its halves (and so on, MAX_DEPTH deep),
-    keeping whichever reading has more rows."""
-    rows, cut = _ask_chunk(cl, text, imgs, meta, label, stat)
-    if not cut or depth >= MAX_DEPTH or imgs:
+    keeping whichever reading has more rows. A half is sent without the page images: they show
+    the whole pages, and a reader shown them reads rows outside its half."""
+    rows, cut = _ask_chunk(cl, text, imgs, meta, label, stat, scan=scan)
+    if not cut or depth >= MAX_DEPTH or text == NO_TEXT:
         return rows
     halves = split_text(text, 2)
     if len(halves) < 2:
@@ -232,7 +252,7 @@ def _harvest(cl, text, imgs, meta, label, depth, stat):
         stat["refined"] += 1
     sub = []
     for i, h in enumerate(halves):
-        sub.extend(_harvest(cl, h, imgs, meta, f"{label}.{i+1}", depth + 1, stat))
+        sub.extend(_harvest(cl, h, (), meta, f"{label}.{i+1}", depth + 1, stat))
     return sub if len(sub) > len(rows) else rows
 
 
@@ -287,18 +307,17 @@ def _reference_for(body, text):
     return prompts.REFERENCE_BLOCK.format(body="\n".join(kept).strip("\n"))
 
 
-def _read_list(cl, schema, pdf, pages, image_mode, arr_name, item, arr_desc, workers, stat):
+def _read_list(cl, schema, pdf, pages, image_mode, arr_name, item, arr_desc, workers, stat, scan=False):
     """One list, chunk by chunk in parallel; rows are collected in page order. A list of plain
-    values is read as {"value": ...} records and unwrapped."""
+    values is read as {"value": ...} records and unwrapped. scan: the text is OCR, so each chunk
+    is sent with its page images, which decide where the text disagrees."""
     scalar_items = not (item.get("properties") or item.get("type") == "object")
     if scalar_items:
         item = {"type": "object", "properties": {"value": item}, "required": ["value"]}
     props = list((item.get("properties") or {}).keys())
     n_fields = max(1, len(props))
     chunks, ppc, typical = plan_chunks(pages, n_fields, one_page=any("page" in k.lower() for k in props))
-    guide = dict(item)
-    if props:
-        guide["required"] = props                      # every field, so none is skipped
+    guide = require_fields(item)                       # every field, so none is skipped; each may be null
     dec_schema = (array_schema(guide, schema, maxItems=1200) if item.get("properties") else
                   {"type": "array", "maxItems": 1200, "items": {"type": "object"}})
     task = (schema.get("description") or "").strip()
@@ -319,17 +338,26 @@ def _read_list(cl, schema, pdf, pages, image_mode, arr_name, item, arr_desc, wor
             return
         text = "\n".join(pages[lo:hi])
         chunk_meta = meta[:4] + (_reference_for(reference, text),)
+        imgs = ()
+        if scan:
+            try:
+                imgs = tuple(PDF.page_images(pdf, lo + 1, hi))[:MAX_IMAGES_PER_CALL]
+            except Exception:
+                imgs = ()
         blocks = [text]
         if count_row_lines(text) * max(12, n_fields * TOK_PER_FIELD) > OUT_BUDGET:
             blocks = split_columns(text)
+        if len(blocks) > 1:
+            imgs = ()           # the images show every block's rows: each block is read from its text
         rows = []
         for bi, blk in enumerate(blocks):
-            rows.extend(_harvest(cl, blk, (), chunk_meta, label if len(blocks) == 1 else f"{label} col{bi+1}", 0, stat))
+            rows.extend(_harvest(cl, blk, imgs, chunk_meta, label if len(blocks) == 1 else f"{label} col{bi+1}", 0, stat,
+                                 bool(imgs)))
         if not rows and (n_ev := evidence_rows(text)) >= MIN_EVIDENCE_ROWS:
             with stat["lock"]:
                 stat["reasked"] = stat.get("reasked", 0) + 1
             meta2 = (meta[0], meta[1] + prompts.EMPTY_NUDGE.format(n=n_ev, a=meta[0]), meta[2], meta[3], chunk_meta[4])
-            rows = _harvest(cl, text, (), meta2, label + " re-ask", 0, stat)
+            rows = _harvest(cl, text, imgs, meta2, label + " re-ask", 0, stat, bool(imgs))
             if rows:
                 with stat["lock"]:
                     stat["recovered"] = stat.get("recovered", 0) + 1

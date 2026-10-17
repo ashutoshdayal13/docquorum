@@ -165,3 +165,19 @@ def test_a_check_that_fails_leaves_the_reading_as_it_was(monkeypatch):
             raise ValueError("unusual input")
     monkeypatch.setitem(checks.CHAINS, "oneshot", (Boom,))
     assert checks.run("oneshot", {"a": 1}, None) == {"a": 1}
+
+
+def test_a_decoding_schema_lets_an_optional_scalar_be_null():
+    from docquorum.tools.schema import nullable_optional, require_fields
+    s = {"type": "object", "required": ["id"], "properties": {
+        "id": {"type": "string"}, "basis": {"type": "string"}, "debit": {"type": "number"},
+        "kind": {"enum": ["A", "B"]}, "rows": {"type": "array", "items": {"type": "object", "properties": {"x": {"type": "number"}}}}}}
+    d = nullable_optional(s)
+    assert d["properties"]["id"]["type"] == "string"                       # required: unchanged
+    assert d["properties"]["basis"]["type"] == ["string", "null"] and d["properties"]["debit"]["type"] == ["number", "null"]
+    assert None in d["properties"]["kind"]["enum"]
+    assert d["properties"]["rows"]["type"] == "array"                      # a list can be [] already
+    assert d["properties"]["rows"]["items"]["properties"]["x"]["type"] == ["number", "null"]
+    assert s["properties"]["basis"]["type"] == "string"                    # the schema itself is not changed
+    g = require_fields({"type": "object", "properties": {"a": {"type": "number"}, "b": {"type": ["string", "null"]}}})
+    assert g["required"] == ["a", "b"] and g["properties"]["a"]["type"] == ["number", "null"]

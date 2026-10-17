@@ -229,7 +229,7 @@ def test_dense_table_keeps_identifiers_with_values(monkeypatch, install_v3):
     install_v3()
     text = '\n'.join(f'PART-{i:04d} UNIT                  {i+1000}                 {i+2000}.00' for i in range(80))
     seen = []
-    def harvest(cl, actual, imgs, meta, label, depth, stat):
+    def harvest(cl, actual, imgs, meta, label, depth, stat, scan=False):
         seen.append(actual)
         return [{'field_0':'PART-0000', 'field_1':'2000.00'}]
     monkeypatch.setattr(reader, '_harvest', harvest)

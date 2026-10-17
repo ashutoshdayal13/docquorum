@@ -28,7 +28,7 @@ OCR_TEXT = ("OCR text of the scanned pages (machine-read: it can misread charact
 # ---- the reader agent: one chunk of pages, for one list ----
 CHUNK = """You are extracting rows of a table from one part of a long document.
 
-{context}Below is the text of pages {p0}-{p1}, with column alignment preserved.
+{context}{intro}
 
 --- PAGE TEXT ---
 {text}
@@ -48,6 +48,12 @@ kinds of rows, leave those out.
 
 Reply with a JSON array only:
 [{{...}}, {{...}}]"""
+
+CHUNK_TEXT = "Below is the text of pages {p0}-{p1}, with column alignment preserved."
+# a scan's chunk: its text is OCR, so the chunk's page images come with it and decide
+CHUNK_OCR = ("Below is the OCR text of pages {p0}-{p1} (machine-read: it can misread characters and drop "
+             "spaces or punctuation). The page images are attached; where the text disagrees with the "
+             "images, follow the images.")
 
 # material from elsewhere in the document that a chunk's rows depend on (legends, code keys,
 # per-entity reference tables), copied once per list and put before every chunk's text; when

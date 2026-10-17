@@ -8,17 +8,16 @@ tools/images.py), or a native file (.xlsx, .docx, .html, .xml, .csv, .txt), whos
 PDF text layer (tools/native.py). SCHEMA is a JSON Schema, or a JSON template whose leaves are
 empty ("" / [] / {}): the result then follows the template, with "" for anything absent.
 
-The rule of the benchmark runs (benchmarks/extractbench/run.sh), on one document:
+The rule on one document (docs/DESIGN.md is the full specification):
   * a layout reader when the page geometry selects one (agents/layout.py): pages printed as
     equal-width columns of records -> the column reader; a scan whose parsed tables map onto
     the schema -> the ruled-table reader;
   * otherwise, a PDF with a text layer -> one reading, by the reader agent;
-  * a PDF without one -> the reader agent on the page images and on the MinerU parse; up to
-    12 pages also the one-shot reader, and the quorum keeps the reading the others agree
-    with most; a longer scan is read through its parse (its page-image reading instead when
-    the parse reading lost most of the list);
-  * with --zoom, the fields on which the readings disagree are then read once more from a
-    high-resolution crop of the page region that prints them (zoom.py).
+  * a PDF without one -> the reader agent on the page images and on the MinerU parse, and up
+    to 12 pages also the one-shot reader; the quorum keeps the reading the others agree with
+    most;
+  * the fields on which the readings disagree are then read once more from a high-resolution
+    crop of the page region that prints them (zoom.py; --no-zoom skips it).
 Every reading passes its chain of checks (docquorum/checks) before the quorum.
 """
 import argparse
@@ -60,18 +59,18 @@ def as_pdf(doc, folder):
     return dst
 
 
-def extract(doc, schema, task=None, workers=8, log=print, keep_readings=False, zoom_reread=False):
+def extract(doc, schema, task=None, workers=8, log=print, keep_readings=False, zoom_reread=True):
     """Returns (result, report). `schema` is a JSON Schema or a JSON template (dict).
     keep_readings: the report also carries every checked reading ("data"), for analysis.
     zoom_reread: after the quorum, the fields the readings disagree on are read again from a
-    high-resolution crop of the page (zoom.py); needs the parser."""
+    high-resolution crop of the page (zoom.py; on by default, skipped without the parser)."""
     result, report, readings = _extract(doc, schema, task, workers, log, zoom_reread)
     if keep_readings:
         report["data"] = readings
     return result, report
 
 
-def _extract(doc, schema, task, workers, log, zoom_reread=False):
+def _extract(doc, schema, task, workers, log, zoom_reread=True):
     template = schema if is_template(schema) else None
     schema = template_to_schema(template) if template is not None else dict(schema)
     if task:            # after the schema's own description of the document, not in its place
@@ -124,10 +123,7 @@ def _extract(doc, schema, task, workers, log, zoom_reread=False):
             res, stat, _ = read_document(cl, schema, pdf, name, workers, use_parsed=True)
             if not stat.get("errors"):
                 reading("parse", res)
-            if n > 12 and "parse" in readings:                  # a long scan: its parse reading
-                keep = quorum.long_scan_choice(readings)
-                return _finish(readings[keep], template), {"readings": [keep]}, readings
-        if not text and n <= 12:
+        if not text and n <= 12:                                  # fits one call: the one-shot reader too
             try:
                 reading("oneshot", oneshot.read(pdf, schema))
             except Exception as e:                                # the document does not fit
@@ -162,11 +158,11 @@ def main():
     ap.add_argument("--task", default=None, help="optional task description (what to extract, and how)")
     ap.add_argument("-o", "--out", default=None, help="write the result here (default: stdout)")
     ap.add_argument("--workers", type=int, default=8)
-    ap.add_argument("--zoom", action="store_true",
-                    help="re-read the fields the readings disagree on from a sharp crop (zoom.py)")
+    ap.add_argument("--no-zoom", action="store_true",
+                    help="skip zoom re-reading of the fields the readings disagree on (zoom.py)")
     a = ap.parse_args()
     result, report = extract(a.doc, json.loads(Path(a.schema).read_text()), a.task, a.workers,
-                             log=lambda m: print(m, file=sys.stderr), zoom_reread=a.zoom)
+                             log=lambda m: print(m, file=sys.stderr), zoom_reread=not a.no_zoom)
     print(f"[docquorum] {report}", file=sys.stderr)
     out = json.dumps(result, indent=2, ensure_ascii=False)
     if a.out:
