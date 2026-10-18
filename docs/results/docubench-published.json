@@ -9,47 +9,66 @@
   {
    "system": "DocuPipe (high effort)",
    "folder": "docupipe_high",
-   "score": 97.0169874
+   "score": 97.0169874,
+   "cost_usd_per_doc": 0.5419,
+   "seconds_per_doc": 195.7
   },
   {
    "system": "DocuPipe (standard effort)",
    "folder": "docupipe_standard",
-   "score": 96.140127
+   "score": 96.140127,
+   "cost_usd_per_doc": 0.1068,
+   "seconds_per_doc": 73.4
   },
   {
    "system": "Claude Sonnet 5 (direct LLM)",
    "folder": "claude5",
-   "score": 91.7323502
+   "score": 91.7323502,
+   "cost_usd_per_doc": 0.2882,
+   "seconds_per_doc": 90.7
   },
   {
    "system": "Reducto Deep Extract",
    "folder": "reducto",
-   "score": 89.3791578
+   "score": 89.3791578,
+   "cost_usd_per_doc": 0.7011,
+   "seconds_per_doc": 203.7
   },
   {
    "system": "Reducto (standard)",
    "folder": "reducto_standard",
-   "score": 81.1109606
+   "score": 81.1109606,
+   "cost_usd_per_doc": 0.3596,
+   "seconds_per_doc": 65.9
   },
   {
    "system": "Extend",
    "folder": "extend",
-   "score": 80.2766937
+   "score": 80.2766937,
+   "cost_usd_per_doc": 0.3972,
+   "seconds_per_doc": 48.5
   },
   {
    "system": "GPT-5.5 (direct LLM)",
    "folder": "gpt",
-   "score": 76.477566
+   "score": 76.477566,
+   "cost_usd_per_doc": null,
+   "seconds_per_doc": 70.5
   },
   {
    "system": "Gemini 3.5 Flash (direct LLM)",
    "folder": "gemini",
-   "score": 72.9754707
+   "score": 72.9754707,
+   "cost_usd_per_doc": null,
+   "seconds_per_doc": 53.9
   },
   {
    "system": "Unstructured",
    "folder": "unstructured",
-   "score": 67.6743968
+   "score": 67.6743968,
+   "cost_usd_per_doc": null,
+   "seconds_per_doc": 630.3
   }
- ]
+ ],
+ "cost_note": "cost_usd_per_doc and seconds_per_doc: means over the 72 per-document result files (results/<system>/<doc>.json, fields cost and time_sec); null where a system's files do not record cost for every document, or record 0 throughout"
 }

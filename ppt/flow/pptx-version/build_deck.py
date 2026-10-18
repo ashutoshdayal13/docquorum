@@ -1,7 +1,7 @@
 """Build ppt/flow/docquorum-flow.pptx: the pipeline, followed step by step on real documents, then the two
 results tables. Every number on the slides comes from ppt/flow/assets/*.json or the docs/results snapshots.
 
-    python ppt/flow/build_deck.py            (after ppt/flow/make_assets.py; needs python-pptx and Pillow)
+    python ppt/flow/pptx-version/build_deck.py   (after ppt/flow/make_assets.py; needs python-pptx and Pillow)
 """
 import csv
 import json
@@ -15,9 +15,9 @@ from pptx.enum.shapes import MSO_CONNECTOR, MSO_SHAPE
 from pptx.enum.text import MSO_ANCHOR, PP_ALIGN
 from pptx.util import Inches, Pt
 
-HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[1]
-A = HERE / "assets"
+HERE = Path(__file__).resolve().parent         # ppt/flow/pptx-version: the deck is written here
+ROOT = HERE.parents[2]
+A = HERE.parent / "assets"                     # shared with the Beamer deck (ppt/flow/assets)
 facts = json.loads((A / "facts.json").read_text())
 quorum = json.loads((A / "quorum_example.json").read_text())
 unikie_ex = json.loads((A / "unikie_example.json").read_text())
@@ -453,40 +453,69 @@ eb = json.loads((res / "docquorum-extractbench.json").read_text())["stored_prima
 with (res / "extractbench-leaderboard.csv").open(newline="") as fh:
     lb = sorted(csv.DictReader(fh), key=lambda r: (-Decimal(r["Overall"]), Decimal(r["Cost_Per_Page"] or "Infinity")))
 ours = {"Provider": "DocQuorum (ours, open 27B)", "Overall": eb["score"], "Short": eb["per_split"]["short"],
-        "Medium": eb["per_split"]["medium"], "Long": eb["per_split"]["long"]}
+        "Medium": eb["per_split"]["medium"], "Long": eb["per_split"]["long"], "ours": True}
+costs = ROOT / "results" / "costs" / "extractbench.json"
+our_secs = json.loads(costs.read_text())["per_document"]["seconds"] if costs.exists() else None
+
+
+def per_page(r):
+    return "–" if r.get("ours") or not r.get("Cost_Per_Page") else f"{float(r['Cost_Per_Page']):.3f}"
+
+
+def per_doc_secs(r):
+    """Mean seconds per document over the 370 documents (the leaderboard's per-split latencies; ours measured)."""
+    if r.get("ours"):
+        return "–" if our_secs is None else f"{our_secs:,.0f}"
+    try:
+        s = [float(r[f"Latency_S_Per_Doc_{x}"]) for x in ("Short", "Medium", "Long")]
+    except (KeyError, TypeError, ValueError):
+        return "–"
+    return f"{(252 * s[0] + 98 * s[1] + 20 * s[2]) / 370:,.0f}"
+
 at = sum(Decimal(disp(r["Overall"])) >= Decimal(disp(ours["Overall"])) for r in lb)
 full = lb[:at] + [ours] + lb[at:]
 scores = [Decimal(disp(r["Overall"])) for r in full]
 rank = [1 + sum(x > v for x in scores) for v in scores]
 s = slide(None, "", "ExtractBench: DocQuorum is 3rd of 48",
           source=f"ExtractBench leaderboard snapshot (2 October 2026, {len(lb)} published systems); value F1 (%) "
-                 "by the benchmark's scorer. Full table: docs/docquorum.pdf.",
+                 "by the benchmark's scorer; $/page and s/doc as published (s/doc averaged over the 370 documents). "
+                 "DocQuorum: open weights on one shared GPU, no price per call; s/doc measured on a random 20. "
+                 "Full table: docs/docquorum.pdf.",
           notes="370 enterprise PDFs: 252 short, 98 medium, 20 long. Overall is the mean over all documents. "
                 "DocQuorum uses the open Qwen3.8-27B model; the two systems above it are commercial.")
-rows = [["#", "System", "Short", "Medium", "Long", "Overall"]]
+rows = [["#", "System", "Short", "Medium", "Long", "Overall", "$/page", "s/doc"]]
 for k, r in zip(rank[:14], full[:14]):
-    rows.append([k, r["Provider"], disp(r["Short"]), disp(r["Medium"]), disp(r["Long"]), disp(r["Overall"])])
-rows.append(["", f"… {len(full) - 14} more systems (open and commercial models, coding agents, APIs)", "", "", "", ""])
-table(s, rows, 0.5, 1.6, 12.33, [0.6, 7.13, 1.15, 1.15, 1.15, 1.15], size=13, row_h=0.33, highlight=(3,),
-      align_right=(2, 3, 4, 5))
+    rows.append([k, r["Provider"], disp(r["Short"]), disp(r["Medium"]), disp(r["Long"]), disp(r["Overall"]),
+                 per_page(r), per_doc_secs(r)])
+rows.append(["", f"… {len(full) - 14} more systems (models, coding agents, APIs)", "", "", "", "",
+             "", ""])
+table(s, rows, 0.5, 1.6, 12.33, [0.6, 5.33, 1.05, 1.05, 1.05, 1.05, 1.05, 1.15], size=13, row_h=0.33, highlight=(3,),
+      align_right=(2, 3, 4, 5, 6, 7))
 
 pub = json.loads((res / "unikie-published.json").read_text())
-u = json.loads((res / "docquorum-unikie.json").read_text())["variants"]["six_readings"]
+uj = json.loads((res / "docquorum-unikie.json").read_text())
+u = uj["variants"][uj["headline"]]          # the reported configuration
 urows = sorted([(n, v[-1]) for n, v in list(pub["closed_source"].items()) + list(pub["open_source"].items())],
                key=lambda x: -x[1])
 at = sum(Decimal(disp(v)) >= Decimal(disp(u["score"])) for _, v in urows)
 ufull = urows[:at] + [("DocQuorum (ours, open models)", u["score"])] + urows[at:]
 us = [Decimal(disp(v)) for _, v in ufull]
-s = slide(None, "", "UNIKIE-BENCH: DocQuorum is tied 1st of 16",
+urank = 1 + sum(x > Decimal(disp(u["score"])) for x in us)
+utied = sum(x == Decimal(disp(u["score"])) for x in us) > 1
+best_open = max(pub["open_source"].items(), key=lambda kv: kv[1][-1])
+s = slide(None, "", f"UNIKIE-BENCH: DocQuorum is {'tied ' if utied else ''}{urank}{'st' if urank == 1 else 'th'} of {len(ufull)}",
           source="UNIKIE-BENCH (ACL 2026), Table 4: 15 published systems; macro F1 (%) over 11 scenarios, 4,472 images.",
           notes="Every input capped at the benchmark's 1,605,632 pixels, as for the published systems. DocQuorum keeps the "
-                "reading that agrees most among six readings from three open models.")
+                "reading that agrees most among six readings from three open models, then re-reads fields the readings "
+                "dispute on an enlarged crop of the page (zoom re-reading).")
 rows = [["#", "System", "Macro F1"]] + [[1 + sum(x > Decimal(disp(v)) for x in us), n, disp(v)] for n, v in ufull]
 table(s, rows, 0.5, 1.55, 7.2, [0.6, 5.1, 1.5], size=12, row_h=0.3, highlight=(2,), align_right=(2,))
 rect(s, 8.1, 1.55, 4.73, 5.1)
-for i, (big, small) in enumerate([("82.37", "macro F1, equal to Gemini-3-Pro (closed)"),
+best_closed = max(pub["closed_source"].items(), key=lambda kv: kv[1][-1])
+for i, (big, small) in enumerate([(disp(u["score"]), f"macro F1; best published: {best_closed[0]} {disp(best_closed[1][-1])}"),
                                   ("4,472", "document images in 11 scenarios"),
-                                  ("+3.25", "over the best published open model (Qwen3-VL-8B, 79.12)")]):
+                                  (f"+{Decimal(disp(u['score'])) - Decimal(disp(best_open[1][-1]))}",
+                                   f"over the best published open model ({best_open[0]}, {disp(best_open[1][-1])})")]):
     text(s, 8.4, 1.85 + i * 1.6, 4.2, 0.7, big, size=36, bold=True, color=GOOD if i == 0 else NAVY, font=HEAD)
     text(s, 8.4, 2.6 + i * 1.6, 4.2, 0.6, small, size=13, color=MUTED)
 

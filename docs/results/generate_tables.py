@@ -64,6 +64,36 @@ EXTRA = [
 ]
 
 
+COSTS = HERE.parents[1] / "results" / "costs"     # written by benchmarks/*/measure_cost.py
+COST_ORDER = [("varex", "VAREX"), ("unikie", "UNIKIE-BENCH, constrained"), ("unikie_open", "UNIKIE-BENCH, open"),
+              ("extractbench", "ExtractBench"), ("docubench", "DocuBench"), ("longarray", "LongArray-Extract")]
+
+
+def cost_markdown():
+    """Measured means per document: model calls, tokens, parser calls and seconds (results/costs/)."""
+    lines = ["## What a document costs (measured)\n",
+             "Means per document over a random sample of each benchmark (seed 0), read one document at a time "
+             "by the final pipeline, from the model server's and the parser's own usage counters. DocQuorum runs "
+             "open weights on one H100 shared with other accounts' jobs, so there is no price per call and the "
+             "seconds are upper bounds. Per-document rows: `results/costs/<benchmark>.json`.\n",
+             "| Benchmark | Documents measured | Pages | Model calls | Input tokens | Output tokens "
+             "| Parser calls | Seconds |", "|---|---:|---:|---:|---:|---:|---:|---:|"]
+    notes = []
+    for key, title in COST_ORDER:
+        f = COSTS / f"{key}.json"
+        if not f.exists():
+            continue                                  # not measured yet
+        c = json.loads(f.read_text())
+        d, ok = c["per_document"], [r for r in c["documents"] if r.get("status", "completed") == "completed"]
+        pages = sum(r["pages"] for r in ok) / max(1, len(ok))
+        lines.append(f"| {title} | {c['documents_measured']} | {pages:.1f} | {d['model_calls']:.1f} "
+                     f"| {d['model_input_tokens']:,.0f} | {d['model_output_tokens']:,.0f} | {d['parser_calls']:.1f} "
+                     f"| {d['seconds']:,.0f} |")
+        if c.get("note"):
+            notes.append(f"{title}: {c['note']}.")
+    return "\n".join(lines + ([""] + notes if notes else [])) + "\n" if len(lines) > 4 else ""
+
+
 def main():
     provenance = load("provenance.json")
     for name, expected_hash in provenance["snapshot_sha256"].items():
@@ -136,6 +166,7 @@ def main():
         out.append(r"\bottomrule\end{tabularx}\endgroup" + "\n")
         md.append(markdown(title, table, rank_at, digits))
         print(f"Rendered {title}: {len(rows)} published systems + DocQuorum (rank {rank_at(score)}).")
+    md.append(cost_markdown())
     (HERE / "TABLES.md").write_text("\n".join(md))
     (HERE.parent / "results-tables.tex").write_text("".join(out))
     print(f"Rendered ExtractBench: {len(eb_rows)} published systems + DocQuorum (rank {rank(ours['Overall'], eb_scores)}); "

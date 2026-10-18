@@ -17,6 +17,18 @@ RES = ROOT / "docs" / "results"
 facts = json.loads((A / "facts.json").read_text())
 quorum = json.loads((A / "quorum_example.json").read_text())
 unikie_ex = json.loads((A / "unikie_example.json").read_text())
+COST = {f.stem: json.loads(f.read_text()) for f in sorted((ROOT / "results" / "costs").glob("*.json"))}
+
+
+def cost(bench, key, digits=0):
+    """A measured mean per document of results/costs/<bench>.json, or '--' when not measured."""
+    c = COST.get(bench, {}).get("per_document", {}).get(key)
+    return "--" if c is None else f"{c:,.{digits}f}"
+
+
+def tokens(bench):
+    d = COST.get(bench, {}).get("per_document")
+    return "--" if not d else f"{d['model_input_tokens'] / 1000:.0f}k\\,/\\,{d['model_output_tokens'] / 1000:.1f}k"
 
 
 def esc(s):
@@ -444,21 +456,40 @@ rk = ranks([r["Overall"] for r in full])
 assert rk[full.index(ours)] == 3 and len(full) == 48
 
 
+def eb_cost(r):
+    if r.get("ours"):
+        return "--"                     # open weights on one GPU: no price per call
+    v = r.get("Cost_Per_Page")
+    return f"{float(v):.3f}" if v not in (None, "") else "--"
+
+
+def eb_secs(r):
+    """Mean seconds per document over the 370 documents (the leaderboard's per-split latencies)."""
+    if r.get("ours"):
+        return cost("extractbench", "seconds")
+    try:
+        s = [float(r[f"Latency_S_Per_Doc_{x}"]) for x in ("Short", "Medium", "Long")]
+    except (KeyError, TypeError, ValueError):
+        return "--"
+    return f"{(252 * s[0] + 98 * s[1] + 20 * s[2]) / 370:,.0f}"
+
+
 def eb_table(part, lo, hi):
     t = r"""{\scriptsize\renewcommand{\arraystretch}{1.0}\setlength{\tabcolsep}{5pt}
-\begin{tabularx}{\textwidth}{@{}rYlrrrr@{}}\toprule
-\textbf{\#} & \textbf{System} & \textbf{Type} & \textbf{Short} & \textbf{Medium} & \textbf{Long} & \textbf{Overall}\\\midrule
+\begin{tabularx}{\textwidth}{@{}rYlrrrrrr@{}}\toprule
+\textbf{\#} & \textbf{System} & \textbf{Type} & \textbf{Short} & \textbf{Medium} & \textbf{Long} & \textbf{Overall} & \textbf{\$/page} & \textbf{s/doc}\\\midrule
 """
     for k, r in zip(rk[lo:hi], full[lo:hi]):
         mine = r.get("ours")
         cells = [str(k), r["Provider"] if mine else esc(r["Provider"]), CAT.get(r["Category"], esc(r["Category"])),
-                 str(disp(r["Short"])), str(disp(r["Medium"])), str(disp(r["Long"])), str(disp(r["Overall"]))]
+                 str(disp(r["Short"])), str(disp(r["Medium"])), str(disp(r["Long"])), str(disp(r["Overall"])),
+                 eb_cost(r), eb_secs(r)]
         if mine:
             cells = [r"\textbf{%s}" % c if i != 1 else c for i, c in enumerate(cells)]
         t += (r"\rowcolor{hl}" if mine else "") + " & ".join(cells) + r"\\" + "\n"
     t += r"\bottomrule\end{tabularx}}"
     frame(r"ExtractBench: complete results (%d/3)" % part, t + r"""
-\src{ExtractBench leaderboard, snapshot of 2 October 2026 (47 published systems) and DocQuorum. Value F1 (\%) by the benchmark's scorer over 370 PDFs (252 short, 98 medium, 20 long); Overall is the mean over all documents. Equal scores share a rank.}
+\src{ExtractBench leaderboard, snapshot of 2 October 2026 (47 published systems) and DocQuorum. Value F1 (\%) by the benchmark's scorer over 370 PDFs (252 short, 98 medium, 20 long); Overall is the mean over all documents. Equal scores share a rank. \$/page and s/doc: the leaderboard's cost per page and latency per document (averaged over the 370 documents); DocQuorum's s/doc is measured on a random 20 (results/costs/), one document at a time on one shared GPU, and it has no price per call.}
 """)
 
 
@@ -505,7 +536,8 @@ def shown(v, digits):
     return Decimal(str(v)).quantize(Decimal(1).scaleb(-digits), rounding=ROUND_HALF_UP)
 
 
-def full_table(title, cols, align, rows, ours, digits, rank_col, note, best_cols=(), size=r"\scriptsize", stretch="0.95"):
+def full_table(title, cols, align, rows, ours, digits, rank_col, note, best_cols=(), size=r"\scriptsize", stretch="0.95",
+               col_digits=None):
     """Every published row and DocQuorum's, by the ranking column at the leaderboard's precision;
     equal shown scores share a rank; the best shown value of each column in best_cols underlined."""
     allrows = rows + [ours]
@@ -521,7 +553,7 @@ def full_table(title, cols, align, rows, ours, digits, rank_col, note, best_cols
         for j, c in enumerate(cols):
             v = r[c]
             if isinstance(v, (int, float)):
-                s = str(shown(v, digits))
+                s = str(shown(v, (col_digits or {}).get(c, digits)))
                 if c in best and shown(v, digits) == best[c]:
                     s = r"\underline{%s}" % s
             else:
@@ -568,11 +600,13 @@ full_table("UNIKIE-BENCH open category: complete results", ["System", ""] + ucol
            best_cols=tuple(ucols), size=r"\scriptsize", stretch="0.95")
 
 db_f = json.loads((RES / "docquorum-docubench.json").read_text())
-drows = [{"System": r["system"], "Accuracy": r["score"]} for r in json.loads((RES / "docubench-published.json").read_text())["systems"]]
-dours = {"System": "DocQuorum (ours)", "Accuracy": db_f["score"]}
-full_table("DocuBench: complete results", ["System", "Accuracy"], "Yr", drows, dours, 2, "Accuracy",
-           r"""\src{DocuBench v0.2.0 leaderboard (9 systems) and DocQuorum (final pipeline): macro field accuracy (\%) by the benchmark's own scorer over 72 documents in 10 file types (PDF, scans, photos, spreadsheets, Word, HTML, XML, CSV, text). The final pipeline's fixes were found on this benchmark.}""",
-           size=r"\footnotesize", stretch="1.15")
+drows = [{"System": r["system"], "Accuracy": r["score"], "\\$/doc": r.get("cost_usd_per_doc"), "s/doc": r.get("seconds_per_doc")}
+         for r in json.loads((RES / "docubench-published.json").read_text())["systems"]]
+dsec = COST.get("docubench", {}).get("per_document", {}).get("seconds")
+dours = {"System": "DocQuorum (ours)", "Accuracy": db_f["score"], "\\$/doc": None, "s/doc": dsec}
+full_table("DocuBench: complete results", ["System", "Accuracy", "\\$/doc", "s/doc"], "Yrrr", drows, dours, 2, "Accuracy",
+           r"""\src{DocuBench v0.2.0 leaderboard (9 systems) and DocQuorum (final pipeline): macro field accuracy (\%) by the benchmark's own scorer over 72 documents in 10 file types (PDF, scans, photos, spreadsheets, Word, HTML, XML, CSV, text). The final pipeline's fixes were found on this benchmark. \$/doc and s/doc: means of the cost and time each system's 72 result files record (-- where not recorded); DocQuorum runs open weights on one GPU (no price per call), its s/doc measured on a random 20, one document at a time on a shared H100.}""",
+           size=r"\footnotesize", stretch="1.15", col_digits={"\\$/doc": 2, "s/doc": 0})
 
 # ------------------------------------------------------------------ results on six benchmarks
 def place(score, published, digits):
@@ -591,29 +625,30 @@ pdb = [(r["system"], r["score"]) for r in load("docubench-published.json")["syst
 puk = [(n, v[-1]) for n, v, _ in urows]
 peb = [(r["Provider"], float(r["Overall"])) for r in lb]
 ORD = {1: "1st", 2: "2nd", 3: "3rd"}
-bench = [  # (name, ours, published, digits, note)
-    ("VAREX (1,777 government forms)", vx["score"], pv, 1, "with zoom re-reading"),
-    ("UNIKIE-BENCH (4,472 images)", u["score"], puk, 2, "with zoom re-reading"),
-    ("LongArray-Extract (45 long documents)", la["score"], pl, 1, ""),
-    ("UNIKIE-BENCH open category (1,661 documents)", uo["score"], puo, 2, "with zoom re-reading"),
-    ("ExtractBench (370 PDFs)", eb["score"], peb, 2, "development set"),
-    ("DocuBench (72 documents, 10 file types)", db["score"], pdb, 2, ""),
+bench = [  # (name, ours, published, digits, note, measured-cost file)
+    ("VAREX (1,777 forms)", vx["score"], pv, 1, "", "varex"),
+    ("UNIKIE-BENCH (4,472 images)", u["score"], puk, 2, "", "unikie"),
+    ("LongArray-Extract (45 documents)", la["score"], pl, 1, "", "longarray"),
+    ("UNIKIE-BENCH open (1,661 documents)", uo["score"], puo, 2, "", "unikie_open"),
+    ("ExtractBench (370 PDFs)", eb["score"], peb, 2, "development set", "extractbench"),
+    ("DocuBench (72 documents)", db["score"], pdb, 2, "", "docubench"),
 ]
 rows6 = ""
-for name, score, published, digits, note in sorted(bench, key=lambda b: place(b[1], b[2], b[3])):
+for name, score, published, digits, note, cb in sorted(bench, key=lambda b: place(b[1], b[2], b[3])):
     k = place(score, published, digits)
     top = max(published, key=lambda r: r[1])            # the best published system
     other = (r"next: %s %s" if k == 1 else r"1st: %s %s") % (esc(top[0]), f"{top[1]:.{digits}f}")
-    cells = [esc(name) + (r" {\footnotesize(%s)}" % note if note else ""), r"\textbf{%.2f}" % score,
-             (r"\textbf{%s}" if k == 1 else "%s") % f"{ORD.get(k, f'{k}th')} of {len(published) + 1}", esc(other)]
+    cells = [esc(name) + (r" {\scriptsize(%s)}" % note if note else ""), r"\textbf{%.2f}" % score,
+             (r"\textbf{%s}" if k == 1 else "%s") % f"{ORD.get(k, f'{k}th')} of {len(published) + 1}", esc(other),
+             cost(cb, "model_calls", 1), tokens(cb), cost(cb, "seconds")]
     rows6 += (r"\rowcolor{hl}" if k == 1 else "") + " & ".join(cells) + r"\\" + "\n"
-frame("Results on six benchmarks", r"""{\footnotesize\renewcommand{\arraystretch}{1.25}
-\begin{tabularx}{\textwidth}{@{}Yrll@{}}\toprule
-\textbf{Benchmark} & \textbf{DocQuorum} & \textbf{Place} & \textbf{Comparison}\\\midrule
+frame("Results on six benchmarks", r"""{\scriptsize\renewcommand{\arraystretch}{1.3}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}Yrllrrr@{}}\toprule
+\textbf{Benchmark} & \textbf{DocQuorum} & \textbf{Place} & \textbf{Comparison} & \textbf{Calls} & \textbf{Tokens in\,/\,out} & \textbf{s}\\\midrule
 """ + rows6 + r"""\bottomrule\end{tabularx}}
 
-\vspace{0.6em}
-{\small Each score is the benchmark's own scorer on the full test set, with open-weight models (Qwen3.8-27B and MinerU2.5) on one GPU. Places count every published system.\par}
+\vspace{0.4em}
+{\footnotesize Each score is the benchmark's own scorer on the full test set, with open-weight models (Qwen3.8-27B and MinerU2.5) on one GPU. Places count every published system. Calls, tokens in\,/\,out and seconds (s): means per document for the extraction model, measured on a random sample, one document at a time on one shared H100 (results/costs/).\par}
 \src{docs/results/: one complete table per benchmark (TABLES.md). No result was submitted to a leaderboard.}
 """)
 
