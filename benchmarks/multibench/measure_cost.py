@@ -69,11 +69,13 @@ for name, doc, schema, task in sample:
     row = {"document": name, "pages": pages, "status": status, "seconds": round(secs, 1),
            "route": rep.get("readings"), "model_calls": int(m1[0] - m0[0]),
            "model_input_tokens": int(m1[1] - m0[1]), "model_output_tokens": int(m1[2] - m0[2]),
-           "parser_calls": int(p1[0] - p0[0]), "parser_tokens": int(p1[1] - p0[1] + p1[2] - p0[2])}
+           "parser_calls": int(p1[0] - p0[0]), "parser_tokens": int(p1[1] - p0[1] + p1[2] - p0[2]),
+           "parser_input_tokens": int(p1[1] - p0[1]), "parser_output_tokens": int(p1[2] - p0[2])}
     rows.append(row)
     print(json.dumps(row), flush=True)
     keys = ["seconds", "model_calls", "model_input_tokens", "model_output_tokens", "parser_calls", "parser_tokens"]
     ok = [r for r in rows if r["status"] == "completed"]
+    keys += [k for k in ("parser_input_tokens", "parser_output_tokens") if all(k in r for r in ok)]
     pages_total = sum(r["pages"] for r in ok) or 1
     summary = {"benchmark": bench, "documents_measured": len(ok), "sample": f"random {n} (seed 0) of {len(items)}",
                "pipeline": "v1.3 (docs/DESIGN.md)", "hardware": "one H100 NVL, shared with other accounts' jobs",

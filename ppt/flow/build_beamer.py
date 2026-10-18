@@ -7,6 +7,7 @@ Every number on the slides comes from ppt/flow/assets/*.json or docs/results/.
 import csv
 import json
 import subprocess
+import sys
 from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 
@@ -17,18 +18,18 @@ RES = ROOT / "docs" / "results"
 facts = json.loads((A / "facts.json").read_text())
 quorum = json.loads((A / "quorum_example.json").read_text())
 unikie_ex = json.loads((A / "unikie_example.json").read_text())
-COST = {f.stem: json.loads(f.read_text()) for f in sorted((ROOT / "results" / "costs").glob("*.json"))}
+sys.path.insert(0, str(RES))
+import pricing as PR  # noqa: E402
+COST = {f.stem: json.loads(f.read_text()) for f in sorted(PR.COSTS.glob("*.json"))}
+MEASURED = {b: PR.measured(b) for b in COST}
+PRICE = PR.PRICES["usd_per_million_tokens"]
+QWEN = PRICE["qwen3.8-27b"]
 
 
 def cost(bench, key, digits=0):
-    """A measured mean per document of results/costs/<bench>.json, or '--' when not measured."""
-    c = COST.get(bench, {}).get("per_document", {}).get(key)
+    """A measured mean per document (results/costs/<bench>.json, priced by docs/results/pricing.py), or '--'."""
+    c = (MEASURED.get(bench) or {}).get(key)
     return "--" if c is None else f"{c:,.{digits}f}"
-
-
-def tokens(bench):
-    d = COST.get(bench, {}).get("per_document")
-    return "--" if not d else f"{d['model_input_tokens'] / 1000:.0f}k\\,/\\,{d['model_output_tokens'] / 1000:.1f}k"
 
 
 def esc(s):
@@ -457,8 +458,9 @@ assert rk[full.index(ours)] == 3 and len(full) == 48
 
 
 def eb_cost(r):
-    if r.get("ours"):
-        return "--"                     # open weights on one GPU: no price per call
+    if r.get("ours"):                   # measured tokens at the open model's list price
+        c = cost("extractbench", "usd_per_page", 3)
+        return c + r"$^{\mathrm{e}}$" if c != "--" else c
     v = r.get("Cost_Per_Page")
     return f"{float(v):.3f}" if v not in (None, "") else "--"
 
@@ -489,8 +491,8 @@ def eb_table(part, lo, hi):
         t += (r"\rowcolor{hl}" if mine else "") + " & ".join(cells) + r"\\" + "\n"
     t += r"\bottomrule\end{tabularx}}"
     frame(r"ExtractBench: complete results (%d/3)" % part, t + r"""
-\src{ExtractBench leaderboard, snapshot of 2 October 2026 (47 published systems) and DocQuorum. Value F1 (\%) by the benchmark's scorer over 370 PDFs (252 short, 98 medium, 20 long); Overall is the mean over all documents. Equal scores share a rank. \$/page and s/doc: the leaderboard's cost per page and latency per document (averaged over the 370 documents); DocQuorum's s/doc is measured on a random 20 (results/costs/), one document at a time on one shared GPU, and it has no price per call.}
-""")
+\src{ExtractBench leaderboard, snapshot of 2 October 2026 (47 published systems) and DocQuorum. Value F1 (\%) by the benchmark's scorer over 370 PDFs (252 short, 98 medium, 20 long); Overall is the mean over all documents. Equal scores share a rank. \$/page and s/doc: the leaderboard's cost per page and latency per document (averaged over the 370 documents); -- not published (the leaderboard does not price the open models it ran itself). e: DocQuorum's tokens measured on a random 20, priced at the Qwen3.8-27B list price (Alibaba Cloud, \$QIN / \$QOUT per million input / output tokens); it runs on its own GPU, one document at a time for the timing.}
+""".replace("QIN", f"{QWEN['input']:.2f}").replace("QOUT", f"{QWEN['output']:.2f}"))
 
 
 eb_table(1, 0, 16)
@@ -551,13 +553,14 @@ def full_table(title, cols, align, rows, ours, digits, rank_col, note, best_cols
         mine = r is ours
         cells = [str(1 + sum(key(o) > key(r) for o in allrows))]
         for j, c in enumerate(cols):
-            v = r[c]
+            v, mark = r[c] if isinstance(r[c], tuple) else (r[c], "")
             if isinstance(v, (int, float)):
                 s = str(shown(v, (col_digits or {}).get(c, digits)))
                 if c in best and shown(v, digits) == best[c]:
                     s = r"\underline{%s}" % s
             else:
                 s = esc(str(v)) if v is not None else "--"
+            s += r"$^{\mathrm{%s}}$" % mark if mark else ""
             cells.append(r"\textbf{%s}" % s if mine else s)
         t += (r"\rowcolor{hl}" if mine else "") + " & ".join(cells) + r"\\" + "\n"
     t += r"\bottomrule\end{tabularx}}"
@@ -600,12 +603,17 @@ full_table("UNIKIE-BENCH open category: complete results", ["System", ""] + ucol
            best_cols=tuple(ucols), size=r"\scriptsize", stretch="0.95")
 
 db_f = json.loads((RES / "docquorum-docubench.json").read_text())
-drows = [{"System": r["system"], "Accuracy": r["score"], "\\$/doc": r.get("cost_usd_per_doc"), "s/doc": r.get("seconds_per_doc")}
+drows = [{"System": r["system"], "Accuracy": r["score"], "s/doc": r["seconds_per_doc"],
+          "\\$/doc": (r["cost_usd_per_doc"], "" if r["cost_basis"] == "recorded" else "c")}
          for r in json.loads((RES / "docubench-published.json").read_text())["systems"]]
-dsec = COST.get("docubench", {}).get("per_document", {}).get("seconds")
-dours = {"System": "DocQuorum (ours)", "Accuracy": db_f["score"], "\\$/doc": None, "s/doc": dsec}
+dm = MEASURED.get("docubench") or {}
+dours = {"System": "DocQuorum (ours)", "Accuracy": db_f["score"], "s/doc": dm.get("seconds"),
+         "\\$/doc": (dm["usd"], "e") if dm else None}
 full_table("DocuBench: complete results", ["System", "Accuracy", "\\$/doc", "s/doc"], "Yrrr", drows, dours, 2, "Accuracy",
-           r"""\src{DocuBench v0.2.0 leaderboard (9 systems) and DocQuorum (final pipeline): macro field accuracy (\%) by the benchmark's own scorer over 72 documents in 10 file types (PDF, scans, photos, spreadsheets, Word, HTML, XML, CSV, text). The final pipeline's fixes were found on this benchmark. \$/doc and s/doc: means of the cost and time each system's 72 result files record (-- where not recorded); DocQuorum runs open weights on one GPU (no price per call), its s/doc measured on a random 20, one document at a time on a shared H100.}""",
+           r"""\src{DocuBench v0.2.0 leaderboard (9 systems) and DocQuorum (final pipeline): macro field accuracy (\%) by the benchmark's own scorer over 72 documents in 10 file types (PDF, scans, photos, spreadsheets, Word, HTML, XML, CSV, text). The final pipeline's fixes were found on this benchmark. \$/doc and s/doc: means over each system's 72 result files of its recorded cost and time; c: computed from its recorded tokens at list price (GPT-5.5 \$GIN / \$GOUT, Gemini 3.5 Flash \$FIN / \$FOUT per million input / output tokens) or, for Unstructured, its pages at DocuBench's \$0.03 per page. e: DocQuorum's tokens measured on a random 20 documents, priced at the Qwen3.8-27B list price (Alibaba Cloud, \$QIN / \$QOUT); it runs on its own GPU, one document at a time on a shared H100 for s/doc.}""".replace(
+               "GIN", f"{PRICE['gpt-5.5']['input']:g}").replace("GOUT", f"{PRICE['gpt-5.5']['output']:g}").replace(
+               "FIN", f"{PRICE['gemini-3.5-flash']['input']:.2f}").replace("FOUT", f"{PRICE['gemini-3.5-flash']['output']:g}").replace(
+               "QIN", f"{QWEN['input']:.2f}").replace("QOUT", f"{QWEN['output']:.2f}"),
            size=r"\footnotesize", stretch="1.15", col_digits={"\\$/doc": 2, "s/doc": 0})
 
 # ------------------------------------------------------------------ results on six benchmarks
@@ -640,17 +648,107 @@ for name, score, published, digits, note, cb in sorted(bench, key=lambda b: plac
     other = (r"next: %s %s" if k == 1 else r"1st: %s %s") % (esc(top[0]), f"{top[1]:.{digits}f}")
     cells = [esc(name) + (r" {\scriptsize(%s)}" % note if note else ""), r"\textbf{%.2f}" % score,
              (r"\textbf{%s}" if k == 1 else "%s") % f"{ORD.get(k, f'{k}th')} of {len(published) + 1}", esc(other),
-             cost(cb, "model_calls", 1), tokens(cb), cost(cb, "seconds")]
+             cost(cb, "model_calls", 1), cost(cb, "usd", 3), cost(cb, "seconds")]
     rows6 += (r"\rowcolor{hl}" if k == 1 else "") + " & ".join(cells) + r"\\" + "\n"
 frame("Results on six benchmarks", r"""{\scriptsize\renewcommand{\arraystretch}{1.3}\setlength{\tabcolsep}{4pt}
 \begin{tabularx}{\textwidth}{@{}Yrllrrr@{}}\toprule
-\textbf{Benchmark} & \textbf{DocQuorum} & \textbf{Place} & \textbf{Comparison} & \textbf{Calls} & \textbf{Tokens in\,/\,out} & \textbf{s}\\\midrule
+\textbf{Benchmark} & \textbf{DocQuorum} & \textbf{Place} & \textbf{Comparison} & \textbf{Calls} & \textbf{\$} & \textbf{s}\\\midrule
 """ + rows6 + r"""\bottomrule\end{tabularx}}
 
 \vspace{0.4em}
-{\footnotesize Each score is the benchmark's own scorer on the full test set, with open-weight models (Qwen3.8-27B and MinerU2.5) on one GPU. Places count every published system. Calls, tokens in\,/\,out and seconds (s): means per document for the extraction model, measured on a random sample, one document at a time on one shared H100 (results/costs/).\par}
+{\footnotesize Each score is the benchmark's own scorer on the full test set, with open-weight models (Qwen3.8-27B and MinerU2.5) on one GPU. Places count every published system. Calls, dollars (\$) and seconds (s): means per document, measured on a random sample one document at a time on one shared H100 (results/costs/); \$ prices the measured tokens at the Qwen3.8-27B list price, since the pipeline itself pays no price per call.\par}
 \src{docs/results/: one complete table per benchmark (TABLES.md). No result was submitted to a leaderboard.}
 """)
+
+# ------------------------------------------------------------------ what a document costs
+def cost_chart(path):
+    """Accuracy against cost: DocuBench ($ per document) and ExtractBench ($ per page), every priced system."""
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    from matplotlib.ticker import FuncFormatter, LogLocator, NullFormatter
+    fig, axes = plt.subplots(1, 2, figsize=(10, 3.7), dpi=200)
+    panels = [
+        ("DocuBench: 72 documents", r"\$ per document (log scale)",
+         [(r["system"], r["cost_usd_per_doc"], r["score"]) for r in load("docubench-published.json")["systems"]],
+         (MEASURED.get("docubench") or {}).get("usd"), db["score"]),
+        ("ExtractBench: 370 PDFs", r"\$ per page (log scale)",
+         [(r["Provider"], float(r["Cost_Per_Page"]), float(r["Overall"])) for r in lb if r.get("Cost_Per_Page")],
+         (MEASURED.get("extractbench") or {}).get("usd_per_page"), eb["score"]),
+    ]
+    for ax, (title, xlabel, pts, our_x, our_y) in zip(axes, panels):
+        ax.scatter([x for _, x, _ in pts], [y for _, _, y in pts], s=22, color="#8a94a6", zorder=2)
+        # name the best two and the cheapest system within five points of the best
+        ranked = sorted(pts, key=lambda q: -q[2])
+        close = [q for q in ranked[2:] if q[2] >= ranked[0][2] - 5]
+        named = ranked[:2] + ([min(close, key=lambda q: q[1])] if close else [])
+        for (name, x, y), off in zip(named, [(-6, 7), (6, -11), (6, 4)]):
+            ax.annotate(name, (x, y), textcoords="offset points", xytext=off, fontsize=6.5, color="#4a5466",
+                        ha="right" if off[0] < 0 else "left")
+        if our_x:
+            ax.scatter([our_x], [our_y], s=60, color="#c0392b", zorder=3, marker="D")
+            ax.annotate("DocQuorum (est.)", (our_x, our_y), textcoords="offset points", xytext=(0, -16),
+                        fontsize=8, color="#c0392b", weight="bold", ha="center")
+        ax.set_xscale("log")
+        ax.xaxis.set_major_locator(LogLocator(subs=(1, 2, 5)))
+        ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f"${v:g}"))
+        ax.xaxis.set_minor_formatter(NullFormatter())
+        ax.set_title(title, fontsize=10)
+        ax.set_xlabel(xlabel, fontsize=8)
+        ax.set_ylabel("accuracy (%)", fontsize=8)
+        ax.tick_params(labelsize=7)
+        ax.grid(alpha=0.3, which="both")
+        lo = min(y for _, _, y in pts + [("", 0, our_y)])
+        ax.set_ylim(max(lo - 3, 40), 100)
+    fig.tight_layout()
+    fig.savefig(path)
+    plt.close(fig)
+
+
+cost_chart(A / "cost_accuracy.png")
+dbm, ebm, vxm = (MEASURED.get(b) or {} for b in ("docubench", "extractbench", "varex"))
+frame("Accuracy against cost", r"""
+\centering\includegraphics[width=\textwidth,height=5.3cm,keepaspectratio]{assets/cost_accuracy.png}\par
+{\scriptsize Grey: every published system with a cost; red: DocQuorum, its measured tokens priced at the Qwen3.8-27B list price (\$QIN / \$QOUT per million input / output tokens), mean of a random sample (DOCN DocuBench documents, EBN ExtractBench documents). Published costs: DocuBench result files (some computed from their tokens) and the ExtractBench leaderboard.\par}
+""".replace("QIN", f"{QWEN['input']:.2f}").replace("QOUT", f"{QWEN['output']:.2f}").replace(
+    "DOCN", str(dbm.get("documents", 0))).replace("EBN", str(ebm.get("documents", 0))))
+
+rows_db = [r for r in COST.get("docubench", {}).get("documents", []) if r.get("status") == "completed"]
+one = [r for r in rows_db if len(r.get("route") or []) == 1]
+many = [r for r in rows_db if len(r.get("route") or []) > 1]
+mean = lambda xs: sum(xs) / max(1, len(xs))
+worst = max(rows_db, key=PR.document_usd) if rows_db else None
+eb_qwen = next((float(r["Overall"]) for r in lb if r["Provider"] == "Qwen3.8 27B"), None)
+claude_out = 15.0                       # DocuBench's own runner: Claude Sonnet 5 at $3 / $15 per million tokens
+frame("Why a document costs little, and when it costs more", r"""
+\begin{columns}[T]
+\column{0.53\textwidth}
+\begin{block}{Why it costs little}
+\footnotesize
+\textbf{One reading when the file has text.} On DocuBench, ONEN of DOCN sampled documents took one model call, \$ONEUSD each.\\[0.3em]
+\textbf{More readings only for scans}; zoom re-reads only disputed fields a new vote could change. A VAREX form takes VXCALLS calls (three readings plus zoom).\\[0.3em]
+\textbf{An open 27B model}: \$QOUT per million output tokens at list price, a tenth of GPT-5.5 (\$GOUT) and a fifth of Claude Sonnet 5 (\$CLOUT); on one GPU, no price per call at all.\\[0.3em]
+\textbf{Accuracy from the pipeline, not a bigger model.} Qwen3.8-27B called directly scores EBQ on ExtractBench; DocQuorum with it, EBOURS.
+\end{block}
+\column{0.43\textwidth}
+\begin{block}{When it costs more}
+\footnotesize
+Scanned documents get three readings and a quorum: MANYN sampled DocuBench documents, MANYCALLS calls and \$MANYUSD each on average.\\[0.35em]
+Long scans whose rows repeat cost most: a chunk that loops is read again. The costliest sample, WORSTNAME (WORSTP pages), took WORSTC calls, \$WORSTUSD and WORSTMIN minutes.
+\end{block}
+\end{columns}
+\src{results/costs/: every measured document (calls, tokens, seconds); prices in docs/results/pricing.json.}
+""".replace("ONEN", str(len(one))).replace("DOCN", str(len(rows_db))).replace(
+    "ONEUSD", f"{mean([PR.document_usd(r) for r in one]):.3f}").replace(
+    "VXCALLS", f"{vxm.get('model_calls', 0):.1f}").replace("QOUT", f"{QWEN['output']:g}").replace(
+    "GOUT", f"{PRICE['gpt-5.5']['output']:g}").replace("CLOUT", f"{claude_out:g}").replace(
+    "EBQ", f"{eb_qwen:.2f}").replace("EBOURS", f"{eb['score']:.2f}").replace("MANYN", str(len(many))).replace(
+    "MANYCALLS", f"{mean([r['model_calls'] for r in many]):.0f}").replace(
+    "MANYUSD", f"{mean([PR.document_usd(r) for r in many]):.2f}").replace(
+    "WORSTNAME", esc(worst["document"]) if worst else "--").replace("WORSTP", str(worst["pages"]) if worst else "--").replace(
+    "WORSTC", str(worst["model_calls"]) if worst else "--").replace(
+    "WORSTUSD", f"{PR.document_usd(worst):.2f}" if worst else "--").replace(
+    "WORSTMIN", f"{worst['seconds'] / 60:.0f}" if worst else "--"))
 
 zv = load("../../results/varex-zoom/comparison.json")
 zu = json.loads((ROOT / "results/unikie_open/zoom/comparison.json").read_text())

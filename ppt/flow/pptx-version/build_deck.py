@@ -5,6 +5,7 @@ results tables. Every number on the slides comes from ppt/flow/assets/*.json or 
 """
 import csv
 import json
+import sys
 from decimal import Decimal
 from pathlib import Path
 
@@ -454,12 +455,16 @@ with (res / "extractbench-leaderboard.csv").open(newline="") as fh:
     lb = sorted(csv.DictReader(fh), key=lambda r: (-Decimal(r["Overall"]), Decimal(r["Cost_Per_Page"] or "Infinity")))
 ours = {"Provider": "DocQuorum (ours, open 27B)", "Overall": eb["score"], "Short": eb["per_split"]["short"],
         "Medium": eb["per_split"]["medium"], "Long": eb["per_split"]["long"], "ours": True}
-costs = ROOT / "results" / "costs" / "extractbench.json"
-our_secs = json.loads(costs.read_text())["per_document"]["seconds"] if costs.exists() else None
+sys.path.insert(0, str(res))
+import pricing  # noqa: E402
+our_cost = pricing.measured("extractbench") or {}
+our_secs = our_cost.get("seconds")
 
 
 def per_page(r):
-    return "–" if r.get("ours") or not r.get("Cost_Per_Page") else f"{float(r['Cost_Per_Page']):.3f}"
+    if r.get("ours"):                 # measured tokens at the open model's list price
+        return f"{our_cost['usd_per_page']:.3f}*" if our_cost else "–"
+    return f"{float(r['Cost_Per_Page']):.3f}" if r.get("Cost_Per_Page") else "–"
 
 
 def per_doc_secs(r):
@@ -479,7 +484,8 @@ rank = [1 + sum(x > v for x in scores) for v in scores]
 s = slide(None, "", "ExtractBench: DocQuorum is 3rd of 48",
           source=f"ExtractBench leaderboard snapshot (2 October 2026, {len(lb)} published systems); value F1 (%) "
                  "by the benchmark's scorer; $/page and s/doc as published (s/doc averaged over the 370 documents). "
-                 "DocQuorum: open weights on one shared GPU, no price per call; s/doc measured on a random 20. "
+                 "– not published (open models the leaderboard ran itself). *DocQuorum: open weights on one GPU, "
+                 "no price per call; its measured tokens (random 20) priced at the Qwen3.8-27B list price. "
                  "Full table: docs/docquorum.pdf.",
           notes="370 enterprise PDFs: 252 short, 98 medium, 20 long. Overall is the mean over all documents. "
                 "DocQuorum uses the open Qwen3.8-27B model; the two systems above it are commercial.")

@@ -78,10 +78,12 @@ for sc, (name, imgs, template, kept, others) in sample:
     row = {"document": f"{sc}/{name}", "pages": len(imgs), "seconds": round(secs, 1),
            "model_calls": int(m1[0] - m0[0]) + len(OTHER), "model_input_tokens": int(m1[1] - m0[1]),
            "model_output_tokens": int(m1[2] - m0[2]), "parser_calls": int(p1[0] - p0[0]),
-           "parser_tokens": int(p1[1] - p0[1] + p1[2] - p0[2])}
+           "parser_tokens": int(p1[1] - p0[1] + p1[2] - p0[2]), "parser_input_tokens": int(p1[1] - p0[1]),
+           "parser_output_tokens": int(p1[2] - p0[2])}
     rows.append(row)
     print(json.dumps(row), flush=True)
-keys = ["seconds", "model_calls", "model_input_tokens", "model_output_tokens", "parser_calls", "parser_tokens"]
+keys = ["seconds", "model_calls", "model_input_tokens", "model_output_tokens", "parser_calls", "parser_tokens",
+        "parser_input_tokens", "parser_output_tokens"]
 pages = sum(r["pages"] for r in rows) or 1
 out_file.write_text(json.dumps({
     "benchmark": "UNIKIE-BENCH, " + ("open" if Z.OPEN else "constrained") + " category",

@@ -11,64 +11,73 @@
    "folder": "docupipe_high",
    "score": 97.0169874,
    "cost_usd_per_doc": 0.5419,
-   "seconds_per_doc": 195.7
+   "seconds_per_doc": 195.7,
+   "cost_basis": "recorded"
   },
   {
    "system": "DocuPipe (standard effort)",
    "folder": "docupipe_standard",
    "score": 96.140127,
    "cost_usd_per_doc": 0.1068,
-   "seconds_per_doc": 73.4
+   "seconds_per_doc": 73.4,
+   "cost_basis": "recorded"
   },
   {
    "system": "Claude Sonnet 5 (direct LLM)",
    "folder": "claude5",
    "score": 91.7323502,
    "cost_usd_per_doc": 0.2882,
-   "seconds_per_doc": 90.7
+   "seconds_per_doc": 90.7,
+   "cost_basis": "recorded"
   },
   {
    "system": "Reducto Deep Extract",
    "folder": "reducto",
    "score": 89.3791578,
    "cost_usd_per_doc": 0.7011,
-   "seconds_per_doc": 203.7
+   "seconds_per_doc": 203.7,
+   "cost_basis": "recorded"
   },
   {
    "system": "Reducto (standard)",
    "folder": "reducto_standard",
    "score": 81.1109606,
    "cost_usd_per_doc": 0.3596,
-   "seconds_per_doc": 65.9
+   "seconds_per_doc": 65.9,
+   "cost_basis": "recorded"
   },
   {
    "system": "Extend",
    "folder": "extend",
    "score": 80.2766937,
    "cost_usd_per_doc": 0.3972,
-   "seconds_per_doc": 48.5
+   "seconds_per_doc": 48.5,
+   "cost_basis": "recorded"
   },
   {
    "system": "GPT-5.5 (direct LLM)",
    "folder": "gpt",
    "score": 76.477566,
-   "cost_usd_per_doc": null,
-   "seconds_per_doc": 70.5
+   "cost_usd_per_doc": 0.1828,
+   "seconds_per_doc": 70.5,
+   "cost_basis": "computed"
   },
   {
    "system": "Gemini 3.5 Flash (direct LLM)",
    "folder": "gemini",
    "score": 72.9754707,
-   "cost_usd_per_doc": null,
-   "seconds_per_doc": 53.9
+   "cost_usd_per_doc": 0.1205,
+   "seconds_per_doc": 53.9,
+   "cost_basis": "computed"
   },
   {
    "system": "Unstructured",
    "folder": "unstructured",
    "score": 67.6743968,
-   "cost_usd_per_doc": null,
-   "seconds_per_doc": 630.3
+   "cost_usd_per_doc": 0.22,
+   "seconds_per_doc": 630.3,
+   "cost_basis": "computed_pages"
   }
  ],
- "cost_note": "cost_usd_per_doc and seconds_per_doc: means over the 72 per-document result files (results/<system>/<doc>.json, fields cost and time_sec); null where a system's files do not record cost for every document, or record 0 throughout"
+ "cost_note": "cost_usd_per_doc and seconds_per_doc: means over the 72 per-document result files (results/<system>/<doc>.json, fields cost and time_sec), by docs/results/docubench_costs.py. cost_basis 'recorded': the system's own cost; 'computed': its recorded token usage at list price (pricing.json; Gemini's thinking tokens billed as output, as DocuBench's runner does); 'computed_pages': its recorded pages at the runner's own $0.03 per page."
 }

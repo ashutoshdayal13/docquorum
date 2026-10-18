@@ -1,0 +1,24 @@
+{
+ "retrieved_utc": "2026-10-18",
+ "note": "List prices used to put a dollar figure on token counts. DocQuorum runs open weights on its own GPU, so it has no bill per call; its dollar figure is what the same tokens would cost through the model publisher's API. Published systems keep their own recorded cost where they have one.",
+ "usd_per_million_tokens": {
+  "qwen3.8-27b": {"input": 0.50, "output": 3.00,
+                  "source": "Alibaba Cloud Model Studio, model pricing, Singapore (international) region, single tier",
+                  "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing"},
+  "gpt-5.5": {"input": 5.00, "output": 30.00,
+              "source": "OpenAI API pricing, standard tier, short context (up to 272K input tokens)",
+              "url": "https://developers.openai.com/api/docs/pricing"},
+  "gemini-3.5-flash": {"input": 1.50, "output": 9.00, "output_includes_thinking": true,
+                       "source": "launch list price as recorded by price trackers; Google's pricing page (updated 2026-10-16) no longer lists the model",
+                       "url": "https://pricepertoken.com/pricing-page/model/google-gemini-3.5-flash"}
+ },
+ "usd_per_page": {
+  "unstructured": {"price": 0.03, "source": "DocuBench's own runner, scripts/run_unstructured.py (UNSTRUCTURED_PER_PAGE_USD)"}
+ },
+ "parser": {
+  "priced_as": "qwen3.8-27b",
+  "why": "MinerU2.5 (1.2B parameters) has no API price; pricing its tokens at the 27B model's rates overstates its cost",
+  "input_share_when_not_recorded": 0.784,
+  "input_share_source": "the parser server's own counters over all its use on this machine (56.66M prompt, 15.62M generated tokens, 2026-10-18); used only for documents measured before input and output were recorded separately"
+ }
+}
