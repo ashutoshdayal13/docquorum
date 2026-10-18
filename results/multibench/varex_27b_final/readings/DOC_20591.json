@@ -1,0 +1,80 @@
+{
+ "primary": {
+  "owner": "Lourdes D. Jansdr",
+  "date": "06/15/2023",
+  "project_name": "Green Meadows Apartments",
+  "project_number": 2023.001,
+  "type_of_building": "Multi-family Residential",
+  "equipment_services": "Security System",
+  "residential_accessory_income": "Laundry Services",
+  "commercial_area": "5000 sq ft",
+  "estimated_monthly_commercial_rental": "$3445.34",
+  "estimated_project_development_cost": 908242.57,
+  "unit_costs_limit": 150000,
+  "cash_at_closing": 83.51,
+  "project_rental_assistance_authority": 50000,
+  "contact_person": "Ryan Arguello",
+  "special_conditions": "Environmental impact assessment required",
+  "housing_development_director": "Jeremy Pierce",
+  "project_location": {
+   "street_address": "867 Shaffer Ramp, West Courtney, PA 91755",
+   "city_state": "West Courtney, PA",
+   "location": "Urban"
+  },
+  "project_composition": {
+   "total_units": 120
+  }
+ },
+ "parse": {
+  "owner": "Lourdes D. Jansdr",
+  "date": "06/15/2023",
+  "project_name": "Green Meadows Apartments",
+  "project_number": 2023.001,
+  "type_of_building": "Multi-family Residential",
+  "equipment_services": "Security System",
+  "residential_accessory_income": "Laundry Services",
+  "commercial_area": "5000 sq ft",
+  "estimated_monthly_commercial_rental": "$3445.34",
+  "estimated_project_development_cost": 908242.57,
+  "unit_costs_limit": 150000,
+  "cash_at_closing": 83.51,
+  "project_rental_assistance_authority": 50000,
+  "contact_person": "Ryan Arguello",
+  "special_conditions": "Environmental impact assessment required",
+  "housing_development_director": "Jeremy Pierce",
+  "project_location": {
+   "street_address": "867 Shaffer Ramp, West Courtney, PA 91755",
+   "city_state": "West Courtney, PA",
+   "location": "Urban"
+  },
+  "project_composition": {
+   "total_units": 120
+  }
+ },
+ "oneshot": {
+  "owner": "Lourdes D. Jansdr",
+  "date": "06/15/2023",
+  "project_name": "Green Meadows Apartments",
+  "project_number": 2023.001,
+  "type_of_building": "Multi-family Residential",
+  "equipment_services": "Security System",
+  "residential_accessory_income": "Laundry Services",
+  "commercial_area": "5000 sq ft",
+  "estimated_monthly_commercial_rental": "$3445.34",
+  "estimated_project_development_cost": 908242.57,
+  "unit_costs_limit": 150000,
+  "cash_at_closing": 83.51,
+  "project_rental_assistance_authority": 50000,
+  "contact_person": "Ryan Arguello",
+  "special_conditions": "Environmental impact assessment required",
+  "housing_development_director": "Jeremy Pierce",
+  "project_location": {
+   "street_address": "867 Shaffer Ramp, West Courtney, PA 91755",
+   "city_state": "West Courtney, PA",
+   "location": "Urban"
+  },
+  "project_composition": {
+   "total_units": 120
+  }
+ }
+}

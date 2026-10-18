@@ -1,0 +1,20 @@
+{
+ "driver_last_name": "da Rocha",
+ "driver_first_name": "Kevin",
+ "date_of_birth": "08/17/1985",
+ "driver_license_id": "815306895",
+ "state_licensed": "",
+ "endorsements": "Hazar",
+ "restrictions": "None",
+ "license_expiration_date": "08/17/2025",
+ "carrier_dba_name": "Wang-Pitts Transportation Services",
+ "carrier_legal_name": "Wang-Pitts Inc.",
+ "federal_id_number": 123456789,
+ "business_id_number": 12345,
+ "vehicle_seating": "10",
+ "vehicle_svwr": "26000 lbs",
+ "examiner_name": "Amanda Hawkins",
+ "examiner_license_id": "070175664",
+ "certificate_number": "CERT-20",
+ "certification_class": "Class A CDL"
+}

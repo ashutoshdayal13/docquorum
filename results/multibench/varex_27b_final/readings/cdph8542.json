@@ -1,0 +1,23 @@
+{
+ "primary": {
+  "name": "Blanka Lynch",
+  "client_id": "ADAP123456",
+  "email": "blanka.lynch@gmail.com",
+  "phone_number": "(821) 964-6064",
+  "best_time_to_reach": "9:00 AM - 5:00 PM"
+ },
+ "parse": {
+  "name": "Blanka Lynch",
+  "client_id": "ADAP123456",
+  "email": "blanka.lynch@gmail.com",
+  "phone_number": "(821) 964-6064",
+  "best_time_to_reach": "9:00 AM - 5:00 PM"
+ },
+ "oneshot": {
+  "name": "Blanka Lynch",
+  "client_id": "ADAP123456",
+  "email": "blanka.lynch@gmail.com",
+  "phone_number": "(821) 964-6064",
+  "best_time_to_reach": "9:00 AM - 5:00 PM"
+ }
+}

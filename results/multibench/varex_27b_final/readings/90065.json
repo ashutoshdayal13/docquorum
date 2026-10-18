@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "agreement_date": "05/15/2021",
+  "owner_name": "Jerry Gollum",
+  "owner_type": "Individual",
+  "property_location": "533 Rush Village, Blackburnside, NE 60592",
+  "property_county": "Blackburnside",
+  "property_state": "NE",
+  "project_name_full": "Blackburnside Residential Project Apartments",
+  "loan_date": "05/10/2021",
+  "property_info": {
+   "fha_project_no": "FHA-2021-001",
+   "project_name": "Blackburnside Residential Project Phase 1"
+  }
+ },
+ "parse": {
+  "agreement_date": "05/15/2021",
+  "owner_name": "Jerry Gollum",
+  "owner_type": "Individual",
+  "property_location": "533 Rush Village, Blackburnside, NE 60592",
+  "property_county": "Blackburnside",
+  "property_state": "NE",
+  "project_name_full": "Blackburnside Residential Project Apartments",
+  "loan_date": "05/10/2021",
+  "property_info": {
+   "fha_project_no": "FHA-2021-001",
+   "project_name": "Blackburnside Residential Project Phase 1"
+  }
+ },
+ "oneshot": {
+  "agreement_date": "05/15/2021",
+  "owner_name": "Jerry Gollum",
+  "owner_type": "Individual",
+  "property_location": "533 Rush Village, Blackburnside, NE 60592",
+  "property_county": "Blackburnside",
+  "property_state": "NE",
+  "project_name_full": "Blackburnside Residential Project Apartments",
+  "loan_date": "05/10/2021",
+  "property_info": {
+   "fha_project_no": "FHA-2021-001",
+   "project_name": "Blackburnside Residential Project Phase 1"
+  }
+ }
+}

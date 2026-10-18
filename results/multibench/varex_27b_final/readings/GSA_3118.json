@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "date": "03/15/2024",
+  "agency_name": "Department of Interior, Bureau of Land Management",
+  "agency_report_number": "INTERIOR-BLM-2024-0315-001",
+  "reimbursable_authority": "Public Law 109-366, Section",
+  "government_load_extent": "Government will load all items to the designated carrier",
+  "other_information": "Special handling required for items marked as fragile",
+  "return_address": "GSA Central Office, 1800 F St NW, Washington, DC 20405",
+  "property_items": [
+   {
+    "item_numbers": [
+     "BLM-2024-0315-001"
+    ]
+   }
+  ]
+ },
+ "parse": {
+  "date": "03/15/2024",
+  "agency_name": "Department of Interior, Bureau of Land Management",
+  "agency_report_number": "INTERIOR-BLM-2024-0315-001",
+  "reimbursable_authority": "Public Law 109-366, Section",
+  "government_load_extent": "Government will load all items to the designated carrier",
+  "other_information": "Special handling required for items marked as fragile",
+  "return_address": "GSA Central Office, 1800 F St NW, Washington, DC 20405",
+  "property_items": [
+   {
+    "item_numbers": [
+     "BLM-2024-0315-001"
+    ]
+   }
+  ]
+ },
+ "oneshot": {
+  "date": "03/15/2024",
+  "agency_name": "Department of Interior, Bureau of Land Management",
+  "agency_report_number": "INTERIOR-BLM-2024-0315-001",
+  "reimbursable_authority": "Public Law 109-366, Section",
+  "government_load_extent": "Government will load all items to the designated carrier",
+  "other_information": "Special handling required for items marked as fragile",
+  "return_address": "GSA Central Office, 1800 F St NW, Washington, DC 20405",
+  "property_items": [
+   {
+    "item_numbers": [
+     "BLM-2024-0315-001"
+    ]
+   }
+  ]
+ }
+}

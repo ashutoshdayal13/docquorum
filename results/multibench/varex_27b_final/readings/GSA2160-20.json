@@ -1,0 +1,23 @@
+{
+ "primary": {
+  "employee_name": "Cortez, Crystal",
+  "correspondence_symbol": "PO-2020-45917",
+  "employee_signature_date": "03/15/2023",
+  "ethics_trainer_name": "Evans, Ronaldo G.",
+  "ethics_trainer_signature_date": "03/15/2023"
+ },
+ "parse": {
+  "employee_name": "Cortez, Crystal",
+  "correspondence_symbol": "PO-2020-45917",
+  "employee_signature_date": "03/15/2023",
+  "ethics_trainer_name": "Evans, Ronaldo G.",
+  "ethics_trainer_signature_date": "03/15/2023"
+ },
+ "oneshot": {
+  "employee_name": "Cortez, Crystal",
+  "correspondence_symbol": "PO-2020-45917",
+  "employee_signature_date": "03/15/2023",
+  "ethics_trainer_name": "Evans, Ronaldo G.",
+  "ethics_trainer_signature_date": "03/15/2023"
+ }
+}

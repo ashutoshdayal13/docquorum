@@ -1,0 +1,17 @@
+{
+ "name_of_public_housing_agency": "Gonzalezbury Housing Authority",
+ "requested_lease_start_date": "06/01/2023",
+ "number_of_bedrooms": 3,
+ "year_constructed": "2005",
+ "proposed_rent": "$1200.00",
+ "security_deposit_amount": "$1200.00",
+ "date_unit_available_for_inspection": "05/15/2023",
+ "utilities_and_appliances": [
+  "Electricity",
+  "Water",
+  "Gas",
+  "Refrigerator",
+  "Stove",
+  "Dishwasher"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "date_of_birth": "07/20/1974",
+  "eligibility_date": "06/15/2023",
+  "annuity_start_date": "07/01/2024",
+  "service_history": [
+   "Federal Service: 25 years, 3 months, 15 days",
+   "Civilian Service: 20 years, 6 months",
+   "Military Service: 5 years, 9 months, 15 days",
+   "Sick Leave: 6 months",
+   "Annual Leave: 3 months",
+   "Leave Without Pay: 2 months"
+  ],
+  "remarks": "Applicant has completed all required service for deferred retirement. All documents are in order."
+ },
+ "parse": {
+  "date_of_birth": "07/20/1974",
+  "eligibility_date": "06/15/2023",
+  "annuity_start_date": "07/01/2024",
+  "service_history": [
+   "Federal Service: 25 years, 3 months, 15 days",
+   "Civilian Service: 20 years, 6 months",
+   "Military Service: 5 years, 9 months, 15 days",
+   "Sick Leave: 6 months",
+   "Annual Leave: 3 months",
+   "Leave Without Pay: 2 months"
+  ],
+  "remarks": "Applicant has completed all required service for deferred retirement. All documents are in order."
+ },
+ "oneshot": {
+  "date_of_birth": "07/20/1974",
+  "eligibility_date": "06/15/2023",
+  "annuity_start_date": "07/01/2024",
+  "service_history": [
+   "Federal Service: 25 years, 3 months, 15 days",
+   "Civilian Service: 20 years, 6 months",
+   "Military Service: 5 years, 9 months, 15 days",
+   "Sick Leave: 6 months",
+   "Annual Leave: 3 months",
+   "Leave Without Pay: 2 months"
+  ],
+  "remarks": "Applicant has completed all required service for deferred retirement. All documents are in order."
+ }
+}

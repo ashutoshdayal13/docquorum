@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "project_name": "Willowbrook Apartments",
+  "project_number": "DPM-2022-83305",
+  "neighborhood_description": "Residential area with mixed-income households, close to schools and shopping centers.",
+  "site_dimensions": "2.5 acre",
+  "zoning": "R-3 Multifamily Residential",
+  "intended_mf_use": "Rental apartments for families and young professionals",
+  "year_built": 2010,
+  "structural_system": "Steel frame",
+  "floor_system": "Concrete",
+  "exterior_finish": "Brick veneer",
+  "heating_ac_system": "Forced air",
+  "property_address": {
+   "street_number": "1234",
+   "street": "Willowbrook Drive",
+   "municipality": "Springfield",
+   "census_tract_number": "12345",
+   "placement_code": "001",
+   "legal_description": "Lot 1, Block A, Springfield",
+   "county": "Hampshire County",
+   "state_and_zip_code": "NH 03101"
+  }
+ },
+ "parse": {
+  "project_name": "Willowbrook Apartments",
+  "project_number": "DPM-2022-83305",
+  "neighborhood_description": "Residential area with mixed-income households, close to schools and shopping centers.",
+  "site_dimensions": "2.5 acre",
+  "zoning": "R-3 Multifamily Residential",
+  "intended_mf_use": "Rental apartments for families and young professionals",
+  "year_built": 2010,
+  "structural_system": "Steel frame",
+  "floor_system": "Concrete",
+  "exterior_finish": "Brick veneer",
+  "heating_ac_system": "Forced air",
+  "property_address": {
+   "street_number": "1234",
+   "street": "Willowbrook Drive",
+   "municipality": "Springfield",
+   "census_tract_number": "12345",
+   "placement_code": "001",
+   "legal_description": "Lot 1, Block A, Springfield",
+   "county": "Hampshire County",
+   "state_and_zip_code": "NH 03101"
+  }
+ },
+ "oneshot": {
+  "project_name": "Willowbrook Apartments",
+  "project_number": "DPM-2022-83305",
+  "neighborhood_description": "Residential area with mixed-income households, close to schools and shopping centers.",
+  "site_dimensions": "2.5 acre",
+  "zoning": "R-3 Multifamily Residential",
+  "intended_mf_use": "Rental apartments for families and young professionals",
+  "year_built": 2010,
+  "structural_system": "Steel frame",
+  "floor_system": "Concrete",
+  "exterior_finish": "Brick veneer",
+  "heating_ac_system": "Forced air",
+  "property_address": {
+   "street_number": "1234",
+   "street": "Willowbrook Drive",
+   "municipality": "Springfield",
+   "census_tract_number": "12345",
+   "placement_code": "001",
+   "legal_description": "Lot 1, Block A, Springfield",
+   "county": "Hampshire County",
+   "state_and_zip_code": "NH 03101"
+  }
+ }
+}

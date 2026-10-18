@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "applicant_name_last": "Souza",
+  "applicant_name_first": "Jai",
+  "applicant_name_middle_initial": "A",
+  "social_security_number": "227-71-8038",
+  "date_of_birth": "02/22/1971",
+  "signature_date": "05/15/2024",
+  "mailing_address": {
+   "address": "7229 James Crossroad",
+   "city": "Alexanderburgh",
+   "county": "Alexander",
+   "state": "KY",
+   "zip_code": "11777"
+  },
+  "contact_information": {
+   "home_telephone": "(248) 053-4299",
+   "email_address": "jai.souza@outlook.com"
+  }
+ },
+ "parse": {
+  "applicant_name_last": "Souza",
+  "applicant_name_first": "Jai",
+  "applicant_name_middle_initial": "A",
+  "social_security_number": "227-71-8038",
+  "date_of_birth": "02/22/1971",
+  "signature_date": "05/15/2024",
+  "mailing_address": {
+   "address": "7229 James Crossroad",
+   "city": "Alexanderburgh",
+   "county": "Alexander",
+   "state": "KY",
+   "zip_code": "11777"
+  },
+  "contact_information": {
+   "home_telephone": "(248) 053-4299",
+   "email_address": "jai.souza@outlook.com"
+  }
+ },
+ "oneshot": {
+  "applicant_name_last": "Souza",
+  "applicant_name_first": "Jai",
+  "applicant_name_middle_initial": "A",
+  "social_security_number": "227-71-8038",
+  "date_of_birth": "02/22/1971",
+  "signature_date": "05/15/2024",
+  "mailing_address": {
+   "address": "7229 James Crossroad",
+   "city": "Alexanderburgh",
+   "county": "Alexander",
+   "state": "KY",
+   "zip_code": "11777"
+  },
+  "contact_information": {
+   "home_telephone": "(248) 053-4299",
+   "email_address": "jai.souza@outlook.com"
+  }
+ }
+}

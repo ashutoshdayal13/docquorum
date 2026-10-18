@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "registrant_last_name": "Powell",
+  "registrant_first_name": "Jesus",
+  "signature_date": "06/15/2023",
+  "total_buses_registered": 42,
+  "total_buses_fb_plates": 15,
+  "total_mileage_nys": 500000,
+  "total_mileage": 500000,
+  "buses_previously_registered_lts": 25,
+  "total_buses_registered_last_certification": 40,
+  "registrant_address": {
+   "street_address": "746 Hall Mall Suite 646",
+   "city": "Kristinafurt",
+   "zip_code": "45688"
+  }
+ },
+ "parse": {
+  "registrant_last_name": "Powell",
+  "registrant_first_name": "Jesus",
+  "signature_date": "06/15/2023",
+  "total_buses_registered": 42,
+  "total_buses_fb_plates": 15,
+  "total_mileage_nys": 500000,
+  "total_mileage": 500000,
+  "buses_previously_registered_lts": 25,
+  "total_buses_registered_last_certification": 40,
+  "registrant_address": {
+   "street_address": "746 Hall Mall Suite 646",
+   "city": "Kristinafurt",
+   "zip_code": "45688"
+  }
+ },
+ "oneshot": {
+  "registrant_last_name": "Powell",
+  "registrant_first_name": "Jesus",
+  "signature_date": "06/15/2023",
+  "total_buses_registered": 42,
+  "total_buses_fb_plates": 15,
+  "total_mileage_nys": 500000,
+  "total_mileage": 500000,
+  "buses_previously_registered_lts": 25,
+  "total_buses_registered_last_certification": 40,
+  "registrant_address": {
+   "street_address": "746 Hall Mall Suite 646",
+   "city": "Kristinafurt",
+   "zip_code": "45688"
+  }
+ }
+}

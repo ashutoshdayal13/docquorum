@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "vehicle_information": {
+   "vehicle_identification_number": "1G1ZT54824F123456",
+   "vehicle_make": "Ford",
+   "vehicle_model": "F-150",
+   "vehicle_year": 2020
+  },
+  "owner_information": {
+   "owner_name": "Thomas Macias",
+   "owner_address": "6090 Bradley Glen, Scottview, MS 74113"
+  },
+  "designated_beneficiary_information": {
+   "beneficiary_name": "Theresa Macias"
+  },
+  "designated_beneficiary_id_information": {
+   "beneficiary_id_type": "Driver's License",
+   "beneficiary_id_number": "TX12345678",
+   "beneficiary_id_expiration_date": "12/31/2025"
+  },
+  "certification": {
+   "certification_date": "05/15/2023"
+  }
+ },
+ "parse": {
+  "vehicle_information": {
+   "vehicle_identification_number": "1G1ZT54824F123456",
+   "vehicle_make": "Ford",
+   "vehicle_model": "F-150",
+   "vehicle_year": 2020
+  },
+  "owner_information": {
+   "owner_name": "Thomas Macias",
+   "owner_address": "6090 Bradley Glen, Scottview, MS 74113"
+  },
+  "designated_beneficiary_information": {
+   "beneficiary_name": "Theresa Macias"
+  },
+  "designated_beneficiary_id_information": {
+   "beneficiary_id_type": "Driver's License",
+   "beneficiary_id_number": "TX12345678",
+   "beneficiary_id_expiration_date": "12/31/2025"
+  },
+  "certification": {
+   "certification_date": "05/15/2023"
+  }
+ },
+ "oneshot": {
+  "vehicle_information": {
+   "vehicle_identification_number": "1G1ZT54824F123456",
+   "vehicle_make": "Ford",
+   "vehicle_model": "F-150",
+   "vehicle_year": 2020
+  },
+  "owner_information": {
+   "owner_name": "Thomas Macias",
+   "owner_address": "6090 Bradley Glen, Scottview, MS 74113"
+  },
+  "designated_beneficiary_information": {
+   "beneficiary_name": "Theresa Macias"
+  },
+  "designated_beneficiary_id_information": {
+   "beneficiary_id_type": "Driver's License",
+   "beneficiary_id_number": "TX12345678",
+   "beneficiary_id_expiration_date": "12/31/2025"
+  },
+  "certification": {
+   "certification_date": "05/15/2023"
+  }
+ }
+}

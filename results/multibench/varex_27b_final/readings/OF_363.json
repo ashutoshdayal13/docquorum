@@ -1,0 +1,25 @@
+{
+ "primary": {
+  "received_by": "Mary J. Wilson",
+  "call_time": "10:30 AM",
+  "message": "Please return the contract documents ASAP.",
+  "called_by": "Michelle H. Peixoto",
+  "call_date": "10/15/2023"
+ },
+ "parse": {
+  "received_by": "Mary J. Wilson",
+  "call_time": "10:30 AM",
+  "message": "Please return the contract documents ASAP.",
+  "called_by": "Michelle H. Peixoto",
+  "call_date": "10/15/2023"
+ },
+ "oneshot": {
+  "recipient_organization": "Griffith Ltd",
+  "recipient_phone": "(901) 241-3651",
+  "received_by": "Mary J. Wilson",
+  "call_time": "10:30 AM",
+  "message": "Please return the contract documents ASAP.",
+  "called_by": "Michelle H. Peixoto",
+  "call_date": "10/15/2023"
+ }
+}

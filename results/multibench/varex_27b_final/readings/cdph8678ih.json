@@ -1,0 +1,89 @@
+{
+ "primary": {
+  "owner_printed_name": "Teresa A. Rivas",
+  "owner_title": "OWNER/Homeopath",
+  "signature_date": "01/15/2023",
+  "hemp_sources": [
+   {
+    "source": "Green Leaf Hemp Farms, 1234 Hemp Road, Portland, OR 97201"
+   },
+   {
+    "source": "Pacific Hemp Company, 5678 Cannabis Lane, Eugene, OR 97401"
+   },
+   {
+    "source": "Mountain High Hemp, 91011 Skyline Drive, Denver, CO 80202"
+   }
+  ],
+  "products_containing_hemp": [
+   {
+    "product": "Hemp Seed Oil Moisturizer"
+   }
+  ],
+  "authorized_representatives": [
+   {
+    "name": "Ashley Scott"
+   },
+   {
+    "name": "Chris van Laar"
+   }
+  ]
+ },
+ "parse": {
+  "owner_printed_name": "Teresa A. Rivas",
+  "owner_title": "OWNER/Homeopath",
+  "signature_date": "01/15/2023",
+  "hemp_sources": [
+   {
+    "source": "Green Leaf Hemp Farms, 1234 Hemp Road, Portland, OR 97201"
+   },
+   {
+    "source": "Pacific Hemp Company, 5678 Cannabis Lane, Eugene, OR 97401"
+   },
+   {
+    "source": "Mountain High Hemp, 91011 Skyline Drive, Denver, CO 80202"
+   }
+  ],
+  "products_containing_hemp": [
+   {
+    "product": "Hemp Seed Oil Moisturizer"
+   }
+  ],
+  "authorized_representatives": [
+   {
+    "name": "Ashley Scott"
+   },
+   {
+    "name": "Chris van Laar"
+   }
+  ]
+ },
+ "oneshot": {
+  "owner_printed_name": "Teresa A. Rivas",
+  "owner_title": "OWNER/Homeopath",
+  "signature_date": "01/15/2023",
+  "hemp_sources": [
+   {
+    "source": "Green Leaf Hemp Farms, 1234 Hemp Road, Portland, OR 97201"
+   },
+   {
+    "source": "Pacific Hemp Company, 5678 Cannabis Lane, Eugene, OR 97401"
+   },
+   {
+    "source": "Mountain High Hemp, 91011 Skyline Drive, Denver, CO 80202"
+   }
+  ],
+  "products_containing_hemp": [
+   {
+    "product": "Hemp Seed Oil Moisturizer"
+   }
+  ],
+  "authorized_representatives": [
+   {
+    "name": "Ashley Scott"
+   },
+   {
+    "name": "Chris van Laar"
+   }
+  ]
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "primary": {
+  "permit_number": "IMP-2023-001",
+  "expected_point_of_arrival": "Los Angeles",
+  "anticipated_arrival_date": "05/15/2023",
+  "name_of_carrier": "Global Wildlife Transport Services",
+  "transportation_mode": "Air Freight",
+  "quarantine_place": "California Wildlife Quarantine Facility, Davis",
+  "animals": [
+   {
+    "species": "Red-tailed Hawk",
+    "quantity": 2,
+    "origin": "Alberta, Canada"
+   },
+   {
+    "species": "Arctic Fox",
+    "quantity": 3,
+    "origin": "Greenland"
+   },
+   {
+    "species": "Desert Tortoise",
+    "quantity": 5,
+    "origin": "Arizona, USA"
+   }
+  ],
+  "consignor": {
+   "name": "Gray-Marsh",
+   "address": "7895 Reilly"
+  },
+  "consignee": {
+   "name": "Nguyen,",
+   "address": "1771 James"
+  },
+  "veterinarian": {
+   "name": "James Q.",
+   "address": "1771 James",
+   "phone": "(563) 244-"
+  }
+ },
+ "parse": {
+  "permit_number": "IMP-2023-001",
+  "expected_point_of_arrival": "Los Angeles",
+  "anticipated_arrival_date": "05/15/2023",
+  "name_of_carrier": "Global Wildlife Transport Services",
+  "transportation_mode": "Air Freight",
+  "quarantine_place": "California Wildlife Quarantine Facility, Davis",
+  "animals": [
+   {
+    "species": "Red-tailed Hawk",
+    "quantity": 2,
+    "origin": "Alberta, Canada"
+   },
+   {
+    "species": "Arctic Fox",
+    "quantity": 3,
+    "origin": "Greenland"
+   },
+   {
+    "species": "Desert Tortoise",
+    "quantity": 5,
+    "origin": "Arizona, USA"
+   }
+  ],
+  "consignor": {
+   "name": "Gray-Marsh",
+   "address": "7895 Reilly"
+  },
+  "consignee": {
+   "name": "Nguyen,",
+   "address": "1771 James"
+  },
+  "veterinarian": {
+   "name": "James Q.",
+   "address": "1771 James",
+   "phone": "(563) 244-"
+  }
+ },
+ "oneshot": {
+  "permit_number": "IMP-2023-001",
+  "expected_point_of_arrival": "Los Angeles",
+  "anticipated_arrival_date": "05/15/2023",
+  "name_of_carrier": "Global Wildlife Transport Services",
+  "transportation_mode": "Air Freight",
+  "quarantine_place": "California Wildlife Quarantine Facility, Davis",
+  "animals": [
+   {
+    "species": "Red-tailed Hawk",
+    "quantity": 2,
+    "origin": "Alberta, Canada"
+   },
+   {
+    "species": "Arctic Fox",
+    "quantity": 3,
+    "origin": "Greenland"
+   },
+   {
+    "species": "Desert Tortoise",
+    "quantity": 5,
+    "origin": "Arizona, USA"
+   }
+  ],
+  "consignor": {
+   "name": "Gray-Marsh",
+   "address": "7895 Reilly"
+  },
+  "consignee": {
+   "name": "Nguyen,",
+   "address": "1771 James"
+  },
+  "veterinarian": {
+   "name": "James Q.",
+   "address": "1771 James",
+   "phone": "(563) 244-"
+  }
+ }
+}

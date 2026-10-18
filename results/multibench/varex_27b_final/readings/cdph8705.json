@@ -1,0 +1,77 @@
+{
+ "primary": {
+  "facility_name": "Mcbride, Wright and Neal Medical Waste Facility",
+  "mailing_address": "126 Thomas Village",
+  "mailing_city": "Port Ronaldfurt",
+  "mailing_zip_code": "76293",
+  "telephone": "(428) 930-9350",
+  "email": "awatson@mcbride.com",
+  "average_monthly_quantity": 500.5,
+  "certification_date": "10/15/2023",
+  "facility_address": {
+   "county": "Humphreys",
+   "street_address": "126 Thomas Village",
+   "city": "Port Ronaldfurt",
+   "zip_code": "76293"
+  },
+  "treatment_equipment": {
+   "brand": "Steris",
+   "model": "Amsco Century",
+   "capacity_cycle": "600 lbs per cycle"
+  },
+  "authorized_representative": {
+   "name": "Agnolo A. Watson",
+   "title": "Risk Manager"
+  }
+ },
+ "parse": {
+  "facility_name": "Mcbride, Wright and Neal Medical Waste Facility",
+  "mailing_address": "126 Thomas Village",
+  "mailing_city": "Port Ronaldfurt",
+  "mailing_zip_code": "76293",
+  "telephone": "(428) 930-9350",
+  "email": "awatson@mcbride.com",
+  "average_monthly_quantity": 500.5,
+  "certification_date": "10/15/2023",
+  "facility_address": {
+   "county": "Humphreys",
+   "street_address": "126 Thomas Village",
+   "city": "Port Ronaldfurt",
+   "zip_code": "76293"
+  },
+  "treatment_equipment": {
+   "brand": "Steris",
+   "model": "Amsco Century",
+   "capacity_cycle": "600 lbs per cycle"
+  },
+  "authorized_representative": {
+   "name": "Agnolo A. Watson",
+   "title": "Risk Manager"
+  }
+ },
+ "oneshot": {
+  "facility_name": "Mcbride, Wright and Neal Medical Waste Facility",
+  "mailing_address": "126 Thomas Village",
+  "mailing_city": "Port Ronaldfurt",
+  "mailing_zip_code": "76293",
+  "telephone": "(428) 930-9350",
+  "email": "awatson@mcbride.com",
+  "average_monthly_quantity": 500.5,
+  "certification_date": "10/15/2023",
+  "facility_address": {
+   "county": "Humphreys",
+   "street_address": "126 Thomas Village",
+   "city": "Port Ronaldfurt",
+   "zip_code": "76293"
+  },
+  "treatment_equipment": {
+   "brand": "Steris",
+   "model": "Amsco Century",
+   "capacity_cycle": "600 lbs per cycle"
+  },
+  "authorized_representative": {
+   "name": "Agnolo A. Watson",
+   "title": "Risk Manager"
+  }
+ }
+}

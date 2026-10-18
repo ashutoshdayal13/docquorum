@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "a_number": "A1234567",
+  "uscis_online_account_number": "206098565401",
+  "us_social_security_number": "411484187",
+  "petitioner_full_name": "Jordan C. Stevens",
+  "petitioner_mailing_address": {
+   "street": "0198 Robert Ramp Apt. 095",
+   "city": "New Kristinaberg",
+   "zip_code": "59553",
+   "country": "USA"
+  }
+ },
+ "parse": {
+  "a_number": "A1234567",
+  "uscis_online_account_number": "206098565401",
+  "us_social_security_number": "411484187",
+  "petitioner_full_name": "Jordan C. Stevens",
+  "petitioner_mailing_address": {
+   "street": "0198 Robert Ramp Apt. 095",
+   "city": "New Kristinaberg",
+   "zip_code": "59553",
+   "country": "USA"
+  }
+ },
+ "oneshot": {
+  "a_number": "A1234567",
+  "uscis_online_account_number": "206098565401",
+  "us_social_security_number": "411484187",
+  "petitioner_full_name": "Jordan C. Stevens",
+  "petitioner_mailing_address": {
+   "street": "0198 Robert Ramp Apt. 095",
+   "city": "New Kristinaberg",
+   "zip_code": "59553",
+   "country": "USA"
+  }
+ }
+}

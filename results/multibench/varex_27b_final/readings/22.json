@@ -1,0 +1,122 @@
+{
+ "primary": {
+  "job_control_number": "JCN-2023-49388",
+  "classification_number": "CLN-2023-49388-001",
+  "deadline_date": "05/31/2023",
+  "complete_title": "Departmental Clearance for New Handbook Revision",
+  "proposed_distribution": "All HUD regional offices and program participants",
+  "person_most_familiar": "Andrew K. Santos",
+  "organization_code": "HUD-OHP-001",
+  "telephone_number": "(363) 001-8157",
+  "room_number": "327",
+  "type_of_document": "Handbook",
+  "other_reviewing_organizations": "Admin officers, PDR field staff",
+  "developing_components": "HUD Office of Housing Programs, Field Office Staff",
+  "comments": "This revision includes updates to reflect new regulations.",
+  "return_to": "Office of Administration, Department of Housing and Urban",
+  "return_telephone_number": "(202) 555-1234",
+  "return_room_number": "5200",
+  "approvals": [
+   {
+    "name": "James W. Ochoa",
+    "title": "Personal Assistant",
+    "date": "05/01/2023"
+   },
+   {
+    "name": "Dana H. Castellanos",
+    "title": "Animal Technologist",
+    "date": "05/05/2023"
+   },
+   {
+    "name": "Andrew K. Santos",
+    "title": "Water Engineer",
+    "date": "05/10/2023"
+   },
+   {
+    "name": "James W. Ochoa",
+    "title": "Personal Assistant",
+    "date": "05/15/2023"
+   }
+  ]
+ },
+ "parse": {
+  "job_control_number": "JCN-2023-49388",
+  "classification_number": "CLN-2023-49388-001",
+  "deadline_date": "05/31/2023",
+  "complete_title": "Departmental Clearance for New Handbook Revision",
+  "proposed_distribution": "All HUD regional offices and program participants",
+  "person_most_familiar": "Andrew K. Santos",
+  "organization_code": "HUD-OHP-001",
+  "telephone_number": "(363) 001-8157",
+  "room_number": "327",
+  "type_of_document": "Handbook",
+  "other_reviewing_organizations": "Admin officers, PDR field staff",
+  "developing_components": "HUD Office of Housing Programs, Field Office Staff",
+  "comments": "This revision includes updates to reflect new regulations.",
+  "return_to": "Office of Administration, Department of Housing and Urban",
+  "return_telephone_number": "(202) 555-1234",
+  "return_room_number": "5200",
+  "approvals": [
+   {
+    "name": "James W. Ochoa",
+    "title": "Personal Assistant",
+    "date": "05/01/2023"
+   },
+   {
+    "name": "Dana H. Castellanos",
+    "title": "Animal Technologist",
+    "date": "05/05/2023"
+   },
+   {
+    "name": "Andrew K. Santos",
+    "title": "Water Engineer",
+    "date": "05/10/2023"
+   },
+   {
+    "name": "James W. Ochoa",
+    "title": "Personal Assistant",
+    "date": "05/15/2023"
+   }
+  ]
+ },
+ "oneshot": {
+  "job_control_number": "JCN-2023-49388",
+  "classification_number": "CLN-2023-49388-001",
+  "deadline_date": "05/31/2023",
+  "complete_title": "Departmental Clearance for New Handbook Revision",
+  "proposed_distribution": "All HUD regional offices and program participants",
+  "person_most_familiar": "Andrew K. Santos",
+  "organization_code": "HUD-OHP-001",
+  "telephone_number": "(363) 001-8157",
+  "room_number": "327",
+  "type_of_document": "Handbook",
+  "other_reviewing_organizations": "Admin officers, PDR field staff",
+  "developing_components": "HUD Office of Housing Programs, Field Office Staff",
+  "comments": "This revision includes updates to reflect new regulations.",
+  "return_to": "Office of Administration, Department of Housing and Urban",
+  "return_telephone_number": "(202) 555-1234",
+  "return_room_number": "5200",
+  "approvals": [
+   {
+    "name": "James W. Ochoa",
+    "title": "Personal Assistant",
+    "date": "05/01/2023"
+   },
+   {
+    "name": "Dana H. Castellanos",
+    "title": "Animal Technologist",
+    "date": "05/05/2023"
+   },
+   {
+    "name": "Andrew K. Santos",
+    "title": "Water Engineer",
+    "date": "05/10/2023"
+   },
+   {
+    "name": "James W. Ochoa",
+    "title": "Personal Assistant",
+    "date": "05/15/2023"
+   }
+  ]
+ }
+}

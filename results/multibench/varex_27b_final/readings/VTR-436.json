@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "vehicle_information": {
+   "vin": "1G1ZT5SHXFF129540",
+   "make": "Chevrolet",
+   "model": "Silverado",
+   "license_plate": "FL 45678"
+  },
+  "insurance_company_information": {
+   "company_name": "State Farm Insurance",
+   "agent_name": "Isabel Zuniga",
+   "agent_phone": "(626) 919-7804"
+  },
+  "claim_information": {
+   "claim_number": "CL-2023-001",
+   "claim_date": "04/10/2023"
+  },
+  "certification": {
+   "certified_by": "Isabel Zuniga",
+   "certification_date": "06/15/2023"
+  }
+ },
+ "parse": {
+  "vehicle_information": {
+   "vin": "1G1ZT5SHXFF129540",
+   "make": "Chevrolet",
+   "model": "Silverado",
+   "license_plate": "FL 45678"
+  },
+  "insurance_company_information": {
+   "company_name": "State Farm Insurance",
+   "agent_name": "Isabel Zuniga",
+   "agent_phone": "(626) 919-7804"
+  },
+  "claim_information": {
+   "claim_number": "CL-2023-001",
+   "claim_date": "04/10/2023"
+  },
+  "certification": {
+   "certified_by": "Isabel Zuniga",
+   "certification_date": "06/15/2023"
+  }
+ },
+ "oneshot": {
+  "vehicle_information": {
+   "vin": "1G1ZT5SHXFF129540",
+   "make": "Chevrolet",
+   "model": "Silverado",
+   "license_plate": "FL 45678"
+  },
+  "insurance_company_information": {
+   "company_name": "State Farm Insurance",
+   "agent_name": "Isabel Zuniga",
+   "agent_phone": "(626) 919-7804"
+  },
+  "claim_information": {
+   "claim_number": "CL-2023-001",
+   "claim_date": "04/10/2023"
+  },
+  "certification": {
+   "certified_by": "Isabel Zuniga",
+   "certification_date": "06/15/2023"
+  }
+ }
+}

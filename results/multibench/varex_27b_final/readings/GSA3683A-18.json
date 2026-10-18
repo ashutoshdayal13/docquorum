@@ -1,0 +1,53 @@
+{
+ "primary": {
+  "employee_name": "Reid, Heather S.",
+  "major_accomplishments": [
+   "Successfully completed the annual performance review for the counseling department."
+  ],
+  "other_accomplishments": [
+   "Published an article on the latest advancements in counseling psychology in a reputable journal."
+  ],
+  "training_and_developmental_needs": [
+   "Advanced certification in cognitive behavioral therapy."
+  ],
+  "signature_date": "06/15/2023",
+  "performance_period": {
+   "start_date": "01/01/2023",
+   "end_date": "12/31/2023"
+  }
+ },
+ "parse": {
+  "employee_name": "Reid, Heather S.",
+  "major_accomplishments": [
+   "Successfully completed the annual performance review for the counseling department."
+  ],
+  "other_accomplishments": [
+   "Published an article on the latest advancements in counseling psychology in a reputable journal."
+  ],
+  "training_and_developmental_needs": [
+   "Advanced certification in cognitive behavioral therapy."
+  ],
+  "signature_date": "06/15/2023",
+  "performance_period": {
+   "start_date": "01/01/2023",
+   "end_date": "12/31/2023"
+  }
+ },
+ "oneshot": {
+  "employee_name": "Reid, Heather S.",
+  "major_accomplishments": [
+   "Successfully completed the annual performance review for the counseling department."
+  ],
+  "other_accomplishments": [
+   "Published an article on the latest advancements in counseling psychology in a reputable journal."
+  ],
+  "training_and_developmental_needs": [
+   "Advanced certification in cognitive behavioral therapy."
+  ],
+  "signature_date": "06/15/2023",
+  "performance_period": {
+   "start_date": "01/01/2023",
+   "end_date": "12/31/2023"
+  }
+ }
+}

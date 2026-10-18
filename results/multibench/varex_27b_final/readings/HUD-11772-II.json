@@ -1,0 +1,35 @@
+{
+ "primary": {
+  "issue_date": "01/15/2023",
+  "first_payment_due": "01/01/2023",
+  "maturity_date": "01/01/2053",
+  "security_payment_adjustment_date": "01/01/2024",
+  "mortgage_payment_adjustment_date": "01/01/2024",
+  "index": "LIBOR 1-Year",
+  "ginnie_mae_pool_no": "GNMA-2023-001",
+  "depository_identifier": "DEP-2023-001",
+  "central_paying_and_transfer_agent": "The Bank of New York Mellon"
+ },
+ "parse": {
+  "issue_date": "01/15/2023",
+  "first_payment_due": "01/01/2023",
+  "maturity_date": "01/01/2053",
+  "security_payment_adjustment_date": "01/01/2024",
+  "mortgage_payment_adjustment_date": "01/01/2024",
+  "index": "LIBOR 1-Year",
+  "ginnie_mae_pool_no": "GNMA-2023-001",
+  "depository_identifier": "DEP-2023-001",
+  "central_paying_and_transfer_agent": "The Bank of New York Mellon"
+ },
+ "oneshot": {
+  "issue_date": "01/15/2023",
+  "first_payment_due": "01/01/2023",
+  "maturity_date": "01/01/2053",
+  "security_payment_adjustment_date": "01/01/2024",
+  "mortgage_payment_adjustment_date": "01/01/2024",
+  "index": "LIBOR 1-Year",
+  "ginnie_mae_pool_no": "GNMA-2023-001",
+  "depository_identifier": "DEP-2023-001",
+  "central_paying_and_transfer_agent": "The Bank of New York Mellon"
+ }
+}

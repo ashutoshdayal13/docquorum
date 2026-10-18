@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "conditions_of_occupancy": "No smoking, no pets allowed",
+  "housing_provider": {
+   "name": "Knox Inc",
+   "address": "41516 Anita Plaza Suite 990",
+   "city_state_zip": "Jasmineberg, TX 44064"
+  },
+  "individual_in_charge": {
+   "name": "Joseph, Garima C.",
+   "address": "41516 Anita Plaza Suite 990",
+   "city_state_zip": "Jasmineberg, TX 44064",
+   "phone": "(283) 690-4093"
+  },
+  "housing_facility_mailing_address": {
+   "address": "41516 Anita Plaza Suite 990",
+   "city_state_zip": "Jasmineberg, TX 44064",
+   "phone": "(337) 134-7229"
+  }
+ },
+ "parse": {
+  "conditions_of_occupancy": "No smoking, no pets allowed",
+  "housing_provider": {
+   "name": "Knox Inc",
+   "address": "41516 Anita Plaza Suite 990",
+   "city_state_zip": "Jasmineberg, TX 44064"
+  },
+  "individual_in_charge": {
+   "name": "Joseph, Garima C.",
+   "address": "41516 Anita Plaza Suite 990",
+   "city_state_zip": "Jasmineberg, TX 44064",
+   "phone": "(283) 690-4093"
+  },
+  "housing_facility_mailing_address": {
+   "address": "41516 Anita Plaza Suite 990",
+   "city_state_zip": "Jasmineberg, TX 44064",
+   "phone": "(337) 134-7229"
+  }
+ },
+ "oneshot": {
+  "conditions_of_occupancy": "No smoking, no pets allowed",
+  "housing_provider": {
+   "name": "Knox Inc",
+   "address": "41516 Anita Plaza Suite 990",
+   "city_state_zip": "Jasmineberg, TX 44064"
+  },
+  "individual_in_charge": {
+   "name": "Joseph, Garima C.",
+   "address": "41516 Anita Plaza Suite 990",
+   "city_state_zip": "Jasmineberg, TX 44064",
+   "phone": "(283) 690-4093"
+  },
+  "housing_facility_mailing_address": {
+   "address": "41516 Anita Plaza Suite 990",
+   "city_state_zip": "Jasmineberg, TX 44064",
+   "phone": "(337) 134-7229"
+  }
+ }
+}

@@ -10,13 +10,15 @@ Each benchmark below is scored with its own scorer and placed against every publ
 
 | benchmark | DocQuorum | place among published systems |
 |---|---|---|
-| VAREX (1,777 government forms, image input) | exact match **98.30** with zoom re-reading (98.10 without) | **1st** (Gemini 2.5 Pro 98.0) |
+| VAREX (1,777 government forms, image input) | exact match **98.23** (final pipeline; 98.30 with v1.2, 98.10 without zoom) | **1st** (Gemini 2.5 Pro 98.0) |
 | UNIKIE-BENCH (4,472 images, 11 scenarios) | six-reading macro F1 **82.65** with zoom re-reading (82.62 without) | **1st** (Gemini-3-Pro 82.37) |
 | ExtractBench (370 enterprise PDFs, 1-163 pages) | Overall **95.43** (short 96.34, medium 94.11, long 90.41) | 3rd (two commercial systems at 95.91) |
 | LongArray-Extract (45 long documents, 29,328 rows) | macro accuracy **98.05** | 2nd of 12 (Extend MAX 99.2; Reducto Deep Extract 97.4) |
 | UNIKIE-BENCH open category (1,661 documents) | macro F1 **72.33** with zoom re-reading (71.07 without) | 2nd of 16 (Gemini-3-Pro 81.65) |
+| DocuBench (72 documents in 10 file types) | macro accuracy **90.80** (final pipeline; 86.47 with v1.1) | 4th of 10 (DocuPipe 97.02; Claude Sonnet 5 91.73) |
 
-Also run: DocuBench (72 documents in 10 file types), 86.47, 5th of 10. Zoom re-reading, the new step, was tested
+
+DocuBench is the benchmark the v1.3 fixes came from (`docs/DESIGN.md`, `results/README.md`). Zoom re-reading, the new step, was tested
 held-out on VAREX (60 forms better, 25 worse) and UNIKIE open (291 documents better, 138 worse); on UNIKIE constrained
 it first lowered the score, which led to its vote rule (details in `results/README.md`).
 
@@ -147,7 +149,7 @@ Check that they answer: `curl http://localhost:8079/v1/models` and `curl http://
 python -m docquorum.extract invoice.pdf --schema invoice_schema.json -o invoice.json
 python -m docquorum.extract receipt.jpg --schema receipt_template.json          # template in, template out
 python -m docquorum.extract report.pdf --schema s.json --task "Extract every holding in the schedule of investments."
-python -m docquorum.extract form.png --schema form_schema.json --zoom          # with zoom re-reading (scans and images)
+python -m docquorum.extract form.png --schema form_schema.json --no-zoom       # without zoom re-reading (it is on by default)
 ```
 Run these from the project folder (or add it to `PYTHONPATH`). Progress and a final report (which readings were made,
 which one was kept, their agreement) go to stderr; the JSON goes to `-o` or stdout.
@@ -163,15 +165,16 @@ print(report)   # the readings produced, the one the quorum kept, their agreemen
 exactly, with `""` for anything the document does not contain. **A JSON Schema** gives typed output, and every reply is decoded
 under it. Put field instructions in the schema's `description` fields: they are sent to the model.
 
-**What happens to your document.** A PDF with a text layer is read once by the reader agent. A scan or image of 12 pages or fewer is read
-three ways (the reader agent on its page images, the reader agent on its MinerU parse, and a one-shot reader) and the quorum keeps
-the reading the others agree with most (passing over a reading caught in a repetition loop); a longer scan is read through
-its parse, or from its page images when the parse reading lost most of the list. Documents printed as columns of records, and ruled tables on scans, go to a layout reader (back to the normal route if it
-finds no records, or no printed rules on most table pages). Every
-reading is repaired and checked against the schema and the page text before it is returned. Without the parser server, a scan is
-read from its page images (and, up to 12 pages, by the one-shot reader).
+**What happens to your document.** A PDF with a text layer is read once by the reader agent. A scan or image is read two or
+three ways (the reader agent on its page images, the reader agent on its MinerU parse, and, up to 12 pages, a one-shot reader)
+and the quorum keeps the reading the others agree with most, passing over a reading caught in a repetition loop. Text read by OCR
+always travels with its page images, which decide where the two disagree. Documents printed as columns of records, and ruled
+tables on scans, go to a layout reader (back to the normal route if it finds no records, or no printed rules on most table pages).
+Every reading is repaired and checked against the schema and the page text before it is returned. A field the schema does not
+require may come back null: the decoder is never made to invent a value for a blank. Without the parser server, a scan is read
+from its page images (and, up to 12 pages, by the one-shot reader). The full specification is `docs/DESIGN.md`.
 
-**Zoom re-reading** (`--zoom`, or `extract(..., zoom_reread=True)`). When the quorum has chosen among several readings, every field
+**Zoom re-reading** (on by default; `--no-zoom`, or `extract(..., zoom_reread=False)`, turns it off). When the quorum has chosen among several readings, every field
 on which they disagree is found on the page and read once more from a sharp crop of that region, by a call that sees none of the
 readings. The kept value changes only if the zoomed reading equals a value some reading already proposed, and the zoomed reading
 counts as two votes: it can overturn a lead of one reading, not a clear majority. Held-out results: VAREX exact match 98.10 ->

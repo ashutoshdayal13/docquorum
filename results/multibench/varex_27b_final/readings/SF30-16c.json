@@ -1,0 +1,83 @@
+{
+ "primary": {
+  "contract_id": "CONT-2023-4002",
+  "amendment_number": "AMD-2023-001",
+  "effective_date": "10/15/2023",
+  "issued_by": "Department of Transportation, PA",
+  "administered_by": "Flowers, Torres and Buck",
+  "amendment_solicitation_number": "SOL-2023-4002",
+  "amendment_solicitation_date": "09/20/2023",
+  "modification_contract_number": "CTR-2023-4002",
+  "modification_contract_date": "08/10/2023",
+  "accounting_data": "Account: 8138-1618-6968, Appropriation: REF-2025-13381",
+  "modification_authority": "Federal Acquisition Regulation (FAR) Part 43",
+  "supplemental_agreement_authority": "None",
+  "other_modification_type": "None",
+  "amendment_description": "Revision of scope and schedule for communications project",
+  "contractor": {
+   "name": "Flowers, Torres and Buck"
+  },
+  "signer": {
+   "name": "Julia L. Lima",
+   "date": "10/10/2023"
+  },
+  "contracting_officer": {
+   "name": "Julia L. Lima, Contracting Officer",
+   "date": "10/15/2023"
+  }
+ },
+ "parse": {
+  "contract_id": "CONT-2023-4002",
+  "amendment_number": "AMD-2023-001",
+  "effective_date": "10/15/2023",
+  "issued_by": "Department of Transportation, PA",
+  "administered_by": "Flowers, Torres and Buck",
+  "amendment_solicitation_number": "SOL-2023-4002",
+  "amendment_solicitation_date": "09/20/2023",
+  "modification_contract_number": "CTR-2023-4002",
+  "modification_contract_date": "08/10/2023",
+  "accounting_data": "Account: 8138-1618-6968, Appropriation: REF-2025-13381",
+  "modification_authority": "Federal Acquisition Regulation (FAR) Part 43",
+  "supplemental_agreement_authority": "None",
+  "other_modification_type": "None",
+  "amendment_description": "Revision of scope and schedule for communications project",
+  "contractor": {
+   "name": "Flowers, Torres and Buck"
+  },
+  "signer": {
+   "name": "Julia L. Lima",
+   "date": "10/10/2023"
+  },
+  "contracting_officer": {
+   "name": "Julia L. Lima, Contracting Officer",
+   "date": "10/15/2023"
+  }
+ },
+ "oneshot": {
+  "contract_id": "CONT-2023-4002",
+  "amendment_number": "AMD-2023-001",
+  "effective_date": "10/15/2023",
+  "issued_by": "Department of Transportation, PA",
+  "administered_by": "Flowers, Torres and Buck",
+  "amendment_solicitation_number": "SOL-2023-4002",
+  "amendment_solicitation_date": "09/20/2023",
+  "modification_contract_number": "CTR-2023-4002",
+  "modification_contract_date": "08/10/2023",
+  "accounting_data": "Account: 8138-1618-6968, Appropriation: REF-2025-13381",
+  "modification_authority": "Federal Acquisition Regulation (FAR) Part 43",
+  "supplemental_agreement_authority": "None",
+  "other_modification_type": "None",
+  "amendment_description": "Revision of scope and schedule for communications project",
+  "contractor": {
+   "name": "Flowers, Torres and Buck"
+  },
+  "signer": {
+   "name": "Julia L. Lima",
+   "date": "10/10/2023"
+  },
+  "contracting_officer": {
+   "name": "Julia L. Lima, Contracting Officer",
+   "date": "10/15/2023"
+  }
+ }
+}

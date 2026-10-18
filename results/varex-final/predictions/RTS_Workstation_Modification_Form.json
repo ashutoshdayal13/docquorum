@@ -1,0 +1,25 @@
+{
+ "county": "Travis County",
+ "county_contact_name": "Pasquale Mitchell",
+ "email_address": "pmitchell@castilloclements.com",
+ "phone_number": "(305) 640-7832",
+ "cell_phone_number": "(372) 616-8957",
+ "website_information": {
+  "website_url": "https://www.txdmv.gov",
+  "access_level": "Read/Write Access"
+ },
+ "device_peripheral_information": {
+  "device_name": "Credit Card",
+  "device_model": "CR7000",
+  "quantity": 2
+ },
+ "vendor_information": {
+  "vendor_name": "Tech Solutions Inc",
+  "vendor_contact_name": "Bradley Hughes",
+  "vendor_email_address": "bhughes@hicksdavis.com",
+  "vendor_phone_number": "(353) 361-90"
+ },
+ "credit_card_reader_information": {
+  "encryption_type": "AES-256"
+ }
+}

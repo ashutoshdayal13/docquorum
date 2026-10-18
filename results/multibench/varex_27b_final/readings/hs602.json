@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "hospital_name": "St. Mary's Medical Center",
+  "facility_name": "Sunnyvale Rehabilitation Center",
+  "hospital_address": {
+   "street": "1234 Sacred Heart Lane",
+   "city_state_zip": "San Francisco, CA 94114"
+  },
+  "facility_address": {
+   "street": "5678 Sunnyvale Boulevard",
+   "city_state_zip": "Sunnyvale, CA 94086"
+  }
+ },
+ "parse": {
+  "hospital_name": "St. Mary's Medical Center",
+  "facility_name": "Sunnyvale Rehabilitation Center",
+  "hospital_address": {
+   "street": "1234 Sacred Heart Lane",
+   "city_state_zip": "San Francisco, CA 94114"
+  },
+  "facility_address": {
+   "street": "5678 Sunnyvale Boulevard",
+   "city_state_zip": "Sunnyvale, CA 94086"
+  }
+ },
+ "oneshot": {
+  "hospital_name": "St. Mary's Medical Center",
+  "facility_name": "Sunnyvale Rehabilitation Center",
+  "hospital_address": {
+   "street": "1234 Sacred Heart Lane",
+   "city_state_zip": "San Francisco, CA 94114"
+  },
+  "facility_address": {
+   "street": "5678 Sunnyvale Boulevard",
+   "city_state_zip": "Sunnyvale, CA 94086"
+  }
+ }
+}

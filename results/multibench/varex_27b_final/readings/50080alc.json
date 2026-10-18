@@ -1,0 +1,58 @@
+{
+ "primary": {
+  "voucher_number": "",
+  "voice_response_number": "(800) 555-1",
+  "date_of_request": "03/15/2023",
+  "grantee_organization": {
+   "name": "Little, Atkinson and Kennedy",
+   "tin": "47-1234567"
+  },
+  "payee_organization": {
+   "name": "Fisher-Rogers",
+   "tin": "98-7654321"
+  },
+  "completed_by": {
+   "name_phone": "Caroline Bryant, (824) 210-0729"
+  },
+  "authorized_signatory": {
+   "name_title": "Terry X. Hull, Psychotherapist, Jones and Sons"
+  }
+ },
+ "parse": {
+  "voucher_number": "",
+  "voice_response_number": "(800) 555-1",
+  "date_of_request": "03/15/2023",
+  "grantee_organization": {
+   "name": "Little, Atkinson and Kennedy",
+   "tin": "47-1234567"
+  },
+  "payee_organization": {
+   "name": "Fisher-Rogers",
+   "tin": "98-7654321"
+  },
+  "completed_by": {
+   "name_phone": "Caroline Bryant, (824) 210-0729"
+  },
+  "authorized_signatory": {
+   "name_title": "Terry X. Hull, Psychotherapist, Jones and Sons"
+  }
+ },
+ "oneshot": {
+  "voice_response_number": "(800) 555-1",
+  "date_of_request": "03/15/2023",
+  "grantee_organization": {
+   "name": "Little, Atkinson and Kennedy",
+   "tin": "47-1234567"
+  },
+  "payee_organization": {
+   "name": "Fisher-Rogers",
+   "tin": "98-7654321"
+  },
+  "completed_by": {
+   "name_phone": "Caroline Bryant, (824) 210-0729"
+  },
+  "authorized_signatory": {
+   "name_title": "Terry X. Hull, Psychotherapist, Jones and Sons"
+  }
+ }
+}

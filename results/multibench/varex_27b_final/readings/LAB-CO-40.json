@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "laboratory_name": "Morrison Forensic Laboratory",
+  "laboratory_ori": "TX1230010",
+  "contact_person": "Olivia Gomes",
+  "phone": "(733) 852-6411",
+  "fax": "(728) 746-0840",
+  "mailing_address_details": {
+   "mailing_address": "43166 Ray Points Suite 202",
+   "city": "Hughesland",
+   "zip_code": "67717"
+  }
+ },
+ "parse": {
+  "laboratory_name": "Morrison Forensic Laboratory",
+  "laboratory_ori": "TX1230010",
+  "contact_person": "Olivia Gomes",
+  "phone": "(733) 852-6411",
+  "fax": "(728) 746-0840",
+  "mailing_address_details": {
+   "mailing_address": "43166 Ray Points Suite 202",
+   "city": "Hughesland",
+   "zip_code": "67717"
+  }
+ },
+ "oneshot": {
+  "laboratory_name": "Morrison Forensic Laboratory",
+  "laboratory_ori": "TX1230010",
+  "contact_person": "Olivia Gomes",
+  "phone": "(733) 852-6411",
+  "fax": "(728) 746-0840",
+  "mailing_address_details": {
+   "mailing_address": "43166 Ray Points Suite 202",
+   "city": "Hughesland",
+   "zip_code": "67717"
+  }
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "primary": {
+  "case_number": "TX-2023-10015",
+  "victim_additional_referrals": "Local women's shelter and trauma",
+  "officer_name": "William U. Jones",
+  "officer_phone_number": "(482) 624-6876",
+  "vehicle_towed_by": "City of Jasmineberg Towing"
+ },
+ "parse": {
+  "case_number": "TX-2023-10015",
+  "victim_additional_referrals": "Local women's shelter and trauma",
+  "officer_name": "William U. Jones",
+  "officer_phone_number": "(482) 624-6876",
+  "vehicle_towed_by": "City of Jasmineberg Towing"
+ },
+ "oneshot": {
+  "case_number": "TX-2023-10015",
+  "victim_additional_referrals": "Local women's shelter and trauma",
+  "officer_name": "William U. Jones",
+  "officer_phone_number": "(482) 624-6876",
+  "vehicle_towed_by": "City of Jasmineberg Towing"
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "vehicle_year": "2018",
+  "vehicle_make": "Toyota",
+  "vehicle_model": "Camry",
+  "vehicle_body_type": "Seda",
+  "vehicle_identification_number": "5TFCZRFXX0JL012345",
+  "seller": {
+   "name": "Agnolo L. Spanevello",
+   "address": "2448 Victor Forge Suite 599",
+   "city": "East Jessica",
+   "state": "OH",
+   "zip_code": "55282",
+   "date_of_statement": "05/15/2023"
+  },
+  "new_owner": {
+   "name": "Georgina T. Morrison",
+   "address": "7088 April Neck",
+   "city": "West Sheena",
+   "state": "NC",
+   "zip_code": "01116",
+   "date_of_statement": "05/15/2023"
+  }
+ },
+ "parse": {
+  "vehicle_year": "2018",
+  "vehicle_make": "Toyota",
+  "vehicle_model": "Camry",
+  "vehicle_body_type": "Seda",
+  "vehicle_identification_number": "5TFCZRFX0JL012345",
+  "seller": {
+   "name": "Agnolo L. Spanevello",
+   "address": "2448 Victor Forge Suite 599",
+   "city": "East Jessica",
+   "state": "OH",
+   "zip_code": "55282",
+   "date_of_statement": "05/15/2023"
+  },
+  "new_owner": {
+   "name": "Georgina T. Morrison",
+   "address": "7088 April Neck",
+   "city": "West Sheena",
+   "state": "NC",
+   "zip_code": "01116",
+   "date_of_statement": "05/15/2023"
+  }
+ },
+ "oneshot": {
+  "vehicle_year": "2018",
+  "vehicle_make": "Toyota",
+  "vehicle_model": "Camry",
+  "vehicle_body_type": "Seda",
+  "vehicle_identification_number": "5TFCZRFX0JL012345",
+  "seller": {
+   "name": "Agnolo L. Spanevello",
+   "address": "2448 Victor Forge Suite 599",
+   "city": "East Jessica",
+   "state": "OH",
+   "zip_code": "55282",
+   "date_of_statement": "05/15/2023"
+  },
+  "new_owner": {
+   "name": "Georgina T. Morrison",
+   "address": "7088 April Neck",
+   "city": "West Sheena",
+   "state": "NC",
+   "zip_code": "01116",
+   "date_of_statement": "05/15/2023"
+  }
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "primary": {
+  "name_of_school": "Devinbury High School",
+  "school_id": "CDPH-2023-5678",
+  "effective_date_of_change": "06/15/2023",
+  "new_name_of_school": "Devinbury Academy",
+  "new_telephone_number": 2037965878,
+  "new_email_address": "info@devinburyacademy.edu",
+  "new_address": {
+   "street_address": "5481 Roman Road",
+   "city": "Devinbury",
+   "zip_code": "96822"
+  },
+  "new_mailing_address": {
+   "mailing_address": "5481 Roman Road",
+   "mailing_city": "Devinbury",
+   "mailing_zip_code": "96822"
+  },
+  "new_program_director": {
+   "name": "Donna D. Pietrangeli",
+   "title": "Chartered Accountant",
+   "phone": 1243923700,
+   "email": "dpietrangeli@robinson.com"
+  },
+  "removed_program_director": {
+   "name": "Sarah Johnson",
+   "title": "Former Program Director",
+   "phone": 1234567890,
+   "email": "sjohnson@devinburyhs.edu"
+  },
+  "current_program_director": {
+   "name": "Donna D. Pietrangeli",
+   "title": "Chartered Accountant",
+   "phone": 1243923700,
+   "email": "dpietrangeli@robinson.com"
+  }
+ },
+ "parse": {
+  "name_of_school": "Devinbury High School",
+  "school_id": "CDPH-2023-5678",
+  "effective_date_of_change": "06/15/2023",
+  "new_name_of_school": "Devinbury Academy",
+  "new_telephone_number": 2037965878,
+  "new_email_address": "info@devinburyacademy.edu",
+  "new_address": {
+   "street_address": "5481 Roman Road",
+   "city": "Devinbury",
+   "zip_code": "96822"
+  },
+  "new_mailing_address": {
+   "mailing_address": "5481 Roman Road",
+   "mailing_city": "Devinbury",
+   "mailing_zip_code": "96822"
+  },
+  "new_program_director": {
+   "name": "Donna D. Pietrangeli",
+   "title": "Chartered Accountant",
+   "phone": 1243923700,
+   "email": "dpietrangeli@robinson.com"
+  },
+  "removed_program_director": {
+   "name": "Sarah Johnson",
+   "title": "Former Program Director",
+   "phone": 1234567890,
+   "email": "sjohnson@devinburyhs.edu"
+  },
+  "current_program_director": {
+   "name": "Donna D. Pietrangeli",
+   "title": "Chartered Accountant",
+   "phone": 1243923700,
+   "email": "dpietrangeli@robinson.com"
+  }
+ },
+ "oneshot": {
+  "name_of_school": "Devinbury High School",
+  "school_id": "CDPH-2023-5678",
+  "effective_date_of_change": "06/15/2023",
+  "new_name_of_school": "Devinbury Academy",
+  "new_telephone_number": 2037965878,
+  "new_email_address": "info@devinburyacademy.edu",
+  "new_address": {
+   "street_address": "5481 Roman Road",
+   "city": "Devinbury",
+   "zip_code": "96822"
+  },
+  "new_mailing_address": {
+   "mailing_address": "5481 Roman Road",
+   "mailing_city": "Devinbury",
+   "mailing_zip_code": "96822"
+  },
+  "new_program_director": {
+   "name": "Donna D. Pietrangeli",
+   "title": "Chartered Accountant",
+   "phone": 1243923700,
+   "email": "dpietrangeli@robinson.com"
+  },
+  "removed_program_director": {
+   "name": "Sarah Johnson",
+   "title": "Former Program Director",
+   "phone": 1234567890,
+   "email": "sjohnson@devinburyhs.edu"
+  },
+  "current_program_director": {
+   "name": "Donna D. Pietrangeli",
+   "title": "Chartered Accountant",
+   "phone": 1243923700,
+   "email": "dpietrangeli@robinson.com"
+  }
+ }
+}

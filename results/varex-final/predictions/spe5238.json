@@ -1,0 +1,20 @@
+{
+ "original_issue_amount": 54132.49,
+ "treasury_case_number": "PO-2020-27589",
+ "redemption_amount_requested": 54132.49,
+ "receiver_aba": "021000021",
+ "additional_instructions": "Please wire funds to the account number provided",
+ "additional_instructions_line_2": "For the attention of the finance department",
+ "organization": "Aguirre, Suarez and Cole",
+ "name_and_title": "Omar K. Medina, Artist",
+ "issuer": {
+  "issuer": "City of South Diane, IL",
+  "issuer_address": "22711 Olson Tunnel, South Diane, IL 42838",
+  "contact_person": "Omar K. Medina",
+  "telephone": "(718) 606-0307",
+  "fax": "(510) 595-7496"
+ },
+ "receiver": {
+  "receiver_name": "Hannah P. Rice"
+ }
+}

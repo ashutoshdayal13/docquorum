@@ -1,0 +1,62 @@
+{
+ "primary": {
+  "firm_name": "Beck-Moore Food Processing",
+  "city_state": "East Nancy, TX",
+  "inspection_date": "05/15/2023 to 05/17/2023",
+  "fei_number": "FEI-2012-TX-90806",
+  "fce_number": "FCE-2023-45678",
+  "investigators": [
+   "Jared R. Granados"
+  ],
+  "products": [
+   "Canned Green Beans"
+  ],
+  "sid_numbers": [
+   "SID-2023-45678-001"
+  ],
+  "retort_manufacturer_number": "Allpax Retort Model R-2023-45678",
+  "container_size": [
+   "307 x 408"
+  ]
+ },
+ "parse": {
+  "firm_name": "Beck-Moore Food Processing",
+  "city_state": "East Nancy, TX",
+  "inspection_date": "05/15/2023 to 05/17/2023",
+  "fei_number": "FEI-2012-TX-90806",
+  "fce_number": "FCE-2023-45678",
+  "investigators": [
+   "Jared R. Granados"
+  ],
+  "products": [
+   "Canned Green Beans"
+  ],
+  "sid_numbers": [
+   "SID-2023-45678-001"
+  ],
+  "retort_manufacturer_number": "Allpax Retort Model R-2023-45678",
+  "container_size": [
+   "307 x 408"
+  ]
+ },
+ "oneshot": {
+  "firm_name": "Beck-Moore Food Processing",
+  "city_state": "East Nancy, TX",
+  "inspection_date": "05/15/2023 to 05/17/2023",
+  "fei_number": "FEI-2012-TX-90806",
+  "fce_number": "FCE-2023-45678",
+  "investigators": [
+   "Jared R. Granados"
+  ],
+  "products": [
+   "Canned Green Beans"
+  ],
+  "sid_numbers": [
+   "SID-2023-45678-001"
+  ],
+  "retort_manufacturer_number": "Allpax Retort Model R-2023-45678",
+  "container_size": [
+   "307 x 408"
+  ]
+ }
+}

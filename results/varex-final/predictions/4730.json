@@ -1,0 +1,19 @@
+{
+ "employer": "Wright Inc",
+ "project_name": "Urban Renewal Project",
+ "employee_name": "Hanife Baker",
+ "job_title": "Construction Site Manager",
+ "job_site": "123 Main Street, Construction Site",
+ "duties_performed": "Supervised construction activities, managed workforce, ensured compliance with safety regulations, coordinated with subcontractors, and maintained project documentation.",
+ "tools_used": "Hard hat, safety goggles, ear protection, measuring tape, clipboard, walkie-talkie, and safety gloves.",
+ "payment_method": "Hourly",
+ "piece_work_details": "Not applicable",
+ "hourly_wage": 25.5,
+ "employment_period": {
+  "start_date": "06/01/2023",
+  "end_date": "08/31/2023"
+ },
+ "fringe_benefits": {
+  "other_benefits": "Paid time off, life insurance, and employee assistance programs."
+ }
+}

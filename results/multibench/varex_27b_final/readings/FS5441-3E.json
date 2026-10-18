@@ -1,0 +1,17 @@
+{
+ "primary": {
+  "submitter_name": "Randolph Inc",
+  "depository_institution_name": "Berry, Stark and Wright",
+  "delivery_instructions": "Securities to be delivered to the Federal Reserve Bank of New York for credit to account number 4467-7909-9458. All deliveries must be made in accordance with the provisions of 31 CFR Part 356."
+ },
+ "parse": {
+  "submitter_name": "Randolph Inc",
+  "depository_institution_name": "Berry, Stark and Wright",
+  "delivery_instructions": "Securities to be delivered to the Federal Reserve Bank of New York for credit to account number 4467-7909-9458. All deliveries must be made in accordance with the provisions of 31 CFR Part 356."
+ },
+ "oneshot": {
+  "submitter_name": "Randolph Inc",
+  "depository_institution_name": "Berry, Stark and Wright",
+  "delivery_instructions": "Securities to be delivered to the Federal Reserve Bank of New York for credit to account number 4467-7909-9458. All deliveries must be made in accordance with the provisions of 31 CFR Part 356."
+ }
+}

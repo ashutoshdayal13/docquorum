@@ -1,0 +1,53 @@
+{
+ "primary": {
+  "vehicle_identification_number": "1G1ZT523XPF129473",
+  "body_style": "SUV",
+  "license_plate_number": "ABC1234",
+  "title_document_number": "CATD123456789012345678901234567",
+  "signature_date": "10/15/2023",
+  "grantor": {
+   "first_name": "Steve",
+   "address": "456 Houston Loaf Suite 523",
+   "city": "Amandaborough"
+  },
+  "grantee": {
+   "first_name": "Heloisa",
+   "address": "18523 Zachary Ferry Apt. 811",
+   "city": "Cardenaschester"
+  }
+ },
+ "parse": {
+  "vehicle_identification_number": "1G1ZT523XPF129473",
+  "body_style": "SUV",
+  "license_plate_number": "ABC1234",
+  "title_document_number": "CATD123456789012345678901234567",
+  "signature_date": "10/15/2023",
+  "grantor": {
+   "first_name": "Steve",
+   "address": "456 Houston Loaf Suite 523",
+   "city": "Amandaborough"
+  },
+  "grantee": {
+   "first_name": "Heloisa",
+   "address": "18523 Zachary Ferry Apt. 811",
+   "city": "Cardenaschester"
+  }
+ },
+ "oneshot": {
+  "vehicle_identification_number": "1G1ZT523XPF129473",
+  "body_style": "SUV",
+  "license_plate_number": "ABC1234",
+  "title_document_number": "CATD123456789012345678901234567",
+  "signature_date": "10/15/2023",
+  "grantor": {
+   "first_name": "Steve",
+   "address": "456 Houston Loaf Suite 523",
+   "city": "Amandaborough"
+  },
+  "grantee": {
+   "first_name": "Helois",
+   "address": "18523 Zachary Ferry Apt. 811",
+   "city": "Cardenaschester"
+  }
+ }
+}

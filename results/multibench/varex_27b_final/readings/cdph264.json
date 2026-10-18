@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "hospital_name": "Gloriachester Regional Medical Center",
+  "number_of_registered_nurses": 15,
+  "number_of_licensed_vocational_nurses": 8,
+  "number_of_cases_treated_annually": 450,
+  "number_of_beds": 30,
+  "physician_responsible": "Bernardo Alvarez, MD - Board Certified in General Surgery",
+  "surgeons_responsible": [
+   "Roland Morrow, MD - Board Certified in Plastic Surgery"
+  ],
+  "nurse_responsible": "Roland Morrow, RN, BSN - 5 years burn care experience, certified in burn care nursing"
+ },
+ "parse": {
+  "hospital_name": "Gloriachester Regional Medical Center",
+  "number_of_registered_nurses": 15,
+  "number_of_licensed_vocational_nurses": 8,
+  "number_of_cases_treated_annually": 450,
+  "number_of_beds": 30,
+  "physician_responsible": "Bernardo Alvarez, MD - Board Certified in General Surgery",
+  "surgeons_responsible": [
+   "Roland Morrow, MD - Board Certified in Plastic Surgery"
+  ],
+  "nurse_responsible": "Roland Morrow, RN, BSN - 5 years burn care experience, certified in burn care nursing"
+ },
+ "oneshot": {
+  "hospital_name": "Gloriachester Regional Medical Center",
+  "number_of_registered_nurses": 15,
+  "number_of_licensed_vocational_nurses": 8,
+  "number_of_cases_treated_annually": 450,
+  "number_of_beds": 30,
+  "physician_responsible": "Bernardo Alvarez, MD - Board Certified in General Surgery",
+  "surgeons_responsible": [
+   "Roland Morrow, MD - Board Certified in Plastic Surgery"
+  ],
+  "nurse_responsible": "Roland Morrow, RN, BSN - 5 years burn care experience, certified in burn care nursing"
+ }
+}

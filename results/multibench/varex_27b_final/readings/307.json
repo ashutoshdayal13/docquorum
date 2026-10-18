@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "date_of_application": "05/15/2024",
+  "required_training": [
+   "Manufactured Home Installation Techniques",
+   "Safety Regulations and Compliance",
+   "Structural Integrity and Foundation Requirements"
+  ],
+  "applicant_personal_information": {
+   "full_name": "Leon U. Jones",
+   "date_of_birth": "08/19/1970",
+   "phone_number": "(226) 386-5319",
+   "mailing_address": "282 Brenda Harbor, Port Christopherside, CA 50551"
+  },
+  "applicant_business_information": {
+   "business_name": "Flores, Davis and Robinson",
+   "business_address": "282 Brenda Harbor, Port Christopherside, CA 50551",
+   "business_phone_number": "(445) 797-5499"
+  }
+ },
+ "parse": {
+  "date_of_application": "05/15/2024",
+  "required_training": [
+   "Manufactured Home Installation Techniques",
+   "Safety Regulations and Compliance",
+   "Structural Integrity and Foundation Requirements"
+  ],
+  "applicant_personal_information": {
+   "full_name": "Leon U. Jones",
+   "date_of_birth": "08/19/1970",
+   "phone_number": "(226) 386-5319",
+   "mailing_address": "282 Brenda Harbor, Port Christopherside, CA 50551"
+  },
+  "applicant_business_information": {
+   "business_name": "Flores, Davis and Robinson",
+   "business_address": "282 Brenda Harbor, Port Christopherside, CA 50551",
+   "business_phone_number": "(445) 797-5499"
+  }
+ },
+ "oneshot": {
+  "date_of_application": "05/15/2024",
+  "required_training": [
+   "Manufactured Home Installation Techniques",
+   "Safety Regulations and Compliance",
+   "Structural Integrity and Foundation Requirements"
+  ],
+  "applicant_personal_information": {
+   "full_name": "Leon U. Jones",
+   "date_of_birth": "08/19/1970",
+   "phone_number": "(226) 386-5319",
+   "mailing_address": "282 Brenda Harbor, Port Christopherside, CA 50551"
+  },
+  "applicant_business_information": {
+   "business_name": "Flores, Davis and Robinson",
+   "business_address": "282 Brenda Harbor, Port Christopherside, CA 50551",
+   "business_phone_number": "(445) 797-5499"
+  }
+ }
+}

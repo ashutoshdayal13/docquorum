@@ -1,0 +1,74 @@
+{
+ "primary": {
+  "patient_relationship_to_primary": "Dependent",
+  "patient": {
+   "name": "Hirsch, Tyler H.",
+   "address": "973 Hendricks Pike Suite 126",
+   "phone": "(439)535-24",
+   "email": "tyler.hirsch@",
+   "member_id": "MSP123456789012"
+  },
+  "primary_insured": {
+   "name": "Hirsch, Tyler H."
+  },
+  "insurance_info": {
+   "company": "Morris-Dalton Insurance",
+   "plan_name": "HealthPlus Gold"
+  },
+  "authorized_representative": {
+   "name": "Oak, Judy",
+   "address": "41343 Davenport Prairie Suite 795",
+   "phone": "(104)370-37",
+   "email": "judy.oak@gmai",
+   "relationship_to_patient": "Spouse"
+  }
+ },
+ "parse": {
+  "patient_relationship_to_primary": "Dependent",
+  "patient": {
+   "name": "Hirsch, Tyler H.",
+   "address": "973 Hendricks Pike Suite 126",
+   "phone": "(439)535-24",
+   "email": "tyler.hirsch@",
+   "member_id": "MSP123456789012"
+  },
+  "primary_insured": {
+   "name": "Hirsch, Tyler H."
+  },
+  "insurance_info": {
+   "company": "Morris-Dalton Insurance",
+   "plan_name": "HealthPlus Gold"
+  },
+  "authorized_representative": {
+   "name": "Oak, Judy",
+   "address": "41343 Davenport Prairie Suite 795",
+   "phone": "(104)370-37",
+   "email": "judy.oak@gmai",
+   "relationship_to_patient": "Spouse"
+  }
+ },
+ "oneshot": {
+  "patient_relationship_to_primary": "Dependent",
+  "patient": {
+   "name": "Hirsch, Tyler H.",
+   "address": "973 Hendricks Pike Suite 126",
+   "phone": "(439)535-24",
+   "email": "tyler.hirsch@",
+   "member_id": "MSP123456789012"
+  },
+  "primary_insured": {
+   "name": "Hirsch, Tyler H."
+  },
+  "insurance_info": {
+   "company": "Morris-Dalton Insurance",
+   "plan_name": "HealthPlus Gold"
+  },
+  "authorized_representative": {
+   "name": "Oak, Judy",
+   "address": "41343 Davenport Prairie Suite 795",
+   "phone": "(104)370-37",
+   "email": "judy.oak@gmai",
+   "relationship_to_patient": "Spouse"
+  }
+ }
+}

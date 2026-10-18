@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "seller_name": "Murphy, Ramirez and Garza",
+  "seller_number": 378667248530,
+  "certification_date": "03/15/2023",
+  "seller_address": {
+   "city": "South Crystalview"
+  },
+  "purchaser_info": {
+   "first_name": "Marie-Louise",
+   "photo_id_type": "Passport",
+   "photo_id_number": 711053454,
+   "city": "Middeltonberg"
+  }
+ },
+ "parse": {
+  "seller_name": "Murphy, Ramirez and Garza",
+  "seller_number": 378667248530,
+  "certification_date": "03/15/2023",
+  "seller_address": {
+   "city": "South Crystalview"
+  },
+  "purchaser_info": {
+   "first_name": "Marie-Louise",
+   "photo_id_type": "Passport",
+   "photo_id_number": 711053454,
+   "city": "Middletonberg"
+  }
+ },
+ "oneshot": {
+  "seller_name": "Murphy, Ramirez and Garza",
+  "seller_number": 378667248530,
+  "certification_date": "03/15/2023",
+  "seller_address": {
+   "city": "South Crystalview"
+  },
+  "purchaser_info": {
+   "first_name": "Marie-Louise",
+   "photo_id_type": "Passport",
+   "photo_id_number": 711053454,
+   "city": "Middlettonberg"
+  }
+ }
+}

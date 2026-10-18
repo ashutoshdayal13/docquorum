@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "name_of_injured_deceased_employee": "Douglas D. Sen",
+  "owcp_number": "DPM-2024-43846",
+  "signature_date": "11/15/2023",
+  "email_addresses": [
+   "douglas.sen@yahoo.com",
+   "dsen@oneal.com"
+  ],
+  "signatory": {
+   "name": "Douglas D. Sen",
+   "title": "Early years teacher",
+   "firm_business_name": "Oneal and Sons",
+   "address": "33881 Gonzalez Lane, Lake Jessicahaven, 05468, US",
+   "telephone_number": "(439) 130-"
+  }
+ },
+ "parse": {
+  "name_of_injured_deceased_employee": "Douglas D. Sen",
+  "owcp_number": "DPM-2024-43846",
+  "signature_date": "11/15/2023",
+  "email_addresses": [
+   "douglas.sen@yahoo.com",
+   "dsen@oneal.com"
+  ],
+  "signatory": {
+   "name": "Douglas D. Sen",
+   "title": "Early years teacher",
+   "firm_business_name": "Oneal and Sons",
+   "address": "33881 Gonzalez Lane, Lake Jessicahaven, 05468, US",
+   "telephone_number": "(439) 130-"
+  }
+ },
+ "oneshot": {
+  "name_of_injured_deceased_employee": "Douglas D. Sen",
+  "owcp_number": "DPM-2024-43846",
+  "signature_date": "11/15/2023",
+  "email_addresses": [
+   "douglas.sen@yahoo.com",
+   "dsen@oneal.com"
+  ],
+  "signatory": {
+   "name": "Douglas D. Sen",
+   "title": "Early years teacher",
+   "firm_business_name": "Oneal and Sons",
+   "address": "33881 Gonzalez Lane, Lake Jessicahaven, 05468, US",
+   "telephone_number": "(439) 130-"
+  }
+ }
+}

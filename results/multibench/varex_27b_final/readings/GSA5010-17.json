@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "educational_institution_name": "University of Missouri",
+  "student_name": "Devin L. Tijerina",
+  "student_name_confirmation": "Devin L. Tijerina",
+  "service_description": "Assisting with community outreach programs and event coordination",
+  "start_date": "06/01/2023",
+  "end_date": "08/15/2023"
+ },
+ "parse": {
+  "educational_institution_name": "University of Missouri",
+  "student_name": "Devin L. Tijerina",
+  "student_name_confirmation": "Devin L. Tijerina",
+  "service_description": "Assisting with community outreach programs and event coordination",
+  "start_date": "06/01/2023",
+  "end_date": "08/15/2023"
+ },
+ "oneshot": {
+  "educational_institution_name": "University of Missouri",
+  "student_name": "Devin L. Tijerina",
+  "student_name_confirmation": "Devin L. Tijerina",
+  "service_description": "Assisting with community outreach programs and event coordination",
+  "start_date": "06/01/2023",
+  "end_date": "08/15/2023"
+ }
+}

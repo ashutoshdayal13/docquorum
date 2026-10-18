@@ -1,0 +1,92 @@
+{
+ "primary": {
+  "governmental_entity_name": "City of Lake Derrick",
+  "department_office": "Public Works Dept",
+  "address": "1368 Anderson Place Suite 393",
+  "city": "Lake Derrick",
+  "state": "IA",
+  "zip_code": "11337",
+  "email": "publicworks@lakederrick.gov",
+  "phone_number": "(319) 555-1234",
+  "certification_date": "05/15/2023",
+  "authorized_agent": {
+   "first_name": "Lucie",
+   "middle_name": "C.",
+   "last_name": "Bennett"
+  },
+  "exempt_vehicles": [
+   {
+    "vehicle_description": "2020 Ford"
+   },
+   {
+    "vehicle_description": "2019 Chevy"
+   },
+   {
+    "vehicle_description": "2018 Toyota"
+   },
+   {
+    "vehicle_description": "2017 Dodge"
+   }
+  ]
+ },
+ "parse": {
+  "governmental_entity_name": "City of Lake Derrick",
+  "department_office": "Public Works Dept",
+  "address": "1368 Anderson Place Suite 393",
+  "city": "Lake Derrick",
+  "state": "IA",
+  "zip_code": "11337",
+  "email": "publicworks@lakederrick.gov",
+  "phone_number": "(319) 555-1234",
+  "certification_date": "05/15/2023",
+  "authorized_agent": {
+   "first_name": "Lucie",
+   "middle_name": "C.",
+   "last_name": "Bennett"
+  },
+  "exempt_vehicles": [
+   {
+    "vehicle_description": "2020 Ford"
+   },
+   {
+    "vehicle_description": "2019 Chevy"
+   },
+   {
+    "vehicle_description": "2018 Toyota"
+   },
+   {
+    "vehicle_description": "2017 Dodge"
+   }
+  ]
+ },
+ "oneshot": {
+  "governmental_entity_name": "City of Lake Derrick",
+  "department_office": "Public Works Dept",
+  "address": "1368 Anderson Place Suite 393",
+  "city": "Lake Derrick",
+  "state": "IA",
+  "zip_code": "11337",
+  "email": "publicworks@lakederrick.gov",
+  "phone_number": "(319) 555-1234",
+  "certification_date": "05/15/2023",
+  "authorized_agent": {
+   "first_name": "Lucie",
+   "middle_name": "C.",
+   "last_name": "Bennett"
+  },
+  "exempt_vehicles": [
+   {
+    "vehicle_description": "2020 Ford"
+   },
+   {
+    "vehicle_description": "2019 Chevy"
+   },
+   {
+    "vehicle_description": "2018 Toyota"
+   },
+   {
+    "vehicle_description": "2017 Dodge"
+   }
+  ]
+ }
+}

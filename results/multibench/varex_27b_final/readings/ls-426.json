@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "owcp_file_no": "REF-2022-25404",
+  "claimant_name": "Brett Zuniga",
+  "injury_date": "03/15/2024",
+  "claimant": {
+   "name": "Brett Zuniga"
+  }
+ },
+ "parse": {
+  "owcp_file_no": "REF-2022-25404",
+  "claimant_name": "Brett Zuniga",
+  "injury_date": "03/15/2024",
+  "claimant": {
+   "name": "Brett Zuniga"
+  }
+ },
+ "oneshot": {
+  "owcp_file_no": "REF-2022-25404",
+  "claimant_name": "Brett Zuniga",
+  "injury_date": "03/15/2024",
+  "claimant": {
+   "name": "Brett Zuniga"
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "prac_contract_number": "PRAC-2023-45678",
+ "hud_project_number": "HUD-2023-98765",
+ "effective_date": "06/01/2023",
+ "commencement_date": "07/15/2023",
+ "completion_date": "06/30/2025",
+ "hud_representative": {
+  "name": "Larry S. Fantoni",
+  "title": "Housing Program Specialist"
+ },
+ "owner": {
+  "name": "Sara E. Botticelli",
+  "title": "Project Director"
+ }
+}

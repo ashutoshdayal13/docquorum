@@ -1,0 +1,45 @@
+{
+ "primary": {
+  "organization_name": "Williams Group EMS",
+  "organization_phone": "(932) 070-0429",
+  "vehicle_vin": "1GTN2DEG2JF123456",
+  "current_license_plate": "ABC1234",
+  "vehicle_make": "Ford Transit",
+  "vehicle_body_style": "Ambulance",
+  "certification_date": "03/15/2023",
+  "organization_address": {
+   "address": "7448 Morse Tunnel Suite 344",
+   "city": "Williamsberg",
+   "state": "IN",
+   "zip": "14792",
+   "county": "Brown"
+  },
+  "officer_name": {
+   "first_name": "Alexander",
+   "middle_name": "A.",
+   "last_name": "Franklin"
+  }
+ },
+ "parse": {
+  "organization_name": "Williams Group EMS",
+  "organization_phone": "(932) 070-0429",
+  "vehicle_vin": "1GTN2DEG2JF123456",
+  "current_license_plate": "ABC1234",
+  "vehicle_make": "Ford Transit",
+  "vehicle_body_style": "Ambulance",
+  "certification_date": "03/15/2023",
+  "organization_address": {
+   "address": "7448 Morse Tunnel Suite 344",
+   "city": "Williamsberg",
+   "state": "IN",
+   "zip": "14792",
+   "county": "Brown"
+  },
+  "officer_name": {
+   "first_name": "Alexander",
+   "middle_name": "A.",
+   "last_name": "Franklin"
+  }
+ },
+ "oneshot": {}
+}

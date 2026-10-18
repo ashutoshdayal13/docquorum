@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "attorney_state_bar_number": "LCSW-2007-SC-63666",
+  "attorney_uscis_account_number": "6630-3297-20",
+  "company_or_organization": "Aguilar, Thomas and McClure",
+  "form_i_907_number": "I-907-DPM-2024-33807",
+  "mailing_address": {
+   "in_care_of": "Brita Brown",
+   "street": "171 Kenneth Lakes",
+   "apt": "Suite",
+   "city": "New Sheila",
+   "zip": "90557",
+   "country": "USA"
+  },
+  "applicant_name": "Brita Brown"
+ },
+ "parse": {
+  "attorney_state_bar_number": "LCSW-2007-SC-63666",
+  "attorney_uscis_account_number": "6630-3297-20",
+  "company_or_organization": "Aguilar, Thomas and Mcclure",
+  "form_i_907_number": "I-907-DPM-2024-33807",
+  "mailing_address": {
+   "in_care_of": "Brita Brown",
+   "street": "171 Kenneth Lakes",
+   "apt": "Suite",
+   "city": "New Sheila",
+   "zip": "90557",
+   "country": "USA"
+  },
+  "applicant_name": "Brita Brown"
+ },
+ "oneshot": {
+  "attorney_state_bar_number": "LCSW-2007-SC-63666",
+  "attorney_uscis_account_number": "6630-3297-20",
+  "company_or_organization": "Aguilar, Thomas and McClure",
+  "form_i_907_number": "I-907-DPM-2024-33807",
+  "mailing_address": {
+   "in_care_of": "Brita Brown",
+   "street": "171 Kenneth Lakes",
+   "apt": "Suite",
+   "city": "New Sheila",
+   "zip": "90557",
+   "country": "USA"
+  },
+  "applicant_name": "Brita Brown"
+ }
+}

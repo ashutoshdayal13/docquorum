@@ -1,0 +1,116 @@
+{
+ "primary": {
+  "last_five_ssn_digits": "09801",
+  "daytime_phone": "2109652",
+  "other_phone": "2790389",
+  "email": "restrada@campbell.com",
+  "highest_grade_step_level_rate": "Administrative Law Judge, Grade 15, Step 5, $145,600",
+  "retirement_date": "06/15/2023",
+  "interested_agencies": "Department of Veterans Affairs, Social Security Administration, Department of Labor",
+  "address": {
+   "street": "1544 Michael Burgs Suite 985"
+  },
+  "alj_experience": [
+   {
+    "position": "Administrativ",
+    "agency": "Departmen",
+    "start_date": "01/15/2005",
+    "end_date": "06/15/2023"
+   },
+   {
+    "position": "Hearings",
+    "agency": "Social",
+    "start_date": "03/10/2000",
+    "end_date": "01/14/2005"
+   },
+   {
+    "position": "Attorney",
+    "agency": "Departmen",
+    "start_date": "07/20/1995",
+    "end_date": "03/09/2000"
+   }
+  ],
+  "licensure_states": [
+   {
+    "state": "California"
+   }
+  ],
+  "applicant_name": "Renee T. Estrada"
+ },
+ "parse": {
+  "last_five_ssn_digits": "09801",
+  "daytime_phone": "2109652",
+  "other_phone": "2790389",
+  "email": "restrada@campbell.com",
+  "highest_grade_step_level_rate": "Administrative Law Judge, Grade 15, Step 5, $145,600",
+  "retirement_date": "06/15/2023",
+  "interested_agencies": "Department of Veterans Affairs, Social Security Administration, Department of Labor",
+  "address": {
+   "street": "1544 Michael Burgs Suite 985"
+  },
+  "alj_experience": [
+   {
+    "position": "Administrativ",
+    "agency": "Departmen",
+    "start_date": "01/15/2005",
+    "end_date": "06/15/2023"
+   },
+   {
+    "position": "Hearings",
+    "agency": "Social",
+    "start_date": "03/10/2000",
+    "end_date": "01/14/2005"
+   },
+   {
+    "position": "Attorney",
+    "agency": "Departmen",
+    "start_date": "07/20/1995",
+    "end_date": "03/09/2000"
+   }
+  ],
+  "licensure_states": [
+   {
+    "state": "California"
+   }
+  ],
+  "applicant_name": "Renee T. Estrada"
+ },
+ "oneshot": {
+  "last_five_ssn_digits": "09801",
+  "daytime_phone": "2109652",
+  "other_phone": "2790389",
+  "email": "restrada@campbell.com",
+  "highest_grade_step_level_rate": "Administrative Law Judge, Grade 15, Step 5, $145,600",
+  "retirement_date": "06/15/2023",
+  "interested_agencies": "Department of Veterans Affairs, Social Security Administration, Department of Labor",
+  "address": {
+   "street": "1544 Michael Burgs Suite 985"
+  },
+  "alj_experience": [
+   {
+    "position": "Administrativ",
+    "agency": "Departmen",
+    "start_date": "01/15/2005",
+    "end_date": "06/15/2023"
+   },
+   {
+    "position": "Hearings",
+    "agency": "Social",
+    "start_date": "03/10/2000",
+    "end_date": "01/14/2005"
+   },
+   {
+    "position": "Attorney",
+    "agency": "Departmen",
+    "start_date": "07/20/1995",
+    "end_date": "03/09/2000"
+   }
+  ],
+  "licensure_states": [
+   {
+    "state": "California"
+   }
+  ],
+  "applicant_name": "Renee T. Estrada"
+ }
+}

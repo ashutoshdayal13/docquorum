@@ -1,0 +1,23 @@
+{
+ "primary": {
+  "bond_number": "BND-2023-1234",
+  "principal": {
+   "name": "Warda F. Garcia",
+   "address": "2280 Mitchell Summit, Calhounbury, MI"
+  }
+ },
+ "parse": {
+  "bond_number": "BND-2023-1234",
+  "principal": {
+   "name": "Warda F. Garcia",
+   "address": "2280 Mitchell Summit, Calhounbury, MI"
+  }
+ },
+ "oneshot": {
+  "bond_number": "BND-2023-1234",
+  "principal": {
+   "name": "Warda F. Garcia",
+   "address": "2280 Mitchell Summit, Calhounbury, MI"
+  }
+ }
+}

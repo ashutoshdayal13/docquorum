@@ -1,0 +1,22 @@
+{
+ "petitioner_name": "Rodriguez PLC",
+ "petitioner_physical_address": {
+  "street": "9752 Gabriela Knoll",
+  "city": "Lake Adamview",
+  "zip_code": "88659"
+ },
+ "petitioner_mailing_address": {
+  "street": "9752 Gabriela Knoll",
+  "city": "Lake Adamview",
+  "zip_code": "88659"
+ },
+ "petitioner_contact_information": {
+  "phone": "(033) 806-1784",
+  "email": "lteixeira@rodriguez.com",
+  "fax": "(599) 860-8515"
+ },
+ "attorney_or_representative": {
+  "bar_number": "PE-2010-IL-1269",
+  "contact_information": "(033) 806-17"
+ }
+}

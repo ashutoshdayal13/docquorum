@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "applicant_given_name": "Victoria",
+  "applicant_middle_name": "S.",
+  "applicant_family_name": "Ramirez",
+  "credit_card_expiration_date": "12/25",
+  "credit_card_holder": {
+   "given_name": "Victoria",
+   "middle_name": "S.",
+   "family_name": "Ramirez",
+   "address": "89481 Megan Street, West Jennifer, 26949",
+   "phone": "(954) 298-8760",
+   "email": "victoria.ramirez@gmail.com"
+  }
+ },
+ "parse": {
+  "applicant_given_name": "Victoria",
+  "applicant_middle_name": "S.",
+  "applicant_family_name": "Ramirez",
+  "credit_card_expiration_date": "12/25",
+  "credit_card_holder": {
+   "given_name": "Victoria",
+   "middle_name": "S.",
+   "family_name": "Ramirez",
+   "address": "89481 Megan Street, West Jennifer, 26949",
+   "phone": "(954) 298-8760",
+   "email": "victoria.ramirez@gmail.com"
+  }
+ },
+ "oneshot": {
+  "applicant_given_name": "Victoria",
+  "applicant_middle_name": "S.",
+  "applicant_family_name": "Ramirez",
+  "credit_card_expiration_date": "12/25",
+  "credit_card_holder": {
+   "given_name": "Victoria",
+   "middle_name": "S.",
+   "family_name": "Ramirez",
+   "address": "89481 Megan Street, West Jennifer, 26949",
+   "phone": "(954) 298-8760",
+   "email": "victoria.ramirez@gmail.com"
+  }
+ }
+}

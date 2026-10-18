@@ -1,0 +1,19 @@
+{
+ "applicant_first_name": "Sanne",
+ "applicant_middle_name": "E.",
+ "applicant_last_name": "Miller",
+ "applicant_email": "sanne.miller@hotmail.com",
+ "applicant_phone": "(546) 570-507",
+ "vehicle_vin": "1G1ZT54867F123456",
+ "vehicle_make": "Ford",
+ "vehicle_body_style": "Sedan",
+ "applicant_signature_date": "10/15/2023",
+ "sffma_certifying_officer_name": "Aurelio W. Gamez, Certifying Officer",
+ "sffma_certifying_officer_signature_date": "10/15/2023",
+ "applicant_address": {
+  "street": "4159 Steven Overpass Suite 671",
+  "city": "New Melaniehaven",
+  "state": "AZ",
+  "zip": "25038"
+ }
+}

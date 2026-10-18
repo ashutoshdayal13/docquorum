@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "last_name": "Carrasco",
+  "first_name": "Kimberly",
+  "middle_initial": "S",
+  "business_name": "Tanner, Sampson and Long",
+  "irp_account_no": "6384-7054-8714",
+  "assessment_amount": 716443.87,
+  "appeal_reason": "Disagreement with the audit findings and assessment amount",
+  "printed_name": "Kimberly S. Carrasco",
+  "mailing_address": {
+   "address_line1": "2751 George Rest",
+   "city": "New Ryanstad",
+   "state": "LA",
+   "zip_code": "82356"
+  },
+  "attorney_info": {
+   "name": "Erhardt J. Fowler"
+  }
+ },
+ "parse": {
+  "last_name": "Carrasco",
+  "first_name": "Kimberly",
+  "middle_initial": "S",
+  "business_name": "Tanner, Sampson and Long",
+  "irp_account_no": "6384-7054-8714",
+  "assessment_amount": 716443.87,
+  "appeal_reason": "Disagreement with the audit findings and assessment amount",
+  "printed_name": "Kimberly S. Carrasco",
+  "mailing_address": {
+   "address_line1": "2751 George Rest",
+   "city": "New Ryanstad",
+   "state": "LA",
+   "zip_code": "82356"
+  },
+  "attorney_info": {
+   "name": "Erhardt J. Fowler"
+  }
+ },
+ "oneshot": {
+  "last_name": "Carrasco",
+  "first_name": "Kimberly",
+  "middle_initial": "S",
+  "business_name": "Tanner, Sampson and Long",
+  "irp_account_no": "6384-7054-8714",
+  "assessment_amount": 716443.87,
+  "appeal_reason": "Disagreement with the audit findings and assessment amount",
+  "printed_name": "Kimberly S. Carrasco",
+  "mailing_address": {
+   "address_line1": "2751 George Rest",
+   "city": "New Ryanstad",
+   "state": "LA",
+   "zip_code": "82356"
+  },
+  "attorney_info": {
+   "name": "Erhardt J. Fowler"
+  }
+ }
+}

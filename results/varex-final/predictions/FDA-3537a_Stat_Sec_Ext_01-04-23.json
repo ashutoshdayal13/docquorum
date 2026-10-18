@@ -1,0 +1,33 @@
+{
+ "facility_registration_number": "FAC-REG-2023-45678",
+ "pin": "PIN-2023-98765",
+ "facility_name": "Blackwell Food Processing Inc.",
+ "submitter_printed_name": "Constantin Lewis",
+ "submitter_email": "constantin.lewis@aol.com",
+ "authorizing_individual_name": "Saumya E. Marechal",
+ "authorizing_individual_phone": "(028) 582-0353",
+ "authorizing_individual_email": "saumya.marechal@yahoo.com",
+ "facility_address": {
+  "street_address_line_1": "63597 Martin Manors",
+  "street_address_line_2": "Suite 100",
+  "city": "West Jameschester",
+  "state": "ID",
+  "zip_postal_code": "57420",
+  "country": "United States"
+ },
+ "submitter_address": {
+  "street_address_line_1": "63597 Martin Manors",
+  "street_address_line_2": "West Jameschester",
+  "city": "ID",
+  "state": "57420",
+  "zip_postal_code": "United States"
+ },
+ "authorizing_individual_address": {
+  "street_address_line_1": "0929 Montgomery Square",
+  "street_address_line_2": "Suite 695",
+  "city": "Lake Donna",
+  "state": "CA",
+  "zip_postal_code": "53237",
+  "country": "United States"
+ }
+}

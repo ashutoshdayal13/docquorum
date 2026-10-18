@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "pha_name": "East Samuel Housing Authority",
+  "pha_code": "ESHA-2023",
+  "pha_fiscal_year_beginning": "07/01/2023",
+  "board_resolution_number": 2023.01,
+  "operating_budget_approval_date": "06/15/2023",
+  "operating_budget_submission_date": "06/20/2023",
+  "operating_budget_revision_approval_date": "11/05/2023",
+  "operating_budget_revision_submission_date": "11/10/2023",
+  "board_chairperson_name": "Chakradhar M. Rosenow",
+  "certification_date": "11/10/2023"
+ },
+ "parse": {
+  "pha_name": "East Samuel Housing Authority",
+  "pha_code": "ESHA-2023",
+  "pha_fiscal_year_beginning": "07/01/2023",
+  "board_resolution_number": 2023.01,
+  "operating_budget_approval_date": "06/15/2023",
+  "operating_budget_submission_date": "06/20/2023",
+  "operating_budget_revision_approval_date": "11/05/2023",
+  "operating_budget_revision_submission_date": "11/10/2023",
+  "board_chairperson_name": "Chakradhar M. Rosenow",
+  "certification_date": "11/10/2023"
+ },
+ "oneshot": {
+  "pha_name": "East Samuel Housing Authority",
+  "pha_code": "ESHA-2023",
+  "pha_fiscal_year_beginning": "07/01/2023",
+  "board_resolution_number": 2023.01,
+  "operating_budget_approval_date": "06/15/2023",
+  "operating_budget_submission_date": "06/20/2023",
+  "operating_budget_revision_approval_date": "11/05/2023",
+  "operating_budget_revision_submission_date": "11/10/2023",
+  "board_chairperson_name": "Chakradhar M. Rosenow",
+  "certification_date": "11/10/2023"
+ }
+}

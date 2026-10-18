@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "employee_name": "Camargo, Tyler G.",
+  "employee_h_number": "H123456",
+  "business_unit": "Community Planning and Development",
+  "additional_information": "Transferred from the Office of Public and Indian Housing to Community Planning and Development",
+  "supervisor": {
+   "name": "Horacio F. Woodard",
+   "date": "12/15/2023"
+  },
+  "records_officer": {
+   "name": "Jennifer I. Herrera",
+   "date": "12/15/2023"
+  }
+ },
+ "parse": {
+  "employee_name": "Camargo, Tyler G.",
+  "employee_h_number": "H123456",
+  "business_unit": "Community Planning and Development",
+  "additional_information": "Transferred from the Office of Public and Indian Housing to Community Planning and Development",
+  "supervisor": {
+   "name": "Horacio F. Woodard",
+   "date": "12/15/2023"
+  },
+  "records_officer": {
+   "name": "Jennifer I. Herrera",
+   "date": "12/15/2023"
+  }
+ },
+ "oneshot": {
+  "employee_name": "Camargo, Tyler G.",
+  "employee_h_number": "H123456",
+  "business_unit": "Community Planning and Development",
+  "additional_information": "Transferred from the Office of Public and Indian Housing to Community Planning and Development",
+  "supervisor": {
+   "name": "Horacio F. Woodard",
+   "date": "12/15/2023"
+  },
+  "records_officer": {
+   "name": "Jennifer I. Herrera",
+   "date": "12/15/2023"
+  }
+ }
+}

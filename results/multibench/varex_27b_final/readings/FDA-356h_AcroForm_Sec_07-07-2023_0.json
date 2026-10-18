@@ -1,0 +1,83 @@
+{
+ "primary": {
+  "date_of_submission": "07/07/2023",
+  "application_number": "DPM-23",
+  "supplement_number": "001",
+  "established_name": "Hydroxychloroquine sulfate",
+  "proprietary_name": "Plaquenil",
+  "chemical_name": "2-[[4-[(7-Chloro-4-quinolinyl)amino]pentyl]ethylamino]ethanol",
+  "dosage_form": "Tablet",
+  "strengths": "200 mg",
+  "route_of_administration": "Oral",
+  "proposed_indication": "Treatment of rheumatoid arthritis",
+  "orphan_designation_number": "000123",
+  "snomed_ct_indication": "Rheumatoid arthritis (disorder)",
+  "applicant": {
+   "name": "Andrea Q. Nayar",
+   "telephone": "(401) 995-4562",
+   "fax": "(491) 150-0566",
+   "email": "andrea.nayar@gmail.com",
+   "duns": "123456789",
+   "us_license_number": "JD-2",
+   "address": "29751 Larry Field Apt. 183, Ricefurt, CA 75559"
+  },
+  "us_agent": {
+   "name": "Paul T. Holmes",
+   "address": "019 Nicholas Inlet, Lake Sherri, ID 13426"
+  }
+ },
+ "parse": {
+  "date_of_submission": "07/07/2023",
+  "application_number": "DPM-23",
+  "supplement_number": "001",
+  "established_name": "Hydroxychloroquine sulfate",
+  "proprietary_name": "Plaquenil",
+  "chemical_name": "2-[[4-[(7-Chloro-4-quinolinyl)amino]pentyl]ethylamino]ethanol",
+  "dosage_form": "Tablet",
+  "strengths": "200 mg",
+  "route_of_administration": "Oral",
+  "proposed_indication": "Treatment of rheumatoid arthritis",
+  "orphan_designation_number": "000123",
+  "snomed_ct_indication": "Rheumatoid arthritis (disorder)",
+  "applicant": {
+   "name": "Andrea Q. Nayar",
+   "telephone": "(401) 995-4562",
+   "fax": "(491) 150-0566",
+   "email": "andrea.nayar@gmail.com",
+   "duns": "123456789",
+   "us_license_number": "JD-2",
+   "address": "29751 Larry Field Apt. 183, Ricefurt, CA 75559"
+  },
+  "us_agent": {
+   "name": "Paul T. Holmes",
+   "address": "019 Nicholas Inlet, Lake Sherri, ID 13426"
+  }
+ },
+ "oneshot": {
+  "date_of_submission": "07/07/2023",
+  "application_number": "DPM-23",
+  "supplement_number": "001",
+  "established_name": "Hydroxychloroquine sulfate",
+  "proprietary_name": "Plaquenil",
+  "chemical_name": "2-[[4-[(7-Chloro-4-quinolinyl)amino]pentyl]ethylamino]ethanol",
+  "dosage_form": "Tablet",
+  "strengths": "200 mg",
+  "route_of_administration": "Oral",
+  "proposed_indication": "Treatment of rheumatoid arthritis",
+  "orphan_designation_number": "000123",
+  "snomed_ct_indication": "Rheumatoid arthritis (disorder)",
+  "applicant": {
+   "name": "Andrea Q. Nayar",
+   "telephone": "(401) 995-4562",
+   "fax": "(491) 150-0566",
+   "email": "andrea.nayar@gmail.com",
+   "duns": "123456789",
+   "us_license_number": "JD-2",
+   "address": "29751 Larry Field Apt. 183, Ricefurt, CA 75559"
+  },
+  "us_agent": {
+   "name": "Paul T. Holmes",
+   "address": "019 Nicholas Inlet, Lake Sherri, ID 13426"
+  }
+ }
+}

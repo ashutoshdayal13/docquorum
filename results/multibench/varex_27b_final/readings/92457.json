@@ -1,0 +1,29 @@
+{
+ "primary": {
+  "additional_owner_requirements": "Owner must provide updated financial statements annually and maintain all safety certifications.",
+  "owner_representative": {
+   "name": "Emilio M. Mall"
+  },
+  "owner_address": {
+   "street": "79781 Chad Springs, North Kylefort"
+  }
+ },
+ "parse": {
+  "additional_owner_requirements": "Owner must provide updated financial statements annually and maintain all safety certifications.",
+  "owner_representative": {
+   "name": "Emilio M. Mall"
+  },
+  "owner_address": {
+   "street": "79781 Chad Springs, North Kylefort"
+  }
+ },
+ "oneshot": {
+  "additional_owner_requirements": "Owner must provide updated financial statements annually and maintain all safety certifications.",
+  "owner_representative": {
+   "name": "Emilio M. Mall"
+  },
+  "owner_address": {
+   "street": "79781 Chad Springs, North Kylefort"
+  }
+ }
+}

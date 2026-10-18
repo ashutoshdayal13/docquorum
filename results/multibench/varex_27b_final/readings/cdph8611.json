@@ -1,0 +1,119 @@
+{
+ "primary": {
+  "license_number": "PF-2023-11223",
+  "firm_name": "Smith-Bryant Foods",
+  "dba_name": "SB Food Processing",
+  "owner_name": "Smith-Bryant Inc.",
+  "state_of_incorporation": "VA",
+  "owners_officers": [
+   "Nitesh X. Thiel, Research scientist",
+   "Aaron T. Morales, Chief Operations Officer"
+  ],
+  "facility_square_footage": "15000 sq ft",
+  "number_of_employees": 45,
+  "commodities_products": [
+   "Canned Vegetables"
+  ],
+  "owner_printed_name": "Nitesh X. Thiel",
+  "owner_title": "OWNER/Research scientist",
+  "signature_date": "03/15/2023",
+  "mailing_address": {
+   "street": "661 Chang Groves Apt. 966",
+   "city": "North Markton",
+   "state": "VA",
+   "zip_code": "14284"
+  },
+  "facility_address": {
+   "street": "661 Chang Groves Apt. 966",
+   "city": "North Markton",
+   "state": "VA",
+   "zip_code": "14284"
+  },
+  "authorized_representatives": [
+   {
+    "name": "Nitesh X. Thiel",
+    "phone": "(786) 671-0832"
+   }
+  ],
+  "correspondent_details": {
+   "email": "nthiel@smithbryant.com"
+  }
+ },
+ "parse": {
+  "license_number": "PF-2023-11223",
+  "firm_name": "Smith-Bryant Foods",
+  "dba_name": "SB Food Processing",
+  "owner_name": "Smith-Bryant Inc.",
+  "state_of_incorporation": "VA",
+  "owners_officers": [
+   "Nitesh X. Thiel, Research scientist",
+   "Aaron T. Morales, Chief Operations Officer"
+  ],
+  "facility_square_footage": "15000 sq ft",
+  "number_of_employees": 45,
+  "commodities_products": [
+   "Canned Vegetables"
+  ],
+  "owner_printed_name": "Nitesh X. Thiel",
+  "owner_title": "OWNER/Research scientist",
+  "signature_date": "03/15/2023",
+  "mailing_address": {
+   "street": "661 Chang Groves Apt. 966"
+  },
+  "facility_address": {
+   "street": "661 Chang Groves Apt. 966",
+   "city": "North Markton",
+   "state": "VA",
+   "zip_code": "14284"
+  },
+  "authorized_representatives": [
+   {
+    "name": "Nitesh X. Thiel",
+    "phone": "(786) 671-0832"
+   }
+  ],
+  "correspondent_details": {
+   "email": "nthiel@smithbryant.com"
+  }
+ },
+ "oneshot": {
+  "license_number": "PF-2023-11223",
+  "firm_name": "Smith-Bryant Foods",
+  "dba_name": "SB Food Processing",
+  "owner_name": "Smith-Bryant Inc.",
+  "state_of_incorporation": "VA",
+  "owners_officers": [
+   "Nitesh X. Thiel, Research scientist",
+   "Aaron T. Morales, Chief Operations Officer"
+  ],
+  "facility_square_footage": "15000 sq ft",
+  "number_of_employees": 45,
+  "commodities_products": [
+   "Canned Vegetables"
+  ],
+  "owner_printed_name": "Nitesh X. Thiel",
+  "owner_title": "OWNER/Research scientist",
+  "signature_date": "03/15/2023",
+  "mailing_address": {
+   "street": "661 Chang Groves Apt. 966",
+   "city": "North Markton",
+   "state": "VA",
+   "zip_code": "14284"
+  },
+  "facility_address": {
+   "street": "661 Chang Groves Apt. 966",
+   "city": "North Markton",
+   "state": "VA",
+   "zip_code": "14284"
+  },
+  "authorized_representatives": [
+   {
+    "name": "Nitesh X. Thiel",
+    "phone": "(786) 671-0832"
+   }
+  ],
+  "correspondent_details": {
+   "email": "nthiel@smithbryant.com"
+  }
+ }
+}

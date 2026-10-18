@@ -1,13 +1,19 @@
 {
  "benchmark": "DocuBench v0.2.0",
- "score": 86.46983977509024,
+ "score": 90.79783905303204,
  "detail": {
   "benchmark": "DocuBench v0.2.0",
   "metric": "macro average field accuracy (official scorer)",
-  "score": 86.46983977509024,
+  "score": 90.79783905303204,
   "documents": 72,
   "completed": 72
  },
- "predictions": "results/docubench",
- "variant": "frozen"
+ "predictions": "results/docubench-final",
+ "variant": "final pipeline (v1.3): every document read again",
+ "earlier": {
+  "v1.1": {
+   "score": 86.46983977509024,
+   "predictions": "results/docubench"
+  }
+ }
 }

@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "supplemental_agreement_date": "06/15/2023",
+  "lease_number": "LS-2023-4567",
+  "gs_number": "GS-10F-0123AB",
+  "address_of_premises": "3456 Oak Avenue, Suite 200, Springfield, IL 62704",
+  "original_lease_reference": "Lease No. LS-2018-1234, dated 05/20/2018",
+  "amendment_effective_date": "07/01/2023",
+  "amendment_details": "Increase in rental rate to $2435.36 per month effective 07/01/2023",
+  "lessor_info": {
+   "name": "Pleun Shaw",
+   "address": "77069 Jackson Mall, Port James, CA 36941"
+  }
+ },
+ "parse": {
+  "supplemental_agreement_date": "06/15/2023",
+  "lease_number": "LS-2018-1234",
+  "gs_number": "GS-10F-0123AB",
+  "address_of_premises": "3456 Oak Avenue, Suite 200, Springfield, IL 62704",
+  "original_lease_reference": "Lease No. LS-2018-1234, dated 05/20/2018",
+  "amendment_effective_date": "07/01/2023",
+  "amendment_details": "Increase in rental rate to $2435.36 per month effective 07/01/2023",
+  "lessor_info": {
+   "name": "Pleun Shaw",
+   "address": "77069 Jackson Mall, Port James, CA 36941"
+  }
+ },
+ "oneshot": {
+  "supplemental_agreement_date": "06/15/2023",
+  "lease_number": "LS-2018-1234",
+  "gs_number": "GS-10F-0123AB",
+  "address_of_premises": "3456 Oak Avenue, Suite 200, Springfield, IL 62704",
+  "original_lease_reference": "Lease No. LS-2018-1234, dated 05/20/2018",
+  "amendment_effective_date": "07/01/2023",
+  "amendment_details": "Increase in rental rate to $2435.36 per month effective 07/01/2023",
+  "lessor_info": {
+   "name": "Pleun Shaw",
+   "address": "77069 Jackson Mall, Port James, CA 36941"
+  }
+ }
+}

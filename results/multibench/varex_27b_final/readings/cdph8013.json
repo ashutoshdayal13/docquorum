@@ -1,0 +1,116 @@
+{
+ "primary": {
+  "personal_information": {
+   "full_name": "Colas, Inaya L.",
+   "date_of_birth": "05/07/1991",
+   "contact_information": "0877 Cynthia Trail Suite 490, Juliaborough, MA 68295",
+   "email": "inaya.colas@gmail.com",
+   "address": "0877 Cynthia Trail Suite 490",
+   "city": "Juliaborough",
+   "state": "MA",
+   "zip_code": "68295"
+  },
+  "examination_and_certificate_details": [
+   {
+    "examination_name": "California Environmental Health Specialist Examination",
+    "examination_date": "06/10/2023",
+    "certificate_number": "CEH-2023-14401",
+    "issuing_authority": "California Department of Public Health"
+   },
+   {
+    "examination_name": "National Environmental Health Association (NEHA) Examination",
+    "examination_date": "08/15/2022",
+    "certificate_number": "NEHA-2022-5678",
+    "issuing_authority": "National Environmental Health Association"
+   },
+   {
+    "examination_name": "Food Protection Professional Certification Examination",
+    "examination_date": "03/20/2021",
+    "certificate_number": "FPP-2021-9101",
+    "issuing_authority": "National Environmental Health Association"
+   },
+   {
+    "examination_name": "Hazardous Materials Manager Certification Examination",
+    "examination_date": "11/30/2020",
+    "certificate_number": "HMM-2020-2345",
+    "issuing_authority": "Institute of Hazardous Materials Management"
+   }
+  ]
+ },
+ "parse": {
+  "personal_information": {
+   "full_name": "Colas, Inaya L.",
+   "date_of_birth": "05/07/1991",
+   "contact_information": "0877 Cynthia Trail Suite 490, Juliaborough, MA 68295",
+   "email": "inaya.colas@gmail.com",
+   "address": "0877 Cynthia Trail Suite 490",
+   "city": "Juliaborough",
+   "state": "MA",
+   "zip_code": "68295"
+  },
+  "examination_and_certificate_details": [
+   {
+    "examination_name": "California Environmental Health Specialist Examination",
+    "examination_date": "06/10/2023",
+    "certificate_number": "CEH-2023-14401",
+    "issuing_authority": "California Department of Public Health"
+   },
+   {
+    "examination_name": "National Environmental Health Association (NEHA) Examination",
+    "examination_date": "08/15/2022",
+    "certificate_number": "NEHA-2022-5678",
+    "issuing_authority": "National Environmental Health Association"
+   },
+   {
+    "examination_name": "Food Protection Professional Certification Examination",
+    "examination_date": "03/20/2021",
+    "certificate_number": "FPP-2021-9101",
+    "issuing_authority": "National Environmental Health Association"
+   },
+   {
+    "examination_name": "Hazardous Materials Manager Certification Examination",
+    "examination_date": "11/30/2020",
+    "certificate_number": "HMM-2020-2345",
+    "issuing_authority": "Institute of Hazardous Materials Management"
+   }
+  ]
+ },
+ "oneshot": {
+  "personal_information": {
+   "full_name": "Colas, Inaya L.",
+   "date_of_birth": "05/07/1991",
+   "contact_information": "0877 Cynthia Trail Suite 490, Juliaborough, MA 68295",
+   "email": "inaya.colas@gmail.com",
+   "address": "0877 Cynthia Trail Suite 490",
+   "city": "Juliaborough",
+   "state": "MA",
+   "zip_code": "68295"
+  },
+  "examination_and_certificate_details": [
+   {
+    "examination_name": "California Environmental Health Specialist Examination",
+    "examination_date": "06/10/2023",
+    "certificate_number": "CEH-2023-14401",
+    "issuing_authority": "California Department of Public Health"
+   },
+   {
+    "examination_name": "National Environmental Health Association (NEHA) Examination",
+    "examination_date": "08/15/2022",
+    "certificate_number": "NEHA-2022-5678",
+    "issuing_authority": "National Environmental Health Association"
+   },
+   {
+    "examination_name": "Food Protection Professional Certification Examination",
+    "examination_date": "03/20/2021",
+    "certificate_number": "FPP-2021-9101",
+    "issuing_authority": "National Environmental Health Association"
+   },
+   {
+    "examination_name": "Hazardous Materials Manager Certification Examination",
+    "examination_date": "11/30/2020",
+    "certificate_number": "HMM-2020-2345",
+    "issuing_authority": "Institute of Hazardous Materials Management"
+   }
+  ]
+ }
+}

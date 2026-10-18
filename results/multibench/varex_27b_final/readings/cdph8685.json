@@ -1,0 +1,23 @@
+{
+ "primary": {
+  "applicant_name": "Mads W. Miller",
+  "consent_date": "05/15/2023",
+  "consent_details": {
+   "consent_description": "Consent to participate in ADAP, consent to release of personal and medical information to the applicable entities and for the purposes described above, as necessary for all of the ADAP program(s) for which I am enrolled in, or applying for services. I also consent for ADAP to obtain my viral load and CD4 count records from the ADAP and Care Evaluation and Informatics Branch of CDPH to determine and maintain my eligibility and facilitate access to ADAP services."
+  }
+ },
+ "parse": {
+  "applicant_name": "Mads W. Miller",
+  "consent_date": "05/15/2023",
+  "consent_details": {
+   "consent_description": "Consent to participate in ADAP and consent to release of personal and medical information to the applicable entities and for the purposes described above, as necessary for all of the ADAP program(s) for which I am enrolled in, or applying for services. I also consent for ADAP to obtain my viral load and CD4 count records from the ADAP and Care Evaluation and Informatics Branch of CDPH to determine and maintain my eligibility and facilitate access to ADAP services."
+  }
+ },
+ "oneshot": {
+  "applicant_name": "Mads W. Miller",
+  "consent_date": "05/15/2023",
+  "consent_details": {
+   "consent_description": "I, Mads W. Miller, consent to participate in, consent to release of personal and medical information to the applicable entities and for the purposes described above, as necessary for all of the ADAP program(s) for which I am enrolled in, or applying for services. I also consent for ADAP to obtain my viral load and CD4 count records from the ADAP and Care Evaluation and Informatics Branch of CDPH to determine and maintain my eligibility and facilitate access to ADAP services."
+  }
+ }
+}

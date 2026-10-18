@@ -1,0 +1,107 @@
+{
+ "primary": {
+  "name_of_inspection": "Quarterly Inspection",
+  "date_of_inspection": "12/15/2023",
+  "building": "Hernandez Headquarters",
+  "location": "Mooreside, NV",
+  "group": "Facilities Management",
+  "area": "Cafeteria",
+  "other_area_specification": "Staff Lounge Area",
+  "size_and_adequacy": {
+   "description": "Sufficient space for current staff and visitors",
+   "rating": "Good"
+  },
+  "temperature_control": {
+   "description": "HVAC system functioning properly",
+   "rating": "Excellent"
+  },
+  "acoustics": {
+   "description": "Background noise levels are acceptable"
+  },
+  "doors": {
+   "description": "All doors are in good working condition"
+  },
+  "floors": {
+   "description": "Floors are clean and free of debris",
+   "rating": "Excellent"
+  },
+  "windows": {
+   "description": "Windows are clean and free of cracks or damage",
+   "rating": "Good"
+  },
+  "walls": {
+   "description": "Walls are clean and free of damage",
+   "rating": "Excellent"
+  }
+ },
+ "parse": {
+  "name_of_inspection": "Quarterly Inspection",
+  "date_of_inspection": "12/15/2023",
+  "building": "Hernandez Headquarters",
+  "location": "Mooreside, NV",
+  "group": "Facilities Management",
+  "area": "Cafeteria",
+  "other_area_specification": "Staff Lounge Area",
+  "size_and_adequacy": {
+   "description": "Sufficient space for current staff and visitors",
+   "rating": "Good"
+  },
+  "temperature_control": {
+   "description": "HVAC system functioning properly",
+   "rating": "Excellent"
+  },
+  "acoustics": {
+   "description": "Background noise levels are acceptable"
+  },
+  "doors": {
+   "description": "All doors are in good working condition"
+  },
+  "floors": {
+   "description": "Floors are clean and free of debris",
+   "rating": "Excellent"
+  },
+  "windows": {
+   "description": "Windows are clean and free of cracks or damage",
+   "rating": "Good"
+  },
+  "walls": {
+   "description": "Walls are clean and free of damage",
+   "rating": "Excellent"
+  }
+ },
+ "oneshot": {
+  "name_of_inspection": "Quarterly Inspection",
+  "date_of_inspection": "12/15/2023",
+  "building": "Hernandez Headquarters",
+  "location": "Moore side, NV",
+  "group": "Facilities Management",
+  "area": "Cafeteria",
+  "other_area_specification": "Staff Lounge Area",
+  "size_and_adequacy": {
+   "rating": "Good",
+   "description": "Sufficient space for current staff and visitors"
+  },
+  "temperature_control": {
+   "rating": "Excellent",
+   "description": "HVAC system functioning properly"
+  },
+  "acoustics": {
+   "description": "Background noise levels are acceptable"
+  },
+  "doors": {
+   "description": "All doors are in good working condition"
+  },
+  "floors": {
+   "rating": "Excellent",
+   "description": "Floors are clean and free of debris"
+  },
+  "windows": {
+   "rating": "Good",
+   "description": "Windows are clean and free of cracks or damage"
+  },
+  "walls": {
+   "rating": "Excellent",
+   "description": "Walls are clean and free of damage"
+  }
+ }
+}

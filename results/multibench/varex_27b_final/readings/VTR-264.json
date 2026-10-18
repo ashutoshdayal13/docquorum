@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "vehicle_identifier": "CTL-2022-67464",
+  "vehicle_make": "Toyota",
+  "vehicle_model": "Camry",
+  "lien_date": "03/15/2022",
+  "floor_plan_lien_number": "FP-2022-1004",
+  "agent_printed_name": "Mariano W. Young",
+  "agent_signature_date": "03/20/2022",
+  "notary_date": "03/20/2022",
+  "lienholder": {
+   "name": "Henderson, Hamilton and Gardner",
+   "address_line1": "04879 Richard Flats Suite 061",
+   "city": "Cameronborough"
+  }
+ },
+ "parse": {
+  "vehicle_identifier": "CTL-2022-67464",
+  "vehicle_make": "Toyota",
+  "vehicle_model": "Camry",
+  "lien_date": "03/15/2022",
+  "floor_plan_lien_number": "FP-2022-1004",
+  "agent_printed_name": "Mariano W. Young",
+  "agent_signature_date": "03/20/2022",
+  "notary_date": "03/20/2022",
+  "lienholder": {
+   "name": "Henderson, Hamilton and Gardner",
+   "address_line1": "04879 Richard Flats Suite 061",
+   "city": "Cameronborough"
+  }
+ },
+ "oneshot": {
+  "vehicle_identifier": "CTL-2022-67464",
+  "vehicle_make": "Toyota",
+  "vehicle_model": "Camry",
+  "lien_date": "03/15/2022",
+  "floor_plan_lien_number": "FP-2022-1004",
+  "agent_printed_name": "Mariano W. Young",
+  "agent_signature_date": "03/20/2022",
+  "notary_date": "03/20/2022",
+  "lienholder": {
+   "name": "Henderson, Hamilton and Gardner",
+   "address_line1": "04879 Richard Flats Suite 061",
+   "city": "Cameronborough"
+  }
+ }
+}

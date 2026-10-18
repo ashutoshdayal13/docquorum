@@ -1,0 +1,31 @@
+{
+ "date_bond_executed": "05/15/2023",
+ "agency_for_bid_submission": "Department of Transportation, Texas",
+ "principal": {
+  "legal_name": "Hodges, Gordon and Powers",
+  "state_of_incorporation": "Texas",
+  "name_and_title": "Amber X. Galarza, Research scientist"
+ },
+ "surety": {
+  "name": "Surety Bonds Inc."
+ },
+ "penal_sum": {
+  "millions": "0",
+  "thousands": "600",
+  "hundreds": "31"
+ },
+ "corporate_surety_signatures": [
+  {
+   "name_and_title": "John Doe, Corporate Surety Officer"
+  },
+  {
+   "name_and_title": "John Doe, Corporate Surety Officer"
+  }
+ ],
+ "individual_surety_signatures": [
+  {
+   "signature_1": "Jane Smith, Individual Surety",
+   "signature_2": "Robert Johnson, Individual Surety"
+  }
+ ]
+}

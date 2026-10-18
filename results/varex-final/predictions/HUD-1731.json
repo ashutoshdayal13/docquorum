@@ -1,0 +1,14 @@
+{
+ "estimated_amount": 380797.77,
+ "loan_details": "The securities offered pursuant to this prospectus (the “Securities”) are based on and backed by a loan insured under FHA or guaranteed under RD Section FHA Loa (the “Loan”). The Loan is a construction loan that will be automatically converted into a permanent project loan at the time it is finally endorsed for insurance by the Federal Housing Administration (“FHA”), or it is issued a conversion letter to the Loan Note Guarantee by the USDA Rural Development (“RD”). As of the first day of the month following the conversion, the Construction Loan Securities will be canceled, and the Permanent Project Loan Securities will be issued.",
+ "issuer": "Government National Mortgage Association (Ginnie Mae), U.S. Department of",
+ "issue_date": "10/15/2023",
+ "first_interest_payment_due": "11/01/2023",
+ "maturity_date_construction": "12/31/2024",
+ "maturity_date_permanent": "12/31/2043",
+ "transfer_agent": "Computershare Trust Company, N.A.",
+ "ginnie_mae_pool_numbers": {
+  "construction": "GNMA-2023-001",
+  "permanent": "GNMA-2023-002"
+ }
+}

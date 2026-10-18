@@ -1,0 +1,21 @@
+{
+ "vehicle_identifier": "1HGCM82633A129182",
+ "date_of_sale": "04/15/2023",
+ "odometer_disclosure": "The odometer reading is actual miles due to the vehicle being less than 10 years old.",
+ "purchaser_information": {
+  "name": "Stacy W. Palla",
+  "address": "953 Andrea Cliff Suite 328"
+ },
+ "lienholder_information": {
+  "name": "First National Bank",
+  "address": "1234 Financial Blvd"
+ },
+ "dealership_information": {
+  "name": "Kim Auto Dealership",
+  "address": "7890 Auto Way"
+ },
+ "signatures": {
+  "seller_date": "04/15/2023",
+  "purchaser_date": "04/15/2023"
+ }
+}

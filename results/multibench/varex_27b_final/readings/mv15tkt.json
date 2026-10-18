@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "applicant_name": "Emma W. Reuter",
+  "driver_license_number": "RN-2023-AR-83872",
+  "signature_date": "10/15/2023",
+  "district_attorney_office": {
+   "name": "South Roberttown District Attorney's Office",
+   "address": "30976 Kimberly Mall Suite 766",
+   "city": "South Roberttown",
+   "zip_code": "96492",
+   "telephone_extension": "205",
+   "email": "da@southroberttown.va.gov"
+  }
+ },
+ "parse": {
+  "applicant_name": "Emma W. Reuter",
+  "driver_license_number": "RN-2023-AR-83872",
+  "signature_date": "10/15/2023",
+  "district_attorney_office": {
+   "name": "South Roberttown District Attorney's Office",
+   "address": "30976 Kimberly Mall Suite 766",
+   "city": "South Roberttown",
+   "zip_code": "96492",
+   "telephone_extension": "205",
+   "email": "da@southroberttown.va.gov"
+  }
+ },
+ "oneshot": {
+  "applicant_name": "Emma W. Reuter",
+  "driver_license_number": "RN-2023-AR-83872",
+  "signature_date": "10/15/2023",
+  "district_attorney_office": {
+   "name": "South Roberttown District Attorney's Office",
+   "address": "30976 Kimberly Mall Suite 766",
+   "city": "South Roberttown",
+   "zip_code": "96492",
+   "telephone_extension": "205",
+   "email": "da@southroberttown.va.gov"
+  }
+ }
+}

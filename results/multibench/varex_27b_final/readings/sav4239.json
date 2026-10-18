@@ -1,0 +1,74 @@
+{
+ "primary": {
+  "customer_name": "Christopher U. Trivedi",
+  "case_number": "PO-2025-6561",
+  "applicant_name": "Christopher U. Trivedi",
+  "social_security_number": "825-73-0912",
+  "bond_numbers": [
+   "BOND-2023-45678",
+   "BOND-2023-98765"
+  ],
+  "safekeeping_location": "Central Safekeeping Facility, Denver",
+  "treasury_direct_account_number": "7295-2853-2281",
+  "treasury_direct_account_name": "Christopher U. Trivedi",
+  "bank_account_details": {
+   "bank_account_name": "Christopher U. Trivedi",
+   "depositor_account_number": "1234567890123456",
+   "bank_routing_number": "123456789",
+   "financial_institution_name": "Bank of America, National Association"
+  },
+  "contact_information": {
+   "phone_number": "(037) 439-1344",
+   "email_address": "christopher.trivedi@yahoo.com",
+   "daytime_telephone_number": "(883) 704-8793"
+  }
+ },
+ "parse": {
+  "customer_name": "Christopher U. Trivedi",
+  "case_number": "PO-2025-6561",
+  "applicant_name": "Christopher U. Trivedi",
+  "social_security_number": "825-73-0912",
+  "bond_numbers": [
+   "BOND-2023-45678",
+   "BOND-2023-98765"
+  ],
+  "safekeeping_location": "Central Safekeeping Facility, Denver",
+  "treasury_direct_account_number": "7295-2853-2281",
+  "treasury_direct_account_name": "Christopher U. Trivedi",
+  "bank_account_details": {
+   "bank_account_name": "Christopher U. Trivedi",
+   "depositor_account_number": "1234567890123456",
+   "bank_routing_number": "123456789",
+   "financial_institution_name": "Bank of America, National Association"
+  },
+  "contact_information": {
+   "phone_number": "(037) 439-1344",
+   "email_address": "christopher.trivedi@yahoo.com",
+   "daytime_telephone_number": "(883) 704-8793"
+  }
+ },
+ "oneshot": {
+  "customer_name": "Christopher U. Trivedi",
+  "case_number": "PO-2025-6561",
+  "applicant_name": "Christopher U. Trivedi",
+  "social_security_number": "825-73-0912",
+  "bond_numbers": [
+   "BOND-2023-45678",
+   "BOND-2023-98765"
+  ],
+  "safekeeping_location": "Central Safekeeping Facility, Denver",
+  "treasury_direct_account_number": "7295-2853-2281",
+  "treasury_direct_account_name": "Christopher U. Trivedi",
+  "bank_account_details": {
+   "bank_account_name": "Christopher U. Trivedi",
+   "depositor_account_number": "1234567890123456",
+   "bank_routing_number": "123456789",
+   "financial_institution_name": "Bank of America, National Association"
+  },
+  "contact_information": {
+   "phone_number": "(037) 439-1344",
+   "email_address": "christopher.trivedi@yahoo.com",
+   "daytime_telephone_number": "(883) 704-8793"
+  }
+ }
+}

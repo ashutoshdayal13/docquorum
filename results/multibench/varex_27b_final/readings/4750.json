@@ -1,0 +1,83 @@
+{
+ "primary": {
+  "agency_name": "Frazier-Waters Housing Authority",
+  "agency_contact": {
+   "name": "Maria Eugenia M. Alcaraz",
+   "title": "Occupational Psychologist",
+   "telephone": "(793) 580-3252",
+   "email": "malcaraz@frazierwaters.com"
+  },
+  "executive_director": {
+   "name": "Maria Eugenia M. Alcaraz",
+   "title": "Executive Director",
+   "date": "03/15/2023"
+  },
+  "wage_rates": [
+   {
+    "work_classification": "Maintenance Laborer"
+   },
+   {
+    "work_classification": "Plumbing Mechanic"
+   },
+   {
+    "work_classification": "Electrical Mechanic"
+   },
+   {
+    "work_classification": "Carpentry Mechanic"
+   },
+   {
+    "work_classification": "HVAC Technician"
+   },
+   {
+    "work_classification": "Painting Mechanic"
+   },
+   {
+    "work_classification": "General Maintenance Worker"
+   },
+   {
+    "work_classification": "Building Maintenance Supervisor"
+   }
+  ]
+ },
+ "parse": {
+  "agency_name": "Frazier-Waters Housing Authority",
+  "agency_contact": {
+   "name": "Maria Eugenia M. Alcaraz",
+   "title": "Occupational Psychologist",
+   "telephone": "(793) 580-3252",
+   "email": "malcaraz@frazierwaters.com"
+  },
+  "executive_director": {
+   "name": "Maria Eugenia M. Alcaraz",
+   "title": "Executive Director",
+   "date": "03/15/2023"
+  },
+  "wage_rates": [
+   {
+    "work_classification": "Maintenance Laborer"
+   },
+   {
+    "work_classification": "Plumbing Mechanic"
+   },
+   {
+    "work_classification": "Electrical Mechanic"
+   },
+   {
+    "work_classification": "Carpentry Mechanic"
+   },
+   {
+    "work_classification": "HVAC Technician"
+   },
+   {
+    "work_classification": "Painting Mechanic"
+   },
+   {
+    "work_classification": "General Maintenance Worker"
+   },
+   {
+    "work_classification": "Building Maintenance Supervisor"
+   }
+  ]
+ },
+ "oneshot": {}
+}

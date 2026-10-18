@@ -1,0 +1,19 @@
+{
+ "date": "05/15/2023",
+ "facility_registration_number": "FAC-2021-50870",
+ "pin": "PIN-2023-50870",
+ "previous_owner_name": "Ryan W. Valencia",
+ "previous_owner_registration_number": "FAC-2019-30214",
+ "facility_name": "Moore, Fuller and Walker Health & Nutrition",
+ "unique_facility_identifier": "UFI-2023-50870-NE-01",
+ "facility_address": {
+  "street": "6706 Shane Isle, West Marissaton, PA 66044",
+  "city": "West Marissaton",
+  "state": "PA",
+  "zip_code": "66044"
+ },
+ "contact_information": {
+  "phone": "(216) 819-0536",
+  "email": "bryan.flynn@aol.com"
+ }
+}

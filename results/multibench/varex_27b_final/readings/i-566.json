@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "a_number": "A12345678",
+  "attorney_state_bar_number": "CA123456",
+  "date_of_birth": "05/24/1978",
+  "full_legal_name": "Solis, Stephanie Q.",
+  "family_name": "Solis",
+  "middle_name": "Q.",
+  "country_of_citizenship": "United States of America",
+  "marital_status": "Married",
+  "dos_pid": "C123456789",
+  "relationship_to_principal_alien": "Spouse",
+  "form_i_94_number": "ABC1234567",
+  "us_mailing_address": {
+   "street": "735 Armstrong Street",
+   "city": "Matthewchester",
+   "zip_code": "83625"
+  },
+  "us_physical_address": {
+   "street": "735 Armstrong Street",
+   "city": "Matthewchester",
+   "zip_code": "83625"
+  }
+ },
+ "parse": {
+  "a_number": "A12345678",
+  "attorney_state_bar_number": "CA123456",
+  "date_of_birth": "05/24/1978",
+  "full_legal_name": "Solis, Stephanie Q.",
+  "family_name": "Solis",
+  "middle_name": "Q.",
+  "country_of_citizenship": "United States of America",
+  "marital_status": "Married",
+  "dos_pid": "C123456789",
+  "relationship_to_principal_alien": "Spouse",
+  "form_i_94_number": "ABC1234567",
+  "us_mailing_address": {
+   "street": "735 Armstrong Street",
+   "city": "Matthewchester",
+   "zip_code": "83625"
+  },
+  "us_physical_address": {
+   "street": "735 Armstrong Street",
+   "city": "Matthewchester",
+   "zip_code": "83625"
+  }
+ },
+ "oneshot": {
+  "a_number": "A12345678",
+  "attorney_state_bar_number": "CA123456",
+  "date_of_birth": "05/24/1978",
+  "full_legal_name": "Solis, Stephanie Q.",
+  "family_name": "Solis",
+  "middle_name": "Q.",
+  "country_of_citizenship": "United States of America",
+  "marital_status": "Married",
+  "dos_pid": "C123456789",
+  "relationship_to_principal_alien": "Spouse",
+  "form_i_94_number": "ABC1234567",
+  "us_mailing_address": {
+   "street": "735 Armstrong Street",
+   "city": "Matthewchester",
+   "zip_code": "83625"
+  },
+  "us_physical_address": {
+   "street": "735 Armstrong Street",
+   "city": "Matthewchester",
+   "zip_code": "83625"
+  }
+ }
+}

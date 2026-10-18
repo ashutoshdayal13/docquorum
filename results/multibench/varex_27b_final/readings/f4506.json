@@ -1,0 +1,56 @@
+{
+ "primary": {
+  "primary_taxpayer_name": "Saucedo, Lee A.",
+  "primary_ssn": "161-88-8744",
+  "spouse_name": "Salcido, Karen",
+  "spouse_ssn": "345-10-4711",
+  "tax_return_type": "Form 1040",
+  "taxpayer_phone_number": "(435) 873-3208",
+  "signature_date": "05/15/2023",
+  "current_address": {
+   "street": "517 Miranda Plain Suite 646"
+  },
+  "previous_address": {
+   "street": "456 Maple Avenue Apt 3B"
+  },
+  "third_party_details": {
+   "name": "Uriel M. Pena"
+  }
+ },
+ "parse": {
+  "primary_taxpayer_name": "Saucedo, Lee A.",
+  "primary_ssn": "161-88-8744",
+  "spouse_name": "Salcido, Karen",
+  "spouse_ssn": "345-10-4711",
+  "tax_return_type": "Form 1040",
+  "taxpayer_phone_number": "(435) 873-3208",
+  "signature_date": "05/15/2023",
+  "current_address": {
+   "street": "517 Miranda Plain Suite 646"
+  },
+  "previous_address": {
+   "street": "456 Maple Avenue Apt 3B"
+  },
+  "third_party_details": {
+   "name": "Uriel M. Pena"
+  }
+ },
+ "oneshot": {
+  "primary_taxpayer_name": "Saucedo, Lee A.",
+  "primary_ssn": "161-88-8744",
+  "spouse_name": "Salcido, Karen",
+  "spouse_ssn": "345-10-4711",
+  "tax_return_type": "Form 1040",
+  "taxpayer_phone_number": "(435) 873-3208",
+  "signature_date": "05/15/2023",
+  "current_address": {
+   "street": "517 Miranda Plain Suite 646"
+  },
+  "previous_address": {
+   "street": "456 Maple Avenue Apt 3B"
+  },
+  "third_party_details": {
+   "name": "Uriel M. Pena"
+  }
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "operator_last_name": "Argentero",
+  "operator_first_name": "Oswaldo",
+  "operator_middle_initial": "G",
+  "vehicle_registration_number": "SNOW-2023-TN-85421",
+  "arrest_date": "12/15",
+  "arrest_location": "Lake Josephfort",
+  "arresting_officer_name": "Cassandra Robinson",
+  "vehicle_registration_number_2": "SNOW-2023-TN-85421-DOC",
+  "signature_date": "12/15/2023",
+  "operator_address": {
+   "street": "1327 Boone Branch Suite 924",
+   "city": "Lake Josephfort",
+   "zip_code": "18630"
+  }
+ },
+ "parse": {
+  "operator_last_name": "Argentero",
+  "operator_first_name": "Oswaldo",
+  "operator_middle_initial": "G",
+  "vehicle_registration_number": "SNOW-2023-TN-85421",
+  "arrest_date": "12/15",
+  "arrest_location": "Village of Lake Josephfort",
+  "arresting_officer_name": "Cassandra Robinson",
+  "vehicle_registration_number_2": "SNOW-2023-TN-85421-DOC",
+  "signature_date": "12/15/2023",
+  "operator_address": {
+   "street": "1327 Boone Branch Suite 924",
+   "city": "Lake Josephfort",
+   "zip_code": "18630"
+  }
+ },
+ "oneshot": {
+  "operator_last_name": "Argentero",
+  "operator_first_name": "Oswaldo",
+  "operator_middle_initial": "G",
+  "vehicle_registration_number": "SNOW-2023-TN-85421",
+  "arrest_date": "12/15",
+  "arrest_location": "Lake Josephfort",
+  "arresting_officer_name": "Cassandra Robinson",
+  "vehicle_registration_number_2": "SNOW-2023-TN-85421-DOC",
+  "signature_date": "12/15/2023",
+  "operator_address": {
+   "street": "1327 Boone Branch Suite 924",
+   "city": "Lake Josephfort",
+   "zip_code": "18630"
+  }
+ }
+}

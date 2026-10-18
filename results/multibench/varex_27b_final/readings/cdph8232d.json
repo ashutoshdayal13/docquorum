@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "last_name": "Harmon",
+  "first_name": "Christopher",
+  "date_of_birth": "01/10/1976",
+  "ssn_or_itin": "108-99-8969",
+  "phone_number": "(292) 484-9274",
+  "email_address": "christopher.harmon@hotmail.com",
+  "mailing_address": {
+   "address_line1": "53415 Allison Landing",
+   "city": "Lake Jonathan",
+   "state": "TX",
+   "zip_code": "97336"
+  }
+ },
+ "parse": {
+  "last_name": "Harmon",
+  "first_name": "Christopher",
+  "date_of_birth": "01/10/1976",
+  "ssn_or_itin": "108-99-8969",
+  "phone_number": "(292) 484-9274",
+  "email_address": "christopher.harmon@hotmail.com",
+  "mailing_address": {
+   "address_line1": "53415 Allison Landing",
+   "city": "Lake Jonathan",
+   "state": "TX",
+   "zip_code": "97336"
+  }
+ },
+ "oneshot": {
+  "last_name": "Harmon",
+  "first_name": "Christopher",
+  "date_of_birth": "01/10/1976",
+  "ssn_or_itin": "108-99-8969",
+  "phone_number": "(292) 484-9274",
+  "email_address": "christopher.harmon@hotmail.com",
+  "mailing_address": {
+   "address_line1": "53415 Allison Landing",
+   "city": "Lake Jonathan",
+   "state": "TX",
+   "zip_code": "97336"
+  }
+ }
+}

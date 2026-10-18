@@ -44,6 +44,8 @@ MIN_EVIDENCE_ROWS = 5           # an empty reply for a page with this many rows 
 REF_CHARS = 60000               # opening text searched for reference material (legends, tables)
 NO_TEXT = "(no extractable text; read the attached page images)"
 LOOP_PENALTY = 1.1              # a chunk whose reply went round in a loop is read again with it
+CHUNK_DPI, CHUNK_MAX_PX = 300, 9_000_000   # a chunk's page images (at most two pages): small print,
+                                           # the resolution the parser and zoom use
 
 
 def load_pages(pdf, name, use_parsed=False):
@@ -170,7 +172,7 @@ def _read_scalars(cl, schema, pdf, pages, image_mode, stat):
     sc = scalar_fields(schema)
     if not sc:
         return {}
-    imgs = tuple(PDF.page_images(pdf, 1, 2)) if image_mode else ()
+    imgs = tuple(PDF.page_images(pdf, 1, 2, max_pixels=CHUNK_MAX_PX, dpi=CHUNK_DPI)) if image_mode else ()
     allt = "\n".join(f"--- PAGE {i + 1} ---\n{t}" for i, t in enumerate(pages))
     text = (NO_TEXT if image_mode else
             allt if len(allt) <= 240000 else "\n".join(pages[:3] + pages[-2:])[:240000])
@@ -331,7 +333,7 @@ def _read_list(cl, schema, pdf, pages, image_mode, arr_name, item, arr_desc, wor
         label = f"page {lo+1}" if hi == lo + 1 else f"pages {lo+1}-{hi}"
         if image_mode:
             try:
-                imgs = tuple(PDF.page_images(pdf, lo + 1, hi))
+                imgs = tuple(PDF.page_images(pdf, lo + 1, hi, max_pixels=CHUNK_MAX_PX, dpi=CHUNK_DPI))
             except Exception:
                 imgs = ()
             out[ci], _ = _ask_chunk(cl, NO_TEXT, imgs[:MAX_IMAGES_PER_CALL], meta, label, stat)
@@ -341,7 +343,7 @@ def _read_list(cl, schema, pdf, pages, image_mode, arr_name, item, arr_desc, wor
         imgs = ()
         if scan:
             try:
-                imgs = tuple(PDF.page_images(pdf, lo + 1, hi))[:MAX_IMAGES_PER_CALL]
+                imgs = tuple(PDF.page_images(pdf, lo + 1, hi, max_pixels=CHUNK_MAX_PX, dpi=CHUNK_DPI))[:MAX_IMAGES_PER_CALL]
             except Exception:
                 imgs = ()
         blocks = [text]

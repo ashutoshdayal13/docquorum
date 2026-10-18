@@ -1,0 +1,70 @@
+{
+ "primary": {
+  "applicant_name": "Allison Porto",
+  "applicant_address": "94440 Alexander Rapids",
+  "applicant_phone": "(571) 117-900",
+  "applicant_city_state_zip": "Jamesview, TX 50482",
+  "applicant_email": "allison.porto@hotmail.com",
+  "state_file_number": 202412991,
+  "date_accepted_for_registration": "10/15/2023",
+  "cdph_vital_records": "CDPH Vital Records - TX",
+  "child_information_current": {
+   "child_name": "Porto, Alexander",
+   "date_of_birth": "03/15/2010",
+   "place_of_birth": "Memorial Hospital, Dallas, TX"
+  },
+  "parent_information_current": [
+   {
+    "parent_name": "Allison Porto"
+   },
+   {
+    "parent_name": "Henri Z. Lowe"
+   }
+  ],
+  "child_information_new": {
+   "child_name_new": "Porto, Alexander"
+  },
+  "parent_information_new": [
+   {
+    "parent_name_new": "Allison Porto"
+   },
+   {
+    "parent_name_new": "Henri Z. Lowe"
+   }
+  ]
+ },
+ "parse": {
+  "applicant_name": "Allison Porto",
+  "applicant_address": "94440 Alexander Rapids",
+  "applicant_phone": "(571) 117-900",
+  "applicant_city_state_zip": "Jamesview, TX 50482",
+  "applicant_email": "allison.porto@hotmail.com",
+  "state_file_number": 202412991,
+  "date_accepted_for_registration": "10/15/2023",
+  "cdph_vital_records": "CDPH Vital Records - TX",
+  "child_information_current": {
+   "child_name": "Porto, Alexander",
+   "date_of_birth": "03/15/2010",
+   "place_of_birth": "Memorial Hospital, Dallas, TX"
+  },
+  "parent_information_current": [
+   {
+    "parent_name": "Allison Porto"
+   },
+   {
+    "parent_name": "Henri Z. Lowe"
+   }
+  ],
+  "child_information_new": {
+   "child_name_new": "Porto, Alexander"
+  },
+  "parent_information_new": [
+   {
+    "parent_name_new": "Allison Porto"
+   },
+   {
+    "parent_name_new": "Henri Z. Lowe"
+   }
+  ]
+ }
+}

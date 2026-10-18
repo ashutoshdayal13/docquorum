@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "owner": {
+   "name": "Miller-Pollard",
+   "type": "Corporation"
+  },
+  "project": {
+   "name": "South Meganamouth Housing Project",
+   "location": "South Meganamouth",
+   "state": "WV",
+   "identifier": "FHA-2023-WV-001"
+  }
+ },
+ "parse": {
+  "owner": {
+   "name": "Miller-Pollard",
+   "type": "Corporation"
+  },
+  "project": {
+   "name": "South Meganmouth Housing Project",
+   "location": "South Meganmouth",
+   "state": "WV",
+   "identifier": "FHA-2023-WV-001"
+  }
+ },
+ "oneshot": {
+  "owner": {
+   "name": "Miller-Pollard",
+   "type": "Corporation"
+  },
+  "project": {
+   "name": "South Meganmouth Housing Project",
+   "location": "South Meganmouth",
+   "state": "WV",
+   "identifier": "FHA-2023-WV-001"
+  }
+ }
+}

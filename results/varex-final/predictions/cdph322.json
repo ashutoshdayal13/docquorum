@@ -1,0 +1,34 @@
+{
+ "applicant_name": "Leah Dominguez",
+ "applicant_driver_license": "MI-2950-8086-4",
+ "licensee_name": "Roksana S. Garcia",
+ "licensee_number": "MD-1991-CA-83318",
+ "facility_name": "Mccullough-Dickerson Healthcare",
+ "facility_license_number": "HC-2020-CA-56789",
+ "applicant_address": {
+  "street": "816 Smith Curve",
+  "city": "Jennifershire",
+  "state": "M",
+  "zip_code": "41866"
+ },
+ "licensee_address": {
+  "street": "0491 Brittany Lock",
+  "city": "West Cindychester",
+  "state": "C",
+  "zip_code": "72642"
+ },
+ "facility_address": {
+  "street": "0491 Brittany Lock",
+  "city": "West Cindychester",
+  "state": "C",
+  "zip_code": "72642"
+ },
+ "applicant_previous_addresses": [
+  {
+   "street": "123 Main St",
+   "city": "Springfield",
+   "state": "I",
+   "zip_code": "62701"
+  }
+ ]
+}

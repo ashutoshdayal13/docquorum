@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "lender_name": "Grant and Sons Mortgage",
+  "fhana_case_number": "FHA-2023-45678",
+  "property_address": "15983 Kathryn Vista Suite 077, New Betty, MT",
+  "manufacturer_info": {
+   "name": "Evergreen Homes Inc."
+  }
+ },
+ "parse": {
+  "lender_name": "Grant and Sons Mortgage",
+  "fhana_case_number": "FHA-2023-45678",
+  "property_address": "15983 Kathryn Vista Suite 077, New Betty, MT 06000",
+  "manufacturer_info": {
+   "name": "Evergreen Homes Inc."
+  }
+ },
+ "oneshot": {
+  "lender_name": "Grant and Sons Mortgage",
+  "fhana_case_number": "FHA-2023-45678",
+  "property_address": "15983 Kathryn Vista Suite 077, New Betty, MT 59999",
+  "manufacturer_info": {
+   "name": "Evergreen Homes Inc."
+  }
+ }
+}

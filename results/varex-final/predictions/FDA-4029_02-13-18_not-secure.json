@@ -1,0 +1,16 @@
+{
+ "employee_name": "Laura H. Martinez",
+ "social_security_number": "636-72-52",
+ "pay_date": "03/15/2023",
+ "employee_address": {
+  "address": "1987 Gina Springs Apt. 774, Dunlapville, TX 85151"
+ },
+ "bank_details": {
+  "bank_name": "First National Bank of Dunlapville, 1200 Main St, Dunlapville, TX 85151",
+  "bank_contact_person": "Bryan Pyziak",
+  "bank_phone_number": "(544) 924-9878",
+  "account_number": "6638-2188-8082",
+  "routing_number": "053188443",
+  "account_type": "Checking Account"
+ }
+}

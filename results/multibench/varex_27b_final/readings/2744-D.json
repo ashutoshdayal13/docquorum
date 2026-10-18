@@ -1,0 +1,56 @@
+{
+ "primary": {
+  "mortgagee_name": "Curtis-Lucas",
+  "project_name": "Heather Meadows Apartments",
+  "project_number": 4567,
+  "date_mortgagee_assumed_control": "01/15/2020",
+  "date_mortgagee_relinquished_control": "12/31/2023",
+  "disbursements": [
+   {
+    "description": "Initial construction costs",
+    "amount": 248252.87,
+    "date": "02/01/2020"
+   }
+  ],
+  "totals": {
+   "total_amount": 248252.87,
+   "total_number_of_disbursements": 1
+  }
+ },
+ "parse": {
+  "mortgagee_name": "Curtis-Lucas",
+  "project_name": "Heather Meadows Apartments",
+  "project_number": 4567,
+  "date_mortgagee_assumed_control": "01/15/2020",
+  "date_mortgagee_relinquished_control": "12/31/2023",
+  "disbursements": [
+   {
+    "description": "Initial construction costs",
+    "amount": 248252.87,
+    "date": "02/01/2020"
+   }
+  ],
+  "totals": {
+   "total_amount": 248252.87,
+   "total_number_of_disbursements": 1
+  }
+ },
+ "oneshot": {
+  "mortgagee_name": "Curtis-Lucas",
+  "project_name": "Heather Meadows Apartments",
+  "project_number": 4567,
+  "date_mortgagee_assumed_control": "01/15/2020",
+  "date_mortgagee_relinquished_control": "12/31/2023",
+  "disbursements": [
+   {
+    "description": "Initial construction costs",
+    "amount": 248252.87,
+    "date": "02/01/2020"
+   }
+  ],
+  "totals": {
+   "total_amount": 248252.87,
+   "total_number_of_disbursements": 1
+  }
+ }
+}

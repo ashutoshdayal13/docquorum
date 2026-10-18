@@ -1,0 +1,83 @@
+{
+ "primary": {
+  "action_type": "MFCS Request",
+  "vendor_action": "Update a Vendor",
+  "effective_date": "08/23/2023",
+  "vendor_name_1": "Arnold LLC",
+  "vendor_name_2": "Media and Broadcasting Services",
+  "ein_number": "45-6789012",
+  "vendor_id": "V12345678",
+  "f51_id": "F51-7654321",
+  "address_sequence": "1",
+  "vendor_location": "Garciahaven, OK",
+  "beneficiary_name": "Arnold LLC",
+  "bank_name": "First National Bank of Oklahoma",
+  "bank_account_number": 550025012521,
+  "routing_number": 123456789,
+  "requester_name": "Vicente I. Quintero",
+  "requester_date": "08/23/2023",
+  "preparer_date": "08/23/2023",
+  "address": {
+   "address_1": "07536 Susan Forges",
+   "address_2": "Suite 100",
+   "city": "Garciahaven",
+   "county": "Garcia County",
+   "state": "OK",
+   "postal_code": "97384"
+  }
+ },
+ "parse": {
+  "action_type": "MFCS Request",
+  "vendor_action": "Update a Vendor",
+  "effective_date": "08/23/2023",
+  "vendor_name_1": "Arnold LLC",
+  "vendor_name_2": "Media and Broadcasting Services",
+  "ein_number": "45-6789012",
+  "vendor_id": "V12345678",
+  "f51_id": "F51-7654321",
+  "address_sequence": "1",
+  "vendor_location": "Garciahaven, OK",
+  "beneficiary_name": "Arnold LLC",
+  "bank_name": "First National Bank of Oklahoma",
+  "bank_account_number": 550025012521,
+  "routing_number": 123456789,
+  "requester_name": "Vicente I. Quintero",
+  "requester_date": "08/23/2023",
+  "preparer_date": "08/23/2023",
+  "address": {
+   "address_1": "07536 Susan Forges",
+   "address_2": "Suite 100",
+   "city": "Garciahaven",
+   "county": "Garcia County",
+   "state": "OK",
+   "postal_code": "97384"
+  }
+ },
+ "oneshot": {
+  "action_type": "MFCS Request",
+  "vendor_action": "Update a Vendor",
+  "effective_date": "08/23/2023",
+  "vendor_name_1": "Arnold LLC",
+  "vendor_name_2": "Media and Broadcasting Services",
+  "ein_number": "45-6789012",
+  "vendor_id": "V12345678",
+  "f51_id": "F51-7654321",
+  "address_sequence": "1",
+  "vendor_location": "Garciahaven, OK",
+  "beneficiary_name": "Arnold LLC",
+  "bank_name": "First National Bank of Oklahoma",
+  "bank_account_number": 550025012521,
+  "routing_number": 123456789,
+  "requester_name": "Vicente I. Quintero",
+  "requester_date": "08/23/2023",
+  "preparer_date": "08/23/2023",
+  "address": {
+   "address_1": "07536 Susan Forges",
+   "address_2": "Suite 100",
+   "city": "Garciahaven",
+   "county": "Garcia County",
+   "state": "OK",
+   "postal_code": "97384"
+  }
+ }
+}

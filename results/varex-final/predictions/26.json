@@ -1,0 +1,64 @@
+{
+ "chargeable_employee_name": "Carson, Cemil H.",
+ "chargeable_employee_telephone": "(925) 210-1175",
+ "room_number_and_building": "Room 305, Building A",
+ "organization_code": "HUD-001",
+ "location_code": "HQ-WASH",
+ "organization_symbol": "HUD-OC",
+ "accessories": "Laptop bag, Mouse, Keyboard",
+ "issue_date": "03/15/2023",
+ "return_due_date": "03/15/2024",
+ "follow_up": "03/15/2024",
+ "extended_by": "Shannon Williams",
+ "returned_by": "Cemil H. Carson",
+ "property_items": [
+  {
+   "item_description": "Laptop",
+   "serial_number": "LAP-2023-001",
+   "total_cost": 543305.93
+  },
+  {
+   "item_description": "Monitor",
+   "serial_number": "MON-2023-002",
+   "total_cost": 6627.19
+  }
+ ],
+ "certification_periods": [
+  {
+   "certification_date": "03/15/2023",
+   "certified_by": "Denise P. Ball"
+  },
+  {
+   "certification_date": "03/15/2026",
+   "certified_by": "Denise P. Ball"
+  },
+  {
+   "certification_date": "03/15/2029",
+   "certified_by": "Denise P. Ball"
+  },
+  {
+   "certification_date": "03/15/2024",
+   "certified_by": "Shannon Williams"
+  },
+  {
+   "certification_date": "03/15/2027",
+   "certified_by": "Shannon Williams"
+  },
+  {
+   "certification_date": "03/15/2028",
+   "certified_by": "Shannon Williams"
+  },
+  {
+   "certification_date": "03/15/2025",
+   "certified_by": "Cemil H. Carson"
+  },
+  {
+   "certification_date": "03/15/2028",
+   "certified_by": "Shannon Williams"
+  },
+  {
+   "certification_date": "03/15/2031",
+   "certified_by": "Cemil H. Carson"
+  }
+ ]
+}

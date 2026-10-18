@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "employer_information": {
+   "employer_name": "Peters-Rosario",
+   "employer_address": "0146 Hahn Port",
+   "employer_city": "West Laurenton",
+   "employer_state": "TX",
+   "employer_zip_code": "46623",
+   "employer_phone_number": "(764) 849-4370"
+  },
+  "employer_point_of_contact_information": {
+   "contact_name": "Shaun K. Morse",
+   "contact_title": "Engineer, drilling",
+   "contact_phone_number": "(246) 369-8290",
+   "contact_email": "shaun.morse@gmail.com"
+  }
+ },
+ "parse": {
+  "employer_information": {
+   "employer_name": "Peters-Rosario",
+   "employer_address": "0146 Hahn Port",
+   "employer_city": "West Laurenton",
+   "employer_state": "TX",
+   "employer_zip_code": "46623",
+   "employer_phone_number": "(764) 849-4370"
+  },
+  "employer_point_of_contact_information": {
+   "contact_name": "Shaun K. Morse",
+   "contact_title": "Engineer, drilling",
+   "contact_phone_number": "(246) 369-8290",
+   "contact_email": "shaun.morse@gmail.com"
+  }
+ },
+ "oneshot": {
+  "employer_information": {
+   "employer_name": "Peters-Rosario",
+   "employer_address": "0146 Hahn Port",
+   "employer_city": "West Laurenton",
+   "employer_state": "TX",
+   "employer_zip_code": "46623",
+   "employer_phone_number": "(764) 849-4370"
+  },
+  "employer_point_of_contact_information": {
+   "contact_name": "Shaun K. Morse",
+   "contact_title": "Engineer, drilling",
+   "contact_phone_number": "(246) 369-8290",
+   "contact_email": "shaun.morse@gmail.com"
+  }
+ }
+}

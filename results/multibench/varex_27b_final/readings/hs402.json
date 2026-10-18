@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "facility_name": "Golden State Healthcare Facility",
+  "bonding_agency": "SecureBond Insurance Company",
+  "bond_amount": 1500,
+  "bond_start_date": "01/01/2023",
+  "bonding_agent_name": "Marina A. Briones",
+  "facility": {
+   "address": "1234 Healthcare Drive",
+   "city": "Los Angeles",
+   "county": "Los Angeles",
+   "zip_code": "90012"
+  },
+  "agency": {
+   "address": "345 Bonding Lane",
+   "city": "Sacramento",
+   "county": "Sacramento",
+   "zip_code": "95814"
+  }
+ },
+ "parse": {
+  "facility_name": "Golden State Healthcare Facility",
+  "bonding_agency": "SecureBond Insurance Company",
+  "bond_amount": 1500,
+  "bond_start_date": "01/01/2023",
+  "bonding_agent_name": "Marina A. Briones",
+  "facility": {
+   "address": "1234 Healthcare Drive",
+   "city": "Los Angeles",
+   "county": "Los Angeles",
+   "zip_code": "90012"
+  },
+  "agency": {
+   "address": "345 Bonding Lane",
+   "city": "Sacramento",
+   "county": "Sacramento",
+   "zip_code": "95814"
+  }
+ },
+ "oneshot": {
+  "facility_name": "Golden State Healthcare Facility",
+  "bonding_agency": "SecureBond Insurance Company",
+  "bond_amount": 1500,
+  "bond_start_date": "01/01/2023",
+  "bonding_agent_name": "Marina A. Briones",
+  "facility": {
+   "address": "1234 Healthcare Drive",
+   "city": "Los Angeles",
+   "county": "Los Angeles",
+   "zip_code": "90012"
+  },
+  "agency": {
+   "address": "345 Bonding Lane",
+   "city": "Sacramento",
+   "county": "Sacramento",
+   "zip_code": "95814"
+  }
+ }
+}

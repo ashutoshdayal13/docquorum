@@ -1,0 +1,21 @@
+{
+ "current_information": {
+  "licensee_name": "Leconte, Jolanda D.",
+  "date_of_birth": "09/27/2002"
+ },
+ "updated_information": {
+  "new_licensee_name": "Leconte, Jolanda D. Johnson",
+  "mailing_address": "87530 James River, Lake Evelynville, FL 46716",
+  "city": "Lake Evelynville",
+  "state": "FL",
+  "zip_code": "46716",
+  "email_address": "jolanda.johnson@outlook.com"
+ },
+ "employment_information": {
+  "employer_name": "Baker, Jones and Morales",
+  "employer_address": "4567 Medical Center Drive",
+  "employer_city": "Lake Evelynville",
+  "employer_state": "FL",
+  "employer_zip_code": "46716"
+ }
+}

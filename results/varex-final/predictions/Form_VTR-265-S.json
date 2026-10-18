@@ -1,0 +1,20 @@
+{
+ "vehicle_number": "1HGCM82633A129182",
+ "vehicle_registration_verification": "FL1234567890",
+ "foreclosure_sale_date": "06/15/2023",
+ "sales_price": 181921.08,
+ "odometer_reading": "75239",
+ "seller_agent_printed_name": "Amelie Dudley",
+ "notary_date": "06/16/2023",
+ "storage_facility": {
+  "name": "Johnson, Mack and White Storage",
+  "address": "533 Trevino Road, Hernandezbury, FL 20126"
+ },
+ "purchaser": {
+  "name": "Paul K. van Venrooy",
+  "address": "745 Wise Valley Apt. 510, Gomezside, CA 70417"
+ },
+ "law_enforcement_certification": {
+  "certification": "Certified by Hernandezbury Police Department"
+ }
+}

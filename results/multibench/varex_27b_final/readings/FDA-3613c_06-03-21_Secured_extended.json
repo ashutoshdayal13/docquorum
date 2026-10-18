@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "shipping_account": "ACCT-2024-42910-REYN",
+  "requestor": {
+   "name": "Joshua Jones",
+   "firm": "Reynolds Inc",
+   "address": "2425 Wood Mills, South Diana, FL 11992",
+   "telephone": "(114) 009-9165",
+   "fax": "(600) 499-4213",
+   "tax_id": "216830465",
+   "email": "jjones@reynolds.com"
+  },
+  "billing": {
+   "address": "2425 Wood Mills, South Diana, FL 11992",
+   "email": "jjones@reynolds.com"
+  },
+  "manufacturer": {
+   "firm": "Reynolds Inc",
+   "address": "2425 Wood Mills, South Diana, FL 11992",
+   "registration": "FEI-REYN-2024-42910"
+  }
+ },
+ "parse": {
+  "shipping_account": "ACCT-2024-42910-REYN",
+  "requestor": {
+   "name": "Joshua Jones",
+   "firm": "Reynolds Inc",
+   "address": "2425 Wood Mills, South Diana, FL 11992",
+   "telephone": "(114) 009-9165",
+   "fax": "(600) 499-4213",
+   "tax_id": "216830465",
+   "email": "jjones@reynolds.com"
+  },
+  "billing": {
+   "address": "2425 Wood Mills, South Diana, FL 11992",
+   "email": "jjones@reynolds.com"
+  },
+  "manufacturer": {
+   "firm": "Reynolds Inc",
+   "address": "2425 Wood Mills, South Diana, FL 11992",
+   "registration": "FEI-REYN-2024-42910"
+  }
+ },
+ "oneshot": {
+  "shipping_account": "ACCT-2024-42910-REYN",
+  "requestor": {
+   "name": "Joshua Jones",
+   "firm": "Reynolds Inc",
+   "address": "2425 Wood Mills, South Diana, FL 11992",
+   "telephone": "(114) 009-9165",
+   "fax": "(600) 499-4213",
+   "tax_id": "216830465",
+   "email": "jjones@reynolds.com"
+  },
+  "billing": {
+   "address": "2425 Wood Mills, South Diana, FL 11992",
+   "email": "jjones@reynolds.com"
+  },
+  "manufacturer": {
+   "firm": "Reynolds Inc",
+   "address": "2425 Wood Mills, South Diana, FL 11992",
+   "registration": "FEI-REYN-2024-42910"
+  }
+ }
+}

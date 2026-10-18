@@ -1,0 +1,35 @@
+{
+ "primary": {
+  "date": "05/15/2023",
+  "time": "14:30",
+  "hud_office_program": "Community Planning and Development",
+  "subject": "Inquiry regarding grant application status, Reference Number: CT-2023-0042",
+  "completer": {
+   "name_telephone": "Amara D. Elliott, (400) 672-3067"
+  },
+  "inquirer_address_telephone": "33549 Robbins Path, Matthewsland, NY 89322, (674) 553-2071",
+  "details": "Inquiry about the status of a community development grant application"
+ },
+ "parse": {
+  "date": "05/15/2023",
+  "time": "14:30",
+  "hud_office_program": "Community Planning and Development",
+  "subject": "Inquiry regarding grant application status, Reference Number: CTI-2004-52010",
+  "completer": {
+   "name_telephone": "Amara D. Elliott, (400) 672-3067"
+  },
+  "inquirer_address_telephone": "33549 Robbins Path, Matthewsland, NY 89322, (674) 553-2071",
+  "details": "Inquiry about the status of a community development grant application"
+ },
+ "oneshot": {
+  "date": "05/15/2023",
+  "time": "14:30",
+  "hud_office_program": "Community Planning and Development",
+  "subject": "Inquiry regarding grant application status, Reference Number: 05-2023-0012",
+  "completer": {
+   "name_telephone": "Amara D. Elliott, (400) 672-3067"
+  },
+  "inquirer_address_telephone": "33549 Robbins Path, Matthewsland, NY 89322, (674) 553-2071",
+  "details": "Inquiry about the status of a community development grant application"
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "primary": {
+  "primary_email": "brita.brown@aol.com",
+  "secondary_email": "tiwari@hawkinspeterson.com",
+  "first_name": "Brita",
+  "last_name": "Brown",
+  "amount_per_deduction": 73.7,
+  "total_annual_gift": 933340.12,
+  "check_amount": 6267.74,
+  "date": "10/25/2023",
+  "total_annual_contribution": 933340.12,
+  "home_address": {
+   "home_address": "171 Kenneth Lakes Suite 216",
+   "city": "New Sheila",
+   "state": "NY",
+   "zip_code": "90557"
+  }
+ },
+ "parse": {
+  "primary_email": "brita.brown@aol.com",
+  "secondary_email": "ttiwari@hawkinspeterson.com",
+  "first_name": "Brita",
+  "last_name": "Brown",
+  "amount_per_deduction": 73.7,
+  "total_annual_gift": 933340.12,
+  "check_amount": 6267.74,
+  "date": "10/25/2023",
+  "total_annual_contribution": 933340.12,
+  "home_address": {
+   "home_address": "171 Kenneth Lakes Suite 216",
+   "city": "New Sheila",
+   "state": "NY",
+   "zip_code": "90557"
+  }
+ },
+ "oneshot": {}
+}

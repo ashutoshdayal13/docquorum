@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "business_name": "Rubio-Rodriguez Foods",
+  "registration_number": "PF-2023-789012",
+  "owner_name": "Vincent A. Souza",
+  "phone": "(537) 790-0608",
+  "facility_address": {
+   "street": "879 Regina Track"
+  },
+  "signatory": {
+   "printed_name": "Vincent A. Souza",
+   "title": "Owner",
+   "signature_date": "03/01/2023"
+  }
+ },
+ "parse": {
+  "business_name": "Rubio-Rodriguez Foods",
+  "registration_number": "PF-2023-789012",
+  "owner_name": "Vincent A. Souza",
+  "phone": "(537) 790-0608",
+  "facility_address": {
+   "street": "879 Regina Track"
+  },
+  "signatory": {
+   "printed_name": "Vincent A. Souza",
+   "title": "Owner",
+   "signature_date": "03/01/2023"
+  }
+ },
+ "oneshot": {
+  "business_name": "Rubio-Rodriguez Foods",
+  "registration_number": "PF-2023-789012",
+  "owner_name": "Vincent A. Souza",
+  "phone": "(537) 790-0608",
+  "facility_address": {
+   "street": "879 Regina Track"
+  },
+  "signatory": {
+   "printed_name": "Vincent A. Souza",
+   "title": "Owner",
+   "signature_date": "03/01/2023"
+  }
+ }
+}

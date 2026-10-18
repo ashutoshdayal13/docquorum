@@ -1,0 +1,30 @@
+{
+ "license_no_1": "POPH1001",
+ "license_no_2": "POPH1002",
+ "expiration_date": "12/31/2025",
+ "date_issued": "01/15/2023",
+ "signature_date": "01/15/2023",
+ "applicant_info": {
+  "full_name": "Mayte Murphy",
+  "address": "382 Wilson Ferry Suite 773",
+  "city": "South Jasonbu",
+  "state": "SC",
+  "zip_code": "17647",
+  "phone_number": "(674) 682-9369",
+  "email": "mayte.murphy@aol.com"
+ },
+ "vehicles": [
+  {
+   "make": "Ford",
+   "model": "F-150",
+   "license_plate": "SC2020FORD",
+   "vin": "1FTRW0E58LFB12345"
+  },
+  {
+   "make": "Toyota",
+   "model": "Camry",
+   "license_plate": "IL18TOYOTA",
+   "vin": "4T1BF1FK4JU123456"
+  }
+ ]
+}

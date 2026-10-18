@@ -1,0 +1,53 @@
+{
+ "primary": {
+  "provider_name": "Washington, James and Jones",
+  "provider_number": "PRV-2023-9876",
+  "telephone_number": "(571) 959-5916",
+  "provider_email": "eviera@washington.com",
+  "course_title": "Advanced Nursing Home Administration",
+  "prior_course_approval_number": "NHAP-2022-0012",
+  "instructor_name": "Inga Q. Clark",
+  "signature_date": "05/15/2023",
+  "name_title": "Eugene F. Viera, Physiotherapist",
+  "address": {
+   "street": "6902 Sally Meadows",
+   "city": "Port Karen",
+   "state": "SD",
+   "zip_code": "44280"
+  }
+ },
+ "parse": {
+  "provider_name": "Washington, James and Jones",
+  "provider_number": "PRV-2023-9876",
+  "telephone_number": "(571) 959-5916",
+  "provider_email": "eviera@washington.com",
+  "course_title": "Advanced Nursing Home Administration",
+  "prior_course_approval_number": "NHAP-2022-0012",
+  "instructor_name": "Inga Q. Clark",
+  "signature_date": "05/15/2023",
+  "name_title": "Eugene F. Viera, Physiotherapist",
+  "address": {
+   "street": "6902 Sally Meadows",
+   "city": "Port Karen",
+   "state": "SD",
+   "zip_code": "44280"
+  }
+ },
+ "oneshot": {
+  "provider_name": "Washington, James and Jones",
+  "provider_number": "PRV-2023-9876",
+  "telephone_number": "(571) 959-5916",
+  "provider_email": "eviera@washington.com",
+  "course_title": "Advanced Nursing Home Administration",
+  "prior_course_approval_number": "NHAP-2022-0012",
+  "instructor_name": "Inga Q. Clark",
+  "signature_date": "05/15/2023",
+  "name_title": "Eugene F. Viera, Physiotherapist",
+  "address": {
+   "street": "6902 Sally Meadows",
+   "city": "Port Karen",
+   "state": "SD",
+   "zip_code": "44280"
+  }
+ }
+}

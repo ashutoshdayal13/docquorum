@@ -1,0 +1,22 @@
+{
+ "applicant_name": {
+  "first_name": "Lilla",
+  "middle_name": "P.",
+  "last_name": "Young"
+ },
+ "other_names_used": [
+  {
+   "first_name": "Lilla",
+   "middle_name": "Maria",
+   "last_name": "Harris"
+  },
+  {
+   "first_name": "Lilla",
+   "middle_name": "Patricia",
+   "last_name": "Smith"
+  }
+ ],
+ "applicant_contact_information": {
+  "address": "14996 Steven Wall Suite 470, Larsonstad, 81243"
+ }
+}

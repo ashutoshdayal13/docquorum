@@ -1,0 +1,29 @@
+{
+ "primary": {
+  "employer_name": "Osborn Group",
+  "employee": {
+   "first_name": "Joshua"
+  },
+  "veteran": {
+   "first_name": "Timothy"
+  }
+ },
+ "parse": {
+  "employer_name": "Osborn Group",
+  "employee": {
+   "first_name": "Joshua"
+  },
+  "veteran": {
+   "first_name": "Timothy"
+  }
+ },
+ "oneshot": {
+  "employer_name": "Osborn Group",
+  "employee": {
+   "first_name": "Joshua"
+  },
+  "veteran": {
+   "first_name": "Timothy"
+  }
+ }
+}

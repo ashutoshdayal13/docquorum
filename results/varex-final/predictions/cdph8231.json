@@ -1,0 +1,15 @@
+{
+ "applicant_last_name": "Gutierrez",
+ "applicant_first_name": "Szymon",
+ "applicant_middle_name": "T.",
+ "date_of_birth": "02/06/1972",
+ "ssn_or_itin": "718-81-6586",
+ "phone_number": "(295) 980-6937",
+ "email_address": "szymon.gutierrez@yahoo.com",
+ "mailing_address": {
+  "street": "1710 Troy Summit Suite 965",
+  "city": "Craigfort",
+  "state": "MO",
+  "zip_code": "38339"
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "primary": {
+  "carrier_dba_name": "Combs Transit Services",
+  "carrier_legal_name": "Combs Inc",
+  "carrier_federal_id_number": "45-6789012",
+  "carrier_19a_business_id_number": "19A-2023-5",
+  "carrier_contact": {
+   "street_address": "7657 Sharp Lodge Suite 517",
+   "city": "West Lindastad",
+   "state": "OR",
+   "zip_code": "68708",
+   "telephone_number": "(743) 596-31",
+   "contact_person_name": "Vitor Reyes",
+   "contact_person_title": "Accountant, chartered public"
+  },
+  "drivers": [
+   {
+    "last_name": "Reyes",
+    "first_name": "Vitor",
+    "middle_initial": "A",
+    "social_security_number": "216-60-9272",
+    "address": "7657 Sharp Lodge Suite 517, West Lindastad, OR 68708",
+    "telephone_number": "(620) 108-1244",
+    "license_id_number": "CFP-2019-OR-92367",
+    "licensing_state": "OR",
+    "endorsements": "Passenger, School Bus",
+    "restrictions": "None"
+   }
+  ]
+ },
+ "parse": {
+  "carrier_dba_name": "Combs Transit Services",
+  "carrier_legal_name": "Combs Inc",
+  "carrier_federal_id_number": "45-6789012",
+  "carrier_19a_business_id_number": "19A-2023-5",
+  "carrier_contact": {
+   "street_address": "7657 Sharp Lodge Suite 517",
+   "city": "West Lindastad",
+   "state": "OR",
+   "zip_code": "68708",
+   "telephone_number": "(743) 596-31",
+   "contact_person_name": "Vitor Reyes",
+   "contact_person_title": "Accountant, chartered public"
+  },
+  "drivers": [
+   {
+    "last_name": "Reyes",
+    "first_name": "Vitor",
+    "middle_initial": "A",
+    "social_security_number": "216-60-9272",
+    "address": "7657 Sharp Lodge Suite 517, West Lindastad, OR 68708",
+    "telephone_number": "(620) 108-1244",
+    "license_id_number": "CFP-2019-OR-92367",
+    "licensing_state": "OR",
+    "endorsements": "Passenger, School Bus",
+    "restrictions": "None"
+   }
+  ]
+ },
+ "oneshot": {
+  "carrier_dba_name": "Combs Transit Services",
+  "carrier_legal_name": "Combs Inc",
+  "carrier_federal_id_number": "45-6789012",
+  "carrier_19a_business_id_number": "19A-2023-5",
+  "carrier_contact": {
+   "street_address": "7657 Sharp Lodge Suite 517",
+   "city": "West Lindastad",
+   "zip_code": "OR",
+   "telephone_number": "(743) 596-31",
+   "contact_person_name": "Vitor Reyes",
+   "contact_person_title": "Accountant, chartered public"
+  },
+  "drivers": [
+   {
+    "last_name": "Reyes",
+    "first_name": "Vitor",
+    "middle_initial": "A",
+    "social_security_number": "216-60-9272",
+    "address": "7657 Sharp Lodge Suite 517",
+    "telephone_number": "(620) 108-1244",
+    "license_id_number": "CFP-2019-OR-92367",
+    "endorsements": "Passenger, School Bus",
+    "restrictions": "None"
+   }
+  ]
+ }
+}

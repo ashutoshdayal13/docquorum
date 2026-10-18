@@ -1,0 +1,62 @@
+{
+ "primary": {
+  "business_name": "Villanueva PLC",
+  "us_dot_number": "12345678901234567",
+  "email": "vmoore@villanueva.com",
+  "phone_number": "(727) 598-6514",
+  "signature_date": "03/15/2023",
+  "address": {
+   "street": "10303 Bush Isle",
+   "city": "East Bail",
+   "state": "WI",
+   "zip_code": "27258"
+  },
+  "authorized_agent": {
+   "name": "Vyanjana Moore"
+  },
+  "vehicle_information": {
+   "vehicle_identifier": "W1123456789012345",
+   "license_plate_number": "ABC1234"
+  }
+ },
+ "parse": {
+  "business_name": "Villanueva PLC",
+  "us_dot_number": "12345678901234567",
+  "email": "vmoore@villanueva.com",
+  "phone_number": "(727) 598-6514",
+  "signature_date": "03/15/2023",
+  "address": {
+   "street": "10303 Bush Isle",
+   "city": "East Bail",
+   "state": "WI",
+   "zip_code": "27258"
+  },
+  "authorized_agent": {
+   "name": "Vyanjana Moore"
+  },
+  "vehicle_information": {
+   "vehicle_identifier": "WI123456789012345",
+   "license_plate_number": "ABC1234"
+  }
+ },
+ "oneshot": {
+  "business_name": "Villanueva PLC",
+  "us_dot_number": "12345678901234567",
+  "email": "vmoore@villanueva.com",
+  "phone_number": "(727) 598-6514",
+  "signature_date": "03/15/2023",
+  "address": {
+   "street": "10303 Bush Isle",
+   "city": "East Bail",
+   "state": "WI",
+   "zip_code": "27258"
+  },
+  "authorized_agent": {
+   "name": "Vyanjana Moore"
+  },
+  "vehicle_information": {
+   "vehicle_identifier": "WI123456789012345",
+   "license_plate_number": "ABC1234"
+  }
+ }
+}

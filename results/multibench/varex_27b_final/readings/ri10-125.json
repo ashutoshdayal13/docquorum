@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "name": "Lee, Adrienne X.",
+  "date_of_birth": "07/01/1989",
+  "social_security_number": "779319440",
+  "home_address": "8779 Amy Mountains, Weaverton, AL 63021",
+  "home_telephone_number": "(263)20708",
+  "work_telephone_number": "(506)5810121",
+  "email_address": "adrienne.lee@yahoo.com",
+  "agency_name": "Flowers Inc",
+  "signature_date": "08/10/2023",
+  "retirement_plans": [
+   {
+    "plan_name": "CSRS - Civil Service"
+   },
+   {
+    "plan_name": "FERS - Federal"
+   }
+  ]
+ },
+ "parse": {
+  "name": "Lee, Adrienne X.",
+  "date_of_birth": "07/01/1989",
+  "social_security_number": "779319440",
+  "home_address": "8779 Amy Mountains, Weaverton, AL 63021",
+  "home_telephone_number": "(263)20708",
+  "work_telephone_number": "(506)5810121",
+  "email_address": "adrienne.lee@yahoo.com",
+  "agency_name": "Flowers Inc",
+  "signature_date": "08/10/2023",
+  "retirement_plans": [
+   {
+    "plan_name": "CSRS - Civil Service"
+   },
+   {
+    "plan_name": "FERS - Federal"
+   }
+  ]
+ },
+ "oneshot": {
+  "name": "Lee, Adrienne X.",
+  "date_of_birth": "07/01/1989",
+  "social_security_number": "779319440",
+  "home_address": "8779 Amy Mountains, Weaverton, AL 63021",
+  "home_telephone_number": "(263)20708",
+  "work_telephone_number": "(506)5810121",
+  "email_address": "adrienne.lee@yahoo.com",
+  "agency_name": "Flowers Inc",
+  "signature_date": "08/10/2023",
+  "retirement_plans": [
+   {
+    "plan_name": "CSRS - Civil Service"
+   },
+   {
+    "plan_name": "FERS - Federal"
+   }
+  ]
+ }
+}

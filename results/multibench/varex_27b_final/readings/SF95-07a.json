@@ -1,0 +1,92 @@
+{
+ "primary": {
+  "date_of_birth": "03/04/1987",
+  "marital_status": "Married",
+  "date_and_day_of_accident": "08/15/2023",
+  "time_of_accident": "2:30 P.M.",
+  "property_description": "2020 Toyota Camry, front bumper and right fender damaged. Located at 26123 Christopher Flats, West",
+  "injury_description": "Minor cuts and bruises to the right arm and leg. No hospital treatment required.",
+  "total_claim": 28817.23,
+  "phone_number": "(956) 954-3700",
+  "agency_name": {
+   "name": "Department of Defense, Office of General Counsel"
+  },
+  "property_owner_name": {
+   "name": "Hubert Aubry"
+  },
+  "witnesses": [
+   {
+    "name": "Anais A. Cook",
+    "address": "719 Linda Mount, Garciatown, TX 89727"
+   },
+   {
+    "name": "Scott J. Joly",
+    "address": "758 Steven Bridge, West John, NM 62754"
+   },
+   {
+    "name": "John Smith",
+    "address": "123 Main Street, Anytown, CA 90210"
+   }
+  ]
+ },
+ "parse": {
+  "date_of_birth": "03/04/1987",
+  "marital_status": "Married",
+  "date_and_day_of_accident": "08/15/2023",
+  "time_of_accident": "2:30 P.M.",
+  "property_description": "2020 Toyota Camry, front bumper and right fender damaged. Located at 26123 Christopher Flats, West",
+  "injury_description": "Minor cuts and bruises to the right arm and leg. No hospital treatment required.",
+  "total_claim": 28817.23,
+  "phone_number": "(956) 954-3700",
+  "agency_name": {
+   "name": "Department of Defense, Office of General Counsel"
+  },
+  "property_owner_name": {
+   "name": "Hubert Aubry"
+  },
+  "witnesses": [
+   {
+    "name": "Anais A. Cook",
+    "address": "719 Linda Mount, Garciatown, TX 89727"
+   },
+   {
+    "name": "Scott J. Joly",
+    "address": "758 Steven Bridge, West John, NM 62754"
+   },
+   {
+    "name": "John Smith",
+    "address": "123 Main Street, Anytown, CA 90210"
+   }
+  ]
+ },
+ "oneshot": {
+  "date_of_birth": "03/04/1987",
+  "marital_status": "Married",
+  "date_and_day_of_accident": "08/15/2023",
+  "time_of_accident": "2:30 P.M.",
+  "property_description": "2020 Toyota Camry, front bumper and right fender damaged. Located at 26123 Christopher Flats, West",
+  "injury_description": "Minor cuts and bruises to the right arm and leg. No hospital treatment required.",
+  "total_claim": 28817.23,
+  "phone_number": "(956) 954-3700",
+  "agency_name": {
+   "name": "Department of Defense, Office of General Counsel"
+  },
+  "property_owner_name": {
+   "name": "Hubert Aubry"
+  },
+  "witnesses": [
+   {
+    "name": "Anais A. Cook",
+    "address": "719 Linda Mount, Garciatown, TX 89727"
+   },
+   {
+    "name": "Scott J. Joly",
+    "address": "758 Steven Bridge, West John, NM 62754"
+   },
+   {
+    "name": "John Smith",
+    "address": "123 Main Street, Anytown, CA 90210"
+   }
+  ]
+ }
+}

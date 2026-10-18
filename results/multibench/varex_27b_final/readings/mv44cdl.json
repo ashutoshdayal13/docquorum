@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "certification_date": "11/15/2023",
+  "experienced_driver": {
+   "name": "Anna I. Avila",
+   "cdl_number": "CDL-2020-"
+  },
+  "applicant": {
+   "name": "Sylvia W. Lopez",
+   "clp_id": "CLP-2023-",
+   "address": "59727 Mckee Fort, Freystad, CO 77994"
+  }
+ },
+ "parse": {
+  "certification_date": "11/15/2023",
+  "experienced_driver": {
+   "name": "Anna I. Avila",
+   "cdl_number": "CDL-2020-"
+  },
+  "applicant": {
+   "name": "Sylvia W. Lopez",
+   "clp_id": "CLP-2023-",
+   "address": "59727 Mckee Fort, Freystad, CO 77994"
+  }
+ },
+ "oneshot": {
+  "certification_date": "11/15/2023",
+  "experienced_driver": {
+   "name": "Anna I. Avila",
+   "cdl_number": "CDL-2020-"
+  },
+  "applicant": {
+   "name": "Sylvia W. Lopez",
+   "clp_id": "CLP-2023-",
+   "address": "59727 Mckee Fort, Freystad, CO 77994"
+  }
+ }
+}

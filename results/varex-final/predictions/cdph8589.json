@@ -1,0 +1,66 @@
+{
+ "firm_name": "Mitchell and Sons",
+ "telephone": "(947) 143-9739",
+ "product": "Organic Tomato Sauce",
+ "acid_used": "Citric Acid",
+ "percent_acid_in_bath": "5%",
+ "acid_blanching_time": "10 minutes",
+ "acid_blanching_temperature": "180°F",
+ "acidification_method": "N/A",
+ "water_activity": "0.85",
+ "facility_address": {
+  "address": "5540 Gomez Valleys",
+  "city": "Kristishire",
+  "zip_code": "53098"
+ },
+ "mailing_address": {
+  "address": "5540 Gomez Valleys",
+  "city": "Kristishire",
+  "zip_code": "53098"
+ },
+ "product_details": {
+  "formula_number": "F-2023-001",
+  "existing_s_number": "N/A",
+  "date_of_existing_process_letter": "N/A",
+  "container_size": "16 OZ"
+ },
+ "ph_details": {
+  "ph_of_acid_ingredients": "4.2",
+  "equilibrium_ph_after_low_acid_ingredients": "4.5",
+  "equilibrium_ph_of_finished_product": "4.3"
+ },
+ "ingredients": [
+  {
+   "name": "Tomatoes",
+   "amount": "60%"
+  },
+  {
+   "name": "Water",
+   "amount": "20%"
+  },
+  {
+   "name": "Citric Acid",
+   "amount": "5%"
+  },
+  {
+   "name": "Salt",
+   "amount": "2%"
+  },
+  {
+   "name": "Garlic Powder",
+   "amount": "1%"
+  },
+  {
+   "name": "Onion Powder",
+   "amount": "1%"
+  },
+  {
+   "name": "Sugar",
+   "amount": "1%"
+  },
+  {
+   "name": "Basil",
+   "amount": "0.5%"
+  }
+ ]
+}

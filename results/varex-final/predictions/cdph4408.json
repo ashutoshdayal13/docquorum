@@ -1,0 +1,29 @@
+{
+ "newborn_name": "Sophia Reyes",
+ "newborn_date_of_birth": "05/15/2023",
+ "hospital_of_birth": "St. Mary's Medical Center",
+ "mother_full_name": "Alma D. Washington",
+ "mother_date_of_birth": "11/19/1964",
+ "release_records_to_name": "John Lara",
+ "release_records_to_phone": "(270) 614-6116",
+ "release_records_to_fax": "(963) 927-1933",
+ "authorization_expiration_date": "05/15/2024",
+ "date_signed": "05/15/2023",
+ "home_phone": "(651) 562-1729",
+ "work_phone": "(286) 474-6439",
+ "newborn_home_address": [
+  {
+   "address_line1": "23511 Gabriela Forge Apt. 759"
+  }
+ ],
+ "mother_last_name_on_date_of_birth": [
+  {
+   "last_name": "Washington"
+  }
+ ],
+ "release_records_to_address": [
+  {
+   "address_line1": "2747 Cannon Shoals"
+  }
+ ]
+}

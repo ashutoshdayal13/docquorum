@@ -1,0 +1,40 @@
+{
+ "primary": {
+  "applicant_info": {
+   "full_name": "Leao, Julie",
+   "date_of_birth": "05/06/1987",
+   "social_security_number": "685567078",
+   "alien_registration_number": "A12345678"
+  },
+  "us_mailing_address": {
+   "street": "179 Burnett Land Apt. 533",
+   "city": "Vasquezmouth",
+   "zip_code": "68514"
+  }
+ },
+ "parse": {
+  "applicant_info": {
+   "full_name": "Leao, Julie",
+   "date_of_birth": "05/06/1987",
+   "social_security_number": "685567078"
+  },
+  "us_mailing_address": {
+   "street": "179 Burnett Land Apt. 533",
+   "city": "Vasquezmouth",
+   "zip_code": "68514"
+  }
+ },
+ "oneshot": {
+  "applicant_info": {
+   "full_name": "Leao, Julie",
+   "date_of_birth": "05/06/1987",
+   "social_security_number": "685567078",
+   "alien_registration_number": "A12345678"
+  },
+  "us_mailing_address": {
+   "street": "179 Burnett Land Apt. 533",
+   "city": "Vasquezmouth",
+   "zip_code": "68514"
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "primary": {
+  "inspecting_agency": "FDA",
+  "plant_name": "FreshPack Containers Inc.",
+  "inspection_date": "11/15/2023"
+ },
+ "parse": {
+  "inspecting_agency": "FDA",
+  "plant_name": "FreshPack Containers Inc.",
+  "inspection_date": "11/15/2023"
+ },
+ "oneshot": {
+  "inspecting_agency": "FDA",
+  "plant_name": "FreshPack Containers Inc., 123 Industrial Way, Miami, FL 33145",
+  "inspection_date": "11/15/2023"
+ }
+}

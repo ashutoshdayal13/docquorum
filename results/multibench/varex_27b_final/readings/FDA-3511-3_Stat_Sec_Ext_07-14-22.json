@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "firm_name": "Sutton-Walker Foods Inc.",
+  "firm_location": "Lake Douglasstad, CA",
+  "inspection_date": "07/10/2022 - 07/14/2022",
+  "firm_fe_number": "FEI-2015-CA-47032",
+  "firm_fce_number": "FCE-2018-CA-47032",
+  "investigators": "Andres Robinson, Karen G. Welch",
+  "products": "Ready-to-eat salads, Fresh-cut vegetables, Pre-packaged sandwiches",
+  "sid_numbers": "SID-2022-001, SID-2022-002, SID-2022-003",
+  "supplementary_sid_numbers": "SUP-SID-2022-001, SUP-SID-2022-002",
+  "aseptic_processor_manufacturer": "Tetra Pak A3/Flex, Model TP-2000",
+  "aseptic_filler_manufacturer": "Bosch Pack 202, Model BP-1500"
+ },
+ "parse": {
+  "firm_name": "Sutton-Walker Foods Inc.",
+  "firm_location": "Lake Douglasstad, CA",
+  "inspection_date": "07/10/2022 - 07/14/2022",
+  "firm_fe_number": "FEI-2015-CA-47032",
+  "firm_fce_number": "FCE-2018-CA-47032",
+  "investigators": "Andres Robinson, Karen G. Welch",
+  "products": "Ready-to-eat salads, Fresh-cut vegetables, Pre-packaged sandwiches",
+  "sid_numbers": "SID-2022-001, SID-2022-002, SID-2022-003",
+  "supplementary_sid_numbers": "SUP-SID-2022-001, SUP-SID-2022-002",
+  "aseptic_processor_manufacturer": "Tetra Pak A3/Flex, Model TP-2000",
+  "aseptic_filler_manufacturer": "Bosch Pack 202, Model BP-1500"
+ },
+ "oneshot": {
+  "firm_name": "Sutton-Walker Foods Inc.",
+  "firm_location": "Lake Douglassstad, CA",
+  "inspection_date": "07/10/2022 - 07/14/2022",
+  "firm_fe_number": "FEI-2015-CA-47032",
+  "firm_fce_number": "FCE-2018-CA-47032",
+  "investigators": "Andres Robinson, Karen G. Welch",
+  "products": "Ready-to-eat salads, Fresh-cut vegetables, Pre-packaged sandwiches",
+  "sid_numbers": "SID-2022-001, SID-2022-002, SID-2022-003",
+  "supplementary_sid_numbers": "SUP-SID-2022-001, SUP-SID-2022-002",
+  "aseptic_processor_manufacturer": "Tetra Pak A3/Flex, Model TP-2000",
+  "aseptic_filler_manufacturer": "Bosch Pack 202, Model BP-1500"
+ }
+}

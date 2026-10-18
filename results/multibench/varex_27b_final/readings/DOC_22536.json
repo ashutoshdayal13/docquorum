@@ -1,0 +1,101 @@
+{
+ "primary": {
+  "date_of_request": "10/15/2023",
+  "securities": [
+   "Government Bonds (Series A, Maturity 2025)",
+   "Corporate Bonds (XYZ Corp, Maturity 2024)",
+   "Municipal Bonds (City of Freystad, CO)",
+   "Treasury Bills (Maturity 2023)",
+   "Stocks (Apple Inc., 100 shares)"
+  ],
+  "time_or_savings_deposits": [
+   "Savings Account #2334-6113-9935, Bullock-Phillips Employees FCU",
+   "Time Deposit #8765-4321-9087, Freystad National Bank, Maturity 12/15/2023",
+   "Money Market Account #3456-7890-1234, Freystad Savings & Loan",
+   "Certificate of Deposit #5678-9012-3456, Freystad Bank & Trust, Maturity 06/30/2024",
+   "Retirement Account #1234-5678-9012, Freystad Pension Fund",
+   "Health Savings Account #9012-3456-7890, Freystad HSA Administrators"
+  ],
+  "security_for_excess_deposits": "Collateralized by U.S. Treasury Securities and Corporate Bonds rated AAA by Standard & Poor's.",
+  "remarks": "Please ensure all confirmations are sent to the attention of Sylvia W. Lopez, Media buyer at Bullock-Phillips.",
+  "pha_information": {
+   "name_of_pha": "Freystad Public Housing Authority",
+   "account_number": "2334-6113-993",
+   "signature_of_authorized_pha_representative": "Sylvia W. Lopez, CPA"
+  },
+  "financial_institution_information": {
+   "name_address_zip_code_of_financial_institution": "Bullock-Phillips Employees FCU, 59727 Mckee Fort, Freystad, CO 77994",
+   "recipient": "Sylvia W. Lopez",
+   "balance_as_at_date": "10/15/2023",
+   "financial_institution_name": "Bullock-Phillips Employees FCU",
+   "title_of_authorized_representative": "Media buyer",
+   "signature_date": "10/15/23"
+  }
+ },
+ "parse": {
+  "date_of_request": "10/15/2023",
+  "securities": [
+   "Government Bonds (Series A, Maturity 2025)",
+   "Corporate Bonds (XYZ Corp, Maturity 2024)",
+   "Municipal Bonds (City of Freystad, CO)",
+   "Treasury Bills (Maturity 2023)",
+   "Stocks (Apple Inc., 100 shares)"
+  ],
+  "time_or_savings_deposits": [
+   "Savings Account #2334-6113-9935, Bullock-Phillips Employees FCU",
+   "Time Deposit #8765-4321-9087, Freystad National Bank, Maturity 12/15/2023",
+   "Money Market Account #3456-7890-1234, Freystad Savings & Loan",
+   "Certificate of Deposit #5678-9012-3456, Freystad Bank & Trust, Maturity 06/30/2024",
+   "Retirement Account #1234-5678-9012, Freystad Pension Fund",
+   "Health Savings Account #9012-3456-7890, Freystad HSA Administrators"
+  ],
+  "security_for_excess_deposits": "Collateralized by U.S. Treasury Securities and Corporate Bonds rated AAA by Standard & Poor's.",
+  "remarks": "Please ensure all confirmations are sent to the attention of Sylvia W. Lopez, Media buyer at Bullock-Phillips.",
+  "pha_information": {
+   "name_of_pha": "Freystad Public Housing Authority",
+   "account_number": "2334-6113-993",
+   "signature_of_authorized_pha_representative": "Sylvia W. Lopez, CPA"
+  },
+  "financial_institution_information": {
+   "name_address_zip_code_of_financial_institution": "Bullock-Phillips Employees FCU, 59727 Mckee Fort, Freystad, CO 77994",
+   "recipient": "Sylvia W. Lopez",
+   "balance_as_at_date": "10/15/2023",
+   "financial_institution_name": "Bullock-Phillips Employees FCU",
+   "title_of_authorized_representative": "Media buyer",
+   "signature_date": "10/15/23"
+  }
+ },
+ "oneshot": {
+  "date_of_request": "10/15/2023",
+  "securities": [
+   "Government Bonds (Series A, Maturity 2025)",
+   "Corporate Bonds (XYZ Corp, Maturity 2024)",
+   "Municipal Bonds (City of Freystad, CO)",
+   "Treasury Bills (Maturity 2023)",
+   "Stocks (Apple Inc., 100 shares)"
+  ],
+  "time_or_savings_deposits": [
+   "Savings Account #2334-6113-9935, Bullock-Phillips Employees FCU",
+   "Time Deposit #8765-4321-9087, Freystad National Bank, Maturity 12/15/2023",
+   "Money Market Account #3456-7890-1234, Freystad Savings & Loan",
+   "Certificate of Deposit #5678-9012-3456, Freystad Bank & Trust, Maturity 06/30/2024",
+   "Retirement Account #1234-5678-9012, Freystad Pension Fund",
+   "Health Savings Account #9012-3456-7890, Freystad HSA Administrators"
+  ],
+  "security_for_excess_deposits": "Collateralized by U.S. Treasury Securities and Corporate Bonds rated AAA by Standard & Poor's.",
+  "remarks": "Please ensure all confirmations are sent to the attention of Sylvia W. Lopez, Media buyer at Bullock-Phillips.",
+  "pha_information": {
+   "name_of_pha": "Freystad Public Housing Authority",
+   "account_number": "2334-6113-993",
+   "signature_of_authorized_pha_representative": "Sylvia W. Lopez, CPA"
+  },
+  "financial_institution_information": {
+   "name_address_zip_code_of_financial_institution": "Bullock-Phillips Employees FCU, 59727 Mckee Fort, Freystad, CO 77994",
+   "recipient": "Sylvia W. Lopez",
+   "balance_as_at_date": "10/15/2023",
+   "financial_institution_name": "Bullock-Phillips Employees FCU",
+   "title_of_authorized_representative": "Media buyer",
+   "signature_date": "10/15/23"
+  }
+ }
+}

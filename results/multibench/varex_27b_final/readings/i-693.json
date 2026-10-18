@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "full_legal_name": {
+   "first_name": "Joseph",
+   "middle_name": "J.",
+   "last_name": "Weinhage"
+  },
+  "current_physical_address": {
+   "street_address": "836 Singleton Views Apt. 182",
+   "city": "Haleyton",
+   "zip_code": "21445",
+   "country": "United States of America"
+  },
+  "other_information": {
+   "date_of_birth": "06/09/1987"
+  },
+  "form_details": {
+   "issuance_date": "03/15/2023"
+  }
+ },
+ "parse": {
+  "full_legal_name": {
+   "first_name": "Joseph",
+   "middle_name": "J.",
+   "last_name": "Weinhage"
+  },
+  "current_physical_address": {
+   "street_address": "836 Singleton Views Apt. 182",
+   "city": "Haleyton",
+   "zip_code": "21445",
+   "country": "United States of America"
+  },
+  "other_information": {
+   "date_of_birth": "06/09/1987"
+  },
+  "form_details": {
+   "issuance_date": "03/15/2023"
+  }
+ },
+ "oneshot": {
+  "full_legal_name": {
+   "first_name": "Joseph",
+   "middle_name": "J.",
+   "last_name": "Weinhage"
+  },
+  "current_physical_address": {
+   "street_address": "836 Singleton Views Apt. 182",
+   "city": "Haleytown",
+   "zip_code": "21445",
+   "country": "United States of America"
+  },
+  "other_information": {
+   "date_of_birth": "06/09/1987"
+  },
+  "form_details": {
+   "issuance_date": "03/15/2023"
+  }
+ }
+}

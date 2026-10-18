@@ -1,0 +1,122 @@
+{
+ "primary": {
+  "patient_name": "Gonzales, Uberto",
+  "date_of_birth": "02/04/2022",
+  "date_of_symptom_onset": "11/15/2023",
+  "highest_recorded_temperature": "102.5°F",
+  "weeks_gestation": "N/A",
+  "other_underlying_conditions": "None",
+  "reporting_agency": "North Sheila Health Department",
+  "reporter_name": "Olena H. Ograbek",
+  "reporter_phone": "(192) 929-0625",
+  "address": {
+   "address": "28479 Nicolas Garden",
+   "apt_number": "236",
+   "city": "North Sheila",
+   "state": "MN",
+   "zip_code": "22530",
+   "local_health_jurisdiction": "North Sheila Health Department"
+  },
+  "signs_and_symptoms": [
+   {
+    "signs_and_symptoms": [
+     "Fever"
+    ]
+   }
+  ],
+  "complications": [
+   {
+    "complications": [
+     "Respiratory failure"
+    ]
+   }
+  ],
+  "medical_interventions": [
+   {
+    "medical_interventions": [
+     "Oxygen therapy"
+    ]
+   }
+  ]
+ },
+ "parse": {
+  "patient_name": "Gonzales, Uberto",
+  "date_of_birth": "02/04/2022",
+  "date_of_symptom_onset": "11/15/2023",
+  "highest_recorded_temperature": "102.5°F",
+  "weeks_gestation": "N/A",
+  "other_underlying_conditions": "None",
+  "reporting_agency": "North Sheila Health Department",
+  "reporter_name": "Olena H. Ograbek",
+  "reporter_phone": "(192) 929-0625",
+  "address": {
+   "address": "28479 Nicolas Garden",
+   "apt_number": "236",
+   "city": "North Sheila",
+   "state": "MN",
+   "zip_code": "22530",
+   "local_health_jurisdiction": "North Sheila Health Department"
+  },
+  "signs_and_symptoms": [
+   {
+    "signs_and_symptoms": [
+     "Fever"
+    ]
+   }
+  ],
+  "complications": [
+   {
+    "complications": [
+     "Respiratory failure"
+    ]
+   }
+  ],
+  "medical_interventions": [
+   {
+    "medical_interventions": [
+     "Oxygen therapy"
+    ]
+   }
+  ]
+ },
+ "oneshot": {
+  "patient_name": "Gonzales, Uber to",
+  "date_of_birth": "02/04/2022",
+  "date_of_symptom_onset": "11/15/2023",
+  "highest_recorded_temperature": "102.5°F",
+  "weeks_gestation": "N/A",
+  "other_underlying_conditions": "None",
+  "reporting_agency": "North Sheila Health Department",
+  "reporter_name": "Olena H. Ograbek",
+  "reporter_phone": "(192) 929-0625",
+  "address": {
+   "address": "28479 Nicolas Garden",
+   "apt_number": "236",
+   "city": "North Sheila",
+   "state": "MN",
+   "zip_code": "22530",
+   "local_health_jurisdiction": "North Sheila Health Department"
+  },
+  "signs_and_symptoms": [
+   {
+    "signs_and_symptoms": [
+     "Fever"
+    ]
+   }
+  ],
+  "complications": [
+   {
+    "complications": [
+     "Respiratory failure"
+    ]
+   }
+  ],
+  "medical_interventions": [
+   {
+    "medical_interventions": [
+     "Oxygen therapy"
+    ]
+   }
+  ]
+ }
+}

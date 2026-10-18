@@ -1,0 +1,29 @@
+{
+ "primary": {
+  "miner_full_name": "Douglas D. Sen",
+  "miner_social_security_number": "822-10-2681",
+  "miner_date_of_birth": "02/11/1978",
+  "highest_grade_completed": "High School Diploma",
+  "reason_for_stopping_work": "Severe respiratory issues due to coal dust exposure",
+  "disability_description": "Chronic obstructive pulmonary disease (COPD) and pneumoconiosis",
+  "aspects_unable_to_perform": "Lifting heavy materials, working in confined spaces, and prolonged exposure to dust",
+  "last_coal_mine_employment": {
+   "employment_date": "10/15/2020",
+   "employment_state": "West Virginia"
+  }
+ },
+ "parse": {
+  "miner_full_name": "Douglas D. Sen",
+  "miner_social_security_number": "822-10-2681",
+  "miner_date_of_birth": "02/11/1978",
+  "highest_grade_completed": "High School Diploma",
+  "reason_for_stopping_work": "Severe respiratory issues due to coal dust exposure",
+  "disability_description": "Chronic obstructive pulmonary disease (COPD) and pneumoconiosis",
+  "aspects_unable_to_perform": "Lifting heavy materials, working in confined spaces, and prolonged exposure to dust",
+  "last_coal_mine_employment": {
+   "employment_date": "10/15/2020",
+   "employment_state": "West Virginia"
+  }
+ },
+ "oneshot": {}
+}

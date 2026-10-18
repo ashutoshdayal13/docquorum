@@ -1,0 +1,51 @@
+{
+ "primary": {
+  "agency_address": "Kirk-Vasquez, 36701 Hughes Lakes, North",
+  "boac_no": "CTL-2022-14731",
+  "statement_no": "INV-2023-00842",
+  "quarter_of_billing": "Q2 2023",
+  "agency_contact": "Reimund M. Young, Armed forces technical officer",
+  "date": "06/15/2023",
+  "certifying_official_name": "Dawn X. Teran, Chief Marketing Officer",
+  "telephone_number": "(854) 526-2123",
+  "adjustments": [
+   {
+    "building": "Building A",
+    "assignment": "Office Space Lease"
+   },
+   {
+    "building": "Warehouse",
+    "assignment": "Storage Facility"
+   },
+   {
+    "building": "Building B",
+    "assignment": "Conference Room Rental"
+   }
+  ]
+ },
+ "parse": {
+  "agency_address": "Kirk-Vasquez, 36701 Hughes Lakes, North",
+  "boac_no": "CTL-2022-14731",
+  "statement_no": "INV-2023-00842",
+  "quarter_of_billing": "Q2 2023",
+  "agency_contact": "Reimund M. Young, Armed forces technical officer",
+  "date": "06/15/2023",
+  "certifying_official_name": "Dawn X. Teran, Chief Marketing Officer",
+  "telephone_number": "(854) 526-2123",
+  "adjustments": [
+   {
+    "building": "Building A",
+    "assignment": "Office Space Lease"
+   },
+   {
+    "building": "Warehouse",
+    "assignment": "Storage Facility"
+   },
+   {
+    "building": "Building B",
+    "assignment": "Conference Room Rental"
+   }
+  ]
+ },
+ "oneshot": {}
+}

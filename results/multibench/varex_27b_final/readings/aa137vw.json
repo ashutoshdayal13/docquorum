@@ -1,0 +1,31 @@
+{
+ "primary": {
+  "operator_last_name": "Rico",
+  "operator_first_name": "Jack",
+  "registration_number": 1234567890,
+  "arrest_date": "06/15/2023",
+  "arrest_location": "Lake Tahoe, CA",
+  "arresting_officer": "Officer Benito M. Pai",
+  "vessel_registration_number": 9876543210,
+  "signature_date": "06/16/2023",
+  "operator_address": {
+   "street": "886 Mikayla Highway Apt. 350",
+   "zip_code": "06297"
+  }
+ },
+ "parse": {
+  "operator_last_name": "Rico",
+  "operator_first_name": "Jack",
+  "registration_number": 1234567890,
+  "arrest_date": "06/15/2023",
+  "arrest_location": "Lake Tahoe, CA",
+  "arresting_officer": "Benito M. Pai",
+  "vessel_registration_number": 9876543210,
+  "signature_date": "06/16/2023",
+  "operator_address": {
+   "street": "886 Mikayla Highway Apt. 350",
+   "zip_code": "06297"
+  }
+ },
+ "oneshot": {}
+}

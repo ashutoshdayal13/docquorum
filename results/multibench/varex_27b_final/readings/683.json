@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "designating_officer": {
+   "name_and_title": "Magnus K. Medina, Director, Buck Group"
+  },
+  "rmlo": {
+   "name": "Devon L. Aubry",
+   "designation_date": "06/15/2023"
+  },
+  "alternate_rmlo": {
+   "name": "April W. Morton",
+   "designation_date": "06/15/2023"
+  }
+ },
+ "parse": {
+  "designating_officer": {
+   "name_and_title": "Magnus K. Medina, Director, Buck Group"
+  },
+  "rmlo": {
+   "name": "Devon L. Aubry",
+   "designation_date": "06/15/2023"
+  },
+  "alternate_rmlo": {
+   "name": "April W. Morton",
+   "designation_date": "06/15/2023"
+  }
+ },
+ "oneshot": {
+  "designating_officer": {
+   "name_and_title": "Magnus K. Medina, Director, Buck Group"
+  },
+  "rmlo": {
+   "name": "Devon L. Aubry",
+   "designation_date": "06/15/2023"
+  },
+  "alternate_rmlo": {
+   "name": "April W. Morton",
+   "designation_date": "06/15/2023"
+  }
+ }
+}

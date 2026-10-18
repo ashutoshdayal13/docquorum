@@ -1,0 +1,32 @@
+{
+ "primary": {
+  "name": "Phillips, Sessa X.",
+  "date_of_birth": "10/27/1994",
+  "social_security_number": "641-54-5780",
+  "date_of_designation": "05/15/2023",
+  "employment_details": {
+   "department_or_agency": "Department of Health and Human",
+   "location": "Washington, DC 20001"
+  }
+ },
+ "parse": {
+  "name": "Phillips, Sessa X.",
+  "date_of_birth": "10/27/1994",
+  "social_security_number": "641-54-5780",
+  "date_of_designation": "05/15/2023",
+  "employment_details": {
+   "department_or_agency": "Department of Health and Human",
+   "location": "Washington, DC 20001"
+  }
+ },
+ "oneshot": {
+  "name": "Phillips, Sessa X.",
+  "date_of_birth": "10/27/1994",
+  "social_security_number": "641-54-5780",
+  "date_of_designation": "05/15/2023",
+  "employment_details": {
+   "department_or_agency": "Department of Health and Human",
+   "location": "Washington, DC 20001"
+  }
+ }
+}

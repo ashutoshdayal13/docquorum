@@ -1,0 +1,43 @@
+{
+ "applicant_name": "Linda U Booth",
+ "citizenship_details": "U.S. Citizen",
+ "other_states_licensed": "Florida",
+ "contact_information": {
+  "address": "497 Kyle Cape Suite 074, Scottfort, FL 44888",
+  "home_phone": "(451) 558-31",
+  "work_phone": "(901) 457-870",
+  "cell_phone": "(788) 784-454",
+  "email": "linda.booth@o"
+ },
+ "license_information": {
+  "license_type": "Attorney at Law",
+  "license_number": "JD-2017-FL-44101",
+  "license_expiration": "12/31/2025"
+ },
+ "education_history": [
+  {
+   "institution": "University of Florida",
+   "major": "Law",
+   "degree": "Juris Doctor",
+   "completion_date": "05/2017"
+  },
+  {
+   "institution": "Missouri University of Science and Technology",
+   "major": "Financial Planning",
+   "degree": "Master of Science",
+   "completion_date": "05/2018"
+  },
+  {
+   "institution": "University of Minnesota",
+   "major": "Social Work",
+   "degree": "Master of Social Work",
+   "completion_date": "05/2015"
+  },
+  {
+   "institution": "University of California, Los Angeles",
+   "major": "Epidemiology",
+   "degree": "Master of Public Health",
+   "completion_date": "05/2020"
+  }
+ ]
+}

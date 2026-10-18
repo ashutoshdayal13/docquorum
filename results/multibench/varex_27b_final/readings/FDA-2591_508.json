@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "owner_operator_name": "Francisca P. Beckmann",
+  "establishment_name": "Tucker Inc. Food Processing Facility",
+  "fei_number": "FEI-2023-12345-67890",
+  "inspection_date": "05/15/2023",
+  "classification_recommended": "APPROVED",
+  "report_prepared_by": "Loek Adams, Data Processing Manager",
+  "local_office": "California FDA Office",
+  "home_office": "Federal FDA Headquarters",
+  "acceptance_by_other_agencies": "State Department of Health Services",
+  "food_contact_surface_materials": "Stainless steel and FDA-approved food-grade plastics",
+  "significant_component_parts": "Motors, belts, and control panels",
+  "manufacturer": {
+   "name": "Tucker Inc."
+  },
+  "contact": {
+   "name": "Francisca P. Beckmann"
+  },
+  "equipment": {
+   "trade_name_model_number": "Tucker Food Processor Model XJ-9000",
+   "description": "Used for processing and packaging food products"
+  }
+ },
+ "parse": {
+  "owner_operator_name": "Francisca P. Beckmann",
+  "establishment_name": "Tucker Inc. Food Processing Facility",
+  "fei_number": "FEI-2023-12345-67890",
+  "inspection_date": "05/15/2023",
+  "classification_recommended": "APPROVED",
+  "report_prepared_by": "Loek Adams, Data Processing Manager",
+  "local_office": "California FDA Office",
+  "home_office": "Federal FDA Headquarters",
+  "acceptance_by_other_agencies": "State Department of Health Services",
+  "food_contact_surface_materials": "Stainless steel and FDA-approved food-grade plastics",
+  "significant_component_parts": "Motors, belts, and control panels",
+  "manufacturer": {
+   "name": "Tucker Inc."
+  },
+  "contact": {
+   "name": "Francisca P. Beckmann"
+  },
+  "equipment": {
+   "trade_name_model_number": "Tucker Food Processor Model XJ-9000",
+   "description": "Used for processing and packaging food products"
+  }
+ },
+ "oneshot": {
+  "owner_operator_name": "Francisca P. Beckmann",
+  "establishment_name": "Tucker Inc. Food Processing Facility",
+  "fei_number": "FEI-2023-12345-67890",
+  "inspection_date": "05/15/2023",
+  "classification_recommended": "APPROVED",
+  "report_prepared_by": "Loek Adams, Data Processing Manager",
+  "local_office": "California FDA Office",
+  "home_office": "Federal FDA Headquarters",
+  "acceptance_by_other_agencies": "State Department of Health Services",
+  "food_contact_surface_materials": "Stainless steel and FDA-approved food-grade plastics",
+  "significant_component_parts": "Motors, belts, and control panels",
+  "manufacturer": {
+   "name": "Tucker Inc."
+  },
+  "contact": {
+   "name": "Francisca P. Beckmann"
+  },
+  "equipment": {
+   "trade_name_model_number": "Tucker Food Processor Model XJ-9000",
+   "description": "Used for processing and packaging food products"
+  }
+ }
+}

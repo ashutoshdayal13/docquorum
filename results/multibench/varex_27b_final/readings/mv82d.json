@@ -1,0 +1,74 @@
+{
+ "primary": {
+  "license_plate_number": "ABC1234",
+  "primary_registrant_name": "Jordan, Isaac K.",
+  "primary_registrant_id": "CPA-2013",
+  "telephone_number": "(733) 657-0658",
+  "mobile_telephone_number": "(805) 510-5441",
+  "owner_license_number": "CPA-2013",
+  "owner_name": "Jordan, Isaac K.",
+  "co_owner_name": "Smith, Imran O.",
+  "printed_name": "Isaac K. Jordan",
+  "email": "isaac.jordan@hotmail.com",
+  "mailing_address": {
+   "street": "772 Christopher Road Apt. 741",
+   "city": "Edwardburgh",
+   "state": "MN",
+   "zip_code": "63091"
+  },
+  "residence_address": {
+   "street": "772 Christopher Road Apt. 741",
+   "city": "Edwardburgh",
+   "state": "MN",
+   "zip_code": "63091"
+  }
+ },
+ "parse": {
+  "license_plate_number": "ABC1234",
+  "primary_registrant_name": "Jordan, Isaac K.",
+  "primary_registrant_id": "CPA-2013",
+  "telephone_number": "(733) 657-0658",
+  "mobile_telephone_number": "(805) 510-5441",
+  "owner_license_number": "CPA-2013",
+  "owner_name": "Jordan, Isaac K.",
+  "co_owner_name": "Smith, Imran O.",
+  "printed_name": "Isaac K. Jordan",
+  "email": "isaac.jordan@hotmail.com",
+  "mailing_address": {
+   "street": "772 Christopher Road Apt. 741",
+   "city": "Edwardburgh",
+   "state": "MN",
+   "zip_code": "63091"
+  },
+  "residence_address": {
+   "street": "772 Christopher Road Apt. 741",
+   "city": "Edwardburgh",
+   "state": "MN",
+   "zip_code": "63091"
+  }
+ },
+ "oneshot": {
+  "license_plate_number": "ABC1234",
+  "primary_registrant_name": "Jordan, Isaac K.",
+  "primary_registrant_id": "CPA-2013",
+  "telephone_number": "(733) 657-0658",
+  "mobile_telephone_number": "(805) 510-5441",
+  "owner_license_number": "CPA-2013",
+  "owner_name": "Jordan, Isaac K.",
+  "co_owner_name": "Smith, Imran O.",
+  "printed_name": "Isaac K. Jordan",
+  "email": "isaac.jordan@hotmail.com",
+  "mailing_address": {
+   "street": "772 Christopher Road Apt. 741",
+   "city": "Edwardburgh",
+   "state": "MN",
+   "zip_code": "63091"
+  },
+  "residence_address": {
+   "street": "772 Christopher Road Apt. 741",
+   "city": "Edwardburgh",
+   "state": "MN",
+   "zip_code": "63091"
+  }
+ }
+}

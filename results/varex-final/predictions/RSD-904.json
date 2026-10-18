@@ -1,0 +1,98 @@
+{
+ "invoice_number": "INV-2023-00452",
+ "transaction_date": "03/15/2023",
+ "selling_entity_dea_registration": "DEA-TX-1234567",
+ "non_business_recipient_id": "TX-DL-123456789",
+ "non_business_recipient_vehicle_license": "TX-12345-ABC",
+ "non_business_recipient_vehicle_year": "2020",
+ "business_recipient_dea_registration": "DEA-TX-9876543",
+ "selling_entity": {
+  "name": "Warner, Wong and Rivera",
+  "address": "41763 Frank Summit Suite 574",
+  "city": "Reedland",
+  "county": "Bexar",
+  "zip": "54398",
+  "phone": "(021) 429-6546",
+  "email": "mwalker@warner.com",
+  "representative_name": "Matthew V. Walker"
+ },
+ "non_business_recipient": {
+  "name": "Matthew V. Walker",
+  "dob": "05/20/1985",
+  "address": "41763 Frank Summit Suite 574",
+  "city": "Reedland",
+  "county": "Bexar",
+  "zip": "54398"
+ },
+ "business_recipient": {
+  "name": "Warner, Wong and Rivera",
+  "phone": "(021) 429-6546",
+  "address": "41763 Frank Summit Suite 574",
+  "city": "Reedland",
+  "county": "Bexar",
+  "zip": "54398",
+  "representative_name": "Matthew V. Walker"
+ },
+ "chemical_precursor_details": [
+  {
+   "quantity": "5.0 liters"
+  },
+  {
+   "quantity": "10.0 kg"
+  },
+  {
+   "quantity": "15.0 liters"
+  },
+  {
+   "quantity": "2.0 kg"
+  },
+  {
+   "quantity": "8.0 liters"
+  },
+  {
+   "quantity": "3.0 liters"
+  },
+  {
+   "quantity": "7.0 kg"
+  },
+  {
+   "quantity": "12.0 liters"
+  },
+  {
+   "quantity": "1.5 kg"
+  },
+  {
+   "quantity": "5.0 liters"
+  },
+  {
+   "quantity": "4.0 liters"
+  },
+  {
+   "quantity": "6.0 kg"
+  },
+  {
+   "quantity": "10.0 liters"
+  },
+  {
+   "quantity": "1.0 kg"
+  },
+  {
+   "quantity": "3.0 liters"
+  },
+  {
+   "quantity": "2.0 liters"
+  },
+  {
+   "quantity": "4.0 kg"
+  },
+  {
+   "quantity": "8.0 liters"
+  },
+  {
+   "quantity": "0.5 kg"
+  },
+  {
+   "quantity": "2.0 liters"
+  }
+ ]
+}

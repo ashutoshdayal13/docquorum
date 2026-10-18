@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "due_date": "02/28/2024",
+  "social_security_number": "752-22-6451",
+  "employee_name": "Knight, Balhaar",
+  "service_period": "01/15/2023-",
+  "official_position_title": "Senior Civil Engineer, Consulting Position",
+  "agency_code": "YH-2023-001",
+  "organizational_structure_code": "Yang-Hubbard Org Structure Code 001",
+  "official_duty_station": "South Gabrielle, WY 81034",
+  "narrative_reasons": "Employee has demonstrated exceptional performance in all areas of responsibility.",
+  "supervisor_title": "Teaching Laboratory Technician",
+  "supervisor_signature_date": "02/20/2024",
+  "reviewing_official_title": "Horticulturist, Amenity",
+  "reviewing_official_signature_date": "02/25/2024"
+ },
+ "parse": {
+  "due_date": "02/28/2024",
+  "social_security_number": "752-22-6451",
+  "employee_name": "Knight, Balhaar",
+  "service_period": "01/15/2023-",
+  "official_position_title": "Senior Civil Engineer, Consulting Position",
+  "agency_code": "YH-2023-001",
+  "organizational_structure_code": "Yang-Hubbard Org Structure Code 001",
+  "official_duty_station": "South Gabrielle, WY 81034",
+  "narrative_reasons": "Employee has demonstrated exceptional performance in all areas of responsibility.",
+  "supervisor_title": "Teaching Laboratory Technician",
+  "supervisor_signature_date": "02/20/2024",
+  "reviewing_official_title": "Horticulturist, Amenity",
+  "reviewing_official_signature_date": "02/25/2024"
+ },
+ "oneshot": {
+  "due_date": "02/28/2024",
+  "social_security_number": "752-22-6451",
+  "employee_name": "Knight, Balhaar",
+  "service_period": "01/15/2023-",
+  "official_position_title": "Senior Civil Engineer, Consulting Position",
+  "agency_code": "YH-2023-001",
+  "organizational_structure_code": "Yang-Hubbard Org Structure Code 001",
+  "official_duty_station": "South Gabrielle, WY 81034",
+  "narrative_reasons": "Employee has demonstrated exceptional performance in all areas of responsibility.",
+  "supervisor_title": "Teaching Laboratory Technician",
+  "supervisor_signature_date": "02/20/2024",
+  "reviewing_official_title": "Horticulturist, Amenity",
+  "reviewing_official_signature_date": "02/25/2024"
+ }
+}

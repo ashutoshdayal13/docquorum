@@ -61,7 +61,8 @@ Plan the largest piece that fits one model call, act, observe the reply, and re-
 **Machine-read text is checked against the page.** Text read by OCR (a scan's MinerU parse, or a
 scan's own OCR text layer) is labelled as such in every call, and every call over it carries the
 pages' images, with the instruction to follow the images where they disagree: the whole-document
-call (page images, or pairs of pages for 13-24 pages) and each chunk (its own pages, at most two).
+call (page images, or pairs of pages for 13-24 pages) and each chunk (its own pages, at most two, at 300 dpi; a piece split from a chunk is
+read from its text alone, since the images show rows outside it).
 OCR can misread characters, drop spaces, or invent text (a parser has inserted Chinese
 characters into a Spanish dictionary); without the image a reader copies the error.
 
@@ -146,6 +147,7 @@ without the parser (`--no-zoom` turns it off).
 | `REF_CHARS` | 60,000 | `agents/reader.py` | opening text searched for legends and reference tables |
 | `LOOP_MIN`, `LOOP_SHARE` | 20, 0.5 | `tools/rows.py` | a list this long, under half distinct, is a decoding loop |
 | `LOOP_PENALTY` | 1.1 | `agents/reader.py` | repetition penalty for reading a looped chunk again |
+| `CHUNK_DPI`, `CHUNK_MAX_PX` | 300 dpi, 9 MP | `agents/reader.py` | a chunk's page images (at most two pages): small print |
 | `RULED_MIN_ROWS` | 5 | `agents/layout.py` | a table page that should show printed rules |
 | `BETA` | 2 | `quorum.py` | recall weight of agreement |
 | `ZOOM_DPI`, `MIN_WIDTH`, `PAD` | 300, 1,200 px, 1.5% | `zoom.py` | the crop |

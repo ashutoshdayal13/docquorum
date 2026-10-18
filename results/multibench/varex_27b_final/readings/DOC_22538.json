@@ -1,0 +1,128 @@
+{
+ "primary": {
+  "release_date": "03/15/2023",
+  "region": "Midwest",
+  "project_number": "HUD-2023-001",
+  "grant_amount": 832451.21,
+  "major_activities_description": "Construction of affordable housing units and community centers",
+  "significant_conditions": "Funds must be used for labor and materials only, not administrative costs",
+  "last_year_allocation": "$3666.48",
+  "date_sent_to_lcr": "03/10/2023",
+  "chief_executive_officer": {
+   "name": "Carrie Hayes",
+   "address": "278 West Loop, Ericport, NE 25353",
+   "telephone": "(615) 266-3755"
+  },
+  "program_administrator": {
+   "name": "Gabriela Wheeler",
+   "address": "1321 Robert Prairie Suite 475, Baldwinfurt, AZ 48291",
+   "telephone": "(645) 422-7689"
+  },
+  "congressional_members": [
+   {
+    "name": "Senator John Smith",
+    "contact_information": "john.smith@co"
+   },
+   {
+    "name": "Representative Jane Doe",
+    "contact_information": "jane.doe@cong"
+   },
+   {
+    "name": "Senator Michael Johnson",
+    "contact_information": "michael.johns"
+   },
+   {
+    "name": "Representative Emily Davis",
+    "contact_information": "emily.davis@c"
+   }
+  ],
+  "field_office_representative": {
+   "name": "Nihal Carter",
+   "telephone": "(104) 029-6503"
+  }
+ },
+ "parse": {
+  "release_date": "03/15/2023",
+  "region": "Midwest",
+  "project_number": "HUD-2023-001",
+  "grant_amount": 832451.21,
+  "major_activities_description": "Construction of affordable housing units and community centers",
+  "significant_conditions": "Funds must be used for labor and materials only, not administrative costs",
+  "last_year_allocation": "$3666.48",
+  "date_sent_to_lcr": "03/10/2023",
+  "chief_executive_officer": {
+   "name": "Carrie Hayes",
+   "address": "278 West Loop, Ericport, NE 25353",
+   "telephone": "(615) 266-3755"
+  },
+  "program_administrator": {
+   "name": "Gabriela Wheeler",
+   "address": "1321 Robert Prairie Suite 475, Baldwinsfurt, AZ 48291",
+   "telephone": "(645) 422-7689"
+  },
+  "congressional_members": [
+   {
+    "name": "Senator John Smith",
+    "contact_information": "john.smith@co"
+   },
+   {
+    "name": "Representative Jane Doe",
+    "contact_information": "jane.doe@cong"
+   },
+   {
+    "name": "Senator Michael Johnson",
+    "contact_information": "michael.johns"
+   },
+   {
+    "name": "Representative Emily Davis",
+    "contact_information": "emily.davis@c"
+   }
+  ],
+  "field_office_representative": {
+   "name": "Nihal Carter",
+   "telephone": "(104) 029-6503"
+  }
+ },
+ "oneshot": {
+  "release_date": "03/15/2023",
+  "region": "Midwest",
+  "project_number": "HUD-2023-001",
+  "grant_amount": 832451.21,
+  "major_activities_description": "Construction of affordable housing units and community centers",
+  "significant_conditions": "Funds must be used for labor and materials only, not administrative costs",
+  "last_year_allocation": "$3666.48",
+  "date_sent_to_lcr": "03/10/2023",
+  "chief_executive_officer": {
+   "name": "Carrie Hayes",
+   "address": "278 West Loop, Ericport, NE 25353",
+   "telephone": "(615) 266-3755"
+  },
+  "program_administrator": {
+   "name": "Gabriela Wheeler",
+   "address": "1321 Robert Prairie Suite 475, Baldwinfurt, AZ 48291",
+   "telephone": "(645) 422-7689"
+  },
+  "congressional_members": [
+   {
+    "name": "Senator John Smith",
+    "contact_information": "john.smith@co"
+   },
+   {
+    "name": "Representative Jane Doe",
+    "contact_information": "jane.doe@cong"
+   },
+   {
+    "name": "Senator Michael Johnson",
+    "contact_information": "michael.johns"
+   },
+   {
+    "name": "Representative Emily Davis",
+    "contact_information": "emily.davis@c"
+   }
+  ],
+  "field_office_representative": {
+   "name": "Nihal Carter",
+   "telephone": "(104) 029-6503"
+  }
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "name_of_deceased": "Melissa O. Ramirez",
+  "social_security_number_of_deceased": "359-47-8954",
+  "employing_agency": "Hughes-Carroll",
+  "date_of_death": "05/15/2023",
+  "beneficiaries": [
+   "Mieszko E. Bala",
+   "Andrea P. de Vroege",
+   "John Doe",
+   "Jane Smith"
+  ],
+  "next_of_kin": [
+   "Mieszko E. Bala",
+   "Andrea P. de Vroege",
+   "John Doe",
+   "Jane Smith"
+  ],
+  "last_address_of_deceased": {
+   "street": "104 Kristin Estates"
+  }
+ },
+ "parse": {
+  "name_of_deceased": "Melissa O. Ramirez",
+  "social_security_number_of_deceased": "359-47-8954",
+  "employing_agency": "Hughes-Carroll",
+  "date_of_death": "05/15/2023",
+  "beneficiaries": [
+   "Mieszko E. Bala",
+   "Andrea P. de Vroege",
+   "John Doe",
+   "Jane Smith"
+  ],
+  "next_of_kin": [
+   "Mieszko E. Bala",
+   "Andrea P. de Vroege",
+   "John Doe",
+   "Jane Smith"
+  ],
+  "last_address_of_deceased": {
+   "street": "104 Kristin Estates"
+  }
+ },
+ "oneshot": {
+  "name_of_deceased": "Melissa O. Ramirez",
+  "social_security_number_of_deceased": "359-47-8954",
+  "employing_agency": "Hughes-Carroll",
+  "date_of_death": "05/15/2023",
+  "beneficiaries": [
+   "Mieszko E. Bala",
+   "Andrea P. de Vroege",
+   "John Doe",
+   "Jane Smith"
+  ],
+  "next_of_kin": [
+   "Mieszko E. Bala",
+   "Andrea P. de Vroege",
+   "John Doe",
+   "Jane Smith"
+  ],
+  "last_address_of_deceased": {
+   "street": "104 Kristin Estates"
+  }
+ }
+}

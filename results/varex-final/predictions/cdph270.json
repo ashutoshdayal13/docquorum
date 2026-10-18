@@ -1,0 +1,13 @@
+{
+ "project_submittal_date": "11/05/2023",
+ "facility": "St. Bernadette's Rehabilitation Clinic",
+ "facility_address": {
+  "street": "7128 Morgan Branch",
+  "city": "Seanfurt"
+ },
+ "certifier": {
+  "name": "Bernadette D. Griffith",
+  "title": "Medical Director",
+  "signature_date": "11/05/2023"
+ }
+}

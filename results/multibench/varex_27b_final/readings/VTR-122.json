@@ -1,0 +1,161 @@
+{
+ "primary": {
+  "vehicle_identification_number": "1FTFW1EG4NFA03245",
+  "vehicle_make": "Ford",
+  "vehicle_model": "F-150",
+  "part_a_individuals": [
+   {
+    "name": "Dustin Stephens"
+   },
+   {
+    "name": "Milena Holland"
+   }
+  ],
+  "part_b_individuals": [
+   {
+    "name": "Isaac D. Kerr"
+   },
+   {
+    "name": "John Doe"
+   },
+   {
+    "name": "Jane Smith"
+   },
+   {
+    "name": "Alice Johnson"
+   }
+  ],
+  "part_c_individual": {
+   "name": "Robert Brown"
+  },
+  "signatures": [
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   }
+  ]
+ },
+ "parse": {
+  "vehicle_identification_number": "1FTFW1EG4NFA03245",
+  "vehicle_make": "Ford",
+  "vehicle_model": "F-150",
+  "part_a_individuals": [
+   {
+    "name": "Dustin Stephens"
+   },
+   {
+    "name": "Milena Holland"
+   }
+  ],
+  "part_b_individuals": [
+   {
+    "name": "Isaac D. Kerr"
+   },
+   {
+    "name": "John Doe"
+   },
+   {
+    "name": "Jane Smith"
+   },
+   {
+    "name": "Alice Johnson"
+   }
+  ],
+  "part_c_individual": {
+   "name": "Robert Brown"
+  },
+  "signatures": [
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   }
+  ]
+ },
+ "oneshot": {
+  "vehicle_identification_number": "1FTFW1EG4NFA03245",
+  "vehicle_make": "Ford",
+  "vehicle_model": "F-150",
+  "part_a_individuals": [
+   {
+    "name": "Dustin Stephens"
+   },
+   {
+    "name": "Milena Holland"
+   }
+  ],
+  "part_b_individuals": [
+   {
+    "name": "Isaac D. Kerr"
+   },
+   {
+    "name": "John Doe"
+   },
+   {
+    "name": "Jane Smith"
+   },
+   {
+    "name": "Alice Johnson"
+   }
+  ],
+  "part_c_individual": {
+   "name": "Robert Brown"
+  },
+  "signatures": [
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   },
+   {
+    "date": "06/15/2023"
+   }
+  ]
+ }
+}

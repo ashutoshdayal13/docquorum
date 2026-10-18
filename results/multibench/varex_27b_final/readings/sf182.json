@@ -1,0 +1,119 @@
+{
+ "primary": {
+  "applicant_name": "Stochel, Matthew",
+  "social_security_number": "578-84-5769",
+  "date_of_birth": "1960-02-18",
+  "position_level": "GS-13",
+  "type_of_appointment": "Permanent",
+  "education_level": "Bachelor's Degree",
+  "training_start_date": "2023-11-01",
+  "training_end_date": "2023-11-15",
+  "training_duty_hours": "8 hours/day",
+  "training_non_duty_hours": "0 hours/day",
+  "applicant_address": {
+   "home_address": "056 Meyer Stravenue Apt. 717, Dalehaven, MI 68911",
+   "home_telephone": "(177) 188-7125"
+  },
+  "organization_address": {
+   "organization_mailing_address": "Hayes-Chang, 1234 Industry Lane, Dalehaven, MI 68911",
+   "office_telephone": "(532) 278-7095",
+   "work_email": "mstochel@hayeschang.com"
+  },
+  "position_details": {
+   "position_title": "Fish farm manager",
+   "series": "0460",
+   "grade": "13",
+   "step": "01"
+  },
+  "training_vendor": {
+   "vendor_name": "TrainingPro Inc., 5678 Education Avenue, Trainingville, MI 12345",
+   "training_site": "TrainingPro Training Center, Trainingville, MI 12345",
+   "vendor_telephone": "(123) 456-7890",
+   "vendor_email": "info@trainingpro.com",
+   "vendor_website": "www.trainingpro.com",
+   "vendor_point_of_contact": "John Doe"
+  },
+  "course_details": {
+   "course_title": "Advanced Aquaculture Management",
+   "course_number": "AQM-2023-001"
+  }
+ },
+ "parse": {
+  "applicant_name": "Stochel, Matthew",
+  "social_security_number": "578-84-5769",
+  "date_of_birth": "1960-02-18",
+  "position_level": "GS-13",
+  "type_of_appointment": "Permanent",
+  "education_level": "Bachelor's Degree",
+  "training_start_date": "2023-11-01",
+  "training_end_date": "2023-11-15",
+  "training_duty_hours": "8 hours/day",
+  "training_non_duty_hours": "0 hours/day",
+  "applicant_address": {
+   "home_address": "056 Meyer Stravenue Apt. 717, Dalehaven, MI 68911",
+   "home_telephone": "(177) 188-7125"
+  },
+  "organization_address": {
+   "organization_mailing_address": "Hayes-Chang, 1234 Industry Lane, Dalehaven, MI 68911",
+   "office_telephone": "(532) 278-7095",
+   "work_email": "mstochel@hayeschang.com"
+  },
+  "position_details": {
+   "position_title": "Fish farm manager",
+   "series": "0460",
+   "grade": "13",
+   "step": "01"
+  },
+  "training_vendor": {
+   "vendor_name": "TrainingPro Inc., 5678 Education Avenue, Trainingville, MI 12345",
+   "training_site": "TrainingPro Training Center, Trainingville, MI 12345",
+   "vendor_telephone": "(123) 456-7890",
+   "vendor_email": "info@trainingpro.com",
+   "vendor_website": "www.trainingpro.com",
+   "vendor_point_of_contact": "John Doe"
+  },
+  "course_details": {
+   "course_title": "Advanced Aquaculture Management",
+   "course_number": "AQM-2023-001"
+  }
+ },
+ "oneshot": {
+  "applicant_name": "Stochel, Matthew",
+  "social_security_number": "578-84-5769",
+  "date_of_birth": "1960-02-18",
+  "position_level": "GS-13",
+  "type_of_appointment": "Permanent",
+  "education_level": "Bachelor's Degree",
+  "training_start_date": "2023-11-01",
+  "training_end_date": "2023-11-15",
+  "training_duty_hours": "8 hours/day",
+  "training_non_duty_hours": "0 hours/day",
+  "applicant_address": {
+   "home_address": "056 Meyer Stravenue Apt. 717, Dalehaven, MI 68911",
+   "home_telephone": "(177) 188-7125"
+  },
+  "organization_address": {
+   "organization_mailing_address": "Hayes-Chang, 1234 Industry Lane, Dalehaven, MI 68911",
+   "office_telephone": "(532) 278-7095",
+   "work_email": "mstochel@hayeschang.com"
+  },
+  "position_details": {
+   "position_title": "Fish farm manager",
+   "series": "0460",
+   "grade": "13",
+   "step": "01"
+  },
+  "training_vendor": {
+   "vendor_name": "TrainingPro Inc., 5678 Education Avenue, Trainingville, MI 12345",
+   "training_site": "TrainingPro Training Center, Trainingville, MI 12345",
+   "vendor_telephone": "(123) 456-7890",
+   "vendor_email": "info@trainingpro.com",
+   "vendor_website": "www.trainingpro.com",
+   "vendor_point_of_contact": "John Doe"
+  },
+  "course_details": {
+   "course_title": "Advanced Aquaculture Management",
+   "course_number": "AQM-2023-001"
+  }
+ }
+}

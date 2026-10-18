@@ -1,0 +1,17 @@
+{
+ "date_issued": "05/15/2024",
+ "license_number": "ORG-2024-44541",
+ "expiration_date": "05/15/2025",
+ "signature_date": "05/15/2024",
+ "applicant_info": {
+  "applicant_name": "Jacobo D. Dubey",
+  "phone_number": "(034) 360-2983",
+  "email": "jdubey@moore.com",
+  "address": "11789 Mackenzie Loaf, New Tylerfort, WV 85558"
+ },
+ "vehicle_info": {
+  "vehicle_make": "Toyota",
+  "vehicle_model": "Camry",
+  "vehicle_identification_number": "5TFBW5215XB000123"
+ }
+}

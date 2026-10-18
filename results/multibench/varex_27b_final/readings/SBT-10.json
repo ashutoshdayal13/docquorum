@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "district_name": "Springfield Independent School District",
+  "district_number": 123456,
+  "mailing_address": "5678 Oak Street, Springfield, TX 78773",
+  "phone_number": "(512) 987-6543",
+  "fax_number": "(512) 987-6544",
+  "owner_lease_holder": "Springfield ISD Transportation Department",
+  "advertisement_names_types": "Local business ads, Educational programs",
+  "additional_comments": "Ads are non-political and community-focused",
+  "submission_date": "05/20/2023",
+  "submitted_by": {
+   "name": "Francisco A. Arnold",
+   "title": "Geophysicist/field"
+  },
+  "transportation_director": "Jhalak Ryan, Press sub"
+ },
+ "parse": {
+  "district_name": "Springfield Independent School District",
+  "district_number": 123456,
+  "mailing_address": "5678 Oak Street, Springfield, TX 78773",
+  "phone_number": "(512) 987-6543",
+  "fax_number": "(512) 987-6544",
+  "owner_lease_holder": "Springfield ISD Transportation Department",
+  "advertisement_names_types": "Local business ads, Educational programs",
+  "additional_comments": "Ads are non-political and community-focused",
+  "submission_date": "05/20/2023",
+  "submitted_by": {
+   "name": "Francisco A. Arnold",
+   "title": "Geophysicist/field"
+  },
+  "transportation_director": "Jhalak Ryan, Press sub"
+ },
+ "oneshot": {
+  "district_name": "Springfield Independent School District",
+  "district_number": 123456,
+  "mailing_address": "5678 Oak Street, Springfield, TX 78773",
+  "phone_number": "(512) 987-6543",
+  "fax_number": "(512) 987-6544",
+  "owner_lease_holder": "Springfield ISD Transportation Department",
+  "advertisement_names_types": "Local business ads, Educational programs",
+  "additional_comments": "Ads are non-political and community-focused",
+  "submission_date": "05/20/2023",
+  "submitted_by": {
+   "name": "Francisco A. Arnold",
+   "title": "Geophysicist/field"
+  },
+  "transportation_director": "Jhalak Ryan, Press sub"
+ }
+}

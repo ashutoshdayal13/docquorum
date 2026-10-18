@@ -1,0 +1,31 @@
+{
+ "patient_last_name": "Magana",
+ "patient_first_name": "Davi",
+ "patient_birth_date": "05/19/1976",
+ "patient_country_of_birth": "United States",
+ "patient_home_address": {
+  "street": "9346 Anthony Forest",
+  "apartment_unit": "Apt 4B",
+  "city": "Whitestad",
+  "state": "IN",
+  "zip_code": "22517"
+ },
+ "patient_phone_numbers": {
+  "home": "(306) 399-0850",
+  "cell": "(209) 583-0305",
+  "work": "(366) 975-9879"
+ },
+ "patient_reporting_healthcare_facility": {
+  "name": "Martin-Flynn Hospital",
+  "address": "9346 Anthony Forest",
+  "suite": "Suite 100",
+  "city": "Whitestad",
+  "state": "IN"
+ },
+ "patient_email": {
+  "email": "davi.magana@yahoo.com"
+ },
+ "patient_reporting_healthcare_provider": {
+  "name": "Davi E. Magana"
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "primary": {
+  "employee_name": "Germana",
+  "date_agreement_submitted": "03/15/2023",
+  "service_or_staff_office": "Administrative Services",
+  "office_symbol": "AS-2023-001",
+  "official_work_site": "Lake Rebecca, NC",
+  "employee_business_telephone_number": "(778) 032-6844",
+  "employee_email_address": "greuter@mosesschmidt.com",
+  "advance_notice_hours": 24,
+  "supervisor": {
+   "name": "Bela Z. Sanders",
+   "business_telephone_number": "(495) 558-6875",
+   "email_address": "bsanders@smithlee.com"
+  }
+ },
+ "parse": {
+  "employee_name": "Germana",
+  "date_agreement_submitted": "03/15/2023",
+  "service_or_staff_office": "Administrative Services",
+  "office_symbol": "AS-2023-001",
+  "official_work_site": "Lake Rebecca, NC",
+  "employee_business_telephone_number": "(778) 032-6844",
+  "employee_email_address": "greuter@mosesschmidt.com",
+  "advance_notice_hours": 24,
+  "supervisor": {
+   "name": "Bela Z. Sanders",
+   "business_telephone_number": "(495) 558-6875",
+   "email_address": "bsanders@smithlee.com"
+  }
+ },
+ "oneshot": {}
+}

@@ -1,0 +1,17 @@
+{
+ "primary": {
+  "applicant_full_name": "Magdalena X. Barela",
+  "date_of_birth": "02/24/1965",
+  "client_id_number": "CLT-2022-00482"
+ },
+ "parse": {
+  "applicant_full_name": "Magdalena X. Barela",
+  "date_of_birth": "02/24/1965",
+  "client_id_number": "CLT-2022-00482"
+ },
+ "oneshot": {
+  "applicant_full_name": "Magdalena X. Barela",
+  "date_of_birth": "02/24/1965",
+  "client_id_number": "CLT-2022-00482"
+ }
+}

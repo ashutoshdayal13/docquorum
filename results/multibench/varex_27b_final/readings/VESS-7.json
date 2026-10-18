@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "case_number": "VESS-7-2023-00456",
+  "additional_referrals": "Domestic Violence Hotline: (800) 799-7233",
+  "funeral_home_medical_examiner": "Lauraberg Medical Examiner: (085)",
+  "officer": {
+   "name": "James Q. van Dokkum",
+   "phone_number": "(728) 553-0902"
+  },
+  "towing_company": {
+   "name": "AAA Towing Services",
+   "phone_number": "(555) 987-6543"
+  }
+ },
+ "parse": {
+  "case_number": "VESS-7-2023-00456",
+  "additional_referrals": "Domestic Violence Hotline: (800) 799-7233",
+  "funeral_home_medical_examiner": "Lauraberg Medical Examiner: (085)",
+  "officer": {
+   "name": "James Q. van Dokkum",
+   "phone_number": "(728) 553-0902"
+  },
+  "towing_company": {
+   "name": "AAA Towing Services",
+   "phone_number": "(555) 987-6543"
+  }
+ },
+ "oneshot": {
+  "case_number": "VESS-7-2023-00456",
+  "additional_referrals": "Domestic Violence Hotline: (800) 799-7233",
+  "funeral_home_medical_examiner": "Lauraberg Medical Examiner: (085)",
+  "officer": {
+   "name": "James Q. van Dokkum",
+   "phone_number": "(728) 553-0902"
+  },
+  "towing_company": {
+   "name": "AAA Towing Services",
+   "phone_number": "(555) 987-6543"
+  }
+ }
+}

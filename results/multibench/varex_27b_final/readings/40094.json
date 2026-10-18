@@ -1,0 +1,53 @@
+{
+ "primary": {
+  "activity_number": "REHAB-2023-001",
+  "participant": {
+   "name": "Pranit M. Garcia",
+   "tax_id_number": "194-59-7271",
+   "participant_number": "PART-2023-001"
+  },
+  "chdo_information": {
+   "tax_id_number": "1278-2275-9689"
+  },
+  "activity_details": {
+   "home_funds_for_activity": 4019.65,
+   "total_estimated_cost_of_activity": 777796.98,
+   "dollar_amount_of_funds": 53.83,
+   "activity_information": "40809 Melissa Groves Apt. 235, Smithborough, FL 70094"
+  }
+ },
+ "parse": {
+  "activity_number": "REHAB-2023-001",
+  "participant": {
+   "name": "Pranit M. Garcia",
+   "tax_id_number": "194-59-7271",
+   "participant_number": "PART-2023-001"
+  },
+  "chdo_information": {
+   "tax_id_number": "1278-2275-9689"
+  },
+  "activity_details": {
+   "home_funds_for_activity": 4019.65,
+   "total_estimated_cost_of_activity": 777796.98,
+   "dollar_amount_of_funds": 53.83,
+   "activity_information": "40809 Melissa Groves Apt. 235, Smithborough, FL 70094"
+  }
+ },
+ "oneshot": {
+  "activity_number": "REHAB-2023-001",
+  "participant": {
+   "name": "Pranit M. Garcia",
+   "tax_id_number": "194-59-7271",
+   "participant_number": "PART-2023-001"
+  },
+  "chdo_information": {
+   "tax_id_number": "1278-2275-9689"
+  },
+  "activity_details": {
+   "home_funds_for_activity": 4019.65,
+   "total_estimated_cost_of_activity": 777796.98,
+   "dollar_amount_of_funds": 53.83,
+   "activity_information": "40809 Melissa Groves Apt. 235, Smithborough, FL 70094"
+  }
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "name_of_deceased": "Lucy J. Evans",
+  "social_security_number_of_deceased": "046-39-0506",
+  "employing_agency": "Kemp-Cox",
+  "date_of_death": "03/10/2023",
+  "beneficiaries": [
+   "Matthew Y. Nunez",
+   "Akshay V. Saini",
+   "Stephen Evans",
+   "Kathryn Nunez"
+  ],
+  "next_of_kin": [
+   "Akshay V. Saini",
+   "Matthew Y. Nunez",
+   "Stephen Evans",
+   "Kathryn Nunez"
+  ],
+  "last_address_of_deceased": {
+   "street": "15983 Kathryn Vista Suite 077"
+  }
+ },
+ "parse": {
+  "name_of_deceased": "Lucy J. Evans",
+  "social_security_number_of_deceased": "046-39-0506",
+  "employing_agency": "Kemp-Cox",
+  "date_of_death": "03/10/2023",
+  "beneficiaries": [
+   "Matthew Y. Nunez",
+   "Akshay V. Saini",
+   "Stephen Evans",
+   "Kathryn Nunez"
+  ],
+  "next_of_kin": [
+   "Akshay V. Saini",
+   "Matthew Y. Nunez",
+   "Stephen Evans",
+   "Kathryn Nunez"
+  ],
+  "last_address_of_deceased": {
+   "street": "15983 Kathryn Vista Suite 077"
+  }
+ },
+ "oneshot": {
+  "name_of_deceased": "Lucy J. Evans",
+  "social_security_number_of_deceased": "046-39-0506",
+  "employing_agency": "Kemp-Cox",
+  "date_of_death": "03/10/2023",
+  "beneficiaries": [
+   "Matthew Y. Nunez",
+   "Akshay V. Saini",
+   "Stephen Evans",
+   "Kathryn Nunez"
+  ],
+  "next_of_kin": [
+   "Akshay V. Saini",
+   "Matthew Y. Nunez",
+   "Stephen Evans",
+   "Kathryn Nunez"
+  ],
+  "last_address_of_deceased": {
+   "street": "15983 Kathryn Vista Suite 077"
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "facility_name_and_address": "GSA Office, 123 Main St,",
+ "violation_location": "Warehouse, Loading Dock 3",
+ "hazard_description": "Unsecured chemical drums near forklift path; 15 employees exposed daily",
+ "gsa_standard_violated": "GSA Safety Standard 4.2.1, Chemical Storage and Handling",
+ "correction_attempted": "No, condition reported to supervisor 03/15/2023",
+ "injury_or_property_damage": "No injuries or property damage reported",
+ "date": "03/20/2023",
+ "supervisor": {
+  "name": "Donald Schottin",
+  "telephone_number": "(657) 400-7054"
+ },
+ "employee": {
+  "name_and_address": "Erika Robertson, 239 Lisa Wells Apt. 039, South",
+  "telephone_number": "(360) 756-2925"
+ }
+}

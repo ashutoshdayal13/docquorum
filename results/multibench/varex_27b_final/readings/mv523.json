@@ -1,0 +1,89 @@
+{
+ "primary": {
+  "driving_school_name": "Safe Wheels Driving Academy",
+  "applicant_last_name": "Willems van Lier",
+  "applicant_first_name": "Michaela",
+  "applicant_middle_initial": "H",
+  "applicant_social_security_number": "020-99-6673",
+  "applicant_driver_license_id": "TXDL89858",
+  "other_names": "Michaela H. Willems",
+  "dmv_related_charges": "None",
+  "applicant_address": {
+   "address": "2788 Courtney Hills",
+   "city": "Jennifermouth",
+   "zip_code": "61301"
+  },
+  "instructor_experience": [
+   {
+    "experience_description": "Taught defensive driving techniques to new drivers",
+    "experience_duration": "2y"
+   },
+   {
+    "experience_description": "Instructed motorcycle safety courses for beginners",
+    "experience_duration": "1y"
+   },
+   {
+    "experience_description": "Trained commercial vehicle operators on safety regulations",
+    "experience_duration": "3y"
+   }
+  ]
+ },
+ "parse": {
+  "driving_school_name": "Safe Wheels Driving Academy",
+  "applicant_last_name": "Willems van Lier",
+  "applicant_first_name": "Michaela",
+  "applicant_middle_initial": "H",
+  "applicant_social_security_number": "020-99-6673",
+  "applicant_driver_license_id": "TXDL89858",
+  "other_names": "Michaela H. Willems",
+  "dmv_related_charges": "None",
+  "applicant_address": {
+   "address": "2788 Courtney Hills",
+   "city": "Jennifermouth",
+   "zip_code": "61301"
+  },
+  "instructor_experience": [
+   {
+    "experience_description": "Taught defensive driving techniques to new drivers",
+    "experience_duration": "2y"
+   },
+   {
+    "experience_description": "Instructed motorcycle safety courses for beginners",
+    "experience_duration": "1y"
+   },
+   {
+    "experience_description": "Trained commercial vehicle operators on safety regulations",
+    "experience_duration": "3y"
+   }
+  ]
+ },
+ "oneshot": {
+  "driving_school_name": "Safe Wheels Driving Academy",
+  "applicant_last_name": "Willems van Lier",
+  "applicant_first_name": "Michaela",
+  "applicant_middle_initial": "H",
+  "applicant_social_security_number": "020-99-6673",
+  "applicant_driver_license_id": "TXDL89858",
+  "other_names": "Michaela H. Willems",
+  "dmv_related_charges": "None",
+  "applicant_address": {
+   "address": "2788 Courtney Hills",
+   "city": "Jennifermouth",
+   "zip_code": "61301"
+  },
+  "instructor_experience": [
+   {
+    "experience_description": "Taught defensive driving techniques to new drivers",
+    "experience_duration": "2y"
+   },
+   {
+    "experience_description": "Instructed motorcycle safety courses for beginners",
+    "experience_duration": "1y"
+   },
+   {
+    "experience_description": "Trained commercial vehicle operators on safety regulations",
+    "experience_duration": "3y"
+   }
+  ]
+ }
+}

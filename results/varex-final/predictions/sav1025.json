@@ -1,0 +1,18 @@
+{
+ "case_number": "REF-2023-673",
+ "customer_name": "Tomasz V. Jenkins",
+ "securities": [
+  {
+   "security_name": "U.S. Treasury Bonds"
+  },
+  {
+   "security_name": "Corporate Stock Certificates"
+  },
+  {
+   "security_name": "Municipal Bonds"
+  },
+  {
+   "security_name": "Government Savings Bonds"
+  }
+ ]
+}

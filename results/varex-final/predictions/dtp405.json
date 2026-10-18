@@ -1,0 +1,23 @@
+{
+ "fein": "12-3456789",
+ "legal_business_name": "Bauer LLC",
+ "dba_name": "Green Solutions Horticultural Therapy",
+ "primary_business_activity": "Horticultural therapy services and products",
+ "workers_compensation_insurance_carrier": "New York State Insurance Fund",
+ "primary_business_address": {
+  "street": "967 Nicholas Springs"
+ },
+ "ny_business_address": {
+  "street": "789 Park Place"
+ },
+ "authorized_contact": {
+  "name": "Ottavio Robles",
+  "title": "Therapist, horticultural",
+  "phone": "(914) 206-3756",
+  "email": "orobles@bauer.com"
+ },
+ "business_entity": {
+  "entity_type": "Limited Liability Company",
+  "formation_date": "/ /2010"
+ }
+}

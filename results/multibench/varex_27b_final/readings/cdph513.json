@@ -1,0 +1,99 @@
+{
+ "primary": {
+  "administrator_name_last": "Bradford",
+  "administrator_name_first": "Mark",
+  "administrator_phone": "(142) 040-4057",
+  "administrator_email": "mark.bradford@yahoo.com",
+  "administrator_license_number": "LCSW-2010-OK-49675",
+  "provider_name": "Flores Inc",
+  "provider_number": "RFQ-2020-52794",
+  "provider_phone": "(313) 461-9338",
+  "provider_email": "grolon@flores.com",
+  "course_title": "Advanced Nursing Home Administration",
+  "course_dates": "10/15/2023 to 10/18/2023",
+  "total_class_hours": 20.5,
+  "course_units": "Semester",
+  "course_type": "Workshop",
+  "course_prerequisites": "Basic Nursing Home Administration Course",
+  "instructor_name": "Gabrielle",
+  "instructor_education": "Master's in Health Administration",
+  "instructor_teaching_experience": "5 years",
+  "administrator_address": {
+   "street": "74141 Mcneil Stream",
+   "state": "OK",
+   "zip": "80313"
+  },
+  "provider_address": {
+   "street": "55971 Bender Pines Suite 041",
+   "city": "East Vanessa",
+   "state": "FL",
+   "zip": "44101"
+  }
+ },
+ "parse": {
+  "administrator_name_last": "Bradford",
+  "administrator_name_first": "Mark",
+  "administrator_phone": "(142) 040-4057",
+  "administrator_email": "mark.bradford@yahoo.com",
+  "administrator_license_number": "LCSW-2010-OK-49675",
+  "provider_name": "Flores Inc",
+  "provider_number": "RFQ-2020-52794",
+  "provider_phone": "(313) 461-9338",
+  "provider_email": "grolon@flores.com",
+  "course_title": "Advanced Nursing Home Administration",
+  "course_dates": "10/15/2023 to 10/18/2023",
+  "total_class_hours": 20.5,
+  "course_units": "Semester",
+  "course_type": "Workshop",
+  "variable_hours_min": "18",
+  "variable_hours_max": "22",
+  "course_prerequisites": "Basic Nursing Home Administration Course",
+  "instructor_name": "Gabrielle",
+  "instructor_education": "Master's in Health Administration",
+  "instructor_teaching_experience": "5 years",
+  "administrator_address": {
+   "street": "74141 Mcneil Stream",
+   "state": "OK",
+   "zip": "80313"
+  },
+  "provider_address": {
+   "street": "55971 Bender Pines Suite 041",
+   "city": "East Vanessa",
+   "state": "FL",
+   "zip": "44101"
+  }
+ },
+ "oneshot": {
+  "administrator_name_last": "Bradford",
+  "administrator_name_first": "Mark",
+  "administrator_phone": "(142) 040-4057",
+  "administrator_email": "mark.bradford@yahoo.com",
+  "administrator_license_number": "LCSW-2010-OK-49675",
+  "provider_name": "Flores Inc",
+  "provider_number": "RFQ-2020-52794",
+  "provider_phone": "(313) 461-9338",
+  "provider_email": "grolon@flores.com",
+  "course_title": "Advanced Nursing Home Administration",
+  "course_dates": "10/15/2023 to 10/18/2023",
+  "total_class_hours": 20.5,
+  "course_units": "Semester",
+  "course_type": "Workshop",
+  "variable_hours_min": "18",
+  "variable_hours_max": "22",
+  "course_prerequisites": "Basic Nursing Home Administration Course",
+  "instructor_name": "Gabrielle",
+  "instructor_education": "Master's in Health Administration",
+  "instructor_teaching_experience": "5 years",
+  "administrator_address": {
+   "street": "74141 Mcneil Stream",
+   "state": "OK",
+   "zip": "80313"
+  },
+  "provider_address": {
+   "street": "55971 Bender Pines Suite 041",
+   "city": "East Vanessa",
+   "state": "FL",
+   "zip": "44101"
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "local_authority_or_developer": "City of New Julia",
+ "project_number": "DPM-2022-65452",
+ "project_name": "Green Meadows Affordable Housing",
+ "architect": "Livia Velasquez, Wagner Inc",
+ "location": "9048 Williams Turnpike, New Julia, AZ 65096",
+ "general_requirements": "All construction must comply with local building codes and HUD standards. Energy-efficient materials and practices are required.",
+ "site_work_type": "Grading, excavation, and utility installation",
+ "bearing_capacity": "3000 psf",
+ "material_and_thickness": "Compacted fill: 12 inches of crushed stone; Base course: 6 inches of compacted gravel",
+ "demolition_details": "Minimal demolition required. Existing structures to be removed and materials recycled where possible.",
+ "storm_drainage_details": "Surface drainage to be directed to a retention pond. Underground drains to be installed as per engineering plans.",
+ "curbs_and_gutters_details": "Concrete curbs and gutters to be installed along all roads and walkways.",
+ "pavement_details": "Asphalt pavement with a thickness of 4 inches for roads and 3 inches for parking areas.",
+ "equipment_for_special_areas": "Playground equipment, benches, and lighting fixtures to be installed in community areas.",
+ "finish_grading_details": "Final grading to ensure proper drainage and level surfaces. Topsoil to be replaced and seeded for landscaping.",
+ "lawns_and_planting_details": "Native plants and grass species to be used for landscaping. Drip irrigation system to be installed.",
+ "additional_notes": "Regular inspections to be conducted by the local authority to ensure compliance with all specifications and standards."
+}

@@ -1,0 +1,91 @@
+{
+ "primary": {
+  "employee_name": "Jessica Khare",
+  "middle_initial": "O.",
+  "social_security_number": "514582",
+  "program_office": "Housing",
+  "grade": "GS-1",
+  "h_login_number": "jkhare",
+  "building_address": "455 Golden Gate Ave",
+  "room_number": "258-B",
+  "work_phone": "(415) 744-2791",
+  "email": "jkhare@hud.gov",
+  "total_cost": 120.5,
+  "certification_date": "03/15/2023",
+  "home_address": {
+   "street": "16457 Theresa Vista Apt. 238",
+   "city": "New Kristenside",
+   "state": "NH",
+   "zip_code": "59344"
+  },
+  "transit_providers": [
+   {
+    "provider_name": "Bay Area Rapid Transit",
+    "cost": 60.25
+   },
+   {
+    "provider_name": "Muni Bus",
+    "cost": 60.25
+   }
+  ]
+ },
+ "parse": {
+  "employee_name": "Jessica Khare",
+  "middle_initial": "O.",
+  "social_security_number": "514582",
+  "program_office": "Housing",
+  "grade": "GS-1",
+  "h_login_number": "jkhare",
+  "building_address": "455 Golden Gate Ave",
+  "room_number": "258-B",
+  "work_phone": "(415) 744-2791",
+  "email": "jkhare@hud.gov",
+  "total_cost": 120.5,
+  "certification_date": "03/15/2023",
+  "home_address": {
+   "street": "16457 Theresa Vista Apt. 238",
+   "city": "New Kristenside",
+   "state": "NH",
+   "zip_code": "59344"
+  },
+  "transit_providers": [
+   {
+    "provider_name": "Bay Area Rapid Transit",
+    "cost": 60.25
+   },
+   {
+    "provider_name": "Muni Bus",
+    "cost": 60.25
+   }
+  ]
+ },
+ "oneshot": {
+  "employee_name": "Jessica Khare",
+  "social_security_number": "514582",
+  "program_office": "Housing",
+  "grade": "GS-1",
+  "h_login_number": "jkhare",
+  "building_address": "455 Golden Gate Ave",
+  "room_number": "258-B",
+  "work_phone": "(415) 744-2791",
+  "email": "jkhare@hud.gov",
+  "total_cost": 120.5,
+  "certification_date": "03/15/2023",
+  "home_address": {
+   "street": "16457 Theresa Vista Apt. 238",
+   "city": "New Kristenside",
+   "state": "NH",
+   "zip_code": "59344"
+  },
+  "transit_providers": [
+   {
+    "provider_name": "Bay Area Rapid Transit",
+    "cost": 60.25
+   },
+   {
+    "provider_name": "Muni Bus",
+    "cost": 60.25
+   }
+  ]
+ }
+}

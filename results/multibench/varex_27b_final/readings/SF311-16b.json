@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "fiscal_year": "2023",
+  "senior_agency_official_name": "Shawn Misra",
+  "point_of_contact": {
+   "name": "Edward W. Romero",
+   "title": "Multimedia specialist",
+   "phone": "(212) 000-2674",
+   "email": "eromero@archer.com"
+  },
+  "officials_with_original_classification_authority": {
+   "number_of_officials": 5
+  },
+  "original_classification_decisions": {
+   "total_decisions": 150,
+   "top_secret_decisions": 30,
+   "secret_decisions": 70,
+   "confidential_decisions": 50
+  }
+ },
+ "parse": {
+  "fiscal_year": "2023",
+  "senior_agency_official_name": "Shawn Misra",
+  "point_of_contact": {
+   "name": "Edward W. Romero",
+   "title": "Multimedia specialist",
+   "phone": "(212) 000-2674",
+   "email": "eromero@archer.com"
+  },
+  "officials_with_original_classification_authority": {
+   "number_of_officials": 5
+  },
+  "original_classification_decisions": {
+   "total_decisions": 150,
+   "top_secret_decisions": 30,
+   "secret_decisions": 70,
+   "confidential_decisions": 50
+  }
+ },
+ "oneshot": {
+  "fiscal_year": "2023",
+  "senior_agency_official_name": "Shawn Misra",
+  "point_of_contact": {
+   "name": "Edward W. Romero",
+   "title": "Multimedia specialist",
+   "phone": "(212) 000-2674",
+   "email": "eromero@archer.com"
+  },
+  "officials_with_original_classification_authority": {
+   "number_of_officials": 5
+  },
+  "original_classification_decisions": {
+   "total_decisions": 150,
+   "top_secret_decisions": 30,
+   "secret_decisions": 70,
+   "confidential_decisions": 50
+  }
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "docs_code": "HU",
+ "hoc_area_name": "HUD Midwest Region",
+ "deauthorized_persons": [
+  "John Doe"
+ ],
+ "primary_authorized_person": {
+  "name": "Smith, Mariana P.",
+  "title": "Engineer, automotive"
+ },
+ "alternate_authorized_persons": [
+  {
+   "name": "Ferguson, Thierry A.",
+   "title": "Advice worker"
+  },
+  {
+   "name": "Hill, Zachary",
+   "title": "Charity officer"
+  },
+  {
+   "name": "Jane Doe",
+   "title": "Financial Analyst"
+  }
+ ],
+ "director_certification": {
+  "certification_date": "06/15/2023"
+ }
+}

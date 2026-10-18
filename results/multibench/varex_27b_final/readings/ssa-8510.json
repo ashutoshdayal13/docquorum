@@ -1,0 +1,62 @@
+{
+ "primary": {
+  "authorizing_person_name": "Nunes, Jason A.",
+  "authorizing_person_ssn": "798-09-2323",
+  "claimant_beneficiary_name": "Robles, Monica Q.",
+  "claimant_beneficiary_ssn": "237-62-6888",
+  "authorization_date": "06/15/2023",
+  "witness_signatures": [
+   "Ariel Vianello",
+   "John Smith"
+  ],
+  "witness_addresses": [
+   "98046 Kelly Ports, Lake Christopher, MI 47730",
+   "123 Main St, Anytown, MI 48108"
+  ],
+  "mailing_address_details": {
+   "street": "69564 Drake Overpass Apt. 245",
+   "city_state": "Englishmouth, VA",
+   "zip_code": "97428"
+  }
+ },
+ "parse": {
+  "authorizing_person_name": "Nunes, Jason A.",
+  "authorizing_person_ssn": "798-09-2323",
+  "claimant_beneficiary_name": "Robles, Monica Q.",
+  "claimant_beneficiary_ssn": "237-62-6888",
+  "authorization_date": "06/15/2023",
+  "witness_signatures": [
+   "Ariel Vianello",
+   "John Smith"
+  ],
+  "witness_addresses": [
+   "98046 Kelly Ports, Lake Christopher, MI 47730",
+   "123 Main St, Anytown, MI 48108"
+  ],
+  "mailing_address_details": {
+   "street": "69564 Drake Overpass Apt. 245",
+   "city_state": "Englishmouth, VA",
+   "zip_code": "97428"
+  }
+ },
+ "oneshot": {
+  "authorizing_person_name": "Nunes, Jason A.",
+  "authorizing_person_ssn": "798-09-2323",
+  "claimant_beneficiary_name": "Robles, Monica Q.",
+  "claimant_beneficiary_ssn": "237-62-6888",
+  "authorization_date": "06/15/2023",
+  "witness_signatures": [
+   "Ariel Vianello",
+   "John Smith"
+  ],
+  "witness_addresses": [
+   "98046 Kelly Ports, Lake Christopher, MI 47730",
+   "123 Main St, Anytown, MI 48108"
+  ],
+  "mailing_address_details": {
+   "street": "69564 Drake Overpass Apt. 245",
+   "city_state": "Englishmouth, VA",
+   "zip_code": "97428"
+  }
+ }
+}

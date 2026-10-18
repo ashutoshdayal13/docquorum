@@ -1,0 +1,56 @@
+{
+ "primary": {
+  "date_of_birth": "12/14/1984",
+  "driver_license_number": "TX-72964",
+  "driver_license_state": "TX",
+  "phone_number": "(831) 453-3870",
+  "public_address": {
+   "street": "07714 Martin Highway",
+   "city": "Christianbury",
+   "state": "TX",
+   "zip_code": "04929"
+  },
+  "confidential_address": {
+   "street": "1234 Oak Street",
+   "city": "Austin",
+   "zip_code": "78701"
+  },
+  "applicant_name": "Luiza W. Woods"
+ },
+ "parse": {
+  "date_of_birth": "12/14/1984",
+  "driver_license_number": "TX-72964",
+  "driver_license_state": "TX",
+  "phone_number": "(831) 453-3870",
+  "public_address": {
+   "street": "07714 Martin Highway",
+   "city": "Christianbury",
+   "state": "TX",
+   "zip_code": "04929"
+  },
+  "confidential_address": {
+   "street": "1234 Oak Street",
+   "city": "Austin",
+   "zip_code": "78701"
+  },
+  "applicant_name": "Luiza W. Woods"
+ },
+ "oneshot": {
+  "date_of_birth": "12/14/1984",
+  "driver_license_number": "TX-72964",
+  "driver_license_state": "TX",
+  "phone_number": "(831) 453-3870",
+  "public_address": {
+   "street": "07714 Martin Highway",
+   "city": "Christianbury",
+   "state": "TX",
+   "zip_code": "04929"
+  },
+  "confidential_address": {
+   "street": "1234 Oak Street",
+   "city": "Austin",
+   "zip_code": "78701"
+  },
+  "applicant_name": "Luiza W. Woods"
+ }
+}

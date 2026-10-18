@@ -1,0 +1,32 @@
+{
+ "primary": {
+  "volag_number": "VOL-2023-789456",
+  "attorney_state_bar_number": "JD-1988-VA-35458",
+  "obligor_information": {
+   "name_of_obligor": "Gail G. Johnston",
+   "name_of_agent_co_obligor": "Flavia H. Berry",
+   "agent_co_obligor_power_of_attorney_number": "POA-2023-789456-REEDLTD",
+   "bonded_alien": "Joel Kok"
+  }
+ },
+ "parse": {
+  "volag_number": "VOL-2023-789456",
+  "attorney_state_bar_number": "JD-1988-VA-35458",
+  "obligor_information": {
+   "name_of_obligor": "Gail G. Johnston",
+   "name_of_agent_co_obligor": "Flavia H. Berry",
+   "agent_co_obligor_power_of_attorney_number": "POA-2023-789456-REEDLTD",
+   "bonded_alien": "Joel Kok"
+  }
+ },
+ "oneshot": {
+  "volag_number": "VOL-2023-789456",
+  "attorney_state_bar_number": "JD-1988-VA-35458",
+  "obligor_information": {
+   "name_of_obligor": "Gail G. Johnston",
+   "name_of_agent_co_obligor": "Flavia H. Berry",
+   "agent_co_obligor_power_of_attorney_number": "POA-2023-789456-REEDLTD",
+   "bonded_alien": "Joel Kok"
+  }
+ }
+}

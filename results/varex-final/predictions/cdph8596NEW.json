@@ -1,0 +1,27 @@
+{
+ "firm_name": "Johnson, Beck and Perez",
+ "dba_name": "Medical Innovations Inc.",
+ "website": "https://www.johnsonbeckperez.com",
+ "state_of_incorporation": "California",
+ "number_of_employees": 45,
+ "business_hours": "Monday to Friday, 9:00 AM to 5:00 PM",
+ "facility_address": {
+  "street": "848 Stephen Fords",
+  "city": "Lake Cynthia",
+  "state": "CA",
+  "zip_code": "83340"
+ },
+ "mailing_address": {
+  "street": "848 Stephen Fords"
+ },
+ "officers": [
+  {
+   "name": "Randall X. Pena",
+   "title": "Health promotion specialist"
+  },
+  {
+   "name": "Christopher Barnes",
+   "title": "Sales professional, IT"
+  }
+ ]
+}

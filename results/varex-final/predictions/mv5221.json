@@ -1,0 +1,15 @@
+{
+ "driving_school_name": "Klemt's Driving Academy",
+ "driving_school_license_number": "DRV-2015-NV-100",
+ "phone_number": "(678) 925-53",
+ "email_address": "info@klemtsdriving.com",
+ "primary_contact_person": "Natasha O. Klemt",
+ "owner_authorized_official_name": "Natasha O. Klemt",
+ "signature_date": "05/15/2023",
+ "address_info": {
+  "address": "72229 Jenkins Forges",
+  "city": "Mooreside",
+  "state": "NV",
+  "zip_code": "97181"
+ }
+}

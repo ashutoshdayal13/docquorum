@@ -1,0 +1,57 @@
+{
+ "project_name": "Sunny Meadows Apartment Complex, 1234 Oak Avenue, Springfield, IL",
+ "project_number": "CTL-2023-71684",
+ "contractor": {
+  "name": "Watts-Randall Construction"
+ },
+ "mortgagor": {
+  "name": "Elfriede B. Price"
+ },
+ "mortgagee": {
+  "name": "First National Bank of Springfield"
+ },
+ "change_items": [
+  {
+   "description": "Increase in concrete foundation thickness to 12 inches"
+  },
+  {
+   "description": "Upgraded insulation materials for exterior walls"
+  },
+  {
+   "description": "Additional plumbing fixtures in unit 101"
+  },
+  {
+   "description": "Landscaping changes in the front courtyard"
+  },
+  {
+   "description": "Upgrade to energy-efficient windows throughout"
+  },
+  {
+   "description": "Additional electrical outlets in common areas"
+  },
+  {
+   "description": "Modification to HVAC system for better efficiency"
+  },
+  {
+   "description": "Installation of additional security cameras"
+  },
+  {
+   "description": "Upgrade to higher-quality flooring materials"
+  },
+  {
+   "description": "Additional storage units in basement"
+  },
+  {
+   "description": "Modification to fire alarm system layout"
+  },
+  {
+   "description": "Installation of a new water heater in unit 202"
+  },
+  {
+   "description": "Additional parking spaces in the rear lot"
+  }
+ ],
+ "contract_decrease": {
+  "contract_date": "01/20/2023"
+ }
+}

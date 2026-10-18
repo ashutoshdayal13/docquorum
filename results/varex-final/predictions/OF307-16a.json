@@ -1,0 +1,32 @@
+{
+ "contract_number": "OF307-16a-2023-0042",
+ "effective_date": "04/15/2023",
+ "solicitation_number": "SOL-2023-8921",
+ "requisition_project_number": "REQ-2023-4567",
+ "brief_description": "Providing advanced communication infrastructure solutions",
+ "issuing_entity": {
+  "name": "Department of Defense, Communications Division",
+  "code": "DOD-COM-2023"
+ },
+ "administering_entity": {
+  "name": "Defense Information Systems Agency",
+  "code": "DISA-2023-123"
+ },
+ "contractor": {
+  "name": "Jones-Gallagher Communications",
+  "code": "JG-2023-001",
+  "taxpayer_identification_number": "54-1495181"
+ },
+ "payment_information": {
+  "made_by": "Department of the Treasury, Bureau of the Fiscal",
+  "other_invoice_submission_details": "Online"
+ },
+ "contractor_signature": {
+  "title": "Engineer, communications",
+  "sign_date": "04/15/2023"
+ },
+ "contracting_officer": {
+  "name": "Eduardo C. Montanez",
+  "sign_date": "04/15/2023"
+ }
+}

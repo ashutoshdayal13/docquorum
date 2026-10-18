@@ -1,0 +1,33 @@
+{
+ "primary": {
+  "ssn": "637-21-3161",
+  "date_of_birth": "11/28/1987",
+  "telephone_number": "(108) 857-4196",
+  "payment_frequency": "Monthly",
+  "signature_date": "05/15/2023",
+  "financial_institution": {
+   "name": "Walkerhaven Savings and Loan",
+   "address": "256 Sanders Flats, Walkerhaven, GA 27447"
+  },
+  "bank_account": {
+   "account_number": "192034813191",
+   "bank_routing_number": "061000227"
+  }
+ },
+ "parse": {
+  "ssn": "637-21-3161",
+  "date_of_birth": "11/28/1987",
+  "telephone_number": "(108) 857-4196",
+  "payment_frequency": "Monthly",
+  "signature_date": "05/15/2023",
+  "financial_institution": {
+   "name": "Walkerhaven Savings and Loan",
+   "address": "256 Sanders Flats, Walkerhaven, GA 27447"
+  },
+  "bank_account": {
+   "account_number": "192034813191",
+   "bank_routing_number": "061000227"
+  }
+ },
+ "oneshot": {}
+}

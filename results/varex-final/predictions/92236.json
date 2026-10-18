@@ -1,0 +1,21 @@
+{
+ "agreement_date": "03/15/2023",
+ "landlord_name": "Hopkins-Andrews",
+ "tenant_name": "Sandra R. Wilson",
+ "included_utilities": [
+  "water",
+  "sewer"
+ ],
+ "excluded_utilities": [
+  "electricity",
+  "gas"
+ ],
+ "dwelling_unit": {
+  "unit_number": "Apt. 352",
+  "address": "0914 Tyler Orchard, South Brenttown, FL 53304"
+ },
+ "lease_term": {
+  "start_date": "03/15/2023",
+  "end_date": "03/14/2024"
+ }
+}

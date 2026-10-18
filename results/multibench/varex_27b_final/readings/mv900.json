@@ -1,0 +1,74 @@
+{
+ "primary": {
+  "vehicle_identification_number": "1FTFW1EG6KFA30811",
+  "vehicle_year": 2017,
+  "vehicle_make": "Ford",
+  "vehicle_body_type": "Truck, Pickup",
+  "vehicle_registration_number": "ABC1234",
+  "lien_filing_code": "LFC-2023-04567",
+  "security_agreement_date": "03/15/2023",
+  "owner": {
+   "name": "Barrientos, Patricia H.",
+   "co_owner_name": "Jones, Salma V.",
+   "mailing_address": "178 Mack Avenue",
+   "mailing_apt_number": "262",
+   "mailing_city": "Williamsville",
+   "mailing_state": "WV",
+   "signature_date": "03/15/2023"
+  },
+  "lienholder": {
+   "name": "Walters, Cruz and Mitchell",
+   "address": "685 Ryan Points",
+   "city": "Lauraton",
+   "state": "NE"
+  }
+ },
+ "parse": {
+  "vehicle_identification_number": "1FTFW1EG6KFA30811",
+  "vehicle_year": 2017,
+  "vehicle_make": "Ford",
+  "vehicle_body_type": "Truck, Pickup",
+  "vehicle_registration_number": "ABC1234",
+  "lien_filing_code": "LFC-2023-04567",
+  "security_agreement_date": "03/15/2023",
+  "owner": {
+   "name": "Barrientos, Patricia H.",
+   "co_owner_name": "Jones, Salma V.",
+   "mailing_address": "178 Mack Avenue",
+   "mailing_apt_number": "262",
+   "mailing_city": "Williamsville",
+   "mailing_state": "WV",
+   "signature_date": "03/15/2023"
+  },
+  "lienholder": {
+   "name": "Walters, Cruz and Mitchell",
+   "address": "685 Ryan Points",
+   "city": "Lauraton",
+   "state": "NE"
+  }
+ },
+ "oneshot": {
+  "vehicle_identification_number": "1FTFW1EG6KFA30811",
+  "vehicle_year": 2017,
+  "vehicle_make": "Ford",
+  "vehicle_body_type": "Truck, Pickup",
+  "vehicle_registration_number": "ABC1234",
+  "lien_filing_code": "LFC-2023-04567",
+  "security_agreement_date": "03/15/2023",
+  "owner": {
+   "name": "Barrientos, Patricia H.",
+   "co_owner_name": "Jones, Salma V.",
+   "mailing_address": "178 Mack Avenue",
+   "mailing_apt_number": "262",
+   "mailing_city": "Williamsville",
+   "mailing_state": "WV",
+   "signature_date": "03/15/2023"
+  },
+  "lienholder": {
+   "name": "Walters, Cruz and Mitchell",
+   "address": "685 Ryan Points",
+   "city": "Lauraton",
+   "state": "NE"
+  }
+ }
+}

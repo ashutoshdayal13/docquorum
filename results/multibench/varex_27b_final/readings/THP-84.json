@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "date": "11/15/2023",
+  "time": "1430",
+  "roadway_information": {
+   "route_number": "I-35",
+   "street_no_prefix": "1200",
+   "street_name": "Congress",
+   "intersecting_street_name": "5th St",
+   "latitude": "30.2672",
+   "longitude": "-97.7431"
+  },
+  "condition_information": {
+   "notes_details": "Large pothole in the right lane, approximately 2 feet in diameter."
+  },
+  "reporter_information": {
+   "reporting_trooper": "Saenz, Peter"
+  },
+  "supervisor_information": {
+   "supervisor_follow_up": "Contact TxDOT for immediate repair of the pothole.",
+   "supervisor_name": "Saenz, Peter",
+   "supervisor_date": "11/16/2023"
+  }
+ },
+ "parse": {
+  "date": "11/15/2023",
+  "time": "1430",
+  "roadway_information": {
+   "route_number": "I-35",
+   "street_no_prefix": "1200",
+   "street_name": "Congress",
+   "intersecting_street_name": "5th St",
+   "latitude": "30.2672",
+   "longitude": "-97.7431"
+  },
+  "condition_information": {
+   "notes_details": "Large pothole in the right lane, approximately 2 feet in diameter."
+  },
+  "reporter_information": {
+   "reporting_trooper": "Saenz, Peter"
+  },
+  "supervisor_information": {
+   "supervisor_follow_up": "Contact TxDOT for immediate repair of the pothole.",
+   "supervisor_name": "Saenz, Peter",
+   "supervisor_date": "11/16/2023"
+  }
+ },
+ "oneshot": {
+  "date": "11/15/2023",
+  "time": "1430",
+  "roadway_information": {
+   "route_number": "I-35",
+   "street_no_prefix": "1200",
+   "street_name": "Congress",
+   "intersecting_street_name": "5th St",
+   "latitude": "30.2672",
+   "longitude": "-97.7431"
+  },
+  "condition_information": {
+   "notes_details": "Large pothole in the right lane, approximately 2 feet in diameter."
+  },
+  "reporter_information": {
+   "reporting_trooper": "Saenz, Peter"
+  },
+  "supervisor_information": {
+   "supervisor_follow_up": "Contact TxDOT for immediate repair of the pothole.",
+   "supervisor_name": "Saenz, Peter",
+   "supervisor_date": "11/16/2023"
+  }
+ }
+}

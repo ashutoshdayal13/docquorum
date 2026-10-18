@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "applicant_first_name": "Graciela",
+  "applicant_middle_name": "K",
+  "applicant_last_name": "Royer",
+  "applicant_email": "graciela.royer@yahoo.com",
+  "applicant_phone_number": "(195) 144-6969",
+  "applicant_country": "France",
+  "vehicle_vIN": "1G1ZT54895F123456",
+  "vehicle_current_license_plate": "ABC1234",
+  "vehicle_license_plate_year": "2022",
+  "vehicle_make": "Toyota",
+  "vehicle_body_style": "Sedan",
+  "signature_date": "07/26/2023",
+  "applicant_address": {
+   "street": "41420 Melanie Mission",
+   "city": "West Jackland",
+   "zip": "24389"
+  }
+ },
+ "parse": {
+  "applicant_first_name": "Graciela",
+  "applicant_middle_name": "K",
+  "applicant_last_name": "Royer",
+  "applicant_email": "graciela.royer@yahoo.com",
+  "applicant_phone_number": "(195) 144-6969",
+  "applicant_country": "France",
+  "vehicle_vIN": "1G1ZT54895F123456",
+  "vehicle_current_license_plate": "ABC1234",
+  "vehicle_license_plate_year": "2022",
+  "vehicle_make": "Toyota",
+  "vehicle_body_style": "Sedan",
+  "signature_date": "07/26/2023",
+  "applicant_address": {
+   "street": "41420 Melanie Mission",
+   "city": "West Jackland",
+   "zip": "24389"
+  }
+ },
+ "oneshot": {}
+}

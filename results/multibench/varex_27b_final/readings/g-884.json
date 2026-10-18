@@ -1,0 +1,62 @@
+{
+ "primary": {
+  "uscis_online_account_number": "3531-9066-81",
+  "city_town_village_of_birth": "North Kylefort",
+  "country_of_birth": "United States",
+  "date_of_birth": "12/08/1976",
+  "full_name": "Emilio M. Mall",
+  "given_name": "Emilio",
+  "middle_name": "M.",
+  "desired_documents_description": "Birth certificate and passport copy",
+  "receipt_number": "REF-2023-6431",
+  "subject_full_name": "Emilio M. Mall",
+  "subject_given_name": "Emilio",
+  "subject_middle_name": "M.",
+  "alien_registration_number": "A-1234567",
+  "mailing_address": {
+   "street": "79781 Chad Springs",
+   "city": "North Kylefort",
+   "zip_code": "86463"
+  }
+ },
+ "parse": {
+  "uscis_online_account_number": "3531-9066-81",
+  "city_town_village_of_birth": "North Kylefort",
+  "country_of_birth": "United States",
+  "date_of_birth": "12/08/1976",
+  "full_name": "Emilio M. Mall",
+  "given_name": "Emilio",
+  "middle_name": "M.",
+  "desired_documents_description": "Birth certificate and passport copy",
+  "receipt_number": "REF-2023-6431",
+  "subject_full_name": "Emilio M. Mall",
+  "subject_given_name": "Emilio",
+  "subject_middle_name": "M.",
+  "alien_registration_number": "A-1234567",
+  "mailing_address": {
+   "street": "79781 Chad Springs",
+   "city": "North Kylefort",
+   "zip_code": "86463"
+  }
+ },
+ "oneshot": {
+  "uscis_online_account_number": "3531-9066-81",
+  "city_town_village_of_birth": "North Kylefort",
+  "country_of_birth": "United States",
+  "date_of_birth": "12/08/1976",
+  "full_name": "Emilio M. Mall",
+  "given_name": "Emilio",
+  "middle_name": "M.",
+  "desired_documents_description": "Birth certificate and passport copy",
+  "receipt_number": "REF-2023-6431",
+  "subject_full_name": "Emilio M. Mall",
+  "subject_given_name": "Emilio",
+  "subject_middle_name": "M.",
+  "alien_registration_number": "A-1234567",
+  "mailing_address": {
+   "street": "79781 Chad Springs",
+   "city": "North Kylefort",
+   "zip_code": "86463"
+  }
+ }
+}

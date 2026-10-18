@@ -1,0 +1,32 @@
+{
+ "primary": {
+  "clinical_investigator_name": "Samantha K. Sampaio",
+  "study_name": "Phase III Trial of Novel Cardiovascular Drug",
+  "firm_organization": "Patterson, Dunlap and Jackson Pharmaceuticals Inc.",
+  "signature_date": "06/07/2022",
+  "applicant": {
+   "name": "Samantha K. Sampaio",
+   "title": "Principal Investigator and Educational"
+  }
+ },
+ "parse": {
+  "clinical_investigator_name": "Samantha K. Sampaio",
+  "study_name": "Phase III Trial of Novel Cardiovascular Drug",
+  "firm_organization": "Patterson, Dunlap and Jackson Pharmaceuticals Inc.",
+  "signature_date": "06/07/2022",
+  "applicant": {
+   "name": "Samantha K. Sampaio",
+   "title": "Principal Investigator and Educational"
+  }
+ },
+ "oneshot": {
+  "clinical_investigator_name": "Samantha K. Sampaio",
+  "study_name": "Phase III Trial of Novel Cardiovascular Drug",
+  "firm_organization": "Patterson, Dunlap and Jackson Pharmaceuticals Inc.",
+  "signature_date": "06/07/2022",
+  "applicant": {
+   "name": "Samantha K. Sampaio",
+   "title": "Principal Investigator and Educational"
+  }
+ }
+}

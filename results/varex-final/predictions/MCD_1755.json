@@ -1,0 +1,15 @@
+{
+ "company_name": "Cunningham-Taylor Concrete",
+ "customer_account_number": "8719-4944-4165",
+ "usdot_number": "USDOT123456789",
+ "mailing_address": "8708 Thomas Estates",
+ "daytime_phone_number": "(761) 671-9626",
+ "fax_number_email_address": "sstoll@cunninghamtaylor.com",
+ "contact_person": "Sean Stoll",
+ "permit_start_date": "01/01/2023",
+ "mailing_address_details": {
+  "city": "Lake Sharonton",
+  "state": "VT",
+  "zip_code": "92736"
+ }
+}

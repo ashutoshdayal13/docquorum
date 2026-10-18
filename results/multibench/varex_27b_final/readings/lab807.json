@@ -1,0 +1,86 @@
+{
+ "primary": {
+  "submitter": "Barbara B. Buisson",
+  "emd_no": "EMDS-2023-74148",
+  "collection_details": {
+   "collector": "Eric Davidson",
+   "collection_date": "10/15/2023",
+   "address": "6393 Rogers Inlet Suite 162, Greighton, IN 81642",
+   "county": "Park County",
+   "shellfish_species": "oyster",
+   "shellfish_collection_site": "Greighton",
+   "bottle_cap_number": "BC-2023-001"
+  },
+  "shipping_details": {
+   "shipped_date": "10/15/2023",
+   "unpacked_by": "Eric Davidson",
+   "received_date": "10/16/2023",
+   "received_time": "02:30 PM",
+   "temperature_condition": "Cold"
+  },
+  "additional_info": {
+   "sample_notes": "Sample was properly sealed and labeled.",
+   "comments": "No issues noted during collection and shipping.",
+   "sample_transferred_to": "Laboratory for testing."
+  },
+  "analyst_info": {
+   "analyst": "Eric Davidson",
+   "analyst_initial_date": "ED 10/16/2023"
+  }
+ },
+ "parse": {
+  "submitter": "Barbara B. Buisson",
+  "emd_no": "EMDS-2023-74148",
+  "collection_details": {
+   "collector": "Eric Davidson",
+   "collection_date": "10/15/2023",
+   "address": "6393 Rogers Inlet Suite 162, Gregton, IN 81642",
+   "county": "Park County",
+   "shellfish_species": "oyster",
+   "shellfish_collection_site": "Gregton",
+   "bottle_cap_number": "BC-2023-001"
+  },
+  "shipping_details": {
+   "shipped_date": "10/15/2023",
+   "unpacked_by": "Eric Davidson",
+   "received_date": "10/16/2023",
+   "received_time": "02:30 PM",
+   "temperature_condition": "Cold"
+  },
+  "additional_info": {
+   "comments": "No issues noted during collection and shipping.",
+   "sample_transferred_to": "Laboratory for testing."
+  },
+  "analyst_info": {
+   "analyst": "Eric Davidson"
+  }
+ },
+ "oneshot": {
+  "submitter": "Barbara B. Buisson",
+  "emd_no": "EMDS-2023-74148",
+  "collection_details": {
+   "collector": "Eric Davidson",
+   "collection_date": "10/15/2023",
+   "address": "6393 Rogers Inlet Suite 162, Gregton, IN 81642",
+   "county": "Park County",
+   "shellfish_species": "oyster",
+   "shellfish_collection_site": "Gregton",
+   "bottle_cap_number": "BC-2023-001"
+  },
+  "shipping_details": {
+   "shipped_date": "10/15/2023",
+   "unpacked_by": "Eric Davidson",
+   "received_date": "10/16/2023",
+   "received_time": "02:30 PM",
+   "temperature_condition": "Cold"
+  },
+  "additional_info": {
+   "sample_notes": "Sample was properly sealed and labeled.",
+   "comments": "No issues noted during collection and shipping."
+  },
+  "analyst_info": {
+   "analyst": "Eric Davidson",
+   "analyst_initial_date": "ED 10/16/2023"
+  }
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "contract_number": "CTR-2023-0045",
+  "project_number": "PRJ-2023-0012",
+  "owner_name": "Livia Velasquez",
+  "contract_effective_date": "06/01/2023",
+  "fiscal_year_end_date": "06/30/2024",
+  "owner_provisions": {
+   "services_maintenance": "Regular road maintenance and snow removal services",
+   "equipment": "Heavy machinery for road construction and maintenance",
+   "utilities": "Access to public water and sewer systems",
+   "other_provisions": "Provide necessary permits and licenses for the project"
+  }
+ },
+ "parse": {
+  "contract_number": "CTR-2023-0045",
+  "project_number": "PRJ-2023-0012",
+  "owner_name": "Livia Velasquez",
+  "contract_effective_date": "06/01/2023",
+  "fiscal_year_end_date": "06/30/2024",
+  "owner_provisions": {
+   "services_maintenance": "Regular road maintenance and snow removal services",
+   "equipment": "Heavy machinery for road construction and maintenance",
+   "utilities": "Access to public water and sewer systems",
+   "other_provisions": "Provide necessary permits and licenses for the project"
+  }
+ },
+ "oneshot": {
+  "contract_number": "CTR-2023-0045",
+  "project_number": "PRJ-2023-0012",
+  "owner_name": "Livia Velasquez",
+  "contract_effective_date": "06/01/2023",
+  "fiscal_year_end_date": "06/30/2024",
+  "owner_provisions": {
+   "services_maintenance": "Regular road maintenance and snow removal services",
+   "equipment": "Heavy machinery for road construction and maintenance",
+   "utilities": "Access to public water and sewer systems",
+   "other_provisions": "Provide necessary permits and licenses for the project"
+  }
+ }
+}

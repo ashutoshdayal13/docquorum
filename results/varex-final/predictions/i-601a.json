@@ -1,0 +1,33 @@
+{
+ "attorney_state_bar_number": "1234567890",
+ "date_of_birth": "08/12/1993",
+ "applicant_name": {
+  "first_name": "Aurore",
+  "middle_name": "A.",
+  "last_name": "Burke"
+ },
+ "other_names_used": [
+  {
+   "first_name": "Brittany",
+   "middle_name": "J.",
+   "last_name": "Sarma"
+  },
+  {
+   "first_name": "Aurora",
+   "middle_name": "A.",
+   "last_name": "Burke"
+  }
+ ],
+ "us_mailing_address": {
+  "street_address": "7874 Zavala View",
+  "apartment_unit": "Apt 3B",
+  "city": "New Jesustown",
+  "zip_code": "92598"
+ },
+ "us_physical_address": {
+  "street_address": "7874 Zavala View",
+  "apartment_unit": "Apt 3B",
+  "city": "New Jesustown",
+  "zip_code": "92598"
+ }
+}

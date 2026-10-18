@@ -1,0 +1,62 @@
+{
+ "primary": {
+  "due_date": "11/15/2023",
+  "period_start_date": "08/01/2023",
+  "period_end_date": "10/31/2023",
+  "agency_code": "HUD-001",
+  "organizational_structure_code": "HUD-OS-2023",
+  "official_duty_station": "U.S. Department of Housing and Urban Development",
+  "tenure_group": "Permanent",
+  "type_of_appointment": "Full-time",
+  "certification_date": "11/10/2023",
+  "employee": {
+   "name": "Salas, Carol",
+   "employee_id": "EMP1234567",
+   "pay_plan": "GS-13, 1102 Accounting Series",
+   "official_title": "Chartered Public Finance Accountant"
+  },
+  "supervisor": {
+   "title": "Senior Manager, Accounting"
+  }
+ },
+ "parse": {
+  "due_date": "11/15/2023",
+  "period_start_date": "08/01/2023",
+  "period_end_date": "10/31/2023",
+  "agency_code": "HUD-001",
+  "organizational_structure_code": "HUD-OS-2023",
+  "official_duty_station": "U.S. Department of Housing and Urban Development",
+  "tenure_group": "Permanent",
+  "type_of_appointment": "Full-time",
+  "certification_date": "11/10/2023",
+  "employee": {
+   "name": "Salas, Carol",
+   "employee_id": "EMP1234567",
+   "pay_plan": "GS-13, 1102 Accounting Series",
+   "official_title": "Chartered Public Finance Accountant"
+  },
+  "supervisor": {
+   "title": "Senior Manager, Accounting"
+  }
+ },
+ "oneshot": {
+  "due_date": "11/15/2023",
+  "period_start_date": "08/01/2023",
+  "period_end_date": "10/31/2023",
+  "agency_code": "HUD-001",
+  "organizational_structure_code": "HUD-OS-2023",
+  "official_duty_station": "U.S. Department of Housing and Urban Development",
+  "tenure_group": "Permanent",
+  "type_of_appointment": "Full-time",
+  "certification_date": "11/10/2023",
+  "employee": {
+   "name": "Salas, Carol",
+   "employee_id": "EMP1234567",
+   "pay_plan": "GS-13, 1102 Accounting Series",
+   "official_title": "Chartered Public Finance Accountant"
+  },
+  "supervisor": {
+   "title": "Senior Manager, Accounting"
+  }
+ }
+}

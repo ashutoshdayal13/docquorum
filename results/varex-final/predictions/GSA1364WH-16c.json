@@ -1,0 +1,21 @@
+{
+ "rlp_number": "RLP-2023-001",
+ "date": "03/15/2023",
+ "building_name": "Griffith Warehouse and Logistics Center",
+ "year_of_last_major_renovation": "2019",
+ "building_age": "15 years",
+ "types_of_loading_docks": "Enclosed",
+ "existing_height_dock_thru": "12 feet",
+ "number_of_dock_levelors": "6 levelors, operating",
+ "maximum_truck_turning_radius": "60 feet",
+ "electric_volts_and_phases": "480V, 3-phase",
+ "wareyard_size": "100,000 x 50,000",
+ "truck_court_depth": "100 feet",
+ "building_address": {
+  "building_street_address": "119 Adam Ports, West Natalie",
+  "city": "West Natalie",
+  "state": "PA",
+  "zip_code": "36063-9876",
+  "congressional_district": "12th District"
+ }
+}

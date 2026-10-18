@@ -1,0 +1,29 @@
+{
+ "requestor_date_of_birth": "01/14/1978",
+ "requestor": {
+  "family_name": "Gollum",
+  "given_name": "Finn"
+ },
+ "family_members": [
+  {
+   "full_name": "Heinz-Peter P. Paez",
+   "date_of_birth": "09/30/1962",
+   "relationship_to_you": "Spouse"
+  },
+  {
+   "full_name": "Tina I. Sanchez",
+   "date_of_birth": "02/07/1979",
+   "relationship_to_you": "Child"
+  },
+  {
+   "full_name": "John Doe",
+   "date_of_birth": "05/20/2005",
+   "relationship_to_you": "Child"
+  },
+  {
+   "full_name": "Jane Smith",
+   "date_of_birth": "07/12/1999",
+   "relationship_to_you": "Sister"
+  }
+ ]
+}

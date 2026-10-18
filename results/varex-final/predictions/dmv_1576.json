@@ -1,0 +1,13 @@
+{
+ "bond_number": "BOND2024001",
+ "vehicle_make_model": "Ford F-550 Super Duty",
+ "vehicle_vin": "1FTFW5BT7MKA12345",
+ "company": {
+  "name": "Lara-Waller Waste Management",
+  "address": "72165 April Fall",
+  "city": "East Deniseshir",
+  "county": "Denise County",
+  "state": "VA",
+  "zip_code": "78834"
+ }
+}

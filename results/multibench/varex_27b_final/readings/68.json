@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "background": "This checklist outlines the decommissioning process for legacy",
+  "legacy_system_details": {
+   "owner": "Gregory G. Frazier",
+   "system_name": "HUD-Records-Archive",
+   "system_code": "HRA-2015",
+   "actual_decommission_date": "06/15/2023"
+  },
+  "new_system_details": {
+   "owner": "Gregory G. Frazier",
+   "system_name": "HUD-Records-Nexus",
+   "system_code": "HRN-2023",
+   "ato_date": "05/01/2023"
+  },
+  "pii_inventory": {
+   "disposition_authority_number": "REF-2023-88055",
+   "expected_destruction_date": "06/30/2028"
+  }
+ },
+ "parse": {
+  "background": "This checklist outlines the decommissioning process for legacy",
+  "legacy_system_details": {
+   "owner": "Gregory G. Frazier",
+   "system_name": "HUD-Records-Archive",
+   "system_code": "HRA-2015",
+   "actual_decommission_date": "06/15/2023"
+  },
+  "new_system_details": {
+   "owner": "Gregory G. Frazier",
+   "system_name": "HUD-Records-Nexus",
+   "system_code": "HRN-2023",
+   "ato_date": "05/01/2023"
+  },
+  "pii_inventory": {
+   "disposition_authority_number": "REF-2023-88055",
+   "expected_destruction_date": "06/30/2028"
+  }
+ },
+ "oneshot": {
+  "background": "This checklist outlines the decommissioning process for legacy",
+  "legacy_system_details": {
+   "owner": "Gregory G. Frazier",
+   "system_name": "HUD-Records-Archive",
+   "system_code": "HRA-2015",
+   "actual_decommission_date": "06/15/2023"
+  },
+  "new_system_details": {
+   "owner": "Gregory G. Frazier",
+   "system_name": "HUD-Records-Nexus",
+   "system_code": "HRN-2023",
+   "ato_date": "05/01/2023"
+  },
+  "pii_inventory": {
+   "disposition_authority_number": "REF-2023-88055",
+   "expected_destruction_date": "06/30/2028"
+  }
+ }
+}

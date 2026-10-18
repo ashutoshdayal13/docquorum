@@ -1,0 +1,110 @@
+{
+ "primary": {
+  "owner_printed_name": "John G. Williamson",
+  "owner_title": "OWNER/Hydrographic Surveyor",
+  "signature_date": "06/28/2023",
+  "emergency_number": "(015) 194-2222",
+  "business_operator": {
+   "name": "John G. Williamson",
+   "telephone": "(276) 240-4901",
+   "email": "jwillamson@kim.com"
+  },
+  "correspondent": {
+   "name": "Chloe W. Nelson",
+   "telephone": "(946) 925-6155",
+   "email": "cnelson@taylor.com"
+  },
+  "industrial_hemp_sources": [
+   {
+    "business_name": "Taylor Group Hemp",
+    "business_address": "52617 Pamela Lodge, Markhaven, NY 96219",
+    "registration_number": "IH-2023-NY-36698",
+    "issuing_entity": "New York Department of Agriculture"
+   },
+   {
+    "business_name": "Kim, Macdonald and Nelson Hemp",
+    "business_address": "2630 Saunders Brooks Apt. 952, Reidstad, FL 78899",
+    "registration_number": "IH-2023-FL-69627",
+    "issuing_entity": "Florida Department of Agriculture"
+   },
+   {
+    "business_name": "Taylor, Rivera and Henderson Hemp",
+    "business_address": "6380 Peterson Mall Apt. 749, New Timshire, OK 99769",
+    "registration_number": "IH-2023-OK-84022",
+    "issuing_entity": "Oklahoma Department of Agriculture"
+   }
+  ]
+ },
+ "parse": {
+  "owner_printed_name": "John G. Williamson",
+  "owner_title": "OWNER/Hydrographic Surveyor",
+  "signature_date": "06/28/2023",
+  "emergency_number": "(015) 194-2222",
+  "business_operator": {
+   "name": "John G. Williamson",
+   "telephone": "(276) 240-4901",
+   "email": "jwilliamson@kim.com"
+  },
+  "correspondent": {
+   "name": "Chloe W. Nelson",
+   "telephone": "(946) 925-6155",
+   "email": "cnelson@taylor.com"
+  },
+  "industrial_hemp_sources": [
+   {
+    "business_name": "Taylor Group Hemp",
+    "business_address": "52617 Pamela Lodge, Markhaven, NY 96219",
+    "registration_number": "IH-2023-NY-36698",
+    "issuing_entity": "New York Department of Agriculture"
+   },
+   {
+    "business_name": "Kim, Macdonald and Nelson Hemp",
+    "business_address": "2630 Saunders Brooks Apt. 952, Reidstad, FL 78899",
+    "registration_number": "IH-2023-FL-69627",
+    "issuing_entity": "Florida Department of Agriculture"
+   },
+   {
+    "business_name": "Taylor, Rivera and Henderson Hemp",
+    "business_address": "6380 Peterson Mall Apt. 749, New Timshire, OK 99769",
+    "registration_number": "IH-2023-OK-84022",
+    "issuing_entity": "Oklahoma Department of Agriculture"
+   }
+  ]
+ },
+ "oneshot": {
+  "owner_printed_name": "John G. Williamson",
+  "owner_title": "OWNER/Hydrographic Surveyor",
+  "signature_date": "06/28/2023",
+  "emergency_number": "(015) 194-2222",
+  "business_operator": {
+   "name": "John G. Williamson",
+   "telephone": "(276) 240-4901",
+   "email": "jwilliamson@kim.com"
+  },
+  "correspondent": {
+   "name": "Chloe W. Nelson",
+   "telephone": "(946) 925-6155",
+   "email": "cnelson@taylor.com"
+  },
+  "industrial_hemp_sources": [
+   {
+    "business_name": "Taylor Group Hemp",
+    "business_address": "52617 Pamela Lodge, Markhaven, NY 96219",
+    "registration_number": "IH-2023-NY-36698",
+    "issuing_entity": "New York Department of Agriculture"
+   },
+   {
+    "business_name": "Kim, Macdonald and Nelson Hemp",
+    "business_address": "2630 Saunders Brooks Apt. 952, Reidstad, FL 78899",
+    "registration_number": "IH-2023-FL-69627",
+    "issuing_entity": "Florida Department of Agriculture"
+   },
+   {
+    "business_name": "Taylor, Rivera and Henderson Hemp",
+    "business_address": "6380 Peterson Mall Apt. 749, New Timshire, OK 99769",
+    "registration_number": "IH-2023-OK-84022",
+    "issuing_entity": "Oklahoma Department of Agriculture"
+   }
+  ]
+ }
+}

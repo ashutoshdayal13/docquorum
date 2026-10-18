@@ -1,0 +1,76 @@
+{
+ "primary": {
+  "vehicle_identification_number": "1G1ZT54825F121662",
+  "make": "Chevrolet",
+  "body_style": "Sedan",
+  "model": "Impala",
+  "previous_title_document_number": "TX1234567890",
+  "license_plate_state": "TX",
+  "license_plate_number": "ABC1234",
+  "salvage_pool_operator_name": "Scott Inc",
+  "salvage_pool_operator_license_number": "PLS-1998-CA-30211",
+  "signature_of_authorized_agent": "Susana L. Fischer",
+  "salvage_pool_operator_address": {
+   "street": "2321 Bryce Bridge Suite 056"
+  },
+  "authorized_agent": {
+   "name": "Susana L. Fischer",
+   "phone": "(697) 136-6518"
+  },
+  "insurance_company": {
+   "name": "State Farm Insurance"
+  },
+  "dates": {
+   "incident_date": "01/10/2023"
+  }
+ },
+ "parse": {
+  "vehicle_identification_number": "1G1ZT54825F121662",
+  "make": "Chevrolet",
+  "body_style": "Sedan",
+  "model": "Impala",
+  "previous_title_document_number": "TX1234567890",
+  "license_plate_number": "ABC1234",
+  "salvage_pool_operator_name": "Scott Inc",
+  "salvage_pool_operator_license_number": "PLS-1998-CA-30211",
+  "signature_of_authorized_agent": "Susana L. Fischer",
+  "salvage_pool_operator_address": {
+   "street": "2321 Bryce Bridge Suite 056"
+  },
+  "authorized_agent": {
+   "name": "Susana L. Fischer",
+   "phone": "(697) 136-6518"
+  },
+  "insurance_company": {
+   "name": "State Farm Insurance"
+  },
+  "dates": {
+   "incident_date": "01/10/2023"
+  }
+ },
+ "oneshot": {
+  "vehicle_identification_number": "1G1ZT54825F121662",
+  "make": "Chevrolet",
+  "body_style": "Sedan",
+  "model": "Impala",
+  "previous_title_document_number": "TX1234567890",
+  "license_plate_state": "TX",
+  "license_plate_number": "ABC1234",
+  "salvage_pool_operator_name": "Scott Inc",
+  "salvage_pool_operator_license_number": "PLS-1998-CA-30211",
+  "signature_of_authorized_agent": "Susana L. Fischer",
+  "salvage_pool_operator_address": {
+   "street": "2321 Bryce Bridge Suite 056"
+  },
+  "authorized_agent": {
+   "name": "Susana L. Fischer",
+   "phone": "(697) 136-6518"
+  },
+  "insurance_company": {
+   "name": "State Farm Insurance"
+  },
+  "dates": {
+   "incident_date": "01/10/2023"
+  }
+ }
+}

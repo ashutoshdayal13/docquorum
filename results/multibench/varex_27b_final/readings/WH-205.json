@@ -1,0 +1,53 @@
+{
+ "primary": {
+  "establishment_name": "Flores-Higgins",
+  "student_learner_name": "Velazquez, Susana",
+  "school_name": "Loveland High School",
+  "student_learner_occupation": "Quantity Surveyor Trainee",
+  "employment_training_schedule": "Alternate weeks between school and work",
+  "subminimum_wage": "$8.13 per hour",
+  "recognized_educational_body": "Michigan Department of Education",
+  "employment_dates": {
+   "proposed_beginning_date": "06/01/2023",
+   "proposed_ending_date": "08/31/2023",
+   "proposed_graduation_date": "06/15/2024"
+  },
+  "student_learner_date_of_birth": {
+   "date": "01/27/2003"
+  }
+ },
+ "parse": {
+  "establishment_name": "Flores-Higgins",
+  "student_learner_name": "Velazquez, Susana",
+  "school_name": "Loveland High School",
+  "student_learner_occupation": "Quantity Surveyor Trainee",
+  "employment_training_schedule": "Alternate weeks between school and work",
+  "subminimum_wage": "$8.13 per hour",
+  "recognized_educational_body": "Michigan Department of Education",
+  "employment_dates": {
+   "proposed_beginning_date": "06/01/2023",
+   "proposed_ending_date": "08/31/2023",
+   "proposed_graduation_date": "06/15/2024"
+  },
+  "student_learner_date_of_birth": {
+   "date": "01/27/2003"
+  }
+ },
+ "oneshot": {
+  "establishment_name": "Flores-Higgins",
+  "student_learner_name": "Velazquez, Susana",
+  "school_name": "Loveland High School",
+  "student_learner_occupation": "Quantity Surveyor Trainee",
+  "employment_training_schedule": "Alternate weeks between school and work",
+  "subminimum_wage": "$8.13 per hour",
+  "recognized_educational_body": "Michigan Department of Education",
+  "employment_dates": {
+   "proposed_beginning_date": "06/01/2023",
+   "proposed_ending_date": "08/31/2023",
+   "proposed_graduation_date": "06/15/2024"
+  },
+  "student_learner_date_of_birth": {
+   "date": "01/27/2003"
+  }
+ }
+}

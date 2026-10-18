@@ -1,0 +1,89 @@
+{
+ "primary": {
+  "attorney_state_bar_number": "LCSW-2025-MO-17135",
+  "attorney_uscis_online_account_number": "1716-9171-44",
+  "date_of_birth": "09/15/1975",
+  "city_of_birth": "South Martin",
+  "country_of_birth": "United States",
+  "country_of_citizenship": "United States",
+  "alien_registration_number": "A12345678",
+  "applicant_uscis_online_account_number": "123-456-7890",
+  "applicant_name": {
+   "family_name": "Aguayo",
+   "given_name": "Alison"
+  },
+  "previous_name": {
+   "family_name": "Smith",
+   "given_name": "Alison"
+  },
+  "current_name": {
+   "family_name": "Aguayo",
+   "given_name": "Alison"
+  },
+  "mailing_address": {
+   "in_care_of_name": "Alison Aguayo",
+   "street_address": "11836 Billy Pass",
+   "apartment_suite": "852",
+   "city": "South Martin",
+   "zip_code": "28741"
+  }
+ },
+ "parse": {
+  "attorney_state_bar_number": "LCSW-2025-MO-17135",
+  "attorney_uscis_online_account_number": "1716-9171-44",
+  "date_of_birth": "09/15/1975",
+  "city_of_birth": "South Martin",
+  "country_of_birth": "United States",
+  "country_of_citizenship": "United States",
+  "alien_registration_number": "A12345678",
+  "applicant_uscis_online_account_number": "123-456-7890",
+  "applicant_name": {
+   "family_name": "Aguayo",
+   "given_name": "Alison"
+  },
+  "previous_name": {
+   "family_name": "Smith",
+   "given_name": "Alison"
+  },
+  "current_name": {
+   "family_name": "Aguayo",
+   "given_name": "Alison"
+  },
+  "mailing_address": {
+   "in_care_of_name": "Alison Aguayo",
+   "street_address": "11836 Billy Pass",
+   "apartment_suite": "852",
+   "city": "South Martin",
+   "zip_code": "28741"
+  }
+ },
+ "oneshot": {
+  "attorney_state_bar_number": "LCSW-2025-MO-17135",
+  "attorney_uscis_online_account_number": "1716-9171-44",
+  "date_of_birth": "09/15/1975",
+  "city_of_birth": "South Martin",
+  "country_of_birth": "United States",
+  "country_of_citizenship": "United States",
+  "alien_registration_number": "A12345678",
+  "applicant_uscis_online_account_number": "123-456-7890",
+  "applicant_name": {
+   "family_name": "Aguayo",
+   "given_name": "Alison"
+  },
+  "previous_name": {
+   "family_name": "Smith",
+   "given_name": "Alison"
+  },
+  "current_name": {
+   "family_name": "Aguayo",
+   "given_name": "Alison"
+  },
+  "mailing_address": {
+   "in_care_of_name": "Alison Aguayo",
+   "street_address": "11836 Billy Pass",
+   "apartment_suite": "852",
+   "city": "South Martin",
+   "zip_code": "28741"
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "individual_name": "Karen Martin",
+ "firm_name": "Smith, Thompson and Murphy",
+ "date_of_request": "09/25/2023",
+ "time_of_request": "10:30 AM",
+ "email_address": "karen.martin@yahoo.com",
+ "records_description": "FSVP records for imported food products from supplier XYZ",
+ "title_fda_employee": "Licensed conveyancer",
+ "address": {
+  "street_address": "143 Melissa Road",
+  "city_state_zip": "New Jennifer, WV 37517"
+ },
+ "district_office": {
+  "district_office_address": "5000 Township Line Road",
+  "district_office_phone": "(215) 331-5200"
+ }
+}

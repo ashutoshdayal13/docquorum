@@ -1,0 +1,35 @@
+{
+ "primary": {
+  "bond_number": "BS-2023-859",
+  "principal_name": "Ramirez PLC",
+  "surety_name": "Hunt, Rodriguez",
+  "effective_date": "01/15/2023",
+  "principal_address": {
+   "street": "71215 Flores Ford",
+   "city": "Josephhaven",
+   "zip_code": "98006"
+  }
+ },
+ "parse": {
+  "bond_number": "BS-2023-859",
+  "principal_name": "Ramirez PLC",
+  "surety_name": "Hunt, Rodriguez",
+  "effective_date": "01/15/2023",
+  "principal_address": {
+   "street": "71215 Flores Ford",
+   "city": "Josephhaven",
+   "zip_code": "98006"
+  }
+ },
+ "oneshot": {
+  "bond_number": "BS-2023-859",
+  "principal_name": "Ramirez PLC",
+  "surety_name": "Hunt, Rodriguez",
+  "effective_date": "01/15/2023",
+  "principal_address": {
+   "street": "71215 Flores Ford",
+   "city": "Josephhaven",
+   "zip_code": "98006"
+  }
+ }
+}

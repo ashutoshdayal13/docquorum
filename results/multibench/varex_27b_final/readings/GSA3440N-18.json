@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "employee_name": "Kroker, Sabrina I.",
+  "employee_id": "KROKER596",
+  "organization": "U.S. General Services Administration",
+  "office_symbol": "GSA-REGION-",
+  "pay_plan": "GS-15 Step 4",
+  "position_title": "Financial Analyst",
+  "position_description_reviewed_by": "Deanna Golenia",
+  "position_description_review_date": "05/15/2023",
+  "critical_elements": [
+   "Demonstrates proficiency in financial analysis and reporting techniques",
+   "Effectively communicates complex financial information to non-financial",
+   "Maintains accurate and up-to-date financial records and documentation"
+  ],
+  "rating_period": {
+   "from_date": "10/01/2022",
+   "to_date": "09/30/2023"
+  }
+ },
+ "parse": {
+  "employee_name": "Kroker, Sabrina I.",
+  "employee_id": "KROKER596",
+  "organization": "U.S. General Services Administration",
+  "office_symbol": "GSA-REGION-",
+  "pay_plan": "GS-15 Step 4",
+  "position_title": "Financial Analyst",
+  "position_description_reviewed_by": "Deanna Golenia",
+  "position_description_review_date": "05/15/2023",
+  "critical_elements": [
+   "Demonstrates proficiency in financial analysis and reporting techniques",
+   "Effectively communicates complex financial information to non-financial",
+   "Maintains accurate and up-to-date financial records and documentation"
+  ],
+  "rating_period": {
+   "from_date": "10/01/2022",
+   "to_date": "09/30/2023"
+  }
+ },
+ "oneshot": {
+  "employee_name": "Kroker, Sabrina I.",
+  "employee_id": "KROKER596",
+  "organization": "U.S. General Services Administration",
+  "office_symbol": "GSA-REGION-",
+  "pay_plan": "GS-15 Step 4",
+  "position_title": "Financial Analyst",
+  "position_description_reviewed_by": "Deanna Golenia",
+  "position_description_review_date": "05/15/2023",
+  "critical_elements": [
+   "Demonstrates proficiency in financial analysis and reporting techniques",
+   "Effectively communicates complex financial information to non-financial",
+   "Maintains accurate and up-to-date financial records and documentation"
+  ],
+  "rating_period": {
+   "from_date": "10/01/2022",
+   "to_date": "09/30/2023"
+  }
+ }
+}

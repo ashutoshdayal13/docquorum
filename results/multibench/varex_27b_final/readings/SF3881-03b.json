@@ -1,0 +1,98 @@
+{
+ "primary": {
+  "federal_program_agency": "Department of the Treasury",
+  "agency_identifier": "TREAS-001",
+  "agency_location_code": "ALC-101",
+  "agency_contact": {
+   "address": "697 Jones Mountain, North Matthewborough, NC 05267",
+   "contact_person_name": "Celia Bruce",
+   "contact_person_phone": "(974) 260-0009",
+   "additional_information": "Primary contact for ACH vendor payments"
+  },
+  "payee": {
+   "company_name": "Long-Adams",
+   "taxpayer_id": "12-3456789",
+   "address": "697 Jones Mountain, North Matthewborough, NC 05267",
+   "contact_person_name": "Celia Bruce",
+   "contact_person_phone": "(974) 260-0009"
+  },
+  "financial_institution": {
+   "name": "Bank of America",
+   "address": "123 Main Street, New York, NY 10001",
+   "ach_coordinator_name": "Antonio R. Villegas",
+   "ach_coordinator_phone": "(650) 389-4405"
+  },
+  "depositor_account": {
+   "title": "Long-Adams Corporate Account",
+   "number": "5551-3752-1515",
+   "lockbox_number": "LBX-12345"
+  },
+  "authorized_official": {
+   "phone": "(058) 236-4603"
+  }
+ },
+ "parse": {
+  "federal_program_agency": "Department of the Treasury",
+  "agency_identifier": "TREAS-001",
+  "agency_location_code": "ALC-101",
+  "agency_contact": {
+   "address": "697 Jones Mountain, North Matthewborough, NC 05267",
+   "contact_person_name": "Celia Bruce",
+   "contact_person_phone": "(974) 260-0009",
+   "additional_information": "Primary contact for ACH vendor payments"
+  },
+  "payee": {
+   "company_name": "Long-Adams",
+   "taxpayer_id": "12-3456789",
+   "address": "697 Jones Mountain, North Matthewborough, NC 05267",
+   "contact_person_name": "Celia Bruce",
+   "contact_person_phone": "(974) 260-0009"
+  },
+  "financial_institution": {
+   "name": "Bank of America",
+   "address": "123 Main Street, New York, NY 10001",
+   "ach_coordinator_name": "Antonio R. Villegas",
+   "ach_coordinator_phone": "(650) 389-4405"
+  },
+  "depositor_account": {
+   "title": "Long-Adams Corporate Account",
+   "number": "5551-3752-1515",
+   "lockbox_number": "LBX-12345"
+  },
+  "authorized_official": {
+   "phone": "(058) 236-4603"
+  }
+ },
+ "oneshot": {
+  "federal_program_agency": "Department of the Treasury",
+  "agency_identifier": "TREAS-001",
+  "agency_location_code": "ALC-101",
+  "agency_contact": {
+   "address": "697 Jones Mountain, North Matthewborough, NC 05267",
+   "contact_person_name": "Celia Bruce",
+   "contact_person_phone": "(974) 260-0009",
+   "additional_information": "Primary contact for ACH vendor payments"
+  },
+  "payee": {
+   "company_name": "Long-Adams",
+   "taxpayer_id": "12-3456789",
+   "address": "697 Jones Mountain, North Matthewborough, NC 05267",
+   "contact_person_name": "Celia Bruce",
+   "contact_person_phone": "(974) 260-0009"
+  },
+  "financial_institution": {
+   "name": "Bank of America",
+   "address": "123 Main Street, New York, NY 10001",
+   "ach_coordinator_name": "Antonio R. Villegas",
+   "ach_coordinator_phone": "(650) 389-4405"
+  },
+  "depositor_account": {
+   "title": "Long-Adams Corporate Account",
+   "number": "5551-3752-1515",
+   "lockbox_number": "LBX-12345"
+  },
+  "authorized_official": {
+   "phone": "(058) 236-4603"
+  }
+ }
+}

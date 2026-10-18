@@ -1,0 +1,113 @@
+{
+ "primary": {
+  "pool_loan_package_number": "GM-PLP-2023-08-15-001",
+  "security_issue_date": "06/15/2023",
+  "name_of_issuer": "Cruz, Parker and Brown",
+  "issuer_id_number": "CPB-2023",
+  "security_mortgage_change_date": "06/15/2023",
+  "loans": [
+   {
+    "loan_id": "Loan-12"
+   }
+  ],
+  "distribution_of_loans": [
+   {
+    "distribution_detail": "FHA"
+   },
+   {
+    "distribution_detail": "VA"
+   },
+   {
+    "distribution_detail": "RD"
+   },
+   {
+    "distribution_detail": "$184"
+   },
+   {
+    "distribution_detail": "Other"
+   },
+   {
+    "distribution_detail": "Total"
+   }
+  ],
+  "adjustable_rate_pools": [
+   {
+    "pool_detail": "Initial (+/-) Interest Rate Cap: 5/1"
+   }
+  ]
+ },
+ "parse": {
+  "pool_loan_package_number": "GM-PLP-2023-08-15-001",
+  "security_issue_date": "06/15/2023",
+  "name_of_issuer": "Cruz, Parker and Brown",
+  "issuer_id_number": "CPB-2023",
+  "security_mortgage_change_date": "06/15/2023",
+  "loans": [
+   {
+    "loan_id": "Loan-12"
+   }
+  ],
+  "distribution_of_loans": [
+   {
+    "distribution_detail": "FHA"
+   },
+   {
+    "distribution_detail": "VA"
+   },
+   {
+    "distribution_detail": "RD"
+   },
+   {
+    "distribution_detail": "$184"
+   },
+   {
+    "distribution_detail": "Other"
+   },
+   {
+    "distribution_detail": "Total"
+   }
+  ],
+  "adjustable_rate_pools": [
+   {
+    "pool_detail": "Index Type: Acceptable Range: Type of ARM Note: Fixed Variable Hybrid Cap Structure Initial (+/-) Interest Rate Cap: 5/1 Subsequent Annual (+/-) Interest Rate Cap: Lifetime (+/-) Interest Rate Cap: Lookback Period: 30 Day Look Back 45 Day Look Back"
+   }
+  ]
+ },
+ "oneshot": {
+  "pool_loan_package_number": "GM-PLP-2023-08-15-001",
+  "security_issue_date": "06/15/2023",
+  "name_of_issuer": "Cruz, Parker and Brown",
+  "issuer_id_number": "CPB-2023",
+  "security_mortgage_change_date": "06/15/2023",
+  "loans": [
+   {
+    "loan_id": "Loan-12"
+   }
+  ],
+  "distribution_of_loans": [
+   {
+    "distribution_detail": "FHA"
+   },
+   {
+    "distribution_detail": "VA"
+   },
+   {
+    "distribution_detail": "RD"
+   },
+   {
+    "distribution_detail": "$184"
+   },
+   {
+    "distribution_detail": "Other"
+   },
+   {
+    "distribution_detail": "Total"
+   }
+  ],
+  "adjustable_rate_pools": [
+   {
+    "pool_detail": "Index Type: Acceptable Range: Type of ARM Note: Fixed Variable Hybrid Cap Structure Initial (+/-) Interest Rate Cap: 5/1 Subsequent Annual (+/-) Interest Rate Cap: Lifetime (+/-) Interest Rate Cap: Lookback Period: 30 Day Look Back 45 Day Look Back"
+   }
+  ]
+ }
+}

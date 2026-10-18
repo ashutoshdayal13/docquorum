@@ -1,0 +1,29 @@
+{
+ "primary": {
+  "applicant_name": "Koch-Smith",
+  "program_activity": "Community Development Block Grant Program",
+  "signature_date": "10/15/2023",
+  "authorized_official": {
+   "name": "Dajana Travis",
+   "title": "Scientist, research (medical)"
+  }
+ },
+ "parse": {
+  "applicant_name": "Koch-Smith",
+  "program_activity": "Community Development Block Grant Program",
+  "signature_date": "10/15/2023",
+  "authorized_official": {
+   "name": "Dajana Travis",
+   "title": "Scientist, research (medical)"
+  }
+ },
+ "oneshot": {
+  "applicant_name": "Koch-Smith",
+  "program_activity": "Community Development Block Grant Program",
+  "signature_date": "10/15/2023",
+  "authorized_official": {
+   "name": "Dajana Travis",
+   "title": "Scientist, research (medical)"
+  }
+ }
+}

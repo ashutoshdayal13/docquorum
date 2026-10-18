@@ -1,0 +1,24 @@
+{
+ "agency": "Department of Labor",
+ "activity": "Employee Relations",
+ "location": "Washington, D.C.",
+ "union_local": "AFL-CIO Local 1234",
+ "reporting_date": "10/15/2023",
+ "recognition_unit": {
+  "recognition_bus_code_abolished": "BUS12",
+  "recognition_bus_code_revised": "BUS45",
+  "date_of_recognition_change": "09/01/2023",
+  "unit_description": "Customer Service Representatives"
+ },
+ "agreement_details": {
+  "agreement_type": "Initial (First) Agreement",
+  "agreement_bus_code": "BUS01",
+  "effective_date_of_agreement": "10/01/2023",
+  "expiration_date_of_agreement": "09/30/2025"
+ },
+ "reporting_official": {
+  "reporting_official_name": "Walsh, Celina M.",
+  "reporting_official_title": "Jewellery Designer",
+  "telephone_number": "(497) 111-759"
+ }
+}

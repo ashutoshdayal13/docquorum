@@ -1,0 +1,15 @@
+{
+ "applicant_last_name": "Fantoni",
+ "applicant_first_name": "Larry",
+ "applicant_middle_name": "S.",
+ "applicant_date_of_birth": "06/02/1992",
+ "applicant_ssn_or_itin": "539-93-4588",
+ "applicant_phone_number": "(339) 427-8185",
+ "applicant_email_address": "larry.fantoni@aol.com",
+ "applicant_mailing_address": {
+  "street": "14879 William Station",
+  "city": "Port Andreaburgh",
+  "state": "MI",
+  "zip_code": "97954"
+ }
+}

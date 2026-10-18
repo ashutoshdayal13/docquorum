@@ -1,0 +1,53 @@
+{
+ "primary": {
+  "dod_id_number": "12345678901234567890",
+  "date_of_birth": "08/07/1993",
+  "full_legal_name": {
+   "first_name": "Davi Miguel",
+   "middle_name": "X.",
+   "last_name": "Acharya"
+  },
+  "certifying_official": {
+   "name": "Benjamin B. Flores, Publishing Copy Editor",
+   "title": "Certifying Official, Marshall and"
+  },
+  "service_member_details": {
+   "branch_of_service": "Army",
+   "entry_date": "06/15/2015"
+  }
+ },
+ "parse": {
+  "dod_id_number": "12345678901234567890",
+  "date_of_birth": "08/07/1993",
+  "full_legal_name": {
+   "first_name": "Davi Miguel",
+   "middle_name": "X.",
+   "last_name": "Acharya"
+  },
+  "certifying_official": {
+   "name": "Benjamin B. Flores",
+   "title": "Publishing Copy Editor"
+  },
+  "service_member_details": {
+   "branch_of_service": "Army",
+   "entry_date": "06/15/2015"
+  }
+ },
+ "oneshot": {
+  "dod_id_number": "12345678901234567890",
+  "date_of_birth": "08/07/1993",
+  "full_legal_name": {
+   "first_name": "Davi Miguel",
+   "middle_name": "X.",
+   "last_name": "Acharya"
+  },
+  "certifying_official": {
+   "name": "Benjamin B. Flores, Publishing Copy Editor",
+   "title": "Certifying Official, Marshall and"
+  },
+  "service_member_details": {
+   "branch_of_service": "Army",
+   "entry_date": "06/15/2015"
+  }
+ }
+}

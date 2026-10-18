@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "petitioner_information": {
+   "name": "Michelle W. Rodriguez",
+   "other_names_used": [
+    "Michelle Williams Rodriguez",
+    "M. W. Rodriguez"
+   ]
+  },
+  "contact_information": {
+   "address": "4312 Combs Run Apt. 133",
+   "city": "Herreratown",
+   "zip_code": "94773"
+  }
+ },
+ "parse": {
+  "petitioner_information": {
+   "name": "Michelle W. Rodriguez",
+   "other_names_used": [
+    "Michelle Williams Rodriguez",
+    "M. W. Rodriguez"
+   ]
+  },
+  "contact_information": {
+   "address": "4312 Combs Run Apt. 133",
+   "city": "Herreratown",
+   "zip_code": "94773"
+  }
+ },
+ "oneshot": {
+  "petitioner_information": {
+   "name": "Rodriguez, Michelle W.",
+   "other_names_used": [
+    "Michelle Williams Rodriguez",
+    "M. W. Rodriguez"
+   ]
+  },
+  "contact_information": {
+   "address": "4312 Combs Run Apt. 133",
+   "city": "Herraratown",
+   "zip_code": "94773"
+  }
+ }
+}

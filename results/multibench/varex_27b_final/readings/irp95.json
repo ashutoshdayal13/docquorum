@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "primary_registrant_name": "Jordan Piotrowiak",
+  "vehicle_make": "Toyota Camry",
+  "vehicle_year": 2018,
+  "vehicle_vin": "4T1BK1EKXJU123456",
+  "vehicle_owner_name": "Agustin Pierz",
+  "signature_date": "09/15/2023",
+  "owner_address": {
+   "street": "5482 Roberts Mountain",
+   "city": "Margaretport",
+   "zip_code": "79839"
+  }
+ },
+ "parse": {
+  "primary_registrant_name": "Jordan Piotrowiak",
+  "vehicle_make": "Toyota Camry",
+  "vehicle_year": 2018,
+  "vehicle_vin": "4T1BK1EKKXJU123456",
+  "vehicle_owner_name": "Agustin Pierz",
+  "signature_date": "09/15/2023",
+  "owner_address": {
+   "street": "5482 Roberts Mountain",
+   "city": "Margaretport",
+   "zip_code": "79839"
+  }
+ },
+ "oneshot": {
+  "primary_registrant_name": "Jordan Piotrowiak",
+  "vehicle_make": "Toyota Camry",
+  "vehicle_year": 2018,
+  "vehicle_vin": "4T1BK1EKXJU123456",
+  "vehicle_owner_name": "Agustin Pierz",
+  "signature_date": "09/15/2023",
+  "owner_address": {
+   "street": "5482 Roberts Mountain",
+   "city": "Margaretport",
+   "zip_code": "79839"
+  }
+ }
+}

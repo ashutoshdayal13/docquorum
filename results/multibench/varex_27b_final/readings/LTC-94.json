@@ -1,0 +1,89 @@
+{
+ "primary": {
+  "ltc_license_number": "LTC-9445",
+  "signature_date": "05/15/2023",
+  "applicant_name": {
+   "last_name": "Parent",
+   "first_name": "Jason"
+  },
+  "id_information": {
+   "id_number": "417769048"
+  },
+  "residence_address": {
+   "address": "1818 Woods Courts",
+   "city": "New Kathrynfurt",
+   "zip": "71472"
+  },
+  "mailing_address": {
+   "address": "1818 Woods Courts",
+   "city": "New Kathrynfurt",
+   "zip": "71472"
+  },
+  "phone_numbers": [
+   {
+    "number": "(489)023-3"
+   },
+   {
+    "number": "(316)753-0"
+   }
+  ]
+ },
+ "parse": {
+  "ltc_license_number": "LTC-9445",
+  "signature_date": "05/15/2023",
+  "applicant_name": {
+   "last_name": "Parent",
+   "first_name": "Jason"
+  },
+  "id_information": {
+   "id_number": "417769048"
+  },
+  "residence_address": {
+   "address": "1818 Woods Courts",
+   "city": "New Kathrynfurt",
+   "zip": "71472"
+  },
+  "mailing_address": {
+   "address": "1818 Woods Courts",
+   "city": "New Kathrynfurt",
+   "zip": "71472"
+  },
+  "phone_numbers": [
+   {
+    "number": "(489)023-3"
+   },
+   {
+    "number": "(316)753-0"
+   }
+  ]
+ },
+ "oneshot": {
+  "ltc_license_number": "LTC-9445",
+  "signature_date": "05/15/2023",
+  "applicant_name": {
+   "last_name": "Parent",
+   "first_name": "Jason"
+  },
+  "id_information": {
+   "id_number": "417769048"
+  },
+  "residence_address": {
+   "address": "1818 Woods Courts",
+   "city": "New Kathrynfurt",
+   "zip": "71472"
+  },
+  "mailing_address": {
+   "address": "1818 Woods Courts",
+   "city": "New Kathrynfurt",
+   "zip": "71472"
+  },
+  "phone_numbers": [
+   {
+    "number": "(489)023-3"
+   },
+   {
+    "number": "(316)753-0"
+   }
+  ]
+ }
+}

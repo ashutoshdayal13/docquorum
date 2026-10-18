@@ -1,0 +1,143 @@
+{
+ "primary": {
+  "applicant_name": "Judy W. Ward",
+  "criminal_history": [
+   {
+    "record_description": "Public Intoxication",
+    "date_of_incident": "06/15/2015"
+   },
+   {
+    "record_description": "Disorderly Conduct",
+    "date_of_incident": "09/22/2016"
+   },
+   {
+    "record_description": "Reckless Driving",
+    "date_of_incident": "03/10/2017"
+   },
+   {
+    "record_description": "Shoplifting",
+    "date_of_incident": "11/05/2018"
+   },
+   {
+    "record_description": "Assault (Misdemeanor)",
+    "date_of_incident": "07/30/2019"
+   },
+   {
+    "record_description": "Possession of Marij.",
+    "date_of_incident": "12/12/2020"
+   }
+  ],
+  "treatment_history": [
+   {
+    "treatment_type": "Alcohol Counseling",
+    "treatment_date": "07/10/2016"
+   },
+   {
+    "treatment_type": "Substance Abuse Program",
+    "treatment_date": "04/15/2018"
+   },
+   {
+    "treatment_type": "Anger Management",
+    "treatment_date": "08/22/2019"
+   },
+   {
+    "treatment_type": "Rehabilitation",
+    "treatment_date": "01/30/2021"
+   }
+  ]
+ },
+ "parse": {
+  "applicant_name": "Judy W. Ward",
+  "criminal_history": [
+   {
+    "record_description": "Public Intoxication",
+    "date_of_incident": "06/15/2015"
+   },
+   {
+    "record_description": "Disorderly Conduct",
+    "date_of_incident": "09/22/2016"
+   },
+   {
+    "record_description": "Reckless Driving",
+    "date_of_incident": "03/10/2017"
+   },
+   {
+    "record_description": "Shoplifting",
+    "date_of_incident": "11/05/2018"
+   },
+   {
+    "record_description": "Assault (Misdemeanor)",
+    "date_of_incident": "07/30/2019"
+   },
+   {
+    "record_description": "Possession of Marij.",
+    "date_of_incident": "12/12/2020"
+   }
+  ],
+  "treatment_history": [
+   {
+    "treatment_type": "Alcohol Counseling",
+    "treatment_date": "07/10/2016"
+   },
+   {
+    "treatment_type": "Substance Abuse Program",
+    "treatment_date": "04/15/2018"
+   },
+   {
+    "treatment_type": "Anger Management",
+    "treatment_date": "08/22/2019"
+   },
+   {
+    "treatment_type": "Rehabilitation",
+    "treatment_date": "01/30/2021"
+   }
+  ]
+ },
+ "oneshot": {
+  "applicant_name": "Judy W. Ward",
+  "criminal_history": [
+   {
+    "record_description": "Public Intoxication",
+    "date_of_incident": "06/15/2015"
+   },
+   {
+    "record_description": "Disorderly Conduct",
+    "date_of_incident": "09/22/2016"
+   },
+   {
+    "record_description": "Reckless Driving",
+    "date_of_incident": "03/10/2017"
+   },
+   {
+    "record_description": "Shoplifting",
+    "date_of_incident": "11/05/2018"
+   },
+   {
+    "record_description": "Assault (Misdemeanor)",
+    "date_of_incident": "07/30/2019"
+   },
+   {
+    "record_description": "Possession of Marij.",
+    "date_of_incident": "12/12/2020"
+   }
+  ],
+  "treatment_history": [
+   {
+    "treatment_type": "Alcohol Counseling",
+    "treatment_date": "07/10/2016"
+   },
+   {
+    "treatment_type": "Substance Abuse Program",
+    "treatment_date": "04/15/2018"
+   },
+   {
+    "treatment_type": "Anger Management",
+    "treatment_date": "08/22/2019"
+   },
+   {
+    "treatment_type": "Rehabilitation",
+    "treatment_date": "01/30/2021"
+   }
+  ]
+ }
+}

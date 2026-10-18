@@ -1,0 +1,80 @@
+{
+ "primary": {
+  "school_name": "Ana T. Alarcon Radiologic Technology School",
+  "school_identification_number": "RT-2023-CA-1001",
+  "current_facility": {
+   "registration_number": "RHB-2023-001",
+   "expiration_date": "12/31/2025",
+   "name": "South Sarahport Medical Center",
+   "telephone_number": "(408) 555-1234",
+   "address": "96263 Jimenez Pine Suite 567",
+   "city": "South Sarahport",
+   "zip_code": "87310"
+  },
+  "previous_facility": {
+   "registration_number": "RHB-2020-001",
+   "name": "West Sarahport Clinic",
+   "telephone_number": "(408) 555-4321",
+   "address": "123 Main Street",
+   "city": "West Sarahport",
+   "zip_code": "87311"
+  },
+  "designated_school_official": {
+   "name": "Ana T. Alarcon",
+   "title": "Program Director",
+   "date": "01/15/2023"
+  }
+ },
+ "parse": {
+  "school_name": "Ana T. Alarcon Radiologic Technology School",
+  "school_identification_number": "RT-2023-CA-1001",
+  "current_facility": {
+   "registration_number": "RHB-2023-001",
+   "expiration_date": "12/31/2025",
+   "name": "South Sarahport Medical Center",
+   "telephone_number": "(408) 555-1234",
+   "address": "96263 Jimenez Pine Suite 567",
+   "city": "South Sarahport",
+   "zip_code": "87310"
+  },
+  "previous_facility": {
+   "registration_number": "RHB-2020-001",
+   "name": "West Sarahport Clinic",
+   "telephone_number": "(408) 555-4321",
+   "address": "123 Main Street",
+   "city": "West Sarahport",
+   "zip_code": "87311"
+  },
+  "designated_school_official": {
+   "name": "Ana T. Alarcon",
+   "title": "Program Director",
+   "date": "01/15/2023"
+  }
+ },
+ "oneshot": {
+  "school_name": "Ana T. Alarcon Radiologic Technology School",
+  "school_identification_number": "RT-2023-CA-1001",
+  "current_facility": {
+   "registration_number": "RHB-2023-001",
+   "expiration_date": "12/31/2025",
+   "name": "South Sarahport Medical Center",
+   "telephone_number": "(408) 555-1234",
+   "address": "96263 Jimenez Pine Suite 567",
+   "city": "South Sarahport",
+   "zip_code": "87310"
+  },
+  "previous_facility": {
+   "registration_number": "RHB-2020-001",
+   "name": "West Sarahport Clinic",
+   "telephone_number": "(408) 555-4321",
+   "address": "123 Main Street",
+   "city": "West Sarahport",
+   "zip_code": "87311"
+  },
+  "designated_school_official": {
+   "name": "Ana T. Alarcon",
+   "title": "Program Director",
+   "date": "01/15/2023"
+  }
+ }
+}

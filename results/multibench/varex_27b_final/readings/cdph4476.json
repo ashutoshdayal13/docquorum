@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "participant_name": "Thierry A. Ferguson",
+  "family_individual_id": "CTL-2022-79526",
+  "abuse_explanation": "Participant was caught selling WIC formula and food instruments on multiple occasions and provided false",
+  "local_agency_name": "Mata and Sons WIC Clinic",
+  "agency_clinic_number": "5381-6261-3467",
+  "report_date": "05/15/2023",
+  "staff_person_name": "Mariana P. Smith",
+  "staff_title": "Engineer, automotive",
+  "phone_number": "(294) 744-9753",
+  "email_address": "msmith@walkerwhitney.com"
+ },
+ "parse": {
+  "participant_name": "Thierry A. Ferguson",
+  "family_individual_id": "CTL-2022-79526",
+  "abuse_explanation": "Participant was caught selling WIC formula and food instruments on multiple occasions and provided false",
+  "local_agency_name": "Mata and Sons WIC Clinic",
+  "agency_clinic_number": "5381-6261-3467",
+  "report_date": "05/15/2023",
+  "staff_person_name": "Mariana P. Smith",
+  "staff_title": "Engineer, automotive",
+  "phone_number": "(294) 744-9753",
+  "email_address": "msmith@walkerwhitney.com"
+ },
+ "oneshot": {
+  "participant_name": "Thierry A. Ferguson",
+  "family_individual_id": "CTL-2022-79526",
+  "abuse_explanation": "Participant was caught selling WIC formula and food instruments on multiple occasions and provided false",
+  "local_agency_name": "Mata and Sons WIC Clinic",
+  "agency_clinic_number": "5381-6261-3467",
+  "report_date": "05/15/2023",
+  "staff_person_name": "Mariana P. Smith",
+  "staff_title": "Engineer, automotive",
+  "phone_number": "(294) 744-9753",
+  "email_address": "msmith@walkerwhitney.com"
+ }
+}

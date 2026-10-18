@@ -1,0 +1,23 @@
+{
+ "effective_date": "10/15/2023",
+ "agency": {
+  "name": "Department of the Treasury - Bureau of the Fiscal Service",
+  "street_address_line_1": "1201 Pennsylvania Avenue, NW",
+  "street_address_line_2": "Attn: FedInvest System Access",
+  "city": "Washington",
+  "state": "D",
+  "zip_code": "20220"
+ },
+ "system_access_administrator": {
+  "name": "Carter, Calvin C.",
+  "job_title": "Information Technology Specialist",
+  "telephone_number": "(778) 414-6148",
+  "fax_number": "(490) 185-2802",
+  "email_address": "ccarter@cruzgross.com"
+ },
+ "authorizing_official": {
+  "name": "Thomas, Barbara",
+  "telephone_number": "(046) 067-5108",
+  "email_address": "bthomas@rangel.com"
+ }
+}

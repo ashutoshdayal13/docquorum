@@ -1,0 +1,53 @@
+{
+ "primary": {
+  "account_number": "9664-6770-612",
+  "account_name": "Anna C. King",
+  "transfer_amount": "$346521.22",
+  "cusip_transfers": [
+   {
+    "partial_transfer_cusip": "037854100",
+    "partial_transfer_amount": "$346521.22"
+   }
+  ],
+  "sub_account_transfers": [
+   {
+    "internal_transfer_account_number": "1234-5678-901",
+    "internal_transfer_account_name": "Laura Trujillo",
+    "internal_transfer_tax_id": "298-38-9116",
+    "internal_transfer_employer_id": "1234567890"
+   }
+  ],
+  "treasury_direct_transfer": {
+   "treasury_direct_account_number": "2345-6789-012",
+   "treasury_direct_account_name": "Stanislaw Torres",
+   "treasury_direct_tax_id": "777-57-9837",
+   "treasury_direct_employer_id": "2345678901"
+  }
+ },
+ "parse": {
+  "account_number": "9664-6770-612",
+  "account_name": "Anna C. King",
+  "transfer_amount": "346521.22",
+  "cusip_transfers": [
+   {
+    "partial_transfer_cusip": "037854100",
+    "partial_transfer_amount": "346521.22"
+   }
+  ],
+  "sub_account_transfers": [
+   {
+    "internal_transfer_account_number": "1234-5678-901",
+    "internal_transfer_account_name": "Laura Trujillo",
+    "internal_transfer_tax_id": "298-38-9116",
+    "internal_transfer_employer_id": "1234567890"
+   }
+  ],
+  "treasury_direct_transfer": {
+   "treasury_direct_account_number": "2345-6789-012",
+   "treasury_direct_account_name": "Stanisław Torres",
+   "treasury_direct_tax_id": "777-57-9837",
+   "treasury_direct_employer_id": "2345678901"
+  }
+ },
+ "oneshot": {}
+}

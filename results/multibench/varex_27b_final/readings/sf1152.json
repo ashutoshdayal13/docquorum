@@ -1,0 +1,102 @@
+{
+ "primary": {
+  "name": "Solorzano, Stephanie F.",
+  "date_of_birth": "04/18/1968",
+  "social_security_number": "799-05-4494",
+  "beneficiaries": [
+   "Powers, Thomas Q.",
+   "Romero, Laura J.",
+   "Powers, Emily A.",
+   "Powers, Michael T."
+  ],
+  "date_of_designation": "11/15/2023",
+  "witnesses": [
+   "Laura J. Romero",
+   "Thomas Q. Powers"
+  ],
+  "return_address": "849 Haynes Valleys, Brittanyhaven, CO 02438",
+  "employment_details": {
+   "department": "Department of Energy",
+   "bureau": "Bureau of Chemical",
+   "division": "Division of",
+   "location": "Brittanyhaven, CO"
+  }
+ },
+ "parse": {
+  "name": "Solorzano, Stephanie F.",
+  "date_of_birth": "04/18/1968",
+  "social_security_number": "799-05-4494",
+  "beneficiaries": [
+   "Powers, Thomas Q.",
+   "Romero, Laura J.",
+   "Powers, Emily A.",
+   "Powers, Michael T."
+  ],
+  "date_of_designation": "11/15/2023",
+  "witnesses": [
+   "Laura J. Romero",
+   "Thomas Q. Powers"
+  ],
+  "return_address": "849 Haynes Valleys, Brittanyhaven, CO 02438",
+  "employment_details": {
+   "department": "Department of Energy",
+   "bureau": "Bureau of Chemical",
+   "division": "Division of",
+   "location": "Brittanyhaven, CO"
+  }
+ },
+ "oneshot": {
+  "properties": {
+   "beneficiaries": {
+    "items": {
+     "type": "string"
+    },
+    "type": "array"
+   },
+   "date_of_designation": {
+    "type": "string"
+   },
+   "date_of_birth": {
+    "type": "string"
+   },
+   "employment_details": {
+    "$ref": "#/$defs/EmploymentDetails"
+   },
+   "name": {
+    "type": "string"
+   },
+   "return_address": {
+    "type": "string"
+   },
+   "social_security_number": {
+    "type": "string"
+   },
+   "witnesses": {
+    "items": {
+     "type": "string"
+    },
+    "type": "array"
+   }
+  },
+  "$defs": {
+   "EmploymentDetails": {
+    "properties": {
+     "bureau": {
+      "type": "string"
+     },
+     "department": {
+      "type": "string"
+     },
+     "division": {
+      "type": "string"
+     },
+     "location": {
+      "type": "string"
+     }
+    },
+    "type": "object"
+   }
+  },
+  "type": "object"
+ }
+}

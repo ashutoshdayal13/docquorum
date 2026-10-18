@@ -1,0 +1,14 @@
+{
+ "provider_name": "Owens-Mason Healthcare Training",
+ "provider_identification_number": 19599,
+ "lunch_hours": "12:00 PM - 1:00 PM",
+ "revision_date": "03/15/2023",
+ "schedule_details": {
+  "details": "Clinical training sessions from 8:00 AM to 12:00 PM and 1:00 PM to 4:00 PM",
+  "schedule_days": [
+   "Day 1",
+   "Day 2",
+   "Day 3"
+  ]
+ }
+}

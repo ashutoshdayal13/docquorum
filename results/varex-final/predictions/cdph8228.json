@@ -1,0 +1,16 @@
+{
+ "last_name": "Faivre",
+ "first_name": "Christopher",
+ "middle_name": "V.",
+ "date_of_birth": "01/14/2000",
+ "ssn_or_itin": "539-21-3489",
+ "phone_number": "(282) 717-2374",
+ "email_address": "christopher.faivre@outlook.com",
+ "california_certificate_number": "DRT-2023-CA-10247",
+ "mailing_address": {
+  "address_line1": "1141 Gonzalez Harbor Suite 309",
+  "city": "Robinsonburgh",
+  "state": "IA",
+  "zip_code": "81198"
+ }
+}

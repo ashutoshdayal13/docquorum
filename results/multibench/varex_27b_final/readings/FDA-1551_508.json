@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "fda_sample_number": "FDA-2023-10012",
+  "date_sample_collected": "05/15/2023",
+  "collecting_inspector": "Carrie Hayes",
+  "description_of_sample": "Bottled water sample, 1-liter plastic container, labeled as spring water",
+  "establishment_where_sample_collected": "Richardson, Diaz and Lopez, 278 West Loop, Ericport, NE 25353",
+  "reason_for_submission": "OTHER (Specify): Routine quality control check as per FDA regulations",
+  "report_of_analysis": "Analysis shows pH 7.2, no detectable contaminants, meets all safety standards",
+  "submitting_person": {
+   "title": "Water Quality Scientist",
+   "date": "05/16/2023"
+  }
+ },
+ "parse": {
+  "fda_sample_number": "FDA-2023-10012",
+  "date_sample_collected": "05/15/2023",
+  "collecting_inspector": "Carrie Hayes",
+  "description_of_sample": "Bottled water sample, 1-liter plastic container, labeled as spring water",
+  "establishment_where_sample_collected": "Richardson, Diaz and Lopez, 278 West Loop, Ericport, NE 25353",
+  "reason_for_submission": "Routine quality control check as per FDA regulations",
+  "report_of_analysis": "Analysis shows pH 7.2, no detectable contaminants, meets all safety standards",
+  "submitting_person": {
+   "title": "Water Quality Scientist",
+   "date": "05/16/2023"
+  }
+ },
+ "oneshot": {
+  "fda_sample_number": "FDA-2023-10012",
+  "date_sample_collected": "05/15/2023",
+  "collecting_inspector": "Carrie Hayes",
+  "description_of_sample": "Bottled water sample, 1-liter plastic container, labeled as spring water",
+  "establishment_where_sample_collected": "Richardson, Diaz and Lopez, 278 West Loop, Ericport, NE 25353",
+  "reason_for_submission": "Routine quality control check as per FDA regulations",
+  "report_of_analysis": "Analysis shows pH 7.2, no detectable contaminants, meets all safety standards",
+  "submitting_person": {
+   "title": "Water Quality Scientist",
+   "date": "05/16/2023"
+  }
+ }
+}

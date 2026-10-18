@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "date_service_required": "12152023",
+  "service_user_id": "SERV-2023-REF-2022-53710",
+  "service_profile": [],
+  "prime_vendor": "Carlson LLC",
+  "prime_vendor_point_of_contact": "Jeronimo L. Aparicio",
+  "service_locations": [
+   "956 Tucker Summit Apt. 740, Bakerberg, DE 28770"
+  ],
+  "invocation_official": {
+   "telephone_number": "(491) 805-1206"
+  }
+ },
+ "parse": {
+  "date_service_required": "12152023",
+  "service_user_id": "SERV-2023-REF-2022-53710",
+  "service_profile": [],
+  "prime_vendor": "Carlson LLC",
+  "prime_vendor_point_of_contact": "Jeronimo L. Aparicio",
+  "service_locations": [
+   "956 Tucker Summit Apt. 740, Bakerberg, DE 28770"
+  ],
+  "invocation_official": {
+   "telephone_number": "(491) 805-1206"
+  }
+ },
+ "oneshot": {
+  "date_service_required": "12152023",
+  "service_user_id": "SERV-2023-REF-2022-53710",
+  "service_profile": [],
+  "prime_vendor": "Carlson LLC",
+  "prime_vendor_point_of_contact": "Jeronimo L. Aparicio",
+  "service_locations": [
+   "956 Tucker Summit Apt. 740, Bakerberg, DE 28770"
+  ],
+  "invocation_official": {
+   "telephone_number": "(491) 805-1206"
+  }
+ }
+}

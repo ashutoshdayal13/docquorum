@@ -1,0 +1,35 @@
+{
+ "primary": {
+  "date": "03/15/2023",
+  "project_number": "HUD-2023-12345-001",
+  "project_name": "Urban Renewal Project Phase 1",
+  "depositor": "Phillips-Fletcher",
+  "depositor_telephone_number": "(577) 529-5848",
+  "depositor_address": "526 William Ways Suite",
+  "depositor_tax_id_number": "29-6430617",
+  "name_and_title": "Kevin F. Hoffman,",
+  "deposit_ticket_number": "LR- CTL-202 -DT- -"
+ },
+ "parse": {
+  "date": "03/15/2023",
+  "project_number": "HUD-2023-12345-001",
+  "project_name": "Urban Renewal Project Phase 1",
+  "depositor": "Phillips-Fletcher",
+  "depositor_telephone_number": "(577) 529-5848",
+  "depositor_address": "526 William Ways Suite",
+  "depositor_tax_id_number": "29-6430617",
+  "name_and_title": "Kevin F. Hoffman,",
+  "deposit_ticket_number": "LR- CTL-202 -DT- -"
+ },
+ "oneshot": {
+  "date": "03/15/2023",
+  "project_number": "HUD-2023-12345-001",
+  "project_name": "Urban Renewal Project Phase 1",
+  "depositor": "Phillips-Fletcher",
+  "depositor_telephone_number": "(577) 529-5848",
+  "depositor_address": "526 William Ways Suite",
+  "depositor_tax_id_number": "29-6430617",
+  "name_and_title": "Kevin F. Hoffman,",
+  "deposit_ticket_number": "LR- CTL-202 -DT- -"
+ }
+}

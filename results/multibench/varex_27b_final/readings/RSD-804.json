@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "unique_card_number": 1234567890123,
+  "expiration_date": "12/31/2025",
+  "applicant_signature_date": "01/15/2023",
+  "issuing_entity": {
+   "name": "Texas Metals Recycling LLC",
+   "state_registration_number": "TMR-2023-001"
+  },
+  "applicant": {
+   "name": "Myers, Antonio",
+   "date_of_birth": "02/05/2004",
+   "id_number": 835195389,
+   "address": "052 Griffin Skyway Suite 429",
+   "phone": "(111) 220-7116",
+   "city": "Melindashire",
+   "zip_code": "42421"
+  },
+  "mre_representative": {
+   "signature_date": "01/15/2023"
+  }
+ },
+ "parse": {
+  "unique_card_number": 1234567890123,
+  "expiration_date": "12/31/2025",
+  "applicant_signature_date": "01/15/2023",
+  "issuing_entity": {
+   "name": "Texas Metals Recycling LLC",
+   "state_registration_number": "TMR-2023-001"
+  },
+  "applicant": {
+   "name": "Myers, Antonio",
+   "date_of_birth": "02/05/2004",
+   "id_number": 835195389,
+   "address": "052 Griffin Skyway Suite 429",
+   "phone": "(111) 220-7116",
+   "city": "Melindashire",
+   "zip_code": "42421"
+  },
+  "mre_representative": {
+   "signature_date": "01/15/2023"
+  }
+ },
+ "oneshot": {
+  "unique_card_number": 1234567890123,
+  "expiration_date": "12/31/2025",
+  "applicant_signature_date": "01/15/2023",
+  "issuing_entity": {
+   "name": "Texas Metals Recycling LLC",
+   "state_registration_number": "TMR-2023-001"
+  },
+  "applicant": {
+   "name": "Myers, Antonio",
+   "date_of_birth": "02/05/2004",
+   "id_number": 835195389,
+   "address": "052 Griffin Skyway Suite 429, Melindashire, IA 42421",
+   "phone": "(111) 220-7116",
+   "city": "Melindashire",
+   "zip_code": "42421"
+  },
+  "mre_representative": {
+   "signature_date": "01/15/2023"
+  }
+ }
+}

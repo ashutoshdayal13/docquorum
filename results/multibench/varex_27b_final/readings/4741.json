@@ -1,0 +1,110 @@
+{
+ "primary": {
+  "hud_reviewer": "Agastya A. Miller",
+  "hud_review_date": "03/15/2024",
+  "projects_contracts_reviewed": [
+   "HUD-2024-001",
+   "HUD-2024-002",
+   "HUD-2024-003"
+  ],
+  "agency": {
+   "name": "Medina LLC",
+   "address": "5743 Adkins Manor Suite 553",
+   "number": "REF-2024-59222",
+   "cpd_pih_number": "3947-7718-6338",
+   "principal_program_director": "Steven Kuhl",
+   "labor_standards_officer": "Amber O. Nelson",
+   "telephone_number": "(613) 071-0938"
+  },
+  "agency_personnel": [
+   {
+    "name": "Steven Kuhl",
+    "title": "Therapist, horticultural"
+   },
+   {
+    "name": "Amber O. Nelson",
+    "title": "Special effects artist"
+   },
+   {
+    "name": "Agastya A. Miller",
+    "title": "Mining engineer"
+   },
+   {
+    "name": "John Doe",
+    "title": "Construction Manager"
+   }
+  ]
+ },
+ "parse": {
+  "hud_reviewer": "Agastya A. Miller",
+  "hud_review_date": "03/15/2024",
+  "projects_contracts_reviewed": [
+   "HUD-2024-001",
+   "HUD-2024-002",
+   "HUD-2024-003"
+  ],
+  "agency": {
+   "name": "Medina LLC",
+   "address": "5743 Adkins Manor Suite 553",
+   "number": "REF-2024-59222",
+   "cpd_pih_number": "3947-7718-6338",
+   "principal_program_director": "Steven Kuhl",
+   "labor_standards_officer": "Amber O. Nelson",
+   "telephone_number": "(613) 071-0938"
+  },
+  "agency_personnel": [
+   {
+    "name": "Steven Kuhl",
+    "title": "Therapist, horticultural"
+   },
+   {
+    "name": "Amber O. Nelson",
+    "title": "Special effects artist"
+   },
+   {
+    "name": "Agastya A. Miller",
+    "title": "Mining engineer"
+   },
+   {
+    "name": "John Doe",
+    "title": "Construction Manager"
+   }
+  ]
+ },
+ "oneshot": {
+  "hud_reviewer": "Agastya A. Miller",
+  "hud_review_date": "03/15/2024",
+  "projects_contracts_reviewed": [
+   "HUD-2024-001",
+   "HUD-2024-002",
+   "HUD-2024-003"
+  ],
+  "agency": {
+   "name": "Medina LLC",
+   "address": "5743 Adkins Manor Suite 553",
+   "number": "REF-2024-59222",
+   "cpd_pih_number": "3947-7718-6338",
+   "principal_program_director": "Steven Kuhl",
+   "labor_standards_officer": "Amber O. Nelson",
+   "telephone_number": "(613) 071-0938"
+  },
+  "agency_personnel": [
+   {
+    "name": "Steven Kuhl",
+    "title": "Therapist, horticultural"
+   },
+   {
+    "name": "Amber O. Nelson",
+    "title": "Special effects artist"
+   },
+   {
+    "name": "Agastya A. Miller",
+    "title": "Mining engineer"
+   },
+   {
+    "name": "John Doe",
+    "title": "Construction Manager"
+   }
+  ]
+ }
+}

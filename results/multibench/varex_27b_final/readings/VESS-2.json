@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "officer_name": "Irmela O. Herrera",
+  "officer_phone_number": "(349) 986-5209",
+  "towing_company_name": "Huffman and Sons Towing",
+  "towing_company_phone_number": "(868) 275-6394",
+  "case_number": "PO-2023-57649",
+  "additional_referrals": "Contact local shelter for immediate"
+ },
+ "parse": {
+  "officer_name": "Irmela O. Herrera",
+  "officer_phone_number": "(349) 986-5209",
+  "towing_company_name": "Huffman and Sons Towing",
+  "towing_company_phone_number": "(868) 275-6394",
+  "case_number": "PO-2023-57649",
+  "additional_referrals": "Contact local shelter for immediate"
+ },
+ "oneshot": {
+  "officer_name": "Irmela O. Herrera",
+  "officer_phone_number": "(349) 986-5209",
+  "towing_company_name": "Huffman and Sons Towing",
+  "towing_company_phone_number": "(868) 275-6394",
+  "case_number": "PO-2023-57649",
+  "additional_referrals": "Contact local shelter for immediate"
+ }
+}

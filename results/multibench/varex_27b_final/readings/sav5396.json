@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "daytime_telephone_number": "(121) 366-8252",
+  "taxpayer_identification_number": "139 Deanna",
+  "signature_date": "03/15/2023",
+  "home_address": {
+   "street": "236-19-4034"
+  }
+ },
+ "parse": {
+  "daytime_telephone_number": "(121) 366-8252",
+  "taxpayer_identification_number": "236-19-4034",
+  "signature_date": "03/15/2023",
+  "home_address": {
+   "street": "139 Deanna"
+  }
+ },
+ "oneshot": {
+  "daytime_telephone_number": "(121) 366-8252",
+  "taxpayer_identification_number": "236-19-4034",
+  "signature_date": "03/15/2023",
+  "home_address": {
+   "street": "139 Deanna"
+  }
+ }
+}

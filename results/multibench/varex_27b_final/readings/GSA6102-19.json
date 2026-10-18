@@ -1,0 +1,98 @@
+{
+ "primary": {
+  "requestor_name": "Dave Setty",
+  "gsa_organization": "Gonzalez, Osborne and",
+  "date_of_request": "05/15/2023",
+  "requestor_phone_number": "(702) 474-8875",
+  "supervisor_name": "Victoria C. Nolan",
+  "individual_name": "Angela M. Patla",
+  "email_address": "angela.patla@aol.com",
+  "ssn_last_four": "4000",
+  "date_of_birth": "06/29/1976",
+  "place_of_birth": "Robertchester, NY",
+  "visiting_agency": "Martinez, Allen and Romero",
+  "dates_of_visit": [
+   "05/20/2023",
+   "05/21/2023"
+  ],
+  "purpose_of_visit": "Reviewing collaborative project documents and discussing future initiatives",
+  "address": {
+   "address": "42391 Watson Squares Suite 669",
+   "city": "East Denisestad",
+   "state": "V",
+   "zip_code": "03568"
+  },
+  "visiting_agency_poc": {
+   "name": "Angela M. Patla",
+   "phone_number": "(708) 280-3249"
+  },
+  "visiting_agency_security_office": {
+   "phone_number": "(555) 123-4567",
+   "email_address": "security@martinez.com"
+  }
+ },
+ "parse": {
+  "requestor_name": "Dave Setty",
+  "gsa_organization": "Gonzalez, Osborne and",
+  "date_of_request": "05/15/2023",
+  "requestor_phone_number": "(702) 474-8875",
+  "supervisor_name": "Victoria C. Nolan",
+  "individual_name": "Angela M. Patla",
+  "email_address": "angela.patla@aol.com",
+  "ssn_last_four": "4000",
+  "date_of_birth": "06/29/1976",
+  "place_of_birth": "Robertchester, NY",
+  "visiting_agency": "Martinez, Allen and Romero",
+  "dates_of_visit": [
+   "05/20/2023",
+   "05/21/2023"
+  ],
+  "purpose_of_visit": "Reviewing collaborative project documents and discussing future initiatives",
+  "address": {
+   "address": "42391 Watson Squares Suite 669",
+   "city": "East Denisestad",
+   "state": "V",
+   "zip_code": "03568"
+  },
+  "visiting_agency_poc": {
+   "name": "Angela M. Patla",
+   "phone_number": "(708) 280-3249"
+  },
+  "visiting_agency_security_office": {
+   "phone_number": "(555) 123-4567",
+   "email_address": "security@martinez.com"
+  }
+ },
+ "oneshot": {
+  "requestor_name": "Dave Setty",
+  "gsa_organization": "Gonzalez, Osborne and",
+  "date_of_request": "05/15/2023",
+  "requestor_phone_number": "(702) 474-8875",
+  "supervisor_name": "Victoria C. Nolan",
+  "individual_name": "Angela M. Patla",
+  "email_address": "angela.patla@aol.com",
+  "ssn_last_four": "4000",
+  "date_of_birth": "06/29/1976",
+  "place_of_birth": "Robertchester, NY",
+  "visiting_agency": "Martinez, Allen and Romero",
+  "dates_of_visit": [
+   "05/20/2023",
+   "05/21/2023"
+  ],
+  "purpose_of_visit": "Reviewing collaborative project documents and discussing future initiatives",
+  "address": {
+   "address": "42391 Watson Squares Suite 669, East Den sestad, VA 03568",
+   "city": "East Den sestad",
+   "state": "V",
+   "zip_code": "03568"
+  },
+  "visiting_agency_poc": {
+   "name": "Angela M. Patla",
+   "phone_number": "(708) 280-3249"
+  },
+  "visiting_agency_security_office": {
+   "phone_number": "(555) 123-4567",
+   "email_address": "security@martinez.com"
+  }
+ }
+}

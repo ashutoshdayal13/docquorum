@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "date_of_lease": "10/15/2023",
+  "lease_number": "USG-LE-2023-00421-RICHARD",
+  "property_description": "A commercial building located at 6051 Vega Forges Apt. 401, North Richard, SC 02208, consisting of",
+  "property_use": "Office space for the United States Government's community education programs",
+  "lease_terms": "The lease is renewable for a period of 5 years, subject to mutual agreement between the parties",
+  "payable_to": "Mitchell-Jackson Properties, 6051 Vega Forges Apt. 401, North Richard, SC 02208",
+  "rental_period_unit": "year",
+  "lease_start_date": "11/01/2023",
+  "lease_end_date": "10/31/2033",
+  "lessor": {
+   "name": "Abril X. Miller",
+   "address": "6051 Vega Forges Apt. 401, North Richard, SC 02208",
+   "interest": "Owner and Community Education Officer at Mitchell-Jackson Properties"
+  }
+ },
+ "parse": {
+  "date_of_lease": "10/15/2023",
+  "lease_number": "USG-LE-2023-00421-RICHARD",
+  "property_description": "A commercial building located at 6051 Vega Forges Apt. 401, North Richard, SC 02208",
+  "property_use": "Office space for the United States Government's community education programs",
+  "lease_terms": "The lease is renewable for a period of 5 years, subject to mutual agreement between the parties",
+  "payable_to": "Mitchell-Jackson Properties, 6051 Vega Forges Apt. 401, North Richard, SC 02208",
+  "rental_period_unit": "year",
+  "lease_start_date": "11/01/2023",
+  "lease_end_date": "10/31/2033",
+  "lessor": {
+   "name": "Abril X. Miller",
+   "address": "6051 Vega Forges Apt. 401, North Richard, SC 02208",
+   "interest": "Owner and Community Education Officer at Mitchell-Jackson Properties"
+  }
+ },
+ "oneshot": {
+  "date_of_lease": "10/15/2023",
+  "lease_number": "USG-LE-2023-00421-RICHARD",
+  "property_description": "A commercial building located at 6051 Vega Forges Apt. 401, North Richard, SC 02208",
+  "property_use": "Office space for the United States Government's community education programs",
+  "lease_terms": "The lease is renewable for a period of 5 years, subject to mutual agreement between the parties",
+  "payable_to": "Mitchell-Jackson Properties, 6051 Vega Forges Apt. 401, North Richard, SC 02208",
+  "rental_period_unit": "year",
+  "lease_start_date": "11/01/2023",
+  "lease_end_date": "10/31/2033",
+  "lessor": {
+   "name": "Abril X. Miller",
+   "address": "6051 Vega Forges Apt. 401, North Richard, SC 02208",
+   "interest": "Owner and Community Education Officer at Mitchell-Jackson Properties"
+  }
+ }
+}

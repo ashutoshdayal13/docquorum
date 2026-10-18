@@ -1,0 +1,19 @@
+{
+ "business_name": "Global BioTech Innovations Ltd.",
+ "taxpayer_identification_number": "TIN-2023-GBI-54678",
+ "organization_id_number": "ORG-2023-GBI-12345",
+ "business_address": "1234 Biotech Park, Suite 500, Springfield, IL 62704, USA",
+ "affiliates": [
+  "BioTech Solutions Inc.",
+  "HealthTech Labs Ltd.",
+  "MedTech Innovations Co.",
+  "PharmaTech Research Group",
+  "ClinicalTech Systems LLC"
+ ],
+ "certification_requester": {
+  "name": "Jatin R. Ramsey",
+  "phone": "(895) 619-4021",
+  "mailing_address": "17558 Joseph Club Apt. 614, Bryanfurt, TX 33949",
+  "email": "jatin.ramsey@aol.com"
+ }
+}

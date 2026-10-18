@@ -1,0 +1,19 @@
+{
+ "organization_name": "Singh-Ballard Neurosurgical Services",
+ "applicant": {
+  "name": "Valentina V. Karge",
+  "title": "Neurosurgeon and IT Administrator",
+  "mailing_address": "1070 Smith Rest, Cynthiahaven, NH",
+  "zip_code": "20626",
+  "phone_number": "ext. (615) 744-5289",
+  "email": "vkarge@singhballard.com"
+ },
+ "primary_contact": {
+  "name": "Thomas F. Fisher",
+  "title": "IT Manager for Anderson-Gutierrez",
+  "mailing_address": "9446 Matthews Mountain Suite 275, Lake Barbara, NY",
+  "zip_code": "81773",
+  "phone_number": "ext. (674) 750-0872",
+  "email": "tfisher@andersongutierrez.com"
+ }
+}

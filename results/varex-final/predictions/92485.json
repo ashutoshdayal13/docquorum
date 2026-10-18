@@ -1,0 +1,29 @@
+{
+ "project_name": "Harmony Heights Apartments",
+ "project_number": "HUD-2023-00456",
+ "project_location": "1234 Maple Avenue, Springfield, IL 62704",
+ "request_number": "PTO-2023-00123",
+ "mortgagor": {
+  "name": "Hugues V. Cusano",
+  "date": "05/15/2023"
+ },
+ "architect": {
+  "name": "Hugues V. Cusano",
+  "date": "04/10/2023"
+ },
+ "contractor": {
+  "name": "Hugues V. Cusano",
+  "date": "05/10/2023"
+ },
+ "mortgagee": {
+  "name": "Hugues V. Cusano",
+  "date": "05/20/2023",
+  "address": "02566 Rita Junctions Suite 636, Port Ryanborough, PA 78505"
+ },
+ "units": [
+  {
+   "identifier": "Unit-101",
+   "description": "Two-bedroom apartment with modern amenities"
+  }
+ ]
+}

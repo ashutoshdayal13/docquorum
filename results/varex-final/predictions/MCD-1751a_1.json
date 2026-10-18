@@ -1,0 +1,14 @@
+{
+ "company_name": "Barnes PLC",
+ "customer_account_number": "7494-3995-7571",
+ "contact_person": "Fabian O. Pedroza",
+ "daytime_phone_number": "(556) 413-4754",
+ "permit_number": "WT-2023-7571",
+ "comments": "The original sticker was lost during a recent office move.",
+ "mailing_address_details": {
+  "mailing_address": "240 William Trail",
+  "city": "New Stevenmouth",
+  "state": "FL",
+  "zip_code": "29714"
+ }
+}

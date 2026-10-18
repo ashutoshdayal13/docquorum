@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "wic_agency": "Sacramento WIC Program",
+  "wic_id": "WIC123456",
+  "formula_medical_food": "Neocate Infant Formula",
+  "gastrointestinal_disorder": "Gastroesophageal reflux disease",
+  "specific_food_allergy": "Cow's milk protein allergy",
+  "patient": {
+   "name": "Anthony Fermi",
+   "birth_date": "10/04/1962",
+   "measurement_date": "06/01/2023"
+  },
+  "parent_caregiver": {
+   "name": "Cristina Lewis",
+   "phone_number": "(327) 782-4462"
+  }
+ },
+ "parse": {
+  "wic_agency": "Sacramento WIC Program",
+  "wic_id": "WIC123456",
+  "formula_medical_food": "Neocate Infant Formula",
+  "gastrointestinal_disorder": "Gastroesophageal reflux disease",
+  "specific_food_allergy": "Cow's milk protein allergy",
+  "patient": {
+   "name": "Anthony Fermi",
+   "birth_date": "10/04/1962",
+   "measurement_date": "06/01/2023"
+  },
+  "parent_caregiver": {
+   "name": "Cristina Lewis",
+   "phone_number": "(327) 782-4462"
+  }
+ },
+ "oneshot": {
+  "wic_agency": "Sacramento WIC Program",
+  "wic_id": "WIC123456",
+  "formula_medical_food": "Neocate Infant Formula",
+  "gastrointestinal_disorder": "Gastroesophageal reflux disease",
+  "specific_food_allergy": "Cow's milk protein allergy",
+  "patient": {
+   "name": "Anthony Fermi",
+   "birth_date": "10/04/1962",
+   "measurement_date": "06/01/2023"
+  },
+  "parent_caregiver": {
+   "name": "Cristina Lewis",
+   "phone_number": "(327) 782-4462"
+  }
+ }
+}

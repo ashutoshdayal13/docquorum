@@ -1,0 +1,35 @@
+{
+ "primary": {
+  "permit_number": "GSA-2023-54612",
+  "permittee_agency_name": "Mendoza-Jackson",
+  "project_designation": "Land Survey and Documentation for Federal Property",
+  "property_description": "Federal Land Parcel 456, near Lake James, VA",
+  "purpose_of_permit": "Conducting land surveys and documentation for federal property management",
+  "special_conditions": "Permittee to comply with all environmental regulations and safety protocols",
+  "period_covered_from": "01/01/2023",
+  "period_covered_to": "12/31/2023",
+  "exhibit_reference": "Exhibit A - Federal Land Parcel"
+ },
+ "parse": {
+  "permit_number": "GSA-2023-54612",
+  "permittee_agency_name": "Mendoza-Jackson",
+  "project_designation": "Land Survey and Documentation for Federal Property",
+  "property_description": "Federal Land Parcel 456, near Lake James, VA",
+  "purpose_of_permit": "Conducting land surveys and documentation for federal property management",
+  "special_conditions": "Permittee to comply with all environmental regulations and safety protocols",
+  "period_covered_from": "01/01/2023",
+  "period_covered_to": "12/31/2023",
+  "exhibit_reference": "Exhibit A - Federal Land Parcel"
+ },
+ "oneshot": {
+  "permit_number": "GSA-2023-54612",
+  "permittee_agency_name": "Mendoza-Jackson",
+  "project_designation": "Land Survey and Documentation for Federal Property",
+  "property_description": "Federal Land Parcel 456, near Lake James, VA",
+  "purpose_of_permit": "Conducting land surveys and documentation for federal property management",
+  "special_conditions": "Permittee to comply with all environmental regulations and safety protocols",
+  "period_covered_from": "01/01/2023",
+  "period_covered_to": "12/31/2023",
+  "exhibit_reference": "Exhibit A - Federal Land Parcel"
+ }
+}

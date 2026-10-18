@@ -1,0 +1,23 @@
+{
+ "primary": {
+  "correspondence_symbol": "GSA-2023-5",
+  "sale_number": "GSA-23-00546",
+  "sale_date": "November 15, 2023 at 10:00 AM",
+  "sale_location": "GSA Auction Facility, 123 Government Ave, Washington, DC",
+  "inspection_details": "Inspection available November 14, 2023 from 9:00 AM to 4:00"
+ },
+ "parse": {
+  "correspondence_symbol": "GSA-2023-5",
+  "sale_number": "GSA-23-00546",
+  "sale_date": "November 15, 2023 at 10:00 AM",
+  "sale_location": "GSA Auction Facility, 123 Government Ave, Washington, DC",
+  "inspection_details": "Inspection available November 14, 2023 from 9:00 AM to 4:00"
+ },
+ "oneshot": {
+  "correspondence_symbol": "GSA-2023-5",
+  "sale_number": "GSA-23-00546",
+  "sale_date": "November 15, 2023 at 10:00 AM",
+  "sale_location": "GSA Auction Facility, 123 Government Ave, Washington, DC",
+  "inspection_details": "Inspection available November 14, 2023 from 9:00 AM to 4:00"
+ }
+}

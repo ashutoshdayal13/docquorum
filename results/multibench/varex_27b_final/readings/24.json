@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "office": "Office of Chief Human Capital Officer",
+  "date_received": "11/15/2023",
+  "date_submitted_to_assistant_secretary": "11/20/2023",
+  "originator": "Miranda C. Williams",
+  "summary_of_issue_proposal": "Proposal to implement a new training program for human capital development aimed at improving employee skills and productivity. The program is estimated to cost $378,109.98 and is expected to benefit over 500 employees annually.",
+  "assistant_secretary_decision_directions": "Approve the proposal with the condition that a detailed implementation plan and budget breakdown be submitted for review before final approval. The plan should include timelines, key performance indicators, and a risk management strategy."
+ },
+ "parse": {
+  "office": "Office of Chief Human Capital Officer",
+  "date_received": "11/15/2023",
+  "date_submitted_to_assistant_secretary": "11/20/2023",
+  "originator": "Miranda C. Williams",
+  "summary_of_issue_proposal": "Proposal to implement a new training program for human capital development aimed at improving employee skills and productivity. The program is estimated to cost $378,109.98 and is expected to benefit over 500 employees annually.",
+  "assistant_secretary_decision_directions": "Approve the proposal with the condition that a detailed implementation plan and budget breakdown be submitted for review before final approval. The plan should include timelines, key performance indicators, and a risk management strategy."
+ },
+ "oneshot": {
+  "office": "Office of Chief Human Capital Officer",
+  "date_received": "11/15/2023",
+  "date_submitted_to_assistant_secretary": "11/20/2023",
+  "originator": "Miranda C. Williams",
+  "summary_of_issue_proposal": "Proposal to implement a new training program for human capital development aimed at improving employee skills and productivity. The program is estimated to cost $378,109.98 and is expected to benefit over 500 employees annually.",
+  "assistant_secretary_decision_directions": "Approve the proposal with the condition that a detailed implementation plan and budget breakdown be submitted for review before final approval. The plan should include timelines, key performance indicators, and a risk management strategy."
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "communication_number": "DPM-2025-98758",
+  "date": "10/25/2023",
+  "association_name": "Gutierrez-Brown Association",
+  "down_payment_due_date": "11/10/2023",
+  "down_payment_period": "Within 15 days",
+  "escrow_account": "2968-2919-8133",
+  "party_1": {
+   "name": "Amanda Morrow",
+   "property": "3856 Lopez Mount, East"
+  },
+  "project": {
+   "location": "North Jonathanfurt, GA 16050",
+   "details": "Residential"
+  }
+ },
+ "parse": {
+  "communication_number": "DPM-2025-98758",
+  "date": "10/25/2023",
+  "association_name": "Gutierrez-Brown Association",
+  "down_payment_due_date": "11/10/2023",
+  "down_payment_period": "Within 15 days",
+  "escrow_account": "2968-2919-8133",
+  "party_1": {
+   "name": "Amanda Morrow",
+   "property": "3856 Lopez Mount, East"
+  },
+  "project": {
+   "location": "North Jonathanfurt, GA 16050",
+   "details": "Residential"
+  }
+ },
+ "oneshot": {
+  "communication_number": "DPM-2025-98758",
+  "date": "10/25/2023",
+  "association_name": "Gutierrez-Brown Association",
+  "down_payment_due_date": "11/10/2023",
+  "down_payment_period": "Within 15 days",
+  "escrow_account": "2968-2919-8133",
+  "party_1": {
+   "name": "Amanda Morrow",
+   "property": "3856 Lopez Mount, East"
+  },
+  "project": {
+   "location": "North Jonathanfurt, GA 16050",
+   "details": "Residential"
+  }
+ }
+}

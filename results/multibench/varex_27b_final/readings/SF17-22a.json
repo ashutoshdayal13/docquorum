@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "date_expressed": "05/20/2023",
+  "to_departmental_address": "Department of the Navy, Naval Sea Systems Command",
+  "shipyard_name_and_address": "Stone Shipyards, 35348 Robin Turnpike, East",
+  "coast": "Great Lakes",
+  "parent_company_name_and_address": "Stone PLC, 35348 Robin Turnpike Apt. 817,",
+  "date_of_name_change": "04/15/2023",
+  "previous_company_name": "Stone Industrial Shipyards, 35348 Robin Turnpike,",
+  "senior_executive_name": "Elizabeth J. Ortiz",
+  "dockmaster_poc": "Jacob G. Velazquez, Dockmaster",
+  "return_completed_form_to": "Department of the Navy, Naval Sea Systems Command, Washington, DC",
+  "remarks": "This form is submitted for the annual review of shipyard capabilities and certifications."
+ },
+ "parse": {
+  "date_expressed": "05/20/2023",
+  "to_departmental_address": "Department of the Navy, Naval Sea Systems Command",
+  "shipyard_name_and_address": "Stone Shipyards, 35348 Robin Turnpike, East",
+  "coast": "Great Lakes",
+  "parent_company_name_and_address": "Stone PLC, 35348 Robin Turnpike Apt. 817,",
+  "date_of_name_change": "04/15/2023",
+  "previous_company_name": "Stone Industrial Shipyards, 35348 Robin Turnpike,",
+  "senior_executive_name": "Elizabeth J. Ortiz",
+  "dockmaster_poc": "Jacob G. Velazquez, Dockmaster",
+  "return_completed_form_to": "Department of the Navy, Naval Sea Systems Command, Washington, DC",
+  "remarks": "This form is submitted for the annual review of shipyard capabilities and certifications."
+ },
+ "oneshot": {
+  "date_expressed": "05/20/2023",
+  "to_departmental_address": "Department of the Navy, Naval Sea Systems Command",
+  "shipyard_name_and_address": "Stone Shipyards, 35348 Robin Turnpike, East",
+  "coast": "Great Lakes",
+  "parent_company_name_and_address": "Stone PLC, 35348 Robin Turnpike Apt. 817,",
+  "date_of_name_change": "04/15/2023",
+  "previous_company_name": "Stone Industrial Shipyards, 35348 Robin Turnpike,",
+  "senior_executive_name": "Elizabeth J. Ortiz",
+  "dockmaster_poc": "Jacob G. Velazquez, Dockmaster",
+  "return_completed_form_to": "Department of the Navy, Naval Sea Systems Command, Washington, DC",
+  "remarks": "This form is submitted for the annual review of shipyard capabilities and certifications."
+ }
+}

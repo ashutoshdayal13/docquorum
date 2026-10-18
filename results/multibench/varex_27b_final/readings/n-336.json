@@ -1,0 +1,56 @@
+{
+ "primary": {
+  "attorney_state_bar_number": "RX-2024-OH-69875",
+  "date_of_birth": "03/22/1983",
+  "other_names_used": [
+   "Karen M. Smith",
+   "Karen Thompson"
+  ],
+  "current_legal_name": {
+   "first_name": "Karen",
+   "middle_name": "Marie",
+   "last_name": "Martin"
+  },
+  "physical_address": {
+   "street": "143 Melissa Road",
+   "city": "New Jennifer",
+   "zip_code": "37517"
+  }
+ },
+ "parse": {
+  "attorney_state_bar_number": "RX-2024-OH-69875",
+  "date_of_birth": "03/22/1983",
+  "other_names_used": [
+   "Karen M. Smith",
+   "Karen Thompson"
+  ],
+  "current_legal_name": {
+   "first_name": "Karen",
+   "middle_name": "Marie",
+   "last_name": "Martin"
+  },
+  "physical_address": {
+   "street": "143 Melissa Road",
+   "city": "New Jennifer",
+   "zip_code": "37517"
+  }
+ },
+ "oneshot": {
+  "attorney_state_bar_number": "RX-2024-OH-69875",
+  "date_of_birth": "03/22/1983",
+  "other_names_used": [
+   "Karen M. Smith",
+   "Karen Thompson"
+  ],
+  "current_legal_name": {
+   "first_name": "Karen",
+   "middle_name": "Marie",
+   "last_name": "Martin"
+  },
+  "physical_address": {
+   "street": "143 Melissa Road",
+   "city": "New Jennifer",
+   "zip_code": "37517"
+  }
+ }
+}

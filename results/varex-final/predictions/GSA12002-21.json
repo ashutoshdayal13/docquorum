@@ -1,0 +1,25 @@
+{
+ "customer_agency_name": "Department of Homeland Security",
+ "agency_bureau_code": "DHS-001",
+ "occupancy_agreement_number": "OA-2023-45678",
+ "oa_expiration_date": "12/31/2025",
+ "rplm_date": "03/15/2023",
+ "building_info": {
+  "building_number": "BLDG-001",
+  "building_name": "Federal Security Building",
+  "building_address": "123 Main Street",
+  "city": "Washington",
+  "state": "DC"
+ },
+ "project_management": {
+  "project_manager_name": "Kevin Kala",
+  "project_manager_signature_date": "03/15/2023",
+  "ehsf_project_management_representative": "Eugenia X. Schroeder",
+  "ehsf_date": "03/15/2023"
+ },
+ "high_risk_indications": {
+  "high_risk_laboratory": "Yes, biological hazards",
+  "explosive_materials_storage": "No",
+  "firing_range_or_shoot_house": "No"
+ }
+}

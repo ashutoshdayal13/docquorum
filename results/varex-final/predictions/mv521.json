@@ -1,0 +1,24 @@
+{
+ "driving_school_name": "SafeWheels Driving Academy",
+ "corporation_name": "SafeWheels Driving Academy, Inc.",
+ "owner_name": "Pamela Kannan",
+ "driving_school_website": "www.safewheelsdriving.com",
+ "main_office": {
+  "address": "698 Bradford Inlet, Wrightside, PA 37489",
+  "phone": "(259) 05522",
+  "fax": "12122155"
+ },
+ "branch_office": {
+  "address": "45946 Kathleen Port, James side, NC 08088",
+  "phone": "(169) 59270",
+  "fax": "17848228"
+ },
+ "contact": {
+  "first_name": "Pamela",
+  "last_name": "Kannan",
+  "title": "Commercial/reside",
+  "home_phone": "619427156",
+  "fax": "121221557",
+  "email": "pamela.kannan@aol.com"
+ }
+}

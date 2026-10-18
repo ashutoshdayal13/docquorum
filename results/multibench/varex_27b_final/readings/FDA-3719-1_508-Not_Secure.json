@@ -1,0 +1,62 @@
+{
+ "primary": {
+  "fei_number": "123456789-00001",
+  "firm_legal_name": "Walker-Nunez Hydrogeological Services",
+  "inspection_end_date": "05/15/2023",
+  "telephone_number": "(595) 204-6699",
+  "interviewed_person": "Ikshita X. Lester, Hydrogeologist",
+  "gps_coordinates": "40.712776, -74.005974",
+  "fda_district_office": "FDA New Jersey District Office",
+  "most_responsible_person": "Ikshita X. Lester, Hydrogeologist",
+  "lead_investigator": "Anna Maria Smith",
+  "lead_affiliation": "Robinson Ltd",
+  "other_firm_type": "Environmental Consulting Firm",
+  "testing_incoming_materials": "All incoming materials are tested for pH, conductivity, and heavy metal content.",
+  "firm_address": {
+   "firm_physical_address": "22171 Greene Lock",
+   "firm_city": "Johnsonbury",
+   "firm_state": "New Jersey",
+   "zip_code": "89986"
+  }
+ },
+ "parse": {
+  "fei_number": "123456789-00001",
+  "firm_legal_name": "Walker-Nunez Hydrogeological Services",
+  "inspection_end_date": "05/15/2023",
+  "telephone_number": "(595) 204-6699",
+  "interviewed_person": "Ikshita X. Lester, Hydrogeologist",
+  "gps_coordinates": "40.712776, -74.005974",
+  "fda_district_office": "FDA New Jersey District Office",
+  "most_responsible_person": "Ikshita X. Lester, Hydrogeologist",
+  "lead_investigator": "Anna Maria Smith",
+  "lead_affiliation": "Robinson Ltd",
+  "other_firm_type": "Environmental Consulting Firm",
+  "testing_incoming_materials": "All incoming materials are tested for pH, conductivity, and heavy metal content.",
+  "firm_address": {
+   "firm_physical_address": "22171 Greene Lock",
+   "firm_city": "Johnsonbury",
+   "firm_state": "New Jersey",
+   "zip_code": "89986"
+  }
+ },
+ "oneshot": {
+  "fei_number": "123456789-00001",
+  "firm_legal_name": "Walker-Nunez Hydrogeological Services",
+  "inspection_end_date": "05/15/2023",
+  "telephone_number": "(595) 204-6699",
+  "interviewed_person": "Ikshita X. Lester, Hydrogeologist",
+  "gps_coordinates": "40.712776, -74.005974",
+  "fda_district_office": "FDA New Jersey District Office",
+  "most_responsible_person": "Ikshita X. Lester, Hydrogeologist",
+  "lead_investigator": "Anna Maria Smith",
+  "lead_affiliation": "Robinson Ltd",
+  "other_firm_type": "Environmental Consulting Firm",
+  "testing_incoming_materials": "All incoming materials are tested for pH, conductivity, and heavy metal content.",
+  "firm_address": {
+   "firm_physical_address": "22171 Greene Lock",
+   "firm_city": "Johnsonbury",
+   "firm_state": "New Jersey",
+   "zip_code": "89986"
+  }
+ }
+}

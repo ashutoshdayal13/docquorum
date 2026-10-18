@@ -1,0 +1,17 @@
+{
+ "date_of_request": "06/15/2023",
+ "organization_name": "Le Inc",
+ "tin_ein": "27-1234567",
+ "organization_address": {
+  "street": "620 Cameron Village",
+  "city": "West James",
+  "state": "TX",
+  "zip_code": "44067"
+ },
+ "contact_information": {
+  "contact_name": "Kroker, Sabrina I.",
+  "contact_title": "Financial trader",
+  "contact_phone": "(802) 427-8012",
+  "contact_email": "skroker@le.com"
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "primary": {
+  "facility_name": "Sawyer, Figueroa and Melton",
+  "date_of_request": "04/15/2023",
+  "license_number": "PLS-1999-NC-28934",
+  "start_date": "04/16/2023",
+  "end_date": "04/30/2023",
+  "regulation_for_flexibility": "Staffing Requirements",
+  "facility_contact": {
+   "contact_person_name": "Brian U. Boyd",
+   "facility_phone": "(748) 153-3675",
+   "facility_fax_number": "(817) 267-3045",
+   "email_address": "bboyd@sawyer.com"
+  },
+  "facility_address": {
+   "facility_address": "8599 Mark Streets",
+   "city": "Merritthaven",
+   "state": "NC",
+   "zip_code": "74317"
+  }
+ },
+ "parse": {
+  "facility_name": "Sawyer, Figueroa and Melton",
+  "date_of_request": "04/15/2023",
+  "license_number": "PLS-1999-NC-28934",
+  "start_date": "04/16/2023",
+  "end_date": "04/30/2023",
+  "regulation_for_flexibility": "Staffing Requirements",
+  "facility_contact": {
+   "contact_person_name": "Brian U. Boyd",
+   "facility_phone": "(748) 153-3675",
+   "facility_fax_number": "(817) 267-3045",
+   "email_address": "bboyd@sawyer.com"
+  },
+  "facility_address": {
+   "facility_address": "8599 Mark Streets",
+   "city": "Merritthaven",
+   "state": "NC",
+   "zip_code": "74317"
+  }
+ },
+ "oneshot": {
+  "facility_name": "Sawyer, Figueroa and Melton",
+  "date_of_request": "04/15/2023",
+  "license_number": "PLS-1999-NC-28934",
+  "start_date": "04/16/2023",
+  "end_date": "04/30/2023",
+  "regulation_for_flexibility": "Staffing Requirements",
+  "facility_contact": {
+   "contact_person_name": "Brian U. Boyd",
+   "facility_phone": "(748) 153-3675",
+   "facility_fax_number": "(817) 267-3045",
+   "email_address": "bboyd@sawyer.com"
+  },
+  "facility_address": {
+   "facility_address": "8599 Mark Streets",
+   "city": "Merritthaven",
+   "state": "NC",
+   "zip_code": "74317"
+  }
+ }
+}

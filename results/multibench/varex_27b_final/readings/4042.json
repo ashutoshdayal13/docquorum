@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "courses": [
+   "Introduction to International Aid Management",
+   "Project Planning and Implementation for NGOs",
+   "Fundraising Strategies for Non-Profits",
+   "Conflict Resolution in Development Work",
+   "Grant Writing and Proposal Development"
+  ],
+  "supervisor_name": "Matilda C. Tran",
+  "supervisor_signature_date": "03/15/2023",
+  "remarks": "Adelaide is seeking to enhance her skills in project management and fundraising to better support our international aid projects."
+ },
+ "parse": {
+  "courses": [
+   "Introduction to International Aid Management",
+   "Project Planning and Implementation for NGOs",
+   "Fundraising Strategies for Non-Profits",
+   "Conflict Resolution in Development Work",
+   "Grant Writing and Proposal Development"
+  ],
+  "supervisor_name": "Matilda C. Tran",
+  "supervisor_signature_date": "03/15/2023",
+  "remarks": "Adelaide is seeking to enhance her skills in project management and fundraising to better support our international aid projects."
+ },
+ "oneshot": {
+  "courses": [
+   "Introduction to International Aid Management",
+   "Project Planning and Implementation for NGOs",
+   "Fundraising Strategies for Non-Profits",
+   "Conflict Resolution in Development Work",
+   "Grant Writing and Proposal Development"
+  ],
+  "supervisor_name": "Matilda C. Tran",
+  "supervisor_signature_date": "03/15/2023",
+  "remarks": "Adelaide is seeking to enhance her skills in project management and fundraising to better support our international aid projects."
+ }
+}

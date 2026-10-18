@@ -1,0 +1,137 @@
+{
+ "primary": {
+  "fhava_case_number": "RFQ-2022-21365",
+  "service_date": "06/01/2023",
+  "construction_type": "Single Family Residence",
+  "property_location": "123 Main Street, Springfield, IL 62704",
+  "comments": "Termite treatment completed as per HUD guidelines. All areas treated and inspected.",
+  "attachments": [
+   "Inspection Report.pdf"
+  ],
+  "company_info": {
+   "name": "Macdonald-Lucero",
+   "address": "391 Rachel Trafficway Apt. 619",
+   "city": "West Joshuastad",
+   "state": "MT",
+   "zip": "65652",
+   "license_number": "PCO-2020-MT-84321",
+   "phone": "(465) 815-1742"
+  },
+  "builder_info": {
+   "name": "Vanessa R. Nichols",
+   "phone": "(977) 456-9241"
+  },
+  "soil_termiticide_info": {
+   "brand": "Termidor",
+   "epa_number": "12345-678",
+   "gallons": 50
+  },
+  "wood_termiticide_info": {
+   "brand": "Bora-Care",
+   "epa_number": "111213-1415",
+   "gallons": 20
+  },
+  "bait_system_info": {
+   "name": "Advance Termite Bait System",
+   "epa_number": "78901-234",
+   "stations": 20
+  },
+  "physical_barrier_system_info": {
+   "name": "Termi-Mesh"
+  },
+  "applicator_info": {
+   "name": "Vanessa R. Nichols",
+   "certification_number": "MT-2020-59246"
+  }
+ },
+ "parse": {
+  "fhava_case_number": "RFQ-2022-21365",
+  "service_date": "06/01/2023",
+  "construction_type": "Single Family Residence",
+  "property_location": "123 Main Street, Springfield, IL 62704",
+  "comments": "Termite treatment completed as per HUD guidelines. All areas treated and inspected.",
+  "attachments": [
+   "Inspection Report.pdf"
+  ],
+  "company_info": {
+   "name": "Macdonald-Lucero",
+   "address": "391 Rachel Trafficway Apt. 619",
+   "city": "West Joshuaastad",
+   "state": "MT",
+   "zip": "65652",
+   "license_number": "PCO-2020-MT-84321",
+   "phone": "(465) 815-1742"
+  },
+  "builder_info": {
+   "name": "Vanessa R. Nichols",
+   "phone": "(977) 456-9241"
+  },
+  "soil_termiticide_info": {
+   "brand": "Termidor",
+   "epa_number": "12345-678",
+   "gallons": 50
+  },
+  "wood_termiticide_info": {
+   "brand": "Bora-Care",
+   "epa_number": "111213-1415",
+   "gallons": 20
+  },
+  "bait_system_info": {
+   "name": "Advance Termite Bait System",
+   "epa_number": "78901-234",
+   "stations": 20
+  },
+  "physical_barrier_system_info": {
+   "name": "Termi-Mesh"
+  },
+  "applicator_info": {
+   "name": "Vanessa R. Nichols",
+   "certification_number": "MT-2020-59246"
+  }
+ },
+ "oneshot": {
+  "fhava_case_number": "RFQ-2022-21365",
+  "service_date": "06/01/2023",
+  "construction_type": "Single Family Residence",
+  "property_location": "123 Main Street, Springfield, IL 62704",
+  "comments": "Termite treatment completed as per HUD guidelines. All areas treated and inspected.",
+  "attachments": [
+   "Inspection Report.pdf"
+  ],
+  "company_info": {
+   "name": "Macdonald-Lucero",
+   "address": "391 Rachel Trafficway Apt. 619",
+   "city": "West Joshuastad",
+   "state": "MT",
+   "zip": "65652",
+   "license_number": "PCO-2020-MT-84321",
+   "phone": "(465) 815-1742"
+  },
+  "builder_info": {
+   "name": "Vanessa R. Nichols",
+   "phone": "(977) 456-9241"
+  },
+  "soil_termiticide_info": {
+   "brand": "Termitidor",
+   "epa_number": "12345-678",
+   "gallons": 50
+  },
+  "wood_termiticide_info": {
+   "brand": "Bora-Care",
+   "epa_number": "111213-1415",
+   "gallons": 20
+  },
+  "bait_system_info": {
+   "name": "Advance Termite Bait System",
+   "epa_number": "78901-234",
+   "stations": 20
+  },
+  "physical_barrier_system_info": {
+   "name": "Termi-Mesh"
+  },
+  "applicator_info": {
+   "name": "Vanessa R. Nichols",
+   "certification_number": "MT-2020-59246"
+  }
+ }
+}

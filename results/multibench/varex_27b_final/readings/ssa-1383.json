@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "student_name": "Michael X. Melendez",
+  "claim_number": "046-27-1321",
+  "claim_letters": "C",
+  "self_employment_start_date": "03/15/2024",
+  "marriage_date": "06/10/2023",
+  "no_longer_attending_school_date": "05/20/2024",
+  "reduced_school_attendance_date": "04/10/2024",
+  "school_transfer_date": "03/01/2024",
+  "student_identification_number": "SID-2024-7502",
+  "school_year_end_date": "06/15/2024",
+  "employer_paying_for_school_date": "02/01/2024",
+  "new_school": {
+   "name": "Port Hector University, 12813 Brian Trail Apt. 287, Port Hector, WI 70328"
+  },
+  "employer": {
+   "name": "Jones-Rivera, 42566 Turner Mountains Apt. 780, Elizabethfurt, WA 65832"
+  }
+ },
+ "parse": {
+  "student_name": "Michael X. Melendez",
+  "claim_number": "046-27-1321",
+  "claim_letters": "C",
+  "self_employment_start_date": "03/15/2024",
+  "marriage_date": "06/10/2023",
+  "no_longer_attending_school_date": "05/20/2024",
+  "reduced_school_attendance_date": "04/10/2024",
+  "school_transfer_date": "03/01/2024",
+  "student_identification_number": "SID-2024-7502",
+  "school_year_end_date": "06/15/2024",
+  "employer_paying_for_school_date": "02/01/2024",
+  "new_school": {
+   "name": "Port Hector University, 12813 Brian Trail Apt. 287, Port Hector, WI 70328"
+  },
+  "employer": {
+   "name": "Jones-Rivera, 42566 Turner Mountains Apt. 780, Elizabethfurt, WA 65832"
+  }
+ },
+ "oneshot": {
+  "student_name": "Michael X. Melendez",
+  "claim_number": "046-27-1321",
+  "claim_letters": "C",
+  "self_employment_start_date": "03/15/2024",
+  "marriage_date": "06/10/2023",
+  "no_longer_attending_school_date": "05/20/2024",
+  "reduced_school_attendance_date": "04/10/2024",
+  "school_transfer_date": "03/01/2024",
+  "student_identification_number": "SID-2024-7502",
+  "school_year_end_date": "06/15/2024",
+  "employer_paying_for_school_date": "02/01/2024",
+  "new_school": {
+   "name": "Port Hector University, 12813 Brian Trail Apt. 287, Port Hector, WI 70328"
+  },
+  "employer": {
+   "name": "Jones-Rivera, 42566 Turner Mountains Apt. 780, Elizabethfurt, WA 65832"
+  }
+ }
+}

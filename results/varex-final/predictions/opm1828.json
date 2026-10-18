@@ -1,0 +1,26 @@
+{
+ "agency": "Jimenez, Stark and Gonzalez",
+ "request_date": "06/15/2023",
+ "requester_name": "Carol Salas, Chartered Public Finance Accountant",
+ "shared_service_center": "Cruz-Le SSC",
+ "ssc_positions": "In agreement with Cruz-Le SSC, needs modification from Williams-Jarvis SSC",
+ "phone_number": "(273) 921-4449",
+ "email": "csalas@jimenez.com",
+ "data_to_capture": "Employee training records, including dates, topics, instructors, and completion status for all staff members. Example report: Quarterly Training Compliance Report.",
+ "purpose_of_data_collection": "To ensure compliance with industry regulations and to track the professional development of employees.",
+ "legal_authority": "Section 4.2 of the Employee Training and Development Act, 2022",
+ "additional_information": "The data will be used to generate quarterly reports for regulatory compliance and annual reports for management review.",
+ "contact_person": "Samantha P. Ramos",
+ "contact_details": "(589) 885-7737, sramos@cruzle.com",
+ "timeline": "Initial data collection to begin by 07/01/2023, with full implementation by 12/31/2023.",
+ "implementation_considerations": "Training for HR staff on the new data collection system and integration with existing HR databases.",
+ "ehri_feeds": "HR Compliance Feed, Employee Development Feed",
+ "initial_collection_strategy": "Data will be collected via an online training management system and manually entered for existing records.",
+ "maintenance_strategy": "Regular audits to ensure data accuracy and updates to the system as needed.",
+ "location": {
+  "street": "263 Pierce Camp Suite 670, 29100 Hardy Summit, 68448 Valerie Freeway",
+  "city": "Melissatown, Olson ton, Lake Taylor",
+  "state": "IN, FL, ME",
+  "zip_code": "78162, 88750, 74983"
+ }
+}

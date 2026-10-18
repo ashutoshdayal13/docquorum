@@ -1,0 +1,29 @@
+{
+ "primary": {
+  "signature_date": "05/15/2023",
+  "personal_information": {
+   "full_name": "Thiel, Nitesh X.",
+   "date_of_birth": "10/08/1975",
+   "social_security_number": "675-45-9677",
+   "contact_information": "661 Chang Groves Apt. 966, North"
+  }
+ },
+ "parse": {
+  "signature_date": "05/15/2023",
+  "personal_information": {
+   "full_name": "Thiel, Nitesh X.",
+   "date_of_birth": "10/08/1975",
+   "social_security_number": "675-45-9677",
+   "contact_information": "661 Chang Groves Apt. 966, North"
+  }
+ },
+ "oneshot": {
+  "signature_date": "05/15/2023",
+  "personal_information": {
+   "full_name": "Thiel, Nitesh X.",
+   "date_of_birth": "10/08/1975",
+   "social_security_number": "675-45-9677",
+   "contact_information": "661 Chang Groves Apt. 966, North"
+  }
+ }
+}

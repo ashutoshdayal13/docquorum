@@ -1,0 +1,35 @@
+{
+ "primary": {
+  "housing_authority_name": "Sanchezstad Housing Authority",
+  "amount_of_proceeds": 294298.66,
+  "interest_rate": "3.5% - 4.0%",
+  "interest_rate_fixed": "No",
+  "interest_rate_cap": "5.5%",
+  "term_years": "30 years",
+  "most_recent_formula_grant": 58.68,
+  "first_direct_hud_payment_due": "03/15/2024",
+  "ds_schedule_date": "01/01/2024"
+ },
+ "parse": {
+  "housing_authority_name": "Sanchezstad Housing Authority",
+  "amount_of_proceeds": 294298.66,
+  "interest_rate": "3.5% - 4.0%",
+  "interest_rate_fixed": "No",
+  "interest_rate_cap": "5.5%",
+  "term_years": "30 years",
+  "most_recent_formula_grant": 58.68,
+  "first_direct_hud_payment_due": "03/15/2024",
+  "ds_schedule_date": "01/01/2024"
+ },
+ "oneshot": {
+  "housing_authority_name": "Sanchezstad Housing Authority",
+  "amount_of_proceeds": 294298.66,
+  "interest_rate": "3.5% - 4.0%",
+  "interest_rate_fixed": "No",
+  "interest_rate_cap": "5.5%",
+  "term_years": "30 years",
+  "most_recent_formula_grant": 58.68,
+  "first_direct_hud_payment_due": "03/15/2024",
+  "ds_schedule_date": "01/01/2024"
+ }
+}

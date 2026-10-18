@@ -1,0 +1,95 @@
+{
+ "primary": {
+  "license_number": "PF-2024-00123",
+  "name_of_firm": "Leon, Williams and Brady",
+  "dba_name": "Leon Foods",
+  "website": "www.leonfoods.com",
+  "owner_corporate_name": "Leon, Williams and Brady Inc.",
+  "state_of_incorporation": "Michigan",
+  "facility_square_footage": "15000 sq ft",
+  "number_of_employees": 45,
+  "total_payment_due": 925025.26,
+  "owner_printed_name": "Renee J. Cook",
+  "signature_date": "03/15/2024",
+  "owners_officers_names": [
+   "Renee J. Cook, CEO",
+   "Margherita X. Wells, COO"
+  ],
+  "commodities_products": [
+   "Processed Snacks"
+  ],
+  "mailing_address": {
+   "street": "3801 Alicia Keys",
+   "city": "Lake Jessica",
+   "state": "MI",
+   "zip_code": "78172"
+  },
+  "facility_address": {
+   "street": "1234 Processing Way",
+   "city": "Detroit",
+   "state": "MI",
+   "zip_code": "48201"
+  }
+ },
+ "parse": {
+  "license_number": "PF-2024-00123",
+  "name_of_firm": "Leon, Williams and Brady",
+  "dba_name": "Leon Foods",
+  "website": "www.leonfoods.com",
+  "owner_corporate_name": "Leon, Williams and Brady Inc.",
+  "state_of_incorporation": "Michigan",
+  "facility_square_footage": "15000 sq ft",
+  "number_of_employees": 45,
+  "total_payment_due": 925025.26,
+  "owner_printed_name": "Renee J. Cook",
+  "signature_date": "03/15/2024",
+  "owners_officers_names": [
+   "Renee J. Cook, CEO",
+   "Margherita X. Wells, COO"
+  ],
+  "commodities_products": [
+   "Processed Snacks"
+  ],
+  "mailing_address": {
+   "street": "3801 Alicia Keys"
+  },
+  "facility_address": {
+   "street": "1234 Processing Way",
+   "city": "Detroit",
+   "state": "MI",
+   "zip_code": "48201"
+  }
+ },
+ "oneshot": {
+  "license_number": "PF-2024-00123",
+  "name_of_firm": "Leon, Williams and Brady",
+  "dba_name": "Leon Foods",
+  "website": "www.leonfoods.com",
+  "owner_corporate_name": "Leon, Williams and Brady Inc.",
+  "state_of_incorporation": "Michigan",
+  "facility_square_footage": "15000 sq ft",
+  "number_of_employees": 45,
+  "total_payment_due": 925025.26,
+  "owner_printed_name": "Renee J. Cook",
+  "signature_date": "03/15/2024",
+  "owners_officers_names": [
+   "Renee J. Cook, CEO",
+   "Margherita X. Wells, COO"
+  ],
+  "commodities_products": [
+   "Processed Snacks"
+  ],
+  "mailing_address": {
+   "street": "3801 Alicia Keys",
+   "city": "Lake Jessica",
+   "state": "MI",
+   "zip_code": "78172"
+  },
+  "facility_address": {
+   "street": "1234 Processing Way",
+   "city": "Detroit",
+   "state": "MI",
+   "zip_code": "48201"
+  }
+ }
+}

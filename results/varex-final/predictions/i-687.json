@@ -1,0 +1,31 @@
+{
+ "family_name": "Udinese",
+ "given_name": "Francisco",
+ "middle_name": "O.",
+ "date_of_birth": "05/10/1967",
+ "other_a_numbers": [
+  "A112233445",
+  "A987654321"
+ ],
+ "home_telephone": "(578) 432-3135",
+ "work_telephone": "(260) 166-6231",
+ "social_security_number": "729597276",
+ "country_of_citizenship": "Mexico",
+ "home_address": {
+  "street": "733 Chase Loaf Apt. 779",
+  "city": "Stokesmouth",
+  "state": "GA",
+  "zip_code": "84330"
+ },
+ "mailing_address": {
+  "street": "733 Chase Loaf Apt. 779",
+  "city": "Stokesmouth",
+  "state": "GA",
+  "zip_code": "84330"
+ },
+ "place_of_birth": {
+  "city": "Mexico City",
+  "state_province": "Mexico City",
+  "country": "Mexico"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "primary": {
+  "rtc_property_address": "4735 Christopher Lakes, East Ryan, FL 38760",
+  "local_urban_homestead_program_number": "LUH20230815OK7982",
+  "atc_property_case_number": "ATC20230815FL38760",
+  "itemized_closing_costs": [
+   "Title search and insurance fee: $1200.00"
+  ]
+ },
+ "parse": {
+  "rtc_property_address": "4735 Christopher Lakes, East Ryan, FL 38760",
+  "local_urban_homestead_program_number": "LUH20230815OK7982",
+  "atc_property_case_number": "ATC20230815FL38760",
+  "itemized_closing_costs": [
+   "Title search and insurance fee: $1200.00"
+  ]
+ },
+ "oneshot": {
+  "rtc_property_address": "4735 Christopher Lakes, East Ryan, FL 38760",
+  "local_urban_homestead_program_number": "LUH20230815OK7982",
+  "atc_property_case_number": "ATC20230815FL38760",
+  "itemized_closing_costs": [
+   "Title search and insurance fee: $1200.00"
+  ]
+ }
+}

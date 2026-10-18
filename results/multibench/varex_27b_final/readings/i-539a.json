@@ -1,0 +1,74 @@
+{
+ "primary": {
+  "attorney_state_bar_number": "71029340129",
+  "applicant_preparer_information": "Gael Henrique U. Delorme, Doctor",
+  "applicant": {
+   "family_name": "Delorme",
+   "given_name": "Gael Henrique",
+   "middle_name": "U.",
+   "date_of_birth": "11/12/1973",
+   "country_of_birth": "United States of America",
+   "country_of_citizenship": "United States of America",
+   "date_of_arrival": "05/15/2010"
+  },
+  "passport": {
+   "passport_number": "PA12345678",
+   "country_of_issuance": "United States of America",
+   "expiration_date": "12/31/2025",
+   "passport_number_alternative": "PA12345678",
+   "travel_document_number": "TD987654321",
+   "country_of_passport_or_travel_document_issuance": "United States of America"
+  },
+  "nonimmigrant_status": {
+   "expiration_date": "12/31/2024"
+  }
+ },
+ "parse": {
+  "attorney_state_bar_number": "71029340129",
+  "applicant_preparer_information": "Gael Henrique U. Delorme, Doctor",
+  "applicant": {
+   "family_name": "Delorme",
+   "given_name": "Gael Henrique",
+   "middle_name": "U.",
+   "date_of_birth": "11/12/1973",
+   "country_of_birth": "United States of America",
+   "country_of_citizenship": "United States of America",
+   "date_of_arrival": "05/15/2010"
+  },
+  "passport": {
+   "passport_number": "PA12345678",
+   "country_of_issuance": "United States of America",
+   "expiration_date": "12/31/2025",
+   "passport_number_alternative": "PA12345678",
+   "travel_document_number": "TD987654321",
+   "country_of_passport_or_travel_document_issuance": "United States of America"
+  },
+  "nonimmigrant_status": {
+   "expiration_date": "12/31/2024"
+  }
+ },
+ "oneshot": {
+  "attorney_state_bar_number": "71029340129",
+  "applicant_preparer_information": "Gael Henrique U. Delorme, Doctor",
+  "applicant": {
+   "family_name": "Delorme",
+   "given_name": "Gael Henrique",
+   "middle_name": "U.",
+   "date_of_birth": "11/12/1973",
+   "country_of_birth": "United States of America",
+   "country_of_citizenship": "United States of America",
+   "date_of_arrival": "05/15/2010"
+  },
+  "passport": {
+   "passport_number": "PA12345678",
+   "country_of_issuance": "United States of America",
+   "expiration_date": "12/31/2025",
+   "passport_number_alternative": "PA12345678",
+   "travel_document_number": "TD987654321",
+   "country_of_passport_or_travel_document_issuance": "United States of America"
+  },
+  "nonimmigrant_status": {
+   "expiration_date": "12/31/2024"
+  }
+ }
+}

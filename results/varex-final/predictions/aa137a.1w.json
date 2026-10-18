@@ -1,0 +1,17 @@
+{
+ "motorist_last_name": "Armstrong",
+ "motorist_first_name": "Rachel",
+ "motorist_middle_initial": "Z",
+ "nys_driver_license_number": "CPA-2013",
+ "officer_name": "Justin D. Lee",
+ "signature_date": "05/16/2023",
+ "motorist_address": {
+  "address": "00095 Cheryl Coves",
+  "city": "Jamesland",
+  "zip_code": "72631"
+ },
+ "detention_location": {
+  "location": "Highway Patrol Checkpoint",
+  "county": "Orange County"
+ }
+}

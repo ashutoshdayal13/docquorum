@@ -1,0 +1,37 @@
+{
+ "complainant_name": "van der Hoeven, John, C.",
+ "complainant_ssn": "603420621",
+ "position_title": "Geochemist, GS-1310-12",
+ "complaint_details": "Discrimination based on national origin and age during performance evaluation.",
+ "state_remedy_sought": "Reinstatement and back pay for wrongful termination.",
+ "complaint_date": "05/15/2023",
+ "docket_number": "REF-2023-72204",
+ "complainant_name_agency": "van der Hoeven, John",
+ "delivery_date": "05/15/2023",
+ "complainant_address": {
+  "address": "224 Kimberly Motorway Apt. 648, Lake Markshire, NY",
+  "phone": "(379) 563-4313"
+ },
+ "program_office": {
+  "name": "Office of Equal Opportunity",
+  "address": "123 Main Street, Washington, DC 20500",
+  "phone": "(202) 555-1234"
+ },
+ "basis_of_discrimination": {
+  "race": "Not applicable",
+  "religion": "Not applicable",
+  "national_origin": "Dutch ancestry",
+  "handicap_physical": "None",
+  "handicap_mental": "None",
+  "age": "41"
+ },
+ "eeo_counselor": {
+  "name": "Paul Querini, Licensed Clinical Social Worker",
+  "phone": "(799) 753-6894"
+ },
+ "representative": {
+  "name": "Jenny D. Miller",
+  "phone": "(632) 207-2936",
+  "address": "193 Nathan Trace Apt. 756, East Michael, IL 46333"
+ }
+}

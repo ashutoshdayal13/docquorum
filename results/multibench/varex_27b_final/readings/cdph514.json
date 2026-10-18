@@ -1,0 +1,61 @@
+{
+ "primary": {
+  "name": "Angela K. Hale",
+  "license_number": "RA-2016-TN-16932",
+  "email_address": "angela.hale@aol.com",
+  "phone_number": "(309) 357-5244",
+  "facility_employment_information": [
+   {
+    "facility_name": "Lake Crystal Nursing Home",
+    "start_date": "01/15"
+   },
+   {
+    "facility_name": "West Angela Care Center"
+   },
+   {
+    "facility_name": "Ashleystad Rehabilitation"
+   }
+  ],
+  "change_of_address_information": {}
+ },
+ "parse": {
+  "name": "Angela K. Hale",
+  "license_number": "RA-2016-TN-16932",
+  "email_address": "angela.hale@aol.com",
+  "phone_number": "(309) 357-5244",
+  "facility_employment_information": [
+   {
+    "facility_name": "Lake Crystal Nursing Home",
+    "start_date": "01/15"
+   },
+   {
+    "facility_name": "West Angela Care Center"
+   },
+   {
+    "facility_name": "Ashleystad Rehabilitation"
+   }
+  ],
+  "change_of_address_information": {
+   "new_address": "3994 Newton Lock Apt. 682, Lake Crystal, TN 31569"
+  }
+ },
+ "oneshot": {
+  "name": "Angela K. Hale",
+  "license_number": "RA-2016-TN-16932",
+  "email_address": "angela.hale@aol.com",
+  "phone_number": "(309) 357-5244",
+  "facility_employment_information": [
+   {
+    "facility_name": "Lake Crystal Nursing Home",
+    "start_date": "01/15"
+   },
+   {
+    "facility_name": "West Angela Care Center"
+   },
+   {
+    "facility_name": "Ashleystad Rehabilitation"
+   }
+  ],
+  "change_of_address_information": {}
+ }
+}

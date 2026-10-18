@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "project_number": "CTL-2022-64682",
+  "project_name": "Green Meadows Senior Living",
+  "owner_name": "Sanchez, Quinn and Wilson",
+  "property_location": "Port Ryanborough, PA",
+  "mortgage_note_amount": 12309411.27,
+  "owner_address": {
+   "street": "02566 Rita Junctions Suite 636",
+   "city": "Port Ryanborough",
+   "zip_code": "78505"
+  }
+ },
+ "parse": {
+  "project_number": "CTL-2022-64682",
+  "project_name": "Green Meadows Senior Living",
+  "owner_name": "Sanchez, Quinn and Wilson",
+  "property_location": "Port Ryanborough, PA",
+  "mortgage_note_amount": 12309411.27,
+  "owner_address": {
+   "street": "02566 Rita Junctions Suite 636",
+   "city": "Port Ryanborough",
+   "zip_code": "78505"
+  }
+ },
+ "oneshot": {
+  "project_number": "CTL-2022-64682",
+  "project_name": "Green Meadows Senior Living",
+  "owner_name": "Sanchez, Quinn and Wilson",
+  "property_location": "Port Ryanborough, PA",
+  "mortgage_note_amount": 12309411.27,
+  "owner_address": {
+   "street": "02566 Rita Junctions Suite 636",
+   "city": "Port Ryanborough",
+   "zip_code": "78505"
+  }
+ }
+}

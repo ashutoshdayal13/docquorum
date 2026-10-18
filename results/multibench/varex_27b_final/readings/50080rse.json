@@ -1,0 +1,51 @@
+{
+ "primary": {
+  "period_covered": "2023-10-01",
+  "disbursement_type": 1,
+  "voice_response_number": "1-800-555-1234",
+  "payee_organization_name": "Johnson LLC Psychotherapy Services",
+  "grant_project_number": "GR-2023-00457",
+  "voucher_total": 173643.76,
+  "authorized_signatory": "Michele U. Camara, Psychotherapist",
+  "date_of_request": "10/15/2023",
+  "grantee_organization": {
+   "name": "Johnson LLC",
+   "tin": "98-7654321"
+  },
+  "completed_by": {
+   "name_phone_number": "Michele U. Camara, (647) 358-9032"
+  }
+ },
+ "parse": {
+  "period_covered": "from: 2023-10-01 to:",
+  "voice_response_number": "1-800-555-1234",
+  "payee_organization_name": "Johnson LLC Psychotherapy Services",
+  "grant_project_number": "GR-2023-00457",
+  "voucher_total": 173643.76,
+  "authorized_signatory": "Michele U. Camara, Psychotherapist",
+  "date_of_request": "10/15/2023",
+  "grantee_organization": {
+   "name": "Johnson LLC",
+   "tin": "98-7654321"
+  },
+  "completed_by": {
+   "name_phone_number": "Michele U. Camara, (647) 358-9032"
+  }
+ },
+ "oneshot": {
+  "period_covered": "2023-10-01",
+  "voice_response_number": "1-800-555-1234",
+  "payee_organization_name": "Johnson LLC Psychotherapy Services",
+  "grant_project_number": "GR-2023-00457",
+  "voucher_total": 173643.76,
+  "authorized_signatory": "Michele U. Camara, Psychotherapist",
+  "date_of_request": "10/15/2023",
+  "grantee_organization": {
+   "name": "Johnson LLC",
+   "tin": "98-7654321"
+  },
+  "completed_by": {
+   "name_phone_number": "Michele U. Camara, (647) 358-9032"
+  }
+ }
+}

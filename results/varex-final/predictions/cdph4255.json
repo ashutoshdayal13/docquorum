@@ -1,0 +1,15 @@
+{
+ "applicant_last_name": "Hernandez",
+ "applicant_first_name": "Jan",
+ "applicant_middle_name": "J.",
+ "applicant_ssn_itin": "121-22-4145",
+ "applicant_phone_number": "(623) 217-7691",
+ "applicant_email_address": "jan.hernandez@outlook.com",
+ "certification_date": "03/15/2023",
+ "applicant_address": {
+  "mailing_address": "711 Karen Route Suite 907",
+  "mailing_city": "Sarahland",
+  "mailing_state": "MI",
+  "mailing_zip_code": "72956"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "signature_of_applicant": "Rodney B. Tapia",
+ "date": "05/15/23",
+ "vehicle_information": {
+  "vehicle_identifier": "VH123456789012345",
+  "make": "Ford",
+  "model": "F150",
+  "year": 2015,
+  "vin": "VH123456789012345"
+ },
+ "applicant_information": {
+  "applicant_name": "Rodney B. Tapia",
+  "address": "54174 Scott Pass Suite 388"
+ }
+}

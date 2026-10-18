@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "owner_name": "Dagmara Q. Pingle",
+  "relation_to_owner": "Civil Engineer",
+  "license_plate_number": "GA 07136 Pingle",
+  "vehicle_make": "Toyota",
+  "vehicle_type": "Sedan",
+  "certifier_printed_name": "Melina R. David, Engineer, Site",
+  "purchaser": {
+   "name": "Hector L. Thomas",
+   "address": "8609 Vanessa Shoals, Richardville",
+   "city": "Richardville",
+   "state": "MO",
+   "zip_code": "04113"
+  }
+ },
+ "parse": {
+  "owner_name": "Dagmara Q. Pingle",
+  "relation_to_owner": "Civil Engineer",
+  "license_plate_number": "GA 07136 Pingle",
+  "vehicle_make": "Toyota",
+  "vehicle_type": "Sedan",
+  "certifier_printed_name": "Melina R. David, Engineer, Site",
+  "purchaser": {
+   "name": "Hector L. Thomas",
+   "address": "8609 Vanessa Shoals, Richardville",
+   "city": "Richardville",
+   "state": "MO",
+   "zip_code": "04113"
+  }
+ },
+ "oneshot": {
+  "owner_name": "Dagmara Q. Pingle",
+  "relation_to_owner": "Civil Engineer",
+  "license_plate_number": "GA 07136 Pingle",
+  "vehicle_make": "Toyota",
+  "vehicle_type": "Sedan",
+  "certifier_printed_name": "Melina R. David, Engineer, Site",
+  "purchaser": {
+   "name": "Hector L. Thomas",
+   "address": "8609 Vanessa Shoals, Richardville",
+   "city": "Richardville",
+   "state": "MO",
+   "zip_code": "04113"
+  }
+ }
+}

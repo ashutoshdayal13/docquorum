@@ -1,0 +1,22 @@
+{
+ "correspondence_code": "REF-2023-8805",
+ "organization": "HUD",
+ "date": "05/15/2023",
+ "responsible_organization": "U.S. Department of Housing and Urban Development",
+ "suggester_details": {
+  "suggester_name": "Frazier, Gregory G.",
+  "job_title": "Haematologist",
+  "series_grade": "GS-13",
+  "employee_id": "270-51-5004"
+ },
+ "office_details": {
+  "office_address": "403 Mary Vista Apt. 880, Smithshire,",
+  "office_phone_number": "(240) 358-2075"
+ },
+ "idea_details": {
+  "idea_title": "Implementation of Digital Document Management System",
+  "problem_description": "Current paper-based document management system is inefficient and prone to errors",
+  "proposed_solution": "Adoption of a digital document management system to streamline processes and reduce errors",
+  "estimated_benefit": "Increased efficiency and reduced operational costs by $396365.65 annually"
+ }
+}

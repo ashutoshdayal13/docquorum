@@ -1,0 +1,101 @@
+{
+ "primary": {
+  "worker_name": "Josephine Sandoval",
+  "worker_social_security_number": "276-77-0271",
+  "applicant_name": "Ayushman Kelly",
+  "applicant_social_security_number": "410-65-6721",
+  "worker_marriage_date": "06/15/2010",
+  "children": [
+   {
+    "name": "Kelly Josephina Kelly",
+    "date_of_birth": "05/20/2011"
+   },
+   {
+    "name": "Kelly Ayushman Jr. Kelly",
+    "date_of_birth": "08/14/2013"
+   },
+   {
+    "name": "Kelly Isabella Sandoval",
+    "date_of_birth": "11/05/2015"
+   },
+   {
+    "name": "Kelly Lucas Sandoval",
+    "date_of_birth": "03/22/2018"
+   },
+   {
+    "name": "Kelly Evelyn Sandoval",
+    "date_of_birth": "07/10/2020"
+   },
+   {
+    "name": "Kelly Samuel Sandoval",
+    "date_of_birth": "12/03/2022"
+   }
+  ]
+ },
+ "parse": {
+  "worker_name": "Josephine Sandoval",
+  "worker_social_security_number": "276-77-0271",
+  "applicant_name": "Ayushman Kelly",
+  "applicant_social_security_number": "410-65-6721",
+  "worker_marriage_date": "06/15/2010",
+  "children": [
+   {
+    "name": "Kelly Josephina Kelly",
+    "date_of_birth": "05/20/2011"
+   },
+   {
+    "name": "Kelly Ayushman Jr. Kelly",
+    "date_of_birth": "08/14/2013"
+   },
+   {
+    "name": "Kelly Isabella Sandoval",
+    "date_of_birth": "11/05/2015"
+   },
+   {
+    "name": "Kelly Lucas Sandoval",
+    "date_of_birth": "03/22/2018"
+   },
+   {
+    "name": "Kelly Evelyn Sandoval",
+    "date_of_birth": "07/10/2020"
+   },
+   {
+    "name": "Kelly Samuel Sandoval",
+    "date_of_birth": "12/03/2022"
+   }
+  ]
+ },
+ "oneshot": {
+  "worker_name": "Josephine Sandoval",
+  "worker_social_security_number": "276-77-0271",
+  "applicant_name": "Ayushman Kelly",
+  "applicant_social_security_number": "410-65-6721",
+  "worker_marriage_date": "06/15/2010",
+  "children": [
+   {
+    "name": "Kelly Josephina Kelly",
+    "date_of_birth": "05/20/2011"
+   },
+   {
+    "name": "Kelly Ayushman Jr. Kelly",
+    "date_of_birth": "08/14/2013"
+   },
+   {
+    "name": "Kelly Isabella Sandoval",
+    "date_of_birth": "11/05/2015"
+   },
+   {
+    "name": "Kelly Lucas Sandoval",
+    "date_of_birth": "03/22/2018"
+   },
+   {
+    "name": "Kelly Evelyn Sandoval",
+    "date_of_birth": "07/10/2020"
+   },
+   {
+    "name": "Kelly Samuel Sandoval",
+    "date_of_birth": "12/03/2022"
+   }
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "primary": {
+  "employee_name": "Dutta, Noemi L.",
+  "date_of_birth": "06/09/1981",
+  "social_security_number": "318-07-3997",
+  "employing_department": "Hill LLC",
+  "agency_location": "2870 Kari Freeway Suite 951, South Tammy, CA",
+  "signature_date": "10/15/2023",
+  "office_telephone_number": "119-034-1513"
+ },
+ "parse": {
+  "employee_name": "Dutta, Noemi L.",
+  "date_of_birth": "06/09/1981",
+  "social_security_number": "318-07-3997",
+  "employing_department": "Hill LLC",
+  "agency_location": "2870 Kari Freeway Suite 951, South Tammy, CA",
+  "signature_date": "10/15/2023",
+  "office_telephone_number": "119-034-1513"
+ },
+ "oneshot": {
+  "employee_name": "Dutta, Noemi L.",
+  "date_of_birth": "06/09/1981",
+  "social_security_number": "318-07-3997",
+  "employing_department": "Hill LLC",
+  "agency_location": "2870 Kari Freeway Suite 951, South Tammy, CA",
+  "signature_date": "10/15/2023",
+  "office_telephone_number": "119-034-1513"
+ }
+}

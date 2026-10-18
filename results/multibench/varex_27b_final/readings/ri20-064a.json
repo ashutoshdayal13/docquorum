@@ -1,0 +1,47 @@
+{
+ "primary": {
+  "civil_service_claim_number": "CSA CSA-2023-78901",
+  "retiree_name": "Baker, Andrew",
+  "current_spouse_name": "Paula R. Kaul",
+  "former_spouse_name": "Sarah J. Baker",
+  "former_spouse_ssn": "123-45-6789",
+  "survivor_annuity_amount": "$36.40",
+  "retiree_signature_date": "05/15/2023",
+  "retiree_phone_number": "(353) 418-2900",
+  "current_spouse_consent_name": "Paula R. Kaul",
+  "former_spouse_address": {
+   "street": "1234 Maple Street",
+   "zip_code": "62704"
+  }
+ },
+ "parse": {
+  "civil_service_claim_number": "CSA CSA-2023-78901",
+  "retiree_name": "Baker, Andrew",
+  "current_spouse_name": "Paula R. Kaul",
+  "former_spouse_name": "Sarah J. Baker",
+  "former_spouse_ssn": "123-45-6789",
+  "survivor_annuity_amount": "$36.40",
+  "retiree_signature_date": "05/15/2023",
+  "retiree_phone_number": "(353) 418-2900",
+  "current_spouse_consent_name": "Paula R. Kaul",
+  "former_spouse_address": {
+   "street": "1234 Maple Street",
+   "zip_code": "62704"
+  }
+ },
+ "oneshot": {
+  "civil_service_claim_number": "CSA-2023-78901",
+  "retiree_name": "Baker, Andrew",
+  "current_spouse_name": "Paula R. Kaul",
+  "former_spouse_name": "Sarah J. Baker",
+  "former_spouse_ssn": "123-45-6789",
+  "survivor_annuity_amount": "$36.40",
+  "retiree_signature_date": "05/15/2023",
+  "retiree_phone_number": "(353) 418-2900",
+  "current_spouse_consent_name": "Paula R. Kaul",
+  "former_spouse_address": {
+   "street": "1234 Maple Street",
+   "zip_code": "62704"
+  }
+ }
+}

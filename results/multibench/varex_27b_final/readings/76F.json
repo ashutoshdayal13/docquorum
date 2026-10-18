@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "applicant_name": "Collin, Jacqueline U.",
+  "home_address": "59198 Smith Glens",
+  "home_city_state_zip": "Port Jonathan, TX 19022",
+  "home_telephone_number": "(830) 448-6048",
+  "vehicle_year_make": "2020 Toyota Camry",
+  "state_of_registration": "TX",
+  "tag_number": "ABC1234",
+  "permit_number": "DPM-2024-84613",
+  "assigned_location": "Lot A, Space 45",
+  "place_of_employment": "Branch, Miller and Gonzalez",
+  "employment_address": "1234 Business Ave, Port Jonathan, TX 19022",
+  "office_telephone_number": "(647) 984-5066",
+  "certification_text": "I certify that the information provided in this application is true and accurate to the best of my knowledge.",
+  "signature_date": "05/15/2024"
+ },
+ "parse": {
+  "applicant_name": "Collin, Jacqueline U.",
+  "home_address": "59198 Smith Glens",
+  "home_city_state_zip": "Port Jonathan, TX 19022",
+  "home_telephone_number": "(830) 448-6048",
+  "vehicle_year_make": "2020 Toyota Camry",
+  "state_of_registration": "TX",
+  "tag_number": "ABC1234",
+  "permit_number": "DPM-2024-84613",
+  "assigned_location": "Lot A, Space 45",
+  "place_of_employment": "Branch, Miller and Gonzalez",
+  "employment_address": "1234 Business Ave, Port Jonathan, TX 19022",
+  "office_telephone_number": "(647) 984-5066",
+  "certification_text": "I, Jacqueline U. Collin, affirm that the information I have supplied on this application is complete and accurate. I understand that submission of incomplete or inaccurate information is sufficient cause for revocation of HUD parking privileges. I authorize the HUD Parking Management Office to verify submitted information with my employment office, and to verify that I may receive transit subsidy through my employer if I so choose.",
+  "signature_date": "05/15/2024"
+ },
+ "oneshot": {
+  "applicant_name": "Collin, Jacqueline U.",
+  "home_address": "59198 Smith Glens",
+  "home_city_state_zip": "Port Jonathan, TX 19022",
+  "home_telephone_number": "(830) 448-6048",
+  "vehicle_year_make": "2020 Toyota Camry",
+  "state_of_registration": "TX",
+  "tag_number": "ABC1234",
+  "permit_number": "DPM-2024-84613",
+  "assigned_location": "Lot A, Space 45",
+  "place_of_employment": "Branch, Miller and Gonzalez",
+  "employment_address": "1234 Business Ave, Port Jonathan, TX 19022",
+  "office_telephone_number": "(647) 984-5066",
+  "certification_text": "I certify that the information provided in this application is true and accurate to the best of my knowledge.",
+  "signature_date": "05/15/2024"
+ }
+}

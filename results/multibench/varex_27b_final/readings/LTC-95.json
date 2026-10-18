@@ -1,0 +1,23 @@
+{
+ "primary": {
+  "completion_date": "10/25/2023",
+  "instructor": {
+   "name": "Frederick Cruz",
+   "number": "INS-2023"
+  }
+ },
+ "parse": {
+  "completion_date": "10/25/2023",
+  "instructor": {
+   "name": "Frederick Cruz",
+   "number": "INS-2023"
+  }
+ },
+ "oneshot": {
+  "completion_date": "10/25/2023",
+  "instructor": {
+   "name": "Frederick Cruz",
+   "number": "INS-2023"
+  }
+ }
+}

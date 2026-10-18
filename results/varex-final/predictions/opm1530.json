@@ -1,0 +1,13 @@
+{
+ "applicant_name": "French, Bhavani M.",
+ "date_of_birth": "12/31/2001",
+ "social_security_number": "553-25-8222",
+ "health_impairment_details": "No known significant health impairments",
+ "signature_date": "06/15/2023",
+ "physical_findings": {
+  "blood_pressure": "120/80",
+  "vision": "20/20 in both eyes",
+  "hearing": "Normal hearing in both ears",
+  "other_findings": "No other significant findings"
+ }
+}

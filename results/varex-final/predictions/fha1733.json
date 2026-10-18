@@ -1,0 +1,17 @@
+{
+ "project_no": "DPM-2024-84370",
+ "mortgagee": "Williams, Ruiz and Decker",
+ "amount_of_mortgage_note": 369545.66,
+ "mortgage_date": "03/15/2023",
+ "mortgage_recorded_state": "Nevada",
+ "mortgage_recorded_county": "Clark",
+ "mortgage_recorded_date": "03/20/2023",
+ "mortgage_recorded_book": "456",
+ "mortgage_recorded_page": "123",
+ "reserve_fund_amount": 7698.08,
+ "owner": {
+  "name": "Rosalia Terry",
+  "address": "09309 Kirsten Glen, New Diana, TN 25149"
+ },
+ "agreement_date": "04/01/2023"
+}

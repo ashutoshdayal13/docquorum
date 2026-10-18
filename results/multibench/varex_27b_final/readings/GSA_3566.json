@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "date_of_request": "03/15/2024",
+  "office_symbol": "OA-5721",
+  "title_of_requesting_office": "Department of Information Technology",
+  "contact_person": "Hema L. Barre",
+  "contact_phone": "(903) 612-8677",
+  "major_applications": "Database management, document control, and reporting",
+  "five_year_adp_plan_activity_no": "ADP-2024-001",
+  "system_description": "The system will manage departmental databases, control documents, and generate reports for decision-making.",
+  "current_equipment": "Older model servers, basic desktop computers, and outdated software",
+  "deficiencies_and_limitations": "Current equipment lacks processing power and modern software capabilities, leading to inefficiencies"
+ },
+ "parse": {
+  "date_of_request": "03/15/2024",
+  "office_symbol": "OA-5721",
+  "title_of_requesting_office": "Department of Information Technology",
+  "contact_person": "Hema L. Barre",
+  "contact_phone": "(903) 612-8677",
+  "major_applications": "Database management, document control, and reporting",
+  "five_year_adp_plan_activity_no": "ADP-2024-001",
+  "system_description": "The system will manage departmental databases, control documents, and generate reports for decision-making.",
+  "current_equipment": "Older model servers, basic desktop computers, and outdated software",
+  "deficiencies_and_limitations": "Current equipment lacks processing power and modern software capabilities, leading to inefficiencies"
+ },
+ "oneshot": {
+  "date_of_request": "03/15/2024",
+  "office_symbol": "OA-5721",
+  "title_of_requesting_office": "Department of Information Technology",
+  "contact_person": "Hema L. Barre",
+  "contact_phone": "(903) 612-8677",
+  "major_applications": "Database management, document control, and reporting",
+  "five_year_adp_plan_activity_no": "ADP-2024-001",
+  "system_description": "The system will manage departmental databases, control documents, and generate reports for decision-making.",
+  "current_equipment": "Older model servers, basic desktop computers, and outdated software",
+  "deficiencies_and_limitations": "Current equipment lacks processing power and modern software capabilities, leading to inefficiencies"
+ }
+}

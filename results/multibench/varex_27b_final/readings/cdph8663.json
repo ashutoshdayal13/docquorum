@@ -1,0 +1,44 @@
+{
+ "primary": {
+  "facility_name": "Gabriellehaven Community Health Clinic",
+  "site_contact": "Etta Guajardo, Clinic Manager",
+  "site_address": "283 Powell Unions Suite 351, Gabriellehaven, MI 23297",
+  "public_contact_phone": "(704) 586-3429",
+  "transporter_name": "Medical Waste Solutions Inc.",
+  "transporter_pickup_frequency": "Weekly",
+  "days_of_operation": "Monday to Friday",
+  "certification_date": "02/26/2023",
+  "applicant": {
+   "name": "Etta Guajardo",
+   "title": "Clinic Manager"
+  }
+ },
+ "parse": {
+  "facility_name": "Gabriellehaven Community Health Clinic",
+  "site_contact": "Etta Guajardo, Clinic Manager",
+  "site_address": "283 Powell Unions Suite 351, Gabriellehaven, MI 23297",
+  "public_contact_phone": "(704) 586-3429",
+  "transporter_name": "Medical Waste Solutions Inc.",
+  "transporter_pickup_frequency": "Weekly",
+  "days_of_operation": "Monday to Friday",
+  "certification_date": "02/26/2023",
+  "applicant": {
+   "name": "Etta Guajardo",
+   "title": "Clinic Manager"
+  }
+ },
+ "oneshot": {
+  "facility_name": "Gabriellehaven Community Health Clinic",
+  "site_contact": "Etta Guajardo, Clinic Manager",
+  "site_address": "283 Powell Unions Suite 351, Gabriellehaven, MI 23297",
+  "public_contact_phone": "(704) 586-3429",
+  "transporter_name": "Medical Waste Solutions Inc.",
+  "transporter_pickup_frequency": "Weekly",
+  "days_of_operation": "Monday to Friday",
+  "certification_date": "02/26/2023",
+  "applicant": {
+   "name": "Etta Guajardo",
+   "title": "Clinic Manager"
+  }
+ }
+}

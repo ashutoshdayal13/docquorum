@@ -172,7 +172,8 @@ benchmark's authors; the leaderboard reports one decimal.
 
 | exact match (normalized), all 1,777 forms | score | vs. the image-modality leaderboard |
 |---|---:|---|
-| **DocQuorum with zoom re-reading** (Qwen3.8-27B + MinerU2.5) | **98.30** | **1st** |
+| **DocQuorum, final pipeline (v1.3)**, every form read again | **98.23** | **1st** |
+| DocQuorum v1.2, zoom re-reading on the v1.1 readings | 98.30 | 1st |
 | Gemini 2.5 Pro | 98.0 | 2nd |
 | DocQuorum without zoom re-reading | 98.10 | tied with Gemini 2.5 Pro at one decimal |
 | Gemini 2.5 Flash | 97.3 | 3rd |
@@ -300,7 +301,7 @@ the constrained track (`benchmarks/unikie/`, with the open-category `DQ_UNIKIE_*
 
 Readings: `results/unikie_open/readings/{oneshot,image,parse}/<scenario>.json`.
 
-## DocuBench v0.2.0 (also run; not a leading result)
+## DocuBench v0.2.0
 
 72 documents in 10 file types (58 PDFs, 5 JPEGs, and one or two each of PNG, TIFF, XLSX, DOCX,
 HTML, XML, CSV and TXT), each with its own schema and guideline (sent as the task text, as the
@@ -311,14 +312,25 @@ benchmark does for every system). Scored with the benchmark's own `scorer.py`
 |---|---:|---|
 | DocuPipe (high effort) | 97.02 | 1st |
 | Claude Sonnet 5 (direct LLM) | 91.73 | 3rd |
-| Reducto Deep Extract | 89.38 | 4th |
-| **DocQuorum** (Qwen3.8-27B + MinerU2.5) | **86.47** | **5th of 10** |
+| **DocQuorum, final pipeline (v1.3)** | **90.80** | **4th of 10** |
+| Reducto Deep Extract | 89.38 | 5th |
+| DocQuorum v1.1 | 86.47 | (5th) |
 | Reducto (standard) | 81.11 | 6th |
 
 * 34 of 72 documents score 95 or more. The 7 native files (spreadsheet, Word, HTML, XML, CSV,
   text) score 96.6 to 100: they are turned into a text-layer PDF (`docquorum/tools/native.py`).
   The 5 JPEG photos average 81.6.
-* Four pipeline fixes came from this benchmark, so the numbers below are development
+* **v1.3: root causes found here and fixed in general** (`docs/DESIGN.md`; DocuBench is therefore a
+  development benchmark for them). Of the 13.5 points v1.1 lost: 1.9 went to a 0 or the text
+  "null" forced where the page prints nothing, and 1.7 to values copied from a neighbouring row,
+  because the decoding grammar did not admit null for optional fields; scans' readings went
+  round in repetition loops (a Devanagari dictionary, 9.9); chunks of OCR text were read without
+  their page images, so the reader copied OCR errors (a parser had put Chinese characters into a
+  Spanish dictionary); and long scans kept their parse reading by rule. Every document was read
+  again with v1.3: **90.80** (4th, above Reducto Deep Extract 89.38; Claude Sonnet 5 91.73 is 3rd).
+  Repeated complete runs of the same pipeline scored between 90.45 and 91.02 (the readings of a
+  few scans vary from run to run), so 3rd place is not reached.
+* Earlier fixes from this benchmark, the numbers below being development
   measurements: a layout reader that finds no records hands the document to the route
   (WM9ZKrAr 0 -> 87.3); the ruled-table reader only where printed rules are found (vAdukzpt
   0.2 -> 81.4); the quorum passes over a reading caught in a repetition loop (f9nrfUNC
@@ -333,5 +345,5 @@ benchmark does for every system). Scored with the benchmark's own `scorer.py`
 * Remaining errors: two dictionary scans in Devanagari and Hebrew (9.9, 16.5), where the parser
   garbles the script and the model loops; a one-page Japanese gazette (17.6); and several scans
   where the quorum keeps a weaker reading than one it had (choosing better would need the answer key).
-* Files: `docubench/predictions/<document>.json`, `docubench/scores.json`,
-  `docubench/provenance.json`.
+* Files: `docubench-final/` (v1.3) and `docubench/` (v1.1): `predictions/<document>.json`,
+  `scores.json`, `provenance.json`.

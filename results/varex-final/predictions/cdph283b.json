@@ -1,0 +1,20 @@
+{
+ "phone_number": "(276) 372-1952",
+ "email_address": "joseemilio.morris@outlook.com",
+ "personal_information": {
+  "first_name": "Jose Emilio",
+  "last_name": "Morris",
+  "date_of_birth": "11/16/1988",
+  "social_security_number": "686-17-451"
+ },
+ "public_address": {
+  "street": "7873 Gonzalez Branch Apt. 361",
+  "city": "Perezport",
+  "zip_code": "44006"
+ },
+ "confidential_address": {
+  "street": "1234 Secure Lane",
+  "city": "Confidentialville",
+  "zip_code": "90210"
+ }
+}

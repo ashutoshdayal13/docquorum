@@ -1,0 +1,39 @@
+{
+ "primary": {
+  "social_security_number": "655-31-2793",
+  "name": "Casey, Laura X.",
+  "phone_number": "(223) 396-2346",
+  "mailing_address": "54263 Davis Inlet Suite 667, Port Deniseton, MA",
+  "amount": 9793.8,
+  "signature_date": "05/15/2023",
+  "financial_institution": {
+   "name": "Taylor, Key and Davis Retirement Plan",
+   "account_number": "9711-8335-3332",
+   "address": "123 Main St",
+   "city": "Port Deniseton",
+   "state": "MA",
+   "zip": "02865",
+   "contact_name": "Robert Johnson",
+   "contact_phone": "(555) 123-4567"
+  }
+ },
+ "parse": {
+  "social_security_number": "655-31-2793",
+  "name": "Casey, Laura X.",
+  "phone_number": "(223) 396-2346",
+  "mailing_address": "54263 Davis Inlet Suite 667, Port Deniseton, MA",
+  "amount": 9793.8,
+  "signature_date": "05/15/2023",
+  "financial_institution": {
+   "name": "Taylor, Key and Davis Retirement Plan",
+   "account_number": "9711-8335-3332",
+   "address": "123 Main St",
+   "city": "Port Deniseton",
+   "state": "MA",
+   "zip": "02865",
+   "contact_name": "Robert Johnson",
+   "contact_phone": "(555) 123-4567"
+  }
+ },
+ "oneshot": {}
+}

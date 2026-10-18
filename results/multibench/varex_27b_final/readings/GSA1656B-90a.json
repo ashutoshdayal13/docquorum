@@ -1,0 +1,29 @@
+{
+ "primary": {
+  "item_no": "PRP-2023-4567",
+  "service_staff_office": "GSA-Logistics",
+  "site": "SiteA",
+  "date": "06/15/2023",
+  "frequency_of_dispatch": "Weekly",
+  "item": "Emergency Rations Pack",
+  "item_maintenance_and_disposition_instructions": "Store in cool, dry place. Rotate stock every 6 months. Dispose of expired"
+ },
+ "parse": {
+  "item_no": "PRP-2023-4567",
+  "service_staff_office": "GSA-Logistics",
+  "site": "SiteA",
+  "date": "06/15/2023",
+  "frequency_of_dispatch": "Weekly",
+  "item": "Emergency Rations Pack",
+  "item_maintenance_and_disposition_instructions": "Store in cool, dry place. Rotate stock every 6 months. Dispose of expired"
+ },
+ "oneshot": {
+  "item_no": "PRP-2023-4567",
+  "service_staff_office": "GSA-Logistics",
+  "site": "SiteA",
+  "date": "06/15/2023",
+  "frequency_of_dispatch": "Weekly",
+  "item": "Emergency Rations Pack",
+  "item_maintenance_and_disposition_instructions": "Store in cool, dry place. Rotate stock every 6 months. Dispose of expired"
+ }
+}

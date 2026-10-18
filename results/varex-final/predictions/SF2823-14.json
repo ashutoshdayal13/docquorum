@@ -1,0 +1,53 @@
+{
+ "insured_name": "Thomas, Barbara",
+ "insured_date_of_birth": "01/03/2003",
+ "insured_ssn": "674-37-3256",
+ "insured_claim_number": 0.0,
+ "insured_department": "Department of Treasury",
+ "insured_bureau": "Bureau of Engraving",
+ "insured_location": "Washington, DC 20228",
+ "total_percentage": 100,
+ "beneficiaries": [
+  {
+   "name": "Anderson, Vincent K.",
+   "relationship": "Brother",
+   "percentage": 20,
+   "address": "456 Garcia Key Suite 348"
+  },
+  {
+   "name": "Smith, John",
+   "relationship": "Friend",
+   "percentage": 10,
+   "address": "123 Main St, Anytown, CA"
+  },
+  {
+   "name": "Johnson, Emily",
+   "relationship": "Sister",
+   "percentage": 30,
+   "address": "789 Oak Ave, Somewhere, IA"
+  },
+  {
+   "name": "Williams, Robert",
+   "relationship": "Cousin",
+   "percentage": 10,
+   "address": "456 Pine Rd, Nowhere, VA"
+  },
+  {
+   "name": "Brown, Michelle",
+   "relationship": "Niece",
+   "percentage": 20,
+   "address": "101 Elm Blvd, Everywhere, NY"
+  },
+  {
+   "name": "Davis, James",
+   "relationship": "Nephew",
+   "percentage": 10,
+   "address": "202 Maple Ln, Anycity, TX"
+  }
+ ],
+ "insured_assignee": {
+  "name": "Barbara Thomas",
+  "address": "498 Wilkins Via Apt. 888, Sheltonchester, CA 22004",
+  "date": "03/20/2023"
+ }
+}

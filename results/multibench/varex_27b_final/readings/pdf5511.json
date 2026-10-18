@@ -1,0 +1,98 @@
+{
+ "primary": {
+  "account_number": "4440-6710-7",
+  "account_name": "Olga Z. Hill",
+  "taxpayer_identification_number": "274-86-1261",
+  "securities": [
+   {
+    "security_name": "Series EE",
+    "security_id": "EE123",
+    "quantity": 10
+   },
+   {
+    "security_name": "Series I",
+    "security_id": "I456",
+    "quantity": 5
+   },
+   {
+    "security_name": "Treasury",
+    "security_id": "T789",
+    "quantity": 3
+   },
+   {
+    "security_name": "Savings",
+    "security_id": "S234",
+    "quantity": 8
+   },
+   {
+    "security_name": "Bonds",
+    "security_id": "B567",
+    "quantity": 2
+   }
+  ]
+ },
+ "parse": {
+  "account_number": "4440-6710-7",
+  "account_name": "Olga Z. Hill",
+  "taxpayer_identification_number": "274-86-1261",
+  "securities": [
+   {
+    "security_name": "Series EE",
+    "security_id": "EE123",
+    "quantity": 10
+   },
+   {
+    "security_name": "Series I",
+    "security_id": "I456",
+    "quantity": 5
+   },
+   {
+    "security_name": "Treasury",
+    "security_id": "T789",
+    "quantity": 3
+   },
+   {
+    "security_name": "Savings",
+    "security_id": "S234",
+    "quantity": 8
+   },
+   {
+    "security_name": "Bonds",
+    "security_id": "B567",
+    "quantity": 2
+   }
+  ]
+ },
+ "oneshot": {
+  "account_number": "4440-6710-7",
+  "account_name": "Olga Z. Hill",
+  "taxpayer_identification_number": "274-86-1261",
+  "securities": [
+   {
+    "security_name": "Series EE",
+    "security_id": "EE123",
+    "quantity": 10
+   },
+   {
+    "security_name": "Series I",
+    "security_id": "I456",
+    "quantity": 5
+   },
+   {
+    "security_name": "Treasury",
+    "security_id": "T789",
+    "quantity": 3
+   },
+   {
+    "security_name": "Savings",
+    "security_id": "S234",
+    "quantity": 8
+   },
+   {
+    "security_name": "Bonds",
+    "security_id": "B567",
+    "quantity": 2
+   }
+  ]
+ }
+}

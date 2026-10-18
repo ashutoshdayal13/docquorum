@@ -1,0 +1,56 @@
+{
+ "primary": {
+  "applicant_date_of_birth": "01/15/1983",
+  "client_id_number": "CLIENT-2023-001",
+  "relationship_description": "Case manager providing housing support services",
+  "address_verification_end_date": "12/31/2023",
+  "ew_provider_agency_date": "10/15/2023",
+  "applicant_date": "10/15/2023",
+  "client_residential_address": {
+   "street": "382 Davis Stravenue",
+   "city": "Braunfurt",
+   "zip_code": "72717"
+  },
+  "ew_provider_agency_address": {
+   "street": "423 Curtis River Suite 885",
+   "city": "West Timothy",
+   "zip_code": "83214"
+  }
+ },
+ "parse": {
+  "applicant_date_of_birth": "01/15/1983",
+  "client_id_number": "CLIENT-2023-001",
+  "relationship_description": "Case manager providing housing support services",
+  "address_verification_end_date": "12/31/2023",
+  "ew_provider_agency_date": "10/15/2023",
+  "applicant_date": "10/15/2023",
+  "client_residential_address": {
+   "street": "382 Davis Stravenue",
+   "city": "Braunfurt",
+   "zip_code": "72717"
+  },
+  "ew_provider_agency_address": {
+   "street": "423 Curtis River Suite 885",
+   "city": "West Timothy",
+   "zip_code": "83214"
+  }
+ },
+ "oneshot": {
+  "applicant_date_of_birth": "01/15/1983",
+  "client_id_number": "CLIENT-2023-001",
+  "relationship_description": "Case manager providing housing support services",
+  "address_verification_end_date": "12/31/2023",
+  "ew_provider_agency_date": "10/15/2023",
+  "applicant_date": "10/15/2023",
+  "client_residential_address": {
+   "street": "382 Davis Stravenue",
+   "city": "Braunfurt",
+   "zip_code": "72717"
+  },
+  "ew_provider_agency_address": {
+   "street": "423 Curtis River Suite 885",
+   "city": "West Timothy",
+   "zip_code": "83214"
+  }
+ }
+}

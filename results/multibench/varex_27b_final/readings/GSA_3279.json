@@ -1,0 +1,101 @@
+{
+ "primary": {
+  "region_facility": "Northwest Supply Depot",
+  "preparer_name": "Mark Carpaccio",
+  "report_number": "PDF-2023-",
+  "report_date": "10/15/2023",
+  "contract_number": "FA8000-23-C-0001",
+  "manufacture_date": "05/10/2023",
+  "shipping_container": "Wooden Crate",
+  "container_details": "Wooden Crate, 150 lbs",
+  "unit_of_issue": "Each",
+  "standard_pack": "Standard Packaging",
+  "dimensions": "48x40x36 inches",
+  "problem_description": "Packaging not secure, items shifted during transit",
+  "recommended_changes": "Use reinforced strapping and corner protectors",
+  "action_taken": "Items re-packed with additional padding",
+  "item_details": [
+   {
+    "contractor_details": "Russell-Rodriguez, 4212 Kelsey Square Suite 843, East Jose, WI 47044",
+    "manufacturer_details": "Walters and Sons, 62779 Mays Plains Suite 390, East Noahberg, WY 69959"
+   }
+  ],
+  "signatures": [
+   {
+    "signature_date": "10/15/2023"
+   },
+   {
+    "signature_date": "10/15/2023"
+   },
+   {
+    "signature_date": "10/15/2023"
+   }
+  ]
+ },
+ "parse": {
+  "region_facility": "Northwest Supply Depot",
+  "preparer_name": "Mark Carpaccio",
+  "report_number": "PDF-2023-",
+  "report_date": "10/15/2023",
+  "contract_number": "FA8000-23-C-0001",
+  "manufacture_date": "05/10/2023",
+  "shipping_container": "Wooden Crate",
+  "container_details": "Wooden Crate, 150 lbs",
+  "unit_of_issue": "Each",
+  "standard_pack": "Standard Packaging",
+  "dimensions": "48x40x36 inches",
+  "problem_description": "Packaging not secure, items shifted during transit",
+  "recommended_changes": "Use reinforced strapping and corner protectors",
+  "action_taken": "Items re-packed with additional padding",
+  "item_details": [
+   {
+    "contractor_details": "Russell-Rodriguez, 4212 Kelsey Square Suite 843, East Jose, WI 47044",
+    "manufacturer_details": "Walters and Sons, 62779 Mays Plains Suite 390, East Noahberg, WY 69959"
+   }
+  ],
+  "signatures": [
+   {
+    "signature_date": "10/15/2023"
+   },
+   {
+    "signature_date": "10/15/2023"
+   },
+   {
+    "signature_date": "10/15/2023"
+   }
+  ]
+ },
+ "oneshot": {
+  "region_facility": "Northwest Supply Depot",
+  "preparer_name": "Mark Carpaccio",
+  "report_number": "PDF-2023-",
+  "report_date": "10/15/2023",
+  "contract_number": "FA8000-23-C-0001",
+  "manufacture_date": "05/10/2023",
+  "shipping_container": "Wooden Crate",
+  "container_details": "Wooden Crate, 150 lbs",
+  "unit_of_issue": "Each",
+  "standard_pack": "Standard Packaging",
+  "dimensions": "48x40x36 inches",
+  "problem_description": "Packaging not secure, items shifted during transit",
+  "recommended_changes": "Use reinforced strapping and corner protectors",
+  "action_taken": "Items re-packed with additional padding",
+  "item_details": [
+   {
+    "contractor_details": "Russell-Rodriguez, 4212 Kelsey Square Suite 843, East Jose, WI 47044",
+    "manufacturer_details": "Walters and Sons, 62779 Mays Plains Suite 390, East Noahberg, WY 69959"
+   }
+  ],
+  "signatures": [
+   {
+    "signature_date": "10/15/2023"
+   },
+   {
+    "signature_date": "10/15/2023"
+   },
+   {
+    "signature_date": "10/15/2023"
+   }
+  ]
+ }
+}

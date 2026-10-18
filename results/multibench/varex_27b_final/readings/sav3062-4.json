@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "bonds_description": [
+   "Series EE",
+   "Series I",
+   "Series EE",
+   "Series I",
+   "Series EE"
+  ],
+  "purchaser_ssn": "289-47-2723",
+  "minor_details": {
+   "minor_dob": "07/04/2009"
+  }
+ },
+ "parse": {
+  "bonds_description": [
+   "Series EE",
+   "Series I",
+   "Series EE",
+   "Series I",
+   "Series EE"
+  ],
+  "purchaser_ssn": "289-47-2723",
+  "minor_details": {
+   "minor_dob": "07/04/2009"
+  }
+ },
+ "oneshot": {
+  "bonds_description": [
+   "Series EE",
+   "Series I",
+   "Series EE",
+   "Series I",
+   "Series EE"
+  ],
+  "purchaser_ssn": "289-47-2723",
+  "minor_details": {
+   "minor_dob": "07/04/2009"
+  }
+ }
+}

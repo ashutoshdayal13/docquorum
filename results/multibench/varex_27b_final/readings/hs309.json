@@ -1,0 +1,149 @@
+{
+ "primary": {
+  "corporation_name": "Gray Medical Services Inc.",
+  "administrator_name": "Isabel Zuniga",
+  "incorporation_date": "02/14/2005",
+  "place_of_incorporation": "Florida",
+  "facility_information": [
+   "5-bed clinic in Port Edwin, FL specializing in post-operative care"
+  ],
+  "governing_board_size": "7",
+  "term_of_office": "3 years",
+  "frequency_of_meetings": "Quarterly",
+  "method_of_selection": "Election by board members",
+  "principal_office": {
+   "address": "74343 Edward Isle",
+   "city": "Port Edwin",
+   "zip_code": "24509",
+   "county": "Florida",
+   "phone_number": "(626) 919-7804"
+  },
+  "california_representative": {
+   "name": "Wesley Demmendaal",
+   "address": "251 West Drive",
+   "city": "North Sarahborough",
+   "zip_code": "08101",
+   "phone_number": "(252) 831-3483"
+  },
+  "board_officers": [
+   {
+    "name": "Isabel Zuniga",
+    "title": "Chief Executive Officer",
+    "phone_number": "(365) 036-8565"
+   },
+   {
+    "name": "Wesley Demmendaal",
+    "title": "Chief Operating Officer",
+    "phone_number": "(996) 688-7536"
+   },
+   {
+    "name": "Mariah O. Hayden",
+    "title": "Chief Financial Officer",
+    "phone_number": "(242) 423-0980"
+   },
+   {
+    "name": "John Doe",
+    "title": "Chief Medical Officer",
+    "phone_number": "(512) 456-9195"
+   }
+  ]
+ },
+ "parse": {
+  "corporation_name": "Gray Medical Services Inc.",
+  "administrator_name": "Isabel Zuniga",
+  "incorporation_date": "02/14/2005",
+  "place_of_incorporation": "Florida",
+  "facility_information": [
+   "5-bed clinic in Port Edwin, FL specializing in post-operative care"
+  ],
+  "governing_board_size": "7",
+  "term_of_office": "3 years",
+  "frequency_of_meetings": "Quarterly",
+  "method_of_selection": "Election by board members",
+  "principal_office": {
+   "address": "74343 Edward Isle",
+   "city": "Port Edwin",
+   "zip_code": "24509",
+   "county": "Florida",
+   "phone_number": "(626) 919-7804"
+  },
+  "california_representative": {
+   "name": "Wesley Demmendaal",
+   "address": "251 West Drive",
+   "city": "North Sarahborough",
+   "zip_code": "08101",
+   "phone_number": "(252) 831-3483"
+  },
+  "board_officers": [
+   {
+    "name": "Isabel Zuniga",
+    "title": "Chief Executive Officer",
+    "phone_number": "(365) 036-8565"
+   },
+   {
+    "name": "Wesley Demmendaal",
+    "title": "Chief Operating Officer",
+    "phone_number": "(996) 688-7536"
+   },
+   {
+    "name": "Mariah O. Hayden",
+    "title": "Chief Financial Officer",
+    "phone_number": "(242) 423-0980"
+   },
+   {
+    "name": "John Doe",
+    "title": "Chief Medical Officer",
+    "phone_number": "(512) 456-9195"
+   }
+  ]
+ },
+ "oneshot": {
+  "corporation_name": "Gray Medical Services Inc.",
+  "administrator_name": "Isabel Zuniga",
+  "incorporation_date": "02/14/2005",
+  "place_of_incorporation": "Florida",
+  "facility_information": [
+   "5-bed clinic in Port Edwin, FL specializing in post-operative care"
+  ],
+  "governing_board_size": "7",
+  "term_of_office": "3 years",
+  "frequency_of_meetings": "Quarterly",
+  "method_of_selection": "Election by board members",
+  "principal_office": {
+   "address": "74343 Edward Isle",
+   "city": "Port Edwin",
+   "zip_code": "24509",
+   "county": "Florida",
+   "phone_number": "(626) 919-7804"
+  },
+  "california_representative": {
+   "name": "Wesley Demmendaal",
+   "address": "251 West Drive",
+   "city": "North Sarahborough",
+   "zip_code": "08101",
+   "phone_number": "(252) 831-3483"
+  },
+  "board_officers": [
+   {
+    "name": "Isabel Zuniga",
+    "title": "Chief Executive Officer",
+    "phone_number": "(365) 036-8565"
+   },
+   {
+    "name": "Wesley Demmendaal",
+    "title": "Chief Operating Officer",
+    "phone_number": "(996) 688-7536"
+   },
+   {
+    "name": "Mariah O. Hayden",
+    "title": "Chief Financial Officer",
+    "phone_number": "(242) 423-0980"
+   },
+   {
+    "name": "John Doe",
+    "title": "Chief Medical Officer",
+    "phone_number": "(512) 456-9195"
+   }
+  ]
+ }
+}

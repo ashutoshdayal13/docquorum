@@ -1,0 +1,16 @@
+{
+ "facility_owner": {
+  "name": "Corrado F. Nascimento",
+  "address": "87324 Jonathan Causeway, Dalefort, FL 69447",
+  "contact_number": "(966) 582-3798"
+ },
+ "facility_operator": {
+  "name": "Olga H. Moore",
+  "address": "6013 Rosales Ridge Suite 943, Teresastad, TX 36998",
+  "contact_number": "(369) 709-5945"
+ },
+ "facility_details": {
+  "facility_name": "Dalefort Medical Waste Facility",
+  "facility_address": "87324 Jonathan Causeway, Dalefort, FL 69447"
+ }
+}

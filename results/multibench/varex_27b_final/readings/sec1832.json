@@ -1,0 +1,77 @@
+{
+ "primary": {
+  "customer_name": "Christopher Mulichen",
+  "case_number": "REF-2020-604",
+  "identification_of_securities": "U.S. Treasury Bonds, 3% due 2030",
+  "cusip": "9128285M2",
+  "name_of_payee": "Zenta Simon, Esq.",
+  "securities": [
+   {
+    "description": "U.S. Treasury Bond",
+    "cusip": "9128285M2"
+   },
+   {
+    "description": "Corporate Debenture",
+    "cusip": "123456789012345678901234567890"
+   },
+   {
+    "description": "Municipal Note",
+    "cusip": "098765432109876543210987654321"
+   },
+   {
+    "description": "Government Agency Sec",
+    "cusip": "112233445509876543210987654321"
+   }
+  ]
+ },
+ "parse": {
+  "customer_name": "Christopher Mulichen",
+  "case_number": "REF-2020-604",
+  "identification_of_securities": "U.S. Treasury Bonds, 3% due 2030",
+  "cusip": "9128285M2",
+  "name_of_payee": "Zenta Simon, Esq.",
+  "securities": [
+   {
+    "description": "U.S. Treasury Bond",
+    "cusip": "9128285M2"
+   },
+   {
+    "description": "Corporate Debenture",
+    "cusip": "123456789012345678901234567890"
+   },
+   {
+    "description": "Municipal Note",
+    "cusip": "098765432109876543210987654321"
+   },
+   {
+    "description": "Government Agency Sec",
+    "cusip": "112233445509876543210987654321"
+   }
+  ]
+ },
+ "oneshot": {
+  "customer_name": "Christopher Mulichen",
+  "case_number": "REF-2020-604",
+  "identification_of_securities": "U.S. Treasury Bonds, 3% due 2030",
+  "cusip": "9128285M2",
+  "name_of_payee": "Zenta Simon, Esq.",
+  "securities": [
+   {
+    "description": "U.S. Treasury Bond",
+    "cusip": "9128285M2"
+   },
+   {
+    "description": "Corporate Debenture",
+    "cusip": "123456789012345678901234567890"
+   },
+   {
+    "description": "Municipal Note",
+    "cusip": "098765432109876543210987654321"
+   },
+   {
+    "description": "Government Agency Sec",
+    "cusip": "112233445509876543210987654321"
+   }
+  ]
+ }
+}

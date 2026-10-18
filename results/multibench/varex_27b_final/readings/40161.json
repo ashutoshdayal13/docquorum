@@ -1,0 +1,62 @@
+{
+ "primary": {
+  "date_opened": "01/15/2023",
+  "date_closed": "12/31/2023",
+  "grantee": "Holland and Sons",
+  "grant_number": "HUD-2023-54646",
+  "method_of_distribution": "Direct Distribution",
+  "status_of_funds": {
+   "funds_received": "$551899.78",
+   "funds_utilized": "$541147.07",
+   "funds_remaining": "$10752.71"
+  },
+  "required_targets": {
+   "target_1": "Minimum Overall benefit%: Minimum Overall benefit%: 85% Actual 87%",
+   "target_2": "Limit on Public services: Limit on Public services: 70% Actual 68%",
+   "target_3": "Limit on Admin/Planning: Limit on Admin/Planning: 15% Actual 13%"
+  },
+  "status_of_monitoring": {
+   "monitoring_notes": "All targets met, minor delay in Q2 resolved by Q3."
+  }
+ },
+ "parse": {
+  "date_opened": "01/15/2023",
+  "date_closed": "12/31/2023",
+  "grantee": "Holland and Sons",
+  "grant_number": "HUD-2023-54646",
+  "method_of_distribution": "Direct Distribution",
+  "status_of_funds": {
+   "funds_received": "$551899.78",
+   "funds_utilized": "$541147.07",
+   "funds_remaining": "$10752.71"
+  },
+  "required_targets": {
+   "target_1": "Minimum Overall benefit%: 85% Actual 87%",
+   "target_2": "Limit on Public services: 70% Actual 68%",
+   "target_3": "Limit on Admin/Planning: 15% Actual 13%"
+  },
+  "status_of_monitoring": {
+   "monitoring_notes": "All targets met, minor delay in Q2 resolved by Q3."
+  }
+ },
+ "oneshot": {
+  "date_opened": "01/15/2023",
+  "date_closed": "12/31/2023",
+  "grantee": "Holland and Sons",
+  "grant_number": "HUD-2023-54646",
+  "method_of_distribution": "Direct Distribution",
+  "status_of_funds": {
+   "funds_received": "$551899.78",
+   "funds_utilized": "$541147.07",
+   "funds_remaining": "$10752.71"
+  },
+  "required_targets": {
+   "target_1": "Minimum Overall benefit%: Minimum Overall benefit%: 85% Actual 87%",
+   "target_2": "Limit on Public services: Limit on Public services: 70% Actual 68%",
+   "target_3": "Limit on Admin/Planning: Limit on Admin/Planning: 15% Actual 13%"
+  },
+  "status_of_monitoring": {
+   "monitoring_notes": "All targets met, minor delay in Q2 resolved by Q3."
+  }
+ }
+}

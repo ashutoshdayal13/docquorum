@@ -1,0 +1,54 @@
+{
+ "primary": {
+  "mother_full_name": "Karen R. Taylor (née Smith)",
+  "mother_date_of_birth": "12/26/1957",
+  "mother_email": "karen.taylor@gmail.com",
+  "child_date_of_birth": "05/15/2023",
+  "hospital_of_birth": "St. Mary's Medical Center, San Francisco, CA",
+  "mother_signature_date": "06/10/2023",
+  "father_signature_date": "06/10/2023",
+  "child_birth_address": {
+   "street": "83826 Hunter Prairie Apt. 989",
+   "city": "Lake Alicia"
+  },
+  "current_mailing_address": {
+   "street": "123 Main Street Apt. 4B",
+   "city": "San Francisco"
+  }
+ },
+ "parse": {
+  "mother_full_name": "Karen R. Taylor (née Smith)",
+  "mother_date_of_birth": "12/26/1957",
+  "mother_email": "karen.taylor@gmail.com",
+  "child_date_of_birth": "05/15/2023",
+  "hospital_of_birth": "St. Mary's Medical Center, San Francisco, CA",
+  "phone": "(966) 052-0825",
+  "mother_signature_date": "06/10/2023",
+  "father_signature_date": "06/10/2023",
+  "child_birth_address": {
+   "street": "83826 Hunter Prairie Apt. 989",
+   "city": "Lake Alicia"
+  },
+  "current_mailing_address": {
+   "street": "123 Main Street Apt. 4B",
+   "city": "San Francisco"
+  }
+ },
+ "oneshot": {
+  "mother_full_name": "Karen R. Taylor (née Smith)",
+  "mother_date_of_birth": "12/26/1957",
+  "mother_email": "karen.taylor@gmail.com",
+  "child_date_of_birth": "05/15/2023",
+  "hospital_of_birth": "St. Mary's Medical Center, San Francisco, CA",
+  "mother_signature_date": "06/10/2023",
+  "father_signature_date": "06/10/2023",
+  "child_birth_address": {
+   "street": "83826 Hunter Prairie Apt. 989",
+   "city": "Lake Alicia"
+  },
+  "current_mailing_address": {
+   "street": "123 Main Street Apt. 4B",
+   "city": "San Francisco"
+  }
+ }
+}

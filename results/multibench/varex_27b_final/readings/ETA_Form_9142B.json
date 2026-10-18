@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "job_title": "Landscape Laborer",
+  "soc_code": "37-0011",
+  "soc_occupation_title": "Landscaping and Groundskeeping Workers",
+  "number_of_workers": 15,
+  "begin_date": "04/01/2023",
+  "end_date": "10/31/2023",
+  "statement_of_temporary_need": "The employer needs additional workers to handle a large landscaping project that requires more labor than the current workforce can provide. The project is seasonal and will last from April to October.",
+  "legal_business_name": "Smith, Hopkins and Davis",
+  "trade_name": "Green Thumb Landscaping",
+  "telephone_number": 7210200132,
+  "telephone_extension": "201",
+  "federal_employer_identification_number": 527580850,
+  "naics_code": "561730",
+  "address": {
+   "street": "59364 Rios Isle Apt. 292",
+   "city": "Foxhaven",
+   "state": "AL",
+   "zip_code": "32920"
+  }
+ },
+ "parse": {
+  "job_title": "Landscape Laborer",
+  "soc_code": "37-0011",
+  "soc_occupation_title": "Landscaping and Groundskeeping Workers",
+  "number_of_workers": 15,
+  "begin_date": "04/01/2023",
+  "end_date": "10/31/2023",
+  "statement_of_temporary_need": "The employer needs additional workers to handle a large landscaping project that requires more labor than the current workforce can provide. The project is seasonal and will last from April to October.",
+  "legal_business_name": "Smith, Hopkins and Davis",
+  "trade_name": "Green Thumb Landscaping",
+  "telephone_number": 7210200132,
+  "telephone_extension": "201",
+  "federal_employer_identification_number": 527580850,
+  "naics_code": "561730",
+  "address": {
+   "street": "59364 Rios Isle Apt. 292",
+   "city": "Foxhaven",
+   "state": "AL",
+   "zip_code": "32920"
+  }
+ },
+ "oneshot": {
+  "job_title": "Landscape Laborer",
+  "soc_code": "37-0011",
+  "soc_occupation_title": "Landscaping and Groundskeeping Workers",
+  "number_of_workers": 15,
+  "begin_date": "04/01/2023",
+  "end_date": "10/31/2023",
+  "statement_of_temporary_need": "The employer needs additional workers to handle a large landscaping project that requires more labor than the current workforce can provide. The project is seasonal and will last from April to October.",
+  "legal_business_name": "Smith, Hopkins and Davis",
+  "trade_name": "Green Thumb Landscaping",
+  "telephone_number": 7210200132,
+  "telephone_extension": "201",
+  "federal_employer_identification_number": 527580850,
+  "naics_code": "561730",
+  "address": {
+   "street": "59364 Rios Isle Apt. 292",
+   "city": "Foxhaven",
+   "state": "AL",
+   "zip_code": "32920"
+  }
+ }
+}

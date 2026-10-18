@@ -1,0 +1,27 @@
+{
+ "county_notarized": "Travis",
+ "affiant_name": "Andrea G. Salvi",
+ "affiant_agency": "Phillips, Madden and Garrett",
+ "license_holder_id": "TX12345",
+ "license_holder_name": "Alejandro Y. Duncan",
+ "handgun_license_number": "HL-2020-TX-789012",
+ "instructor_certificate_number": "IC-2019-TX-123456",
+ "license_holder_tdl_id": "TX12345",
+ "license_holder_dob": "07/04/19",
+ "license_holder_phone": "(604) 440-94",
+ "license_issue_ineligibility_reason": "The license holder failed to disclose a previous conviction for a felony.",
+ "false_information_on_application": "The license holder falsely stated that they had not been convicted of a felony.",
+ "license_ineligibility_reason": "The license holder was convicted of a felony under Texas Penal Code §46.035.",
+ "conviction_cause_number": "CR-2021-00456",
+ "conviction_court_type": "District Court",
+ "conviction_date": "03/15/2021",
+ "previous_suspension_reasons": "None",
+ "attached_exhibits": "Copy of conviction record, Affidavit of false information",
+ "agency_phone": "(384) 546-849",
+ "license_holder_address": {
+  "street": "043 Charles Garden Apt. 116"
+ },
+ "agency_address": {
+  "street": "1128 Taylor Keys"
+ }
+}

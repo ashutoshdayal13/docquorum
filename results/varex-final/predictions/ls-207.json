@@ -1,0 +1,40 @@
+{
+ "owcp_file_no": "LH-123456",
+ "employer_file_no": "EMP-78901234567",
+ "carrier_file_no": "CAR-45678901234",
+ "date_of_injury": "11/15/2023",
+ "date_of_employer_knowledge": "11/16/2023",
+ "controversion_reason": "Injury did not occur during the course of employment",
+ "date_of_notice": "11/20/2023",
+ "claimant": {
+  "name": "Foster, Achill",
+  "address_line1": "914 Connie Trace",
+  "address_line2": "Apt 5B",
+  "city": "North Tanya",
+  "zip": "17745",
+  "telephone": "(866)26326"
+ },
+ "employee": {
+  "name": "Foster, Achille",
+  "address_line1": "914 Connie Trace",
+  "address_line2": "Apt 5B",
+  "city": "North Tanya",
+  "zip": "17745",
+  "telephone": "(866)26326"
+ },
+ "employer": {
+  "name": "Hansen Inc",
+  "telephone": "(651)22280",
+  "city": "North Tanya"
+ },
+ "carrier": {
+  "name": "Worker's Comp Insurance Co",
+  "telephone": "(512)55512",
+  "city": "Austin"
+ },
+ "signatory": {
+  "print_name": "Achille Foster",
+  "print_phone": "(651)22280",
+  "title": "Agricultural Engineer"
+ }
+}

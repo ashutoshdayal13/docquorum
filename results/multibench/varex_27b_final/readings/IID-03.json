@@ -1,0 +1,113 @@
+{
+ "primary": {
+  "manufacturer_name": "SafetyLok Devices Inc.",
+  "physical_address": "12345 Tech Parkway, Austin, TX 78758",
+  "local_phone_number": "(512) 987-6543",
+  "toll_free_phone_number": "(800) 123-4567",
+  "email_address": "info@safetylokdevices.com",
+  "web_address": "www.safetylokdevices.com",
+  "mailing_address": "P.O. Box 8765, Austin, TX 78766",
+  "device_name": "SafetyLok XT",
+  "device_model_number": "SLXT-2023",
+  "device_features": "Real-time monitoring, tamper detection, GPS tracking",
+  "printed_name_of_owner_or_manager": "Douglas D. Sen",
+  "signature_of_owner_or_manager": "Douglas D. Sen",
+  "signature_date": "10/15/2023",
+  "physical_address_details": {
+   "city": "Austin",
+   "state": "TX",
+   "zip": "78758",
+   "county": "Travis"
+  },
+  "mailing_address_details": {
+   "city": "Austin",
+   "zip": "78766"
+  },
+  "contact_person": {
+   "first_name": "Douglas",
+   "last_name": "Sen",
+   "email": "dsen@safetylokdevices.com",
+   "phone_number": "(512) 987-6543"
+  },
+  "business_owner": {
+   "first_name": "Douglas",
+   "last_name": "Sen",
+   "email": "dsen@safetylokdevices.com",
+   "phone_number": "(512) 987-6543"
+  }
+ },
+ "parse": {
+  "manufacturer_name": "SafetyLok Devices Inc.",
+  "physical_address": "12345 Tech Parkway, Austin, TX 78758",
+  "local_phone_number": "(512) 987-6543",
+  "toll_free_phone_number": "(800) 123-4567",
+  "email_address": "info@safetylokdevices.com",
+  "web_address": "www.safetylokdevices.com",
+  "mailing_address": "P.O. Box 8765, Austin, TX 78766",
+  "device_name": "SafetyLok XT",
+  "device_model_number": "SLXT-2023",
+  "device_features": "Real-time monitoring, tamper detection, GPS tracking",
+  "printed_name_of_owner_or_manager": "Douglas D. Sen",
+  "signature_of_owner_or_manager": "Douglas D. Sen",
+  "signature_date": "10/15/2023",
+  "physical_address_details": {
+   "city": "Austin",
+   "state": "TX",
+   "zip": "78758",
+   "county": "Travis"
+  },
+  "mailing_address_details": {
+   "city": "Austin",
+   "zip": "78766"
+  },
+  "contact_person": {
+   "first_name": "Douglas",
+   "last_name": "Sen",
+   "email": "dsen@safetylokdevices.com",
+   "phone_number": "(512) 987-6543"
+  },
+  "business_owner": {
+   "first_name": "Douglas",
+   "last_name": "Sen",
+   "email": "dsen@safetylokdevices.com",
+   "phone_number": "(512) 987-6543"
+  }
+ },
+ "oneshot": {
+  "manufacturer_name": "SafetyLok Devices Inc.",
+  "physical_address": "12345 Tech Parkway, Austin, TX 78758",
+  "local_phone_number": "(512) 987-6543",
+  "toll_free_phone_number": "(800) 123-4567",
+  "email_address": "info@safetylokdevices.com",
+  "web_address": "www.safetylokdevices.com",
+  "mailing_address": "P.O. Box 8765, Austin, TX 78766",
+  "device_name": "SafetyLok XT",
+  "device_model_number": "SLXT-2023",
+  "device_features": "Real-time monitoring, tamper detection, GPS tracking",
+  "printed_name_of_owner_or_manager": "Douglas D. Sen",
+  "signature_of_owner_or_manager": "Douglas D. Sen",
+  "signature_date": "10/15/2023",
+  "physical_address_details": {
+   "city": "Austin",
+   "state": "TX",
+   "zip": "78758",
+   "county": "Travis"
+  },
+  "mailing_address_details": {
+   "city": "Austin",
+   "zip": "78766"
+  },
+  "contact_person": {
+   "first_name": "Douglas",
+   "last_name": "Sen",
+   "email": "dsen@safetylokdevices.com",
+   "phone_number": "(512) 987-6543"
+  },
+  "business_owner": {
+   "first_name": "Douglas",
+   "last_name": "Sen",
+   "email": "dsen@safetylokdevices.com",
+   "phone_number": "(512) 987-6543"
+  }
+ }
+}

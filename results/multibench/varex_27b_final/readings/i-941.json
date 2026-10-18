@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "receipt_number": "PO-2023-52986",
+  "alien_registration_number": "A12345678",
+  "uscis_online_account_number": "9313-9797-94",
+  "attorney_state_bar_number": "CPA-1994-IL-11004",
+  "us_social_security_number": "158457346",
+  "date_of_birth": "05/28/1967",
+  "applicant_name": {
+   "first_name": "Rebecca",
+   "middle_name": "M.",
+   "last_name": "Hodge"
+  }
+ },
+ "parse": {
+  "receipt_number": "PO-2023-52986",
+  "alien_registration_number": "A12345678",
+  "uscis_online_account_number": "9313-9797-94",
+  "attorney_state_bar_number": "CPA-1994-IL-11004",
+  "us_social_security_number": "158457346",
+  "date_of_birth": "05/28/1967",
+  "applicant_name": {
+   "first_name": "Rebecca",
+   "middle_name": "M.",
+   "last_name": "Hodge"
+  }
+ },
+ "oneshot": {
+  "receipt_number": "PO-2023-52986",
+  "alien_registration_number": "A12345678",
+  "uscis_online_account_number": "9313-9797-94",
+  "attorney_state_bar_number": "CPA-1994-IL-11004",
+  "us_social_security_number": "158457346",
+  "date_of_birth": "05/28/1967",
+  "applicant_name": {
+   "first_name": "Rebecca",
+   "middle_name": "M.",
+   "last_name": "Hodge"
+  }
+ }
+}

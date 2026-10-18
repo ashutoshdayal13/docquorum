@@ -1,0 +1,17 @@
+{
+ "mqa_number": "MQA-2023-CA-45678",
+ "ssn_itin": "531-86-3793",
+ "phone_number": "(333) 564-5875",
+ "email_address": "michael.bohnbach@outlook.com",
+ "signature_date": "09/15/2023",
+ "applicant_name": {
+  "first_name": "Michael",
+  "last_name": "Bohnbach"
+ },
+ "mailing_address": {
+  "street": "2980 Holmes Lights Apt. 600",
+  "city": "North Lindaside",
+  "state": "MD",
+  "zip_code": "78617"
+ }
+}

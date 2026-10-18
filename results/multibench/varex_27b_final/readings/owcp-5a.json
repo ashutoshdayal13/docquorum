@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "injured_worker_name": "Eugenia C. Garcia",
+  "owcp_number": "CTL-2023",
+  "work_capacity_assessment": "Unable to work 8 hours due to psychiatric condition",
+  "usual_job_capacity": "Unable to perform usual job duties due to anxiety and depression",
+  "suitable_duties": "Light duties with minimal stress and frequent breaks",
+  "other_medical_factors": "Patient requires regular therapy sessions and medication management",
+  "physician_info": {
+   "name": "Nicholas Williams",
+   "phone": "(240) 795-",
+   "signature_date": "05/15/2023"
+  }
+ },
+ "parse": {
+  "injured_worker_name": "Eugenia C. Garcia",
+  "owcp_number": "CTL-2023",
+  "work_capacity_assessment": "Unable to work 8 hours due to psychiatric condition",
+  "usual_job_capacity": "Unable to perform usual job duties due to anxiety and depression",
+  "suitable_duties": "Light duties with minimal stress and frequent breaks",
+  "other_medical_factors": "Patient requires regular therapy sessions and medication management",
+  "physician_info": {
+   "name": "Nicholas Williams",
+   "phone": "(240) 795-",
+   "signature_date": "05/15/2023"
+  }
+ },
+ "oneshot": {
+  "injured_worker_name": "Eugenia C. Garcia",
+  "owcp_number": "CTL-2023",
+  "work_capacity_assessment": "Unable to work 8 hours due to psychiatric condition",
+  "usual_job_capacity": "Unable to perform usual job duties due to anxiety and depression",
+  "suitable_duties": "Light duties with minimal stress and frequent breaks",
+  "other_medical_factors": "Patient requires regular therapy sessions and medication management",
+  "physician_info": {
+   "name": "Nicholas Williams",
+   "phone": "(240) 795-",
+   "signature_date": "05/15/2023"
+  }
+ }
+}

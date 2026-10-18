@@ -1,0 +1,18 @@
+{
+ "fha_project_no": "FHA-2023-12345",
+ "agreement_date": "05/15/2023",
+ "owner_name": "Jason A. Nunes",
+ "owner_type": "Individual",
+ "property_info": {
+  "property_location": "69564 Drake Overpass Apt. 245, Englishmouth, VA 97428",
+  "property_state": "VA"
+ },
+ "project_info": {
+  "project_name": "Love Group Project",
+  "project_name_full": "Love Group Rental Housing Project Apartments",
+  "project_no": "LG-2023-001"
+ },
+ "loan_info": {
+  "loan_date": "01/15/2020"
+ }
+}

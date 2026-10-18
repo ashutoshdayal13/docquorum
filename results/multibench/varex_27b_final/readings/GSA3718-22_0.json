@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "requestor_information": {
+   "requestor_name": "Paola Parker",
+   "requestor_email": "pparker@torressmith.com",
+   "requestor_phone": "3026695384",
+   "requestor_employee_id": "TSE20200401"
+  },
+  "upcoming_travel_plans": {
+   "travel_start_date": "06/15/2023"
+  },
+  "requestor_certification": {
+   "certification_date": "05/01/2023"
+  },
+  "supervisor_certification": {
+   "supervisor_name": "Cristal V. Riley",
+   "supervisor_phone": "3813403752",
+   "supervisor_certification_date": "05/04/2023"
+  }
+ },
+ "parse": {
+  "requestor_information": {
+   "requestor_name": "Paola Parker",
+   "requestor_email": "pparker@torressmith.com",
+   "requestor_phone": "3026695384",
+   "requestor_employee_id": "TSE20200401"
+  },
+  "upcoming_travel_plans": {
+   "travel_start_date": "06/15/2023"
+  },
+  "requestor_certification": {
+   "certification_date": "05/01/2023"
+  },
+  "supervisor_certification": {
+   "supervisor_name": "Cristal V. Riley",
+   "supervisor_phone": "3813403752",
+   "supervisor_certification_date": "05/04/2023"
+  }
+ },
+ "oneshot": {
+  "requestor_information": {
+   "requestor_name": "Paola Parker",
+   "requestor_email": "pparker@torressmith.com",
+   "requestor_phone": "3026695384",
+   "requestor_employee_id": "TSE20200401"
+  },
+  "upcoming_travel_plans": {
+   "travel_start_date": "06/15/2023"
+  },
+  "requestor_certification": {
+   "certification_date": "05/01/2023"
+  },
+  "supervisor_certification": {
+   "supervisor_name": "Cristal V. Riley",
+   "supervisor_phone": "3813403752",
+   "supervisor_certification_date": "05/04/2023"
+  }
+ }
+}

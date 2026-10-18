@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "requester_name": "Frank A. Tripathi",
+  "request_date": "05/15/2023",
+  "provider_facility": "St. Mary's Medical Center",
+  "medical_record_number": "MRN202200154",
+  "date_of_visit": "03/10/2022",
+  "visit_location": "Portland, OR",
+  "requester_contact": {
+   "fax": "(198) 040-3794",
+   "phone": "(734) 541-2859"
+  },
+  "client": {
+   "name": "Linda X. Moore",
+   "aka": [
+    "Linda X Moore"
+   ],
+   "dob": "07/10/1959"
+  }
+ },
+ "parse": {
+  "requester_name": "Frank A. Tripathi",
+  "request_date": "05/15/2023",
+  "provider_facility": "St. Mary's Medical Center",
+  "medical_record_number": "MRN202200154",
+  "date_of_visit": "03/10/2022",
+  "visit_location": "Portland, OR",
+  "requester_contact": {
+   "fax": "(198) 040-3794",
+   "phone": "(734) 541-2859"
+  },
+  "client": {
+   "name": "Linda X. Moore",
+   "aka": [
+    "Linda X Moore"
+   ],
+   "dob": "07/10/1959"
+  }
+ },
+ "oneshot": {
+  "requester_name": "Frank A. Tripathi",
+  "request_date": "05/15/2023",
+  "provider_facility": "St. Mary's Medical Center",
+  "medical_record_number": "MRN202200154",
+  "date_of_visit": "03/10/2022",
+  "visit_location": "Portland, OR",
+  "requester_contact": {
+   "fax": "(198) 040-3794",
+   "phone": "(734) 541-2859"
+  },
+  "client": {
+   "name": "Linda X. Moore",
+   "aka": [
+    "Linda X Moore"
+   ],
+   "dob": "07/10/1959"
+  }
+ }
+}

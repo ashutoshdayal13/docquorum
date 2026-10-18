@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "name_of_claimant": "Canevascini, Bimala R.",
+  "claimant_ssn": "756-44-3732",
+  "claim_number": "CTL-2024-66331",
+  "issue_being_appealed": "Disability benefits denial",
+  "reasons_for_reconsideration": "New medical evidence supporting disability claim",
+  "telephone_number": "(258) 637-4549",
+  "date": "05/15/2024",
+  "social_security_office_address": "123 Main St, Pittsburgh, PA 15219",
+  "representative_name": "Michael Lemoine",
+  "representative_telephone_number": "(338) 490-9777",
+  "representative_date": "05/15/2024",
+  "mailing_address": {
+   "street": "708 Allen Flats",
+   "city": "Stewartshire"
+  },
+  "representative_mailing_address": {
+   "street": "2352 Dakota Center",
+   "city": "Port Rachel"
+  }
+ },
+ "parse": {
+  "name_of_claimant": "Canevascini, Bimala R.",
+  "claimant_ssn": "756-44-3732",
+  "claim_number": "CTL-2024-66331",
+  "issue_being_appealed": "Disability benefits denial",
+  "reasons_for_reconsideration": "New medical evidence supporting disability claim",
+  "telephone_number": "(258) 637-4549",
+  "date": "05/15/2024",
+  "social_security_office_address": "123 Main St, Pittsburgh, PA 15219",
+  "representative_name": "Michael Lemoine",
+  "representative_telephone_number": "(338) 490-9777",
+  "representative_date": "05/15/2024",
+  "mailing_address": {
+   "street": "708 Allen Flats",
+   "city": "Stewartshire"
+  },
+  "representative_mailing_address": {
+   "street": "2352 Dakota Center",
+   "city": "Port Rachel"
+  }
+ },
+ "oneshot": {
+  "name_of_claimant": "Canevascini, Bimala R.",
+  "claimant_ssn": "756-44-3732",
+  "claim_number": "CTL-2024-66331",
+  "issue_being_appealed": "Disability benefits denial",
+  "reasons_for_reconsideration": "New medical evidence supporting disability claim",
+  "telephone_number": "(258) 637-4549",
+  "date": "05/15/2024",
+  "social_security_office_address": "123 Main St, Pittsburgh, PA 15219",
+  "representative_name": "Michael Lemoine",
+  "representative_telephone_number": "(338) 490-9777",
+  "representative_date": "05/15/2024",
+  "mailing_address": {
+   "street": "708 Allen Flats",
+   "city": "Stewartshire"
+  },
+  "representative_mailing_address": {
+   "street": "2352 Dakota Center",
+   "city": "Port Rachel"
+  }
+ }
+}

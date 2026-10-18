@@ -1,0 +1,27 @@
+{
+ "primary": {
+  "input_date": "05/15/2023",
+  "beneficiary": {
+   "name": "Christensen, Nicole U.",
+   "ssn": "582-91-6863",
+   "address": "54449 Lindsey Lights Suite 175, West Lisa, KS 44748"
+  },
+  "representative_payee": {
+   "name": "Maria K. Orellana",
+   "ssn": "238-34-1772"
+  }
+ },
+ "parse": {
+  "input_date": "05/15/2023",
+  "beneficiary": {
+   "name": "Christensen, Nicole U.",
+   "ssn": "582-91-6863",
+   "address": "54449 Lindsey Lights Suite 175, West Lisa, KS 44748"
+  },
+  "representative_payee": {
+   "name": "Maria K. Orellana",
+   "ssn": "238-34-1772"
+  }
+ },
+ "oneshot": {}
+}

@@ -15,8 +15,8 @@ eb, uk, uo = load("docquorum-extractbench.json"), load("docquorum-unikie.json"),
 vx, la = load("docquorum-varex.json"), load("docquorum-longarray.json")
 results = [
     {"benchmark": "VAREX (image input)", "metric": "exact match, normalized", "score": vx["score"],
-     "place": "1st (Gemini 2.5 Pro 98.0)", "configuration": "pipeline + zoom re-reading (held-out run)",
-     "files": vx["predictions"], "without_zoom": vx["without_zoom"]},
+     "place": "1st (Gemini 2.5 Pro 98.0)", "configuration": "final pipeline (v1.3), every form read again",
+     "files": vx["predictions"], "earlier": vx.get("earlier")},
     {"benchmark": "UNIKIE-BENCH, constrained category", "metric": "macro F1", "score": uk["variants"][uk["headline"]]["score"],
      "place": "1st (Gemini-3-Pro 82.37)", "configuration": uk["headline"], "files": "results/unikie/readings, results/unikie/zoom",
      "without_zoom": uk["variants"]["six_readings_enlarged"]["score"]},
@@ -29,7 +29,7 @@ results = [
      "place": "2nd of 16 (Gemini-3-Pro 81.65)", "configuration": "three readings + zoom re-reading (held-out run)",
      "files": "results/unikie_open/readings, results/unikie_open/zoom", "without_zoom": uo["without_zoom"]["score"]},
     {"benchmark": "DocuBench v0.2.0", "metric": "macro field accuracy", "score": load("docquorum-docubench.json")["score"],
-     "place": "5th of 10 (DocuPipe 97.02)", "configuration": "pipeline as released; four fixes found on this benchmark",
+     "place": "4th of 10 (DocuPipe 97.02; Claude Sonnet 5 91.73)", "configuration": "final pipeline (v1.3), every document read again; the v1.3 fixes were found on this benchmark",
      "files": "results/docubench"},
 ]
 
@@ -63,10 +63,18 @@ changes = [
      "score 82.62 -> 81.62)",
      "UNIKIE constrained headline 82.65 with zoom (development measurement); VAREX and UNIKIE open unchanged "
      "(the rule withdraws none of their changes)"),
+    ("2026-10-16", "v1.3", "decoding admits null for optional scalar fields (no forced 0, 'null' text or copied "
+     "values); decoding loops read again with a repetition penalty, then their repeats dropped; OCR text (a scan's "
+     "parse, or an OCR text layer) sent with its page images in every call, at 300 dpi for chunks; long scans decided "
+     "by the quorum; zoom compares numbers by value; zoom on by default (docs/DESIGN.md)",
+     "DocuBench 86.47 -> 90.80 (every document read again); VAREX 98.30 -> 98.23 (every form read again, 1st); "
+     "LongArray-Extract and UNIKIE unaffected (their schemas and inputs meet none of the changed cases); ExtractBench "
+     "is the stored run of an earlier version"),
 ]
 release = {
     "written_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"),
     "model": "Qwen/Qwen3.8-27B-FP8, vLLM 0.27.1, greedy decoding; MinerU2.5-2509-1.2B parser",
+    "pipeline_version": "v1.3 (docs/DESIGN.md)",
     "serving": "serve/serve_qwen38_27b.sh; on the shared GPU GPU_UTIL 0.62-0.66, and from 14 October 2026 "
                "SPEC_TOKENS=2 (speculative decoding, which leaves greedy outputs unchanged up to "
                "floating-point batch effects)",

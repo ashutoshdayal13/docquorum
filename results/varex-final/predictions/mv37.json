@@ -1,0 +1,30 @@
+{
+ "vehicle_dismantler_registration_no": "VDR-2023-45678",
+ "vehicle_year": 2012,
+ "vehicle_make": "Ford",
+ "vehicle_model": "F-150",
+ "vehicle_color": "Silver",
+ "vehicle_style": "Pickup Truck",
+ "vehicle_identification_no": "1FTFW1E5XCKA12345",
+ "abandoned_vehicle_location": {
+  "street": "123 Main Street",
+  "city": "Springfield",
+  "zip_code": "73301"
+ },
+ "property_owner": {
+  "last_name": "Galarza",
+  "first_name": "Amber",
+  "middle_initial": "X.",
+  "street": "72345 Barnes Lakes",
+  "city": "West Jordan",
+  "state": "TX",
+  "signature_date": "05/15/2023"
+ },
+ "delivery_agent": {
+  "last_name": "Galarza",
+  "first_name": "Amber",
+  "date_of_birth": "04/27/1993",
+  "motorist_id": "TX-2018-55594",
+  "delivery_vehicle_plate": "TX-12345AB"
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "amendment_number": "A2023-004",
+  "supplemental_agreement_number": "SA-2023-002",
+  "effective_date": "03/15/2023",
+  "issuing_office": "Department of Defense, Procurement Division",
+  "bid_receipt_address": "4500 Defense Parkway, Arlington, VA 22203",
+  "amended_invitation_for_bids_number": "RFQ-2022-25846",
+  "amended_invitation_for_bids_date": "01/10/2022",
+  "modified_contract_number": "CON-2022-10025",
+  "modified_contract_date": "02/15/2022",
+  "accounting_and_appropriation_data": "Account No. 5825-1558-1871, Appropriation: FY2023 Defense",
+  "authority_for_supplemental_agreement": "Federal Acquisition Regulation (FAR) Part 43",
+  "description_of_amendment": "Revision of bid due date and addition of new technical specifications",
+  "bid_receipt_date": "04/01/2023",
+  "bid_receipt_time": "14:0 O'CLOCK M"
+ },
+ "parse": {
+  "amendment_number": "A2023-004",
+  "supplemental_agreement_number": "SA-2023-002",
+  "effective_date": "03/15/2023",
+  "issuing_office": "Department of Defense, Procurement Division",
+  "bid_receipt_address": "4500 Defense Parkway, Arlington, VA 22203",
+  "amended_invitation_for_bids_number": "RFQ-2022-25846",
+  "amended_invitation_for_bids_date": "01/10/2022",
+  "modified_contract_number": "CON-2022-10025",
+  "modified_contract_date": "02/15/2022",
+  "accounting_and_appropriation_data": "Account No. 5825-1558-1871, Appropriation: FY2023 Defense",
+  "authority_for_supplemental_agreement": "Federal Acquisition Regulation (FAR) Part 43",
+  "description_of_amendment": "Revision of bid due date and addition of new technical specifications",
+  "bid_receipt_date": "04/01/2023",
+  "bid_receipt_time": "14:00"
+ },
+ "oneshot": {
+  "amendment_number": "A2023-004",
+  "supplemental_agreement_number": "SA-2023-002",
+  "effective_date": "03/15/2023",
+  "issuing_office": "Department of Defense, Procurement Division",
+  "bid_receipt_address": "4500 Defense Parkway, Arlington, VA 22203",
+  "amended_invitation_for_bids_number": "RFQ-2022-25846",
+  "amended_invitation_for_bids_date": "01/10/2022",
+  "modified_contract_number": "CON-2022-10025",
+  "modified_contract_date": "02/15/2022",
+  "accounting_and_appropriation_data": "Account No. 5825-1558-1871, Appropriation: FY2023 Defense",
+  "authority_for_supplemental_agreement": "Federal Acquisition Regulation (FAR) Part 43",
+  "description_of_amendment": "Revision of bid due date and addition of new technical specifications",
+  "bid_receipt_date": "04/01/2023",
+  "bid_receipt_time": "14:0 O'CLOCK M"
+ }
+}

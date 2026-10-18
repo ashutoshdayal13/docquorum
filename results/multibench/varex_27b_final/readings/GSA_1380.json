@@ -1,0 +1,86 @@
+{
+ "primary": {
+  "candidate_last_name": "Howe",
+  "candidate_first_name": "Martin",
+  "candidate_middle_initial": "X",
+  "candidate_social_security_number": "161-21-643",
+  "position_title": "Senior Cybersecurity Analyst",
+  "occupation_series_number": "1810",
+  "request_date": "06/15/2023",
+  "duty_station_address": {
+   "city": "Washington",
+   "state_or_country": "District of Columbia"
+  },
+  "funds_manager": {
+   "name": "Jessica P. Puente",
+   "correspondence_symbol": "JPP-FIN"
+  },
+  "accounting_details": {
+   "classification": "National Security",
+   "act_number": "ACT-2023-NS-001"
+  },
+  "requester": {
+   "title": "Field Trials Officer"
+  },
+  "authorization": {
+   "title": "Sound Technician,",
+   "date": "06/15/2023"
+  }
+ },
+ "parse": {
+  "candidate_last_name": "Howe",
+  "candidate_first_name": "Martin",
+  "candidate_middle_initial": "X",
+  "candidate_social_security_number": "161-21-643",
+  "position_title": "Senior Cybersecurity Analyst",
+  "occupation_series_number": "1810",
+  "request_date": "06/15/2023",
+  "duty_station_address": {
+   "city": "Washington",
+   "state_or_country": "District of Columbia"
+  },
+  "funds_manager": {
+   "name": "Jessica P. Puente",
+   "correspondence_symbol": "JPP-FIN"
+  },
+  "accounting_details": {
+   "classification": "National Security",
+   "act_number": "ACT-2023-NS-001"
+  },
+  "requester": {
+   "title": "Field Trials Officer"
+  },
+  "authorization": {
+   "title": "Sound Technician,",
+   "date": "06/15/2023"
+  }
+ },
+ "oneshot": {
+  "candidate_last_name": "Howe",
+  "candidate_first_name": "Martin",
+  "candidate_middle_initial": "X",
+  "candidate_social_security_number": "161-21-643",
+  "position_title": "Senior Cybersecurity Analyst",
+  "occupation_series_number": "1810",
+  "request_date": "06/15/2023",
+  "duty_station_address": {
+   "city": "Washington",
+   "state_or_country": "District of Columbia"
+  },
+  "funds_manager": {
+   "name": "Jessica P. Puente",
+   "correspondence_symbol": "JPP-FIN"
+  },
+  "accounting_details": {
+   "classification": "National Security",
+   "act_number": "ACT-2023-NS-001"
+  },
+  "requester": {
+   "title": "Field Trials Officer"
+  },
+  "authorization": {
+   "title": "Sound Technician,",
+   "date": "06/15/2023"
+  }
+ }
+}

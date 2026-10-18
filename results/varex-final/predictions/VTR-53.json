@@ -1,0 +1,22 @@
+{
+ "applicant_middle_name": "T.",
+ "applicant_last_name": "Garcia",
+ "applicant_email": "maggie.garcia@yahoo.com",
+ "applicant_phone": "(370) 137-1816",
+ "signature_date": "06/15/2023",
+ "applicant_address": {
+  "address": "376 Carroll Forge",
+  "zip": "77111"
+ },
+ "vehicles": [
+  {
+   "vehicle_info": "2020 Toyota Camry LE"
+  },
+  {
+   "vehicle_info": "2018 Honda Accord Sport"
+  },
+  {
+   "vehicle_info": "2015 Ford F-150 XLT"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "director_name": "Shane L. Walters",
+  "application_date": "11/15/2023",
+  "entry_no_and_line_no": "REF-2023-44369-001",
+  "location": "825 Conner Villages Suite 474, Derrickburgh, CA 07728",
+  "method_description": "Repackaging and labeling to comply with FDA regulations",
+  "application_status": "Approved with conditions",
+  "time_limit": "120 days from the date of approval",
+  "division_name": "Food and Drug Administration",
+  "signature_date": "11/15/2023",
+  "product_details": {
+   "product_description": "Organic Cotton T-Shirts",
+   "production_codes": "OC-TSH-2023-001"
+  },
+  "applicant_info": {
+   "applicant_name": "Nisa S. Rios",
+   "firm_address": "5981 Strong Loop Suite 461, Lake Michelle, ND"
+  },
+  "recipient_info": {
+   "recipient_name_and_address": "Kim-Beasley, 5981 Strong Loop Suite 461, Lake Michelle, ND 27894",
+   "recipient_date": "11/15/2023"
+  }
+ },
+ "parse": {
+  "director_name": "Shane L. Walters",
+  "application_date": "11/15/2023",
+  "entry_no_and_line_no": "REF-2023-44369-001",
+  "location": "825 Conner Villages Suite 474, Derrickburgh, CA 07728",
+  "method_description": "Repackaging and labeling to comply with FDA regulations",
+  "application_status": "Approved with conditions",
+  "time_limit": "120 days from the date of approval",
+  "division_name": "Food and Drug Administration",
+  "signature_date": "11/15/2023",
+  "product_details": {
+   "product_description": "Organic Cotton T-Shirts",
+   "production_codes": "OC-TSH-2023-001"
+  },
+  "applicant_info": {
+   "applicant_name": "Nisa S. Rios",
+   "firm_address": "5981 Strong Loop Suite 461, Lake Michelle, ND"
+  },
+  "recipient_info": {
+   "recipient_name_and_address": "Kim-Beasley, 5981 Strong Loop Suite 461, Lake Michelle, ND 27894",
+   "recipient_date": "11/15/2023"
+  }
+ },
+ "oneshot": {
+  "director_name": "Shane L. Walters",
+  "application_date": "11/15/2023",
+  "entry_no_and_line_no": "REF-2023-44369-001",
+  "location": "825 Conner Villages Suite 474, Derrickburgh, CA 07728",
+  "method_description": "Repackaging and labeling to comply with FDA regulations",
+  "application_status": "Approved with conditions",
+  "time_limit": "120 days from the date of approval",
+  "division_name": "Food and Drug Administration",
+  "signature_date": "11/15/2023",
+  "product_details": {
+   "product_description": "Organic Cotton T-Shirts",
+   "production_codes": "OC-TSH-2023-001"
+  },
+  "applicant_info": {
+   "applicant_name": "Nisa S. Rios",
+   "firm_address": "5981 Strong Loop Suite 461, Lake Michelle, ND"
+  },
+  "recipient_info": {
+   "recipient_name_and_address": "Kim-Beasley, 5981 Strong Loop Suite 461, Lake Michelle, ND 27894",
+   "recipient_date": "11/15/2023"
+  }
+ }
+}

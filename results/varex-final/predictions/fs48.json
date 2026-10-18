@@ -1,0 +1,20 @@
+{
+ "facility_information": {
+  "facility_name": "Bradport Auto Repair",
+  "facility_address": "308 Garcia Stravenue Suite 901"
+ },
+ "vehicle_registrant_information": {
+  "registrant_name": "Ramos, Emily C.",
+  "registrant_address": "308 Garcia Stravenue Suite 901"
+ },
+ "activity_dates": {
+  "start_date": "01/01/2023",
+  "end_date": "03/31/2023"
+ },
+ "registrant_signature": {
+  "signature_date": "04/15/2023"
+ },
+ "facility_owner_manager_signature": {
+  "signature_date": "04/15/2023"
+ }
+}

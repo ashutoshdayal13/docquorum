@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "date_of_birth_or_license_id_number": "08/12/1995",
+  "claimant_name": "Miller, Shannon W.",
+  "social_security_number": "694-29-6733",
+  "claim_amount": 4131.54,
+  "claim_amount_text": "Four thou",
+  "incident_details": "Car accident on I-95 involving state vehicle on 03/15/2023",
+  "release_amount": 4131.54,
+  "release_amount_text": "Four tho",
+  "notary_acknowledgment_name": "Torquato B. Bakshi",
+  "address": {
+   "address": "49326 Castro Spurs Apt. 783, North Shawnsh",
+   "county": "",
+   "state": "FL",
+   "zip_code": "(2932$"
+  },
+  "notary_public": {
+   "notary_public": "Torquato B. Bakshi",
+   "county_notary": "Aguilarberg"
+  }
+ },
+ "parse": {
+  "date_of_birth_or_license_id_number": "08/12/1995",
+  "claimant_name": "Miller, Shannon W.",
+  "social_security_number": "694-29-6733",
+  "claim_amount": 4131.54,
+  "claim_amount_text": "Four thou",
+  "incident_details": "Car accident on I-95 involving state vehicle on 03/15/2023",
+  "release_amount": 4131.54,
+  "release_amount_text": "Four tho",
+  "notary_acknowledgment_name": "Torquato B. Bakshi",
+  "address": {
+   "address": "49326 Castro Spurs Apt. 783",
+   "county": "North Shawnsh",
+   "state": "FL",
+   "zip_code": "29326"
+  },
+  "notary_public": {
+   "notary_public": "Torquato B. Bakshi",
+   "county_notary": "Aguilarberg"
+  }
+ },
+ "oneshot": {
+  "date_of_birth_or_license_id_number": "08/12/1995",
+  "claimant_name": "Miller, Shannon W.",
+  "social_security_number": "694-29-6733",
+  "claim_amount": 4131.54,
+  "claim_amount_text": "Four thou",
+  "incident_details": "Car accident on I-95 involving state vehicle on 03/15/2023",
+  "release_amount": 4131.54,
+  "release_amount_text": "Four tho",
+  "notary_acknowledgment_name": "Torquato B. Bakshi",
+  "address": {
+   "address": "49326 Castro Spurs Apt. 783",
+   "county": "North Shawnsh",
+   "state": "FL",
+   "zip_code": "29326"
+  },
+  "notary_public": {
+   "notary_public": "Torquato B. Bakshi",
+   "county_notary": "Aguilarberg"
+  }
+ }
+}

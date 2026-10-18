@@ -1,0 +1,68 @@
+{
+ "primary": {
+  "agency_contact_name": "Pam J. Hood",
+  "agency_contact_email": "phood@raymond.com",
+  "agency_contact_phone": "(789)00155",
+  "reasons_for_objection": "Insufficient qualifications for the position's requirements",
+  "opm_agency_decision_reasons": "Approved based on the provided reasons and supporting documents",
+  "eligible": {
+   "name": "Bruce Avalos",
+   "rating": "Highly",
+   "certificate_number": "D001-2023-001",
+   "date_of_certificate": "06/15/2023",
+   "position_title": "Engineering Geologist, GS-13",
+   "title_of_examination": "Physical Science Series, 1310"
+  },
+  "appointing_official": {
+   "phone": "(282) 006-3887",
+   "date": "06/15/2023"
+  },
+  "opm_agency_official": {
+   "date": "06/20/2023"
+  }
+ },
+ "parse": {
+  "agency_contact_name": "Pam J. Hood",
+  "agency_contact_email": "phood@raymond.com",
+  "agency_contact_phone": "(789)00155",
+  "reasons_for_objection": "Insufficient qualifications for the position's requirements",
+  "opm_agency_decision_reasons": "Approved based on the provided reasons and supporting documents",
+  "eligible": {
+   "name": "Bruce Avalos",
+   "rating": "Highly",
+   "certificate_number": "D001-2023-001",
+   "date_of_certificate": "06/15/2023",
+   "position_title": "Engineering Geologist, GS-13",
+   "title_of_examination": "Physical Science Series, 1310"
+  },
+  "appointing_official": {
+   "phone": "(282) 006-3887",
+   "date": "06/15/2023"
+  },
+  "opm_agency_official": {
+   "date": "06/20/2023"
+  }
+ },
+ "oneshot": {
+  "agency_contact_name": "Pam J. Hood",
+  "agency_contact_email": "phood@raymond.com",
+  "agency_contact_phone": "(789)00155",
+  "reasons_for_objection": "Insufficient qualifications for the position's requirements",
+  "opm_agency_decision_reasons": "Approved based on the provided reasons and supporting documents",
+  "eligible": {
+   "name": "Bruce Avalos",
+   "rating": "Highly",
+   "certificate_number": "D001-2023-001",
+   "date_of_certificate": "06/15/2023",
+   "position_title": "Engineering Geologist, GS-13",
+   "title_of_examination": "Physical Science Series, 1310"
+  },
+  "appointing_official": {
+   "phone": "(282) 006-3887",
+   "date": "06/15/2023"
+  },
+  "opm_agency_official": {
+   "date": "06/20/2023"
+  }
+ }
+}

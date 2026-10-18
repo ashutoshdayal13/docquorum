@@ -1,15 +1,16 @@
 {
- "written_utc": "2026-10-15 19:29",
+ "written_utc": "2026-10-18 01:58",
  "model": "Qwen/Qwen3.8-27B-FP8, vLLM 0.27.1, greedy decoding; MinerU2.5-2509-1.2B parser",
+ "pipeline_version": "v1.3 (docs/DESIGN.md)",
  "serving": "serve/serve_qwen38_27b.sh; on the shared GPU GPU_UTIL 0.62-0.66, and from 14 October 2026 SPEC_TOKENS=2 (speculative decoding, which leaves greedy outputs unchanged up to floating-point batch effects)",
  "pipeline_sha256": {
   "docquorum/__init__.py": "b0081b83dc0afbef78f5e0a34ab0659218d09e6d0c1649cd46eab648efdd9cd9",
   "docquorum/agents/__init__.py": "487eac7532dfd1dc2ba4d29bcd9a4cf6abf80112eaf49605e31931fe121a37b1",
-  "docquorum/agents/column_reader.py": "89631571fee21641ec8df5babf4f69d4f189c231aa8a4d8d8e0b76c203dfc3a4",
+  "docquorum/agents/column_reader.py": "0f138b1674604539f314a2ebc2573a3ea42ba6ef728776a45ff76ddba4422a24",
   "docquorum/agents/layout.py": "80d114c4e442aa53c5eaa303c6968ead8b9e4a1ecad0f2c9925a8edaf7ef05ed",
   "docquorum/agents/oneshot.py": "3ffd4145c3d00e4215689355c03d4fbd1685d4d62a89028a5048c8ea9525e34e",
-  "docquorum/agents/prompts.py": "72904be9cb0e8205057079e5b74e8fc899219c5d031b878cd492b2e33d66ce55",
-  "docquorum/agents/reader.py": "25d71b27a95f4c16f3d2a002a5fa231d4cb73f66b7d14d4594675a8957b8c396",
+  "docquorum/agents/prompts.py": "18d1e57472513fe3ec12663875cce1ff5dadbd258110f3dd21a51b1d18e3f15e",
+  "docquorum/agents/reader.py": "68e69d008b70391d12ac8758665d3bb5684907f7bf4748729e6e58b6347ae458",
   "docquorum/agents/ruled_reader.py": "54c1a1e5f8e728bf0bf0ed0e529912c8398d17132a9693de2622b31f00e7f446",
   "docquorum/agents/whole.py": "f004832aa8c02ca7bfddbafc5e3a95aba27e2f15f8acaab7fcb93a78b55e84e6",
   "docquorum/checks/__init__.py": "65351898e0a54e5997230aa3547168bbd726487acb472345276aa205d2228fbe",
@@ -29,31 +30,37 @@
   "docquorum/checks/stacked_rows.py": "3ed15e36e02ab3618486be36497232ac8bfa76be83c76503d2171b6b27c2696d",
   "docquorum/checks/template_rows.py": "47a2e24d5aa168db173fe543b2500d11f668ff7d9d1ec9486a2937a8f0909f1d",
   "docquorum/config.py": "4a0645ad133bf69b2f9bd5373aef84b0db2b4806123e82a553b4a603a5725248",
-  "docquorum/extract.py": "6108ba14cdc93ab20aaebdf36e54559cafc83765a498c6d88ba418608aa56618",
+  "docquorum/extract.py": "7b2d570b8e906a0589e560c21b764bfd051c833a4a51a1e5940cd3f038439f8b",
   "docquorum/extractbench.py": "7c257c167bc131d27daf3dace933b79082f66e1a4dbbd53839e1a526a4e9b971",
-  "docquorum/quorum.py": "6d7c6f9365bdd52bca176b721a926f6b66aaac4aa8582bd05939e3ced741d26f",
+  "docquorum/quorum.py": "0548bc262199bade0eeb76886250b1f4739e537ebe1d982132d63cecd3cb0126",
   "docquorum/tools/__init__.py": "76a9af8c849bb268bf407fafcc393d5dc3390407d38bb0100c4ed715deeb410a",
   "docquorum/tools/images.py": "1ebb5dfb66a64d23599ac1c2e4238542a3da6401f51ba3f5ecf2d534f435172e",
   "docquorum/tools/layout.py": "a63aa41aa20817a1d4420b90248d27a947e7b844b4726f0991cba8a985d3f26e",
-  "docquorum/tools/llm.py": "8b3b8c8fca94e051b177e88df6288a3b448c73b31a2651c13645a276e27ecfe6",
+  "docquorum/tools/llm.py": "a562eb252d30a4f2a80dae4aca480307e1d34b5d558eb9cdf14921d62a368a9e",
   "docquorum/tools/native.py": "a7348ce8209d28b90d630e6a20db6ff47690dfec9fefdf19c3882395e4e2fde6",
   "docquorum/tools/parser.py": "b1ee1b7e26c11adef245138738477212814db249b4765a7b812f8cdbe528b0c1",
   "docquorum/tools/pdf.py": "d361b7f5ab594dba7ac6aa2fedbe4f53347f9a94c134646f2d9b67a9b86e4820",
-  "docquorum/tools/rows.py": "d2542c6e42df70110c7a85519af5673c5baede6b445b4b3367ab919e5d31ef46",
-  "docquorum/tools/schema.py": "c9dcca97a0ee37e850075ff2902ee7eefad44455fbbab08fbe83580cda421d0e",
-  "docquorum/zoom.py": "3c8af42aa642cc4a50c116babca947a521ff147995672d5228e2031831a2b470"
+  "docquorum/tools/rows.py": "70d46fd51d668f87ac538e5f611987510163f3aa438d4b35332f4c2a1630ae29",
+  "docquorum/tools/schema.py": "ecd8ed518db6d8bb00cfbaa844e7c2f9551fbbe77ae4c4efd4bf46639c8bc762",
+  "docquorum/zoom.py": "a4546d7d18ddc49e14d076690eccd3bc4d1adbb4c4b81539bfb0646a01a7416b"
  },
  "results": [
   {
    "benchmark": "VAREX (image input)",
    "metric": "exact match, normalized",
-   "score": 98.29728704230696,
+   "score": 98.22614304686019,
    "place": "1st (Gemini 2.5 Pro 98.0)",
-   "configuration": "pipeline + zoom re-reading (held-out run)",
-   "files": "results/varex-zoom",
-   "without_zoom": {
-    "score": 98.09808385505596,
-    "predictions": "results/varex"
+   "configuration": "final pipeline (v1.3), every form read again",
+   "files": "results/varex-final",
+   "earlier": {
+    "v1.2, zoom re-reading on the v1.1 readings": {
+     "score": 98.29728704230696,
+     "predictions": "results/varex-zoom"
+    },
+    "v1.1, without zoom re-reading": {
+     "score": 98.09808385505596,
+     "predictions": "results/varex"
+    }
    }
   },
   {
@@ -98,9 +105,9 @@
   {
    "benchmark": "DocuBench v0.2.0",
    "metric": "macro field accuracy",
-   "score": 86.46983977509024,
-   "place": "5th of 10 (DocuPipe 97.02)",
-   "configuration": "pipeline as released; four fixes found on this benchmark",
+   "score": 90.79783905303204,
+   "place": "4th of 10 (DocuPipe 97.02; Claude Sonnet 5 91.73)",
+   "configuration": "final pipeline (v1.3), every document read again; the v1.3 fixes were found on this benchmark",
    "files": "results/docubench"
   }
  ],
@@ -170,6 +177,12 @@
    "commit": "v1.2",
    "change": "zoom re-reading: the zoomed reading counts as two votes, so it can overturn a lead of one reading but not a clear majority (found from the UNIKIE constrained test, where it first lowered the score 82.62 -> 81.62)",
    "results_touched": "UNIKIE constrained headline 82.65 with zoom (development measurement); VAREX and UNIKIE open unchanged (the rule withdraws none of their changes)"
+  },
+  {
+   "date": "2026-10-16",
+   "commit": "v1.3",
+   "change": "decoding admits null for optional scalar fields (no forced 0, 'null' text or copied values); decoding loops read again with a repetition penalty, then their repeats dropped; OCR text (a scan's parse, or an OCR text layer) sent with its page images in every call, at 300 dpi for chunks; long scans decided by the quorum; zoom compares numbers by value; zoom on by default (docs/DESIGN.md)",
+   "results_touched": "DocuBench 86.47 -> 90.80 (every document read again); VAREX 98.30 -> 98.23 (every form read again, 1st); LongArray-Extract and UNIKIE unaffected (their schemas and inputs meet none of the changed cases); ExtractBench is the stored run of an earlier version"
   }
  ],
  "rules": [

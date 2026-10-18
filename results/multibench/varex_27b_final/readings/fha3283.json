@@ -1,0 +1,35 @@
+{
+ "primary": {
+  "project_number": "FHA-2023-4567",
+  "mortgagor_name": "Feline X. Osborne",
+  "recipient": {
+   "name": "Arthur H. Evrard"
+  },
+  "sponsor": {
+   "name": "Scott, Welch and Smith",
+   "address": "71832 Mitchell Unions, Port Richard, VA 15969"
+  }
+ },
+ "parse": {
+  "project_number": "FHA-2023-4567",
+  "mortgagor_name": "Feline X. Osborne",
+  "recipient": {
+   "name": "Arthur H. Evrard"
+  },
+  "sponsor": {
+   "name": "Scott, Welch and Smith",
+   "address": "71832 Mitchell Unions, Port Richard, VA 15969"
+  }
+ },
+ "oneshot": {
+  "project_number": "FHA-2023-4567",
+  "mortgagor_name": "Feline X. Osborne",
+  "recipient": {
+   "name": "Arthur H. Evrard"
+  },
+  "sponsor": {
+   "name": "Scott, Welch and Smith",
+   "address": "71832 Mitchell Unions, Port Richard, VA 15969"
+  }
+ }
+}

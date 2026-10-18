@@ -1,0 +1,19 @@
+{
+ "attorney_name": {
+  "first_name": "Tonya",
+  "last_name": "Gibbs"
+ },
+ "attorney_address": {
+  "street": "89277 Chelsea Rue Suite 046",
+  "city": "Port Clintonville",
+  "state": "MA",
+  "zip_code": "70605"
+ },
+ "contact_information": {
+  "phone_number": "2495588269",
+  "email_address": "tonya.gibbs@yahoo.com"
+ },
+ "eligibility_information": {
+  "jurisdiction": "Massachusetts, United States"
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "primary": {
+  "opm_case_number": "CASE-2024-00123",
+  "credit_income_to": "Department of Defense",
+  "ssn": "490-44-1768",
+  "date_of_birth": "11/03/1973",
+  "other_names_used": "Jorge B Allison, Jorge Allison Jr",
+  "place_of_birth": "Port Calvinfort, Nevada, USA",
+  "submitting_office_number": "SUB-2024-001",
+  "announcements_and_position_titles": "Applications developer, Senior software engineer, IT project manager",
+  "sensitivity_level": "High",
+  "public_trust_level": "Moderate Risk",
+  "other_action_or_remarks": "Background check completed successfully. No discrepancies found.",
+  "subject_name": {
+   "first_name": "Jorge",
+   "last_name": "Allison"
+  },
+  "requesting_official": {
+   "name": "Jorge Allison"
+  },
+  "opm_representative": {
+   "name": "Jane Doe",
+   "title": "Senior Background"
+  }
+ },
+ "parse": {
+  "opm_case_number": "CASE-2024-00123",
+  "credit_income_to": "Department of Defense",
+  "ssn": "490-44-1768",
+  "date_of_birth": "11/03/1973",
+  "other_names_used": "Jorge B Allison, Jorge Allison Jr",
+  "place_of_birth": "Port Calvinfort, Nevada, USA",
+  "submitting_office_number": "SUB-2024-001",
+  "announcements_and_position_titles": "Applications developer, Senior software engineer, IT project manager",
+  "sensitivity_level": "High",
+  "public_trust_level": "Moderate Risk",
+  "other_action_or_remarks": "Background check completed successfully. No discrepancies found.",
+  "subject_name": {
+   "first_name": "Jorge",
+   "last_name": "Allison"
+  },
+  "requesting_official": {
+   "name": "Jorge Allison"
+  },
+  "opm_representative": {
+   "name": "Jane Doe",
+   "title": "Senior Background"
+  }
+ },
+ "oneshot": {
+  "opm_case_number": "CASE-2024-00123",
+  "credit_income_to": "Department of Defense",
+  "ssn": "490-44-1768",
+  "date_of_birth": "11/03/1973",
+  "other_names_used": "Jorge B Allison, Jorge Allison Jr",
+  "place_of_birth": "Port Calvinfort, Nevada, USA",
+  "submitting_office_number": "SUB-2024-001",
+  "announcements_and_position_titles": "Applications developer, Senior software engineer, IT project manager",
+  "sensitivity_level": "High",
+  "public_trust_level": "Moderate Risk",
+  "other_action_or_remarks": "Background check completed successfully. No discrepancies found.",
+  "subject_name": {
+   "first_name": "Jorge",
+   "last_name": "Allison"
+  },
+  "requesting_official": {
+   "name": "Jorge Allison"
+  },
+  "opm_representative": {
+   "name": "Jane Doe",
+   "title": "Senior Background"
+  }
+ }
+}

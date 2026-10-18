@@ -1,0 +1,53 @@
+{
+ "primary": {
+  "certification_date": "04/02/2023",
+  "survey_title": "Residential Property Survey - Nedda Blonk",
+  "property_location": "Gabrielatown, Toole County, Montana",
+  "street_numbers": "06902",
+  "survey_map_date": "04/02/2023",
+  "revision_date": "04/02/2023",
+  "property_owner": {
+   "name": "Nedda Blonk",
+   "name_second_inspection": "Nedda Blonk",
+   "second_inspection_date": "05/02/2023"
+  },
+  "surveyor_information": {
+   "name": "Nedda Blonk",
+   "license_number": "LCSW-X"
+  }
+ },
+ "parse": {
+  "certification_date": "04/02/2023",
+  "survey_title": "Residential Property Survey - Nedda Blonk",
+  "property_location": "Gabrielatown, Toole County, Montana",
+  "street_numbers": "06902",
+  "survey_map_date": "04/02/2023",
+  "revision_date": "04/02/2023",
+  "property_owner": {
+   "name": "Nedda Blonk",
+   "name_second_inspection": "Nedda Blonk",
+   "second_inspection_date": "05/02/2023"
+  },
+  "surveyor_information": {
+   "name": "Nedda Blonk",
+   "license_number": "LCSW-X"
+  }
+ },
+ "oneshot": {
+  "certification_date": "04/02/2023",
+  "survey_title": "Residential Property Survey - Nedda Blonk",
+  "property_location": "Gabrielatown, Toole County, Montana",
+  "street_numbers": "06902",
+  "survey_map_date": "04/02/2023",
+  "revision_date": "04/02/2023",
+  "property_owner": {
+   "name": "Nedda Blonk",
+   "name_second_inspection": "Nedda Blonk",
+   "second_inspection_date": "05/02/2023"
+  },
+  "surveyor_information": {
+   "name": "Nedda Blonk",
+   "license_number": "LCSW-X"
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "ruled": {
+  "employee_name": "Jeffrey K. Villalobos",
+  "appointment_date": "06/01/2023",
+  "payment_method": "in installments throughout the service period",
+  "installment_payments": [
+   {
+    "installment_date": "06/20/2023",
+    "source_page": 1
+   },
+   {
+    "installment_date": "05/20/2024",
+    "source_page": 1
+   },
+   {
+    "installment_date": "04/20/2024",
+    "source_page": 1
+   },
+   {
+    "installment_date": "03/20/2024",
+    "source_page": 1
+   },
+   {
+    "installment_date": "02/20/2024",
+    "source_page": 1
+   },
+   {
+    "installment_date": "01/20/2024",
+    "source_page": 1
+   }
+  ]
+ }
+}

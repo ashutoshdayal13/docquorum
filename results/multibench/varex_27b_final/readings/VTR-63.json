@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "seller_first_name": "Oswaldo",
+  "purchaser_first_name": "Dalbir",
+  "vehicle_identification_number": "1HGCM82633A123456",
+  "vehicle_make": "Honda",
+  "vehicle_model": "Accord",
+  "component_part_inventory_numbers": [
+   "INV-ENG-2023-1001",
+   "INV-TRANS-2023-1002",
+   "INV-FBUMP-2023-1003"
+  ],
+  "seller_signature_date": "05/15/2023",
+  "seller_address": {
+   "street": "7713 Frey Inlet Suite 343"
+  },
+  "purchaser_address": {
+   "street": "96115 Tiffany Forest Suite 044"
+  }
+ },
+ "parse": {
+  "seller_first_name": "Oswaldo",
+  "purchaser_first_name": "Dalbir",
+  "vehicle_identification_number": "1HGCM82633A123456",
+  "vehicle_make": "Honda",
+  "vehicle_model": "Accord",
+  "component_part_inventory_numbers": [
+   "INV-ENG-2023-1001",
+   "INV-TRANS-2023-1002",
+   "INV-FBUMP-2023-1003"
+  ],
+  "seller_signature_date": "05/15/2023",
+  "seller_address": {
+   "street": "7713 Frey Inlet Suite 343"
+  },
+  "purchaser_address": {
+   "street": "96115 Tiffany Forest Suite 044"
+  }
+ },
+ "oneshot": {
+  "seller_first_name": "Oswaldo",
+  "purchaser_first_name": "Dalbir",
+  "vehicle_identification_number": "1HGCM82633A123456",
+  "vehicle_make": "Honda",
+  "vehicle_model": "Accord",
+  "component_part_inventory_numbers": [
+   "INV-ENG-2023-1001",
+   "INV-TRANS-2023-1002",
+   "INV-FBUMP-2023-1003"
+  ],
+  "seller_signature_date": "05/15/2023",
+  "seller_address": {
+   "street": "7713 Frey Inlet Suite 343"
+  },
+  "purchaser_address": {
+   "street": "96115 Tiffany Forest Suite 044"
+  }
+ }
+}

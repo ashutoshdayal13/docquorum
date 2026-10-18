@@ -1,0 +1,68 @@
+{
+ "primary": {
+  "certificate_number": "T - T-1234",
+  "property_name": "Federal Plaza Renovation Project",
+  "gsa_project_manager": "Samantha Alvarez",
+  "specific_area_of_building": "East Wing Floors 3-5 Renovated Offices",
+  "approved_uses": "Office Space for GSA Tenants",
+  "previous_uses": "Warehouse and Storage Facility",
+  "approved_occupancies": "500 Occupants Maximum",
+  "previous_occupancies": "150 Occupants Maximum",
+  "certificate_expiration_date": "09/15/2023",
+  "design_occupant_load": "500 Occupants per Floor",
+  "building_code_name_and_edition": "International Building",
+  "type_of_construction": "Type IIB Non-Combustible",
+  "description_of_use": "Renovated office space for federal agency tenants with modern amenities and safety features",
+  "special_stipulations_or_code_modifications": "Fire safety systems to be inspected monthly during the certificate period",
+  "name_of_gsa_approving_official": "Brooke R. Pierce",
+  "date": "06/16/2023",
+  "property_address": {
+   "street": "4029 Baker Circles Suite 458",
+   "city_state_zip": "New Davidchester, WA 03382"
+  }
+ },
+ "parse": {
+  "certificate_number": "T - T-1234",
+  "property_name": "Federal Plaza Renovation Project",
+  "gsa_project_manager": "Samantha Alvarez",
+  "specific_area_of_building": "East Wing Floors 3-5 Renovated Offices",
+  "approved_uses": "Office Space for GSA Tenants",
+  "previous_uses": "Warehouse and Storage Facility",
+  "approved_occupancies": "500 Occupants Maximum",
+  "previous_occupancies": "150 Occupants Maximum",
+  "certificate_expiration_date": "09/15/2023",
+  "design_occupant_load": "500 Occupants per Floor",
+  "building_code_name_and_edition": "International Building",
+  "type_of_construction": "Type IIB Non-Combustible",
+  "description_of_use": "Renovated office space for federal agency tenants with modern amenities and safety features",
+  "special_stipulations_or_code_modifications": "Fire safety systems to be inspected monthly during the certificate period",
+  "name_of_gsa_approving_official": "Brooke R. Pierce",
+  "date": "06/16/2023",
+  "property_address": {
+   "street": "4029 Baker Circles Suite 458",
+   "city_state_zip": "New Davidchester, WA 03382"
+  }
+ },
+ "oneshot": {
+  "certificate_number": "T - T-1234 -",
+  "property_name": "Federal Plaza Renovation Project",
+  "gsa_project_manager": "Samantha Alvarez",
+  "specific_area_of_building": "East Wing Floors 3-5 Renovated Offices",
+  "approved_uses": "Office Space for GSA Tenants",
+  "previous_uses": "Warehouse and Storage Facility",
+  "approved_occupancies": "500 Occupants Maximum",
+  "previous_occupancies": "150 Occupants Maximum",
+  "certificate_expiration_date": "09/15/2023",
+  "design_occupant_load": "500 Occupants per Floor",
+  "building_code_name_and_edition": "International Building",
+  "type_of_construction": "Type IIB Non-Combustible",
+  "description_of_use": "Renovated office space for federal agency tenants with modern amenities and safety features",
+  "special_stipulations_or_code_modifications": "Fire safety systems to be inspected monthly during the certificate period",
+  "name_of_gsa_approving_official": "Brooke R. Pierce",
+  "date": "06/16/2023",
+  "property_address": {
+   "street": "4029 Baker Circles Suite 458",
+   "city_state_zip": "New Davidchester, WA 03382"
+  }
+ }
+}

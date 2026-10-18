@@ -1,0 +1,38 @@
+{
+ "primary": {
+  "individual_case_safety_report_number": "FDA-2023-75391",
+  "sender_information": {
+   "name": "Luce J. Teixeira",
+   "address": "9752 Gabriela Knoll, Lake Adamview, IL 88659",
+   "phone": "(033) 806-1784",
+   "email": "luce.teixeira@gmail.com"
+  },
+  "health_care_professional_information": {
+   "name": "Dr. Sarah Johnson"
+  }
+ },
+ "parse": {
+  "individual_case_safety_report_number": "FDA-2023-75391",
+  "sender_information": {
+   "name": "Luce J. Teixeira",
+   "address": "9752 Gabriela Knoll, Lake Adamview, IL 88659",
+   "phone": "(033) 806-1784",
+   "email": "luce.teixeira@gmail.com"
+  },
+  "health_care_professional_information": {
+   "name": "Dr. Sarah Johnson"
+  }
+ },
+ "oneshot": {
+  "individual_case_safety_report_number": "FDA-2023-75391",
+  "sender_information": {
+   "name": "Luce J. Teixeira",
+   "address": "9752 Gabriela Knoll, Lake Adamview, IL 88659",
+   "phone": "(033) 806-1784",
+   "email": "luce.teixeira@gmail.com"
+  },
+  "health_care_professional_information": {
+   "name": "Dr. Sarah Johnson"
+  }
+ }
+}

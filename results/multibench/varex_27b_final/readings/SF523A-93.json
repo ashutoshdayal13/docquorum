@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "receipt_body_name": "Spanevello, Ann",
+  "receipt_time": "2:30 PM",
+  "receipt_date": "03/15/2023",
+  "removal_body_name": "Spanevello, Ann",
+  "removal_time": "10:15 AM",
+  "removal_date": "03/16/2023",
+  "physician_statement": "Deceased was examined and remains are in acceptable condition for release",
+  "undertaker": {
+   "name": "Mcclain-Smith Funeral Services"
+  },
+  "patient": {
+   "name": "Spanevello, Ann",
+   "identification": "SSN: 676-64-7109"
+  }
+ },
+ "parse": {
+  "receipt_body_name": "Spanevello, Ann",
+  "receipt_time": "2:30 PM",
+  "receipt_date": "03/15/2023",
+  "removal_body_name": "Spanevello, Ann",
+  "removal_time": "10:15 AM",
+  "removal_date": "03/16/2023",
+  "physician_statement": "Deceased was examined and remains are in acceptable condition for release",
+  "undertaker": {
+   "name": "McClain-Smith Funeral Services"
+  },
+  "patient": {
+   "name": "Spanevello, Ann",
+   "identification": "SSN: 676-64-7109"
+  }
+ },
+ "oneshot": {
+  "receipt_body_name": "Spanevello, Ann",
+  "receipt_time": "2:30 PM",
+  "receipt_date": "03/15/2023",
+  "removal_body_name": "Spanevello, Ann",
+  "removal_time": "10:15 AM",
+  "removal_date": "03/16/2023",
+  "physician_statement": "Deceased was examined and remains are in acceptable condition for release",
+  "undertaker": {
+   "name": "Mcclain-Smith Funeral Services"
+  },
+  "patient": {
+   "name": "Spanevello, Ann",
+   "identification": "SSN: 676-64-7109"
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "primary": {
+  "applicant_last_name": "Gibson",
+  "applicant_first_name": "Gloria",
+  "applicant_middle_initial": "H",
+  "applicant_date_of_birth": "04/24/1960",
+  "applicant_social_security_number": "132-98-3506",
+  "applicant_phone_number": "(168) 201-83",
+  "applicant_original_last_name": "Gibson",
+  "applicant_original_first_name": "Gloria",
+  "applicant_original_middle_initial": "H",
+  "applicant_date_last_provided_duties": "03/15/2023",
+  "applicant_original_certificate_number": "CNA-2015-AZ-7654",
+  "applicant_original_certification_date": "06/10/2015",
+  "applicant_certification_number": "CNA-2023-AZ-765",
+  "applicant_certification_expiry_date": "06/10/2025",
+  "applicant_certification_issue_date": "06/10/2023",
+  "certifying_official_name": "Virginia Contractor",
+  "certifying_agency_name": "Jordan Ltd",
+  "applicant_mailing_address": {
+   "street": "39287 Haley Rest",
+   "city": "Buchananbury",
+   "state": "Arizona",
+   "zip_code": "26725"
+  },
+  "certifying_agency_address": {
+   "street": "7615 Jenkins Club",
+   "city": "West Amberber",
+   "state": "I"
+  }
+ },
+ "parse": {
+  "applicant_last_name": "Gibson",
+  "applicant_first_name": "Gloria",
+  "applicant_middle_initial": "H",
+  "applicant_date_of_birth": "04/24/1960",
+  "applicant_social_security_number": "132-98-3506",
+  "applicant_phone_number": "(168) 201-83",
+  "applicant_original_last_name": "Gibson",
+  "applicant_original_first_name": "Gloria",
+  "applicant_original_middle_initial": "H",
+  "applicant_date_last_provided_duties": "03/15/2023",
+  "applicant_original_certificate_number": "CNA-2015-AZ-7654",
+  "applicant_original_certification_date": "06/10/2015",
+  "applicant_certification_number": "CNA-2023-AZ-765",
+  "applicant_certification_expiry_date": "06/10/2025",
+  "applicant_certification_issue_date": "06/10/2023",
+  "certifying_official_name": "Virginia Contractor",
+  "certifying_agency_name": "Jordan Ltd",
+  "applicant_mailing_address": {
+   "street": "39287 Haley Rest",
+   "city": "Buchananbury",
+   "state": "Arizona",
+   "zip_code": "26725"
+  },
+  "certifying_agency_address": {
+   "street": "7615 Jenkins Club",
+   "city": "West Amberber",
+   "state": "I"
+  }
+ },
+ "oneshot": {
+  "applicant_last_name": "Gibson",
+  "applicant_first_name": "Gloria",
+  "applicant_middle_initial": "H",
+  "applicant_date_of_birth": "04/24/1960",
+  "applicant_social_security_number": "132-98-3506",
+  "applicant_phone_number": "(168) 201-83",
+  "applicant_original_last_name": "Gibson",
+  "applicant_original_first_name": "Gloria",
+  "applicant_original_middle_initial": "H",
+  "applicant_date_last_provided_duties": "03/15/2023",
+  "applicant_original_certificate_number": "CNA-2015-AZ-7654",
+  "applicant_original_certification_date": "06/10/2015",
+  "applicant_certification_number": "CNA-2023-AZ-765",
+  "applicant_certification_expiry_date": "06/10/2025",
+  "applicant_certification_issue_date": "06/10/2023",
+  "certifying_official_name": "Virginia Contractor",
+  "certifying_agency_name": "Jordan Ltd",
+  "applicant_mailing_address": {
+   "street": "39287 Haley Rest",
+   "city": "Buchananbury",
+   "state": "Arizona",
+   "zip_code": "26725"
+  },
+  "certifying_agency_address": {
+   "street": "7615 Jenkins Club",
+   "city": "West Amberber",
+   "state": "I"
+  }
+ }
+}

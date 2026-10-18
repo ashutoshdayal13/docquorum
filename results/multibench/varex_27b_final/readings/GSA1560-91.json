@@ -1,0 +1,74 @@
+{
+ "primary": {
+  "trainee_name": "Kyle McClure",
+  "current_position": "Textile designer",
+  "organization": "Jimenez LLC",
+  "gsa_order_number": "GSA-2023-1560",
+  "training_officer_verification_date": "10/15/2023",
+  "panel_members": [
+   {
+    "position": "Learning disability nurse"
+   },
+   {
+    "position": "Farm manager"
+   },
+   {
+    "position": "Senior Training Specialist"
+   },
+   {
+    "position": "Human Resources Manager"
+   },
+   {
+    "position": "Director of Personnel"
+   }
+  ]
+ },
+ "parse": {
+  "trainee_name": "Kyle Mcclure",
+  "current_position": "Textile designer",
+  "organization": "Jimenez LLC",
+  "gsa_order_number": "GSA-2023-1560",
+  "training_officer_verification_date": "10/15/2023",
+  "panel_members": [
+   {
+    "position": "Learning disability nurse"
+   },
+   {
+    "position": "Farm manager"
+   },
+   {
+    "position": "Senior Training Specialist"
+   },
+   {
+    "position": "Human Resources Manager"
+   },
+   {
+    "position": "Director of Personnel"
+   }
+  ]
+ },
+ "oneshot": {
+  "trainee_name": "Kyle McClure",
+  "current_position": "Textile designer",
+  "organization": "Jimenez LLC",
+  "gsa_order_number": "GSA-2023-1560",
+  "training_officer_verification_date": "10/15/2023",
+  "panel_members": [
+   {
+    "position": "Learning disability nurse"
+   },
+   {
+    "position": "Farm manager"
+   },
+   {
+    "position": "Senior Training Specialist"
+   },
+   {
+    "position": "Human Resources Manager"
+   },
+   {
+    "position": "Director of Personnel"
+   }
+  ]
+ }
+}

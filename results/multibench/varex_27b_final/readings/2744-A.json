@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "mortgagee_name": "Watkins PLC",
+  "project_name": "Green Valley Housing Project",
+  "project_number": "GV-2023-4567",
+  "date_mortgagee_assumed_control": "06/15/2023",
+  "date_mortgagee_relinquished_control": "06/15/2024",
+  "totals_forwarded": [
+   {
+    "amount": 610000,
+    "date": "06/30/2024"
+   }
+  ]
+ },
+ "parse": {
+  "mortgagee_name": "Watkins PLC",
+  "project_name": "Green Valley Housing Project",
+  "project_number": "GV-2023-4567",
+  "date_mortgagee_assumed_control": "06/15/2023",
+  "date_mortgagee_relinquished_control": "06/15/2024",
+  "totals_forwarded": [
+   {
+    "amount": 610000,
+    "date": "06/30/2024"
+   }
+  ]
+ },
+ "oneshot": {
+  "mortgagee_name": "Watkins PLC",
+  "project_name": "Green Valley Housing Project",
+  "project_number": "GV-2023-4567",
+  "date_mortgagee_assumed_control": "06/15/2023",
+  "date_mortgagee_relinquished_control": "06/15/2024",
+  "totals_forwarded": [
+   {
+    "amount": 610000,
+    "date": "06/30/2024"
+   }
+  ]
+ }
+}

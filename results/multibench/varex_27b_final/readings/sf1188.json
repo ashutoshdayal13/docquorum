@@ -1,0 +1,32 @@
+{
+ "primary": {
+  "employee_name": "Johnson, Marijn",
+  "employee_id": "284-97-6184",
+  "agency_name": "Reese-Mcmahon, Public Library Division",
+  "timekeeper_number": "TK-2023-0012",
+  "labor_organization_name": "American Federation of State, County and Municipal",
+  "reason_for_cancellation": "Change in union representation",
+  "effective_date": "06/01/2023",
+  "signature_date": "05/25/2023"
+ },
+ "parse": {
+  "employee_name": "Johnson, Marijn",
+  "employee_id": "284-97-6184",
+  "agency_name": "Reese-McMahon, Public Library Division",
+  "timekeeper_number": "TK-2023-0012",
+  "labor_organization_name": "American Federation of State, County and Municipal",
+  "reason_for_cancellation": "Change in union representation",
+  "effective_date": "06/01/2023",
+  "signature_date": "05/25/2023"
+ },
+ "oneshot": {
+  "employee_name": "Johnson, Marijn",
+  "employee_id": "284-97-6184",
+  "agency_name": "Reese-Mcmahon, Public Library Division",
+  "timekeeper_number": "TK-2023-0012",
+  "labor_organization_name": "American Federation of State, County and Municipal",
+  "reason_for_cancellation": "Change in union representation",
+  "effective_date": "06/01/2023",
+  "signature_date": "05/25/2023"
+ }
+}

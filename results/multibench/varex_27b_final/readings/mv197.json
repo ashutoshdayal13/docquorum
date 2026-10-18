@@ -1,0 +1,65 @@
+{
+ "primary": {
+  "registrant_name": "Olivia Amato",
+  "address": {
+   "street": "90412 Darrell Union",
+   "city": "East Karen",
+   "state": "NC",
+   "zip_code": "52357"
+  },
+  "vehicle_details": {
+   "vehicle_identifier": "1HGCM82633A123456"
+  },
+  "certification_ambulance": {
+   "certifying_authority": "New York State Department of Health"
+  },
+  "bus_exemption": {
+   "exemption_reason": "Non-profit organization services"
+  },
+  "certification_bus": {
+   "certifying_authority": "New York State Education"
+  }
+ },
+ "parse": {
+  "registrant_name": "Olivia Amato",
+  "address": {
+   "street": "90412 Darrell Union",
+   "city": "East Karen",
+   "state": "NC",
+   "zip_code": "52357"
+  },
+  "vehicle_details": {
+   "vehicle_identifier": "1HGCM82633A123456"
+  },
+  "certification_ambulance": {
+   "certifying_authority": "New York State Department of Health"
+  },
+  "bus_exemption": {
+   "exemption_reason": "Non-profit organization services"
+  },
+  "certification_bus": {
+   "certifying_authority": "New York State Education"
+  }
+ },
+ "oneshot": {
+  "registrant_name": "Olivia Amato",
+  "address": {
+   "street": "90412 Darrell Union",
+   "city": "East Karen",
+   "state": "NC",
+   "zip_code": "52357"
+  },
+  "vehicle_details": {
+   "vehicle_identifier": "1HGCM82633A123456"
+  },
+  "certification_ambulance": {
+   "certifying_authority": "New York State Department of Health"
+  },
+  "bus_exemption": {
+   "exemption_reason": "Non-profit organization services"
+  },
+  "certification_bus": {
+   "certifying_authority": "New York State Education"
+  }
+ }
+}

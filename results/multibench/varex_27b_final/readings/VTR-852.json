@@ -1,0 +1,41 @@
+{
+ "primary": {
+  "vehicle_identification_number": "1FTFW1E55AFB35214",
+  "body_style": "Coupe",
+  "replica_year": "1957",
+  "replica_make": "Ford Thunderbird",
+  "certification_date": "05/15/2023",
+  "applicant": {
+   "first_name": "Rodrigo",
+   "address": "505 Shaw Shoal",
+   "email": "rodrigo.rasmussen@outlook.com",
+   "phone": "(682) 598-0790"
+  }
+ },
+ "parse": {
+  "vehicle_identification_number": "1FTFW1E55AFB35214",
+  "body_style": "Coupe",
+  "replica_year": "1957",
+  "replica_make": "Ford Thunderbird",
+  "certification_date": "05/15/2023",
+  "applicant": {
+   "first_name": "Rodrigo",
+   "address": "505 Shaw Shoal",
+   "email": "rodrigo.rasmussen@outlook.com",
+   "phone": "(682) 598-0790"
+  }
+ },
+ "oneshot": {
+  "vehicle_identification_number": "1FTFW1E55AFB35214",
+  "body_style": "Coupe",
+  "replica_year": "1957",
+  "replica_make": "Ford Thunderbird",
+  "certification_date": "05/15/2023",
+  "applicant": {
+   "first_name": "Rodrigo",
+   "address": "505 Shaw Shoal",
+   "email": "rodrigo.rasmussen@outlook.com",
+   "phone": "(682) 598-0790"
+  }
+ }
+}

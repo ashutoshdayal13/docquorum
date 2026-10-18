@@ -1,0 +1,24 @@
+{
+ "name": "Klups, Remy W.",
+ "date_of_birth": "12/07/1973",
+ "social_security_number": "112-16-0375",
+ "date_of_designation": "10/15/2023",
+ "employment_details": {
+  "department_or_agency": "Shepherd-Gill",
+  "location": "North Michael, MD 92092"
+ },
+ "beneficiaries": [
+  {
+   "name": "Daniel, Axel F.",
+   "share": "50"
+  },
+  {
+   "name": "Rowe, Sharon",
+   "share": "30"
+  },
+  {
+   "name": "Klups, Remy W. Jr.",
+   "share": "20"
+  }
+ ]
+}

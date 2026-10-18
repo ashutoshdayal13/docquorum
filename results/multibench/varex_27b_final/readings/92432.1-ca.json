@@ -1,0 +1,35 @@
+{
+ "primary": {
+  "section": "Section 202",
+  "project_number": "HUD-2023-16335",
+  "project_name": "Sunny Meadows",
+  "owner_name": "Gordon Group Properties LLC",
+  "property_location": "New Austinside, IL",
+  "owner_address": {
+   "street": "832 Garcia Lakes Apt. 643",
+   "city": "New Austinside"
+  }
+ },
+ "parse": {
+  "section": "Section 202",
+  "project_number": "HUD-2023-16335",
+  "project_name": "Sunny Meadows",
+  "owner_name": "Gordon Group Properties LLC",
+  "property_location": "New Austinside, IL",
+  "owner_address": {
+   "street": "832 Garcia Lakes Apt. 643, New Austinside, IL 33437",
+   "city": "New Austinside"
+  }
+ },
+ "oneshot": {
+  "section": "202",
+  "project_number": "HUD-2023-16335",
+  "project_name": "Sunny Meadows",
+  "owner_name": "Gordon Group Properties LLC",
+  "property_location": "New Austinside, IL",
+  "owner_address": {
+   "street": "832 Garcia Lakes Apt. 643, New Austinside, IL 33437",
+   "city": "New Austinside"
+  }
+ }
+}

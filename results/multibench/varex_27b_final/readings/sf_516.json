@@ -1,0 +1,95 @@
+{
+ "primary": {
+  "date_of_operation": "03/15/2023",
+  "time_operation_began": "08:30 AM",
+  "time_operation_completed": "10:45",
+  "preoperative_diagnosis": "Appendicitis, acute",
+  "operative_diagnoses": "Acute inflamed appendix",
+  "operation_performed": "Appendectomy",
+  "description_of_operation": "Open appendectomy performed under general anesthesia. Appendix removed and sent for pathology.",
+  "drains": "One Jackson-Pratt drain placed in the wound",
+  "prosthetic_devices": "None",
+  "surgeon_details": {
+   "signature_of_surgeon": "Katherine Q. Henderson, MD"
+  },
+  "assistants": {
+   "first_assistant": "Bernd D. Korbut",
+   "second_assistant": "Kabir V. Mcneil"
+  },
+  "anesthesia_details": {
+   "anesthetist": "Kabir V. Mcneil",
+   "anesthetic": "General anesthesia with sevoflurane"
+  },
+  "nursing_staff": {
+   "circulating_nurse": "Bernd D. Korbut",
+   "scrub_nurse": "Kabir V. Mcneil"
+  },
+  "patient_identification": {
+   "patient_identification": "John Doe, 45 years old, Male",
+   "register_id_no": "P-2023-0045",
+   "ward_no": "Ward 3, Bed 5"
+  }
+ },
+ "parse": {
+  "date_of_operation": "03/15/2023",
+  "time_operation_began": "08:30 AM",
+  "time_operation_completed": "10:45",
+  "preoperative_diagnosis": "Appendicitis, acute",
+  "operative_diagnoses": "Acute inflamed appendix",
+  "operation_performed": "Appendectomy",
+  "description_of_operation": "Open appendectomy performed under general anesthesia. Appendix removed and sent for pathology.",
+  "drains": "One Jackson-Pratt drain placed in the wound",
+  "prosthetic_devices": "None",
+  "surgeon_details": {
+   "signature_of_surgeon": "Katherine Q. Henderson, MD"
+  },
+  "assistants": {
+   "first_assistant": "Bernd D. Korbut",
+   "second_assistant": "Kabir V. Mcneil"
+  },
+  "anesthesia_details": {
+   "anesthetist": "Kabir V. Mcneil",
+   "anesthetic": "General anesthesia with sevoflurane"
+  },
+  "nursing_staff": {
+   "circulating_nurse": "Bernd D. Korbut",
+   "scrub_nurse": "Kabir V. Mcneil"
+  },
+  "patient_identification": {
+   "patient_identification": "John Doe, 45 years old, Male",
+   "register_id_no": "P-2023-0045",
+   "ward_no": "Ward 3, Bed 5"
+  }
+ },
+ "oneshot": {
+  "date_of_operation": "03/15/2023",
+  "time_operation_began": "08:30 AM",
+  "time_operation_completed": "10:45",
+  "preoperative_diagnosis": "Appendicitis, acute",
+  "operative_diagnoses": "Acute inflamed appendix",
+  "operation_performed": "Appendectomy",
+  "description_of_operation": "Open appendectomy performed under general anesthesia. Appendix removed and sent for pathology.",
+  "drains": "One Jackson-Pratt drain placed in the wound",
+  "prosthetic_devices": "None",
+  "surgeon_details": {
+   "signature_of_surgeon": "Katherine Q. Henderson, MD"
+  },
+  "assistants": {
+   "first_assistant": "Bernd D. Korbut",
+   "second_assistant": "Kabir V. Mcneil"
+  },
+  "anesthesia_details": {
+   "anesthetist": "Kabir V. Mcneil",
+   "anesthetic": "General anesthesia with sevoflurane"
+  },
+  "nursing_staff": {
+   "circulating_nurse": "Bernd D. Korbut",
+   "scrub_nurse": "Kabir V. Mcneil"
+  },
+  "patient_identification": {
+   "patient_identification": "John Doe, 45 years old, Male",
+   "register_id_no": "P-2023-0045",
+   "ward_no": "Ward 3, Bed 5"
+  }
+ }
+}

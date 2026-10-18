@@ -1,0 +1,20 @@
+{
+ "applicant_name": "Jeffrey",
+ "applicant_last_name": "Whitehead",
+ "date_of_birth": "11/07/1968",
+ "telephone_no": "15184",
+ "driver_license_number": "RN-1996-CA-39819",
+ "disability_plate_number": "CA-39819-DIS",
+ "disability_permit_number": "CA-39819-PER",
+ "signature_date": "03/15/2023",
+ "address": {
+  "street": "6798 May Knolls Suite 834",
+  "city": "Davidburgh",
+  "state": "CA"
+ },
+ "medical_certification": {
+  "certifying_physician_name": "Dr. Michele A. Haynes, MD",
+  "certifying_physician_license_number": "MD-2023-GA-78346",
+  "certification_date": "03/10/2023"
+ }
+}

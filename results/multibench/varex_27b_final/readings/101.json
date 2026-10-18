@@ -1,0 +1,64 @@
+{
+ "primary": {
+  "request_date": "04/15/2024",
+  "order_placed_by": "Julia V. Lall",
+  "order_placed_date": "04/15/2024",
+  "ordered_labels_quantity": 5000,
+  "authorization_name": "Raul Gay",
+  "receipt_date": "04/20/2024",
+  "received_labels_quantity": "4950",
+  "primary_inspection_agency": {
+   "name": "Grimes Inspection Agency",
+   "address": "27244 Bailey Keys, North Heatherberg, AZ 25356"
+  },
+  "label_request": {
+   "requested_labels_quantity": 5000,
+   "inventory_duration_weeks": "8"
+  },
+  "authorized_label_administrator": {
+   "name": "Phillip T. Davis",
+   "phone": "(344) 822-0447"
+  }
+ },
+ "parse": {
+  "request_date": "04/15/2024",
+  "order_placed_by": "Julia V. Lall",
+  "order_placed_date": "04/15/2024",
+  "ordered_labels_quantity": 5000,
+  "authorization_name": "Raul Gay",
+  "receipt_date": "04/20/2024",
+  "received_labels_quantity": "4950",
+  "primary_inspection_agency": {
+   "name": "Grimes Inspection Agency",
+   "address": "27244 Bailey Keys, North Heatherberg, AZ 25356"
+  },
+  "label_request": {
+   "requested_labels_quantity": 5000,
+   "inventory_duration_weeks": "8"
+  },
+  "authorized_label_administrator": {
+   "name": "Phillip T. Davis",
+   "phone": "(344) 822-0447"
+  }
+ },
+ "oneshot": {
+  "request_date": "04/15/2024",
+  "order_placed_by": "Julia V. Lall",
+  "order_placed_date": "04/15/2024",
+  "ordered_labels_quantity": 5000,
+  "authorization_name": "Raul Gay",
+  "receipt_date": "04/20/2024",
+  "received_labels_quantity": "4950",
+  "primary_inspection_agency": {
+   "name": "Grimes Inspection Agency",
+   "address": "27244 Bailey Keys, North Heatherberg, AZ 25356"
+  },
+  "label_request": {
+   "inventory_duration_weeks": "8"
+  },
+  "authorized_label_administrator": {
+   "name": "Phillip T. Davis",
+   "phone": "(344) 822-0447"
+  }
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "primary": {
+  "case_number": "CASE-2023-45678",
+  "date": "10/15/2023",
+  "control_number": "CTL-2023-12345",
+  "contract_number": "HUD-CON-2023-00456",
+  "modification_number": "MOD-2023-001",
+  "region": "Region V, Chicago",
+  "riga": "RIGA-2023-00456",
+  "review_period_start": "01/01/2023",
+  "review_period_end": "12/31/2023",
+  "contractor_recipient": "Roberts and Sons",
+  "latest_modification_number": "MOD-2023-003",
+  "contract_type": "Construction Contract",
+  "anticipated_award_date": "11/20/2023",
+  "desired_report_receipt_date": "12/15/2023",
+  "special_circumstances": "The contractor has requested an extension for the completion of the project due to unanticipated weather conditions.",
+  "target_date": "01/30/2024",
+  "explanation": "The extension is necessary to ensure the quality of the work and to comply with safety regulations.",
+  "point_of_contact": {
+   "name": "Alexa S. David",
+   "phone": "(879) 407-1494"
+  },
+  "subcontractor_contact": {
+   "name": "Jonathan Gardner",
+   "phone": "(841) 136-5231"
+  },
+  "additional_subcontractors": [
+   {
+    "name": "Butler and Sons",
+    "address": "109 Joshua Port, West Amyburgh, MI 92036",
+    "phone": "(834) 857-8414"
+   }
+  ],
+  "cost_analyst": {
+   "name": "Emma Wright",
+   "phone": "(834) 857-8414"
+  },
+  "contract_specialist": {
+   "name": "Alexa S. David",
+   "phone": "(879) 407-1494"
+  }
+ },
+ "parse": {
+  "case_number": "CASE-2023-45678",
+  "date": "10/15/2023",
+  "control_number": "CTL-2023-12345",
+  "contract_number": "HUD-CON-2023-00456",
+  "modification_number": "MOD-2023-001",
+  "region": "Region V, Chicago",
+  "riga": "RIGA-2023-00456",
+  "review_period_start": "01/01/2023",
+  "review_period_end": "12/31/2023",
+  "contractor_recipient": "Roberts and Sons",
+  "latest_modification_number": "MOD-2023-003",
+  "contract_type": "Construction Contract",
+  "anticipated_award_date": "11/20/2023",
+  "desired_report_receipt_date": "12/15/2023",
+  "special_circumstances": "The contractor has requested an extension for the completion of the project due to unanticipated weather conditions.",
+  "target_date": "01/30/2024",
+  "explanation": "The extension is necessary to ensure the quality of the work and to comply with safety regulations.",
+  "point_of_contact": {
+   "name": "Alexa S. David",
+   "phone": "(879) 407-1494"
+  },
+  "subcontractor_contact": {
+   "name": "Jonathan Gardner",
+   "phone": "(841) 136-5231"
+  },
+  "additional_subcontractors": [
+   {
+    "name": "Butler and Sons",
+    "address": "109 Joshua Port, West Amyburgh, MI 92036",
+    "phone": "(834) 857-8414"
+   }
+  ],
+  "cost_analyst": {
+   "name": "Emma Wright",
+   "phone": "(834) 857-8414"
+  },
+  "contract_specialist": {
+   "name": "Alexa S. David",
+   "phone": "(879) 407-1494"
+  }
+ },
+ "oneshot": {
+  "case_number": "CASE-2023-45678",
+  "date": "10/15/2023",
+  "control_number": "CTL-2023-12345",
+  "contract_number": "HUD-CON-2023-00456",
+  "modification_number": "MOD-2023-001",
+  "region": "Region V, Chicago",
+  "riga": "RIGA-2023-00456",
+  "review_period_start": "01/01/2023",
+  "review_period_end": "12/31/2023",
+  "contractor_recipient": "Roberts and Sons",
+  "latest_modification_number": "MOD-2023-003",
+  "contract_type": "Construction Contract",
+  "anticipated_award_date": "11/20/2023",
+  "desired_report_receipt_date": "12/15/2023",
+  "special_circumstances": "The contractor has requested an extension for the completion of the project due to unanticipated weather conditions.",
+  "target_date": "01/30/2024",
+  "explanation": "The extension is necessary to ensure the quality of the work and to comply with safety regulations.",
+  "point_of_contact": {
+   "name": "Alexa S. David",
+   "phone": "(879) 407-1494"
+  },
+  "subcontractor_contact": {
+   "name": "Jonathan Gardner",
+   "phone": "(841) 136-5231"
+  },
+  "additional_subcontractors": [
+   {
+    "name": "Butler and Sons",
+    "address": "109 Joshua Port, West Amyburgh, MI 92036",
+    "phone": "(834) 857-8414"
+   }
+  ],
+  "cost_analyst": {
+   "name": "Emma Wright",
+   "phone": "(834) 857-8414"
+  },
+  "contract_specialist": {
+   "name": "Alexa S. David",
+   "phone": "(879) 407-1494"
+  }
+ }
+}

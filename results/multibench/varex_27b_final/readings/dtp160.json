@@ -1,0 +1,107 @@
+{
+ "primary": {
+  "school_name": "Gutierrez Driving Academy",
+  "school_license_number": "DRV-2019-MO-1",
+  "owner_name": "Szymon T. Gutierrez",
+  "owner_title": "Owner/Instructor",
+  "email_address": "szymon.gutierrez@gmail.com",
+  "phone_number": "(295) 980-6",
+  "school_address": {
+   "street": "1710 Troy Summit Suite 965",
+   "city": "Craigfort",
+   "zip_code": "38339"
+  },
+  "instructors": [
+   {
+    "name": "Roger G. Lucchesi",
+    "license_number": "INS-2021-MO"
+   },
+   {
+    "name": "Karina Koret",
+    "license_number": "INS-2020-MO"
+   },
+   {
+    "name": "Michael T. Johnson",
+    "license_number": "INS-2019-MO"
+   },
+   {
+    "name": "Sarah L. Williams",
+    "license_number": "INS-2022-MO"
+   },
+   {
+    "name": "David R. Brown",
+    "license_number": "INS-2018-MO"
+   }
+  ]
+ },
+ "parse": {
+  "school_name": "Gutierrez Driving Academy",
+  "school_license_number": "DRV-2019-MO-1",
+  "owner_name": "Szymon T. Gutierrez",
+  "owner_title": "Owner/Instructor",
+  "email_address": "szymon.gutierrez@gmail.com",
+  "phone_number": "(295) 980-6",
+  "school_address": {
+   "street": "1710 Troy Summit Suite 965",
+   "city": "Craigfort",
+   "zip_code": "38339"
+  },
+  "instructors": [
+   {
+    "name": "Roger G. Lucchesi",
+    "license_number": "INS-2021-MO"
+   },
+   {
+    "name": "Karina Koret",
+    "license_number": "INS-2020-MO"
+   },
+   {
+    "name": "Michael T. Johnson",
+    "license_number": "INS-2019-MO"
+   },
+   {
+    "name": "Sarah L. Williams",
+    "license_number": "INS-2022-MO"
+   },
+   {
+    "name": "David R. Brown",
+    "license_number": "INS-2018-MO"
+   }
+  ]
+ },
+ "oneshot": {
+  "school_name": "Gutierrez Driving Academy",
+  "school_license_number": "DRV-2019-MO-1",
+  "owner_name": "Szymon T. Gutierrez",
+  "owner_title": "Owner/Instructor",
+  "email_address": "szymon.gutierrez@gmail.com",
+  "phone_number": "(295) 980-6",
+  "school_address": {
+   "street": "1710 Troy Summit Suite 965",
+   "city": "Craigfort",
+   "zip_code": "38339"
+  },
+  "instructors": [
+   {
+    "name": "Roger G. Lucchesi",
+    "license_number": "INS-2021-MO"
+   },
+   {
+    "name": "Karina Koret",
+    "license_number": "INS-2020-MO"
+   },
+   {
+    "name": "Michael T. Johnson",
+    "license_number": "INS-2019-MO"
+   },
+   {
+    "name": "Sarah L. Williams",
+    "license_number": "INS-2022-MO"
+   },
+   {
+    "name": "David R. Brown",
+    "license_number": "INS-2018-MO"
+   }
+  ]
+ }
+}

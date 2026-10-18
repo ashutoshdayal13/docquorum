@@ -1,0 +1,59 @@
+{
+ "primary": {
+  "beneficiary_id_number": "PO-2023-44191",
+  "personal_information_to_amend": "Date of Birth",
+  "individual": {
+   "last_name": "Miller",
+   "first_name": "Sanne",
+   "middle_initial": "E",
+   "date_of_birth": "10/27/1997",
+   "daytime_phone_number": "(546) 570-5079",
+   "evening_phone_number": "(076) 707-4413",
+   "email_address": "sanne.miller@hotmail.com",
+   "best_hours_to_reach": "9 AM to 5 PM"
+  },
+  "address": {
+   "street": "4159 Steven Overpass Suite 671",
+   "city": "New Melaniehaven",
+   "zip_code": "25038"
+  }
+ },
+ "parse": {
+  "beneficiary_id_number": "PO-2023-44191",
+  "personal_information_to_amend": "Date of Birth",
+  "individual": {
+   "last_name": "Miller",
+   "first_name": "Sanne",
+   "middle_initial": "E",
+   "date_of_birth": "10/27/1997",
+   "daytime_phone_number": "(546) 570-5079",
+   "evening_phone_number": "(076) 707-4413",
+   "email_address": "sanne.miller@hotmail.com",
+   "best_hours_to_reach": "9 AM to 5 PM"
+  },
+  "address": {
+   "street": "4159 Steven Overpass Suite 671",
+   "city": "New Melaniehaven",
+   "zip_code": "25038"
+  }
+ },
+ "oneshot": {
+  "beneficiary_id_number": "PO-2023-44191",
+  "personal_information_to_amend": "Date of Birth",
+  "individual": {
+   "last_name": "Miller",
+   "first_name": "Sanne",
+   "middle_initial": "E",
+   "date_of_birth": "10/27/1997",
+   "daytime_phone_number": "(546) 570-5079",
+   "evening_phone_number": "(076) 707-4413",
+   "email_address": "sanne.miller@hotmail.com",
+   "best_hours_to_reach": "9 AM to 5 PM"
+  },
+  "address": {
+   "street": "4159 Steven Overpass Suite 671",
+   "city": "New Melaniehaven",
+   "zip_code": "25038"
+  }
+ }
+}

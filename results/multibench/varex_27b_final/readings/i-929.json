@@ -1,0 +1,50 @@
+{
+ "primary": {
+  "petitioner": {
+   "name": "Cheryl Mosemann",
+   "address": "300 Mason Run Apt. 781",
+   "city": "West Sabrina",
+   "zip_code": "18311"
+  },
+  "alien_relative": {
+   "name": "Todd I. Bright",
+   "date_of_birth": "11/04/1968",
+   "address": "44677 Frye Parkway",
+   "city": "Curtisfurt",
+   "state": "NC",
+   "zip_code": "53940"
+  }
+ },
+ "parse": {
+  "petitioner": {
+   "name": "Cheryl Mosemann",
+   "address": "300 Mason Run Apt. 781",
+   "city": "West Sabrina",
+   "zip_code": "18311"
+  },
+  "alien_relative": {
+   "name": "Todd I. Bright",
+   "date_of_birth": "11/04/1968",
+   "address": "44677 Frye Parkway",
+   "city": "Curtisfurt",
+   "state": "NC",
+   "zip_code": "53940"
+  }
+ },
+ "oneshot": {
+  "petitioner": {
+   "name": "Cheryl Mosemann",
+   "address": "300 Mason Run Apt. 781",
+   "city": "West Sabrina",
+   "zip_code": "18311"
+  },
+  "alien_relative": {
+   "name": "Todd I. Bright",
+   "date_of_birth": "11/04/1968",
+   "address": "44677 Frye Parkway",
+   "city": "Curtisfurt",
+   "state": "NC",
+   "zip_code": "53940"
+  }
+ }
+}

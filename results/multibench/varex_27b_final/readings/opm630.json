@@ -1,0 +1,71 @@
+{
+ "primary": {
+  "applicant_name": "Warren, Chaitaly",
+  "ssn_last_four": "0670",
+  "employee_number": "MAS-2023-0945",
+  "position_title": "Health Service Manager",
+  "pay_plan": "General Schedule (GS)",
+  "grade_pay_level": "GS-13",
+  "organization_name": "Department of Health and Human Services, Office of Public Health",
+  "office_telephone_number": "(794) 303-2065",
+  "medical_emergency_details": "Family member diagnosed with a critical illness requiring extensive care.",
+  "date_signed": "03/15/2024",
+  "medical_emergency": {
+   "description": "Severe heart condition requiring surgery and recovery time.",
+   "start_date": "02/10/2024",
+   "end_date": "05/10/2024",
+   "physician_name": "Dr. Emily R. Johnson, Cardiologist"
+  },
+  "applicant_on_behalf": {
+   "name": "Ryan Mejia",
+   "relationship_to_applicant": "Colleague",
+   "telephone_number": "(853) 289-1914"
+  }
+ },
+ "parse": {
+  "applicant_name": "Warren, Chaitaly",
+  "ssn_last_four": "0670",
+  "employee_number": "MAS-2023-0945",
+  "position_title": "Health Service Manager",
+  "pay_plan": "General Schedule (GS)",
+  "grade_pay_level": "GS-13",
+  "organization_name": "Department of Health and Human Services, Office of Public Health",
+  "office_telephone_number": "(794) 303-2065",
+  "medical_emergency_details": "Family member diagnosed with a critical illness requiring extensive care.",
+  "date_signed": "03/15/2024",
+  "medical_emergency": {
+   "description": "Severe heart condition requiring surgery and recovery time.",
+   "start_date": "02/10/2024",
+   "end_date": "05/10/2024",
+   "physician_name": "Dr. Emily R. Johnson, Cardiologist"
+  },
+  "applicant_on_behalf": {
+   "name": "Ryan Mejia",
+   "relationship_to_applicant": "Colleague",
+   "telephone_number": "(853) 289-1914"
+  }
+ },
+ "oneshot": {
+  "applicant_name": "Warren, Chaitaly",
+  "ssn_last_four": "0670",
+  "employee_number": "MAS-2023-0945",
+  "position_title": "Health Service Manager",
+  "pay_plan": "General Schedule (GS)",
+  "grade_pay_level": "GS-13",
+  "organization_name": "Department of Health and Human Services, Office of Public Health",
+  "office_telephone_number": "(794) 303-2065",
+  "medical_emergency_details": "Family member diagnosed with a critical illness requiring extensive care.",
+  "date_signed": "03/15/2024",
+  "medical_emergency": {
+   "description": "Severe heart condition requiring surgery and recovery time.",
+   "start_date": "02/10/2024",
+   "end_date": "05/10/2024",
+   "physician_name": "Dr. Emily R. Johnson, Cardiologist"
+  },
+  "applicant_on_behalf": {
+   "name": "Ryan Mejia",
+   "relationship_to_applicant": "Colleague",
+   "telephone_number": "(853) 289-1914"
+  }
+ }
+}

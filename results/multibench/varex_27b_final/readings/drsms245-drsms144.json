@@ -1,0 +1,42 @@
+{
+ "primary": {
+  "applicant_name": "Hancock, Marcelina",
+  "social_security_number": "050-36-4542",
+  "email_address": "marcelina.hancock@hotmail.com",
+  "phone_number": "(832) 946-3738",
+  "school_year": "2023-2024",
+  "signature_date": "01/15/2024",
+  "mailing_address": {
+   "street": "5786 Holly Green Apt. 234",
+   "city": "East Barbara",
+   "zip_code": "72928"
+  }
+ },
+ "parse": {
+  "applicant_name": "Hancock, Marcelina",
+  "social_security_number": "050-36-4542",
+  "email_address": "marcelina.hancock@hotmail.com",
+  "phone_number": "(832) 946-3738",
+  "school_year": "2023-2024",
+  "signature_date": "01/15/2024",
+  "mailing_address": {
+   "street": "5786 Holly Green Apt. 234",
+   "city": "East Barbara",
+   "state": "",
+   "zip_code": "72928"
+  }
+ },
+ "oneshot": {
+  "applicant_name": "Hancock, Marcelina",
+  "social_security_number": "050-36-4542",
+  "email_address": "marcelina.hancock@hotmail.com",
+  "phone_number": "(832) 946-3738",
+  "school_year": "2023-2024",
+  "signature_date": "01/15/2024",
+  "mailing_address": {
+   "street": "5786 Holly Green Apt. 234",
+   "city": "East Barbara",
+   "zip_code": "72928"
+  }
+ }
+}

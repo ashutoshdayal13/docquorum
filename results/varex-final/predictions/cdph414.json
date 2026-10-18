@@ -1,0 +1,23 @@
+{
+ "facility_name": "Elizabethshire General Hospital",
+ "type_of_facility": "Hospital",
+ "pay_to_address": "010 Eric Landing, Elizabethshire, TX 35140",
+ "person_in_charge": "Corey T. van Haeften",
+ "licensee": {
+  "name": "Corey T. van Haeften",
+  "license_number": "RN-2021-TX",
+  "federal_employer_tax_id": "83-4567890",
+  "street_address": "010 Eric Landing",
+  "city_state_zip": "Elizabethshire, TX 35140",
+  "telephone_number": "(413) 257-9982",
+  "fax_number": "(299) 566-6573",
+  "email_address": "corey.vanhaeften@hotmail.com"
+ },
+ "current_location": {
+  "street_address": "010 Eric Landing",
+  "days_and_hours_of_operation": "Monday-Friday, 8:00 AM - 8:00 PM"
+ },
+ "new_location": {
+  "street_address": "1234 Health Drive"
+ }
+}

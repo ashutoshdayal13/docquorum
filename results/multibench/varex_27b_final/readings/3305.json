@@ -1,0 +1,32 @@
+{
+ "primary": {
+  "ticket_number": "CSD-2023-87482",
+  "name": "Benjamin B. Novak",
+  "id": "H12345678",
+  "email_address": "benjamin.novak@outlook.com",
+  "phone_number": "(396) 637-5538",
+  "contract_name_or_hud_org": "Reynolds, Stevens and Thomas",
+  "supervisor_name": "Pascual B. Steele",
+  "short_description_of_need": "Need access to PeopleSoft for payroll processing and database access for reporting purposes"
+ },
+ "parse": {
+  "ticket_number": "CSD-2023-87482",
+  "name": "Benjamin B. Novak",
+  "id": "H12345678",
+  "email_address": "benjamin.novak@outlook.com",
+  "phone_number": "(396) 637-5538",
+  "contract_name_or_hud_org": "Reynolds, Stevens and Thomas",
+  "supervisor_name": "Pascual B. Steele",
+  "short_description_of_need": "Need access to PeopleSoft for payroll processing and database access for reporting purposes"
+ },
+ "oneshot": {
+  "ticket_number": "CSD-2023-87482",
+  "name": "Benjamin B. Novak",
+  "id": "H12345678",
+  "email_address": "benjamin.novak@outlook.com",
+  "phone_number": "(396) 637-5538",
+  "contract_name_or_hud_org": "Reynolds, Stevens and Thomas",
+  "supervisor_name": "Pascual B. Steele",
+  "short_description_of_need": "Need access to PeopleSoft for payroll processing and database access for reporting purposes"
+ }
+}

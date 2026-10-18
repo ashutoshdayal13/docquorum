@@ -1,0 +1,17 @@
+{
+ "notice_date": "05/15/2023",
+ "business_name": "Cavazos Metal Recycling Inc.",
+ "business_license_number": "MR-2020-NY-18281",
+ "business_representative_name": "Lavanya V. Cavazos",
+ "regulated_materials": [
+  "Stolen copper pipes from residential construction site",
+  "Stolen aluminum siding panels from commercial building",
+  "Stolen brass fixtures from municipal project",
+  "Stolen steel beams from industrial warehouse",
+  "Stolen lead batteries from automotive shop"
+ ],
+ "seizing_person": {
+  "name": "John T. Regnier",
+  "phone": "(126) 276-9631"
+ }
+}

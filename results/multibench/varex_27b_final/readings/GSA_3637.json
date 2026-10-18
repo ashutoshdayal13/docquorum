@@ -1,0 +1,92 @@
+{
+ "primary": {
+  "employee_name": "Beyer, Ryan C.",
+  "social_security_number": "231177418",
+  "date_of_birth": "02/08/1995",
+  "separation_date": "06/15/2023",
+  "service_details": {
+   "scd_leave_date": "01/20/2020",
+   "service_before_scd_leave": "05/14/20",
+   "dd214_date": "10/12/2014",
+   "service_after_dd214": "05/14/20"
+  },
+  "pay_details": {
+   "adjusted_rate": "$35.00",
+   "hourly_rate": "$30.00",
+   "standby_percentage": "5%",
+   "standby_rate": "$15.00",
+   "full_hourly_rate": "$40.00",
+   "night_differential": "$5.00"
+  },
+  "fund_details": {
+   "basic_allowance": "$1464.8",
+   "raw_fund": "$2464.",
+   "weeks_pay": "$10752",
+   "severance_fund": "$2464.",
+   "prior_weeks_severance_pay": "$0.00",
+   "value": "$2464.",
+   "final_fund": "$2464.",
+   "weekly_rate": "$65.14"
+  }
+ },
+ "parse": {
+  "employee_name": "Beyer, Ryan C.",
+  "social_security_number": "231177418",
+  "date_of_birth": "02/08/1995",
+  "separation_date": "06/15/2023",
+  "service_details": {
+   "scd_leave_date": "01/20/2020",
+   "service_before_scd_leave": "05/14/20",
+   "dd214_date": "10/12/2014",
+   "service_after_dd214": "05/14/20"
+  },
+  "pay_details": {
+   "adjusted_rate": "$35.00",
+   "hourly_rate": "$30.00",
+   "standby_percentage": "5%",
+   "standby_rate": "$15.00",
+   "full_hourly_rate": "$40.00",
+   "night_differential": "$5.00"
+  },
+  "fund_details": {
+   "basic_allowance": "$1464.8",
+   "raw_fund": "$2464.",
+   "weeks_pay": "$10752",
+   "severance_fund": "$2464.",
+   "prior_weeks_severance_pay": "$0.00",
+   "value": "$2464.",
+   "final_fund": "$2464.",
+   "weekly_rate": "$65.14"
+  }
+ },
+ "oneshot": {
+  "employee_name": "Beyer, Ryan C.",
+  "social_security_number": "231177418",
+  "date_of_birth": "02/08/1995",
+  "separation_date": "06/15/2023",
+  "service_details": {
+   "scd_leave_date": "01/20/2020",
+   "service_before_scd_leave": "05/14/20",
+   "dd214_date": "10/12/2014",
+   "service_after_dd214": "05/14/20"
+  },
+  "pay_details": {
+   "adjusted_rate": "$35.00",
+   "hourly_rate": "$30.00",
+   "standby_percentage": "5%",
+   "standby_rate": "$15.00",
+   "full_hourly_rate": "$40.00",
+   "night_differential": "$5.00"
+  },
+  "fund_details": {
+   "basic_allowance": "$1464.8",
+   "raw_fund": "$2464.",
+   "weeks_pay": "$10752",
+   "severance_fund": "$2464.",
+   "prior_weeks_severance_pay": "$0.00",
+   "value": "$2464.",
+   "final_fund": "$2464.",
+   "weekly_rate": "$65.14"
+  }
+ }
+}

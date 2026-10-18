@@ -1,0 +1,16 @@
+{
+ "recipient_tax_identification_number": "831996405",
+ "effective_date": "01/01/2024",
+ "current_address": {
+  "street": "2262 Colon Unions",
+  "city": "West Rachel",
+  "state": "CA",
+  "zip_code": "47588"
+ },
+ "new_address": {
+  "street": "1234 Oak Street",
+  "city": "New Orleans",
+  "state": "LA",
+  "zip_code": "70112"
+ }
+}

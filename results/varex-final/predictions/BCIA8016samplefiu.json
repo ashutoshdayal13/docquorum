@@ -1,0 +1,36 @@
+{
+ "ori_code": "CA0000000",
+ "authorized_applicant_type": "Administrator",
+ "type_of_license": "Professional Land Surveyor",
+ "contributing_agency": "Edwards-Klein",
+ "mail_code": "94203",
+ "billing_number": "5788-1734-5920",
+ "agency_address": {
+  "street": "68724 Cameron Brooks",
+  "city": "Lake Lindamouth",
+  "state": "VA"
+ },
+ "contact_info": {
+  "name": "Ermes T. Jennings",
+  "telephone": "(021) 387-9569"
+ },
+ "applicant_info": {
+  "last_name": "Jennings",
+  "first_name": "Ermes",
+  "other_name": "Ermes T Jennings",
+  "sex": "Male",
+  "date_of_birth": "10/21/198",
+  "driver_license_number": "VA12345678",
+  "height": "5'10\"",
+  "weight": "180",
+  "eye_color": "Black",
+  "hair_color": "Black",
+  "place_of_birth": "Virginia, USA",
+  "other_identification_number": "PLS-2010-VA-31778"
+ },
+ "home_address": {
+  "street": "68724 Cameron Brooks",
+  "city": "Lake Lindamouth",
+  "state": "VA"
+ }
+}

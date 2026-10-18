@@ -1,0 +1,122 @@
+{
+ "primary": {
+  "mortgagee_contact_person": "William V. Cannon",
+  "phone_number": "(847) 650-9112",
+  "account_control_number": "7799-4399-1996",
+  "fha_case_number": "DPM-2025-59012",
+  "homeowner_name": "Asuncion Jones",
+  "property_address": "287 Jodi Bypass, Cynthiaport, CA 58612",
+  "seller_initials_and_date": "AJ 05/15/2023",
+  "sales_agent_broker_signature_and_date": "Courtney V. Hodges 05/15/2023",
+  "mortgagee_authorizing_official_signature_and_date": "William V. Cannon 05/15/2023",
+  "closing_agent_signature_and_date": "Courtney V. Hodges 05/15/2023",
+  "purchaser_info": [
+   {
+    "purchaser_details": "Courtney V. Hodges, 835 Martinez Valley Suite 113, Brianfort, CT 24038"
+   },
+   {
+    "purchaser_details": "Asuncion Jones, 287 Jodi Bypass, Cynthiaport, CA 58612"
+   }
+  ],
+  "payable_from_sales_proceeds": [
+   {
+    "item_details": "Mortgage payoff: $991009.93"
+   },
+   {
+    "item_details": "Real estate commissions: $15000.00"
+   },
+   {
+    "item_details": "Title insurance: $1500.00"
+   },
+   {
+    "item_details": "Property taxes: $3000.00"
+   },
+   {
+    "item_details": "Homeowners association fees: $500.00"
+   },
+   {
+    "item_details": "Miscellaneous closing costs: $65.75"
+   }
+  ]
+ },
+ "parse": {
+  "mortgagee_contact_person": "William V. Cannon",
+  "phone_number": "(847) 650-9112",
+  "account_control_number": "7799-4399-1996",
+  "fha_case_number": "DPM-2025-59012",
+  "homeowner_name": "Asuncion Jones",
+  "property_address": "287 Jodi Bypass, Cynthiaport, CA 58612",
+  "seller_initials_and_date": "AJ 05/15/2023",
+  "sales_agent_broker_signature_and_date": "Courtney V. Hodges 05/15/2023",
+  "mortgagee_authorizing_official_signature_and_date": "William V. Cannon 05/15/2023",
+  "closing_agent_signature_and_date": "Courtney V. Hodges 05/15/2023",
+  "purchaser_info": [
+   {
+    "purchaser_details": "Courtney V. Hodges, 835 Martinez Valley Suite 113, Brianfort, CT 24038"
+   },
+   {
+    "purchaser_details": "Asuncion Jones, 287 Jodi Bypass, Cynthiaport, CA 58612"
+   }
+  ],
+  "payable_from_sales_proceeds": [
+   {
+    "item_details": "Mortgage payoff: $991009.93"
+   },
+   {
+    "item_details": "Real estate commissions: $15000.00"
+   },
+   {
+    "item_details": "Title insurance: $1500.00"
+   },
+   {
+    "item_details": "Property taxes: $3000.00"
+   },
+   {
+    "item_details": "Homeowners association fees: $500.00"
+   },
+   {
+    "item_details": "Miscellaneous closing costs: $65.75"
+   }
+  ]
+ },
+ "oneshot": {
+  "mortgagee_contact_person": "William V. Cannon",
+  "phone_number": "(847) 650-9112",
+  "account_control_number": "7799-4399-1996",
+  "fha_case_number": "DPM-2025-59012",
+  "homeowner_name": "Asuncion Jones",
+  "property_address": "287 Jodi Bypass, Cynthiaport, CA 58612",
+  "seller_initials_and_date": "AJ 05/15/2023",
+  "sales_agent_broker_signature_and_date": "Courtney V. Hodges 05/15/2023",
+  "mortgagee_authorizing_official_signature_and_date": "William V. Cannon 05/15/2023",
+  "closing_agent_signature_and_date": "Courtney V. Hodges 05/15/2023",
+  "purchaser_info": [
+   {
+    "purchaser_details": "Courtney V. Hodges, 835 Martinez Valley Suite 113, Brianfort, CT 24038"
+   },
+   {
+    "purchaser_details": "Asuncion Jones, 287 Jodi Bypass, Cynthiaport, CA 58612"
+   }
+  ],
+  "payable_from_sales_proceeds": [
+   {
+    "item_details": "Mortgage payoff: $991009.93"
+   },
+   {
+    "item_details": "Real estate commissions: $15000.00"
+   },
+   {
+    "item_details": "Title insurance: $1500.00"
+   },
+   {
+    "item_details": "Property taxes: $3000.00"
+   },
+   {
+    "item_details": "Homeowners association fees: $500.00"
+   },
+   {
+    "item_details": "Miscellaneous closing costs: $65.75"
+   }
+  ]
+ }
+}

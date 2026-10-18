@@ -1,0 +1,110 @@
+{
+ "primary": {
+  "license_number": "LTC06960",
+  "phone_number": "(780) 311-8626",
+  "email": "james.neal@hotmail.com",
+  "signature_date": "11/15/2023",
+  "applicant_name": {
+   "first_name": "James",
+   "middle_name": "Michael",
+   "last_name": "Neal"
+  },
+  "driver_license_info": {
+   "driver_license_number": "WY1234567"
+  },
+  "residence_address": {
+   "street": "52193 Jacob Dam Apt. 351",
+   "city": "Keithfort",
+   "state": "WY",
+   "zip_code": "51065"
+  },
+  "mailing_address": {
+   "street": "52193 Jacob Dam Apt. 351",
+   "city": "Keithfort",
+   "state": "WY",
+   "zip_code": "51065"
+  },
+  "previous_name": {
+   "first_name": "James",
+   "middle_name": "Michael",
+   "last_name": "Neal"
+  },
+  "new_name": {
+   "first_name": "James",
+   "middle_name": "Michael",
+   "last_name": "Neal"
+  }
+ },
+ "parse": {
+  "license_number": "LTC06960",
+  "phone_number": "(780) 311-8626",
+  "email": "james.neal@hotmail.com",
+  "signature_date": "11/15/2023",
+  "applicant_name": {
+   "first_name": "James",
+   "middle_name": "Michael",
+   "last_name": "Neal"
+  },
+  "driver_license_info": {
+   "driver_license_number": "WY1234567"
+  },
+  "residence_address": {
+   "street": "52193 Jacob Dam Apt. 351",
+   "city": "Keithfort",
+   "state": "WY",
+   "zip_code": "51065"
+  },
+  "mailing_address": {
+   "street": "52193 Jacob Dam Apt. 351",
+   "city": "Keithfort",
+   "state": "WY",
+   "zip_code": "51065"
+  },
+  "previous_name": {
+   "first_name": "James",
+   "middle_name": "Michael",
+   "last_name": "Neal"
+  },
+  "new_name": {
+   "first_name": "James",
+   "middle_name": "Michael",
+   "last_name": "Neal"
+  }
+ },
+ "oneshot": {
+  "license_number": "LTC06960",
+  "phone_number": "(780) 311-8626",
+  "email": "james.neal@hotmail.com",
+  "signature_date": "11/15/2023",
+  "applicant_name": {
+   "first_name": "James",
+   "middle_name": "Michael",
+   "last_name": "Neal"
+  },
+  "driver_license_info": {
+   "driver_license_number": "WY1234567"
+  },
+  "residence_address": {
+   "street": "52193 Jacob Dam Apt. 351",
+   "city": "Keithfort",
+   "state": "WY",
+   "zip_code": "51065"
+  },
+  "mailing_address": {
+   "street": "52193 Jacob Dam Apt. 351",
+   "city": "Keithfort",
+   "state": "WY",
+   "zip_code": "51065"
+  },
+  "previous_name": {
+   "first_name": "James",
+   "middle_name": "Michael",
+   "last_name": "Neal"
+  },
+  "new_name": {
+   "first_name": "James",
+   "middle_name": "Michael",
+   "last_name": "Neal"
+  }
+ }
+}
