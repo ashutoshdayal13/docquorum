@@ -500,6 +500,80 @@ frame("UNIKIE-BENCH: complete results", ut + r"""
 \src{UNIKIE-BENCH (ACL 2026), Table 4: 15 published systems; F1 (\%) by the benchmark's evaluator on 4,472 images, every input capped at 1,605,632 pixels. DocQuorum: quorum over six readings from three open models; small images enlarged before reading.}
 """)
 
+# ------------------------------------------------------------------ results: the other four benchmarks (complete)
+def shown(v, digits):
+    return Decimal(str(v)).quantize(Decimal(1).scaleb(-digits), rounding=ROUND_HALF_UP)
+
+
+def full_table(title, cols, align, rows, ours, digits, rank_col, note, best_cols=(), size=r"\scriptsize", stretch="0.95"):
+    """Every published row and DocQuorum's, by the ranking column at the leaderboard's precision;
+    equal shown scores share a rank; the best shown value of each column in best_cols underlined."""
+    allrows = rows + [ours]
+    allrows.sort(key=lambda r: -float(shown(r[rank_col], digits)))
+    key = lambda r: shown(r[rank_col], digits)
+    best = {c: max(shown(r[c], digits) for r in allrows if r[c] is not None) for c in best_cols}
+    t = ("{" + size + r"\renewcommand{\arraystretch}{" + stretch + r"}\setlength{\tabcolsep}{4pt}" + "\n"
+         r"\begin{tabularx}{\textwidth}{@{}r" + align + r"@{}}\toprule" + "\n"
+         + r"\textbf{\#} & " + " & ".join(r"\textbf{%s}" % c for c in cols) + r"\\\midrule" + "\n")
+    for r in allrows:
+        mine = r is ours
+        cells = [str(1 + sum(key(o) > key(r) for o in allrows))]
+        for j, c in enumerate(cols):
+            v = r[c]
+            if isinstance(v, (int, float)):
+                s = str(shown(v, digits))
+                if c in best and shown(v, digits) == best[c]:
+                    s = r"\underline{%s}" % s
+            else:
+                s = esc(str(v)) if v is not None else "--"
+            cells.append(r"\textbf{%s}" % s if mine else s)
+        t += (r"\rowcolor{hl}" if mine else "") + " & ".join(cells) + r"\\" + "\n"
+    t += r"\bottomrule\end{tabularx}}"
+    frame(title, t + "\n\n" + note)
+
+
+vx_f = json.loads((RES / "docquorum-varex.json").read_text())
+vd = vx_f["detail"]
+vrows = [{"System": r["system"], "Size": r["size"], "EM": r["em"], "ANLS": r["anls"], "Flat": r["flat"],
+          "Nested": r["nested"], "Table": r["table"], "Perfect": r["perfect"]}
+         for r in json.loads((RES / "varex-published.json").read_text())["systems"]]
+vours = {"System": "DocQuorum (ours)", "Size": "27B", "EM": 100 * vd["exact_match_normalized"],
+         "ANLS": 100 * vd["anls_normalized"], "Flat": 100 * vd["em_flat"], "Nested": 100 * vd["em_nested"],
+         "Table": 100 * vd["em_table"], "Perfect": vd["perfect_docs_pct"] if vd["perfect_docs_pct"] > 1 else 100 * vd["perfect_docs_pct"]}
+full_table("VAREX: complete results", ["System", "Size", "EM", "ANLS", "Flat", "Nested", "Table", "Perfect"],
+           "Yl" + "r" * 6, vrows, vours, 1, "EM",
+           r"""{\tiny EM: exact match (normalized) over 21,084 fields; ANLS: normalized ANLS; Flat, Nested, Table: exact match by form type (299, 1,146, 332 forms); Perfect: forms with every field right. Underlined: best in the column.\par}
+\src{VAREX-Bench image-modality leaderboard (20 models, zero-shot, one decimal) and DocQuorum (final pipeline). Ranks compare at one decimal.}""",
+           best_cols=("EM", "ANLS", "Flat", "Nested", "Table", "Perfect"), size=r"\scriptsize", stretch="0.72")
+
+la_f = json.loads((RES / "docquorum-longarray.json").read_text())
+lrows = [{"System": r["system"], "Accuracy": r["score"], "Completed": f'{r["completed"]}/{r["expected"]}'}
+         for r in json.loads((RES / "longarray-published.json").read_text())["systems"]]
+lours = {"System": "DocQuorum (ours)", "Accuracy": la_f["score"],
+         "Completed": f'{la_f["detail"]["completed"]}/{la_f["detail"]["documents"]}'}
+full_table("LongArray-Extract: complete results", ["System", "Accuracy", "Completed"], "Yrr", lrows, lours, 1, "Accuracy",
+           r"""\src{Extend AI's LongArray-Extract results page (11 systems; one decimal) and DocQuorum: macro document accuracy (\%) by the publisher's reference scorer over 45 long documents (bank statements, clinical listings, indictments; 29,328 rows); a failed document counts as zero. Ranks compare at one decimal.}""",
+           size=r"\footnotesize", stretch="1.15")
+
+uo_f = json.loads((RES / "docquorum-unikie-open.json").read_text())
+uop = json.loads((RES / "unikie-open-published.json").read_text())
+ucols = ["Ret.\\,zh", "Form\\,zh", "Inv.\\,zh", "Con.\\,zh", "Ret.\\,en", "Form\\,en", "Inv.\\,en", "Con.\\,en", "Avg."]
+urows2 = [dict({"System": n, "": k}, **dict(zip(ucols, v))) for k, src in (("C", "closed_source"), ("O", "open_source"))
+          for n, v in uop[src].items()]
+scen = ["receipt-cn", "Form-cn", "invoice-cn", "Contract-cn", "receipt-en", "Form-en", "invoice-en", "Contract-en"]
+uours = dict({"System": "DocQuorum (ours)", "": "O"}, **dict(zip(ucols, [uo_f["per_scenario"][s] for s in scen] + [uo_f["score"]])))
+full_table("UNIKIE-BENCH open category: complete results", ["System", ""] + ucols, "Yc" + "r" * 9, urows2, uours, 2, "Avg.",
+           r"""{\tiny Ret.\ receipts; Inv.\ invoices; Con.\ contracts; zh Chinese, en English; Avg.\ macro average. C: closed model; O: open model. Underlined: best in the column.\par}
+\src{UNIKIE-BENCH (ACL 2026), open-category table: 15 published systems; F1 (\%) by the benchmark's evaluator on 1,661 documents, every input capped at 1,605,632 pixels. DocQuorum: quorum over three readings from Qwen3.8-27B, then zoom re-reading.}""",
+           best_cols=tuple(ucols), size=r"\scriptsize", stretch="0.95")
+
+db_f = json.loads((RES / "docquorum-docubench.json").read_text())
+drows = [{"System": r["system"], "Accuracy": r["score"]} for r in json.loads((RES / "docubench-published.json").read_text())["systems"]]
+dours = {"System": "DocQuorum (ours)", "Accuracy": db_f["score"]}
+full_table("DocuBench: complete results", ["System", "Accuracy"], "Yr", drows, dours, 2, "Accuracy",
+           r"""\src{DocuBench v0.2.0 leaderboard (9 systems) and DocQuorum (final pipeline): macro field accuracy (\%) by the benchmark's own scorer over 72 documents in 10 file types (PDF, scans, photos, spreadsheets, Word, HTML, XML, CSV, text). The final pipeline's fixes were found on this benchmark.}""",
+           size=r"\footnotesize", stretch="1.15")
+
 # ------------------------------------------------------------------ results on six benchmarks
 def place(score, published, digits):
     """1 + published scores above ours, compared at the published precision."""

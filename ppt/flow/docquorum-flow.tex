@@ -394,6 +394,99 @@ On the scanned county purchase order the quorum kept the one-shot reading (78.26
 {\tiny Ret.\ Retail; Cat.\ Catering services; Com.\ Commercial; Acc.\ Accommodation; Post.\ Postal label; Adm.\ Administrative; Edu.\ Education; Adv.\ Advertisement; Tax: Tax-compliant; Med.\ Medical services; Nut.\ Nutrition label; Avg.\ macro average. C: closed model; O: open model. Underlined: best in the column.\par}
 \src{UNIKIE-BENCH (ACL 2026), Table 4: 15 published systems; F1 (\%) by the benchmark's evaluator on 4,472 images, every input capped at 1,605,632 pixels. DocQuorum: quorum over six readings from three open models; small images enlarged before reading.}
 \end{frame}
+\begin{frame}{VAREX: complete results}
+\begingroup\scriptsize\renewcommand{\arraystretch}{0.72}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}rYlrrrrrr@{}}\toprule
+\textbf{\#} & \textbf{System} & \textbf{Size} & \textbf{EM} & \textbf{ANLS} & \textbf{Flat} & \textbf{Nested} & \textbf{Table} & \textbf{Perfect}\\\midrule
+\rowcolor{hl}1 & \textbf{DocQuorum (ours)} & \textbf{27B} & \textbf{\underline{98.2}} & \textbf{\underline{98.8}} & \textbf{\underline{98.4}} & \textbf{\underline{98.5}} & \textbf{97.4} & \textbf{\underline{86.2}}\\
+2 & Gemini 2.5 Pro & API & 98.0 & 98.5 & 97.3 & 98.2 & \underline{97.7} & 82.8\\
+3 & Gemini 2.5 Flash & API & 97.3 & 97.9 & 96.9 & 97.7 & 96.5 & 81.0\\
+4 & Qwen3-VL (8B) & 8B & 96.6 & 97.6 & 96.6 & 97.3 & 95.0 & 78.2\\
+5 & Llama 4 Maverick (17B×128E) & 17B×128E & 95.6 & 97.1 & 95.1 & 96.1 & 94.4 & 68.7\\
+6 & Ministral (14B) & 14B & 94.8 & 96.5 & 94.8 & 95.1 & 94.0 & 66.0\\
+6 & GPT-4o & API & 94.8 & 97.1 & 95.1 & 95.3 & 93.5 & 64.3\\
+8 & Llama 4 Scout (17B×16E) & 17B×16E & 94.3 & 95.8 & 95.2 & 94.3 & 94.1 & 63.4\\
+9 & granite-vision-4.1-4b (4B) & 4B & 94.2 & 96.4 & 95.2 & 94.9 & 92.3 & 65.2\\
+10 & NuExtract 2.0 (2B) & 2B & 90.8 & 92.1 & 93.1 & 91.9 & 87.3 & 52.7\\
+11 & InternVL3.5 (2B) & 2B & 85.6 & 89.1 & 89.6 & 86.1 & 82.7 & 42.4\\
+12 & granite-4.0-3b-vision (3B) & 3B & 85.5 & 89.1 & 91.5 & 85.2 & 84.0 & 41.1\\
+13 & Qwen 2.5-VL (3B) & 3B & 82.5 & 85.4 & 79.9 & 83.1 & 81.9 & 43.7\\
+14 & Gemma 3n (E2B) & E2B & 71.0 & 78.1 & 76.7 & 71.0 & 68.8 & 19.0\\
+15 & MiniCPM-V4 (4B) & 4B & 67.9 & 69.8 & 84.8 & 66.2 & 65.5 & 23.6\\
+16 & Gemma 3 (4B) & 4B & 65.3 & 75.0 & 71.7 & 65.0 & 63.6 & 13.7\\
+17 & h2oVL Miss. (2B) & 2B & 61.3 & 64.9 & 67.2 & 61.3 & 58.9 & 11.6\\
+18 & Qwen3-VL (2B) & 2B & 34.2 & 34.7 & 93.3 & 26.8 & 29.0 & 29.3\\
+18 & h2oVL Miss. (800M) & 800M & 34.2 & 36.1 & 35.8 & 33.2 & 36.0 & 5.9\\
+20 & InternVL3.5 (1B) & 1B & 28.2 & 29.8 & 79.0 & 22.4 & 22.2 & 11.2\\
+21 & Qwen2-VL (2B) & 2B & 9.7 & 10.0 & 16.4 & 9.0 & 8.9 & 4.3\\
+\bottomrule\end{tabularx}\endgroup
+
+{\tiny EM: exact match (normalized) over 21,084 fields; ANLS: normalized ANLS; Flat, Nested, Table: exact match by form type (299, 1,146, 332 forms); Perfect: forms with every field right. Underlined: best in the column.\par}
+\src{VAREX-Bench image-modality leaderboard (20 models, zero-shot, one decimal) and DocQuorum (final pipeline). Ranks compare at one decimal.}
+\end{frame}
+\begin{frame}{LongArray-Extract: complete results}
+\begingroup\footnotesize\renewcommand{\arraystretch}{1.15}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}rYrr@{}}\toprule
+\textbf{\#} & \textbf{System} & \textbf{Accuracy} & \textbf{Completed}\\\midrule
+1 & Extend MAX & 99.2 & 45/45\\
+\rowcolor{hl}2 & \textbf{DocQuorum (ours)} & \textbf{98.1} & \textbf{45/45}\\
+3 & Reducto Deep Extract & 97.4 & 45/45\\
+4 & Claude Opus 4.7 & 83.1 & 45/45\\
+5 & Reducto Standard & 80.9 & 45/45\\
+6 & Pulse Effort & 68.8 & 45/45\\
+7 & Pulse Auto & 64.5 & 45/45\\
+8 & Gemini 3.1 Pro & 47.3 & 45/45\\
+9 & LlamaParse Standard & 47.2 & 26/45\\
+10 & LlamaParse Agentic & 34.7 & 35/45\\
+11 & GPT-5.5 & 31.6 & 45/45\\
+12 & Gemini 3.5 Flash & 31.1 & 45/45\\
+\bottomrule\end{tabularx}\endgroup
+
+\src{Extend AI's LongArray-Extract results page (11 systems; one decimal) and DocQuorum: macro document accuracy (\%) by the publisher's reference scorer over 45 long documents (bank statements, clinical listings, indictments; 29,328 rows); a failed document counts as zero. Ranks compare at one decimal.}
+\end{frame}
+\begin{frame}{UNIKIE-BENCH open category: complete results}
+\begingroup\scriptsize\renewcommand{\arraystretch}{0.95}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}rYcrrrrrrrrr@{}}\toprule
+\textbf{\#} & \textbf{System} & \textbf{} & \textbf{Ret.\,zh} & \textbf{Form\,zh} & \textbf{Inv.\,zh} & \textbf{Con.\,zh} & \textbf{Ret.\,en} & \textbf{Form\,en} & \textbf{Inv.\,en} & \textbf{Con.\,en} & \textbf{Avg.}\\\midrule
+1 & Gemini-3-Pro & C & \underline{78.50} & \underline{79.17} & \underline{78.63} & \underline{75.96} & \underline{93.57} & \underline{80.41} & \underline{87.06} & \underline{79.90} & \underline{81.65}\\
+\rowcolor{hl}2 & \textbf{DocQuorum (ours)} & \textbf{O} & \textbf{67.67} & \textbf{69.80} & \textbf{69.72} & \textbf{74.25} & \textbf{83.10} & \textbf{67.65} & \textbf{68.22} & \textbf{78.22} & \textbf{72.33}\\
+3 & Qwen3-VL-Plus & C & 71.14 & 69.87 & 69.59 & 70.95 & 68.27 & 66.82 & 73.45 & 74.81 & 70.61\\
+4 & Qwen-VL-Max & C & 69.94 & 69.75 & 66.62 & 69.68 & 70.76 & 65.52 & 70.80 & 76.57 & 69.95\\
+5 & Qwen3-VL-8B & O & 68.93 & 64.70 & 63.38 & 65.59 & 71.40 & 61.46 & 67.34 & 76.08 & 67.36\\
+6 & MiMo-VL-7B-RL & O & 57.63 & 56.60 & 51.93 & 65.90 & 71.34 & 52.83 & 57.64 & 70.55 & 60.55\\
+7 & Kimi-VL-A3B & O & 62.98 & 52.85 & 50.72 & 54.94 & 73.91 & 55.96 & 52.67 & 64.64 & 58.58\\
+8 & GLM-4.1V-9B & O & 55.19 & 56.63 & 55.52 & 54.68 & 63.83 & 54.66 & 59.31 & 68.70 & 58.56\\
+9 & MiniCPM-V4.5-8B & O & 52.33 & 42.69 & 44.54 & 39.46 & 72.41 & 47.46 & 56.44 & 65.49 & 52.60\\
+10 & InternVL3.5-8B & O & 54.26 & 37.83 & 40.97 & 39.43 & 79.46 & 43.64 & 49.41 & 50.06 & 49.38\\
+11 & GPT-5 & C & 39.61 & 31.97 & 37.64 & 17.47 & 80.64 & 50.09 & 57.50 & 64.24 & 47.39\\
+12 & GPT-4o & C & 39.66 & 30.82 & 35.31 & 16.67 & 78.51 & 48.09 & 57.08 & 67.35 & 46.69\\
+13 & Ministral-3-8B & O & 25.21 & 35.80 & 24.42 & 26.18 & 58.54 & 49.01 & 55.66 & 57.82 & 41.58\\
+14 & Claude-Sonnet-4.5 & C & 37.59 & 31.20 & 29.12 & 20.88 & 41.64 & 49.22 & 44.18 & 63.87 & 39.71\\
+15 & Gemma-3-12B & O & 25.71 & 14.17 & 17.36 & 9.42 & 76.24 & 38.32 & 30.23 & 35.77 & 30.90\\
+16 & SmolVLM2-2.2B & O & 5.74 & 1.51 & 3.05 & 2.15 & 36.49 & 11.64 & 19.73 & 22.36 & 12.83\\
+\bottomrule\end{tabularx}\endgroup
+
+{\tiny Ret.\ receipts; Inv.\ invoices; Con.\ contracts; zh Chinese, en English; Avg.\ macro average. C: closed model; O: open model. Underlined: best in the column.\par}
+\src{UNIKIE-BENCH (ACL 2026), open-category table: 15 published systems; F1 (\%) by the benchmark's evaluator on 1,661 documents, every input capped at 1,605,632 pixels. DocQuorum: quorum over three readings from Qwen3.8-27B, then zoom re-reading.}
+\end{frame}
+\begin{frame}{DocuBench: complete results}
+\begingroup\footnotesize\renewcommand{\arraystretch}{1.15}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}rYr@{}}\toprule
+\textbf{\#} & \textbf{System} & \textbf{Accuracy}\\\midrule
+1 & DocuPipe (high effort) & 97.02\\
+2 & DocuPipe (standard effort) & 96.14\\
+3 & Claude Sonnet 5 (direct LLM) & 91.73\\
+\rowcolor{hl}4 & \textbf{DocQuorum (ours)} & \textbf{90.80}\\
+5 & Reducto Deep Extract & 89.38\\
+6 & Reducto (standard) & 81.11\\
+7 & Extend & 80.28\\
+8 & GPT-5.5 (direct LLM) & 76.48\\
+9 & Gemini 3.5 Flash (direct LLM) & 72.98\\
+10 & Unstructured & 67.67\\
+\bottomrule\end{tabularx}\endgroup
+
+\src{DocuBench v0.2.0 leaderboard (9 systems) and DocQuorum (final pipeline): macro field accuracy (\%) by the benchmark's own scorer over 72 documents in 10 file types (PDF, scans, photos, spreadsheets, Word, HTML, XML, CSV, text). The final pipeline's fixes were found on this benchmark.}
+\end{frame}
 \begin{frame}{Results on six benchmarks}
 \begingroup\footnotesize\renewcommand{\arraystretch}{1.25}
 \begin{tabularx}{\textwidth}{@{}Yrll@{}}\toprule
