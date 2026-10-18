@@ -150,8 +150,8 @@ frame("Problem statement", r"""
 
 frame("Pipeline overview", r"""
 \centering
-\includegraphics[width=\textwidth,height=6.25cm,keepaspectratio]{assets/pipeline.png}
-\src{Pipeline figure (generated with Codex), describing the single-document entry point \texttt{docquorum.extract}; the lower panel shows the reader agent's plan--act--observe loop.}
+\includegraphics[width=\textwidth,height=6.2cm,keepaspectratio]{assets/pipeline.png}
+\src{Pipeline figure (generated with Codex), describing the single-document entry point \texttt{docquorum.extract}; the lower panels show the bounded reader loop and guarded zoom updates (v1.3).}
 """)
 
 # ------------------------------------------------------------------ routing

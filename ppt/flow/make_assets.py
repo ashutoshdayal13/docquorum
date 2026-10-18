@@ -24,7 +24,7 @@ from docquorum.tools.layout import column_spans, deskew, row_bands, rules  # noq
 
 OUT = ROOT / "ppt" / "flow" / "assets"
 OUT.mkdir(parents=True, exist_ok=True)
-PIPELINE = Path.home() / ".codex/generated_images/01a0f58b-e35d-7431-a8d8-1ac1865788ad/exec-20f6959f-35ce-4759-83b2-acd8b8219732.png"
+PIPELINE = ROOT / 'docs/fig/docquorum-pipeline-imagegen-v6.png'
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 
 

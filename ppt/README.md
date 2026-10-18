@@ -2,7 +2,7 @@
 
 Open **[docquorum.pdf](docquorum.pdf)**. This is the revised 15-page presentation, with the latest pipeline image and real source evidence. The editable source is [walkthrough.tex](walkthrough.tex).
 
-The opening diagram names each reader, lists its evidence and tools, and distinguishes automatic execution from adaptive reading. Poppler, MinerU, schema/layout helpers and the extraction-model API have explicit output labels. The whole system runs automatically after receiving its inputs. Python controls routing, checks, selection and the bounded reader loop; the model performs extraction. Primary and parse readers can retry or change scope after inspecting a result. Specialized layout and one-shot readers use scheduled calls.
+The opening diagram follows the v1.3 route lanes, including native inputs, layout fallback, long-scan quorum and guarded zoom re-reading, with a compact automation key. Stored walkthrough examples retain their original run provenance. Poppler, MinerU, schema/layout helpers and the extraction-model API have explicit output labels. The whole system runs automatically after receiving its inputs. Python controls routing, checks, selection and the bounded reader loop; the model performs extraction. Primary and parse readers can retry or change scope after inspecting a result. Specialized layout and one-shot readers use scheduled calls.
 
 The walkthrough follows this order:
 
