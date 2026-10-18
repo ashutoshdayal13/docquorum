@@ -462,7 +462,9 @@ def eb_cost(r):
         c = cost("extractbench", "usd_per_page", 3)
         return c + r"$^{\mathrm{e}}$" if c != "--" else c
     v = r.get("Cost_Per_Page")
-    return f"{float(v):.3f}" if v not in (None, "") else "--"
+    if v in (None, ""):
+        return "self-host" if r.get("Category") == "OSS" else "n/p"
+    return f"{float(v):.3f}"
 
 
 def eb_secs(r):
@@ -472,7 +474,7 @@ def eb_secs(r):
     try:
         s = [float(r[f"Latency_S_Per_Doc_{x}"]) for x in ("Short", "Medium", "Long")]
     except (KeyError, TypeError, ValueError):
-        return "--"
+        return "n/p"
     return f"{(252 * s[0] + 98 * s[1] + 20 * s[2]) / 370:,.0f}"
 
 
@@ -491,7 +493,7 @@ def eb_table(part, lo, hi):
         t += (r"\rowcolor{hl}" if mine else "") + " & ".join(cells) + r"\\" + "\n"
     t += r"\bottomrule\end{tabularx}}"
     frame(r"ExtractBench: complete results (%d/3)" % part, t + r"""
-\src{ExtractBench leaderboard, snapshot of 2 October 2026 (47 published systems) and DocQuorum. Value F1 (\%) by the benchmark's scorer over 370 PDFs (252 short, 98 medium, 20 long); Overall is the mean over all documents. Equal scores share a rank. \$/page and s/doc: the leaderboard's cost per page and latency per document (averaged over the 370 documents); -- not published (the leaderboard does not price the open models it ran itself). e: DocQuorum's tokens measured on a random 20, priced at the Qwen3.8-27B list price (Alibaba Cloud, \$QIN / \$QOUT per million input / output tokens); it runs on its own GPU, one document at a time for the timing.}
+\src{ExtractBench leaderboard, snapshot of 2 October 2026 (47 published systems) and DocQuorum. Value F1 (\%) by the benchmark's scorer over 370 PDFs (252 short, 98 medium, 20 long); Overall is the mean over all documents. Equal scores share a rank. \$/page and s/doc: the leaderboard's cost per page and latency per document (averaged over the 370 documents); self-host: an open model the leaderboard ran itself and did not price; n/p: not published. e: DocQuorum's tokens measured on a random 20, priced at the Qwen3.8-27B list price (Alibaba Cloud, \$QIN / \$QOUT per million input / output tokens); it runs on its own GPU, one document at a time for the timing.}
 """.replace("QIN", f"{QWEN['input']:.2f}").replace("QOUT", f"{QWEN['output']:.2f}"))
 
 
@@ -659,6 +661,71 @@ frame("Results on six benchmarks", r"""{\scriptsize\renewcommand{\arraystretch}{
 {\footnotesize Each score is the benchmark's own scorer on the full test set, with open-weight models (Qwen3.8-27B and MinerU2.5) on one GPU. Places count every published system. Calls, dollars (\$) and seconds (s): means per document, measured on a random sample one document at a time on one shared H100 (results/costs/); \$ prices the measured tokens at the Qwen3.8-27B list price, since the pipeline itself pays no price per call.\par}
 \src{docs/results/: one complete table per benchmark (TABLES.md). No result was submitted to a leaderboard.}
 """)
+
+# ------------------------------------------------------------------ where DocQuorum stands out
+def named(pairs, name):
+    return next(v for n, v in pairs if n == name)
+
+
+def best_of(pairs, keep=lambda n: True):
+    return max(((n, v) for n, v in pairs if keep(n)), key=lambda x: x[1])
+
+
+def per_doc(bench, unit="document"):
+    m = MEASURED.get(bench)
+    if not m:
+        return "measuring"
+    return f"{m['model_calls']:.1f} calls, \\${m['usd']:.3f}/{unit}"
+
+
+vx_open = best_of([(r["system"], r["em"]) for r in load("varex-published.json")["systems"] if r["size"] != "API"])
+uk_pub = load("unikie-published.json")
+uk_open = best_of(list((n, v[-1]) for n, v in uk_pub["open_source"].items()))
+uo_pub = load("unikie-open-published.json")
+uo_open = best_of(list((n, v[-1]) for n, v in uo_pub["open_source"].items()))
+eb_agent = best_of([(r["Provider"], float(r["Overall"])) for r in lb if r["Category"] == "Coding Agents"])
+eb_agent_cost = float(next(r["Cost_Per_Page"] for r in lb if r["Provider"] == eb_agent[0]))
+eb_direct = named([(r["Provider"], float(r["Overall"])) for r in lb], "Qwen3.8 27B")
+db_pub = {r["system"]: r for r in load("docubench-published.json")["systems"]}
+dbm_all = COST.get("docubench", {}).get("documents", [])
+one_call = sum(r["model_calls"] == 1 for r in dbm_all)
+med_usd = sorted(PR.document_usd(r) for r in dbm_all)[len(dbm_all) // 2] if dbm_all else None
+ebm_page = (MEASURED.get("extractbench") or {}).get("usd_per_page")
+shine = [
+    ("VAREX", f"1st, {vx['score']:.2f}",
+     f"Gemini 2.5 Pro {named(pv, 'Gemini 2.5 Pro'):.1f} (closed); best open, {vx_open[0]} {vx_open[1]:.1f}",
+     per_doc("varex", "form")),
+    ("UNIKIE-BENCH", f"1st, {u['score']:.2f}",
+     f"Gemini-3-Pro {named(puk, 'Gemini-3-Pro'):.2f} (closed); best open, {uk_open[0]} {uk_open[1]:.2f}",
+     per_doc("unikie", "image")),
+    ("ExtractBench", f"3rd, {eb['score']:.2f}",
+     f"the same Qwen3.8-27B called directly {eb_direct:.2f}; every coding agent (best {eb_agent[0]} {eb_agent[1]:.2f}, \\${eb_agent_cost:.3f}/page)",
+     (f"\\${ebm_page:.3f} per page" if ebm_page else "measuring")),
+    ("LongArray-Extract", f"2nd, {la['score']:.2f}",
+     f"Reducto Deep Extract {named(pl, 'Reducto Deep Extract'):.1f}; Claude Opus 4.7 {named(pl, 'Claude Opus 4.7'):.1f}; GPT-5.5 {named(pl, 'GPT-5.5'):.1f}",
+     per_doc("longarray")),
+    ("UNIKIE-BENCH open", f"2nd, {uo['score']:.2f}",
+     f"best open, {uo_open[0]} {uo_open[1]:.2f}; Qwen3-VL-Plus {named(puo, 'Qwen3-VL-Plus'):.2f} (closed)",
+     per_doc("unikie_open")),
+    ("DocuBench", f"4th, {db['score']:.2f}",
+     "Reducto Deep Extract %.2f at \\$%.2f; Extend %.2f at \\$%.2f; GPT-5.5 %.2f at \\$%.2f" % (
+         db_pub["Reducto Deep Extract"]["score"], db_pub["Reducto Deep Extract"]["cost_usd_per_doc"],
+         db_pub["Extend"]["score"], db_pub["Extend"]["cost_usd_per_doc"],
+         db_pub["GPT-5.5 (direct LLM)"]["score"], db_pub["GPT-5.5 (direct LLM)"]["cost_usd_per_doc"]),
+     (f"\\${(MEASURED.get('docubench') or {}).get('usd', 0):.2f} mean; {one_call} of {len(dbm_all)} in one call "
+      f"(median \\${med_usd:.3f})" if med_usd is not None else "measuring")),
+]
+srows = "".join(r"\textbf{%s} & %s & %s & %s\\" % (esc(b), s, esc(a).replace(r"\textbackslash{}\$", r"\$"), c) + "\n"
+                for b, s, a, c in shine)
+frame("Where DocQuorum stands out", r"""{\scriptsize\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}lrY>{\raggedright\arraybackslash}p{3.2cm}@{}}\toprule
+\textbf{Benchmark} & \textbf{Place, score} & \textbf{Ahead of} & \textbf{Per document (measured)}\\\midrule
+""" + srows + r"""\bottomrule\end{tabularx}}
+
+\vspace{0.4em}
+{\footnotesize Open models only: Qwen3.8-27B and the 1.2B MinerU2.5 parser on one GPU. \$ prices the measured tokens at the Qwen3.8-27B list price; published costs are each system's own (DocuBench result files, ExtractBench leaderboard). UNIKIE-BENCH: two of the six readings come from Qwen3-VL-32B and -8B, counted as calls but not priced.\par}
+""")
+
 
 # ------------------------------------------------------------------ what a document costs
 def cost_chart(path):

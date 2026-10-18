@@ -96,6 +96,50 @@ def cost_markdown():
     return "\n".join(lines + ([""] + notes if notes else [])) + "\n" if len(lines) > 6 else ""
 
 
+def readme_costs():
+    """The README's cost block: measured calls and dollars per document, against published costs."""
+    import pricing
+    q = pricing.PRICES["usd_per_million_tokens"]["qwen3.8-27b"]
+    rows = [(title, pricing.measured(key)) for key, title in COST_ORDER]
+    rows = [(title, m) for title, m in rows if m]
+    if not rows:
+        return ""
+    db = {r["system"]: r for r in load("docubench-published.json")["systems"]}
+    eb = {r["Provider"]: r for r in csv.DictReader((HERE / "extractbench-leaderboard.csv").open(newline=""))}
+    dbr = json.loads((pricing.COSTS / "docubench.json").read_text())["documents"] if (pricing.COSTS / "docubench.json").exists() else []
+    one = [r for r in dbr if r["model_calls"] == 1]
+    out = ["### What a document costs", "",
+           "Measured on a random sample of each benchmark, one document at a time, counting every model and "
+           "parser call. DocQuorum runs open weights on one GPU and pays no price per call; the dollars price its "
+           f"measured tokens at the Qwen3.8-27B list price (${q['input']:.2f} / ${q['output']:.2f} per million input / "
+           "output tokens), so they compare with what the published systems pay.", "",
+           "| benchmark | documents measured | model calls per document | $ per document | $ per page | seconds per document |",
+           "|---|---:|---:|---:|---:|---:|"]
+    for title, m in rows:
+        out.append(f"| {title} | {m['documents']} | {m['model_calls']:.1f} | {m['usd']:.3f} | {m['usd_per_page']:.4f} "
+                   f"| {m['seconds']:,.0f} |")
+    out += [f"\n{title}: {m['note']}." for title, m in rows if m["note"]]
+    pub = lambda n: f"{n} ${db[n]['cost_usd_per_doc']:.2f} ({db[n]['score']:.2f})"
+    out += ["", "Published costs for comparison: on DocuBench, per document (accuracy), "
+            + ", ".join(pub(n) for n in ("DocuPipe (high effort)", "DocuPipe (standard effort)",
+                                         "Claude Sonnet 5 (direct LLM)", "Reducto Deep Extract", "Extend",
+                                         "GPT-5.5 (direct LLM)"))
+            + "; on ExtractBench, per page, LlamaExtract Agentic Plus "
+            f"${float(eb['LlamaExtract Agentic Plus']['Cost_Per_Page']):.3f} and Pulse (Effort) "
+            f"${float(eb['Pulse (Effort)']['Cost_Per_Page']):.3f}, the two systems above DocQuorum. "
+            "VAREX, UNIKIE-BENCH and LongArray-Extract publish no costs."]
+    if dbr:
+        worst = max(dbr, key=pricing.document_usd)
+        out += ["", "Why it is cheap, and when it is not: a file with a text layer is read once "
+                f"({len(one)} of {len(dbr)} sampled DocuBench documents took one call, "
+                f"${sum(map(pricing.document_usd, one)) / max(1, len(one)):.3f} each on average); only scans get "
+                "three readings and a quorum, and zoom re-reads only the fields the readings dispute. Long scans whose "
+                "rows repeat cost the most, because a chunk that loops is read again: the costliest sampled DocuBench "
+                f"document ({worst['pages']} pages) took {worst['model_calls']} calls and "
+                f"${pricing.document_usd(worst):.2f}. Details: [`docs/results/TABLES.md`](docs/results/TABLES.md)."]
+    return "\n".join(out) + "\n"
+
+
 def main():
     provenance = load("provenance.json")
     for name, expected_hash in provenance["snapshot_sha256"].items():
@@ -170,6 +214,12 @@ def main():
         print(f"Rendered {title}: {len(rows)} published systems + DocQuorum (rank {rank_at(score)}).")
     md.append(cost_markdown())
     (HERE / "TABLES.md").write_text("\n".join(md))
+    readme = HERE.parents[1] / "README.md"
+    text = readme.read_text()
+    start, end = "<!-- costs:start (written by docs/results/generate_tables.py) -->", "<!-- costs:end -->"
+    if start in text and end in text:
+        before, rest = text.split(start, 1)
+        readme.write_text(before + start + "\n" + readme_costs() + rest[rest.index(end):])
     (HERE.parent / "results-tables.tex").write_text("".join(out))
     print(f"Rendered ExtractBench: {len(eb_rows)} published systems + DocQuorum (rank {rank(ours['Overall'], eb_scores)}); "
           f"UNIKIE: {len(u_rows)} published systems + DocQuorum (rank {rank(unikie['score'], u_scores)}).")

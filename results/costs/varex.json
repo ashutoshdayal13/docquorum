@@ -1,0 +1,503 @@
+{
+ "benchmark": "varex",
+ "documents_measured": 30,
+ "sample": "random 30 (seed 0) of 1777",
+ "pipeline": "v1.3 (docs/DESIGN.md)",
+ "hardware": "one H100 NVL, shared with other accounts' jobs",
+ "per_document": {
+  "seconds": 39.276666666666664,
+  "model_calls": 3.2333333333333334,
+  "model_input_tokens": 16969.266666666666,
+  "model_output_tokens": 651.5,
+  "parser_calls": 23.233333333333334,
+  "parser_tokens": 10029.966666666667
+ },
+ "per_page": {
+  "seconds": 39.276666666666664,
+  "model_calls": 3.2333333333333334,
+  "model_input_tokens": 16969.266666666666,
+  "model_output_tokens": 651.5,
+  "parser_calls": 23.233333333333334,
+  "parser_tokens": 10029.966666666667
+ },
+ "documents": [
+  {
+   "document": "cdph8243LR1",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 50.4,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 4,
+   "model_input_tokens": 16104,
+   "model_output_tokens": 874,
+   "parser_calls": 48,
+   "parser_tokens": 12847
+  },
+  {
+   "document": "21019",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 34.5,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15191,
+   "model_output_tokens": 474,
+   "parser_calls": 5,
+   "parser_tokens": 4472
+  },
+  {
+   "document": "VTR-34",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 36.7,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 16712,
+   "model_output_tokens": 595,
+   "parser_calls": 32,
+   "parser_tokens": 15985
+  },
+  {
+   "document": "SF1446-13a",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 44.1,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 16715,
+   "model_output_tokens": 734,
+   "parser_calls": 16,
+   "parser_tokens": 8656
+  },
+  {
+   "document": "gs2992_e",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 37.8,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15815,
+   "model_output_tokens": 706,
+   "parser_calls": 11,
+   "parser_tokens": 7108
+  },
+  {
+   "document": "i-730",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 60.2,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 18719,
+   "model_output_tokens": 1312,
+   "parser_calls": 35,
+   "parser_tokens": 15194
+  },
+  {
+   "document": "SF329E-05",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 64.0,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 5,
+   "model_input_tokens": 27973,
+   "model_output_tokens": 998,
+   "parser_calls": 18,
+   "parser_tokens": 11294
+  },
+  {
+   "document": "dtp423",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 19.2,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 14826,
+   "model_output_tokens": 171,
+   "parser_calls": 28,
+   "parser_tokens": 11546
+  },
+  {
+   "document": "GSA_1755",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 45.2,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 17252,
+   "model_output_tokens": 1107,
+   "parser_calls": 12,
+   "parser_tokens": 7942
+  },
+  {
+   "document": "GSA_3631",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 27.8,
+   "route": [
+    "ruled"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 11886,
+   "model_output_tokens": 430,
+   "parser_calls": 18,
+   "parser_tokens": 7783
+  },
+  {
+   "document": "LTC-102",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 20.3,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15143,
+   "model_output_tokens": 213,
+   "parser_calls": 28,
+   "parser_tokens": 7766
+  },
+  {
+   "document": "GSA_3594",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 51.6,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 4,
+   "model_input_tokens": 21257,
+   "model_output_tokens": 1032,
+   "parser_calls": 44,
+   "parser_tokens": 14789
+  },
+  {
+   "document": "VTR-950",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 39.0,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 16526,
+   "model_output_tokens": 793,
+   "parser_calls": 9,
+   "parser_tokens": 5081
+  },
+  {
+   "document": "fs25",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 33.3,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15373,
+   "model_output_tokens": 403,
+   "parser_calls": 16,
+   "parser_tokens": 8073
+  },
+  {
+   "document": "ssa-1021",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 35.6,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15159,
+   "model_output_tokens": 444,
+   "parser_calls": 30,
+   "parser_tokens": 7776
+  },
+  {
+   "document": "opm1638",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 37.0,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15594,
+   "model_output_tokens": 444,
+   "parser_calls": 12,
+   "parser_tokens": 5213
+  },
+  {
+   "document": "SF34-16c",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 42.2,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 17487,
+   "model_output_tokens": 774,
+   "parser_calls": 15,
+   "parser_tokens": 9739
+  },
+  {
+   "document": "40162",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 25.0,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15215,
+   "model_output_tokens": 201,
+   "parser_calls": 18,
+   "parser_tokens": 10289
+  },
+  {
+   "document": "GSA12002-21",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 41.6,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 17062,
+   "model_output_tokens": 839,
+   "parser_calls": 7,
+   "parser_tokens": 4698
+  },
+  {
+   "document": "4742",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 22.4,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15770,
+   "model_output_tokens": 330,
+   "parser_calls": 16,
+   "parser_tokens": 14520
+  },
+  {
+   "document": "lab414",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 41.4,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 16290,
+   "model_output_tokens": 786,
+   "parser_calls": 27,
+   "parser_tokens": 13263
+  },
+  {
+   "document": "cdph8442",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 48.1,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 16569,
+   "model_output_tokens": 828,
+   "parser_calls": 40,
+   "parser_tokens": 12112
+  },
+  {
+   "document": "cdph8241",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 40.7,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15854,
+   "model_output_tokens": 577,
+   "parser_calls": 24,
+   "parser_tokens": 9331
+  },
+  {
+   "document": "308",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 47.0,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 4,
+   "model_input_tokens": 16568,
+   "model_output_tokens": 527,
+   "parser_calls": 76,
+   "parser_tokens": 18016
+  },
+  {
+   "document": "LTC-84",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 40.7,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 4,
+   "model_input_tokens": 18068,
+   "model_output_tokens": 666,
+   "parser_calls": 23,
+   "parser_tokens": 10094
+  },
+  {
+   "document": "VTR-422",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 32.8,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 16539,
+   "model_output_tokens": 678,
+   "parser_calls": 8,
+   "parser_tokens": 5749
+  },
+  {
+   "document": "2742",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 56.9,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 4,
+   "model_input_tokens": 27328,
+   "model_output_tokens": 967,
+   "parser_calls": 27,
+   "parser_tokens": 17747
+  },
+  {
+   "document": "1447",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 33.3,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15461,
+   "model_output_tokens": 658,
+   "parser_calls": 13,
+   "parser_tokens": 7113
+  },
+  {
+   "document": "21b",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 30.4,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 14823,
+   "model_output_tokens": 405,
+   "parser_calls": 8,
+   "parser_tokens": 4424
+  },
+  {
+   "document": "52574",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 39.1,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15799,
+   "model_output_tokens": 579,
+   "parser_calls": 33,
+   "parser_tokens": 12279
+  }
+ ]
+}
