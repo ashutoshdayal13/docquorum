@@ -15,7 +15,7 @@ Each benchmark below is scored with its own scorer and placed against every publ
 | ExtractBench (370 enterprise PDFs, 1-163 pages) | Overall **95.43** (short 96.34, medium 94.11, long 90.41) | 3rd (two commercial systems at 95.91) |
 | LongArray-Extract (45 long documents, 29,328 rows) | macro accuracy **98.05** | 2nd of 12 (Extend MAX 99.2; Reducto Deep Extract 97.4) |
 | UNIKIE-BENCH open category (1,661 documents) | macro F1 **72.33** with zoom re-reading (71.07 without) | 2nd of 16 (Gemini-3-Pro 81.65) |
-| DocuBench (72 documents in 10 file types) | macro accuracy **90.80** (final pipeline; 86.47 with v1.1) | 4th of 10 (DocuPipe 97.02; Claude Sonnet 5 91.73) |
+| DocuBench (72 documents in 10 file types) | macro accuracy **91.54** (final pipeline, v1.4; 90.80 with v1.3, 86.47 with v1.1) | 4th of 10 (DocuPipe 97.02; Claude Sonnet 5 91.73) |
 
 
 DocuBench is the benchmark the v1.3 fixes came from (`docs/DESIGN.md`, `results/README.md`). Zoom re-reading, the new step, was tested

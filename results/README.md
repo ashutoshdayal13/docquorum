@@ -312,7 +312,8 @@ benchmark does for every system). Scored with the benchmark's own `scorer.py`
 |---|---:|---|
 | DocuPipe (high effort) | 97.02 | 1st |
 | Claude Sonnet 5 (direct LLM) | 91.73 | 3rd |
-| **DocQuorum, final pipeline (v1.3)** | **90.80** | **4th of 10** |
+| **DocQuorum, final pipeline (v1.4)** | **91.54** | **4th of 10** |
+| DocQuorum v1.3 | 90.80 | (4th) |
 | Reducto Deep Extract | 89.38 | 5th |
 | DocQuorum v1.1 | 86.47 | (5th) |
 | Reducto (standard) | 81.11 | 6th |
@@ -330,6 +331,11 @@ benchmark does for every system). Scored with the benchmark's own `scorer.py`
   again with v1.3: **90.80** (4th, above Reducto Deep Extract 89.38; Claude Sonnet 5 91.73 is 3rd).
   Repeated complete runs of the same pipeline scored between 90.45 and 91.02 (the readings of a
   few scans vary from run to run), so 3rd place is not reached.
+* **v1.4: a looping reply is stopped by the model server, and a scan's readings run at the same
+  time** (`docs/DESIGN.md`; made for speed, not found from scores). Every document read again:
+  **91.54**, still 4th (Claude Sonnet 5 91.73). 26 documents changed, 16 up and 10 down; the
+  largest gains are on documents that looped (f9nrfUNC 31.7 -> 40.1, EWUUeFYp 61.3 -> 65.1), and
+  part of the +0.75 is the run-to-run variation above. Outputs: `results/docubench-v14`.
 * Earlier fixes from this benchmark, the numbers below being development
   measurements: a layout reader that finds no records hands the document to the route
   (WM9ZKrAr 0 -> 87.3); the ruled-table reader only where printed rules are found (vAdukzpt

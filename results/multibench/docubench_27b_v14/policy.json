@@ -1,0 +1,10 @@
+{
+ "pipeline": "docquorum.extract (frozen; no resource profile)",
+ "model": "qwen3vl",
+ "endpoint": "http://localhost:8079/v1",
+ "parser": "http://localhost:8081/v1",
+ "weights": "Qwen/Qwen3.8-27B-FP8",
+ "task": "the benchmark's per-document guideline",
+ "answer_keys_at_inference": false,
+ "variant": "v14"
+}
