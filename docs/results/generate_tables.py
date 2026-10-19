@@ -74,9 +74,11 @@ def cost_markdown():
     q = pricing.PRICES["usd_per_million_tokens"]["qwen3.8-27b"]
     lines = ["## What a document costs (measured)\n",
              "Means per document over a random sample of each benchmark (seed 0), read one document at a time "
-             "by the final pipeline, from the model server's and the parser's own usage counters. DocQuorum runs "
+             "by the final pipeline. Calls and tokens: for VAREX and DocuBench, the servers' own usage counters "
+             "(nothing else using them); for the other four, measured side by side, each reply's own usage counted "
+             "in the measuring process (`benchmarks/usage_meter.py`); both count the same requests. DocQuorum runs "
              "open weights on one H100 shared with other accounts' jobs: it pays no price per call, and the "
-             "seconds are upper bounds. The dollar columns price the measured tokens (extraction model and parser) "
+             "seconds are upper bounds (for the last four, also shared with each other's measurements). The dollar columns price the measured tokens (extraction model and parser) "
              f"at the Qwen3.8-27B list price, ${q['input']:.2f} / ${q['output']:.2f} per million input / output "
              "tokens (`pricing.json`). Per-document rows: `results/costs/<benchmark>.json`.\n",
              "| Benchmark | Documents measured | Pages | Model calls | Input tokens | Output tokens "
@@ -91,6 +93,10 @@ def cost_markdown():
                      f"| {m['seconds']:,.0f} | {m['usd']:.3f} | {m['usd_per_page']:.4f} |")
         if m["note"]:
             notes.append(f"{title}: {m['note']}.")
+    if pricing.measured("extractbench"):
+        lines += ["", "ExtractBench's $ / page is weighted by split (252 short, 98 medium, 20 long documents), as the "
+                  "leaderboard computes its `Cost_Per_Page`; pooled over the sampled pages it is "
+                  f"{pricing.measured('extractbench')['usd_per_page_pooled']:.4f}."]
     lines += ["", "For comparison, published costs: DocuBench in `docubench-published.json` (per document; "
               "`docubench_costs.py`), ExtractBench in `extractbench-leaderboard.csv` (`Cost_Per_Page`)."]
     return "\n".join(lines + ([""] + notes if notes else [])) + "\n" if len(lines) > 6 else ""
@@ -110,7 +116,8 @@ def readme_costs():
     one = [r for r in dbr if r["model_calls"] == 1]
     out = ["### What a document costs", "",
            "Measured on a random sample of each benchmark, one document at a time, counting every model and "
-           "parser call. DocQuorum runs open weights on one GPU and pays no price per call; the dollars price its "
+           "parser call; seconds are upper bounds, on one H100 shared with other jobs. DocQuorum runs open weights "
+           "on one GPU and pays no price per call; the dollars price its "
            f"measured tokens at the Qwen3.8-27B list price (${q['input']:.2f} / ${q['output']:.2f} per million input / "
            "output tokens), so they compare with what the published systems pay.", "",
            "| benchmark | documents measured | model calls per document | $ per document | $ per page | seconds per document |",
@@ -119,6 +126,9 @@ def readme_costs():
         out.append(f"| {title} | {m['documents']} | {m['model_calls']:.1f} | {m['usd']:.3f} | {m['usd_per_page']:.4f} "
                    f"| {m['seconds']:,.0f} |")
     out += [f"\n{title}: {m['note']}." for title, m in rows if m["note"]]
+    if any(title == "ExtractBench" for title, _ in rows):
+        out += ["\nExtractBench: $ per page weighted by split (252 short, 98 medium, 20 long documents), as the "
+                "leaderboard computes its `Cost_Per_Page`."]
     pub = lambda n: f"{n} ${db[n]['cost_usd_per_doc']:.2f} ({db[n]['score']:.2f})"
     out += ["", "Published costs for comparison: on DocuBench, per document (accuracy), "
             + ", ".join(pub(n) for n in ("DocuPipe (high effort)", "DocuPipe (standard effort)",

@@ -493,7 +493,7 @@ def eb_table(part, lo, hi):
         t += (r"\rowcolor{hl}" if mine else "") + " & ".join(cells) + r"\\" + "\n"
     t += r"\bottomrule\end{tabularx}}"
     frame(r"ExtractBench: complete results (%d/3)" % part, t + r"""
-\src{ExtractBench leaderboard, snapshot of 2 October 2026 (47 published systems) and DocQuorum. Value F1 (\%) by the benchmark's scorer over 370 PDFs (252 short, 98 medium, 20 long); Overall is the mean over all documents. Equal scores share a rank. \$/page and s/doc: the leaderboard's cost per page and latency per document (averaged over the 370 documents); self-host: an open model the leaderboard ran itself and did not price; n/p: not published. e: DocQuorum's tokens measured on a random 20, priced at the Qwen3.8-27B list price (Alibaba Cloud, \$QIN / \$QOUT per million input / output tokens); it runs on its own GPU, one document at a time for the timing.}
+\src{ExtractBench leaderboard, snapshot of 2 October 2026 (47 published systems) and DocQuorum. Value F1 (\%) by the benchmark's scorer over 370 PDFs (252 short, 98 medium, 20 long); Overall is the mean over all documents. Equal scores share a rank. \$/page and s/doc: the leaderboard's cost per page and latency per document (averaged over the 370 documents); self-host: an open model the leaderboard ran itself and did not price; n/p: not published. e: DocQuorum's tokens measured on a random 20, priced at the Qwen3.8-27B list price (Alibaba Cloud, \$QIN / \$QOUT per million input / output tokens) and weighted by split as the leaderboard's \$/page is; timed one document at a time on a GPU shared with other jobs.}
 """.replace("QIN", f"{QWEN['input']:.2f}").replace("QOUT", f"{QWEN['output']:.2f}"))
 
 
@@ -723,7 +723,7 @@ frame("Where DocQuorum stands out", r"""{\scriptsize\renewcommand{\arraystretch}
 """ + srows + r"""\bottomrule\end{tabularx}}
 
 \vspace{0.4em}
-{\footnotesize Open models only: Qwen3.8-27B and the 1.2B MinerU2.5 parser on one GPU. \$ prices the measured tokens at the Qwen3.8-27B list price; published costs are each system's own (DocuBench result files, ExtractBench leaderboard). UNIKIE-BENCH: two of the six readings come from Qwen3-VL-32B and -8B, counted as calls but not priced.\par}
+{\scriptsize Open models only: Qwen3.8-27B and the 1.2B MinerU2.5 parser on one GPU. \$ prices the measured tokens at the Qwen3.8-27B list price; published costs are each system's own (DocuBench result files, ExtractBench leaderboard). UNIKIE-BENCH: two of the six readings come from Qwen3-VL-32B and -8B, counted as calls but not priced.\par}
 """)
 
 
@@ -754,8 +754,8 @@ def cost_chart(path):
                         ha="right" if off[0] < 0 else "left")
         if our_x:
             ax.scatter([our_x], [our_y], s=60, color="#c0392b", zorder=3, marker="D")
-            ax.annotate("DocQuorum (est.)", (our_x, our_y), textcoords="offset points", xytext=(0, -16),
-                        fontsize=8, color="#c0392b", weight="bold", ha="center")
+            ax.annotate("DocQuorum (est.)", (our_x, our_y), textcoords="offset points", xytext=(-8, -3),
+                        fontsize=8, color="#c0392b", weight="bold", ha="right")
         ax.set_xscale("log")
         ax.xaxis.set_major_locator(LogLocator(subs=(1, 2, 5)))
         ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f"${v:g}"))
@@ -801,7 +801,8 @@ frame("Why a document costs little, and when it costs more", r"""
 \begin{block}{When it costs more}
 \footnotesize
 Scanned documents get three readings and a quorum: MANYN sampled DocuBench documents, MANYCALLS calls and \$MANYUSD each on average.\\[0.35em]
-Long scans whose rows repeat cost most: a chunk that loops is read again. The costliest sample, WORSTNAME (WORSTP pages), took WORSTC calls, \$WORSTUSD and WORSTMIN minutes.
+Long scans whose rows repeat cost most: a chunk that loops is read again. The costliest sample, WORSTNAME (WORSTP pages), took WORSTC calls, \$WORSTUSD and WORSTMIN minutes.\\[0.3em]
+Long documents are read in chunks, so they cost by the page: LongArray's sampled documents (LAPAGES pages on average) took LACALLS calls and \$LAUSD each, \$LAPAGE a page; ExtractBench, \$EBPAGE a page.
 \end{block}
 \end{columns}
 \src{results/costs/: every measured document (calls, tokens, seconds); prices in docs/results/pricing.json.}
@@ -815,7 +816,10 @@ Long scans whose rows repeat cost most: a chunk that loops is read again. The co
     "WORSTNAME", esc(worst["document"]) if worst else "--").replace("WORSTP", str(worst["pages"]) if worst else "--").replace(
     "WORSTC", str(worst["model_calls"]) if worst else "--").replace(
     "WORSTUSD", f"{PR.document_usd(worst):.2f}" if worst else "--").replace(
-    "WORSTMIN", f"{worst['seconds'] / 60:.0f}" if worst else "--"))
+    "WORSTMIN", f"{worst['seconds'] / 60:.0f}" if worst else "--").replace(
+    "LAPAGES", cost("longarray", "pages")).replace("LACALLS", cost("longarray", "model_calls")).replace(
+    "LAUSD", cost("longarray", "usd", 2)).replace("LAPAGE", cost("longarray", "usd_per_page", 3)).replace(
+    "EBPAGE", cost("extractbench", "usd_per_page", 3)))
 
 zv = load("../../results/varex-zoom/comparison.json")
 zu = json.loads((ROOT / "results/unikie_open/zoom/comparison.json").read_text())

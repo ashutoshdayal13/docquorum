@@ -32,11 +32,15 @@ from docquorum.tools import pdf as PDF  # noqa: E402
 usage_meter.install()
 
 
+SPLIT = {}                                   # ExtractBench: document -> short / medium / long
+
+
 def inputs():
     if bench == "extractbench":
         from docquorum import extractbench as EB
-        recs = [r for split in ("short", "medium", "long") for r in EB.load_records(split)]
-        return [(EB.name_of(r), EB.pdf_of(r), r["data_schema"], None) for r in recs]
+        recs = [(s, r) for s in ("short", "medium", "long") for r in EB.load_records(s)]
+        SPLIT.update((EB.name_of(r), s) for s, r in recs)
+        return [(EB.name_of(r), EB.pdf_of(r), r["data_schema"], None) for _, r in recs]
     import frozen27b as F
     return list(F.INPUTS[bench]())
 
@@ -64,6 +68,8 @@ for name, doc, schema, task in sample:
     row = {"document": name, "pages": pages, "status": status, "seconds": round(secs, 1),
            "route": rep.get("readings"), **used,
            "parser_tokens": used["parser_input_tokens"] + used["parser_output_tokens"], "counted_by": "usage_meter"}
+    if name in SPLIT:
+        row["split"] = SPLIT[name]
     rows.append(row)
     print(json.dumps(row), flush=True)
     keys = ["seconds", "model_calls", "model_input_tokens", "model_output_tokens", "parser_calls", "parser_tokens"]

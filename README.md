@@ -22,6 +22,29 @@ DocuBench is the benchmark the v1.3 fixes came from (`docs/DESIGN.md`, `results/
 held-out on VAREX (60 forms better, 25 worse) and UNIKIE open (291 documents better, 138 worse); on UNIKIE constrained
 it first lowered the score, which led to its vote rule (details in `results/README.md`).
 
+<!-- costs:start (written by docs/results/generate_tables.py) -->
+### What a document costs
+
+Measured on a random sample of each benchmark, one document at a time, counting every model and parser call; seconds are upper bounds, on one H100 shared with other jobs. DocQuorum runs open weights on one GPU and pays no price per call; the dollars price its measured tokens at the Qwen3.8-27B list price ($0.50 / $3.00 per million input / output tokens), so they compare with what the published systems pay.
+
+| benchmark | documents measured | model calls per document | $ per document | $ per page | seconds per document |
+|---|---:|---:|---:|---:|---:|
+| VAREX | 30 | 3.2 | 0.021 | 0.0209 | 39 |
+| UNIKIE-BENCH, constrained | 30 | 6.3 | 0.010 | 0.0100 | 51 |
+| UNIKIE-BENCH, open | 30 | 4.6 | 0.018 | 0.0177 | 121 |
+| ExtractBench | 20 | 40.0 | 0.403 | 0.0272 | 861 |
+| DocuBench | 20 | 11.1 | 0.234 | 0.0458 | 628 |
+| LongArray-Extract | 6 | 101.3 | 0.678 | 0.0140 | 2,176 |
+
+UNIKIE-BENCH, constrained: the two readings by other models are counted as calls; their tokens are not included.
+
+ExtractBench: $ per page weighted by split (252 short, 98 medium, 20 long documents), as the leaderboard computes its `Cost_Per_Page`.
+
+Published costs for comparison: on DocuBench, per document (accuracy), DocuPipe (high effort) $0.54 (97.02), DocuPipe (standard effort) $0.11 (96.14), Claude Sonnet 5 (direct LLM) $0.29 (91.73), Reducto Deep Extract $0.70 (89.38), Extend $0.40 (80.28), GPT-5.5 (direct LLM) $0.18 (76.48); on ExtractBench, per page, LlamaExtract Agentic Plus $0.081 and Pulse (Effort) $0.105, the two systems above DocQuorum. VAREX, UNIKIE-BENCH and LongArray-Extract publish no costs.
+
+Why it is cheap, and when it is not: a file with a text layer is read once (13 of 20 sampled DocuBench documents took one call, $0.009 each on average); only scans get three readings and a quorum, and zoom re-reads only the fields the readings dispute. Long scans whose rows repeat cost the most, because a chunk that loops is read again: the costliest sampled DocuBench document (28 pages) took 35 calls and $1.10. Details: [`docs/results/TABLES.md`](docs/results/TABLES.md).
+<!-- costs:end -->
+
 * Details, caveats, per-document scores: [`results/README.md`](results/README.md)
 * How it works, with a diagram and worked examples: [`docs/docquorum.pdf`](docs/docquorum.pdf), [documentation and build instructions](docs/README.md)
 * The code, file by file: [`docs/CODE_GUIDE.md`](docs/CODE_GUIDE.md)

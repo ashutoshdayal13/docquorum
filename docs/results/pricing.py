@@ -8,6 +8,9 @@ import json
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+# ExtractBench's Cost_Per_Page is its per-split cost per page weighted by the split sizes
+# (252 short, 98 medium, 20 long documents); this reproduces every published value.
+EXTRACTBENCH_SPLITS = {"short": 252, "medium": 98, "long": 20}
 COSTS = HERE.parents[1] / "results" / "costs"
 PRICES = json.loads((HERE / "pricing.json").read_text())
 
@@ -40,6 +43,11 @@ def measured(bench):
         return None
     usd = [document_usd(r) for r in ok]
     pages = sum(r["pages"] for r in ok)
+    per_page = sum(usd) / pages
+    if all("split" in r for r in ok) and {r["split"] for r in ok} == set(EXTRACTBENCH_SPLITS):
+        split_page = {s: sum(document_usd(r) for r in ok if r["split"] == s) / sum(r["pages"] for r in ok if r["split"] == s)
+                      for s in EXTRACTBENCH_SPLITS}
+        per_page = sum(EXTRACTBENCH_SPLITS[s] * v for s, v in split_page.items()) / sum(EXTRACTBENCH_SPLITS.values())
     return dict(c["per_document"], documents=len(ok), pages=pages / len(ok), usd=sum(usd) / len(ok),
-                usd_per_page=sum(usd) / pages, usd_max=max(usd), seconds_max=max(r["seconds"] for r in ok),
-                note=c.get("note", ""), sample=c.get("sample", ""))
+                usd_per_page=per_page, usd_per_page_pooled=sum(usd) / pages, usd_max=max(usd),
+                seconds_max=max(r["seconds"] for r in ok), note=c.get("note", ""), sample=c.get("sample", ""))

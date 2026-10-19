@@ -485,7 +485,8 @@ s = slide(None, "", "ExtractBench: DocQuorum is 3rd of 48",
           source=f"ExtractBench leaderboard snapshot (2 October 2026, {len(lb)} published systems); value F1 (%) "
                  "by the benchmark's scorer; $/page and s/doc as published (s/doc averaged over the 370 documents). "
                  "– not published (open models the leaderboard ran itself). *DocQuorum: open weights on one GPU, "
-                 "no price per call; its measured tokens (random 20) priced at the Qwen3.8-27B list price. "
+                 "no price per call; its measured tokens (random 20) priced at the Qwen3.8-27B list price, weighted by split "
+                 "as the leaderboard's $/page is. "
                  "Full table: docs/docquorum.pdf.",
           notes="370 enterprise PDFs: 252 short, 98 medium, 20 long. Overall is the mean over all documents. "
                 "DocQuorum uses the open Qwen3.8-27B model; the two systems above it are commercial.")
