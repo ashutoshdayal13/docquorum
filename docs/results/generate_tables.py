@@ -103,52 +103,73 @@ def cost_markdown():
     return "\n".join(lines + ([""] + notes if notes else [])) + "\n" if len(lines) > 6 else ""
 
 
-def readme_costs():
-    """The README's cost block: measured calls and dollars per document, against published costs."""
+def plain(s):
+    """LaTeX spacing and escapes of the table legends, as plain text."""
+    return s.replace("\\,", " ").replace("\\ ", " ").replace("\\", "")
+
+
+def complete_markdown(b):
+    """One benchmark's complete table, in the flow deck's design: rank, system, type, score, breakdown."""
+    import leaderboards as LB
+    parts = [plain(p) for p in b["parts"]]
+    lines = [f"## {b['title']} ({b['what']})\n", plain(b["legend"]) + " Equal scores share a rank. Source: "
+             + plain(b["src"]) + "\n", "| " + " | ".join(["#", "System", "Type", "Score"] + parts) + " |",
+             "|---:|---|---|---:|" + "---:|" * len(parts)]
+    for r in LB.ranked(b):
+        mine = r["kind"] == "ours"
+        cells = [str(r["rank"]), LB.OURS if mine else r["name"], "Open models" if mine else LB.KIND[r["kind"]],
+                 f"{r['score']:.2f}" if mine else str(LB.shown(r["score"], b["digits"]))]
+        cells += [str(LB.shown(v, b["digits"])) if isinstance(v, (int, float)) else str(v) for v in r["parts"]]
+        lines.append("| " + " | ".join(f"**{c}**" if mine else c for c in cells) + " |")
+    return "\n".join(lines) + "\n"
+
+
+def readme_results():
+    """The README's results table, with the same columns as the flow deck's: score, place, the best
+    published system below DocQuorum, and measured calls, dollars and seconds per document."""
+    import leaderboards as LB
     import pricing
+    order, _ = LB.ordered()
+    lines = ["| benchmark | score | place | ahead of | model calls / doc | $ / doc | seconds / doc |",
+             "|---|---:|---|---|---:|---:|---:|"]
+    for b in order:
+        m, nxt, c = LB.me(b), LB.ahead_of(b), pricing.measured(b["key"]) or {}
+        place = f"{LB.nth(m['rank'])} of {len(LB.ranked(b))}"
+        lines.append(f"| **{b['title']}** ({b['what']}) | **{b['ours']['score']:.2f}** | "
+                     f"{'**' + place + '**' if m['rank'] == 1 else place} | {nxt['name']} {LB.shown(nxt['score'], b['digits'])} "
+                     f"| {c.get('model_calls', 0):.1f} | {c.get('usd', 0):.3f} | {c.get('seconds', 0):,.0f} |")
     q = pricing.PRICES["usd_per_million_tokens"]["qwen3.8-27b"]
-    rows = [(title, pricing.measured(key)) for key, title in COST_ORDER]
-    rows = [(title, m) for title, m in rows if m]
-    if not rows:
-        return ""
+    lines += ["", "Scores: each benchmark's own scorer on the full test set; places count every published system. "
+              "Calls, dollars and seconds: means per document over a random sample of each benchmark "
+              f"(`results/costs/`); the dollars price the measured tokens at the Qwen3.8-27B list price (${q['input']:.2f} / "
+              f"${q['output']:.2f} per million input / output tokens), since DocQuorum itself runs on one GPU with no price "
+              "per call; the seconds are upper bounds on a shared H100.", "",
+              "![Each benchmark's six best systems, DocQuorum among them](ppt/flow/assets/chart_ranks.png)", "",
+              "![DocQuorum against the best published open model, and against the best closed model](ppt/flow/assets/chart_open_closed.png)"]
+    return "\n".join(lines) + "\n"
+
+
+def readme_costs():
+    """The README's cost and speed block: what makes a document cheap, against published costs."""
+    import pricing
+    import statistics
     db = {r["system"]: r for r in load("docubench-published.json")["systems"]}
-    eb = {r["Provider"]: r for r in csv.DictReader((HERE / "extractbench-leaderboard.csv").open(newline=""))}
+    eb = sorted(csv.DictReader((HERE / "extractbench-leaderboard.csv").open(newline="")), key=lambda r: -float(r["Overall"]))
     dbr = json.loads((pricing.COSTS / "docubench.json").read_text())["documents"] if (pricing.COSTS / "docubench.json").exists() else []
     one = [r for r in dbr if r["model_calls"] == 1]
-    out = ["### What a document costs", "",
-           "Measured on a random sample of each benchmark, one document at a time, counting every model and "
-           "parser call; seconds are upper bounds, on one H100 shared with other jobs. DocQuorum runs open weights "
-           "on one GPU and pays no price per call; the dollars price its "
-           f"measured tokens at the Qwen3.8-27B list price (${q['input']:.2f} / ${q['output']:.2f} per million input / "
-           "output tokens), so they compare with what the published systems pay.", "",
-           "| benchmark | documents measured | model calls per document | $ per document | $ per page | seconds per document |",
-           "|---|---:|---:|---:|---:|---:|"]
-    for title, m in rows:
-        out.append(f"| {title} | {m['documents']} | {m['model_calls']:.1f} | {m['usd']:.3f} | {m['usd_per_page']:.4f} "
-                   f"| {m['seconds']:,.0f} |")
-    out += [f"\n{title}: {m['note']}." for title, m in rows if m["note"]]
-    if any(title == "ExtractBench" for title, _ in rows):
-        out += ["\nExtractBench: $ per page weighted by split (252 short, 98 medium, 20 long documents), as the "
-                "leaderboard computes its `Cost_Per_Page`."]
-    pub = lambda n: f"{n} ${db[n]['cost_usd_per_doc']:.2f} ({db[n]['score']:.2f})"
-    out += ["", "Published costs for comparison: on DocuBench, per document (accuracy), "
-            + ", ".join(pub(n) for n in ("DocuPipe (high effort)", "DocuPipe (standard effort)",
-                                         "Claude Sonnet 5 (direct LLM)", "Reducto Deep Extract", "Extend",
-                                         "GPT-5.5 (direct LLM)"))
-            + "; on ExtractBench, per page, LlamaExtract Agentic Plus "
-            f"${float(eb['LlamaExtract Agentic Plus']['Cost_Per_Page']):.3f} and Pulse (Effort) "
-            f"${float(eb['Pulse (Effort)']['Cost_Per_Page']):.3f}, the two systems above DocQuorum. "
-            "VAREX, UNIKIE-BENCH and LongArray-Extract publish no costs."]
-    if dbr:
-        worst = max(dbr, key=pricing.document_usd)
-        out += ["", "Why it is cheap, and when it is not: a file with a text layer is read once "
-                f"({len(one)} of {len(dbr)} sampled DocuBench documents took one call, "
-                f"${sum(map(pricing.document_usd, one)) / max(1, len(one)):.3f} each on average); only scans get "
-                "three readings (at the same time) and a quorum, and zoom re-reads only the fields the readings dispute. "
-                "Long scans cost the most, because they are read in chunks, once per reading: the costliest sampled "
-                f"DocuBench document ({worst['pages']} pages) took {worst['model_calls']} calls and "
-                f"${pricing.document_usd(worst):.2f}."]
-    out += ["", speed_markdown(), "Details: [`docs/results/TABLES.md`](docs/results/TABLES.md)."]
+    ebm, dbm = pricing.measured("extractbench") or {}, pricing.measured("docubench") or {}
+    costs = [r["cost_usd_per_doc"] for r in db.values()]
+    out = ["### Cost and speed", "",
+           f"* **ExtractBench:** the two systems above DocQuorum cost ${float(eb[0]['Cost_Per_Page']):.3f} and "
+           f"${float(eb[1]['Cost_Per_Page']):.3f} a page; DocQuorum's tokens come to ${ebm.get('usd_per_page', 0):.3f} a page "
+           "(weighted by split, as the leaderboard computes it), and no published system is both cheaper and more accurate.",
+           f"* **DocuBench:** the published systems cost ${min(costs):.2f} to ${max(costs):.2f} a document (median "
+           f"${statistics.median(costs):.2f}); DocQuorum ${dbm.get('usd', 0):.2f}.",
+           f"* **Why it is cheap:** a file with a text layer is read once ({len(one)} of {len(dbr)} sampled DocuBench documents "
+           f"took a single call, ${sum(map(pricing.document_usd, one)) / max(1, len(one)):.3f} each); only scans get three "
+           "readings, run at the same time; zoom re-reads only the disputed fields a new vote could change; and the open "
+           "27B model costs a tenth of GPT-5.5 per output token.", "",
+           speed_markdown(), "Details: [`docs/results/TABLES.md`](docs/results/TABLES.md)."]
     return "\n".join(out) + "\n"
 
 
@@ -231,10 +252,10 @@ def main():
     for name, value in u_table:
         out.append(row([rank(value, u_scores), name, f"{displayed(value)}"], name == "DocQuorum (ours)"))
     out.append(r"\bottomrule\end{tabularx}\endgroup" + "\n")
-    md = ["# Results: every published system and DocQuorum\n\nGenerated by `generate_tables.py`; equal "
-          "scores (at two decimals) share a rank.\n"]
-    md.append(markdown("ExtractBench (370 PDFs, value F1)", [(r["Provider"], r["Overall"]) for r in eb_table]))
-    md.append(markdown("UNIKIE-BENCH, constrained category (4,472 images, macro F1)", u_table))
+    import leaderboards as LB
+    md = ["# Results: every published system and DocQuorum\n\nGenerated by `generate_tables.py` from the snapshots "
+          "in this folder; one design for every benchmark (rank, system, type, score, the benchmark's own breakdown).\n"]
+    md += [complete_markdown(b) for b in LB.ordered()[0]]
     for key, title, about, rows_of, digits in EXTRA:
         if not (HERE / f"docquorum-{key}.json").exists():
             continue                                  # not run yet
@@ -253,17 +274,18 @@ def main():
             mine = name == "DocQuorum (ours)"
             out.append(row([rank_at(value), name, f"{displayed(value)}" if mine else f"{float(value):.{digits}f}"], mine))
         out.append(r"\bottomrule\end{tabularx}\endgroup" + "\n")
-        md.append(markdown(title, table, rank_at, digits))
         print(f"Rendered {title}: {len(rows)} published systems + DocQuorum (rank {rank_at(score)}).")
     md.append(cost_markdown())
     md.append(speed_markdown())
     (HERE / "TABLES.md").write_text("\n".join(md))
     readme = HERE.parents[1] / "README.md"
     text = readme.read_text()
-    start, end = "<!-- costs:start (written by docs/results/generate_tables.py) -->", "<!-- costs:end -->"
-    if start in text and end in text:
-        before, rest = text.split(start, 1)
-        readme.write_text(before + start + "\n" + readme_costs() + rest[rest.index(end):])
+    for block, fill in (("results", readme_results), ("costs", readme_costs)):
+        start, end = f"<!-- {block}:start (written by docs/results/generate_tables.py) -->", f"<!-- {block}:end -->"
+        if start in text and end in text:
+            before, rest = text.split(start, 1)
+            text = before + start + "\n" + fill() + rest[rest.index(end):]
+    readme.write_text(text)
     (HERE.parent / "results-tables.tex").write_text("".join(out))
     print(f"Rendered ExtractBench: {len(eb_rows)} published systems + DocQuorum (rank {rank(ours['Overall'], eb_scores)}); "
           f"UNIKIE: {len(u_rows)} published systems + DocQuorum (rank {rank(unikie['score'], u_scores)}).")

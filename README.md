@@ -8,14 +8,22 @@ follows the schema. It runs on open-weight models (Qwen3.8-27B) on a single GPU;
 Each benchmark below is scored with its own scorer and placed against every published system
 ([full tables](docs/results/TABLES.md)). No result was submitted to a leaderboard.
 
-| benchmark | DocQuorum | place among published systems |
-|---|---|---|
-| VAREX (1,777 government forms, image input) | exact match **98.23** (final pipeline; 98.30 with v1.2, 98.10 without zoom) | **1st** (Gemini 2.5 Pro 98.0) |
-| UNIKIE-BENCH (4,472 images, 11 scenarios) | six-reading macro F1 **82.65** with zoom re-reading (82.62 without) | **1st** (Gemini-3-Pro 82.37) |
-| ExtractBench (370 enterprise PDFs, 1-163 pages) | Overall **95.43** (short 96.34, medium 94.11, long 90.41) | 3rd (two commercial systems at 95.91) |
-| LongArray-Extract (45 long documents, 29,328 rows) | macro accuracy **98.05** | 2nd of 12 (Extend MAX 99.2; Reducto Deep Extract 97.4) |
-| UNIKIE-BENCH open category (1,661 documents) | macro F1 **72.33** with zoom re-reading (71.07 without) | 2nd of 16 (Gemini-3-Pro 81.65) |
-| DocuBench (72 documents in 10 file types) | macro accuracy **91.54** (final pipeline, v1.4; 90.80 with v1.3, 86.47 with v1.1) | 4th of 10 (DocuPipe 97.02; Claude Sonnet 5 91.73) |
+<!-- results:start (written by docs/results/generate_tables.py) -->
+| benchmark | score | place | ahead of | model calls / doc | $ / doc | seconds / doc |
+|---|---:|---|---|---:|---:|---:|
+| **VAREX** (1,777 government forms) | **98.23** | **1st of 21** | Gemini 2.5 Pro 98.0 | 3.7 | 0.021 | 25 |
+| **UNIKIE-BENCH** (4,472 images, 11 scenarios) | **82.65** | **1st of 16** | Gemini-3-Pro 82.37 | 6.3 | 0.010 | 51 |
+| **LongArray-Extract** (45 long documents, 29,328 rows) | **98.05** | 2nd of 12 | Reducto Deep Extract 97.4 | 100.3 | 0.676 | 1,466 |
+| **UNIKIE-BENCH open** (1,661 documents, 8 scenarios) | **72.33** | 2nd of 16 | Qwen3-VL-Plus 70.61 | 4.6 | 0.018 | 121 |
+| **ExtractBench** (370 PDFs, 1 to 192 pages) | **95.43** | 3rd of 48 | LlamaExtract Agentic 94.77 | 41.7 | 0.407 | 568 |
+| **DocuBench** (72 documents, 10 file types) | **91.54** | 4th of 10 | Reducto Deep Extract 89.38 | 11.1 | 0.212 | 261 |
+
+Scores: each benchmark's own scorer on the full test set; places count every published system. Calls, dollars and seconds: means per document over a random sample of each benchmark (`results/costs/`); the dollars price the measured tokens at the Qwen3.8-27B list price ($0.50 / $3.00 per million input / output tokens), since DocQuorum itself runs on one GPU with no price per call; the seconds are upper bounds on a shared H100.
+
+![Each benchmark's six best systems, DocQuorum among them](ppt/flow/assets/chart_ranks.png)
+
+![DocQuorum against the best published open model, and against the best closed model](ppt/flow/assets/chart_open_closed.png)
+<!-- results:end -->
 
 
 DocuBench is the benchmark the v1.3 fixes came from (`docs/DESIGN.md`, `results/README.md`). Zoom re-reading, the new step, was tested
@@ -23,26 +31,11 @@ held-out on VAREX (60 forms better, 25 worse) and UNIKIE open (291 documents bet
 it first lowered the score, which led to its vote rule (details in `results/README.md`).
 
 <!-- costs:start (written by docs/results/generate_tables.py) -->
-### What a document costs
+### Cost and speed
 
-Measured on a random sample of each benchmark, one document at a time, counting every model and parser call; seconds are upper bounds, on one H100 shared with other jobs. DocQuorum runs open weights on one GPU and pays no price per call; the dollars price its measured tokens at the Qwen3.8-27B list price ($0.50 / $3.00 per million input / output tokens), so they compare with what the published systems pay.
-
-| benchmark | documents measured | model calls per document | $ per document | $ per page | seconds per document |
-|---|---:|---:|---:|---:|---:|
-| VAREX | 30 | 3.7 | 0.021 | 0.0209 | 25 |
-| UNIKIE-BENCH, constrained | 30 | 6.3 | 0.010 | 0.0100 | 51 |
-| UNIKIE-BENCH, open | 30 | 4.6 | 0.018 | 0.0177 | 121 |
-| ExtractBench | 20 | 41.7 | 0.407 | 0.0289 | 568 |
-| DocuBench | 20 | 11.1 | 0.212 | 0.0415 | 261 |
-| LongArray-Extract | 6 | 100.3 | 0.676 | 0.0140 | 1,466 |
-
-UNIKIE-BENCH, constrained: the two readings by other models are counted as calls; their tokens are not included.
-
-ExtractBench: $ per page weighted by split (252 short, 98 medium, 20 long documents), as the leaderboard computes its `Cost_Per_Page`.
-
-Published costs for comparison: on DocuBench, per document (accuracy), DocuPipe (high effort) $0.54 (97.02), DocuPipe (standard effort) $0.11 (96.14), Claude Sonnet 5 (direct LLM) $0.29 (91.73), Reducto Deep Extract $0.70 (89.38), Extend $0.40 (80.28), GPT-5.5 (direct LLM) $0.18 (76.48); on ExtractBench, per page, LlamaExtract Agentic Plus $0.081 and Pulse (Effort) $0.105, the two systems above DocQuorum. VAREX, UNIKIE-BENCH and LongArray-Extract publish no costs.
-
-Why it is cheap, and when it is not: a file with a text layer is read once (13 of 20 sampled DocuBench documents took one call, $0.009 each on average); only scans get three readings (at the same time) and a quorum, and zoom re-reads only the fields the readings dispute. Long scans cost the most, because they are read in chunks, once per reading: the costliest sampled DocuBench document (16 pages) took 44 calls and $1.04.
+* **ExtractBench:** the two systems above DocQuorum cost $0.081 and $0.105 a page; DocQuorum's tokens come to $0.029 a page (weighted by split, as the leaderboard computes it), and no published system is both cheaper and more accurate.
+* **DocuBench:** the published systems cost $0.11 to $0.70 a document (median $0.29); DocQuorum $0.21.
+* **Why it is cheap:** a file with a text layer is read once (13 of 20 sampled DocuBench documents took a single call, $0.009 each); only scans get three readings, run at the same time; zoom re-reads only the disputed fields a new vote could change; and the open 27B model costs a tenth of GPT-5.5 per output token.
 
 **v1.4 is faster on long scans.** A reply that loops is now stopped by the model server, and a scan's readings run at the same time (`docs/DESIGN.md`). The same documents, measured alone both times:
 

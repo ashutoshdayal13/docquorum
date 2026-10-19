@@ -5,7 +5,6 @@ results tables. Every number on the slides comes from ppt/flow/assets/*.json or 
 """
 import csv
 import json
-import sys
 from decimal import Decimal
 from pathlib import Path
 
@@ -453,29 +452,12 @@ res = ROOT / "docs" / "results"
 eb = json.loads((res / "docquorum-extractbench.json").read_text())["stored_primary"]
 with (res / "extractbench-leaderboard.csv").open(newline="") as fh:
     lb = sorted(csv.DictReader(fh), key=lambda r: (-Decimal(r["Overall"]), Decimal(r["Cost_Per_Page"] or "Infinity")))
-ours = {"Provider": "DocQuorum (ours, open 27B)", "Overall": eb["score"], "Short": eb["per_split"]["short"],
+ours = {"Provider": "DocQuorum (ours)", "Overall": eb["score"], "Short": eb["per_split"]["short"],
         "Medium": eb["per_split"]["medium"], "Long": eb["per_split"]["long"], "ours": True}
-sys.path.insert(0, str(res))
-import pricing  # noqa: E402
-our_cost = pricing.measured("extractbench") or {}
-our_secs = our_cost.get("seconds")
-
-
-def per_page(r):
-    if r.get("ours"):                 # measured tokens at the open model's list price
-        return f"{our_cost['usd_per_page']:.3f}*" if our_cost else "–"
-    return f"{float(r['Cost_Per_Page']):.3f}" if r.get("Cost_Per_Page") else "–"
-
-
-def per_doc_secs(r):
-    """Mean seconds per document over the 370 documents (the leaderboard's per-split latencies; ours measured)."""
-    if r.get("ours"):
-        return "–" if our_secs is None else f"{our_secs:,.0f}"
-    try:
-        s = [float(r[f"Latency_S_Per_Doc_{x}"]) for x in ("Short", "Medium", "Long")]
-    except (KeyError, TypeError, ValueError):
-        return "–"
-    return f"{(252 * s[0] + 98 * s[1] + 20 * s[2]) / 370:,.0f}"
+# the same table design as the Beamer deck: rank, system, type, score, the benchmark's own breakdown
+TYPES = json.loads((res / "system-types.json").read_text())
+KIND = {"open": "Open model", "closed": "Closed model", "service": "Commercial service", "agent": "Coding agent"}
+kind_of = lambda r: "Open models" if r.get("ours") else KIND[TYPES["from_source"]["extractbench_category"][r["Category"]]]
 
 at = sum(Decimal(disp(r["Overall"])) >= Decimal(disp(ours["Overall"])) for r in lb)
 full = lb[:at] + [ours] + lb[at:]
@@ -483,30 +465,24 @@ scores = [Decimal(disp(r["Overall"])) for r in full]
 rank = [1 + sum(x > v for x in scores) for v in scores]
 s = slide(None, "", "ExtractBench: DocQuorum is 3rd of 48",
           source=f"ExtractBench leaderboard snapshot (2 October 2026, {len(lb)} published systems); value F1 (%) "
-                 "by the benchmark's scorer; $/page and s/doc as published (s/doc averaged over the 370 documents). "
-                 "– not published (open models the leaderboard ran itself). *DocQuorum: open weights on one GPU, "
-                 "no price per call; its measured tokens (random 20) priced at the Qwen3.8-27B list price, weighted by split "
-                 "as the leaderboard's $/page is. "
-                 "Full table: docs/docquorum.pdf.",
+                 "by the benchmark's scorer; Short, Medium, Long: the three splits. Full table: docs/docquorum.pdf.",
           notes="370 enterprise PDFs: 252 short, 98 medium, 20 long. Overall is the mean over all documents. "
                 "DocQuorum uses the open Qwen3.8-27B model; the two systems above it are commercial.")
-rows = [["#", "System", "Short", "Medium", "Long", "Overall", "$/page", "s/doc"]]
+rows = [["#", "System", "Type", "Score", "Short", "Medium", "Long"]]
 for k, r in zip(rank[:14], full[:14]):
-    rows.append([k, r["Provider"], disp(r["Short"]), disp(r["Medium"]), disp(r["Long"]), disp(r["Overall"]),
-                 per_page(r), per_doc_secs(r)])
-rows.append(["", f"… {len(full) - 14} more systems (models, coding agents, APIs)", "", "", "", "",
-             "", ""])
-table(s, rows, 0.5, 1.6, 12.33, [0.6, 5.33, 1.05, 1.05, 1.05, 1.05, 1.05, 1.15], size=13, row_h=0.33, highlight=(3,),
-      align_right=(2, 3, 4, 5, 6, 7))
+    rows.append([k, r["Provider"], kind_of(r), disp(r["Overall"]), disp(r["Short"]), disp(r["Medium"]), disp(r["Long"])])
+rows.append(["", f"… {len(full) - 14} more systems (models, coding agents, APIs)", "", "", "", "", ""])
+table(s, rows, 0.5, 1.6, 12.33, [0.6, 4.88, 2.45, 1.1, 1.1, 1.1, 1.1], size=13, row_h=0.33, highlight=(3,),
+      align_right=(3, 4, 5, 6))
 
 pub = json.loads((res / "unikie-published.json").read_text())
 uj = json.loads((res / "docquorum-unikie.json").read_text())
 u = uj["variants"][uj["headline"]]          # the reported configuration
-urows = sorted([(n, v[-1]) for n, v in list(pub["closed_source"].items()) + list(pub["open_source"].items())],
-               key=lambda x: -x[1])
-at = sum(Decimal(disp(v)) >= Decimal(disp(u["score"])) for _, v in urows)
-ufull = urows[:at] + [("DocQuorum (ours, open models)", u["score"])] + urows[at:]
-us = [Decimal(disp(v)) for _, v in ufull]
+urows = sorted([(n, v[-1], kind) for src, kind in (("closed_source", "Closed model"), ("open_source", "Open model"))
+                for n, v in pub[src].items()], key=lambda x: -x[1])
+at = sum(Decimal(disp(v)) >= Decimal(disp(u["score"])) for _, v, _ in urows)
+ufull = urows[:at] + [("DocQuorum (ours)", u["score"], "Open models")] + urows[at:]
+us = [Decimal(disp(v)) for _, v, _ in ufull]
 urank = 1 + sum(x > Decimal(disp(u["score"])) for x in us)
 utied = sum(x == Decimal(disp(u["score"])) for x in us) > 1
 best_open = max(pub["open_source"].items(), key=lambda kv: kv[1][-1])
@@ -515,8 +491,8 @@ s = slide(None, "", f"UNIKIE-BENCH: DocQuorum is {'tied ' if utied else ''}{uran
           notes="Every input capped at the benchmark's 1,605,632 pixels, as for the published systems. DocQuorum keeps the "
                 "reading that agrees most among six readings from three open models, then re-reads fields the readings "
                 "dispute on an enlarged crop of the page (zoom re-reading).")
-rows = [["#", "System", "Macro F1"]] + [[1 + sum(x > Decimal(disp(v)) for x in us), n, disp(v)] for n, v in ufull]
-table(s, rows, 0.5, 1.55, 7.2, [0.6, 5.1, 1.5], size=12, row_h=0.3, highlight=(2,), align_right=(2,))
+rows = [["#", "System", "Type", "Score"]] + [[1 + sum(x > Decimal(disp(v)) for x in us), n, k, disp(v)] for n, v, k in ufull]
+table(s, rows, 0.5, 1.55, 7.2, [0.6, 3.7, 1.7, 1.2], size=12, row_h=0.3, highlight=(1 + at,), align_right=(3,))
 rect(s, 8.1, 1.55, 4.73, 5.1)
 best_closed = max(pub["closed_source"].items(), key=lambda kv: kv[1][-1])
 for i, (big, small) in enumerate([(disp(u["score"]), f"macro F1; best published: {best_closed[0]} {disp(best_closed[1][-1])}"),

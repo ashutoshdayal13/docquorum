@@ -4,7 +4,6 @@
 
 Every number on the slides comes from ppt/flow/assets/*.json or docs/results/.
 """
-import csv
 import json
 import subprocess
 import sys
@@ -119,8 +118,9 @@ frame("Outline", r"""
 \item Task and pipeline
 \item Walkthrough on real documents\\
   {\footnotesize inputs, routing, parsing, readers, deterministic checks, selection by quorum, output}
-\item Results on six benchmarks; zoom re-reading
+\item Results on six benchmarks: places, cost, speed; zoom re-reading
 \item Summary
+\item Complete results, one table per benchmark
 \end{enumerate}
 \column{0.48\textwidth}
 \begin{block}{Setting}
@@ -442,384 +442,223 @@ frame("Step 6: one checked JSON, in the form requested", r"""
 \src{Left: stored final output for """ + esc(form["name"]) + r""". Right: UNIKIE-BENCH Catering-Services test\_1.jpg, quorum over six stored readings.}
 """)
 
-# ------------------------------------------------------------------ results: ExtractBench (complete)
+# ------------------------------------------------------------------ results: one data shape for every benchmark
 T.append(r"\section{Results}" + "\n")
-eb = json.loads((RES / "docquorum-extractbench.json").read_text())["stored_primary"]
-with (RES / "extractbench-leaderboard.csv").open(newline="") as fh:
-    lb = sorted(csv.DictReader(fh), key=lambda r: (-Decimal(r["Overall"]), Decimal(r["Cost_Per_Page"] or "Infinity")))
-CAT = {"LlamaExtract": "Commercial service", "Specialized APIs": "Commercial service", "Commercial VLM": "Commercial model",
-       "Coding Agents": "Coding agent", "OSS": "Open model"}
-ours = {"Provider": r"\textbf{DocQuorum (ours)}", "Category": "Open model (27B)", "Overall": eb["score"],
-        "Short": eb["per_split"]["short"], "Medium": eb["per_split"]["medium"], "Long": eb["per_split"]["long"], "ours": True}
-at = sum(disp(r["Overall"]) >= disp(ours["Overall"]) for r in lb)
-full = lb[:at] + [ours] + lb[at:]
-rk = ranks([r["Overall"] for r in full])
-assert rk[full.index(ours)] == 3 and len(full) == 48
+load = lambda name: json.loads((RES / name).read_text())
+from leaderboards import KIND, SYS_TYPES, ahead_of, best_kind, me, nth, ordered, ranked, shown  # noqa: E402
+KTEX = {"open": "good", "closed": "muted", "service": "routeB", "agent": "routeD"}
+KPY = {"open": "#8CC5B0", "closed": "#AEB5C1", "service": "#93BCE3", "agent": "#C0AEDA"}
+OURS_PY, NAVY_PY, MUTED_PY = "#1E7A60", "#1B2A4A", "#5B6577"
 
 
-def eb_cost(r):
-    if r.get("ours"):                   # measured tokens at the open model's list price
-        c = cost("extractbench", "usd_per_page", 3)
-        return c + r"$^{\mathrm{e}}$" if c != "--" else c
-    v = r.get("Cost_Per_Page")
-    if v in (None, ""):
-        return "self-host" if r.get("Category") == "OSS" else "n/p"
-    return f"{float(v):.3f}"
+ORDER, lb = ordered()
+BENCH = ORDER
+BY = {b["key"]: b for b in BENCH}
 
-
-def eb_secs(r):
-    """Mean seconds per document over the 370 documents (the leaderboard's per-split latencies)."""
-    if r.get("ours"):
-        return cost("extractbench", "seconds")
-    try:
-        s = [float(r[f"Latency_S_Per_Doc_{x}"]) for x in ("Short", "Medium", "Long")]
-    except (KeyError, TypeError, ValueError):
-        return "n/p"
-    return f"{(252 * s[0] + 98 * s[1] + 20 * s[2]) / 370:,.0f}"
-
-
-def eb_table(part, lo, hi):
-    t = r"""{\scriptsize\renewcommand{\arraystretch}{1.0}\setlength{\tabcolsep}{5pt}
-\begin{tabularx}{\textwidth}{@{}rYlrrrrrr@{}}\toprule
-\textbf{\#} & \textbf{System} & \textbf{Type} & \textbf{Short} & \textbf{Medium} & \textbf{Long} & \textbf{Overall} & \textbf{\$/page} & \textbf{s/doc}\\\midrule
-"""
-    for k, r in zip(rk[lo:hi], full[lo:hi]):
-        mine = r.get("ours")
-        cells = [str(k), r["Provider"] if mine else esc(r["Provider"]), CAT.get(r["Category"], esc(r["Category"])),
-                 str(disp(r["Short"])), str(disp(r["Medium"])), str(disp(r["Long"])), str(disp(r["Overall"])),
-                 eb_cost(r), eb_secs(r)]
-        if mine:
-            cells = [r"\textbf{%s}" % c if i != 1 else c for i, c in enumerate(cells)]
-        t += (r"\rowcolor{hl}" if mine else "") + " & ".join(cells) + r"\\" + "\n"
-    t += r"\bottomrule\end{tabularx}}"
-    frame(r"ExtractBench: complete results (%d/3)" % part, t + r"""
-\src{ExtractBench leaderboard, snapshot of 2 October 2026 (47 published systems) and DocQuorum. Value F1 (\%) by the benchmark's scorer over 370 PDFs (252 short, 98 medium, 20 long); Overall is the mean over all documents. Equal scores share a rank. \$/page and s/doc: the leaderboard's cost per page and latency per document (averaged over the 370 documents); self-host: an open model the leaderboard ran itself and did not price; n/p: not published. e: DocQuorum's tokens measured on a random 20, priced at the Qwen3.8-27B list price (Alibaba Cloud, \$QIN / \$QOUT per million input / output tokens) and weighted by split as the leaderboard's \$/page is; timed one document at a time on a GPU shared with other jobs.}
-""".replace("QIN", f"{QWEN['input']:.2f}").replace("QOUT", f"{QWEN['output']:.2f}"))
-
-
-eb_table(1, 0, 16)
-eb_table(2, 16, 32)
-eb_table(3, 32, 48)
-
-# ------------------------------------------------------------------ results: UNIKIE (complete)
-pub = json.loads((RES / "unikie-published.json").read_text())
-uj = json.loads((RES / "docquorum-unikie.json").read_text())
-u = uj["variants"][uj["headline"]]          # the reported configuration
-cols = pub["columns"][:-1]
-urows = [(n, v, "C") for n, v in pub["closed_source"].items()] + [(n, v, "O") for n, v in pub["open_source"].items()]
-urows.sort(key=lambda x: -x[1][-1])
-ou = (r"\textbf{DocQuorum (ours)}", [u["per_scenario"][c] for c in cols] + [u["score"]], "O")
-at = sum(disp(v[-1]) >= disp(u["score"]) for _, v, _ in urows)
-ufull = urows[:at] + [ou] + urows[at:]
-urk = ranks([v[-1] for _, v, _ in ufull])
-best = [max(disp(v[j]) for _, v, _ in ufull) for j in range(len(cols) + 1)]
-abbr = ["Ret.", "Cat.", "Com.", "Acc.", "Post.", "Adm.", "Edu.", "Adv.", "Tax", "Med.", "Nut.", "Avg."]
-ut = r"""{\scriptsize\renewcommand{\arraystretch}{0.9}\setlength{\tabcolsep}{3.2pt}
-\begin{tabularx}{\textwidth}{@{}rYc*{11}{r}r@{}}\toprule
-\textbf{\#} & \textbf{System} & & """ + " & ".join(r"\textbf{%s}" % a for a in abbr) + r"""\\\midrule
-"""
-for k, (n, v, kind) in zip(urk, ufull):
-    mine = n.startswith(r"\textbf{DocQuorum")
-    cells = [str(k), n if mine else esc(n), kind]
-    for j, x in enumerate(v):
-        s = str(disp(x))
-        if disp(x) == best[j]:
-            s = r"\underline{%s}" % s
-        cells.append(r"\textbf{%s}" % s if mine else s)
-    ut += (r"\rowcolor{hl}" if mine else "") + " & ".join(cells) + r"\\" + "\n"
-ut += r"\bottomrule\end{tabularx}}"
-frame("UNIKIE-BENCH: complete results", ut + r"""
-
-\vspace{0.3em}
-{\tiny Ret.\ Retail; Cat.\ Catering services; Com.\ Commercial; Acc.\ Accommodation; Post.\ Postal label; Adm.\ Administrative; Edu.\ Education; Adv.\ Advertisement; Tax: Tax-compliant; Med.\ Medical services; Nut.\ Nutrition label; Avg.\ macro average. C: closed model; O: open model. Underlined: best in the column.\par}
-\src{UNIKIE-BENCH (ACL 2026), Table 4: 15 published systems; F1 (\%) by the benchmark's evaluator on 4,472 images, every input capped at 1,605,632 pixels. DocQuorum: quorum over six readings from three open models; small images enlarged before reading.}
-""")
-
-# ------------------------------------------------------------------ results: the other four benchmarks (complete)
-def shown(v, digits):
-    return Decimal(str(v)).quantize(Decimal(1).scaleb(-digits), rounding=ROUND_HALF_UP)
-
-
-def full_table(title, cols, align, rows, ours, digits, rank_col, note, best_cols=(), size=r"\scriptsize", stretch="0.95",
-               col_digits=None):
-    """Every published row and DocQuorum's, by the ranking column at the leaderboard's precision;
-    equal shown scores share a rank; the best shown value of each column in best_cols underlined."""
-    allrows = rows + [ours]
-    allrows.sort(key=lambda r: -float(shown(r[rank_col], digits)))
-    key = lambda r: shown(r[rank_col], digits)
-    best = {c: max(shown(r[c], digits) for r in allrows if r[c] is not None) for c in best_cols}
-    t = ("{" + size + r"\renewcommand{\arraystretch}{" + stretch + r"}\setlength{\tabcolsep}{4pt}" + "\n"
-         r"\begin{tabularx}{\textwidth}{@{}r" + align + r"@{}}\toprule" + "\n"
-         + r"\textbf{\#} & " + " & ".join(r"\textbf{%s}" % c for c in cols) + r"\\\midrule" + "\n")
-    for r in allrows:
-        mine = r is ours
-        cells = [str(1 + sum(key(o) > key(r) for o in allrows))]
-        for j, c in enumerate(cols):
-            v, mark = r[c] if isinstance(r[c], tuple) else (r[c], "")
-            if isinstance(v, (int, float)):
-                s = str(shown(v, (col_digits or {}).get(c, digits)))
-                if c in best and shown(v, digits) == best[c]:
-                    s = r"\underline{%s}" % s
-            else:
-                s = esc(str(v)) if v is not None else "--"
-            s += r"$^{\mathrm{%s}}$" % mark if mark else ""
-            cells.append(r"\textbf{%s}" % s if mine else s)
-        t += (r"\rowcolor{hl}" if mine else "") + " & ".join(cells) + r"\\" + "\n"
-    t += r"\bottomrule\end{tabularx}}"
-    frame(title, t + "\n\n" + note)
-
-
-vx_f = json.loads((RES / "docquorum-varex.json").read_text())
-vd = vx_f["detail"]
-vrows = [{"System": r["system"], "Size": r["size"], "EM": r["em"], "ANLS": r["anls"], "Flat": r["flat"],
-          "Nested": r["nested"], "Table": r["table"], "Perfect": r["perfect"]}
-         for r in json.loads((RES / "varex-published.json").read_text())["systems"]]
-vours = {"System": "DocQuorum (ours)", "Size": "27B", "EM": 100 * vd["exact_match_normalized"],
-         "ANLS": 100 * vd["anls_normalized"], "Flat": 100 * vd["em_flat"], "Nested": 100 * vd["em_nested"],
-         "Table": 100 * vd["em_table"], "Perfect": vd["perfect_docs_pct"] if vd["perfect_docs_pct"] > 1 else 100 * vd["perfect_docs_pct"]}
-full_table("VAREX: complete results", ["System", "Size", "EM", "ANLS", "Flat", "Nested", "Table", "Perfect"],
-           "Yl" + "r" * 6, vrows, vours, 1, "EM",
-           r"""{\tiny EM: exact match (normalized) over 21,084 fields; ANLS: normalized ANLS; Flat, Nested, Table: exact match by form type (299, 1,146, 332 forms); Perfect: forms with every field right. Underlined: best in the column.\par}
-\src{VAREX-Bench image-modality leaderboard (20 models, zero-shot, one decimal) and DocQuorum (final pipeline). Ranks compare at one decimal.}""",
-           best_cols=("EM", "ANLS", "Flat", "Nested", "Table", "Perfect"), size=r"\scriptsize", stretch="0.72")
-
-la_f = json.loads((RES / "docquorum-longarray.json").read_text())
-lrows = [{"System": r["system"], "Accuracy": r["score"], "Completed": f'{r["completed"]}/{r["expected"]}'}
-         for r in json.loads((RES / "longarray-published.json").read_text())["systems"]]
-lours = {"System": "DocQuorum (ours)", "Accuracy": la_f["score"],
-         "Completed": f'{la_f["detail"]["completed"]}/{la_f["detail"]["documents"]}'}
-full_table("LongArray-Extract: complete results", ["System", "Accuracy", "Completed"], "Yrr", lrows, lours, 1, "Accuracy",
-           r"""\src{Extend AI's LongArray-Extract results page (11 systems; one decimal) and DocQuorum: macro document accuracy (\%) by the publisher's reference scorer over 45 long documents (bank statements, clinical listings, indictments; 29,328 rows); a failed document counts as zero. Ranks compare at one decimal.}""",
-           size=r"\footnotesize", stretch="1.15")
-
-uo_f = json.loads((RES / "docquorum-unikie-open.json").read_text())
-uop = json.loads((RES / "unikie-open-published.json").read_text())
-ucols = ["Ret.\\,zh", "Form\\,zh", "Inv.\\,zh", "Con.\\,zh", "Ret.\\,en", "Form\\,en", "Inv.\\,en", "Con.\\,en", "Avg."]
-urows2 = [dict({"System": n, "": k}, **dict(zip(ucols, v))) for k, src in (("C", "closed_source"), ("O", "open_source"))
-          for n, v in uop[src].items()]
-scen = ["receipt-cn", "Form-cn", "invoice-cn", "Contract-cn", "receipt-en", "Form-en", "invoice-en", "Contract-en"]
-uours = dict({"System": "DocQuorum (ours)", "": "O"}, **dict(zip(ucols, [uo_f["per_scenario"][s] for s in scen] + [uo_f["score"]])))
-full_table("UNIKIE-BENCH open category: complete results", ["System", ""] + ucols, "Yc" + "r" * 9, urows2, uours, 2, "Avg.",
-           r"""{\tiny Ret.\ receipts; Inv.\ invoices; Con.\ contracts; zh Chinese, en English; Avg.\ macro average. C: closed model; O: open model. Underlined: best in the column.\par}
-\src{UNIKIE-BENCH (ACL 2026), open-category table: 15 published systems; F1 (\%) by the benchmark's evaluator on 1,661 documents, every input capped at 1,605,632 pixels. DocQuorum: quorum over three readings from Qwen3.8-27B, then zoom re-reading.}""",
-           best_cols=tuple(ucols), size=r"\scriptsize", stretch="0.95")
-
-db_f = json.loads((RES / "docquorum-docubench.json").read_text())
-drows = [{"System": r["system"], "Accuracy": r["score"], "s/doc": r["seconds_per_doc"],
-          "\\$/doc": (r["cost_usd_per_doc"], "" if r["cost_basis"] == "recorded" else "c")}
-         for r in json.loads((RES / "docubench-published.json").read_text())["systems"]]
-dm = MEASURED.get("docubench") or {}
-dours = {"System": "DocQuorum (ours)", "Accuracy": db_f["score"], "s/doc": dm.get("seconds"),
-         "\\$/doc": (dm["usd"], "e") if dm else None}
-full_table("DocuBench: complete results", ["System", "Accuracy", "\\$/doc", "s/doc"], "Yrrr", drows, dours, 2, "Accuracy",
-           r"""\src{DocuBench v0.2.0 leaderboard (9 systems) and DocQuorum (final pipeline): macro field accuracy (\%) by the benchmark's own scorer over 72 documents in 10 file types (PDF, scans, photos, spreadsheets, Word, HTML, XML, CSV, text). The final pipeline's fixes were found on this benchmark. \$/doc and s/doc: means over each system's 72 result files of its recorded cost and time; c: computed from its recorded tokens at list price (GPT-5.5 \$GIN / \$GOUT, Gemini 3.5 Flash \$FIN / \$FOUT per million input / output tokens) or, for Unstructured, its pages at DocuBench's \$0.03 per page. e: DocQuorum's tokens measured on a random 20 documents, priced at the Qwen3.8-27B list price (Alibaba Cloud, \$QIN / \$QOUT); it runs on its own GPU, one document at a time on a shared H100 for s/doc.}""".replace(
-               "GIN", f"{PRICE['gpt-5.5']['input']:g}").replace("GOUT", f"{PRICE['gpt-5.5']['output']:g}").replace(
-               "FIN", f"{PRICE['gemini-3.5-flash']['input']:.2f}").replace("FOUT", f"{PRICE['gemini-3.5-flash']['output']:g}").replace(
-               "QIN", f"{QWEN['input']:.2f}").replace("QOUT", f"{QWEN['output']:.2f}"),
-           size=r"\footnotesize", stretch="1.15", col_digits={"\\$/doc": 2, "s/doc": 0})
 
 # ------------------------------------------------------------------ results on six benchmarks
-def place(score, published, digits):
-    """1 + published scores above ours, compared at the published precision."""
-    q = Decimal(1).scaleb(-digits)
-    sh = lambda v: Decimal(str(v)).quantize(q, rounding=ROUND_HALF_UP)
-    return 1 + sum(sh(v) > sh(score) for _, v in published)
-
-
-load = lambda name: json.loads((RES / name).read_text())
-vx, la, uo, db = (load(f"docquorum-{k}.json") for k in ("varex", "longarray", "unikie-open", "docubench"))
-pv = [(r["system"], r["em"]) for r in load("varex-published.json")["systems"]]
-pl = [(r["system"], r["score"]) for r in load("longarray-published.json")["systems"]]
-puo = [(n, v[-1]) for k in ("closed_source", "open_source") for n, v in load("unikie-open-published.json")[k].items()]
-pdb = [(r["system"], r["score"]) for r in load("docubench-published.json")["systems"]]
-puk = [(n, v[-1]) for n, v, _ in urows]
-peb = [(r["Provider"], float(r["Overall"])) for r in lb]
-ORD = {1: "1st", 2: "2nd", 3: "3rd"}
-bench = [  # (name, ours, published, digits, note, measured-cost file)
-    ("VAREX (1,777 forms)", vx["score"], pv, 1, "", "varex"),
-    ("UNIKIE-BENCH (4,472 images)", u["score"], puk, 2, "", "unikie"),
-    ("LongArray-Extract (45 documents)", la["score"], pl, 1, "", "longarray"),
-    ("UNIKIE-BENCH open (1,661 documents)", uo["score"], puo, 2, "", "unikie_open"),
-    ("ExtractBench (370 PDFs)", eb["score"], peb, 2, "development set", "extractbench"),
-    ("DocuBench (72 documents)", db["score"], pdb, 2, "", "docubench"),
-]
 rows6 = ""
-for name, score, published, digits, note, cb in sorted(bench, key=lambda b: place(b[1], b[2], b[3])):
-    k = place(score, published, digits)
-    top = max(published, key=lambda r: r[1])            # the best published system
-    other = (r"next: %s %s" if k == 1 else r"1st: %s %s") % (esc(top[0]), f"{top[1]:.{digits}f}")
-    cells = [esc(name) + (r" {\scriptsize(%s)}" % note if note else ""), r"\textbf{%.2f}" % score,
-             (r"\textbf{%s}" if k == 1 else "%s") % f"{ORD.get(k, f'{k}th')} of {len(published) + 1}", esc(other),
-             cost(cb, "model_calls", 1), cost(cb, "usd", 3), cost(cb, "seconds")]
-    rows6 += (r"\rowcolor{hl}" if k == 1 else "") + " & ".join(cells) + r"\\" + "\n"
-frame("Results on six benchmarks", r"""{\scriptsize\renewcommand{\arraystretch}{1.3}\setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\textwidth}{@{}Yrllrrr@{}}\toprule
-\textbf{Benchmark} & \textbf{DocQuorum} & \textbf{Place} & \textbf{Comparison} & \textbf{Calls} & \textbf{\$} & \textbf{s}\\\midrule
+for b in ORDER:
+    m, nxt = me(b), ahead_of(b)
+    badge = r"\colorbox{%s}{\textcolor{white}{\textbf{%s}}}" % ("good" if m["rank"] == 1 else "navy!75", nth(m["rank"]))
+    cells = [r"\textbf{%s}\newline{\tiny\color{muted}%s}" % (esc(b["title"]), esc(b["what"])),
+             r"\textbf{%s}" % f"{b['ours']['score']:.2f}", badge + r" {\tiny of %d}" % len(ranked(b)),
+             esc(nxt["name"]) + r" {\color{muted}%s}" % shown(nxt["score"], b["digits"]),
+             cost(b["key"], "model_calls", 1), cost(b["key"], "usd", 3), cost(b["key"], "seconds")]
+    rows6 += " & ".join(cells) + r"\\[0.15em]" + "\n"
+frame("Results on six benchmarks", r"""{\scriptsize\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.3cm}rlYrrr@{}}\toprule
+\textbf{Benchmark} & \textbf{Score} & \textbf{Place} & \textbf{Ahead of} & \textbf{Calls} & \textbf{\$} & \textbf{s}\\
+ & & & & \multicolumn{3}{c}{\tiny per document}\\\midrule
 """ + rows6 + r"""\bottomrule\end{tabularx}}
 
-\vspace{0.4em}
-{\footnotesize Each score is the benchmark's own scorer on the full test set, with open-weight models (Qwen3.8-27B and MinerU2.5) on one GPU. Places count every published system. Calls, dollars (\$) and seconds (s): means per document, measured on a random sample one document at a time on one shared H100 (results/costs/); \$ prices the measured tokens at the Qwen3.8-27B list price, since the pipeline itself pays no price per call.\par}
-\src{docs/results/: one complete table per benchmark (TABLES.md). No result was submitted to a leaderboard.}
-""")
-
-# ------------------------------------------------------------------ where DocQuorum stands out
-def named(pairs, name):
-    return next(v for n, v in pairs if n == name)
-
-
-def best_of(pairs, keep=lambda n: True):
-    return max(((n, v) for n, v in pairs if keep(n)), key=lambda x: x[1])
-
-
-def per_doc(bench, unit="document"):
-    m = MEASURED.get(bench)
-    if not m:
-        return "measuring"
-    return f"{m['model_calls']:.1f} calls, \\${m['usd']:.3f}/{unit}"
-
-
-vx_open = best_of([(r["system"], r["em"]) for r in load("varex-published.json")["systems"] if r["size"] != "API"])
-uk_pub = load("unikie-published.json")
-uk_open = best_of(list((n, v[-1]) for n, v in uk_pub["open_source"].items()))
-uo_pub = load("unikie-open-published.json")
-uo_open = best_of(list((n, v[-1]) for n, v in uo_pub["open_source"].items()))
-eb_agent = best_of([(r["Provider"], float(r["Overall"])) for r in lb if r["Category"] == "Coding Agents"])
-eb_agent_cost = float(next(r["Cost_Per_Page"] for r in lb if r["Provider"] == eb_agent[0]))
-eb_direct = named([(r["Provider"], float(r["Overall"])) for r in lb], "Qwen3.8 27B")
-db_pub = {r["system"]: r for r in load("docubench-published.json")["systems"]}
-dbm_all = COST.get("docubench", {}).get("documents", [])
-one_call = sum(r["model_calls"] == 1 for r in dbm_all)
-med_usd = sorted(PR.document_usd(r) for r in dbm_all)[len(dbm_all) // 2] if dbm_all else None
-ebm_page = (MEASURED.get("extractbench") or {}).get("usd_per_page")
-shine = [
-    ("VAREX", f"1st, {vx['score']:.2f}",
-     f"Gemini 2.5 Pro {named(pv, 'Gemini 2.5 Pro'):.1f} (closed); best open, {vx_open[0]} {vx_open[1]:.1f}",
-     per_doc("varex", "form")),
-    ("UNIKIE-BENCH", f"1st, {u['score']:.2f}",
-     f"Gemini-3-Pro {named(puk, 'Gemini-3-Pro'):.2f} (closed); best open, {uk_open[0]} {uk_open[1]:.2f}",
-     per_doc("unikie", "image")),
-    ("ExtractBench", f"3rd, {eb['score']:.2f}",
-     f"the same Qwen3.8-27B called directly {eb_direct:.2f}; every coding agent (best {eb_agent[0]} {eb_agent[1]:.2f}, \\${eb_agent_cost:.3f}/page)",
-     (f"\\${ebm_page:.3f} per page" if ebm_page else "measuring")),
-    ("LongArray-Extract", f"2nd, {la['score']:.2f}",
-     f"Reducto Deep Extract {named(pl, 'Reducto Deep Extract'):.1f}; Claude Opus 4.7 {named(pl, 'Claude Opus 4.7'):.1f}; GPT-5.5 {named(pl, 'GPT-5.5'):.1f}",
-     per_doc("longarray")),
-    ("UNIKIE-BENCH open", f"2nd, {uo['score']:.2f}",
-     f"best open, {uo_open[0]} {uo_open[1]:.2f}; Qwen3-VL-Plus {named(puo, 'Qwen3-VL-Plus'):.2f} (closed)",
-     per_doc("unikie_open")),
-    ("DocuBench", f"4th, {db['score']:.2f}",
-     "Reducto Deep Extract %.2f at \\$%.2f; Extend %.2f at \\$%.2f; GPT-5.5 %.2f at \\$%.2f" % (
-         db_pub["Reducto Deep Extract"]["score"], db_pub["Reducto Deep Extract"]["cost_usd_per_doc"],
-         db_pub["Extend"]["score"], db_pub["Extend"]["cost_usd_per_doc"],
-         db_pub["GPT-5.5 (direct LLM)"]["score"], db_pub["GPT-5.5 (direct LLM)"]["cost_usd_per_doc"]),
-     (f"\\${(MEASURED.get('docubench') or {}).get('usd', 0):.2f} mean; {one_call} of {len(dbm_all)} in one call "
-      f"(median \\${med_usd:.3f})" if med_usd is not None else "measuring")),
-]
-srows = "".join(r"\textbf{%s} & %s & %s & %s\\" % (esc(b), s, esc(a).replace(r"\textbackslash{}\$", r"\$"), c) + "\n"
-                for b, s, a, c in shine)
-frame("Where DocQuorum stands out", r"""{\scriptsize\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\textwidth}{@{}lrY>{\raggedright\arraybackslash}p{3.2cm}@{}}\toprule
-\textbf{Benchmark} & \textbf{Place, score} & \textbf{Ahead of} & \textbf{Per document (measured)}\\\midrule
-""" + srows + r"""\bottomrule\end{tabularx}}
-
-\vspace{0.4em}
-{\scriptsize Open models only: Qwen3.8-27B and the 1.2B MinerU2.5 parser on one GPU. \$ prices the measured tokens at the Qwen3.8-27B list price; published costs are each system's own (DocuBench result files, ExtractBench leaderboard). UNIKIE-BENCH: two of the six readings come from Qwen3-VL-32B and -8B, counted as calls but not priced.\par}
+\vspace{0.3em}
+{\scriptsize Scores: each benchmark's own scorer on the full test set; places count every published system. Open-weight models only (Qwen3.8-27B, MinerU2.5) on one GPU. Calls, \$ and s: means per document over a random sample; \$ prices the measured tokens at the Qwen3.8-27B list price.\par}
+\src{Complete tables for every benchmark: the last section, and docs/results/TABLES.md. No result was submitted to a leaderboard.}
 """)
 
 
-# ------------------------------------------------------------------ what a document costs
-def cost_chart(path):
-    """Accuracy against cost: DocuBench ($ per document) and ExtractBench ($ per page), every priced system."""
+# ------------------------------------------------------------------ charts
+def plt_setup():
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    from matplotlib.ticker import FuncFormatter, LogLocator, NullFormatter
-    fig, axes = plt.subplots(1, 2, figsize=(10, 3.7), dpi=200)
-    panels = [
-        ("DocuBench: 72 documents", r"\$ per document (log scale)",
-         [(r["system"], r["cost_usd_per_doc"], r["score"]) for r in load("docubench-published.json")["systems"]],
-         (MEASURED.get("docubench") or {}).get("usd"), db["score"]),
-        ("ExtractBench: 370 PDFs", r"\$ per page (log scale)",
-         [(r["Provider"], float(r["Cost_Per_Page"]), float(r["Overall"])) for r in lb if r.get("Cost_Per_Page")],
-         (MEASURED.get("extractbench") or {}).get("usd_per_page"), eb["score"]),
-    ]
-    for ax, (title, xlabel, pts, our_x, our_y) in zip(axes, panels):
-        ax.scatter([x for _, x, _ in pts], [y for _, _, y in pts], s=22, color="#8a94a6", zorder=2)
-        # name the best two and the cheapest system within five points of the best
-        ranked = sorted(pts, key=lambda q: -q[2])
-        close = [q for q in ranked[2:] if q[2] >= ranked[0][2] - 5]
-        named = ranked[:2] + ([min(close, key=lambda q: q[1])] if close else [])
-        for (name, x, y), off in zip(named, [(-6, 7), (6, -11), (6, 4)]):
-            ax.annotate(name, (x, y), textcoords="offset points", xytext=off, fontsize=6.5, color="#4a5466",
-                        ha="right" if off[0] < 0 else "left")
-        if our_x:
-            ax.scatter([our_x], [our_y], s=60, color="#c0392b", zorder=3, marker="D")
-            ax.annotate("DocQuorum (est.)", (our_x, our_y), textcoords="offset points", xytext=(-8, -3),
-                        fontsize=8, color="#c0392b", weight="bold", ha="right")
-        ax.set_xscale("log")
-        ax.xaxis.set_major_locator(LogLocator(subs=(1, 2, 5)))
-        ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f"${v:g}"))
-        ax.xaxis.set_minor_formatter(NullFormatter())
-        ax.set_title(title, fontsize=10)
-        ax.set_xlabel(xlabel, fontsize=8)
-        ax.set_ylabel("accuracy (%)", fontsize=8)
-        ax.tick_params(labelsize=7)
-        ax.grid(alpha=0.3, which="both")
-        lo = min(y for _, _, y in pts + [("", 0, our_y)])
-        ax.set_ylim(max(lo - 3, 40), 100)
+    plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 8, "axes.edgecolor": "#C8CDD5",
+                         "axes.labelcolor": NAVY_PY, "xtick.color": MUTED_PY, "ytick.color": MUTED_PY,
+                         "axes.titleweight": "bold", "axes.titlecolor": NAVY_PY, "axes.spines.top": False,
+                         "axes.spines.right": False})
+    return plt
+
+
+def chart_ranks(path):
+    """Each benchmark's six best systems, DocQuorum among them."""
+    from matplotlib.patches import Patch
+    plt = plt_setup()
+    fig, axes = plt.subplots(2, 3, figsize=(11, 4.9), dpi=220)
+    for ax, b in zip(axes.flat, ORDER):
+        top = ranked(b)[:6]
+        names = [("DocQuorum" if r["kind"] == "ours" else r["name"])[:28] for r in top][::-1]
+        vals = [float(r["score"]) for r in top][::-1]
+        cols = [OURS_PY if r["kind"] == "ours" else KPY[r["kind"]] for r in top][::-1]
+        lo, hi = min(vals), max(vals)
+        left = max(0, lo - 0.45 * (hi - lo) - 1)
+        ax.barh(range(len(vals)), [v - left for v in vals], left=left, color=cols, height=0.68)
+        for i, (v, c) in enumerate(zip(vals, cols)):
+            ax.text(v + (hi - left) * 0.01, i, f"{v:.{2 if c == OURS_PY else b['digits']}f}", va="center", fontsize=7,
+                    color=OURS_PY if c == OURS_PY else MUTED_PY, weight="bold" if c == OURS_PY else "normal")
+        ax.set_yticks(range(len(vals)), names)
+        for t, c in zip(ax.get_yticklabels(), cols):
+            if c == OURS_PY:
+                t.set_color(OURS_PY)
+                t.set_fontweight("bold")
+        ax.set_xlim(left, hi + (hi - left) * 0.12)
+        ax.tick_params(axis="y", labelsize=7, length=0)
+        ax.tick_params(axis="x", labelsize=6.5)
+        ax.set_title(f"{b['title']}: {nth(me(b)['rank'])} of {len(ranked(b))}", fontsize=9.5, loc="left")
+        ax.grid(axis="x", alpha=0.25)
+    kinds = [k for k in KIND if any(r["kind"] == k for b in BENCH for r in ranked(b)[:6])]
+    fig.legend(handles=[Patch(color=OURS_PY, label="DocQuorum (open models)")] +
+               [Patch(color=KPY[k], label=KIND[k]) for k in kinds],
+               loc="lower center", ncol=len(kinds) + 1, frameon=False, fontsize=7.5)
+    fig.tight_layout(rect=(0, 0.05, 1, 1))
+    fig.savefig(path)
+    plt.close(fig)
+
+
+chart_ranks(A / "chart_ranks.png")
+frame("Among the best published systems", r"""
+\centering\includegraphics[width=\textwidth,height=6.15cm,keepaspectratio]{assets/chart_ranks.png}
+\src{Each benchmark's six best systems, DocQuorum among them, by the benchmark's own score; every row of each benchmark is in the complete tables (last section).}
+""")
+
+
+def chart_open_closed(path):
+    """DocQuorum against the best published open model, and against the best closed model where it leads."""
+    plt = plt_setup()
+    panels = []
+    for kind, title in (("open", "Against the best published open model"),
+                        ("closed", "Against the best closed model")):
+        pts = []
+        for b in ORDER:
+            r = best_kind(b, kind)
+            if r and shown(b["ours"]["score"], b["digits"]) > shown(r["score"], b["digits"]):
+                pts.append((b, r))
+        panels.append((title, pts))
+    fig, axes = plt.subplots(1, 2, figsize=(11, 3.9), dpi=220)
+    for ax, (title, pts) in zip(axes, panels):
+        x = range(len(pts))
+        theirs = [float(r["score"]) for _, r in pts]
+        ours = [float(b["ours"]["score"]) for b, _ in pts]
+        floor = max(0, min(theirs + ours) - 12)
+        w = 0.38
+        ax.bar([i - w / 2 for i in x], [v - floor for v in theirs], w, bottom=floor, color="#AEB5C1" if "closed" in title else KPY["open"])
+        ax.bar([i + w / 2 for i in x], [v - floor for v in ours], w, bottom=floor, color=OURS_PY)
+        for i, ((b, r), t, o) in enumerate(zip(pts, theirs, ours)):
+            ax.text(i - w / 2, t + 0.4, f"{t:.{b['digits']}f}", ha="center", fontsize=6.5, color=MUTED_PY)
+            ax.text(i - w / 2, floor + 0.8, r["name"][:22], ha="center", va="bottom", rotation=90, fontsize=6.3, color=NAVY_PY)
+            ax.text(i + w / 2, o + 0.4, f"{o:.2f}", ha="center", fontsize=6.8, color=OURS_PY, weight="bold")
+            gain = float(shown(o, b["digits"]) - shown(t, b["digits"]))
+            ax.text(i + w / 2, o + 2.6, f"+{gain:.{b['digits']}f}", ha="center", fontsize=8, color=OURS_PY, weight="bold")
+        ax.set_xticks(list(x), [b["title"] for b, _ in pts], fontsize=7.5)
+        ax.set_ylim(floor, 104)
+        ax.set_ylabel("score (%)", fontsize=7.5)
+        ax.set_title(title, fontsize=9.5, loc="left")
+        ax.grid(axis="y", alpha=0.25)
+        ax.tick_params(axis="x", length=0)
     fig.tight_layout()
     fig.savefig(path)
     plt.close(fig)
 
 
-cost_chart(A / "cost_accuracy.png")
-dbm, ebm, vxm = (MEASURED.get(b) or {} for b in ("docubench", "extractbench", "varex"))
-frame("Accuracy against cost", r"""
-\centering\includegraphics[width=\textwidth,height=5.3cm,keepaspectratio]{assets/cost_accuracy.png}\par
-{\scriptsize Grey: every published system with a cost; red: DocQuorum, its measured tokens priced at the Qwen3.8-27B list price (\$QIN / \$QOUT per million input / output tokens), mean of a random sample (DOCN DocuBench documents, EBN ExtractBench documents). Published costs: DocuBench result files (some computed from their tokens) and the ExtractBench leaderboard.\par}
-""".replace("QIN", f"{QWEN['input']:.2f}").replace("QOUT", f"{QWEN['output']:.2f}").replace(
-    "DOCN", str(dbm.get("documents", 0))).replace("EBN", str(ebm.get("documents", 0))))
+chart_open_closed(A / "chart_open_closed.png")
+eb_direct = next(float(r["Overall"]) for r in lb if r["Provider"] == "Qwen3.8 27B")
+frame("Ahead of open and closed models", r"""
+\centering\includegraphics[width=\textwidth,height=5.0cm,keepaspectratio]{assets/chart_open_closed.png}\par
+\raggedright{\footnotesize\textbf{The gain comes from the pipeline, not a bigger model:} the same Qwen3.8-27B called once scores \textbf{EBQ} on ExtractBench (its leaderboard); through DocQuorum it scores \textbf{EBOURS}.\par}
+\src{Grey or light green: the best published closed or open model on each benchmark; green: DocQuorum. LongArray-Extract and DocuBench publish no open models. Gains at each benchmark's published precision.}
+""".replace("EBQ", f"{eb_direct:.2f}").replace("EBOURS", f"{BY['extractbench']['ours']['score']:.2f}"))
+
+
+def chart_cost(path):
+    """Left: DocQuorum's measured cost per page on every benchmark. Right: ExtractBench, accuracy against cost per page."""
+    from matplotlib.ticker import FuncFormatter, LogLocator, NullFormatter
+    plt = plt_setup()
+    fig, (a1, a2) = plt.subplots(1, 2, figsize=(11, 3.8), dpi=220, gridspec_kw={"width_ratios": [1, 1.25]})
+    names = [b["title"] for b in ORDER if MEASURED.get(b["key"])]
+    cents = [100 * MEASURED[b["key"]]["usd_per_page"] for b in ORDER if MEASURED.get(b["key"])]
+    a1.barh(range(len(cents))[::-1], cents, color=OURS_PY, height=0.6)
+    for i, c in zip(range(len(cents))[::-1], cents):
+        a1.text(c + 0.05, i, f"{c:.1f}¢", va="center", fontsize=7.5, color=OURS_PY, weight="bold")
+    a1.set_yticks(range(len(cents))[::-1], names, fontsize=7.5)
+    a1.set_xlim(0, max(cents) * 1.25)
+    a1.set_xlabel("cents per page (measured tokens at the Qwen3.8-27B list price)", fontsize=7)
+    a1.set_title("DocQuorum: a few cents a page", fontsize=9.5, loc="left")
+    a1.tick_params(axis="y", length=0)
+    a1.grid(axis="x", alpha=0.25)
+    pts = [(r["Provider"], float(r["Cost_Per_Page"]), float(r["Overall"]), SYS_TYPES["from_source"]["extractbench_category"][r["Category"]])
+           for r in lb if r.get("Cost_Per_Page")]
+    for k in ("service", "agent", "closed"):
+        sel = [p for p in pts if p[3] == k]
+        a2.scatter([p[1] for p in sel], [p[2] for p in sel], s=20, color=KPY[k], label=KIND[k], zorder=2, edgecolor="white", linewidth=0.4)
+    ourx, oury = (MEASURED.get("extractbench") or {}).get("usd_per_page"), BY["extractbench"]["ours"]["score"]
+    for (name, x, y, _), off, ha in zip(sorted(pts, key=lambda p: -p[2])[:2], [(-4, 5), (5, -9)], ["right", "left"]):
+        a2.annotate(name, (x, y), textcoords="offset points", xytext=off, ha=ha, fontsize=6.3, color=MUTED_PY)
+    if ourx:
+        a2.scatter([ourx], [oury], s=70, color=OURS_PY, marker="D", zorder=3, label="DocQuorum")
+        a2.annotate("DocQuorum", (ourx, oury), textcoords="offset points", xytext=(-8, -3), ha="right",
+                    fontsize=8, color=OURS_PY, weight="bold")
+    a2.set_xscale("log")
+    a2.xaxis.set_major_locator(LogLocator(subs=(1, 2, 5)))
+    a2.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f"${v:g}"))
+    a2.xaxis.set_minor_formatter(NullFormatter())
+    a2.set_ylim(74, 98)
+    a2.set_xlabel("$ per page (log scale)", fontsize=7)
+    a2.set_ylabel("value F1 (%)", fontsize=7)
+    a2.set_title("ExtractBench: accuracy against cost", fontsize=9.5, loc="left")
+    a2.legend(fontsize=6.5, frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=4)
+    a2.grid(alpha=0.25, which="both")
+    fig.tight_layout()
+    fig.savefig(path)
+    plt.close(fig)
+
+
+chart_cost(A / "cost_accuracy.png")
+top2 = sorted(lb, key=lambda r: -float(r["Overall"]))[:2]
+frame("Low cost per page", r"""
+\centering\includegraphics[width=\textwidth,height=5.0cm,keepaspectratio]{assets/cost_accuracy.png}\par
+\raggedright{\footnotesize On ExtractBench, the two systems above DocQuorum cost \textbf{\$T1} and \textbf{\$T2} a page; DocQuorum's tokens come to \textbf{\$OURS} a page, and no published system is both cheaper and more accurate.\par}
+\src{Left: means over a random sample of each benchmark (results/costs/). Right: every ExtractBench system the leaderboard prices (cost per page weighted by split, as the leaderboard computes it); DocQuorum's measured tokens at the Qwen3.8-27B list price (\$QIN / \$QOUT per million input / output tokens). DocQuorum itself runs on one GPU, with no price per call.}
+""".replace("T1", f"{float(top2[0]['Cost_Per_Page']):.3f}").replace("T2", f"{float(top2[1]['Cost_Per_Page']):.3f}").replace(
+    "OURS", cost("extractbench", "usd_per_page", 3)).replace("QIN", f"{QWEN['input']:.2f}").replace("QOUT", f"{QWEN['output']:.2f}"))
 
 rows_db = [r for r in COST.get("docubench", {}).get("documents", []) if r.get("status") == "completed"]
 one = [r for r in rows_db if len(r.get("route") or []) == 1]
-many = [r for r in rows_db if len(r.get("route") or []) > 1]
 mean = lambda xs: sum(xs) / max(1, len(xs))
-worst = max(rows_db, key=PR.document_usd) if rows_db else None
-eb_qwen = next((float(r["Overall"]) for r in lb if r["Provider"] == "Qwen3.8 27B"), None)
+vxm = MEASURED.get("varex") or {}
 claude_out = 15.0                       # DocuBench's own runner: Claude Sonnet 5 at $3 / $15 per million tokens
-frame("Why a document costs little, and when it costs more", r"""
+frame("Why a document costs little", r"""
 \begin{columns}[T]
-\column{0.53\textwidth}
-\begin{block}{Why it costs little}
-\footnotesize
-\textbf{One reading when the file has text.} On DocuBench, ONEN of DOCN sampled documents took one model call, \$ONEUSD each.\\[0.3em]
-\textbf{More readings only for scans}; zoom re-reads only disputed fields a new vote could change. A VAREX form takes VXCALLS calls (three readings plus zoom).\\[0.3em]
-\textbf{An open 27B model}: \$QOUT per million output tokens at list price, a tenth of GPT-5.5 (\$GOUT) and a fifth of Claude Sonnet 5 (\$CLOUT); on one GPU, no price per call at all.\\[0.3em]
-\textbf{Accuracy from the pipeline, not a bigger model.} Qwen3.8-27B called directly scores EBQ on ExtractBench; DocQuorum with it, EBOURS.
+\column{0.48\textwidth}
+\begin{block}{One reading when the file has text}
+\footnotesize ONEN of DOCN sampled DocuBench documents took a single model call, \$ONEUSD each on average.
 \end{block}
-\column{0.43\textwidth}
-\begin{block}{When it costs more}
-\footnotesize
-Scanned documents get three readings (at the same time) and a quorum: MANYN sampled DocuBench documents, MANYCALLS calls and \$MANYUSD each on average.\\[0.35em]
-Long scans cost most: they are read in chunks, once per reading. The costliest sample, WORSTNAME (WORSTP pages), took WORSTC calls, \$WORSTUSD and WORSTMIN minutes.\\[0.3em]
-Long documents are read in chunks, so they cost by the page: LongArray's sampled documents (LAPAGES pages on average) took LACALLS calls and \$LAUSD each, \$LAPAGE a page; ExtractBench, \$EBPAGE a page.
+\begin{block}{More readings only for scans}
+\footnotesize Scans get three readings, run at the same time; zoom re-reads only the disputed fields a new vote could change. A VAREX form takes VXCALLS calls.
+\end{block}
+\column{0.48\textwidth}
+\begin{block}{An open 27B model}
+\footnotesize \$QOUT per million output tokens at list price: a tenth of GPT-5.5 (\$GOUT), a fifth of Claude Sonnet 5 (\$CLOUT). On its own GPU, no price per call at all.
+\end{block}
+\begin{block}{Accuracy from the pipeline}
+\footnotesize The same model called once scores EBQ on ExtractBench; DocQuorum with it, EBOURS: the extra calls buy the accuracy.
 \end{block}
 \end{columns}
-\src{results/costs/: every measured document (calls, tokens, seconds); prices in docs/results/pricing.json.}
+\src{results/costs/: every measured document (calls, tokens, seconds); prices in docs/results/pricing.json. Long scans cost more than short files: they are read in chunks, once per reading.}
 """.replace("ONEN", str(len(one))).replace("DOCN", str(len(rows_db))).replace(
     "ONEUSD", f"{mean([PR.document_usd(r) for r in one]):.3f}").replace(
     "VXCALLS", f"{vxm.get('model_calls', 0):.1f}").replace("QOUT", f"{QWEN['output']:g}").replace(
     "GOUT", f"{PRICE['gpt-5.5']['output']:g}").replace("CLOUT", f"{claude_out:g}").replace(
-    "EBQ", f"{eb_qwen:.2f}").replace("EBOURS", f"{eb['score']:.2f}").replace("MANYN", str(len(many))).replace(
-    "MANYCALLS", f"{mean([r['model_calls'] for r in many]):.0f}").replace(
-    "MANYUSD", f"{mean([PR.document_usd(r) for r in many]):.2f}").replace(
-    "WORSTNAME", esc(worst["document"]) if worst else "--").replace("WORSTP", str(worst["pages"]) if worst else "--").replace(
-    "WORSTC", str(worst["model_calls"]) if worst else "--").replace(
-    "WORSTUSD", f"{PR.document_usd(worst):.2f}" if worst else "--").replace(
-    "WORSTMIN", f"{worst['seconds'] / 60:.0f}" if worst else "--").replace(
-    "LAPAGES", cost("longarray", "pages")).replace("LACALLS", cost("longarray", "model_calls")).replace(
-    "LAUSD", cost("longarray", "usd", 2)).replace("LAPAGE", cost("longarray", "usd_per_page", 3)).replace(
-    "EBPAGE", cost("extractbench", "usd_per_page", 3)))
+    "EBQ", f"{eb_direct:.2f}").replace("EBOURS", f"{BY['extractbench']['ours']['score']:.2f}"))
 
 
 # ------------------------------------------------------------------ v1.4: faster on long scans
@@ -833,36 +672,56 @@ def same_docs(bench):
     return old, new, [k for k in new if k in old]
 
 
+def chart_speed(path, old, new, keys):
+    plt = plt_setup()
+    fig, ax = plt.subplots(figsize=(6.2, 3.6), dpi=220)
+    y = range(len(keys))[::-1]
+    o = [old[k]["seconds"] / 60 for k in keys]
+    n = [new[k]["seconds"] / 60 for k in keys]
+    ax.barh([i + 0.2 for i in y], o, 0.38, color="#C8CDD5", label="v1.3")
+    ax.barh([i - 0.2 for i in y], n, 0.38, color=OURS_PY, label="v1.4")
+    for i, a, c in zip(y, o, n):
+        ax.text(a + 0.8, i + 0.2, f"{a:.0f} min", va="center", fontsize=6.8, color=MUTED_PY)
+        ax.text(c + 0.8, i - 0.2, f"{c:.0f} min", va="center", fontsize=6.8, color=OURS_PY, weight="bold")
+    ax.set_yticks(list(y), [f"{k} ({old[k]['pages']} p.)" for k in keys], fontsize=7)
+    ax.set_xlim(0, max(o) * 1.18)
+    ax.set_xlabel("minutes per document, measured alone", fontsize=7)
+    ax.set_title("DocuBench: the five slowest sampled documents", fontsize=9, loc="left")
+    ax.legend(fontsize=7, frameon=False, loc="lower right")
+    ax.tick_params(axis="y", length=0)
+    ax.grid(axis="x", alpha=0.25)
+    fig.tight_layout()
+    fig.savefig(path)
+    plt.close(fig)
+
+
 o_db, n_db, k_db = same_docs("docubench")
 o_vx, n_vx, k_vx = same_docs("varex")
 if k_db and k_vx:
     tot = lambda d, ks, f: sum(d[k][f] for k in ks)
     heavy = sorted(k_db, key=lambda k: -o_db[k]["seconds"])[:5]
-    hrows = "".join(r"%s & %d & %.0f & %.0f & %s & %s\\" % (esc(k), o_db[k]["pages"], o_db[k]["seconds"] / 60,
-                    n_db[k]["seconds"] / 60, f"{o_db[k]['model_output_tokens'] / 1000:.0f}k", f"{n_db[k]['model_output_tokens'] / 1000:.0f}k") + "\n"
-                    for k in heavy)
+    chart_speed(A / "chart_speed.png", o_db, n_db, heavy)
     frame("v1.4: long scans read faster", (r"""
 \begin{columns}[T]
-\column{0.44\textwidth}
+\column{0.38\textwidth}
+\begin{block}{The same documents, measured alone}
 \footnotesize
-\textbf{A looping reply is stopped by the model server} once one stretch of tokens repeats 40 times in a row, not at its output limit; it is then read again as before.\\[0.4em]
-\textbf{A scan's readings run at the same time}, not one after another; the quorum sees them in the same order.\\[0.4em]
-\textbf{The same documents, measured alone both times:}\\[0.2em]
-DocuBench (20): DBOLD s $\to$ \textbf{DBNEW s}, DBX$\times$ faster\\
-VAREX (30 forms): VXOLD s $\to$ \textbf{VXNEW s}, VXX$\times$ faster\\[0.4em]
-\textbf{Accuracy kept:} DocuBench, all 72 read again, DBSCORE (v1.3: 90.80); 29 of 30 sampled VAREX forms unchanged.
-\column{0.52\textwidth}
-{\scriptsize\renewcommand{\arraystretch}{1.3}\setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\linewidth}{@{}Yrrrrr@{}}\toprule
-\textbf{Slowest five} & \textbf{pages} & \multicolumn{2}{c}{\textbf{minutes}} & \multicolumn{2}{c}{\textbf{output tokens}}\\
- & & v1.3 & v1.4 & v1.3 & v1.4\\\midrule
-""" + hrows + r"""\bottomrule\end{tabularx}}
+DocuBench (20): \textbf{DBX$\times$ faster}\\ {\color{muted}DBOLD s $\to$ DBNEW s}\\[0.4em]
+VAREX (30 forms): \textbf{VXX$\times$ faster}\\ {\color{muted}VXOLD s $\to$ VXNEW s}
+\end{block}
+\footnotesize
+\textbf{Loops stopped by the model server} once one stretch of tokens repeats 40 times, not at the output limit.\\[0.3em]
+\textbf{A scan's readings at the same time}, entering the quorum in the same order.\\[0.3em]
+DocuBench, all 72 documents read again: \textbf{DBSCORE}.
+\column{0.58\textwidth}
+\includegraphics[width=\linewidth]{assets/chart_speed.png}
 \end{columns}
-\src{DocuBench's five slowest sampled documents. results/costs/v1.3 and results/costs: every measured document, before and after.}
+\src{results/costs/v1.3 and results/costs: every measured document, before and after.}
 """).replace("DBOLD", f"{tot(o_db, k_db, 'seconds'):,.0f}").replace("DBNEW", f"{tot(n_db, k_db, 'seconds'):,.0f}").replace(
         "DBX", f"{tot(o_db, k_db, 'seconds') / tot(n_db, k_db, 'seconds'):.1f}").replace(
         "VXOLD", f"{tot(o_vx, k_vx, 'seconds'):,.0f}").replace("VXNEW", f"{tot(n_vx, k_vx, 'seconds'):,.0f}").replace(
-        "VXX", f"{tot(o_vx, k_vx, 'seconds') / tot(n_vx, k_vx, 'seconds'):.1f}").replace("DBSCORE", f"{db['score']:.2f}"))
+        "VXX", f"{tot(o_vx, k_vx, 'seconds') / tot(n_vx, k_vx, 'seconds'):.1f}").replace(
+        "DBSCORE", f"{BY['docubench']['ours']['score']:.2f}"))
 
 zv = load("../../results/varex-zoom/comparison.json")
 zu = json.loads((ROOT / "results/unikie_open/zoom/comparison.json").read_text())
@@ -897,9 +756,9 @@ frame("Summary", r"""
 \column{0.32\textwidth}
 \begin{block}{Results}
 \small
-1st on VAREX and UNIKIE-BENCH; 2nd on LongArray-Extract and UNIKIE open; 3rd on ExtractBench.\\[0.4em]
-A new step, zoom re-reading, improved VAREX and UNIKIE open; with its vote rule it holds UNIKIE level.\\[0.4em]
-Open-weight models on one GPU.
+1st on VAREX and UNIKIE-BENCH; 2nd on LongArray-Extract and UNIKIE open; 3rd of 48 on ExtractBench.\\[0.3em]
+Ahead of every published open model, with open models on one GPU, at a few cents a page.\\[0.3em]
+Zoom re-reading improved VAREX and UNIKIE open.
 \end{block}
 \column{0.32\textwidth}
 \begin{block}{Method}
@@ -913,6 +772,57 @@ ExtractBench served as the development set. Agreement among readings does not gu
 \end{block}
 \end{columns}
 """)
+
+# ------------------------------------------------------------------ complete results: one table design for every benchmark
+T.append(r"\section{Complete results}" + "\n")
+
+
+def complete_table(b):
+    """Rank, system, type, score (with a bar on a 0-100 scale) and the benchmark's own breakdown; every
+    published system and DocQuorum, in the same design for every benchmark."""
+    allrows = ranked(b)
+    per = b.get("per_slide") or len(allrows)
+    n_parts = len(b["parts"])
+    size = r"\footnotesize" if n_parts <= 1 else (r"\scriptsize" if n_parts <= 5 else r"\tiny")
+    sep = "4pt" if n_parts <= 5 else "2.6pt"
+    best = {}
+    for j in range(n_parts):
+        vals = [shown(r["parts"][j], b["digits"]) for r in allrows if isinstance(r["parts"][j], (int, float))]
+        if vals:
+            best[j] = max(vals)
+    chunks = [allrows[i:i + per] for i in range(0, len(allrows), per)]
+    for ci, chunk in enumerate(chunks):
+        stretch = "1.3" if len(chunk) <= 11 else ("1.02" if len(chunk) <= 17 else "0.74")
+        head = [r"\#", "System", "Type", "", "Score"] + b["parts"]
+        t = ("{" + size + r"\renewcommand{\arraystretch}{" + stretch + r"}\setlength{\tabcolsep}{" + sep + "}\n"
+             + r"\begin{tabularx}{\textwidth}{@{}rYl@{\hspace{6pt}}lr" + "r" * n_parts + r"@{}}\toprule" + "\n"
+             + " & ".join(r"\textbf{%s}" % h if h else "" for h in head) + r"\\\midrule" + "\n")
+        for r in chunk:
+            mine = r["kind"] == "ours"
+            bar = r"\textcolor{%s}{\rule{%.2fcm}{1.05ex}}" % ("good" if mine else KTEX[r["kind"]] + "!45",
+                                                                1.2 * float(r["score"]) / 100)
+            kind = r"{\color{good}\textbf{Open models}}" if mine else r"{\color{%s}%s}" % (KTEX[r["kind"]], KIND[r["kind"]])
+            parts = []
+            for j, v in enumerate(r["parts"]):
+                if isinstance(v, (int, float)):
+                    s = str(shown(v, b["digits"]))
+                    s = r"\underline{%s}" % s if shown(v, b["digits"]) == best.get(j) else s
+                else:
+                    s = esc(v)
+                parts.append(r"\textbf{%s}" % s if mine else s)
+            score = f"{r['score']:.2f}" if mine else str(shown(r["score"], b["digits"]))
+            cells = [str(r["rank"]), r"\textbf{DocQuorum (ours)}" if mine else esc(r["name"]), kind, bar,
+                     r"\textbf{%s}" % score if mine else score] + parts
+            t += (r"\rowcolor{hl}" if mine else "") + " & ".join(cells) + r"\\" + "\n"
+        t += r"\bottomrule\end{tabularx}}"
+        title = f"{b['title']}: complete results" + (f" ({ci + 1}/{len(chunks)})" if len(chunks) > 1 else "")
+        frame(esc(title), t + "\n\n" + r"\vspace{0.25em}{\tiny\color{muted}" + b["legend"]
+              + (" Underlined: best in the column." if best else "") + r" Equal scores share a rank.\par}" + "\n"
+              + r"\src{" + b["src"] + r" DocQuorum: the final pipeline.}")
+
+
+for b in ORDER:
+    complete_table(b)
 
 T.append(r"\end{document}" + "\n")
 tex = HERE / "docquorum-flow.tex"

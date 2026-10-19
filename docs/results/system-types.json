@@ -1,0 +1,19 @@
+{
+ "note": "The kind of each published system, for the results tables: open (open-weight model), closed (a closed model called directly), service (a commercial extraction product), agent (a coding agent). VAREX, UNIKIE-BENCH and ExtractBench state it in their own tables (VAREX size 'API' = closed; UNIKIE closed_source / open_source; ExtractBench Category); the two below do not, so it is recorded here from each system's name on its source page.",
+ "from_source": {
+  "extractbench_category": {"OSS": "open", "Commercial VLM": "closed", "LlamaExtract": "service",
+                            "Specialized APIs": "service", "Coding Agents": "agent"}
+ },
+ "longarray": {
+  "Extend MAX": "service", "Reducto Deep Extract": "service", "Claude Opus 4.7": "closed",
+  "Reducto Standard": "service", "Pulse Effort": "service", "Pulse Auto": "service",
+  "Gemini 3.1 Pro": "closed", "LlamaParse Standard": "service", "LlamaParse Agentic": "service",
+  "GPT-5.5": "closed", "Gemini 3.5 Flash": "closed"
+ },
+ "docubench": {
+  "DocuPipe (high effort)": "service", "DocuPipe (standard effort)": "service",
+  "Claude Sonnet 5 (direct LLM)": "closed", "Reducto Deep Extract": "service", "Reducto (standard)": "service",
+  "Extend": "service", "GPT-5.5 (direct LLM)": "closed", "Gemini 3.5 Flash (direct LLM)": "closed",
+  "Unstructured": "service"
+ }
+}

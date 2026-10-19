@@ -42,8 +42,9 @@
 \item Task and pipeline
 \item Walkthrough on real documents\\
   {\footnotesize inputs, routing, parsing, readers, deterministic checks, selection by quorum, output}
-\item Results on six benchmarks; zoom re-reading
+\item Results on six benchmarks: places, cost, speed; zoom re-reading
 \item Summary
+\item Complete results, one table per benchmark
 \end{enumerate}
 \column{0.48\textwidth}
 \begin{block}{Setting}
@@ -299,272 +300,72 @@ On the scanned county purchase order the quorum kept the one-shot reading (78.26
 \src{Left: stored final output for 2A-9-160298\_109929. Right: UNIKIE-BENCH Catering-Services test\_1.jpg, quorum over six stored readings.}
 \end{frame}
 \section{Results}
-\begin{frame}{ExtractBench: complete results (1/3)}
-\begingroup\scriptsize\renewcommand{\arraystretch}{1.0}\setlength{\tabcolsep}{5pt}
-\begin{tabularx}{\textwidth}{@{}rYlrrrrrr@{}}\toprule
-\textbf{\#} & \textbf{System} & \textbf{Type} & \textbf{Short} & \textbf{Medium} & \textbf{Long} & \textbf{Overall} & \textbf{\$/page} & \textbf{s/doc}\\\midrule
-1 & LlamaExtract Agentic Plus & Commercial service & 96.94 & 94.45 & 90.18 & 95.91 & 0.081 & 152\\
-1 & Pulse (Effort) & Commercial service & 96.46 & 95.01 & 93.51 & 95.91 & 0.105 & 165\\
-\rowcolor{hl}\textbf{3} & \textbf{DocQuorum (ours)} & \textbf{Open model (27B)} & \textbf{96.34} & \textbf{94.11} & \textbf{90.41} & \textbf{95.43} & \textbf{0.029$^{\mathrm{e}}$} & \textbf{568}\\
-4 & LlamaExtract Agentic & Commercial service & 96.04 & 92.11 & 91.83 & 94.77 & 0.033 & 80\\
-5 & Codex (GPT-6 Sol Evidence) & Coding agent & 95.99 & 92.42 & 87.25 & 94.57 & 0.098 & 100\\
-6 & Codex (GPT-5.6 Sol Evidence) & Coding agent & 96.04 & 90.19 & 82.73 & 93.77 & 0.216 & 104\\
-7 & Codex (GPT-5.5) & Coding agent & 95.68 & 91.15 & 78.88 & 93.57 & 0.278 & 76\\
-8 & Codex (GPT-5.5 Evidence) & Coding agent & 95.59 & 88.72 & 87.97 & 93.35 & 0.336 & 101\\
-9 & Pulse (Non-effort) & Commercial service & 93.17 & 92.22 & 89.07 & 92.70 & 0.030 & 113\\
-10 & LlamaExtract Cost-Effective & Commercial service & 94.03 & 89.51 & 83.73 & 92.27 & 0.011 & 120\\
-11 & Codex (GPT-5.6 Terra Evidence) & Coding agent & 95.60 & 86.69 & 77.36 & 92.26 & 0.095 & 78\\
-12 & OpenAI GPT-6 Astra & Commercial model & 97.22 & 90.56 & 31.70 & 91.91 & 0.111 & 57\\
-13 & Codex (GPT-5.6 Luna Evidence) & Coding agent & 93.50 & 87.43 & 80.05 & 91.16 & 0.012 & 126\\
-14 & Codex (GPT-6 Luna Evidence) & Coding agent & 93.09 & 87.71 & 80.88 & 91.01 & 0.010 & 219\\
-15 & Reducto Deep Extract & Commercial service & 94.20 & 80.47 & 92.01 & 90.44 & 0.344 & 250\\
-16 & Qwen3.8 Flash Next & Open model & 94.82 & 87.81 & 37.74 & 89.88 & self-host & 188\\
-\bottomrule\end{tabularx}\endgroup
-\src{ExtractBench leaderboard, snapshot of 2 October 2026 (47 published systems) and DocQuorum. Value F1 (\%) by the benchmark's scorer over 370 PDFs (252 short, 98 medium, 20 long); Overall is the mean over all documents. Equal scores share a rank. \$/page and s/doc: the leaderboard's cost per page and latency per document (averaged over the 370 documents); self-host: an open model the leaderboard ran itself and did not price; n/p: not published. e: DocQuorum's tokens measured on a random 20, priced at the Qwen3.8-27B list price (Alibaba Cloud, \$0.50 / \$3.00 per million input / output tokens) and weighted by split as the leaderboard's \$/page is; timed one document at a time on a GPU shared with other jobs.}
-\end{frame}
-\begin{frame}{ExtractBench: complete results (2/3)}
-\begingroup\scriptsize\renewcommand{\arraystretch}{1.0}\setlength{\tabcolsep}{5pt}
-\begin{tabularx}{\textwidth}{@{}rYlrrrrrr@{}}\toprule
-\textbf{\#} & \textbf{System} & \textbf{Type} & \textbf{Short} & \textbf{Medium} & \textbf{Long} & \textbf{Overall} & \textbf{\$/page} & \textbf{s/doc}\\\midrule
-17 & Qwen3.8 27B & Open model & 94.68 & 87.54 & 38.45 & 89.75 & self-host & 274\\
-18 & Extend (Max Context) & Commercial service & 92.32 & 78.75 & 90.46 & 88.62 & 0.100 & 113\\
-19 & Qwen3.6 35B & Open model & 92.86 & 86.37 & 36.90 & 88.11 & self-host & 97\\
-20 & Qwen3.5 35B & Open model & 93.52 & 85.27 & 31.73 & 88.00 & self-host & 86\\
-21 & DeepSeek V4.1 Flash & Commercial model & 94.44 & 81.49 & 22.23 & 87.11 & 0.003 & 16\\
-22 & Claude Code (Opus 4.8) & Coding agent & 90.08 & 79.21 & 88.07 & 87.09 & 0.162 & 107\\
-23 & Claude Code (Opus 4.8 Evidence) & Coding agent & 90.54 & 79.17 & 77.94 & 86.84 & 0.632 & 306\\
-24 & Qwen3.5 9B & Open model & 92.31 & 81.12 & 32.22 & 86.10 & self-host & 116\\
-25 & Claude Code (Opus 5.5 Evidence) & Coding agent & 89.63 & 77.96 & 80.83 & 86.06 & 0.121 & 88\\
-26 & Extend Extract & Commercial service & 89.39 & 84.14 & 47.21 & 85.72 & 0.068 & 120\\
-27 & Datalab (Accurate + Balanced) & Commercial service & 89.40 & 85.08 & 42.04 & 85.70 & 0.035 & 294\\
-28 & Reducto Extract & Commercial service & 92.97 & 69.59 & 30.65 & 83.41 & 0.055 & 64\\
-29 & Kimi K3 & Commercial model & 94.64 & 69.64 & 4.99 & 83.17 & 0.068 & 159\\
-30 & Qwen3.5 4B & Open model & 89.06 & 76.64 & 27.31 & 82.43 & self-host & 102\\
-31 & NuExtract3 & Open model & 86.41 & 77.01 & 32.71 & 81.02 & self-host & 67\\
-32 & GLM-5.3 Flash & Commercial model & 96.30 & 51.56 & 27.83 & 80.75 & 0.003 & 87\\
-\bottomrule\end{tabularx}\endgroup
-\src{ExtractBench leaderboard, snapshot of 2 October 2026 (47 published systems) and DocQuorum. Value F1 (\%) by the benchmark's scorer over 370 PDFs (252 short, 98 medium, 20 long); Overall is the mean over all documents. Equal scores share a rank. \$/page and s/doc: the leaderboard's cost per page and latency per document (averaged over the 370 documents); self-host: an open model the leaderboard ran itself and did not price; n/p: not published. e: DocQuorum's tokens measured on a random 20, priced at the Qwen3.8-27B list price (Alibaba Cloud, \$0.50 / \$3.00 per million input / output tokens) and weighted by split as the leaderboard's \$/page is; timed one document at a time on a GPU shared with other jobs.}
-\end{frame}
-\begin{frame}{ExtractBench: complete results (3/3)}
-\begingroup\scriptsize\renewcommand{\arraystretch}{1.0}\setlength{\tabcolsep}{5pt}
-\begin{tabularx}{\textwidth}{@{}rYlrrrrrr@{}}\toprule
-\textbf{\#} & \textbf{System} & \textbf{Type} & \textbf{Short} & \textbf{Medium} & \textbf{Long} & \textbf{Overall} & \textbf{\$/page} & \textbf{s/doc}\\\midrule
-33 & Google Gemini 3.8 Flash & Commercial model & 88.14 & 72.23 & 28.70 & 80.71 & 0.004 & 16\\
-34 & Google Gemini 3.5 Flash & Commercial model & 87.87 & 69.76 & 27.90 & 79.84 & 0.010 & 20\\
-35 & Lift Datalab 9B & Open model & 87.64 & 65.69 & 24.78 & 78.43 & self-host & 89\\
-36 & OpenAI GPT-5.4 Nano & Commercial model & 77.43 & 76.37 & 35.81 & 74.90 & 0.002 & 43\\
-37 & Gemma4 26B & Open model & 77.70 & 59.61 & 28.88 & 70.27 & self-host & 653\\
-38 & Gemma4 E4B & Open model & 81.10 & 48.93 & 26.82 & 69.64 & self-host & 50\\
-39 & InternVL3.5 14B & Open model & 80.70 & 39.04 & 19.41 & 66.35 & self-host & n/p\\
-40 & InternVL3.5 8B & Open model & 79.26 & 36.62 & 17.57 & 64.63 & self-host & n/p\\
-41 & Qwen3.5 2B & Open model & 71.22 & 50.93 & 25.93 & 63.40 & self-host & 214\\
-42 & Kimi-VL A3B & Open model & 69.86 & 34.61 & 18.94 & 57.77 & self-host & 71\\
-43 & Gemma4 E2B & Open model & 63.71 & 28.96 & 14.58 & 51.85 & self-host & 48\\
-44 & NuExtract 2.0 8B & Open model & 62.92 & 23.50 & 6.39 & 49.42 & self-host & n/p\\
-45 & Qwen3.5 0.8B & Open model & 57.44 & 26.98 & 6.65 & 46.63 & self-host & 191\\
-46 & MiniCPM-V 4.5 & Open model & 57.39 & 25.30 & 1.13 & 45.85 & self-host & n/p\\
-47 & Gemma4 12B & Open model & 53.62 & 30.82 & 13.16 & 45.39 & self-host & 241\\
-48 & GLM-4.6V Flash & Open model & 47.28 & 44.52 & 22.17 & 45.19 & self-host & 226\\
-\bottomrule\end{tabularx}\endgroup
-\src{ExtractBench leaderboard, snapshot of 2 October 2026 (47 published systems) and DocQuorum. Value F1 (\%) by the benchmark's scorer over 370 PDFs (252 short, 98 medium, 20 long); Overall is the mean over all documents. Equal scores share a rank. \$/page and s/doc: the leaderboard's cost per page and latency per document (averaged over the 370 documents); self-host: an open model the leaderboard ran itself and did not price; n/p: not published. e: DocQuorum's tokens measured on a random 20, priced at the Qwen3.8-27B list price (Alibaba Cloud, \$0.50 / \$3.00 per million input / output tokens) and weighted by split as the leaderboard's \$/page is; timed one document at a time on a GPU shared with other jobs.}
-\end{frame}
-\begin{frame}{UNIKIE-BENCH: complete results}
-\begingroup\scriptsize\renewcommand{\arraystretch}{0.9}\setlength{\tabcolsep}{3.2pt}
-\begin{tabularx}{\textwidth}{@{}rYc*{11}{r}r@{}}\toprule
-\textbf{\#} & \textbf{System} & & \textbf{Ret.} & \textbf{Cat.} & \textbf{Com.} & \textbf{Acc.} & \textbf{Post.} & \textbf{Adm.} & \textbf{Edu.} & \textbf{Adv.} & \textbf{Tax} & \textbf{Med.} & \textbf{Nut.} & \textbf{Avg.}\\\midrule
-\rowcolor{hl}1 & \textbf{DocQuorum (ours)} & O & \textbf{\underline{90.63}} & \textbf{\underline{88.13}} & \textbf{53.51} & \textbf{79.29} & \textbf{85.65} & \textbf{\underline{87.00}} & \textbf{85.67} & \textbf{86.59} & \textbf{\underline{82.16}} & \textbf{\underline{78.33}} & \textbf{92.22} & \textbf{\underline{82.65}}\\
-2 & Gemini-3-Pro & C & 89.27 & 83.54 & \underline{53.87} & \underline{81.43} & \underline{90.74} & 84.32 & 80.71 & \underline{90.54} & 81.54 & 77.60 & \underline{92.47} & 82.37\\
-3 & Qwen3-VL-Plus & C & 89.12 & 86.45 & 50.57 & 77.86 & 83.55 & 78.91 & \underline{87.44} & 83.14 & 78.93 & 76.46 & 89.72 & 80.20\\
-4 & Qwen3-VL-8B & O & 88.26 & 86.23 & 51.14 & 71.07 & 83.80 & 78.90 & 87.39 & 81.23 & 78.74 & 77.19 & 86.36 & 79.12\\
-5 & Qwen-VL-Max & C & 86.67 & 84.68 & 49.33 & 76.07 & 84.85 & 79.96 & 82.46 & 82.76 & 77.94 & 75.62 & 75.14 & 77.77\\
-6 & GLM-4.1V-9B & O & 62.32 & 77.33 & 46.67 & 76.43 & 76.46 & 78.75 & 65.83 & 81.99 & 70.68 & 72.08 & 60.47 & 69.91\\
-7 & GPT-4o & C & 75.79 & 79.33 & 49.67 & 67.86 & 82.95 & 64.26 & 47.77 & 73.56 & 75.33 & 67.57 & 76.51 & 69.15\\
-8 & MiMo-VL-7B-RL & O & 77.45 & 77.66 & 49.01 & 67.50 & 76.70 & 76.81 & 76.65 & 66.28 & 74.86 & 68.70 & 46.10 & 68.88\\
-9 & InternVL3.5-8B & O & 77.23 & 72.23 & 41.64 & 67.14 & 73.90 & 72.10 & 63.08 & 73.08 & 72.81 & 65.94 & 65.53 & 67.70\\
-10 & GPT-5 & C & 71.90 & 71.33 & 45.94 & 69.29 & 80.95 & 62.79 & 50.26 & 75.48 & 72.05 & 67.71 & 75.83 & 67.59\\
-11 & MiniCPM-V4.5-8B & O & 68.37 & 74.91 & 45.91 & 67.76 & 83.60 & 71.89 & 63.21 & 79.31 & 69.57 & 70.00 & 44.18 & 67.15\\
-12 & Claude-Sonnet-4.5 & C & 69.24 & 73.65 & 45.92 & 69.29 & 79.45 & 69.20 & 39.46 & 85.06 & 67.79 & 63.96 & 67.24 & 66.39\\
-13 & Kimi-VL-A3B & O & 86.49 & 63.12 & 42.87 & 61.79 & 83.40 & 68.72 & 80.37 & 72.41 & 77.80 & 64.93 & 25.72 & 66.14\\
-14 & Gemma-3-12B & O & 54.32 & 68.73 & 30.68 & 53.93 & 72.30 & 37.14 & 17.56 & 36.78 & 56.81 & 48.54 & 52.20 & 48.09\\
-15 & Ministral-3-8B & O & 6.47 & 57.01 & 26.24 & 43.39 & 75.80 & 32.37 & 29.54 & 19.53 & 65.85 & 51.46 & 6.17 & 37.62\\
-16 & SmolVLM2-2.2B & O & 17.80 & 57.22 & 28.52 & 18.92 & 34.98 & 8.63 & 3.87 & 27.16 & 34.97 & 18.00 & 10.51 & 23.69\\
+\begin{frame}{Results on six benchmarks}
+\begingroup\scriptsize\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.3cm}rlYrrr@{}}\toprule
+\textbf{Benchmark} & \textbf{Score} & \textbf{Place} & \textbf{Ahead of} & \textbf{Calls} & \textbf{\$} & \textbf{s}\\
+ & & & & \multicolumn{3}{c}{\tiny per document}\\\midrule
+\textbf{VAREX}\newline{\tiny\color{muted}1,777 government forms} & \textbf{98.23} & \colorbox{good}{\textcolor{white}{\textbf{1st}}} {\tiny of 21} & Gemini 2.5 Pro {\color{muted}98.0} & 3.7 & 0.021 & 25\\[0.15em]
+\textbf{UNIKIE-BENCH}\newline{\tiny\color{muted}4,472 images, 11 scenarios} & \textbf{82.65} & \colorbox{good}{\textcolor{white}{\textbf{1st}}} {\tiny of 16} & Gemini-3-Pro {\color{muted}82.37} & 6.3 & 0.010 & 51\\[0.15em]
+\textbf{LongArray-Extract}\newline{\tiny\color{muted}45 long documents, 29,328 rows} & \textbf{98.05} & \colorbox{navy!75}{\textcolor{white}{\textbf{2nd}}} {\tiny of 12} & Reducto Deep Extract {\color{muted}97.4} & 100.3 & 0.676 & 1,466\\[0.15em]
+\textbf{UNIKIE-BENCH open}\newline{\tiny\color{muted}1,661 documents, 8 scenarios} & \textbf{72.33} & \colorbox{navy!75}{\textcolor{white}{\textbf{2nd}}} {\tiny of 16} & Qwen3-VL-Plus {\color{muted}70.61} & 4.6 & 0.018 & 121\\[0.15em]
+\textbf{ExtractBench}\newline{\tiny\color{muted}370 PDFs, 1 to 192 pages} & \textbf{95.43} & \colorbox{navy!75}{\textcolor{white}{\textbf{3rd}}} {\tiny of 48} & LlamaExtract Agentic {\color{muted}94.77} & 41.7 & 0.407 & 568\\[0.15em]
+\textbf{DocuBench}\newline{\tiny\color{muted}72 documents, 10 file types} & \textbf{91.54} & \colorbox{navy!75}{\textcolor{white}{\textbf{4th}}} {\tiny of 10} & Reducto Deep Extract {\color{muted}89.38} & 11.1 & 0.212 & 261\\[0.15em]
 \bottomrule\end{tabularx}\endgroup
 
 \vspace{0.3em}
-{\tiny Ret.\ Retail; Cat.\ Catering services; Com.\ Commercial; Acc.\ Accommodation; Post.\ Postal label; Adm.\ Administrative; Edu.\ Education; Adv.\ Advertisement; Tax: Tax-compliant; Med.\ Medical services; Nut.\ Nutrition label; Avg.\ macro average. C: closed model; O: open model. Underlined: best in the column.\par}
-\src{UNIKIE-BENCH (ACL 2026), Table 4: 15 published systems; F1 (\%) by the benchmark's evaluator on 4,472 images, every input capped at 1,605,632 pixels. DocQuorum: quorum over six readings from three open models; small images enlarged before reading.}
+{\scriptsize Scores: each benchmark's own scorer on the full test set; places count every published system. Open-weight models only (Qwen3.8-27B, MinerU2.5) on one GPU. Calls, \$ and s: means per document over a random sample; \$ prices the measured tokens at the Qwen3.8-27B list price.\par}
+\src{Complete tables for every benchmark: the last section, and docs/results/TABLES.md. No result was submitted to a leaderboard.}
 \end{frame}
-\begin{frame}{VAREX: complete results}
-\begingroup\scriptsize\renewcommand{\arraystretch}{0.72}\setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\textwidth}{@{}rYlrrrrrr@{}}\toprule
-\textbf{\#} & \textbf{System} & \textbf{Size} & \textbf{EM} & \textbf{ANLS} & \textbf{Flat} & \textbf{Nested} & \textbf{Table} & \textbf{Perfect}\\\midrule
-\rowcolor{hl}1 & \textbf{DocQuorum (ours)} & \textbf{27B} & \textbf{\underline{98.2}} & \textbf{\underline{98.8}} & \textbf{\underline{98.4}} & \textbf{\underline{98.5}} & \textbf{97.4} & \textbf{\underline{86.2}}\\
-2 & Gemini 2.5 Pro & API & 98.0 & 98.5 & 97.3 & 98.2 & \underline{97.7} & 82.8\\
-3 & Gemini 2.5 Flash & API & 97.3 & 97.9 & 96.9 & 97.7 & 96.5 & 81.0\\
-4 & Qwen3-VL (8B) & 8B & 96.6 & 97.6 & 96.6 & 97.3 & 95.0 & 78.2\\
-5 & Llama 4 Maverick (17B×128E) & 17B×128E & 95.6 & 97.1 & 95.1 & 96.1 & 94.4 & 68.7\\
-6 & Ministral (14B) & 14B & 94.8 & 96.5 & 94.8 & 95.1 & 94.0 & 66.0\\
-6 & GPT-4o & API & 94.8 & 97.1 & 95.1 & 95.3 & 93.5 & 64.3\\
-8 & Llama 4 Scout (17B×16E) & 17B×16E & 94.3 & 95.8 & 95.2 & 94.3 & 94.1 & 63.4\\
-9 & granite-vision-4.1-4b (4B) & 4B & 94.2 & 96.4 & 95.2 & 94.9 & 92.3 & 65.2\\
-10 & NuExtract 2.0 (2B) & 2B & 90.8 & 92.1 & 93.1 & 91.9 & 87.3 & 52.7\\
-11 & InternVL3.5 (2B) & 2B & 85.6 & 89.1 & 89.6 & 86.1 & 82.7 & 42.4\\
-12 & granite-4.0-3b-vision (3B) & 3B & 85.5 & 89.1 & 91.5 & 85.2 & 84.0 & 41.1\\
-13 & Qwen 2.5-VL (3B) & 3B & 82.5 & 85.4 & 79.9 & 83.1 & 81.9 & 43.7\\
-14 & Gemma 3n (E2B) & E2B & 71.0 & 78.1 & 76.7 & 71.0 & 68.8 & 19.0\\
-15 & MiniCPM-V4 (4B) & 4B & 67.9 & 69.8 & 84.8 & 66.2 & 65.5 & 23.6\\
-16 & Gemma 3 (4B) & 4B & 65.3 & 75.0 & 71.7 & 65.0 & 63.6 & 13.7\\
-17 & h2oVL Miss. (2B) & 2B & 61.3 & 64.9 & 67.2 & 61.3 & 58.9 & 11.6\\
-18 & Qwen3-VL (2B) & 2B & 34.2 & 34.7 & 93.3 & 26.8 & 29.0 & 29.3\\
-18 & h2oVL Miss. (800M) & 800M & 34.2 & 36.1 & 35.8 & 33.2 & 36.0 & 5.9\\
-20 & InternVL3.5 (1B) & 1B & 28.2 & 29.8 & 79.0 & 22.4 & 22.2 & 11.2\\
-21 & Qwen2-VL (2B) & 2B & 9.7 & 10.0 & 16.4 & 9.0 & 8.9 & 4.3\\
-\bottomrule\end{tabularx}\endgroup
-
-{\tiny EM: exact match (normalized) over 21,084 fields; ANLS: normalized ANLS; Flat, Nested, Table: exact match by form type (299, 1,146, 332 forms); Perfect: forms with every field right. Underlined: best in the column.\par}
-\src{VAREX-Bench image-modality leaderboard (20 models, zero-shot, one decimal) and DocQuorum (final pipeline). Ranks compare at one decimal.}
+\begin{frame}{Among the best published systems}
+\centering\includegraphics[width=\textwidth,height=6.15cm,keepaspectratio]{assets/chart_ranks.png}
+\src{Each benchmark's six best systems, DocQuorum among them, by the benchmark's own score; every row of each benchmark is in the complete tables (last section).}
 \end{frame}
-\begin{frame}{LongArray-Extract: complete results}
-\begingroup\footnotesize\renewcommand{\arraystretch}{1.15}\setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\textwidth}{@{}rYrr@{}}\toprule
-\textbf{\#} & \textbf{System} & \textbf{Accuracy} & \textbf{Completed}\\\midrule
-1 & Extend MAX & 99.2 & 45/45\\
-\rowcolor{hl}2 & \textbf{DocQuorum (ours)} & \textbf{98.1} & \textbf{45/45}\\
-3 & Reducto Deep Extract & 97.4 & 45/45\\
-4 & Claude Opus 4.7 & 83.1 & 45/45\\
-5 & Reducto Standard & 80.9 & 45/45\\
-6 & Pulse Effort & 68.8 & 45/45\\
-7 & Pulse Auto & 64.5 & 45/45\\
-8 & Gemini 3.1 Pro & 47.3 & 45/45\\
-9 & LlamaParse Standard & 47.2 & 26/45\\
-10 & LlamaParse Agentic & 34.7 & 35/45\\
-11 & GPT-5.5 & 31.6 & 45/45\\
-12 & Gemini 3.5 Flash & 31.1 & 45/45\\
-\bottomrule\end{tabularx}\endgroup
-
-\src{Extend AI's LongArray-Extract results page (11 systems; one decimal) and DocQuorum: macro document accuracy (\%) by the publisher's reference scorer over 45 long documents (bank statements, clinical listings, indictments; 29,328 rows); a failed document counts as zero. Ranks compare at one decimal.}
+\begin{frame}{Ahead of open and closed models}
+\centering\includegraphics[width=\textwidth,height=5.0cm,keepaspectratio]{assets/chart_open_closed.png}\par
+\raggedright{\footnotesize\textbf{The gain comes from the pipeline, not a bigger model:} the same Qwen3.8-27B called once scores \textbf{89.75} on ExtractBench (its leaderboard); through DocQuorum it scores \textbf{95.43}.\par}
+\src{Grey or light green: the best published closed or open model on each benchmark; green: DocQuorum. LongArray-Extract and DocuBench publish no open models. Gains at each benchmark's published precision.}
 \end{frame}
-\begin{frame}{UNIKIE-BENCH open category: complete results}
-\begingroup\scriptsize\renewcommand{\arraystretch}{0.95}\setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\textwidth}{@{}rYcrrrrrrrrr@{}}\toprule
-\textbf{\#} & \textbf{System} & \textbf{} & \textbf{Ret.\,zh} & \textbf{Form\,zh} & \textbf{Inv.\,zh} & \textbf{Con.\,zh} & \textbf{Ret.\,en} & \textbf{Form\,en} & \textbf{Inv.\,en} & \textbf{Con.\,en} & \textbf{Avg.}\\\midrule
-1 & Gemini-3-Pro & C & \underline{78.50} & \underline{79.17} & \underline{78.63} & \underline{75.96} & \underline{93.57} & \underline{80.41} & \underline{87.06} & \underline{79.90} & \underline{81.65}\\
-\rowcolor{hl}2 & \textbf{DocQuorum (ours)} & \textbf{O} & \textbf{67.67} & \textbf{69.80} & \textbf{69.72} & \textbf{74.25} & \textbf{83.10} & \textbf{67.65} & \textbf{68.22} & \textbf{78.22} & \textbf{72.33}\\
-3 & Qwen3-VL-Plus & C & 71.14 & 69.87 & 69.59 & 70.95 & 68.27 & 66.82 & 73.45 & 74.81 & 70.61\\
-4 & Qwen-VL-Max & C & 69.94 & 69.75 & 66.62 & 69.68 & 70.76 & 65.52 & 70.80 & 76.57 & 69.95\\
-5 & Qwen3-VL-8B & O & 68.93 & 64.70 & 63.38 & 65.59 & 71.40 & 61.46 & 67.34 & 76.08 & 67.36\\
-6 & MiMo-VL-7B-RL & O & 57.63 & 56.60 & 51.93 & 65.90 & 71.34 & 52.83 & 57.64 & 70.55 & 60.55\\
-7 & Kimi-VL-A3B & O & 62.98 & 52.85 & 50.72 & 54.94 & 73.91 & 55.96 & 52.67 & 64.64 & 58.58\\
-8 & GLM-4.1V-9B & O & 55.19 & 56.63 & 55.52 & 54.68 & 63.83 & 54.66 & 59.31 & 68.70 & 58.56\\
-9 & MiniCPM-V4.5-8B & O & 52.33 & 42.69 & 44.54 & 39.46 & 72.41 & 47.46 & 56.44 & 65.49 & 52.60\\
-10 & InternVL3.5-8B & O & 54.26 & 37.83 & 40.97 & 39.43 & 79.46 & 43.64 & 49.41 & 50.06 & 49.38\\
-11 & GPT-5 & C & 39.61 & 31.97 & 37.64 & 17.47 & 80.64 & 50.09 & 57.50 & 64.24 & 47.39\\
-12 & GPT-4o & C & 39.66 & 30.82 & 35.31 & 16.67 & 78.51 & 48.09 & 57.08 & 67.35 & 46.69\\
-13 & Ministral-3-8B & O & 25.21 & 35.80 & 24.42 & 26.18 & 58.54 & 49.01 & 55.66 & 57.82 & 41.58\\
-14 & Claude-Sonnet-4.5 & C & 37.59 & 31.20 & 29.12 & 20.88 & 41.64 & 49.22 & 44.18 & 63.87 & 39.71\\
-15 & Gemma-3-12B & O & 25.71 & 14.17 & 17.36 & 9.42 & 76.24 & 38.32 & 30.23 & 35.77 & 30.90\\
-16 & SmolVLM2-2.2B & O & 5.74 & 1.51 & 3.05 & 2.15 & 36.49 & 11.64 & 19.73 & 22.36 & 12.83\\
-\bottomrule\end{tabularx}\endgroup
-
-{\tiny Ret.\ receipts; Inv.\ invoices; Con.\ contracts; zh Chinese, en English; Avg.\ macro average. C: closed model; O: open model. Underlined: best in the column.\par}
-\src{UNIKIE-BENCH (ACL 2026), open-category table: 15 published systems; F1 (\%) by the benchmark's evaluator on 1,661 documents, every input capped at 1,605,632 pixels. DocQuorum: quorum over three readings from Qwen3.8-27B, then zoom re-reading.}
+\begin{frame}{Low cost per page}
+\centering\includegraphics[width=\textwidth,height=5.0cm,keepaspectratio]{assets/cost_accuracy.png}\par
+\raggedright{\footnotesize On ExtractBench, the two systems above DocQuorum cost \textbf{\$0.081} and \textbf{\$0.105} a page; DocQuorum's tokens come to \textbf{\$0.029} a page, and no published system is both cheaper and more accurate.\par}
+\src{Left: means over a random sample of each benchmark (results/costs/). Right: every ExtractBench system the leaderboard prices (cost per page weighted by split, as the leaderboard computes it); DocQuorum's measured tokens at the Qwen3.8-27B list price (\$0.50 / \$3.00 per million input / output tokens). DocQuorum itself runs on one GPU, with no price per call.}
 \end{frame}
-\begin{frame}{DocuBench: complete results}
-\begingroup\footnotesize\renewcommand{\arraystretch}{1.15}\setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\textwidth}{@{}rYrrr@{}}\toprule
-\textbf{\#} & \textbf{System} & \textbf{Accuracy} & \textbf{\$/doc} & \textbf{s/doc}\\\midrule
-1 & DocuPipe (high effort) & 97.02 & 0.54 & 196\\
-2 & DocuPipe (standard effort) & 96.14 & 0.11 & 73\\
-3 & Claude Sonnet 5 (direct LLM) & 91.73 & 0.29 & 91\\
-\rowcolor{hl}4 & \textbf{DocQuorum (ours)} & \textbf{91.54} & \textbf{0.21$^{\mathrm{e}}$} & \textbf{261}\\
-5 & Reducto Deep Extract & 89.38 & 0.70 & 204\\
-6 & Reducto (standard) & 81.11 & 0.36 & 66\\
-7 & Extend & 80.28 & 0.40 & 49\\
-8 & GPT-5.5 (direct LLM) & 76.48 & 0.18$^{\mathrm{c}}$ & 71\\
-9 & Gemini 3.5 Flash (direct LLM) & 72.98 & 0.12$^{\mathrm{c}}$ & 54\\
-10 & Unstructured & 67.67 & 0.22$^{\mathrm{c}}$ & 630\\
-\bottomrule\end{tabularx}\endgroup
-
-\src{DocuBench v0.2.0 leaderboard (9 systems) and DocQuorum (final pipeline): macro field accuracy (\%) by the benchmark's own scorer over 72 documents in 10 file types (PDF, scans, photos, spreadsheets, Word, HTML, XML, CSV, text). The final pipeline's fixes were found on this benchmark. \$/doc and s/doc: means over each system's 72 result files of its recorded cost and time; c: computed from its recorded tokens at list price (GPT-5.5 \$5 / \$30, Gemini 3.5 Flash \$1.50 / \$9 per million input / output tokens) or, for Unstructured, its pages at DocuBench's \$0.03 per page. e: DocQuorum's tokens measured on a random 20 documents, priced at the Qwen3.8-27B list price (Alibaba Cloud, \$0.50 / \$3.00); it runs on its own GPU, one document at a time on a shared H100 for s/doc.}
-\end{frame}
-\begin{frame}{Results on six benchmarks}
-\begingroup\scriptsize\renewcommand{\arraystretch}{1.3}\setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\textwidth}{@{}Yrllrrr@{}}\toprule
-\textbf{Benchmark} & \textbf{DocQuorum} & \textbf{Place} & \textbf{Comparison} & \textbf{Calls} & \textbf{\$} & \textbf{s}\\\midrule
-\rowcolor{hl}VAREX (1,777 forms) & \textbf{98.23} & \textbf{1st of 21} & next: Gemini 2.5 Pro 98.0 & 3.7 & 0.021 & 25\\
-\rowcolor{hl}UNIKIE-BENCH (4,472 images) & \textbf{82.65} & \textbf{1st of 16} & next: Gemini-3-Pro 82.37 & 6.3 & 0.010 & 51\\
-LongArray-Extract (45 documents) & \textbf{98.05} & 2nd of 12 & 1st: Extend MAX 99.2 & 100.3 & 0.676 & 1,466\\
-UNIKIE-BENCH open (1,661 documents) & \textbf{72.33} & 2nd of 16 & 1st: Gemini-3-Pro 81.65 & 4.6 & 0.018 & 121\\
-ExtractBench (370 PDFs) {\scriptsize(development set)} & \textbf{95.43} & 3rd of 48 & 1st: LlamaExtract Agentic Plus 95.91 & 41.7 & 0.407 & 568\\
-DocuBench (72 documents) & \textbf{91.54} & 4th of 10 & 1st: DocuPipe (high effort) 97.02 & 11.1 & 0.212 & 261\\
-\bottomrule\end{tabularx}\endgroup
-
-\vspace{0.4em}
-{\footnotesize Each score is the benchmark's own scorer on the full test set, with open-weight models (Qwen3.8-27B and MinerU2.5) on one GPU. Places count every published system. Calls, dollars (\$) and seconds (s): means per document, measured on a random sample one document at a time on one shared H100 (results/costs/); \$ prices the measured tokens at the Qwen3.8-27B list price, since the pipeline itself pays no price per call.\par}
-\src{docs/results/: one complete table per benchmark (TABLES.md). No result was submitted to a leaderboard.}
-\end{frame}
-\begin{frame}{Where DocQuorum stands out}
-\begingroup\scriptsize\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\textwidth}{@{}lrY>{\raggedright\arraybackslash}p{3.2cm}@{}}\toprule
-\textbf{Benchmark} & \textbf{Place, score} & \textbf{Ahead of} & \textbf{Per document (measured)}\\\midrule
-\textbf{VAREX} & 1st, 98.23 & Gemini 2.5 Pro 98.0 (closed); best open, Qwen3-VL (8B) 96.6 & 3.7 calls, \$0.021/form\\
-\textbf{UNIKIE-BENCH} & 1st, 82.65 & Gemini-3-Pro 82.37 (closed); best open, Qwen3-VL-8B 79.12 & 6.3 calls, \$0.010/image\\
-\textbf{ExtractBench} & 3rd, 95.43 & the same Qwen3.8-27B called directly 89.75; every coding agent (best Codex (GPT-6 Sol Evidence) 94.57, \$0.098/page) & \$0.029 per page\\
-\textbf{LongArray-Extract} & 2nd, 98.05 & Reducto Deep Extract 97.4; Claude Opus 4.7 83.1; GPT-5.5 31.6 & 100.3 calls, \$0.676/document\\
-\textbf{UNIKIE-BENCH open} & 2nd, 72.33 & best open, Qwen3-VL-8B 67.36; Qwen3-VL-Plus 70.61 (closed) & 4.6 calls, \$0.018/document\\
-\textbf{DocuBench} & 4th, 91.54 & Reducto Deep Extract 89.38 at \$0.70; Extend 80.28 at \$0.40; GPT-5.5 76.48 at \$0.18 & \$0.21 mean; 13 of 20 in one call (median \$0.011)\\
-\bottomrule\end{tabularx}\endgroup
-
-\vspace{0.4em}
-{\scriptsize Open models only: Qwen3.8-27B and the 1.2B MinerU2.5 parser on one GPU. \$ prices the measured tokens at the Qwen3.8-27B list price; published costs are each system's own (DocuBench result files, ExtractBench leaderboard). UNIKIE-BENCH: two of the six readings come from Qwen3-VL-32B and -8B, counted as calls but not priced.\par}
-\end{frame}
-\begin{frame}{Accuracy against cost}
-\centering\includegraphics[width=\textwidth,height=5.3cm,keepaspectratio]{assets/cost_accuracy.png}\par
-{\scriptsize Grey: every published system with a cost; red: DocQuorum, its measured tokens priced at the Qwen3.8-27B list price (\$0.50 / \$3.00 per million input / output tokens), mean of a random sample (20 DocuBench documents, 20 ExtractBench documents). Published costs: DocuBench result files (some computed from their tokens) and the ExtractBench leaderboard.\par}
-\end{frame}
-\begin{frame}{Why a document costs little, and when it costs more}
+\begin{frame}{Why a document costs little}
 \begin{columns}[T]
-\column{0.53\textwidth}
-\begin{block}{Why it costs little}
-\footnotesize
-\textbf{One reading when the file has text.} On DocuBench, 13 of 20 sampled documents took one model call, \$0.009 each.\\[0.3em]
-\textbf{More readings only for scans}; zoom re-reads only disputed fields a new vote could change. A VAREX form takes 3.7 calls (three readings plus zoom).\\[0.3em]
-\textbf{An open 27B model}: \$3 per million output tokens at list price, a tenth of GPT-5.5 (\$30) and a fifth of Claude Sonnet 5 (\$15); on one GPU, no price per call at all.\\[0.3em]
-\textbf{Accuracy from the pipeline, not a bigger model.} Qwen3.8-27B called directly scores 89.75 on ExtractBench; DocQuorum with it, 95.43.
+\column{0.48\textwidth}
+\begin{block}{One reading when the file has text}
+\footnotesize 13 of 20 sampled DocuBench documents took a single model call, \$0.009 each on average.
 \end{block}
-\column{0.43\textwidth}
-\begin{block}{When it costs more}
-\footnotesize
-Scanned documents get three readings (at the same time) and a quorum: 7 sampled DocuBench documents, 30 calls and \$0.59 each on average.\\[0.35em]
-Long scans cost most: they are read in chunks, once per reading. The costliest sample, FnscKwQQ (16 pages), took 44 calls, \$1.04 and 18 minutes.\\[0.3em]
-Long documents are read in chunks, so they cost by the page: LongArray's sampled documents (48 pages on average) took 100 calls and \$0.68 each, \$0.014 a page; ExtractBench, \$0.029 a page.
+\begin{block}{More readings only for scans}
+\footnotesize Scans get three readings, run at the same time; zoom re-reads only the disputed fields a new vote could change. A VAREX form takes 3.7 calls.
+\end{block}
+\column{0.48\textwidth}
+\begin{block}{An open 27B model}
+\footnotesize \$3 per million output tokens at list price: a tenth of GPT-5.5 (\$30), a fifth of Claude Sonnet 5 (\$15). On its own GPU, no price per call at all.
+\end{block}
+\begin{block}{Accuracy from the pipeline}
+\footnotesize The same model called once scores 89.75 on ExtractBench; DocQuorum with it, 95.43: the extra calls buy the accuracy.
 \end{block}
 \end{columns}
-\src{results/costs/: every measured document (calls, tokens, seconds); prices in docs/results/pricing.json.}
+\src{results/costs/: every measured document (calls, tokens, seconds); prices in docs/results/pricing.json. Long scans cost more than short files: they are read in chunks, once per reading.}
 \end{frame}
 \begin{frame}{v1.4: long scans read faster}
 \begin{columns}[T]
-\column{0.44\textwidth}
+\column{0.38\textwidth}
+\begin{block}{The same documents, measured alone}
 \footnotesize
-\textbf{A looping reply is stopped by the model server} once one stretch of tokens repeats 40 times in a row, not at its output limit; it is then read again as before.\\[0.4em]
-\textbf{A scan's readings run at the same time}, not one after another; the quorum sees them in the same order.\\[0.4em]
-\textbf{The same documents, measured alone both times:}\\[0.2em]
-DocuBench (20): 12,564 s $\to$ \textbf{5,225 s}, 2.4$\times$ faster\\
-VAREX (30 forms): 1,178 s $\to$ \textbf{750 s}, 1.6$\times$ faster\\[0.4em]
-\textbf{Accuracy kept:} DocuBench, all 72 read again, 91.54 (v1.3: 90.80); 29 of 30 sampled VAREX forms unchanged.
-\column{0.52\textwidth}
-\begingroup\scriptsize\renewcommand{\arraystretch}{1.3}\setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\linewidth}{@{}Yrrrrr@{}}\toprule
-\textbf{Slowest five} & \textbf{pages} & \multicolumn{2}{c}{\textbf{minutes}} & \multicolumn{2}{c}{\textbf{output tokens}}\\
- & & v1.3 & v1.4 & v1.3 & v1.4\\\midrule
-f9nrfUNC & 10 & 61 & 11 & 224k & 81k\\
-EWUUeFYp & 28 & 39 & 16 & 154k & 69k\\
-kcnZ5EWa & 3 & 35 & 16 & 89k & 69k\\
-FnscKwQQ & 16 & 30 & 18 & 113k & 112k\\
-sHMajYzm & 16 & 27 & 16 & 111k & 112k\\
-\bottomrule\end{tabularx}\endgroup
+DocuBench (20): \textbf{2.4$\times$ faster}\\ {\color{muted}12,564 s $\to$ 5,225 s}\\[0.4em]
+VAREX (30 forms): \textbf{1.6$\times$ faster}\\ {\color{muted}1,178 s $\to$ 750 s}
+\end{block}
+\footnotesize
+\textbf{Loops stopped by the model server} once one stretch of tokens repeats 40 times, not at the output limit.\\[0.3em]
+\textbf{A scan's readings at the same time}, entering the quorum in the same order.\\[0.3em]
+DocuBench, all 72 documents read again: \textbf{91.54}.
+\column{0.58\textwidth}
+\includegraphics[width=\linewidth]{assets/chart_speed.png}
 \end{columns}
-\src{DocuBench's five slowest sampled documents. results/costs/v1.3 and results/costs: every measured document, before and after.}
+\src{results/costs/v1.3 and results/costs: every measured document, before and after.}
 \end{frame}
 \begin{frame}{Zoom re-reading: a new step after the quorum}
 \begin{columns}[T]
@@ -591,9 +392,9 @@ UNIKIE (six readings): 82.62\,$\rightarrow$\,81.62; 82.65 with the vote rule
 \column{0.32\textwidth}
 \begin{block}{Results}
 \small
-1st on VAREX and UNIKIE-BENCH; 2nd on LongArray-Extract and UNIKIE open; 3rd on ExtractBench.\\[0.4em]
-A new step, zoom re-reading, improved VAREX and UNIKIE open; with its vote rule it holds UNIKIE level.\\[0.4em]
-Open-weight models on one GPU.
+1st on VAREX and UNIKIE-BENCH; 2nd on LongArray-Extract and UNIKIE open; 3rd of 48 on ExtractBench.\\[0.3em]
+Ahead of every published open model, with open models on one GPU, at a few cents a page.\\[0.3em]
+Zoom re-reading improved VAREX and UNIKIE open.
 \end{block}
 \column{0.32\textwidth}
 \begin{block}{Method}
@@ -606,5 +407,201 @@ Routing by the available evidence; an agentic reader that plans, reads and re-re
 ExtractBench served as the development set. Agreement among readings does not guarantee accuracy. Checks are triggered by schema wording and page text; a few repairs lower the score on some documents.
 \end{block}
 \end{columns}
+\end{frame}
+\section{Complete results}
+\begin{frame}{VAREX: complete results}
+\begingroup\scriptsize\renewcommand{\arraystretch}{0.74}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}rYl@{\hspace{6pt}}lrrrrrr@{}}\toprule
+\textbf{\#} & \textbf{System} & \textbf{Type} &  & \textbf{Score} & \textbf{ANLS} & \textbf{Flat} & \textbf{Nested} & \textbf{Table} & \textbf{Perfect}\\\midrule
+\rowcolor{hl}1 & \textbf{DocQuorum (ours)} & {\color{good}\textbf{Open models}} & \textcolor{good}{\rule{1.18cm}{1.05ex}} & \textbf{98.23} & \textbf{\underline{98.8}} & \textbf{\underline{98.4}} & \textbf{\underline{98.5}} & \textbf{97.4} & \textbf{\underline{86.2}}\\
+2 & Gemini 2.5 Pro & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{1.18cm}{1.05ex}} & 98.0 & 98.5 & 97.3 & 98.2 & \underline{97.7} & 82.8\\
+3 & Gemini 2.5 Flash & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{1.17cm}{1.05ex}} & 97.3 & 97.9 & 96.9 & 97.7 & 96.5 & 81.0\\
+4 & Qwen3-VL (8B) & {\color{good}Open model} & \textcolor{good!45}{\rule{1.16cm}{1.05ex}} & 96.6 & 97.6 & 96.6 & 97.3 & 95.0 & 78.2\\
+5 & Llama 4 Maverick (17B×128E) & {\color{good}Open model} & \textcolor{good!45}{\rule{1.15cm}{1.05ex}} & 95.6 & 97.1 & 95.1 & 96.1 & 94.4 & 68.7\\
+6 & Ministral (14B) & {\color{good}Open model} & \textcolor{good!45}{\rule{1.14cm}{1.05ex}} & 94.8 & 96.5 & 94.8 & 95.1 & 94.0 & 66.0\\
+6 & GPT-4o & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{1.14cm}{1.05ex}} & 94.8 & 97.1 & 95.1 & 95.3 & 93.5 & 64.3\\
+8 & Llama 4 Scout (17B×16E) & {\color{good}Open model} & \textcolor{good!45}{\rule{1.13cm}{1.05ex}} & 94.3 & 95.8 & 95.2 & 94.3 & 94.1 & 63.4\\
+9 & granite-vision-4.1-4b (4B) & {\color{good}Open model} & \textcolor{good!45}{\rule{1.13cm}{1.05ex}} & 94.2 & 96.4 & 95.2 & 94.9 & 92.3 & 65.2\\
+10 & NuExtract 2.0 (2B) & {\color{good}Open model} & \textcolor{good!45}{\rule{1.09cm}{1.05ex}} & 90.8 & 92.1 & 93.1 & 91.9 & 87.3 & 52.7\\
+11 & InternVL3.5 (2B) & {\color{good}Open model} & \textcolor{good!45}{\rule{1.03cm}{1.05ex}} & 85.6 & 89.1 & 89.6 & 86.1 & 82.7 & 42.4\\
+12 & granite-4.0-3b-vision (3B) & {\color{good}Open model} & \textcolor{good!45}{\rule{1.03cm}{1.05ex}} & 85.5 & 89.1 & 91.5 & 85.2 & 84.0 & 41.1\\
+13 & Qwen 2.5-VL (3B) & {\color{good}Open model} & \textcolor{good!45}{\rule{0.99cm}{1.05ex}} & 82.5 & 85.4 & 79.9 & 83.1 & 81.9 & 43.7\\
+14 & Gemma 3n (E2B) & {\color{good}Open model} & \textcolor{good!45}{\rule{0.85cm}{1.05ex}} & 71.0 & 78.1 & 76.7 & 71.0 & 68.8 & 19.0\\
+15 & MiniCPM-V4 (4B) & {\color{good}Open model} & \textcolor{good!45}{\rule{0.81cm}{1.05ex}} & 67.9 & 69.8 & 84.8 & 66.2 & 65.5 & 23.6\\
+16 & Gemma 3 (4B) & {\color{good}Open model} & \textcolor{good!45}{\rule{0.78cm}{1.05ex}} & 65.3 & 75.0 & 71.7 & 65.0 & 63.6 & 13.7\\
+17 & h2oVL Miss. (2B) & {\color{good}Open model} & \textcolor{good!45}{\rule{0.74cm}{1.05ex}} & 61.3 & 64.9 & 67.2 & 61.3 & 58.9 & 11.6\\
+18 & Qwen3-VL (2B) & {\color{good}Open model} & \textcolor{good!45}{\rule{0.41cm}{1.05ex}} & 34.2 & 34.7 & 93.3 & 26.8 & 29.0 & 29.3\\
+18 & h2oVL Miss. (800M) & {\color{good}Open model} & \textcolor{good!45}{\rule{0.41cm}{1.05ex}} & 34.2 & 36.1 & 35.8 & 33.2 & 36.0 & 5.9\\
+20 & InternVL3.5 (1B) & {\color{good}Open model} & \textcolor{good!45}{\rule{0.34cm}{1.05ex}} & 28.2 & 29.8 & 79.0 & 22.4 & 22.2 & 11.2\\
+21 & Qwen2-VL (2B) & {\color{good}Open model} & \textcolor{good!45}{\rule{0.12cm}{1.05ex}} & 9.7 & 10.0 & 16.4 & 9.0 & 8.9 & 4.3\\
+\bottomrule\end{tabularx}\endgroup
+
+\vspace{0.25em}{\tiny\color{muted}Score: exact match (normalized) over 21,084 fields. ANLS: normalized ANLS; Flat, Nested, Table: exact match by form type (299, 1,146, 332 forms); Perfect: forms with every field right. Underlined: best in the column. Equal scores share a rank.\par}
+\src{VAREX-Bench image-modality leaderboard (20 models, zero-shot; one decimal, so ranks compare at one decimal). DocQuorum: the final pipeline.}
+\end{frame}
+\begin{frame}{UNIKIE-BENCH: complete results}
+\begingroup\tiny\renewcommand{\arraystretch}{1.02}\setlength{\tabcolsep}{2.6pt}
+\begin{tabularx}{\textwidth}{@{}rYl@{\hspace{6pt}}lrrrrrrrrrrrr@{}}\toprule
+\textbf{\#} & \textbf{System} & \textbf{Type} &  & \textbf{Score} & \textbf{Ret.} & \textbf{Cat.} & \textbf{Com.} & \textbf{Acc.} & \textbf{Post.} & \textbf{Adm.} & \textbf{Edu.} & \textbf{Adv.} & \textbf{Tax} & \textbf{Med.} & \textbf{Nut.}\\\midrule
+\rowcolor{hl}1 & \textbf{DocQuorum (ours)} & {\color{good}\textbf{Open models}} & \textcolor{good}{\rule{0.99cm}{1.05ex}} & \textbf{82.65} & \textbf{\underline{90.63}} & \textbf{\underline{88.13}} & \textbf{53.51} & \textbf{79.29} & \textbf{85.65} & \textbf{\underline{87.00}} & \textbf{85.67} & \textbf{86.59} & \textbf{\underline{82.16}} & \textbf{\underline{78.33}} & \textbf{92.22}\\
+2 & Gemini-3-Pro & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.99cm}{1.05ex}} & 82.37 & 89.27 & 83.54 & \underline{53.87} & \underline{81.43} & \underline{90.74} & 84.32 & 80.71 & \underline{90.54} & 81.54 & 77.60 & \underline{92.47}\\
+3 & Qwen3-VL-Plus & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.96cm}{1.05ex}} & 80.20 & 89.12 & 86.45 & 50.57 & 77.86 & 83.55 & 78.91 & \underline{87.44} & 83.14 & 78.93 & 76.46 & 89.72\\
+4 & Qwen3-VL-8B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.95cm}{1.05ex}} & 79.12 & 88.26 & 86.23 & 51.14 & 71.07 & 83.80 & 78.90 & 87.39 & 81.23 & 78.74 & 77.19 & 86.36\\
+5 & Qwen-VL-Max & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.93cm}{1.05ex}} & 77.77 & 86.67 & 84.68 & 49.33 & 76.07 & 84.85 & 79.96 & 82.46 & 82.76 & 77.94 & 75.62 & 75.14\\
+6 & GLM-4.1V-9B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.84cm}{1.05ex}} & 69.91 & 62.32 & 77.33 & 46.67 & 76.43 & 76.46 & 78.75 & 65.83 & 81.99 & 70.68 & 72.08 & 60.47\\
+7 & GPT-4o & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.83cm}{1.05ex}} & 69.15 & 75.79 & 79.33 & 49.67 & 67.86 & 82.95 & 64.26 & 47.77 & 73.56 & 75.33 & 67.57 & 76.51\\
+8 & MiMo-VL-7B-RL & {\color{good}Open model} & \textcolor{good!45}{\rule{0.83cm}{1.05ex}} & 68.88 & 77.45 & 77.66 & 49.01 & 67.50 & 76.70 & 76.81 & 76.65 & 66.28 & 74.86 & 68.70 & 46.10\\
+9 & InternVL3.5-8B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.81cm}{1.05ex}} & 67.70 & 77.23 & 72.23 & 41.64 & 67.14 & 73.90 & 72.10 & 63.08 & 73.08 & 72.81 & 65.94 & 65.53\\
+10 & GPT-5 & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.81cm}{1.05ex}} & 67.59 & 71.90 & 71.33 & 45.94 & 69.29 & 80.95 & 62.79 & 50.26 & 75.48 & 72.05 & 67.71 & 75.83\\
+11 & MiniCPM-V4.5-8B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.81cm}{1.05ex}} & 67.15 & 68.37 & 74.91 & 45.91 & 67.76 & 83.60 & 71.89 & 63.21 & 79.31 & 69.57 & 70.00 & 44.18\\
+12 & Claude-Sonnet-4.5 & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.80cm}{1.05ex}} & 66.39 & 69.24 & 73.65 & 45.92 & 69.29 & 79.45 & 69.20 & 39.46 & 85.06 & 67.79 & 63.96 & 67.24\\
+13 & Kimi-VL-A3B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.79cm}{1.05ex}} & 66.14 & 86.49 & 63.12 & 42.87 & 61.79 & 83.40 & 68.72 & 80.37 & 72.41 & 77.80 & 64.93 & 25.72\\
+14 & Gemma-3-12B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.58cm}{1.05ex}} & 48.09 & 54.32 & 68.73 & 30.68 & 53.93 & 72.30 & 37.14 & 17.56 & 36.78 & 56.81 & 48.54 & 52.20\\
+15 & Ministral-3-8B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.45cm}{1.05ex}} & 37.62 & 6.47 & 57.01 & 26.24 & 43.39 & 75.80 & 32.37 & 29.54 & 19.53 & 65.85 & 51.46 & 6.17\\
+16 & SmolVLM2-2.2B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.28cm}{1.05ex}} & 23.69 & 17.80 & 57.22 & 28.52 & 18.92 & 34.98 & 8.63 & 3.87 & 27.16 & 34.97 & 18.00 & 10.51\\
+\bottomrule\end{tabularx}\endgroup
+
+\vspace{0.25em}{\tiny\color{muted}Score: macro F1 over 11 scenarios. Ret.\ retail; Cat.\ catering services; Com.\ commercial; Acc.\ accommodation; Post.\ postal label; Adm.\ administrative; Edu.\ education; Adv.\ advertisement; Tax: tax-compliant; Med.\ medical services; Nut.\ nutrition label. Underlined: best in the column. Equal scores share a rank.\par}
+\src{UNIKIE-BENCH (ACL 2026), Table 4 (15 published systems); every input capped at 1,605,632 pixels. DocQuorum: quorum over six readings from three open models, then zoom re-reading. DocQuorum: the final pipeline.}
+\end{frame}
+\begin{frame}{LongArray-Extract: complete results}
+\begingroup\footnotesize\renewcommand{\arraystretch}{1.02}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}rYl@{\hspace{6pt}}lrr@{}}\toprule
+\textbf{\#} & \textbf{System} & \textbf{Type} &  & \textbf{Score} & \textbf{Completed}\\\midrule
+1 & Extend MAX & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{1.19cm}{1.05ex}} & 99.2 & 45/45\\
+\rowcolor{hl}2 & \textbf{DocQuorum (ours)} & {\color{good}\textbf{Open models}} & \textcolor{good}{\rule{1.18cm}{1.05ex}} & \textbf{98.05} & \textbf{45/45}\\
+3 & Reducto Deep Extract & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{1.17cm}{1.05ex}} & 97.4 & 45/45\\
+4 & Claude Opus 4.7 & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{1.00cm}{1.05ex}} & 83.1 & 45/45\\
+5 & Reducto Standard & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{0.97cm}{1.05ex}} & 80.9 & 45/45\\
+6 & Pulse Effort & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{0.83cm}{1.05ex}} & 68.8 & 45/45\\
+7 & Pulse Auto & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{0.77cm}{1.05ex}} & 64.5 & 45/45\\
+8 & Gemini 3.1 Pro & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.57cm}{1.05ex}} & 47.3 & 45/45\\
+9 & LlamaParse Standard & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{0.57cm}{1.05ex}} & 47.2 & 26/45\\
+10 & LlamaParse Agentic & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{0.42cm}{1.05ex}} & 34.7 & 35/45\\
+11 & GPT-5.5 & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.38cm}{1.05ex}} & 31.6 & 45/45\\
+12 & Gemini 3.5 Flash & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.37cm}{1.05ex}} & 31.1 & 45/45\\
+\bottomrule\end{tabularx}\endgroup
+
+\vspace{0.25em}{\tiny\color{muted}Score: macro document accuracy by the publisher's reference scorer (bank statements, clinical listings, indictments); a failed document counts as zero. Completed: documents answered. Equal scores share a rank.\par}
+\src{Extend AI's LongArray-Extract results page (11 systems), which reports one decimal; ranks compare at one decimal. DocQuorum: the final pipeline.}
+\end{frame}
+\begin{frame}{UNIKIE-BENCH open: complete results}
+\begingroup\tiny\renewcommand{\arraystretch}{1.02}\setlength{\tabcolsep}{2.6pt}
+\begin{tabularx}{\textwidth}{@{}rYl@{\hspace{6pt}}lrrrrrrrrr@{}}\toprule
+\textbf{\#} & \textbf{System} & \textbf{Type} &  & \textbf{Score} & \textbf{Ret.\,zh} & \textbf{Form\,zh} & \textbf{Inv.\,zh} & \textbf{Con.\,zh} & \textbf{Ret.\,en} & \textbf{Form\,en} & \textbf{Inv.\,en} & \textbf{Con.\,en}\\\midrule
+1 & Gemini-3-Pro & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.98cm}{1.05ex}} & 81.65 & \underline{78.50} & \underline{79.17} & \underline{78.63} & \underline{75.96} & \underline{93.57} & \underline{80.41} & \underline{87.06} & \underline{79.90}\\
+\rowcolor{hl}2 & \textbf{DocQuorum (ours)} & {\color{good}\textbf{Open models}} & \textcolor{good}{\rule{0.87cm}{1.05ex}} & \textbf{72.33} & \textbf{67.67} & \textbf{69.80} & \textbf{69.72} & \textbf{74.25} & \textbf{83.10} & \textbf{67.65} & \textbf{68.22} & \textbf{78.22}\\
+3 & Qwen3-VL-Plus & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.85cm}{1.05ex}} & 70.61 & 71.14 & 69.87 & 69.59 & 70.95 & 68.27 & 66.82 & 73.45 & 74.81\\
+4 & Qwen-VL-Max & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.84cm}{1.05ex}} & 69.95 & 69.94 & 69.75 & 66.62 & 69.68 & 70.76 & 65.52 & 70.80 & 76.57\\
+5 & Qwen3-VL-8B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.81cm}{1.05ex}} & 67.36 & 68.93 & 64.70 & 63.38 & 65.59 & 71.40 & 61.46 & 67.34 & 76.08\\
+6 & MiMo-VL-7B-RL & {\color{good}Open model} & \textcolor{good!45}{\rule{0.73cm}{1.05ex}} & 60.55 & 57.63 & 56.60 & 51.93 & 65.90 & 71.34 & 52.83 & 57.64 & 70.55\\
+7 & Kimi-VL-A3B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.70cm}{1.05ex}} & 58.58 & 62.98 & 52.85 & 50.72 & 54.94 & 73.91 & 55.96 & 52.67 & 64.64\\
+8 & GLM-4.1V-9B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.70cm}{1.05ex}} & 58.56 & 55.19 & 56.63 & 55.52 & 54.68 & 63.83 & 54.66 & 59.31 & 68.70\\
+9 & MiniCPM-V4.5-8B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.63cm}{1.05ex}} & 52.60 & 52.33 & 42.69 & 44.54 & 39.46 & 72.41 & 47.46 & 56.44 & 65.49\\
+10 & InternVL3.5-8B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.59cm}{1.05ex}} & 49.38 & 54.26 & 37.83 & 40.97 & 39.43 & 79.46 & 43.64 & 49.41 & 50.06\\
+11 & GPT-5 & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.57cm}{1.05ex}} & 47.39 & 39.61 & 31.97 & 37.64 & 17.47 & 80.64 & 50.09 & 57.50 & 64.24\\
+12 & GPT-4o & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.56cm}{1.05ex}} & 46.69 & 39.66 & 30.82 & 35.31 & 16.67 & 78.51 & 48.09 & 57.08 & 67.35\\
+13 & Ministral-3-8B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.50cm}{1.05ex}} & 41.58 & 25.21 & 35.80 & 24.42 & 26.18 & 58.54 & 49.01 & 55.66 & 57.82\\
+14 & Claude-Sonnet-4.5 & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.48cm}{1.05ex}} & 39.71 & 37.59 & 31.20 & 29.12 & 20.88 & 41.64 & 49.22 & 44.18 & 63.87\\
+15 & Gemma-3-12B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.37cm}{1.05ex}} & 30.90 & 25.71 & 14.17 & 17.36 & 9.42 & 76.24 & 38.32 & 30.23 & 35.77\\
+16 & SmolVLM2-2.2B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.15cm}{1.05ex}} & 12.83 & 5.74 & 1.51 & 3.05 & 2.15 & 36.49 & 11.64 & 19.73 & 22.36\\
+\bottomrule\end{tabularx}\endgroup
+
+\vspace{0.25em}{\tiny\color{muted}Score: macro F1 over 8 scenarios. Ret.\ receipts; Inv.\ invoices; Con.\ contracts; zh Chinese, en English. Underlined: best in the column. Equal scores share a rank.\par}
+\src{UNIKIE-BENCH (ACL 2026), open-category table (15 published systems); every input capped at 1,605,632 pixels. DocQuorum: quorum over three readings from Qwen3.8-27B, then zoom re-reading. DocQuorum: the final pipeline.}
+\end{frame}
+\begin{frame}{ExtractBench: complete results (1/3)}
+\begingroup\scriptsize\renewcommand{\arraystretch}{1.02}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}rYl@{\hspace{6pt}}lrrrr@{}}\toprule
+\textbf{\#} & \textbf{System} & \textbf{Type} &  & \textbf{Score} & \textbf{Short} & \textbf{Medium} & \textbf{Long}\\\midrule
+1 & LlamaExtract Agentic Plus & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{1.15cm}{1.05ex}} & 95.91 & 96.94 & 94.45 & 90.18\\
+1 & Pulse (Effort) & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{1.15cm}{1.05ex}} & 95.91 & 96.46 & \underline{95.01} & \underline{93.51}\\
+\rowcolor{hl}3 & \textbf{DocQuorum (ours)} & {\color{good}\textbf{Open models}} & \textcolor{good}{\rule{1.15cm}{1.05ex}} & \textbf{95.43} & \textbf{96.34} & \textbf{94.11} & \textbf{90.41}\\
+4 & LlamaExtract Agentic & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{1.14cm}{1.05ex}} & 94.77 & 96.04 & 92.11 & 91.83\\
+5 & Codex (GPT-6 Sol Evidence) & {\color{routeD}Coding agent} & \textcolor{routeD!45}{\rule{1.13cm}{1.05ex}} & 94.57 & 95.99 & 92.42 & 87.25\\
+6 & Codex (GPT-5.6 Sol Evidence) & {\color{routeD}Coding agent} & \textcolor{routeD!45}{\rule{1.13cm}{1.05ex}} & 93.77 & 96.04 & 90.19 & 82.73\\
+7 & Codex (GPT-5.5) & {\color{routeD}Coding agent} & \textcolor{routeD!45}{\rule{1.12cm}{1.05ex}} & 93.57 & 95.68 & 91.15 & 78.88\\
+8 & Codex (GPT-5.5 Evidence) & {\color{routeD}Coding agent} & \textcolor{routeD!45}{\rule{1.12cm}{1.05ex}} & 93.35 & 95.59 & 88.72 & 87.97\\
+9 & Pulse (Non-effort) & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{1.11cm}{1.05ex}} & 92.70 & 93.17 & 92.22 & 89.07\\
+10 & LlamaExtract Cost-Effective & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{1.11cm}{1.05ex}} & 92.27 & 94.03 & 89.51 & 83.73\\
+11 & Codex (GPT-5.6 Terra Evidence) & {\color{routeD}Coding agent} & \textcolor{routeD!45}{\rule{1.11cm}{1.05ex}} & 92.26 & 95.60 & 86.69 & 77.36\\
+12 & OpenAI GPT-6 Astra & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{1.10cm}{1.05ex}} & 91.91 & \underline{97.22} & 90.56 & 31.70\\
+13 & Codex (GPT-5.6 Luna Evidence) & {\color{routeD}Coding agent} & \textcolor{routeD!45}{\rule{1.09cm}{1.05ex}} & 91.16 & 93.50 & 87.43 & 80.05\\
+14 & Codex (GPT-6 Luna Evidence) & {\color{routeD}Coding agent} & \textcolor{routeD!45}{\rule{1.09cm}{1.05ex}} & 91.01 & 93.09 & 87.71 & 80.88\\
+15 & Reducto Deep Extract & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{1.09cm}{1.05ex}} & 90.44 & 94.20 & 80.47 & 92.01\\
+16 & Qwen3.8 Flash Next & {\color{good}Open model} & \textcolor{good!45}{\rule{1.08cm}{1.05ex}} & 89.88 & 94.82 & 87.81 & 37.74\\
+\bottomrule\end{tabularx}\endgroup
+
+\vspace{0.25em}{\tiny\color{muted}Score: value F1, mean over all documents. Short, Medium, Long: the three splits (252, 98, 20 documents). Underlined: best in the column. Equal scores share a rank.\par}
+\src{ExtractBench leaderboard, snapshot of 2 October 2026 (47 published systems). ExtractBench served as the development set. DocQuorum: the final pipeline.}
+\end{frame}
+\begin{frame}{ExtractBench: complete results (2/3)}
+\begingroup\scriptsize\renewcommand{\arraystretch}{1.02}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}rYl@{\hspace{6pt}}lrrrr@{}}\toprule
+\textbf{\#} & \textbf{System} & \textbf{Type} &  & \textbf{Score} & \textbf{Short} & \textbf{Medium} & \textbf{Long}\\\midrule
+17 & Qwen3.8 27B & {\color{good}Open model} & \textcolor{good!45}{\rule{1.08cm}{1.05ex}} & 89.75 & 94.68 & 87.54 & 38.45\\
+18 & Extend (Max Context) & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{1.06cm}{1.05ex}} & 88.62 & 92.32 & 78.75 & 90.46\\
+19 & Qwen3.6 35B & {\color{good}Open model} & \textcolor{good!45}{\rule{1.06cm}{1.05ex}} & 88.11 & 92.86 & 86.37 & 36.90\\
+20 & Qwen3.5 35B & {\color{good}Open model} & \textcolor{good!45}{\rule{1.06cm}{1.05ex}} & 88.00 & 93.52 & 85.27 & 31.73\\
+21 & DeepSeek V4.1 Flash & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{1.05cm}{1.05ex}} & 87.11 & 94.44 & 81.49 & 22.23\\
+22 & Claude Code (Opus 4.8) & {\color{routeD}Coding agent} & \textcolor{routeD!45}{\rule{1.05cm}{1.05ex}} & 87.09 & 90.08 & 79.21 & 88.07\\
+23 & Claude Code (Opus 4.8 Evidence) & {\color{routeD}Coding agent} & \textcolor{routeD!45}{\rule{1.04cm}{1.05ex}} & 86.84 & 90.54 & 79.17 & 77.94\\
+24 & Qwen3.5 9B & {\color{good}Open model} & \textcolor{good!45}{\rule{1.03cm}{1.05ex}} & 86.10 & 92.31 & 81.12 & 32.22\\
+25 & Claude Code (Opus 5.5 Evidence) & {\color{routeD}Coding agent} & \textcolor{routeD!45}{\rule{1.03cm}{1.05ex}} & 86.06 & 89.63 & 77.96 & 80.83\\
+26 & Extend Extract & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{1.03cm}{1.05ex}} & 85.72 & 89.39 & 84.14 & 47.21\\
+27 & Datalab (Accurate + Balanced) & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{1.03cm}{1.05ex}} & 85.70 & 89.40 & 85.08 & 42.04\\
+28 & Reducto Extract & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{1.00cm}{1.05ex}} & 83.41 & 92.97 & 69.59 & 30.65\\
+29 & Kimi K3 & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{1.00cm}{1.05ex}} & 83.17 & 94.64 & 69.64 & 4.99\\
+30 & Qwen3.5 4B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.99cm}{1.05ex}} & 82.43 & 89.06 & 76.64 & 27.31\\
+31 & NuExtract3 & {\color{good}Open model} & \textcolor{good!45}{\rule{0.97cm}{1.05ex}} & 81.02 & 86.41 & 77.01 & 32.71\\
+32 & GLM-5.3 Flash & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.97cm}{1.05ex}} & 80.75 & 96.30 & 51.56 & 27.83\\
+\bottomrule\end{tabularx}\endgroup
+
+\vspace{0.25em}{\tiny\color{muted}Score: value F1, mean over all documents. Short, Medium, Long: the three splits (252, 98, 20 documents). Underlined: best in the column. Equal scores share a rank.\par}
+\src{ExtractBench leaderboard, snapshot of 2 October 2026 (47 published systems). ExtractBench served as the development set. DocQuorum: the final pipeline.}
+\end{frame}
+\begin{frame}{ExtractBench: complete results (3/3)}
+\begingroup\scriptsize\renewcommand{\arraystretch}{1.02}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}rYl@{\hspace{6pt}}lrrrr@{}}\toprule
+\textbf{\#} & \textbf{System} & \textbf{Type} &  & \textbf{Score} & \textbf{Short} & \textbf{Medium} & \textbf{Long}\\\midrule
+33 & Google Gemini 3.8 Flash & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.97cm}{1.05ex}} & 80.71 & 88.14 & 72.23 & 28.70\\
+34 & Google Gemini 3.5 Flash & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.96cm}{1.05ex}} & 79.84 & 87.87 & 69.76 & 27.90\\
+35 & Lift Datalab 9B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.94cm}{1.05ex}} & 78.43 & 87.64 & 65.69 & 24.78\\
+36 & OpenAI GPT-5.4 Nano & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.90cm}{1.05ex}} & 74.90 & 77.43 & 76.37 & 35.81\\
+37 & Gemma4 26B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.84cm}{1.05ex}} & 70.27 & 77.70 & 59.61 & 28.88\\
+38 & Gemma4 E4B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.84cm}{1.05ex}} & 69.64 & 81.10 & 48.93 & 26.82\\
+39 & InternVL3.5 14B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.80cm}{1.05ex}} & 66.35 & 80.70 & 39.04 & 19.41\\
+40 & InternVL3.5 8B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.78cm}{1.05ex}} & 64.63 & 79.26 & 36.62 & 17.57\\
+41 & Qwen3.5 2B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.76cm}{1.05ex}} & 63.40 & 71.22 & 50.93 & 25.93\\
+42 & Kimi-VL A3B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.69cm}{1.05ex}} & 57.77 & 69.86 & 34.61 & 18.94\\
+43 & Gemma4 E2B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.62cm}{1.05ex}} & 51.85 & 63.71 & 28.96 & 14.58\\
+44 & NuExtract 2.0 8B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.59cm}{1.05ex}} & 49.42 & 62.92 & 23.50 & 6.39\\
+45 & Qwen3.5 0.8B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.56cm}{1.05ex}} & 46.63 & 57.44 & 26.98 & 6.65\\
+46 & MiniCPM-V 4.5 & {\color{good}Open model} & \textcolor{good!45}{\rule{0.55cm}{1.05ex}} & 45.85 & 57.39 & 25.30 & 1.13\\
+47 & Gemma4 12B & {\color{good}Open model} & \textcolor{good!45}{\rule{0.54cm}{1.05ex}} & 45.39 & 53.62 & 30.82 & 13.16\\
+48 & GLM-4.6V Flash & {\color{good}Open model} & \textcolor{good!45}{\rule{0.54cm}{1.05ex}} & 45.19 & 47.28 & 44.52 & 22.17\\
+\bottomrule\end{tabularx}\endgroup
+
+\vspace{0.25em}{\tiny\color{muted}Score: value F1, mean over all documents. Short, Medium, Long: the three splits (252, 98, 20 documents). Underlined: best in the column. Equal scores share a rank.\par}
+\src{ExtractBench leaderboard, snapshot of 2 October 2026 (47 published systems). ExtractBench served as the development set. DocQuorum: the final pipeline.}
+\end{frame}
+\begin{frame}{DocuBench: complete results}
+\begingroup\footnotesize\renewcommand{\arraystretch}{1.3}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}rYl@{\hspace{6pt}}lr@{}}\toprule
+\textbf{\#} & \textbf{System} & \textbf{Type} &  & \textbf{Score}\\\midrule
+1 & DocuPipe (high effort) & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{1.16cm}{1.05ex}} & 97.02\\
+2 & DocuPipe (standard effort) & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{1.15cm}{1.05ex}} & 96.14\\
+3 & Claude Sonnet 5 (direct LLM) & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{1.10cm}{1.05ex}} & 91.73\\
+\rowcolor{hl}4 & \textbf{DocQuorum (ours)} & {\color{good}\textbf{Open models}} & \textcolor{good}{\rule{1.10cm}{1.05ex}} & \textbf{91.54}\\
+5 & Reducto Deep Extract & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{1.07cm}{1.05ex}} & 89.38\\
+6 & Reducto (standard) & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{0.97cm}{1.05ex}} & 81.11\\
+7 & Extend & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{0.96cm}{1.05ex}} & 80.28\\
+8 & GPT-5.5 (direct LLM) & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.92cm}{1.05ex}} & 76.48\\
+9 & Gemini 3.5 Flash (direct LLM) & {\color{muted}Closed model} & \textcolor{muted!45}{\rule{0.88cm}{1.05ex}} & 72.98\\
+10 & Unstructured & {\color{routeB}Commercial service} & \textcolor{routeB!45}{\rule{0.81cm}{1.05ex}} & 67.67\\
+\bottomrule\end{tabularx}\endgroup
+
+\vspace{0.25em}{\tiny\color{muted}Score: macro field accuracy by the benchmark's own scorer, over PDFs, scans, photos, spreadsheets, Word, HTML, XML, CSV and text files. Equal scores share a rank.\par}
+\src{DocuBench v0.2.0 leaderboard (9 systems). DocQuorum: the final pipeline.}
 \end{frame}
 \end{document}
