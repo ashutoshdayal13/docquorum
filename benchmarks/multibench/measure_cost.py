@@ -59,8 +59,11 @@ for name, doc, schema, task in sample:
         pages = PDF.npages(as_pdf(doc, td))
     u0, t0 = usage_meter.snapshot(), time.monotonic()
     try:
-        _, rep = extract(doc, schema, task=task, log=lambda s: None)
+        got, rep = extract(doc, schema, task=task, log=lambda s: None)
         status = "completed"
+        kept = ROOT / "runs/measure_pred" / bench / f"{name}.json"      # for comparison with the stored run
+        kept.parent.mkdir(parents=True, exist_ok=True)
+        kept.write_text(json.dumps(got, ensure_ascii=False, indent=1) + "\n")
     except Exception as e:
         rep, status = {}, f"failed: {type(e).__name__}"
     secs = time.monotonic() - t0
@@ -77,7 +80,7 @@ for name, doc, schema, task in sample:
     keys += [k for k in ("parser_input_tokens", "parser_output_tokens") if all(k in r for r in ok)]
     pages_total = sum(r["pages"] for r in ok) or 1
     summary = {"benchmark": bench, "documents_measured": len(ok), "sample": f"random {n} (seed 0) of {len(items)}",
-               "pipeline": "v1.3 (docs/DESIGN.md)", "hardware": "one H100 NVL, shared with other accounts' jobs and with the other benchmarks' measurements",
+               "pipeline": "v1.4 (docs/DESIGN.md)", "hardware": "one H100 NVL, shared with other accounts' jobs and with the other benchmarks' measurements",
                "per_document": {k: sum(r[k] for r in ok) / max(1, len(ok)) for k in keys},
                "per_page": {k: sum(r[k] for r in ok) / pages_total for k in keys},
                "documents": rows}

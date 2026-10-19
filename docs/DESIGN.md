@@ -41,8 +41,9 @@ The route is decided from the document and the schema only, in this order:
 2. **Text layer** (at least 50 characters a page, or a native file): one reading by the reader
    agent, on the text and the page images.
 3. **No text layer**: the reader agent on the page images and on the MinerU parse, and, up to
-   12 pages, the one-shot reader; then the quorum (section 6) and zoom re-reading (section 7).
-   A long scan is decided like any other: by the quorum over its readings.
+   12 pages, the one-shot reader, all three at the same time (the parse is made first, so they
+   are independent; they enter the quorum in this order); then the quorum (section 6) and zoom
+   re-reading (section 7). A long scan is decided like any other: by the quorum over its readings.
 
 Without the parser server, a scan is read from its page images (and, up to 12 pages, by the
 one-shot reader).
@@ -74,7 +75,12 @@ Observations and their responses:
 | a whole-document reply cut off at the full budget | the next plan |
 | a whole-document reply that left schema keys out | read again with every key required (each newly required key may be null) |
 | a list that went round in a loop (20+ records, under half distinct) in a whole-document reply | the next plan (chunks) |
-| a chunk reply that went round in a loop | read the chunk again with a repetition penalty (1.1); repeats that remain are dropped |
+| a whole-document reply the server stopped as repeating (`LOOP_STOP`) | the next plan (chunks), without a second call at the full budget |
+| a chunk reply that went round in a loop, or that the server stopped as repeating | read the chunk again with a repetition penalty (1.1); repeats that remain are dropped |
+
+Every whole-document and chunk call asks the server to stop a reply once one stretch of 16-512
+tokens has repeated 40 times in a row (vLLM's `repetition_detection`). A loop is then caught after
+a few thousand tokens instead of up to 32,000; what follows is the response above.
 | a page with 5+ evidence rows but an empty chunk reply | ask once more, with the count |
 | a failed call | not re-sent; the next plan, or the document fails and a runner re-runs it |
 
@@ -147,6 +153,7 @@ without the parser (`--no-zoom` turns it off).
 | `REF_CHARS` | 60,000 | `agents/reader.py` | opening text searched for legends and reference tables |
 | `LOOP_MIN`, `LOOP_SHARE` | 20, 0.5 | `tools/rows.py` | a list this long, under half distinct, is a decoding loop |
 | `LOOP_PENALTY` | 1.1 | `agents/reader.py` | repetition penalty for reading a looped chunk again |
+| `LOOP_STOP` | a 16-512-token stretch, 40 times in a row | `agents/reader.py` | the server ends a reply that repeats (vLLM `repetition_detection`); loops run to hundreds of repeats, while a document's own rows repeat at most 29 times in a row in any stored output (an ExtractBench creditor list: 27) |
 | `CHUNK_DPI`, `CHUNK_MAX_PX` | 300 dpi, 9 MP | `agents/reader.py` | a chunk's page images (at most two pages): small print |
 | `RULED_MIN_ROWS` | 5 | `agents/layout.py` | a table page that should show printed rules |
 | `BETA` | 2 | `quorum.py` | recall weight of agreement |

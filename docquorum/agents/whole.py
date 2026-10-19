@@ -51,9 +51,9 @@ def fits(schema, pages, n_pages, row_counter):
 
 
 def read(cl, schema, pdf, pages, has_text, n_pages, est_out, max_tokens=None, scan=False,
-         require_all_keys=False, window=None, window_images=True):
+         require_all_keys=False, window=None, window_images=True, stop_repeats=None):
     """One call over the document (or pages window[0]..window[1]); returns (object or None,
-    finish_reason, whether the schema was used as a grammar)."""
+    finish_reason, whether the schema was used as a grammar). stop_repeats: see llm.ask."""
     task = (schema.get("description") or "").strip()
     tiled = False
     if window is not None and not window_images:              # a text window
@@ -97,6 +97,8 @@ def read(cl, schema, pdf, pages, has_text, n_pages, est_out, max_tokens=None, sc
     kw = {"extra_body": llm.extra_body((require_all(schema) if require_all_keys else schema) if guided else None)}
     if not guided:
         kw["response_format"] = {"type": "json_object"}
+    if stop_repeats:
+        kw["extra_body"]["repetition_detection"] = stop_repeats
     r = cl.chat.completions.create(
         model=C.MODEL, temperature=0.0,
         max_tokens=max_tokens or int(min(32000, max(4000, est_out * 1.6))),

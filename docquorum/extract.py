@@ -14,8 +14,8 @@ The rule on one document (docs/DESIGN.md is the full specification):
     the schema -> the ruled-table reader;
   * otherwise, a PDF with a text layer -> one reading, by the reader agent;
   * a PDF without one -> the reader agent on the page images and on the MinerU parse, and up
-    to 12 pages also the one-shot reader; the quorum keeps the reading the others agree with
-    most;
+    to 12 pages also the one-shot reader, all at the same time; the quorum keeps the reading the
+    others agree with most;
   * the fields on which the readings disagree are then read once more from a high-resolution
     crop of the page region that prints them (zoom.py; --no-zoom skips it).
 Every reading passes its chain of checks (docquorum/checks) before the quorum.
@@ -25,6 +25,7 @@ import hashlib
 import json
 import sys
 import tempfile
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from docquorum import checks, quorum, zoom
@@ -116,18 +117,25 @@ def _extract(doc, schema, task, workers, log, zoom_reread=True):
         def reading(kind, got):
             readings[kind] = checks.run(kind, got, d)
 
-        res, stat, _ = read_document(cl, schema, pdf, name, workers, text_layer=native_doc)
-        if not stat.get("errors"):
-            reading("primary", res)
+        # the readings are independent (the parse is cached above), so they run at the same time;
+        # they enter the quorum in this fixed order
+        jobs = {"primary": lambda: read_document(cl, schema, pdf, name, workers, text_layer=native_doc)}
         if not text and parser.cached_pages(name):
-            res, stat, _ = read_document(cl, schema, pdf, name, workers, use_parsed=True)
-            if not stat.get("errors"):
-                reading("parse", res)
+            jobs["parse"] = lambda: read_document(cl, schema, pdf, name, workers, use_parsed=True)
         if not text and n <= 12:                                  # fits one call: the one-shot reader too
-            try:
-                reading("oneshot", oneshot.read(pdf, schema))
-            except Exception as e:                                # the document does not fit
-                log(f"[docquorum] one-shot reading failed: {type(e).__name__}: {str(e)[:120]}")
+            jobs["oneshot"] = lambda: oneshot.read(pdf, schema)
+        with ThreadPoolExecutor(max_workers=len(jobs)) as ex:
+            running = {kind: ex.submit(job) for kind, job in jobs.items()}
+        for kind, fut in running.items():
+            if kind == "oneshot":
+                try:
+                    reading("oneshot", fut.result())
+                except Exception as e:                            # the document does not fit
+                    log(f"[docquorum] one-shot reading failed: {type(e).__name__}: {str(e)[:120]}")
+                continue
+            res, stat, _ = fut.result()
+            if not stat.get("errors"):
+                reading(kind, res)
         if not readings:
             raise RuntimeError("no reading succeeded")
         if len(readings) == 1:

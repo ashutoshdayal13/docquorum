@@ -34,13 +34,17 @@ def image_parts(images, mime="jpeg"):
     return [{"type": "image_url", "image_url": {"url": f"data:image/{mime};base64,{b}"}} for b in images]
 
 
-def ask(cl, prompt, max_tokens=8000, schema=None, images=(), repetition_penalty=None):
+def ask(cl, prompt, max_tokens=8000, schema=None, images=(), repetition_penalty=None, stop_repeats=None):
     """One call; returns (reply text, tokens used, finish_reason). repetition_penalty: for
-    reading again a reply that went round in a loop (vLLM's sampling parameter)."""
+    reading again a reply that went round in a loop (vLLM's sampling parameter). stop_repeats:
+    vLLM's repetition_detection; the server ends a reply that keeps repeating one stretch of
+    tokens, with finish_reason "repetition", instead of letting it run to max_tokens."""
     content = (image_parts(images) + [{"type": "text", "text": prompt}]) if images else prompt
     body = extra_body(schema)
     if repetition_penalty:
         body["repetition_penalty"] = repetition_penalty
+    if stop_repeats:
+        body["repetition_detection"] = stop_repeats
     r = cl.chat.completions.create(model=C.MODEL, temperature=0.0, max_tokens=max_tokens,
                                    messages=[{"role": "user", "content": content}], extra_body=body)
     ch = r.choices[0]

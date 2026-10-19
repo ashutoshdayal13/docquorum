@@ -44,6 +44,10 @@ MIN_EVIDENCE_ROWS = 5           # an empty reply for a page with this many rows 
 REF_CHARS = 60000               # opening text searched for reference material (legends, tables)
 NO_TEXT = "(no extractable text; read the attached page images)"
 LOOP_PENALTY = 1.1              # a chunk whose reply went round in a loop is read again with it
+# the server ends a reply once one stretch of 16-512 tokens has repeated 40 times in a row (vLLM's
+# repetition_detection): a loop is stopped after a few thousand tokens, not up to 32,000. A
+# document's own rows repeat far less: at most 29 identical records in a row in any stored output
+LOOP_STOP = {"min_pattern_size": 16, "max_pattern_size": 512, "min_count": 40}
 CHUNK_DPI, CHUNK_MAX_PX = 300, 9_000_000   # a chunk's page images (at most two pages): small print,
                                            # the resolution the parser and zoom use
 
@@ -138,21 +142,25 @@ def _failed(stat, what, e, fallback=False):
 
 def _read_whole(cl, schema, pdf, text, has_text, n_pages, est_out, scan, stat):
     """One call; if cut off, once more at the full budget; if it left schema keys out, once
-    more with every key required. None when it stays cut off (the caller re-plans)."""
+    more with every key required. None when it stays cut off, or went round in a loop (the
+    caller re-plans: the document is read in pieces)."""
     first_budget = 32000 if est_out > whole.MAX_OUT_TOKENS else None
     got, fr, guided = whole.read(cl, schema, pdf, text, has_text, n_pages, est_out,
-                                 max_tokens=first_budget, scan=scan)
+                                 max_tokens=first_budget, scan=scan, stop_repeats=LOOP_STOP)
     stat["calls"] += 1
     if fr == "length" and first_budget is None:
         got, fr, guided = whole.read(cl, schema, pdf, text, has_text, n_pages, est_out,
-                                     max_tokens=32000, scan=scan)
+                                     max_tokens=32000, scan=scan, stop_repeats=LOOP_STOP)
         stat["calls"] += 1
+    if fr == "repetition":
+        print("    [whole] stopped as repeating (a loop) -> read in pieces", flush=True)
+        return None
     skipped = missing_keys(schema, got) if got is not None and fr != "length" and guided else 0
     if skipped:
         got2, fr2, _ = whole.read(cl, schema, pdf, text, has_text, n_pages, est_out,
-                                  max_tokens=32000, scan=scan, require_all_keys=True)
+                                  max_tokens=32000, scan=scan, require_all_keys=True, stop_repeats=LOOP_STOP)
         stat["calls"] += 1
-        kept = got2 is not None and fr2 != "length"
+        kept = got2 is not None and fr2 not in ("length", "repetition")
         print(f"    [whole] {skipped} schema keys skipped -> re-read with every key required "
               f"({'kept' if kept else 'failed'})", flush=True)
         if kept:
@@ -209,15 +217,16 @@ def plan_chunks(pages, n_fields, one_page=False):
 
 def _ask_chunk(cl, text, imgs, meta, label, stat, penalty=None, scan=False):
     """One chunk; returns (rows, cut off). A reply that went round in a decoding loop (mostly
-    repeated records) is read once more with a repetition penalty; repeats that remain are
-    dropped."""
+    repeated records, or stopped by the server as repeating: LOOP_STOP) is read once more with a
+    repetition penalty; repeats that remain are dropped."""
     array_name, lead, item_txt, dec_schema, context = meta
     intro = (prompts.CHUNK_OCR if scan else prompts.CHUNK_TEXT).format(p0=label, p1=label)
     try:
         txt, tk, fr = llm.ask(cl, prompts.CHUNK.format(context=context, intro=intro, text=text,
                                                        item_schema=item_txt, array_name=array_name,
                                                        array_desc=lead),
-                              max_tokens=12000, schema=dec_schema, images=imgs, repetition_penalty=penalty)
+                              max_tokens=12000, schema=dec_schema, images=imgs, repetition_penalty=penalty,
+                              stop_repeats=LOOP_STOP)
     except Exception as e:
         print(f"    ! {label}: {type(e).__name__}: {str(e)[:90]}", flush=True)
         if llm.server_failure(e):
@@ -230,11 +239,12 @@ def _ask_chunk(cl, text, imgs, meta, label, stat, penalty=None, scan=False):
         stat["truncated"] += fr == "length"
     got = llm.parse_json(txt)
     rows = [r for r in got if isinstance(r, dict)] if isinstance(got, list) else []
-    if is_loop(rows):
+    if fr == "repetition" or is_loop(rows):
         with stat["lock"]:
             stat["loops"] = stat.get("loops", 0) + 1
         if penalty is None:
-            print(f"    [loop] {label}: {len(rows)} records, mostly repeats -> read again", flush=True)
+            how = "stopped as repeating" if fr == "repetition" else "mostly repeats"
+            print(f"    [loop] {label}: {len(rows)} records, {how} -> read again", flush=True)
             return _ask_chunk(cl, text, imgs, meta, label, stat, penalty=LOOP_PENALTY, scan=scan)
         rows = without_repeats(rows)
     return rows, fr == "length"
