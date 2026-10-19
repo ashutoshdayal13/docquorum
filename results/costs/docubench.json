@@ -1,0 +1,380 @@
+{
+ "benchmark": "docubench",
+ "documents_measured": 20,
+ "sample": "random 20 (seed 0) of 72",
+ "pipeline": "v1.4 (docs/DESIGN.md)",
+ "hardware": "one H100 NVL, shared with other accounts' jobs and with the other benchmarks' measurements",
+ "per_document": {
+  "seconds": 261.255,
+  "model_calls": 11.05,
+  "model_input_tokens": 107981.4,
+  "model_output_tokens": 24164.45,
+  "parser_calls": 440.4,
+  "parser_tokens": 66047.85,
+  "parser_input_tokens": 45178.8,
+  "parser_output_tokens": 20869.05
+ },
+ "per_page": {
+  "seconds": 51.226470588235294,
+  "model_calls": 2.1666666666666665,
+  "model_input_tokens": 21172.823529411766,
+  "model_output_tokens": 4738.1274509803925,
+  "parser_calls": 86.3529411764706,
+  "parser_tokens": 12950.558823529413,
+  "parser_input_tokens": 8858.588235294117,
+  "parser_output_tokens": 4091.970588235294
+ },
+ "documents": [
+  {
+   "document": "ZXlksSpk",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 17.6,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 5753,
+   "model_output_tokens": 1077,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "f9nrfUNC",
+   "pages": 10,
+   "status": "completed",
+   "seconds": 687.8,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 37,
+   "model_input_tokens": 340292,
+   "model_output_tokens": 81170,
+   "parser_calls": 625,
+   "parser_input_tokens": 105783,
+   "parser_output_tokens": 49441,
+   "parser_tokens": 155224,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "4kVtTRoL",
+   "pages": 5,
+   "status": "completed",
+   "seconds": 228.7,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 8,
+   "model_input_tokens": 107489,
+   "model_output_tokens": 19946,
+   "parser_calls": 108,
+   "parser_input_tokens": 39285,
+   "parser_output_tokens": 16143,
+   "parser_tokens": 55428,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "NlWTPen5",
+   "pages": 3,
+   "status": "completed",
+   "seconds": 10.4,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 16441,
+   "model_output_tokens": 370,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "sHMajYzm",
+   "pages": 16,
+   "status": "completed",
+   "seconds": 934.3,
+   "route": [
+    "primary",
+    "parse"
+   ],
+   "model_calls": 52,
+   "model_input_tokens": 327022,
+   "model_output_tokens": 111806,
+   "parser_calls": 1509,
+   "parser_input_tokens": 174744,
+   "parser_output_tokens": 80435,
+   "parser_tokens": 255179,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "qQUPWQNA",
+   "pages": 5,
+   "status": "completed",
+   "seconds": 66.8,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 31615,
+   "model_output_tokens": 3911,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "eKzY7gEA",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 11.9,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 6591,
+   "model_output_tokens": 518,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "QxoQ6zgn",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 16.1,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 6049,
+   "model_output_tokens": 793,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "pw8elPW9",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 15.6,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 6941,
+   "model_output_tokens": 805,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "FnscKwQQ",
+   "pages": 16,
+   "status": "completed",
+   "seconds": 1052.4,
+   "route": [
+    "primary",
+    "parse"
+   ],
+   "model_calls": 44,
+   "model_input_tokens": 443914,
+   "model_output_tokens": 112332,
+   "parser_calls": 3143,
+   "parser_input_tokens": 230377,
+   "parser_output_tokens": 121960,
+   "parser_tokens": 352337,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "PYhFptk3",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 17.3,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 6973,
+   "model_output_tokens": 788,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "kcnZ5EWa",
+   "pages": 3,
+   "status": "completed",
+   "seconds": 963.9,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 26,
+   "model_input_tokens": 260638,
+   "model_output_tokens": 69116,
+   "parser_calls": 548,
+   "parser_input_tokens": 59888,
+   "parser_output_tokens": 55304,
+   "parser_tokens": 115192,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "nESapyAA",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 16.2,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 7057,
+   "model_output_tokens": 371,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "B0nA2c30",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 52.0,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 4,
+   "model_input_tokens": 19137,
+   "model_output_tokens": 3381,
+   "parser_calls": 110,
+   "parser_input_tokens": 8576,
+   "parser_output_tokens": 4870,
+   "parser_tokens": 13446,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "NNaGgwE5",
+   "pages": 2,
+   "status": "completed",
+   "seconds": 31.1,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 11223,
+   "model_output_tokens": 1278,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "62PhJTyf",
+   "pages": 3,
+   "status": "completed",
+   "seconds": 36.3,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 16274,
+   "model_output_tokens": 1118,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "EWUUeFYp",
+   "pages": 28,
+   "status": "completed",
+   "seconds": 944.4,
+   "route": [
+    "primary",
+    "parse"
+   ],
+   "model_calls": 37,
+   "model_input_tokens": 518859,
+   "model_output_tokens": 69160,
+   "parser_calls": 2765,
+   "parser_input_tokens": 284923,
+   "parser_output_tokens": 89228,
+   "parser_tokens": 374151,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "jlKc8eVi",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 58.8,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 7529,
+   "model_output_tokens": 2619,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "ZN6HbuKp",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 26.7,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 7324,
+   "model_output_tokens": 1234,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "5YJaBbNg",
+   "pages": 2,
+   "status": "completed",
+   "seconds": 36.8,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 12507,
+   "model_output_tokens": 1496,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  }
+ ]
+}

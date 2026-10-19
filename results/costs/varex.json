@@ -1,0 +1,597 @@
+{
+ "benchmark": "varex",
+ "documents_measured": 30,
+ "sample": "random 30 (seed 0) of 1777",
+ "pipeline": "v1.4 (docs/DESIGN.md)",
+ "hardware": "one H100 NVL, shared with other accounts' jobs and with the other benchmarks' measurements",
+ "per_document": {
+  "seconds": 25.0,
+  "model_calls": 3.7333333333333334,
+  "model_input_tokens": 20700.8,
+  "model_output_tokens": 657.4666666666667,
+  "parser_calls": 24.1,
+  "parser_tokens": 10500.4,
+  "parser_input_tokens": 9175.8,
+  "parser_output_tokens": 1324.6
+ },
+ "per_page": {
+  "seconds": 25.0,
+  "model_calls": 3.7333333333333334,
+  "model_input_tokens": 20700.8,
+  "model_output_tokens": 657.4666666666667,
+  "parser_calls": 24.1,
+  "parser_tokens": 10500.4,
+  "parser_input_tokens": 9175.8,
+  "parser_output_tokens": 1324.6
+ },
+ "documents": [
+  {
+   "document": "cdph8243LR1",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 30.6,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 4,
+   "model_input_tokens": 16104,
+   "model_output_tokens": 873,
+   "parser_calls": 48,
+   "parser_input_tokens": 11053,
+   "parser_output_tokens": 1796,
+   "parser_tokens": 12849,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "21019",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 18.0,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15191,
+   "model_output_tokens": 474,
+   "parser_calls": 5,
+   "parser_input_tokens": 3974,
+   "parser_output_tokens": 498,
+   "parser_tokens": 4472,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "VTR-34",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 18.1,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 16712,
+   "model_output_tokens": 595,
+   "parser_calls": 32,
+   "parser_input_tokens": 14208,
+   "parser_output_tokens": 1777,
+   "parser_tokens": 15985,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "SF1446-13a",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 22.8,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 16715,
+   "model_output_tokens": 718,
+   "parser_calls": 16,
+   "parser_input_tokens": 7772,
+   "parser_output_tokens": 884,
+   "parser_tokens": 8656,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "gs2992_e",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 76.5,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 17,
+   "model_input_tokens": 122321,
+   "model_output_tokens": 784,
+   "parser_calls": 22,
+   "parser_input_tokens": 11433,
+   "parser_output_tokens": 1626,
+   "parser_tokens": 13059,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "i-730",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 31.2,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 18717,
+   "model_output_tokens": 1229,
+   "parser_calls": 35,
+   "parser_input_tokens": 13488,
+   "parser_output_tokens": 1707,
+   "parser_tokens": 15195,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "SF329E-05",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 34.3,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 5,
+   "model_input_tokens": 27973,
+   "model_output_tokens": 977,
+   "parser_calls": 18,
+   "parser_input_tokens": 10489,
+   "parser_output_tokens": 805,
+   "parser_tokens": 11294,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "dtp423",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 14.2,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 14826,
+   "model_output_tokens": 171,
+   "parser_calls": 28,
+   "parser_input_tokens": 10261,
+   "parser_output_tokens": 1285,
+   "parser_tokens": 11546,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "GSA_1755",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 22.6,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 17252,
+   "model_output_tokens": 1107,
+   "parser_calls": 12,
+   "parser_input_tokens": 7146,
+   "parser_output_tokens": 796,
+   "parser_tokens": 7942,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "GSA_3631",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 25.9,
+   "route": [
+    "ruled"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 11886,
+   "model_output_tokens": 430,
+   "parser_calls": 18,
+   "parser_input_tokens": 6941,
+   "parser_output_tokens": 842,
+   "parser_tokens": 7783,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "LTC-102",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 18.0,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15143,
+   "model_output_tokens": 213,
+   "parser_calls": 28,
+   "parser_input_tokens": 6657,
+   "parser_output_tokens": 1109,
+   "parser_tokens": 7766,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "GSA_3594",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 27.6,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 4,
+   "model_input_tokens": 21257,
+   "model_output_tokens": 1015,
+   "parser_calls": 44,
+   "parser_input_tokens": 12616,
+   "parser_output_tokens": 2173,
+   "parser_tokens": 14789,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "VTR-950",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 16.5,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 16526,
+   "model_output_tokens": 760,
+   "parser_calls": 9,
+   "parser_input_tokens": 4342,
+   "parser_output_tokens": 739,
+   "parser_tokens": 5081,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "fs25",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 19.0,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15373,
+   "model_output_tokens": 403,
+   "parser_calls": 16,
+   "parser_input_tokens": 7251,
+   "parser_output_tokens": 822,
+   "parser_tokens": 8073,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "ssa-1021",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 20.3,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15159,
+   "model_output_tokens": 444,
+   "parser_calls": 30,
+   "parser_input_tokens": 6662,
+   "parser_output_tokens": 1114,
+   "parser_tokens": 7776,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "opm1638",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 20.2,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15594,
+   "model_output_tokens": 444,
+   "parser_calls": 12,
+   "parser_input_tokens": 4261,
+   "parser_output_tokens": 952,
+   "parser_tokens": 5213,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "SF34-16c",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 39.1,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 4,
+   "model_input_tokens": 22929,
+   "model_output_tokens": 795,
+   "parser_calls": 30,
+   "parser_input_tokens": 15308,
+   "parser_output_tokens": 2644,
+   "parser_tokens": 17952,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "40162",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 20.1,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15215,
+   "model_output_tokens": 201,
+   "parser_calls": 18,
+   "parser_input_tokens": 9119,
+   "parser_output_tokens": 1170,
+   "parser_tokens": 10289,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "GSA12002-21",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 18.2,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 17062,
+   "model_output_tokens": 894,
+   "parser_calls": 7,
+   "parser_input_tokens": 3957,
+   "parser_output_tokens": 741,
+   "parser_tokens": 4698,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "4742",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 21.2,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15770,
+   "model_output_tokens": 330,
+   "parser_calls": 16,
+   "parser_input_tokens": 13299,
+   "parser_output_tokens": 1221,
+   "parser_tokens": 14520,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "lab414",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 25.5,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 16290,
+   "model_output_tokens": 786,
+   "parser_calls": 27,
+   "parser_input_tokens": 11928,
+   "parser_output_tokens": 1335,
+   "parser_tokens": 13263,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "cdph8442",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 20.1,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 16569,
+   "model_output_tokens": 879,
+   "parser_calls": 40,
+   "parser_input_tokens": 10620,
+   "parser_output_tokens": 1492,
+   "parser_tokens": 12112,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "cdph8241",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 21.4,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15854,
+   "model_output_tokens": 567,
+   "parser_calls": 24,
+   "parser_input_tokens": 8289,
+   "parser_output_tokens": 1042,
+   "parser_tokens": 9331,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "308",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 31.3,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 4,
+   "model_input_tokens": 16568,
+   "model_output_tokens": 589,
+   "parser_calls": 76,
+   "parser_input_tokens": 14780,
+   "parser_output_tokens": 3182,
+   "parser_tokens": 17962,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "LTC-84",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 22.7,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 4,
+   "model_input_tokens": 18068,
+   "model_output_tokens": 706,
+   "parser_calls": 23,
+   "parser_input_tokens": 9039,
+   "parser_output_tokens": 1055,
+   "parser_tokens": 10094,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "VTR-422",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 23.8,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 16539,
+   "model_output_tokens": 687,
+   "parser_calls": 8,
+   "parser_input_tokens": 4802,
+   "parser_output_tokens": 947,
+   "parser_tokens": 5749,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "2742",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 36.1,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 4,
+   "model_input_tokens": 27328,
+   "model_output_tokens": 1003,
+   "parser_calls": 27,
+   "parser_input_tokens": 14265,
+   "parser_output_tokens": 3482,
+   "parser_tokens": 17747,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "1447",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 15.7,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15461,
+   "model_output_tokens": 666,
+   "parser_calls": 13,
+   "parser_input_tokens": 6430,
+   "parser_output_tokens": 683,
+   "parser_tokens": 7113,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "21b",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 15.5,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 14823,
+   "model_output_tokens": 405,
+   "parser_calls": 8,
+   "parser_input_tokens": 4142,
+   "parser_output_tokens": 282,
+   "parser_tokens": 4424,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "52574",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 23.5,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 15799,
+   "model_output_tokens": 579,
+   "parser_calls": 33,
+   "parser_input_tokens": 10742,
+   "parser_output_tokens": 1537,
+   "parser_tokens": 12279,
+   "counted_by": "usage_meter"
+  }
+ ]
+}

@@ -29,8 +29,8 @@ results = [
      "place": "2nd of 16 (Gemini-3-Pro 81.65)", "configuration": "three readings + zoom re-reading (held-out run)",
      "files": "results/unikie_open/readings, results/unikie_open/zoom", "without_zoom": uo["without_zoom"]["score"]},
     {"benchmark": "DocuBench v0.2.0", "metric": "macro field accuracy", "score": load("docquorum-docubench.json")["score"],
-     "place": "4th of 10 (DocuPipe 97.02; Claude Sonnet 5 91.73)", "configuration": "final pipeline (v1.3), every document read again; the v1.3 fixes were found on this benchmark",
-     "files": "results/docubench"},
+     "place": "4th of 10 (DocuPipe 97.02; Claude Sonnet 5 91.73)", "configuration": "final pipeline (v1.4), every document read again; the v1.3 fixes were found on this benchmark",
+     "files": "results/docubench-v14", "earlier": load("docquorum-docubench.json").get("earlier")},
 ]
 
 changes = [
@@ -70,11 +70,18 @@ changes = [
      "DocuBench 86.47 -> 90.80 (every document read again); VAREX 98.30 -> 98.23 (every form read again, 1st); "
      "LongArray-Extract and UNIKIE unaffected (their schemas and inputs meet none of the changed cases); ExtractBench "
      "is the stored run of an earlier version"),
+    ("2026-10-19", "d2f220f", "v1.4, for speed: every whole-document and chunk call asks the model server to end a reply "
+     "once one stretch of 16-512 tokens has repeated 40 times in a row (vLLM repetition_detection), and a stopped reply "
+     "takes the existing loop path; a scan's readings run at the same time and enter the quorum in the same order",
+     "DocuBench 90.80 -> 91.54 (every document read again; 26 changed, 16 up and 10 down) and its 20 sampled documents "
+     "2.4 times faster (12,564 s -> 5,225 s); VAREX 30 sampled forms 1.6 times faster, 29 identical to the stored run "
+     "(the 30th differs by one field from the ruled-table reader, which neither change touches), so 98.23 stands; "
+     "UNIKIE unaffected (its protocol's own calls); LongArray-Extract and ExtractBench are stored runs of earlier versions"),
 ]
 release = {
     "written_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"),
     "model": "Qwen/Qwen3.8-27B-FP8, vLLM 0.27.1, greedy decoding; MinerU2.5-2509-1.2B parser",
-    "pipeline_version": "v1.3 (docs/DESIGN.md)",
+    "pipeline_version": "v1.4 (docs/DESIGN.md)",
     "serving": "serve/serve_qwen38_27b.sh; on the shared GPU GPU_UTIL 0.62-0.66, and from 14 October 2026 "
                "SPEC_TOKENS=2 (speculative decoding, which leaves greedy outputs unchanged up to "
                "floating-point batch effects)",

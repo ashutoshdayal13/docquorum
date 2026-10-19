@@ -172,12 +172,14 @@ benchmark's authors; the leaderboard reports one decimal.
 
 | exact match (normalized), all 1,777 forms | score | vs. the image-modality leaderboard |
 |---|---:|---|
-| **DocQuorum, final pipeline (v1.3)**, every form read again | **98.23** | **1st** |
+| **DocQuorum, final pipeline (v1.3; v1.4 leaves it unchanged)**, every form read again | **98.23** | **1st** |
 | DocQuorum v1.2, zoom re-reading on the v1.1 readings | 98.30 | 1st |
 | Gemini 2.5 Pro | 98.0 | 2nd |
 | DocQuorum without zoom re-reading | 98.10 | tied with Gemini 2.5 Pro at one decimal |
 | Gemini 2.5 Flash | 97.3 | 3rd |
 | Qwen3-VL-8B (best published open model) | 96.6 | 4th |
+
+v1.4 (a looping reply stopped by the server, a scan's readings at the same time) was not run on all forms: on the 30 forms of the cost sample it gave the stored output for 29, and the 30th differs by one field read by the ruled-table reader, which v1.4 does not change (run-to-run variation). The same 30 forms were read 1.6 times faster.
 
 | | DocQuorum + zoom | DocQuorum | Gemini 2.5 Pro |
 |---|---:|---:|---:|
@@ -351,5 +353,5 @@ benchmark does for every system). Scored with the benchmark's own `scorer.py`
 * Remaining errors: two dictionary scans in Devanagari and Hebrew (9.9, 16.5), where the parser
   garbles the script and the model loops; a one-page Japanese gazette (17.6); and several scans
   where the quorum keeps a weaker reading than one it had (choosing better would need the answer key).
-* Files: `docubench-final/` (v1.3) and `docubench/` (v1.1): `predictions/<document>.json`,
+* Files: `docubench-v14/` (v1.4), `docubench-final/` (v1.3) and `docubench/` (v1.1): `predictions/<document>.json`,
   `scores.json`, `provenance.json`.

@@ -1,6 +1,6 @@
 # DocQuorum pipeline guide
 
-Current implementation: [v1.3 specification](DESIGN.md). The [main figure review](fig/docquorum-pipeline-imagegen-v6.md) records its source basis and simplifications.
+Current implementation: [v1.4 specification](DESIGN.md). The [main figure review](fig/docquorum-pipeline-imagegen-v6.md) records its source basis and simplifications.
 
 Start with [the illustrated document](docquorum.pdf): task definition, complete data flow, exact reader behavior, checks, candidate selection, and a synthetic walkthrough.
 

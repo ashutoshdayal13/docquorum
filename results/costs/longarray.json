@@ -1,0 +1,131 @@
+{
+ "benchmark": "longarray",
+ "documents_measured": 6,
+ "sample": "random 6 (seed 0) of 45",
+ "pipeline": "v1.4 (docs/DESIGN.md)",
+ "hardware": "one H100 NVL, shared with other accounts' jobs and with the other benchmarks' measurements",
+ "per_document": {
+  "seconds": 1466.0166666666667,
+  "model_calls": 100.33333333333333,
+  "model_input_tokens": 460058.5,
+  "model_output_tokens": 148663.66666666666,
+  "parser_calls": 0.0,
+  "parser_tokens": 0.0,
+  "parser_input_tokens": 0.0,
+  "parser_output_tokens": 0.0
+ },
+ "per_page": {
+  "seconds": 30.33137931034483,
+  "model_calls": 2.075862068965517,
+  "model_input_tokens": 9518.45172413793,
+  "model_output_tokens": 3075.8,
+  "parser_calls": 0.0,
+  "parser_tokens": 0.0,
+  "parser_input_tokens": 0.0,
+  "parser_output_tokens": 0.0
+ },
+ "documents": [
+  {
+   "document": "sa_02_n295",
+   "pages": 9,
+   "status": "completed",
+   "seconds": 2759.0,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 8,
+   "model_input_tokens": 148960,
+   "model_output_tokens": 98766,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "sa_08_n1700",
+   "pages": 42,
+   "status": "completed",
+   "seconds": 1865.2,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 23,
+   "model_input_tokens": 229139,
+   "model_output_tokens": 244496,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "lp_05_n319",
+   "pages": 46,
+   "status": "completed",
+   "seconds": 1032.7,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 156,
+   "model_input_tokens": 475684,
+   "model_output_tokens": 109605,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "cn_04_n800",
+   "pages": 35,
+   "status": "completed",
+   "seconds": 1174.7,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 21,
+   "model_input_tokens": 162644,
+   "model_output_tokens": 127803,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "lp_07_n705",
+   "pages": 96,
+   "status": "completed",
+   "seconds": 927.0,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 323,
+   "model_input_tokens": 754944,
+   "model_output_tokens": 165198,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  },
+  {
+   "document": "cae_v2_07_n349",
+   "pages": 62,
+   "status": "completed",
+   "seconds": 1037.5,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 71,
+   "model_input_tokens": 988980,
+   "model_output_tokens": 146114,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter"
+  }
+ ]
+}

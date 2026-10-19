@@ -79,7 +79,7 @@ Each benchmark is scored with its own official scorer.
 \begin{frame}{Pipeline overview}
 \centering
 \includegraphics[width=\textwidth,height=6.2cm,keepaspectratio]{assets/pipeline.png}
-\src{Pipeline figure (generated with Codex), describing the single-document entry point \texttt{docquorum.extract}; the lower panels show the bounded reader loop and guarded zoom updates (v1.3).}
+\src{Pipeline figure (generated with Codex), describing the single-document entry point \texttt{docquorum.extract}; the lower panels show the bounded reader loop and guarded zoom updates (v1.3; v1.4 adds no step).}
 \end{frame}
 \section{Walkthrough on real documents}
 \begin{frame}{Step 2: the available evidence decides the route}
@@ -305,7 +305,7 @@ On the scanned county purchase order the quorum kept the one-shot reading (78.26
 \textbf{\#} & \textbf{System} & \textbf{Type} & \textbf{Short} & \textbf{Medium} & \textbf{Long} & \textbf{Overall} & \textbf{\$/page} & \textbf{s/doc}\\\midrule
 1 & LlamaExtract Agentic Plus & Commercial service & 96.94 & 94.45 & 90.18 & 95.91 & 0.081 & 152\\
 1 & Pulse (Effort) & Commercial service & 96.46 & 95.01 & 93.51 & 95.91 & 0.105 & 165\\
-\rowcolor{hl}\textbf{3} & \textbf{DocQuorum (ours)} & \textbf{Open model (27B)} & \textbf{96.34} & \textbf{94.11} & \textbf{90.41} & \textbf{95.43} & \textbf{0.027$^{\mathrm{e}}$} & \textbf{861}\\
+\rowcolor{hl}\textbf{3} & \textbf{DocQuorum (ours)} & \textbf{Open model (27B)} & \textbf{96.34} & \textbf{94.11} & \textbf{90.41} & \textbf{95.43} & \textbf{0.029$^{\mathrm{e}}$} & \textbf{568}\\
 4 & LlamaExtract Agentic & Commercial service & 96.04 & 92.11 & 91.83 & 94.77 & 0.033 & 80\\
 5 & Codex (GPT-6 Sol Evidence) & Coding agent & 95.99 & 92.42 & 87.25 & 94.57 & 0.098 & 100\\
 6 & Codex (GPT-5.6 Sol Evidence) & Coding agent & 96.04 & 90.19 & 82.73 & 93.77 & 0.216 & 104\\
@@ -476,7 +476,7 @@ On the scanned county purchase order the quorum kept the one-shot reading (78.26
 1 & DocuPipe (high effort) & 97.02 & 0.54 & 196\\
 2 & DocuPipe (standard effort) & 96.14 & 0.11 & 73\\
 3 & Claude Sonnet 5 (direct LLM) & 91.73 & 0.29 & 91\\
-\rowcolor{hl}4 & \textbf{DocQuorum (ours)} & \textbf{90.80} & \textbf{0.23$^{\mathrm{e}}$} & \textbf{628}\\
+\rowcolor{hl}4 & \textbf{DocQuorum (ours)} & \textbf{91.54} & \textbf{0.21$^{\mathrm{e}}$} & \textbf{261}\\
 5 & Reducto Deep Extract & 89.38 & 0.70 & 204\\
 6 & Reducto (standard) & 81.11 & 0.36 & 66\\
 7 & Extend & 80.28 & 0.40 & 49\\
@@ -491,12 +491,12 @@ On the scanned county purchase order the quorum kept the one-shot reading (78.26
 \begingroup\scriptsize\renewcommand{\arraystretch}{1.3}\setlength{\tabcolsep}{4pt}
 \begin{tabularx}{\textwidth}{@{}Yrllrrr@{}}\toprule
 \textbf{Benchmark} & \textbf{DocQuorum} & \textbf{Place} & \textbf{Comparison} & \textbf{Calls} & \textbf{\$} & \textbf{s}\\\midrule
-\rowcolor{hl}VAREX (1,777 forms) & \textbf{98.23} & \textbf{1st of 21} & next: Gemini 2.5 Pro 98.0 & 3.2 & 0.021 & 39\\
+\rowcolor{hl}VAREX (1,777 forms) & \textbf{98.23} & \textbf{1st of 21} & next: Gemini 2.5 Pro 98.0 & 3.7 & 0.021 & 25\\
 \rowcolor{hl}UNIKIE-BENCH (4,472 images) & \textbf{82.65} & \textbf{1st of 16} & next: Gemini-3-Pro 82.37 & 6.3 & 0.010 & 51\\
-LongArray-Extract (45 documents) & \textbf{98.05} & 2nd of 12 & 1st: Extend MAX 99.2 & 101.3 & 0.678 & 2,176\\
+LongArray-Extract (45 documents) & \textbf{98.05} & 2nd of 12 & 1st: Extend MAX 99.2 & 100.3 & 0.676 & 1,466\\
 UNIKIE-BENCH open (1,661 documents) & \textbf{72.33} & 2nd of 16 & 1st: Gemini-3-Pro 81.65 & 4.6 & 0.018 & 121\\
-ExtractBench (370 PDFs) {\scriptsize(development set)} & \textbf{95.43} & 3rd of 48 & 1st: LlamaExtract Agentic Plus 95.91 & 40.0 & 0.403 & 861\\
-DocuBench (72 documents) & \textbf{90.80} & 4th of 10 & 1st: DocuPipe (high effort) 97.02 & 11.1 & 0.234 & 628\\
+ExtractBench (370 PDFs) {\scriptsize(development set)} & \textbf{95.43} & 3rd of 48 & 1st: LlamaExtract Agentic Plus 95.91 & 41.7 & 0.407 & 568\\
+DocuBench (72 documents) & \textbf{91.54} & 4th of 10 & 1st: DocuPipe (high effort) 97.02 & 11.1 & 0.212 & 261\\
 \bottomrule\end{tabularx}\endgroup
 
 \vspace{0.4em}
@@ -507,12 +507,12 @@ DocuBench (72 documents) & \textbf{90.80} & 4th of 10 & 1st: DocuPipe (high effo
 \begingroup\scriptsize\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{4pt}
 \begin{tabularx}{\textwidth}{@{}lrY>{\raggedright\arraybackslash}p{3.2cm}@{}}\toprule
 \textbf{Benchmark} & \textbf{Place, score} & \textbf{Ahead of} & \textbf{Per document (measured)}\\\midrule
-\textbf{VAREX} & 1st, 98.23 & Gemini 2.5 Pro 98.0 (closed); best open, Qwen3-VL (8B) 96.6 & 3.2 calls, \$0.021/form\\
+\textbf{VAREX} & 1st, 98.23 & Gemini 2.5 Pro 98.0 (closed); best open, Qwen3-VL (8B) 96.6 & 3.7 calls, \$0.021/form\\
 \textbf{UNIKIE-BENCH} & 1st, 82.65 & Gemini-3-Pro 82.37 (closed); best open, Qwen3-VL-8B 79.12 & 6.3 calls, \$0.010/image\\
-\textbf{ExtractBench} & 3rd, 95.43 & the same Qwen3.8-27B called directly 89.75; every coding agent (best Codex (GPT-6 Sol Evidence) 94.57, \$0.098/page) & \$0.027 per page\\
-\textbf{LongArray-Extract} & 2nd, 98.05 & Reducto Deep Extract 97.4; Claude Opus 4.7 83.1; GPT-5.5 31.6 & 101.3 calls, \$0.678/document\\
+\textbf{ExtractBench} & 3rd, 95.43 & the same Qwen3.8-27B called directly 89.75; every coding agent (best Codex (GPT-6 Sol Evidence) 94.57, \$0.098/page) & \$0.029 per page\\
+\textbf{LongArray-Extract} & 2nd, 98.05 & Reducto Deep Extract 97.4; Claude Opus 4.7 83.1; GPT-5.5 31.6 & 100.3 calls, \$0.676/document\\
 \textbf{UNIKIE-BENCH open} & 2nd, 72.33 & best open, Qwen3-VL-8B 67.36; Qwen3-VL-Plus 70.61 (closed) & 4.6 calls, \$0.018/document\\
-\textbf{DocuBench} & 4th, 90.80 & Reducto Deep Extract 89.38 at \$0.70; Extend 80.28 at \$0.40; GPT-5.5 76.48 at \$0.18 & \$0.23 mean; 13 of 20 in one call (median \$0.011)\\
+\textbf{DocuBench} & 4th, 91.54 & Reducto Deep Extract 89.38 at \$0.70; Extend 80.28 at \$0.40; GPT-5.5 76.48 at \$0.18 & \$0.21 mean; 13 of 20 in one call (median \$0.011)\\
 \bottomrule\end{tabularx}\endgroup
 
 \vspace{0.4em}
@@ -528,19 +528,43 @@ DocuBench (72 documents) & \textbf{90.80} & 4th of 10 & 1st: DocuPipe (high effo
 \begin{block}{Why it costs little}
 \footnotesize
 \textbf{One reading when the file has text.} On DocuBench, 13 of 20 sampled documents took one model call, \$0.009 each.\\[0.3em]
-\textbf{More readings only for scans}; zoom re-reads only disputed fields a new vote could change. A VAREX form takes 3.2 calls (three readings plus zoom).\\[0.3em]
+\textbf{More readings only for scans}; zoom re-reads only disputed fields a new vote could change. A VAREX form takes 3.7 calls (three readings plus zoom).\\[0.3em]
 \textbf{An open 27B model}: \$3 per million output tokens at list price, a tenth of GPT-5.5 (\$30) and a fifth of Claude Sonnet 5 (\$15); on one GPU, no price per call at all.\\[0.3em]
 \textbf{Accuracy from the pipeline, not a bigger model.} Qwen3.8-27B called directly scores 89.75 on ExtractBench; DocQuorum with it, 95.43.
 \end{block}
 \column{0.43\textwidth}
 \begin{block}{When it costs more}
 \footnotesize
-Scanned documents get three readings and a quorum: 7 sampled DocuBench documents, 30 calls and \$0.65 each on average.\\[0.35em]
-Long scans whose rows repeat cost most: a chunk that loops is read again. The costliest sample, EWUUeFYp (28 pages), took 35 calls, \$1.10 and 39 minutes.\\[0.3em]
-Long documents are read in chunks, so they cost by the page: LongArray's sampled documents (48 pages on average) took 101 calls and \$0.68 each, \$0.014 a page; ExtractBench, \$0.027 a page.
+Scanned documents get three readings (at the same time) and a quorum: 7 sampled DocuBench documents, 30 calls and \$0.59 each on average.\\[0.35em]
+Long scans cost most: they are read in chunks, once per reading. The costliest sample, FnscKwQQ (16 pages), took 44 calls, \$1.04 and 18 minutes.\\[0.3em]
+Long documents are read in chunks, so they cost by the page: LongArray's sampled documents (48 pages on average) took 100 calls and \$0.68 each, \$0.014 a page; ExtractBench, \$0.029 a page.
 \end{block}
 \end{columns}
 \src{results/costs/: every measured document (calls, tokens, seconds); prices in docs/results/pricing.json.}
+\end{frame}
+\begin{frame}{v1.4: long scans read faster}
+\begin{columns}[T]
+\column{0.44\textwidth}
+\footnotesize
+\textbf{A looping reply is stopped by the model server} once one stretch of tokens repeats 40 times in a row, not at its output limit; it is then read again as before.\\[0.4em]
+\textbf{A scan's readings run at the same time}, not one after another; the quorum sees them in the same order.\\[0.4em]
+\textbf{The same documents, measured alone both times:}\\[0.2em]
+DocuBench (20): 12,564 s $\to$ \textbf{5,225 s}, 2.4$\times$ faster\\
+VAREX (30 forms): 1,178 s $\to$ \textbf{750 s}, 1.6$\times$ faster\\[0.4em]
+\textbf{Accuracy kept:} DocuBench, all 72 read again, 91.54 (v1.3: 90.80); 29 of 30 sampled VAREX forms unchanged.
+\column{0.52\textwidth}
+\begingroup\scriptsize\renewcommand{\arraystretch}{1.3}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}Yrrrrr@{}}\toprule
+\textbf{Slowest five} & \textbf{pages} & \multicolumn{2}{c}{\textbf{minutes}} & \multicolumn{2}{c}{\textbf{output tokens}}\\
+ & & v1.3 & v1.4 & v1.3 & v1.4\\\midrule
+f9nrfUNC & 10 & 61 & 11 & 224k & 81k\\
+EWUUeFYp & 28 & 39 & 16 & 154k & 69k\\
+kcnZ5EWa & 3 & 35 & 16 & 89k & 69k\\
+FnscKwQQ & 16 & 30 & 18 & 113k & 112k\\
+sHMajYzm & 16 & 27 & 16 & 111k & 112k\\
+\bottomrule\end{tabularx}\endgroup
+\end{columns}
+\src{DocuBench's five slowest sampled documents. results/costs/v1.3 and results/costs: every measured document, before and after.}
 \end{frame}
 \begin{frame}{Zoom re-reading: a new step after the quorum}
 \begin{columns}[T]

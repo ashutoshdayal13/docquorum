@@ -1,0 +1,408 @@
+{
+ "benchmark": "extractbench",
+ "documents_measured": 20,
+ "sample": "random 20 (seed 0) of 370",
+ "pipeline": "v1.4 (docs/DESIGN.md)",
+ "hardware": "one H100 NVL, shared with other accounts' jobs and with the other benchmarks' measurements",
+ "per_document": {
+  "seconds": 567.85,
+  "model_calls": 41.7,
+  "model_input_tokens": 365632.15,
+  "model_output_tokens": 53370.3,
+  "parser_calls": 184.0,
+  "parser_tokens": 59229.1,
+  "parser_input_tokens": 45460.3,
+  "parser_output_tokens": 13768.8
+ },
+ "per_page": {
+  "seconds": 32.823699421965316,
+  "model_calls": 2.4104046242774566,
+  "model_input_tokens": 21134.806358381502,
+  "model_output_tokens": 3084.9884393063585,
+  "parser_calls": 10.635838150289016,
+  "parser_tokens": 3423.6473988439307,
+  "parser_input_tokens": 2627.7630057803467,
+  "parser_output_tokens": 795.8843930635838
+ },
+ "documents": [
+  {
+   "document": "ms_medicaid_ra_paid_denied_claims",
+   "pages": 6,
+   "status": "completed",
+   "seconds": 95.4,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 33252,
+   "model_output_tokens": 1996,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter",
+   "split": "short"
+  },
+  {
+   "document": "passcoag-2020-w2-p0004-r4",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 27.2,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 22058,
+   "model_output_tokens": 1784,
+   "parser_calls": 6,
+   "parser_input_tokens": 3098,
+   "parser_output_tokens": 662,
+   "parser_tokens": 3760,
+   "counted_by": "usage_meter",
+   "split": "short"
+  },
+  {
+   "document": "08-15427 H-12 1-21-2003 F-01341",
+   "pages": 2,
+   "status": "completed",
+   "seconds": 143.8,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 4,
+   "model_input_tokens": 81711,
+   "model_output_tokens": 2966,
+   "parser_calls": 47,
+   "parser_input_tokens": 15451,
+   "parser_output_tokens": 13256,
+   "parser_tokens": 28707,
+   "counted_by": "usage_meter",
+   "split": "short"
+  },
+  {
+   "document": "arif-2024",
+   "pages": 9,
+   "status": "completed",
+   "seconds": 672.0,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 25,
+   "model_input_tokens": 677535,
+   "model_output_tokens": 9403,
+   "parser_calls": 727,
+   "parser_input_tokens": 96197,
+   "parser_output_tokens": 34446,
+   "parser_tokens": 130643,
+   "counted_by": "usage_meter",
+   "split": "short"
+  },
+  {
+   "document": "bar-lev-2024",
+   "pages": 27,
+   "status": "completed",
+   "seconds": 1330.4,
+   "route": [
+    "primary",
+    "parse"
+   ],
+   "model_calls": 46,
+   "model_input_tokens": 1659262,
+   "model_output_tokens": 11307,
+   "parser_calls": 1017,
+   "parser_input_tokens": 239874,
+   "parser_output_tokens": 73665,
+   "parser_tokens": 313539,
+   "counted_by": "usage_meter",
+   "split": "medium"
+  },
+  {
+   "document": "utah_fleet_rate_schedule_fy2024_corrupted",
+   "pages": 2,
+   "status": "completed",
+   "seconds": 113.1,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 41,
+   "model_input_tokens": 78537,
+   "model_output_tokens": 7870,
+   "parser_calls": 65,
+   "parser_input_tokens": 15439,
+   "parser_output_tokens": 2911,
+   "parser_tokens": 18350,
+   "counted_by": "usage_meter",
+   "split": "short"
+  },
+  {
+   "document": "passcoag-2020-w2-p0002-r4",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 23.0,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 22037,
+   "model_output_tokens": 1789,
+   "parser_calls": 6,
+   "parser_input_tokens": 3096,
+   "parser_output_tokens": 636,
+   "parser_tokens": 3732,
+   "counted_by": "usage_meter",
+   "split": "short"
+  },
+  {
+   "document": "census_statab",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 135.9,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 2,
+   "model_input_tokens": 18050,
+   "model_output_tokens": 8093,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter",
+   "split": "short"
+  },
+  {
+   "document": "ti_spec_sheet_ne555_timer_corrupted",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 68.8,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 4,
+   "model_input_tokens": 29571,
+   "model_output_tokens": 6263,
+   "parser_calls": 24,
+   "parser_input_tokens": 6489,
+   "parser_output_tokens": 1266,
+   "parser_tokens": 7755,
+   "counted_by": "usage_meter",
+   "split": "short"
+  },
+  {
+   "document": "h5Filing-47175-1",
+   "pages": 2,
+   "status": "completed",
+   "seconds": 25.6,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 20863,
+   "model_output_tokens": 1085,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter",
+   "split": "short"
+  },
+  {
+   "document": "gsa_mas_it_labor_0010",
+   "pages": 15,
+   "status": "completed",
+   "seconds": 14.0,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 11864,
+   "model_output_tokens": 525,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter",
+   "split": "medium"
+  },
+  {
+   "document": "W14-53632_W14 ADMIN REVIEWED",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 54.5,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 47921,
+   "model_output_tokens": 2338,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter",
+   "split": "short"
+  },
+  {
+   "document": "bar-lev-2021",
+   "pages": 30,
+   "status": "completed",
+   "seconds": 1865.8,
+   "route": [
+    "primary",
+    "parse"
+   ],
+   "model_calls": 48,
+   "model_input_tokens": 1587082,
+   "model_output_tokens": 45316,
+   "parser_calls": 1303,
+   "parser_input_tokens": 270371,
+   "parser_output_tokens": 94607,
+   "parser_tokens": 364978,
+   "counted_by": "usage_meter",
+   "split": "medium"
+  },
+  {
+   "document": "H9-53-9349_9509",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 37.0,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 3,
+   "model_input_tokens": 42664,
+   "model_output_tokens": 2342,
+   "parser_calls": 47,
+   "parser_input_tokens": 9316,
+   "parser_output_tokens": 3207,
+   "parser_tokens": 12523,
+   "counted_by": "usage_meter",
+   "split": "short"
+  },
+  {
+   "document": "caterpillar_spec_sheet_330_excavator",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 96.8,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 2,
+   "model_input_tokens": 17388,
+   "model_output_tokens": 5717,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter",
+   "split": "short"
+  },
+  {
+   "document": "593338187_200912_990PF-p0031",
+   "pages": 1,
+   "status": "completed",
+   "seconds": 44.6,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 10905,
+   "model_output_tokens": 2981,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter",
+   "split": "short"
+  },
+  {
+   "document": "real_dcd_sumf_full_corrupted",
+   "pages": 27,
+   "status": "completed",
+   "seconds": 1045.5,
+   "route": [
+    "primary",
+    "parse"
+   ],
+   "model_calls": 56,
+   "model_input_tokens": 380924,
+   "model_output_tokens": 37917,
+   "parser_calls": 193,
+   "parser_input_tokens": 191544,
+   "parser_output_tokens": 37961,
+   "parser_tokens": 229505,
+   "counted_by": "usage_meter",
+   "split": "medium"
+  },
+  {
+   "document": "YV4952BL2C1140915_professional_valuation_corrupted",
+   "pages": 7,
+   "status": "completed",
+   "seconds": 140.9,
+   "route": [
+    "primary",
+    "parse",
+    "oneshot"
+   ],
+   "model_calls": 8,
+   "model_input_tokens": 121667,
+   "model_output_tokens": 5591,
+   "parser_calls": 245,
+   "parser_input_tokens": 58331,
+   "parser_output_tokens": 12759,
+   "parser_tokens": 71090,
+   "counted_by": "usage_meter",
+   "split": "short"
+  },
+  {
+   "document": "ccc_online_0003_geico_ford_crown_victoria",
+   "pages": 19,
+   "status": "completed",
+   "seconds": 69.3,
+   "route": [
+    "primary"
+   ],
+   "model_calls": 1,
+   "model_input_tokens": 19941,
+   "model_output_tokens": 4422,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter",
+   "split": "medium"
+  },
+  {
+   "document": "real_ofac_ssi_full",
+   "pages": 192,
+   "status": "completed",
+   "seconds": 5353.4,
+   "route": [
+    "colflow"
+   ],
+   "model_calls": 583,
+   "model_input_tokens": 2429411,
+   "model_output_tokens": 907701,
+   "parser_calls": 0,
+   "parser_input_tokens": 0,
+   "parser_output_tokens": 0,
+   "parser_tokens": 0,
+   "counted_by": "usage_meter",
+   "split": "long"
+  }
+ ]
+}

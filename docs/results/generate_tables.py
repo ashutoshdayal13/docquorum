@@ -74,11 +74,12 @@ def cost_markdown():
     q = pricing.PRICES["usd_per_million_tokens"]["qwen3.8-27b"]
     lines = ["## What a document costs (measured)\n",
              "Means per document over a random sample of each benchmark (seed 0), read one document at a time "
-             "by the final pipeline. Calls and tokens: for VAREX and DocuBench, the servers' own usage counters "
-             "(nothing else using them); for the other four, measured side by side, each reply's own usage counted "
-             "in the measuring process (`benchmarks/usage_meter.py`); both count the same requests. DocQuorum runs "
-             "open weights on one H100 shared with other accounts' jobs: it pays no price per call, and the "
-             "seconds are upper bounds (for the last four, also shared with each other's measurements). The dollar columns price the measured tokens (extraction model and parser) "
+             "by the final pipeline (v1.4; UNIKIE-BENCH by its protocol's readings and zoom re-reading). Calls and "
+             "tokens: each reply's own usage, counted in the measuring process (`benchmarks/usage_meter.py`). "
+             "DocuBench and VAREX were measured alone; ExtractBench and LongArray-Extract side by side, and the two "
+             "UNIKIE-BENCH tracks side by side with two other measurements, so their seconds include waiting for each "
+             "other. DocQuorum runs open weights on one H100 shared with other accounts' jobs: it pays no price per "
+             "call, and the seconds are upper bounds. The dollar columns price the measured tokens (extraction model and parser) "
              f"at the Qwen3.8-27B list price, ${q['input']:.2f} / ${q['output']:.2f} per million input / output "
              "tokens (`pricing.json`). Per-document rows: `results/costs/<benchmark>.json`.\n",
              "| Benchmark | Documents measured | Pages | Model calls | Input tokens | Output tokens "
@@ -143,11 +144,43 @@ def readme_costs():
         out += ["", "Why it is cheap, and when it is not: a file with a text layer is read once "
                 f"({len(one)} of {len(dbr)} sampled DocuBench documents took one call, "
                 f"${sum(map(pricing.document_usd, one)) / max(1, len(one)):.3f} each on average); only scans get "
-                "three readings and a quorum, and zoom re-reads only the fields the readings dispute. Long scans whose "
-                "rows repeat cost the most, because a chunk that loops is read again: the costliest sampled DocuBench "
-                f"document ({worst['pages']} pages) took {worst['model_calls']} calls and "
-                f"${pricing.document_usd(worst):.2f}. Details: [`docs/results/TABLES.md`](docs/results/TABLES.md)."]
+                "three readings (at the same time) and a quorum, and zoom re-reads only the fields the readings dispute. "
+                "Long scans cost the most, because they are read in chunks, once per reading: the costliest sampled "
+                f"DocuBench document ({worst['pages']} pages) took {worst['model_calls']} calls and "
+                f"${pricing.document_usd(worst):.2f}."]
+    out += ["", speed_markdown(), "Details: [`docs/results/TABLES.md`](docs/results/TABLES.md)."]
     return "\n".join(out) + "\n"
+
+
+def speed_markdown():
+    """v1.3 against v1.4 on the same sampled documents, measured the same way (results/costs/v1.3)."""
+    import statistics
+    import pricing
+    span = lambda s: f"{s / 60:.0f} min" if s >= 120 else f"{s:.0f} s"
+    rows = []
+    for key, title in (("docubench", "DocuBench (20 documents)"), ("varex", "VAREX (30 forms)")):
+        old_f, new_f = pricing.COSTS / "v1.3" / f"{key}.json", pricing.COSTS / f"{key}.json"
+        if not (old_f.exists() and new_f.exists()):
+            continue
+        old = {r["document"]: r for r in json.loads(old_f.read_text())["documents"]}
+        new = {r["document"]: r for r in json.loads(new_f.read_text())["documents"]}
+        ks = [k for k in new if k in old]
+        tot = lambda d, f: sum(d[k][f] for k in ks)
+        worst = max(ks, key=lambda k: old[k]["seconds"])
+        rows.append(f"| {title} | {tot(old, 'seconds'):,.0f} s | {tot(new, 'seconds'):,.0f} s "
+                    f"| {tot(old, 'seconds') / tot(new, 'seconds'):.1f}x | "
+                    f"{statistics.median(old[k]['seconds'] for k in ks):.0f} s -> {statistics.median(new[k]['seconds'] for k in ks):.0f} s "
+                    f"| {tot(old, 'model_output_tokens'):,} -> {tot(new, 'model_output_tokens'):,} "
+                    f"| {worst}: {span(old[worst]['seconds'])} -> {span(new[worst]['seconds'])} |")
+    if not rows:
+        return ""
+    return "\n".join([
+        "**v1.4 is faster on long scans.** A reply that loops is now stopped by the model server, and a scan's "
+        "readings run at the same time (`docs/DESIGN.md`). The same documents, measured alone both times:", "",
+        "| sample | v1.3 total | v1.4 total | faster | median document | output tokens | slowest document |",
+        "|---|---:|---:|---:|---:|---:|---|", *rows, "",
+        "ExtractBench and LongArray-Extract were measured under different loads before and after, so their times "
+        "are not compared; their output tokens are unchanged (their documents did not loop)."]) + "\n"
 
 
 def main():
@@ -223,6 +256,7 @@ def main():
         md.append(markdown(title, table, rank_at, digits))
         print(f"Rendered {title}: {len(rows)} published systems + DocQuorum (rank {rank_at(score)}).")
     md.append(cost_markdown())
+    md.append(speed_markdown())
     (HERE / "TABLES.md").write_text("\n".join(md))
     readme = HERE.parents[1] / "README.md"
     text = readme.read_text()

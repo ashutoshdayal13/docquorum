@@ -164,7 +164,7 @@ frame("Problem statement", r"""
 frame("Pipeline overview", r"""
 \centering
 \includegraphics[width=\textwidth,height=6.2cm,keepaspectratio]{assets/pipeline.png}
-\src{Pipeline figure (generated with Codex), describing the single-document entry point \texttt{docquorum.extract}; the lower panels show the bounded reader loop and guarded zoom updates (v1.3).}
+\src{Pipeline figure (generated with Codex), describing the single-document entry point \texttt{docquorum.extract}; the lower panels show the bounded reader loop and guarded zoom updates (v1.3; v1.4 adds no step).}
 """)
 
 # ------------------------------------------------------------------ routing
@@ -800,8 +800,8 @@ frame("Why a document costs little, and when it costs more", r"""
 \column{0.43\textwidth}
 \begin{block}{When it costs more}
 \footnotesize
-Scanned documents get three readings and a quorum: MANYN sampled DocuBench documents, MANYCALLS calls and \$MANYUSD each on average.\\[0.35em]
-Long scans whose rows repeat cost most: a chunk that loops is read again. The costliest sample, WORSTNAME (WORSTP pages), took WORSTC calls, \$WORSTUSD and WORSTMIN minutes.\\[0.3em]
+Scanned documents get three readings (at the same time) and a quorum: MANYN sampled DocuBench documents, MANYCALLS calls and \$MANYUSD each on average.\\[0.35em]
+Long scans cost most: they are read in chunks, once per reading. The costliest sample, WORSTNAME (WORSTP pages), took WORSTC calls, \$WORSTUSD and WORSTMIN minutes.\\[0.3em]
 Long documents are read in chunks, so they cost by the page: LongArray's sampled documents (LAPAGES pages on average) took LACALLS calls and \$LAUSD each, \$LAPAGE a page; ExtractBench, \$EBPAGE a page.
 \end{block}
 \end{columns}
@@ -820,6 +820,49 @@ Long documents are read in chunks, so they cost by the page: LongArray's sampled
     "LAPAGES", cost("longarray", "pages")).replace("LACALLS", cost("longarray", "model_calls")).replace(
     "LAUSD", cost("longarray", "usd", 2)).replace("LAPAGE", cost("longarray", "usd_per_page", 3)).replace(
     "EBPAGE", cost("extractbench", "usd_per_page", 3)))
+
+
+# ------------------------------------------------------------------ v1.4: faster on long scans
+def same_docs(bench):
+    """v1.3 and v1.4 measurements of the same documents (results/costs/v1.3, results/costs)."""
+    old_f = PR.COSTS / "v1.3" / f"{bench}.json"
+    if not old_f.exists() or bench not in COST:
+        return None, None, []
+    old = {r["document"]: r for r in json.loads(old_f.read_text())["documents"]}
+    new = {r["document"]: r for r in COST[bench]["documents"]}
+    return old, new, [k for k in new if k in old]
+
+
+o_db, n_db, k_db = same_docs("docubench")
+o_vx, n_vx, k_vx = same_docs("varex")
+if k_db and k_vx:
+    tot = lambda d, ks, f: sum(d[k][f] for k in ks)
+    heavy = sorted(k_db, key=lambda k: -o_db[k]["seconds"])[:5]
+    hrows = "".join(r"%s & %d & %.0f & %.0f & %s & %s\\" % (esc(k), o_db[k]["pages"], o_db[k]["seconds"] / 60,
+                    n_db[k]["seconds"] / 60, f"{o_db[k]['model_output_tokens'] / 1000:.0f}k", f"{n_db[k]['model_output_tokens'] / 1000:.0f}k") + "\n"
+                    for k in heavy)
+    frame("v1.4: long scans read faster", (r"""
+\begin{columns}[T]
+\column{0.44\textwidth}
+\footnotesize
+\textbf{A looping reply is stopped by the model server} once one stretch of tokens repeats 40 times in a row, not at its output limit; it is then read again as before.\\[0.4em]
+\textbf{A scan's readings run at the same time}, not one after another; the quorum sees them in the same order.\\[0.4em]
+\textbf{The same documents, measured alone both times:}\\[0.2em]
+DocuBench (20): DBOLD s $\to$ \textbf{DBNEW s}, DBX$\times$ faster\\
+VAREX (30 forms): VXOLD s $\to$ \textbf{VXNEW s}, VXX$\times$ faster\\[0.4em]
+\textbf{Accuracy kept:} DocuBench, all 72 read again, DBSCORE (v1.3: 90.80); 29 of 30 sampled VAREX forms unchanged.
+\column{0.52\textwidth}
+{\scriptsize\renewcommand{\arraystretch}{1.3}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}Yrrrrr@{}}\toprule
+\textbf{Slowest five} & \textbf{pages} & \multicolumn{2}{c}{\textbf{minutes}} & \multicolumn{2}{c}{\textbf{output tokens}}\\
+ & & v1.3 & v1.4 & v1.3 & v1.4\\\midrule
+""" + hrows + r"""\bottomrule\end{tabularx}}
+\end{columns}
+\src{DocuBench's five slowest sampled documents. results/costs/v1.3 and results/costs: every measured document, before and after.}
+""").replace("DBOLD", f"{tot(o_db, k_db, 'seconds'):,.0f}").replace("DBNEW", f"{tot(n_db, k_db, 'seconds'):,.0f}").replace(
+        "DBX", f"{tot(o_db, k_db, 'seconds') / tot(n_db, k_db, 'seconds'):.1f}").replace(
+        "VXOLD", f"{tot(o_vx, k_vx, 'seconds'):,.0f}").replace("VXNEW", f"{tot(n_vx, k_vx, 'seconds'):,.0f}").replace(
+        "VXX", f"{tot(o_vx, k_vx, 'seconds') / tot(n_vx, k_vx, 'seconds'):.1f}").replace("DBSCORE", f"{db['score']:.2f}"))
 
 zv = load("../../results/varex-zoom/comparison.json")
 zu = json.loads((ROOT / "results/unikie_open/zoom/comparison.json").read_text())
