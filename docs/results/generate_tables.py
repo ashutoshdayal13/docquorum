@@ -144,8 +144,8 @@ def readme_results():
               f"(`results/costs/`); the dollars price the measured tokens at the Qwen3.8-27B list price (${q['input']:.2f} / "
               f"${q['output']:.2f} per million input / output tokens), since DocQuorum itself runs on one GPU with no price "
               "per call; the seconds are upper bounds on a shared H100.", "",
-              "![Each benchmark's six best systems, DocQuorum among them](ppt/flow/assets/chart_ranks.png)", "",
-              "![DocQuorum against the best published open model, and against the best closed model](ppt/flow/assets/chart_open_closed.png)"]
+              "![The same model called once, and through DocQuorum: score and place among the published systems](ppt/flow/assets/chart_gain.png)", "",
+              "![ExtractBench: accuracy against cost; no published system is both cheaper and more accurate](ppt/flow/assets/cost_accuracy.png)"]
     return "\n".join(lines) + "\n"
 
 

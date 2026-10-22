@@ -1,0 +1,18 @@
+{
+ "supplier_name_and_address": "Harris, Allen and Bartlett, 566 James Turnpike",
+ "company_officials_contacted": "Morgan S. Issac, Naval architect",
+ "contract_number_specifications_reviewed": "CONT-2024-14174, SPEC-2056-6238",
+ "prime_contractor_name_and_address": "Chandler and Sons, 655 Pamela Divide Apt. 163,",
+ "comments": "Minor discrepancies noted in SIQAM certificates distribution process.",
+ "unsatisfactory_conditions": "Delayed notification of ACO regarding material",
+ "corrective_action": "Implement weekly review meetings to address",
+ "verification_details": {
+  "details": "Inspected incoming materials against contract"
+ },
+ "qas_signature_and_date": {
+  "date": "07/15/24"
+ },
+ "supervisor_signature_and_date": {
+  "date": "07/15/24"
+ }
+}

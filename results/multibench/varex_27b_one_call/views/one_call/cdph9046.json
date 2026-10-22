@@ -1,0 +1,25 @@
+{
+ "requester_name": "Raul Ward",
+ "requester_title": "Health and Safety Adviser",
+ "requester_organization": "Richard Group",
+ "requester_mailing_address": "795 Karen Drives Suite 575, East Lindsey, FL 62208",
+ "requester_email_address": "raul.ward@gmail.com",
+ "requester_phone_number": "(446) 710-7738",
+ "requester_fax_number": "(484) 491-0674",
+ "date_requested": "03/15/2023",
+ "desired_completion_date": "04/01/2023",
+ "data_request_reason": "To analyze the prevalence of STDs in California and identify high-risk populations for targeted prevention programs. The data will be used to present findings to the California Health Department and propose new initiatives.",
+ "data_stratification": {
+  "stratum1": "Age Group",
+  "stratum2": "Gender",
+  "stratum3": "Ethnicity"
+ },
+ "time_period_requested": {
+  "start_date": "01/01/2020",
+  "end_date": "12/31/2022"
+ },
+ "format": {
+  "output_format": "CSV",
+  "delimiter": null
+ }
+}

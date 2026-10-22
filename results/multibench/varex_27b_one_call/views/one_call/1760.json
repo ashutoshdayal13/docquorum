@@ -1,0 +1,48 @@
+{
+ "payee_name": "Amanda V. Sosa",
+ "voucher_number": "VD-2020-86964",
+ "proposed_by": "Mary W. Fronczyk, Tax Inspector, Li-Schneider",
+ "total_amount": 329289.66,
+ "line_items": [
+  {
+   "description": "Consulting services for IT infrastructure optimization and maintenance",
+   "amount": 150000
+  },
+  {
+   "description": "Hardware upgrades including servers and networking equipment",
+   "amount": 100000
+  },
+  {
+   "description": "Software licenses for enterprise applications and security tools",
+   "amount": 50000
+  },
+  {
+   "description": "Cloud services and hosting fees for the fiscal quarter",
+   "amount": 20000
+  },
+  {
+   "description": "Training and certification for IT staff on new technologies",
+   "amount": 5000
+  },
+  {
+   "description": "Travel expenses for on-site technical support and meetings",
+   "amount": 2500
+  },
+  {
+   "description": "Miscellaneous IT supplies and consumables",
+   "amount": 1000
+  },
+  {
+   "description": "Professional development and conference attendance fees",
+   "amount": 800
+  },
+  {
+   "description": "Subscription fees for industry publications and resources",
+   "amount": 200
+  },
+  {
+   "description": "Contingency fund for unforeseen IT-related expenses",
+   "amount": 500
+  }
+ ]
+}

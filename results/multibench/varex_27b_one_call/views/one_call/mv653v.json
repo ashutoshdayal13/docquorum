@@ -1,0 +1,25 @@
+{
+ "organization_name": "Stephanieborough Volunteer Fire Department",
+ "organization_address": "879 Regina Track, Stephanieborough, AL 88599",
+ "organization_head": "Vincent A. Souza",
+ "organization_head_title": "Chief Fire Officer",
+ "organization_phone": "(537) 790-0608",
+ "organization_email": "vincent.souza@outlook.com",
+ "vehicles": [
+  {
+   "year": "2018",
+   "make": "Ford",
+   "model": "F-550 Super Duty",
+   "vin": "1FDXX55T1JEB09873",
+   "plate_number": "SVFD-001"
+  }
+ ],
+ "certification_date": "03/15/2023",
+ "certifier_info": {
+  "name": "Vincent A. Souza",
+  "title": "Chief Fire Officer",
+  "address": "879 Regina Track",
+  "city": "Stephanieborough",
+  "zip": "AL 88599"
+ }
+}

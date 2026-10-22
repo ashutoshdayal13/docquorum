@@ -1,0 +1,33 @@
+{
+ "patient_info": {
+  "patient_identification": "Foucher, Katherine",
+  "register_number": "R397876857"
+ },
+ "specimen_info": {
+  "date_obtained": "05/15/2023",
+  "source_of_specimen": "Cervix",
+  "date_received_in_laboratory": "05/16/2023",
+  "specimen_submitted_by": "Robertshaven General Hospital",
+  "signature_and_title": "Dr. Smith",
+  "accession_number": "CTL-2021-38779"
+ },
+ "laboratory_info": {
+  "name_of_laboratory": "Robertshaven Diagnostic Laboratory",
+  "accession_number_lab": "RD-LAB-202",
+  "screened_by": "Jane Doe, MLT"
+ },
+ "pathologist_info": {
+  "pathologist_title": "Pathologist",
+  "pathologist_date": "05/20/2023"
+ },
+ "cytology_results": {
+  "maturation_index": "Normal",
+  "comments_and_recommendations": "No abnormal findings. Routine follow-up recommended."
+ },
+ "patient_history": {
+  "last_menstrual_period": "04/10/2023",
+  "previous_abnormal_cytology_exam_date": "N/A",
+  "clinical_history": "No significant clinical history.",
+  "physical_examination": "Normal pelvic findings."
+ }
+}

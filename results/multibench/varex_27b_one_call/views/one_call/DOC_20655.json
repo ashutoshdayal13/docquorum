@@ -1,0 +1,13 @@
+{
+ "total_section_202_unit_limits": 1000000,
+ "total_for_all_improvements": 618200.35,
+ "cost_certification_audit": 15000,
+ "total_knowns_from_section_g": 686412.14,
+ "percent_cost_not_attributable_to_dwelling_use": 0.15,
+ "unit_details": {
+  "number_of_0_bedroom_units": 5,
+  "number_of_1_bedroom_units": 10,
+  "number_of_2_bedroom_units": 8,
+  "number_of_3_bedroom_units": 3
+ }
+}

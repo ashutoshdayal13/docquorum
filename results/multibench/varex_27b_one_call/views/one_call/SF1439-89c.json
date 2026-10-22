@@ -1,0 +1,57 @@
+{
+ "subcontract_or_purchase_order_number": "PO-2022-99430",
+ "government_agency": "Department of Defense",
+ "government_prime_contract_number": "DOD-2023-12345",
+ "contractor_reference_number": "CRN-2023-7890",
+ "effective_date_of_termination": "03/15/2023",
+ "significant_deviations": "No significant deviations from regular accounting procedures.",
+ "name_and_address_of_accountants": "Wilson, Hayes and Turner, 6954 Joshua Brooks Suite 282, Victoriastad, NY 85293",
+ "contractor_address": {
+  "street": "763 Robert Terrace Suite 350",
+  "city": "Johnstonfurt"
+ },
+ "termination_notice_contractor": {
+  "name": "Dagmara Q. Pingle"
+ },
+ "accounting_contact": {
+  "name": "Dagmara Q. Pingle",
+  "title": "Civil engineer, contracting",
+  "phone": "(304) 605-8647"
+ },
+ "property_disposal_contact": {
+  "name": "Dagmara Q. Pingle",
+  "title": "Civil engineer, contracting",
+  "phone": "(304) 605-86"
+ },
+ "independent_accountants": [
+  {
+   "name": "Smith & Co. Accountants"
+  },
+  {
+   "name": "Brown & Associates"
+  },
+  {
+   "name": "Miller & Partners"
+  },
+  {
+   "name": "Davis & Co. CPAs"
+  },
+  {
+   "name": "Wilson & Sons Accounting"
+  }
+ ],
+ "government_agencies_reviewed_accounts": [
+  {
+   "name": "Department of Defense"
+  },
+  {
+   "name": "Department of Treasury"
+  },
+  {
+   "name": "General Services Administration"
+  },
+  {
+   "name": "Department of Homeland Security"
+  }
+ ]
+}

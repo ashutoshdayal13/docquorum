@@ -1,0 +1,42 @@
+{
+ "name_of_project": "Sunshine Apartments",
+ "project_number": "HUD-2023-4567",
+ "subsidy_type": "Section 8",
+ "contract_number": "HUD-8765-4321",
+ "transaction_type": "Annual Recertifi",
+ "effective_date": "10/15/2023",
+ "correction_type": "None",
+ "eiv_indicator": "Yes",
+ "anticipated_voucher_date": "10/01/2024",
+ "head_of_household": {
+  "name": "Noemi L. Dutta",
+  "unit_number": "A101",
+  "number_of_bedrooms": "2",
+  "building_id": "BLDG-A",
+  "head_id_code": "318-07-3997",
+  "head_birth_date": "06/09/1981"
+ },
+ "move_outs": [
+  {
+   "move_out_code": "DECEASED",
+   "date_of_death_of_sole_member": "09/15/2023",
+   "description": "Deceased, no other members"
+  }
+ ],
+ "terminations": [
+  {
+   "termination_code": "VIOLATION",
+   "description": "Lease violation, non-payment"
+  }
+ ],
+ "gross_rent_changes_and_unit_transfers": [
+  {
+   "prev_unit_no": "A102",
+   "secondary_subsidy_type": "Tenant-Based",
+   "basic_bmir_rent": "$7905.78",
+   "market_rent": "$337301.00",
+   "contract_rent": "$76.77",
+   "utility_allowance": "$76.77"
+  }
+ ]
+}

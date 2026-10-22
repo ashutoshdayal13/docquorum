@@ -1,0 +1,14 @@
+{
+ "planning_board_city": "Springfield",
+ "number_of_upper_floors": null,
+ "common_areas_description": "Lobby",
+ "grantor": {
+  "corporation_name": "Chan, Franco and",
+  "corporation_state": "Indiana",
+  "representative_name": "Tiffany H. Brooks"
+ },
+ "property": {
+  "description": "Apartment building with 12 floors, 48 units, and underground parking",
+  "location": "6783 Stephanie Estates"
+ }
+}

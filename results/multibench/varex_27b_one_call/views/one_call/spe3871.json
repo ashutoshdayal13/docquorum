@@ -1,0 +1,32 @@
+{
+ "issue_amount": 790796.25,
+ "issue_date": "10/14/2023",
+ "owner_name": "Genevieve Ferguson",
+ "treasury_case_number": "PO-2025-83897",
+ "issue_date_official": "10/14/2023",
+ "maturity_date": "10/14/2043",
+ "verified_by": "Logan I.",
+ "purchaser": {
+  "name": "Figuroa-McLaughlin",
+  "tin": "840544",
+  "address": "2853 Marshall Creek Suite 127",
+  "city": "Garyshire",
+  "state": "CA",
+  "zip_code": "65162"
+ },
+ "financial_institution": {
+  "name": "Garyshire Federal Credit Union",
+  "address": "123 Main Street",
+  "city": "Garyshire",
+  "state": "CA",
+  "zip_code": "65162",
+  "contact_name": "Natalia W. Teixeira",
+  "phone_number": "(849) 041-5980"
+ },
+ "direct_deposit": {
+  "account_name": "Figuroa-McLaughlin Business Account",
+  "account_number": "1703-1638-7077",
+  "routing_number": "021000021"
+ },
+ "document_date": "10/14/2023"
+}

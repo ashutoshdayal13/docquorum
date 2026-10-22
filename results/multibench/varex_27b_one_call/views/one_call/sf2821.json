@@ -1,0 +1,30 @@
+{
+ "employee_name": "Camarillo, Jesus R.",
+ "date_of_birth": "08/31/1962",
+ "social_security_number": "304-15-5019",
+ "event_type": "Retirement",
+ "retirement_system": "CSRS",
+ "owcp_number": 0.0,
+ "date_of_event": "06/15/2023",
+ "annual_basic_pay": "$7080.54",
+ "date_of_coverage": "08/31/1982",
+ "date_of_coverage_end": "06/15/2023",
+ "option_a_amount": 5.77,
+ "option_a_effective_date": "08/31/1982",
+ "option_c_effective_date": "06/15/2023",
+ "option_b_effective_date": "08/31/1982",
+ "option_b_multiples": 1,
+ "certifying_date": "06/15/2023",
+ "agency_address": "92611 Paul Grove Apt. 000, Mcdanielburgh, CA 11158",
+ "agency_telephone": "(716) 693-3148",
+ "payroll_date": "06/15/2023",
+ "payroll_telephone": "(006) 106-4458",
+ "certifying_official": {
+  "name": "Santiago A. Esquibel",
+  "title": "Teaching laboratory technician"
+ },
+ "payroll_official": {
+  "name": "Timothy Miller",
+  "title": "Microbiologist"
+ }
+}

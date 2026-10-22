@@ -1,0 +1,25 @@
+{
+ "requestor_name": "Jeffery Molenaar",
+ "requestor_firm": "Reyes PLC",
+ "owner_operator_number": "OO-2023-MN-10045",
+ "telephone_number": "(315) 678-4285",
+ "fax_number": "(107) 534-8739",
+ "firm_tax_id_code": "258954601",
+ "email_address": "jeffery.molenaar@hotmail.com",
+ "shipping_account_number": "SA-2023-MN-10045",
+ "manufacturer_firm": "Pennington, Moses and Moss",
+ "registration_number": "REG-2023-MN-10045",
+ "date_of_last_fda_inspection": "03/15/2023",
+ "requestor_address": {
+  "address": "30558 Nicholas Brook, Stephaniefort, MN 58800"
+ },
+ "billing_address": {
+  "address": "8528 Christopher Roads, Brittanytown, MD 31660"
+ },
+ "alternate_billing_email": {
+  "email": "jmolenaar@reyes.com"
+ },
+ "manufacturer_address": {
+  "address": "8528 Christopher Roads, Brittanytown, MD 31660"
+ }
+}

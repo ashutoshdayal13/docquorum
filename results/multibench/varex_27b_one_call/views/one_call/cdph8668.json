@@ -1,0 +1,44 @@
+{
+ "company_name": "Hale PLC",
+ "number_of_vehicles": 5,
+ "dtc_transporter_registration_number": "DTSC-202",
+ "registration_expiration_date": "12/31/2024",
+ "facility_contact_person": "Salma F. Goncalves",
+ "telephone_number": "(962) 283-5565",
+ "email": "salma.goncalves@yahoo.com",
+ "web_address": "www.haleplc.com",
+ "waste_types": [
+  "Sharps",
+  "Biohazardous",
+  "Pharmaceutical",
+  "Pathology",
+  "Trace Chemotherapy",
+  "Trauma Scene Waste"
+ ],
+ "authorized_representative": "Salma F. Goncalves",
+ "title": "Theatre Stage Manager",
+ "certification_date": "11/15/2023",
+ "facility_address": {
+  "street_address": "84832 Moore Stream Apt. 469",
+  "city": "East Rachel",
+  "county": "Durham",
+  "state": "NC",
+  "zip_code": "53216"
+ },
+ "mailing_address": {
+  "mailing_address": "84832 Moore Stream Apt. 469",
+  "mailing_city": "East Rachel",
+  "mailing_state": "NC",
+  "mailing_zip_code": "53216"
+ },
+ "medical_waste_facilities": [
+  {
+   "facility_name": "Chang-Wilson Medical Waste Facility",
+   "facility_address": "582 Horton Grove Apt. 271"
+  },
+  {
+   "facility_name": "Walsh, Matthews and Watson Medical Waste Facility",
+   "facility_address": "9609 Kimberly Garden Apt. 991"
+  }
+ ]
+}

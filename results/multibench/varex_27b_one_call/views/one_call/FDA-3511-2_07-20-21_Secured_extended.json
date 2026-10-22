@@ -1,0 +1,14 @@
+{
+ "firm_name": "Sunny Valley Foods Inc.",
+ "firm_location": "Miami, FL",
+ "inspection_date": "07/20/2021 to 07/22/2021",
+ "fei_number": "1234567",
+ "fce_number": "FCE-2021-00456",
+ "investigators": "Susan J. Wagner, Maria V. Reid",
+ "products": [
+  "Pickled Green Beans, 16 oz"
+ ],
+ "sid_numbers": [
+  "SID-2021-001"
+ ]
+}

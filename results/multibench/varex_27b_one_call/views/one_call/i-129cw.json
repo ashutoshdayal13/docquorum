@@ -1,0 +1,18 @@
+{
+ "family_name": "Bryant",
+ "given_name": "Jeffrey",
+ "middle_name": "Michael",
+ "date_of_birth": "07/05/1978",
+ "trade_name": "Hayes-Jennings Fashion Design",
+ "employer_name": "Hayes-Jennings",
+ "in_care_of_name": "Jeffrey Bryant",
+ "daytime_phone": "(611) 727-0822",
+ "mobile_phone": "(292) 880-8357",
+ "email": "jbryant@hayesjennings.com",
+ "address": {
+  "street_address": "111 Jessica Green",
+  "apartment_suite": "Apt 2B",
+  "city": "East Scott",
+  "zip_code": "49881"
+ }
+}

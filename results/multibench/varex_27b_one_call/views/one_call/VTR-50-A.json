@@ -1,0 +1,26 @@
+{
+ "applicant_first_name": "Alice",
+ "applicant_middle_name": "X.",
+ "applicant_last_name": "Cotto",
+ "applicant_suffix": "Ms.",
+ "applicant_email": "alice.cotto@gmail.com",
+ "applicant_phone": "(023) 242-9607",
+ "vehicle_current_tx_plate": "ABC1234",
+ "vehicle_make": "Toyota",
+ "vehicle_type": "Sedan",
+ "vehicle_identification_number": "1FTFW1E58MKA98094",
+ "vehicle_title_document_number": "TIT20180004567",
+ "certification_date": "03/15/2023",
+ "vehicle_destruction_date": "02/28/2023",
+ "vehicle_destruction_location": "Intersection of Maple and Oak Streets, Hudsonland, ID",
+ "vehicle_destruction_description": "Vehicle was completely destroyed in a fire accident",
+ "applicant_address": {
+  "address": "701 Villanueva Fort Suite 439",
+  "city": "Hudsonland",
+  "state": "ID",
+  "zip": "53682"
+ },
+ "applicant_county": {
+  "county": "Hudson County"
+ }
+}

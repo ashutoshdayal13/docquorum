@@ -1,0 +1,33 @@
+{
+ "date_of_request": "03/15/2023",
+ "name_of_pha": "Ho, Johnson and Hill Public Housing Agency",
+ "acc_number": "1507-3162-39",
+ "signature_of_authorized_pha_representative": "Mark S. Stewart",
+ "deposits_excess_fdic_coverage": "No deposits exceed FDIC coverage limits",
+ "remarks": "This request is for annual financial audit purposes",
+ "account_balances": [
+  {
+   "account_number": "1507-3162-3994-01",
+   "balance_date": "03/15/2023"
+  },
+  {
+   "account_number": "1507-3162-3994-03",
+   "balance_date": "03/15/2023"
+  },
+  {
+   "account_number": "1507-3162-3994-05",
+   "balance_date": "03/15/2023"
+  }
+ ],
+ "liability_details": [
+  {
+   "liability_description": "Outstanding loan for facility renovation",
+   "liability_amount": 200000
+  }
+ ],
+ "financial_institution_details": {
+  "institution_name": "First National Bank of Lake Whitney",
+  "institution_address": "72298 Gross Gardens, Lake",
+  "institution_contact": "Customer Service: (352) 723-6813"
+ }
+}

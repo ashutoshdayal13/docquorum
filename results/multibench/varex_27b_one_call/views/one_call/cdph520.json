@@ -1,0 +1,19 @@
+{
+ "applicant_name": "Holly Arellano",
+ "applicant_middle_initial": "K",
+ "social_security_number": "405-56-7243",
+ "work_telephone_number": "(351) 295-9422",
+ "home_telephone_number": "(795) 123-3506",
+ "email_address": "holly.arellano@yahoo.com",
+ "driver_license_number": "RA-2015-NJ-32109",
+ "date_of_birth": "06/28/1967",
+ "requested_exam_date": "11/15/2023",
+ "special_accommodations": "Need extra time due to medical condition",
+ "date_signed": "10/20/2023",
+ "mailing_address": {
+  "street": "477 Lisa Forge",
+  "city": "Charlesfort",
+  "state": "NJ",
+  "zip_code": "89732"
+ }
+}

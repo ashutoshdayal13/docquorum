@@ -1,0 +1,30 @@
+{
+ "fha_case_number": "FHA-2023-100567",
+ "modification_case_number": "MOD-2023-10480",
+ "loan_officer_id": "LO-2023-0582",
+ "sponsor_id": "SP-2023-0934",
+ "agent_id": "AG-2023-1567",
+ "borrower_signature_date": "05/20/2023",
+ "co_borrower_signature_date": "05/20/2023",
+ "borrower": {
+  "name": "Vaidya, Christina J.",
+  "current_address": "063 James Avenue Suite 395, New Paul, ID 39417",
+  "date_of_birth": "03/15/1979",
+  "social_security_number": "053-36-0588"
+ },
+ "co_borrower": {
+  "name": "Mcmahon, Daniel T.",
+  "date_of_birth": "04/20/1984",
+  "social_security_number": "506-85-7590"
+ },
+ "sponsor": {
+  "name": "Robertson-Romero"
+ },
+ "agent": {
+  "name": "Christina J. Vaidya"
+ },
+ "third_party_source": {
+  "name": "National Mortgage Licensing System",
+  "nmls_id": "1234567"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "applicant_first_name": "Christopher",
+ "applicant_middle_name": "M.",
+ "applicant_last_name": "Mccarthy",
+ "mailing_address": "777 Johnston Court",
+ "telephone_number": "(623) 489-0657",
+ "email_address": "christopher.mccarthy@aol.com",
+ "mailing_address_details": {
+  "city": "Kimberlyport",
+  "state": "NJ",
+  "zip_code": "57935"
+ },
+ "california_certificate_numbers": [
+  {
+   "certificate_number": "CN-2022-001"
+  },
+  {
+   "certificate_number": "CN-2023-002"
+  }
+ ]
+}

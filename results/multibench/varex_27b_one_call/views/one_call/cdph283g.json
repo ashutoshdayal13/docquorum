@@ -1,0 +1,20 @@
+{
+ "last_name": "Woods",
+ "first_name": "Luiza",
+ "middle_initial": "W",
+ "date_of_birth": "12/14/1984",
+ "phone_number": "(831) 453-3870",
+ "email_address": "luiza.woods@aol.com",
+ "public_address": "07714 Martin Highway, Christianbury, TX 04929",
+ "confidential_address": "07714 Martin Highway, Christianbury, TX 04929",
+ "public_address_details": {
+  "city": "Christianbury",
+  "state": "TX",
+  "zip_code": "04929"
+ },
+ "confidential_address_details": {
+  "city": "Christianbury",
+  "state": "TX",
+  "zip_code": "04929"
+ }
+}

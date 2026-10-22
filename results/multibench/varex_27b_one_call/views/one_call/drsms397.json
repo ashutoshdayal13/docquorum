@@ -1,0 +1,14 @@
+{
+ "name": "Valier, Falguni",
+ "social_security_number": "780-66-5903",
+ "birthdate": "08/19/1979",
+ "phone_number": "(230) 675-1843",
+ "email_address": "falguni.valier@yahoo.com",
+ "submission_date": "03/15/2023",
+ "mailing_address": {
+  "address": "379 Wallace Vista",
+  "city": "North Dylanview",
+  "state": "WY",
+  "zip_code": "78564"
+ }
+}

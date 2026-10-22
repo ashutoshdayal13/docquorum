@@ -1,0 +1,21 @@
+{
+ "provider_name": "Mclaughlin PLC",
+ "provider_address": "6515 Kayla Roads, New Jennifer, FL 71237",
+ "provider_phone_number": "(448) 237-3808",
+ "provider_identification_training_number": "REF-2022-53874",
+ "provider_website": "https://www.mclaughlin.com/nursetraining",
+ "provider_expiration_date": "12/31/2023",
+ "administrator": {
+  "name": "Angela Hicks",
+  "email": "ahicks@mclaughlin.com"
+ },
+ "director_of_nursing": {
+  "name": "Michael Y. Brown",
+  "email": "mbrown@reyeskelley.com"
+ },
+ "designated_contact": {
+  "name": "Reynaldo F. Martinez",
+  "email": "rmartinez@rodriguez.com",
+  "phone": "(095) 649-2010"
+ }
+}

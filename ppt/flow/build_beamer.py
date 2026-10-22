@@ -118,7 +118,7 @@ frame("Outline", r"""
 \item Task and pipeline
 \item Walkthrough on real documents\\
   {\footnotesize inputs, routing, parsing, readers, deterministic checks, selection by quorum, output}
-\item Results on six benchmarks: places, cost, speed; zoom re-reading
+\item Results on six benchmarks: what the pipeline adds, cost; zoom re-reading
 \item Summary
 \item Complete results, one table per benchmark
 \end{enumerate}
@@ -445,7 +445,7 @@ frame("Step 6: one checked JSON, in the form requested", r"""
 # ------------------------------------------------------------------ results: one data shape for every benchmark
 T.append(r"\section{Results}" + "\n")
 load = lambda name: json.loads((RES / name).read_text())
-from leaderboards import KIND, SYS_TYPES, ahead_of, best_kind, me, nth, ordered, ranked, shown  # noqa: E402
+from leaderboards import KIND, SYS_TYPES, ahead_of, me, nth, ordered, ranked, shown  # noqa: E402
 KTEX = {"open": "good", "closed": "muted", "service": "routeB", "agent": "routeD"}
 KPY = {"open": "#8CC5B0", "closed": "#AEB5C1", "service": "#93BCE3", "agent": "#C0AEDA"}
 OURS_PY, NAVY_PY, MUTED_PY = "#1E7A60", "#1B2A4A", "#5B6577"
@@ -478,250 +478,163 @@ frame("Results on six benchmarks", r"""{\scriptsize\renewcommand{\arraystretch}{
 """)
 
 
-# ------------------------------------------------------------------ charts
+# ------------------------------------------------------------------ charts (two)
 def plt_setup():
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 8, "axes.edgecolor": "#C8CDD5",
-                         "axes.labelcolor": NAVY_PY, "xtick.color": MUTED_PY, "ytick.color": MUTED_PY,
+                         "axes.labelcolor": NAVY_PY, "xtick.color": MUTED_PY, "ytick.color": NAVY_PY,
                          "axes.titleweight": "bold", "axes.titlecolor": NAVY_PY, "axes.spines.top": False,
                          "axes.spines.right": False})
     return plt
 
 
-def chart_ranks(path):
-    """Each benchmark's six best systems, DocQuorum among them."""
-    from matplotlib.patches import Patch
+def one_call_baselines():
+    """Qwen3.8-27B, the model DocQuorum uses, called once per document by each benchmark's own
+    protocol: {benchmark: (score, the published row it is, if any)}."""
+    out = {}
+    vx_f = ROOT / "results/multibench/varex_27b_one_call/scores/summary.json"
+    if vx_f.exists():
+        out["varex"] = (100 * json.loads(vx_f.read_text())["systems"]["one_call"]["exact_match_normalized"], None)
+    out["unikie"] = (json.loads((ROOT / "results/unikie/summary.json").read_text())["oneshot_27b"]["macro"], None)
+    out["unikie_open"] = (load("docquorum-unikie-open.json")["single_readings"]["oneshot"]["score"], None)
+    out["extractbench"] = (next(float(r["Overall"]) for r in lb if r["Provider"] == "Qwen3.8 27B"), "Qwen3.8 27B")
+    return out
+
+
+def place_among_published(b, score, itself=None):
+    """1 + the published systems scoring above `score` (the baseline's own published row left out)."""
+    return 1 + sum(shown(r["score"], b["digits"]) > shown(score, b["digits"]) for r in b["rows"] if r["name"] != itself)
+
+
+BASE = one_call_baselines()
+
+
+def chart_gain(path):
+    """The same model called once, against DocQuorum: score and place among the published systems."""
+    from matplotlib.transforms import blended_transform_factory
     plt = plt_setup()
-    fig, axes = plt.subplots(2, 3, figsize=(11, 4.9), dpi=220)
-    for ax, b in zip(axes.flat, ORDER):
-        top = ranked(b)[:6]
-        names = [("DocQuorum" if r["kind"] == "ours" else r["name"])[:28] for r in top][::-1]
-        vals = [float(r["score"]) for r in top][::-1]
-        cols = [OURS_PY if r["kind"] == "ours" else KPY[r["kind"]] for r in top][::-1]
-        lo, hi = min(vals), max(vals)
-        left = max(0, lo - 0.45 * (hi - lo) - 1)
-        ax.barh(range(len(vals)), [v - left for v in vals], left=left, color=cols, height=0.68)
-        for i, (v, c) in enumerate(zip(vals, cols)):
-            ax.text(v + (hi - left) * 0.01, i, f"{v:.{2 if c == OURS_PY else b['digits']}f}", va="center", fontsize=7,
-                    color=OURS_PY if c == OURS_PY else MUTED_PY, weight="bold" if c == OURS_PY else "normal")
-        ax.set_yticks(range(len(vals)), names)
-        for t, c in zip(ax.get_yticklabels(), cols):
-            if c == OURS_PY:
-                t.set_color(OURS_PY)
-                t.set_fontweight("bold")
-        ax.set_xlim(left, hi + (hi - left) * 0.12)
-        ax.tick_params(axis="y", labelsize=7, length=0)
-        ax.tick_params(axis="x", labelsize=6.5)
-        ax.set_title(f"{b['title']}: {nth(me(b)['rank'])} of {len(ranked(b))}", fontsize=9.5, loc="left")
-        ax.grid(axis="x", alpha=0.25)
-    kinds = [k for k in KIND if any(r["kind"] == k for b in BENCH for r in ranked(b)[:6])]
-    fig.legend(handles=[Patch(color=OURS_PY, label="DocQuorum (open models)")] +
-               [Patch(color=KPY[k], label=KIND[k]) for k in kinds],
-               loc="lower center", ncol=len(kinds) + 1, frameon=False, fontsize=7.5)
-    fig.tight_layout(rect=(0, 0.05, 1, 1))
-    fig.savefig(path)
-    plt.close(fig)
-
-
-chart_ranks(A / "chart_ranks.png")
-frame("Among the best published systems", r"""
-\centering\includegraphics[width=\textwidth,height=6.15cm,keepaspectratio]{assets/chart_ranks.png}
-\src{Each benchmark's six best systems, DocQuorum among them, by the benchmark's own score; every row of each benchmark is in the complete tables (last section).}
-""")
-
-
-def chart_open_closed(path):
-    """DocQuorum against the best published open model, and against the best closed model where it leads."""
-    plt = plt_setup()
-    panels = []
-    for kind, title in (("open", "Against the best published open model"),
-                        ("closed", "Against the best closed model")):
-        pts = []
-        for b in ORDER:
-            r = best_kind(b, kind)
-            if r and shown(b["ours"]["score"], b["digits"]) > shown(r["score"], b["digits"]):
-                pts.append((b, r))
-        panels.append((title, pts))
-    fig, axes = plt.subplots(1, 2, figsize=(11, 3.9), dpi=220)
-    for ax, (title, pts) in zip(axes, panels):
-        x = range(len(pts))
-        theirs = [float(r["score"]) for _, r in pts]
-        ours = [float(b["ours"]["score"]) for b, _ in pts]
-        floor = max(0, min(theirs + ours) - 12)
-        w = 0.38
-        ax.bar([i - w / 2 for i in x], [v - floor for v in theirs], w, bottom=floor, color="#AEB5C1" if "closed" in title else KPY["open"])
-        ax.bar([i + w / 2 for i in x], [v - floor for v in ours], w, bottom=floor, color=OURS_PY)
-        for i, ((b, r), t, o) in enumerate(zip(pts, theirs, ours)):
-            ax.text(i - w / 2, t + 0.4, f"{t:.{b['digits']}f}", ha="center", fontsize=6.5, color=MUTED_PY)
-            ax.text(i - w / 2, floor + 0.8, r["name"][:22], ha="center", va="bottom", rotation=90, fontsize=6.3, color=NAVY_PY)
-            ax.text(i + w / 2, o + 0.4, f"{o:.2f}", ha="center", fontsize=6.8, color=OURS_PY, weight="bold")
-            gain = float(shown(o, b["digits"]) - shown(t, b["digits"]))
-            ax.text(i + w / 2, o + 2.6, f"+{gain:.{b['digits']}f}", ha="center", fontsize=8, color=OURS_PY, weight="bold")
-        ax.set_xticks(list(x), [b["title"] for b, _ in pts], fontsize=7.5)
-        ax.set_ylim(floor, 104)
-        ax.set_ylabel("score (%)", fontsize=7.5)
-        ax.set_title(title, fontsize=9.5, loc="left")
-        ax.grid(axis="y", alpha=0.25)
-        ax.tick_params(axis="x", length=0)
+    items = [b for b in ORDER if b["key"] in BASE]
+    fig, ax = plt.subplots(figsize=(10.5, 0.82 * len(items) + 1.0), dpi=220)
+    side = blended_transform_factory(ax.transAxes, ax.transData)
+    for i, b in enumerate(items[::-1]):
+        s0, itself = BASE[b["key"]]
+        s1 = b["ours"]["score"]
+        p0, p1 = place_among_published(b, s0, itself), me(b)["rank"]
+        ax.annotate("", xy=(s1, i), xytext=(s0, i),
+                    arrowprops=dict(arrowstyle="-|>,head_width=0.35,head_length=0.6", color=OURS_PY, lw=2.4, shrinkA=7, shrinkB=8))
+        ax.scatter([s0], [i], s=85, color="#AEB5C1", zorder=3, edgecolor="white", linewidth=0.8)
+        ax.scatter([s1], [i], s=130, color=OURS_PY, zorder=3, edgecolor="white", linewidth=0.8)
+        ax.text(s0 - 0.45, i, f"{s0:.2f}", ha="right", va="center", fontsize=8, color=MUTED_PY)
+        ax.text(s1 + 0.45, i, f"{s1:.2f}", ha="left", va="center", fontsize=8.5, color=OURS_PY, weight="bold")
+        ax.text(1.02, i, f"+{s1 - s0:.2f} points", transform=side, ha="left", va="bottom", fontsize=9,
+                color=OURS_PY, weight="bold")
+        ax.text(1.02, i, f"place {nth(p0)} → {nth(p1)} of {len(b['rows']) + 1}", transform=side, ha="left", va="top",
+                fontsize=8, color=NAVY_PY)
+    ax.set_yticks(range(len(items)), [b["title"] for b in items[::-1]], fontsize=9, weight="bold")
+    ax.set_ylim(-0.6, len(items) - 0.4)
+    lo = min(BASE[b["key"]][0] for b in items)
+    ax.set_xlim(lo - 3.5, 100)
+    ax.set_xlabel("score (%), the benchmark's own scorer", fontsize=7.5)
+    ax.grid(axis="x", alpha=0.25)
+    ax.tick_params(axis="y", length=0)
+    ax.scatter([], [], s=60, color="#AEB5C1", label="Qwen3.8-27B, one call (the benchmark's own protocol)")
+    ax.scatter([], [], s=80, color=OURS_PY, label="the same model through DocQuorum")
+    ax.legend(loc="lower left", bbox_to_anchor=(0, 1.0), ncol=2, frameon=False, fontsize=8)
     fig.tight_layout()
+    fig.subplots_adjust(right=0.80)
     fig.savefig(path)
     plt.close(fig)
 
 
-chart_open_closed(A / "chart_open_closed.png")
-eb_direct = next(float(r["Overall"]) for r in lb if r["Provider"] == "Qwen3.8 27B")
-frame("Ahead of open and closed models", r"""
-\centering\includegraphics[width=\textwidth,height=5.0cm,keepaspectratio]{assets/chart_open_closed.png}\par
-\raggedright{\footnotesize\textbf{The gain comes from the pipeline, not a bigger model:} the same Qwen3.8-27B called once scores \textbf{EBQ} on ExtractBench (its leaderboard); through DocQuorum it scores \textbf{EBOURS}.\par}
-\src{Grey or light green: the best published closed or open model on each benchmark; green: DocQuorum. LongArray-Extract and DocuBench publish no open models. Gains at each benchmark's published precision.}
-""".replace("EBQ", f"{eb_direct:.2f}").replace("EBOURS", f"{BY['extractbench']['ours']['score']:.2f}"))
+chart_gain(A / "chart_gain.png")
+GAIN = [b["ours"]["score"] - BASE[b["key"]][0] for b in ORDER if b["key"] in BASE]
+PLACES = [f"{b['title']} {nth(place_among_published(b, *BASE[b['key']]))} $\\to$ \\textbf{{{nth(me(b)['rank'])}}}"
+          for b in ORDER if b["key"] in BASE]
+frame("What the pipeline adds to the same model", r"""
+\centering\includegraphics[width=\textwidth,height=5.0cm,keepaspectratio]{assets/chart_gain.png}\par
+\raggedright{\footnotesize Same open model, same documents. Read through DocQuorum (routing, readers, checks, quorum, zoom) instead of called once, Qwen3.8-27B gains GAINS points on all four benchmarks with a one-call baseline: PLACES.\par}
+\src{One call: each benchmark's own one-shot protocol with Qwen3.8-27B (VAREX: benchmarks/multibench/varex\_one\_call.py; UNIKIE-BENCH: results/unikie; ExtractBench: the leaderboard's own Qwen3.8 27B run). Places count the published systems.}
+""".replace("GAINS", f"{min(GAIN):.2f} to {max(GAIN):.2f}").replace("PLACES", "; ".join(PLACES)))
 
 
 def chart_cost(path):
-    """Left: DocQuorum's measured cost per page on every benchmark. Right: ExtractBench, accuracy against cost per page."""
+    """ExtractBench, every priced system scoring 85 or more, and DocQuorum: accuracy against cost per page.
+    The shaded corner (cheaper and more accurate than DocQuorum) holds no published system."""
+    from matplotlib.patches import Rectangle
     from matplotlib.ticker import FuncFormatter, LogLocator, NullFormatter
     plt = plt_setup()
-    fig, (a1, a2) = plt.subplots(1, 2, figsize=(11, 3.8), dpi=220, gridspec_kw={"width_ratios": [1, 1.25]})
-    names = [b["title"] for b in ORDER if MEASURED.get(b["key"])]
-    cents = [100 * MEASURED[b["key"]]["usd_per_page"] for b in ORDER if MEASURED.get(b["key"])]
-    a1.barh(range(len(cents))[::-1], cents, color=OURS_PY, height=0.6)
-    for i, c in zip(range(len(cents))[::-1], cents):
-        a1.text(c + 0.05, i, f"{c:.1f}¢", va="center", fontsize=7.5, color=OURS_PY, weight="bold")
-    a1.set_yticks(range(len(cents))[::-1], names, fontsize=7.5)
-    a1.set_xlim(0, max(cents) * 1.25)
-    a1.set_xlabel("cents per page (measured tokens at the Qwen3.8-27B list price)", fontsize=7)
-    a1.set_title("DocQuorum: a few cents a page", fontsize=9.5, loc="left")
-    a1.tick_params(axis="y", length=0)
-    a1.grid(axis="x", alpha=0.25)
-    pts = [(r["Provider"], float(r["Cost_Per_Page"]), float(r["Overall"]), SYS_TYPES["from_source"]["extractbench_category"][r["Category"]])
-           for r in lb if r.get("Cost_Per_Page")]
+    cat = SYS_TYPES["from_source"]["extractbench_category"]
+    pts = [(r["Provider"], float(r["Cost_Per_Page"]), float(r["Overall"]), cat[r["Category"]])
+           for r in lb if r.get("Cost_Per_Page") and float(r["Overall"]) >= 85]
+    ourx, oury = (MEASURED.get("extractbench") or {}).get("usd_per_page"), BY["extractbench"]["ours"]["score"]
+    fig, ax = plt.subplots(figsize=(7.4, 4.4), dpi=220)
+    xmin, xmax, ymin, ymax = 0.002, 0.8, 85, 97.4
+    if ourx:
+        ax.add_patch(Rectangle((xmin, oury), ourx - xmin, ymax - oury, color=OURS_PY, alpha=0.08, lw=0, zorder=0))
+        ax.text((xmin * ourx) ** 0.4 * xmin ** 0.2, (oury + ymax) / 2 + 0.25, "cheaper and more accurate\nthan DocQuorum: no system",
+                ha="center", va="center", fontsize=7, color=OURS_PY, style="italic")
     for k in ("service", "agent", "closed"):
         sel = [p for p in pts if p[3] == k]
-        a2.scatter([p[1] for p in sel], [p[2] for p in sel], s=20, color=KPY[k], label=KIND[k], zorder=2, edgecolor="white", linewidth=0.4)
-    ourx, oury = (MEASURED.get("extractbench") or {}).get("usd_per_page"), BY["extractbench"]["ours"]["score"]
-    for (name, x, y, _), off, ha in zip(sorted(pts, key=lambda p: -p[2])[:2], [(-4, 5), (5, -9)], ["right", "left"]):
-        a2.annotate(name, (x, y), textcoords="offset points", xytext=off, ha=ha, fontsize=6.3, color=MUTED_PY)
+        ax.scatter([p[1] for p in sel], [p[2] for p in sel], s=36, color=KPY[k], label=KIND[k], zorder=2,
+                   edgecolor="white", linewidth=0.6)
+    leaders = sorted(pts, key=lambda p: -p[2])[:2]
+    lx = max(p[1] for p in leaders)
+    ax.annotate(" and ".join(p[0] for p in leaders) + f"\n{leaders[0][2]:.2f} at "
+                + " and ".join(f"\\${p[1]:.3f}" for p in sorted(leaders, key=lambda p: p[1])),
+                (lx, leaders[0][2]), textcoords="offset points", xytext=(9, 0), va="center", fontsize=6.6, color=MUTED_PY)
     if ourx:
-        a2.scatter([ourx], [oury], s=70, color=OURS_PY, marker="D", zorder=3, label="DocQuorum")
-        a2.annotate("DocQuorum", (ourx, oury), textcoords="offset points", xytext=(-8, -3), ha="right",
-                    fontsize=8, color=OURS_PY, weight="bold")
-    a2.set_xscale("log")
-    a2.xaxis.set_major_locator(LogLocator(subs=(1, 2, 5)))
-    a2.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f"${v:g}"))
-    a2.xaxis.set_minor_formatter(NullFormatter())
-    a2.set_ylim(74, 98)
-    a2.set_xlabel("$ per page (log scale)", fontsize=7)
-    a2.set_ylabel("value F1 (%)", fontsize=7)
-    a2.set_title("ExtractBench: accuracy against cost", fontsize=9.5, loc="left")
-    a2.legend(fontsize=6.5, frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=4)
-    a2.grid(alpha=0.25, which="both")
+        ax.scatter([ourx], [oury], s=150, color=OURS_PY, marker="D", zorder=4, edgecolor="white", linewidth=0.8,
+                   label="DocQuorum")
+        ax.annotate(f"DocQuorum\n{oury:.2f} at \\${ourx:.3f}", (ourx, oury), textcoords="offset points", xytext=(-11, 0),
+                    ha="right", va="center", fontsize=8.5, color=OURS_PY, weight="bold")
+        lo, hi = (min(p[1] for p in leaders) / ourx, lx / ourx)
+        ax.annotate("", xy=(min(p[1] for p in leaders) * 0.9, oury), xytext=(ourx * 1.18, oury),
+                    arrowprops=dict(arrowstyle="<-", color=NAVY_PY, lw=1.0))
+        ax.text((ourx * min(p[1] for p in leaders)) ** 0.5, oury + 0.25, f"{lo:.0f}-{hi:.0f}× the cost",
+                ha="center", va="bottom", fontsize=7.5, color=NAVY_PY, weight="bold")
+    ax.set_xscale("log")
+    ax.set_xlim(xmin, xmax)
+    ax.set_ylim(ymin, ymax)
+    ax.xaxis.set_major_locator(LogLocator(subs=(1, 2, 5)))
+    ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f"${v:g}"))
+    ax.xaxis.set_minor_formatter(NullFormatter())
+    ax.set_xlabel("$ per page (log scale)", fontsize=7.5)
+    ax.set_ylabel("value F1 (%)", fontsize=7.5)
+    ax.set_title("ExtractBench: accuracy against cost (every priced system scoring 85 or more)", fontsize=8.6, loc="left")
+    ax.legend(fontsize=6.8, frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.14), ncol=4)
+    ax.grid(alpha=0.22, which="major")
     fig.tight_layout()
     fig.savefig(path)
     plt.close(fig)
 
 
 chart_cost(A / "cost_accuracy.png")
-top2 = sorted(lb, key=lambda r: -float(r["Overall"]))[:2]
-frame("Low cost per page", r"""
-\centering\includegraphics[width=\textwidth,height=5.0cm,keepaspectratio]{assets/cost_accuracy.png}\par
-\raggedright{\footnotesize On ExtractBench, the two systems above DocQuorum cost \textbf{\$T1} and \textbf{\$T2} a page; DocQuorum's tokens come to \textbf{\$OURS} a page, and no published system is both cheaper and more accurate.\par}
-\src{Left: means over a random sample of each benchmark (results/costs/). Right: every ExtractBench system the leaderboard prices (cost per page weighted by split, as the leaderboard computes it); DocQuorum's measured tokens at the Qwen3.8-27B list price (\$QIN / \$QOUT per million input / output tokens). DocQuorum itself runs on one GPU, with no price per call.}
-""".replace("T1", f"{float(top2[0]['Cost_Per_Page']):.3f}").replace("T2", f"{float(top2[1]['Cost_Per_Page']):.3f}").replace(
-    "OURS", cost("extractbench", "usd_per_page", 3)).replace("QIN", f"{QWEN['input']:.2f}").replace("QOUT", f"{QWEN['output']:.2f}"))
-
 rows_db = [r for r in COST.get("docubench", {}).get("documents", []) if r.get("status") == "completed"]
 one = [r for r in rows_db if len(r.get("route") or []) == 1]
-mean = lambda xs: sum(xs) / max(1, len(xs))
-vxm = MEASURED.get("varex") or {}
-claude_out = 15.0                       # DocuBench's own runner: Claude Sonnet 5 at $3 / $15 per million tokens
-frame("Why a document costs little", r"""
+cents = ", ".join(f"{b['title']} {100 * MEASURED[b['key']]['usd_per_page']:.1f}" for b in ORDER if MEASURED.get(b["key"]))
+o_db, n_db, k_db = (lambda: (None, None, []))()
+v13 = PR.COSTS / "v1.3" / "docubench.json"
+if v13.exists() and "docubench" in COST:
+    o_db = {r["document"]: r for r in json.loads(v13.read_text())["documents"]}
+    n_db = {r["document"]: r for r in COST["docubench"]["documents"]}
+    k_db = [k for k in n_db if k in o_db]
+speed = (sum(o_db[k]["seconds"] for k in k_db) / sum(n_db[k]["seconds"] for k in k_db)) if k_db else None
+frame("Accuracy at a fraction of the cost", r"""
 \begin{columns}[T]
-\column{0.48\textwidth}
-\begin{block}{One reading when the file has text}
-\footnotesize ONEN of DOCN sampled DocuBench documents took a single model call, \$ONEUSD each on average.
-\end{block}
-\begin{block}{More readings only for scans}
-\footnotesize Scans get three readings, run at the same time; zoom re-reads only the disputed fields a new vote could change. A VAREX form takes VXCALLS calls.
-\end{block}
-\column{0.48\textwidth}
-\begin{block}{An open 27B model}
-\footnotesize \$QOUT per million output tokens at list price: a tenth of GPT-5.5 (\$GOUT), a fifth of Claude Sonnet 5 (\$CLOUT). On its own GPU, no price per call at all.
-\end{block}
-\begin{block}{Accuracy from the pipeline}
-\footnotesize The same model called once scores EBQ on ExtractBench; DocQuorum with it, EBOURS: the extra calls buy the accuracy.
-\end{block}
-\end{columns}
-\src{results/costs/: every measured document (calls, tokens, seconds); prices in docs/results/pricing.json. Long scans cost more than short files: they are read in chunks, once per reading.}
-""".replace("ONEN", str(len(one))).replace("DOCN", str(len(rows_db))).replace(
-    "ONEUSD", f"{mean([PR.document_usd(r) for r in one]):.3f}").replace(
-    "VXCALLS", f"{vxm.get('model_calls', 0):.1f}").replace("QOUT", f"{QWEN['output']:g}").replace(
-    "GOUT", f"{PRICE['gpt-5.5']['output']:g}").replace("CLOUT", f"{claude_out:g}").replace(
-    "EBQ", f"{eb_direct:.2f}").replace("EBOURS", f"{BY['extractbench']['ours']['score']:.2f}"))
-
-
-# ------------------------------------------------------------------ v1.4: faster on long scans
-def same_docs(bench):
-    """v1.3 and v1.4 measurements of the same documents (results/costs/v1.3, results/costs)."""
-    old_f = PR.COSTS / "v1.3" / f"{bench}.json"
-    if not old_f.exists() or bench not in COST:
-        return None, None, []
-    old = {r["document"]: r for r in json.loads(old_f.read_text())["documents"]}
-    new = {r["document"]: r for r in COST[bench]["documents"]}
-    return old, new, [k for k in new if k in old]
-
-
-def chart_speed(path, old, new, keys):
-    plt = plt_setup()
-    fig, ax = plt.subplots(figsize=(6.2, 3.6), dpi=220)
-    y = range(len(keys))[::-1]
-    o = [old[k]["seconds"] / 60 for k in keys]
-    n = [new[k]["seconds"] / 60 for k in keys]
-    ax.barh([i + 0.2 for i in y], o, 0.38, color="#C8CDD5", label="v1.3")
-    ax.barh([i - 0.2 for i in y], n, 0.38, color=OURS_PY, label="v1.4")
-    for i, a, c in zip(y, o, n):
-        ax.text(a + 0.8, i + 0.2, f"{a:.0f} min", va="center", fontsize=6.8, color=MUTED_PY)
-        ax.text(c + 0.8, i - 0.2, f"{c:.0f} min", va="center", fontsize=6.8, color=OURS_PY, weight="bold")
-    ax.set_yticks(list(y), [f"{k} ({old[k]['pages']} p.)" for k in keys], fontsize=7)
-    ax.set_xlim(0, max(o) * 1.18)
-    ax.set_xlabel("minutes per document, measured alone", fontsize=7)
-    ax.set_title("DocuBench: the five slowest sampled documents", fontsize=9, loc="left")
-    ax.legend(fontsize=7, frameon=False, loc="lower right")
-    ax.tick_params(axis="y", length=0)
-    ax.grid(axis="x", alpha=0.25)
-    fig.tight_layout()
-    fig.savefig(path)
-    plt.close(fig)
-
-
-o_db, n_db, k_db = same_docs("docubench")
-o_vx, n_vx, k_vx = same_docs("varex")
-if k_db and k_vx:
-    tot = lambda d, ks, f: sum(d[k][f] for k in ks)
-    heavy = sorted(k_db, key=lambda k: -o_db[k]["seconds"])[:5]
-    chart_speed(A / "chart_speed.png", o_db, n_db, heavy)
-    frame("v1.4: long scans read faster", (r"""
-\begin{columns}[T]
-\column{0.38\textwidth}
-\begin{block}{The same documents, measured alone}
+\column{0.63\textwidth}
+\includegraphics[width=\linewidth]{assets/cost_accuracy.png}
+\column{0.35\textwidth}
 \footnotesize
-DocuBench (20): \textbf{DBX$\times$ faster}\\ {\color{muted}DBOLD s $\to$ DBNEW s}\\[0.4em]
-VAREX (30 forms): \textbf{VXX$\times$ faster}\\ {\color{muted}VXOLD s $\to$ VXNEW s}
-\end{block}
-\footnotesize
-\textbf{Loops stopped by the model server} once one stretch of tokens repeats 40 times, not at the output limit.\\[0.3em]
-\textbf{A scan's readings at the same time}, entering the quorum in the same order.\\[0.3em]
-DocuBench, all 72 documents read again: \textbf{DBSCORE}.
-\column{0.58\textwidth}
-\includegraphics[width=\linewidth]{assets/chart_speed.png}
+\textbf{No system is both cheaper and more accurate} than DocQuorum on ExtractBench.\\[0.6em]
+\textbf{A few cents a page} on every benchmark:\\ {\color{muted}CENTS (cents)}\\[0.6em]
+\textbf{Why:} one reading when the file has text; three readings only for scans, run at the same time; an open 27B model at a tenth of GPT-5.5's price per output token.\\[0.6em]
+\textbf{v1.4:} long scans SPEED$\times$ faster.
 \end{columns}
-\src{results/costs/v1.3 and results/costs: every measured document, before and after.}
-""").replace("DBOLD", f"{tot(o_db, k_db, 'seconds'):,.0f}").replace("DBNEW", f"{tot(n_db, k_db, 'seconds'):,.0f}").replace(
-        "DBX", f"{tot(o_db, k_db, 'seconds') / tot(n_db, k_db, 'seconds'):.1f}").replace(
-        "VXOLD", f"{tot(o_vx, k_vx, 'seconds'):,.0f}").replace("VXNEW", f"{tot(n_vx, k_vx, 'seconds'):,.0f}").replace(
-        "VXX", f"{tot(o_vx, k_vx, 'seconds') / tot(n_vx, k_vx, 'seconds'):.1f}").replace(
-        "DBSCORE", f"{BY['docubench']['ours']['score']:.2f}"))
+\src{DocQuorum: measured tokens on a random sample of each benchmark (results/costs/), priced at the Qwen3.8-27B list price (\$QIN / \$QOUT per million input / output tokens; it runs on its own GPU, with no price per call), weighted by split as the leaderboard computes cost per page.}
+""".replace("CENTS", cents).replace("ONEN", str(len(one))).replace("DOCN", str(len(rows_db))).replace(
+    "SPEED", f"{speed:.1f}" if speed else "--").replace("QIN", f"{QWEN['input']:.2f}").replace("QOUT", f"{QWEN['output']:.2f}"))
 
 zv = load("../../results/varex-zoom/comparison.json")
 zu = json.loads((ROOT / "results/unikie_open/zoom/comparison.json").read_text())

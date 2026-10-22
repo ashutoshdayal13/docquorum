@@ -1,0 +1,33 @@
+{
+ "application_number": "NDA2023001",
+ "date_of_submission": "11/09/2022",
+ "applicant": {
+  "name": "Ria N. Briones",
+  "address": "10977 Evans Islands Suite 173, Cookberg, TX 27389",
+  "phone": "(496) 017-2284",
+  "fax": "(359) 931-2139"
+ },
+ "contact": {
+  "name": "Ria N. Briones",
+  "address": "10977 Evans Islands Suite 173, Cookberg, TX 27389",
+  "email": "ria.briones@gmail.com",
+  "phone": "(496) 017-2284",
+  "fax": "(359) 931-2139"
+ },
+ "product_information": {
+  "established_name": "Cephalexin",
+  "proprietary_name": "Keflex",
+  "dosage_form": "Capsules",
+  "dose_or_dose_range": "250 mg, 500 mg",
+  "route_of_administration": "Oral",
+  "species_and_class": "Dogs and Cats",
+  "proposed_indication": "For the treatment of bacterial infections such as skin, urinary tract, and respiratory infections"
+ },
+ "application_details": {
+  "date_of_designation": "10/15/2022",
+  "reference_listed_drug_proprietary_name": "Keflex",
+  "reference_listed_drug_application_number": "NDA0012345",
+  "holder_of_approved_application": "Carr-Rice",
+  "other_description": null
+ }
+}

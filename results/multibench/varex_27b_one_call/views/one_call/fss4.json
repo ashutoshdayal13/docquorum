@@ -1,0 +1,31 @@
+{
+ "legal_name": "Saunders-Phillips GeoSolutions LLC",
+ "trade_name": "GeoSolutions",
+ "entity_type": "Corporation",
+ "application_reason": "Starting a new business",
+ "business_start_date": "06/01/2023",
+ "first_wages_date": "07/15/2023",
+ "principal_activity": "Geographic information",
+ "principal_line_of_business": "Providing geospatial data collection and mapping services",
+ "mailing_address": {
+  "address_line1": "187 Hardin Point",
+  "city_state_zip": "Johnstonbury, OR 48738"
+ },
+ "street_address": {
+  "address_line1": "187 Hardin Point",
+  "city_state_zip": "Johnstonbury, OR 48738"
+ },
+ "principal_business_location": {
+  "county": "Johnston County",
+  "state": "Oregon"
+ },
+ "responsible_party": {
+  "name": "Ishita X. Aguilar",
+  "identifier": "071-69-4116"
+ },
+ "third_party_designee": {
+  "name": "Ishita X. Aguilar, Cartographer",
+  "phone": "(792) 261-5769",
+  "address": "187 Hardin Point, Johnstonbury, OR 48738"
+ }
+}

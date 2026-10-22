@@ -1,0 +1,30 @@
+{
+ "receipt_number": "DPM-2025-1244",
+ "eta_case_number": "ETA-2023-123456-7890",
+ "employing_company_name": "Zuniga, Carter and Tran",
+ "trade_name": "Zuniga Financial Services",
+ "date_of_birth": "08/13/1993",
+ "employer_contact_information": {
+  "contact_phone": "(831) 349-3028",
+  "contact_email": "nharo@zuniga.com"
+ },
+ "employer_legal_name": {
+  "legal_name": "Nicole H. Haro"
+ },
+ "taxpayer_identification_numbers": {
+  "ein": "12-3456789",
+  "ssn": "126-91-59"
+ },
+ "employer_address": {
+  "street_address": "0867 Brown Lodge",
+  "city": "Adamsland",
+  "zip_code": "87718"
+ },
+ "reporting_period": {
+  "start_date": "01/01/2023",
+  "end_date": "06/30/2023"
+ },
+ "e_verify_information": {
+  "e_verify_case_number": "EVR-2023-12345"
+ }
+}

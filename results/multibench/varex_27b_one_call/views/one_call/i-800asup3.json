@@ -1,0 +1,29 @@
+{
+ "family_name": "Bacik",
+ "given_name": "Jorge Luis",
+ "middle_name": "S",
+ "other_names_used": "Jorge Luis S. Bacik",
+ "date_of_birth": "09/19/1963",
+ "place_of_birth": "East Jasonstad, NJ, USA",
+ "daytime_phone": "(337) 493-6090",
+ "email_address": "jorgeluis.bacik@gmail.com",
+ "uscis_receipt_number": "CTL-2025-63511",
+ "date_of_approval": "03/15/2023",
+ "date_approval_expires": "03/14/2026",
+ "location_of_uscis_office": "New York Field Office",
+ "uscis_account_number": "9572-4612-6564",
+ "home_address": {
+  "street": "938 Kelly Terrace",
+  "city": "East Jasonstad",
+  "state": "NJ",
+  "zip_code": "16236",
+  "country": "USA"
+ },
+ "mailing_address": {
+  "street": "938 Kelly Terrace",
+  "city": "East Jasonstad",
+  "state": "NJ",
+  "zip_code": "16236",
+  "country": "USA"
+ }
+}

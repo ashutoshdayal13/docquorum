@@ -1,0 +1,38 @@
+{
+ "former_employee_name": "Michael X. Melendez",
+ "date_of_birth": "03/28/1984",
+ "date_of_termination": "12/15/2023",
+ "social_security_number": "046-27-1321",
+ "location_of_employment": "Elizabethfurt, WA",
+ "payroll_office_number": "PO-2024-26059",
+ "appropriation_fund": "Treasury - 1234",
+ "disbursing_office": "Treasury Disbursing Office - 5678",
+ "certification_date": "01/30/2024",
+ "non_pay_periods": [
+  {
+   "period_description": "Leave With",
+   "start_date": null,
+   "end_date": "03/31/2023"
+  },
+  {
+   "period_description": "Annual",
+   "start_date": "04/01/2023",
+   "end_date": null
+  },
+  {
+   "period_description": "Sick Leave",
+   "start_date": "07/01/2023",
+   "end_date": null
+  },
+  {
+   "period_description": "Leave With",
+   "start_date": "10/01/2023",
+   "end_date": null
+  }
+ ],
+ "certifying_official": {
+  "name": "Lori Z. Lopez",
+  "title": "Logistics and distribution",
+  "phone": "(346) 285-8857"
+ }
+}

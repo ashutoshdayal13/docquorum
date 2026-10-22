@@ -1,0 +1,24 @@
+{
+ "business_name": "Maynard-Carr Publications",
+ "authorized_individual_name": "Ranbir J. Leiva, CEO",
+ "business_address": {
+  "street_address": "00220 Collin Radial Suite 282",
+  "city": "Robertfort"
+ },
+ "mailing_address": {
+  "mailing_city": "Robertfort",
+  "mailing_zip_code": "69199"
+ },
+ "administrative_contacts": [
+  {
+   "phone": "(305) 870-3424",
+   "email": "xmontoya@young.com"
+  }
+ ],
+ "technical_contacts": [
+  {
+   "phone": "(828) 474-4596",
+   "email": "cbesson@yodercampbell.com"
+  }
+ ]
+}

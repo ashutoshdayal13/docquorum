@@ -20,9 +20,9 @@ Each benchmark below is scored with its own scorer and placed against every publ
 
 Scores: each benchmark's own scorer on the full test set; places count every published system. Calls, dollars and seconds: means per document over a random sample of each benchmark (`results/costs/`); the dollars price the measured tokens at the Qwen3.8-27B list price ($0.50 / $3.00 per million input / output tokens), since DocQuorum itself runs on one GPU with no price per call; the seconds are upper bounds on a shared H100.
 
-![Each benchmark's six best systems, DocQuorum among them](ppt/flow/assets/chart_ranks.png)
+![The same model called once, and through DocQuorum: score and place among the published systems](ppt/flow/assets/chart_gain.png)
 
-![DocQuorum against the best published open model, and against the best closed model](ppt/flow/assets/chart_open_closed.png)
+![ExtractBench: accuracy against cost; no published system is both cheaper and more accurate](ppt/flow/assets/cost_accuracy.png)
 <!-- results:end -->
 
 

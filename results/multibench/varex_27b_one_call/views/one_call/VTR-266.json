@@ -1,0 +1,15 @@
+{
+ "vehicle_identification_number": "1HGCM82633A129184",
+ "make": "Honda",
+ "body_style": "SUV",
+ "model": "Pilot",
+ "title_document_number": "TX1234567890",
+ "texas_license_plate_number": "ABC1234",
+ "lienholder": {
+  "date_lien_satisfied": "05/15/2023"
+ },
+ "authorized_agent": {
+  "phone_number": "(273) 043-3505",
+  "signature_date": "05/15/2023"
+ }
+}

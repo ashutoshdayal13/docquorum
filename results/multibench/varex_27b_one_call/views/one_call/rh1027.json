@@ -1,0 +1,34 @@
+{
+ "complainant_name": "James Neal",
+ "complainant_position": "Radio broadcast assistant",
+ "complainant_type": "Employee",
+ "employer_name": "White, Parker and Cook",
+ "violation_location": "52193 Jacob Dam Apt. 351, Keithfort, WY 51065",
+ "violation_description": "Excessive radiation exposure in the workplace",
+ "violated_regulations": "Section 10085 of the Radiation Control Regulations",
+ "complainant_contact": {
+  "address": "52193 Jacob Dam Apt. 351",
+  "city": "Keithfort",
+  "zip_code": "51065",
+  "home_phone": "78031186",
+  "office_phone": "78981266"
+ },
+ "employer_contact": {
+  "phone": "78981266",
+  "address": "52193 Jacob Dam Apt. 351",
+  "city": "Keithfort",
+  "state": "WY",
+  "zip_code": "51065",
+  "type_of_business": "Broadcasting and media services"
+ },
+ "employer_agents": [
+  {
+   "name": "Patricia Henry",
+   "phone": "27403090"
+  },
+  {
+   "name": "Emilio Kiliszek",
+   "phone": "98571397"
+  }
+ ]
+}

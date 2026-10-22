@@ -1,0 +1,31 @@
+{
+ "mdl_accession_number": "MDL2024-00457",
+ "date_received": "06/15/2024",
+ "physician_name": "Vedhika K. Madera",
+ "physician_phone_number": "(543) 154-6749",
+ "clinical_condition": "Suspected bacterial meningitis with fever, neck stiffness, and altered mental status",
+ "specimen_source": "Cerebrospinal Fluid (CSF)",
+ "other_specimen_details": "Clear, colorless fluid, collected via lumbar puncture",
+ "gram_stain_results": "Gram-negative diplococci observed",
+ "date_of_culture": "06/14/2024",
+ "final_culture_results_date": "06/18/2024",
+ "major_clinical_findings": "Patient presented with high fever, severe headache, and photophobia. No recent travel history. Vaccination status unknown.",
+ "wbc_count": "1200 cells/μL",
+ "protein_level": "180 mg/dL",
+ "glucose_level": "30 mg/dL",
+ "comments": "Patient responded well to initial empirical antibiotic therapy. Further follow-up recommended.",
+ "report_approved_by": "Emily M. Palomino, RN",
+ "date_reported": "06/20/2024",
+ "patient": {
+  "patient_name": "Michael Q. Stephenson",
+  "patient_age_or_dob": "05/25/1975",
+  "patient_gender": "Male",
+  "patient_address": "0555 Hunter Spring, Williamhaven, MN 45114"
+ },
+ "submitter": {
+  "submitter_name": "Emily M. Palomino",
+  "submitter_address": "079 Castillo Viaduct, New Jenniferburgh, PA 08950",
+  "submitter_phone_number": "(258) 628-4500",
+  "submitter_fax_number": "(632) 838-8906"
+ }
+}

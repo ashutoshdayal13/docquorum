@@ -1,0 +1,23 @@
+{
+ "name_of_firm": "Smith and Sons",
+ "requestor_name": "Alex K. Leduc",
+ "requestor_email": "alex.leduc@yahoo.com",
+ "facility_address": {
+  "address": "516 Ramirez Mountains Suite 695",
+  "city": "Jameschester",
+  "state": "MT",
+  "zip_code": "11917"
+ },
+ "requestor_address": {
+  "address": "516 Ramirez Mountains Suite 695",
+  "city": "Jameschester",
+  "state": "MT",
+  "zip_code": "11917"
+ },
+ "requestor_mailing_address": {
+  "address": "P.O. Box 12345",
+  "city": "Jameschester",
+  "state": "MT",
+  "zip_code": "11917"
+ }
+}

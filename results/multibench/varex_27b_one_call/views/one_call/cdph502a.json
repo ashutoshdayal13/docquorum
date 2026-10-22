@@ -1,0 +1,35 @@
+{
+ "applicant_name_last": "Young",
+ "applicant_name_first": "Daniel",
+ "applicant_name_middle_initial": "M",
+ "social_security_number": "854-31-8978",
+ "work_telephone_number": "(912) 959-0951",
+ "home_telephone_number": "(923) 979-0493",
+ "email_address": "daniel.young@hotmail.com",
+ "fax_number": "(818) 280-4382",
+ "date_of_birth": "04/18/2000",
+ "former_names": [
+  "Danny Young"
+ ],
+ "signature_date": "06/15/2023",
+ "mailing_address": {
+  "street": "0407 Michelle Grove Suite 501",
+  "city": "Aaronberg",
+  "state": "FL",
+  "zip_code": "59632"
+ },
+ "other_agency_licenses": [
+  {
+   "agency_name": "Florida Board of Architecture",
+   "license_number": "RA-2025-FL-72837"
+  },
+  {
+   "agency_name": "American Health Care Association",
+   "license_number": "AHCA-2022-FL-54321"
+  },
+  {
+   "agency_name": "National Association of Long Term Care Administrator Boards",
+   "license_number": "NALT CAB-2021-NAT-67890"
+  }
+ ]
+}

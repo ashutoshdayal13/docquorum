@@ -1,0 +1,26 @@
+{
+ "employer_information": {
+  "employer_name": "Reid, Williams and Padilla",
+  "employer_address": "390 Jonathan Orchard",
+  "employer_city": "Port Marie",
+  "employer_state": "CO",
+  "employer_zip_code": "14010",
+  "employer_contact_name": "Kenneth Mitra",
+  "employer_contact_email": "kmitra@reid.com"
+ },
+ "us_agent_information": {
+  "us_agent_name": "Alaska Maritime Agency",
+  "us_agent_address": "123 Harbor Way",
+  "us_agent_city": "Anchorage",
+  "us_agent_state": "AK",
+  "us_agent_zip_code": "99501",
+  "us_agent_contact_phone": "(907) 555-1010",
+  "us_agent_contact_email": "sjohnson@alaskamaritime.com"
+ },
+ "location_information": {
+  "location_name": "Port of Anchorage",
+  "location_address": "101 Marina Drive",
+  "location_city": "Anchorage",
+  "location_state": "AK"
+ }
+}

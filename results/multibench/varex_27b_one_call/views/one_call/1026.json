@@ -1,0 +1,25 @@
+{
+ "requesting_office": "Office of Personnel and Training",
+ "request_date": "02/15/2024",
+ "form_of_payment": "Check",
+ "employee": {
+  "name": "Andrea Preston",
+  "social_security_number": "686-77-833",
+  "organization_code": "DPM-2024-"
+ },
+ "approvals": {
+  "administrative_officer": "Andrea Preston",
+  "administrative_officer_date": "02/15/2024",
+  "finance_director": "Nicholas Y. Moore",
+  "finance_director_date": "02/16/2024",
+  "personnel_director": "Cameron D. Guerra",
+  "personnel_director_date": "02/17/2024"
+ },
+ "reimbursement_details": {
+  "due_date": "03/15/2024",
+  "location": "Davidville, NC",
+  "room": "Room 285",
+  "received_date": "03/14/2024",
+  "certification_date": "03/14/2024"
+ }
+}

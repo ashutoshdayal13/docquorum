@@ -1,0 +1,47 @@
+{
+ "manufacturer_distributor_name": "Newton-Johnson Automotive",
+ "authorized_representative_name": "Tomasz V. Jenkins",
+ "signature_date": "06/12/2023",
+ "signatory_phone": "(674) 070-3089",
+ "signatory_email": "tomasz.jenkins@aol.com",
+ "dealership_address": {
+  "street": "83297 Gibson Mission Suite 555",
+  "city": "South James",
+  "state": "Texas",
+  "zip_code": "70302"
+ },
+ "vehicle_line_makes": [
+  {
+   "line_make": "Toyota"
+  },
+  {
+   "line_make": "Honda"
+  },
+  {
+   "line_make": "Ford"
+  },
+  {
+   "line_make": "Chevrolet"
+  },
+  {
+   "line_make": "BMW"
+  }
+ ],
+ "vehicle_type_codes": [
+  {
+   "type_code": "AUT"
+  },
+  {
+   "type_code": "TRK"
+  },
+  {
+   "type_code": "SUV"
+  },
+  {
+   "type_code": "VAN"
+  },
+  {
+   "type_code": "MOT"
+  }
+ ]
+}

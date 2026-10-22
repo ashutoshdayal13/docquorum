@@ -1,0 +1,26 @@
+{
+ "client_occupation": "Geologist, wellsite",
+ "remarks": "Client completed VR program and secured employment as a geologist.",
+ "client": {
+  "name": "Bignardi, Marissa F.",
+  "ssn_primary": "888-67-41"
+ },
+ "dates": {
+  "client_entered": "01/15/2023",
+  "signed_ipe": "02/20/2023",
+  "employment_began": "05/10/2023",
+  "final_vr_closure": "08/30/2023",
+  "months_work_activity_tracked": "3 months"
+ },
+ "costs": {
+  "direct_during_vr": 5751.6,
+  "administrative_during_vr": "$2500.00",
+  "administrative_after_vr": "$300.00",
+  "other": "$150.00",
+  "total_claimed": 8601.6
+ },
+ "signature_info": {
+  "title": "Geologist, wellsite",
+  "date": "08/30/2023"
+ }
+}

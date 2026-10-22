@@ -1,0 +1,25 @@
+{
+ "injured_worker_name": "Marcin Letellier",
+ "last_name": "Letellier",
+ "owcp_number": "PO-2020-42931",
+ "maintenance_pay_period_start": "01/01/2023",
+ "maintenance_pay_period_end": "01/31/2023",
+ "days_absent": "0",
+ "reason_for_absence": "N/A",
+ "date_signed_by_injured_worker": "01/15/2023",
+ "remarks": "Maintenance payment approved as per the rehabilitation program.",
+ "district_office_number": "02927",
+ "date_signed_by_rehabilitation_specialist": "01/16/2023",
+ "print_name": "Debbie Singleton",
+ "mailing_address": {
+  "address_line_1": "78963 Ramirez Plaza Suite 846",
+  "address_line_2": null,
+  "city": "Donnaburgh",
+  "zip_code": "02927"
+ },
+ "facility_official": {
+  "facility_official_name": "Sheila G. Bouvier",
+  "facility_official_title": "Psychotherapist",
+  "date_signed_by_facility_official": "01/17/2023"
+ }
+}

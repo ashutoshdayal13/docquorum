@@ -1,0 +1,28 @@
+{
+ "employee_name": "Isabel House",
+ "organization_name": "Meza-Carpenter",
+ "request_date": "05/15/2024",
+ "last_schedule_change_date": "03/10/2024",
+ "proposed_effective_date": "06/01/2024",
+ "schedule_deviations": [
+  "04/20/2024: Left 30 minutes early due to personal appointment",
+  "05/05/2024: Arrived 15 minutes late due to traffic",
+  "05/10/2024: Took an extended lunch break of 1.5 hours"
+ ],
+ "current_work_schedule": {
+  "start_time": "08:30 AM",
+  "end_time": "05:00 PM"
+ },
+ "proposed_flexitour_work_schedule": {
+  "start_time": "07:30 AM",
+  "end_time": "04:30 PM"
+ },
+ "supervisor_approval": {
+  "supervisor_name": null,
+  "approval_date": "05/16/2024"
+ },
+ "next_schedule_change": {
+  "change_date": "06/01/2024",
+  "change_reason": "Transition to flexitour schedule"
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "name_of_firm": "Hicks, Brown and Jones",
+ "dba_name": "HBJ Industrial Hemp Solutions",
+ "mailing_address": "5695 Garcia Trafficway, New Ruben, TX 39819",
+ "facility_website": "www.hbjindustrialhemp.com",
+ "owner_corporate_name": "Hicks, Brown and Jones LLC",
+ "state_of_incorporation": "Texas",
+ "facility_address": {
+  "street": "5695 Garcia Trafficway",
+  "continued": "New Ruben, TX 39819",
+  "city": "New Ruben",
+  "state": "TX",
+  "zip_code": "39819",
+  "country": "United States"
+ },
+ "owners_officers_board_members_names": [
+  {
+   "name": "Kevin Y. Rodriguez",
+   "title": "CEO"
+  }
+ ],
+ "industrial_hemp_sources": [
+  {
+   "source_name": "Green Leaf Farms"
+  },
+  {
+   "source_name": "Blue Sky Hemp Collective"
+  },
+  {
+   "source_name": "Mountain High Hemp"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "attorney_state_bar_number": "RA-2023-WA-6265",
+ "beneficiary_relationship_to_sponsor": "Son",
+ "initial_admission_port_of_entry": "John F. Kennedy Intl",
+ "destination_in_us": "East Annaville, WA 47831",
+ "beneficiary": {
+  "family_name": "Kothari",
+  "given_name": "Frank",
+  "date_of_birth": "07/30/1995",
+  "city_of_birth": "East Annaville",
+  "province_or_state_of_birth": "Washington",
+  "country_of_birth": "United States",
+  "country_of_citizenship": "United States"
+ },
+ "beneficiary_file_location": {
+  "file_location": "File Cabinet 3"
+ },
+ "mailing_address": {
+  "street": "78606 Allen Landing",
+  "city": "East Annaville",
+  "zip_code": "47831"
+ }
+}

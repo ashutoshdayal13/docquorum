@@ -1,0 +1,32 @@
+{
+ "owner_name": "Emma Wright",
+ "lienholder_name": "Jonathan Gardner",
+ "vehicle_year": 2018,
+ "vehicle_plate": "ABC1234",
+ "vehicle_make": "Toyota",
+ "vehicle_model": "Camry",
+ "towing_date": "03/15/2023",
+ "towing_amount": 17.41,
+ "miscellaneous_amount": null,
+ "storage_start_date": "03/15/2023",
+ "storage_days": 15,
+ "storage_amount": 150,
+ "claim_due_date": "03/15/2023",
+ "additional_lien_start_date": "03/30/2023",
+ "redemption_deadline": "04/15/2023",
+ "auction_date": "04/20/2023",
+ "auction_place": "Public Auction Lot, 1234 Auction Lane, Albany, NY",
+ "auction_time": "10:00 AM",
+ "auctioneer": "John Doe Auctions",
+ "garageperson_signature_date": "03/15/2023",
+ "owner_address": {
+  "street": "109 Joshua Port"
+ },
+ "lienholder_address": {
+  "street": "98237 Walters Ville Suite 364"
+ },
+ "garageperson": {
+  "name": "Alexa S. David",
+  "address": "967 Sheila Islands, Williamport, OH 34689"
+ }
+}

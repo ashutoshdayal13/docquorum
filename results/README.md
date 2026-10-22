@@ -176,6 +176,7 @@ benchmark's authors; the leaderboard reports one decimal.
 | DocQuorum v1.2, zoom re-reading on the v1.1 readings | 98.30 | 1st |
 | Gemini 2.5 Pro | 98.0 | 2nd |
 | DocQuorum without zoom re-reading | 98.10 | tied with Gemini 2.5 Pro at one decimal |
+| Qwen3.8-27B called once, the benchmark's own protocol (`benchmarks/multibench/varex_one_call.py`) | 97.48 | (2nd) |
 | Gemini 2.5 Flash | 97.3 | 3rd |
 | Qwen3-VL-8B (best published open model) | 96.6 | 4th |
 

@@ -1,0 +1,9 @@
+{
+ "condominium_name": "Oakwood Heights Condominium",
+ "condominium_identifier": "OHC-2023",
+ "governing_law": "Florida Condominium Act, Chapter 718",
+ "address": {
+  "street": "1234 Oakwood Boulevard",
+  "state": "FL"
+ }
+}

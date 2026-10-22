@@ -1,0 +1,16 @@
+{
+ "employee_name": "Sundaram, Joshua",
+ "employee_ssn": "700-73-909",
+ "employee_home_address": "534 Rachel Lakes Suite 020, South Jacob, NV 62327",
+ "employing_agency": "George Group, Translation Department",
+ "employee_savings_account_no": "8847-5419-9240",
+ "date_submitted_to_agency": "10/01/2023",
+ "employee_identification_no": "DPM-2022-57237",
+ "allotment_action": "Increase",
+ "financial_organization": {
+  "name": "Central Savings Bank",
+  "address": "1234 Main Street, New York, NY 10001",
+  "title": "Branch Manager",
+  "signature_date": "10/01/2023"
+ }
+}

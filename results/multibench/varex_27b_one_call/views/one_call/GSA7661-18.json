@@ -1,0 +1,37 @@
+{
+ "approving_official_first_name": "Elizabeth",
+ "approving_official_middle_initial": "J.",
+ "approving_official_last_name": "Bauer",
+ "supervising_manager_name": "Aaron S. Barnes",
+ "cardholder_name": "Carla J. Williams",
+ "approving_official_certification_name": "Elizabeth J. Bauer",
+ "approving_official_certification_date": "06/15/2024",
+ "supervising_manager_certification_name": "Aaron S. Barnes",
+ "supervising_manager_certification_date": "06/15/2024",
+ "purchase_card_coordinator_name": "Carla J. Williams",
+ "purchase_card_coordinator_date": "06/15/2024",
+ "approving_official_address": {
+  "office_address": "75394 Jenkins Island, East Amber",
+  "city": "East Amber",
+  "state": "NC",
+  "zip_code": "29791"
+ },
+ "approving_official_contact": {
+  "email": "elizabeth.bauer@hotmail.com",
+  "phone": "(434) 425-9390"
+ },
+ "supervising_manager_contact": {
+  "email": "aaron.barnes@yahoo.com",
+  "phone": "(624) 524-9739"
+ },
+ "reporting_hierarchy": [
+  {
+   "levels": [
+    "President",
+    "Vice President",
+    "Director",
+    "Manager"
+   ]
+  }
+ ]
+}

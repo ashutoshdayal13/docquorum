@@ -1,0 +1,134 @@
+{
+ "region": "Region 5, Chicago",
+ "place_of_inspection": "Sharonbury, MA",
+ "inspection_date": "10/05/2023",
+ "contract_number": "CONT-2023-001",
+ "purchase_order_number": "PO-2023-001",
+ "requisition_number": "REQ-2023-001",
+ "remarks": "Inspection completed. All items meet specifications.",
+ "contractors": {
+  "contractor": "Johnson Ltd",
+  "subcontractor": "Hill-White"
+ },
+ "consignee": {
+  "consignee": "Andrea Q. Gross",
+  "date_of_shipment": "10/10/2023",
+  "method_of_shipment": "Truck",
+  "number_of_cartons": "10",
+  "weight_and_cube": "500 lbs, 20 cubic feet",
+  "date_of_reoffer": "10/15/2023",
+  "charge_for_reinspection_retest": "$50.19"
+ },
+ "items": [
+  {
+   "lot_or_item_numbers": [
+    "ITM-001"
+   ],
+   "commodity_names": [
+    "Control Systems"
+   ],
+   "quantities": [
+    "10 units"
+   ]
+  },
+  {
+   "lot_or_item_numbers": [
+    "ITM-002"
+   ],
+   "commodity_names": [
+    "Instrumentation"
+   ],
+   "quantities": [
+    "15 units"
+   ]
+  },
+  {
+   "lot_or_item_numbers": [
+    "ITM-003"
+   ],
+   "commodity_names": [
+    "Psychological Tools"
+   ],
+   "quantities": [
+    "20 units"
+   ]
+  },
+  {
+   "lot_or_item_numbers": [
+    "ITM-004"
+   ],
+   "commodity_names": [
+    "Tourism Equipment"
+   ],
+   "quantities": [
+    "5 units"
+   ]
+  },
+  {
+   "lot_or_item_numbers": [
+    "ITM-005"
+   ],
+   "commodity_names": [
+    "Architectural Plans"
+   ],
+   "quantities": [
+    "8 units"
+   ]
+  },
+  {
+   "lot_or_item_numbers": [
+    "ITM-006"
+   ],
+   "commodity_names": [
+    "Engineering Tools"
+   ],
+   "quantities": [
+    "12 units"
+   ]
+  },
+  {
+   "lot_or_item_numbers": [
+    "ITM-007"
+   ],
+   "commodity_names": [
+    "Pharmaceuticals"
+   ],
+   "quantities": [
+    "7 units"
+   ]
+  },
+  {
+   "lot_or_item_numbers": [
+    "ITM-008"
+   ],
+   "commodity_names": [
+    "Office Supplies"
+   ],
+   "quantities": [
+    "10 units"
+   ]
+  },
+  {
+   "lot_or_item_numbers": [
+    "ITM-009"
+   ],
+   "commodity_names": [
+    "Electronics"
+   ],
+   "quantities": [
+    "6 units"
+   ]
+  },
+  {
+   "lot_or_item_numbers": [
+    "ITM-010"
+   ],
+   "commodity_names": [
+    "Laboratory Equipment"
+   ],
+   "quantities": [
+    "9 units"
+   ]
+  }
+ ]
+}

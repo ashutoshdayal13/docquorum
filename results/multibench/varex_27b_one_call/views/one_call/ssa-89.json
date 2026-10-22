@@ -1,0 +1,15 @@
+{
+ "printed_name": "Rachel Z. Prazuch",
+ "date_of_birth": "04/22/1995",
+ "social_security_number": "082-16-5801",
+ "reason_for_consent": "To apply for a mortgage",
+ "date_signed": "05/15/2023",
+ "company": {
+  "name": "Moore Inc.",
+  "address": "945 Jacobs Dale Apt. 148, New Tyler, VT 24455"
+ },
+ "agent": {
+  "name": "Brian Sharp",
+  "address": "8079 Karl Springs Suite 438, Fredericktown, VA 25533"
+ }
+}

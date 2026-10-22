@@ -1,0 +1,31 @@
+{
+ "carrier_name": "Bryant Ltd Insurance",
+ "sequence_number": "LS-2023-001",
+ "ein": "45-6789012",
+ "indemnity_bond_surety": "American Surety Company",
+ "letter_of_credit_institution": "National Bank of Ashleyport",
+ "securities_deposit_location": "Federal Reserve Bank of Boston",
+ "carrier_address": {
+  "address": "7609 Hernandez Drive",
+  "city": "Ashleyport",
+  "state": "Massachusetts",
+  "zip": "02749"
+ },
+ "securities": [
+  {
+   "description": "U.S. Treasury Bonds"
+  },
+  {
+   "description": "Municipal Bonds"
+  },
+  {
+   "description": "Corporate Bonds"
+  },
+  {
+   "description": "Certificates of"
+  },
+  {
+   "description": "Marketable Securities"
+  }
+ ]
+}

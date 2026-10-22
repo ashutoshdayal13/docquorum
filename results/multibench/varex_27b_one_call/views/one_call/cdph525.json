@@ -1,0 +1,30 @@
+{
+ "applicant_name_last": "Madrid",
+ "social_security_number": "183-30-9666",
+ "date_of_birth": "10/10/1961",
+ "email": "christina.madrid@aol.com",
+ "date_signed": "03/15/2023",
+ "addresses": {
+  "current_address": "72786 Roberts Parkway Apt. 594, Rachelmouth, MA 08840",
+  "permanent_mailing_address": "72786 Roberts Parkway Apt. 594, Rachelmouth, MA 08840"
+ },
+ "phone_numbers": {
+  "daytime_phone": "(489) 472-3541",
+  "evening_phone": "(869) 460-9104",
+  "fax": "(771) 957-8849"
+ },
+ "previous_employment": {
+  "previous_employment_states": [
+   "MA",
+   "NY",
+   "CA"
+  ]
+ },
+ "former_names": {
+  "former_names": [
+   "Christina Alice Johnson",
+   "Christina A. Johnson",
+   "Christina Johnson"
+  ]
+ }
+}

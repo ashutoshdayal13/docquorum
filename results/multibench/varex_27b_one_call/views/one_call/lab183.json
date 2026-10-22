@@ -1,0 +1,15 @@
+{
+ "effective_date": "06/01/2023",
+ "director": {
+  "name_printed": "Blanca Takkelenburg, Laboratory Director",
+  "address": "0846 Jones Union Apt. 173",
+  "california_board_license_number": "JD-2021-CA-56740",
+  "california_director_license_number": "DIR-2023-CA-12345"
+ },
+ "laboratory": {
+  "name": "White-Lopez Clinical Laboratory",
+  "address": "0846 Jones Union Apt. 173, Hicksmouth, CA 51558",
+  "clia_number": "01D2345678",
+  "state_id_number": "CLIA-2023-CA-98765"
+ }
+}

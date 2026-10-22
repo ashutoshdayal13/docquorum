@@ -1,0 +1,17 @@
+{
+ "license_number": "REF-2024-66455",
+ "date_of_expiration": "12/31/2024",
+ "date_issued": "01/15/2024",
+ "signature_date": "01/15/2024",
+ "applicant_information": {
+  "applicant_name": "Lecoq, Dominik Z.",
+  "applicant_address": "7507 Howell Cape, West Briannamouth, CA 07618",
+  "applicant_phone": "(892) 663-2639",
+  "applicant_email": "dominik.lecoq@outlook.com"
+ },
+ "vehicle_information": {
+  "vehicle_make": "Toyota",
+  "vehicle_model": "Camry",
+  "vehicle_license_plate": "ABC12345"
+ }
+}

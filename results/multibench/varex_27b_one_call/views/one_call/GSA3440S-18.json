@@ -1,0 +1,22 @@
+{
+ "employee_name": "Diaz, Charles J.",
+ "employee_id": "354582387",
+ "organization": "Watkins Inc. Agricultural Division",
+ "office_symbol": "AGR-WAT-202",
+ "pay_plan": "GS-13 (Genera",
+ "position_title": "Agricultural",
+ "rating_period_start": "01/01/2024",
+ "rating_period_end": "12/31/2024",
+ "position_description_reviewed_by": "Rajeshri E. Wood",
+ "position_description_review_date": "01/15/2024",
+ "critical_elements": [
+  {
+   "element": "Demonstrate expertise in soil analysis and crop management techniques",
+   "comments": "Charles has shown exceptional knowledge in soil analysis, particularly in identifying nutrient deficiencies and recommending"
+  },
+  {
+   "element": "Effectively communicate complex agricultural concepts to clients and stakeholders",
+   "comments": "Charles's ability to break down complex agricultural concepts into understandable terms has been instrumental in securing new clients."
+  }
+ ]
+}

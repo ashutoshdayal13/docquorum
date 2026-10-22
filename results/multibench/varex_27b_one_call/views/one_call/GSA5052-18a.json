@@ -1,0 +1,16 @@
+{
+ "employee_printed_name": "Ines V. Machado",
+ "last_four_ssn": "1109",
+ "manager": {
+  "name": "Eric J. York"
+ },
+ "phased_retirement_dates": {
+  "effective_date": "10/15/2022",
+  "ending_date": "10/14/2023"
+ },
+ "employment_details": {
+  "office_division": "Finance Divisi",
+  "duty_location": "East Leslieborough, IA",
+  "title_series_grade": "Museum/Gallery Exhibitions Officer, 0060, GS-13"
+ }
+}

@@ -42,7 +42,7 @@
 \item Task and pipeline
 \item Walkthrough on real documents\\
   {\footnotesize inputs, routing, parsing, readers, deterministic checks, selection by quorum, output}
-\item Results on six benchmarks: places, cost, speed; zoom re-reading
+\item Results on six benchmarks: what the pipeline adds, cost; zoom re-reading
 \item Summary
 \item Complete results, one table per benchmark
 \end{enumerate}
@@ -317,55 +317,23 @@ On the scanned county purchase order the quorum kept the one-shot reading (78.26
 {\scriptsize Scores: each benchmark's own scorer on the full test set; places count every published system. Open-weight models only (Qwen3.8-27B, MinerU2.5) on one GPU. Calls, \$ and s: means per document over a random sample; \$ prices the measured tokens at the Qwen3.8-27B list price.\par}
 \src{Complete tables for every benchmark: the last section, and docs/results/TABLES.md. No result was submitted to a leaderboard.}
 \end{frame}
-\begin{frame}{Among the best published systems}
-\centering\includegraphics[width=\textwidth,height=6.15cm,keepaspectratio]{assets/chart_ranks.png}
-\src{Each benchmark's six best systems, DocQuorum among them, by the benchmark's own score; every row of each benchmark is in the complete tables (last section).}
+\begin{frame}{What the pipeline adds to the same model}
+\centering\includegraphics[width=\textwidth,height=5.0cm,keepaspectratio]{assets/chart_gain.png}\par
+\raggedright{\footnotesize Same open model, same documents. Read through DocQuorum (routing, readers, checks, quorum, zoom) instead of called once, Qwen3.8-27B gains 0.75 to 5.68 points on all four benchmarks with a one-call baseline: VAREX 2nd $\to$ \textbf{1st}; UNIKIE-BENCH 2nd $\to$ \textbf{1st}; UNIKIE-BENCH open 2nd $\to$ \textbf{2nd}; ExtractBench 16th $\to$ \textbf{3rd}.\par}
+\src{One call: each benchmark's own one-shot protocol with Qwen3.8-27B (VAREX: benchmarks/multibench/varex\_one\_call.py; UNIKIE-BENCH: results/unikie; ExtractBench: the leaderboard's own Qwen3.8 27B run). Places count the published systems.}
 \end{frame}
-\begin{frame}{Ahead of open and closed models}
-\centering\includegraphics[width=\textwidth,height=5.0cm,keepaspectratio]{assets/chart_open_closed.png}\par
-\raggedright{\footnotesize\textbf{The gain comes from the pipeline, not a bigger model:} the same Qwen3.8-27B called once scores \textbf{89.75} on ExtractBench (its leaderboard); through DocQuorum it scores \textbf{95.43}.\par}
-\src{Grey or light green: the best published closed or open model on each benchmark; green: DocQuorum. LongArray-Extract and DocuBench publish no open models. Gains at each benchmark's published precision.}
-\end{frame}
-\begin{frame}{Low cost per page}
-\centering\includegraphics[width=\textwidth,height=5.0cm,keepaspectratio]{assets/cost_accuracy.png}\par
-\raggedright{\footnotesize On ExtractBench, the two systems above DocQuorum cost \textbf{\$0.081} and \textbf{\$0.105} a page; DocQuorum's tokens come to \textbf{\$0.029} a page, and no published system is both cheaper and more accurate.\par}
-\src{Left: means over a random sample of each benchmark (results/costs/). Right: every ExtractBench system the leaderboard prices (cost per page weighted by split, as the leaderboard computes it); DocQuorum's measured tokens at the Qwen3.8-27B list price (\$0.50 / \$3.00 per million input / output tokens). DocQuorum itself runs on one GPU, with no price per call.}
-\end{frame}
-\begin{frame}{Why a document costs little}
+\begin{frame}{Accuracy at a fraction of the cost}
 \begin{columns}[T]
-\column{0.48\textwidth}
-\begin{block}{One reading when the file has text}
-\footnotesize 13 of 20 sampled DocuBench documents took a single model call, \$0.009 each on average.
-\end{block}
-\begin{block}{More readings only for scans}
-\footnotesize Scans get three readings, run at the same time; zoom re-reads only the disputed fields a new vote could change. A VAREX form takes 3.7 calls.
-\end{block}
-\column{0.48\textwidth}
-\begin{block}{An open 27B model}
-\footnotesize \$3 per million output tokens at list price: a tenth of GPT-5.5 (\$30), a fifth of Claude Sonnet 5 (\$15). On its own GPU, no price per call at all.
-\end{block}
-\begin{block}{Accuracy from the pipeline}
-\footnotesize The same model called once scores 89.75 on ExtractBench; DocQuorum with it, 95.43: the extra calls buy the accuracy.
-\end{block}
-\end{columns}
-\src{results/costs/: every measured document (calls, tokens, seconds); prices in docs/results/pricing.json. Long scans cost more than short files: they are read in chunks, once per reading.}
-\end{frame}
-\begin{frame}{v1.4: long scans read faster}
-\begin{columns}[T]
-\column{0.38\textwidth}
-\begin{block}{The same documents, measured alone}
+\column{0.63\textwidth}
+\includegraphics[width=\linewidth]{assets/cost_accuracy.png}
+\column{0.35\textwidth}
 \footnotesize
-DocuBench (20): \textbf{2.4$\times$ faster}\\ {\color{muted}12,564 s $\to$ 5,225 s}\\[0.4em]
-VAREX (30 forms): \textbf{1.6$\times$ faster}\\ {\color{muted}1,178 s $\to$ 750 s}
-\end{block}
-\footnotesize
-\textbf{Loops stopped by the model server} once one stretch of tokens repeats 40 times, not at the output limit.\\[0.3em]
-\textbf{A scan's readings at the same time}, entering the quorum in the same order.\\[0.3em]
-DocuBench, all 72 documents read again: \textbf{91.54}.
-\column{0.58\textwidth}
-\includegraphics[width=\linewidth]{assets/chart_speed.png}
+\textbf{No system is both cheaper and more accurate} than DocQuorum on ExtractBench.\\[0.6em]
+\textbf{A few cents a page} on every benchmark:\\ {\color{muted}VAREX 2.1, UNIKIE-BENCH 1.0, LongArray-Extract 1.4, UNIKIE-BENCH open 1.8, ExtractBench 2.9, DocuBench 4.2 (cents)}\\[0.6em]
+\textbf{Why:} one reading when the file has text; three readings only for scans, run at the same time; an open 27B model at a tenth of GPT-5.5's price per output token.\\[0.6em]
+\textbf{v1.4:} long scans 2.4$\times$ faster.
 \end{columns}
-\src{results/costs/v1.3 and results/costs: every measured document, before and after.}
+\src{DocQuorum: measured tokens on a random sample of each benchmark (results/costs/), priced at the Qwen3.8-27B list price (\$0.50 / \$3.00 per million input / output tokens; it runs on its own GPU, with no price per call), weighted by split as the leaderboard computes cost per page.}
 \end{frame}
 \begin{frame}{Zoom re-reading: a new step after the quorum}
 \begin{columns}[T]

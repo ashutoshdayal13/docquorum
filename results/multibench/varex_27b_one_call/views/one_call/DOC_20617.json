@@ -1,0 +1,31 @@
+{
+ "report_date": "05/15/2023",
+ "fha_case_number": "FHA-2023-001234",
+ "hud_office": "HUD Regional Office - New York",
+ "mortgagor": {
+  "name": "Queringi, Michelle B."
+ },
+ "mortgagee": {
+  "name": "Lee, Adams and Mason"
+ },
+ "credit_report_source": {
+  "name": "Experian Credit Reporting",
+  "address": "100 Credit Ave, Experianville, EX 54321",
+  "phone": "(800) 555-1234"
+ },
+ "required_items": {
+  "items": [
+   "Complete Form HUD-92900, Item(s) Complete Form",
+   "Credit Report Item(s) 1, 2, and 3 from Form HUD-92900",
+   "Form HUD-92010 - Equal Employment Opportunity"
+  ]
+ },
+ "rejection_reasons": {
+  "reasons": [
+   "Incomplete",
+   "Missing Copy of Sales Contract or Contract for Deed",
+   "Missing Signature of Mortgagee and/or Builder and/or",
+   "Missing Never Occupied (if applicable) Mortgage Code"
+  ]
+ }
+}

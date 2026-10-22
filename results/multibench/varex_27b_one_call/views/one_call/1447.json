@@ -1,0 +1,22 @@
+{
+ "control_number": "HUD-2023-56789",
+ "date": "11/15/2023",
+ "description": "Confidential medical records for patient review and analysis as per case",
+ "final_disposition": "Return to sender after review",
+ "signatures": [
+  {
+   "name": "Jessica X. Patton",
+   "date": "11/15/2023"
+  },
+  {
+   "name": "Emilian F. Parsons",
+   "date": "11/15/2023"
+  },
+  {
+   "name": "Emilie Montez",
+   "date": "11/16/2023"
+  }
+ ],
+ "recipient": "Jessica X. Patton, Reed, Ray and Haney",
+ "sender": "Emiliano F. Parsons, Gonzales and Sons"
+}

@@ -1,0 +1,21 @@
+{
+ "current_certificate_number": "SMW20240001",
+ "total_students": 4,
+ "employer_name": "Lewis-Lewis",
+ "telephone_number": "(912) 270-6865",
+ "ein": "12-3456789",
+ "other_establishment_type": null,
+ "authorized_representative": "Yuridia Jopich",
+ "title": "Teacher, special educational needs",
+ "application_date": "05/15/2024",
+ "employer_address": {
+  "street": "1891 Garcia Parkway Suite 824",
+  "city": "East Emilybury",
+  "zip_code": "85734"
+ },
+ "mailing_address": {
+  "street": "1891 Garcia Parkway Suite 824",
+  "city": "East Emilybury",
+  "zip_code": "85734"
+ }
+}

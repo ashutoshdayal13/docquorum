@@ -1,0 +1,37 @@
+{
+ "comments": "Position evaluation based on standard guidelines and job description.",
+ "total_points": 140.5,
+ "point_range": "120-160",
+ "grade_level_determination": "GS-12",
+ "date": "11/15/2023",
+ "human_resources_specialist": "Human Resources Specialist/Classifier",
+ "evaluation_factors": [
+  {
+   "factor_description": "Knowledge Required by the Position"
+  },
+  {
+   "factor_description": "Supervisory Controls"
+  },
+  {
+   "factor_description": "Guidelines"
+  },
+  {
+   "factor_description": "Complexity"
+  },
+  {
+   "factor_description": "Scope and Effect"
+  },
+  {
+   "factor_description": "Personal Contacts"
+  },
+  {
+   "factor_description": "Purpose of Contacts"
+  },
+  {
+   "factor_description": "Physical Demands"
+  },
+  {
+   "factor_description": "Work Environment"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "vehicle_information": {
+  "vin": "1FTWW32Y83KA12345",
+  "make": "Keystone",
+  "body_type": "Travel"
+ },
+ "homemade_shopmade_trailer": {
+  "builder_name": "Andrea Bertrand",
+  "builder_address": "74519 Williams Vista Suite 464, East Janiceville, WI"
+ },
+ "applicant_signature": {
+  "signature_date": "06/15/23"
+ },
+ "additional_applicant_signature": {
+  "signature_date": "06/15/23"
+ }
+}

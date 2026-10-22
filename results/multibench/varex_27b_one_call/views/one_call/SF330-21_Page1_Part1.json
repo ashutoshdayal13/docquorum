@@ -1,0 +1,38 @@
+{
+ "contract_title_and_location": "New City Hall Construction Project, Springfield, IL",
+ "public_notice_date": "03/15/2023",
+ "solicitation_project_number": "CTL-2023-41652",
+ "firm_name": "Calderon-Davis Architects and Engineers",
+ "point_of_contact": {
+  "name_and_title": "Judy Hartmann, Project Manager",
+  "telephone_number": "(592) 886-7016",
+  "fax_number": "(409) 994-7566",
+  "email_address": "jhartmann@calderondavis.com"
+ },
+ "proposed_team": [
+  {
+   "name": "Judy Hartmann",
+   "role": "Overall project oversight"
+  },
+  {
+   "name": "Kenneth Deleon",
+   "role": "Design and planning"
+  },
+  {
+   "name": "Gabriel Prabhakar",
+   "role": "Technology integration"
+  },
+  {
+   "name": "Sarah Johnson",
+   "role": "Structural design"
+  },
+  {
+   "name": "Michael Brown",
+   "role": "HVAC systems"
+  },
+  {
+   "name": "Emily Davis",
+   "role": "Interior spaces"
+  }
+ ]
+}

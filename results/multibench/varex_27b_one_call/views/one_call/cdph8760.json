@@ -1,0 +1,39 @@
+{
+ "ocal_registration_number": "OCAL-2023-98765",
+ "cannabis_license_number": "CDPH-2023-12345",
+ "name_of_firm": "Boyle, Ruiz and Carr",
+ "email_address": "gmarshall@boyle.com",
+ "website": "www.boyle-ruiz-carr.com",
+ "owner_corporate_name": "Boyle, Ruiz and Carr Inc.",
+ "state_of_incorporation": "Florida",
+ "mailing_address": {
+  "street": "75263 Bond Prairie Apt. 977",
+  "city": "Brownton",
+  "state": "WV",
+  "zip_code": "64805"
+ },
+ "facility_address": {
+  "street": "0526 Collins Lane Apt. 651",
+  "city": "West Lauraland",
+  "state": "FL",
+  "zip_code": "82081"
+ },
+ "owners_officers": [
+  {
+   "name": "Guadalupe B. Marshall",
+   "title": "Accounting technician"
+  },
+  {
+   "name": "Olivia N. Ramos",
+   "title": "Psychiatric nurse"
+  }
+ ],
+ "certification_organization": {
+  "name": "Calif. Cannabis Cert.",
+  "certification_number": "CCC-2023-15471"
+ },
+ "payment_details": {
+  "account_number": "026012881",
+  "routing_number": "4387-3070-8516"
+ }
+}

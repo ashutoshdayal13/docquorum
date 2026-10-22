@@ -1,0 +1,59 @@
+{
+ "cashier_name": "Gebhard K. Chauveau",
+ "telephone_number": "(994) 480-03",
+ "date": "05/15/2023",
+ "location": "7887 Angela Ridges Suite 601, Danielville, OH 64798",
+ "office_symbol": "JJ-THRAD",
+ "total_accounted_for": 8751.99,
+ "total_imprest_fund_advanced": 8751.99,
+ "interim_receipts_old": "No interim receipts are more than five working days old.",
+ "comments": "All cash counts and documentation are accurate and up-to-date.",
+ "cash_count_performed_by": "Sebastien F.",
+ "office_symbol_cash_count": "FBC-ITSALES",
+ "denominations": [
+  {
+   "number": 2,
+   "amount": 200
+  },
+  {
+   "number": 8,
+   "amount": 400
+  },
+  {
+   "number": 15,
+   "amount": 300
+  },
+  {
+   "number": 20,
+   "amount": 200
+  },
+  {
+   "number": 10,
+   "amount": 50
+  },
+  {
+   "number": 50,
+   "amount": 50
+  },
+  {
+   "number": 20,
+   "amount": 10
+  },
+  {
+   "number": 40,
+   "amount": 10
+  },
+  {
+   "number": 50,
+   "amount": 5
+  },
+  {
+   "number": 100,
+   "amount": 5
+  },
+  {
+   "number": 50,
+   "amount": 0.5
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "personalization_choices": [
+  "EMSHER",
+  "SAVELI",
+  "MEDIC"
+ ],
+ "signature_date": "01/15/2023",
+ "applicant_information": {
+  "name": "Christopher Rojas",
+  "address": "832 Garcia Lakes Apt. 643",
+  "city": "New Austinside",
+  "state": "IL",
+  "zip_code": "33437",
+  "phone_number": "(510) 581-3834",
+  "email": "christopher.rojas@gmail.com"
+ },
+ "vehicle_information": {
+  "vehicle_identifier": "TX 1234567",
+  "vehicle_make": "Ford"
+ }
+}

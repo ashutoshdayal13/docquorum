@@ -1,0 +1,22 @@
+{
+ "date_of_accident_illness": "07/15/2022",
+ "carrier_number": "LHC-2022-45678",
+ "owcp_number": "OWCP-2022-98765",
+ "name_of_injured_worker": "Brittany Cannon",
+ "claimant_telephone_number": "(565) 604-2031",
+ "average_weekly_wage": 1250,
+ "compensation_rate": "$833.33 per week",
+ "total_amount_due_to_claimant": "$955323.64",
+ "settlement_amounts": {
+  "compensation": [
+   "$500,000.00",
+   "$150,000.00",
+   "$300,000.00"
+  ],
+  "medical": [
+   "$70,330.00",
+   "$30,000.00",
+   "$50,000.00"
+  ]
+ }
+}

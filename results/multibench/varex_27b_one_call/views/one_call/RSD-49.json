@@ -1,0 +1,32 @@
+{
+ "applicant_last_name": "Martinez",
+ "applicant_first_name": "Fabian",
+ "phone_number": "815-164-7469",
+ "email_address": "fabian.martinez@yahoo.com",
+ "company_website": "www.bennettag.com",
+ "reasons_for_applying": "To contribute expertise in agricultural vehicle safety and emissions standards to the advisory committee",
+ "professional_licenses": "Professional Land Surveyor License: PLS-2013-WA-55106",
+ "noteworthy_accomplishments": "Published research on sustainable agricultural practices and vehicle emissions reduction",
+ "residence_address": {
+  "address": "2820 Erika Mission",
+  "city": "Lake Jesse",
+  "state": "WA",
+  "zip_code": "77465"
+ },
+ "mailing_address": {
+  "address": "2820 Erika Mission",
+  "city": "Lake Jesse",
+  "state": "WA",
+  "zip_code": "77465"
+ },
+ "vi_license_information_safety": {
+  "license_number": "VIL-S-2021-WA-2001",
+  "county": "King"
+ },
+ "manufacturer_information": {
+  "name": "EmissionTech Solutions Inc."
+ },
+ "inspector_information": {
+  "number": "INSP-2021-WA-3001"
+ }
+}

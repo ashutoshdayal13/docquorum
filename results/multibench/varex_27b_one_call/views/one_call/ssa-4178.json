@@ -1,0 +1,16 @@
+{
+ "claimant_name": "Sylvia U. Allen",
+ "claimant_ssn": "273-10-0772",
+ "mail_addressing": "Ms. Sylvia U. Allen & Mr. Hartmut Price",
+ "married_couple_papers": "Joint tax returns filed since 2015.",
+ "property_ownership_names": "Sylvia U. Allen and Hartmut Price",
+ "relationship_explanation": "Living together as a married couple since 2014.",
+ "related_person": {
+  "name": "Hartmut Price",
+  "statement_maker_name": "Hartmut Price",
+  "known_names": [
+   "Hart"
+  ],
+  "introduction": "Hartmut is my husband."
+ }
+}

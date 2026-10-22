@@ -1,0 +1,35 @@
+{
+ "ori_code": "CA0123456Z",
+ "authorized_applicant_type": "Certified Nurse Assistant (CNA)",
+ "license_certification_title": "Certified Nurse Assistant (CNA)",
+ "applicant_sex": "male",
+ "applicant_date_of_birth": "10/16/197",
+ "applicant_height": "5'10\"",
+ "applicant_weight": "180",
+ "applicant_eye_color": "Brown",
+ "applicant_hair_color": "Black",
+ "applicant_billing_number": "REF-2021-86825",
+ "applicant_misc_number": "2929-7369-3197",
+ "applicant_place_of_birth": "New Mexico, USA",
+ "contributing_agency": {
+  "name": "California Department of Public Health (CDPH)",
+  "address": "MS 3301, P.O. Box 997416",
+  "city": "Sacramento",
+  "state": "CA",
+  "zip_code": "9",
+  "mail_code": "03314",
+  "contact_name": "Patricia Hoffman"
+ },
+ "applicant": {
+  "last_name": "Hughes",
+  "first_name": "Ermanno",
+  "middle_initial": "M",
+  "other_name": "EH",
+  "other_first_name": "Ermanno",
+  "drivers_license_number": "PLS-2001-NM-34930"
+ },
+ "applicant_home_address": {
+  "address": "37206 Wilson Center",
+  "city": "Marcton"
+ }
+}

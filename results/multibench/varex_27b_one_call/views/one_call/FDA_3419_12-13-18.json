@@ -1,0 +1,15 @@
+{
+ "user_facility_id": "CMS123456789",
+ "user_facility_name": "Hahn, Kim and Lester Medical Center",
+ "lowest_report_number": "REF-2023-0",
+ "highest_report_number": "REF-2023-0",
+ "user_facility_address": {
+  "street": "6616 Vargas Port",
+  "city": "South Michael",
+  "state": "MN"
+ },
+ "user_facility_contact": {
+  "name": "Christopher Mulichen",
+  "phone": "(121) 681-6757"
+ }
+}
