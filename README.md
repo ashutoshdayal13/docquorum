@@ -2,8 +2,8 @@
 
 **Agentic document extraction by a quorum of grounded readings.**
 
-Give DocQuorum a document (PDF or image) and a JSON Schema (or a JSON template); it returns JSON that
-follows the schema. It runs on open-weight models (Qwen3.8-27B) on a single GPU; no commercial API is used.
+Give DocQuorum a document (a PDF, an image, or a spreadsheet, Word, HTML, XML, CSV or text file) and a JSON Schema
+(or a JSON template); it returns JSON that follows the schema. It runs on open-weight models (Qwen3.8-27B) on a single GPU; no commercial API is used.
 
 Each benchmark below is scored with its own scorer and placed against every published system
 ([full tables](docs/results/TABLES.md)). No result was submitted to a leaderboard.
@@ -179,7 +179,9 @@ Check that they answer: `curl http://localhost:8079/v1/models` and `curl http://
 
 ## 4. Extract from one document
 
-**Command line.** The document may be a PDF or an image; the schema a JSON Schema or a JSON template.
+**Command line.** The document may be a PDF, an image, or a native file (`.xlsx`, `.docx`, `.html`, `.xml`, `.csv`, `.tsv`,
+`.txt`, `.md`, `.json`); the schema a JSON Schema or a JSON template. A document it cannot read, a schema that is not a JSON
+object, or no model server ends with a one-line error (exit code 2).
 ```bash
 python -m docquorum.extract invoice.pdf --schema invoice_schema.json -o invoice.json
 python -m docquorum.extract receipt.jpg --schema receipt_template.json          # template in, template out
@@ -200,9 +202,10 @@ print(report)   # the readings produced, the one the quorum kept, their agreemen
 exactly, with `""` for anything the document does not contain. **A JSON Schema** gives typed output, and every reply is decoded
 under it. Put field instructions in the schema's `description` fields: they are sent to the model.
 
-**What happens to your document.** A PDF with a text layer is read once by the reader agent. A scan or image is read two or
-three ways (the reader agent on its page images, the reader agent on its MinerU parse, and, up to 12 pages, a one-shot reader)
-and the quorum keeps the reading the others agree with most, passing over a reading caught in a repetition loop. Text read by OCR
+**What happens to your document.** A PDF with a text layer, or a native file (written as one), is read once by the reader
+agent. A scan or image is read two or three ways at the same time (the reader agent on its page images, the reader agent on its
+MinerU parse, and, up to 12 pages, a one-shot reader) and the quorum keeps the reading the others agree with most, passing over
+a reading caught in a repetition loop; the model server stops a reply that keeps repeating, and that part is read again. Text read by OCR
 always travels with its page images, which decide where the two disagree. Documents printed as columns of records, and ruled
 tables on scans, go to a layout reader (back to the normal route if it finds no records, or no printed rules on most table pages).
 Every reading is repaired and checked against the schema and the page text before it is returned. A field the schema does not

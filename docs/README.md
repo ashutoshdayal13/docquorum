@@ -5,7 +5,7 @@ Current implementation: [v1.4 specification](DESIGN.md). The [main figure review
 Start with [the illustrated document](docquorum.pdf): task definition, complete data flow, exact reader behavior, checks, candidate selection, and a synthetic walkthrough.
 
 - [LaTeX source](docquorum.tex)
-- [Main pipeline diagram (PNG)](fig/docquorum-pipeline-imagegen-v6.png), [standalone PDF](fig/docquorum-pipeline-imagegen-v6.pdf), and [generation prompts](fig/docquorum-pipeline-imagegen-v6-prompt.txt)
+- [Main pipeline diagram (PNG)](fig/docquorum-pipeline-imagegen-v6.png), [standalone PDF](fig/docquorum-pipeline-imagegen-v6.pdf), and [generation prompts](fig/docquorum-pipeline-imagegen-v6-prompt.txt) ([provenance](fig/docquorum-pipeline-imagegen-v6-provenance.json))
 - [Alternative vector diagram (PDF)](fig/pipeline.pdf) and [editable TikZ source](fig/pipeline.tex)
 - [Shared evidence and separate candidate flows](fig/evidence-sharing.tex)
 - [Complete schema / answer JSON examples and attribution](examples/README.md)
@@ -18,7 +18,7 @@ Start with [the illustrated document](docquorum.pdf): task definition, complete 
 
 The overview separates automatic execution from bounded adaptive reading: the general reader observes model results and retries or changes scope; Python controls the loop. Routing, checks and quorum are deterministic.
 
-The landscape overview on page 2 follows the flow from left to right: route, read, check, select, zoom when eligible, return. Page 3 distinguishes MinerU's shared evidence from the separate candidate JSONs. Pages 4--5 explain the conversion ratio and the fallback plans inside a reading. Page 6 pairs a synthetic purchase-order schema with its complete answer. Landscape page 7 shows an actual DocuBench electricity-bill schema and the full published reference answer, with source facts and attribution. Page 11 follows the purchase order through three candidates. Page 12 compares document routes; page 13 explains the ExtractBench and UNIKIE runners. The main diagram describes the current v1.3 single-document API. The detailed worked examples and earlier explanatory pages retain their original `b4ea9a1` provenance; use `DESIGN.md` for the current exact rules. Synthetic examples are marked; the public reference answer is demonstration material, not a new extraction result.
+The landscape overview on page 2 follows the flow from left to right: route, read, check, select, zoom when eligible, return. Page 3 distinguishes MinerU's shared evidence from the separate candidate JSONs. Pages 4--5 explain the conversion ratio and the fallback plans inside a reading. Page 6 pairs a synthetic purchase-order schema with its complete answer. Landscape page 7 shows an actual DocuBench electricity-bill schema and the full published reference answer, with source facts and attribution. Page 11 follows the purchase order through three candidates. Page 12 compares document routes; page 13 explains the ExtractBench and UNIKIE runners. The main diagram describes the single-document API of v1.3; v1.4 adds no step to it. The detailed worked examples and earlier explanatory pages retain their original `b4ea9a1` provenance; use `DESIGN.md` for the current exact rules. Synthetic examples are marked; the public reference answer is demonstration material, not a new extraction result.
 
 ## Build
 
