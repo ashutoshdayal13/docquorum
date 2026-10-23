@@ -1,5 +1,5 @@
 {
- "written_utc": "2026-10-23 03:01",
+ "written_utc": "2026-10-23 03:27",
  "model": "Qwen/Qwen3.8-27B-FP8, vLLM 0.27.1, greedy decoding; MinerU2.5-2509-1.2B parser",
  "pipeline_version": "v1.4 (docs/DESIGN.md)",
  "serving": "serve/serve_qwen38_27b.sh; on the shared GPU GPU_UTIL 0.62-0.66, and from 14 October 2026 SPEC_TOKENS=2 (speculative decoding, which leaves greedy outputs unchanged up to floating-point batch effects)",
@@ -199,6 +199,12 @@
    "commit": "d2f220f",
    "change": "v1.4, for speed: every whole-document and chunk call asks the model server to end a reply once one stretch of 16-512 tokens has repeated 40 times in a row (vLLM repetition_detection), and a stopped reply takes the existing loop path; a scan's readings run at the same time and enter the quorum in the same order",
    "results_touched": "DocuBench 90.80 -> 91.54 (every document read again; 26 changed, 16 up and 10 down) and its 20 sampled documents 2.4 times faster (12,564 s -> 5,225 s); VAREX 30 sampled forms 1.6 times faster, 29 identical to the stored run (the 30th differs by one field from the ruled-table reader, which neither change touches), so 98.23 stands; UNIKIE unaffected (its protocol's own calls); LongArray-Extract and ExtractBench are stored runs of earlier versions"
+  },
+  {
+   "date": "2026-10-23",
+   "commit": "82c9650",
+   "change": "robustness, no change to any reading: the command line reports an unreadable document, a schema that is not a JSON object and an unreachable model server in one line (exit code 2); pdftotext output decoded leniently; zoom re-reading tolerates boolean subschemas. The stored results were reorganised into one folder per run (results/<benchmark>/<run>/, outputs as JSON Lines) and re-scored to their stored scores",
+   "results_touched": "none (every stored result re-scores exactly)"
   }
  ],
  "rules": [

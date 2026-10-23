@@ -77,6 +77,11 @@ changes = [
      "2.4 times faster (12,564 s -> 5,225 s); VAREX 30 sampled forms 1.6 times faster, 29 identical to the stored run "
      "(the 30th differs by one field from the ruled-table reader, which neither change touches), so 98.23 stands; "
      "UNIKIE unaffected (its protocol's own calls); LongArray-Extract and ExtractBench are stored runs of earlier versions"),
+    ("2026-10-23", "82c9650", "robustness, no change to any reading: the command line reports an unreadable document, a schema "
+     "that is not a JSON object and an unreachable model server in one line (exit code 2); pdftotext output decoded "
+     "leniently; zoom re-reading tolerates boolean subschemas. The stored results were reorganised into one folder per run "
+     "(results/<benchmark>/<run>/, outputs as JSON Lines) and re-scored to their stored scores",
+     "none (every stored result re-scores exactly)"),
 ]
 release = {
     "written_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"),
