@@ -28,11 +28,15 @@ import tempfile
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-from docquorum import checks, quorum, zoom
+from docquorum import checks, config as C, quorum, zoom
 from docquorum.agents import column_reader, layout, oneshot, ruled_reader
 from docquorum.agents.reader import read_document
 from docquorum.tools import images, llm, native, parser, pdf as PDF
 from docquorum.tools.schema import fill_template, is_template, template_to_schema, without_fields
+
+
+class InputError(ValueError):
+    """A document the pipeline cannot read (an unsupported type, a broken file)."""
 
 
 def as_pdf(doc, folder):
@@ -46,7 +50,7 @@ def as_pdf(doc, folder):
         try:
             im = Image.open(doc)
         except UnidentifiedImageError:
-            raise ValueError(f"{doc.name}: not a PDF, an image or one of {', '.join(sorted(native.NATIVE))}") from None
+            raise InputError(f"{doc.name}: not a PDF, an image or one of {', '.join(sorted(native.NATIVE))}") from None
         with im:
             # every page of a multi-page TIFF (other formats' extra frames are previews), each
             # turned upright by its EXIF orientation, transparency made white, a small one
@@ -80,7 +84,10 @@ def _extract(doc, schema, task, workers, log, zoom_reread=True):
     name = "doc_" + hashlib.sha1(Path(doc).read_bytes()).hexdigest()[:12]   # the parse cache key
     with tempfile.TemporaryDirectory() as td:
         pdf = as_pdf(doc, td)
-        n = PDF.npages(pdf)
+        try:
+            n = PDF.npages(pdf)
+        except ValueError as e:
+            raise InputError(f"{Path(doc).name}: {e}") from None
         native_doc = Path(doc).suffix.lower() in native.NATIVE      # its text layer is the file
         text = native_doc or PDF.pdf_has_text(pdf, n)
         if not text and parser.available():
@@ -160,8 +167,9 @@ def _finish(result, template):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="DocQuorum: schema-guided document extraction")
-    ap.add_argument("doc", help="PDF or image")
+    ap = argparse.ArgumentParser(prog="python -m docquorum.extract",
+                                 description="DocQuorum: schema-guided document extraction")
+    ap.add_argument("doc", help="a PDF, an image, or a native file (.xlsx .docx .html .xml .csv .txt ...)")
     ap.add_argument("--schema", required=True, help="JSON Schema or JSON template file")
     ap.add_argument("--task", default=None, help="optional task description (what to extract, and how)")
     ap.add_argument("-o", "--out", default=None, help="write the result here (default: stdout)")
@@ -169,8 +177,24 @@ def main():
     ap.add_argument("--no-zoom", action="store_true",
                     help="skip zoom re-reading of the fields the readings disagree on (zoom.py)")
     a = ap.parse_args()
-    result, report = extract(a.doc, json.loads(Path(a.schema).read_text()), a.task, a.workers,
-                             log=lambda m: print(m, file=sys.stderr), zoom_reread=not a.no_zoom)
+    if not Path(a.doc).is_file():
+        ap.error(f"{a.doc}: no such file")
+    try:
+        schema = json.loads(Path(a.schema).read_text())
+    except (OSError, json.JSONDecodeError) as e:
+        ap.error(f"{a.schema}: not a readable JSON file ({e})")
+    if not isinstance(schema, dict):
+        ap.error(f"{a.schema}: a JSON Schema or template must be a JSON object")
+    import openai
+    try:                                                      # the model server answers, before any work
+        llm.client(timeout=15).models.list()
+    except openai.APIError:
+        ap.exit(2, f"docquorum: error: no model server answers at {C.LLM_URL} (start it, or set DQ_LLM_URL)\n")
+    try:
+        result, report = extract(a.doc, schema, a.task, a.workers,
+                                 log=lambda m: print(m, file=sys.stderr), zoom_reread=not a.no_zoom)
+    except InputError as e:                                   # a document the pipeline cannot read
+        ap.exit(2, f"docquorum: error: {e}\n")
     print(f"[docquorum] {report}", file=sys.stderr)
     out = json.dumps(result, indent=2, ensure_ascii=False)
     if a.out:

@@ -1,5 +1,5 @@
 {
- "written_utc": "2026-10-23 02:51",
+ "written_utc": "2026-10-23 03:01",
  "model": "Qwen/Qwen3.8-27B-FP8, vLLM 0.27.1, greedy decoding; MinerU2.5-2509-1.2B parser",
  "pipeline_version": "v1.4 (docs/DESIGN.md)",
  "serving": "serve/serve_qwen38_27b.sh; on the shared GPU GPU_UTIL 0.62-0.66, and from 14 October 2026 SPEC_TOKENS=2 (speculative decoding, which leaves greedy outputs unchanged up to floating-point batch effects)",
@@ -30,7 +30,7 @@
   "docquorum/checks/stacked_rows.py": "3ed15e36e02ab3618486be36497232ac8bfa76be83c76503d2171b6b27c2696d",
   "docquorum/checks/template_rows.py": "47a2e24d5aa168db173fe543b2500d11f668ff7d9d1ec9486a2937a8f0909f1d",
   "docquorum/config.py": "4a0645ad133bf69b2f9bd5373aef84b0db2b4806123e82a553b4a603a5725248",
-  "docquorum/extract.py": "d902920d0b320d927fcea937538babc5839aa86450a1f7dc09e68702f0e383da",
+  "docquorum/extract.py": "8e6b45293c4817b5d5d287cdcc161b2ce040defb6b4f12ae20bac0c86aecbf82",
   "docquorum/extractbench.py": "7c257c167bc131d27daf3dace933b79082f66e1a4dbbd53839e1a526a4e9b971",
   "docquorum/quorum.py": "0548bc262199bade0eeb76886250b1f4739e537ebe1d982132d63cecd3cb0126",
   "docquorum/tools/__init__.py": "76a9af8c849bb268bf407fafcc393d5dc3390407d38bb0100c4ed715deeb410a",
@@ -39,10 +39,10 @@
   "docquorum/tools/llm.py": "5a3327050b9a30100ea99e2ba64ec8348923c0f5ed7f17f71f7f0b6df882f6d9",
   "docquorum/tools/native.py": "a7348ce8209d28b90d630e6a20db6ff47690dfec9fefdf19c3882395e4e2fde6",
   "docquorum/tools/parser.py": "b1ee1b7e26c11adef245138738477212814db249b4765a7b812f8cdbe528b0c1",
-  "docquorum/tools/pdf.py": "d361b7f5ab594dba7ac6aa2fedbe4f53347f9a94c134646f2d9b67a9b86e4820",
+  "docquorum/tools/pdf.py": "e7ba851a7ba1e9baf67a06be45a8128b11774ee88a7ee5831aa241bfa9cef031",
   "docquorum/tools/rows.py": "70d46fd51d668f87ac538e5f611987510163f3aa438d4b35332f4c2a1630ae29",
   "docquorum/tools/schema.py": "ecd8ed518db6d8bb00cfbaa844e7c2f9551fbbe77ae4c4efd4bf46639c8bc762",
-  "docquorum/zoom.py": "a4546d7d18ddc49e14d076690eccd3bc4d1adbb4c4b81539bfb0646a01a7416b"
+  "docquorum/zoom.py": "31debbca0ef21f4335ad7559ef8cc5c2dcb78ef5adc50a3b4b035b2129347b25"
  },
  "results": [
   {

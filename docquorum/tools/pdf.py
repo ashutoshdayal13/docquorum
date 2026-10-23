@@ -25,7 +25,7 @@ def _run(*args):
 def page_texts(pdf):
     """One string per page from `pdftotext -layout`, which keeps table columns aligned."""
     out = subprocess.run([C.PDFTOTEXT, "-layout", str(pdf), "-"],
-                         capture_output=True, text=True, timeout=600).stdout
+                         capture_output=True, text=True, errors="replace", timeout=600).stdout
     pages = out.split("\f")
     if len(pages) > 1 and not pages[-1].strip():      # pdftotext ends every page with \f
         pages = pages[:-1]
@@ -34,7 +34,8 @@ def page_texts(pdf):
 
 def plain_text(pdf):
     """The whole text layer in reading order (`pdftotext`, no layout)."""
-    return subprocess.run([C.PDFTOTEXT, str(pdf), "-"], capture_output=True, text=True, timeout=600).stdout
+    return subprocess.run([C.PDFTOTEXT, str(pdf), "-"], capture_output=True, text=True, errors="replace",
+                          timeout=600).stdout
 
 
 def has_text_layer(pages):

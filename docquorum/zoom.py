@@ -137,6 +137,8 @@ def describe(schema, path):
     """The field's description from the schema ('' when there is none)."""
     node = schema
     for step in path:
+        if not isinstance(node, dict):                     # a boolean or list subschema: no description
+            return ""
         if isinstance(step, int):
             node = node.get("items") or {}
         else:
@@ -144,7 +146,7 @@ def describe(schema, path):
         if "$ref" in node:
             defs = schema.get("$defs") or schema.get("definitions") or {}
             node = defs.get(node["$ref"].split("/")[-1], {})
-    return (node.get("description") or "")[:200]
+    return (node.get("description") or "")[:200] if isinstance(node, dict) else ""
 
 
 def set_path(o, path, value):

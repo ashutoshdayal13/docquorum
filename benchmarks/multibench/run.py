@@ -165,10 +165,13 @@ SCORERS = {"varex": varex_score, "longarray": longarray_score, "docubench": docu
 
 
 def score(bench, variant="", stored=None):
+    """The benchmark's own score of a run (written to its scores/) or of a stored result (printed only)."""
     preds, status = outputs(bench, variant, stored)
-    scores_dir = (Path(tempfile.mkdtemp()) if stored else out_dir(bench, variant) / "scores")
-    rep = SCORERS[bench](preds, status, scores_dir)
-    if not stored:
+    if stored:
+        with tempfile.TemporaryDirectory() as td:            # the scorer's per-field files, not kept
+            rep = SCORERS[bench](preds, status, td)
+    else:
+        rep = SCORERS[bench](preds, status, out_dir(bench, variant) / "scores")
         write(out_dir(bench, variant) / "scores" / "summary.json", rep)
     print(json.dumps({k: v for k, v in rep.items() if k not in ("per_document", "systems")}, indent=1))
     return rep
@@ -199,8 +202,9 @@ def package(bench, variant, name, with_readings, headline=True):
         head_f = ROOT / "docs" / "results" / f"docquorum-{bench}.json"
         head = json.loads(head_f.read_text()) if head_f.exists() else {}
         detail = rep["systems"]["docquorum"] if bench == "varex" else {k: v for k, v in rep.items() if k != "per_document"}
+        same = head.get("predictions") == str(dst.relative_to(ROOT))     # re-packaged: keep its description
         head.update({"benchmark": TITLES[bench], "score": rep["score"], "detail": detail,
-                     "predictions": str(dst.relative_to(ROOT)), "variant": name})
+                     "predictions": str(dst.relative_to(ROOT)), "variant": head.get("variant") if same else name})
         write(head_f, head)
     print(f"{bench}: {rep['score']:.2f} -> {dst.relative_to(ROOT)}")
 

@@ -43,7 +43,7 @@ def test_native_text_reaches_the_text_layer_including_hebrew():
         f.write_text(text)
         pdf = as_pdf(f, td)
         back = "\n".join(PDF.page_texts(pdf))
-        words = lambda s: sorted(re.sub("[‎‏‪-‮]", "", s).split())
+        words = lambda s: sorted(re.sub("[\u200e\u200f\u202a-\u202e]", "", s).split())
         assert PDF.npages(pdf) == 2 and PDF.pdf_has_text(pdf, 2)
         # every word survives; within a mixed Hebrew/number line the order is the PDF's visual one
         assert words(back) == words(text)
