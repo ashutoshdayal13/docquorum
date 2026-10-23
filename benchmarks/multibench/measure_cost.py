@@ -41,7 +41,7 @@ def inputs():
         recs = [(s, r) for s in ("short", "medium", "long") for r in EB.load_records(s)]
         SPLIT.update((EB.name_of(r), s) for s, r in recs)
         return [(EB.name_of(r), EB.pdf_of(r), r["data_schema"], None) for _, r in recs]
-    import frozen27b as F
+    import run as F
     return list(F.INPUTS[bench]())
 
 

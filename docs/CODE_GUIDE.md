@@ -32,11 +32,11 @@ Each module in [checks/](../docquorum/checks/) defines `apply(pred, doc)`. Guard
 
 ## Separate benchmark entry points
 
-[ExtractBench run.sh](../benchmarks/extractbench/run.sh) operates on stage directories and applies layout overrides after the general flow, excluding the short split. Populate parses first with `python -m docquorum.tools.parser SPLIT`. [UNIKIE](../benchmarks/unikie/unikie_eval.py) has its own six-reading protocol, normalization, and quorum matcher. [multibench/frozen27b.py](../benchmarks/multibench/frozen27b.py) runs `extract()` unchanged on VAREX, LongArray-Extract and DocuBench, scores with each benchmark's scorer and packages `results/<benchmark>/`; [zoom_varex.py](../benchmarks/multibench/zoom_varex.py) applies zoom re-reading to the stored VAREX readings. [extractbench.py](../docquorum/extractbench.py) wraps the external scorer; selection replaces the reference with another candidate and removes annotated matching rules.
+[ExtractBench run.sh](../benchmarks/extractbench/run.sh) operates on stage directories and applies layout overrides after the general flow, excluding the short split. Populate parses first with `python -m docquorum.tools.parser SPLIT`. [UNIKIE](../benchmarks/unikie/unikie_eval.py) has its own six-reading protocol, normalization, and quorum matcher. [multibench/run.py](../benchmarks/multibench/run.py) runs `extract()` unchanged on VAREX, LongArray-Extract and DocuBench (inputs and scorers: [sources.py](../benchmarks/multibench/sources.py)), scores a run or a stored result with each benchmark's scorer, and packages a run as `results/<benchmark>/<run>/`; [varex_one_call.py](../benchmarks/multibench/varex_one_call.py) is the same model called once, [zoom_varex.py](../benchmarks/multibench/zoom_varex.py) the held-out test of zoom re-reading on the stored v1.1 readings, and the two `measure_cost.py` the cost measurements. Stored results keep many documents in one file each ([bundles.py](../benchmarks/bundles.py): one JSON line per document). [extractbench.py](../docquorum/extractbench.py) wraps the external scorer; selection replaces the reference with another candidate and removes annotated matching rules.
 
 ## Historical names
 
-For the frozen archive referenced by `FROZEN.json`:
+For the frozen code referenced by `FROZEN.json` (in the git history: the code before the 2026-09-29 reorganisation):
 
 | Historical module | Current location |
 |---|---|

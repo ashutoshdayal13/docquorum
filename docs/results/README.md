@@ -36,9 +36,9 @@ the snapshots or generator change. Building uses local files only.
 ## Further schema-guided benchmarks
 
 Published-system snapshots for the benchmarks run with the 27B pipeline
-(`benchmarks/multibench/frozen27b.py`, `benchmarks/unikie/`). A complete table, every published
+(`benchmarks/multibench/run.py`, `benchmarks/unikie/`). A complete table, every published
 system plus one DocQuorum row, is rendered for a benchmark once its
-`docquorum-<benchmark>.json` exists (written by `frozen27b.py <benchmark> package` after a complete
+`docquorum-<benchmark>.json` exists (written by `run.py <benchmark> package` after a complete
 run); [TABLES.md](TABLES.md) holds every table in Markdown.
 
 - [VAREX image-modality leaderboard](varex-published.json): 20 models, from the VAREX-Bench

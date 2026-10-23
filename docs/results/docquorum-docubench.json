@@ -8,16 +8,16 @@
   "documents": 72,
   "completed": 72
  },
- "predictions": "results/docubench-v14",
+ "predictions": "results/docubench/v1.4",
  "variant": "final pipeline (v1.4): every document read again",
  "earlier": {
   "v1.3": {
    "score": 90.79783905303204,
-   "predictions": "results/docubench-final"
+   "predictions": "results/docubench/v1.3"
   },
   "v1.1": {
    "score": 86.46983977509024,
-   "predictions": "results/docubench"
+   "predictions": "results/docubench/v1.1"
   }
  }
 }

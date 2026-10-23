@@ -1,9 +1,0 @@
-{
- "debtor_name": "Roberta Bell",
- "social_security_number": "841-86-329",
- "pay_period_frequency": "Monthly",
- "total_allowable_deductions": 2500.58,
- "total_amounts_withheld_under_other_orders": 500,
- "federal_minimum_wage_equivalent": 750,
- "final_garnishment_amount": 1000
-}

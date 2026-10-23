@@ -29,16 +29,16 @@
   "predictions": 1777,
   "documents": 1777
  },
- "predictions": "results/varex-final",
+ "predictions": "results/varex/final",
  "variant": "final pipeline (v1.3): every form read again, zoom re-reading included",
  "earlier": {
   "v1.2, zoom re-reading on the v1.1 readings": {
    "score": 98.29728704230696,
-   "predictions": "results/varex-zoom"
+   "predictions": "results/varex/v1.2-zoom"
   },
   "v1.1, without zoom re-reading": {
    "score": 98.09808385505596,
-   "predictions": "results/varex"
+   "predictions": "results/varex/v1.1"
   }
  }
 }

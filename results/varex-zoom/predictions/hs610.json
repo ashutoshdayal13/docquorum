@@ -1,9 +1,0 @@
-{
- "clinic_name": "Smith Family Health Clinic",
- "census_tract_number": 1234567890,
- "address_info": {
-  "address": "5393 Zachary Greens",
-  "city": "East Gina",
-  "state": "NC"
- }
-}

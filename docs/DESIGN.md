@@ -163,7 +163,7 @@ without the parser (`--no-zoom` turns it off).
 
 ## 10. What the benchmark runners add
 
-`benchmarks/multibench/frozen27b.py` (VAREX, LongArray-Extract, DocuBench) calls `extract()`
+`benchmarks/multibench/run.py` (VAREX, LongArray-Extract, DocuBench) calls `extract()`
 unchanged and scores with each benchmark's own scorer. ExtractBench (`benchmarks/extractbench/
 run.sh`) and UNIKIE-BENCH (`benchmarks/unikie/`) have their own runners, which apply the same
 readers, checks and quorum in stages (UNIKIE adds its protocol's one-shot readings and image

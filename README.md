@@ -52,7 +52,6 @@ Details: [`docs/results/TABLES.md`](docs/results/TABLES.md).
 * Details, caveats, per-document scores: [`results/README.md`](results/README.md)
 * How it works, with a diagram and worked examples: [`docs/docquorum.pdf`](docs/docquorum.pdf), [documentation and build instructions](docs/README.md)
 * The code, file by file: [`docs/CODE_GUIDE.md`](docs/CODE_GUIDE.md)
-* [`RESULTS_README.md`](RESULTS_README.md) is the log of an earlier experiment with an 8B model; the table above supersedes it.
 
 ---
 
@@ -94,7 +93,7 @@ For scoring, the three `.jsonl` files are enough. To keep the data elsewhere, se
 ```bash
 for s in short medium long; do
   python benchmarks/extractbench/score_run.py --split $s \
-      --run results/extractbench/predictions/$s --json /tmp/$s.json | tail -n 1
+      --run results/extractbench/predictions/$s.jsonl --json /tmp/$s.json | tail -n 1
 done
 python benchmarks/extractbench/overall.py /tmp/short.json /tmp/medium.json /tmp/long.json
 python benchmarks/extractbench/robustness.py /tmp/short.json /tmp/medium.json /tmp/long.json
@@ -103,6 +102,15 @@ python benchmarks/extractbench/robustness.py /tmp/short.json /tmp/medium.json /t
 `94.11` and `90.41` (first number on each line), and `overall.py` prints
 `ours: Overall 95.43 | Short 96.34 | Medium 94.11 | Long 90.41`, then the ranking against the leaderboard rows
 (DocQuorum is 3rd). The revision the pipeline was developed on gives `95.25` (96.11, 94.03, 90.41).
+
+**VAREX, DocuBench, LongArray-Extract (optional).** Download each benchmark into `data/multibench_sources/`
+(paths and sources: `benchmarks/multibench/sources.py`; `pip install pyarrow scipy rapidfuzz`, in `requirements.txt`), then:
+```bash
+python benchmarks/multibench/run.py varex score --stored results/varex/final          # 98.23 (exact match, normalized)
+python benchmarks/multibench/run.py docubench score --stored results/docubench/v1.4   # 91.54
+python benchmarks/multibench/run.py longarray score --stored results/longarray/final  # 98.05
+```
+Each prints the benchmark's own score of the stored outputs; `results/varex/one-call` (97.48) is the same model called once.
 
 **UNIKIE-BENCH (optional).** Clone [github.com/NEUIR/UNIKIE-BENCH](https://github.com/NEUIR/UNIKIE-BENCH), download its
 images as its `DATA.md` describes, and point `DQ_UNIKIE_DIR` at the clone (default: `data/unikie-bench`). Then:
@@ -248,9 +256,22 @@ python benchmarks/unikie/unikie_eval.py report   # placed against the published 
 Readings are written to `results/unikie/readings/`, so a fresh `read` adds to (or replaces) the stored ones: to keep the stored
 results, run with `DQ_UNIKIE_READINGS=/some/other/folder`.
 
+### VAREX, LongArray-Extract, DocuBench
+Data: `data/multibench_sources/` (section 1). VAREX's and LongArray-Extract's inputs are first written to `data/multibench/`
+(`python benchmarks/multibench/sources.py prepare varex`, likewise `longarray`), checked against the manifests in
+`benchmarks/multibench/manifests/`.
+```bash
+python benchmarks/multibench/run.py varex run --variant mine      # resumes; runs/multibench/varex_27b_mine/
+python benchmarks/multibench/run.py varex score --variant mine    # the benchmark's own scorer
+python benchmarks/multibench/run.py varex package --variant mine --name mine   # results/varex/mine/ and the tables' summary
+```
+`benchmarks/multibench/varex_one_call.py` makes the one-call baseline, `zoom_varex.py` the held-out test of zoom re-reading,
+and `measure_cost.py` the cost measurements (`results/costs/`).
+
 ### Tests
 ```bash
 python -m pytest tests/                        # unit tests; no model, parser or data needed
+DQ_RESCORE=1 python -m pytest tests/           # also re-scores stored results (needs the benchmarks' data; minutes)
 ```
 
 ---
@@ -283,21 +304,27 @@ docquorum/            the pipeline (file by file: docs/CODE_GUIDE.md)
   tools/                what the agents act with, no decisions: pdf, parser, llm, schema, rows, layout
   agents/               the readers: reader (plan / act / observe), whole, oneshot, layout (+ column_reader, ruled_reader), prompts
   checks/               deterministic repairs and checks, one file each, and their chains
-benchmarks/           runners and scorers: ExtractBench, UNIKIE-BENCH, and multibench/ (VAREX, LongArray-Extract, DocuBench)
+benchmarks/           runners and scorers
+  extractbench/         run.sh (the stages), score_run.py, overall.py, robustness.py
+  unikie/               run.sh, the benchmark protocol, zoom re-reading, cost measurement
+  multibench/           run.py (VAREX, LongArray-Extract, DocuBench), sources.py, manifests/, the one-call baseline
+  bundles.py            many documents' JSON in one .jsonl file; usage_meter.py counts model calls and tokens
+results/              every reported result: outputs, scores, provenance (README.md: details; RESEARCH_LOG.md: history)
+  <benchmark>/<run>/    predictions.jsonl (one line per document), readings.jsonl, provenance.json, scores.json
+  unikie/, unikie_open/ readings and zoom outputs per scenario; costs/ the measured cost per document
+docs/                 design (DESIGN.md), code map, illustrated guide (LaTeX + PDF), results tables and their sources
+ppt/                  the decks: flow/ (the results deck, Beamer and PowerPoint) and the worked-example walkthrough
 serve/                vLLM serving scripts
 configs/              example.env (copy it to local.env)
-results/              scores, final outputs, research log; archive/ holds the code before the 2026-09-29 reorganisation
-docs/                 pipeline guide (LaTeX + PDF), vector diagram, code map, build instructions
 tests/                unit tests
-FROZEN.json           the configuration and file hashes fixed on 2026-09-28
+FROZEN.json           the configuration and file hashes fixed on 2026-09-28; RELEASE.json the current release
 ```
 Not in the repository (too large, or third-party): `data/` (benchmark data), `cache/` (parses), `runs/` and `logs/` (outputs of
 fresh runs), `ref_papers/`. `runs/`, `logs/` and `cache/` are created on first use.
 
 ## 8. Notes
 
-Open work is listed in [`TODO.md`](TODO.md).
-
+Benchmarks surveyed but not yet run are listed in [`docs/research/benchmark-candidates.md`](docs/research/benchmark-candidates.md).
 
 * Lessons that shaped the design are in [`results/RESEARCH_LOG.md`](results/RESEARCH_LOG.md), including negative results (asking the
   model to verify its own output did not help in 22 attempts; prompt rules fixed one scenario and broke others) and one correction

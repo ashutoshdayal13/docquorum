@@ -1,6 +1,7 @@
 """Overall value F1 (unweighted mean over all 370 documents, as the leaderboard computes it)
 from per-document score files written by `score_run.py --json`, placed against the
-leaderboard rows that were re-scored with the current scorer (RESULTS.md §7.3).
+leaderboard snapshot docs/results/extractbench-leaderboard.csv: first against the rows scored
+with the current scorer, then against every row (results/RESEARCH_LOG.md, "scoring rules changed").
 
     python overall.py scores/short_X.json scores/med_Y.json scores/long_Z.json
 """
@@ -9,12 +10,14 @@ import json
 import sys
 from pathlib import Path
 
-# Rows re-scored after the 2026-09-11 scoring change (RESULTS.md §7.3); the rest of the
-# leaderboard is on the older scorer and is listed separately.
+# Rows scored with the current scorer: re-scored after the 2026-09-11 scoring change, or added to
+# the leaderboard after it; the rest is on the older scorer and is listed separately.
 RESCORED = {"LlamaExtract Agentic Plus", "Pulse (Effort)", "LlamaExtract Agentic",
             "Codex (GPT-5.6 Sol Evidence)", "Codex (GPT-5.5 Evidence)", "Pulse (Non-effort)",
             "LlamaExtract Cost-Effective", "Codex (GPT-5.6 Terra Evidence)",
-            "Codex (GPT-5.6 Luna Evidence)", "Claude Code (Opus 4.8 Evidence)"}
+            "Codex (GPT-5.6 Luna Evidence)", "Claude Code (Opus 4.8 Evidence)",
+            "Codex (GPT-6 Sol Evidence)", "Codex (GPT-6 Luna Evidence)", "Claude Code (Opus 5.5 Evidence)"}
+LEADERBOARD = Path(__file__).resolve().parents[2] / "docs" / "results" / "extractbench-leaderboard.csv"
 SIZES = {"Short": 252, "Medium": 98, "Long": 20}
 
 
@@ -25,7 +28,7 @@ def main():
         assert len(d) == SIZES[split], f"{split}: {len(d)} documents scored, expected {SIZES[split]}"
         ours[split] = 100 * sum(v[0] for v in d.values()) / len(d)
     ours["Overall"] = sum(ours[s] * SIZES[s] for s in SIZES) / sum(SIZES.values())
-    rows = list(csv.DictReader(open(Path(__file__).resolve().parent / "leaderboard.csv")))
+    rows = list(csv.DictReader(open(LEADERBOARD)))
     table = [(r["Provider"], {k: float(r[k]) for k in ("Overall", "Short", "Medium", "Long")},
               r["Provider"] in RESCORED) for r in rows]
     table.append(("** DocQuorum (Qwen3.8-27B) **", ours, True))

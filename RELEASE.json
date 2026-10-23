@@ -1,5 +1,5 @@
 {
- "written_utc": "2026-10-19 20:20",
+ "written_utc": "2026-10-23 02:51",
  "model": "Qwen/Qwen3.8-27B-FP8, vLLM 0.27.1, greedy decoding; MinerU2.5-2509-1.2B parser",
  "pipeline_version": "v1.4 (docs/DESIGN.md)",
  "serving": "serve/serve_qwen38_27b.sh; on the shared GPU GPU_UTIL 0.62-0.66, and from 14 October 2026 SPEC_TOKENS=2 (speculative decoding, which leaves greedy outputs unchanged up to floating-point batch effects)",
@@ -51,15 +51,15 @@
    "score": 98.22614304686019,
    "place": "1st (Gemini 2.5 Pro 98.0)",
    "configuration": "final pipeline (v1.3), every form read again",
-   "files": "results/varex-final",
+   "files": "results/varex/final",
    "earlier": {
     "v1.2, zoom re-reading on the v1.1 readings": {
      "score": 98.29728704230696,
-     "predictions": "results/varex-zoom"
+     "predictions": "results/varex/v1.2-zoom"
     },
     "v1.1, without zoom re-reading": {
      "score": 98.09808385505596,
-     "predictions": "results/varex"
+     "predictions": "results/varex/v1.1"
     }
    }
   },
@@ -78,7 +78,7 @@
    "score": 95.42784046488673,
    "place": "3rd (two commercial systems at 95.91)",
    "configuration": "the development set",
-   "files": "results/extractbench/predictions",
+   "files": "results/extractbench/predictions/<split>.jsonl",
    "per_split": {
     "short": 96.33899495110072,
     "medium": 94.10888505518105,
@@ -90,8 +90,8 @@
    "metric": "macro document accuracy",
    "score": 98.05249971235187,
    "place": "2nd of 12 (Extend MAX 99.2)",
-   "configuration": "final pipeline (run folder results/multibench/longarray_27b_ref4)",
-   "files": "results/longarray"
+   "configuration": "final pipeline (run folder longarray_27b_ref4)",
+   "files": "results/longarray/final"
   },
   {
    "benchmark": "UNIKIE-BENCH, open category",
@@ -108,15 +108,15 @@
    "score": 91.54398046805912,
    "place": "4th of 10 (DocuPipe 97.02; Claude Sonnet 5 91.73)",
    "configuration": "final pipeline (v1.4), every document read again; the v1.3 fixes were found on this benchmark",
-   "files": "results/docubench-v14",
+   "files": "results/docubench/v1.4",
    "earlier": {
     "v1.3": {
      "score": 90.79783905303204,
-     "predictions": "results/docubench-final"
+     "predictions": "results/docubench/v1.3"
     },
     "v1.1": {
      "score": 86.46983977509024,
-     "predictions": "results/docubench"
+     "predictions": "results/docubench/v1.1"
     }
    }
   }

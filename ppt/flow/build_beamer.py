@@ -494,9 +494,9 @@ def one_call_baselines():
     """Qwen3.8-27B, the model DocQuorum uses, called once per document by each benchmark's own
     protocol: {benchmark: (score, the published row it is, if any)}."""
     out = {}
-    vx_f = ROOT / "results/multibench/varex_27b_one_call/scores/summary.json"
+    vx_f = ROOT / "results/varex/one-call/scores.json"
     if vx_f.exists():
-        out["varex"] = (100 * json.loads(vx_f.read_text())["systems"]["one_call"]["exact_match_normalized"], None)
+        out["varex"] = (json.loads(vx_f.read_text())["score"], None)
     out["unikie"] = (json.loads((ROOT / "results/unikie/summary.json").read_text())["oneshot_27b"]["macro"], None)
     out["unikie_open"] = (load("docquorum-unikie-open.json")["single_readings"]["oneshot"]["score"], None)
     out["extractbench"] = (next(float(r["Overall"]) for r in lb if r["Provider"] == "Qwen3.8 27B"), "Qwen3.8 27B")
@@ -636,7 +636,7 @@ frame("Accuracy at a fraction of the cost", r"""
 """.replace("CENTS", cents).replace("ONEN", str(len(one))).replace("DOCN", str(len(rows_db))).replace(
     "SPEED", f"{speed:.1f}" if speed else "--").replace("QIN", f"{QWEN['input']:.2f}").replace("QOUT", f"{QWEN['output']:.2f}"))
 
-zv = load("../../results/varex-zoom/comparison.json")
+zv = json.loads((ROOT / "results/varex/v1.2-zoom/comparison.json").read_text())
 zu = json.loads((ROOT / "results/unikie_open/zoom/comparison.json").read_text())
 zc = json.loads((ROOT / "results/unikie/zoom/comparison.json").read_text())
 zc0 = json.loads((ROOT / "results/unikie/zoom/as_run/comparison.json").read_text())

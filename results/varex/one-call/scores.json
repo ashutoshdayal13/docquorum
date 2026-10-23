@@ -1,0 +1,36 @@
+{
+ "benchmark": "VAREX",
+ "track": "image_only",
+ "systems": {
+  "one_call": {
+   "model": "one_call",
+   "mode": "image_only",
+   "docs": 1777,
+   "fields": 21084,
+   "exact_match": 0.957455890722823,
+   "exact_match_ci": 0.9580250426863973,
+   "exact_match_normalized": 0.9747675962815405,
+   "anls": 0.9765200352536504,
+   "anls_ci": 0.9765968163480285,
+   "anls_normalized": 0.9840189672278234,
+   "perfect_docs": 1442,
+   "perfect_docs_pct": 0.8114800225098481,
+   "em_flat": 0.976905311778291,
+   "docs_flat": 299,
+   "perfect_flat": 260,
+   "perfect_flat_pct": 0.8695652173913043,
+   "em_nested": 0.9772676119738916,
+   "docs_nested": 1146,
+   "perfect_nested": 929,
+   "perfect_nested_pct": 0.8106457242582897,
+   "em_table": 0.9679785330948122,
+   "docs_table": 332,
+   "perfect_table": 253,
+   "perfect_table_pct": 0.7620481927710844,
+   "predictions": 1777,
+   "documents": 1777
+  }
+ },
+ "scope": "all 1,777 documents",
+ "score": 97.47675962815406
+}

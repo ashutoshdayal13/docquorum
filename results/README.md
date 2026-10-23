@@ -70,7 +70,7 @@ null (at most 13% of our nulls are wrong, so a re-ask would cost more than it re
 
 `extractbench/provenance.json` names the reading behind every final output;
 `extractbench/scores/short_quorum_picks.json` has the quorum's agreement scores for the
-97 short scans; `extractbench/previous_94.18/` keeps the previous version's outputs.
+97 short scans. The previous version's outputs (94.18) are in the git history before 2026-10-23.
 
 Caveats:
 * The benchmark was used for development (errors were read document by document to find
@@ -85,7 +85,7 @@ Caveats:
   as 'XXX-XX-XXXX', margins the schema says to round to two decimals, a check amount the
   schema says to print with '$'), the pipeline follows the schema and loses those cells.
 
-Files: `extractbench/predictions/<split>/<doc>.json` (final outputs),
+Files: `extractbench/predictions/<split>.jsonl` (final outputs, one line per document),
 `extractbench/scores/<split>.json` (per-document F1 / precision / recall).
 Re-score: `benchmarks/extractbench/score_run.py` (see the top-level README).
 
@@ -208,7 +208,7 @@ one run, nothing changed afterwards:
   characters (`Termitor` -> `Termidor`, `AGCT-2023-001` -> `ACCT-2023-001`) and values cut short
   (a street without its city); breaks are mostly the crop siding with a reading's slip
   (`TIL-001-2023` -> `TIIL-001-2023`) or the wrong block located (a witness name read from
-  another signature block). Every change is listed in `varex-zoom/changes.json`.
+  another signature block). Every change is listed in `varex/v1.2-zoom/changes.json`.
 
 * The forms are page images without a text layer, so each takes route C: the reader agent on the
   image and on the MinerU parse, the one-shot reading, the checks, and the quorum
@@ -217,13 +217,13 @@ one run, nothing changed afterwards:
   agent now reads the schema's other fields for it. Both fixes were made during this run:
   before, such forms came back with only their table; and a layout reader that finds no
   records now hands the form to the normal route (the 11 forms affected were read again).
-* Files: `varex-zoom/` (with zoom: `predictions/`, `scores.json`, `provenance.json`,
-  `comparison.json`, `changes.json`) and `varex/` (without zoom: `predictions/<form>.json`,
-  `scores.json`, `provenance.json` with route, readings and agreement per form; code version).
-  Re-score: `benchmarks/multibench/frozen27b.py varex score [--variant zoom]` (needs the VAREX
-  dataset under `data/multibench_sources/`). Re-run zoom on the stored readings:
-  `benchmarks/multibench/zoom_varex.py`, then `frozen27b.py varex score --variant zoom`,
-  `zoom_varex_audit.py` and `zoom_varex_package.py` (same folder).
+* Files, one folder per run under `varex/`: `final/` (v1.3, the reported result), `one-call/` (Qwen3.8-27B called
+  once), `v1.2-zoom/` (zoom re-reading on the v1.1 readings; with `comparison.json` and `changes.json`) and `v1.1/`.
+  Each holds `predictions.jsonl` (one line per form), `scores.json` and `provenance.json` (route, readings and
+  agreement per form; code version); `final/` and `v1.1/` also every reading (`readings.jsonl`).
+  Re-score: `benchmarks/multibench/run.py varex score --stored results/varex/final` (needs the VAREX dataset under
+  `data/multibench_sources/`). Re-run zoom on the stored v1.1 readings: `benchmarks/multibench/zoom_varex.py run`,
+  then `zoom_varex.py report`.
 
 ## LongArray-Extract (Extend AI), all 45 documents
 
@@ -252,8 +252,7 @@ documents.
   `benchmarks/multibench/apply_late_checks.py`).
 * Remaining errors: the clinical relationship-to-product code, printed alone under a footnote
   marker, is often attached to the wrong event.
-* Files: `longarray/predictions/<document>.json`, `longarray/scores.json`,
-  `longarray/provenance.json`.
+* Files: `longarray/final/` (`predictions.jsonl`, `scores.json`, `provenance.json`).
 
 ## UNIKIE-BENCH open category (1,661 documents, 8 scenarios)
 
@@ -338,21 +337,21 @@ benchmark does for every system). Scored with the benchmark's own `scorer.py`
   time** (`docs/DESIGN.md`; made for speed, not found from scores). Every document read again:
   **91.54**, still 4th (Claude Sonnet 5 91.73). 26 documents changed, 16 up and 10 down; the
   largest gains are on documents that looped (f9nrfUNC 31.7 -> 40.1, EWUUeFYp 61.3 -> 65.1), and
-  part of the +0.75 is the run-to-run variation above. Outputs: `results/docubench-v14`.
+  part of the +0.75 is the run-to-run variation above. Outputs: `docubench/v1.4/`.
 * Earlier fixes from this benchmark, the numbers below being development
   measurements: a layout reader that finds no records hands the document to the route
   (WM9ZKrAr 0 -> 87.3); the ruled-table reader only where printed rules are found (vAdukzpt
   0.2 -> 81.4); the quorum passes over a reading caught in a repetition loop (f9nrfUNC
   5.3 -> 16.5); a long scan keeps its page-image reading when the parse reading lost most of
   the list (UqY6ItFZ 5.8 -> 78.3). Each was checked to change no output on the other benchmarks.
-  The last two were applied to the run's stored readings afterwards
-  (`benchmarks/multibench/apply_reading_rules.py`; originals kept); for the first two, the
-  documents were read again.
+  The last two were first applied to a run's stored readings; v1.3 and v1.4 read every
+  document again.
 * A bug found in the final review: the guideline replaced the schema's own description of the
   document instead of following it. The 15 documents whose schema has a description were read
   again with it restored (one improved, LYeb3G3s 82.5 -> 84.4; 86.44 -> 86.47 overall).
 * Remaining errors: two dictionary scans in Devanagari and Hebrew (9.9, 16.5), where the parser
   garbles the script and the model loops; a one-page Japanese gazette (17.6); and several scans
   where the quorum keeps a weaker reading than one it had (choosing better would need the answer key).
-* Files: `docubench-v14/` (v1.4), `docubench-final/` (v1.3) and `docubench/` (v1.1): `predictions/<document>.json`,
-  `scores.json`, `provenance.json`.
+* Files: `docubench/v1.4/` (with every reading, `readings.jsonl`), `docubench/v1.3/` and `docubench/v1.1/`:
+  `predictions.jsonl`, `scores.json`, `provenance.json`. Re-score:
+  `benchmarks/multibench/run.py docubench score --stored results/docubench/v1.4`.

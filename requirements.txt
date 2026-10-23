@@ -8,5 +8,9 @@ openpyxl              # .xlsx input
 json_repair
 mineru-vl-utils       # client for the MinerU2.5 parser (scans and images)
 pytest                # tests/
+pyarrow               # VAREX and LongArray-Extract data (parquet), for their scoring and input preparation
+scipy                 # VAREX's and LongArray-Extract's scorers (array matching)
+rapidfuzz             # the same scorers (string similarity)
+matplotlib            # the deck's charts (ppt/flow/build_beamer.py)
 # ExtractBench's scorer and reference one-shot reader (Apache-2.0), installed separately:
 #   pip install "git+https://github.com/run-llama/ExtractBench.git@123cea5f4940b5d5211677e3a95a6c300ab474f5"

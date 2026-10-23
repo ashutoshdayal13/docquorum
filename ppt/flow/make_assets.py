@@ -16,6 +16,8 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / "benchmarks"))
+import bundles  # noqa: E402
 from docquorum import config as C  # noqa: E402
 from docquorum import extractbench as EB  # noqa: E402
 from docquorum.agents.ruled_reader import _stack  # noqa: E402
@@ -116,7 +118,8 @@ col = PDF.render_gray(pdf("long", REG), 2, 220)
 s = 220 / 100
 x0, x1 = spans[0]
 col.crop((int(x0 * s) - 10, int(0.05 * col.height), int(x1 * s) + 10, int(0.30 * col.height))).convert("RGB").save(OUT / "colflow_crop.png")
-pred = json.loads((ROOT / "results/extractbench/predictions/long" / f"{REG}.json").read_text())
+EB_LONG = bundles.read(ROOT / "results/extractbench/predictions/long.jsonl")
+pred = EB_LONG[REG]
 facts["colflow"] = {"name": REG, "columns": len(spans), "pages": PDF.npages(pdf("long", REG)),
                     "records_total": len(pred["owners"]),
                     "page2_first": [r for r in pred["owners"] if r.get("source_page") == 2][:4]}
@@ -136,7 +139,7 @@ frame(ov).save(OUT / "ruled_page.png")
 band_img = _stack(header, bands[0][0]).convert("RGB")
 band_img.thumbnail((1400, 700))
 frame(band_img).save(OUT / "ruled_band.png")
-fpred = json.loads((ROOT / "results/extractbench/predictions/long" / f"{FTX}.json").read_text())
+fpred = EB_LONG[FTX]
 arr = max((k for k in fpred if isinstance(fpred[k], list)), key=lambda k: len(fpred[k]))
 p47 = [r for r in fpred[arr] if r.get("source_page") == 47]
 facts["ruled"] = {"name": FTX, "page": 47, "angle": round(float(ang), 2), "bands": [n for _, n in bands],

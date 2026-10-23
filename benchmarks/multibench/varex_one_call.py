@@ -9,8 +9,8 @@ form's schema text, the form image as a PNG, temperature 0, a JSON-object reply;
 not JSON is saved as an error and scores as empty. Qwen3.8's reasoning is off, as in every run of
 this repository. Scored with the benchmark's own evaluation/score.py and field exclusions.
 
-    python benchmarks/multibench/varex_one_call.py run      (resumes)
-    python benchmarks/multibench/varex_one_call.py score
+    python benchmarks/multibench/varex_one_call.py run         (runs/multibench/varex_one_call/; resumes)
+    python benchmarks/multibench/varex_one_call.py package     (results/varex/one-call/)
 """
 import base64
 import json
@@ -19,15 +19,13 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[1]
-sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(HERE))
-import frozen27b as F  # noqa: E402
+import run as R  # noqa: E402
 from docquorum import config as C  # noqa: E402
 from docquorum.tools import llm  # noqa: E402
 
-F.VARIANT = "one_call"
-OUT = F.out_dir("varex") / "views" / "one_call"
+OUT = R.RUNS / "varex_one_call" / "predictions"
+DST = R.ROOT / "results" / "varex" / "one-call"
 # example_inference.py, SYSTEM_PROMPT (VAREX-Bench, image modality)
 SYSTEM_PROMPT = """Extract structured data from this document.
 Return a JSON object matching this schema:
@@ -37,6 +35,10 @@ Return a JSON object matching this schema:
 Return null for fields you cannot find.
 Return ONLY valid JSON.
 Return an instance of the JSON with extracted values, not the schema itself."""
+POLICY = {"protocol": "VAREX-Bench example_inference.py, image modality: its system prompt with the form's schema "
+                      "text, the form image as a PNG, temperature 0, a JSON-object reply; Qwen3.8's reasoning off",
+          "model": C.MODEL, "weights": "Qwen/Qwen3.8-27B-FP8", "script": "benchmarks/multibench/varex_one_call.py",
+          "answer_keys_at_inference": False}
 
 
 def read(cl, name, image, schema_text):
@@ -57,19 +59,29 @@ def read(cl, name, image, schema_text):
         pred = {"_error": "Invalid JSON", "_raw": (content or "")[:500]}
     except Exception as e:
         pred = {"_error": str(e)[:300]}
-    F.write(out, pred)
+    R.write(out, pred)
 
 
 def run():
     OUT.mkdir(parents=True, exist_ok=True)
     cl = llm.client(timeout=1800)
-    jobs = [(name, image, image.parent / "schema.json") for name, image, _, _ in F.varex_inputs()]
+    jobs = [(name, image) for name, image, _, _ in R.INPUTS["varex"]()]
     with ThreadPoolExecutor(max_workers=16) as ex:
-        for i, _ in enumerate(ex.map(lambda j: read(cl, j[0], j[1], j[2].read_text()), jobs), 1):
+        for i, _ in enumerate(ex.map(lambda j: read(cl, j[0], j[1], (j[1].parent / "schema.json").read_text()), jobs), 1):
             if i % 100 == 0:
                 print(f"{i}/{len(jobs)}", flush=True)
     print("done", sum(1 for _ in OUT.glob("*.json")), "forms")
 
 
+def package():
+    preds = R.bundles.read(OUT)
+    status = {k: "failed" if "_error" in v else "completed" for k, v in preds.items()}
+    rep = R.varex_score(preds, status, R.RUNS / "varex_one_call" / "scores", system="one_call")
+    R.bundles.write(DST / "predictions.jsonl", preds)
+    R.write(DST / "provenance.json", {"policy": POLICY, "documents": {k: {"status": v} for k, v in status.items()}})
+    R.write(DST / "scores.json", rep)
+    print(f"VAREX, one call: {rep['score']:.2f} -> {DST.relative_to(R.ROOT)}")
+
+
 if __name__ == "__main__":
-    {"run": run, "score": lambda: F.varex_score(views=("one_call",))}[sys.argv[1]]()
+    {"run": run, "package": package}[sys.argv[1]]()

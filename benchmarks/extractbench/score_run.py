@@ -1,6 +1,8 @@
-"""Score a run folder (<name>.json per document) with ExtractBench's own scorer.
+"""Score a run with ExtractBench's own scorer: a folder of <name>.json per document, or a bundle
+(results/extractbench/predictions/<split>.jsonl).
 
     python score_run.py --split long --run runs/long_final [--json scores.json] [--only a,b]
+    python score_run.py --split long --run results/extractbench/predictions/long.jsonl
 """
 import argparse
 import json
@@ -8,6 +10,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))       # the docquorum package
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))       # benchmarks/bundles.py
+import bundles  # noqa: E402
 from docquorum import extractbench as EB  # noqa: E402
 
 # published long-split value F1 (the leaderboard's long column, read 2026-09-25), for reference
@@ -35,11 +39,11 @@ def main():
     if a.only:
         keep = set(a.only.split(","))
         recs = {k: v for k, v in recs.items() if k in keep}
+    preds = bundles.read(a.run)
     rows = []
     for name, rec in recs.items():
-        f = Path(a.run) / f"{name}.json"
-        if f.exists():
-            m = EB.score(rec, json.loads(f.read_text()))["metrics"]
+        if name in preds:
+            m = EB.score(rec, preds[name])["metrics"]
             rows.append((name, m.get("extract_unified_value_f1", 0.0), m.get("extract_unified_value_precision", 0.0),
                          m.get("extract_unified_value_recall", 0.0)))
     if not rows:

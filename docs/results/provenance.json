@@ -44,5 +44,6 @@
    "file": "docquorum-unikie.json",
    "change": "added variant six_readings_enlarged_zoom (zoom re-reading with the vote rule) and made it the headline"
   }
- ]
+ ],
+ "local_sources_note": "hashes of the local audit files the snapshots were checked against; the files left the tree on 2026-10-23 (results reorganised) and are in the git history at commit c58bc58"
 }

@@ -213,7 +213,7 @@ def cmd_score(a):
 
 
 def cmd_report(a):
-    t = json.load(open(HERE / "unikie_published_table4.json"))
+    t = json.load(open(HERE.parents[1] / "docs" / "results" / "unikie-published.json"))
     cols = t["columns"][:-1]                                  # the 11 scenarios (last: average)
     rows = {f"{k} ({kind})": dict(zip(cols, v[:-1])) | {"MACRO": v[-1]}
             for kind in ("closed", "open") for k, v in t[f"{kind}_source"].items()}

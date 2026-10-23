@@ -20,15 +20,6 @@ configs/local.env
 # kept locally, not published
 _withheld/
 
-# Multi-benchmark source copies, images and raw runs stay local; manifests/summaries are tracked.
-results/multibench/**/inputs/
-results/multibench/**/converted/
-results/multibench/**/predictions/
-results/multibench/**/reports/
-results/multibench/**/*.csv
-
 # earlier readings kept locally when a re-read replaces them
 *.before_enlarge.json
 *.before_enlarge.txt
-# copies of predictions laid out for the VAREX scorer (rebuilt by frozen27b.py varex score)
-results/multibench/**/official_layout/

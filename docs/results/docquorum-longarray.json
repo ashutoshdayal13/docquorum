@@ -13,6 +13,6 @@
       "legal": 98.023
     }
   },
-  "predictions": "results/longarray",
-  "variant": "final pipeline (run folder results/multibench/longarray_27b_ref4)"
+  "predictions": "results/longarray/final",
+  "variant": "final pipeline (run folder longarray_27b_ref4)"
 }

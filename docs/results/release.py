@@ -22,7 +22,7 @@ results = [
      "without_zoom": uk["variants"]["six_readings_enlarged"]["score"]},
     {"benchmark": "ExtractBench", "metric": "Overall value F1", "score": eb["stored_primary"]["score"],
      "place": "3rd (two commercial systems at 95.91)", "configuration": "the development set",
-     "files": "results/extractbench/predictions", "per_split": eb["stored_primary"]["per_split"]},
+     "files": "results/extractbench/predictions/<split>.jsonl", "per_split": eb["stored_primary"]["per_split"]},
     {"benchmark": "LongArray-Extract", "metric": "macro document accuracy", "score": la["score"],
      "place": "2nd of 12 (Extend MAX 99.2)", "configuration": la.get("variant"), "files": la["predictions"]},
     {"benchmark": "UNIKIE-BENCH, open category", "metric": "macro F1", "score": uo["score"],
@@ -30,7 +30,7 @@ results = [
      "files": "results/unikie_open/readings, results/unikie_open/zoom", "without_zoom": uo["without_zoom"]["score"]},
     {"benchmark": "DocuBench v0.2.0", "metric": "macro field accuracy", "score": load("docquorum-docubench.json")["score"],
      "place": "4th of 10 (DocuPipe 97.02; Claude Sonnet 5 91.73)", "configuration": "final pipeline (v1.4), every document read again; the v1.3 fixes were found on this benchmark",
-     "files": "results/docubench-v14", "earlier": load("docquorum-docubench.json").get("earlier")},
+     "files": load("docquorum-docubench.json")["predictions"], "earlier": load("docquorum-docubench.json").get("earlier")},
 ]
 
 changes = [
