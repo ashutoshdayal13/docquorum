@@ -9,12 +9,12 @@ every experiment, including the rejected ones and one correction (§13).
 Overall = mean over all 370 documents, as on the public leaderboard.
 Model: Qwen3.8-27B-FP8 served with vLLM, one GPU.
 
-| split | DocQuorum | rank among the 11 leaderboard rows scored with the current scorer |
+| split | DocQuorum | rank among the 13 leaderboard rows scored with the current scorer (2 October 2026 snapshot) |
 |---|---:|---|
 | short (252) | **96.34** | 3 |
 | medium (98) | **94.11** | 3 |
 | long (20) | **90.41** | 3 (above LlamaExtract Agentic Plus, 90.18) |
-| **Overall** | **95.43** (95% CI 94.81-96.02) | **3** (also 3 of all 45 rows) |
+| **Overall** | **95.43** (95% CI 94.81-96.02) | **3** (also 3 of all 48 rows) |
 
 Scored against the dataset as published now (revision `51bf3a0`). The pipeline was developed on an
 earlier revision, on which the same outputs score 96.11 / 94.03 / 90.41, Overall 95.25 (95% CI
@@ -25,7 +25,7 @@ documents decided by the quorum: 15 better, 4 worse, short split +0.10
 (`extractbench/scores/zoom_dev_short.json`). It is not part of the scores above.
 
 Leaders: LlamaExtract Agentic Plus 95.91, Pulse (Effort) 95.91; then DocQuorum; then
-LlamaExtract Agentic 94.77 and Codex (GPT-5.6 Sol Evidence) 93.77. The best open-weight entry on
+LlamaExtract Agentic 94.77 and Codex (GPT-6 Sol Evidence) 94.57. The best open-weight entry on
 the leaderboard (Qwen3.8-27B, one call) is 89.75 (older scorer); the same model through the
 benchmark's own one-shot code scores ~90 on the short split under the current scorer.
 
