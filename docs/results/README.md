@@ -47,4 +47,4 @@ run); [TABLES.md](TABLES.md) holds every table in Markdown.
 - [UNIKIE-BENCH open category](unikie-open-published.json): 15 systems and all 8 scenarios,
   transcribed from the paper's open-category table; every average re-derived from its scenarios.
 - [DocuBench v0.2.0](docubench-published.json): the 9 README leaderboard systems, recomputed from
-  the repository's per-document `results/summary.csv`.
+  DocuBench's own per-document `results/summary.csv` (in its repository).

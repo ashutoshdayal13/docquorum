@@ -249,7 +249,7 @@ documents.
   96.3); a failed long call no longer re-sent (a six-hour waste on one document); the
   last-digits check (a statement 82.9 -> 99.6). The run predates the last-digits check, which
   was applied to its final outputs afterwards (it runs last in the chain; originals kept;
-  `benchmarks/multibench/apply_late_checks.py`).
+  `benchmarks/multibench/apply_late_checks.py`, in the git history before 2026-10-23).
 * Remaining errors: the clinical relationship-to-product code, printed alone under a footnote
   marker, is often attached to the wrong event.
 * Files: `longarray/final/` (`predictions.jsonl`, `scores.json`, `provenance.json`).
