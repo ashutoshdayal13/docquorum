@@ -149,6 +149,24 @@ def readme_results():
     return "\n".join(lines) + "\n"
 
 
+PUBLISHED_FROM = {"varex": "the VAREX-Bench image-modality leaderboard", "unikie": "the paper's Table 4",
+                  "longarray": "Extend AI's results page", "unikie_open": "the paper's open-category table",
+                  "extractbench": "the ExtractBench leaderboard CSV (2 October 2026)", "docubench": "the DocuBench leaderboard"}
+
+
+def summary_table():
+    """docs/results/README.md's table: every benchmark, its published systems and DocQuorum's place."""
+    import leaderboards as LB
+    lines = ["| benchmark | published systems | DocQuorum | place |", "|---|---|---:|---|"]
+    for b in LB.ordered()[0]:
+        m, top = LB.me(b), max(b["rows"], key=lambda r: r["score"])
+        lead = (f"next: {LB.ahead_of(b)['name']} {LB.shown(LB.ahead_of(b)['score'], b['digits'])}" if m["rank"] == 1
+                else f"1st: {top['name']} {LB.shown(top['score'], b['digits'])}")
+        lines.append(f"| {b['title']} ({b['what']}) | {len(b['rows'])}, from {PUBLISHED_FROM[b['key']]} | "
+                     f"{b['ours']['score']:.2f} | {LB.nth(m['rank'])} of {len(b['rows']) + 1} ({lead}) |")
+    return "\n".join(lines) + "\n"
+
+
 def readme_costs():
     """The README's cost and speed block: what makes a document cheap, against published costs."""
     import pricing
@@ -286,6 +304,12 @@ def main():
             before, rest = text.split(start, 1)
             text = before + start + "\n" + fill() + rest[rest.index(end):]
     readme.write_text(text)
+    own = HERE / "README.md"                       # this folder's README: its summary table
+    text = own.read_text()
+    start, end = "<!-- summary:start (written by generate_tables.py) -->", "<!-- summary:end -->"
+    if start in text and end in text:
+        before, rest = text.split(start, 1)
+        own.write_text(before + start + "\n" + summary_table() + rest[rest.index(end):])
     (HERE.parent / "results-tables.tex").write_text("".join(out))
     print(f"Rendered ExtractBench: {len(eb_rows)} published systems + DocQuorum (rank {rank(ours['Overall'], eb_scores)}); "
           f"UNIKIE: {len(u_rows)} published systems + DocQuorum (rank {rank(unikie['score'], u_scores)}).")
