@@ -24,9 +24,8 @@ document: several readings of each image and the quorum over them.
     python unikie_eval.py score                        macro F1 over all 4,472 images
     python unikie_eval.py report                       against the paper's Table 4
 
-  The open-category track (1,661 documents, 8 scenarios): set DQ_UNIKIE_DATASETS to its datasets
-  folder, DQ_UNIKIE_SCENARIOS=receipt-cn,Form-cn,invoice-cn,Contract-cn,receipt-en,Form-en,
-  invoice-en,Contract-en, and separate DQ_UNIKIE_PCACHE / DQ_UNIKIE_READINGS folders.
+  The open-category track (1,661 documents, 8 scenarios): first
+  set -a; source configs/unikie_open.env; set +a   (its datasets, scenarios, parse cache and readings).
 """
 import argparse
 import json

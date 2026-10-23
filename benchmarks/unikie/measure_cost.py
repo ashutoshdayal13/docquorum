@@ -8,7 +8,7 @@ readings by other models (Qwen3-VL-32B, -8B: one call each) are not served here;
 counted as calls, without tokens.
 
     python benchmarks/unikie/measure_cost.py 30                         (constrained)
-    set -a; source runs/unikie_open.env; set +a; python benchmarks/unikie/measure_cost.py 30
+    set -a; source configs/unikie_open.env; set +a; python benchmarks/unikie/measure_cost.py 30
 """
 import json
 import random

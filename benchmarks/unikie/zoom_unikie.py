@@ -8,7 +8,7 @@ oneshot, parse. Constrained category (third): the six readings of the reported c
     python benchmarks/unikie/zoom_unikie.py run      -> results/unikie[_open]/zoom/<scenario>.json
     python benchmarks/unikie/zoom_unikie.py score    macro F1 before / after, document by document
 
-For the open category, first: set -a; source runs/unikie_open.env; set +a (its folders).
+For the open category, first: set -a; source configs/unikie_open.env; set +a (its folders).
 """
 import json
 import os

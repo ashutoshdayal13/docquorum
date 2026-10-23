@@ -118,6 +118,8 @@ images as its `DATA.md` describes, and point `DQ_UNIKIE_DIR` at the clone (defau
 benchmarks/unikie/run.sh score     # from the stored readings in results/unikie/readings
 ```
 **Expected output:** one line starting `DocQuorum macro  82.62`, followed by the 11 per-scenario scores (the six-reading quorum; `python benchmarks/unikie/zoom_unikie.py score` re-scores the stored zoom outputs: 82.65).
+The open-category track: put its data in `data/unikie-open/datasets`, then `set -a; source configs/unikie_open.env; set +a` and
+the same two commands (72.33 with zoom re-reading).
 
 ---
 
