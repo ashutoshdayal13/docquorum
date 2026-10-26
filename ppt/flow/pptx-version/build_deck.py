@@ -187,7 +187,7 @@ s.notes_slide.notes_text_frame.text = ("ExtractBench (370 enterprise PDFs) and U
                                        "Qwen3.8-27B (FP8) on one GPU; MinerU2.5 parser for scans.")
 
 # ---------------------------------------------------------------- 2. pipeline
-s = slide(None, "", "The whole pipeline", source="Pipeline figure v3 (generated with Codex), describing docquorum.extract.",
+s = slide(None, "", "The whole pipeline", source="Pipeline figure, describing docquorum.extract.",
           notes="Read left to right: inputs, prepare and route, read, check each candidate, select, return. "
                 "Routes: A layout readers, B text available, C no text and at most 12 pages, D no text and longer.")
 picture(s, A / "pipeline.png", 0.5, 1.5, w=12.33, h=5.5, border=False)

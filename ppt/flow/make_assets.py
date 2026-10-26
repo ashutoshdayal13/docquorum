@@ -56,7 +56,7 @@ def frame(im, width=3, color=(190, 198, 210)):
 
 facts = {}
 
-# 1. the pipeline overview (generated with Codex, latest version)
+# 1. the pipeline overview (latest version)
 shutil.copy(PIPELINE, OUT / "pipeline.png")
 
 # 2. inputs: a scanned PDF + its JSON Schema; an image + its JSON template

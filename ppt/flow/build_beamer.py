@@ -164,7 +164,7 @@ frame("Problem statement", r"""
 frame("Pipeline overview", r"""
 \centering
 \includegraphics[width=\textwidth,height=6.2cm,keepaspectratio]{assets/pipeline.png}
-\src{Pipeline figure (generated with Codex), describing the single-document entry point \texttt{docquorum.extract}; the lower panels show the bounded reader loop and guarded zoom updates (v1.3; v1.4 adds no step).}
+\src{Pipeline figure, describing the single-document entry point \texttt{docquorum.extract}; the lower panels show the bounded reader loop and guarded zoom updates (v1.3; v1.4 adds no step).}
 """)
 
 # ------------------------------------------------------------------ routing
