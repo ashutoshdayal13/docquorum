@@ -1,340 +1,104 @@
 # DocQuorum
 
-**Agentic document extraction by a quorum of grounded readings.**
+**Agentic document extraction with open models.** Give DocQuorum a document (a PDF, an image, or a spreadsheet, Word,
+HTML, XML, CSV or text file) and a JSON Schema (or a JSON template); it returns JSON that follows the schema. It runs on
+open-weight models (Qwen3.8-27B and the MinerU2.5 parser) on one GPU; no commercial API is used.
 
-Give DocQuorum a document (a PDF, an image, or a spreadsheet, Word, HTML, XML, CSV or text file) and a JSON Schema
-(or a JSON template); it returns JSON that follows the schema. It runs on open-weight models (Qwen3.8-27B) on a single GPU; no commercial API is used.
+## Results
 
-Each benchmark below is scored with its own scorer and placed against every published system
-([full tables](docs/results/TABLES.md)). No result was submitted to a leaderboard.
+Each benchmark is scored with its own official scorer and placed against every published system. No result was
+submitted to a leaderboard.
 
-<!-- results:start (written by docs/results/generate_tables.py) -->
-| benchmark | score | place | ahead of | model calls / doc | $ / doc | seconds / doc |
-|---|---:|---|---|---:|---:|---:|
-| **VAREX** (1,777 government forms) | **98.23** | **1st of 21** | Gemini 2.5 Pro 98.0 | 3.7 | 0.021 | 25 |
-| **UNIKIE-BENCH** (4,472 images, 11 scenarios) | **82.65** | **1st of 16** | Gemini-3-Pro 82.37 | 6.3 | 0.010 | 51 |
-| **LongArray-Extract** (45 long documents, 29,328 rows) | **98.05** | 2nd of 12 | Reducto Deep Extract 97.4 | 100.3 | 0.676 | 1,466 |
-| **UNIKIE-BENCH open** (1,661 documents, 8 scenarios) | **72.33** | 2nd of 16 | Qwen3-VL-Plus 70.61 | 4.6 | 0.018 | 121 |
-| **ExtractBench** (370 PDFs, 1 to 192 pages) | **95.43** | 3rd of 48 | LlamaExtract Agentic 94.77 | 41.7 | 0.407 | 568 |
-| **DocuBench** (72 documents, 10 file types) | **91.54** | 4th of 10 | Reducto Deep Extract 89.38 | 11.1 | 0.212 | 261 |
+| benchmark | DocQuorum | place | cost per document |
+|---|---:|---|---:|
+| VAREX (1,777 government forms) | **98.23** | **1st of 21** | $0.021 |
+| UNIKIE-BENCH (4,472 images) | **82.65** | **1st of 16** | $0.010 |
+| LongArray-Extract (45 long documents) | **98.05** | 2nd of 12 | $0.68 |
+| UNIKIE-BENCH open category (1,661 documents) | **72.33** | 2nd of 16 | $0.018 |
+| ExtractBench (370 PDFs) | **95.43** | 3rd of 48 | $0.029 per page |
+| DocuBench (72 documents, 10 file types) | **91.54** | 4th of 10 | $0.21 |
 
-Scores: each benchmark's own scorer on the full test set; places count every published system. Calls, dollars and seconds: means per document over a random sample of each benchmark (`results/costs/`); the dollars price the measured tokens at the Qwen3.8-27B list price ($0.50 / $3.00 per million input / output tokens), since DocQuorum itself runs on one GPU with no price per call; the seconds are upper bounds on a shared H100.
+* The same Qwen3.8-27B called once, with each benchmark's own prompt, scores VAREX 97.48, UNIKIE-BENCH 80.45,
+  UNIKIE open 70.91 and ExtractBench 89.75: the pipeline adds 0.75 to 5.68 points.
+* Cost: the measured tokens priced at the model's public API price (`results/costs/`). On its own GPU there is no
+  price per call. On ExtractBench the two systems above it cost $0.081 and $0.105 per page.
+* ExtractBench was used during development; the other benchmarks were run with the pipeline as it stood.
 
-![The same model called once, and through DocQuorum: score and place among the published systems](ppt/flow/assets/chart_gain.png)
+## How it works
 
-![ExtractBench: accuracy against cost; no published system is both cheaper and more accurate](ppt/flow/assets/cost_accuracy.png)
-<!-- results:end -->
+1. **Route.** A file with a text layer is read once; a scan or image is read two or three separate ways (page images,
+   the MinerU parse, one single call); pages printed in columns and ruled tables go to layout readers.
+2. **Read.** A reader agent reads the whole document, part of the schema, a window of pages or a chunk at a time,
+   looks at its own output (cut off, missing keys, repeated rows) and reads again where needed.
+3. **Check.** 14 rule-based checks repair the structure and make values match what the page prints.
+4. **Choose.** The quorum keeps the reading the other readings agree with most.
+5. **Zoom.** Fields the readings disagree on are read once more from a sharp crop of the page; the new value counts as
+   two votes and must match a value some reading proposed.
 
+## Install
 
-DocuBench is the benchmark the v1.3 fixes came from (`docs/DESIGN.md`, `results/README.md`). Zoom re-reading, the new step, was tested
-held-out on VAREX (60 forms better, 25 worse) and UNIKIE open (291 documents better, 138 worse); on UNIKIE constrained
-it first lowered the score, which led to its vote rule (details in `results/README.md`).
+* Python 3.12+, then `pip install -r requirements.txt` and ExtractBench's scorer:
+  `pip install "git+https://github.com/run-llama/ExtractBench.git@123cea5f4940b5d5211677e3a95a6c300ab474f5"`
+* Poppler (`pdftotext`, `pdftoppm`, `pdfinfo`): `sudo apt-get install poppler-utils`.
+* To run the models: one 80-96 GB GPU and `vllm==0.27.1`.
+* Settings: `cp configs/example.env configs/local.env`, edit it, then `source configs/local.env` in every shell.
 
-<!-- costs:start (written by docs/results/generate_tables.py) -->
-### Cost and speed
-
-* **ExtractBench:** the two systems above DocQuorum cost $0.081 and $0.105 a page; DocQuorum's tokens come to $0.029 a page (weighted by split, as the leaderboard computes it), and no published system is both cheaper and more accurate.
-* **DocuBench:** the published systems cost $0.11 to $0.70 a document (median $0.29); DocQuorum $0.21.
-* **Why it is cheap:** a file with a text layer is read once (13 of 20 sampled DocuBench documents took a single call, $0.009 each); only scans get three readings, run at the same time; zoom re-reads only the disputed fields a new vote could change; and the open 27B model costs a tenth of GPT-5.5 per output token.
-
-**v1.4 is faster on long scans.** A reply that loops is now stopped by the model server, and a scan's readings run at the same time (`docs/DESIGN.md`). The same documents, measured alone both times:
-
-| sample | v1.3 total | v1.4 total | faster | median document | output tokens | slowest document |
-|---|---:|---:|---:|---:|---:|---|
-| DocuBench (20 documents) | 12,564 s | 5,225 s | 2.4x | 38 s -> 37 s | 730,095 -> 483,289 | f9nrfUNC: 61 min -> 11 min |
-| VAREX (30 forms) | 1,178 s | 750 s | 1.6x | 39 s -> 22 s | 19,545 -> 19,724 | SF329E-05: 64 s -> 34 s |
-
-ExtractBench and LongArray-Extract were measured under different loads before and after, so their times are not compared; their output tokens are unchanged (their documents did not loop).
-
-Details: [`docs/results/TABLES.md`](docs/results/TABLES.md).
-<!-- costs:end -->
-
-* Details, caveats, per-document scores: [`results/README.md`](results/README.md)
-* How it works, with a diagram and worked examples: [`docs/docquorum.pdf`](docs/docquorum.pdf), [documentation and build instructions](docs/README.md)
-* The code, file by file: [`docs/CODE_GUIDE.md`](docs/CODE_GUIDE.md)
-
----
-
-## Which part of this README do I need?
-
-| I want to ... | needs a GPU? | read |
-|---|---|---|
-| **check the reported numbers** (re-score the stored outputs) | no | [1. Quick start](#1-quick-start-check-the-reported-numbers-no-gpu-about-10-minutes) |
-| **extract from my own document** | yes | [2. Install](#2-install), [3. Serve the models](#3-serve-the-models), [4. Extract from one document](#4-extract-from-one-document) |
-| **re-run a benchmark end to end** | yes | [2](#2-install), [3](#3-serve-the-models), [5. Run the benchmarks](#5-run-the-benchmarks) |
-| **understand the code** | no | [`docs/CODE_GUIDE.md`](docs/CODE_GUIDE.md) |
-
----
-
-## 1. Quick start: check the reported numbers (no GPU, about 10 minutes)
-
-This re-scores the final outputs stored in this repository with the benchmark's own scorer. No model is called.
-
-**Step 1. Get a Python 3.12+ environment with the dependencies.**
-```bash
-git clone git@github.com:ashutoshdayal13/docquorum.git && cd docquorum
-python3.12 -m venv .venv && source .venv/bin/activate      # any Python >= 3.12 works
-pip install -r requirements.txt
-pip install "git+https://github.com/run-llama/ExtractBench.git@123cea5f4940b5d5211677e3a95a6c300ab474f5"   # ExtractBench's scorer + one-shot reader (Apache-2.0; not on PyPI)
-```
-
-**Step 2. Get the ExtractBench data.** Download the dataset from
-[huggingface.co/datasets/llamaindex/ExtractBench](https://huggingface.co/datasets/llamaindex/ExtractBench)
-and place it as:
-```
-data/extractbench/short.jsonl
-data/extractbench/medium.jsonl
-data/extractbench/long.jsonl
-data/extractbench/docs/<split>/<document>.pdf        (not needed for scoring; needed from section 4 on)
-```
-For scoring, the three `.jsonl` files are enough. To keep the data elsewhere, set `DQ_EXTRACTBENCH_DATA` to that folder.
-
-**Step 3. Score.**
-```bash
-for s in short medium long; do
-  python benchmarks/extractbench/score_run.py --split $s \
-      --run results/extractbench/predictions/$s.jsonl --json /tmp/$s.json | tail -n 1
-done
-python benchmarks/extractbench/overall.py /tmp/short.json /tmp/medium.json /tmp/long.json
-python benchmarks/extractbench/robustness.py /tmp/short.json /tmp/medium.json /tmp/long.json
-```
-**Expected output** (the dataset as published now, revision `51bf3a0`): the three `MEAN` lines read `96.34`,
-`94.11` and `90.41` (first number on each line), and `overall.py` prints
-`ours: Overall 95.43 | Short 96.34 | Medium 94.11 | Long 90.41`, then the ranking against the leaderboard rows
-(DocQuorum is 3rd). The revision the pipeline was developed on gives `95.25` (96.11, 94.03, 90.41).
-
-**VAREX, DocuBench, LongArray-Extract (optional).** Download each benchmark into `data/multibench_sources/`
-(paths and sources: `benchmarks/multibench/sources.py`; `pip install pyarrow scipy rapidfuzz`, in `requirements.txt`), then:
-```bash
-python benchmarks/multibench/run.py varex score --stored results/varex/final          # 98.23 (exact match, normalized)
-python benchmarks/multibench/run.py docubench score --stored results/docubench/v1.4   # 91.54
-python benchmarks/multibench/run.py longarray score --stored results/longarray/final  # 98.05
-```
-Each prints the benchmark's own score of the stored outputs; `results/varex/one-call` (97.48) is the same model called once.
-
-**UNIKIE-BENCH (optional).** Clone [github.com/NEUIR/UNIKIE-BENCH](https://github.com/NEUIR/UNIKIE-BENCH), download its
-images as its `DATA.md` describes, and point `DQ_UNIKIE_DIR` at the clone (default: `data/unikie-bench`). Then:
-```bash
-benchmarks/unikie/run.sh score     # from the stored readings in results/unikie/readings
-```
-**Expected output:** one line starting `DocQuorum macro  82.62`, followed by the 11 per-scenario scores (the six-reading quorum; `python benchmarks/unikie/zoom_unikie.py score` re-scores the stored zoom outputs: 82.65).
-The open-category track: put its data in `data/unikie-open/datasets`, then `set -a; source configs/unikie_open.env; set +a` and
-the same two commands (72.33 with zoom re-reading).
-
----
-
-## 2. Install
-
-| what | version / note |
-|---|---|
-| Python | 3.12 or newer (the ExtractBench scorer needs it; the pipeline itself runs on 3.10+) |
-| Python packages | `pip install -r requirements.txt`, and ExtractBench from GitHub (the `git+https://...` line in section 1) |
-| Poppler | `pdftotext`, `pdftoppm`, `pdfinfo`, `pdffonts`, `pdfimages`: `sudo apt-get install poppler-utils`, or `conda install -c conda-forge poppler` |
-| GPU (only to run the models) | one 80-96 GB GPU (developed on one 94 GB H100). The 27B model takes 74% of it, the parser (MinerU2.5) another 13% |
-| vLLM (only to run the models) | `vllm==0.27.1`, in its own environment (recommended) |
-
-Then **configure**: copy [`configs/example.env`](configs/example.env) to `configs/local.env`, edit it, and load it in every shell:
-```bash
-cp configs/example.env configs/local.env       # edit the paths
-source configs/local.env
-```
-These are the only environment variables; every other setting of the measured configuration is a constant in the code.
-
-| variable | default | meaning |
-|---|---|---|
-| `DQ_LLM_URL` | `http://localhost:8079/v1` | the extraction model's OpenAI-compatible endpoint |
-| `DQ_MODEL_NAME` | `qwen3vl` | the name that server was started with |
-| `DQ_PARSER_URL` | `http://localhost:8081/v1` | the MinerU2.5 parser (only for scans and images) |
-| `DQ_POPPLER_BIN` | (on `PATH`) | folder with the Poppler tools |
-| `DQ_EXTRACTBENCH_DATA` | `data/extractbench` | the benchmark's `.jsonl` files and `docs/` |
-| `DQ_PARSE_CACHE` | `cache/parse` | parsed pages are cached here as `<document>/NNNN.txt` |
-| `DQ_RUNS` | `runs` | where the runners write their outputs |
-| `DQ_UNIKIE_DIR` | `data/unikie-bench` | the UNIKIE-BENCH repository |
-| `DQ_UNIKIE_READINGS` | `results/unikie/readings` | where UNIKIE readings are read and written |
-| `DQ_PYTHON` | `python` | the interpreter the `benchmarks/*/run.sh` scripts use |
-| `VLLM_ENV`, `HF_HOME` | `vllm` on `PATH`, `~/.cache/huggingface` | used by `serve/*.sh` only |
-
----
-
-## 3. Serve the models
-
-Start each server in its own terminal (or in the background) and wait until it reports that it is ready; the first start
-downloads the model and compiles, which takes several minutes.
+## Serve the models
 
 ```bash
-source configs/local.env
-serve/serve_qwen38_27b.sh      # extraction model Qwen3.8-27B-FP8  -> http://localhost:8079/v1
-serve/serve_mineru.sh          # MinerU2.5 parser, needed only for scans and images -> http://localhost:8081/v1
+serve/serve_qwen38_27b.sh      # Qwen3.8-27B-FP8      -> http://localhost:8079/v1
+serve/serve_mineru.sh          # MinerU2.5 parser     -> http://localhost:8081/v1  (scans and images only)
 ```
-Check that they answer: `curl http://localhost:8079/v1/models` and `curl http://localhost:8081/v1/models`.
+Stop both servers when you are done.
 
-* The 27B server runs at `GPU_UTIL=0.74 MAX_LEN=131072 MAX_SEQS=48`; the parser at 0.13. Together they fit one 94 GB GPU.
-  On a shared GPU the later runs used `GPU_UTIL=0.62`-`0.66` and, from 14 October 2026, `SPEC_TOKENS=2` (speculative
-  decoding, about 3 tokens per step; it leaves greedy outputs unchanged up to floating-point batch effects). `RELEASE.json`
-  lists which results used what.
-  Do not lower `MAX_LEN` or the image limit: the planner assumes a 131k-token context and up to 12 page images per call.
-* Only UNIKIE-BENCH uses the extra readers `serve/serve_qwen3vl_32b.sh` (port 8079, in place of the 27B)
-  and `serve/serve_qwen3vl_8b.sh` (port 8078).
-* `serve/gpu_hold.py` was used on a shared GPU machine to keep memory reserved; you do not need it.
+## Extract from one document
 
----
-
-## 4. Extract from one document
-
-**Command line.** The document may be a PDF, an image, or a native file (`.xlsx`, `.docx`, `.html`, `.xml`, `.csv`, `.tsv`,
-`.txt`, `.md`, `.json`); the schema a JSON Schema or a JSON template. A document it cannot read, a schema that is not a JSON
-object, or no model server ends with a one-line error (exit code 2).
 ```bash
 python -m docquorum.extract invoice.pdf --schema invoice_schema.json -o invoice.json
-python -m docquorum.extract receipt.jpg --schema receipt_template.json          # template in, template out
-python -m docquorum.extract report.pdf --schema s.json --task "Extract every holding in the schedule of investments."
-python -m docquorum.extract form.png --schema form_schema.json --no-zoom       # without zoom re-reading (it is on by default)
+python -m docquorum.extract receipt.jpg --schema receipt_template.json        # template in, template out
+python -m docquorum.extract form.png --schema form_schema.json --no-zoom      # without zoom re-reading
 ```
-Run these from the project folder (or add it to `PYTHONPATH`). Progress and a final report (which readings were made,
-which one was kept, their agreement) go to stderr; the JSON goes to `-o` or stdout.
-
-**Python.**
 ```python
 from docquorum.extract import extract
 result, report = extract("invoice.pdf", schema_dict, task=None)
-print(report)   # the readings produced, the one the quorum kept, their agreement
 ```
+Put field instructions in the schema's `description` fields: the model reads them.
 
-**A JSON template** is a JSON object whose leaves are empty (`""`, `[{...}]`, `{...}`); the result follows the template
-exactly, with `""` for anything the document does not contain. **A JSON Schema** gives typed output, and every reply is decoded
-under it. Put field instructions in the schema's `description` fields: they are sent to the model.
+## Check the reported numbers (no GPU)
 
-**What happens to your document.** A PDF with a text layer, or a native file (written as one), is read once by the reader
-agent. A scan or image is read two or three ways at the same time (the reader agent on its page images, the reader agent on its
-MinerU parse, and, up to 12 pages, a one-shot reader) and the quorum keeps the reading the others agree with most, passing over
-a reading caught in a repetition loop; the model server stops a reply that keeps repeating, and that part is read again. Text read by OCR
-always travels with its page images, which decide where the two disagree. Documents printed as columns of records, and ruled
-tables on scans, go to a layout reader (back to the normal route if it finds no records, or no printed rules on most table pages).
-Every reading is repaired and checked against the schema and the page text before it is returned. A field the schema does not
-require may come back null: the decoder is never made to invent a value for a blank. Without the parser server, a scan is read
-from its page images (and, up to 12 pages, by the one-shot reader). The full specification is `docs/DESIGN.md`.
-
-**Zoom re-reading** (on by default; `--no-zoom`, or `extract(..., zoom_reread=False)`, turns it off). When the quorum has chosen among several readings, every field
-on which they disagree is found on the page and read once more from a sharp crop of that region, by a call that sees none of the
-readings. The kept value changes only if the zoomed reading equals a value some reading already proposed, and the zoomed reading
-counts as two votes: it can overturn a lead of one reading, not a clear majority. Held-out results: VAREX exact match 98.10 ->
-98.30 (60 forms better, 25 worse) and UNIKIE open macro F1 71.07 -> 72.33 (291 better, 138 worse). On UNIKIE constrained, with six
-readings, the first design overturned five agreeing readings too often (82.62 -> 81.62); the vote rule, added after that result,
-gives 82.65 there and leaves the other two unchanged. See `results/README.md`. It needs the parser server.
-
----
-
-## 5. Run the benchmarks
-
-All commands run from the project folder, with `source configs/local.env` done and the servers of section 3 up.
-They call the model thousands of times and take hours on one GPU. A fresh run lands within noise of the stored results
-(on the short split, 61 of 251 documents change by a mean of 0.76 points; the split mean moves by 0.15).
-
-### ExtractBench
-Data: section 1, step 2, **including `docs/`** (the PDFs). Outputs go to `runs/` (`DQ_RUNS`), logs to `logs/`.
+The stored outputs are in `results/<benchmark>/<run>/predictions.jsonl` (one line per document). Re-scoring them needs
+each benchmark's data under `data/` (paths in `configs/example.env` and `benchmarks/multibench/sources.py`).
 ```bash
-benchmarks/extractbench/run.sh short        # then: medium, long
-```
-The script runs, in order: the reader agent on every document; the checks; the parse reading for scans; the one-shot reading
-and the quorum for scans of 12 pages or fewer; the layout readers (medium and long only); and scoring. The last line it prints
-is the split's mean value F1. Per-document scores are in `runs/<split>_scores.json`, the final outputs in `runs/<split>_final/`.
-Each step is also a command you can run alone:
+for s in short medium long; do      # ExtractBench: 96.34 / 94.11 / 90.41, Overall 95.43
+  python benchmarks/extractbench/score_run.py --split $s --run results/extractbench/predictions/$s.jsonl --json /tmp/$s.json | tail -n 1
+done
+python benchmarks/extractbench/overall.py /tmp/short.json /tmp/medium.json /tmp/long.json
 
-| step | command |
-|---|---|
-| reader agent | `python -m docquorum.agents.reader --split S --tag T [--parsed] [--only a,b]` |
-| checks | `python -m docquorum.checks <primary\|parse\|oneshot\|layout> S in_dir out_dir` |
-| quorum | `python -m docquorum.quorum S out_dir reading_dir reading_dir ...` |
-| layout readers | `python -m docquorum.agents.layout S [--decide-only]` |
-| parse the scans | `python -m docquorum.tools.parser S` |
-| score | `python benchmarks/extractbench/score_run.py --split S --run DIR [--json FILE]` |
+python benchmarks/multibench/run.py varex score --stored results/varex/final          # 98.23
+python benchmarks/multibench/run.py docubench score --stored results/docubench/v1.4   # 91.54
+python benchmarks/multibench/run.py longarray score --stored results/longarray/final  # 98.05
 
-### UNIKIE-BENCH
-Data: `DQ_UNIKIE_DIR` (section 1). The parser server must be up for `read`.
-```bash
-benchmarks/unikie/run.sh read                 # parses the images, then makes the four readings with the 27B model
-benchmarks/unikie/run.sh read-extra 32        # one-shot reading by Qwen3-VL-32B (serve_qwen3vl_32b.sh running instead of the 27B)
-benchmarks/unikie/run.sh read-extra 8         # one-shot reading by Qwen3-VL-8B (serve_qwen3vl_8b.sh running; set DQ_LLM_URL=http://localhost:8078/v1)
-benchmarks/unikie/run.sh score                # macro F1 over the six readings' quorum
-python benchmarks/unikie/unikie_eval.py report   # placed against the published systems
-```
-Readings are written to `results/unikie/readings/`, so a fresh `read` adds to (or replaces) the stored ones: to keep the stored
-results, run with `DQ_UNIKIE_READINGS=/some/other/folder`.
-
-### VAREX, LongArray-Extract, DocuBench
-Data: `data/multibench_sources/` (section 1). VAREX's and LongArray-Extract's inputs are first written to `data/multibench/`
-(`python benchmarks/multibench/sources.py prepare varex`, likewise `longarray`), checked against the manifests in
-`benchmarks/multibench/manifests/`.
-```bash
-python benchmarks/multibench/run.py varex run --variant mine      # resumes; runs/multibench/varex_27b_mine/
-python benchmarks/multibench/run.py varex score --variant mine    # the benchmark's own scorer
-python benchmarks/multibench/run.py varex package --variant mine --name mine   # results/varex/mine/ and the tables' summary
-```
-`benchmarks/multibench/varex_one_call.py` makes the one-call baseline, `zoom_varex.py` the held-out test of zoom re-reading,
-and `measure_cost.py` the cost measurements (`results/costs/`).
-
-### Tests
-```bash
-python -m pytest tests/                        # unit tests; no model, parser or data needed
-DQ_RESCORE=1 python -m pytest tests/           # also re-scores stored results (needs the benchmarks' data; minutes)
+benchmarks/unikie/run.sh score && python benchmarks/unikie/zoom_unikie.py score       # UNIKIE-BENCH: 82.65
+# the open category: set -a; source configs/unikie_open.env; set +a, then the same two commands (72.33)
 ```
 
----
+## Run the benchmarks
 
-## 6. Troubleshooting
+* ExtractBench: `benchmarks/extractbench/run.sh short` (then `medium`, `long`).
+* UNIKIE-BENCH: `benchmarks/unikie/run.sh read`, then `score`.
+* VAREX, LongArray-Extract, DocuBench: `python benchmarks/multibench/run.py <benchmark> run --variant mine`, then
+  `score --variant mine`.
+* Tests: `python -m pytest tests/` (no model or data needed).
 
-| message or symptom | cause and fix |
-|---|---|
-| `FileNotFoundError: ... 'pdftotext'` | Poppler is not on `PATH`: install it, or set `DQ_POPPLER_BIN` to its folder |
-| `ModuleNotFoundError: docquorum` | run from the project folder, or `export PYTHONPATH=$PWD` |
-| `openai.APIConnectionError` / connection refused | the model server is not up (section 3), or `DQ_LLM_URL` is wrong. `curl $DQ_LLM_URL/models` must answer |
-| `ModuleNotFoundError: extract_bench`, or a Python-version error | install ExtractBench from GitHub (section 1, step 1) in a **Python 3.12+** environment, and use that interpreter (`DQ_PYTHON`) |
-| a scan gives poor or empty output | the parser is not running (`DQ_PARSER_URL`); scans then fall back to page images only |
-| `FileNotFoundError` for a PDF under `data/extractbench/docs` | the PDFs are missing: the `.jsonl` files alone are enough only for scoring |
-| `kie_evaluator` not found (UNIKIE) | `DQ_UNIKIE_DIR` does not point at a clone of the UNIKIE-BENCH repository |
-| vLLM runs out of memory at start | another process holds the GPU (`nvidia-smi`); the 27B needs about 70 GB free at `GPU_UTIL=0.74` |
-| scores differ slightly from the tables after a fresh run | expected (noise figures in section 5). Re-scoring the stored outputs (section 1) reproduces the tables exactly |
-
----
-
-## 7. Repository layout
+## Repository layout
 
 ```
-docquorum/            the pipeline (file by file: docs/CODE_GUIDE.md)
-  extract.py            the whole pipeline on one document (CLI + Python API)
-  config.py             endpoints and paths (the only environment variables)
-  extractbench.py       benchmark records and the benchmark's scorer
-  quorum.py             the reading the others agree with most
-  zoom.py               zoom re-reading: disputed fields read again from a sharp crop
-  tools/                what the agents act with, no decisions: pdf, parser, llm, schema, rows, layout
-  agents/               the readers: reader (plan / act / observe), whole, oneshot, layout (+ column_reader, ruled_reader), prompts
-  checks/               deterministic repairs and checks, one file each, and their chains
-benchmarks/           runners and scorers
-  extractbench/         run.sh (the stages), score_run.py, overall.py, robustness.py
-  unikie/               run.sh, the benchmark protocol, zoom re-reading, cost measurement
-  multibench/           run.py (VAREX, LongArray-Extract, DocuBench), sources.py, manifests/, the one-call baseline
-  bundles.py            many documents' JSON in one .jsonl file; usage_meter.py counts model calls and tokens
-results/              every reported result: outputs, scores, provenance (README.md: details; RESEARCH_LOG.md: history)
-  <benchmark>/<run>/    predictions.jsonl (one line per document), readings.jsonl, provenance.json, scores.json
-  unikie/, unikie_open/ readings and zoom outputs per scenario; costs/ the measured cost per document
-docs/                 design (DESIGN.md), code map, illustrated guide (LaTeX + PDF), results tables and their sources
-ppt/                  the decks: flow/ (the results deck, Beamer and PowerPoint) and the worked-example walkthrough
-serve/                vLLM serving scripts
-configs/              example.env (copy it to local.env)
-tests/                unit tests
-FROZEN.json           the configuration and file hashes fixed on 2026-09-28; RELEASE.json the current release
+docquorum/      the pipeline: extract.py (entry point), agents/ (readers), tools/, checks/, quorum.py, zoom.py
+benchmarks/     runners and scorers: extractbench/, unikie/, multibench/ (VAREX, LongArray-Extract, DocuBench)
+results/        the reported results: outputs, scores and provenance per run; measured costs
+serve/          the model servers
+configs/        settings (copy example.env to local.env)
+tests/          unit tests
 ```
-Not in the repository (too large, or third-party): `data/` (benchmark data), `cache/` (parses), `runs/` and `logs/` (outputs of
-fresh runs), `ref_papers/`. `runs/`, `logs/` and `cache/` are created on first use.
 
-## 8. Notes
-
-Benchmarks surveyed but not yet run are listed in [`docs/research/benchmark-candidates.md`](docs/research/benchmark-candidates.md).
-
-* Lessons that shaped the design are in [`results/RESEARCH_LOG.md`](results/RESEARCH_LOG.md), including negative results (asking the
-  model to verify its own output did not help in 22 attempts; prompt rules fixed one scenario and broke others) and one correction
-  (an earlier quorum measured agreement with the benchmark's annotated record and so used gold; all numbers above are clean: the
-  quorum sees only the schema and the readings).
-* ExtractBench served as the development set (see the caveats in `results/README.md`).
-* `docs/docquorum.pdf` includes a synthetic walkthrough and a worked quorum calculation.
-* License: MIT (see `LICENSE`). The benchmarks and models keep their own licenses.
+MIT License.

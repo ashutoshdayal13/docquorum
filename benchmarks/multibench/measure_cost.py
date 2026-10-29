@@ -80,7 +80,7 @@ for name, doc, schema, task in sample:
     keys += [k for k in ("parser_input_tokens", "parser_output_tokens") if all(k in r for r in ok)]
     pages_total = sum(r["pages"] for r in ok) or 1
     summary = {"benchmark": bench, "documents_measured": len(ok), "sample": f"random {n} (seed 0) of {len(items)}",
-               "pipeline": "v1.4 (docs/DESIGN.md)", "hardware": "one H100 NVL, shared with other accounts' jobs and with the other benchmarks' measurements",
+               "pipeline": "v1.4", "hardware": "one H100 NVL, shared with other accounts' jobs and with the other benchmarks' measurements",
                "per_document": {k: sum(r[k] for r in ok) / max(1, len(ok)) for k in keys},
                "per_page": {k: sum(r[k] for r in ok) / pages_total for k in keys},
                "documents": rows}

@@ -23,3 +23,21 @@ _withheld/
 # earlier readings kept locally when a re-read replaces them
 *.before_enlarge.json
 *.before_enlarge.txt
+
+# kept locally, not synced: documentation, decks, research notes, earlier runs and experiment scripts
+docs/
+ppt/
+FROZEN.json
+RELEASE.json
+results/README.md
+results/RESEARCH_LOG.md
+results/costs/v1.3/
+results/varex/v1.1/
+results/varex/v1.2-zoom/
+results/docubench/v1.1/
+results/docubench/v1.3/
+results/extractbench/scores/zoom_dev_short.json
+results/extractbench/scores/short_quorum_picks.json
+benchmarks/multibench/zoom_varex.py
+benchmarks/extractbench/zoom_dev.py
+serve/gpu_hold.py

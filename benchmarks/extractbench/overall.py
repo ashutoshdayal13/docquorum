@@ -1,7 +1,7 @@
 """Overall value F1 (unweighted mean over all 370 documents, as the leaderboard computes it)
 from per-document score files written by `score_run.py --json`, placed against the
-leaderboard snapshot docs/results/extractbench-leaderboard.csv: first against the rows scored
-with the current scorer, then against every row (results/RESEARCH_LOG.md, "scoring rules changed").
+leaderboard snapshot leaderboard.csv (2 October 2026, next to this file): first against the rows
+scored with the current scorer, then against every row.
 
     python overall.py scores/short_X.json scores/med_Y.json scores/long_Z.json
 """
@@ -17,7 +17,7 @@ RESCORED = {"LlamaExtract Agentic Plus", "Pulse (Effort)", "LlamaExtract Agentic
             "LlamaExtract Cost-Effective", "Codex (GPT-5.6 Terra Evidence)",
             "Codex (GPT-5.6 Luna Evidence)", "Claude Code (Opus 4.8 Evidence)",
             "Codex (GPT-6 Sol Evidence)", "Codex (GPT-6 Luna Evidence)", "Claude Code (Opus 5.5 Evidence)"}
-LEADERBOARD = Path(__file__).resolve().parents[2] / "docs" / "results" / "extractbench-leaderboard.csv"
+LEADERBOARD = Path(__file__).resolve().parent / "leaderboard.csv"
 SIZES = {"Short": 252, "Medium": 98, "Long": 20}
 
 

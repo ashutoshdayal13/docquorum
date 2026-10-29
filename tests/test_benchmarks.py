@@ -37,12 +37,12 @@ def test_a_stored_result_gives_its_outputs_and_each_document_status(tmp_path):
     assert preds["a"] == {"v": 1} and status == {"a": "completed", "b": "failed"}
 
 
-def test_every_reported_result_points_at_a_stored_result():
-    for f in sorted((ROOT / "docs/results").glob("docquorum-*.json")):
-        d = json.loads(f.read_text())
-        folders = [d.get("predictions")] + [e.get("predictions") for e in (d.get("earlier") or {}).values()]
-        for folder in filter(None, folders):
-            assert (ROOT / folder).exists(), (f.name, folder)
+def test_every_stored_result_has_its_outputs_scores_and_provenance():
+    runs = [p.parent for p in (ROOT / "results").glob("*/*/predictions.jsonl")]
+    assert runs
+    for run in runs:
+        assert (run / "scores.json").exists() and (run / "provenance.json").exists(), run
+        assert bundles.read(run / "predictions.jsonl"), run
 
 
 @needs_longarray

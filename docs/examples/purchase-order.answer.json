@@ -1,8 +1,0 @@
-{
-  "order_number": "PO-1042",
-  "supplier": "North Paper",
-  "items": [
-    {"description": "A4 paper", "quantity": 10, "unit_price": 4.5},
-    {"description": "Envelopes", "quantity": 2, "unit_price": 6.0}
-  ]
-}

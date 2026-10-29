@@ -10,8 +10,7 @@ and schema (sources.py); the answer keys are opened by `score` alone.
 
 A run writes one file per document to runs/multibench/<bench>_27b[_<variant>]/ (predictions,
 readings, reports) and resumes where it stopped. `package` turns it into results/<bench>/<name>/:
-predictions.jsonl (and readings.jsonl), provenance.json and scores.json, and names it in
-docs/results/docquorum-<bench>.json, which the results tables read.
+predictions.jsonl (and readings.jsonl), provenance.json and scores.json.
 """
 import argparse
 import hashlib
@@ -198,7 +197,7 @@ def package(bench, variant, name, with_readings, headline=True):
     write(dst / "provenance.json", {"policy": json.loads((src / "policy.json").read_text()), "code": code_version(),
                                     "documents": prov})
     write(dst / "scores.json", rep)
-    if headline:                       # the result the tables report; earlier entries are kept
+    if headline and (ROOT / "docs" / "results").is_dir():   # a local results-tables folder, if there is one
         head_f = ROOT / "docs" / "results" / f"docquorum-{bench}.json"
         head = json.loads(head_f.read_text()) if head_f.exists() else {}
         detail = rep["systems"]["docquorum"] if bench == "varex" else {k: v for k, v in rep.items() if k != "per_document"}

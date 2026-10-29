@@ -8,7 +8,7 @@ tools/images.py), or a native file (.xlsx, .docx, .html, .xml, .csv, .txt), whos
 PDF text layer (tools/native.py). SCHEMA is a JSON Schema, or a JSON template whose leaves are
 empty ("" / [] / {}): the result then follows the template, with "" for anything absent.
 
-The rule on one document (docs/DESIGN.md is the full specification):
+The rule on one document:
   * a layout reader when the page geometry selects one (agents/layout.py): pages printed as
     equal-width columns of records -> the column reader; a scan whose parsed tables map onto
     the schema -> the ruled-table reader;
