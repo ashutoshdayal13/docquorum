@@ -68,6 +68,9 @@ Put field instructions in the schema's `description` fields: the model reads the
 
 The stored outputs are in `results/<benchmark>/<run>/predictions.jsonl` (one line per document). Re-scoring them needs
 each benchmark's data under `data/` (paths in `configs/example.env` and `benchmarks/multibench/sources.py`).
+ExtractBench is scored against its dataset as published on the leaderboard (revision `51bf3a0`); the earlier revision
+the pipeline was developed on differs only in answer keys and field rules, and gives 95.25
+(`results/extractbench/scores/development_revision/`).
 ```bash
 for s in short medium long; do      # ExtractBench: 96.34 / 94.11 / 90.41, Overall 95.43
   python benchmarks/extractbench/score_run.py --split $s --run results/extractbench/predictions/$s.jsonl --json /tmp/$s.json | tail -n 1
