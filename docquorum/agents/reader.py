@@ -26,7 +26,7 @@ import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
 
-from docquorum import config as C
+from docquorum import ablate, config as C
 from docquorum.agents import prompts, whole
 from docquorum.tools import llm, parser, pdf as PDF
 from docquorum.tools.layout import split_html_panels, split_text_panels
@@ -90,6 +90,15 @@ def read_document(cl, schema, pdf, name, workers=8, use_parsed=False, text_layer
 
     # plan 1: the whole document in one call
     ok, (est_in, est_out) = whole.fits(schema, text, n_pages, evidence_rows)
+    if ablate.off("replan"):            # one whole-document call, whatever it returns
+        got = None
+        try:
+            got, _fr, _guided = whole.read(cl, schema, pdf, text, not image_mode, n_pages, est_out,
+                                           max_tokens=32000, scan=is_scan, stop_repeats=LOOP_STOP)
+            stat["calls"] += 1
+        except Exception as e:
+            _failed(stat, "whole", e)
+        return got or {}, stat, {"mode": "whole only", "est_in": est_in, "est_out": est_out}
     if ok:
         try:
             got = _read_whole(cl, schema, pdf, text, not image_mode, n_pages, est_out, is_scan, stat)
@@ -99,7 +108,8 @@ def read_document(cl, schema, pdf, name, workers=8, use_parsed=False, text_layer
             _failed(stat, "whole", e, fallback=True)
 
     # plan 2: the schema in groups, when the schema is what does not fit
-    if (not image_mode or n_pages <= whole.MAX_IMAGE_PAGES) and len(compact(schema)) > 60000:
+    if (not ablate.off("schema_groups") and (not image_mode or n_pages <= whole.MAX_IMAGE_PAGES)
+            and len(compact(schema)) > 60000):
         try:
             merged, st = whole.read_parts(cl, schema, pdf, text, not image_mode, n_pages, scan=is_scan)
             if merged is None and not image_mode and n_pages <= whole.MAX_IMAGE_PAGES:
@@ -148,14 +158,15 @@ def _read_whole(cl, schema, pdf, text, has_text, n_pages, est_out, scan, stat):
     got, fr, guided = whole.read(cl, schema, pdf, text, has_text, n_pages, est_out,
                                  max_tokens=first_budget, scan=scan, stop_repeats=LOOP_STOP)
     stat["calls"] += 1
-    if fr == "length" and first_budget is None:
+    if fr == "length" and first_budget is None and not ablate.off("recovery"):
         got, fr, guided = whole.read(cl, schema, pdf, text, has_text, n_pages, est_out,
                                      max_tokens=32000, scan=scan, stop_repeats=LOOP_STOP)
         stat["calls"] += 1
     if fr == "repetition":
         print("    [whole] stopped as repeating (a loop) -> read in pieces", flush=True)
         return None
-    skipped = missing_keys(schema, got) if got is not None and fr != "length" and guided else 0
+    skipped = (missing_keys(schema, got) if got is not None and fr != "length" and guided
+               and not ablate.off("recovery") else 0)
     if skipped:
         got2, fr2, _ = whole.read(cl, schema, pdf, text, has_text, n_pages, est_out,
                                   max_tokens=32000, scan=scan, require_all_keys=True, stop_repeats=LOOP_STOP)
@@ -242,7 +253,7 @@ def _ask_chunk(cl, text, imgs, meta, label, stat, penalty=None, scan=False):
     if fr == "repetition" or is_loop(rows):
         with stat["lock"]:
             stat["loops"] = stat.get("loops", 0) + 1
-        if penalty is None:
+        if penalty is None and not ablate.off("recovery"):
             how = "stopped as repeating" if fr == "repetition" else "mostly repeats"
             print(f"    [loop] {label}: {len(rows)} records, {how} -> read again", flush=True)
             return _ask_chunk(cl, text, imgs, meta, label, stat, penalty=LOOP_PENALTY, scan=scan)
@@ -255,7 +266,7 @@ def _harvest(cl, text, imgs, meta, label, depth, stat, scan=False):
     keeping whichever reading has more rows. A half is sent without the page images: they show
     the whole pages, and a reader shown them reads rows outside its half."""
     rows, cut = _ask_chunk(cl, text, imgs, meta, label, stat, scan=scan)
-    if not cut or depth >= MAX_DEPTH or text == NO_TEXT:
+    if not cut or depth >= MAX_DEPTH or text == NO_TEXT or ablate.off("recovery"):
         return rows
     halves = split_text(text, 2)
     if len(halves) < 2:
@@ -334,7 +345,7 @@ def _read_list(cl, schema, pdf, pages, image_mode, arr_name, item, arr_desc, wor
                   {"type": "array", "maxItems": 1200, "items": {"type": "object"}})
     task = (schema.get("description") or "").strip()
     lead = (f"TASK\n{task}\n\n" if task else "") + ((arr_desc + "\n") if arr_desc else "")
-    reference = "" if image_mode else _reference(cl, pages, arr_name, item, arr_desc, stat)
+    reference = "" if image_mode or ablate.off("legends") else _reference(cl, pages, arr_name, item, arr_desc, stat)
     meta = (arr_name, lead, json.dumps(item, indent=1), dec_schema, "")   # the whole item schema
     out = [None] * len(chunks)
 
@@ -365,7 +376,7 @@ def _read_list(cl, schema, pdf, pages, image_mode, arr_name, item, arr_desc, wor
         for bi, blk in enumerate(blocks):
             rows.extend(_harvest(cl, blk, imgs, chunk_meta, label if len(blocks) == 1 else f"{label} col{bi+1}", 0, stat,
                                  bool(imgs)))
-        if not rows and (n_ev := evidence_rows(text)) >= MIN_EVIDENCE_ROWS:
+        if not rows and not ablate.off("recovery") and (n_ev := evidence_rows(text)) >= MIN_EVIDENCE_ROWS:
             with stat["lock"]:
                 stat["reasked"] = stat.get("reasked", 0) + 1
             meta2 = (meta[0], meta[1] + prompts.EMPTY_NUDGE.format(n=n_ev, a=meta[0]), meta[2], meta[3], chunk_meta[4])

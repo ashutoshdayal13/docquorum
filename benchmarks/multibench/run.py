@@ -64,6 +64,7 @@ def run(bench, variant, only, docs, workers):
         try:
             got, rep = extract(doc, schema, task=task, workers=workers, keep_readings=True, log=lambda s: None)
             readings = rep.pop("data")
+            rep.pop("raw")                       # the readings before their checks: ablations only
             rep["status"] = "completed"
         except Exception as e:
             got, readings = {"_error": f"{type(e).__name__}: {str(e)[:300]}"}, {}

@@ -66,16 +66,21 @@ def as_pdf(doc, folder):
 
 def extract(doc, schema, task=None, workers=8, log=print, keep_readings=False, zoom_reread=True):
     """Returns (result, report). `schema` is a JSON Schema or a JSON template (dict).
-    keep_readings: the report also carries every checked reading ("data"), for analysis.
+    keep_readings: the report also carries every checked reading ("data"), each reading as the
+    reader returned it, before its checks ("raw"), and the reader's plan for it ("plans"), for
+    analysis.
     zoom_reread: after the quorum, the fields the readings disagree on are read again from a
     high-resolution crop of the page (zoom.py; on by default, skipped without the parser)."""
-    result, report, readings = _extract(doc, schema, task, workers, log, zoom_reread)
+    raw, plans = {}, {}
+    result, report, readings = _extract(doc, schema, task, workers, log, zoom_reread, raw, plans)
     if keep_readings:
-        report["data"] = readings
+        report.update(data=readings, raw=raw, plans=plans)
     return result, report
 
 
-def _extract(doc, schema, task, workers, log, zoom_reread=True):
+def _extract(doc, schema, task, workers, log, zoom_reread=True, raw=None, plans=None):
+    raw = {} if raw is None else raw
+    plans = {} if plans is None else plans
     template = schema if is_template(schema) else None
     schema = template_to_schema(template) if template is not None else dict(schema)
     if task:            # after the schema's own description of the document, not in its place
@@ -113,15 +118,17 @@ def _extract(doc, schema, task, workers, log, zoom_reread=True):
             # a layout reader reads one list; the reader agent reads every other field
             rest = without_fields(schema, set(got))
             if rest:
-                res, stat, _ = read_document(cl, rest, pdf, name, workers, text_layer=native_doc)
+                res, stat, plans["rest"] = read_document(cl, rest, pdf, name, workers, text_layer=native_doc)
                 if not stat.get("errors"):
                     got = {**res, **got}
+            raw[ev["reader"]] = got
             got = checks.run("layout", got, d)
             return _finish(got, template), {"readings": [ev["reader"]]}, {ev["reader"]: got}
 
         readings = {}
 
         def reading(kind, got):
+            raw[kind] = got
             readings[kind] = checks.run(kind, got, d)
 
         # the readings are independent (the parse is cached above), so they run at the same time;
@@ -140,7 +147,8 @@ def _extract(doc, schema, task, workers, log, zoom_reread=True):
                 except Exception as e:                            # the document does not fit
                     log(f"[docquorum] one-shot reading failed: {type(e).__name__}: {str(e)[:120]}")
                 continue
-            res, stat, _ = fut.result()
+            res, stat, plan = fut.result()
+            plans[kind] = dict(plan or {}, **{k: v for k, v in stat.items() if k != "lock"})
             if not stat.get("errors"):
                 reading(kind, res)
         if not readings:

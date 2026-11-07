@@ -17,7 +17,7 @@ import sys
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 
-from docquorum import config as C
+from docquorum import ablate, config as C
 from docquorum import extractbench as EB
 from docquorum.agents import column_reader, ruled_reader
 from docquorum.tools import llm, parser, pdf as PDF
@@ -41,7 +41,7 @@ def decide(schema, pdf, name):
     ev = {"pages": n, "text_layer": PDF.pdf_has_text(pdf, n)}
     if find_array_field(schema) is None:           # the layout readers read a list
         ev["reader"] = "route"
-    elif n >= 2 and is_column_flow(pdf, n):
+    elif n >= 2 and not ablate.off("colflow") and is_column_flow(pdf, n):
         ev["reader"] = "colflow"
     elif not ev["text_layer"] and (parser.CACHE / name).is_dir():
         texts = dict(enumerate(parser.cached_pages(name, errors="ignore"), 1))
@@ -53,7 +53,7 @@ def decide(schema, pdf, name):
             ev["table_completeness"] = round(comp, 3)
             ev["table_pages"] = sorted(pg for pg, t in texts.items() if pg not in bad
                                        and sum(max(0, len(r) - 1) for r in table_rows(t)) >= RULED_MIN_ROWS)
-            if comp >= 0.9:
+            if comp >= 0.9 and not ablate.off("ruled"):
                 ev["reader"] = "ruled"
     ev.setdefault("reader", "route")
     return ev
