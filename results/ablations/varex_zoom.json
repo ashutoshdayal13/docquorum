@@ -1,0 +1,17 @@
+{
+ "benchmark": "VAREX (image only)",
+ "forms": 1777,
+ "base": "results/varex/v1.1",
+ "zoomed": "results/varex/v1.2-zoom (made before the vote rule existed)",
+ "scores": {
+  "no zoom": 98.1,
+  "votes 0": 98.1,
+  "votes 1": 98.13,
+  "votes 2": 98.3,
+  "votes 3": 98.3,
+  "no vote rule": 98.3,
+  "budget 10": 98.3,
+  "budget 20": 98.3,
+  "budget 40": 98.3
+ }
+}

@@ -64,10 +64,16 @@ def setup(which):
     if which.startswith("extractbench-"):
         from docquorum import extractbench as EB
         recs = {EB.name_of(r): r for r in EB.load_records(which.split("-", 1)[1])}
+        done = {}                                  # (document, prediction digest) -> F1: variants share most outputs
+
+        def one(n, pred):
+            key = (n, hashlib.sha1(json.dumps(pred, sort_keys=True).encode()).hexdigest())
+            if key not in done:
+                done[key] = EB.score(recs[n], pred)["metrics"].get("extract_unified_value_f1", 0.0)
+            return done[key]
 
         def score(preds):
-            per = {n: EB.score(recs[n], preds.get(n) or {})["metrics"].get("extract_unified_value_f1", 0.0)
-                   for n in preds}
+            per = {n: one(n, preds.get(n) or {}) for n in preds}
             return 100 * sum(per.values()) / len(per), per
         return items, score
     MB = module("multibench_run", ROOT / "benchmarks" / "multibench" / "run.py")
@@ -167,8 +173,9 @@ def main():
            "reference_invalid": sum(invalid(base[n], items[n][1]) for n in items),
            "checks": {}, "selection": {}, "parts": {}}
 
+    studies = which != "extractbench-long"        # long: one register re-read for the column reader only
     # check groups (and all checks) removed
-    for label, drop in [("all checks", tuple(m for g in GROUPS.values() for m in g))] + list(GROUPS.items()):
+    for label, drop in [] if not studies else [("all checks", tuple(m for g in GROUPS.values() for m in g))] + list(GROUPS.items()):
         preds = {n: (rechain(ref[n], *items[n], drop)[0] if n in ref and ref[n].get("raw") else base[n]) for n in items}
         s, per = score(preds)
         rep["checks"][label] = {"score": round(s, 2), "delta": round(s - s0, 2),
@@ -177,7 +184,7 @@ def main():
         print(label, rep["checks"][label], flush=True)
 
     # the quorum's choice, on the documents read several ways
-    multi = [n for n in ref if len(ref[n].get("readings") or {}) > 1]
+    multi = [n for n in ref if len(ref[n].get("readings") or {}) > 1] if studies else []
     kinds = sorted({k for n in multi for k in ref[n]["readings"]})
     rep["selection"]["documents"] = len(multi)
     variants = {f"{k} only": {n: ref[n]["readings"].get(k, base[n]) for n in multi} for k in kinds}
@@ -187,7 +194,7 @@ def main():
         v = ref[n]["readings"]
         kept = select(v, items[n][1])
         variants["field vote"][n] = field_vote(kept, [x for x in v.values() if x is not kept])
-    for label, sub in variants.items():
+    for label, sub in variants.items() if multi else ():
         s, _ = score({**base, **sub})
         rep["selection"][label] = {"score": round(s, 2), "delta": round(s - s0, 2)}
     print("selection", rep["selection"], flush=True)

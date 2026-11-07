@@ -1,0 +1,15 @@
+{
+ "benchmark": "UNIKIE-BENCH, open category",
+ "zoomed": "results/unikie_open/zoom",
+ "scores": {
+  "no zoom": 71.07,
+  "votes 0": 71.11,
+  "votes 1": 71.41,
+  "votes 2": 72.33,
+  "votes 3": 72.33,
+  "no vote rule": 72.33,
+  "budget 10": 72.04,
+  "budget 20": 72.3,
+  "budget 40": 72.33
+ }
+}

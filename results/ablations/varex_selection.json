@@ -1,0 +1,16 @@
+{
+ "benchmark": "VAREX (image only)",
+ "forms": 1777,
+ "forms_with_several_readings": 1772,
+ "metric": "normalized exact match, official scorer",
+ "scores": {
+  "final": 98.23,
+  "primary": 97.74,
+  "parse": 97.83,
+  "oneshot": 94.65,
+  "beta2": 98.06,
+  "beta1": 97.93,
+  "field_vote": 97.93
+ },
+ "changed_choice_beta1": 39
+}

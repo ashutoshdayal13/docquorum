@@ -1,0 +1,16 @@
+{
+ "benchmark": "UNIKIE-BENCH, open category",
+ "readings": [
+  "image",
+  "oneshot",
+  "parse"
+ ],
+ "scores": {
+  "image": 66.88,
+  "oneshot": 70.91,
+  "parse": 60.46,
+  "quorum beta2": 71.07,
+  "quorum beta1": 71.11,
+  "field vote": 71.09
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "set": "extractbench-long",
+ "documents": 20,
+ "of": 20,
+ "reference": 90.41,
+ "reference_invalid": 4,
+ "checks": {},
+ "selection": {
+  "documents": 0
+ },
+ "parts": {
+  "colflow": {
+   "score": 87.24,
+   "delta": -3.17,
+   "documents_rerun": 1,
+   "documents_changed": 1,
+   "reader_calls_per_rerun_document": 136.0,
+   "reference_reader_calls_on_them": 15.0,
+   "seconds_per_rerun_document": 876.6
+  }
+ }
+}

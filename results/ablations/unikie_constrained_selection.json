@@ -1,0 +1,23 @@
+{
+ "benchmark": "UNIKIE-BENCH, constrained category",
+ "readings": [
+  "image",
+  "oneshot_text",
+  "oneshot",
+  "parse",
+  "oneshot32",
+  "oneshot8"
+ ],
+ "scores": {
+  "image": 80.02,
+  "oneshot_text": 81.36,
+  "oneshot": 80.45,
+  "parse": 79.55,
+  "oneshot32": 79.89,
+  "oneshot8": 78.58,
+  "quorum beta2": 82.62,
+  "quorum beta2, main model only": 81.65,
+  "quorum beta1": 82.6,
+  "field vote": 82.65
+ }
+}

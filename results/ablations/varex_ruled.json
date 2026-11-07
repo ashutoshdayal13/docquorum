@@ -1,0 +1,14 @@
+{
+ "set": "varex",
+ "documents": 1777,
+ "reference": 98.23,
+ "parts": {
+  "ruled": {
+   "score": 98.25,
+   "delta": 0.02,
+   "documents_rerun": 5,
+   "reader_calls_per_rerun_document": 3.0,
+   "reference_reader_calls_on_them": 1.0
+  }
+ }
+}

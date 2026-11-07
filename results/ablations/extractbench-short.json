@@ -1,0 +1,127 @@
+{
+ "set": "extractbench-short",
+ "documents": 252,
+ "of": 252,
+ "reference": 96.36,
+ "reference_invalid": 0,
+ "checks": {
+  "all checks": {
+   "score": 95.91,
+   "delta": -0.45,
+   "documents_changed": 26,
+   "invalid": 1
+  },
+  "conformance and missing values": {
+   "score": 96.16,
+   "delta": -0.19,
+   "documents_changed": 5,
+   "invalid": 1
+  },
+  "carry-down and stacked rows": {
+   "score": 96.41,
+   "delta": 0.05,
+   "documents_changed": 2,
+   "invalid": 0
+  },
+  "key-based duplicates": {
+   "score": 96.37,
+   "delta": 0.01,
+   "documents_changed": 3,
+   "invalid": 0
+  },
+  "blank, template and copied rows": {
+   "score": 96.04,
+   "delta": -0.32,
+   "documents_changed": 13,
+   "invalid": 0
+  },
+  "repeated-record counts": {
+   "score": 96.36,
+   "delta": 0.0,
+   "documents_changed": 0,
+   "invalid": 0
+  },
+  "printed pages and page index": {
+   "score": 96.36,
+   "delta": 0.0,
+   "documents_changed": 0,
+   "invalid": 0
+  },
+  "spacing, quotes, numbers and suffixes": {
+   "score": 96.35,
+   "delta": -0.0,
+   "documents_changed": 3,
+   "invalid": 0
+  }
+ },
+ "selection": {
+  "documents": 97,
+  "oneshot only": {
+   "score": 94.56,
+   "delta": -1.8
+  },
+  "parse only": {
+   "score": 96.44,
+   "delta": 0.08
+  },
+  "primary only": {
+   "score": 96.32,
+   "delta": -0.03
+  },
+  "quorum beta 1": {
+   "score": 96.36,
+   "delta": 0.0
+  },
+  "field vote": {
+   "score": 96.38,
+   "delta": 0.02
+  }
+ },
+ "parts": {
+  "replan": {
+   "score": 96.06,
+   "delta": -0.3,
+   "documents_rerun": 7,
+   "documents_changed": 7,
+   "reader_calls_per_rerun_document": 1.6,
+   "reference_reader_calls_on_them": 8.1,
+   "seconds_per_rerun_document": 160.1
+  },
+  "schema_groups": {
+   "score": 96.21,
+   "delta": -0.14,
+   "documents_rerun": 4,
+   "documents_changed": 4,
+   "reader_calls_per_rerun_document": 12.8,
+   "reference_reader_calls_on_them": 6.2,
+   "seconds_per_rerun_document": 246.4
+  },
+  "recovery": {
+   "score": 96.19,
+   "delta": -0.17,
+   "documents_rerun": 28,
+   "documents_changed": 14,
+   "reader_calls_per_rerun_document": 4.8,
+   "reference_reader_calls_on_them": 3.3,
+   "seconds_per_rerun_document": 186.9
+  },
+  "legends": {
+   "score": 96.36,
+   "delta": 0.0,
+   "documents_rerun": 1,
+   "documents_changed": 0,
+   "reader_calls_per_rerun_document": 10.0,
+   "reference_reader_calls_on_them": 11.0,
+   "seconds_per_rerun_document": 280.5
+  },
+  "colflow": {
+   "score": 96.42,
+   "delta": 0.06,
+   "documents_rerun": 1,
+   "documents_changed": 1,
+   "reader_calls_per_rerun_document": 1.0,
+   "reference_reader_calls_on_them": 0.0,
+   "seconds_per_rerun_document": 10.3
+  }
+ }
+}

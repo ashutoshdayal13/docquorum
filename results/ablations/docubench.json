@@ -1,0 +1,91 @@
+{
+ "set": "docubench",
+ "documents": 52,
+ "of": 72,
+ "reference": 94.0,
+ "reference_invalid": 0,
+ "checks": {
+  "all checks": {
+   "score": 94.06,
+   "delta": 0.06,
+   "documents_changed": 2,
+   "invalid": 18
+  },
+  "conformance and missing values": {
+   "score": 94.0,
+   "delta": 0.0,
+   "documents_changed": 0,
+   "invalid": 18
+  },
+  "carry-down and stacked rows": {
+   "score": 94.0,
+   "delta": 0.0,
+   "documents_changed": 0,
+   "invalid": 0
+  },
+  "key-based duplicates": {
+   "score": 94.02,
+   "delta": 0.01,
+   "documents_changed": 1,
+   "invalid": 0
+  },
+  "blank, template and copied rows": {
+   "score": 94.0,
+   "delta": 0.0,
+   "documents_changed": 0,
+   "invalid": 0
+  },
+  "repeated-record counts": {
+   "score": 94.0,
+   "delta": 0.0,
+   "documents_changed": 0,
+   "invalid": 0
+  },
+  "printed pages and page index": {
+   "score": 94.0,
+   "delta": 0.0,
+   "documents_changed": 0,
+   "invalid": 0
+  },
+  "spacing, quotes, numbers and suffixes": {
+   "score": 94.05,
+   "delta": 0.05,
+   "documents_changed": 1,
+   "invalid": 0
+  }
+ },
+ "selection": {
+  "documents": 9,
+  "oneshot only": {
+   "score": 94.03,
+   "delta": 0.03
+  },
+  "parse only": {
+   "score": 92.87,
+   "delta": -1.14
+  },
+  "primary only": {
+   "score": 93.24,
+   "delta": -0.77
+  },
+  "quorum beta 1": {
+   "score": 93.69,
+   "delta": -0.31
+  },
+  "field vote": {
+   "score": 93.76,
+   "delta": -0.24
+  }
+ },
+ "parts": {
+  "recovery": {
+   "score": 94.0,
+   "delta": 0.0,
+   "documents_rerun": 2,
+   "documents_changed": 0,
+   "reader_calls_per_rerun_document": 3.5,
+   "reference_reader_calls_on_them": 2.0,
+   "seconds_per_rerun_document": 39.2
+  }
+ }
+}
