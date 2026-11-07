@@ -7,6 +7,7 @@ score.
     python benchmarks/ablations/stored.py varex-zoom          results/varex/v1.1 + v1.2-zoom
     python benchmarks/ablations/stored.py unikie-selection    (open category: source configs/unikie_open.env)
     python benchmarks/ablations/stored.py unikie-zoom
+    python benchmarks/ablations/stored.py docubench-zoom      results/docubench/v1.4
 
 Selection variants: each reading alone; the quorum with beta = 2 (as run) and beta = 1; field-level
 voting (start from the quorum's reading, take every leaf value that a majority of the readings
@@ -192,6 +193,37 @@ def unikie_zoom():
                                   "scores": {k: round(sum(v.values()) / len(v), 2) for k, v in per.items()}})
 
 
+# ---- DocuBench ---------------------------------------------------------------------------------
+
+def docubench_zoom():
+    """Zoom on DocuBench's stored run (v1.4), which kept no zoom record: a document whose output
+    equals none of its readings was edited by zoom, and starts from the reading closest to it.
+    Scored on all 72 documents and without SBR9L7Y8, a payslip where one reading dropped the
+    decimal points of its amounts and zoom's number matching took 185467 for 1854.67."""
+    import bundles
+    import run as R
+    base = ROOT / "results" / "docubench" / "v1.4"
+    reads, final = bundles.read(base / "readings.jsonl"), bundles.read(base / "predictions.jsonl")
+    key = lambda x: json.dumps(x, sort_keys=True)
+    before = dict(final)
+    for n, views in reads.items():
+        if len(views) < 2 or any(key(v) == key(final[n]) for v in views.values()):
+            continue
+        lf = leaves(final[n])
+        before[n] = min(views.values(), key=lambda v: sum(lf.get(p, object()) != x for p, x in leaves(v).items())
+                        + abs(len(leaves(v)) - len(lf)))
+    per = lambda preds: {r["id"]: r["score"] for r in
+                         R.docubench_score(preds, {n: "completed" for n in preds})["per_document"]}
+    p0, p1 = per(before), per(final)
+    mean = lambda p, ids: round(100 * sum(p[i] for i in ids) / len(ids), 2)
+    every, rest = sorted(p1), [i for i in sorted(p1) if i != "SBR9L7Y8"]
+    save("docubench_zoom", {"benchmark": "DocuBench v0.2.0", "run": "results/docubench/v1.4",
+                            "edited_by_zoom": sorted(n for n in before if key(before[n]) != key(final[n])),
+                            "scores": {"no zoom": mean(p0, every), "zoom": mean(p1, every)},
+                            "without SBR9L7Y8": {"documents": len(rest), "no zoom": mean(p0, rest),
+                                                 "zoom": mean(p1, rest)}})
+
+
 if __name__ == "__main__":
     {"varex-selection": varex_selection, "varex-zoom": varex_zoom, "unikie-selection": unikie_selection,
-     "unikie-zoom": unikie_zoom}[sys.argv[1]]()
+     "unikie-zoom": unikie_zoom, "docubench-zoom": docubench_zoom}[sys.argv[1]]()

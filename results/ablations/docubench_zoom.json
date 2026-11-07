@@ -1,0 +1,34 @@
+{
+ "benchmark": "DocuBench v0.2.0",
+ "run": "results/docubench/v1.4",
+ "edited_by_zoom": [
+  "2Kqu7k2B",
+  "3VX7OcKR",
+  "69Ny1DwE",
+  "9hPCh7ca",
+  "FnscKwQQ",
+  "FsGU3Q4X",
+  "JPIU6gjr",
+  "KYwdv07B",
+  "SBR9L7Y8",
+  "UqY6ItFZ",
+  "VJeLz6Am",
+  "WM9ZKrAr",
+  "eeqkpCkH",
+  "f9nrfUNC",
+  "kcnZ5EWa",
+  "o0dn9Dd4",
+  "qRCO6ev5",
+  "sHMajYzm",
+  "vAdukzpt"
+ ],
+ "scores": {
+  "no zoom": 91.86,
+  "zoom": 91.54
+ },
+ "without SBR9L7Y8": {
+  "documents": 71,
+  "no zoom": 91.75,
+  "zoom": 91.76
+ }
+}
