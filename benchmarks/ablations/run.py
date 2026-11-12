@@ -1,17 +1,10 @@
 """
-Ablation runs: DocQuorum on a fixed document set with one part turned off (docquorum/ablate.py,
-set by DQ_ABLATE), keeping every reading before and after its checks, so that the check and
-selection ablations are computed afterwards without a model (evaluate.py). Zoom is off here:
-the ExtractBench results were made without it, and zoom has its own ablation (zoom.py).
-
-    python benchmarks/ablations/run.py extractbench-short reference
-    DQ_ABLATE=recovery python benchmarks/ablations/run.py extractbench-short recovery --only-file F
-    python benchmarks/ablations/run.py docubench reference
-
-Sets: extractbench-short, extractbench-medium, extractbench-long, docubench, varex. Each document is written to
-runs/ablations/<set>/<variant>/<document>.json as {prediction, raw, readings, report, seconds};
-a resumed run skips the documents already written.
+Usage:
+    python benchmarks/ablations/run.py <set> reference
+    DQ_ABLATE=<part> python benchmarks/ablations/run.py <set> <part> --only-file FILE
+    python benchmarks/ablations/run.py --affected <set> <part>
 """
+
 import argparse
 import json
 import sys
@@ -24,24 +17,24 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "benchmarks" / "multibench"))
-from docquorum import ablate  # noqa: E402
+from docquorum import ablate
 
 RUNS = ROOT / "runs" / "ablations"
-SUBSETS = {"docubench": RUNS / "docubench_subset.txt"}   # the 52 DocuBench documents the ablations cover
+SUBSETS = {"docubench": RUNS / "docubench_subset.txt"}
 
 
 def documents(which):
-    """[(name, document path, schema, task)] of a set, in a fixed order."""
     if which.startswith("extractbench-"):
         from docquorum import extractbench as EB
+
         recs = EB.load_records(which.split("-", 1)[1])
         return sorted((EB.name_of(r), EB.pdf_of(r), r["data_schema"], None) for r in recs)
     import sources as S
+
     return sorted(S.INPUT_LISTS[which.split("-")[0]](), key=lambda x: x[0])
 
 
 def acts(part, rec):
-    """Whether `part` acted on a document in its reference run (from the reader's recorded plans)."""
     rep = rec.get("report") or {}
     if part in ("colflow", "ruled"):
         return rep.get("readings") == [part]
@@ -51,15 +44,25 @@ def acts(part, rec):
     if part == "schema_groups":
         return any(p.get("mode") == "partitioned" for p in plans)
     if part == "legends":
-        return any(isinstance(v, dict) and v.get("reference_chars", 0) > 0 for p in plans for v in p.values())
+        return any(
+            isinstance(v, dict) and v.get("reference_chars", 0) > 0
+            for p in plans
+            for v in p.values()
+        )
     if part == "recovery":
-        return any(p.get("refined") or p.get("reasked") or p.get("loops") or p.get("truncated")
-                   or (p.get("mode") == "whole" and p.get("calls", 0) > 1) for p in plans)
+        return any(
+            p.get("refined")
+            or p.get("reasked")
+            or p.get("loops")
+            or p.get("truncated")
+            or (p.get("mode") == "whole" and p.get("calls", 0) > 1)
+            for p in plans
+        )
     raise ValueError(part)
 
 
 def main():
-    if len(sys.argv) == 4 and sys.argv[1] == "--affected":       # run.py --affected <set> <part>
+    if len(sys.argv) == 4 and sys.argv[1] == "--affected":
         sub = SUBSETS.get(sys.argv[2])
         keep = set(sub.read_text().split()) if sub and sub.exists() else None
         for f in sorted((RUNS / sys.argv[2] / "reference").glob("*.json")):
@@ -69,15 +72,32 @@ def main():
             if rec.get("status") == "completed" and acts(sys.argv[3], rec):
                 print(f.stem)
         return
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("set", choices=["extractbench-short", "extractbench-medium", "extractbench-long", "docubench", "varex"])
-    ap.add_argument("variant", help="'reference', or the parts turned off joined by '+', as in DQ_ABLATE")
-    ap.add_argument("--only-file", default=None, help="a file listing the documents to run, one per line")
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    ap.add_argument(
+        "set",
+        choices=[
+            "extractbench-short",
+            "extractbench-medium",
+            "extractbench-long",
+            "docubench",
+            "varex",
+        ],
+    )
+    ap.add_argument(
+        "variant", help="'reference', or the parts turned off joined by '+', as in DQ_ABLATE"
+    )
+    ap.add_argument(
+        "--only-file", default=None, help="a file listing the documents to run, one per line"
+    )
     ap.add_argument("--docs", type=int, default=8, help="documents in parallel")
     a = ap.parse_args()
     want = set() if a.variant == "reference" else set(a.variant.split("+"))
     if want != set(ablate.OFF):
-        raise SystemExit(f"variant {a.variant!r} needs DQ_ABLATE={','.join(sorted(want))!r} (set: {sorted(ablate.OFF)})")
+        raise SystemExit(
+            f"variant {a.variant!r} needs DQ_ABLATE={','.join(sorted(want))!r} (set: {sorted(ablate.OFF)})"
+        )
     items = documents(a.set)
     if a.only_file:
         keep = {ln.strip() for ln in Path(a.only_file).read_text().splitlines() if ln.strip()}
@@ -86,7 +106,8 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     from docquorum.extract import extract
     from docquorum.tools import llm
-    llm.client()                       # import the HTTP client once, before the threads race to import it
+
+    llm.client()
 
     def one(item):
         name, doc, schema, task = item
@@ -95,12 +116,23 @@ def main():
             return name, "cached"
         t0 = time.monotonic()
         try:
-            got, rep = extract(doc, schema, task=task, keep_readings=True, zoom_reread=False, log=lambda s: None)
-            rec = {"prediction": got, "raw": rep.pop("raw"), "readings": rep.pop("data"), "report": rep,
-                   "status": "completed"}
+            got, rep = extract(
+                doc, schema, task=task, keep_readings=True, zoom_reread=False, log=lambda s: None
+            )
+            rec = {
+                "prediction": got,
+                "raw": rep.pop("raw"),
+                "readings": rep.pop("data"),
+                "report": rep,
+                "status": "completed",
+            }
         except Exception as e:
-            rec = {"prediction": {}, "status": "failed", "error": f"{type(e).__name__}: {str(e)[:300]}",
-                   "trace": traceback.format_exc()[-1500:]}
+            rec = {
+                "prediction": {},
+                "status": "failed",
+                "error": f"{type(e).__name__}: {str(e)[:300]}",
+                "trace": traceback.format_exc()[-1500:],
+            }
         rec["seconds"] = round(time.monotonic() - t0, 1)
         dst.write_text(json.dumps(rec, ensure_ascii=False))
         return name, f"{rec['status']} {rec['seconds']}s"

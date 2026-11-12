@@ -1,11 +1,3 @@
-"""
-Apply zoom's vote rule (zoom.ZOOM_VOTES) to a UNIKIE zoom run made before the rule existed: a
-change stands only when the new value's readings plus the zoomed reading's two votes outnumber
-the readings behind the kept value. The rule only withdraws changes, so this is exactly what a run
-with the rule produces. The run as made is kept under <out>/as_run/.
-
-    python benchmarks/unikie/zoom_votes_apply.py          (then zoom_unikie.py score)
-"""
 import json
 import shutil
 import sys
@@ -14,10 +6,10 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parents[1]))
-import unikie_protocol as U  # noqa: E402
-import zoom_unikie as Z  # noqa: E402
-from docquorum import zoom  # noqa: E402
-from docquorum.zoom import leaves, norm, set_path  # noqa: E402
+import unikie_protocol as U
+import zoom_unikie as Z
+from docquorum import zoom
+from docquorum.zoom import leaves, norm, set_path
 
 raw = Z.OUT / "as_run"
 raw.mkdir(exist_ok=True)
@@ -41,7 +33,9 @@ for sc in U.SCENARIOS:
                 n += 1
         out[name] = new
         if name in stats and "changed" in stats[name]:
-            stats[name] = dict(stats[name], changed=stats[name]["changed"] - n, withdrawn_by_vote_rule=n)
+            stats[name] = dict(
+                stats[name], changed=stats[name]["changed"] - n, withdrawn_by_vote_rule=n
+            )
         withdrawn += n
     f.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n")
     fs.write_text(json.dumps(stats, indent=1) + "\n")

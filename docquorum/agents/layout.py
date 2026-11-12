@@ -1,17 +1,3 @@
-"""
-Layout agent: per document, choose a layout reader from the page geometry (no answer key, no
-per-document rule), and run it.
-  * column flow -- two or more pages, printed as >= 3 equal-width text columns on most sampled
-                   pages -> the column reader;
-  * ruled scan  -- no text layer, and the parsed tables' header rows map onto the schema's
-                   fields well enough that direct conversion keeps >= 90% of the table body
-                   rows -> the ruled-table reader (row count fixed by the printed rules);
-  * otherwise   -- no layout reader (the reader agent's reading stands).
-The decisions and their evidence go to $DQ_RUNS/<split>_layout.json; the readings to
-$DQ_RUNS/<split>_colflow/ and $DQ_RUNS/<split>_ruled/.
-
-    python -m docquorum.agents.layout <split> [--decide-only]
-"""
 import json
 import sys
 from collections import Counter
@@ -25,21 +11,18 @@ from docquorum.tools.layout import convert_tables, is_column_flow, table_rows
 from docquorum.tools.schema import find_array_field
 
 
-RULED_MIN_ROWS = 5      # a page whose parse holds a table of this many rows should show its rules
+RULED_MIN_ROWS = 5
 
 
 def rules_missing(ev, pages_seen):
-    """Whether the ruled reader found no rules on most of the pages whose parse holds a table:
-    the tables are not ruled, and the document is read by route instead."""
     pages = ev.get("table_pages") or []
     return bool(pages) and sum(pages_seen.get(p, 0) == 0 for p in pages) > len(pages) / 2
 
 
 def decide(schema, pdf, name):
-    """{pages, text_layer, [table_completeness], reader: colflow | ruled | route}."""
     n = PDF.npages(pdf)
     ev = {"pages": n, "text_layer": PDF.pdf_has_text(pdf, n)}
-    if find_array_field(schema) is None:           # the layout readers read a list
+    if find_array_field(schema) is None:
         ev["reader"] = "route"
     elif n >= 2 and not ablate.off("colflow") and is_column_flow(pdf, n):
         ev["reader"] = "colflow"
@@ -48,11 +31,20 @@ def decide(schema, pdf, name):
         res = convert_tables(texts, schema)
         if res and res[1]:
             _, good, bad = res
-            body = sum(max(0, len(r) - 1) for pg, t in texts.items() if pg not in bad for r in table_rows(t))
+            body = sum(
+                max(0, len(r) - 1)
+                for pg, t in texts.items()
+                if pg not in bad
+                for r in table_rows(t)
+            )
             comp = sum(len(v) for v in good.values()) / max(1, body)
             ev["table_completeness"] = round(comp, 3)
-            ev["table_pages"] = sorted(pg for pg, t in texts.items() if pg not in bad
-                                       and sum(max(0, len(r) - 1) for r in table_rows(t)) >= RULED_MIN_ROWS)
+            ev["table_pages"] = sorted(
+                pg
+                for pg, t in texts.items()
+                if pg not in bad
+                and sum(max(0, len(r) - 1) for r in table_rows(t)) >= RULED_MIN_ROWS
+            )
             if comp >= 0.9 and not ablate.off("ruled"):
                 ev["reader"] = "ruled"
     ev.setdefault("reader", "route")
@@ -74,8 +66,13 @@ def main():
     def run(rec):
         name, kind = EB.name_of(rec), out[EB.name_of(rec)]["reader"]
         if kind in readers:
-            got = readers[kind].read(cl, rec["data_schema"], EB.pdf_of(rec), workers=4,
-                                     log=lambda s: print(f"{name[:30]} {s}", flush=True))
+            got = readers[kind].read(
+                cl,
+                rec["data_schema"],
+                EB.pdf_of(rec),
+                workers=4,
+                log=lambda s: print(f"{name[:30]} {s}", flush=True),
+            )
             d = C.RUNS / f"{split}_{kind}"
             d.mkdir(parents=True, exist_ok=True)
             (d / f"{name}.json").write_text(json.dumps(got))

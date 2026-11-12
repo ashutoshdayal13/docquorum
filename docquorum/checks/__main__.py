@@ -1,8 +1,3 @@
-"""
-    python -m docquorum.checks <primary|parse|oneshot|layout> <split> <in_dir> <out_dir>
-
-Runs one chain over every reading in in_dir (<name>.json per document of the split).
-"""
 import json
 import sys
 from pathlib import Path

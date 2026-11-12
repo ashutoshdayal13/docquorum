@@ -1,9 +1,3 @@
-"""
-Every prompt the readers send. Words in braces are filled per call; the schema itself goes to
-the server as the decoding schema as well as into the prompt.
-"""
-
-# ---- the reader agent: one call over the whole document (or a schema part, or a window) ----
 WHOLE = """You are extracting structured data from a complete document.
 
 {task}The document has {n} page(s). {modality}
@@ -21,11 +15,12 @@ Rules:
 Reply with the JSON object only."""
 
 TEXT_LAYER = "The document's text layer (exact characters):\n{body}\n--- END TEXT ---\n\n"
-OCR_TEXT = ("OCR text of the scanned pages (machine-read: it can misread characters and drop "
-            "decimal points, spaces or punctuation; where it disagrees with the page images, "
-            "follow the images):\n{body}\n--- END TEXT ---\n\n")
+OCR_TEXT = (
+    "OCR text of the scanned pages (machine-read: it can misread characters and drop "
+    "decimal points, spaces or punctuation; where it disagrees with the page images, "
+    "follow the images):\n{body}\n--- END TEXT ---\n\n"
+)
 
-# ---- the reader agent: one chunk of pages, for one list ----
 CHUNK = """You are extracting rows of a table from one part of a long document.
 
 {context}{intro}
@@ -50,14 +45,12 @@ Reply with a JSON array only:
 [{{...}}, {{...}}]"""
 
 CHUNK_TEXT = "Below is the text of pages {p0}-{p1}, with column alignment preserved."
-# a scan's chunk: its text is OCR, so the chunk's page images come with it and decide
-CHUNK_OCR = ("Below is the OCR text of pages {p0}-{p1} (machine-read: it can misread characters and drop "
-             "spaces or punctuation). The page images are attached; where the text disagrees with the "
-             "images, follow the images.")
+CHUNK_OCR = (
+    "Below is the OCR text of pages {p0}-{p1} (machine-read: it can misread characters and drop "
+    "spaces or punctuation). The page images are attached; where the text disagrees with the "
+    "images, follow the images."
+)
 
-# material from elsewhere in the document that a chunk's rows depend on (legends, code keys,
-# per-entity reference tables), copied once per list and put before every chunk's text; when
-# the document has none, CHUNK is sent exactly as without it
 REFERENCE = """Below are the opening pages of a long document. Later pages hold the list "{array_name}",
 which will be read a few pages at a time by a reader who sees only those pages.
 {array_desc}Each entry has these fields:
@@ -79,17 +72,19 @@ If these pages contain no such material, reply with exactly: NONE
 --- OPENING PAGES ---
 {text}
 --- END OPENING PAGES ---"""
-REFERENCE_BLOCK = ("REFERENCE MATERIAL copied from elsewhere in the document (legends, codes, "
-                   "per-entity details). Use it to interpret and complete the rows below; do not "
-                   "return rows from it.\n--- REFERENCE ---\n{body}\n--- END REFERENCE ---\n\n")
+REFERENCE_BLOCK = (
+    "REFERENCE MATERIAL copied from elsewhere in the document (legends, codes, "
+    "per-entity details). Use it to interpret and complete the rows below; do not "
+    "return rows from it.\n--- REFERENCE ---\n{body}\n--- END REFERENCE ---\n\n"
+)
 
-# a page that shows rows but came back empty is asked once more, told what was counted
-EMPTY_NUDGE = ("NOTE: an earlier reading of this text returned no entries, but the text "
-               "contains about {n} table rows. Read it again and return every entry of "
-               "\"{a}\" those rows contain. Return [] only if none of the rows belong to "
-               "\"{a}\".\n")
+EMPTY_NUDGE = (
+    "NOTE: an earlier reading of this text returned no entries, but the text "
+    "contains about {n} table rows. Read it again and return every entry of "
+    '"{a}" those rows contain. Return [] only if none of the rows belong to '
+    '"{a}".\n'
+)
 
-# ---- the reader agent: the fields outside the lists, when the document is long ----
 SCALARS = """Extract the document-level fields below from this document's text.
 
 --- DOCUMENT TEXT ---
@@ -101,7 +96,6 @@ Fields to extract (ignore any array/table fields, they are handled separately):
 
 Reply with a JSON object only, using null for anything not present."""
 
-# ---- column-flow reader: one column cut from a page image ----
 COLUMN = """You will be shown ONE column cut from a page of a document whose pages are
 printed as several independent columns of records. Read this column top to bottom.
 
@@ -116,7 +110,6 @@ not entries. If the column STARTS with the continuation of an entry that began i
 previous column (its first line is missing), return that fragment first with "{lead}" set
 to null."""
 
-# ---- ruled-table reader: a header row stacked on a band of counted rows ----
 RULED = """You will be shown an image cut from a scanned document: the header row of a
 table followed by a band of data rows.
 
@@ -128,4 +121,6 @@ Each entry of that list is one JSON object with this schema:
 Return one entry for each data row below the header, top to bottom, copying each cell
 exactly as printed. Rows that look identical are still separate rows. If a cell is blank
 use null."""
-RULED_TAIL = "This band is from page {page} and holds exactly {n} data rows; return exactly {n} entries."
+RULED_TAIL = (
+    "This band is from page {page} and holds exactly {n} data rows; return exactly {n} entries."
+)

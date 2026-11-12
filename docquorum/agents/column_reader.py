@@ -1,11 +1,3 @@
-"""
-Column-flow reader, for pages printed as several independent columns of records (a register
-in seven alphabetical columns). Each column is cut out of the page image and read top to
-bottom, one call per column, so records are read in the order they run and the small print
-reaches the model at full resolution. A record that starts at the foot of one column and
-ends at the top of the next is returned as a fragment with its lead field null, and joined
-to the previous record.
-"""
 import json
 
 from docquorum import config as C
@@ -16,10 +8,8 @@ from docquorum.tools.schema import array_schema, find_array_field, require_field
 
 
 def list_meta(schema):
-    """(list name, item schema, description, decoding item with every field required and the
-    definitions attached, task prefix) of the schema's main list."""
     arr_name, item, arr_desc = find_array_field(schema)
-    guide = require_fields(item)                       # every field, so none is skipped; each may be null
+    guide = require_fields(item)
     for key in ("$defs", "definitions"):
         if schema.get(key):
             guide[key] = schema[key]
@@ -28,9 +18,8 @@ def list_meta(schema):
 
 
 def lead_field(item):
-    """The record's first required text field (null in a continuation fragment)."""
     props = item.get("properties") or {}
-    for f in (item.get("required") or list(props)):
+    for f in item.get("required") or list(props):
         t = (props.get(f) or {}).get("type")
         if "string" in (t if isinstance(t, list) else [t]) and "page" not in f.lower():
             return f
@@ -38,11 +27,10 @@ def lead_field(item):
 
 
 def read_page(cl, pdf, page, meta, lead, dpi=300):
-    """The records of each column of one page, as a list per column."""
     arr_name, item, arr_desc, guide, task = meta
     g = dict(guide)
     g["properties"] = dict(guide["properties"])
-    if lead in g["properties"]:                          # a fragment's lead field may be null
+    if lead in g["properties"]:
         spec = dict(g["properties"][lead])
         t = spec.get("type")
         if isinstance(t, str):
@@ -51,16 +39,29 @@ def read_page(cl, pdf, page, meta, lead, dpi=300):
             spec["type"] = t + ["null"]
         g["properties"][lead] = spec
     dec = array_schema(g, maxItems=400)
-    prompt = prompts.COLUMN.format(task=task, array_name=arr_name, lead=lead,
-                                   array_desc=(arr_desc + "\n") if arr_desc else "",
-                                   item_schema=json.dumps(item, indent=1)[:16000])
+    prompt = prompts.COLUMN.format(
+        task=task,
+        array_name=arr_name,
+        lead=lead,
+        array_desc=(arr_desc + "\n") if arr_desc else "",
+        item_schema=json.dumps(item, indent=1)[:16000],
+    )
     cols = []
     for strip in column_crops(pdf, page, dpi=dpi):
         r = cl.chat.completions.create(
-            model=C.MODEL, temperature=0.0, max_tokens=12000, extra_body=llm.extra_body(dec),
-            messages=[{"role": "user", "content": [{"type": "text", "text": prompt}]
-                       + llm.image_parts([PDF.png_b64(strip)], "png")
-                       + [{"type": "text", "text": f"This column is from page {page}."}]}])
+            model=C.MODEL,
+            temperature=0.0,
+            max_tokens=12000,
+            extra_body=llm.extra_body(dec),
+            messages=[
+                {
+                    "role": "user",
+                    "content": [{"type": "text", "text": prompt}]
+                    + llm.image_parts([PDF.png_b64(strip)], "png")
+                    + [{"type": "text", "text": f"This column is from page {page}."}],
+                }
+            ],
+        )
         try:
             rows = json.loads(r.choices[0].message.content)
         except Exception:
@@ -70,7 +71,6 @@ def read_page(cl, pdf, page, meta, lead, dpi=300):
 
 
 def join_fragment(prev, frag):
-    """A continuation fragment fills the previous record's empty fields and extends its text."""
     for k, v in frag.items():
         if v in (None, "", []):
             continue
@@ -81,8 +81,8 @@ def join_fragment(prev, frag):
 
 
 def read(cl, schema, pdf, workers=16, log=print):
-    """The whole document: {list name: records in page and column order}."""
     from concurrent.futures import ThreadPoolExecutor
+
     meta = list_meta(schema)
     lead = lead_field(meta[1])
     pages = list(range(1, PDF.npages(pdf) + 1))

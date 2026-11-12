@@ -1,9 +1,3 @@
-"""
-Ruled-table reader, for scanned tables whose rows are separated by printed rules. The page
-is deskewed, the rules found and the rows between them counted; each band of up to 12 rows
-is sent with the header row stacked above it, and the reply must hold exactly that many
-entries (minItems = maxItems), so a run of identical rows can neither grow nor shrink.
-"""
 import json
 
 from PIL import Image
@@ -24,22 +18,33 @@ def _stack(header, band):
 
 
 def read_page(cl, pdf, page, meta, dpi=200):
-    """(records of one page, {bands, rows counted})."""
     arr_name, item, arr_desc, guide, task = meta
     res, _, _ = row_bands(PDF.render_gray(pdf, page, dpi))
     if not res:
         return [], {"bands": 0, "rows": 0}
     header, bands = res
-    prompt = prompts.RULED.format(task=task, array_name=arr_name, array_desc=(arr_desc + "\n") if arr_desc else "",
-                                  item_schema=json.dumps(item, indent=1)[:16000])
+    prompt = prompts.RULED.format(
+        task=task,
+        array_name=arr_name,
+        array_desc=(arr_desc + "\n") if arr_desc else "",
+        item_schema=json.dumps(item, indent=1)[:16000],
+    )
     rows = []
     for band, n in bands:
         r = cl.chat.completions.create(
-            model=C.MODEL, temperature=0.0, max_tokens=6000,
+            model=C.MODEL,
+            temperature=0.0,
+            max_tokens=6000,
             extra_body=llm.extra_body(array_schema(guide, minItems=n, maxItems=n)),
-            messages=[{"role": "user", "content": [{"type": "text", "text": prompt}]
-                       + llm.image_parts([PDF.png_b64(_stack(header, band))], "png")
-                       + [{"type": "text", "text": prompts.RULED_TAIL.format(page=page, n=n)}]}])
+            messages=[
+                {
+                    "role": "user",
+                    "content": [{"type": "text", "text": prompt}]
+                    + llm.image_parts([PDF.png_b64(_stack(header, band))], "png")
+                    + [{"type": "text", "text": prompts.RULED_TAIL.format(page=page, n=n)}],
+                }
+            ],
+        )
         try:
             got = json.loads(r.choices[0].message.content)
         except Exception:
@@ -52,9 +57,8 @@ def read_page(cl, pdf, page, meta, dpi=200):
 
 
 def read(cl, schema, pdf, workers=4, log=print, pages_seen=None):
-    """The whole document: {list name: records in page order}. pages_seen, a dict, receives
-    {page: rows counted between its rules}."""
     from concurrent.futures import ThreadPoolExecutor
+
     meta = list_meta(schema)
     pages = list(range(1, PDF.npages(pdf) + 1))
     out = []

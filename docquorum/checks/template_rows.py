@@ -1,10 +1,3 @@
-"""
-Drop template rows and blank lines.
-  * A row in which every value is empty, null or zero is a pre-printed empty line read as a
-    record ({name: null, amount: "0", id: null}); it is dropped.
-  * In a list whose real rows fill three or more cells, a row (of >= 4 fields) whose only
-    filled cell is its printed label (a W-14's "Liner" row with nothing entered) is dropped.
-"""
 import re
 
 _ZERO = re.compile(r"^\s*[$]?\s*0+(\.0+)?\s*$")
@@ -15,7 +8,6 @@ def n_filled(row):
 
 
 def blank_value(v):
-    """Nothing printed: null, empty, or a bare zero ("0", "0.00", "$0.00")."""
     if v in (None, "", [], {}):
         return True
     if isinstance(v, bool):

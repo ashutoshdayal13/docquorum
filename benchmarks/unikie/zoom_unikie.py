@@ -1,15 +1,3 @@
-"""
-Zoom re-reading (docquorum/zoom.py) on UNIKIE-BENCH, design unchanged since the VAREX run. It
-starts from the stored readings and the quorum's choice among them (unikie_eval.quorum), and
-re-reads the disputed fields from crops of the images, each capped at the benchmark's 1,605,632
-pixels like every other input. Open category (second held-out test): the three readings image,
-oneshot, parse. Constrained category (third): the six readings of the reported configuration.
-
-    python benchmarks/unikie/zoom_unikie.py run      -> results/unikie[_open]/zoom/<scenario>.json
-    python benchmarks/unikie/zoom_unikie.py score    macro F1 before / after, document by document
-
-For the open category, first: set -a; source configs/unikie_open.env; set +a (its folders).
-"""
 import json
 import os
 import random
@@ -24,12 +12,12 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(ROOT))
-import unikie_eval as E  # noqa: E402
-import unikie_protocol as U  # noqa: E402
-from docquorum import zoom  # noqa: E402
-from docquorum.tools.schema import fill_template  # noqa: E402
+import unikie_eval as E
+import unikie_protocol as U
+from docquorum import zoom
+from docquorum.tools.schema import fill_template
 
-OPEN = bool(os.environ.get("DQ_UNIKIE_SCENARIOS"))        # the open category's settings are loaded
+OPEN = bool(os.environ.get("DQ_UNIKIE_SCENARIOS"))
 ARMS = [r for r in E.READINGS if r in ("image", "oneshot", "parse")] if OPEN else list(E.READINGS)
 OUT = E.OUT.parent / "zoom"
 
@@ -43,13 +31,13 @@ def candidates(sc):
 
 
 def document_pdf(imgs, folder):
-    """The document as a PDF: one image as the pipeline prepares it (extract.as_pdf); several
-    images (a few constrained-category documents) prepared the same way, one page each."""
     from docquorum.extract import as_pdf
+
     if len(imgs) == 1:
         return as_pdf(imgs[0], folder)
     from PIL import Image, ImageOps
     from docquorum.tools import images
+
     pages = []
     for p in imgs:
         with Image.open(p) as im:
@@ -61,6 +49,7 @@ def document_pdf(imgs, folder):
 
 def run():
     from docquorum.tools import llm, parser
+
     zoom.MAX_CROP_PIXELS = U.TARGET_MAX_PIXELS
     cl, pc = llm.client(timeout=3600), parser.make_client()
     OUT.mkdir(parents=True, exist_ok=True)
@@ -78,9 +67,16 @@ def run():
             name, imgs, t, kept, others = item
             with tempfile.TemporaryDirectory() as td:
                 try:
-                    new, s = zoom.reread(cl, kept, others, t, document_pdf(imgs, td), parser_client=pc,
-                                         log=lambda m: None)
-                except Exception as e:                      # the quorum's reading stands
+                    new, s = zoom.reread(
+                        cl,
+                        kept,
+                        others,
+                        t,
+                        document_pdf(imgs, td),
+                        parser_client=pc,
+                        log=lambda m: None,
+                    )
+                except Exception as e:
                     new, s = kept, {"error": type(e).__name__}
             with lock:
                 done[name], stats[name] = new, s
@@ -91,8 +87,14 @@ def run():
         with ThreadPoolExecutor(12) as ex:
             list(ex.map(one, todo))
         save()
-        print(sc, "documents", len(done), "changed values", sum(s.get("changed", 0) for s in stats.values()),
-              flush=True)
+        print(
+            sc,
+            "documents",
+            len(done),
+            "changed values",
+            sum(s.get("changed", 0) for s in stats.values()),
+            flush=True,
+        )
 
 
 def score():
@@ -111,20 +113,35 @@ def score():
     up, down = sum(d > 1e-12 for d in per_doc), sum(d < -1e-12 for d in per_doc)
     p = min(1.0, 2 * sum(comb(up + down, i) for i in range(min(up, down) + 1)) / 2 ** (up + down))
     random.seed(0)
-    boot = sorted(100 * sum(random.choice(per_doc) for _ in per_doc) / len(per_doc) for _ in range(2000))
+    boot = sorted(
+        100 * sum(random.choice(per_doc) for _ in per_doc) / len(per_doc) for _ in range(2000)
+    )
     stats = {}
     for sc in U.SCENARIOS:
         stats.update(json.loads((OUT / f"{sc}.stats.json").read_text()))
-    rep = {"benchmark": "UNIKIE-BENCH, " + ("open" if OPEN else "constrained") + " category", "documents": len(per_doc),
-           "macro_f1": {"before": sum(before.values()) / len(before), "after": sum(after.values()) / len(after)},
-           "per_scenario": {sc: {"before": before[sc], "after": after[sc]} for sc in U.SCENARIOS},
-           "documents_better": up, "documents_worse": down, "sign_test_p_two_sided": p,
-           "mean_gain_per_document_f1_points": 100 * sum(per_doc) / len(per_doc),
-           "bootstrap_95ci_points": [boot[50], boot[1949]],
-           "zoom": {"documents_with_disputes": sum(s.get("disputes", 0) > 0 for s in stats.values()),
-                    "errors": sum("error" in s for s in stats.values()),
-                    **{k: sum(s.get(k, 0) for s in stats.values()) for k in ("disputes", "located", "changed")}},
-           "note": "document F1 by the benchmark's own matching; the answer key is used only here, after the run"}
+    rep = {
+        "benchmark": "UNIKIE-BENCH, " + ("open" if OPEN else "constrained") + " category",
+        "documents": len(per_doc),
+        "macro_f1": {
+            "before": sum(before.values()) / len(before),
+            "after": sum(after.values()) / len(after),
+        },
+        "per_scenario": {sc: {"before": before[sc], "after": after[sc]} for sc in U.SCENARIOS},
+        "documents_better": up,
+        "documents_worse": down,
+        "sign_test_p_two_sided": p,
+        "mean_gain_per_document_f1_points": 100 * sum(per_doc) / len(per_doc),
+        "bootstrap_95ci_points": [boot[50], boot[1949]],
+        "zoom": {
+            "documents_with_disputes": sum(s.get("disputes", 0) > 0 for s in stats.values()),
+            "errors": sum("error" in s for s in stats.values()),
+            **{
+                k: sum(s.get(k, 0) for s in stats.values())
+                for k in ("disputes", "located", "changed")
+            },
+        },
+        "note": "document F1 by the benchmark's own matching; the answer key is used only here, after the run",
+    }
     (OUT / "comparison.json").write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n")
     print(json.dumps(rep, ensure_ascii=False, indent=1))
 

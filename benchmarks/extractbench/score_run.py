@@ -1,20 +1,13 @@
-"""Score a run with ExtractBench's own scorer: a folder of <name>.json per document, or a bundle
-(results/extractbench/predictions/<split>.jsonl).
-
-    python score_run.py --split long --run runs/long_final [--json scores.json] [--only a,b]
-    python score_run.py --split long --run results/extractbench/predictions/long.jsonl
-"""
 import argparse
 import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2]))       # the docquorum package
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))       # benchmarks/bundles.py
-import bundles  # noqa: E402
-from docquorum import extractbench as EB  # noqa: E402
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+import bundles
+from docquorum import extractbench as EB
 
-# published long-split value F1 (the leaderboard's long column, read 2026-09-25), for reference
 PUBLISHED_LONG = [
     ("Pulse (Effort), commercial", 93.51),
     ("Reducto Deep Extract, commercial", 92.01),
@@ -44,8 +37,14 @@ def main():
     for name, rec in recs.items():
         if name in preds:
             m = EB.score(rec, preds[name])["metrics"]
-            rows.append((name, m.get("extract_unified_value_f1", 0.0), m.get("extract_unified_value_precision", 0.0),
-                         m.get("extract_unified_value_recall", 0.0)))
+            rows.append(
+                (
+                    name,
+                    m.get("extract_unified_value_f1", 0.0),
+                    m.get("extract_unified_value_precision", 0.0),
+                    m.get("extract_unified_value_recall", 0.0),
+                )
+            )
     if not rows:
         print("no predictions found")
         return
@@ -55,9 +54,13 @@ def main():
     if a.json:
         Path(a.json).write_text(json.dumps({n: [f1, p, r] for n, f1, p, r in rows}, indent=1))
     mean = [100 * sum(x[i] for x in rows) / len(rows) for i in (1, 2, 3)]
-    print(f"\n{'MEAN over ' + str(len(rows)) + ' cases':44s} {mean[0]:7.2f} {mean[1]:7.2f} {mean[2]:7.2f}")
+    print(
+        f"\n{'MEAN over ' + str(len(rows)) + ' cases':44s} {mean[0]:7.2f} {mean[1]:7.2f} {mean[2]:7.2f}"
+    )
     if len(rows) < len(recs):
-        print(f"\n(partial run: {len(rows)}/{len(recs)} cases -- not comparable to published means)")
+        print(
+            f"\n(partial run: {len(rows)}/{len(recs)} cases -- not comparable to published means)"
+        )
     elif not a.only and a.split == "long":
         print("\npublished long-split value F1:")
         for nm, v in PUBLISHED_LONG:

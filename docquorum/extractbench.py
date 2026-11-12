@@ -1,7 +1,3 @@
-"""
-ExtractBench records, and scoring with the benchmark's own scorer
-(extract_bench.score_extract_prediction; nothing is reimplemented).
-"""
 import json
 
 from docquorum import config as C
@@ -10,7 +6,6 @@ _JSON_FIELDS = ("data_schema", "expected_output", "field_rules", "repeated_struc
 
 
 def load_records(split):
-    """<split>.jsonl stores the schema, gold, field rules and row identity as JSON strings."""
     out = []
     for line in (C.DATA / f"{split}.jsonl").open():
         if line.strip():
@@ -33,6 +28,7 @@ def pdf_of(rec):
 
 def make_case(rec):
     from extract_bench.test_cases.schema import ExtractTestCase
+
     return ExtractTestCase(
         test_id=rec["id"],
         group=rec.get("category") or "long",
@@ -40,21 +36,24 @@ def make_case(rec):
         tags=rec.get("tags") or [],
         data_schema=rec["data_schema"],
         expected_output=rec["expected_output"],
-        # field_rules is keyed by field path; the harness wants a list of rules
-        test_rules=[{**v, "field_path": k, "type": "extract_field"}
-                    for k, v in (rec.get("field_rules") or {}).items() if isinstance(v, dict)],
+        test_rules=[
+            {**v, "field_path": k, "type": "extract_field"}
+            for k, v in (rec.get("field_rules") or {}).items()
+            if isinstance(v, dict)
+        ],
         row_identity=rec.get("repeated_structure") or {},
     )
 
 
 def score(rec, prediction):
     from extract_bench.evaluation.score_case import score_extract_prediction
+
     return score_extract_prediction(make_case(rec), prediction)
 
 
 def scans(split, max_one_call=12):
-    """(every document without a text layer, those of them that fit one call: <= 12 pages)."""
     from docquorum.tools import pdf as PDF
+
     every, short = [], []
     for rec in load_records(split):
         n = PDF.npages(pdf_of(rec))

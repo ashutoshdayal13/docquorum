@@ -1,8 +1,3 @@
-"""
-The document parser: MinerU2.5 (a 1.2B layout + recognition model served by vLLM) turns a
-page image into text blocks, with tables as HTML cells, so an empty column cannot shift
-every later value. Used for scans; parses are cached per document and page.
-"""
 import subprocess
 import tempfile
 from pathlib import Path
@@ -14,13 +9,27 @@ CACHE = C.PARSE_CACHE
 
 
 def render_page(pdf, page, dpi=200, max_pixels=9_000_000, dense=False):
-    """One page for the parser; small print and scans at 300 dpi (up to 16 megapixels)."""
     if dense:
         dpi, max_pixels = 300, 16_000_000
     from PIL import Image
+
     with tempfile.TemporaryDirectory() as td:
-        subprocess.run([C.PDFTOPPM, "-jpeg", "-r", str(dpi), "-f", str(page), "-l", str(page),
-                        str(pdf), str(Path(td) / "p")], capture_output=True, timeout=600)
+        subprocess.run(
+            [
+                C.PDFTOPPM,
+                "-jpeg",
+                "-r",
+                str(dpi),
+                "-f",
+                str(page),
+                "-l",
+                str(page),
+                str(pdf),
+                str(Path(td) / "p"),
+            ],
+            capture_output=True,
+            timeout=600,
+        )
         got = sorted(Path(td).glob("p*.jpg"))
         if not got:
             return None
@@ -34,11 +43,11 @@ def render_page(pdf, page, dpi=200, max_pixels=9_000_000, dense=False):
 
 def make_client():
     from mineru_vl_utils import MinerUClient
+
     return MinerUClient(backend="http-client", model_name="mineru", server_url=C.PARSER_URL)
 
 
 def blocks_to_text(blocks):
-    """MinerU blocks as text: tables as <TABLE> HTML, titles as '## ' lines."""
     out = []
     for b in blocks or []:
         if not isinstance(b, dict):
@@ -57,8 +66,6 @@ def blocks_to_text(blocks):
 
 
 def parse_pages(pdf, pages, cache_key=None, client=None, dense=None):
-    """Parse the given 1-based pages; returns {page: text}. Pages dense with small text and
-    scans without text (~0 characters) are rendered at 300 dpi."""
     client = client or make_client()
     if dense is None:
         try:
@@ -79,9 +86,12 @@ def parse_pages(pdf, pages, cache_key=None, client=None, dense=None):
         try:
             im = render_page(pdf, pno, dense=dense)
             txt = blocks_to_text(client.two_step_extract(im)) if im is not None else ""
-        except Exception as e:          # not cached, so a later run parses the page again
+        except Exception as e:
             res[pno] = ""
-            print(f"    ! parse {Path(pdf).stem} p{pno}: {type(e).__name__}: {str(e)[:80]}", flush=True)
+            print(
+                f"    ! parse {Path(pdf).stem} p{pno}: {type(e).__name__}: {str(e)[:80]}",
+                flush=True,
+            )
             continue
         res[pno] = txt
         if cf is not None:
@@ -90,8 +100,6 @@ def parse_pages(pdf, pages, cache_key=None, client=None, dense=None):
 
 
 def cached_pages(name, errors=None):
-    """The cached parse of a document, one string per page ([] when it was never parsed); a
-    page whose parse failed (not cached) is "", so later pages keep their numbers."""
     d = CACHE / name
     if not d.is_dir():
         return []
@@ -100,8 +108,8 @@ def cached_pages(name, errors=None):
 
 
 def available():
-    """Whether the parser server answers."""
     import urllib.request
+
     try:
         with urllib.request.urlopen(C.PARSER_URL.rstrip("/") + "/models", timeout=3):
             return True
@@ -110,10 +118,9 @@ def available():
 
 
 if __name__ == "__main__":
-    # python -m docquorum.tools.parser <split>: parse (and cache) every document of the split
-    # that has no text layer
     import sys
     from docquorum import extractbench as EB
+
     scans = EB.scans(sys.argv[1])[0]
     for rec in EB.load_records(sys.argv[1]):
         if EB.name_of(rec) in scans:

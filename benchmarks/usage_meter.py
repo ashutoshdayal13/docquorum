@@ -1,20 +1,13 @@
-"""
-Count the model calls and tokens this process uses, from each reply's own usage block.
-
-Every extraction-model call goes through the OpenAI client's chat.completions.create and every
-parser call through MinerU's HttpVlmClient.get_response_data; both are wrapped to add the reply's
-usage to process-wide totals. Unlike the servers' /metrics counters, this counts only this
-process, so several measurements can share the servers. Failed requests are not counted (as in
-the servers' request_success_total).
-
-    import usage_meter
-    usage_meter.install()
-    before = usage_meter.snapshot(); ...; used = usage_meter.since(before)
-"""
 import threading
 
-KEYS = ("model_calls", "model_input_tokens", "model_output_tokens",
-        "parser_calls", "parser_input_tokens", "parser_output_tokens")
+KEYS = (
+    "model_calls",
+    "model_input_tokens",
+    "model_output_tokens",
+    "parser_calls",
+    "parser_input_tokens",
+    "parser_output_tokens",
+)
 _lock = threading.Lock()
 _total = dict.fromkeys(KEYS, 0)
 _installed = False

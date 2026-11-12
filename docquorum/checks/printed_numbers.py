@@ -1,10 +1,3 @@
-"""
-Numbers as printed. A number field must carry a figure the document prints. A value that
-looks rounded (it has decimals, or two or more trailing zeros), is not printed at its own
-unit, and rounds exactly one more precise figure the text prints at some unit scale
-(thousands, millions, ...), is replaced by that figure: 26.11 (million) where the table
-prints 26,107 (thousand) becomes 26.107. Fields typed integer-only never change.
-"""
 import bisect
 import json
 import re
@@ -14,7 +7,6 @@ _NUM = re.compile(r"(?<![\w.,])\(?-?\$?(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?\)?(?
 
 
 def printed_numbers(text):
-    """{value: significant digits} for every number in the text (both signs if negative)."""
     out = {}
     for m in _NUM.finditer(text):
         tok = m.group(0)
@@ -26,15 +18,17 @@ def printed_numbers(text):
             x = float(digits)
         except ValueError:
             continue
-        sig = (len(digits.replace(".", "").lstrip("0").rstrip("0")) if "." not in digits
-               else len(digits.replace(".", "").lstrip("0")))
-        for v in ((-x, x) if neg else (x,)):
+        sig = (
+            len(digits.replace(".", "").lstrip("0").rstrip("0"))
+            if "." not in digits
+            else len(digits.replace(".", "").lstrip("0"))
+        )
+        for v in (-x, x) if neg else (x,):
             out[v] = max(out.get(v, 0), sig)
     return out
 
 
 def _sig(v):
-    """Significant digits of a JSON number as written (7700 -> 2, 26.11 -> 4)."""
     s = repr(float(v)) if isinstance(v, float) else str(int(v))
     if "e" in s or "E" in s:
         return 15
@@ -56,18 +50,16 @@ def _close(a, b):
 
 
 class Printed:
-    """The printed figures at every unit scale, sorted for interval lookups."""
 
     def __init__(self, nums):
         self.rows = sorted((x * s, s, sg, x) for x, sg in nums.items() for s in SCALES)
         self.keys = [r[0] for r in self.rows]
 
     def between(self, lo, hi):
-        return self.rows[bisect.bisect_left(self.keys, lo):bisect.bisect_right(self.keys, hi)]
+        return self.rows[bisect.bisect_left(self.keys, lo) : bisect.bisect_right(self.keys, hi)]
 
 
 def snap_value(v, printed):
-    """The printed figure v restates, or None."""
     fv = float(v)
     if fv == 0:
         return None
@@ -83,8 +75,7 @@ def snap_value(v, printed):
             cands[round(y, 9)] = max(cands.get(round(y, 9), 0), sg)
     if len(cands) != 1:
         return None
-    (y, sg), = cands.items()
-    # printed as it is, or only as a coarser restatement at another unit ("$7.7B" for 7,681m)
+    ((y, sg),) = cands.items()
     if printed_at and (any(s == 1.0 for s, _ in printed_at) or max(g for _, g in printed_at) >= sg):
         return None
     return int(y) if isinstance(v, int) and float(y).is_integer() else y
@@ -113,7 +104,9 @@ def walk(sch, val, defs, nums):
     for a in [x for x in (sch.get("anyOf") or []) if isinstance(x, dict)]:
         while "$ref" in a:
             a = defs.get(a["$ref"].split("/")[-1], {})
-        if (isinstance(val, dict) and "properties" in a) or (isinstance(val, list) and "items" in a):
+        if (isinstance(val, dict) and "properties" in a) or (
+            isinstance(val, list) and "items" in a
+        ):
             sch = a
     if isinstance(val, dict) and "properties" in sch:
         for k, sub in sch["properties"].items():
@@ -133,4 +126,6 @@ def apply(pred, doc):
     nums = printed_numbers(doc.plain)
     if not nums:
         return pred
-    return walk(doc.schema, json.loads(json.dumps(pred)), doc.schema.get("$defs") or {}, Printed(nums))
+    return walk(
+        doc.schema, json.loads(json.dumps(pred)), doc.schema.get("$defs") or {}, Printed(nums)
+    )

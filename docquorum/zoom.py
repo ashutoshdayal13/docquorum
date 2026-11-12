@@ -1,15 +1,3 @@
-"""
-Disagreement-guided zoom re-reading.
-
-After the quorum keeps one whole reading, the fields where the readings disagree are read once
-more from a high-resolution crop of the page region that prints them, by a call that sees
-neither the readings nor their values. The kept reading changes only when the zoomed reading
-equals a value one of the readings already proposed: the zoom breaks ties with a sharper view of
-the page and never adds a value of its own. The zoomed reading counts as ZOOM_VOTES readings: a
-value changes only when its readings plus those votes outnumber the readings behind the kept
-value, so the zoom can overturn a lead of one reading but not a clear majority (with six readings,
-five agreeing readings against one). No answer key is used.
-"""
 import base64
 import copy
 import io
@@ -18,30 +6,27 @@ import re
 from docquorum.tools import llm, parser, pdf as PDF
 
 ZOOM_DPI, MIN_WIDTH, PAD, MAX_DISPUTES = 300, 1200, 0.015, 40
-MAX_CROP_PIXELS = None      # a benchmark's cap on every model input, where it has one
-ZOOM_VOTES = 2              # the sharper zoomed reading weighs as two readings
+MAX_CROP_PIXELS = None
+ZOOM_VOTES = 2
 
-ASK = ('This image is a region cut from a page of a document. Read the value of the field '
-       '"{path}"{desc} exactly as printed in the image. Reply with JSON only: {{"value": "..."}}; '
-       'use null if the field is not visible in the image.')
+ASK = (
+    "This image is a region cut from a page of a document. Read the value of the field "
+    '"{path}"{desc} exactly as printed in the image. Reply with JSON only: {{"value": "..."}}; '
+    "use null if the field is not visible in the image."
+)
 
 
 def norm(v):
-    """A value for comparing: a number by its numeric value (12845.38 and 1284538 differ, though
-    they share their digits); text with case, spaces and punctuation ignored."""
     if isinstance(v, (int, float)) and not isinstance(v, bool):
         return f"#{float(v)!r}"
     return re.sub(r"[\W_]+", "", str(v)).lower() if v not in (None, "") else ""
 
 
 def printed(v):
-    """A value as its characters appear on a page, for finding it there: letters and digits only
-    (12845.38 and "12,845.38" are both found as 1284538)."""
     return re.sub(r"[\W_]+", "", str(v)).lower() if v not in (None, "") else ""
 
 
 def as_number(v):
-    """A zoomed answer read as a number ("12,845.38", "$1,095.00" -> 12845.38, 1095.0), or None."""
     if isinstance(v, (int, float)) and not isinstance(v, bool):
         return float(v)
     s = re.sub(r"[^\d.\-]", "", str(v or ""))
@@ -52,7 +37,6 @@ def as_number(v):
 
 
 def leaves(o, path=()):
-    """{path: value} for every leaf; list items keyed by index."""
     if isinstance(o, dict):
         out = {}
         for k, v in o.items():
@@ -67,7 +51,6 @@ def leaves(o, path=()):
 
 
 def disputes(kept, others):
-    """{path: [distinct proposed values]} where the readings disagree on a leaf."""
     all_leaves = [leaves(kept)] + [leaves(o) for o in others]
     out = {}
     for path in all_leaves[0]:
@@ -85,17 +68,18 @@ def disputes(kept, others):
 
 
 def page_blocks(pdf, page, client, cache):
-    """MinerU layout blocks of one page: [(normalized box, normalized text)]."""
     if page not in cache:
         im = parser.render_page(pdf, page)
         got = client.two_step_extract(im) if im is not None else []
-        cache[page] = [(b.get("bbox"), printed(b.get("content") or "")) for b in got
-                       if isinstance(b, dict) and b.get("bbox")]
+        cache[page] = [
+            (b.get("bbox"), printed(b.get("content") or ""))
+            for b in got
+            if isinstance(b, dict) and b.get("bbox")
+        ]
     return cache[page]
 
 
 def locate(values, pdf, n_pages, client, cache):
-    """(page, box) of the smallest block holding the most proposed values; None if none does."""
     keys = [printed(v) for v in values if len(printed(v)) >= 2]
     best = None
     for page in range(1, n_pages + 1):
@@ -110,8 +94,8 @@ def locate(values, pdf, n_pages, client, cache):
 
 
 def crop(pdf, page, box, cache):
-    """The block region, padded, from the page rendered at ZOOM_DPI, at least MIN_WIDTH wide."""
     from PIL import Image
+
     key = ("page", page)
     if key not in cache:
         cache[key] = parser.render_page(pdf, page, dpi=ZOOM_DPI, max_pixels=40_000_000)
@@ -120,24 +104,31 @@ def crop(pdf, page, box, cache):
         return None
     w, h = im.size
     x0, y0, x1, y1 = box
-    region = im.crop((max(0, int((x0 - PAD) * w)), max(0, int((y0 - PAD) * h)),
-                      min(w, int((x1 + PAD) * w)), min(h, int((y1 + PAD) * h))))
+    region = im.crop(
+        (
+            max(0, int((x0 - PAD) * w)),
+            max(0, int((y0 - PAD) * h)),
+            min(w, int((x1 + PAD) * w)),
+            min(h, int((y1 + PAD) * h)),
+        )
+    )
     if region.width < MIN_WIDTH:
         k = MIN_WIDTH / max(1, region.width)
         region = region.resize((MIN_WIDTH, max(1, int(region.height * k))), Image.LANCZOS)
     if MAX_CROP_PIXELS and region.width * region.height > MAX_CROP_PIXELS:
         k = (MAX_CROP_PIXELS / (region.width * region.height)) ** 0.5
-        region = region.resize((max(1, int(region.width * k)), max(1, int(region.height * k))), Image.LANCZOS)
+        region = region.resize(
+            (max(1, int(region.width * k)), max(1, int(region.height * k))), Image.LANCZOS
+        )
     buf = io.BytesIO()
     region.convert("RGB").save(buf, format="JPEG", quality=95)
     return base64.b64encode(buf.getvalue()).decode()
 
 
 def describe(schema, path):
-    """The field's description from the schema ('' when there is none)."""
     node = schema
     for step in path:
-        if not isinstance(node, dict):                     # a boolean or list subschema: no description
+        if not isinstance(node, dict):
             return ""
         if isinstance(step, int):
             node = node.get("items") or {}
@@ -156,7 +147,6 @@ def set_path(o, path, value):
 
 
 def reread(cl, kept, others, schema, pdf, parser_client=None, log=print):
-    """(kept reading with disputed fields settled by zoomed readings, statistics)."""
     found = disputes(kept, others)
     stat = {"disputes": len(found), "located": 0, "changed": 0}
     if not found:
@@ -168,8 +158,11 @@ def reread(cl, kept, others, schema, pdf, parser_client=None, log=print):
     votes = lambda path, v: sum(norm(lv.get(path)) == norm(v) for lv in every)
     for path, vals in found.items():
         held = votes(path, before.get(path))
-        if max(votes(path, v) for v in vals if norm(v) != norm(before.get(path))) + ZOOM_VOTES <= held:
-            continue                                  # no zoomed reading could overturn the kept value
+        if (
+            max(votes(path, v) for v in vals if norm(v) != norm(before.get(path))) + ZOOM_VOTES
+            <= held
+        ):
+            continue
         loc = locate(vals, pdf, n, client, cache)
         img = crop(pdf, loc[0], loc[1], cache) if loc else None
         if img is None:
@@ -186,7 +179,7 @@ def reread(cl, kept, others, schema, pdf, parser_client=None, log=print):
         value = got.get("value") if isinstance(got, dict) else None
         seen = norm(value)
         match = [v for v in vals if seen and norm(v) == seen]
-        if not match and any(norm(v).startswith("#") for v in vals):       # numbers: by value
+        if not match and any(norm(v).startswith("#") for v in vals):
             num = as_number(value)
             match = [v for v in vals if num is not None and norm(v) == norm(num)]
             seen = norm(num) if match else seen

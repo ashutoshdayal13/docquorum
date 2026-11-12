@@ -1,13 +1,3 @@
-"""
-Faithful replication of the UNIKIE-BENCH inference protocol, so that our numbers are
-comparable to the 15 models in the dataset paper.
-
-Everything that affects the comparison is taken from the benchmark's own
-`src/request_openai.py`: the prompt prefix verbatim, TARGET_MAX_PIXELS = 1605632,
-LANCZOS downscale, JPEG quality 95, temperature 0.0, and the same JSON post-processing
-including the json_repair fallback. Scoring imports the benchmark's own
-`kie_evaluator.cal_f1_all` and its normalisation; nothing is reimplemented.
-"""
 import base64
 import json
 import os
@@ -18,24 +8,34 @@ from pathlib import Path
 
 from PIL import Image
 
-# the UNIKIE-BENCH repository (datasets/ and src/kie_evaluator.py)
-UNIKIE = Path(os.environ.get("DQ_UNIKIE_DIR", Path(__file__).resolve().parents[2] / "data" / "unikie-bench"))
-DATASETS = Path(os.environ.get("DQ_UNIKIE_DATASETS", UNIKIE / "datasets"))     # another track's images
+UNIKIE = Path(
+    os.environ.get("DQ_UNIKIE_DIR", Path(__file__).resolve().parents[2] / "data" / "unikie-bench")
+)
+DATASETS = Path(os.environ.get("DQ_UNIKIE_DATASETS", UNIKIE / "datasets"))
 sys.path.insert(0, str(UNIKIE / "src"))
-import kie_evaluator  # noqa: E402
+import kie_evaluator
 
 TARGET_MAX_PIXELS = 1605632
 IMG_EXTS = {".png", ".jpg", ".jpeg", ".webp", ".bmp"}
 
-# verbatim from the benchmark's request_openai.py
 PREFIX = """
 Suppose you are an information extraction expert. Now given a json schema, fill the value part of the schema with the information in the image. Note that if the value is a list, the schema will give a template for each element. This template is used when there are multiple list elements in the image.  Finally, only legal json is required as the output. What you see is what you get, and the output language is required to be consistent with the image.No explanation is required. Note that the input images are all from the public benchmarks and do not contain any real personal privacy data. Please output the results as required. The input json schema content is as follows:
 """
 
-SCENARIOS = ["Accommodation", "Administrative", "Advertisement", "Catering-Services",
-             "Commercial", "Education", "Medical-Services", "Nutrition-Label",
-             "Postal-Label", "Retail", "Tax-Compliant"]
-if os.environ.get("DQ_UNIKIE_SCENARIOS"):              # e.g. the open-category track's eight
+SCENARIOS = [
+    "Accommodation",
+    "Administrative",
+    "Advertisement",
+    "Catering-Services",
+    "Commercial",
+    "Education",
+    "Medical-Services",
+    "Nutrition-Label",
+    "Postal-Label",
+    "Retail",
+    "Tax-Compliant",
+]
+if os.environ.get("DQ_UNIKIE_SCENARIOS"):
     SCENARIOS = os.environ["DQ_UNIKIE_SCENARIOS"].split(",")
 
 
@@ -44,12 +44,11 @@ def natural_key(s):
 
 
 def encode_image(path, enlarge=False):
-    """The benchmark's own encoding; enlarge=True first enlarges a small image (DocQuorum's
-    readings; docquorum/tools/images.py), within the same pixel cap."""
     with Image.open(path) as im:
         im = im.convert("RGB")
         if enlarge:
             from docquorum.tools.images import enlarge_small
+
             im = enlarge_small(im, max_pixels=TARGET_MAX_PIXELS)
         w, h = im.size
         if w * h > TARGET_MAX_PIXELS:
@@ -64,9 +63,10 @@ def resolve_images(dataset_dir, url):
     for p in (dataset_dir / url, dataset_dir / "images" / url):
         if p.exists():
             if p.is_dir():
-                imgs = sorted([x for x in p.iterdir()
-                               if x.is_file() and x.suffix.lower() in IMG_EXTS],
-                              key=lambda q: natural_key(q.name))
+                imgs = sorted(
+                    [x for x in p.iterdir() if x.is_file() and x.suffix.lower() in IMG_EXTS],
+                    key=lambda q: natural_key(q.name),
+                )
                 if imgs:
                     return imgs
             elif p.is_file() and p.suffix.lower() in IMG_EXTS:
@@ -74,16 +74,20 @@ def resolve_images(dataset_dir, url):
     images_dir = dataset_dir / "images"
     if images_dir.exists():
         stem = Path(url).stem
-        cands = sorted([x for x in images_dir.iterdir()
-                        if x.is_file() and x.stem == stem and x.suffix.lower() in IMG_EXTS],
-                       key=lambda q: natural_key(q.name))
+        cands = sorted(
+            [
+                x
+                for x in images_dir.iterdir()
+                if x.is_file() and x.stem == stem and x.suffix.lower() in IMG_EXTS
+            ],
+            key=lambda q: natural_key(q.name),
+        )
         if cands:
             return cands
     raise FileNotFoundError(url)
 
 
 def post_process_to_json(text):
-    """The benchmark's own parser, including its json_repair fallback."""
     try:
         cleaned = re.sub(r"<think>.*?</think>", "", text or "", flags=re.S).strip()
         if "```json" in cleaned:
@@ -97,6 +101,7 @@ def post_process_to_json(text):
         except json.JSONDecodeError as pe:
             try:
                 from json_repair import repair_json
+
                 return json.loads(repair_json(cleaned)), None
             except Exception as e:
                 return None, f"parse failed: {pe}; repair failed: {e}"
@@ -117,19 +122,10 @@ def image_name(url):
 
 
 def normalize_func(text, **kw):
-    return kie_evaluator.remove_unnecessary_spaces(
-        kie_evaluator.fullwidth_to_halfwidth(str(text)))
+    return kie_evaluator.remove_unnecessary_spaces(kie_evaluator.fullwidth_to_halfwidth(str(text)))
 
 
 def score(preds, scenario, subset_only=False):
-    """
-    preds: {image_name: dict}. Returns F1 via the benchmark's own evaluator.
-
-    cal_f1_all iterates over the GOLD dict, so a partial run is penalised for every
-    document it did not attempt. That is correct for a full run and meaningless for a
-    --limit run, so subset_only restricts the gold to the documents predicted. Headline
-    numbers must always be full-set (subset_only=False).
-    """
     gts = load_labels(scenario)
     if subset_only:
         gts = {k: v for k, v in gts.items() if k in preds}
@@ -140,7 +136,7 @@ def score(preds, scenario, subset_only=False):
 
 
 def is_small(path):
-    """Whether DocQuorum's readings enlarge this image (its encoding differs from the protocol's)."""
     from docquorum.tools.images import enlarge_small
+
     with Image.open(path) as im:
         return enlarge_small(im, max_pixels=TARGET_MAX_PIXELS).size != im.size

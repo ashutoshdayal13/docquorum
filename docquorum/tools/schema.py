@@ -1,7 +1,3 @@
-"""
-JSON-Schema helpers: find the lists a schema asks for, resolve references, size and split a
-schema, and build the decoding schemas the readers send. No model and no annotation.
-"""
 import copy
 import json
 
@@ -11,7 +7,6 @@ def defs_of(schema):
 
 
 def resolve(s, root, depth=0):
-    """Follow $ref chains to the definition ({} when it cannot be resolved)."""
     while isinstance(s, dict) and "$ref" in s and depth < 20:
         s = defs_of(root).get(s["$ref"].split("/")[-1], {})
         depth += 1
@@ -26,15 +21,12 @@ def admits_null(s, root):
     return any(admits_null(alt, root) for comb in ("anyOf", "oneOf") for alt in s.get(comb) or [])
 
 
-# ---------- the lists a schema asks for ----------
 def is_array(node):
-    """A list schema: "type": "array", a type list that includes it (a nullable list), or items."""
     t = node.get("type")
     return t == "array" or (isinstance(t, list) and "array" in t) or "items" in node
 
 
 def find_array_field(schema):
-    """The top-level list with the widest records: (name, item schema, description)."""
     defs = defs_of(schema)
 
     def res(node, depth=0):
@@ -64,22 +56,22 @@ def find_array_field(schema):
 
 
 def find_all_arrays(schema):
-    """Every top-level list, widest records first."""
     defs = defs_of(schema)
-    out = [a for name, prop in (schema.get("properties") or {}).items()
-           if (a := find_array_field({"properties": {name: prop}, "$defs": defs}))]
+    out = [
+        a
+        for name, prop in (schema.get("properties") or {}).items()
+        if (a := find_array_field({"properties": {name: prop}, "$defs": defs}))
+    ]
     out.sort(key=lambda a: -len((a[1].get("properties") or {})))
     return out
 
 
 def scalar_fields(schema):
-    """The top-level properties that are not lists."""
     names = {a[0] for a in find_all_arrays(schema)}
     return {k: v for k, v in (schema.get("properties") or {}).items() if k not in names}
 
 
 def without_fields(schema, names):
-    """The schema minus the named top-level properties (None when nothing is left)."""
     props = {k: v for k, v in (schema.get("properties") or {}).items() if k not in names}
     if not props:
         return None
@@ -89,13 +81,11 @@ def without_fields(schema, names):
     return rest
 
 
-# ---------- size and split ----------
 def compact(obj):
     return json.dumps(obj, separators=(",", ":"), ensure_ascii=False)
 
 
 def leaf_count(node, defs, depth=0):
-    """Number of leaf fields (a list counts its item's leaves once)."""
     if depth > 8 or not isinstance(node, dict):
         return 1
     if "$ref" in node:
@@ -104,7 +94,10 @@ def leaf_count(node, defs, depth=0):
         if comb in node:
             return max(leaf_count(o, defs, depth + 1) for o in node[comb])
     if node.get("type") == "object" or "properties" in node:
-        return sum(leaf_count(v, defs, depth + 1) for v in (node.get("properties") or {}).values()) or 1
+        return (
+            sum(leaf_count(v, defs, depth + 1) for v in (node.get("properties") or {}).values())
+            or 1
+        )
     return 1
 
 
@@ -121,7 +114,6 @@ def _refs(node, out):
 
 
 def _closure(names, defs):
-    """Definitions reachable from `names`, transitively."""
     seen, todo = set(), list(names)
     while todo:
         n = todo.pop()
@@ -135,8 +127,6 @@ def _closure(names, defs):
 
 
 def schema_groups(schema, budget_chars):
-    """The schema split into groups of top-level fields, each (with the definitions it
-    references) at most budget_chars long."""
     props = schema.get("properties") or {}
     dkey = "$defs" if "$defs" in schema else ("definitions" if "definitions" in schema else None)
     defs = schema.get(dkey) or {} if dkey else {}
@@ -152,7 +142,7 @@ def schema_groups(schema, budget_chars):
         need = set()
         _refs(sub["properties"], need)
         need = _closure(need, defs)
-        if need and dkey:        # in the schema's own order (a set's order varies between runs)
+        if need and dkey:
             sub[dkey] = {n: d for n, d in defs.items() if n in need}
         return sub
 
@@ -169,10 +159,7 @@ def schema_groups(schema, budget_chars):
     return groups
 
 
-# ---------- decoding schemas ----------
 def array_schema(item, root=None, **bounds):
-    """A decoding schema for a list of items, with the definitions hoisted to the root (a
-    "$ref": "#/$defs/X" resolves from the root)."""
     items = {k: v for k, v in item.items() if k not in ("$defs", "definitions")}
     out = {"type": "array", **bounds, "items": items}
     src = root or item
@@ -201,16 +188,16 @@ def _nullable(node):
 
 
 def nullable_optional(schema):
-    """The decoding form of a schema: every scalar property its object does not require may
-    also be null. Under a grammar the model fills every key it is shown, so an optional field typed
-    "string" or "number" would otherwise force a value where the page prints none (a copied
-    neighbour, a 0, the text "null"); null is how an extraction says "not printed"."""
     s = copy.deepcopy(schema)
 
-    def scalar(v):                       # a list can already be [] and an object can omit fields
+    def scalar(v):
         r = resolve(v, s)
         t = r.get("type")
-        return not ({"object", "array"} & set(t if isinstance(t, list) else [t]) or "properties" in r or "items" in r)
+        return not (
+            {"object", "array"} & set(t if isinstance(t, list) else [t])
+            or "properties" in r
+            or "items" in r
+        )
 
     def walk(node):
         if isinstance(node, dict):
@@ -225,14 +212,12 @@ def nullable_optional(schema):
         elif isinstance(node, list):
             for v in node:
                 walk(v)
+
     walk(s)
     return s
 
 
 def require_fields(item):
-    """The item schema with every top-level field required (so a reply cannot skip one) and each
-    field so required also allowed to be null, as in require_all: a blank cell is then null, not a
-    0 or a "null" string the decoder would otherwise force."""
     out = copy.deepcopy(item)
     props = out.get("properties")
     if isinstance(props, dict) and props:
@@ -245,7 +230,6 @@ def require_fields(item):
 
 
 def require_all(schema):
-    """The schema with every object property required; each added requirement nullable."""
     s = copy.deepcopy(schema)
 
     def walk(node):
@@ -262,12 +246,12 @@ def require_all(schema):
         elif isinstance(node, list):
             for v in node:
                 walk(v)
+
     walk(s)
     return s
 
 
 def missing_keys(schema, obj):
-    """How many schema properties the output leaves out (in objects and list items)."""
     defs = defs_of(schema)
 
     def res(s, depth=0):
@@ -290,28 +274,34 @@ def missing_keys(schema, obj):
         if isinstance(o, list) and isinstance(s.get("items"), dict):
             return sum(walk(s["items"], x) for x in o)
         return 0
+
     return walk(schema, obj)
 
 
-# ---------- JSON templates (UNIKIE style) ----------
 JSON_TYPES = {"object", "array", "string", "number", "integer", "boolean", "null"}
 
 
 def _schema_like(obj):
-    """Whether a dict uses JSON-Schema keywords as keywords. A template may have a field named
-    "type" or "properties"; there its value is an empty leaf (or a template), not a JSON type."""
     t = obj.get("type")
     props = obj.get("properties")
-    return ("$schema" in obj or (isinstance(t, str) and t in JSON_TYPES)
-            or (isinstance(t, list) and bool(t) and set(t) <= JSON_TYPES)
-            or (isinstance(props, dict) and props == {} and "type" in obj)
-            or (isinstance(props, dict) and bool(props)
-                and all(isinstance(v, dict) and (not v or _schema_like(v) or "$ref" in v or "description" in v)
-                        for v in props.values())))
+    return (
+        "$schema" in obj
+        or (isinstance(t, str) and t in JSON_TYPES)
+        or (isinstance(t, list) and bool(t) and set(t) <= JSON_TYPES)
+        or (isinstance(props, dict) and props == {} and "type" in obj)
+        or (
+            isinstance(props, dict)
+            and bool(props)
+            and all(
+                isinstance(v, dict)
+                and (not v or _schema_like(v) or "$ref" in v or "description" in v)
+                for v in props.values()
+            )
+        )
+    )
 
 
 def is_template(obj):
-    """A JSON template: only empty leaves, and no JSON-Schema keywords used as keywords."""
     if isinstance(obj, dict):
         if _schema_like(obj):
             return False
@@ -323,8 +313,11 @@ def is_template(obj):
 
 def template_to_schema(t):
     if isinstance(t, dict):
-        return {"type": "object", "additionalProperties": False,
-                "properties": {k: template_to_schema(v) for k, v in t.items()}}
+        return {
+            "type": "object",
+            "additionalProperties": False,
+            "properties": {k: template_to_schema(v) for k, v in t.items()},
+        }
     if isinstance(t, list):
         return {"type": "array", "items": template_to_schema(t[0] if t else "")}
     return {"type": ["string", "null"]}

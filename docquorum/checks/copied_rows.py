@@ -1,17 +1,9 @@
-"""
-Drop rows copied into another list. A printed line is one record: when a row of list B
-carries all its distinctive values (strings of >= 4 characters, numbers of >= 3 digits; at
-least two of them) inside one row of list A, and some value sits under a differently named
-field there (check_number as batch_number), it is the same line read twice. List B is
-cleaned only when at least half of its judged rows, and at least three, are such copies.
-"""
 import re
 
 _WS = re.compile(r"\s+")
 
 
 def distinctive(row):
-    """value -> the field it sits in, for the values that can identify a printed line."""
     out = {}
     for k, v in row.items():
         if isinstance(v, bool) or v is None:
@@ -27,8 +19,11 @@ def distinctive(row):
 
 
 def apply(pred, doc):
-    arrays = {k: v for k, v in pred.items()
-              if isinstance(v, list) and len(v) >= 3 and all(isinstance(x, dict) for x in v)}
+    arrays = {
+        k: v
+        for k, v in pred.items()
+        if isinstance(v, list) and len(v) >= 3 and all(isinstance(x, dict) for x in v)
+    }
     if len(arrays) < 2:
         return pred
     sets = {k: [distinctive(r) for r in v] for k, v in arrays.items()}
